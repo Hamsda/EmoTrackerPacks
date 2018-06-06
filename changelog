@@ -1,3 +1,14 @@
+1.0.0.3:
+  -fixed Zoras Domain/Fountain logic interaction between child and adult
+  -fixed Haunted Wasteland Central Structure capture for Stone of Agony not showing
+  -improved Spirit Temple:
+    -split up the items
+    -tried to model the reqs (there might be inaccuracies because of the back and forth between ages)
+  -improved Shadow Temple:
+    -split up the items
+    -tried to model the reqs
+    -marked lens as optional (pretty easy to do the entire dungeon without)
+    -added option to reach Bongo Bongo with longshot (there is a scarecrow you can reach)
 1.0.0.2:
   -added capture feature to Sheik at Colossus and Sheik in Ice Cavern
   -changed Man on Rooftop so Hookshot is skipable (with a pretty simple sidehop)

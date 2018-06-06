@@ -31,7 +31,8 @@
           {
             "name": "colossus",
             "access_rules": [
-              "@Wasteland,lens,magic",
+              "@Gerudos Fortress,card,hoverboots,[lens],[magic]",
+              "@Gerudos Fortress,card,longshot,[lens],[magic]",
               "requiem"
             ],
             "item_count": 1
@@ -39,7 +40,8 @@
           {
             "name": "ice cavern",
             "access_rules": [
-              "@Zoras Fountain,sword2"
+              "bombs,[lullaby],ruto,sword2",
+              "scale1,[lullaby],ruto,sword2"
             ],
             "item_count": 1
           },
@@ -465,28 +467,81 @@
         "name": "Shadow Temple",
         "color": "#6909a0",
         "access_rules": [
-          "nocturne,dinsfire,magic,lens,sword2,hoverboots",
-          "nocturne,dinsfire,magic,lens,sword2,hookshot"
+          "nocturne,dinsfire,magic,[lens],sword2,hoverboots",
+          "nocturne,dinsfire,magic,[lens],sword2,hookshot"
         ],
         "sections": [
           {
-            "name": "Entrance",
-            "access_rules": [],
+            "name": "Map Chest",
+            "item_count": 1
+          },
+          {
+            "name": "Deadhand",
+            "item_count": 1
+          },
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+              "hoverboots"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Early Silver Rupees",
+            "access_rules": [
+              "hoverboots"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Like-Like Room",
+            "access_rules": [
+              "hoverboots,bombs"
+            ],
             "clear_as_group": false,
             "item_count": 2
           },
           {
-            "name": "After Truthspinner",
+            "name": "Falling Spikes Lower",
             "access_rules": [
-              "hoverboots,[hookshot],[lift1]"
+              "@Shadow Temple/Like-Like Room"
             ],
-            "clear_as_group": false,
-            "item_count": 11
+            "item_count": 1
           },
           {
-            "name": "After Boat Ride",
+            "name": "Falling Spikes Upper",
             "access_rules": [
-              "lullaby"
+              "@Shadow Temple/Like-Like Room,[lift1]"
+            ],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Invisible Spikes",
+            "access_rules": [
+              "@Shadow Temple/Like-Like Room"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Wind Hint Room",
+            "access_rules": [
+              "@Shadow Temple/Like-Like Room,hookshot"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "After Wind Room",
+            "access_rules": [
+              "@Shadow Temple/Wind Hint Room"
+            ],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "After Boat",
+            "access_rules": [
+              "@Shadow Temple/After Wind Room,lullaby"
             ],
             "clear_as_group": false,
             "item_count": 3
@@ -494,7 +549,8 @@
           {
             "name": "Bongo Bongo",
             "access_rules": [
-              "bow"
+              "@Shadow Temple/After Boat,bow",
+              "@Shadow Temple/After Boat,longshot"
             ],
             "hosted_item": "shadow"
           }
@@ -921,24 +977,24 @@
           {
             "name": "Torch Run",
             "access_rules": [
-              "bombs,lullaby,sticks",
-              "scale1,lullaby,sticks"
+              "bombs,[lullaby]",
+              "scale1"
             ],
             "item_count": 1
           },
           {
             "name": "Diving Minigame",
             "access_rules": [
-              "bombs,lullaby",
-              "scale1,lullaby"
+              "bombs,[lullaby]",
+              "scale1"
             ],
             "item_count": 1
           },
           {
             "name": "King Zora Thawed",
             "access_rules": [
-              "sword2,lullaby,bottle,wallet2",
-              "sword2,lullaby,bottle,@logic/ice cavern"
+              "sword2,[lullaby],bottle,wallet2",
+              "sword2,[lullaby],bottle,@logic/ice cavern"
             ],
             "item_count": 1
           }
@@ -955,8 +1011,8 @@
         "name": "Zoras Fountain",
         "color": "#0936a0",
         "access_rules": [
-          "bombs,lullaby,ruto",
-          "scale1,lullaby,ruto"
+          "bombs,[lullaby],ruto",
+          "scale1,ruto"
         ],
         "sections": [
           {
@@ -1289,16 +1345,14 @@
       {
         "name": "Wasteland",
         "color": "#a09509",
-        "access_rules": [
-          "@Gerudos Fortress,card,hoverboots",
-          "@Gerudos Fortress,card,longshot"
-        ],
+        "access_rules": [],
         "sections": [
           {
             "name": "Below Center Structure",
             "capture_item": true,
             "access_rules": [
-              "@logic/has fire",
+              "@Gerudos Fortress,card,hoverboots,@logic/has fire",
+              "@Gerudos Fortress,card,longshot,@logic/has fire",
               "{agony}"
             ],
             "item_count": 1
@@ -1350,34 +1404,123 @@
         ],
         "sections": [
           {
-            "name": "Child Side",
+            "name": "Lower Child",
             "access_rules": [
-              "[boomerang]",
-              "[sling]"
+              "requiem,boomerang",
+              "requiem,sling"
             ],
             "clear_as_group": false,
-            "item_count": 6
+            "item_count": 2
           },
           {
-            "name": "Adult Side",
+            "name": "Upper Child",
             "access_rules": [
-              "sword2,lift2,[hookshot],[lullaby],[shield3],[bow],[lens]"
+              "@Spirit Temple/Lower Child",
+              "@Spirit Temple/Boulder Room"
             ],
             "clear_as_group": false,
-            "item_count": 10
+            "item_count": 2
           },
           {
-            "name": "Statue Room",
+            "name": "Torch Puzzle",
             "access_rules": [
-              "[@logic/has fire],[lullaby],[hookshot]"
+              "@Spirit Temple/Lower Child,sticks,bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Southern Hand",
+            "access_rules": [
+              "@Spirit Temple/Lower Child,bombs",
+              "@Spirit Temple/Northern Hand,longshot"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Compass Chest",
+            "access_rules": [
+              "sword2,lift2,lullaby,hookshot"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Boulder Room",
+            "access_rules": [
+              "sword2,lift2,hookshot",
+              "sword2,lift2,bow",
+              "sword2,lift2,bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Mirror Room",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Statue Hand",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,lullaby"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Map Chest",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,bow",
+              "@Spirit Temple/Lower Child,bombs,sticks"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Statue Ledge",
+            "access_rules": [
+              "@Spirit Temple/Statue Hand,hookshot"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Near Armos",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,bombs,shield3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Invisible Hallway",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,bombs,[lens],[magic]"
             ],
             "clear_as_group": false,
-            "item_count": 3
+            "item_count": 2
+          },
+          {
+            "name": "Northern Hand",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Boss Key Chest",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,bombs,lullaby,[bow],[hookshot]"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Topmost Sun",
+            "access_rules": [
+              "@Spirit Temple/Boulder Room,bombs,shield3"
+            ],
+            "item_count": 1
           },
           {
             "name": "Twinrova",
             "access_rules": [
-              "shield3,bombs,hookshot,[bow],[lullaby]"
+              "@Spirit Temple/Topmost Sun"
             ],
             "hosted_item": "spirit"
           }
