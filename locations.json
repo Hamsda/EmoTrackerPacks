@@ -1,0 +1,1395 @@
+﻿[
+  {
+    "name": "All locations",
+    "children": [
+      {
+        "name": "logic",
+        "sections": [
+          {
+            "name": "can blast",
+            "access_rules": [
+              "bombs",
+              "sword2,hammer"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "can LA",
+            "access_rules": [
+              "magic,bow,lightarrow"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "has fire",
+            "access_rules": [
+              "dinsfire,magic",
+              "firearrow,bow,magic"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "colossus",
+            "access_rules": [
+              "@Wasteland,lens,magic",
+              "requiem"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "ice cavern",
+            "access_rules": [
+              "@Zoras Fountain,sword2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "goron tunic",
+            "access_rules": [
+              "redtunic",
+              "wallet1,bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "zora tunic",
+            "access_rules": [
+              "bluetunic",
+              "wallet2,bottle"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Kokiri Village",
+        "color": "#18a50e",
+        "sections": [
+          {
+            "name": "Kokiri Sword Chest",
+            "item_count": 1
+          },
+          {
+            "name": "Mido's House",
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2148,
+            "y": 942
+          }
+        ]
+      },
+      {
+        "name": "Deku Tree",
+        "color": "#18a50e",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Map Chest",
+            "item_count": 1
+          },
+          {
+            "name": "Compass Room",
+            "item_count": 2
+          },
+          {
+            "name": "Slingshot room",
+            "access_rules": [
+              "shield1"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Basement",
+            "item_count": 1
+          },
+          {
+            "name": "Queen Gohma",
+            "access_rules": [
+              "[sling],shield1"
+            ],
+            "hosted_item": "deku"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2426,
+            "y": 860
+          }
+        ]
+      },
+      {
+        "name": "Lost Woods",
+        "color": "#18a50e",
+        "sections": [
+          {
+            "name": "Skull Kid",
+            "access_rules": [
+              "saria"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Scrub below Bridge",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Scrub in Grotto",
+            "access_rules": [
+              "@logic/can blast"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Ocarina Memory Game",
+            "access_rules": [
+              "ocarina"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Target in Woods",
+            "access_rules": [
+              "sling"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Theater Skull Mask",
+            "access_rules": [
+              "skullmask"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Theater Mask of Truth",
+            "capture_item": true,
+            "access_rules": [
+              "maskoftruth",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2140,
+            "y": 766
+          }
+        ]
+      },
+      {
+        "name": "Sacred Forest Meadow",
+        "color": "#18a50e",
+        "sections": [
+          {
+            "name": "Wolfos Grotto",
+            "access_rules": [
+              "bombs",
+              "sword2,hammer,saria",
+              "sword2,hammer,minuet"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Song from Saria",
+            "access_rules": [
+              "letter"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik in Meadow",
+            "capture_item": true,
+            "access_rules": [
+              "sword2,saria",
+              "sword2,minuet",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2178,
+            "y": 683
+          }
+        ]
+      },
+      {
+        "name": "Forest Temple",
+        "color": "#18a50e",
+        "access_rules": [
+          "@Sacred Forest Meadow/Sheik in Meadow,hookshot"
+        ],
+        "sections": [
+          {
+            "name": "Dungeon",
+            "access_rules": [
+              "[time],[bow],[lift1]"
+            ],
+            "clear_as_group": false,
+            "item_count": 13
+          },
+          {
+            "name": "Phantom Ganon",
+            "access_rules": [
+              "bow"
+            ],
+            "hosted_item": "forest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2149,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Kakariko Village",
+        "color": "#6909a0",
+        "sections": [
+          {
+            "name": "Center Grotto",
+            "access_rules": [
+              "@logic/can blast"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Anjus Chickens",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Anju as Adult",
+            "access_rules": [
+              "sword2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Adult Shooting Gallery",
+            "access_rules": [
+              "sword2,bow"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Man on Rooftop",
+            "access_rules": [
+              "[sword2],[hookshot]"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Song at Windmill",
+            "capture_item": true,
+            "access_rules": [
+              "sword2,ocarina",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik in Kakariko",
+            "capture_item": true,
+            "access_rules": [
+              "forestmed,firemed,watermed",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "10 Skulltulas",
+            "access_rules": [
+              "skulltula:10"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "20 Skulltulas",
+            "capture_item": true,
+            "access_rules": [
+              "skulltula:20",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "30 Skulltulas",
+            "capture_item": true,
+            "access_rules": [
+              "skulltula:30",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "40 Skulltulas",
+            "capture_item": true,
+            "access_rules": [
+              "skulltula:40",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "50 Skulltulas",
+            "capture_item": true,
+            "access_rules": [
+              "skulltula:50",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1824,
+            "y": 380
+          }
+        ]
+      },
+      {
+        "name": "Graveyard",
+        "color": "#6909a0",
+        "sections": [
+          {
+            "name": "Shield Grave",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Redead Grave",
+            "capture_item": true,
+            "access_rules": [
+              "sun",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Dampe Race",
+            "access_rules": [
+              "sword2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Song from Royal Tomb",
+            "capture_item": true,
+            "access_rules": [
+              "lullaby",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Royal Tomb Torches",
+            "capture_item": true,
+            "access_rules": [
+              "lullaby,@logic/has fire",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2044,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "name": "Bottom of the Well",
+        "color": "#6909a0",
+        "access_rules": [
+          "storm"
+        ],
+        "sections": [
+          {
+            "name": "Main Floor",
+            "clear_as_group": false,
+            "access_rules": [
+              "[lens],[magic]"
+            ],
+            "item_count": 6
+          },
+          {
+            "name": "Bombable",
+            "clear_as_group": false,
+            "access_rules": [
+              "bombs"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Basement",
+            "access_rules": [
+              "@logic/can blast",
+              "lift1"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Lowered Water",
+            "clear_as_group": false,
+            "access_rules": [
+              "lullaby"
+            ],
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1908,
+            "y": 368
+          }
+        ]
+      },
+      {
+        "name": "Shadow Temple",
+        "color": "#6909a0",
+        "access_rules": [
+          "nocturne,dinsfire,magic,lens,sword2,hoverboots",
+          "nocturne,dinsfire,magic,lens,sword2,hookshot"
+        ],
+        "sections": [
+          {
+            "name": "Entrance",
+            "access_rules": [],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "After Truthspinner",
+            "access_rules": [
+              "hoverboots,[hookshot],[lift1]"
+            ],
+            "clear_as_group": false,
+            "item_count": 11
+          },
+          {
+            "name": "After Boat Ride",
+            "access_rules": [
+              "lullaby"
+            ],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Bongo Bongo",
+            "access_rules": [
+              "bow"
+            ],
+            "hosted_item": "shadow"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2144,
+            "y": 326
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain Trail",
+        "color": "#a01009",
+        "sections": [
+          {
+            "name": "Bombable Wall",
+            "access_rules": [
+              "@logic/can blast"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Biggoron",
+            "capture_item": true,
+            "access_rules": [
+              "@logic/can blast,sword2,claimcheck",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Mountain Summit Fairy",
+            "access_rules": [
+              "lullaby,@logic/can blast"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1776,
+            "y": 190
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain Crater",
+        "color": "#a01009",
+        "sections": [
+          {
+            "name": "Crater Fairy",
+            "access_rules": [
+              "lullaby,sword2,hammer,bombs",
+              "lullaby,sword2,hammer,bolero,hookshot",
+              "lullaby,sword2,hammer,bolero,hoverboots"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik in Crater",
+            "capture_item": true,
+            "access_rules": [
+              "sword2,bolero",
+              "@Goron City/Link the Goron,hookshot",
+              "@Goron City/Link the Goron,hoverboots",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1800,
+            "y": 40
+          }
+        ]
+      },
+      {
+        "name": "Fire Temple",
+        "color": "#a01009",
+        "access_rules": [
+          "@Death Mountain Crater/Sheik in Crater,@logic/goron tunic"
+        ],
+        "sections": [
+          {
+            "name": "Dungeon",
+            "access_rules": [
+              "[hookshot],[hammer],[bombs],[bow]"
+            ],
+            "clear_as_group": false,
+            "item_count": 13
+          },
+          {
+            "name": "Volvagia",
+            "access_rules": [
+              "hammer"
+            ],
+            "hosted_item": "fire"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1875,
+            "y": 80
+          }
+        ]
+      },
+      {
+        "name": "Goron City",
+        "color": "#a01009",
+        "access_rules": [
+          "sword2",
+          "letter",
+          "bombs"
+        ],
+        "sections": [
+          {
+            "name": "Boulder Maze Left",
+            "capture_item": true,
+            "access_rules": [
+              "sword2,lift2",
+              "sword2,hammer",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Boulder Maze Right",
+            "access_rules": [
+              "@logic/can blast",
+              "sword2,lift2"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Large Rolling Goron",
+            "access_rules": [
+              "bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Darunias Joy",
+            "capture_item": true,
+            "access_rules": [
+              "lullaby,saria",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Link the Goron",
+            "access_rules": [
+              "sword2,lift1",
+              "sword2,bombs"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1660,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "name": "Dodongos Cavern",
+        "color": "#a01009",
+        "access_rules": [
+          "@logic/can blast",
+          "lift1"
+        ],
+        "sections": [
+          {
+            "name": "Map/Compass Chests",
+            "access_rules": [],
+            "clear_as_group": false,
+            "item_count": 2
+          },
+          {
+            "name": "Small Chest Upstairs",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Bomb Bag Chest",
+            "access_rules": [
+              "sling",
+              "sword2,[bow]",
+              "sword2,[hoverboots]"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "End of Bridge",
+            "access_rules": [
+              "@Dodongos Cavern/Bomb Bag Chest,@logic/can blast"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Above Boss",
+            "capture_item": true,
+            "access_rules": [
+              "@Dodongos Cavern/Bomb Bag Chest,bombs",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "King Dodongo",
+            "access_rules": [
+              "@Dodongos Cavern/Above Boss"
+            ],
+            "hosted_item": "dodongo"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1684,
+            "y": 220
+          }
+        ]
+      },
+      {
+        "name": "Market",
+        "color": "#09a09d",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "RichardZ",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Child Shooting Gallery",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Bombchu Bowling",
+            "access_rules": [
+              "bombs"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Treasure Chest Game",
+            "capture_item": true,
+            "access_rules": [
+              "lens,magic",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik at Temple",
+            "capture_item": true,
+            "access_rules": [
+              "sword2,forestmed",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik is Zelda :O",
+            "access_rules": [
+              "spiritmed,shadowmed,sword2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "10 Big Poes",
+            "capture_item": true,
+            "access_rules": [
+              "bow,epona,sword2,bottle",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1440,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle",
+        "color": "#09a09d",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Song from Impa",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Hyrule Castle Fairy",
+            "access_rules": [
+              "lullaby,bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Ganons Castle Fairy",
+            "access_rules": [
+              "lullaby,sword2,lift3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1440,
+            "y": 217
+          }
+        ]
+      },
+      {
+        "name": "Ganons Castle",
+        "color": "#09a09d",
+        "access_rules": [
+          "sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed"
+        ],
+        "sections": [
+          {
+            "name": "Forest Trial",
+            "access_rules": [],
+            "item_count": 1
+          },
+          {
+            "name": "Water Trial",
+            "access_rules": [],
+            "item_count": 2
+          },
+          {
+            "name": "Shadow Trial",
+            "access_rules": [
+              "[longshot],[hoverboots],[magic],[lens]",
+              "[magic],[lens],[bow],[firearrow]"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Light Trial",
+            "access_rules": [
+              "lift3,[lens],[magic],[lullaby]"
+            ],
+            "item_count": 8
+          },
+          {
+            "name": "Spirit Trial",
+            "access_rules": [
+              "hookshot,bombchu,[lens],[magic]"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Castle Tower",
+            "access_rules": [
+              "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,lens,@logic/goron tunic",
+              "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,@logic/goron tunic"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1438,
+            "y": 114
+          }
+        ]
+      },
+      {
+        "name": "Zoras River",
+        "color": "#0936a0",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Frog Ocarina Game",
+            "capture_item": true,
+            "access_rules": [
+              "bombs,lullaby,saria,epona,sun,time",
+              "scale1,lullaby,saria,epona,sun,time",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Frogs in the Rain",
+            "access_rules": [
+              "bombs,storm",
+              "scale1,storm"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2108,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Zoras Domain",
+        "color": "#0936a0",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Torch Run",
+            "access_rules": [
+              "bombs,lullaby,sticks",
+              "scale1,lullaby,sticks"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Diving Minigame",
+            "access_rules": [
+              "bombs,lullaby",
+              "scale1,lullaby"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "King Zora Thawed",
+            "access_rules": [
+              "sword2,lullaby,bottle,wallet2",
+              "sword2,lullaby,bottle,@logic/ice cavern"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2579,
+            "y": 453
+          }
+        ]
+      },
+      {
+        "name": "Zoras Fountain",
+        "color": "#0936a0",
+        "access_rules": [
+          "bombs,lullaby,ruto",
+          "scale1,lullaby,ruto"
+        ],
+        "sections": [
+          {
+            "name": "Zoras Fountain Fairy",
+            "access_rules": [
+              "lullaby,@logic/can blast"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2545,
+            "y": 315
+          }
+        ]
+      },
+      {
+        "name": "Jabu Jabus Belly",
+        "color": "#0936a0",
+        "access_rules": [
+          "@Zoras Fountain,sling",
+          "@Zoras Fountain,bombs",
+          "@Zoras Fountain,boomerang"
+        ],
+        "sections": [
+          {
+            "name": "Boomerang Chest",
+            "item_count": 1
+          },
+          {
+            "name": "Map/Compass Chests",
+            "clear_as_group": false,
+            "access_rules": [
+              "boomerang"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Barinade",
+            "access_rules": [
+              "boomerang"
+            ],
+            "hosted_item": "jabu"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2485,
+            "y": 333
+          }
+        ]
+      },
+      {
+        "name": "Ice Cavern",
+        "color": "#0936a0",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Map/Compass Chests",
+            "clear_as_group": false,
+            "access_rules": [
+              "@logic/ice cavern"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Sheik in Ice Cavern",
+            "capture_item": true,
+            "access_rules": [
+              "@logic/ice cavern",
+              "{agony}"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2492,
+            "y": 272
+          }
+        ]
+      },
+      {
+        "name": "Lake Hylia",
+        "color": "#0936a0",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Underwater Bottle",
+            "access_rules": [
+              "scale1"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Diving in the Lab",
+            "access_rules": [
+              "scale2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Child Fishing",
+            "capture_item": true,
+            "access_rules": [
+              "sword1",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Adult Fishing",
+            "capture_item": true,
+            "access_rules": [
+              "sword2,hookshot",
+              "sword2,water",
+              "sword2,beans",
+              "{agony}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Shoot the Sun",
+            "capture_item": true,
+            "access_rules": [
+              "bow,longshot,sword2",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1065,
+            "y": 1209
+          }
+        ]
+      },
+      {
+        "name": "Water Temple",
+        "color": "#0936a0",
+        "access_rules": [
+          "sword2,ironboots,hookshot,@logic/zora tunic"
+        ],
+        "sections": [
+          {
+            "name": "Dungeon",
+            "access_rules": [
+              "[lullaby],[bow],[lift1],[longshot],[bombs]"
+            ],
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Morpha",
+            "access_rules": [
+              "longshot"
+            ],
+            "hosted_item": "water"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1015,
+            "y": 1380
+          }
+        ]
+      },
+      {
+        "name": "Ocarina of Time",
+        "color": "#09a09d",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Dive down",
+            "capture_item": true,
+            "access_rules": [
+              "emerald,ruby,sapphire",
+              "{agony}"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1439,
+            "y": 465
+          }
+        ]
+      },
+      {
+        "name": "Lon Lon Ranch",
+        "color": "#09a09d",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Talons Chickens",
+            "access_rules": [
+              "letter"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Song from Malon",
+            "access_rules": [
+              "letter,ocarina"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1293,
+            "y": 649
+          }
+        ]
+      },
+      {
+        "name": "Southern Grotto",
+        "color": "#09a09d",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Deku Scrub in Grotto",
+            "access_rules": [
+              "@logic/can blast"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1141,
+            "y": 999
+          }
+        ]
+      },
+      {
+        "name": "Gerudos Valley",
+        "color": "#a09509",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Hammer Rocks",
+            "access_rules": [
+              "sword2,hammer,epona",
+              "sword2,hammer,longshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 674,
+            "y": 567
+          }
+        ]
+      },
+      {
+        "name": "Gerudos Fortress",
+        "color": "#a09509",
+        "access_rules": [
+          "sword2,epona,bow",
+          "sword2,epona,hookshot",
+          "sword2,epona,hoverboots",
+          "sword2,longshot"
+        ],
+        "sections": [
+          {
+            "name": "Rooftop Chest",
+            "access_rules": [
+              "hoverboots",
+              "longshot"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Horseback Archery",
+            "capture_item": true,
+            "access_rules": [
+              "epona,bow,card",
+              "{agony}"
+            ],
+            "clear_as_group": false,
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 581,
+            "y": 362
+          }
+        ]
+      },
+      {
+        "name": "Gerudo Training Grounds",
+        "color": "#a09509",
+        "access_rules": [
+          "@Gerudos Fortress,card"
+        ],
+        "sections": [
+          {
+            "name": "Dungeon",
+            "access_rules": [
+              "[bow],[lift2],[hookshot],[bombs],[time],[hammer],[lens],[ironboots]"
+            ],
+            "clear_as_group": false,
+            "item_count": 21
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 499,
+            "y": 419
+          }
+        ]
+      },
+      {
+        "name": "Wasteland",
+        "color": "#a09509",
+        "access_rules": [
+          "@Gerudos Fortress,card,hoverboots",
+          "@Gerudos Fortress,card,longshot"
+        ],
+        "sections": [
+          {
+            "name": "Below Center Structure",
+            "capture_item": true,
+            "access_rules": [
+              "@logic/has fire",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 376,
+            "y": 301
+          }
+        ]
+      },
+      {
+        "name": "Colossus",
+        "color": "#a09509",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Colossus Fairy",
+            "access_rules": [
+              "@logic/colossus,lullaby,bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Sheik at Colossus",
+            "capture_item": true,
+            "access_rules": [
+              "@logic/colossus",
+              "{agony}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 190,
+            "y": 362
+          }
+        ]
+      },
+      {
+        "name": "Spirit Temple",
+        "color": "#a09509",
+        "access_rules": [
+          "@logic/colossus"
+        ],
+        "sections": [
+          {
+            "name": "Child Side",
+            "access_rules": [
+              "[boomerang]",
+              "[sling]"
+            ],
+            "clear_as_group": false,
+            "item_count": 6
+          },
+          {
+            "name": "Adult Side",
+            "access_rules": [
+              "sword2,lift2,[hookshot],[lullaby],[shield3],[bow],[lens]"
+            ],
+            "clear_as_group": false,
+            "item_count": 10
+          },
+          {
+            "name": "Statue Room",
+            "access_rules": [
+              "[@logic/has fire],[lullaby],[hookshot]"
+            ],
+            "clear_as_group": false,
+            "item_count": 3
+          },
+          {
+            "name": "Twinrova",
+            "access_rules": [
+              "shield3,bombs,hookshot,[bow],[lullaby]"
+            ],
+            "hosted_item": "spirit"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 99,
+            "y": 326
+          }
+        ]
+      }
+    ]
+  }
+]

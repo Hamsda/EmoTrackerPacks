@@ -1,0 +1,11 @@
+﻿{
+  "type": "array",
+  "background": "#202020",
+  "margin": "5",
+  "content": [
+    {
+      "type": "layout",
+      "key": "shared_item_grid"
+    }
+  ]
+}

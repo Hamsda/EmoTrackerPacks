@@ -1,0 +1,22 @@
+1.0.0.2:
+  -added capture feature to Sheik at Colossus and Sheik in Ice Cavern
+  -changed Man on Rooftop so Hookshot is skipable (with a pretty simple sidehop)
+  -fixed Redead Grave not showing if Sun Song location has a checkmark
+  -improved Deku:
+    -split up the items
+    -2 chests in Slingshot room require Deku Shield
+1.0.0.1:
+  -added colors to all locations
+  -added capture support to locations that gossip stones hint at when you have the Stone of Agony
+  -updated image pack from JRJathome
+  -fixed typo for child fishing access, it's spelled sword not sowrd
+  -fixed wolfos grotto at the beginning of Meadow requires adult to have access to the area (if you only have hammer to open the grotto)
+  -fixed Zoras Domain access based on age
+  -fixed Gerudos Fortress requires crossing the bridge in Gerudos Valley
+  -fixed Child Shooting Gallery doesn't require Slingshot
+  -fixed checking a song location no longer acts like you don't have that song
+  -fixed Fire Temple no longer cleared as group
+  -fixed Water Temple no longer cleared as group
+  -fixed Shadow Temple no longer cleared as group
+  -improved DC item logic
+  -improved BotW item logic
