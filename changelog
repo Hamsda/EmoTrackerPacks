@@ -1,6 +1,8 @@
 1.0.0.3:
   -fixed Zoras Domain/Fountain logic interaction between child and adult
+  -fixed Zoras Fountain Fairy can't be opened with hammer
   -fixed Haunted Wasteland Central Structure capture for Stone of Agony not showing
+  -fixed Mountain Crater with hoverboots but no bombs
   -improved Spirit Temple:
     -split up the items
     -tried to model the reqs (there might be inaccuracies because of the back and forth between ages)
@@ -9,6 +11,10 @@
     -tried to model the reqs
     -marked lens as optional (pretty easy to do the entire dungeon without)
     -added option to reach Bongo Bongo with longshot (there is a scarecrow you can reach)
+  -improved Gerudo Training Grounds:
+    -split up the items
+    -added reqs to each of the outer chests
+    -marked hammer as optional for the pillar room (can be easily skipped with a damage boost)
 1.0.0.2:
   -added capture feature to Sheik at Colossus and Sheik in Ice Cavern
   -changed Man on Rooftop so Hookshot is skipable (with a pretty simple sidehop)

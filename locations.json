@@ -31,8 +31,8 @@
           {
             "name": "colossus",
             "access_rules": [
-              "@Gerudos Fortress,card,hoverboots,[lens],[magic]",
-              "@Gerudos Fortress,card,longshot,[lens],[magic]",
+              "@Gerudo Fortress,card,hoverboots,[lens],[magic]",
+              "@Gerudo Fortress,card,longshot,[lens],[magic]",
               "requiem"
             ],
             "item_count": 1
@@ -608,7 +608,7 @@
             "access_rules": [
               "lullaby,sword2,hammer,bombs",
               "lullaby,sword2,hammer,bolero,hookshot",
-              "lullaby,sword2,hammer,bolero,hoverboots"
+              "lullaby,sword2,hammer,hoverboots"
             ],
             "item_count": 1
           },
@@ -617,8 +617,8 @@
             "capture_item": true,
             "access_rules": [
               "sword2,bolero",
+              "sword2,hoverboots",
               "@Goron City/Link the Goron,hookshot",
-              "@Goron City/Link the Goron,hoverboots",
               "{agony}"
             ],
             "item_count": 1
@@ -1018,7 +1018,7 @@
           {
             "name": "Zoras Fountain Fairy",
             "access_rules": [
-              "lullaby,@logic/can blast"
+              "lullaby,bombs"
             ],
             "item_count": 1
           }
@@ -1260,7 +1260,7 @@
         ]
       },
       {
-        "name": "Gerudos Valley",
+        "name": "Gerudo Valley",
         "color": "#a09509",
         "access_rules": [],
         "sections": [
@@ -1282,7 +1282,7 @@
         ]
       },
       {
-        "name": "Gerudos Fortress",
+        "name": "Gerudo Fortress",
         "color": "#a09509",
         "access_rules": [
           "sword2,epona,bow",
@@ -1322,16 +1322,83 @@
         "name": "Gerudo Training Grounds",
         "color": "#a09509",
         "access_rules": [
-          "@Gerudos Fortress,card"
+          "@Gerudo Fortress,card"
         ],
         "sections": [
           {
-            "name": "Dungeon",
-            "access_rules": [
-              "[bow],[lift2],[hookshot],[bombs],[time],[hammer],[lens],[ironboots]"
+            "name": "Lobby",
+            "access_rules":[
+              "bow"
             ],
+            "item_count": 2
+          },
+          {
+            "name": "Stalfos",
+            "item_count": 1
+          },
+          {
+            "name": "Wolfos",
+            "access_rules":[
+              "hookshot"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Like-Like",
+            "access_rules":[
+              "hookshot,lift2"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Eye Statue",
+            "access_rules":[
+              "hookshot,bow"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Above Maze",
+            "access_rules":[
+              "hookshot,bow"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Hammer Pillars",
+            "access_rules":[
+              "hookshot,bow,[hammer]",
+              "bombs,hookshot,[hammer]"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Lave Pit Ledge",
+            "access_rules":[
+              "hookshot,bow,[hammer],time",
+              "bombs,time"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Under Water",
+            "access_rules":[
+              "hookshot,bow,[hammer],time,ironboots,@logic/zora tunic",
+              "bombs,hookshot,time,ironboots,@logic/zora tunic"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Beamos",
+            "access_rules":[
+              "bombs"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Maze",
             "clear_as_group": false,
-            "item_count": 21
+            "item_count": 5
           }
         ],
         "map_locations": [
@@ -1351,8 +1418,8 @@
             "name": "Below Center Structure",
             "capture_item": true,
             "access_rules": [
-              "@Gerudos Fortress,card,hoverboots,@logic/has fire",
-              "@Gerudos Fortress,card,longshot,@logic/has fire",
+              "@Gerudo Fortress,card,hoverboots,@logic/has fire",
+              "@Gerudo Fortress,card,longshot,@logic/has fire",
               "{agony}"
             ],
             "item_count": 1
