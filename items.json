@@ -1,5 +1,37 @@
 ﻿[
   {
+    "name": "Open Door",
+    "type": "progressive",
+    "allow_disabled":false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/closed_door.png",
+        "codes": "type_door,closed_door"
+      },
+      {
+        "img": "images/open_door.png",
+        "codes": "type_door,open_door"
+      }
+    ]
+  },
+  {
+    "name": "Open Forest",
+    "type": "progressive",
+    "allow_disabled":false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/closed_forest.png",
+        "codes": "type_forest,closed_forest"
+      },
+      {
+        "img": "images/open_forest.png",
+        "codes": "type_forest,open_forest"
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,
@@ -671,7 +703,8 @@
         "codes": "ocarina,fairyocarina"
       },
       {
-        "img": "images/ocarina.png"
+        "img": "images/ocarina.png",
+        "codes": "ocarinaoftime,oot"
       }
     ]
   },

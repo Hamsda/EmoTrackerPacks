@@ -9,6 +9,7 @@
             "name": "can blast",
             "access_rules": [
               "bombs",
+              "bombchu,[bombs]",
               "sword2,hammer"
             ],
             "item_count": 1
@@ -74,6 +75,14 @@
           {
             "name": "Mido's House",
             "item_count": 4
+          },
+          {
+            "name": "Lost Woods Bridge",
+            "hosted_item": "fairyocarina",
+            "access_rules": [
+              "open_forest",
+              "sling,sword1"
+            ]
           }
         ],
         "map_locations": [
@@ -87,7 +96,10 @@
       {
         "name": "Deku Tree",
         "color": "#18a50e",
-        "access_rules": [],
+        "access_rules": [
+          "open_forest",
+          "sword1"
+        ],
         "sections": [
           {
             "name": "Map Chest",
@@ -831,6 +843,14 @@
             "item_count": 1
           },
           {
+            "name": "Door of Time",
+            "hosted_item": "sword2",
+            "access_rules": [
+              "open_door",
+              "time"
+            ]
+          },
+          {
             "name": "Sheik at Temple",
             "capture_item": true,
             "access_rules": [
@@ -1355,7 +1375,7 @@
           },
           {
             "name": "Lobby",
-            "access_rules":[
+            "access_rules": [
               "bow"
             ],
             "item_count": 2
@@ -1366,35 +1386,35 @@
           },
           {
             "name": "Wolfos",
-            "access_rules":[
+            "access_rules": [
               "hookshot"
             ],
             "item_count": 1
           },
           {
             "name": "Like-Like",
-            "access_rules":[
+            "access_rules": [
               "hookshot,lift2"
             ],
             "item_count": 4
           },
           {
             "name": "Eye Statue",
-            "access_rules":[
+            "access_rules": [
               "hookshot,bow"
             ],
             "item_count": 1
           },
           {
             "name": "Above Maze",
-            "access_rules":[
+            "access_rules": [
               "hookshot,bow"
             ],
             "item_count": 1
           },
           {
             "name": "Hammer Pillars",
-            "access_rules":[
+            "access_rules": [
               "hookshot,bow,[hammer]",
               "bombs,hookshot,[hammer]"
             ],
@@ -1402,7 +1422,7 @@
           },
           {
             "name": "Lave Pit Ledge",
-            "access_rules":[
+            "access_rules": [
               "hookshot,bow,[hammer],time",
               "bombs,time"
             ],
@@ -1410,7 +1430,7 @@
           },
           {
             "name": "Under Water",
-            "access_rules":[
+            "access_rules": [
               "hookshot,bow,[hammer],time,ironboots,@logic/zora tunic",
               "bombs,hookshot,time,ironboots,@logic/zora tunic"
             ],
@@ -1418,7 +1438,7 @@
           },
           {
             "name": "Beamos",
-            "access_rules":[
+            "access_rules": [
               "bombs"
             ],
             "item_count": 1
