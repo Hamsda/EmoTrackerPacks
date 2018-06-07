@@ -1016,6 +1016,13 @@
     "max_quantity": 5
   },
   {
+    "name": "Forest Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "forest_small_keys",
+    "max_quantity": 5
+  },
+  {
     "name": "Forest Prize",
     "type": "progressive_toggle",
     "loop": true,
@@ -1076,6 +1083,13 @@
     "swap_actions": true,
     "initial_quantity": 3,
     "max_quantity": 3
+  },
+  {
+    "name": "Fire Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "fire_small_keys",
+    "max_quantity": 8
   },
   {
     "name": "Fire Prize",
@@ -1140,6 +1154,13 @@
     "max_quantity": 1
   },
   {
+    "name": "Water Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "water_small_keys",
+    "max_quantity": 6
+  },
+  {
     "name": "Water Prize",
     "type": "progressive_toggle",
     "loop": true,
@@ -1202,6 +1223,13 @@
     "max_quantity": 11
   },
   {
+    "name": "Spirit Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "spirit_small_keys",
+    "max_quantity": 5
+  },
+  {
     "name": "Spirit Prize",
     "type": "progressive_toggle",
     "loop": true,
@@ -1255,13 +1283,20 @@
     "codes": "shadow_label"
   },
   {
-    "name": "Spirit Treasures",
+    "name": "Shadow Treasures",
     "type": "consumable",
     "img": "images/chest.png",
     "codes": "shadow_treasures",
     "swap_actions": true,
     "initial_quantity": 10,
     "max_quantity": 10
+  },
+  {
+    "name": "Shadow Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "shadow_small_keys",
+    "max_quantity": 4
   },
   {
     "name": "Shadow Prize",
@@ -1326,6 +1361,13 @@
     "max_quantity": 9
   },
   {
+    "name": "Well Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "well_small_keys",
+    "max_quantity": 2
+  },
+  {
     "name": "Ice Label",
     "type": "static",
     "img": "images/well.png",
@@ -1356,6 +1398,13 @@
     "max_quantity": 13
   },
   {
+    "name": "Gerudo Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gerudo_small_keys",
+    "max_quantity": 8
+  },
+  {
     "name": "Ganon's Tower Label",
     "type": "static",
     "img": "images/ganon.png",
@@ -1369,5 +1418,12 @@
     "swap_actions": true,
     "initial_quantity": 13,
     "max_quantity": 13
+  },
+  {
+    "name": "Ganon Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "ganon_small_keys",
+    "max_quantity": 2
   }
 ]

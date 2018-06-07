@@ -233,6 +233,10 @@
         ],
         "sections": [
           {
+            "name": "Small Keys",
+            "hosted_item": "forest_small_keys"
+          },
+          {
             "name": "Dungeon",
             "access_rules": [
               "[time],[bow],[lift1]"
@@ -423,6 +427,10 @@
         ],
         "sections": [
           {
+            "name": "Small Keys",
+            "hosted_item": "well_small_keys"
+          },
+          {
             "name": "Main Floor",
             "clear_as_group": false,
             "access_rules": [
@@ -471,6 +479,10 @@
           "nocturne,dinsfire,magic,[lens],sword2,hookshot"
         ],
         "sections": [
+          {
+            "name": "Small Keys",
+            "hosted_item": "shadow_small_keys"
+          },
           {
             "name": "Map Chest",
             "item_count": 1
@@ -639,6 +651,10 @@
           "@Death Mountain Crater/Sheik in Crater,@logic/goron tunic"
         ],
         "sections": [
+          {
+            "name": "Small Keys",
+            "hosted_item": "fire_small_keys"
+          },
           {
             "name": "Dungeon",
             "access_rules": [
@@ -888,6 +904,10 @@
           "sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed"
         ],
         "sections": [
+          {
+            "name": "Small Keys",
+            "hosted_item": "ganon_small_keys"
+          },
           {
             "name": "Forest Trial",
             "access_rules": [],
@@ -1164,6 +1184,10 @@
         ],
         "sections": [
           {
+            "name": "Small Keys",
+            "hosted_item": "water_small_keys"
+          },
+          {
             "name": "Dungeon",
             "access_rules": [
               "[lullaby],[bow],[lift1],[longshot],[bombs]"
@@ -1326,6 +1350,10 @@
         ],
         "sections": [
           {
+            "name": "Small Keys",
+            "hosted_item": "gerudo_small_keys"
+          },
+          {
             "name": "Lobby",
             "access_rules":[
               "bow"
@@ -1470,6 +1498,10 @@
           "@logic/colossus"
         ],
         "sections": [
+          {
+            "name": "Small Keys",
+            "hosted_item": "spirit_small_keys"
+          },
           {
             "name": "Lower Child",
             "access_rules": [
