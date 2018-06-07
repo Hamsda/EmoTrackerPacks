@@ -921,7 +921,10 @@
         "name": "Ganons Castle",
         "color": "#09a09d",
         "access_rules": [
-          "sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed"
+          "bridge_medallions,sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed",
+          "bridge_vanilla,sword2,spiritmed,shadowmed,lightarrow",
+          "bridge_dungeons,sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed,emerald,ruby,sapphire",
+          "bridge_open,sword2"
         ],
         "sections": [
           {
@@ -941,8 +944,8 @@
           {
             "name": "Shadow Trial",
             "access_rules": [
-              "[longshot],[hoverboots],[magic],[lens]",
-              "[magic],[lens],[bow],[firearrow]"
+              "longshot,hoverboots,[magic],[lens]",
+              "magic,[lens],bow,firearrow"
             ],
             "item_count": 2
           },
