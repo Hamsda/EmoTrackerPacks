@@ -1237,16 +1237,19 @@
       {
         "name": "Ocarina of Time",
         "color": "#09a09d",
-        "access_rules": [],
+        "access_rules": [
+          "emerald,ruby,sapphire",
+          "{agony}"
+        ],
         "sections": [
           {
-            "name": "Dive down",
+            "name": "Item",
+            "hosted_item": "ocarina"
+          },
+          {
+            "name": "Song",
             "capture_item": true,
-            "access_rules": [
-              "emerald,ruby,sapphire",
-              "{agony}"
-            ],
-            "item_count": 2
+            "item_count": 1
           }
         ],
         "map_locations": [

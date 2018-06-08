@@ -2,7 +2,7 @@
   {
     "name": "Open Door",
     "type": "progressive",
-    "allow_disabled":false,
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
@@ -12,14 +12,14 @@
       {
         "img": "images/open_door.png",
         "codes": "type_door,open_door",
-				"inherit_codes": false
+        "inherit_codes": false
       }
     ]
   },
   {
     "name": "Open Forest",
     "type": "progressive",
-    "allow_disabled":false,
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
@@ -29,35 +29,35 @@
       {
         "img": "images/open_forest.png",
         "codes": "type_forest,open_forest",
-				"inherit_codes": false
+        "inherit_codes": false
       }
     ]
   },
   {
     "name": "Bridge Requirement",
     "type": "progressive",
-    "allow_disabled":false,
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/bridge_medallions.png",
         "codes": "type_bridge,bridge_medallions",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/bridge_vanilla.png",
         "codes": "type_bridge,bridge_vanilla",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/bridge_dungeons.png",
         "codes": "type_bridge,bridge_dungeons",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/bridge_open.png",
         "codes": "type_bridge,bridge_open",
-				"inherit_codes": false
+        "inherit_codes": false
       }
     ]
   },
@@ -833,7 +833,7 @@
     "name": "Free Prize",
     "type": "progressive",
     "loop": true,
-    "allow_disabled":false,
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -842,47 +842,47 @@
       {
         "img": "images/emerald.png",
         "codes": "free,emerald",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
         "codes": "free,ruby",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
         "codes": "free,sapphire",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "free,forestmed",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
         "codes": "free,firemed",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
         "codes": "free,watermed",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
         "codes": "free,spiritmed",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
         "codes": "free,shadowmed",
-				"inherit_codes": false
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "free,lightmed",
-				"inherit_codes": false
+        "inherit_codes": false
       }
     ]
   },
@@ -905,7 +905,7 @@
     "name": "Deku Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -968,7 +968,7 @@
     "name": "Dodongo Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1031,7 +1031,7 @@
     "name": "Jabu Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1101,7 +1101,7 @@
     "name": "Forest Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1171,7 +1171,7 @@
     "name": "Fire Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1241,7 +1241,7 @@
     "name": "Water Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1311,7 +1311,7 @@
     "name": "Spirit Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1381,7 +1381,7 @@
     "name": "Shadow Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions":true,
+    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
