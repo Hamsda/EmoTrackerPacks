@@ -15,9 +15,17 @@
             "item_count": 1
           },
           {
+            "name": "explosives",
+            "access_rules":[
+              "bombs",
+              "bombchu,[bombs]"
+            ],
+            "item_count": 1
+          },
+          {
             "name": "can LA",
             "access_rules": [
-              "magic,bow,lightarrow"
+              "sword2,magic,bow,lightarrow"
             ],
             "item_count": 1
           },
@@ -25,7 +33,7 @@
             "name": "has fire",
             "access_rules": [
               "dinsfire,magic",
-              "firearrow,bow,magic"
+              "sword2,firearrow,bow,magic"
             ],
             "item_count": 1
           },
@@ -41,7 +49,7 @@
           {
             "name": "ice cavern",
             "access_rules": [
-              "bombs,[lullaby],ruto,sword2",
+              "@logic/explosives,[lullaby],ruto,sword2",
               "scale1,[lullaby],ruto,sword2"
             ],
             "item_count": 1
@@ -189,7 +197,7 @@
           {
             "name": "Wolfos Grotto",
             "access_rules": [
-              "bombs",
+              "@logic/explosives",
               "sword2,hammer,saria",
               "sword2,hammer,minuet"
             ],
@@ -438,7 +446,7 @@
             "name": "Bombable",
             "clear_as_group": false,
             "access_rules": [
-              "bombs"
+              "@logic/explosives"
             ],
             "item_count": 2
           },
@@ -504,7 +512,7 @@
           {
             "name": "Like-Like Room",
             "access_rules": [
-              "hoverboots,bombs"
+              "hoverboots,@logic/explosives"
             ],
             "clear_as_group": false,
             "item_count": 2
@@ -614,7 +622,7 @@
           {
             "name": "Crater Fairy",
             "access_rules": [
-              "lullaby,sword2,hammer,bombs",
+              "lullaby,sword2,hammer,@logic/explosives",
               "lullaby,sword2,hammer,bolero,hookshot",
               "lullaby,sword2,hammer,hoverboots"
             ],
@@ -681,7 +689,7 @@
         "access_rules": [
           "sword2",
           "letter",
-          "bombs"
+          "@logic/explosives"
         ],
         "sections": [
           {
@@ -705,7 +713,7 @@
           {
             "name": "Large Rolling Goron",
             "access_rules": [
-              "bombs"
+              "@logic/explosives"
             ],
             "item_count": 1
           },
@@ -722,14 +730,14 @@
             "name": "Link the Goron",
             "access_rules": [
               "sword2,lift1",
-              "sword2,bombs"
+              "sword2,@logic/explosives"
             ],
             "item_count": 1
           },
           {
             "name": "Shop",
             "access_rules":[
-              "wallet1,bombs"
+              "wallet1,@logic/explosives"
             ],
             "hosted_item": "redtunic"
           }
@@ -888,7 +896,7 @@
           {
             "name": "Hyrule Castle Fairy",
             "access_rules": [
-              "lullaby,bombs"
+              "lullaby,@logic/explosives"
             ],
             "item_count": 1
           },
@@ -977,21 +985,21 @@
         "access_rules": [],
         "sections": [
           {
-            "name": "Frog Ocarina Game",
-            "capture_item": true,
+            "name": "Frogs in the Rain",
             "access_rules": [
-              "bombs,lullaby,saria,epona,sun,time",
-              "scale1,lullaby,saria,epona,sun,time",
-              "{agony}"
+              "@logic/explosives,storm",
+              "scale1,storm"
             ],
             "item_count": 1
           },
           {
-            "name": "Frogs in the Rain",
+            "name": "Frog Ocarina Game",
             "access_rules": [
-              "bombs,storm",
-              "scale1,storm"
+              "@logic/explosives,lullaby,saria,epona,sun,time,storm",
+              "scale1,lullaby,saria,epona,sun,time,storm",
+              "{agony}"
             ],
+            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -1011,7 +1019,7 @@
           {
             "name": "Torch Run",
             "access_rules": [
-              "bombs,[lullaby]",
+              "@logic/explosives,[lullaby]",
               "scale1"
             ],
             "item_count": 1
@@ -1019,7 +1027,7 @@
           {
             "name": "Diving Minigame",
             "access_rules": [
-              "bombs,[lullaby]",
+              "@logic/explosives,[lullaby]",
               "scale1"
             ],
             "item_count": 1
@@ -1052,14 +1060,14 @@
         "name": "Zoras Fountain",
         "color": "#0936a0",
         "access_rules": [
-          "bombs,[lullaby],ruto",
+          "@logic/explosives,[lullaby],ruto",
           "scale1,ruto"
         ],
         "sections": [
           {
             "name": "Zoras Fountain Fairy",
             "access_rules": [
-              "lullaby,bombs"
+              "lullaby,@logic/explosives"
             ],
             "item_count": 1
           }
@@ -1077,7 +1085,7 @@
         "color": "#0936a0",
         "access_rules": [
           "@Zoras Fountain,sling",
-          "@Zoras Fountain,bombs",
+          "@Zoras Fountain,@logic/explosives",
           "@Zoras Fountain,boomerang"
         ],
         "sections": [
@@ -1420,7 +1428,7 @@
             "name": "Hammer Pillars",
             "access_rules": [
               "hookshot,bow,[hammer]",
-              "bombs,hookshot,[hammer]"
+              "@logic/explosives,hookshot,[hammer]"
             ],
             "item_count": 2
           },
@@ -1428,7 +1436,7 @@
             "name": "Lave Pit Ledge",
             "access_rules": [
               "hookshot,bow,[hammer],time",
-              "bombs,time"
+              "@logic/explosives,time"
             ],
             "item_count": 2
           },
@@ -1436,14 +1444,14 @@
             "name": "Under Water",
             "access_rules": [
               "hookshot,bow,[hammer],time,ironboots",
-              "bombs,hookshot,time,ironboots"
+              "@logic/explosives,hookshot,time,ironboots"
             ],
             "item_count": 1
           },
           {
             "name": "Beamos",
             "access_rules": [
-              "bombs"
+              "@logic/explosives"
             ],
             "item_count": 1
           },
@@ -1493,7 +1501,7 @@
           {
             "name": "Colossus Fairy",
             "access_rules": [
-              "@logic/colossus,lullaby,bombs"
+              "@logic/colossus,lullaby,@logic/explosives"
             ],
             "item_count": 1
           },
@@ -1547,14 +1555,14 @@
           {
             "name": "Torch Puzzle",
             "access_rules": [
-              "@Spirit Temple/Lower Child,sticks,bombs"
+              "@Spirit Temple/Lower Child,sticks,@logic/explosives"
             ],
             "item_count": 1
           },
           {
             "name": "Southern Hand",
             "access_rules": [
-              "@Spirit Temple/Lower Child,bombs",
+              "@Spirit Temple/Lower Child,@logic/explosives",
               "@Spirit Temple/Northern Hand,longshot"
             ],
             "item_count": 1
@@ -1571,7 +1579,7 @@
             "access_rules": [
               "sword2,lift2,hookshot",
               "sword2,lift2,bow",
-              "sword2,lift2,bombs"
+              "sword2,lift2,@logic/explosives"
             ],
             "item_count": 1
           },
@@ -1593,7 +1601,7 @@
             "name": "Map Chest",
             "access_rules": [
               "@Spirit Temple/Boulder Room,bow",
-              "@Spirit Temple/Lower Child,bombs,sticks"
+              "@Spirit Temple/Lower Child,@logic/explosives,sticks"
             ],
             "item_count": 1
           },
@@ -1607,14 +1615,14 @@
           {
             "name": "Near Armos",
             "access_rules": [
-              "@Spirit Temple/Boulder Room,bombs,shield3"
+              "@Spirit Temple/Boulder Room,@logic/explosives,shield3"
             ],
             "item_count": 1
           },
           {
             "name": "Invisible Hallway",
             "access_rules": [
-              "@Spirit Temple/Boulder Room,bombs,[lens],[magic]"
+              "@Spirit Temple/Boulder Room,@logic/explosives,[lens],[magic]"
             ],
             "clear_as_group": false,
             "item_count": 2
@@ -1622,21 +1630,21 @@
           {
             "name": "Northern Hand",
             "access_rules": [
-              "@Spirit Temple/Boulder Room,bombs"
+              "@Spirit Temple/Boulder Room,@logic/explosives"
             ],
             "item_count": 1
           },
           {
             "name": "Boss Key Chest",
             "access_rules": [
-              "@Spirit Temple/Boulder Room,bombs,lullaby,[bow],[hookshot]"
+              "@Spirit Temple/Boulder Room,@logic/explosives,lullaby,[bow],[hookshot]"
             ],
             "item_count": 1
           },
           {
             "name": "Topmost Sun",
             "access_rules": [
-              "@Spirit Temple/Boulder Room,bombs,shield3"
+              "@Spirit Temple/Boulder Room,@logic/explosives,shield3"
             ],
             "item_count": 1
           },
