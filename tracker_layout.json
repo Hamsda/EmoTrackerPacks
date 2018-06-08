@@ -124,28 +124,28 @@
             "hammer",
             "lightarrow",
             "nayruslove",
-            "",
+            "lift1",
             "redtunic",
             "bluetunic"
           ],
           [
             "",
             "",
-            "",
+            "ruto",
             "bottle",
             "adulttrade",
             "",
-            "",
+            "scale1",
             "ironboots",
             "hoverboots"
           ],
           [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "lullaby",
+            "epona",
+            "saria",
+            "sun",
+            "time",
+            "storm",
             "wallet1",
             "magic",
             ""
@@ -157,19 +157,8 @@
             "requiem",
             "nocturne",
             "prelude",
-            "lift1",
-            "gerudocard",
-            ""
-          ],
-          [
-            "lullaby",
-            "epona",
-            "saria",
-            "sun",
-            "time",
-            "storm",
-            "scale1",
             "",
+            "gerudocard",
             ""
           ]
         ]
@@ -211,7 +200,29 @@
             ]
           },
           {
-            "type": "map"
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "Child",
+                "icon": "images/sword1.png",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "child"
+                  ]
+                }
+              },
+              {
+                "title": "Adult",
+                "icon": "images/sword2.png",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "adult"
+                  ]
+                }
+              }
+            ]
           }
         ]
       }
@@ -254,7 +265,29 @@
             ]
           },
           {
-            "type": "map"
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "Child",
+                "icon": "images/sword1.png",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "child"
+                  ]
+                }
+              },
+              {
+                "title": "Adult",
+                "icon": "images/sword2.png",
+                "content": {
+                  "type": "map",
+                  "maps": [
+                    "adult"
+                  ]
+                }
+              }
+            ]
           }
         ]
       }
