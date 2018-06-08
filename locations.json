@@ -45,22 +45,6 @@
               "scale1,[lullaby],ruto,sword2"
             ],
             "item_count": 1
-          },
-          {
-            "name": "goron tunic",
-            "access_rules": [
-              "redtunic",
-              "wallet1,bombs"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "zora tunic",
-            "access_rules": [
-              "bluetunic",
-              "wallet2,bottle"
-            ],
-            "item_count": 1
           }
         ]
       },
@@ -660,7 +644,7 @@
         "name": "Fire Temple",
         "color": "#a01009",
         "access_rules": [
-          "@Death Mountain Crater/Sheik in Crater,@logic/goron tunic"
+          "@Death Mountain Crater/Sheik in Crater,redtunic"
         ],
         "sections": [
           {
@@ -741,6 +725,13 @@
               "sword2,bombs"
             ],
             "item_count": 1
+          },
+          {
+            "name": "Shop",
+            "access_rules":[
+              "wallet1,bombs"
+            ],
+            "hosted_item": "redtunic"
           }
         ],
         "map_locations": [
@@ -966,8 +957,8 @@
           {
             "name": "Castle Tower",
             "access_rules": [
-              "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,lens,@logic/goron tunic",
-              "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,@logic/goron tunic"
+              "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,lens,redtunic",
+              "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,redtunic"
             ],
             "item_count": 1
           }
@@ -1040,6 +1031,13 @@
               "sword2,[lullaby],bottle,@logic/ice cavern"
             ],
             "item_count": 1
+          },
+          {
+            "name": "Shop",
+            "access_rules":[
+              "wallet2,bottle"
+            ],
+            "hosted_item": "bluetunic"
           }
         ],
         "map_locations": [
@@ -1203,7 +1201,7 @@
         "name": "Water Temple",
         "color": "#0936a0",
         "access_rules": [
-          "sword2,ironboots,hookshot,@logic/zora tunic"
+          "sword2,ironboots,hookshot,[bluetunic]"
         ],
         "sections": [
           {
@@ -1437,8 +1435,8 @@
           {
             "name": "Under Water",
             "access_rules": [
-              "hookshot,bow,[hammer],time,ironboots,@logic/zora tunic",
-              "bombs,hookshot,time,ironboots,@logic/zora tunic"
+              "hookshot,bow,[hammer],time,ironboots",
+              "bombs,hookshot,time,ironboots"
             ],
             "item_count": 1
           },
