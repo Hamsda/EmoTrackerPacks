@@ -591,18 +591,20 @@
             "item_count": 1
           },
           {
-            "name": "Biggoron",
-            "capture_item": true,
+            "name": "Mountain Summit Fairy",
             "access_rules": [
-              "@logic/can blast,sword2,claimcheck",
-              "{agony}"
+              "lullaby,@logic/can blast"
             ],
             "item_count": 1
           },
           {
-            "name": "Mountain Summit Fairy",
+            "name": "Biggoron",
+            "capture_item": true,
             "access_rules": [
-              "lullaby,@logic/can blast"
+              "@logic/can blast,sword2,claimcheck",
+              "sword2,claimcheck,bolero,hoverboots",
+              "sword2,claimcheck,bolero,hookshot",
+              "{agony}"
             ],
             "item_count": 1
           }
@@ -622,7 +624,7 @@
           {
             "name": "Crater Fairy",
             "access_rules": [
-              "lullaby,sword2,hammer,@logic/explosives",
+              "lullaby,sword2,hammer,@Goron City/Link the Goron",
               "lullaby,sword2,hammer,bolero,hookshot",
               "lullaby,sword2,hammer,hoverboots"
             ],
@@ -652,7 +654,7 @@
         "name": "Fire Temple",
         "color": "#a01009",
         "access_rules": [
-          "@Death Mountain Crater/Sheik in Crater,redtunic"
+          "@Death Mountain Crater/Sheik in Crater,[redtunic]"
         ],
         "sections": [
           {
@@ -789,7 +791,7 @@
             "name": "Above Boss",
             "capture_item": true,
             "access_rules": [
-              "@Dodongos Cavern/Bomb Bag Chest,bombs",
+              "@Dodongos Cavern/Bomb Bag Chest,@logic/can blast",
               "{agony}"
             ],
             "item_count": 1
@@ -836,7 +838,7 @@
             "name": "Treasure Chest Game",
             "capture_item": true,
             "access_rules": [
-              "lens,magic",
+              "[lens],[magic]",
               "{agony}"
             ],
             "item_count": 1
@@ -1163,7 +1165,8 @@
           {
             "name": "Diving in the Lab",
             "access_rules": [
-              "scale2"
+              "scale2",
+              "hookshot,ironboots,[scale2]"
             ],
             "item_count": 1
           },
@@ -1341,12 +1344,16 @@
         "name": "Gerudo Fortress",
         "color": "#a09509",
         "access_rules": [
-          "sword2,epona,bow",
-          "sword2,epona,hookshot",
-          "sword2,epona,hoverboots",
+          "sword2,epona,[bow]",
+          "sword2,epona,[hookshot]",
+          "sword2,epona,[hoverboots]",
           "sword2,longshot"
         ],
         "sections": [
+          {
+            "name": "Free Carpenters",
+            "hosted_item": "card"
+          },
           {
             "name": "Rooftop Chest",
             "access_rules": [
@@ -1356,14 +1363,20 @@
             "item_count": 1
           },
           {
-            "name": "Horseback Archery",
+            "name": "Horseback Archery 1000",
+            "access_rules": [
+              "epona,bow,card"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Horseback Archery 1500",
             "capture_item": true,
             "access_rules": [
               "epona,bow,card",
               "{agony}"
             ],
-            "clear_as_group": false,
-            "item_count": 2
+            "item_count": 1
           }
         ],
         "map_locations": [
@@ -1433,7 +1446,7 @@
             "item_count": 2
           },
           {
-            "name": "Lave Pit Ledge",
+            "name": "Lava Pit Ledge",
             "access_rules": [
               "hookshot,bow,[hammer],time",
               "@logic/explosives,time"
@@ -1443,8 +1456,8 @@
           {
             "name": "Under Water",
             "access_rules": [
-              "hookshot,bow,[hammer],time,ironboots",
-              "@logic/explosives,hookshot,time,ironboots"
+              "hookshot,bow,[hammer],time,ironboots,[bluetunic]",
+              "@logic/explosives,hookshot,time,ironboots,[bluetunic]"
             ],
             "item_count": 1
           },
@@ -1480,6 +1493,8 @@
             "access_rules": [
               "@Gerudo Fortress,card,hoverboots,@logic/has fire",
               "@Gerudo Fortress,card,longshot,@logic/has fire",
+              "requiem,@logic/has fire,[epona],[hoverboots],[card]",
+              "requiem,@logic/has fire,[longshot],[card]",
               "{agony}"
             ],
             "item_count": 1
