@@ -8,6 +8,7 @@
   -added all kinds of logic sequence breaks (thanks SauceRelic!)
   -fixed tracker capture layout
   -added separate maps for child and adult to prep for reorganization
+  -reorganized the internal structure of the data heavily, so I can add new stuff more easily
 1.0.0.3:
   -fixed Zoras Domain/Fountain logic interaction between child and adult
   -fixed Zoras Fountain Fairy can't be opened with hammer

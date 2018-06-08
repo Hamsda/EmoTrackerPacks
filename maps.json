@@ -1,13 +1,13 @@
 ﻿[
     {
       "name": "child",
-      "location_size": 50,
+      "location_size": 35,
       "location_border_thickness": 5,
       "img": "images/oot_overworld2.png"
     },
     {
       "name": "adult",
-      "location_size": 50,
+      "location_size": 35,
       "location_border_thickness": 5,
       "img": "images/oot_overworld2.png"
     }
