@@ -868,14 +868,14 @@
                   },
                   {
                     "name": "Darunias Joy",
-                    "capture_item": true,
                     "access_rules": [
                       "lullaby,saria",
                       "{agony}"
                     ],
                     "sections": [
                       {
-                        "name": "Make him dance",
+                        "name": "Play Sarias",
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -1077,7 +1077,8 @@
                     "sections": [
                       {
                         "name": "Boom!",
-                        "item_count": 1
+                        "clear_as_group": false,
+                        "item_count": 2
                       }
                     ],
                     "map_locations": [
@@ -1385,19 +1386,19 @@
               },
               {
                 "name": "Colossus",
-                "children":[
+                "children": [
                   {
                     "name": "Colossus Fairy",
-                    "sections":[
+                    "sections": [
                       {
                         "name": "Fairy Fountain",
-                        "access_rules":[
+                        "access_rules": [
                           "@logic/colossus,lullaby,@logic/explosives"
                         ],
-                        "item_count":1
+                        "item_count": 1
                       }
                     ],
-                    "map_locations":[
+                    "map_locations": [
                       {
                         "map": "child",
                         "x": 276,
@@ -1412,7 +1413,7 @@
                   },
                   {
                     "name": "Sheik at Colossus",
-                    "sections":[
+                    "sections": [
                       {
                         "name": "Song",
                         "capture_item": true,
@@ -1423,7 +1424,7 @@
                         "item_count": 1
                       }
                     ],
-                    "map_locations":[
+                    "map_locations": [
                       {
                         "map": "child",
                         "x": 128,
@@ -1695,6 +1696,9 @@
                 "sections": [
                   {
                     "name": "Shoot the targets",
+                    "access_rules": [
+                      "bow"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -1745,6 +1749,27 @@
                     "map": "adult",
                     "x": 1734,
                     "y": 387
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Graveyard",
+            "children": [
+              {
+                "name": "Dampe",
+                "sections": [
+                  {
+                    "name": "1st race",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2016,
+                    "y": 331
                   }
                 ]
               }
