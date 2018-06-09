@@ -1892,7 +1892,7 @@
               {
                 "name": "Like-Like Room",
                 "access_rules": [
-                  "hoverboots,@logic/explosives"
+                  "shadow_small_keys:1,hoverboots,@logic/explosives"
                 ],
                 "clear_as_group": false,
                 "item_count": 2
@@ -1915,14 +1915,14 @@
               {
                 "name": "Invisible Spikes",
                 "access_rules": [
-                  "@Shadow Temple/Like-Like Room"
+                  "@Shadow Temple/Like-Like Room,shadow_small_keys:2"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Wind Hint Room",
                 "access_rules": [
-                  "@Shadow Temple/Like-Like Room,hookshot"
+                  "@Shadow Temple/Invisible Spikes,hookshot"
                 ],
                 "item_count": 1
               },
@@ -1937,7 +1937,7 @@
               {
                 "name": "After Boat",
                 "access_rules": [
-                  "@Shadow Temple/After Wind Room,lullaby"
+                  "@Shadow Temple/After Wind Room,shadow_small_keys:3,lullaby"
                 ],
                 "clear_as_group": false,
                 "item_count": 3
@@ -1945,8 +1945,8 @@
               {
                 "name": "Bongo Bongo",
                 "access_rules": [
-                  "@Shadow Temple/After Boat,bow",
-                  "@Shadow Temple/After Boat,longshot"
+                  "@Shadow Temple/After Boat,shadow_small_keys:4,bow",
+                  "@Shadow Temple/After Boat,shadow_small_keys:4,longshot"
                 ],
                 "hosted_item": "shadow"
               }
