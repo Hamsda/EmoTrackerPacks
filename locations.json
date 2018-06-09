@@ -2489,12 +2489,72 @@
                     "hosted_item": "water_small_keys"
                   },
                   {
-                    "name": "Dungeon",
-                    "access_rules": [
-                      "[lullaby],[bow],[lift1],[longshot],[bombs]"
+                    "name": "Map Chest",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Compass Chest",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Torch Chest",
+                    "access_rules":[
+                      "lullaby,bow",
+                      "lullaby,dinsfire,magic"
                     ],
-                    "clear_as_group": false,
-                    "item_count": 10
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Dragon Chest",
+                    "access_rules":[
+                      "lullaby,lift1",
+                      "water_small_keys:4,lullaby,time,bow"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Basement",
+                    "access_rules":[
+                      "water_small_keys:1,lullaby"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Cracked Wall",
+                    "access_rules":[
+                      "water_small_keys:1,lullaby,@logic/explosives"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Center Eye Switch",
+                    "access_rules":[
+                      "lullaby,bow,lift1,hoverboots",
+                      "lullaby,bow,lift1,longshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Dark Link",
+                    "access_rules":[
+                      "water_small_keys:4,lullaby"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "River",
+                    "access_rules":[
+                      "water_small_keys:4,lullaby,time,bow"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Boss Key Chest",
+                    "access_rules": [
+                      "water_small_keys:4,lullaby,longshot,hoverboots",
+                      "water_small_keys:4,lullaby,longshot,@logic/explosives,lift1"
+                    ],
+                    "item_count": 1
                   },
                   {
                     "name": "Morpha",
