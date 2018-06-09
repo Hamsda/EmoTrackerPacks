@@ -1639,17 +1639,100 @@
                     "hosted_item": "forest_small_keys"
                   },
                   {
-                    "name": "Dungeon",
-                    "access_rules": [
-                      "[time],[bow],[lift1]"
+                    "name": "First room",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Stalfos",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Map Chest",
+                    "access_rules":[
+                      "time",
+                      "longshot,bow"
                     ],
-                    "clear_as_group": false,
-                    "item_count": 13
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Below Scarecrow",
+                    "access_rules":[
+                      "time",
+                      "bow"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Inside well",
+                    "access_rules":[
+                      "time",
+                      "longshot,bow",
+                      "bow,ironboots,[longshot]"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Block Room Eye",
+                    "access_rules":[
+                      "forest_small_keys:1,bow"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Boss Key Chest",
+                    "access_rules":[
+                      "forest_small_keys:2,bow,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Floormaster",
+                    "access_rules":[
+                      "@Forest Temple/Boss Key Chest",
+                      "forest_small_keys:1,hoverboots"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Red Poe",
+                    "access_rules":[
+                      "forest_small_keys:3,lift1,bow"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Bow Chest",
+                    "access_rules":[
+                      "forest_small_keys:3,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Blue Poe",
+                    "access_rules":[
+                      "forest_small_keys:3,lift1,bow"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Checkerboard",
+                    "access_rules":[
+                      "forest_small_keys:5,lift1,bow",
+                      "forest_small_keys:5,lift1,dinsfire,magic"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Basement",
+                    "access_rules":[
+                      "@Forest Temple/Checkerboard"
+                    ],
+                    "item_count": 1
                   },
                   {
                     "name": "Phantom Ganon",
                     "access_rules": [
-                      "time,bow,lift1"
+                      "@Forest Temple/Basement"
                     ],
                     "hosted_item": "forest"
                   }

@@ -4,6 +4,9 @@
   -fixed Bombchu Bowling has 2 prizes
   -fixed item capture on Darunias Joy
   -fixed colossus area logic
+  -improved Forest Temple:
+    -split up the chests
+    -tried to model the reqs including small keys
 1.0.0.4:
   -added small key counters
   -started adding open/closed forest/door logic
