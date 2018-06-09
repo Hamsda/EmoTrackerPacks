@@ -1458,8 +1458,8 @@
                       {
                         "name": "Upper Child",
                         "access_rules": [
-                          "@Spirit Temple/Lower Child",
-                          "@Spirit Temple/Boulder Room"
+                          "@Spirit Temple/Lower Child,spirit_small_keys:1",
+                          "@Spirit Temple/Mirror Room"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -1467,14 +1467,14 @@
                       {
                         "name": "Torch Puzzle",
                         "access_rules": [
-                          "@Spirit Temple/Lower Child,sticks,@logic/explosives"
+                          "@Spirit Temple/Lower Child,spirit_small_keys:1,@logic/explosives,sticks"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Southern Hand",
                         "access_rules": [
-                          "@Spirit Temple/Lower Child,@logic/explosives",
+                          "@Spirit Temple/Lower Child,spirit_small_keys:2,@logic/explosives",
                           "@Spirit Temple/Northern Hand,longshot"
                         ],
                         "item_count": 1
@@ -1498,22 +1498,23 @@
                       {
                         "name": "Mirror Room",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room"
+                          "@Spirit Temple/Boulder Room,spirit_small_keys:1"
                         ],
+                        "clear_as_group": false,
                         "item_count": 2
-                      },
-                      {
-                        "name": "Statue Hand",
-                        "access_rules": [
-                          "@Spirit Temple/Boulder Room,lullaby"
-                        ],
-                        "item_count": 1
                       },
                       {
                         "name": "Map Chest",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,bow",
-                          "@Spirit Temple/Lower Child,@logic/explosives,sticks"
+                          "@Spirit Temple/Mirror Room,bow",
+                          "@Spirit Temple/Lower Child,spirit_small_keys:1,@logic/explosives,sticks"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Statue Hand",
+                        "access_rules": [
+                          "@Spirit Temple/Mirror Room,lullaby"
                         ],
                         "item_count": 1
                       },
@@ -1527,14 +1528,14 @@
                       {
                         "name": "Near Armos",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,@logic/explosives,shield3"
+                          "@Spirit Temple/Northern Hand,shield3"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Invisible Hallway",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,@logic/explosives,[lens],[magic]"
+                          "@Spirit Temple/Northern Hand,[lens],[magic]"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -1542,21 +1543,21 @@
                       {
                         "name": "Northern Hand",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,@logic/explosives"
+                          "@Spirit Temple/Mirror Room,spirit_small_keys:2,@logic/explosives"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Boss Key Chest",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,@logic/explosives,lullaby,[bow],[hookshot]"
+                          "@Spirit Temple/Northern Hand,spirit_small_keys:3,lullaby,[bow],[hookshot]"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Topmost Sun",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,@logic/explosives,shield3"
+                          "@Spirit Temple/Northern Hand,spirit_small_keys:3,shield3"
                         ],
                         "item_count": 1
                       },
