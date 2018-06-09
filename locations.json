@@ -2074,12 +2074,98 @@
                     "hosted_item": "fire_small_keys"
                   },
                   {
-                    "name": "Dungeon",
+                    "name": "Near Boss Door",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Boss Key Rooms",
                     "access_rules": [
-                      "[hookshot],[hammer],[bombs],[bow]"
+                      "hammer"
                     ],
                     "clear_as_group": false,
-                    "item_count": 13
+                    "item_count": 2
+                  },
+                  {
+                    "name": "North Lava Room",
+                    "access_rules":[
+                      "fire_small_keys:1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "South Lava Room",
+                    "access_rules":[
+                      "fire_small_keys:1,@logic/explosives"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "South Boulder Maze",
+                    "access_rules":[
+                      "fire_small_keys:3,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "North Boulder Maze",
+                    "access_rules":[
+                      "fire_small_keys:3,lift1"
+                    ],
+                    "item_count": 1
+                  },
+
+                  {
+                    "name": "Map Chest",
+                    "access_rules":[
+                      "fire_small_keys:4,lift1,bow",
+                      "fire_small_keys:5,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Above Boulder Maze",
+                    "access_rules":[
+                      "fire_small_keys:5,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Shortcut",
+                    "access_rules":[
+                      "fire_small_keys:5,lift1,@logic/explosives"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Scarecrow",
+                    "access_rules":[
+                      "fire_small_keys:5,lift1,hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Compass Chest",
+                    "access_rules":[
+                      "fire_small_keys:6,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Time Block Room",
+                    "access_rules":[
+                      "fire_small_keys:7,lift1,hammer,time",
+                      "fire_small_keys:7,lift1,hammer,@logic/explosives",
+                      "fire_small_keys:6,lift1,hammer,hoverboots"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Hammer Chest",
+                    "access_rules":[
+                      "fire_small_keys:7,lift1,@logic/explosives",
+                      "fire_small_keys:6,lift1,@logic/explosives,hoverboots"
+                    ],
+                    "item_count": 1
                   },
                   {
                     "name": "Volvagia",
