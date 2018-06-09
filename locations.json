@@ -37,8 +37,8 @@
       {
         "name": "colossus",
         "access_rules": [
-          "@Gerudo Fortress,card,hoverboots,[lens],[magic]",
-          "@Gerudo Fortress,card,longshot,[lens],[magic]",
+          "sword2,epona,card,hoverboots,[lens],[magic]",
+          "sword2,longshot,card,[lens],[magic]",
           "requiem"
         ],
         "item_count": 1
@@ -1360,10 +1360,9 @@
                         "name": "Light the torches",
                         "capture_item": true,
                         "access_rules": [
-                          "@Gerudo Fortress,card,hoverboots,@logic/has fire",
-                          "@Gerudo Fortress,card,longshot,@logic/has fire",
-                          "requiem,@logic/has fire,[epona],[hoverboots],[card]",
-                          "requiem,@logic/has fire,[longshot],[card]",
+                          "sword2,epona,card,hoverboots,@logic/has fire",
+                          "sword2,longshot,card,@logic/has fire",
+                          "requiem,[card],[longshot],@logic/has fire",
                           "{agony}"
                         ],
                         "item_count": 1
@@ -1439,7 +1438,6 @@
                   },
                   {
                     "name": "Spirit Temple",
-                    "color": "#a09509",
                     "access_rules": [
                       "@logic/colossus"
                     ],
