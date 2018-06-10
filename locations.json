@@ -1458,7 +1458,7 @@
                       {
                         "name": "Upper Child",
                         "access_rules": [
-                          "@Spirit Temple/Lower Child,spirit_small_keys:1",
+                          "@Spirit Temple/Lower Child",
                           "@Spirit Temple/Mirror Room"
                         ],
                         "clear_as_group": false,
@@ -1467,14 +1467,14 @@
                       {
                         "name": "Torch Puzzle",
                         "access_rules": [
-                          "@Spirit Temple/Lower Child,spirit_small_keys:1,@logic/explosives,sticks"
+                          "@Spirit Temple/Lower Child,@logic/explosives,sticks"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Southern Hand",
                         "access_rules": [
-                          "@Spirit Temple/Lower Child,spirit_small_keys:2,@logic/explosives",
+                          "@Spirit Temple/Lower Child,@logic/explosives",
                           "@Spirit Temple/Northern Hand,longshot"
                         ],
                         "item_count": 1
@@ -1498,7 +1498,7 @@
                       {
                         "name": "Mirror Room",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room,spirit_small_keys:1"
+                          "@Spirit Temple/Boulder Room"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -1507,7 +1507,7 @@
                         "name": "Map Chest",
                         "access_rules": [
                           "@Spirit Temple/Mirror Room,bow",
-                          "@Spirit Temple/Lower Child,spirit_small_keys:1,@logic/explosives,sticks"
+                          "@Spirit Temple/Lower Child,@logic/explosives,sticks"
                         ],
                         "item_count": 1
                       },
@@ -1543,21 +1543,21 @@
                       {
                         "name": "Northern Hand",
                         "access_rules": [
-                          "@Spirit Temple/Mirror Room,spirit_small_keys:2,@logic/explosives"
+                          "@Spirit Temple/Mirror Room,@logic/explosives"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Boss Key Chest",
                         "access_rules": [
-                          "@Spirit Temple/Northern Hand,spirit_small_keys:3,lullaby,[bow],[hookshot]"
+                          "@Spirit Temple/Northern Hand,lullaby,[bow],[hookshot]"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Topmost Sun",
                         "access_rules": [
-                          "@Spirit Temple/Northern Hand,spirit_small_keys:3,shield3"
+                          "@Spirit Temple/Northern Hand,shield3"
                         ],
                         "item_count": 1
                       },
@@ -1675,14 +1675,14 @@
                   {
                     "name": "Block Room Eye",
                     "access_rules":[
-                      "forest_small_keys:1,bow"
+                      ",bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Boss Key Chest",
                     "access_rules":[
-                      "forest_small_keys:2,bow,lift1"
+                      ",bow,lift1"
                     ],
                     "item_count": 1
                   },
@@ -1690,36 +1690,36 @@
                     "name": "Floormaster",
                     "access_rules":[
                       "@Forest Temple/Boss Key Chest",
-                      "forest_small_keys:1,hoverboots"
+                      ",hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Red Poe",
                     "access_rules":[
-                      "forest_small_keys:3,lift1,bow"
+                      ",lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Bow Chest",
                     "access_rules":[
-                      "forest_small_keys:3,lift1"
+                      ",lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Blue Poe",
                     "access_rules":[
-                      "forest_small_keys:3,lift1,bow"
+                      ",lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Checkerboard",
                     "access_rules":[
-                      "forest_small_keys:5,lift1,bow",
-                      "forest_small_keys:5,lift1,dinsfire,magic"
+                      ",lift1,bow",
+                      ",lift1,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
@@ -1893,7 +1893,7 @@
               {
                 "name": "Like-Like Room",
                 "access_rules": [
-                  "shadow_small_keys:1,hoverboots,@logic/explosives"
+                  ",hoverboots,@logic/explosives"
                 ],
                 "clear_as_group": false,
                 "item_count": 2
@@ -1916,7 +1916,7 @@
               {
                 "name": "Invisible Spikes",
                 "access_rules": [
-                  "@Shadow Temple/Like-Like Room,shadow_small_keys:2"
+                  "@Shadow Temple/Like-Like Room"
                 ],
                 "item_count": 1
               },
@@ -1938,7 +1938,7 @@
               {
                 "name": "After Boat",
                 "access_rules": [
-                  "@Shadow Temple/After Wind Room,shadow_small_keys:3,lullaby"
+                  "@Shadow Temple/After Wind Room,lullaby"
                 ],
                 "clear_as_group": false,
                 "item_count": 3
@@ -1946,8 +1946,8 @@
               {
                 "name": "Bongo Bongo",
                 "access_rules": [
-                  "@Shadow Temple/After Boat,shadow_small_keys:4,bow",
-                  "@Shadow Temple/After Boat,shadow_small_keys:4,longshot"
+                  "@Shadow Temple/After Boat,bow",
+                  "@Shadow Temple/After Boat,longshot"
                 ],
                 "hosted_item": "shadow"
               }
@@ -2089,28 +2089,28 @@
                   {
                     "name": "North Lava Room",
                     "access_rules":[
-                      "fire_small_keys:1"
+                      ""
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "South Lava Room",
                     "access_rules":[
-                      "fire_small_keys:1,@logic/explosives"
+                      ",@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "South Boulder Maze",
                     "access_rules":[
-                      "fire_small_keys:3,lift1"
+                      ",lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
                     "access_rules":[
-                      "fire_small_keys:3,lift1"
+                      ",lift1"
                     ],
                     "item_count": 1
                   },
@@ -2118,53 +2118,53 @@
                   {
                     "name": "Map Chest",
                     "access_rules":[
-                      "fire_small_keys:4,lift1,bow",
-                      "fire_small_keys:5,lift1"
+                      ",lift1,bow",
+                      ",lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Above Boulder Maze",
                     "access_rules":[
-                      "fire_small_keys:5,lift1"
+                      ",lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
                     "access_rules":[
-                      "fire_small_keys:5,lift1,@logic/explosives"
+                      ",lift1,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
                     "access_rules":[
-                      "fire_small_keys:5,lift1,hookshot"
+                      ",lift1,hookshot"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Compass Chest",
                     "access_rules":[
-                      "fire_small_keys:6,lift1"
+                      ",lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
                     "access_rules":[
-                      "fire_small_keys:7,lift1,hammer,time",
-                      "fire_small_keys:7,lift1,hammer,@logic/explosives",
-                      "fire_small_keys:6,lift1,hammer,hoverboots"
+                      ",lift1,hammer,time",
+                      ",lift1,hammer,@logic/explosives",
+                      ",lift1,hammer,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Hammer Chest",
                     "access_rules":[
-                      "fire_small_keys:7,lift1,@logic/explosives",
-                      "fire_small_keys:6,lift1,@logic/explosives,hoverboots"
+                      ",lift1,@logic/explosives",
+                      ",lift1,@logic/explosives,hoverboots"
                     ],
                     "item_count": 1
                   },
@@ -2509,21 +2509,21 @@
                     "name": "Dragon Chest",
                     "access_rules":[
                       "lullaby,lift1",
-                      "water_small_keys:4,lullaby,time,bow"
+                      ",lullaby,time,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Basement",
                     "access_rules":[
-                      "water_small_keys:1,lullaby"
+                      ",lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Cracked Wall",
                     "access_rules":[
-                      "water_small_keys:1,lullaby,@logic/explosives"
+                      ",lullaby,@logic/explosives"
                     ],
                     "item_count": 1
                   },
@@ -2538,22 +2538,22 @@
                   {
                     "name": "Dark Link",
                     "access_rules":[
-                      "water_small_keys:4,lullaby"
+                      ",lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "River",
                     "access_rules":[
-                      "water_small_keys:4,lullaby,time,bow"
+                      ",lullaby,time,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Boss Key Chest",
                     "access_rules": [
-                      "water_small_keys:4,lullaby,longshot,hoverboots",
-                      "water_small_keys:4,lullaby,longshot,@logic/explosives,lift1"
+                      ",lullaby,longshot,hoverboots",
+                      ",lullaby,longshot,@logic/explosives,lift1"
                     ],
                     "item_count": 1
                   },

@@ -6,15 +6,13 @@
   -fixed colossus area logic
   -improved Forest Temple:
     -split up the chests
-    -tried to model the reqs including small keys
+    -tried to model the reqs
   -improved Fire Temple:
     -split up the chests
-    -tried to model the reqs including small keys
+    -tried to model the reqs
   -improved Water Temple:
     -split up the chests
-    -tried to model the reqs including small keys
-  -added small key reqs to Shadow Temple
-  -added small key reqs to Spirit Temple (though this might not be as useful with the age back and forth)
+    -tried to model the reqs
 1.0.0.4:
   -added small key counters
   -started adding open/closed forest/door logic
