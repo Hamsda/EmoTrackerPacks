@@ -1541,7 +1541,8 @@
                       {
                         "name": "Statue Ledge",
                         "access_rules": [
-                          "@Spirit Temple/Statue Hand,hookshot"
+                          "@Spirit Temple/Statue Hand,hookshot",
+                          "@Spirit Temple/Statue Hand,hoverboots"
                         ],
                         "item_count": 1
                       },
