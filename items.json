@@ -897,8 +897,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "deku_treasures",
-    "swap_actions": true,
-    "initial_quantity": 4,
     "max_quantity": 4
   },
   {
@@ -960,8 +958,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "dodongo_treasures",
-    "swap_actions": true,
-    "initial_quantity": 4,
     "max_quantity": 4
   },
   {
@@ -1023,8 +1019,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "jabu_treasures",
-    "swap_actions": true,
-    "initial_quantity": 1,
     "max_quantity": 1
   },
   {
@@ -1086,8 +1080,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "forest_treasures",
-    "swap_actions": true,
-    "initial_quantity": 5,
     "max_quantity": 5
   },
   {
@@ -1156,8 +1148,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "fire_treasures",
-    "swap_actions": true,
-    "initial_quantity": 3,
     "max_quantity": 3
   },
   {
@@ -1226,8 +1216,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "water_treasures",
-    "swap_actions": true,
-    "initial_quantity": 1,
     "max_quantity": 1
   },
   {
@@ -1296,8 +1284,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "spirit_treasures",
-    "swap_actions": true,
-    "initial_quantity": 11,
     "max_quantity": 11
   },
   {
@@ -1366,9 +1352,7 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "shadow_treasures",
-    "swap_actions": true,
-    "initial_quantity": 10,
-    "max_quantity": 10
+    "max_quantity": 9
   },
   {
     "name": "Shadow Small Keys",
@@ -1436,8 +1420,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "well_treasures",
-    "swap_actions": true,
-    "initial_quantity": 9,
     "max_quantity": 9
   },
   {
@@ -1458,8 +1440,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "ice_treasures",
-    "swap_actions": true,
-    "initial_quantity": 1,
     "max_quantity": 1
   },
   {
@@ -1473,8 +1453,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "gerudo_treasures",
-    "swap_actions": true,
-    "initial_quantity": 13,
     "max_quantity": 13
   },
   {
@@ -1495,8 +1473,6 @@
     "type": "consumable",
     "img": "images/chest_brown.png",
     "codes": "ganon_treasures",
-    "swap_actions": true,
-    "initial_quantity": 13,
     "max_quantity": 13
   },
   {
