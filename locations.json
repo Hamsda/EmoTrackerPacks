@@ -105,6 +105,10 @@
             ],
             "sections": [
               {
+                "name": "Free Items",
+                "hosted_item": "deku_treasures"
+              },
+              {
                 "name": "Map Chest",
                 "item_count": 1
               },
@@ -759,6 +763,10 @@
                     "hosted_item": "well_small_keys"
                   },
                   {
+                    "name": "Free Items",
+                    "hosted_item": "well_treasures"
+                  },
+                  {
                     "name": "Main Floor",
                     "clear_as_group": false,
                     "access_rules": [
@@ -973,6 +981,10 @@
                   "lift1"
                 ],
                 "sections": [
+                  {
+                    "name": "Free Items",
+                    "hosted_item": "dodongo_treasures"
+                  },
                   {
                     "name": "Map/Compass Chests",
                     "clear_as_group": false,
@@ -1315,6 +1327,10 @@
                     ],
                     "sections": [
                       {
+                        "name": "Free Items",
+                        "hosted_item": "jabu_treasures"
+                      },
+                      {
                         "name": "Boomerang Chest",
                         "item_count": 1
                       },
@@ -1445,6 +1461,10 @@
                       {
                         "name": "Small Keys",
                         "hosted_item": "spirit_small_keys"
+                      },
+                      {
+                        "name": "Free Items",
+                        "hosted_item": "spirit_treasures"
                       },
                       {
                         "name": "Lower Child",
@@ -1638,6 +1658,10 @@
                   {
                     "name": "Small Keys",
                     "hosted_item": "forest_small_keys"
+                  },
+                  {
+                    "name": "Free Items",
+                    "hosted_item": "forest_treasures"
                   },
                   {
                     "name": "First room",
@@ -1869,6 +1893,10 @@
                 "hosted_item": "shadow_small_keys"
               },
               {
+                "name": "Free Items",
+                "hosted_item": "shadow_treasures"
+              },
+              {
                 "name": "Map Chest",
                 "item_count": 1
               },
@@ -2073,6 +2101,10 @@
                   {
                     "name": "Small Keys",
                     "hosted_item": "fire_small_keys"
+                  },
+                  {
+                    "name": "Free Items",
+                    "hosted_item": "fire_treasures"
                   },
                   {
                     "name": "Near Boss Door",
@@ -2391,6 +2423,10 @@
                 "name": "Ice Cavern",
                 "sections": [
                   {
+                    "name": "Free Items",
+                    "hosted_item": "ice_treasures"
+                  },
+                  {
                     "name": "Map/Compass Chests",
                     "clear_as_group": false,
                     "access_rules": [
@@ -2488,6 +2524,10 @@
                   {
                     "name": "Small Keys",
                     "hosted_item": "water_small_keys"
+                  },
+                  {
+                    "name": "Free Items",
+                    "hosted_item": "water_treasures"
                   },
                   {
                     "name": "Map Chest",
@@ -2692,6 +2732,10 @@
                           {
                             "name": "Small Keys",
                             "hosted_item": "gerudo_small_keys"
+                          },
+                          {
+                            "name": "Free Items",
+                            "hosted_item": "gerudo_treasures"
                           },
                           {
                             "name": "Lobby",

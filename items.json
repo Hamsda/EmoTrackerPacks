@@ -895,7 +895,7 @@
   {
     "name": "Deku Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "deku_treasures",
     "swap_actions": true,
     "initial_quantity": 4,
@@ -958,7 +958,7 @@
   {
     "name": "Dodongo Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "dodongo_treasures",
     "swap_actions": true,
     "initial_quantity": 4,
@@ -1021,7 +1021,7 @@
   {
     "name": "Jabu Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "jabu_treasures",
     "swap_actions": true,
     "initial_quantity": 1,
@@ -1084,7 +1084,7 @@
   {
     "name": "Forest Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "forest_treasures",
     "swap_actions": true,
     "initial_quantity": 5,
@@ -1154,7 +1154,7 @@
   {
     "name": "Fire Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "fire_treasures",
     "swap_actions": true,
     "initial_quantity": 3,
@@ -1224,7 +1224,7 @@
   {
     "name": "Water Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "water_treasures",
     "swap_actions": true,
     "initial_quantity": 1,
@@ -1294,7 +1294,7 @@
   {
     "name": "Spirit Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "spirit_treasures",
     "swap_actions": true,
     "initial_quantity": 11,
@@ -1364,7 +1364,7 @@
   {
     "name": "Shadow Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "shadow_treasures",
     "swap_actions": true,
     "initial_quantity": 10,
@@ -1434,7 +1434,7 @@
   {
     "name": "Well Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "well_treasures",
     "swap_actions": true,
     "initial_quantity": 9,
@@ -1456,7 +1456,7 @@
   {
     "name": "Ice Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "ice_treasures",
     "swap_actions": true,
     "initial_quantity": 1,
@@ -1471,7 +1471,7 @@
   {
     "name": "Gerudo Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "gerudo_treasures",
     "swap_actions": true,
     "initial_quantity": 13,
@@ -1493,7 +1493,7 @@
   {
     "name": "Ganon's Tower Treasures",
     "type": "consumable",
-    "img": "images/chest.png",
+    "img": "images/chest_brown.png",
     "codes": "ganon_treasures",
     "swap_actions": true,
     "initial_quantity": 13,
