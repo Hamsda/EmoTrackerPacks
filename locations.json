@@ -1676,7 +1676,8 @@
                     "name": "Map Chest",
                     "access_rules":[
                       "time",
-                      "longshot,bow"
+                      "longshot,bow",
+                      "bow,ironboots,[longshot]"
                     ],
                     "item_count": 1
                   },
@@ -1700,14 +1701,14 @@
                   {
                     "name": "Block Room Eye",
                     "access_rules":[
-                      ",bow"
+                      "lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Boss Key Chest",
                     "access_rules":[
-                      ",bow,lift1"
+                      "bow,lift1"
                     ],
                     "item_count": 1
                   },
@@ -1715,36 +1716,36 @@
                     "name": "Floormaster",
                     "access_rules":[
                       "@Forest Temple/Boss Key Chest",
-                      ",hoverboots"
+                      "hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Red Poe",
                     "access_rules":[
-                      ",lift1,bow"
+                      "lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Bow Chest",
                     "access_rules":[
-                      ",lift1"
+                      "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Blue Poe",
                     "access_rules":[
-                      ",lift1,bow"
+                      "lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Checkerboard",
                     "access_rules":[
-                      ",lift1,bow",
-                      ",lift1,dinsfire,magic"
+                      "lift1,bow",
+                      "lift1,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
@@ -1922,7 +1923,7 @@
               {
                 "name": "Like-Like Room",
                 "access_rules": [
-                  ",hoverboots,@logic/explosives"
+                  "hoverboots,@logic/explosives"
                 ],
                 "clear_as_group": false,
                 "item_count": 2
@@ -2129,21 +2130,21 @@
                   {
                     "name": "South Lava Room",
                     "access_rules":[
-                      ",@logic/explosives"
+                      "@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "South Boulder Maze",
                     "access_rules":[
-                      ",lift1"
+                      "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
                     "access_rules":[
-                      ",lift1"
+                      "lift1"
                     ],
                     "item_count": 1
                   },
@@ -2151,53 +2152,53 @@
                   {
                     "name": "Map Chest",
                     "access_rules":[
-                      ",lift1,bow",
-                      ",lift1"
+                      "lift1,bow",
+                      "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Above Boulder Maze",
                     "access_rules":[
-                      ",lift1"
+                      "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
                     "access_rules":[
-                      ",lift1,@logic/explosives"
+                      "lift1,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
                     "access_rules":[
-                      ",lift1,hookshot"
+                      "lift1,hookshot"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Compass Chest",
                     "access_rules":[
-                      ",lift1"
+                      "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
                     "access_rules":[
-                      ",lift1,hammer,time",
-                      ",lift1,hammer,@logic/explosives",
-                      ",lift1,hammer,hoverboots"
+                      "lift1,hammer,time",
+                      "lift1,hammer,@logic/explosives",
+                      "lift1,hammer,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Hammer Chest",
                     "access_rules":[
-                      ",lift1,@logic/explosives",
-                      ",lift1,@logic/explosives,hoverboots"
+                      "lift1,@logic/explosives",
+                      "lift1,@logic/explosives,hoverboots"
                     ],
                     "item_count": 1
                   },
@@ -2550,21 +2551,21 @@
                     "name": "Dragon Chest",
                     "access_rules":[
                       "lullaby,lift1",
-                      ",lullaby,time,bow"
+                      "lullaby,time,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Basement",
                     "access_rules":[
-                      ",lullaby"
+                      "lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Cracked Wall",
                     "access_rules":[
-                      ",lullaby,@logic/explosives"
+                      "lullaby,@logic/explosives"
                     ],
                     "item_count": 1
                   },
@@ -2579,22 +2580,22 @@
                   {
                     "name": "Dark Link",
                     "access_rules":[
-                      ",lullaby"
+                      "lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "River",
                     "access_rules":[
-                      ",lullaby,time,bow"
+                      "lullaby,time,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Boss Key Chest",
                     "access_rules": [
-                      ",lullaby,longshot,hoverboots",
-                      ",lullaby,longshot,@logic/explosives,lift1"
+                      "lullaby,longshot,hoverboots",
+                      "lullaby,longshot,@logic/explosives,lift1"
                     ],
                     "item_count": 1
                   },
@@ -2683,7 +2684,7 @@
                             "name": "Open it",
                             "access_rules": [
                               "hoverboots",
-                              "longshot"
+                              "hookshot"
                             ],
                             "item_count": 1
                           }
