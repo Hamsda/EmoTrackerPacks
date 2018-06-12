@@ -710,50 +710,67 @@
   {
     "name": "Adult Trade",
     "type": "progressive",
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/egg.png",
-        "codes": "adultegg,adulttrade"
+        "img_mods": "@disabled",
+        "codes": "noadulttrade"
+      },
+      {
+        "img": "images/egg.png",
+        "codes": "adulttrade,adultegg",
+        "inherit_codes": false
       },
       {
         "img": "images/cucco.png",
-        "codes": "adultcucco,pocketcucco"
+        "codes": "adulttrade,adultcucco,pocketcucco",
+        "inherit_codes": false
       },
       {
         "img": "images/cojiro.png",
-        "codes": "cojiro"
+        "codes": "adulttrade,cojiro",
+        "inherit_codes": false
       },
       {
         "img": "images/mushroom.png",
-        "codes": "mushroom,oddmushroom"
+        "codes": "adulttrade,mushroom,oddmushroom",
+        "inherit_codes": false
       },
       {
         "img": "images/medicine.png",
-        "codes": "oddpotion,oddpoultice"
+        "codes": "adulttrade,oddpotion,oddpoultice",
+        "inherit_codes": false
       },
       {
         "img": "images/saw.png",
-        "codes": "saw,poachersaw"
+        "codes": "adulttrade,saw,poachersaw",
+        "inherit_codes": false
       },
       {
         "img": "images/broken_sword.png",
-        "codes": "brokensword"
+        "codes": "adulttrade,brokensword",
+        "inherit_codes": false
       },
       {
         "img": "images/perscription.png",
-        "codes": "perscription"
+        "codes": "adulttrade,prescription",
+        "inherit_codes": false
       },
       {
         "img": "images/frog.png",
-        "codes": "frog,eyeballfrog"
+        "codes": "adulttrade,frog,eyeballfrog,speedfrog",
+        "inherit_codes": false
       },
       {
         "img": "images/eyedrops.png",
-        "codes": "eyedrops,drops"
+        "codes": "adulttrade,eyedrops,drops",
+        "inherit_codes": false
       },
       {
         "img": "images/claim.png",
-        "codes": "claim,claimcheck"
+        "codes": "adulttrade,claim,claimcheck",
+        "inherit_codes": false
       }
     ]
   },

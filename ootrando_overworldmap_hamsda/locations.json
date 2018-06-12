@@ -395,7 +395,7 @@
                     ]
                   },
                   {
-                    "name": "Diving in the Lab",
+                    "name": "Lakeside Lab",
                     "sections": [
                       {
                         "name": "Dive down",
@@ -404,6 +404,13 @@
                           "hookshot,ironboots,[scale2]"
                         ],
                         "item_count": 1
+                      },
+                      {
+                        "name": "Trade",
+                        "access_rules": [
+                          "sword2,speedfrog"
+                        ],
+                        "hosted_item": "eyedrops"
                       }
                     ],
                     "map_locations": [
@@ -1157,7 +1164,7 @@
                     "sections": [
                       {
                         "name": "Get Mask",
-                        "access_rules":[
+                        "access_rules": [
                           "soldout"
                         ],
                         "hosted_item": "keaton"
@@ -1757,6 +1764,49 @@
         "color": "#18a50e",
         "children": [
           {
+            "name": "Lost Woods",
+            "children": [
+              {
+                "name": "Lost Brother",
+                "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "cojiro"
+                    ],
+                    "hosted_item": "mushroom"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2085,
+                    "y": 785
+                  }
+                ]
+              },
+              {
+                "name": "Kokiri Girl",
+                "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "oddpotion"
+                    ],
+                    "hosted_item": "saw"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2085,
+                    "y": 785
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Sacred Forest Meadow",
             "access_rules": [
               "saria",
@@ -1924,6 +1974,13 @@
                   {
                     "name": "Talk to her",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "pocketcucco"
+                    ],
+                    "hosted_item": "cojiro"
                   }
                 ],
                 "map_locations": [
@@ -1931,6 +1988,25 @@
                     "map": "adult",
                     "x": 1857,
                     "y": 431
+                  }
+                ]
+              },
+              {
+                "name": "Old Hag",
+                "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "mushroom"
+                    ],
+                    "hosted_item": "oddpotion"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1855,
+                    "y": 349
                   }
                 ]
               },
@@ -2163,6 +2239,20 @@
               {
                 "name": "Biggoron",
                 "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "brokensword"
+                    ],
+                    "hosted_item": "prescription"
+                  },
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "eyedrops"
+                    ],
+                    "hosted_item": "claimcheck"
+                  },
                   {
                     "name": "Help him",
                     "capture_item": true,
@@ -2509,15 +2599,22 @@
             "name": "Zoras Domain",
             "children": [
               {
-                "name": "King Zora Thawed",
+                "name": "King Zora",
+                "access_rules": [
+                  "[lullaby],bottle,wallet2",
+                  "[lullaby],bottle,@logic/ice cavern"
+                ],
                 "sections": [
                   {
                     "name": "Unfreeze him",
-                    "access_rules": [
-                      "[lullaby],bottle,wallet2",
-                      "[lullaby],bottle,@logic/ice cavern"
-                    ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "prescription"
+                    ],
+                    "hosted_item": "speedfrog"
                   }
                 ],
                 "map_locations": [
@@ -2785,6 +2882,25 @@
                         "map": "adult",
                         "x": 601,
                         "y": 581
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master Carpenter",
+                    "sections": [
+                      {
+                        "name": "Trade",
+                        "access_rules": [
+                          "saw"
+                        ],
+                        "hosted_item": "brokensword"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 638,
+                        "y": 547
                       }
                     ]
                   },
