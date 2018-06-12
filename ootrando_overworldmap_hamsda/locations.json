@@ -155,6 +155,13 @@
                   {
                     "name": "Play Sarias",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Sell Mask",
+                    "access_rules": [
+                      "skull"
+                    ],
+                    "hosted_item": "skullsold"
                   }
                 ],
                 "map_locations": [
@@ -462,6 +469,25 @@
                 ]
               },
               {
+                "name": "Running Man",
+                "access_rules": [
+                  "bunny,emerald,ruby,sapphire"
+                ],
+                "sections": [
+                  {
+                    "name": "Sell Mask",
+                    "hosted_item": "bunnysold"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1157,
+                    "y": 554
+                  }
+                ]
+              },
+              {
                 "name": "Lon Lon Ranch",
                 "color": "#09a09d",
                 "children": [
@@ -604,6 +630,32 @@
                     ]
                   },
                   {
+                    "name": "Guard",
+                    "sections": [
+                      {
+                        "name": "Letter",
+                        "access_rules": [
+                          "letter"
+                        ],
+                        "hosted_item": "lettershown"
+                      },
+                      {
+                        "name": "Keaton",
+                        "access_rules": [
+                          "keaton"
+                        ],
+                        "hosted_item": "keatonsold"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1803,
+                        "y": 312
+                      }
+                    ]
+                  },
+                  {
                     "name": "House of Skulltulas",
                     "sections": [
                       {
@@ -712,6 +764,25 @@
                         "map": "adult",
                         "x": 2066,
                         "y": 369
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Spooky Kid",
+                    "access_rules": [
+                      "spooky"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Sell Mask",
+                        "hosted_item": "spookysold"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1983,
+                        "y": 355
                       }
                     ]
                   },
@@ -1082,6 +1153,25 @@
                     ]
                   },
                   {
+                    "name": "Happy Mask Shop",
+                    "sections": [
+                      {
+                        "name": "Get Mask",
+                        "access_rules":[
+                          "soldout"
+                        ],
+                        "hosted_item": "keaton"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1464,
+                        "y": 292
+                      }
+                    ]
+                  },
+                  {
                     "name": "Bombchu Bowling",
                     "access_rules": [
                       "bombs"
@@ -1148,11 +1238,56 @@
                 "name": "Hyrule Castle",
                 "children": [
                   {
+                    "name": "Malon",
+                    "access_rules": [
+                      "nokidtrade"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Talk to her",
+                        "hosted_item": "childegg"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1439,
+                        "y": 246
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Talon",
+                    "access_rules": [
+                      "childegg"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Wake him",
+                        "hosted_item": "childcucco"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1479,
+                        "y": 176
+                      }
+                    ]
+                  },
+                  {
                     "name": "Visit Zelda",
+                    "access_rules": [
+                      "childcucco"
+                    ],
                     "sections": [
                       {
                         "name": "Song",
                         "item_count": 1
+                      },
+                      {
+                        "name": "Letter",
+                        "hosted_item": "letter"
                       }
                     ],
                     "map_locations": [
@@ -1674,7 +1809,7 @@
                   },
                   {
                     "name": "Map Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "time",
                       "hookshot,bow",
                       "bow,ironboots,[hookshot]"
@@ -1683,7 +1818,7 @@
                   },
                   {
                     "name": "Below Scarecrow",
-                    "access_rules":[
+                    "access_rules": [
                       "time",
                       "bow"
                     ],
@@ -1691,7 +1826,7 @@
                   },
                   {
                     "name": "Inside well",
-                    "access_rules":[
+                    "access_rules": [
                       "time",
                       "hookshot,bow",
                       "bow,ironboots,[hookshot]"
@@ -1700,21 +1835,21 @@
                   },
                   {
                     "name": "Block Room Eye",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Boss Key Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "bow,lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Floormaster",
-                    "access_rules":[
+                    "access_rules": [
                       "@Forest Temple/Boss Key Chest",
                       "hoverboots"
                     ],
@@ -1722,28 +1857,28 @@
                   },
                   {
                     "name": "Red Poe",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Bow Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Blue Poe",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Checkerboard",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,bow",
                       "lift1,dinsfire,magic"
                     ],
@@ -1751,7 +1886,7 @@
                   },
                   {
                     "name": "Basement",
-                    "access_rules":[
+                    "access_rules": [
                       "@Forest Temple/Checkerboard"
                     ],
                     "item_count": 1
@@ -2123,36 +2258,35 @@
                   },
                   {
                     "name": "North Lava Room",
-                    "access_rules":[
+                    "access_rules": [
                       ""
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "South Lava Room",
-                    "access_rules":[
+                    "access_rules": [
                       "@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "South Boulder Maze",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1"
                     ],
                     "item_count": 1
                   },
-
                   {
                     "name": "Map Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,bow",
                       "lift1"
                     ],
@@ -2160,35 +2294,35 @@
                   },
                   {
                     "name": "Above Boulder Maze",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,hookshot"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Compass Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,hammer,time",
                       "lift1,hammer,@logic/explosives",
                       "lift1,hammer,hoverboots"
@@ -2197,7 +2331,7 @@
                   },
                   {
                     "name": "Hammer Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "lift1,@logic/explosives",
                       "lift1,@logic/explosives,hoverboots"
                     ],
@@ -2542,7 +2676,7 @@
                   },
                   {
                     "name": "Torch Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby,bow",
                       "lullaby,dinsfire,magic"
                     ],
@@ -2550,7 +2684,7 @@
                   },
                   {
                     "name": "Dragon Chest",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby,lift1",
                       "lullaby,time,bow"
                     ],
@@ -2558,21 +2692,21 @@
                   },
                   {
                     "name": "Basement",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Cracked Wall",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Center Eye Switch",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby,bow,lift1,hoverboots",
                       "lullaby,bow,lift1,longshot"
                     ],
@@ -2580,14 +2714,14 @@
                   },
                   {
                     "name": "Dark Link",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "River",
-                    "access_rules":[
+                    "access_rules": [
                       "lullaby,time,bow"
                     ],
                     "item_count": 1

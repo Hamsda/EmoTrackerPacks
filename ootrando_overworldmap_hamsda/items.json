@@ -633,38 +633,77 @@
   {
     "name": "Child Trade",
     "type": "progressive",
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/egg.png",
-        "codes": "childegg,kidtrade"
+        "img_mods": "@disabled",
+        "codes": "nokidtrade"
+      },
+      {
+        "img": "images/egg.png",
+        "codes": "kidtrade,childegg",
+        "inherit_codes": false
       },
       {
         "img": "images/cucco.png",
-        "codes": "childcucco"
+        "codes": "kidtrade,childcucco",
+        "inherit_codes": false
       },
       {
         "img": "images/letter.png",
-        "codes": "letter"
+        "codes": "kidtrade,letter",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,lettershown",
+        "inherit_codes": false
       },
       {
         "img": "images/keaton.png",
-        "codes": "keaton,keatonmask"
+        "codes": "kidtrade,keaton,keatonmask",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,keatonsold",
+        "inherit_codes": false
       },
       {
         "img": "images/skull.png",
-        "codes": "skullmask,skull"
+        "codes": "kidtrade,skullmask,skull",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,skullsold",
+        "inherit_codes": false
       },
       {
         "img": "images/spooky.png",
-        "codes": "spooky,spookymask"
+        "codes": "kidtrade,spooky,spookymask",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,spookysold",
+        "inherit_codes": false
       },
       {
         "img": "images/bunny.png",
-        "codes": "bunny,bunnyhood"
+        "codes": "kidtrade,bunny,bunnyhood",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,bunnysold",
+        "inherit_codes": false
       },
       {
         "img": "images/truth.png",
-        "codes": "truth,maskoftruth"
+        "codes": "kidtrade,truth,maskoftruth",
+        "inherit_codes": false
       }
     ]
   },
