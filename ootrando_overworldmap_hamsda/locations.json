@@ -2573,8 +2573,8 @@
                   {
                     "name": "Castle Tower",
                     "access_rules": [
-                      "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,lens,redtunic",
-                      "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,redtunic"
+                      "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,[lens],[redtunic]",
+                      "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
                     ],
                     "item_count": 1
                   }
