@@ -1676,8 +1676,8 @@
                     "name": "Map Chest",
                     "access_rules":[
                       "time",
-                      "longshot,bow",
-                      "bow,ironboots,[longshot]"
+                      "hookshot,bow",
+                      "bow,ironboots,[hookshot]"
                     ],
                     "item_count": 1
                   },
@@ -1693,8 +1693,8 @@
                     "name": "Inside well",
                     "access_rules":[
                       "time",
-                      "longshot,bow",
-                      "bow,ironboots,[longshot]"
+                      "hookshot,bow",
+                      "bow,ironboots,[hookshot]"
                     ],
                     "item_count": 1
                   },
