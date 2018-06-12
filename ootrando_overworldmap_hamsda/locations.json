@@ -2003,7 +2003,8 @@
                 "name": "Link the Goron",
                 "access_rules": [
                   "lift1",
-                  "@logic/explosives"
+                  "@logic/explosives",
+                  "bow"
                 ],
                 "sections": [
                   {
