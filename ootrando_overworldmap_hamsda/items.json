@@ -911,39 +911,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "deku,emerald"
+        "codes": "deku,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "deku,ruby"
+        "codes": "deku,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "deku,sapphire"
+        "codes": "deku,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "deku,forestmed"
+        "codes": "deku,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "deku,firemed"
+        "codes": "deku,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "deku,watermed"
+        "codes": "deku,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "deku,spiritmed"
+        "codes": "deku,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "deku,shadowmed"
+        "codes": "deku,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "deku,lightmed"
+        "codes": "deku,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -972,39 +981,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "dodongo,dc,emerald"
+        "codes": "dodongo,dc,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "dodongo,dc,ruby"
+        "codes": "dodongo,dc,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "dodongo,dc,sapphire"
+        "codes": "dodongo,dc,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "dodongo,dc,forestmed"
+        "codes": "dodongo,dc,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "dodongo,dc,firemed"
+        "codes": "dodongo,dc,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "dodongo,dc,watermed"
+        "codes": "dodongo,dc,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "dodongo,dc,spiritmed"
+        "codes": "dodongo,dc,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "dodongo,dc,shadowmed"
+        "codes": "dodongo,dc,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "dodongo,dc,lightmed"
+        "codes": "dodongo,dc,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -1033,39 +1051,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "jabu,emerald"
+        "codes": "jabu,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "jabu,ruby"
+        "codes": "jabu,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "jabu,sapphire"
+        "codes": "jabu,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "jabu,forestmed"
+        "codes": "jabu,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "jabu,firemed"
+        "codes": "jabu,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "jabu,watermed"
+        "codes": "jabu,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "jabu,spiritmed"
+        "codes": "jabu,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "jabu,shadowmed"
+        "codes": "jabu,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "jabu,lightmed"
+        "codes": "jabu,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -1101,39 +1128,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "forest,emerald"
+        "codes": "forest,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "forest,ruby"
+        "codes": "forest,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "forest,sapphire"
+        "codes": "forest,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "forest,forestmed"
+        "codes": "forest,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "forest,firemed"
+        "codes": "forest,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "forest,watermed"
+        "codes": "forest,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "forest,spiritmed"
+        "codes": "forest,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "forest,shadowmed"
+        "codes": "forest,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "forest,lightmed"
+        "codes": "forest,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -1169,39 +1205,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "fire,emerald"
+        "codes": "fire,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "fire,ruby"
+        "codes": "fire,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "fire,sapphire"
+        "codes": "fire,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "fire,forestmed"
+        "codes": "fire,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "fire,firemed"
+        "codes": "fire,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "fire,watermed"
+        "codes": "fire,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "fire,spiritmed"
+        "codes": "fire,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "fire,shadowmed"
+        "codes": "fire,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "fire,lightmed"
+        "codes": "fire,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -1237,39 +1282,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "water,emerald"
+        "codes": "water,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "water,ruby"
+        "codes": "water,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "water,sapphire"
+        "codes": "water,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "water,forestmed"
+        "codes": "water,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "water,firemed"
+        "codes": "water,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "water,watermed"
+        "codes": "water,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "water,spiritmed"
+        "codes": "water,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "water,shadowmed"
+        "codes": "water,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "water,lightmed"
+        "codes": "water,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -1305,39 +1359,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "spirit,emerald"
+        "codes": "spirit,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "spirit,ruby"
+        "codes": "spirit,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "spirit,sapphire"
+        "codes": "spirit,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "spirit,forestmed"
+        "codes": "spirit,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "spirit,firemed"
+        "codes": "spirit,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "spirit,watermed"
+        "codes": "spirit,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "spirit,spiritmed"
+        "codes": "spirit,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "spirit,shadowmed"
+        "codes": "spirit,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "spirit,lightmed"
+        "codes": "spirit,lightmed",
+        "inherit_codes": false
       }
     ]
   },
@@ -1373,39 +1436,48 @@
       },
       {
         "img": "images/emerald.png",
-        "codes": "shadow,emerald"
+        "codes": "shadow,emerald",
+        "inherit_codes": false
       },
       {
         "img": "images/ruby.png",
-        "codes": "shadow,ruby"
+        "codes": "shadow,ruby",
+        "inherit_codes": false
       },
       {
         "img": "images/sapphire.png",
-        "codes": "shadow,sapphire"
+        "codes": "shadow,sapphire",
+        "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "shadow,forestmed"
+        "codes": "shadow,forestmed",
+        "inherit_codes": false
       },
       {
         "img": "images/firemedallion.png",
-        "codes": "shadow,firemed"
+        "codes": "shadow,firemed",
+        "inherit_codes": false
       },
       {
         "img": "images/watermedallion.png",
-        "codes": "shadow,watermed"
+        "codes": "shadow,watermed",
+        "inherit_codes": false
       },
       {
         "img": "images/spiritmedallion.png",
-        "codes": "shadow,spiritmed"
+        "codes": "shadow,spiritmed",
+        "inherit_codes": false
       },
       {
         "img": "images/shadowmedallion.png",
-        "codes": "shadow,shadowmed"
+        "codes": "shadow,shadowmed",
+        "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "shadow,lightmed"
+        "codes": "shadow,lightmed",
+        "inherit_codes": false
       }
     ]
   },

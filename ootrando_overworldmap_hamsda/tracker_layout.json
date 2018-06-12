@@ -85,6 +85,17 @@
           "deku",
           "dodongo",
           "jabu"
+        ],
+        [
+          "forest_label",
+          "fire_label",
+          "water_label",
+          "spirit_label",
+          "shadow_label",
+          "",
+          "deku_label",
+          "dodongo_label",
+          "jabu_label"
         ]
       ]
     },
@@ -129,7 +140,7 @@
             "bluetunic"
           ],
           [
-            "",
+            "gerudocard",
             "",
             "ruto",
             "bottle",
@@ -158,7 +169,7 @@
             "nocturne",
             "prelude",
             "",
-            "gerudocard",
+            "",
             ""
           ]
         ]
