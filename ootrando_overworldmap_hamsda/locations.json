@@ -972,30 +972,6 @@
                         "y": 90
                       }
                     ]
-                  },
-                  {
-                    "name": "Shop",
-                    "sections": [
-                      {
-                        "name": "Tunic",
-                        "access_rules": [
-                          "wallet1,@logic/explosives"
-                        ],
-                        "hosted_item": "redtunic"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1646,
-                        "y": 128
-                      },
-                      {
-                        "map": "adult",
-                        "x": 1646,
-                        "y": 128
-                      }
-                    ]
                   }
                 ]
               },
@@ -1405,25 +1381,6 @@
                         "map": "child",
                         "x": 2556,
                         "y": 429
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Shop",
-                    "sections": [
-                      {
-                        "name": "Tunic",
-                        "access_rules": [
-                          "wallet2"
-                        ],
-                        "hosted_item": "bluetunic"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 2619,
-                        "y": 499
                       }
                     ]
                   }
@@ -2228,6 +2185,25 @@
                     "map": "adult",
                     "x": 1689,
                     "y": 99
+                  }
+                ]
+              },
+              {
+                "name": "Shop",
+                "sections": [
+                  {
+                    "name": "Tunic",
+                    "access_rules": [
+                      "wallet1,@logic/explosives"
+                    ],
+                    "hosted_item": "redtunic"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1646,
+                    "y": 128
                   }
                 ]
               }
