@@ -94,6 +94,30 @@
                     "y": 902
                   }
                 ]
+              },
+              {
+                "name": "Storms Grotto",
+                "sections": [
+                  {
+                    "name": "Play Song of Storms",
+                    "access_rules": [
+                      "storm"
+                    ],
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2119,
+                    "y": 845
+                  },
+                  {
+                    "map": "adult",
+                    "x": 2119,
+                    "y": 845
+                  }
+                ]
               }
             ]
           },
@@ -209,6 +233,30 @@
                     "map": "adult",
                     "x": 2192,
                     "y": 724
+                  }
+                ]
+              },
+              {
+                "name": "Goron City Grotto",
+                "sections": [
+                  {
+                    "name": "Blast it",
+                    "access_rules": [
+                      "@logic/can blast"
+                    ],
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2149,
+                    "y": 776
+                  },
+                  {
+                    "map": "adult",
+                    "x": 2149,
+                    "y": 776
                   }
                 ]
               },
@@ -372,7 +420,7 @@
                 ]
               },
               {
-                "name": "Laky Hylia",
+                "name": "Lake Hylia",
                 "color": "#0936a0",
                 "children": [
                   {
@@ -398,10 +446,18 @@
                     "name": "Lakeside Lab",
                     "sections": [
                       {
+                        "name": "Tower HP",
+                        "access_rules": [
+                          "sword2,beans",
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 0
+                      },
+                      {
                         "name": "Dive down",
                         "access_rules": [
                           "scale2",
-                          "hookshot,ironboots,[scale2]"
+                          "sword2,hookshot,ironboots,[scale2]"
                         ],
                         "item_count": 1
                       },
@@ -539,11 +595,11 @@
                 ]
               },
               {
-                "name": "Southern Grotto",
+                "name": "Grotto Inside Fence",
                 "color": "#09a09d",
                 "sections": [
                   {
-                    "name": "Deku Scrub in Grotto",
+                    "name": "Deku Scrub",
                     "access_rules": [
                       "@logic/can blast"
                     ],
@@ -560,6 +616,82 @@
                     "map": "adult",
                     "x": 1141,
                     "y": 999
+                  }
+                ]
+              },
+              {
+                "name": "Grotto Outside Fence",
+                "color": "#09a09d",
+                "sections": [
+                  {
+                    "name": "Chest",
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1206,
+                    "y": 997
+                  },
+                  {
+                    "map": "adult",
+                    "x": 1206,
+                    "y": 997
+                  }
+                ]
+              },
+              {
+                "name": "Grotto near Market",
+                "color": "#09a09d",
+                "sections": [
+                  {
+                    "name": "Blast it",
+                    "access_rules": [
+                      "@logic/can blast"
+                    ],
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1372,
+                    "y": 440
+                  },
+                  {
+                    "map": "adult",
+                    "x": 1372,
+                    "y": 440
+                  }
+                ]
+              },
+              {
+                "name": "Tektite Grotto",
+                "color": "#09a09d",
+                "access_rules": [
+                  "@logic/can blast"
+                ],
+                "sections": [
+                  {
+                    "name": "Dive down",
+                    "access_rules": [
+                      "scale2",
+                      "sword2,ironboots"
+                    ],
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1152,
+                    "y": 481
+                  },
+                  {
+                    "map": "adult",
+                    "x": 1152,
+                    "y": 481
                   }
                 ]
               }
@@ -597,6 +729,52 @@
                     ]
                   },
                   {
+                    "name": "Back Grotto",
+                    "sections": [
+                      {
+                        "name": "Jump in",
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1894,
+                        "y": 326
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1894,
+                        "y": 326
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Impas Cow",
+                    "sections": [
+                      {
+                        "name": "HP in Cage",
+                        "access_rules": [
+                          "bombs",
+                          "sword2,[hookshot]"
+                        ],
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1801,
+                        "y": 429
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1801,
+                        "y": 429
+                      }
+                    ]
+                  },
+                  {
                     "name": "Anjus Chickens",
                     "sections": [
                       {
@@ -609,6 +787,41 @@
                         "map": "child",
                         "x": 1857,
                         "y": 431
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Windmill",
+                    "sections": [
+                      {
+                        "name": "HP",
+                        "access_rules": [
+                          "sword2,time",
+                          "sword2,time,[hookshot]",
+                          "boomerang"
+                        ],
+                        "item_count": 0
+                      },
+                      {
+                        "name": "Guru-Guru Song",
+                        "capture_item": true,
+                        "access_rules": [
+                          "sword2,ocarina",
+                          "{agony}"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1915,
+                        "y": 376
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1915,
+                        "y": 376
                       }
                     ]
                   },
@@ -953,6 +1166,28 @@
                     ]
                   },
                   {
+                    "name": "Spinning Pot",
+                    "access_rules": [
+                      "lullaby,bombs",
+                      "lullaby,lift1",
+                      "dinsfire,magic,bombs",
+                      "dinsfire,magic,lift1"
+                    ],
+                    "sections": [
+                      {
+                        "name": ":) HP",
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1648,
+                        "y": 128
+                      }
+                    ]
+                  },
+                  {
                     "name": "Darunias Joy",
                     "access_rules": [
                       "lullaby,saria",
@@ -1003,6 +1238,54 @@
                     ]
                   },
                   {
+                    "name": "Rock Circle Grotto",
+                    "sections": [
+                      {
+                        "name": "Play Song of Storms",
+                        "access_rules": [
+                          "storm"
+                        ],
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1705,
+                        "y": 162
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1705,
+                        "y": 162
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bombable Grotto",
+                    "sections": [
+                      {
+                        "name": "Blast it",
+                        "access_rules": [
+                          "@logic/can blast"
+                        ],
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1755,
+                        "y": 157
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1755,
+                        "y": 157
+                      }
+                    ]
+                  },
+                  {
                     "name": "Mountain Summit Fairy",
                     "access_rules": [
                       "lullaby,@logic/can blast"
@@ -1023,6 +1306,35 @@
                         "map": "adult",
                         "x": 1764,
                         "y": 66
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Death Mountain Crater",
+                "children": [
+                  {
+                    "name": "Bombable Grotto",
+                    "sections": [
+                      {
+                        "name": "Blast it",
+                        "access_rules": [
+                          "@logic/can blast"
+                        ],
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1798,
+                        "y": 42
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1798,
+                        "y": 42
                       }
                     ]
                   }
@@ -1310,10 +1622,6 @@
             "children": [
               {
                 "name": "Zoras River",
-                "access_rules": [
-                  "@logic/explosives",
-                  "scale1"
-                ],
                 "children": [
                   {
                     "name": "Frogs",
@@ -1321,14 +1629,16 @@
                       {
                         "name": "Frogs in the Rain",
                         "access_rules": [
-                          "storm"
+                          "@logic/explosives,storm",
+                          "scale1,storm"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Fly Catching",
                         "access_rules": [
-                          "lullaby,saria,epona,sun,time,storm",
+                          "@logic/explosives,lullaby,saria,epona,sun,time,storm",
+                          "scale1,lullaby,saria,epona,sun,time,storm",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -1340,6 +1650,84 @@
                         "map": "child",
                         "x": 2094,
                         "y": 481
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Plateau Grotto",
+                    "access_rules": [
+                      "@logic/explosives",
+                      "scale1",
+                      "sword2"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Jump in",
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2092,
+                        "y": 540
+                      },
+                      {
+                        "map": "adult",
+                        "x": 2092,
+                        "y": 540
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lower HP",
+                    "access_rules": [
+                      "@logic/explosives",
+                      "scale1",
+                      "sword2,hoverboots"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2037,
+                        "y": 474
+                      },
+                      {
+                        "map": "adult",
+                        "x": 2037,
+                        "y": 474
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Upper HP",
+                    "access_rules": [
+                      "@logic/explosives",
+                      "scale1",
+                      "sword2,hoverboots"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2347,
+                        "y": 446
+                      },
+                      {
+                        "map": "adult",
+                        "x": 2347,
+                        "y": 446
                       }
                     ]
                   }
@@ -1522,6 +1910,25 @@
                         "map": "adult",
                         "x": 276,
                         "y": 297
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Arch HP",
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "access_rules": [
+                          "requiem,beans,sword2"
+                        ],
+                        "item_count": 0
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 160,
+                        "y": 305
                       }
                     ]
                   },
@@ -1991,27 +2398,6 @@
                 ]
               },
               {
-                "name": "Guru-Guru",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "capture_item": true,
-                    "access_rules": [
-                      "ocarina",
-                      "{agony}"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1905,
-                    "y": 376
-                  }
-                ]
-              },
-              {
                 "name": "Sheik in Kakariko",
                 "sections": [
                   {
@@ -2043,6 +2429,10 @@
                   {
                     "name": "1st race",
                     "item_count": 1
+                  },
+                  {
+                    "name": "2nd race",
+                    "item_count": 0
                   }
                 ],
                 "map_locations": [
@@ -2050,6 +2440,26 @@
                     "map": "adult",
                     "x": 2016,
                     "y": 331
+                  }
+                ]
+              },
+              {
+                "name": "Box HP",
+                "access_rules": [
+                  "beans",
+                  "longshot"
+                ],
+                "sections": [
+                  {
+                    "name": "Get it",
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1982,
+                    "y": 335
                   }
                 ]
               }
@@ -2256,6 +2666,27 @@
           {
             "name": "Death Mountain Crater",
             "children": [
+              {
+                "name": "Volcano HP",
+                "access_rules": [
+                  "@Link the Goron,hookshot,beans",
+                  "bolero,beans",
+                  "hoverboots"
+                ],
+                "sections": [
+                  {
+                    "name": "Get it",
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1775,
+                    "y": 16
+                  }
+                ]
+              },
               {
                 "name": "Crater Fairy",
                 "access_rules": [
@@ -2634,6 +3065,25 @@
             ],
             "children": [
               {
+                "name": "Under Water HP",
+                "sections": [
+                  {
+                    "name": "Get it",
+                    "access_rules": [
+                      "ironboots"
+                    ],
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2519,
+                    "y": 319
+                  }
+                ]
+              },
+              {
                 "name": "Ice Cavern",
                 "sections": [
                   {
@@ -2641,12 +3091,25 @@
                     "hosted_item": "ice_treasures"
                   },
                   {
-                    "name": "Map/Compass Chests",
-                    "clear_as_group": false,
+                    "name": "Map Chests",
                     "access_rules": [
                       "@logic/ice cavern"
                     ],
-                    "item_count": 2
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Compass Chests",
+                    "access_rules": [
+                      "@logic/ice cavern"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Frozen HP",
+                    "access_rules": [
+                      "@logic/ice cavern"
+                    ],
+                    "item_count": 0
                   },
                   {
                     "name": "Ironboots Chest",
