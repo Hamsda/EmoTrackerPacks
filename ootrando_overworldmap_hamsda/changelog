@@ -8,6 +8,7 @@
   -changed shops with tunics only show on adult map
   -fixed Spirit Temple map chest and torch puzzle can be opened with fire (duh)
   -changed item counters to be able to include map/compass replacements if those are not enabled
+  -fixed pixel position of open door/forest to align
 1.0.0.6:
   -fixed Shadow Temple having 1 free item too much
   -changed free item counters to go upwards so the dungeon gets cleared if you have them all
