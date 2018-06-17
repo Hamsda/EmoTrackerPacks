@@ -211,7 +211,12 @@
   {
     "name": "Hookshot",
     "type": "progressive",
+    "allow_disabled":false,
     "stages": [
+      {
+        "img": "images/hookshotd.png",
+        "img_mods": "@disabled"
+      },
       {
         "img": "images/hookshot.png",
         "codes": "hookshot,hs"
