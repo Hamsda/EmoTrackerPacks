@@ -575,13 +575,13 @@
                   },
                   {
                     "name": "Backroom",
-                    "sections":[
+                    "sections": [
                       {
                         "name": "HP",
                         "item_count": 0
                       }
                     ],
-                    "map_locations":[
+                    "map_locations": [
                       {
                         "map": "child",
                         "x": 1218,
@@ -3388,7 +3388,7 @@
             "children": [
               {
                 "name": "Crate HP",
-                "sections":[
+                "sections": [
                   {
                     "name": "Get it",
                     "item_count": 0
@@ -3409,7 +3409,7 @@
               },
               {
                 "name": "Waterfall HP",
-                "sections":[
+                "sections": [
                   {
                     "name": "Get it",
                     "item_count": 0

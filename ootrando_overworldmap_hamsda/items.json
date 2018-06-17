@@ -211,7 +211,7 @@
   {
     "name": "Hookshot",
     "type": "progressive",
-    "allow_disabled":false,
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/hookshotd.png",
