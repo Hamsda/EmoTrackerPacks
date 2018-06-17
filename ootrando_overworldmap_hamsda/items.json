@@ -901,38 +901,8 @@
         "codes": "free"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "free,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "free,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "free,sapphire",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "free,forestmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/firemedallion.png",
-        "codes": "free,firemed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/watermedallion.png",
-        "codes": "free,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "free,spiritmed",
+        "img": "images/lightmedallion.png",
+        "codes": "free,lightmed",
         "inherit_codes": false
       },
       {
@@ -941,8 +911,38 @@
         "inherit_codes": false
       },
       {
-        "img": "images/lightmedallion.png",
-        "codes": "free,lightmed",
+        "img": "images/spiritmedallion.png",
+        "codes": "free,spiritmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/watermedallion.png",
+        "codes": "free,watermed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/firemedallion.png",
+        "codes": "free,firemed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "free,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sapphire.png",
+        "codes": "free,sapphire",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/ruby.png",
+        "codes": "free,ruby",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/emerald.png",
+        "codes": "free,emerald",
         "inherit_codes": false
       }
     ]
@@ -964,7 +964,6 @@
     "name": "Deku Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1034,7 +1033,6 @@
     "name": "Dodongo Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1104,7 +1102,6 @@
     "name": "Jabu Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1181,7 +1178,6 @@
     "name": "Forest Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1258,7 +1254,6 @@
     "name": "Fire Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1335,7 +1330,6 @@
     "name": "Water Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1412,7 +1406,6 @@
     "name": "Spirit Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
@@ -1489,7 +1482,6 @@
     "name": "Shadow Prize",
     "type": "progressive_toggle",
     "loop": true,
-    "swap_actions": true,
     "stages": [
       {
         "img": "images/unknown-small.png",
