@@ -4,6 +4,9 @@
   -changed hookshot/longshot images to be better distinguishable
   -changed the dungeon icons to Hylian Serif font with outline
   -changed actions for the medallions/stones, left click toggles (except for free) and right click progresses forward through the cycle
+  -more 2.0 prep
+  -fixed DC back requires explosives not blast (hammer won't work, bombchus can be used to sequence break)
+  -fixed letter behaviour for LLR and Saria in SFM
 1.0.0.7:
   -added labels below the medallions/stones
   -fixed two Forest Temple locations

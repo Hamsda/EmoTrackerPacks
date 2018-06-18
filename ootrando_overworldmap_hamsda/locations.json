@@ -156,7 +156,8 @@
                 "access_rules": [
                   "[sling],shield1"
                 ],
-                "hosted_item": "deku"
+                "hosted_item": "deku",
+                "item_count": 0
               }
             ],
             "map_locations": [
@@ -360,7 +361,7 @@
               {
                 "name": "Saria",
                 "access_rules": [
-                  "letter"
+                  "postzelda"
                 ],
                 "sections": [
                   {
@@ -560,7 +561,7 @@
                       {
                         "name": "Find them",
                         "access_rules": [
-                          "letter"
+                          "postzelda"
                         ],
                         "item_count": 1
                       }
@@ -595,7 +596,7 @@
                       {
                         "name": "Song",
                         "access_rules": [
-                          "letter,ocarina"
+                          "postzelda,ocarina"
                         ],
                         "item_count": 1
                       }
@@ -679,6 +680,31 @@
                     "map": "adult",
                     "x": 1372,
                     "y": 440
+                  }
+                ]
+              },
+              {
+                "name": "SE Grotto",
+                "color": "#09a09d",
+                "sections": [
+                  {
+                    "name": "Blast it",
+                    "access_rules": [
+                      "@logic/can blast"
+                    ],
+                    "item_count": 0
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1427,
+                    "y": 925
+                  },
+                  {
+                    "map": "adult",
+                    "x": 1427,
+                    "y": 925
                   }
                 ]
               }
@@ -1286,30 +1312,6 @@
                     ]
                   },
                   {
-                    "name": "Bombable Grotto",
-                    "sections": [
-                      {
-                        "name": "Blast it",
-                        "access_rules": [
-                          "@logic/can blast"
-                        ],
-                        "item_count": 0
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1755,
-                        "y": 157
-                      },
-                      {
-                        "map": "adult",
-                        "x": 1755,
-                        "y": 157
-                      }
-                    ]
-                  },
-                  {
                     "name": "Mountain Summit Fairy",
                     "access_rules": [
                       "lullaby,@logic/can blast"
@@ -1417,7 +1419,7 @@
                   {
                     "name": "End of Bridge",
                     "access_rules": [
-                      "@Dodongos Cavern/Bomb Bag Chest,@logic/can blast"
+                      "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
                     ],
                     "item_count": 1
                   },
@@ -1425,7 +1427,7 @@
                     "name": "Above Boss",
                     "capture_item": true,
                     "access_rules": [
-                      "@Dodongos Cavern/Bomb Bag Chest,@logic/can blast",
+                      "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives",
                       "{agony}"
                     ],
                     "item_count": 1
@@ -1435,7 +1437,8 @@
                     "access_rules": [
                       "@Dodongos Cavern/Above Boss"
                     ],
-                    "hosted_item": "dodongo"
+                    "hosted_item": "dodongo",
+                    "item_count": 0
                   }
                 ],
                 "map_locations": [
@@ -1879,7 +1882,8 @@
                         "access_rules": [
                           "boomerang"
                         ],
-                        "hosted_item": "jabu"
+                        "hosted_item": "jabu",
+                        "item_count": 0
                       }
                     ],
                     "map_locations": [
@@ -2142,7 +2146,8 @@
                         "access_rules": [
                           "@Spirit Temple/Topmost Sun"
                         ],
-                        "hosted_item": "spirit"
+                        "hosted_item": "spirit",
+                        "item_count": 0
                       }
                     ],
                     "map_locations": [
@@ -2359,7 +2364,8 @@
                     "access_rules": [
                       "@Forest Temple/Basement"
                     ],
-                    "hosted_item": "forest"
+                    "hosted_item": "forest",
+                    "item_count": 0
                   }
                 ],
                 "map_locations": [
@@ -2606,7 +2612,8 @@
                   "@Shadow Temple/After Boat,bow",
                   "@Shadow Temple/After Boat,longshot"
                 ],
-                "hosted_item": "shadow"
+                "hosted_item": "shadow",
+                "item_count": 0
               }
             ],
             "map_locations": [
@@ -2888,7 +2895,8 @@
                     "access_rules": [
                       "hammer"
                     ],
-                    "hosted_item": "fire"
+                    "hosted_item": "fire",
+                    "item_count": 0
                   }
                 ],
                 "map_locations": [
@@ -3364,7 +3372,8 @@
                     "access_rules": [
                       "longshot"
                     ],
-                    "hosted_item": "water"
+                    "hosted_item": "water",
+                    "item_count": 0
                   }
                 ],
                 "map_locations": [
@@ -3397,11 +3406,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 654,
-                    "y": 633
-                  },
-                  {
-                    "map": "adult",
                     "x": 654,
                     "y": 633
                   }
