@@ -1196,15 +1196,17 @@
                   },
                   {
                     "name": "Spinning Pot",
-                    "access_rules": [
-                      "lullaby,bombs",
-                      "lullaby,lift1",
-                      "dinsfire,magic,bombs",
-                      "dinsfire,magic,lift1"
-                    ],
                     "sections": [
                       {
                         "name": ":) HP",
+                        "access_rules": [
+                          "lullaby,bombs",
+                          "lullaby,lift1",
+                          "dinsfire,magic,bombs",
+                          "dinsfire,magic,lift1",
+                          "{agony}"
+                        ],
+                        "capture_item": true,
                         "item_count": 0
                       }
                     ],
@@ -1968,8 +1970,10 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "requiem,beans,sword2"
+                          "requiem,beans,sword2",
+                          "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 0
                       }
                     ],
@@ -2052,8 +2056,10 @@
                         "name": "Southern Hand",
                         "access_rules": [
                           "@Spirit Temple/Lower Child,@logic/explosives",
-                          "@Spirit Temple/Northern Hand,longshot"
+                          "@Spirit Temple/Northern Hand,longshot",
+                          "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -2123,8 +2129,10 @@
                       {
                         "name": "Northern Hand",
                         "access_rules": [
-                          "@Spirit Temple/Mirror Room,@logic/explosives"
+                          "@Spirit Temple/Mirror Room,@logic/explosives",
+                          "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -2319,8 +2327,10 @@
                     "name": "Floormaster",
                     "access_rules": [
                       "@Forest Temple/Boss Key Chest",
-                      "hoverboots"
+                      "hoverboots",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -2599,12 +2609,21 @@
                 "item_count": 2
               },
               {
-                "name": "After Boat",
+                "name": "Boss Key Room",
                 "access_rules": [
                   "@Shadow Temple/After Wind Room,lullaby"
                 ],
                 "clear_as_group": false,
-                "item_count": 3
+                "item_count": 2
+              },
+              {
+                "name": "Floormaster",
+                "access_rules": [
+                  "@Shadow Temple/After Wind Room,lullaby",
+                  "{agony}"
+                ],
+                "capture_item": true,
+                "item_count": 1
               },
               {
                 "name": "Bongo Bongo",
@@ -2720,14 +2739,16 @@
             "children": [
               {
                 "name": "Volcano HP",
-                "access_rules": [
-                  "@Link the Goron,hookshot,beans",
-                  "bolero,beans",
-                  "hoverboots"
-                ],
                 "sections": [
                   {
                     "name": "Get it",
+                    "access_rules": [
+                      "@Link the Goron,hookshot,beans",
+                      "bolero,beans",
+                      "hoverboots",
+                      "{agony}"
+                    ],
+                    "capture_item": true,
                     "item_count": 0
                   }
                 ],
@@ -2862,8 +2883,10 @@
                   {
                     "name": "Scarecrow",
                     "access_rules": [
-                      "lift1,hookshot"
+                      "lift1,hookshot",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -2886,8 +2909,10 @@
                     "name": "Hammer Chest",
                     "access_rules": [
                       "lift1,@logic/explosives",
-                      "lift1,@logic/explosives,hoverboots"
+                      "lift1,@logic/explosives,hoverboots",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -3123,8 +3148,10 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "ironboots"
+                      "ironboots",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 0
                   }
                 ],
@@ -3355,16 +3382,20 @@
                   {
                     "name": "River",
                     "access_rules": [
-                      "lullaby,time,bow"
+                      "lullaby,time,bow",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Boss Key Chest",
                     "access_rules": [
                       "lullaby,longshot,hoverboots",
-                      "lullaby,longshot,@logic/explosives,lift1"
+                      "lullaby,longshot,@logic/explosives,lift1",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -3623,8 +3654,10 @@
                             "name": "Under Water",
                             "access_rules": [
                               "hookshot,bow,[hammer],time,ironboots,[bluetunic]",
-                              "@logic/explosives,hookshot,time,ironboots,[bluetunic]"
+                              "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
+                              "{agony}"
                             ],
+                            "capture_item": true,
                             "item_count": 1
                           },
                           {
