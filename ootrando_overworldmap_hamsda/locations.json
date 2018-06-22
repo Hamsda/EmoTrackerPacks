@@ -103,7 +103,7 @@
                     "access_rules": [
                       "storm"
                     ],
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -157,7 +157,7 @@
                   "[sling],shield1"
                 ],
                 "hosted_item": "deku",
-                "item_count": 0
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -245,7 +245,7 @@
                     "access_rules": [
                       "@logic/can blast"
                     ],
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -452,7 +452,7 @@
                           "sword2,beans",
                           "sword2,hookshot"
                         ],
-                        "item_count": 0
+                        "item_count": 1
                       },
                       {
                         "name": "Dive down",
@@ -579,7 +579,7 @@
                     "sections": [
                       {
                         "name": "HP",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -642,7 +642,7 @@
                 "sections": [
                   {
                     "name": "Chest",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -667,7 +667,7 @@
                     "access_rules": [
                       "@logic/can blast"
                     ],
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -692,7 +692,7 @@
                     "access_rules": [
                       "@logic/can blast"
                     ],
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -746,7 +746,7 @@
                     "sections": [
                       {
                         "name": "Jump in",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -771,7 +771,7 @@
                           "bombs",
                           "sword2,[hookshot]"
                         ],
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -813,7 +813,7 @@
                           "sword2,time,[hookshot]",
                           "boomerang"
                         ],
-                        "item_count": 0
+                        "item_count": 1
                       },
                       {
                         "name": "Guru-Guru Song",
@@ -958,7 +958,7 @@
                     "sections": [
                       {
                         "name": "Digging Tour",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1207,7 +1207,7 @@
                           "{agony}"
                         ],
                         "capture_item": true,
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1249,7 +1249,7 @@
                     "sections": [
                       {
                         "name": "HP",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1297,7 +1297,7 @@
                         "access_rules": [
                           "storm"
                         ],
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1350,7 +1350,7 @@
                         "access_rules": [
                           "@logic/can blast"
                         ],
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1371,7 +1371,7 @@
                     "sections": [
                       {
                         "name": "Get it",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1440,7 +1440,7 @@
                       "@Dodongos Cavern/Above Boss"
                     ],
                     "hosted_item": "dodongo",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -1713,7 +1713,7 @@
                     "sections": [
                       {
                         "name": "Jump in",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1739,7 +1739,7 @@
                     "sections": [
                       {
                         "name": "Get it",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1765,7 +1765,7 @@
                     "sections": [
                       {
                         "name": "Get it",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1885,7 +1885,7 @@
                           "boomerang"
                         ],
                         "hosted_item": "jabu",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1974,7 +1974,7 @@
                           "{agony}"
                         ],
                         "capture_item": true,
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -2155,7 +2155,7 @@
                           "@Spirit Temple/Topmost Sun,hookshot"
                         ],
                         "hosted_item": "spirit",
-                        "item_count": 0
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -2375,7 +2375,7 @@
                       "@Forest Temple/Basement"
                     ],
                     "hosted_item": "forest",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -2493,7 +2493,7 @@
                   },
                   {
                     "name": "2nd race",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -2513,7 +2513,7 @@
                 "sections": [
                   {
                     "name": "Get it",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -2632,7 +2632,7 @@
                   "@Shadow Temple/After Boat,longshot"
                 ],
                 "hosted_item": "shadow",
-                "item_count": 0
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -2749,7 +2749,7 @@
                       "{agony}"
                     ],
                     "capture_item": true,
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -2921,7 +2921,7 @@
                       "hammer"
                     ],
                     "hosted_item": "fire",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -3152,7 +3152,7 @@
                       "{agony}"
                     ],
                     "capture_item": true,
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -3168,7 +3168,7 @@
                 "sections": [
                   {
                     "name": "Get it",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -3205,7 +3205,7 @@
                     "access_rules": [
                       "@logic/ice cavern"
                     ],
-                    "item_count": 0
+                    "item_count": 1
                   },
                   {
                     "name": "Ironboots Chest",
@@ -3252,7 +3252,7 @@
                   "scale2",
                   "ironboots"
                 ],
-                "item_count": 0
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3404,7 +3404,7 @@
                       "longshot"
                     ],
                     "hosted_item": "water",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -3431,7 +3431,7 @@
                 "sections": [
                   {
                     "name": "Get it",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -3447,7 +3447,7 @@
                 "sections": [
                   {
                     "name": "Get it",
-                    "item_count": 0
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
