@@ -5,6 +5,7 @@
 - fixed Ice Cavern HP also random resulting in one more item there
 - fixed DMC Volcano HP requires bolero for child to plant bean and mark hoverboots as sequence break
 - fixed Bongo Bongo access after renaming
+- changed Shadow medallion and Spirit medallion switched for all prizes so they match the order of the altar in ToT
 # 2.0.0.0
 - added a few more capture locations
 - fixed Twinrova requires hookshot
