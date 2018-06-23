@@ -1476,7 +1476,7 @@
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "shadow_small_keys",
-    "max_quantity": 4
+    "max_quantity": 5
   },
   {
     "name": "Shadow Prize",
@@ -1552,7 +1552,7 @@
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "well_small_keys",
-    "max_quantity": 2
+    "max_quantity": 3
   },
   {
     "name": "Ice Label",
@@ -1585,7 +1585,7 @@
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "gerudo_small_keys",
-    "max_quantity": 8
+    "max_quantity": 9
   },
   {
     "name": "Ganon's Tower Label",

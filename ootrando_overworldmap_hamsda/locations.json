@@ -129,7 +129,7 @@
             ],
             "sections": [
               {
-                "name": "4 (+2) Items",
+                "name": "5 (+2) Items",
                 "hosted_item": "deku_treasures"
               },
               {
@@ -1095,6 +1095,10 @@
                     "item_count": 6
                   },
                   {
+                    "name": "Coffin Key",
+                    "item_count": 1
+                  },
+                  {
                     "name": "Bombable",
                     "clear_as_group": false,
                     "access_rules": [
@@ -1397,13 +1401,16 @@
                 ],
                 "sections": [
                   {
-                    "name": "4 (+2) Items",
+                    "name": "5 (+2) Items",
                     "hosted_item": "dodongo_treasures"
                   },
                   {
-                    "name": "Map/Compass Chests",
-                    "clear_as_group": false,
-                    "item_count": 2
+                    "name": "Map Chest",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Compass Chest",
+                    "item_count": 1
                   },
                   {
                     "name": "Small Chest Upstairs",
@@ -1864,7 +1871,7 @@
                     ],
                     "sections": [
                       {
-                        "name": "1 (+2) Item",
+                        "name": "2 (+2) Item",
                         "hosted_item": "jabu_treasures"
                       },
                       {
@@ -2022,7 +2029,7 @@
                         "hosted_item": "spirit_small_keys"
                       },
                       {
-                        "name": "11 (+2) Items",
+                        "name": "12 (+2) Items",
                         "hosted_item": "spirit_treasures"
                       },
                       {
@@ -2272,7 +2279,7 @@
                     "hosted_item": "forest_small_keys"
                   },
                   {
-                    "name": "5 (+2) Items",
+                    "name": "6 (+2) Items",
                     "hosted_item": "forest_treasures"
                   },
                   {
@@ -2538,7 +2545,7 @@
                 "hosted_item": "shadow_small_keys"
               },
               {
-                "name": "9 (+2) Items",
+                "name": "10 (+2) Items",
                 "hosted_item": "shadow_treasures"
               },
               {
@@ -2594,9 +2601,16 @@
                 "item_count": 1
               },
               {
-                "name": "Wind Hint Room",
+                "name": "Skull Pot Key",
                 "access_rules": [
                   "@Shadow Temple/Invisible Spikes,hookshot"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Wind Hint Room",
+                "access_rules": [
+                  "@Shadow Temple/Skull Pot Key"
                 ],
                 "item_count": 1
               },
@@ -2815,7 +2829,7 @@
                     "hosted_item": "fire_small_keys"
                   },
                   {
-                    "name": "3 (+2) Items",
+                    "name": "4 (+2) Items",
                     "hosted_item": "fire_treasures"
                   },
                   {
@@ -3323,7 +3337,7 @@
                     "hosted_item": "water_small_keys"
                   },
                   {
-                    "name": "1 (+2) Items",
+                    "name": "2 (+2) Items",
                     "hosted_item": "water_treasures"
                   },
                   {
@@ -3648,7 +3662,7 @@
                               "hookshot,bow,[hammer],time",
                               "@logic/explosives,time"
                             ],
-                            "item_count": 2
+                            "item_count": 3
                           },
                           {
                             "name": "Under Water",
