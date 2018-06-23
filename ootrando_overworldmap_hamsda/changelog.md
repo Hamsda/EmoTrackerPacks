@@ -1,13 +1,13 @@
-2.0.0.1:
+# 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
-2.0.0.0:
+# 2.0.0.0
 - added a few more capture locations
 - fixed Twinrova requires hookshot
 - added OoTR 2.0 locations
 - added freestanding keys in BotW, GTG, Shadow
 - updated item counts to include boss HCs
 - split up BotW to better reflect location requirements
-1.0.0.8:
+# 1.0.0.8
 - preparation for 2.0 grottos and hps
 - added more hps for 2.0 prep
 - changed hookshot/longshot images to be better distinguishable
@@ -16,7 +16,7 @@
 - more 2.0 prep
 - fixed DC back requires explosives not blast (hammer won't work, bombchus can be used to sequence break)
 - fixed letter behaviour for LLR and Saria in SFM
-1.0.0.7:
+# 1.0.0.7
 - added labels below the medallions/stones
 - fixed two Forest Temple locations
 - added Link the Goron can be stopped with bow
@@ -27,13 +27,13 @@
 - fixed Spirit Temple map chest and torch puzzle can be opened with fire (duh)
 - changed item counters to be able to include map/compass replacements if those are not enabled
 - fixed pixel position of open door/forest to align
-1.0.0.6:
+# 1.0.0.6
 - fixed Shadow Temple having 1 free item too much
 - changed free item counters to go upwards so the dungeon gets cleared if you have them all
 - fixed Statue Ledge in Spirit Temple reachable w/ hoverboots and w/o hookshot
 - fixed rooftop chest in gerudo fortress reachable with hookshot (and scarecrow)
 - fixed a few Forest Temple locations
-1.0.0.5:
+# 1.0.0.5
 - fixed Adult Shooting Gallery showing without bow
 - added Dampe back in, he got lost in the reorganization, oops
 - fixed Bombchu Bowling has 2 prizes
@@ -49,7 +49,7 @@
   - split up the chests
   - tried to model the reqs
 - added the "free items" in as a counter for each dungeon
-1.0.0.4:
+# 1.0.0.4
 - added small key counters
 - started adding open/closed forest/door logic
 - added rainbow bridge requirements and a toggle for it
@@ -60,7 +60,7 @@
 - fixed tracker capture layout
 - added separate maps for child and adult to prep for reorganization
 - reorganized the internal structure of the data heavily, so I can add new stuff more easily
-1.0.0.3:
+# 1.0.0.3
 - fixed Zoras Domain/Fountain logic interaction between child and adult
 - fixed Zoras Fountain Fairy can't be opened with hammer
 - fixed Haunted Wasteland Central Structure capture for Stone of Agony not showing
@@ -77,14 +77,14 @@
   - split up the items
   - added reqs to each of the outer chests
   - marked hammer as optional for the pillar room (can be easily skipped with a damage boost)
-1.0.0.2:
+# 1.0.0.2
 - added capture feature to Sheik at Colossus and Sheik in Ice Cavern
 - changed Man on Rooftop so Hookshot is skipable (with a pretty simple sidehop)
 - fixed Redead Grave not showing if Sun Song location has a checkmark
 - improved Deku:
   - split up the items
   - 2 chests in Slingshot room require Deku Shield
-1.0.0.1:
+# 1.0.0.1
 - added colors to all locations
 - added capture support to locations that gossip stones hint at when you have the Stone of Agony
 - updated image pack from JRJathome
