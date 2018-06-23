@@ -1087,24 +1087,58 @@
                     "hosted_item": "well_treasures"
                   },
                   {
-                    "name": "Main Floor",
-                    "clear_as_group": false,
+                    "name": "Front Left Hidden",
                     "access_rules": [
                       "[lens],[magic]"
                     ],
-                    "item_count": 6
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Right Hidden",
+                    "access_rules": [
+                      "[lens],[magic]"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Center Big Chest",
+                    "access_rules": [
+                      "[lens],[magic]"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Center Small Chest",
+                    "access_rules": [
+                      "[lens],[magic]"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Locked Pits",
+                    "clear_as_group":false,
+                    "access_rules": [
+                      "[lens],[magic]"
+                    ],
+                    "item_count": 2
                   },
                   {
                     "name": "Coffin Key",
                     "item_count": 1
                   },
                   {
-                    "name": "Bombable",
-                    "clear_as_group": false,
+                    "name": "Front Bombable",
                     "access_rules": [
                       "@logic/explosives"
                     ],
-                    "item_count": 2
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Back Bombable",
+                    "access_rules": [
+                      "@logic/explosives"
+                    ],
+                    "item_count": 1
                   },
                   {
                     "name": "Basement",
@@ -1115,12 +1149,32 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Lowered Water",
-                    "clear_as_group": false,
+                    "name": "Underwater Front",
                     "access_rules": [
                       "lullaby"
                     ],
-                    "item_count": 4
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Underwater Left",
+                    "access_rules": [
+                      "lullaby"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Deadhand",
+                    "access_rules": [
+                      "lullaby,[sword1]"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Invisible Chest",
+                    "access_rules": [
+                      "lullaby,[lens],[magic]"
+                    ],
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
