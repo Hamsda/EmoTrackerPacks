@@ -1966,6 +1966,48 @@
             "color": "#a09509",
             "children": [
               {
+                "name": "Gerudo Valley",
+                "children": [
+                  {
+                    "name": "Crate HP",
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 654,
+                        "y": 633
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Waterfall HP",
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 701,
+                        "y": 520
+                      },
+                      {
+                        "map": "adult",
+                        "x": 701,
+                        "y": 520
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
                 "name": "Haunted Wasteland",
                 "children": [
                   {
@@ -3494,43 +3536,6 @@
           {
             "name": "Gerudo Valley",
             "children": [
-              {
-                "name": "Crate HP",
-                "sections": [
-                  {
-                    "name": "Get it",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 654,
-                    "y": 633
-                  }
-                ]
-              },
-              {
-                "name": "Waterfall HP",
-                "sections": [
-                  {
-                    "name": "Get it",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 701,
-                    "y": 520
-                  },
-                  {
-                    "map": "adult",
-                    "x": 701,
-                    "y": 520
-                  }
-                ]
-              },
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
