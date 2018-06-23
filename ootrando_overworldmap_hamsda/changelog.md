@@ -1,7 +1,7 @@
 # 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
 - fixed Windmill HP can be reached as adult by clever jumping
-- fixed treasure counts for to match the item counts for dungeons
+- fixed treasure counts for items to match the counts for dungeons
 - fixed Ice Cavern HP also random resulting in one more item there
 - fixed DMC Volcano HP requires bolero for child to plant bean and mark hoverboots as sequence break
 # 2.0.0.0
