@@ -809,8 +809,7 @@
                       {
                         "name": "HP",
                         "access_rules": [
-                          "sword2,time",
-                          "sword2,time,[hookshot]",
+                          "sword2,[time]",
                           "boomerang"
                         ],
                         "item_count": 1

@@ -1,5 +1,6 @@
 # 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
+- fixed Windmill HP can be reached as adult by clever jumping
 # 2.0.0.0
 - added a few more capture locations
 - fixed Twinrova requires hookshot
