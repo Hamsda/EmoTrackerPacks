@@ -311,11 +311,11 @@
                   },
                   {
                     "name": "Mask of Truth",
-                    "capture_item": true,
                     "access_rules": [
                       "maskoftruth",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -488,11 +488,11 @@
                     "sections": [
                       {
                         "name": "Bite pls",
-                        "capture_item": true,
                         "access_rules": [
                           "sword1",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -816,11 +816,11 @@
                       },
                       {
                         "name": "Guru-Guru Song",
-                        "capture_item": true,
                         "access_rules": [
                           "sword2,ocarina",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -899,38 +899,38 @@
                       },
                       {
                         "name": "20 Skulltulas",
-                        "capture_item": true,
                         "access_rules": [
                           "skulltula:20",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
                         "name": "30 Skulltulas",
-                        "capture_item": true,
                         "access_rules": [
                           "skulltula:30",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
                         "name": "40 Skulltulas",
-                        "capture_item": true,
                         "access_rules": [
                           "skulltula:40",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
                         "name": "50 Skulltulas",
-                        "capture_item": true,
                         "access_rules": [
                           "skulltula:50",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -993,12 +993,12 @@
                     "name": "Redead Grave",
                     "sections": [
                       {
-                        "name": "Bring light",
-                        "capture_item": true,
+                        "name": "Play Suns Song",
                         "access_rules": [
                           "sun",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -1039,20 +1039,20 @@
                     "sections": [
                       {
                         "name": "Song",
-                        "capture_item": true,
                         "access_rules": [
                           "lullaby",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
                         "name": "Torches",
-                        "capture_item": true,
                         "access_rules": [
                           "lullaby,@logic/has fire",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -1115,7 +1115,7 @@
                   },
                   {
                     "name": "Locked Pits",
-                    "clear_as_group":false,
+                    "clear_as_group": false,
                     "access_rules": [
                       "[lens],[magic]"
                     ],
@@ -1210,12 +1210,12 @@
                       },
                       {
                         "name": "Left",
-                        "capture_item": true,
                         "access_rules": [
                           "sword2,lift2",
                           "sword2,hammer",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -1487,11 +1487,11 @@
                   },
                   {
                     "name": "Above Boss",
-                    "capture_item": true,
                     "access_rules": [
                       "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -1601,11 +1601,11 @@
                     "sections": [
                       {
                         "name": "Cheater",
-                        "capture_item": true,
                         "access_rules": [
                           "[lens],[magic]",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -2014,13 +2014,13 @@
                     "sections": [
                       {
                         "name": "Light the torches",
-                        "capture_item": true,
                         "access_rules": [
                           "sword2,epona,card,hoverboots,@logic/has fire",
                           "sword2,longshot,card,@logic/has fire",
                           "requiem,[card],[longshot],@logic/has fire",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -2092,11 +2092,11 @@
                     "sections": [
                       {
                         "name": "Song",
-                        "capture_item": true,
                         "access_rules": [
                           "@logic/colossus",
                           "{agony}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -2343,14 +2343,14 @@
             "children": [
               {
                 "name": "Sheik in Meadow",
-                "access_rules": [
-                  "saria",
-                  "minuet",
-                  "{agony}"
-                ],
                 "sections": [
                   {
                     "name": "Song",
+                    "access_rules": [
+                      "saria",
+                      "minuet",
+                      "{agony}"
+                    ],
                     "capture_item": true,
                     "item_count": 1
                   }
@@ -2565,11 +2565,11 @@
                 "sections": [
                   {
                     "name": "Song",
-                    "capture_item": true,
                     "access_rules": [
                       "forestmed,firemed,watermed",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -2737,8 +2737,8 @@
               {
                 "name": "Bongo Bongo",
                 "access_rules": [
-                  "@Shadow Temple/After Boat,bow",
-                  "@Shadow Temple/After Boat,longshot"
+                  "@Shadow Temple/Boss Key Room,bow",
+                  "@Shadow Temple/Boss Key Room,longshot"
                 ],
                 "hosted_item": "shadow",
                 "item_count": 1
@@ -2825,11 +2825,11 @@
                   },
                   {
                     "name": "Help him",
-                    "capture_item": true,
                     "access_rules": [
                       "claimcheck",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3056,11 +3056,11 @@
                 "sections": [
                   {
                     "name": "Song",
-                    "capture_item": true,
                     "access_rules": [
                       "forestmed",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -3084,11 +3084,11 @@
                 "sections": [
                   {
                     "name": "Happy Hunting",
-                    "capture_item": true,
                     "access_rules": [
                       "bow,epona,bottle",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3324,11 +3324,11 @@
                   },
                   {
                     "name": "Sheik in Ice Cavern",
-                    "capture_item": true,
                     "access_rules": [
                       "@logic/ice cavern",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3380,13 +3380,13 @@
                 "sections": [
                   {
                     "name": "Bite pls",
-                    "capture_item": true,
                     "access_rules": [
                       "hookshot",
                       "water",
                       "beans",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3403,12 +3403,12 @@
                 "sections": [
                   {
                     "name": "Shoot it",
-                    "capture_item": true,
                     "access_rules": [
                       "bow,longshot",
                       "bow,water",
                       "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3636,11 +3636,11 @@
                           },
                           {
                             "name": "1500",
-                            "capture_item": true,
                             "access_rules": [
                               "epona,bow,card",
                               "{agony}"
                             ],
+                            "capture_item": true,
                             "item_count": 1
                           }
                         ],

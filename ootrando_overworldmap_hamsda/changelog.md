@@ -4,6 +4,7 @@
 - fixed treasure counts for items to match the counts for dungeons
 - fixed Ice Cavern HP also random resulting in one more item there
 - fixed DMC Volcano HP requires bolero for child to plant bean and mark hoverboots as sequence break
+- fixed Bongo Bongo access after renaming
 # 2.0.0.0
 - added a few more capture locations
 - fixed Twinrova requires hookshot
