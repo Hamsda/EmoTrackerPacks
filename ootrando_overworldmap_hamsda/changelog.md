@@ -1,3 +1,5 @@
+# 2.0.0.2
+- changed tracker to not be grayscale (works better for songs/meds)
 # 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
 - fixed Windmill HP can be reached as adult by clever jumping
