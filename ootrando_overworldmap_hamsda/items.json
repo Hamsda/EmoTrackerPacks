@@ -259,195 +259,75 @@
   },
   {
     "name": "Zelda's Lullaby",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/zelda.png",
-        "codes": "lullaby"
-      },
-      {
-        "img": "images/zelda-check.png",
-        "disabled_img": "images/zelda-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "lullaby,lullabycheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/zelda.png",
+    "codes": "lullaby"
   },
   {
     "name": "Saria's Song",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/saria.png",
-        "codes": "saria"
-      },
-      {
-        "img": "images/saria-check.png",
-        "disabled_img": "images/saria-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "saria,sariacheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/saria.png",
+    "codes": "saria"
   },
   {
     "name": "Epona's Song",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/epona.png",
-        "codes": "epona"
-      },
-      {
-        "img": "images/epona-check.png",
-        "disabled_img": "images/epona-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "epona,eponacheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/epona.png",
+    "codes": "epona"
   },
   {
     "name": "Sun's Song",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/sunsong.png",
-        "codes": "sun"
-      },
-      {
-        "img": "images/sunsong-check.png",
-        "disabled_img": "images/sunsong-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "sun,suncheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/sunsong.png",
+    "codes": "sun"
   },
   {
     "name": "Song of Time",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/songoftime.png",
-        "codes": "time"
-      },
-      {
-        "img": "images/songoftime-check.png",
-        "disabled_img": "images/songoftime-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "time,timecheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/songoftime.png",
+    "codes": "time"
   },
   {
     "name": "Song of Storms",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/songofstorms.png",
-        "codes": "storm"
-      },
-      {
-        "img": "images/songofstorms-check.png",
-        "disabled_img": "images/songofstorms-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "storm,stormcheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/songofstorms.png",
+    "codes": "storm"
   },
   {
     "name": "Minuet of Forest",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/green_note.png",
-        "codes": "minuet"
-      },
-      {
-        "img": "images/green_note-check.png",
-        "disabled_img": "images/green_note-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "minuet,minuetcheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/green_note.png",
+    "codes": "minuet"
   },
   {
     "name": "Bolero of Fire",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/red_note.png",
-        "codes": "bolero"
-      },
-      {
-        "img": "images/red_note-check.png",
-        "disabled_img": "images/red_note-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "bolero,bolerocheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/red_note.png",
+    "codes": "bolero"
   },
   {
     "name": "Serenade of Water",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/blue_note.png",
-        "codes": "serenade"
-      },
-      {
-        "img": "images/blue_note-check.png",
-        "disabled_img": "images/blue_note-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "serenade,serenadecheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/blue_note.png",
+    "codes": "serenade"
   },
   {
     "name": "Requiem of Spirit",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/orange_note.png",
-        "codes": "requiem"
-      },
-      {
-        "img": "images/orange_note-check.png",
-        "disabled_img": "images/orange_note-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "requiem,requiemcheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/orange_note.png",
+    "codes": "requiem"
   },
   {
     "name": "Nocturne of Shadow",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/purple_note.png",
-        "codes": "nocturne"
-      },
-      {
-        "img": "images/purple_note-check.png",
-        "disabled_img": "images/purple_note-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "nocturne,nocturnecheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/purple_note.png",
+    "codes": "nocturne"
   },
   {
     "name": "Prelude of Light",
-    "type": "progressive_toggle",
-    "stages": [
-      {
-        "img": "images/yellow_note.png",
-        "codes": "prelude"
-      },
-      {
-        "img": "images/yellow_note-check.png",
-        "disabled_img": "images/yellow_note-disabledcheck.png",
-        "disabled_img_mods": "",
-        "codes": "prelude,preludecheck"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/yellow_note.png",
+    "codes": "prelude"
   },
   {
     "name": "Forest Medallion",
