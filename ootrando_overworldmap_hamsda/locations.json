@@ -399,215 +399,31 @@
             "name": "Hyrule Field",
             "children": [
               {
-                "name": "Lost Woods Bridge",
-                "color": "#18a50e",
-                "sections": [
-                  {
-                    "name": "Ocarina",
-                    "hosted_item": "fairyocarina"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 2030,
-                    "y": 883
-                  },
-                  {
-                    "map": "adult",
-                    "x": 2030,
-                    "y": 883
-                  }
-                ]
-              },
-              {
-                "name": "Lake Hylia",
-                "color": "#0936a0",
-                "children": [
-                  {
-                    "name": "Underwater Bottle",
-                    "sections": [
-                      {
-                        "name": "Dive down",
-                        "access_rules": [
-                          "scale1"
-                        ],
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1049,
-                        "y": 1263
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Lakeside Lab",
-                    "sections": [
-                      {
-                        "name": "Tower HP",
-                        "access_rules": [
-                          "sword2,beans",
-                          "sword2,hookshot"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Dive down",
-                        "access_rules": [
-                          "scale2",
-                          "sword2,hookshot,ironboots,[scale2]"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Trade",
-                        "access_rules": [
-                          "sword2,speedfrog"
-                        ],
-                        "hosted_item": "eyedrops"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 961,
-                        "y": 1200
-                      },
-                      {
-                        "map": "adult",
-                        "x": 961,
-                        "y": 1200
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Child Fishing",
-                    "sections": [
-                      {
-                        "name": "Bite pls",
-                        "access_rules": [
-                          "sword1",
-                          "{agony}"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1270,
-                        "y": 1215
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Ocarina of Time",
+                "name": "Tektite Grotto",
                 "color": "#09a09d",
                 "access_rules": [
-                  "emerald,ruby,sapphire",
-                  "{agony}"
+                  "@logic/can blast"
                 ],
                 "sections": [
                   {
-                    "name": "Item",
-                    "hosted_item": "ocarina"
-                  },
-                  {
-                    "name": "Song",
-                    "capture_item": true,
+                    "name": "Dive down",
+                    "access_rules": [
+                      "scale2",
+                      "sword2,ironboots"
+                    ],
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1439,
-                    "y": 465
-                  }
-                ]
-              },
-              {
-                "name": "Running Man",
-                "access_rules": [
-                  "bunny,emerald,ruby,sapphire"
-                ],
-                "sections": [
-                  {
-                    "name": "Sell Mask",
-                    "hosted_item": "bunnysold"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1157,
-                    "y": 554
-                  }
-                ]
-              },
-              {
-                "name": "Lon Lon Ranch",
-                "color": "#09a09d",
-                "children": [
-                  {
-                    "name": "Talons Chickens",
-                    "sections": [
-                      {
-                        "name": "Find them",
-                        "access_rules": [
-                          "postzelda"
-                        ],
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1348,
-                        "y": 586
-                      }
-                    ]
+                    "x": 1152,
+                    "y": 481
                   },
                   {
-                    "name": "Backroom",
-                    "sections": [
-                      {
-                        "name": "HP",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1218,
-                        "y": 676
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Song from Malon",
-                    "sections": [
-                      {
-                        "name": "Song",
-                        "access_rules": [
-                          "postzelda,ocarina"
-                        ],
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1295,
-                        "y": 647
-                      }
-                    ]
+                    "map": "adult",
+                    "x": 1152,
+                    "y": 481
                   }
                 ]
               },
@@ -705,6 +521,219 @@
                     "map": "adult",
                     "x": 1427,
                     "y": 925
+                  }
+                ]
+              },
+              {
+                "name": "Lost Woods Bridge",
+                "color": "#18a50e",
+                "sections": [
+                  {
+                    "name": "Ocarina",
+                    "hosted_item": "fairyocarina"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2030,
+                    "y": 883
+                  },
+                  {
+                    "map": "adult",
+                    "x": 2030,
+                    "y": 883
+                  }
+                ]
+              },
+              {
+                "name": "Ocarina of Time",
+                "color": "#09a09d",
+                "access_rules": [
+                  "emerald,ruby,sapphire",
+                  "{agony}"
+                ],
+                "sections": [
+                  {
+                    "name": "Item",
+                    "hosted_item": "ocarina"
+                  },
+                  {
+                    "name": "Song",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1439,
+                    "y": 465
+                  }
+                ]
+              },
+              {
+                "name": "Running Man",
+                "access_rules": [
+                  "bunny,emerald,ruby,sapphire"
+                ],
+                "sections": [
+                  {
+                    "name": "Sell Mask",
+                    "hosted_item": "bunnysold"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1157,
+                    "y": 554
+                  }
+                ]
+              },
+              {
+                "name": "Lake Hylia",
+                "color": "#0936a0",
+                "children": [
+                  {
+                    "name": "Underwater Bottle",
+                    "sections": [
+                      {
+                        "name": "Dive down",
+                        "access_rules": [
+                          "scale1"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1049,
+                        "y": 1263
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lakeside Lab",
+                    "sections": [
+                      {
+                        "name": "Tower HP",
+                        "access_rules": [
+                          "sword2,beans",
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Dive down",
+                        "access_rules": [
+                          "scale2",
+                          "sword2,hookshot,ironboots,[scale2]"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Trade",
+                        "access_rules": [
+                          "sword2,speedfrog"
+                        ],
+                        "hosted_item": "eyedrops"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 961,
+                        "y": 1200
+                      },
+                      {
+                        "map": "adult",
+                        "x": 961,
+                        "y": 1200
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Child Fishing",
+                    "sections": [
+                      {
+                        "name": "Bite pls",
+                        "access_rules": [
+                          "sword1",
+                          "{agony}"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1270,
+                        "y": 1215
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Lon Lon Ranch",
+                "color": "#09a09d",
+                "children": [
+                  {
+                    "name": "Talons Chickens",
+                    "sections": [
+                      {
+                        "name": "Find them",
+                        "access_rules": [
+                          "postzelda"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1348,
+                        "y": 586
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Backroom",
+                    "sections": [
+                      {
+                        "name": "HP",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1218,
+                        "y": 676
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Song from Malon",
+                    "sections": [
+                      {
+                        "name": "Song",
+                        "access_rules": [
+                          "postzelda,ocarina"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1295,
+                        "y": 647
+                      }
+                    ]
                   }
                 ]
               }
@@ -3347,30 +3376,6 @@
       {
         "name": "Hyrule Field",
         "children": [
-          {
-            "name": "Tektite Grotto",
-            "color": "#09a09d",
-            "access_rules": [
-              "@logic/can blast"
-            ],
-            "sections": [
-              {
-                "name": "Dive down",
-                "access_rules": [
-                  "scale2",
-                  "ironboots"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "adult",
-                "x": 1152,
-                "y": 481
-              }
-            ]
-          },
           {
             "name": "Laky Hylia",
             "color": "#0936a0",

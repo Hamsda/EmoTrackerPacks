@@ -2,6 +2,7 @@
 - changed tracker to not be grayscale (works better for songs/meds)
 - changed songs to no longer have checkmarks, they are tracked on the map
 - changed ruto and bottles to be one item and adjusted tracker for it
+- fixed tektite grotto can be done as child (with gold scale)
 # 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
 - fixed Windmill HP can be reached as adult by clever jumping
