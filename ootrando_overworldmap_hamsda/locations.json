@@ -1221,10 +1221,6 @@
             "children": [
               {
                 "name": "Goron City",
-                "access_rules": [
-                  "sword2",
-                  "@logic/explosives"
-                ],
                 "children": [
                   {
                     "name": "Boulder Maze",
@@ -1457,6 +1453,9 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "access_rules": [
+                          "@logic/can blast"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -2817,7 +2816,7 @@
                   {
                     "name": "Tunic",
                     "access_rules": [
-                      "wallet1,@logic/explosives"
+                      "@Link the Goron,wallet1"
                     ],
                     "hosted_item": "redtunic"
                   }
@@ -2837,6 +2836,13 @@
             "children": [
               {
                 "name": "Biggoron",
+                "access_rules":[
+                  "@logic/can blast",
+                  "@Link the Goron",
+                  "bolero,beans",
+                  "bolero,hoverboots",
+                  "bolero,hookshot"
+                ],
                 "sections": [
                   {
                     "name": "Trade",
