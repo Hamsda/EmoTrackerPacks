@@ -681,14 +681,33 @@
   },
   {
     "name": "Bottles",
-    "type": "consumable",
-    "max_quantity": 4,
-    "img": "images/bottle.png",
-    "codes": "bottle"
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/bottle1.png",
+        "codes": "bottle"
+      },
+      {
+        "img": "images/bottle2.png"
+      },
+      {
+        "img": "images/bottle3.png"
+      },
+      {
+        "img": "images/bottle4.png"
+      }
+    ]
   },
   {
     "name": "Rutos Letter",
-    "type": "toggle",
+    "type": "toggle_badged",
+    "base_item": "bottle",
     "img": "images/bottle-letter.png",
     "codes": "ruto"
   },
