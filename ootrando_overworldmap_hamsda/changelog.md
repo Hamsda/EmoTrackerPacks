@@ -1,5 +1,6 @@
 # 2.0.0.3
 - fixed DC end of bridge wall with hammer
+- renamed the grotto outside of hyrule town to hopefully be clearer
 # 2.0.0.2
 - changed tracker to not be grayscale (works better for songs/meds)
 - changed songs to no longer have checkmarks, they are tracked on the map
