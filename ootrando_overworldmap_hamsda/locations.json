@@ -1509,7 +1509,7 @@
                   {
                     "name": "End of Bridge",
                     "access_rules": [
-                      "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
+                      "@Dodongos Cavern/Bomb Bag Chest,@logic/can blast"
                     ],
                     "item_count": 1
                   },
