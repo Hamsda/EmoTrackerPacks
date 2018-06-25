@@ -756,12 +756,11 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/wallet.png",
-        "img_mods": "@disabled"
+        "img": "images/wallet.png"
       },
       {
         "img": "images/wallet1.png",
-        "codes": "adultwallet,wallet1,wallet"
+        "codes": "adultswallet,wallet1,wallet"
       },
       {
         "img": "images/wallet2.png",

@@ -4,6 +4,7 @@
 - changed ruto and bottles to be one item and adjusted tracker for it
 - fixed tektite grotto can be done as child (with gold scale)
 - fixed some Goron City and Death Mountain logic (still not 100% sure this is correct, hard to model this)
+- changed 99 rupee text for no wallet upgrade no longer looks disabled
 # 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
 - fixed Windmill HP can be reached as adult by clever jumping
