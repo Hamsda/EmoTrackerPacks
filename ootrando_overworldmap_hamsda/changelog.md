@@ -5,6 +5,10 @@
 - fixed tektite grotto can be done as child (with gold scale)
 - fixed some Goron City and Death Mountain logic (still not 100% sure this is correct, hard to model this)
 - changed 99 rupee text for no wallet upgrade no longer looks disabled
+- added a new tall item layout:
+  - 6 wide instead of 9
+  - used for the vertical and broadcast layout by default 
+  - you can use overrides to go back to the old one if you like
 # 2.0.0.1
 - fixed Gerudo Valley HPs are in child Gerudo Area
 - fixed Windmill HP can be reached as adult by clever jumping

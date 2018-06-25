@@ -1,11 +1,11 @@
 ﻿{
   "type": "array",
-  "background": "#202020",
-  "margin": "5",
+  "background": "#000000",
+  "margin": "0",
   "content": [
     {
       "type": "layout",
-      "key": "shared_item_grid"
+      "key": "tall_item_grid"
     }
   ]
 }

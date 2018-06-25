@@ -5,7 +5,7 @@
   "layout_swap_left_right": false,
   "disabled_image_filter": "dim",
   "layouts": {
-    "shared_item_grid": {
+    "wide_item_grid": {
       "type": "itemgrid",
       "item_margin": "1,2",
       "rows": [
@@ -99,80 +99,178 @@
         ]
       ]
     },
+    "tall_item_grid": {
+      "type": "itemgrid",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "sticks",
+          "nuts",
+          "bombs",
+          "bow",
+          "firearrow",
+          "dinsfire"
+        ],
+        [
+          "slingshot",
+          "ocarina",
+          "bombchu",
+          "hookshot",
+          "icearrow",
+          "faroreswind"
+        ],
+        [
+          "boomerang",
+          "lens",
+          "beans",
+          "hammer",
+          "lightarrow",
+          "nayruslove"
+        ],
+        [
+          "gerudocard",
+          "agony",
+          "magic",
+          "ruto",
+          "adulttrade",
+          "kidtrade"
+        ],
+        [
+          "lift1",
+          "redtunic",
+          "bluetunic",
+          "sword1",
+          "sword2",
+          "sword3"
+        ],
+        [
+          "scale1",
+          "ironboots",
+          "hoverboots",
+          "shield1",
+          "shield2",
+          "shield3"
+        ],
+        [
+          "wallet1",
+          "",
+          "",
+          "",
+          "",
+          "skulltula"
+        ],
+        [
+          "lullaby",
+          "epona",
+          "saria",
+          "sun",
+          "time",
+          "storm"
+        ],
+        [
+          "minuet",
+          "bolero",
+          "serenade",
+          "requiem",
+          "nocturne",
+          "prelude"
+        ],
+        [
+          "forest",
+          "fire",
+          "water",
+          "spirit",
+          "shadow",
+          "free"
+        ],
+        [
+          "deku",
+          "dodongo",
+          "jabu",
+          "type_bridge",
+          "open_forest",
+          "open_door"
+        ]
+      ]
+    },
+    "capture_item_grid": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "sticks",
+          "nuts",
+          "bombs",
+          "bow",
+          "firearrow",
+          "dinsfire",
+          "sword1",
+          "",
+          "sword3"
+        ],
+        [
+          "slingshot",
+          "",
+          "bombchu",
+          "hookshot",
+          "icearrow",
+          "faroreswind",
+          "shield1",
+          "shield2",
+          "shield3"
+        ],
+        [
+          "boomerang",
+          "lens",
+          "beans",
+          "hammer",
+          "lightarrow",
+          "nayruslove",
+          "lift1",
+          "redtunic",
+          "bluetunic"
+        ],
+        [
+          "",
+          "",
+          "magic",
+          "bottle",
+          "adulttrade",
+          "",
+          "scale1",
+          "ironboots",
+          "hoverboots"
+        ],
+        [
+          "lullaby",
+          "epona",
+          "saria",
+          "sun",
+          "time",
+          "storm",
+          "wallet1",
+          "",
+          ""
+        ],
+        [
+          "minuet",
+          "bolero",
+          "serenade",
+          "requiem",
+          "nocturne",
+          "prelude",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
     "tracker_capture_item": {
       "type": "container",
       "content": {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "1,2",
-        "rows": [
-          [
-            "sticks",
-            "nuts",
-            "bombs",
-            "bow",
-            "firearrow",
-            "dinsfire",
-            "sword1",
-            "sword2",
-            "sword3"
-          ],
-          [
-            "slingshot",
-            "ocarina",
-            "bombchu",
-            "hookshot",
-            "icearrow",
-            "faroreswind",
-            "shield1",
-            "shield2",
-            "shield3"
-          ],
-          [
-            "boomerang",
-            "lens",
-            "beans",
-            "hammer",
-            "lightarrow",
-            "nayruslove",
-            "lift1",
-            "redtunic",
-            "bluetunic"
-          ],
-          [
-            "gerudocard",
-            "",
-            "ruto",
-            "bottle",
-            "adulttrade",
-            "",
-            "scale1",
-            "ironboots",
-            "hoverboots"
-          ],
-          [
-            "lullaby",
-            "epona",
-            "saria",
-            "sun",
-            "time",
-            "storm",
-            "wallet1",
-            "magic",
-            ""
-          ],
-          [
-            "minuet",
-            "bolero",
-            "serenade",
-            "requiem",
-            "nocturne",
-            "prelude",
-            "",
-            "",
-            ""
-          ]
-        ]
+        "type": "layout",
+        "key": "capture_item_grid"
       }
     },
     "tracker_default": {
@@ -193,7 +291,7 @@
                 "dock": "top",
                 "content": {
                   "type": "layout",
-                  "key": "shared_item_grid"
+                  "key": "tall_item_grid"
                 }
               },
               {
@@ -258,7 +356,7 @@
                   "type": "layout",
                   "h_alignment": "center",
                   "v_alignment": "center",
-                  "key": "shared_item_grid"
+                  "key": "wide_item_grid"
                 }
               },
               {
