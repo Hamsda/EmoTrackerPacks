@@ -3233,7 +3233,7 @@
               {
                 "name": "King Zora",
                 "access_rules": [
-                  "[lullaby],bottle,wallet2",
+                  "[lullaby],bottle,[wallet2]",
                   "[lullaby],bottle,@logic/ice cavern"
                 ],
                 "sections": [
