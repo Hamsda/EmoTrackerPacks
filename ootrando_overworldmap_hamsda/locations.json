@@ -550,7 +550,7 @@
                 "name": "Ocarina of Time",
                 "color": "#09a09d",
                 "access_rules": [
-                  "emerald,ruby,sapphire",
+                  "stones:3",
                   "{agony}"
                 ],
                 "sections": [
@@ -575,7 +575,7 @@
               {
                 "name": "Running Man",
                 "access_rules": [
-                  "bunny,emerald,ruby,sapphire"
+                  "bunny,stones:3"
                 ],
                 "sections": [
                   {
@@ -2594,7 +2594,7 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "forestmed,firemed,watermed",
+                      "forestmed,noct_meds:2",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -3101,7 +3101,7 @@
                   {
                     "name": "It's Zelda :O",
                     "access_rules": [
-                      "spiritmed,shadowmed"
+                      "lacs_meds:2"
                     ],
                     "item_count": 1
                   }
@@ -3162,9 +3162,9 @@
               {
                 "name": "Ganons Castle",
                 "access_rules": [
-                  "bridge_medallions,sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed",
-                  "bridge_vanilla,sword2,spiritmed,shadowmed,lightarrow",
-                  "bridge_dungeons,sword2,forestmed,firemed,watermed,spiritmed,shadowmed,lightmed,emerald,ruby,sapphire",
+                  "bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+                  "bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+                  "bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
                   "bridge_open,sword2"
                 ],
                 "sections": [

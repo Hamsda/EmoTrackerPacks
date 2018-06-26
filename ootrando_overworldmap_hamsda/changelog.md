@@ -2,6 +2,11 @@
 - fixed DC end of bridge wall with hammer
 - renamed the grotto outside of hyrule town to hopefully be clearer
 - changed wallet2 to be sequence breakable for King Zora in case you get a bottle with blue fire
+- changed stones/medallions:
+  - combined all 3 stones
+  - combined fire and water medallions
+  - combined shadow and spirit medallions
+  - adjusted the requirements for locations accordingly
 # 2.0.0.2
 - changed tracker to not be grayscale (works better for songs/meds)
 - changed songs to no longer have checkmarks, they are tracked on the map

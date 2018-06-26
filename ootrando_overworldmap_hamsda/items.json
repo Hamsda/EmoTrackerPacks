@@ -804,23 +804,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/spiritmedallion.png",
-        "codes": "free,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "free,lacs_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/shadowmedallion.png",
-        "codes": "free,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/watermedallion.png",
-        "codes": "free,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/firemedallion.png",
-        "codes": "free,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "free,noct_meds",
         "inherit_codes": false
       },
       {
@@ -829,18 +819,8 @@
         "inherit_codes": false
       },
       {
-        "img": "images/sapphire.png",
-        "codes": "free,sapphire",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "free,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/emerald.png",
-        "codes": "free,emerald",
+        "img": "images/stones.png",
+        "codes": "free,stones",
         "inherit_codes": false
       }
     ]
@@ -868,18 +848,8 @@
         "codes": "deku"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "deku,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "deku,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "deku,sapphire",
+        "img": "images/stones.png",
+        "codes": "deku,stones",
         "inherit_codes": false
       },
       {
@@ -888,23 +858,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "deku,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "deku,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "deku,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "deku,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "deku,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "deku,lacs_meds",
         "inherit_codes": false
       },
       {
@@ -937,48 +897,28 @@
         "codes": "dodongo,dc"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "dodongo,dc,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "dodongo,dc,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "dodongo,dc,sapphire",
+        "img": "images/stones.png",
+        "codes": "dodongo,stones",
         "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "dodongo,dc,forestmed",
+        "codes": "dodongo,forestmed",
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "dodongo,dc,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "dodongo,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "dodongo,dc,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "dodongo,dc,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "dodongo,dc,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "dodongo,lacs_meds",
         "inherit_codes": false
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "dodongo,dc,lightmed",
+        "codes": "dodongo,lightmed",
         "inherit_codes": false
       }
     ]
@@ -1006,18 +946,8 @@
         "codes": "jabu"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "jabu,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "jabu,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "jabu,sapphire",
+        "img": "images/stones.png",
+        "codes": "jabu,stones",
         "inherit_codes": false
       },
       {
@@ -1026,23 +956,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "jabu,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "jabu,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "jabu,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "jabu,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "jabu,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "jabu,lacs_meds",
         "inherit_codes": false
       },
       {
@@ -1082,18 +1002,8 @@
         "codes": "forest"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "forest,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "forest,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "forest,sapphire",
+        "img": "images/stones.png",
+        "codes": "forest,stones",
         "inherit_codes": false
       },
       {
@@ -1102,23 +1012,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "forest,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "forest,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "forest,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "forest,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "forest,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "forest,lacs_meds",
         "inherit_codes": false
       },
       {
@@ -1158,18 +1058,8 @@
         "codes": "fire"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "fire,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "fire,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "fire,sapphire",
+        "img": "images/stones.png",
+        "codes": "fire,stones",
         "inherit_codes": false
       },
       {
@@ -1178,23 +1068,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "fire,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "fire,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "fire,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "fire,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "fire,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "fire,lacs_meds",
         "inherit_codes": false
       },
       {
@@ -1234,18 +1114,8 @@
         "codes": "water"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "water,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "water,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "water,sapphire",
+        "img": "images/stones.png",
+        "codes": "water,stones",
         "inherit_codes": false
       },
       {
@@ -1254,23 +1124,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "water,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "water,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "water,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "water,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "water,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "water,lacs_meds",
         "inherit_codes": false
       },
       {
@@ -1310,18 +1170,8 @@
         "codes": "spirit"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "spirit,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "spirit,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "spirit,sapphire",
+        "img": "images/stones.png",
+        "codes": "spirit,stones",
         "inherit_codes": false
       },
       {
@@ -1330,23 +1180,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "spirit,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "spirit,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "spirit,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "spirit,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "spirit,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "spirit,lacs_meds",
         "inherit_codes": false
       },
       {
@@ -1386,18 +1226,8 @@
         "codes": "shadow"
       },
       {
-        "img": "images/emerald.png",
-        "codes": "shadow,emerald",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/ruby.png",
-        "codes": "shadow,ruby",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sapphire.png",
-        "codes": "shadow,sapphire",
+        "img": "images/stones.png",
+        "codes": "shadow,stones",
         "inherit_codes": false
       },
       {
@@ -1406,23 +1236,13 @@
         "inherit_codes": false
       },
       {
-        "img": "images/firemedallion.png",
-        "codes": "shadow,firemed",
+        "img": "images/nocturne_medallions.png",
+        "codes": "shadow,noct_meds",
         "inherit_codes": false
       },
       {
-        "img": "images/watermedallion.png",
-        "codes": "shadow,watermed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "shadow,shadowmed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "shadow,spiritmed",
+        "img": "images/lacs_medallions.png",
+        "codes": "shadow,lacs_meds",
         "inherit_codes": false
       },
       {
