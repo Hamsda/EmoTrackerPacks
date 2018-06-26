@@ -7,6 +7,7 @@
   - combined fire and water medallions
   - combined shadow and spirit medallions
   - adjusted the requirements for locations accordingly
+- added Golden Skulltulas (thanks Coffie#9610)
 # 2.0.0.2
 - changed tracker to not be grayscale (works better for songs/meds)
 - changed songs to no longer have checkmarks, they are tracked on the map

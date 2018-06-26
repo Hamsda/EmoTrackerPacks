@@ -118,6 +118,45 @@
                     "y": 845
                   }
                 ]
+              },
+              {
+                "name": "Gold skulltulas",
+                "sections": [
+                  {
+                    "name": "Total (3):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS1 - Back of House",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS2 - Shop Soil Patch",
+                    "access_rules": [
+                      "bottle"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS3 - Top of Twins House",
+                    "access_rules": [
+                      "hookshot,sword2"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2216,
+                    "y": 894
+                  },
+                  {
+                    "map": "adult",
+                    "x": 2216,
+                    "y": 894
+                  }
+                ]
               }
             ]
           },
@@ -165,6 +204,49 @@
                 "map": "child",
                 "x": 2426,
                 "y": 860
+              }
+            ],
+            "children": [
+              {
+                "name": "Deku Tree Skulltulas",
+                "sections": [
+                  {
+                    "name": "Total (4):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS8 - Compass Room",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS9 - Basment vines",
+                    "access_rules": [
+                      "sling",
+                      "@logic/explosives",
+                      "boomerang",
+                      "dinsfire,magic"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS10 - Basment gate",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS11 - Bombable wall",
+                    "access_rules": [
+                      "@logic/explosives,boomerang"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2416,
+                    "y": 742
+                  }
+                ]
               }
             ]
           },
@@ -324,6 +406,48 @@
                     "map": "child",
                     "x": 2142,
                     "y": 740
+                  }
+                ]
+              },
+              {
+                "name": "Lost Woods Skulltulas",
+                "sections": [
+                  {
+                    "name": "Total (3):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS4 - Bridge Soil Patch",
+                    "access_rules": [
+                      "bottle"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS5 - Deku Theater Soil Patch",
+                    "access_rules": [
+                      "bottle"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS6 - Magic Bean Skulltula",
+                    "access_rules": [
+                      "sword2,beans"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2080,
+                    "y": 736
+                  },
+                  {
+                    "map": "adult",
+                    "x": 2080,
+                    "y": 736
                   }
                 ]
               }
@@ -592,6 +716,43 @@
                 ]
               },
               {
+                "name": "Hyrule Field Skulltulas",
+                "sections": [
+                  {
+                    "name": "Total(2):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS12 - Kakariko Entrance Grotto",
+                    "access_rules": [
+                      "@logic/explosives,boomerang",
+                      "@logic/can blast,sword2,hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS13 - Gerudo Valley Entrance Rock Circle Grotto",
+                    "access_rules": [
+                      "@logic/explosives,dinsfire,magic,boomerang",
+                      "sword2,hammer,@logic/has fire,hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1478,
+                    "y": 648
+                  },
+                  {
+                    "map": "adult",
+                    "x": 1478,
+                    "y": 648
+                  }
+                ]
+              },
+              {
                 "name": "Lake Hylia",
                 "color": "#0936a0",
                 "children": [
@@ -674,6 +835,59 @@
                         "y": 1215
                       }
                     ]
+                  },
+                  {
+                    "name": "Lake Hylia Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(5):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS55 - Lab Soil Patch",
+                        "access_rules": [
+                          "bottle"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS56 - Lab Wall",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS57 - Fire Arrow Island",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS58 - Top of Tree Warppoint",
+                        "access_rules": [
+                          "sword2,longshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS59 - Crate At Bottom of Lab",
+                        "access_rules": [
+                          "sword2,hookshot,ironboots"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 866,
+                        "y": 1312
+                      },
+                      {
+                        "map": "adult",
+                        "x": 866,
+                        "y": 1312
+                      }
+                    ]
                   }
                 ]
               },
@@ -732,6 +946,44 @@
                         "map": "child",
                         "x": 1295,
                         "y": 647
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lon Lon Ranch Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(4):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS18 - Roll Into Tree",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS19 - Horse Pen Shed",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS20 - Window of Farm",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS21 - Near Backroom",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1350,
+                        "y": 680
                       }
                     ]
                   }
@@ -975,6 +1227,58 @@
                         "y": 408
                       }
                     ]
+                  },
+                  {
+                    "name": "Kakariko Village Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(6):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS22 - Roll Into First Tree",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS23 - Side of Skulltula House",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS24 - Brick Pile Building",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS25 - Side of House Near DM",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS26 - Ladder of Lookout Tower",
+                        "access_rules": [
+                          "@logic/explosives",
+                          "sling"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS27 - Roof of Impas House",
+                        "access_rules": [
+                          "hookshot,sword2"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1737,
+                        "y": 356
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1737,
+                        "y": 356
+                      }
+                    ]
                   }
                 ]
               },
@@ -1097,6 +1401,36 @@
                         "y": 353
                       }
                     ]
+                  },
+                  {
+                    "name": "Graveyard Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(2):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS28 - Wall Skulltula",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS29 - Graveyard Soil Patch",
+                        "access_rules": [
+                          "bottle"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2068,
+                        "y": 292
+                      }
+                    ]
                   }
                 ]
               },
@@ -1211,6 +1545,47 @@
                     "x": 1884,
                     "y": 383
                   }
+                ],
+                "children": [
+                  {
+                    "name": "Bottom of the Well Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(3):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS78 - Like-Like Room",
+                        "access_rules": [
+                          "boomerang,@logic/explosives",
+                          "boomerang,lift1",
+                          "boomerang,lens,magic"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS79 - Left Locked Room",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS80 - Right Locked Room",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1900,
+                        "y": 414
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -1320,6 +1695,41 @@
                         "y": 90
                       }
                     ]
+                  },
+                  {
+                    "name": "Goron City Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(2):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS34 - Boulder Maze Crate",
+                        "access_rules": [
+                          "@logic/explosives"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS35 - Back of Pedestal",
+                        "access_rules": [
+                          "sword2"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1672,
+                        "y": 32
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1672,
+                        "y": 32
+                      }
+                    ]
                   }
                 ]
               },
@@ -1418,6 +1828,56 @@
                         "y": 66
                       }
                     ]
+                  },
+                  {
+                    "name": "Death Mountain Trail Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(4):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS30 - Dodongos Cavern Soil Patch",
+                        "access_rules": [
+                          "bottle,@logic/explosives",
+                          "bottle,lift1"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS31 - Bombable Wall Near Kakariko",
+                        "access_rules": [
+                          "@logic/can blast"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS32 - Inside Red Rock Over DC",
+                        "access_rules": [
+                          "hammer"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS33 - Inside Red Rock Bottom of Crater Wall",
+                        "access_rules": [
+                          "hammer"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1744,
+                        "y": 158
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1744,
+                        "y": 158
+                      }
+                    ]
                   }
                 ]
               },
@@ -1469,6 +1929,36 @@
                         "map": "adult",
                         "x": 1834,
                         "y": 66
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Death Mountain Crater Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(2):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS36 - Crate At Entrance From Top",
+                        "access_rules": [
+                          "@logic/explosives"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS37 - Crater Soil Patch",
+                        "access_rules": [
+                          "bottle,bolero"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1796,
+                        "y": 80
                       }
                     ]
                   }
@@ -1541,6 +2031,66 @@
                     "map": "adult",
                     "x": 1684,
                     "y": 220
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "Dodongos Cavern Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(5):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS38 - Bombable Wall Right Hallway",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS39 - Staircase Room on Vines",
+                        "access_rules": [
+                          "@logic/explosives",
+                          "boomerang",
+                          "sling,lift1",
+                          "dinsfire,magic",
+                          "sword2,hookshot",
+                          "sword2,bow",
+                          "sword2,sword3"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS40 - Before Boss Room Bombable",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS41 - Top of Stairs, Re-enter",
+                        "access_rules": [
+                          "boomerang,@logic/explosives",
+                          "boomerang,lift1",
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS42 - Scarecrow Song",
+                        "access_rules": [
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1604,
+                        "y": 178
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1604,
+                        "y": 178
+                      }
+                    ]
                   }
                 ]
               }
@@ -1664,6 +2214,26 @@
                         "y": 294
                       }
                     ]
+                  },
+                  {
+                    "name": "Hyrule Town Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(1)",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS14 - Crate In Guardhouse",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1366,
+                        "y": 258
+                      }
+                    ]
                   }
                 ]
               },
@@ -1747,6 +2317,45 @@
                         "map": "child",
                         "x": 1491,
                         "y": 233
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Hyrule Castle Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(3):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS15 - Tree At Entrance",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS16 - Song Of Storms Near Moat",
+                        "access_rules": [
+                          "boomerang,storm,@logic/explosives"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS17 - Gatehouse Ganons Castle",
+                        "access_rules": [
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1528,
+                        "y": 138
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1528,
+                        "y": 138
                       }
                     ]
                   }
@@ -1868,6 +2477,53 @@
                         "y": 446
                       }
                     ]
+                  },
+                  {
+                    "name": "Zoras River Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(4):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS43 - Roll Into Tree At Entrance",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS44 - Ladder At Entrance To Zoras Domain",
+                        "access_rules": [
+                          "@logic/explosives",
+                          "scale1"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS45 - Skulltula on Wall Near Grotto",
+                        "access_rules": [
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS46 - Final Bridge Near Zoras Domain",
+                        "access_rules": [
+                          "sword2,hookshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2198,
+                        "y": 492
+                      },
+                      {
+                        "map": "adult",
+                        "x": 2198,
+                        "y": 492
+                      }
+                    ]
                   }
                 ]
               },
@@ -1944,6 +2600,45 @@
                     ]
                   },
                   {
+                    "name": "Zora Fountain Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(3):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS48 - Roll Into Tree At Fairy Fountain",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS49 - Wall Near Log",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS50 - Silver Boulder At Fairy Fountain",
+                        "access_rules": [
+                          "sword2,lift2,@logic/explosives,hookshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2434,
+                        "y": 334
+                      },
+                      {
+                        "map": "adult",
+                        "x": 2434,
+                        "y": 334
+                      }
+                    ]
+                  },
+                  {
                     "name": "Jabu Jabus Belly",
                     "access_rules": [
                       "sling",
@@ -1981,6 +2676,40 @@
                         "map": "child",
                         "x": 2488,
                         "y": 328
+                      }
+                    ],
+                    "children": [
+                      {
+                        "name": "Jabu Jabu Skulltulas",
+                        "sections": [
+                          {
+                            "name": "Total(4):",
+                            "hosted_item": "skulltula"
+                          },
+                          {
+                            "name": "GS51 - Water Switch Room",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS52 - Wall Near Bigocto",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS53 - Wall Near Bigocto (further away)",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS54 - Room Before Barinade",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "child",
+                            "x": 2476,
+                            "y": 280
+                          }
+                        ]
                       }
                     ]
                   }
@@ -2031,6 +2760,57 @@
                         "y": 520
                       }
                     ]
+                  },
+                  {
+                    "name": "Gerudo Valley Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(4):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS86 - Waterfall Near Entrance",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS87 - Soil Patch River Edge",
+                        "access_rules": [
+                          "bottle"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS88 - Behind Carpenters Tent",
+                        "access_rules": [
+                          "sword2,epona,hookshot",
+                          "sword2,longshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS89 - Underside Rock Arch",
+                        "access_rules": [
+                          "sword2,epona,hookshot",
+                          "sword2,longshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 722,
+                        "y": 564
+                      },
+                      {
+                        "map": "adult",
+                        "x": 722,
+                        "y": 564
+                      }
+                    ]
                   }
                 ]
               },
@@ -2062,6 +2842,30 @@
                         "map": "adult",
                         "x": 346,
                         "y": 283
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Haunted Wasteland Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(1):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS92 - Inside Structure",
+                        "access_rules": [
+                          "sword2,epona,card,hoverboots,hookshot",
+                          "sword2,longshot,card"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 1728,
+                        "y": 1428
                       }
                     ]
                   }
@@ -2138,6 +2942,49 @@
                         "map": "adult",
                         "x": 128,
                         "y": 347
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Colossus Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(3):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS93 - Soil Patch Outside Spirit Temple",
+                        "access_rules": [
+                          "requiem,bottle"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS94 - Tree Next To Dried Oasis",
+                        "access_rules": [
+                          "hookshot,sword2,@logic/colossus"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS95 - Top Of Platform",
+                        "access_rules": [
+                          "requiem,beans",
+                          "@logic/colossus,longshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 218,
+                        "y": 342
+                      },
+                      {
+                        "map": "adult",
+                        "x": 218,
+                        "y": 342
                       }
                     ]
                   },
@@ -2299,6 +3146,65 @@
                         "x": 85,
                         "y": 301
                       }
+                    ],
+                    "children": [
+                      {
+                        "name": "Sirit Temple Skulltulas",
+                        "sections": [
+                          {
+                            "name": "Total(5):",
+                            "hosted_item": "skulltula"
+                          },
+                          {
+                            "name": "GS96 - Cage Room Lower Child",
+                            "access_rules": [
+                              "boomerang"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS97 - Pit Upper Child",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS98 - Room Before Iron Knuckle Child Side",
+                            "access_rules": [
+                              "boomerang,@Spirit Temple/Torch Puzzle",
+                              "hookshot,@Spirit Temple/Torch Puzzle"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS99 - Boulder Room Behind Block",
+                            "access_rules": [
+                              "time,hookshot",
+                              "time,bow",
+                              "time,@logic/explosives"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "GS100 - Statue Room, Left Ledge",
+                            "access_rules": [
+                              "lift2,hookshot,sword2",
+                              "lift2,sword2,hoverboots"
+                            ],
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "child",
+                            "x": 82,
+                            "y": 236
+                          },
+                          {
+                            "map": "adult",
+                            "x": 82,
+                            "y": 236
+                          }
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -2388,6 +3294,29 @@
                     "map": "adult",
                     "x": 2155,
                     "y": 626
+                  }
+                ]
+              },
+              {
+                "name": "Sacred Forest Meadow Skulltulas",
+                "sections": [
+                  {
+                    "name": "Total (1):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS7 - Top of Maze",
+                    "access_rules": [
+                      "hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2230,
+                    "y": 664
                   }
                 ]
               },
@@ -2513,6 +3442,54 @@
                     "map": "adult",
                     "x": 2148,
                     "y": 586
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "Forest Temple Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(5):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS60 - Vines At Entrance",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS61 - Wall Northern Main Room",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS62 - Below Scarecrow",
+                        "access_rules": [
+                          "@Forest Temple/Below Scarecrow"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS63 - Wall Near Columns",
+                        "access_rules": [
+                          "longshot,sword2",
+                          "hookshot,@Forest Temple/Boss Key Chest"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS64 - Basement Room",
+                        "access_rules": [
+                          "@Forest Temple/Basement"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 2202,
+                        "y": 610
+                      }
+                    ]
                   }
                 ]
               }
@@ -2778,6 +3755,59 @@
                 "x": 2144,
                 "y": 326
               }
+            ],
+            "children": [
+              {
+                "name": "Shadow Temple Skulltulas",
+                "sections": [
+                  {
+                    "name": "Total(5):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS81 - Invisible Spikes",
+                    "access_rules": [
+                      "@Shadow Temple/Like-Like Room,hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS82 - Falling Spikes Room",
+                    "access_rules": [
+                      "@Shadow Temple/Like-Like Room,hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS83 - Bombable Skull Room",
+                    "access_rules": [
+                      "@Shadow Temple/Invisible Spikes,hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS84 - Near Boat",
+                    "access_rules": [
+                      "@Shadow Temple/Wind Hint Room,longshot,lift1"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS85 - Three Skulls Room",
+                    "access_rules": [
+                      "@Shadow Temple/Boss Key Room"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2076,
+                    "y": 296
+                  }
+                ]
+              }
             ]
           }
         ]
@@ -2836,7 +3866,7 @@
             "children": [
               {
                 "name": "Biggoron",
-                "access_rules":[
+                "access_rules": [
                   "@logic/can blast",
                   "@Link the Goron",
                   "bolero,beans",
@@ -2975,9 +4005,6 @@
                   },
                   {
                     "name": "North Lava Room",
-                    "access_rules": [
-                      ""
-                    ],
                     "item_count": 1
                   },
                   {
@@ -3072,6 +4099,59 @@
                     "map": "adult",
                     "x": 1912,
                     "y": 80
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "Fire Temple Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(5):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS65 - Time Block First Room",
+                        "access_rules": [
+                          "time"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS66 - Bombable Wall Boulder Maze",
+                        "access_rules": [
+                          "@Fire Temple/North Boulder Maze,@logic/explosives"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS67 - Top Floor Scarecrow",
+                        "access_rules": [
+                          "@Fire Temple/Scarecrow"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS68 - Top Floor Through Door",
+                        "access_rules": [
+                          "hookshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS69 - Near Boss Key Chest",
+                        "access_rules": [
+                          "@Fire Temple/Boss Key Rooms"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 1902,
+                        "y": 132
+                      }
+                    ]
                   }
                 ]
               }
@@ -3275,6 +4355,31 @@
                     "y": 499
                   }
                 ]
+              },
+              {
+                "name": "Zoras Domain Skulltulas",
+                "sections": [
+                  {
+                    "name": "Total(1):",
+                    "hosted_item": "skulltula"
+                  },
+                  {
+                    "name": "GS47 - Top of Waterfall",
+                    "access_rules": [
+                      "hookshot",
+                      "bow",
+                      "magic"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2558,
+                    "y": 418
+                  }
+                ]
               }
             ]
           },
@@ -3324,6 +4429,9 @@
               },
               {
                 "name": "Ice Cavern",
+                "access_rules": [
+                  "@logic/ice cavern"
+                ],
                 "sections": [
                   {
                     "name": "2 (+2) Items",
@@ -3331,30 +4439,18 @@
                   },
                   {
                     "name": "Map Chests",
-                    "access_rules": [
-                      "@logic/ice cavern"
-                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Compass Chests",
-                    "access_rules": [
-                      "@logic/ice cavern"
-                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Frozen HP",
-                    "access_rules": [
-                      "@logic/ice cavern"
-                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Ironboots Chest",
-                    "access_rules": [
-                      "@logic/ice cavern"
-                    ],
                     "item_count": 1
                   },
                   {
@@ -3373,6 +4469,45 @@
                     "x": 2501,
                     "y": 276
                   }
+                ],
+                "children": [
+                  {
+                    "name": "Ice Cavern Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(3):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS70 - Near Compass Chest",
+                        "access_rules": [
+                          "hookshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS71 - Silver Rupee Room",
+                        "access_rules": [
+                          "hookshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS72 - Moveable Iceblock Room",
+                        "access_rules": [
+                          "hookshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 2446,
+                        "y": 262
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -3383,7 +4518,7 @@
         "name": "Hyrule Field",
         "children": [
           {
-            "name": "Laky Hylia",
+            "name": "Lake Hylia",
             "color": "#0936a0",
             "children": [
               {
@@ -3532,6 +4667,60 @@
                     "x": 1015,
                     "y": 1380
                   }
+                ],
+                "children": [
+                  {
+                    "name": "Water Temple Skulltulas",
+                    "sections": [
+                      {
+                        "name": "Total(5):",
+                        "hosted_item": "skulltula"
+                      },
+                      {
+                        "name": "GS73 - Bottom South, Hit Switch Spin Attack",
+                        "access_rules": [
+                          "@logic/explosives,magic,lullaby"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS74 - River After Dark Link",
+                        "access_rules": [
+                          "@Water Temple/Dark Link,time"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS75 - Center Pillar Inside",
+                        "access_rules": [
+                          "longshot,lullaby"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS76 - Platform Room Before Dark Link",
+                        "access_rules": [
+                          "longshot"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GS77 - Bottom Rolling Rocks Room",
+                        "access_rules": [
+                          "lullaby,longshot,@logic/explosives,lift1",
+                          "lullaby,longshot,hoverboots"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 976,
+                        "y": 1422
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -3662,6 +4851,33 @@
                             "y": 438
                           }
                         ]
+                      },
+                      {
+                      	"name": "Gerudo Fortress Skulltulas",
+                      	"sections": [
+                      		{
+                      			"name": "Total(2)",
+                      			"hosted_item": "skulltula"
+                      		},
+                      		{
+                      			"name": "GS90 - Archery Backside",
+                      			"access_rules": [
+                      				"card,sword2,hookshot"
+                      			],
+                      			"item_count": 1
+                      		},
+                      		{
+                      			"name": "GS91 - Top of Buildings",
+                      			"item_count": 1
+                      		}
+                      	],
+                      	"map_locations": [
+                      		{
+                      			"map": "adult",
+                      			"x": 538,
+                      			"y": 418
+                      		}
+                      	]
                       },
                       {
                         "name": "Gerudo Training Grounds",
