@@ -1,4 +1,4 @@
-# 2.0.0.3
+# 2.0.1.0
 - fixed DC end of bridge wall with hammer
 - renamed the grotto outside of hyrule town to hopefully be clearer
 - changed wallet2 to be sequence breakable for King Zora in case you get a bottle with blue fire
