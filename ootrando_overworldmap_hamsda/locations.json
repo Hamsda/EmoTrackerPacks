@@ -120,7 +120,10 @@
                 ]
               },
               {
-                "name": "Gold skulltulas",
+                "name": "Gold Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
                     "name": "Total (3):",
@@ -209,6 +212,9 @@
             "children": [
               {
                 "name": "Deku Tree Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
                     "name": "Total (4):",
@@ -411,6 +417,9 @@
               },
               {
                 "name": "Lost Woods Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
                     "name": "Total (3):",
@@ -717,9 +726,12 @@
               },
               {
                 "name": "Hyrule Field Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
-                    "name": "Total(2):",
+                    "name": "Total (2):",
                     "hosted_item": "skulltula"
                   },
                   {
@@ -838,9 +850,12 @@
                   },
                   {
                     "name": "Lake Hylia Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(5):",
+                        "name": "Total (5):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -951,9 +966,12 @@
                   },
                   {
                     "name": "Lon Lon Ranch Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(4):",
+                        "name": "Total (4):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -1230,9 +1248,12 @@
                   },
                   {
                     "name": "Kakariko Village Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(6):",
+                        "name": "Total (6):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -1404,9 +1425,12 @@
                   },
                   {
                     "name": "Graveyard Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(2):",
+                        "name": "Total (2):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -1549,9 +1573,12 @@
                 "children": [
                   {
                     "name": "Bottom of the Well Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(3):",
+                        "name": "Total (3):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -1698,9 +1725,12 @@
                   },
                   {
                     "name": "Goron City Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(2):",
+                        "name": "Total (2):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -1831,9 +1861,12 @@
                   },
                   {
                     "name": "Death Mountain Trail Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(4):",
+                        "name": "Total (4):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -1934,9 +1967,12 @@
                   },
                   {
                     "name": "Death Mountain Crater Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(2):",
+                        "name": "Total (2):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2036,9 +2072,12 @@
                 "children": [
                   {
                     "name": "Dodongos Cavern Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(5):",
+                        "name": "Total (5):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2217,9 +2256,12 @@
                   },
                   {
                     "name": "Hyrule Town Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(1)",
+                        "name": "Total (1)",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2322,9 +2364,12 @@
                   },
                   {
                     "name": "Hyrule Castle Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(3):",
+                        "name": "Total (3):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2480,9 +2525,12 @@
                   },
                   {
                     "name": "Zoras River Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(4):",
+                        "name": "Total (4):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2601,9 +2649,12 @@
                   },
                   {
                     "name": "Zora Fountain Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(3):",
+                        "name": "Total (3):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2681,9 +2732,12 @@
                     "children": [
                       {
                         "name": "Jabu Jabu Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                         "sections": [
                           {
-                            "name": "Total(4):",
+                            "name": "Total (4):",
                             "hosted_item": "skulltula"
                           },
                           {
@@ -2763,9 +2817,12 @@
                   },
                   {
                     "name": "Gerudo Valley Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(4):",
+                        "name": "Total (4):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2847,9 +2904,12 @@
                   },
                   {
                     "name": "Haunted Wasteland Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(1):",
+                        "name": "Total (1):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -2947,9 +3007,12 @@
                   },
                   {
                     "name": "Colossus Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(3):",
+                        "name": "Total (3):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -3150,9 +3213,12 @@
                     "children": [
                       {
                         "name": "Sirit Temple Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                         "sections": [
                           {
-                            "name": "Total(5):",
+                            "name": "Total (5):",
                             "hosted_item": "skulltula"
                           },
                           {
@@ -3299,6 +3365,9 @@
               },
               {
                 "name": "Sacred Forest Meadow Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
                     "name": "Total (1):",
@@ -3447,9 +3516,12 @@
                 "children": [
                   {
                     "name": "Forest Temple Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(5):",
+                        "name": "Total (5):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -3759,9 +3831,12 @@
             "children": [
               {
                 "name": "Shadow Temple Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
-                    "name": "Total(5):",
+                    "name": "Total (5):",
                     "hosted_item": "skulltula"
                   },
                   {
@@ -4104,9 +4179,12 @@
                 "children": [
                   {
                     "name": "Fire Temple Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(5):",
+                        "name": "Total (5):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -4358,9 +4436,12 @@
               },
               {
                 "name": "Zoras Domain Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                 "sections": [
                   {
-                    "name": "Total(1):",
+                    "name": "Total (1):",
                     "hosted_item": "skulltula"
                   },
                   {
@@ -4473,9 +4554,12 @@
                 "children": [
                   {
                     "name": "Ice Cavern Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(3):",
+                        "name": "Total (3):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -4671,9 +4755,12 @@
                 "children": [
                   {
                     "name": "Water Temple Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                     "sections": [
                       {
-                        "name": "Total(5):",
+                        "name": "Total (5):",
                         "hosted_item": "skulltula"
                       },
                       {
@@ -4854,9 +4941,12 @@
                       },
                       {
                       	"name": "Gerudo Fortress Skulltulas",
+                "access_rules":[
+                  "show_skulltulas"
+                ],
                       	"sections": [
                       		{
-                      			"name": "Total(2)",
+                      			"name": "Total (2)",
                       			"hosted_item": "skulltula"
                       		},
                       		{
