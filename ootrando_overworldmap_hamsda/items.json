@@ -686,68 +686,48 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "codes": "bottle1,bottle",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle1, ruto",
-        "inherit_codes":false
+        "codes": "bottle1,bottle,ruto",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "codes": "bottle1,bottle",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_green.png"
       },
       {
-        "img": "images/bottle_blue.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_blue.png"
       },
       {
-        "img": "images/bottle_fairy.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_fairy.png"
       },
       {
-        "img": "images/bottle_fish.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_fish.png"
       },
       {
-        "img": "images/bottle_bugs.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_bugs.png"
       },
       {
-        "img": "images/bottle_milk.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_milk.png"
       },
       {
-        "img": "images/bottle_halfmilk.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_halfmilk.png"
       },
       {
-        "img": "images/bottle_fire.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_fire.png"
       },
       {
-        "img": "images/bottle_bigpoe.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_bigpoe.png"
       },
       {
-        "img": "images/bottle_poe.png",
-        "codes": "bottle1",
-        "inherit_codes":false
+        "img": "images/bottle_poe.png"
       }
     ]
   },
@@ -758,68 +738,48 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "codes": "bottle2,bottle",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle2, ruto",
-        "inherit_codes":false
+        "codes": "bottle2,bottle,ruto",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "codes": "bottle2,bottle",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_green.png"
       },
       {
-        "img": "images/bottle_blue.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_blue.png"
       },
       {
-        "img": "images/bottle_fairy.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_fairy.png"
       },
       {
-        "img": "images/bottle_fish.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_fish.png"
       },
       {
-        "img": "images/bottle_bugs.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_bugs.png"
       },
       {
-        "img": "images/bottle_milk.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_milk.png"
       },
       {
-        "img": "images/bottle_halfmilk.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_halfmilk.png"
       },
       {
-        "img": "images/bottle_fire.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_fire.png"
       },
       {
-        "img": "images/bottle_bigpoe.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_bigpoe.png"
       },
       {
-        "img": "images/bottle_poe.png",
-        "codes": "bottle2",
-        "inherit_codes":false
+        "img": "images/bottle_poe.png"
       }
     ]
   },
@@ -830,68 +790,48 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "codes": "bottle3,bottle",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle3, ruto",
-        "inherit_codes":false
+        "codes": "bottle3,bottle,ruto",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "codes": "bottle3,bottle",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_green.png"
       },
       {
-        "img": "images/bottle_blue.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_blue.png"
       },
       {
-        "img": "images/bottle_fairy.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_fairy.png"
       },
       {
-        "img": "images/bottle_fish.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_fish.png"
       },
       {
-        "img": "images/bottle_bugs.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_bugs.png"
       },
       {
-        "img": "images/bottle_milk.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_milk.png"
       },
       {
-        "img": "images/bottle_halfmilk.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_halfmilk.png"
       },
       {
-        "img": "images/bottle_fire.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_fire.png"
       },
       {
-        "img": "images/bottle_bigpoe.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_bigpoe.png"
       },
       {
-        "img": "images/bottle_poe.png",
-        "codes": "bottle3",
-        "inherit_codes":false
+        "img": "images/bottle_poe.png"
       }
     ]
   },
@@ -902,68 +842,48 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "codes": "bottle4,bottle",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle4, ruto",
-        "inherit_codes":false
+        "codes": "bottle4,bottle,ruto",
+        "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "codes": "bottle4,bottle",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_green.png"
       },
       {
-        "img": "images/bottle_blue.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_blue.png"
       },
       {
-        "img": "images/bottle_fairy.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_fairy.png"
       },
       {
-        "img": "images/bottle_fish.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_fish.png"
       },
       {
-        "img": "images/bottle_bugs.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_bugs.png"
       },
       {
-        "img": "images/bottle_milk.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_milk.png"
       },
       {
-        "img": "images/bottle_halfmilk.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_halfmilk.png"
       },
       {
-        "img": "images/bottle_fire.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_fire.png"
       },
       {
-        "img": "images/bottle_bigpoe.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_bigpoe.png"
       },
       {
-        "img": "images/bottle_poe.png",
-        "codes": "bottle4",
-        "inherit_codes":false
+        "img": "images/bottle_poe.png"
       }
     ]
   },

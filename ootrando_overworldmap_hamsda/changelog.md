@@ -1,3 +1,5 @@
+# 2.0.1.1
+- fixed bottles to work again for locations, oops
 # 2.0.1.0
 - fixed DC end of bridge wall with hammer
 - renamed the grotto outside of hyrule town to hopefully be clearer
