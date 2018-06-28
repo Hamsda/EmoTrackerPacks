@@ -1,9 +1,16 @@
-# 2.0.1.2
+# Changelog
+
+## 2.0.1.2
+
 - new image for default wallet (thanks JRJ)
 - changed cow cage HP for child bombs are sequence breakable
-# 2.0.1.1
+
+## 2.0.1.1
+
 - fixed bottles to work again for locations, oops
-# 2.0.1.0
+
+## 2.0.1.0
+
 - fixed DC end of bridge wall with hammer
 - renamed the grotto outside of hyrule town to hopefully be clearer
 - changed wallet2 to be sequence breakable for King Zora in case you get a bottle with blue fire
@@ -12,11 +19,13 @@
   - combined fire and water medallions
   - combined shadow and spirit medallions
   - adjusted the requirements for locations accordingly
-- added Golden Skulltulas (thanks Coffie#9610)
+- added Golden Skulltulas (thanks Coffie##9610)
 - added a toggle to enable/disable the skulltulas
 - changed bottle to have 4 slots with all contents (only letter has an effect for now)
 - changed tracker layouts to fit bottles and skulltula toggle
-# 2.0.0.2
+
+## 2.0.0.2
+
 - changed tracker to not be grayscale (works better for songs/meds)
 - changed songs to no longer have checkmarks, they are tracked on the map
 - changed ruto and bottles to be one item and adjusted tracker for it
@@ -25,9 +34,11 @@
 - changed 99 rupee text for no wallet upgrade no longer looks disabled
 - added a new tall item layout:
   - 6 wide instead of 9
-  - used for the vertical and broadcast layout by default 
+  - used for the vertical and broadcast layout by default
   - you can use overrides to go back to the old one if you like
-# 2.0.0.1
+
+## 2.0.0.1
+
 - fixed Gerudo Valley HPs are in child Gerudo Area
 - fixed Windmill HP can be reached as adult by clever jumping
 - fixed treasure counts for items to match the counts for dungeons
@@ -35,14 +46,18 @@
 - fixed DMC Volcano HP requires bolero for child to plant bean and mark hoverboots as sequence break
 - fixed Bongo Bongo access after renaming
 - changed Shadow medallion and Spirit medallion switched for all prizes so they match the order of the altar in ToT
-# 2.0.0.0
+
+## 2.0.0.0
+
 - added a few more capture locations
 - fixed Twinrova requires hookshot
 - added OoTR 2.0 locations
 - added freestanding keys in BotW, GTG, Shadow
 - updated item counts to include boss HCs
 - split up BotW to better reflect location requirements
-# 1.0.0.8
+
+## 1.0.0.8
+
 - preparation for 2.0 grottos and hps
 - added more hps for 2.0 prep
 - changed hookshot/longshot images to be better distinguishable
@@ -51,7 +66,9 @@
 - more 2.0 prep
 - fixed DC back requires explosives not blast (hammer won't work, bombchus can be used to sequence break)
 - fixed letter behaviour for LLR and Saria in SFM
-# 1.0.0.7
+
+## 1.0.0.7
+
 - added labels below the medallions/stones
 - fixed two Forest Temple locations
 - added Link the Goron can be stopped with bow
@@ -62,13 +79,17 @@
 - fixed Spirit Temple map chest and torch puzzle can be opened with fire (duh)
 - changed item counters to be able to include map/compass replacements if those are not enabled
 - fixed pixel position of open door/forest to align
-# 1.0.0.6
+
+## 1.0.0.6
+
 - fixed Shadow Temple having 1 free item too much
 - changed free item counters to go upwards so the dungeon gets cleared if you have them all
 - fixed Statue Ledge in Spirit Temple reachable w/ hoverboots and w/o hookshot
 - fixed rooftop chest in gerudo fortress reachable with hookshot (and scarecrow)
 - fixed a few Forest Temple locations
-# 1.0.0.5
+
+## 1.0.0.5
+
 - fixed Adult Shooting Gallery showing without bow
 - added Dampe back in, he got lost in the reorganization, oops
 - fixed Bombchu Bowling has 2 prizes
@@ -84,7 +105,9 @@
   - split up the chests
   - tried to model the reqs
 - added the "free items" in as a counter for each dungeon
-# 1.0.0.4
+
+## 1.0.0.4
+
 - added small key counters
 - started adding open/closed forest/door logic
 - added rainbow bridge requirements and a toggle for it
@@ -95,7 +118,9 @@
 - fixed tracker capture layout
 - added separate maps for child and adult to prep for reorganization
 - reorganized the internal structure of the data heavily, so I can add new stuff more easily
-# 1.0.0.3
+
+## 1.0.0.3
+
 - fixed Zoras Domain/Fountain logic interaction between child and adult
 - fixed Zoras Fountain Fairy can't be opened with hammer
 - fixed Haunted Wasteland Central Structure capture for Stone of Agony not showing
@@ -112,14 +137,18 @@
   - split up the items
   - added reqs to each of the outer chests
   - marked hammer as optional for the pillar room (can be easily skipped with a damage boost)
-# 1.0.0.2
+
+## 1.0.0.2
+
 - added capture feature to Sheik at Colossus and Sheik in Ice Cavern
 - changed Man on Rooftop so Hookshot is skipable (with a pretty simple sidehop)
 - fixed Redead Grave not showing if Sun Song location has a checkmark
 - improved Deku:
   - split up the items
   - 2 chests in Slingshot room require Deku Shield
-# 1.0.0.1
+
+## 1.0.0.1
+
 - added colors to all locations
 - added capture support to locations that gossip stones hint at when you have the Stone of Agony
 - updated image pack from JRJathome
