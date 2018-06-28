@@ -4,6 +4,7 @@
 
 - new image for default wallet (thanks JRJ)
 - changed cow cage HP for child bombs are sequence breakable
+- changed BotW basement chest lift1 as sequence breakable (not in logic but pretty easy to do)
 
 ## 2.0.1.1
 

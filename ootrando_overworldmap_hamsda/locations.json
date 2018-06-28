@@ -1529,8 +1529,9 @@
                   {
                     "name": "Basement",
                     "access_rules": [
-                      "@logic/can blast",
-                      "lift1"
+                      "bombs",
+                      "bombchu,[bombs]",
+                      "lift1,[bombs]"
                     ],
                     "item_count": 1
                   },
