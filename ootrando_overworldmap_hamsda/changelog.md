@@ -1,3 +1,5 @@
+# 2.0.1.2
+- new image for default wallet (thanks JRJ)
 # 2.0.1.1
 - fixed bottles to work again for locations, oops
 # 2.0.1.0
