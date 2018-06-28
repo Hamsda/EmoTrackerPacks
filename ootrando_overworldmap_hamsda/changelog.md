@@ -1,5 +1,6 @@
 # 2.0.1.2
 - new image for default wallet (thanks JRJ)
+- changed cow cage HP for child bombs are sequence breakable
 # 2.0.1.1
 - fixed bottles to work again for locations, oops
 # 2.0.1.0

@@ -1067,7 +1067,7 @@
                       {
                         "name": "HP in Cage",
                         "access_rules": [
-                          "bombs",
+                          "[bombs]",
                           "sword2,[hookshot]"
                         ],
                         "item_count": 1
