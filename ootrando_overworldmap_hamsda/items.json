@@ -260,74 +260,170 @@
   {
     "name": "Zelda's Lullaby",
     "type": "toggle",
+    "loop": true,
     "img": "images/zelda.png",
     "codes": "lullaby"
   },
   {
+    "name": "Zelda's Lullaby Check",
+    "type": "toggle_badged",
+    "base_item": "lullaby",
+    "img": "images/check.png",
+    "codes": "lullabycheck"
+  },
+  {
     "name": "Saria's Song",
     "type": "toggle",
+    "loop": true,
     "img": "images/saria.png",
     "codes": "saria"
   },
   {
+    "name": "Saria's Song Check",
+    "type": "toggle_badged",
+    "base_item": "saria",
+    "img": "images/check.png",
+    "codes": "sariacheck"
+  },
+  {
     "name": "Epona's Song",
     "type": "toggle",
+    "loop": true,
     "img": "images/epona.png",
     "codes": "epona"
   },
   {
+    "name": "Epona's Song Check",
+    "type": "toggle_badged",
+    "base_item": "epona",
+    "img": "images/check.png",
+    "codes": "eponacheck"
+  },
+  {
     "name": "Sun's Song",
     "type": "toggle",
+    "loop": true,
     "img": "images/sunsong.png",
     "codes": "sun"
   },
   {
+    "name": "Sun's Song Check",
+    "type": "toggle_badged",
+    "base_item": "sun",
+    "img": "images/check.png",
+    "codes": "suncheck"
+  },
+  {
     "name": "Song of Time",
     "type": "toggle",
+    "loop": true,
     "img": "images/songoftime.png",
     "codes": "time"
   },
   {
+    "name": "Song of Time Check",
+    "type": "toggle_badged",
+    "base_item": "time",
+    "img": "images/check.png",
+    "codes": "timecheck"
+  },
+  {
     "name": "Song of Storms",
     "type": "toggle",
+    "loop": true,
     "img": "images/songofstorms.png",
     "codes": "storm"
   },
   {
+    "name": "Song of Storms Check",
+    "type": "toggle_badged",
+    "base_item": "storm",
+    "img": "images/check.png",
+    "codes": "stormcheck"
+  },
+  {
     "name": "Minuet of Forest",
     "type": "toggle",
+    "loop": true,
     "img": "images/green_note.png",
     "codes": "minuet"
   },
   {
+    "name": "Minuet of Forest Check",
+    "type": "toggle_badged",
+    "base_item": "minuet",
+    "img": "images/check.png",
+    "codes": "minuetcheck"
+  },
+  {
     "name": "Bolero of Fire",
     "type": "toggle",
+    "loop": true,
     "img": "images/red_note.png",
     "codes": "bolero"
   },
   {
+    "name": "Bolero of Fire Check",
+    "type": "toggle_badged",
+    "base_item": "bolero",
+    "img": "images/check.png",
+    "codes": "bolerocheck"
+  },
+  {
     "name": "Serenade of Water",
     "type": "toggle",
+    "loop": true,
     "img": "images/blue_note.png",
     "codes": "serenade"
   },
   {
+    "name": "Serenade of Water Check",
+    "type": "toggle_badged",
+    "base_item": "serenade",
+    "img": "images/check.png",
+    "codes": "serenadecheck"
+  },
+  {
     "name": "Requiem of Spirit",
     "type": "toggle",
+    "loop": true,
     "img": "images/orange_note.png",
     "codes": "requiem"
   },
   {
+    "name": "Requiem of Spirit Check",
+    "type": "toggle_badged",
+    "base_item": "requiem",
+    "img": "images/check.png",
+    "codes": "requiemcheck"
+  },
+  {
     "name": "Nocturne of Shadow",
     "type": "toggle",
+    "loop": true,
     "img": "images/purple_note.png",
     "codes": "nocturne"
   },
   {
+    "name": "Nocturne of Shadow Check",
+    "type": "toggle_badged",
+    "base_item": "nocturne",
+    "img": "images/check.png",
+    "codes": "nocturnecheck"
+  },
+  {
     "name": "Prelude of Light",
     "type": "toggle",
+    "loop": true,
     "img": "images/yellow_note.png",
     "codes": "prelude"
+  },
+  {
+    "name": "Prelude of Light Check",
+    "type": "toggle_badged",
+    "base_item": "prelude",
+    "img": "images/check.png",
+    "codes": "preludecheck"
   },
   {
     "name": "Forest Medallion",
