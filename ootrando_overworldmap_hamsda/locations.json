@@ -3088,7 +3088,7 @@
                         "name": "Torch Puzzle",
                         "access_rules": [
                           "@Spirit Temple/Lower Child,@logic/explosives,sticks",
-                          "@Spirit Temple/Lower Child,@logic/explosives,@logic/has fire",
+                          "@Spirit Temple/Lower Child,@logic/explosives,dinsfire,magic",
                           "@Spirit Temple/Mirror Room,@logic/has fire"
                         ],
                         "item_count": 1
@@ -3133,7 +3133,7 @@
                           "@Spirit Temple/Mirror Room,@logic/has fire",
                           "@Spirit Temple/Mirror Room,bow",
                           "@Spirit Temple/Lower Child,@logic/explosives,sticks",
-                          "@Spirit Temple/Lower Child,@logic/explosives,@logic/has fire"
+                          "@Spirit Temple/Lower Child,@logic/explosives,dinsfire,magic"
                         ],
                         "item_count": 1
                       },
@@ -3155,14 +3155,14 @@
                       {
                         "name": "Near Armos",
                         "access_rules": [
-                          "@Spirit Temple/Northern Hand,shield3"
+                          "@Spirit Temple/Mirror Room,@logic/explosives,shield3"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Invisible Hallway",
                         "access_rules": [
-                          "@Spirit Temple/Northern Hand,[lens],[magic]"
+                          "@Spirit Temple/Mirror Room,@logic/explosives,[lens],[magic]"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -3179,14 +3179,14 @@
                       {
                         "name": "Boss Key Chest",
                         "access_rules": [
-                          "@Spirit Temple/Northern Hand,lullaby,[bow],[hookshot]"
+                          "@Spirit Temple/Mirror Room,@logic/explosives,lullaby,[bow],[hookshot]"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Topmost Sun",
                         "access_rules": [
-                          "@Spirit Temple/Northern Hand,shield3"
+                          "@Spirit Temple/Near Armos"
                         ],
                         "item_count": 1
                       },

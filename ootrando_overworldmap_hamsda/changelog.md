@@ -6,6 +6,7 @@
 - changed cow cage HP for child bombs are sequence breakable
 - changed BotW basement chest lift1 as sequence breakable (not in logic but pretty easy to do)
 - fixed Haunted Wasteland Skulltulas map location
+- fixed some Stone of Agony related bugs in Spirit
 
 ## 2.0.1.1
 
