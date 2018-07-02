@@ -4,6 +4,7 @@
 
 - fixed bow not required to go clockwise in GTG
 - changed DMC volcano HP to include hoverboots strats (not in logic but easy to do)
+- changed graveyard box HP to include boomerang strats (not in logic but not very hard)
 
 ## 2.0.1.2
 

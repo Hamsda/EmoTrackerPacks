@@ -1384,7 +1384,33 @@
                       {
                         "map": "child",
                         "x": 1983,
-                        "y": 355
+                        "y": 360
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Box HP",
+                    "access_rules": [
+                      "boomerang",
+                      "beans",
+                      "longshot"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1982,
+                        "y": 335
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1982,
+                        "y": 335
                       }
                     ]
                   },
@@ -3681,26 +3707,6 @@
                     "map": "adult",
                     "x": 2016,
                     "y": 331
-                  }
-                ]
-              },
-              {
-                "name": "Box HP",
-                "access_rules": [
-                  "beans",
-                  "longshot"
-                ],
-                "sections": [
-                  {
-                    "name": "Get it",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1982,
-                    "y": 335
                   }
                 ]
               }
