@@ -4692,7 +4692,7 @@
                     "name": "Dragon Chest",
                     "access_rules": [
                       "lullaby,lift1",
-                      "lullaby,time,bow"
+                      "[lullaby],time,bow"
                     ],
                     "item_count": 1
                   },
@@ -4706,7 +4706,8 @@
                   {
                     "name": "Cracked Wall",
                     "access_rules": [
-                      "lullaby,@logic/explosives"
+                      "lullaby,@logic/explosives",
+                      "bombchu,[lullaby],[bombs]"
                     ],
                     "item_count": 1
                   },
@@ -4721,14 +4722,14 @@
                   {
                     "name": "Dark Link",
                     "access_rules": [
-                      "lullaby"
+                      "[lullaby]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "River",
                     "access_rules": [
-                      "lullaby,time,bow",
+                      "[lullaby],time,bow",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4737,8 +4738,8 @@
                   {
                     "name": "Boss Key Chest",
                     "access_rules": [
-                      "lullaby,longshot,hoverboots",
-                      "lullaby,longshot,@logic/explosives,lift1",
+                      "[lullaby],longshot,hoverboots",
+                      "[lullaby],longshot,@logic/explosives,lift1",
                       "{agony}"
                     ],
                     "capture_item": true,
