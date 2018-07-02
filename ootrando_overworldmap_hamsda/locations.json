@@ -5017,7 +5017,7 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Above Maze",
+                            "name": "Near Scarecrow",
                             "access_rules": [
                               "hookshot,bow"
                             ],
@@ -5026,15 +5026,14 @@
                           {
                             "name": "Hammer Pillars",
                             "access_rules": [
-                              "hookshot,bow,[hammer]",
-                              "@logic/explosives,hookshot,[hammer]"
+                              "hookshot,[hammer]"
                             ],
                             "item_count": 2
                           },
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,bow,[hammer],time",
+                              "hookshot,[hammer],time",
                               "@logic/explosives,time"
                             ],
                             "item_count": 3
@@ -5042,7 +5041,7 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,bow,[hammer],time,ironboots,[bluetunic]",
+                              "hookshot,[hammer],time,ironboots,[bluetunic]",
                               "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
                               "{agony}"
                             ],

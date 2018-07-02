@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1.3
+
+- fixed bow not required to go clockwise in GTG
+
 ## 2.0.1.2
 
 - changed image for default wallet (thanks JRJ)
