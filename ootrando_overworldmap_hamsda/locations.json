@@ -2503,7 +2503,7 @@
                     "access_rules": [
                       "@logic/explosives",
                       "scale1",
-                      "sword2,hoverboots"
+                      "sword2,[hoverboots]"
                     ],
                     "sections": [
                       {
