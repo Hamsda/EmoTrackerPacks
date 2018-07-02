@@ -3,6 +3,7 @@
 ## 2.0.1.3
 
 - fixed bow not required to go clockwise in GTG
+- changed DMC volcano HP to include hoverboots strats (not in logic but easy to do)
 
 ## 2.0.1.2
 
