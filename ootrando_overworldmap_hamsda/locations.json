@@ -1384,7 +1384,33 @@
                       {
                         "map": "child",
                         "x": 1983,
-                        "y": 355
+                        "y": 360
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Box HP",
+                    "access_rules": [
+                      "boomerang",
+                      "beans",
+                      "longshot"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Get it",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1982,
+                        "y": 335
+                      },
+                      {
+                        "map": "adult",
+                        "x": 1982,
+                        "y": 335
                       }
                     ]
                   },
@@ -2477,7 +2503,7 @@
                     "access_rules": [
                       "@logic/explosives",
                       "scale1",
-                      "sword2,hoverboots"
+                      "sword2,[hoverboots]"
                     ],
                     "sections": [
                       {
@@ -3683,26 +3709,6 @@
                     "y": 331
                   }
                 ]
-              },
-              {
-                "name": "Box HP",
-                "access_rules": [
-                  "beans",
-                  "longshot"
-                ],
-                "sections": [
-                  {
-                    "name": "Get it",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1982,
-                    "y": 335
-                  }
-                ]
               }
             ]
           },
@@ -3994,7 +4000,8 @@
                     "name": "Get it",
                     "access_rules": [
                       "bolero,beans",
-                      "bolero,beans,[hoverboots]",
+                      "bolero,hoverboots",
+                      "@Link the Goron,hoverboots",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4685,7 +4692,7 @@
                     "name": "Dragon Chest",
                     "access_rules": [
                       "lullaby,lift1",
-                      "lullaby,time,bow"
+                      "[lullaby],time,bow"
                     ],
                     "item_count": 1
                   },
@@ -4699,7 +4706,8 @@
                   {
                     "name": "Cracked Wall",
                     "access_rules": [
-                      "lullaby,@logic/explosives"
+                      "lullaby,@logic/explosives",
+                      "bombchu,[lullaby],[bombs]"
                     ],
                     "item_count": 1
                   },
@@ -4714,14 +4722,14 @@
                   {
                     "name": "Dark Link",
                     "access_rules": [
-                      "lullaby"
+                      "[lullaby]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "River",
                     "access_rules": [
-                      "lullaby,time,bow",
+                      "[lullaby],time,bow",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4730,8 +4738,8 @@
                   {
                     "name": "Boss Key Chest",
                     "access_rules": [
-                      "lullaby,longshot,hoverboots",
-                      "lullaby,longshot,@logic/explosives,lift1",
+                      "[lullaby],longshot,hoverboots",
+                      "[lullaby],longshot,@logic/explosives,lift1",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -5017,7 +5025,7 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Above Maze",
+                            "name": "Near Scarecrow",
                             "access_rules": [
                               "hookshot,bow"
                             ],
@@ -5026,15 +5034,14 @@
                           {
                             "name": "Hammer Pillars",
                             "access_rules": [
-                              "hookshot,bow,[hammer]",
-                              "@logic/explosives,hookshot,[hammer]"
+                              "hookshot,[hammer]"
                             ],
                             "item_count": 2
                           },
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,bow,[hammer],time",
+                              "hookshot,[hammer],time",
                               "@logic/explosives,time"
                             ],
                             "item_count": 3
@@ -5042,7 +5049,7 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,bow,[hammer],time,ironboots,[bluetunic]",
+                              "hookshot,[hammer],time,ironboots,[bluetunic]",
                               "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
                               "{agony}"
                             ],
