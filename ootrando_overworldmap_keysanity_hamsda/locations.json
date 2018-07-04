@@ -4336,14 +4336,14 @@
                   {
                     "name": "Light Trial",
                     "access_rules": [
-                      "gc_small_keys:1,lift3,[lens],[magic]"
+                      "lift3,[lens],[magic]"
                     ],
                     "item_count": 7
                   },
                   {
                     "name": "Light Trial Back",
                     "access_rules": [
-                      "gc_small_keys:2,lift3,[lens],[magic],lullaby"
+                      "gc_small_keys:1,lift3,[lens],[magic],lullaby"
                     ],
                     "item_count": 1
                   },
@@ -4357,8 +4357,8 @@
                   {
                     "name": "Castle Tower",
                     "access_rules": [
-                      "gc_boss_key,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,[lens],[redtunic]",
-                      "gc_boss_key,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
+                      "gc_boss_key,gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,[lens],[redtunic]",
+                      "gc_boss_key,gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
                     ],
                     "item_count": 1
                   }
