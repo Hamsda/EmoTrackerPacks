@@ -974,7 +974,7 @@
   {
     "name": "Freebie Label",
     "type": "static",
-    "img": "images/freebie.png",
+    "img": "images/free.png",
     "codes": "free_label"
   },
   {
@@ -1442,29 +1442,29 @@
     ]
   },
   {
-    "name": "Well Label",
+    "name": "BotW Label",
     "type": "static",
-    "img": "images/well.png",
-    "codes": "well_label"
+    "img": "images/botw.png",
+    "codes": "botw_label"
   },
   {
-    "name": "Well Treasures",
+    "name": "BotW Treasures",
     "type": "consumable",
     "img": "images/chest_brown.png",
-    "codes": "well_treasures",
+    "codes": "botw_treasures",
     "max_quantity": 11
   },
   {
-    "name": "Well Small Keys",
+    "name": "BotW Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
-    "codes": "well_small_keys",
+    "codes": "botw_small_keys",
     "max_quantity": 3
   },
   {
     "name": "Ice Label",
     "type": "static",
-    "img": "images/well.png",
+    "img": "images/ice.png",
     "codes": "ice_label"
   },
   {
@@ -1475,43 +1475,49 @@
     "max_quantity": 4
   },
   {
-    "name": "Gerudo Label",
+    "name": "GTG Label",
     "type": "static",
-    "img": "images/gerudo.png",
-    "codes": "gerudo_label"
+    "img": "images/gtg.png",
+    "codes": "gtg_label"
   },
   {
-    "name": "Gerudo Treasures",
+    "name": "GTG Treasures",
     "type": "consumable",
     "img": "images/chest_brown.png",
-    "codes": "gerudo_treasures",
+    "codes": "gtg_treasures",
     "max_quantity": 13
   },
   {
-    "name": "Gerudo Small Keys",
+    "name": "GTG Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
-    "codes": "gerudo_small_keys",
+    "codes": "gtg_small_keys",
     "max_quantity": 9
   },
   {
-    "name": "Ganon's Tower Label",
+    "name": "GC Label",
     "type": "static",
-    "img": "images/ganon.png",
-    "codes": "ganon_label"
+    "img": "images/gc.png",
+    "codes": "gc_label"
   },
   {
-    "name": "Ganon's Tower Treasures",
+    "name": "GC Treasures",
     "type": "consumable",
     "img": "images/chest_brown.png",
-    "codes": "ganon_treasures",
+    "codes": "gc_treasures",
     "max_quantity": 13
   },
   {
-    "name": "Ganon Small Keys",
+    "name": "GC Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
-    "codes": "ganon_small_keys",
+    "codes": "gc_small_keys",
     "max_quantity": 2
+  },
+  {
+    "name": "GC Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "gc_boss_key"
   }
 ]
