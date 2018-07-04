@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.1.4
+
+- changed dungeon labels to use the same images as keysanity pack (thanks JRJ)
+- changed a few item label names (mainly botw, gtg, gc)
+- removed "options" from broadcast layout
+- removed small key counts from dungeons
+
 ## 2.0.1.3
 
 - fixed bow not required to go clockwise in GTG

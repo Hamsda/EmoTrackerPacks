@@ -1491,12 +1491,8 @@
                 ],
                 "sections": [
                   {
-                    "name": "Small Keys",
-                    "hosted_item": "well_small_keys"
-                  },
-                  {
                     "name": "9 (+2) Items",
-                    "hosted_item": "well_treasures"
+                    "hosted_item": "botw_treasures"
                   },
                   {
                     "name": "Front Left Hidden",
@@ -3085,10 +3081,6 @@
                     ],
                     "sections": [
                       {
-                        "name": "Small Keys",
-                        "hosted_item": "spirit_small_keys"
-                      },
-                      {
                         "name": "12 (+2) Items",
                         "hosted_item": "spirit_treasures"
                       },
@@ -3423,10 +3415,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "Small Keys",
-                    "hosted_item": "forest_small_keys"
-                  },
-                  {
                     "name": "6 (+2) Items",
                     "hosted_item": "forest_treasures"
                   },
@@ -3719,10 +3707,6 @@
               "nocturne,dinsfire,magic,[lens],sword2,hookshot"
             ],
             "sections": [
-              {
-                "name": "Small Keys",
-                "hosted_item": "shadow_small_keys"
-              },
               {
                 "name": "10 (+2) Items",
                 "hosted_item": "shadow_treasures"
@@ -4067,10 +4051,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "Small Keys",
-                    "hosted_item": "fire_small_keys"
-                  },
-                  {
                     "name": "4 (+2) Items",
                     "hosted_item": "fire_treasures"
                   },
@@ -4334,10 +4314,6 @@
                   "bridge_open,sword2"
                 ],
                 "sections": [
-                  {
-                    "name": "Small Keys",
-                    "hosted_item": "ganon_small_keys"
-                  },
                   {
                     "name": "Forest Trial",
                     "item_count": 1
@@ -4665,10 +4641,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "Small Keys",
-                    "hosted_item": "water_small_keys"
-                  },
-                  {
                     "name": "2 (+2) Items",
                     "hosted_item": "water_treasures"
                   },
@@ -4985,12 +4957,8 @@
                         ],
                         "sections": [
                           {
-                            "name": "Small Keys",
-                            "hosted_item": "gerudo_small_keys"
-                          },
-                          {
                             "name": "13 Items",
-                            "hosted_item": "gerudo_treasures"
+                            "hosted_item": "gtg_treasures"
                           },
                           {
                             "name": "Lobby",
