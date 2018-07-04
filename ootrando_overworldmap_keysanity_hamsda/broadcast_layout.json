@@ -1,0 +1,102 @@
+﻿{
+  "type": "array",
+  "background": "#000000",
+  "margin": "0",
+  "content": [
+    {
+      
+      "type": "itemgrid",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "sticks",
+          "nuts",
+          "bombs",
+          "bow",
+          "firearrow",
+          "dinsfire"
+        ],
+        [
+          "slingshot",
+          "ocarina",
+          "bombchu",
+          "hookshot",
+          "icearrow",
+          "faroreswind"
+        ],
+        [
+          "boomerang",
+          "lens",
+          "beans",
+          "hammer",
+          "lightarrow",
+          "nayruslove"
+        ],
+        [
+          "bottle1",
+          "bottle2",
+          "bottle3",
+          "bottle4",
+          "adulttrade",
+          "kidtrade"
+        ],
+        [
+          "lift1",
+          "redtunic",
+          "bluetunic",
+          "sword1",
+          "sword2",
+          "sword3"
+        ],
+        [
+          "scale1",
+          "ironboots",
+          "hoverboots",
+          "shield1",
+          "shield2",
+          "shield3"
+        ],
+        [
+          "wallet1",
+          "magic",
+          "gerudocard",
+          "agony",
+          "",
+          "skulltula"
+        ],
+        [
+          "lullaby",
+          "epona",
+          "saria",
+          "sun",
+          "time",
+          "storm"
+        ],
+        [
+          "minuet",
+          "bolero",
+          "serenade",
+          "requiem",
+          "nocturne",
+          "prelude"
+        ],
+        [
+          "forest",
+          "fire",
+          "water",
+          "spirit",
+          "shadow",
+          "free"
+        ],
+        [
+          "deku",
+          "dodongo",
+          "jabu",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}
