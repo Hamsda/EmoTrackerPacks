@@ -9,6 +9,7 @@
 - improved Fire Temple:
   - lift1 sequence breakable
   - better restrictions for Volvagia
+- changed GTG maze chests into separate locations and added key requirements
 
 ## 2.0.1.4
 

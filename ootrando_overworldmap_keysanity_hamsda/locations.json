@@ -4038,7 +4038,7 @@
                   },
                   {
                     "name": "North Lava Room",
-                    "access_rules":[
+                    "access_rules": [
                       "fire_small_keys:1"
                     ],
                     "item_count": 1
@@ -4351,7 +4351,7 @@
         "children": [
           {
             "name": "Zoras Domain",
-            "access_rules":[
+            "access_rules": [
               "[lullaby]"
             ],
             "children": [
@@ -4982,7 +4982,8 @@
                             "name": "Lava Pit Ledge",
                             "access_rules": [
                               "hookshot,[hammer],time",
-                              "@logic/explosives,time"
+                              "@logic/explosives,time",
+                              "gtg_small_keys:2"
                             ],
                             "item_count": 3
                           },
@@ -5004,9 +5005,39 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Maze",
-                            "clear_as_group": false,
-                            "item_count": 5
+                            "name": "Above Maze",
+                            "access_rules": [
+                              "gtg_small_keys:1,[lens],[magic]"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 1",
+                            "access_rules": [
+                              "gtg_small_keys:2"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 2",
+                            "access_rules": [
+                              "gtg_small_keys:4"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 3",
+                            "access_rules": [
+                              "gtg_small_keys:5"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Ice Arrow Chest",
+                            "access_rules": [
+                              "gtg_small_keys:7"
+                            ],
+                            "item_count": 1
                           }
                         ],
                         "map_locations": [

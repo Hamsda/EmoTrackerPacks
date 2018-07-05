@@ -5036,9 +5036,27 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Maze",
-                            "clear_as_group": false,
-                            "item_count": 5
+                            "name": "Above Maze",
+                            "access_rules":[
+                              "[lens],[magic]"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 1",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 2",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 3",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Ice Arrow Chest",
+                            "item_count": 1
                           }
                         ],
                         "map_locations": [

@@ -10,6 +10,7 @@
   - lift1 sequence breakable
   - bow sequence breakable for map chest (depending on key layout)
   - better restrictions for Volvagia (as far as possible without key logic)
+- changed GTG maze chests into separate locations
 
 ## 2.0.1.4
 
