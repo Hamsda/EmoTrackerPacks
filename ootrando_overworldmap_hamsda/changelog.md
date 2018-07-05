@@ -3,6 +3,7 @@
 ## 2.0.1.5
 
 - fixed DMC wall HP reachable without explosives
+- fixed Zoras Domain shop as adult
 
 ## 2.0.1.4
 

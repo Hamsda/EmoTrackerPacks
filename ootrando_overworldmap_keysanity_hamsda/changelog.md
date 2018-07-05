@@ -4,6 +4,7 @@
 
 - fixed DMC wall HP reachable without explosives
 - removed item counts from dungeons
+- fixed Zoras Domain shop as adult
 
 ## 2.0.1.4
 

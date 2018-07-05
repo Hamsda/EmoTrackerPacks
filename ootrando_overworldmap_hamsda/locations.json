@@ -4373,12 +4373,15 @@
         "children": [
           {
             "name": "Zoras Domain",
+            "access_rules":[
+              "[lullaby]"
+            ],
             "children": [
               {
                 "name": "King Zora",
                 "access_rules": [
-                  "[lullaby],bottle,[wallet2]",
-                  "[lullaby],bottle,@logic/ice cavern"
+                  "bottle,[wallet2]",
+                  "bottle,@logic/ice cavern"
                 ],
                 "sections": [
                   {
@@ -4407,7 +4410,8 @@
                   {
                     "name": "Tunic",
                     "access_rules": [
-                      "wallet2,bottle"
+                      "bottle,[wallet2]",
+                      "bottle,@logic/ice cavern"
                     ],
                     "hosted_item": "bluetunic"
                   }
