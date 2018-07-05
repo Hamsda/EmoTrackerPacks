@@ -171,10 +171,6 @@
             ],
             "sections": [
               {
-                "name": "5 (+2) Items",
-                "hosted_item": "deku_treasures"
-              },
-              {
                 "name": "Map Chest",
                 "item_count": 1
               },
@@ -1491,10 +1487,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "9 (+2) Items",
-                    "hosted_item": "botw_treasures"
-                  },
-                  {
                     "name": "Front Left Hidden",
                     "access_rules": [
                       "[lens],[magic]"
@@ -2032,10 +2024,6 @@
                   "lift1"
                 ],
                 "sections": [
-                  {
-                    "name": "5 (+2) Items",
-                    "hosted_item": "dodongo_treasures"
-                  },
                   {
                     "name": "Map Chest",
                     "item_count": 1
@@ -2723,10 +2711,6 @@
                     ],
                     "sections": [
                       {
-                        "name": "2 (+2) Item",
-                        "hosted_item": "jabu_treasures"
-                      },
-                      {
                         "name": "Boomerang Chest",
                         "item_count": 1
                       },
@@ -3083,10 +3067,6 @@
                     ],
                     "sections": [
                       {
-                        "name": "12 (+2) Items",
-                        "hosted_item": "spirit_treasures"
-                      },
-                      {
                         "name": "Lower Child",
                         "access_rules": [
                           "requiem,boomerang",
@@ -3417,10 +3397,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "6 (+2) Items",
-                    "hosted_item": "forest_treasures"
-                  },
-                  {
                     "name": "First room",
                     "item_count": 1
                   },
@@ -3709,10 +3685,6 @@
               "nocturne,dinsfire,magic,[lens],sword2,hookshot"
             ],
             "sections": [
-              {
-                "name": "10 (+2) Items",
-                "hosted_item": "shadow_treasures"
-              },
               {
                 "name": "Map Chest",
                 "item_count": 1
@@ -4052,10 +4024,6 @@
                   "@Sheik in Crater,[redtunic]"
                 ],
                 "sections": [
-                  {
-                    "name": "4 (+2) Items",
-                    "hosted_item": "fire_treasures"
-                  },
                   {
                     "name": "Near Boss Door",
                     "item_count": 1
@@ -4511,10 +4479,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "2 (+2) Items",
-                    "hosted_item": "ice_treasures"
-                  },
-                  {
                     "name": "Map Chests",
                     "item_count": 1
                   },
@@ -4652,10 +4616,6 @@
                   "ironboots,hookshot,[bluetunic]"
                 ],
                 "sections": [
-                  {
-                    "name": "2 (+2) Items",
-                    "hosted_item": "water_treasures"
-                  },
                   {
                     "name": "Map Chest",
                     "item_count": 1
@@ -4968,10 +4928,6 @@
                           "card"
                         ],
                         "sections": [
-                          {
-                            "name": "13 Items",
-                            "hosted_item": "gtg_treasures"
-                          },
                           {
                             "name": "Lobby",
                             "access_rules": [

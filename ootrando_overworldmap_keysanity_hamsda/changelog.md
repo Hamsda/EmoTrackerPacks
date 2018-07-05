@@ -3,6 +3,7 @@
 ## 2.0.1.5
 
 - fixed DMC wall HP reachable without explosives
+- removed item counts from dungeons
 
 ## 2.0.1.4
 
