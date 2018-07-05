@@ -3408,8 +3408,9 @@
                     "name": "Map Chest",
                     "access_rules": [
                       "time",
-                      "hookshot,bow",
-                      "bow,ironboots,[hookshot]"
+                      "bow,[ironboots]",
+                      "bow,[scale2]",
+                      "forest_small_keys:1,hoverboots"
                     ],
                     "item_count": 1
                   },
@@ -3417,16 +3418,15 @@
                     "name": "Below Scarecrow",
                     "access_rules": [
                       "time",
-                      "bow"
+                      "bow",
+                      "forest_small_keys:1,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Inside well",
                     "access_rules": [
-                      "time",
-                      "hookshot,bow",
-                      "bow,ironboots,[hookshot]"
+                      "@Forest Temple/Map Chest"
                     ],
                     "item_count": 1
                   },

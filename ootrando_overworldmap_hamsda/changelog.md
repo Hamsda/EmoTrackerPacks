@@ -5,6 +5,7 @@
 - fixed DMC wall HP reachable without explosives
 - fixed Zoras Domain shop as adult
 - changed Spirit Temple mirror room to not require the crystal switch (could have a key from child side)
+- changed Forest Temple courtyard logic
 
 ## 2.0.1.4
 

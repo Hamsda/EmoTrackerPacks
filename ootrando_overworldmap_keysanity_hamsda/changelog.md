@@ -5,6 +5,7 @@
 - fixed DMC wall HP reachable without explosives
 - removed item counts from dungeons
 - fixed Zoras Domain shop as adult
+- changed Forest Temple courtyard logic
 
 ## 2.0.1.4
 
