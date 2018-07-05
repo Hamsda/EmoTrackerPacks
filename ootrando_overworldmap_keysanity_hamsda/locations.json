@@ -171,10 +171,6 @@
             ],
             "sections": [
               {
-                "name": "5 (+2) Items",
-                "hosted_item": "deku_treasures"
-              },
-              {
                 "name": "Map Chest",
                 "item_count": 1
               },
@@ -1491,10 +1487,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "9 (+2) Items",
-                    "hosted_item": "botw_treasures"
-                  },
-                  {
                     "name": "Front Left Hidden",
                     "access_rules": [
                       "[lens],[magic]"
@@ -1970,7 +1962,9 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "@logic/can blast"
+                          "@logic/can blast",
+                          "bolero,beans",
+                          "@Link the Goron"
                         ],
                         "item_count": 1
                       }
@@ -2030,10 +2024,6 @@
                   "lift1"
                 ],
                 "sections": [
-                  {
-                    "name": "5 (+2) Items",
-                    "hosted_item": "dodongo_treasures"
-                  },
                   {
                     "name": "Map Chest",
                     "item_count": 1
@@ -2721,10 +2711,6 @@
                     ],
                     "sections": [
                       {
-                        "name": "2 (+2) Item",
-                        "hosted_item": "jabu_treasures"
-                      },
-                      {
                         "name": "Boomerang Chest",
                         "item_count": 1
                       },
@@ -3081,10 +3067,6 @@
                     ],
                     "sections": [
                       {
-                        "name": "12 (+2) Items",
-                        "hosted_item": "spirit_treasures"
-                      },
-                      {
                         "name": "Lower Child",
                         "access_rules": [
                           "requiem,boomerang",
@@ -3415,10 +3397,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "6 (+2) Items",
-                    "hosted_item": "forest_treasures"
-                  },
-                  {
                     "name": "First room",
                     "item_count": 1
                   },
@@ -3430,8 +3408,9 @@
                     "name": "Map Chest",
                     "access_rules": [
                       "time",
-                      "hookshot,bow",
-                      "bow,ironboots,[hookshot]"
+                      "bow,[ironboots]",
+                      "bow,[scale2]",
+                      "forest_small_keys:1,hoverboots"
                     ],
                     "item_count": 1
                   },
@@ -3439,16 +3418,15 @@
                     "name": "Below Scarecrow",
                     "access_rules": [
                       "time",
-                      "bow"
+                      "bow",
+                      "forest_small_keys:1,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Inside well",
                     "access_rules": [
-                      "time",
-                      "hookshot,bow",
-                      "bow,ironboots,[hookshot]"
+                      "@Forest Temple/Map Chest"
                     ],
                     "item_count": 1
                   },
@@ -3707,10 +3685,6 @@
               "nocturne,dinsfire,magic,[lens],sword2,hookshot"
             ],
             "sections": [
-              {
-                "name": "10 (+2) Items",
-                "hosted_item": "shadow_treasures"
-              },
               {
                 "name": "Map Chest",
                 "item_count": 1
@@ -4051,10 +4025,6 @@
                 ],
                 "sections": [
                   {
-                    "name": "4 (+2) Items",
-                    "hosted_item": "fire_treasures"
-                  },
-                  {
                     "name": "Near Boss Door",
                     "item_count": 1
                   },
@@ -4068,7 +4038,7 @@
                   },
                   {
                     "name": "North Lava Room",
-                    "access_rules":[
+                    "access_rules": [
                       "fire_small_keys:1"
                     ],
                     "item_count": 1
@@ -4083,43 +4053,43 @@
                   {
                     "name": "South Boulder Maze",
                     "access_rules": [
-                      "fire_small_keys:3,lift1"
+                      "fire_small_keys:3,[lift1]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
                     "access_rules": [
-                      "fire_small_keys:3,lift1"
+                      "@Fire Temple/South Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map Chest",
                     "access_rules": [
-                      "fire_small_keys:4,lift1,bow",
-                      "fire_small_keys:5,lift1"
+                      "@Fire Temple/South Boulder Maze,fire_small_keys:4,bow",
+                      "@Fire Temple/South Boulder Maze,fire_small_keys:5"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Above Boulder Maze",
                     "access_rules": [
-                      "fire_small_keys:5,lift1"
+                      "@Fire Temple/South Boulder Maze,fire_small_keys:5"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
                     "access_rules": [
-                      "fire_small_keys:5,lift1,@logic/explosives"
+                      "@Fire Temple/Above Boulder Maze,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
                     "access_rules": [
-                      "fire_small_keys:5,lift1,hookshot",
+                      "@Fire Temple/Above Boulder Maze,hookshot",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4128,24 +4098,23 @@
                   {
                     "name": "Compass Chest",
                     "access_rules": [
-                      "fire_small_keys:6,lift1"
+                      "@Fire Temple/Above Boulder Maze,fire_small_keys:6"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
                     "access_rules": [
-                      "fire_small_keys:7,lift1,hammer,time",
-                      "fire_small_keys:7,lift1,hammer,@logic/explosives",
-                      "fire_small_keys:6,lift1,hammer,hoverboots"
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,hammer,time",
+                      "@Fire Temple/Compass Chest,hammer,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Hammer Chest",
                     "access_rules": [
-                      "fire_small_keys:7,lift1,@logic/explosives",
-                      "fire_small_keys:6,lift1,@logic/explosives,hoverboots",
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,@logic/explosives",
+                      "@Fire Temple/Compass Chest,@logic/explosives,hoverboots",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4154,7 +4123,8 @@
                   {
                     "name": "Volvagia",
                     "access_rules": [
-                      "fire_boss_key,hammer"
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,@logic/explosives,fire_boss_key,hammer",
+                      "hoverboots,fire_boss_key,hammer"
                     ],
                     "hosted_item": "fire",
                     "item_count": 1
@@ -4381,12 +4351,15 @@
         "children": [
           {
             "name": "Zoras Domain",
+            "access_rules": [
+              "[lullaby]"
+            ],
             "children": [
               {
                 "name": "King Zora",
                 "access_rules": [
-                  "[lullaby],bottle,[wallet2]",
-                  "[lullaby],bottle,@logic/ice cavern"
+                  "bottle,[wallet2]",
+                  "bottle,@logic/ice cavern"
                 ],
                 "sections": [
                   {
@@ -4415,7 +4388,8 @@
                   {
                     "name": "Tunic",
                     "access_rules": [
-                      "wallet2,bottle"
+                      "bottle,[wallet2]",
+                      "bottle,@logic/ice cavern"
                     ],
                     "hosted_item": "bluetunic"
                   }
@@ -4508,10 +4482,6 @@
                   "@logic/ice cavern"
                 ],
                 "sections": [
-                  {
-                    "name": "2 (+2) Items",
-                    "hosted_item": "ice_treasures"
-                  },
                   {
                     "name": "Map Chests",
                     "item_count": 1
@@ -4650,10 +4620,6 @@
                   "ironboots,hookshot,[bluetunic]"
                 ],
                 "sections": [
-                  {
-                    "name": "2 (+2) Items",
-                    "hosted_item": "water_treasures"
-                  },
                   {
                     "name": "Map Chest",
                     "item_count": 1
@@ -4967,10 +4933,6 @@
                         ],
                         "sections": [
                           {
-                            "name": "13 Items",
-                            "hosted_item": "gtg_treasures"
-                          },
-                          {
                             "name": "Lobby",
                             "access_rules": [
                               "bow"
@@ -5020,7 +4982,8 @@
                             "name": "Lava Pit Ledge",
                             "access_rules": [
                               "hookshot,[hammer],time",
-                              "@logic/explosives,time"
+                              "@logic/explosives,time",
+                              "gtg_small_keys:2"
                             ],
                             "item_count": 3
                           },
@@ -5042,9 +5005,39 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Maze",
-                            "clear_as_group": false,
-                            "item_count": 5
+                            "name": "Above Maze",
+                            "access_rules": [
+                              "gtg_small_keys:1,[lens],[magic]"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 1",
+                            "access_rules": [
+                              "gtg_small_keys:2"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 2",
+                            "access_rules": [
+                              "gtg_small_keys:4"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 3",
+                            "access_rules": [
+                              "gtg_small_keys:5"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Ice Arrow Chest",
+                            "access_rules": [
+                              "gtg_small_keys:7"
+                            ],
+                            "item_count": 1
                           }
                         ],
                         "map_locations": [

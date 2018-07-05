@@ -1970,7 +1970,9 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "@logic/can blast"
+                          "@logic/can blast",
+                          "bolero,beans",
+                          "@Link the Goron"
                         ],
                         "item_count": 1
                       }
@@ -3140,7 +3142,7 @@
                       {
                         "name": "Mirror Room",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room"
+                          "sword2,lift2"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -3430,8 +3432,9 @@
                     "name": "Map Chest",
                     "access_rules": [
                       "time",
-                      "hookshot,bow",
-                      "bow,ironboots,[hookshot]"
+                      "bow,[ironboots]",
+                      "bow,[scale2]",
+                      "hoverboots"
                     ],
                     "item_count": 1
                   },
@@ -3439,16 +3442,15 @@
                     "name": "Below Scarecrow",
                     "access_rules": [
                       "time",
-                      "bow"
+                      "bow",
+                      "hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Inside well",
                     "access_rules": [
-                      "time",
-                      "hookshot,bow",
-                      "bow,ironboots,[hookshot]"
+                      "@Forest Temple/Map Chest"
                     ],
                     "item_count": 1
                   },
@@ -4080,43 +4082,42 @@
                   {
                     "name": "South Boulder Maze",
                     "access_rules": [
-                      "lift1"
+                      "[lift1]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
                     "access_rules": [
-                      "lift1"
+                      "@Fire Temple/South Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map Chest",
                     "access_rules": [
-                      "lift1,bow",
-                      "lift1"
+                      "@Fire Temple/South Boulder Maze,[bow]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Above Boulder Maze",
                     "access_rules": [
-                      "lift1"
+                      "@Fire Temple/South Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
                     "access_rules": [
-                      "lift1,@logic/explosives"
+                      "@Fire Temple/Above Boulder Maze,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
                     "access_rules": [
-                      "lift1,hookshot",
+                      "@Fire Temple/Above Boulder Maze,hookshot",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4125,24 +4126,22 @@
                   {
                     "name": "Compass Chest",
                     "access_rules": [
-                      "lift1"
+                      "@Fire Temple/Above Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
                     "access_rules": [
-                      "lift1,hammer,time",
-                      "lift1,hammer,@logic/explosives",
-                      "lift1,hammer,hoverboots"
+                      "@Fire Temple/Compass Chest,hammer,time",
+                      "@Fire Temple/Compass Chest,hammer,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Hammer Chest",
                     "access_rules": [
-                      "lift1,@logic/explosives",
-                      "lift1,@logic/explosives,hoverboots",
+                      "@Fire Temple/Compass Chest,@logic/explosives",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4151,7 +4150,8 @@
                   {
                     "name": "Volvagia",
                     "access_rules": [
-                      "hammer"
+                      "@Fire Temple/Compass Chest,@logic/explosives,hammer",
+                      "hoverboots,hammer"
                     ],
                     "hosted_item": "fire",
                     "item_count": 1
@@ -4371,12 +4371,15 @@
         "children": [
           {
             "name": "Zoras Domain",
+            "access_rules":[
+              "[lullaby]"
+            ],
             "children": [
               {
                 "name": "King Zora",
                 "access_rules": [
-                  "[lullaby],bottle,[wallet2]",
-                  "[lullaby],bottle,@logic/ice cavern"
+                  "bottle,[wallet2]",
+                  "bottle,@logic/ice cavern"
                 ],
                 "sections": [
                   {
@@ -4405,7 +4408,8 @@
                   {
                     "name": "Tunic",
                     "access_rules": [
-                      "wallet2,bottle"
+                      "bottle,[wallet2]",
+                      "bottle,@logic/ice cavern"
                     ],
                     "hosted_item": "bluetunic"
                   }
@@ -5032,9 +5036,27 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Maze",
-                            "clear_as_group": false,
-                            "item_count": 5
+                            "name": "Above Maze",
+                            "access_rules":[
+                              "[lens],[magic]"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 1",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 2",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Maze 3",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Ice Arrow Chest",
+                            "item_count": 1
                           }
                         ],
                         "map_locations": [

@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.0.1.5
+
+- fixed DMC wall HP reachable without explosives
+- fixed Zoras Domain shop as adult
+- changed Spirit Temple mirror room to not require the crystal switch (could have a key from child side)
+- changed Forest Temple courtyard logic
+- improved Fire Temple:
+  - lift1 sequence breakable
+  - bow sequence breakable for map chest (depending on key layout)
+  - better restrictions for Volvagia (as far as possible without key logic)
+- changed GTG maze chests into separate locations
+
 ## 2.0.1.4
 
 - changed dungeon labels to use the same images as keysanity pack (thanks JRJ)
