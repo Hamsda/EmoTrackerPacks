@@ -4053,43 +4053,43 @@
                   {
                     "name": "South Boulder Maze",
                     "access_rules": [
-                      "fire_small_keys:3,lift1"
+                      "fire_small_keys:3,[lift1]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
                     "access_rules": [
-                      "fire_small_keys:3,lift1"
+                      "@Fire Temple/South Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map Chest",
                     "access_rules": [
-                      "fire_small_keys:4,lift1,bow",
-                      "fire_small_keys:5,lift1"
+                      "@Fire Temple/South Boulder Maze,fire_small_keys:4,bow",
+                      "@Fire Temple/South Boulder Maze,fire_small_keys:5"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Above Boulder Maze",
                     "access_rules": [
-                      "fire_small_keys:5,lift1"
+                      "@Fire Temple/South Boulder Maze,fire_small_keys:5"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
                     "access_rules": [
-                      "fire_small_keys:5,lift1,@logic/explosives"
+                      "@Fire Temple/Above Boulder Maze,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
                     "access_rules": [
-                      "fire_small_keys:5,lift1,hookshot",
+                      "@Fire Temple/Above Boulder Maze,hookshot",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4098,24 +4098,23 @@
                   {
                     "name": "Compass Chest",
                     "access_rules": [
-                      "fire_small_keys:6,lift1"
+                      "@Fire Temple/Above Boulder Maze,fire_small_keys:6"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
                     "access_rules": [
-                      "fire_small_keys:7,lift1,hammer,time",
-                      "fire_small_keys:7,lift1,hammer,@logic/explosives",
-                      "fire_small_keys:6,lift1,hammer,hoverboots"
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,hammer,time",
+                      "@Fire Temple/Compass Chest,hammer,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Hammer Chest",
                     "access_rules": [
-                      "fire_small_keys:7,lift1,@logic/explosives",
-                      "fire_small_keys:6,lift1,@logic/explosives,hoverboots",
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,@logic/explosives",
+                      "@Fire Temple/Compass Chest,@logic/explosives,hoverboots",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4124,7 +4123,8 @@
                   {
                     "name": "Volvagia",
                     "access_rules": [
-                      "fire_boss_key,hammer"
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,@logic/explosives,fire_boss_key,hammer",
+                      "hoverboots,fire_boss_key,hammer"
                     ],
                     "hosted_item": "fire",
                     "item_count": 1

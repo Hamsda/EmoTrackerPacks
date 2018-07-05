@@ -4082,43 +4082,42 @@
                   {
                     "name": "South Boulder Maze",
                     "access_rules": [
-                      "lift1"
+                      "[lift1]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "North Boulder Maze",
                     "access_rules": [
-                      "lift1"
+                      "@Fire Temple/South Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map Chest",
                     "access_rules": [
-                      "lift1,bow",
-                      "lift1"
+                      "@Fire Temple/South Boulder Maze,[bow]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Above Boulder Maze",
                     "access_rules": [
-                      "lift1"
+                      "@Fire Temple/South Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Shortcut",
                     "access_rules": [
-                      "lift1,@logic/explosives"
+                      "@Fire Temple/Above Boulder Maze,@logic/explosives"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Scarecrow",
                     "access_rules": [
-                      "lift1,hookshot",
+                      "@Fire Temple/Above Boulder Maze,hookshot",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4127,24 +4126,22 @@
                   {
                     "name": "Compass Chest",
                     "access_rules": [
-                      "lift1"
+                      "@Fire Temple/Above Boulder Maze"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Time Block Room",
                     "access_rules": [
-                      "lift1,hammer,time",
-                      "lift1,hammer,@logic/explosives",
-                      "lift1,hammer,hoverboots"
+                      "@Fire Temple/Compass Chest,hammer,time",
+                      "@Fire Temple/Compass Chest,hammer,hoverboots"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Hammer Chest",
                     "access_rules": [
-                      "lift1,@logic/explosives",
-                      "lift1,@logic/explosives,hoverboots",
+                      "@Fire Temple/Compass Chest,@logic/explosives",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4153,7 +4150,8 @@
                   {
                     "name": "Volvagia",
                     "access_rules": [
-                      "hammer"
+                      "@Fire Temple/Compass Chest,@logic/explosives,hammer",
+                      "hoverboots,hammer"
                     ],
                     "hosted_item": "fire",
                     "item_count": 1

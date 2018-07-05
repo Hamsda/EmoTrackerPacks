@@ -6,6 +6,10 @@
 - fixed Zoras Domain shop as adult
 - changed Spirit Temple mirror room to not require the crystal switch (could have a key from child side)
 - changed Forest Temple courtyard logic
+- improved Fire Temple:
+  - lift1 sequence breakable
+  - bow sequence breakable for map chest (depending on key layout)
+  - better restrictions for Volvagia (as far as possible without key logic)
 
 ## 2.0.1.4
 

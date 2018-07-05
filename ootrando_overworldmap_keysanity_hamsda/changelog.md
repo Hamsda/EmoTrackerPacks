@@ -6,6 +6,9 @@
 - removed item counts from dungeons
 - fixed Zoras Domain shop as adult
 - changed Forest Temple courtyard logic
+- improved Fire Temple:
+  - lift1 sequence breakable
+  - better restrictions for Volvagia
 
 ## 2.0.1.4
 
