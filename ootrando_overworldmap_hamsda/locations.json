@@ -3142,7 +3142,7 @@
                       {
                         "name": "Mirror Room",
                         "access_rules": [
-                          "@Spirit Temple/Boulder Room"
+                          "sword2,lift2"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
