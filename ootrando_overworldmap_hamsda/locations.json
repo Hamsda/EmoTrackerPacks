@@ -1970,7 +1970,9 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "@logic/can blast"
+                          "@logic/can blast",
+                          "bolero,beans",
+                          "@Link the Goron"
                         ],
                         "item_count": 1
                       }

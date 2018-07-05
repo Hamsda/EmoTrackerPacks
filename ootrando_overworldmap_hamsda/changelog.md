@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1.5
+
+- fixed DMC wall HP reachable without explosives
+
 ## 2.0.1.4
 
 - changed dungeon labels to use the same images as keysanity pack (thanks JRJ)
