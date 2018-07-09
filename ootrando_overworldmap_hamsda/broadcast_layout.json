@@ -1,10 +1,9 @@
 ﻿{
   "type": "array",
-  "background": "#000000",
-  "margin": "0",
+  "background": "#212121",
+  "margin": "5,5,5,5",
   "content": [
     {
-      
       "type": "itemgrid",
       "item_margin": "1,2",
       "rows": [
@@ -65,20 +64,20 @@
           "skulltula"
         ],
         [
-          "lullaby",
-          "epona",
-          "saria",
-          "sun",
-          "time",
-          "storm"
+          "lullabycheck",
+          "eponacheck",
+          "sariacheck",
+          "suncheck",
+          "timecheck",
+          "stormcheck"
         ],
         [
-          "minuet",
-          "bolero",
-          "serenade",
-          "requiem",
-          "nocturne",
-          "prelude"
+          "minuetcheck",
+          "bolerocheck",
+          "serenadecheck",
+          "requiemcheck",
+          "nocturnecheck",
+          "preludecheck"
         ],
         [
           "forest",

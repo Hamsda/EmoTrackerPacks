@@ -8,6 +8,9 @@
   - remove sequence breakable hammer from clockwise path (not needed to open door)
   - mark the ledge as sequence breakable with nothing (can just use keys)
 - changed visibility based on age specific requirements for various locations
+- changed layouts:
+  - broadcast layout cosmetic fixes
+  - vertical tracker layout moved pinned locations below map to use space better
 
 ## 2.0.1.5
 
