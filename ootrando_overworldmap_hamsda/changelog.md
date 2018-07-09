@@ -3,6 +3,10 @@
 ## 2.0.1.6
 
 - added checkmarks (back) to songs
+- improved GTG:
+  - split hammer pillars chests (one can be gotten without hammer)
+  - remove sequence breakable hammer from clockwise path (not needed to open door)
+  - mark the ledge as sequence breakable with nothing (can just use keys)
 
 ## 2.0.1.5
 

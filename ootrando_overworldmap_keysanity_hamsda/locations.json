@@ -4972,16 +4972,23 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Hammer Pillars",
+                            "name": "Flaming Enemies",
+                            "access_rules": [
+                              "hookshot"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Hammer Pillar",
                             "access_rules": [
                               "hookshot,[hammer]"
                             ],
-                            "item_count": 2
+                            "item_count": 1
                           },
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,[hammer],time",
+                              "hookshot,time",
                               "@logic/explosives,time",
                               "gtg_small_keys:2"
                             ],
@@ -4990,8 +4997,7 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,[hammer],time,ironboots,[bluetunic]",
-                              "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
+                              "hookshot,time,ironboots,[bluetunic]",
                               "{agony}"
                             ],
                             "capture_item": true,

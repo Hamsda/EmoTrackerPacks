@@ -3,6 +3,9 @@
 ## 2.0.1.6
 
 - added checkmarks to songs
+- improved GTG:
+  - split hammer pillars chests (one can be gotten without hammer)
+  - remove sequence breakable hammer from clockwise path (not needed to open door)
 
 ## 2.0.1.5
 
