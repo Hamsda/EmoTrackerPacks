@@ -114,6 +114,9 @@
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 2119,
                     "y": 845
                   }
@@ -156,6 +159,9 @@
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 2216,
                     "y": 894
                   }
@@ -311,11 +317,18 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 2192,
                     "y": 724
                   },
                   {
                     "map": "adult",
+                    "visibility_rules": [
+                      "sword2,saria",
+                      "sword2,minuet"
+                    ],
                     "x": 2192,
                     "y": 724
                   }
@@ -335,11 +348,17 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 2149,
                     "y": 776
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 2149,
                     "y": 776
                   }
@@ -451,6 +470,9 @@
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 2080,
                     "y": 736
                   }
@@ -477,11 +499,18 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 2180,
                     "y": 686
                   },
                   {
                     "map": "adult",
+                    "visibility_rules": [
+                      "sword2,saria",
+                      "sword2,minuet"
+                    ],
                     "x": 2180,
                     "y": 686
                   }
@@ -546,11 +575,17 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 1152,
                     "y": 481
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1152,
                     "y": 481
                   }
@@ -571,11 +606,17 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 1141,
                     "y": 999
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1141,
                     "y": 999
                   }
@@ -598,6 +639,9 @@
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1206,
                     "y": 997
                   }
@@ -618,11 +662,17 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 1372,
                     "y": 440
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1372,
                     "y": 440
                   }
@@ -643,11 +693,17 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives"
+                    ],
                     "x": 1427,
                     "y": 925
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1427,
                     "y": 925
                   }
@@ -670,6 +726,9 @@
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 2030,
                     "y": 883
                   }
@@ -755,6 +814,9 @@
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1478,
                     "y": 648
                   }
@@ -818,6 +880,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 961,
                         "y": 1200
                       }
@@ -895,6 +960,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 866,
                         "y": 1312
                       }
@@ -1026,11 +1094,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives"
+                        ],
                         "x": 1787,
                         "y": 381
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1787,
                         "y": 381
                       }
@@ -1052,6 +1126,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1894,
                         "y": 326
                       }
@@ -1077,6 +1154,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1801,
                         "y": 429
                       }
@@ -1108,25 +1188,22 @@
                           "boomerang"
                         ],
                         "item_count": 1
-                      },
-                      {
-                        "name": "Guru-Guru Song",
-                        "access_rules": [
-                          "sword2,ocarina",
-                          "{agony}"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "boomerang"
+                        ],
                         "x": 1915,
                         "y": 376
                       },
                       {
                         "map": "adult",
+                        "visibility_rules": [
+                          "sword2,[time]"
+                        ],
                         "x": 1915,
                         "y": 376
                       }
@@ -1151,6 +1228,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1830,
                         "y": 371
                       }
@@ -1237,6 +1317,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1778,
                         "y": 408
                       }
@@ -1292,6 +1375,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1737,
                         "y": 356
                       }
@@ -1334,6 +1420,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 2030,
                         "y": 372
                       }
@@ -1360,6 +1449,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 2066,
                         "y": 369
                       }
@@ -1400,11 +1492,18 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "boomerang"
+                        ],
                         "x": 1982,
                         "y": 335
                       },
                       {
                         "map": "adult",
+                        "visibility_rules": [
+                          "sword2,beans",
+                          "sword2,longshot"
+                        ],
                         "x": 1982,
                         "y": 335
                       }
@@ -1440,6 +1539,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 2099,
                         "y": 353
                       }
@@ -1664,11 +1766,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives"
+                        ],
                         "x": 1591,
                         "y": 98
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1591,
                         "y": 98
                       }
@@ -1771,6 +1879,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1672,
                         "y": 32
                       }
@@ -1797,6 +1908,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1664,
                         "y": 190
                       }
@@ -1816,11 +1930,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives"
+                        ],
                         "x": 1744,
                         "y": 221
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1744,
                         "y": 221
                       }
@@ -1845,6 +1965,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1705,
                         "y": 162
                       }
@@ -1864,11 +1987,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives"
+                        ],
                         "x": 1764,
                         "y": 66
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1764,
                         "y": 66
                       }
@@ -1922,6 +2051,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1744,
                         "y": 158
                       }
@@ -1946,11 +2078,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives"
+                        ],
                         "x": 1798,
                         "y": 42
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1798,
                         "y": 42
                       }
@@ -1972,11 +2110,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives"
+                        ],
                         "x": 1834,
                         "y": 66
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1834,
                         "y": 66
                       }
@@ -2073,11 +2217,18 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives",
+                      "lift1"
+                    ],
                     "x": 1684,
                     "y": 220
                   },
                   {
                     "map": "adult",
+                    "visibility_rules":[
+                      "sword2"
+                    ],
                     "x": 1684,
                     "y": 220
                   }
@@ -2139,6 +2290,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1604,
                         "y": 178
                       }
@@ -2412,6 +2566,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 1528,
                         "y": 138
                       }
@@ -2474,11 +2631,18 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives",
+                          "scale1"
+                        ],
                         "x": 2092,
                         "y": 540
                       },
                       {
                         "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
                         "x": 2092,
                         "y": 540
                       }
@@ -2500,11 +2664,18 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives",
+                          "scale1"
+                        ],
                         "x": 2037,
                         "y": 474
                       },
                       {
                         "map": "adult",
+                        "visibility_rules": [
+                          "sword2,[hoverboots]"
+                        ],
                         "x": 2037,
                         "y": 474
                       }
@@ -2526,11 +2697,18 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives",
+                          "scale1"
+                        ],
                         "x": 2347,
                         "y": 446
                       },
                       {
                         "map": "adult",
+                        "visibility_rules": [
+                          "sword2,hoverboots"
+                        ],
                         "x": 2347,
                         "y": 446
                       }
@@ -2581,6 +2759,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 2198,
                         "y": 492
                       }
@@ -2655,6 +2836,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 2553,
                         "y": 333
                       }
@@ -2697,6 +2881,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 2434,
                         "y": 334
                       }
@@ -2800,6 +2987,14 @@
                         "map": "child",
                         "x": 654,
                         "y": 633
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2,longshot"
+                        ],
+                        "x": 654,
+                        "y": 633
                       }
                     ]
                   },
@@ -2819,6 +3014,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 701,
                         "y": 520
                       }
@@ -2873,6 +3071,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 722,
                         "y": 564
                       }
@@ -2900,12 +3101,10 @@
                     ],
                     "map_locations": [
                       {
-                        "map": "child",
-                        "x": 346,
-                        "y": 283
-                      },
-                      {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 346,
                         "y": 283
                       }
@@ -2933,6 +3132,9 @@
                     "map_locations": [
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 385,
                         "y": 283
                       }
@@ -2957,11 +3159,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "requiem"
+                        ],
                         "x": 276,
                         "y": 297
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 276,
                         "y": 297
                       }
@@ -2983,6 +3191,9 @@
                     "map_locations": [
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 160,
                         "y": 305
                       }
@@ -3004,11 +3215,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "requiem"
+                        ],
                         "x": 128,
                         "y": 347
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 128,
                         "y": 347
                       }
@@ -3055,6 +3272,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 218,
                         "y": 342
                       }
@@ -3202,11 +3422,17 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "requiem"
+                        ],
                         "x": 85,
                         "y": 301
                       },
                       {
                         "map": "adult",
+                        "visibility_rules":[
+                          "sword2"
+                        ],
                         "x": 85,
                         "y": 301
                       }
@@ -3267,6 +3493,9 @@
                           },
                           {
                             "map": "adult",
+                            "visibility_rules":[
+                              "sword2"
+                            ],
                             "x": 82,
                             "y": 236
                           }
@@ -3627,6 +3856,27 @@
                     "map": "adult",
                     "x": 1837,
                     "y": 403
+                  }
+                ]
+              },
+              {
+                "name": "Guru-Guru",
+                "sections": [
+                  {
+                    "name": "Song",
+                    "access_rules": [
+                      "sword2,ocarina",
+                      "{agony}"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1945,
+                    "y": 376
                   }
                 ]
               },
@@ -4972,16 +5222,23 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Hammer Pillars",
+                            "name": "Flaming Enemies",
+                            "access_rules": [
+                              "hookshot"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Hammer Pillar",
                             "access_rules": [
                               "hookshot,[hammer]"
                             ],
-                            "item_count": 2
+                            "item_count": 1
                           },
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,[hammer],time",
+                              "hookshot,time",
                               "@logic/explosives,time",
                               "gtg_small_keys:2"
                             ],
@@ -4990,8 +5247,7 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,[hammer],time,ironboots,[bluetunic]",
-                              "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
+                              "hookshot,time,ironboots,[bluetunic]",
                               "{agony}"
                             ],
                             "capture_item": true,

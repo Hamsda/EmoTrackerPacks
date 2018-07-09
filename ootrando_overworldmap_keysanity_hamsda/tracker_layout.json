@@ -5,89 +5,84 @@
   "layout_swap_left_right": false,
   "disabled_image_filter": "dim",
   "layouts": {
-    "tall_item_grid": {},
-    "capture_item_grid": {
-      "type": "itemgrid",
-      "item_margin": "1,2",
-      "rows": [
-        [
-          "sticks",
-          "nuts",
-          "bombs",
-          "bow",
-          "firearrow",
-          "dinsfire",
-          "sword1",
-          "",
-          "sword3"
-        ],
-        [
-          "slingshot",
-          "",
-          "bombchu",
-          "hookshot",
-          "icearrow",
-          "faroreswind",
-          "shield1",
-          "shield2",
-          "shield3"
-        ],
-        [
-          "boomerang",
-          "lens",
-          "beans",
-          "hammer",
-          "lightarrow",
-          "nayruslove",
-          "lift1",
-          "redtunic",
-          "bluetunic"
-        ],
-        [
-          "bottle1",
-          "",
-          "",
-          "",
-          "adulttrade",
-          "",
-          "scale1",
-          "ironboots",
-          "hoverboots"
-        ],
-        [
-          "lullaby",
-          "epona",
-          "saria",
-          "sun",
-          "time",
-          "storm",
-          "wallet1",
-          "magic",
-          ""
-        ],
-        [
-          "minuet",
-          "bolero",
-          "serenade",
-          "requiem",
-          "nocturne",
-          "prelude",
-          "",
-          "",
-          ""
-        ]
-      ]
-    },
     "tracker_capture_item": {
       "type": "container",
       "content": {
-        "type": "layout",
-        "key": "capture_item_grid"
+        "type": "itemgrid",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "sticks",
+            "nuts",
+            "bombs",
+            "bow",
+            "firearrow",
+            "dinsfire",
+            "sword1",
+            "",
+            "sword3"
+          ],
+          [
+            "slingshot",
+            "",
+            "bombchu",
+            "hookshot",
+            "icearrow",
+            "faroreswind",
+            "shield1",
+            "shield2",
+            "shield3"
+          ],
+          [
+            "boomerang",
+            "lens",
+            "beans",
+            "hammer",
+            "lightarrow",
+            "nayruslove",
+            "lift1",
+            "redtunic",
+            "bluetunic"
+          ],
+          [
+            "bottle1",
+            "",
+            "",
+            "",
+            "adulttrade",
+            "",
+            "scale1",
+            "ironboots",
+            "hoverboots"
+          ],
+          [
+            "lullaby",
+            "epona",
+            "saria",
+            "sun",
+            "time",
+            "storm",
+            "wallet1",
+            "magic",
+            ""
+          ],
+          [
+            "minuet",
+            "bolero",
+            "serenade",
+            "requiem",
+            "nocturne",
+            "prelude",
+            "",
+            "",
+            ""
+          ]
+        ]
       }
     },
     "tracker_default": {
       "type": "container",
-      "background": "#202020",
+      "background": "#212121",
       "content": {
         "type": "dock",
         "dropshadow": true,
@@ -166,20 +161,20 @@
                           "skulltula"
                         ],
                         [
-                          "lullaby",
-                          "epona",
-                          "saria",
-                          "sun",
-                          "time",
-                          "storm"
+                          "lullabycheck",
+                          "eponacheck",
+                          "sariacheck",
+                          "suncheck",
+                          "timecheck",
+                          "stormcheck"
                         ],
                         [
-                          "minuet",
-                          "bolero",
-                          "serenade",
-                          "requiem",
-                          "nocturne",
-                          "prelude"
+                          "minuetcheck",
+                          "bolerocheck",
+                          "serenadecheck",
+                          "requiemcheck",
+                          "nocturnecheck",
+                          "preludecheck"
                         ],
                         [
                           "forest",
@@ -523,6 +518,37 @@
                     }
                   ]
                 }
+              }
+            ]
+          },
+          {
+            "type": "dock",
+            "content": [
+              {
+                "type": "tabbed",
+                "dock": "top",
+                "tabs": [
+                  {
+                    "title": "Child",
+                    "icon": "images/sword1.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "child"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Adult",
+                    "icon": "images/sword2.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "adult"
+                      ]
+                    }
+                  }
+                ]
               },
               {
                 "type": "group",
@@ -537,38 +563,13 @@
                 }
               }
             ]
-          },
-          {
-            "type": "tabbed",
-            "tabs": [
-              {
-                "title": "Child",
-                "icon": "images/sword1.png",
-                "content": {
-                  "type": "map",
-                  "maps": [
-                    "child"
-                  ]
-                }
-              },
-              {
-                "title": "Adult",
-                "icon": "images/sword2.png",
-                "content": {
-                  "type": "map",
-                  "maps": [
-                    "adult"
-                  ]
-                }
-              }
-            ]
           }
         ]
       }
     },
     "tracker_horizontal": {
       "type": "container",
-      "background": "#202020",
+      "background": "#212121",
       "content": {
         "type": "dock",
         "dropshadow": true,
@@ -634,23 +635,23 @@
                           "hoverboots"
                         ],
                         [
-                          "lullaby",
-                          "epona",
-                          "saria",
-                          "sun",
-                          "time",
-                          "storm",
+                          "lullabycheck",
+                          "eponacheck",
+                          "sariacheck",
+                          "suncheck",
+                          "timecheck",
+                          "stormcheck",
                           "wallet1",
                           "magic",
                           "skulltula"
                         ],
                         [
-                          "minuet",
-                          "bolero",
-                          "serenade",
-                          "requiem",
-                          "nocturne",
-                          "prelude",
+                          "minuetcheck",
+                          "bolerocheck",
+                          "serenadecheck",
+                          "requiemcheck",
+                          "nocturnecheck",
+                          "preludecheck",
                           "gerudocard",
                           "agony",
                           "show_skulltulas"

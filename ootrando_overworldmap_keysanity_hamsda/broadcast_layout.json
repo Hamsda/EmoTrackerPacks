@@ -1,10 +1,9 @@
 ﻿{
   "type": "array",
-  "background": "#000000",
-  "margin": "0",
+  "background": "#212121",
+  "margin": "5,5,5,5",
   "content": [
     {
-      
       "type": "itemgrid",
       "item_margin": "1,2",
       "rows": [
@@ -65,20 +64,20 @@
           "skulltula"
         ],
         [
-          "lullaby",
-          "epona",
-          "saria",
-          "sun",
-          "time",
-          "storm"
+          "lullabycheck",
+          "eponacheck",
+          "sariacheck",
+          "suncheck",
+          "timecheck",
+          "stormcheck"
         ],
         [
-          "minuet",
-          "bolero",
-          "serenade",
-          "requiem",
-          "nocturne",
-          "prelude"
+          "minuetcheck",
+          "bolerocheck",
+          "serenadecheck",
+          "requiemcheck",
+          "nocturnecheck",
+          "preludecheck"
         ],
         [
           "forest",
@@ -87,15 +86,329 @@
           "spirit",
           "shadow",
           "free"
-        ],
-        [
-          "deku",
-          "dodongo",
-          "jabu",
-          "",
-          "",
-          ""
         ]
+      ]
+    },
+    {
+      "type": "array",
+      "orientation": "vertical",
+      "content": [
+        {
+          "type": "array",
+          "orientation": "horizontal",
+          "margin": "5,0",
+          "content": [
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "forest_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "forest_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "forest_boss_key",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 16,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "fire_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "fire_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "fire_boss_key",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 16,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "water_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "water_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "water_boss_key",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 16,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "spirit_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "spirit_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "spirit_boss_key",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 16,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "shadow_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "shadow_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "shadow_boss_key",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 16,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "item": "free_label",
+              "margin": "1,2"
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "orientation": "horizontal",
+          "margin": "5,0",
+          "content": [
+            {
+              "type": "item",
+              "item": "deku",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2"
+            },
+            {
+              "type": "item",
+              "item": "dodongo",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2"
+            },
+            {
+              "type": "item",
+              "item": "jabu",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2"
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "botw_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "botw_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "gtg_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "gtg_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            },
+            {
+              "type": "canvas",
+              "width": 32,
+              "height": 32,
+              "margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "gc_label",
+                  "hit_test_visible": false,
+                  "margin": "0",
+                  "canvas_depth": 0,
+                  "width": 32,
+                  "height": 12
+                },
+                {
+                  "type": "item",
+                  "item": "gc_small_keys",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 0,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "gc_boss_key",
+                  "margin": "0",
+                  "canvas_depth": 1,
+                  "canvas_left": 16,
+                  "canvas_top": 16,
+                  "width": 16,
+                  "height": 16
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
   ]
