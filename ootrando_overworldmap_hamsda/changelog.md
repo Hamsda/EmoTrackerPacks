@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1.6
+
+- added checkmarks (back) to songs
+
 ## 2.0.1.5
 
 - fixed DMC wall HP reachable without explosives
