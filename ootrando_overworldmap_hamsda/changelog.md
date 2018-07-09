@@ -7,6 +7,7 @@
   - split hammer pillars chests (one can be gotten without hammer)
   - remove sequence breakable hammer from clockwise path (not needed to open door)
   - mark the ledge as sequence breakable with nothing (can just use keys)
+- changed visibility based on age specific requirements for various locations
 
 ## 2.0.1.5
 
