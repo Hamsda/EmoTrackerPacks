@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.1.6
+## 2.0.2.0
 
 - added checkmarks to songs
 - improved GTG:
