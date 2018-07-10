@@ -2178,14 +2178,20 @@
                   },
                   {
                     "name": "Small Chest Upstairs",
+                    "access_rules":[
+                      "@logic/explosives",
+                      "lift1",
+                      "dinsfire,magic",
+                      "sword2,bow"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Bomb Bag Chest",
                     "access_rules": [
-                      "sling",
-                      "sword2,[bow]",
-                      "sword2,[hoverboots]"
+                      "@Dodongos Cavern/Small Chest Upstairs,[sling]",
+                      "@Dodongos Cavern/Small Chest Upstairs,sword2,[bow]",
+                      "@Dodongos Cavern/Small Chest Upstairs,sword2,[hoverboots]"
                     ],
                     "item_count": 1
                   },

@@ -3,6 +3,7 @@
 ## 2.0.2.1
 
 - fixed orientation for pinned locations on vertical tracker layout
+- fixed logic for DC without explosives
 
 ## 2.0.2.0
 
