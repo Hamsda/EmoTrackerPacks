@@ -4,6 +4,7 @@
 
 - fixed orientation for pinned locations on vertical tracker layout
 - fixed logic for DC without explosives
+- fixed Fire Temple hammer chest with 6 small keys and hovers requires hammer
 
 ## 2.0.2.0
 
