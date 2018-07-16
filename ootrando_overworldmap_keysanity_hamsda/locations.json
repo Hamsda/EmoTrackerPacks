@@ -4896,22 +4896,24 @@
                     "name": "Dragon Chest",
                     "access_rules": [
                       "lullaby,lift1",
-                      "water_small_keys:4,[lullaby],time,bow"
+                      "water_small_keys:2,time,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Basement",
                     "access_rules": [
-                      "water_small_keys:1,lullaby"
+                      "water_small_keys:1,lullaby",
+                      "lullaby,bow",
+                      "lullaby,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Cracked Wall",
                     "access_rules": [
-                      "water_small_keys:1,lullaby,@logic/explosives",
-                      "bombchu,[lullaby],[bombs]"
+                      "@Water Temple/Basement,@logic/explosives",
+                      "bombchu"
                     ],
                     "item_count": 1
                   },
@@ -4926,14 +4928,14 @@
                   {
                     "name": "Dark Link",
                     "access_rules": [
-                      "water_small_keys:4,[lullaby]"
+                      "water_small_keys:2"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "River",
                     "access_rules": [
-                      "water_small_keys:4,[lullaby],time,bow",
+                      "water_small_keys:2,time,bow",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4942,8 +4944,8 @@
                   {
                     "name": "Boss Key Chest",
                     "access_rules": [
-                      "water_small_keys:4,[lullaby],longshot,hoverboots",
-                      "water_small_keys:4,[lullaby],longshot,@logic/explosives,lift1",
+                      "water_small_keys:2,longshot,hoverboots",
+                      "water_small_keys:2,longshot,@logic/explosives,lift1",
                       "{agony}"
                     ],
                     "capture_item": true,

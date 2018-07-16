@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.2.2
+
+- improved Water Temple:
+  - reduced small key requirements to absolute minimum needed
+  - added bow and dins to reach medium level water
+  - removed sequence breakable lullaby
+
 ## 2.0.2.1
 
 - fixed orientation for pinned locations on vertical tracker layout

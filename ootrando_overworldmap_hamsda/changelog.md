@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.2.2
+
+- removed sequence breakable lullaby from Water Temple
+
 ## 2.0.2.1
 
 - fixed orientation for pinned locations on vertical tracker layout
