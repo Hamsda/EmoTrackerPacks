@@ -3,6 +3,7 @@
 ## 2.0.2.2
 
 - removed sequence breakable lullaby from Water Temple
+- added lens+magic (sequence breakable) to clockwise GTG
 
 ## 2.0.2.1
 

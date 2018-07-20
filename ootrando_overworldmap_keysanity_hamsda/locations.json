@@ -5211,42 +5211,48 @@
                           {
                             "name": "Like-Like",
                             "access_rules": [
-                              "hookshot,lift2"
+                              "hookshot,lift2,[lens],[magic]"
                             ],
                             "item_count": 4
                           },
                           {
                             "name": "Eye Statue",
                             "access_rules": [
-                              "hookshot,bow"
+                              "hookshot,bow,[lens],[magic]",
+                              "@logic/explosives,hookshot,hammer,bow",
+                              "gtg_small_keys:2,hookshot,hammer,bow"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "Near Scarecrow",
                             "access_rules": [
-                              "hookshot,bow"
+                              "hookshot,bow,[lens],[magic]"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "Flaming Enemies",
                             "access_rules": [
-                              "hookshot"
+                              "hookshot,[lens],[magic]",
+                              "@logic/explosives,hookshot",
+                              "gtg_small_keys:2,hookshot"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "Hammer Pillar",
                             "access_rules": [
-                              "hookshot,[hammer]"
+                              "hookshot,[lens],[magic],[hammer]",
+                              "@logic/explosives,hookshot,[hammer]",
+                              "gtg_small_keys:2,hookshot,[hammer]"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,time",
+                              "hookshot,[lens],[magic],time",
                               "@logic/explosives,time",
                               "gtg_small_keys:2"
                             ],
@@ -5255,7 +5261,9 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,time,ironboots,[bluetunic]",
+                              "hookshot,[lens],[magic],time,ironboots,[bluetunic]",
+                              "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
+                              "gtg_small_keys:2,hookshot,time,ironboots,[bluetunic]",
                               "{agony}"
                             ],
                             "capture_item": true,

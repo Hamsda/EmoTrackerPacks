@@ -5235,21 +5235,22 @@
                           {
                             "name": "Like-Like",
                             "access_rules": [
-                              "hookshot,lift2"
+                              "hookshot,lift2,[lens],[magic]"
                             ],
                             "item_count": 4
                           },
                           {
                             "name": "Eye Statue",
                             "access_rules": [
-                              "hookshot,bow"
+                              "hookshot,bow,[lens],[magic]",
+                              "hookshot,hammer,bow"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "Near Scarecrow",
                             "access_rules": [
-                              "hookshot,bow"
+                              "hookshot,bow,[lens],[magic]"
                             ],
                             "item_count": 1
                           },

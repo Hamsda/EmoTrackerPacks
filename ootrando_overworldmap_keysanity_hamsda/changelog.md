@@ -6,6 +6,8 @@
   - reduced small key requirements to absolute minimum needed
   - added bow and dins to reach medium level water
   - removed sequence breakable lullaby
+- added lens+magic (sequence breakable) to clockwise GTG
+- added a bit more logic to counter-clockwise GTG regarding explosives or small keys (though it is unlikely someone will actually use 2 keys for this)
 
 ## 2.0.2.1
 
