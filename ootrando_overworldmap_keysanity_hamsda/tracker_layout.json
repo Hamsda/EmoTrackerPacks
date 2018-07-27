@@ -388,38 +388,30 @@
                           ]
                         },
                         {
-                          "type": "itemgrid",
-                          "item_margin": "1,2",
-                          "rows": [
-                            [
-                              "deku",
-                              "dodongo",
-                              "jabu",
-                              "type_bridge",
-                              "open_forest",
-                              "open_door"
-                            ]
-                          ]
-                        },
-                        {
                           "type": "array",
                           "orientation": "horizontal",
                           "margin": "5,0",
                           "content": [
                             {
                               "type": "item",
-                              "item": "deku_label",
-                              "margin": "1,2"
+                              "item": "deku",
+                              "margin": "1,2",
+                              "width": 32,
+                              "height": 32
                             },
                             {
                               "type": "item",
-                              "item": "dodongo_label",
-                              "margin": "1,2"
+                              "item": "dodongo",
+                              "margin": "1,2",
+                              "width": 32,
+                              "height": 32
                             },
                             {
                               "type": "item",
-                              "item": "jabu_label",
-                              "margin": "1,2"
+                              "item": "jabu",
+                              "margin": "1,2",
+                              "width": 32,
+                              "height": 32
                             },
                             {
                               "type": "canvas",
@@ -512,6 +504,20 @@
                                 }
                               ]
                             }
+                          ]
+                        },
+                        {
+                          "type": "itemgrid",
+                          "item_margin": "1,2",
+                          "rows": [
+                            [
+                              "type_bridge",
+                              "open_forest",
+                              "open_door",
+                              "type_lens",
+                              "",
+                              ""
+                            ]
                           ]
                         }
                       ]
