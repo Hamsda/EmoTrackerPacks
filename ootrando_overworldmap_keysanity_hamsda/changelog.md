@@ -9,7 +9,7 @@
 - added lens+magic (sequence breakable) to clockwise GTG
 - added a bit more logic to counter-clockwise GTG regarding explosives or small keys (though it is unlikely someone will actually use 2 keys for this)
 - added ocarina to locations that require playing songs
-- added basis for lens options
+- added lens options
 
 ## 2.0.2.1
 

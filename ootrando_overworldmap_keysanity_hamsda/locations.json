@@ -35,10 +35,20 @@
         "item_count": 1
       },
       {
+        "name": "lens",
+        "access_rules": [
+          "lens_all,[lens],[magic]",
+          "lens_wasteland"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "colossus",
         "access_rules": [
           "sword2,ocarina,epona,card,hoverboots,[lens],[magic]",
+          "sword2,ocarina,epona,card,hoverboots,lens_chest",
           "sword2,longshot,card,[lens],[magic]",
+          "sword2,longshot,card,lens_chest",
           "ocarina,requiem"
         ],
         "item_count": 1
@@ -1591,28 +1601,28 @@
                   {
                     "name": "Front Left Hidden",
                     "access_rules": [
-                      "[lens],[magic]"
+                      "@logic/lens"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Right Hidden",
                     "access_rules": [
-                      "[lens],[magic]"
+                      "@logic/lens"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Center Big Chest",
                     "access_rules": [
-                      "[lens],[magic]"
+                      "@logic/lens"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Center Small Chest",
                     "access_rules": [
-                      "[lens],[magic]"
+                      "@logic/lens"
                     ],
                     "item_count": 1
                   },
@@ -1620,7 +1630,7 @@
                     "name": "Locked Pits",
                     "clear_as_group": false,
                     "access_rules": [
-                      "botw_small_keys:1,[lens],[magic]"
+                      "botw_small_keys:1,@logic/lens"
                     ],
                     "item_count": 2
                   },
@@ -1675,7 +1685,7 @@
                   {
                     "name": "Invisible Chest",
                     "access_rules": [
-                      "ocarina,lullaby,[lens],[magic]"
+                      "ocarina,lullaby,@logic/lens"
                     ],
                     "item_count": 1
                   }
@@ -1703,7 +1713,7 @@
                         "access_rules": [
                           "botw_small_keys:1,boomerang,@logic/explosives",
                           "botw_small_keys:1,boomerang,lift1",
-                          "botw_small_keys:1,boomerang,lens,magic"
+                          "botw_small_keys:1,boomerang,@logic/lens"
                         ],
                         "item_count": 1
                       },
@@ -3388,7 +3398,7 @@
                       {
                         "name": "Invisible Hallway",
                         "access_rules": [
-                          "@Spirit Temple/Mirror Room,spirit_small_keys:2,@logic/explosives,[lens],[magic]"
+                          "@Spirit Temple/Mirror Room,spirit_small_keys:2,@logic/explosives,@logic/lens"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -3937,8 +3947,8 @@
           {
             "name": "Shadow Temple",
             "access_rules": [
-              "ocarina,nocturne,dinsfire,magic,[lens],sword2,hoverboots",
-              "ocarina,nocturne,dinsfire,magic,[lens],sword2,hookshot"
+              "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
+              "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
             ],
             "sections": [
               {
@@ -4554,36 +4564,36 @@
                   {
                     "name": "Shadow Trial",
                     "access_rules": [
-                      "longshot,hoverboots,[magic],[lens]",
-                      "magic,[lens],bow,firearrow"
+                      "longshot,hoverboots,@logic/lens",
+                      "magic,bow,firearrow,@logic/lens"
                     ],
                     "item_count": 2
                   },
                   {
                     "name": "Light Trial",
                     "access_rules": [
-                      "lift3,[lens],[magic]"
+                      "lift3,@logic/lens"
                     ],
                     "item_count": 7
                   },
                   {
                     "name": "Light Trial Back",
                     "access_rules": [
-                      "gc_small_keys:1,lift3,[lens],[magic],ocarina,lullaby"
+                      "gc_small_keys:1,lift3,@logic/lens,ocarina,lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Spirit Trial",
                     "access_rules": [
-                      "hookshot,bombchu,[lens],[magic]"
+                      "hookshot,bombchu,@logic/lens"
                     ],
                     "item_count": 2
                   },
                   {
                     "name": "Castle Tower",
                     "access_rules": [
-                      "gc_boss_key,gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,[lens],[redtunic]",
+                      "gc_boss_key,gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,[redtunic]",
                       "gc_boss_key,gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
                     ],
                     "item_count": 1
@@ -5211,14 +5221,14 @@
                           {
                             "name": "Like-Like",
                             "access_rules": [
-                              "hookshot,lift2,[lens],[magic]"
+                              "hookshot,lift2,@logic/lens"
                             ],
                             "item_count": 4
                           },
                           {
                             "name": "Eye Statue",
                             "access_rules": [
-                              "hookshot,bow,[lens],[magic]",
+                              "hookshot,bow,@logic/lens",
                               "@logic/explosives,hookshot,hammer,bow",
                               "gtg_small_keys:2,hookshot,hammer,bow"
                             ],
@@ -5227,14 +5237,14 @@
                           {
                             "name": "Near Scarecrow",
                             "access_rules": [
-                              "hookshot,bow,[lens],[magic]"
+                              "hookshot,bow,@logic/lens"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "Flaming Enemies",
                             "access_rules": [
-                              "hookshot,[lens],[magic]",
+                              "hookshot,@logic/lens",
                               "@logic/explosives,hookshot",
                               "gtg_small_keys:2,hookshot"
                             ],
@@ -5243,7 +5253,7 @@
                           {
                             "name": "Hammer Pillar",
                             "access_rules": [
-                              "hookshot,[lens],[magic],[hammer]",
+                              "hookshot,@logic/lens,[hammer]",
                               "@logic/explosives,hookshot,[hammer]",
                               "gtg_small_keys:2,hookshot,[hammer]"
                             ],
@@ -5252,7 +5262,7 @@
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,[lens],[magic],ocarina,time",
+                              "hookshot,@logic/lens,ocarina,time",
                               "@logic/explosives,ocarina,time",
                               "gtg_small_keys:2"
                             ],
@@ -5261,7 +5271,7 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,[lens],[magic],ocarina,time,ironboots,[bluetunic]",
+                              "hookshot,@logic/lens,ocarina,time,ironboots,[bluetunic]",
                               "@logic/explosives,hookshot,ocarina,time,ironboots,[bluetunic]",
                               "gtg_small_keys:2,hookshot,ocarina,time,ironboots,[bluetunic]",
                               "{agony}"
@@ -5279,7 +5289,7 @@
                           {
                             "name": "Above Maze",
                             "access_rules": [
-                              "gtg_small_keys:1,[lens],[magic]"
+                              "gtg_small_keys:1,@logic/lens"
                             ],
                             "item_count": 1
                           },

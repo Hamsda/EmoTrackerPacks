@@ -38,7 +38,6 @@
         "name": "lens",
         "access_rules": [
           "lens_all,[lens],[magic]",
-          "lens_chest",
           "lens_wasteland"
         ],
         "item_count": 1
@@ -46,9 +45,9 @@
       {
         "name": "colossus",
         "access_rules": [
-          "sword2,ocarina,epona,card,hoverboots,lens_wasteland,[lens],[magic]",
-          "sword2,longshot,card,lens_wasteland,[lens],[magic]",
+          "sword2,ocarina,epona,card,hoverboots,[lens],[magic]",
           "sword2,ocarina,epona,card,hoverboots,lens_chest",
+          "sword2,longshot,card,[lens],[magic]",
           "sword2,longshot,card,lens_chest",
           "ocarina,requiem"
         ],
@@ -1722,7 +1721,7 @@
                         "access_rules": [
                           "boomerang,@logic/explosives",
                           "boomerang,lift1",
-                          "boomerang,lens,magic"
+                          "boomerang,@logic/lens"
                         ],
                         "item_count": 1
                       },
@@ -3416,7 +3415,7 @@
                       {
                         "name": "Invisible Hallway",
                         "access_rules": [
-                          "@Spirit Temple/Mirror Room,@logic/explosives,[lens],[magic]"
+                          "@Spirit Temple/Mirror Room,@logic/explosives,@logic/lens"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -3969,8 +3968,8 @@
           {
             "name": "Shadow Temple",
             "access_rules": [
-              "ocarina,nocturne,dinsfire,magic,[lens],sword2,hoverboots",
-              "ocarina,nocturne,dinsfire,magic,[lens],sword2,hookshot"
+              "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
+              "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
             ],
             "sections": [
               {
@@ -4589,29 +4588,29 @@
                   {
                     "name": "Shadow Trial",
                     "access_rules": [
-                      "longshot,hoverboots,[magic],[lens]",
-                      "magic,[lens],bow,firearrow"
+                      "longshot,hoverboots,@logic/lens",
+                      "magic,bow,firearrow,@logic/lens"
                     ],
                     "item_count": 2
                   },
                   {
                     "name": "Light Trial",
                     "access_rules": [
-                      "lift3,[lens],[magic],[ocarina],[lullaby]"
+                      "lift3,@logic/lens,[ocarina],[lullaby]"
                     ],
                     "item_count": 8
                   },
                   {
                     "name": "Spirit Trial",
                     "access_rules": [
-                      "hookshot,bombchu,[lens],[magic]"
+                      "hookshot,bombchu,@logic/lens"
                     ],
                     "item_count": 2
                   },
                   {
                     "name": "Castle Tower",
                     "access_rules": [
-                      "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,[lens],[redtunic]",
+                      "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,[redtunic]",
                       "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
                     ],
                     "item_count": 1
@@ -5246,14 +5245,14 @@
                           {
                             "name": "Like-Like",
                             "access_rules": [
-                              "hookshot,lift2,[lens],[magic]"
+                              "hookshot,lift2,@logic/lens"
                             ],
                             "item_count": 4
                           },
                           {
                             "name": "Eye Statue",
                             "access_rules": [
-                              "hookshot,bow,[lens],[magic]",
+                              "hookshot,bow,@logic/lens",
                               "hookshot,hammer,bow"
                             ],
                             "item_count": 1
@@ -5261,7 +5260,7 @@
                           {
                             "name": "Near Scarecrow",
                             "access_rules": [
-                              "hookshot,bow,[lens],[magic]"
+                              "hookshot,bow,@logic/lens"
                             ],
                             "item_count": 1
                           },
@@ -5306,7 +5305,7 @@
                           {
                             "name": "Above Maze",
                             "access_rules": [
-                              "[lens],[magic]"
+                              "@logic/lens"
                             ],
                             "item_count": 1
                           },
