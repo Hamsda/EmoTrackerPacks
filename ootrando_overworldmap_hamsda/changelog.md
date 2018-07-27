@@ -4,6 +4,8 @@
 
 - removed sequence breakable lullaby from Water Temple
 - added lens+magic (sequence breakable) to clockwise GTG
+- added ocarina to locations that require playing songs
+- added basis for lens options
 
 ## 2.0.2.1
 

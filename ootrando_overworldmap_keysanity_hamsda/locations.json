@@ -37,17 +37,17 @@
       {
         "name": "colossus",
         "access_rules": [
-          "sword2,epona,card,hoverboots,[lens],[magic]",
+          "sword2,ocarina,epona,card,hoverboots,[lens],[magic]",
           "sword2,longshot,card,[lens],[magic]",
-          "requiem"
+          "ocarina,requiem"
         ],
         "item_count": 1
       },
       {
         "name": "ice cavern",
         "access_rules": [
-          "@logic/explosives,[lullaby],ruto,sword2",
-          "scale1,[lullaby],ruto,sword2"
+          "@logic/explosives,[ocarina],[lullaby],ruto,sword2",
+          "scale1,[ocarina],[lullaby],ruto,sword2"
         ],
         "item_count": 1
       }
@@ -101,7 +101,7 @@
                   {
                     "name": "Play Song of Storms",
                     "access_rules": [
-                      "storm"
+                      "ocarina,storm"
                     ],
                     "item_count": 1
                   }
@@ -264,7 +264,7 @@
               {
                 "name": "Skull Kid",
                 "access_rules": [
-                  "saria"
+                  "ocarina,saria"
                 ],
                 "sections": [
                   {
@@ -326,8 +326,8 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,saria",
-                      "sword2,minuet"
+                      "sword2,ocarina,saria",
+                      "sword2,ocarina,minuet"
                     ],
                     "x": 2192,
                     "y": 724
@@ -487,8 +487,8 @@
                 "name": "Wolfos Grotto",
                 "access_rules": [
                   "@logic/explosives",
-                  "sword2,hammer,saria",
-                  "sword2,hammer,minuet"
+                  "sword2,hammer,ocarina,saria",
+                  "sword2,hammer,ocarina,minuet"
                 ],
                 "sections": [
                   {
@@ -508,8 +508,8 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,saria",
-                      "sword2,minuet"
+                      "sword2,ocarina,saria",
+                      "sword2,ocarina,minuet"
                     ],
                     "x": 2180,
                     "y": 686
@@ -1184,7 +1184,7 @@
                       {
                         "name": "HP",
                         "access_rules": [
-                          "sword2,[time]",
+                          "sword2,[ocarina],[time]",
                           "boomerang"
                         ],
                         "item_count": 1
@@ -1202,7 +1202,7 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,[time]"
+                          "sword2,[ocarina],[time]"
                         ],
                         "x": 1915,
                         "y": 376
@@ -1434,7 +1434,7 @@
                       {
                         "name": "Play Suns Song",
                         "access_rules": [
-                          "sun",
+                          "ocarina,sun",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -1515,7 +1515,7 @@
                       {
                         "name": "Song",
                         "access_rules": [
-                          "lullaby",
+                          "ocarina,lullaby",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -1524,7 +1524,7 @@
                       {
                         "name": "Torches",
                         "access_rules": [
-                          "lullaby,@logic/has fire",
+                          "ocarina,lullaby,@logic/has fire",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -1585,7 +1585,7 @@
               {
                 "name": "Bottom of the Well",
                 "access_rules": [
-                  "storm"
+                  "ocarina,storm"
                 ],
                 "sections": [
                   {
@@ -1654,28 +1654,28 @@
                   {
                     "name": "Underwater Front",
                     "access_rules": [
-                      "lullaby"
+                      "ocarina,lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Underwater Left",
                     "access_rules": [
-                      "lullaby"
+                      "ocarina,lullaby"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Deadhand",
                     "access_rules": [
-                      "lullaby,[sword1]"
+                      "ocarina,lullaby,[sword1]"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Invisible Chest",
                     "access_rules": [
-                      "lullaby,[lens],[magic]"
+                      "ocarina,lullaby,[lens],[magic]"
                     ],
                     "item_count": 1
                   }
@@ -1807,8 +1807,8 @@
                       {
                         "name": ":) HP",
                         "access_rules": [
-                          "lullaby,bombs",
-                          "lullaby,lift1",
+                          "ocarina,lullaby,bombs",
+                          "ocarina,lullaby,lift1",
                           "dinsfire,magic,bombs",
                           "dinsfire,magic,lift1",
                           "{agony}"
@@ -1828,7 +1828,7 @@
                   {
                     "name": "Darunias Joy",
                     "access_rules": [
-                      "lullaby,saria",
+                      "ocarina,lullaby,saria",
                       "{agony}"
                     ],
                     "sections": [
@@ -1952,7 +1952,7 @@
                       {
                         "name": "Play Song of Storms",
                         "access_rules": [
-                          "storm"
+                          "ocarina,storm"
                         ],
                         "item_count": 1
                       }
@@ -1976,7 +1976,7 @@
                   {
                     "name": "Mountain Summit Fairy",
                     "access_rules": [
-                      "lullaby,@logic/can blast"
+                      "ocarina,lullaby,@logic/can blast"
                     ],
                     "sections": [
                       {
@@ -2101,7 +2101,7 @@
                         "name": "Get it",
                         "access_rules": [
                           "@logic/can blast",
-                          "bolero,beans",
+                          "ocarina,bolero,beans",
                           "@Link the Goron"
                         ],
                         "item_count": 1
@@ -2146,7 +2146,7 @@
                       {
                         "name": "GS37 - Crater Soil Patch",
                         "access_rules": [
-                          "bottle,bolero"
+                          "bottle,ocarina,bolero"
                         ],
                         "item_count": 1
                       }
@@ -2415,7 +2415,7 @@
                         "hosted_item": "sword2",
                         "access_rules": [
                           "open_door",
-                          "time"
+                          "ocarina,time"
                         ]
                       }
                     ],
@@ -2519,7 +2519,7 @@
                   {
                     "name": "Hyrule Castle Fairy",
                     "access_rules": [
-                      "lullaby,@logic/explosives"
+                      "ocarina,lullaby,@logic/explosives"
                     ],
                     "sections": [
                       {
@@ -2552,7 +2552,7 @@
                       {
                         "name": "GS16 - Song Of Storms Near Moat",
                         "access_rules": [
-                          "boomerang,storm,@logic/explosives"
+                          "boomerang,ocarina,storm,@logic/explosives"
                         ],
                         "item_count": 1
                       },
@@ -2597,16 +2597,16 @@
                       {
                         "name": "Frogs in the Rain",
                         "access_rules": [
-                          "@logic/explosives,storm",
-                          "scale1,storm"
+                          "@logic/explosives,ocarina,storm",
+                          "scale1,ocarina,storm"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Fly Catching",
                         "access_rules": [
-                          "@logic/explosives,lullaby,saria,epona,sun,time,storm",
-                          "scale1,lullaby,saria,epona,sun,time,storm",
+                          "@logic/explosives,ocarina,lullaby,saria,epona,sun,time,storm",
+                          "scale1,ocarina,lullaby,saria,epona,sun,time,storm",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -2778,7 +2778,7 @@
               {
                 "name": "Zoras Domain",
                 "access_rules": [
-                  "@logic/explosives,[lullaby]",
+                  "@logic/explosives,[ocarina],[lullaby]",
                   "scale1"
                 ],
                 "children": [
@@ -2819,7 +2819,7 @@
               {
                 "name": "Zoras Fountain",
                 "access_rules": [
-                  "@logic/explosives,[lullaby],ruto",
+                  "@logic/explosives,[ocarina],[lullaby],ruto",
                   "scale1,ruto"
                 ],
                 "children": [
@@ -2829,7 +2829,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "lullaby,@logic/explosives"
+                          "ocarina,lullaby,@logic/explosives"
                         ],
                         "item_count": 1
                       }
@@ -3055,7 +3055,7 @@
                       {
                         "name": "GS88 - Behind Carpenters Tent",
                         "access_rules": [
-                          "sword2,epona,hookshot",
+                          "sword2,ocarina,epona,hookshot",
                           "sword2,longshot"
                         ],
                         "item_count": 1
@@ -3063,7 +3063,7 @@
                       {
                         "name": "GS89 - Underside Rock Arch",
                         "access_rules": [
-                          "sword2,epona,hookshot",
+                          "sword2,ocarina,epona,hookshot",
                           "sword2,longshot"
                         ],
                         "item_count": 1
@@ -3096,9 +3096,9 @@
                       {
                         "name": "Light the torches",
                         "access_rules": [
-                          "sword2,epona,card,hoverboots,@logic/has fire",
+                          "sword2,ocarina,epona,card,hoverboots,@logic/has fire",
                           "sword2,longshot,card,@logic/has fire",
-                          "requiem,[card],[longshot],@logic/has fire",
+                          "ocarina,requiem,[card],[longshot],@logic/has fire",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3129,7 +3129,7 @@
                       {
                         "name": "GS92 - Inside Structure",
                         "access_rules": [
-                          "sword2,epona,card,hoverboots,hookshot",
+                          "sword2,ocarina,epona,card,hoverboots,hookshot",
                           "sword2,longshot,card"
                         ],
                         "item_count": 1
@@ -3157,7 +3157,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "@logic/colossus,lullaby,@logic/explosives"
+                          "@logic/colossus,ocarina,lullaby,@logic/explosives"
                         ],
                         "item_count": 1
                       }
@@ -3166,7 +3166,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "requiem"
+                          "ocarina,requiem"
                         ],
                         "x": 276,
                         "y": 297
@@ -3187,7 +3187,7 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "requiem,beans,sword2",
+                          "ocarina,requiem,beans,sword2",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3222,7 +3222,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "requiem"
+                          "ocarina,requiem"
                         ],
                         "x": 128,
                         "y": 347
@@ -3250,7 +3250,7 @@
                       {
                         "name": "GS93 - Soil Patch Outside Spirit Temple",
                         "access_rules": [
-                          "requiem,bottle"
+                          "ocarina,requiem,bottle"
                         ],
                         "item_count": 1
                       },
@@ -3264,7 +3264,7 @@
                       {
                         "name": "GS95 - Top Of Platform",
                         "access_rules": [
-                          "requiem,beans",
+                          "ocarina,requiem,beans",
                           "@logic/colossus,longshot"
                         ],
                         "item_count": 1
@@ -3295,8 +3295,8 @@
                       {
                         "name": "Lower Child",
                         "access_rules": [
-                          "requiem,boomerang",
-                          "requiem,sling"
+                          "ocarina,requiem,boomerang",
+                          "ocarina,requiem,sling"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -3332,7 +3332,7 @@
                       {
                         "name": "Compass Chest",
                         "access_rules": [
-                          "sword2,lift2,lullaby,hookshot"
+                          "sword2,lift2,ocarina,lullaby,hookshot"
                         ],
                         "item_count": 1
                       },
@@ -3366,7 +3366,7 @@
                       {
                         "name": "Statue Hand",
                         "access_rules": [
-                          "@Spirit Temple/Mirror Room,lullaby"
+                          "@Spirit Temple/Mirror Room,ocarina,lullaby"
                         ],
                         "item_count": 1
                       },
@@ -3405,7 +3405,7 @@
                       {
                         "name": "Boss Key Chest",
                         "access_rules": [
-                          "@Spirit Temple/Mirror Room,spirit_small_keys:3,@logic/explosives,lullaby,[bow],[hookshot]"
+                          "@Spirit Temple/Mirror Room,spirit_small_keys:3,@logic/explosives,ocarina,lullaby,[bow],[hookshot]"
                         ],
                         "item_count": 1
                       },
@@ -3429,7 +3429,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "requiem"
+                          "ocarina,requiem"
                         ],
                         "x": 85,
                         "y": 301
@@ -3476,9 +3476,9 @@
                           {
                             "name": "GS99 - Boulder Room Behind Block",
                             "access_rules": [
-                              "time,hookshot",
-                              "time,bow",
-                              "time,@logic/explosives"
+                              "ocarina,time,hookshot",
+                              "ocarina,time,bow",
+                              "ocarina,time,@logic/explosives"
                             ],
                             "item_count": 1
                           },
@@ -3573,8 +3573,8 @@
           {
             "name": "Sacred Forest Meadow",
             "access_rules": [
-              "saria",
-              "minuet"
+              "ocarina,saria",
+              "ocarina,minuet"
             ],
             "children": [
               {
@@ -3583,8 +3583,8 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "saria",
-                      "minuet",
+                      "ocarina,saria",
+                      "ocarina,minuet",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -3642,7 +3642,7 @@
                   {
                     "name": "Map Chest",
                     "access_rules": [
-                      "time",
+                      "ocarina,time",
                       "bow,[ironboots]",
                       "bow,[scale2]",
                       "forest_small_keys:1,hoverboots"
@@ -3652,7 +3652,7 @@
                   {
                     "name": "Below Scarecrow",
                     "access_rules": [
-                      "time",
+                      "ocarina,time",
                       "bow",
                       "forest_small_keys:1,hoverboots"
                     ],
@@ -3937,8 +3937,8 @@
           {
             "name": "Shadow Temple",
             "access_rules": [
-              "nocturne,dinsfire,magic,[lens],sword2,hoverboots",
-              "nocturne,dinsfire,magic,[lens],sword2,hookshot"
+              "ocarina,nocturne,dinsfire,magic,[lens],sword2,hoverboots",
+              "ocarina,nocturne,dinsfire,magic,[lens],sword2,hookshot"
             ],
             "sections": [
               {
@@ -4018,7 +4018,7 @@
               {
                 "name": "Boss Key Room",
                 "access_rules": [
-                  "@Shadow Temple/After Wind Room,shadow_small_keys:4,lullaby"
+                  "@Shadow Temple/After Wind Room,shadow_small_keys:4,ocarina,lullaby"
                 ],
                 "clear_as_group": false,
                 "item_count": 2
@@ -4026,7 +4026,7 @@
               {
                 "name": "Floormaster",
                 "access_rules": [
-                  "@Shadow Temple/After Wind Room,shadow_small_keys:4,lullaby",
+                  "@Shadow Temple/After Wind Room,shadow_small_keys:4,ocarina,lullaby",
                   "{agony}"
                 ],
                 "capture_item": true,
@@ -4165,9 +4165,9 @@
                 "access_rules": [
                   "@logic/can blast",
                   "@Link the Goron",
-                  "bolero,beans",
-                  "bolero,hoverboots",
-                  "bolero,hookshot"
+                  "ocarina,bolero,beans",
+                  "ocarina,bolero,hoverboots",
+                  "ocarina,bolero,hookshot"
                 ],
                 "sections": [
                   {
@@ -4213,8 +4213,8 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "bolero,beans",
-                      "bolero,hoverboots",
+                      "ocarina,bolero,beans",
+                      "ocarina,bolero,hoverboots",
                       "@Link the Goron,hoverboots",
                       "{agony}"
                     ],
@@ -4233,9 +4233,9 @@
               {
                 "name": "Crater Fairy",
                 "access_rules": [
-                  "lullaby,hammer,@Link the Goron",
-                  "lullaby,hammer,bolero,hookshot",
-                  "lullaby,hammer,hoverboots"
+                  "ocarina,lullaby,hammer,@Link the Goron",
+                  "ocarina,lullaby,hammer,ocarina,bolero,hookshot",
+                  "ocarina,lullaby,hammer,hoverboots"
                 ],
                 "sections": [
                   {
@@ -4254,7 +4254,7 @@
               {
                 "name": "Sheik in Crater",
                 "access_rules": [
-                  "bolero",
+                  "ocarina,bolero",
                   "hoverboots",
                   "@Link the Goron,hookshot",
                   "{agony}"
@@ -4361,7 +4361,7 @@
                   {
                     "name": "Time Block Room",
                     "access_rules": [
-                      "@Fire Temple/Compass Chest,fire_small_keys:7,hammer,time",
+                      "@Fire Temple/Compass Chest,fire_small_keys:7,hammer,ocarina,time",
                       "@Fire Temple/Compass Chest,hammer,hoverboots"
                     ],
                     "item_count": 1
@@ -4407,7 +4407,7 @@
                       {
                         "name": "GS65 - Time Block First Room",
                         "access_rules": [
-                          "time"
+                          "ocarina,time"
                         ],
                         "item_count": 1
                       },
@@ -4495,7 +4495,7 @@
                   {
                     "name": "Happy Hunting",
                     "access_rules": [
-                      "bow,epona,bottle",
+                      "bow,ocarina,epona,bottle",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4518,7 +4518,7 @@
               {
                 "name": "Ganons Castle Fairy",
                 "access_rules": [
-                  "lullaby,lift3"
+                  "ocarina,lullaby,lift3"
                 ],
                 "sections": [
                   {
@@ -4569,7 +4569,7 @@
                   {
                     "name": "Light Trial Back",
                     "access_rules": [
-                      "gc_small_keys:1,lift3,[lens],[magic],lullaby"
+                      "gc_small_keys:1,lift3,[lens],[magic],ocarina,lullaby"
                     ],
                     "item_count": 1
                   },
@@ -4608,7 +4608,7 @@
           {
             "name": "Zoras Domain",
             "access_rules": [
-              "[lullaby]"
+              "[ocarina],[lullaby]"
             ],
             "children": [
               {
@@ -4691,8 +4691,8 @@
           {
             "name": "Zoras Fountain",
             "access_rules": [
-              "@logic/explosives,[lullaby],ruto",
-              "scale1,[lullaby],ruto"
+              "@logic/explosives,[ocarina],[lullaby],ruto",
+              "scale1,[ocarina],[lullaby],ruto"
             ],
             "children": [
               {
@@ -4887,25 +4887,25 @@
                   {
                     "name": "Torch Chest",
                     "access_rules": [
-                      "lullaby,bow",
-                      "lullaby,dinsfire,magic"
+                      "ocarina,lullaby,bow",
+                      "ocarina,lullaby,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Dragon Chest",
                     "access_rules": [
-                      "lullaby,lift1",
-                      "water_small_keys:2,time,bow"
+                      "ocarina,lullaby,lift1",
+                      "water_small_keys:2,ocarina,time,bow"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Basement",
                     "access_rules": [
-                      "water_small_keys:1,lullaby",
-                      "lullaby,bow",
-                      "lullaby,dinsfire,magic"
+                      "water_small_keys:1,ocarina,lullaby",
+                      "ocarina,lullaby,bow",
+                      "ocarina,lullaby,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
@@ -4920,8 +4920,8 @@
                   {
                     "name": "Center Eye Switch",
                     "access_rules": [
-                      "lullaby,bow,lift1,hoverboots",
-                      "lullaby,bow,lift1,longshot"
+                      "ocarina,lullaby,bow,lift1,hoverboots",
+                      "ocarina,lullaby,bow,lift1,longshot"
                     ],
                     "item_count": 1
                   },
@@ -4935,7 +4935,7 @@
                   {
                     "name": "River",
                     "access_rules": [
-                      "water_small_keys:2,time,bow",
+                      "water_small_keys:2,ocarina,time,bow",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4981,21 +4981,21 @@
                       {
                         "name": "GS73 - Bottom South, Hit Switch Spin Attack",
                         "access_rules": [
-                          "@logic/explosives,magic,lullaby"
+                          "@logic/explosives,magic,ocarina,lullaby"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "GS74 - River After Dark Link",
                         "access_rules": [
-                          "@Water Temple/Dark Link,time"
+                          "@Water Temple/Dark Link,ocarina,time"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "GS75 - Center Pillar Inside",
                         "access_rules": [
-                          "longshot,lullaby"
+                          "longshot,ocarina,lullaby"
                         ],
                         "item_count": 1
                       },
@@ -5009,8 +5009,8 @@
                       {
                         "name": "GS77 - Bottom Rolling Rocks Room",
                         "access_rules": [
-                          "lullaby,longshot,@logic/explosives,lift1",
-                          "lullaby,longshot,hoverboots"
+                          "ocarina,lullaby,longshot,@logic/explosives,lift1",
+                          "ocarina,lullaby,longshot,hoverboots"
                         ],
                         "item_count": 1
                       }
@@ -5039,7 +5039,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "epona",
+                  "ocarina,epona",
                   "longshot",
                   "hookshot,[longshot]"
                 ],
@@ -5132,14 +5132,14 @@
                           {
                             "name": "1000",
                             "access_rules": [
-                              "epona,bow,card"
+                              "ocarina,epona,bow,card"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "1500",
                             "access_rules": [
-                              "epona,bow,card",
+                              "ocarina,epona,bow,card",
                               "{agony}"
                             ],
                             "capture_item": true,
@@ -5252,8 +5252,8 @@
                           {
                             "name": "Lava Pit Ledge",
                             "access_rules": [
-                              "hookshot,[lens],[magic],time",
-                              "@logic/explosives,time",
+                              "hookshot,[lens],[magic],ocarina,time",
+                              "@logic/explosives,ocarina,time",
                               "gtg_small_keys:2"
                             ],
                             "item_count": 3
@@ -5261,9 +5261,9 @@
                           {
                             "name": "Under Water",
                             "access_rules": [
-                              "hookshot,[lens],[magic],time,ironboots,[bluetunic]",
-                              "@logic/explosives,hookshot,time,ironboots,[bluetunic]",
-                              "gtg_small_keys:2,hookshot,time,ironboots,[bluetunic]",
+                              "hookshot,[lens],[magic],ocarina,time,ironboots,[bluetunic]",
+                              "@logic/explosives,hookshot,ocarina,time,ironboots,[bluetunic]",
+                              "gtg_small_keys:2,hookshot,ocarina,time,ironboots,[bluetunic]",
                               "{agony}"
                             ],
                             "capture_item": true,

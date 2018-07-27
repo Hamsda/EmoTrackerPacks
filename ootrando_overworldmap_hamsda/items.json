@@ -62,6 +62,26 @@
     ]
   },
   {
+    "name": "Lens Requirement",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/agony.png",
+        "codes": "type_lens,lens_all"
+      },
+      {
+        "img": "images/yellow_note.png",
+        "codes": "lens_wasteland"
+      },
+      {
+        "img": "images/chest.png",
+        "codes": "lens_chest"
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,
