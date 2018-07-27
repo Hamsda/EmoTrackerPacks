@@ -10,6 +10,7 @@
 - added a bit more logic to counter-clockwise GTG regarding explosives or small keys (though it is unlikely someone will actually use 2 keys for this)
 - added ocarina to locations that require playing songs
 - added lens options
+- fixed Zora Tunic from shop always requires both wallet upgrades
 
 ## 2.0.2.1
 

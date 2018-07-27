@@ -6,6 +6,7 @@
 - added lens+magic (sequence breakable) to clockwise GTG
 - added ocarina to locations that require playing songs
 - added lens options
+- fixed Zora Tunic from shop always requires both wallet upgrades
 
 ## 2.0.2.1
 

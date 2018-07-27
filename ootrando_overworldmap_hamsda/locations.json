@@ -4671,7 +4671,7 @@
                   {
                     "name": "Tunic",
                     "access_rules": [
-                      "bottle,[wallet2]",
+                      "bottle,wallet2",
                       "bottle,@logic/ice cavern"
                     ],
                     "hosted_item": "bluetunic"
