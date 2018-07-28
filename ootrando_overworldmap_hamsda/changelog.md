@@ -7,6 +7,7 @@
 - added ocarina to locations that require playing songs
 - added lens options
 - fixed Zora Tunic from shop always requires both wallet upgrades
+- added a settings section to the layout and changed some icons
 
 ## 2.0.2.1
 

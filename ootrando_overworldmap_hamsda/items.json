@@ -6,11 +6,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/closed_door.png",
+        "img": "images/door_closed.png",
         "codes": "type_door,closed_door"
       },
       {
-        "img": "images/open_door.png",
+        "img": "images/door_open.png",
         "codes": "type_door,open_door",
         "inherit_codes": false
       }
@@ -23,11 +23,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/closed_forest.png",
+        "img": "images/forest_closed.png",
         "codes": "type_forest,closed_forest"
       },
       {
-        "img": "images/open_forest.png",
+        "img": "images/forest_open.png",
         "codes": "type_forest,open_forest",
         "inherit_codes": false
       }
@@ -68,15 +68,15 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/agony.png",
+        "img": "images/lens_all.png",
         "codes": "type_lens,lens_all"
       },
       {
-        "img": "images/yellow_note.png",
+        "img": "images/lens_wasteland.png",
         "codes": "lens_wasteland"
       },
       {
-        "img": "images/chest.png",
+        "img": "images/lens_chest.png",
         "codes": "lens_chest"
       }
     ]
