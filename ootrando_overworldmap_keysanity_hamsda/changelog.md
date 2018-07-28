@@ -12,6 +12,7 @@
 - added lens options
 - fixed Zora Tunic from shop always requires both wallet upgrades
 - added a settings section to the layout and changed some icons
+- changed/added a lot of logic from TRs fork
 
 ## 2.0.2.1
 

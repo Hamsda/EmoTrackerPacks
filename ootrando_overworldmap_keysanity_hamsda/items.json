@@ -82,6 +82,23 @@
     ]
   },
   {
+    "name": "Bombchu in Logic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/logic_chus_no.png",
+        "codes": "logic_chus,logic_chus_no"
+      },
+      {
+        "img": "images/logic_chus_yes.png",
+        "codes": "logic_chus,logic_chus_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,

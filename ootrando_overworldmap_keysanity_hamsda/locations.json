@@ -3,11 +3,10 @@
     "name": "logic",
     "sections": [
       {
-        "name": "can blast",
+        "name": "bombchus",
         "access_rules": [
-          "bombs",
-          "bombchu,[bombs]",
-          "sword2,hammer"
+          "logic_chus_no,bombs",
+          "logic_chus_yes,bombchu"
         ],
         "item_count": 1
       },
@@ -15,7 +14,16 @@
         "name": "explosives",
         "access_rules": [
           "bombs",
+          "@logic/bombchus",
           "bombchu,[bombs]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "can blast",
+        "access_rules": [
+          "@logic/explosives",
+          "sword2,hammer"
         ],
         "item_count": 1
       },
@@ -45,10 +53,10 @@
       {
         "name": "colossus",
         "access_rules": [
-          "sword2,ocarina,epona,card,hoverboots,[lens],[magic]",
-          "sword2,ocarina,epona,card,hoverboots,lens_chest",
-          "sword2,longshot,card,[lens],[magic]",
-          "sword2,longshot,card,lens_chest",
+          "sword2,card,hoverboots,[lens],[magic]",
+          "sword2,card,hoverboots,lens_chest",
+          "sword2,card,longshot,[lens],[magic]",
+          "sword2,card,longshot,lens_chest",
           "ocarina,requiem"
         ],
         "item_count": 1
@@ -124,7 +132,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 2119,
@@ -169,7 +177,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 2216,
@@ -366,7 +374,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 2149,
@@ -480,7 +488,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 2080,
@@ -593,7 +601,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1152,
@@ -624,7 +632,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1141,
@@ -649,7 +657,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1206,
@@ -680,7 +688,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1372,
@@ -711,7 +719,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1427,
@@ -724,8 +732,8 @@
                 "color": "#18a50e",
                 "sections": [
                   {
-                    "name": "Ocarina",
-                    "hosted_item": "fairyocarina"
+                    "name": "Gift from Saria",
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -736,7 +744,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 2030,
@@ -824,7 +832,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1478,
@@ -862,7 +870,7 @@
                         "name": "Tower HP",
                         "access_rules": [
                           "sword2,beans",
-                          "sword2,hookshot"
+                          "sword2,ocarina,hookshot"
                         ],
                         "item_count": 1
                       },
@@ -890,7 +898,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 961,
@@ -970,7 +978,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 866,
@@ -1112,7 +1120,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1787,
@@ -1136,7 +1144,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1894,
@@ -1164,7 +1172,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1801,
@@ -1238,7 +1246,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1830,
@@ -1327,7 +1335,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1778,
@@ -1385,7 +1393,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1737,
@@ -1430,7 +1438,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 2030,
@@ -1459,7 +1467,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 2066,
@@ -1549,7 +1557,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 2099,
@@ -1655,9 +1663,8 @@
                   {
                     "name": "Basement",
                     "access_rules": [
-                      "bombs",
-                      "bombchu,[bombs]",
-                      "lift1,[bombs]"
+                      "@logic/explosives",
+                      "lift1,botw_small_keys:1,@logic/lens"
                     ],
                     "item_count": 1
                   },
@@ -1784,7 +1791,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1591,
@@ -1837,13 +1844,13 @@
                   },
                   {
                     "name": "Darunias Joy",
-                    "access_rules": [
-                      "ocarina,lullaby,saria",
-                      "{agony}"
-                    ],
                     "sections": [
                       {
                         "name": "Play Sarias",
+                        "access_rules": [
+                          "ocarina,lullaby,saria",
+                          "{agony}"
+                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -1889,7 +1896,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1672,
@@ -1918,7 +1925,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1664,
@@ -1948,7 +1955,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1744,
@@ -1975,7 +1982,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1705,
@@ -2005,7 +2012,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1764,
@@ -2061,7 +2068,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1744,
@@ -2096,7 +2103,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1798,
@@ -2128,7 +2135,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1834,
@@ -2188,7 +2195,7 @@
                   },
                   {
                     "name": "Small Chest Upstairs",
-                    "access_rules":[
+                    "access_rules": [
                       "@logic/explosives",
                       "lift1",
                       "dinsfire,magic",
@@ -2201,7 +2208,8 @@
                     "access_rules": [
                       "@Dodongos Cavern/Small Chest Upstairs,[sling]",
                       "@Dodongos Cavern/Small Chest Upstairs,sword2,[bow]",
-                      "@Dodongos Cavern/Small Chest Upstairs,sword2,[hoverboots]"
+                      "@Dodongos Cavern/Small Chest Upstairs,sword2,[hoverboots]",
+                      "@Dodongos Cavern/Small Chest Upstairs,sword2,[longshot]"
                     ],
                     "item_count": 1
                   },
@@ -2224,7 +2232,7 @@
                   {
                     "name": "King Dodongo",
                     "access_rules": [
-                      "@Dodongos Cavern/Above Boss"
+                      "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
                     ],
                     "hosted_item": "dodongo",
                     "item_count": 1
@@ -2242,7 +2250,7 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules":[
+                    "visibility_rules": [
                       "sword2"
                     ],
                     "x": 1684,
@@ -2293,7 +2301,8 @@
                       {
                         "name": "GS42 - Scarecrow Song",
                         "access_rules": [
-                          "sword2,hookshot"
+                          "sword2,ocarina,hookshot",
+                          "sword2,longshot"
                         ],
                         "item_count": 1
                       }
@@ -2306,7 +2315,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1604,
@@ -2379,7 +2388,7 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "bombs"
+                      "@logic/bombchus"
                     ],
                     "sections": [
                       {
@@ -2467,13 +2476,10 @@
                 "children": [
                   {
                     "name": "Malon",
-                    "access_rules": [
-                      "nokidtrade"
-                    ],
                     "sections": [
                       {
                         "name": "Talk to her",
-                        "hosted_item": "childegg"
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -2582,7 +2588,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 1528,
@@ -2775,7 +2781,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 2198,
@@ -2852,7 +2858,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 2553,
@@ -2897,7 +2903,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 2434,
@@ -3030,7 +3036,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 701,
@@ -3087,7 +3093,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 722,
@@ -3106,9 +3112,10 @@
                       {
                         "name": "Light the torches",
                         "access_rules": [
-                          "sword2,ocarina,epona,card,hoverboots,@logic/has fire",
-                          "sword2,longshot,card,@logic/has fire",
-                          "ocarina,requiem,[card],[longshot],@logic/has fire",
+                          "sword2,card,hoverboots,@logic/has fire",
+                          "sword2,card,longshot,@logic/has fire",
+                          "ocarina,requiem,@logic/has fire,[sword2],[card],[hoverboots]",
+                          "ocarina,requiem,@logic/has fire,[sword2],[card],[longshot]",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3118,7 +3125,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 346,
@@ -3139,8 +3146,8 @@
                       {
                         "name": "GS92 - Inside Structure",
                         "access_rules": [
-                          "sword2,ocarina,epona,card,hoverboots,hookshot",
-                          "sword2,longshot,card"
+                          "sword2,card,hoverboots,hookshot",
+                          "sword2,card,longshot"
                         ],
                         "item_count": 1
                       }
@@ -3148,7 +3155,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 385,
@@ -3183,7 +3190,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 276,
@@ -3207,7 +3214,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 160,
@@ -3239,7 +3246,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 128,
@@ -3288,7 +3295,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 218,
@@ -3306,7 +3313,8 @@
                         "name": "Lower Child",
                         "access_rules": [
                           "ocarina,requiem,boomerang",
-                          "ocarina,requiem,sling"
+                          "ocarina,requiem,sling",
+                          "ocarina,requiem,@logic/bombchus"
                         ],
                         "clear_as_group": false,
                         "item_count": 2
@@ -3446,7 +3454,7 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules":[
+                        "visibility_rules": [
                           "sword2"
                         ],
                         "x": 85,
@@ -3509,7 +3517,7 @@
                           },
                           {
                             "map": "adult",
-                            "visibility_rules":[
+                            "visibility_rules": [
                               "sword2"
                             ],
                             "x": 82,
@@ -4355,7 +4363,7 @@
                   {
                     "name": "Scarecrow",
                     "access_rules": [
-                      "@Fire Temple/Above Boulder Maze,hookshot",
+                      "@Fire Temple/Above Boulder Maze,ocarina,hookshot",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4618,14 +4626,16 @@
           {
             "name": "Zoras Domain",
             "access_rules": [
-              "[ocarina],[lullaby]"
+              "ocarina,lullaby",
+              "hoverboots,[ocarina],[lullaby]"
             ],
             "children": [
               {
                 "name": "King Zora",
                 "access_rules": [
                   "bottle,[wallet2]",
-                  "bottle,@logic/ice cavern"
+                  "bottle,@logic/ice cavern",
+                  "bottle,@Ganons Castle/Water Trial"
                 ],
                 "sections": [
                   {
@@ -4711,7 +4721,7 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "ironboots",
+                      "ironboots,[bluetunic]",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4841,7 +4851,7 @@
                   {
                     "name": "Bite pls",
                     "access_rules": [
-                      "hookshot",
+                      "ocarina,hookshot",
                       "water",
                       "beans",
                       "{agony}"
@@ -4864,7 +4874,7 @@
                   {
                     "name": "Shoot it",
                     "access_rules": [
-                      "bow,longshot",
+                      "bow,ocarina,longshot",
                       "bow,water",
                       "{agony}"
                     ],
@@ -5049,6 +5059,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
+                  "card",
                   "ocarina,epona",
                   "longshot",
                   "hookshot,[longshot]"
@@ -5105,7 +5116,7 @@
                         "sections": [
                           {
                             "name": "Free them",
-                            "hosted_item": "card"
+                            "item_count": 1
                           }
                         ],
                         "map_locations": [
@@ -5123,7 +5134,8 @@
                             "name": "Open it",
                             "access_rules": [
                               "hoverboots",
-                              "hookshot"
+                              "ocarina,hookshot",
+                              "longshot"
                             ],
                             "item_count": 1
                           }
