@@ -1638,6 +1638,19 @@
     "max_quantity": 4
   },
   {
+    "name": "GF Label",
+    "type": "static",
+    "img": "images/gf.png",
+    "codes": "gf_label"
+  },
+  {
+    "name": "GF Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gf_small_keys",
+    "max_quantity": 4
+  },
+  {
     "name": "GTG Label",
     "type": "static",
     "img": "images/gtg.png",
