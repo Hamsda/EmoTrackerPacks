@@ -198,6 +198,7 @@
                 "header": "Settings",
                 "content": {
                   "type": "itemgrid",
+                  "h_alignment": "left",
                   "item_margin": "1,2",
                   "rows": [
                     [
@@ -205,8 +206,7 @@
                       "open_forest",
                       "open_door",
                       "type_lens",
-                      "",
-                      ""
+                      "logic_chus"
                     ]
                   ]
                 }
@@ -390,7 +390,8 @@
                           "type_bridge",
                           "open_forest",
                           "open_door",
-                          "type_lens"
+                          "type_lens",
+                          "logic_chus"
                         ]
                       ]
                     }
