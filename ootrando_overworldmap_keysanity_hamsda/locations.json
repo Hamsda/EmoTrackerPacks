@@ -241,44 +241,7 @@
                 "item_count": 2
               },
               {
-                "name": "Compass Room",
-                "short_name": "GS8",
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
                 "name": "Basement",
-                "item_count": 1
-              },
-              {
-                "name": "Basement Vines",
-                "short_name": "GS9",
-                "access_rules": [
-                  "sling",
-                  "@logic/explosives",
-                  "boomerang",
-                  "dinsfire,magic"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Basement Gate",
-                "short_name": "GS10",
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Basement Back Room",
-                "short_name": "GS11",
-                "access_rules": [
-                  "@logic/explosives,boomerang"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
               },
               {
@@ -295,6 +258,60 @@
                 "map": "child",
                 "x": 2426,
                 "y": 860
+              }
+            ],
+            "children": [
+              {
+                "name": "Deku Tree Skulltulas",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "Compass Room",
+                    "short_name": "GS8",
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Basement Vines",
+                    "short_name": "GS9",
+                    "access_rules": [
+                      "sling",
+                      "@logic/explosives",
+                      "boomerang",
+                      "dinsfire,magic"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Basement Gate",
+                    "short_name": "GS10",
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Basement Back Room",
+                    "short_name": "GS11",
+                    "access_rules": [
+                      "@logic/explosives,boomerang"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2460,
+                    "y": 860
+                  }
+                ]
               }
             ]
           },
@@ -2448,61 +2465,75 @@
                     ],
                     "sections": [
                       {
-                        "name": "Total (5):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS38 - Bombable Wall Right Hallway",
+                        "name": "Bombable Wall Right Hallway",
+                        "short_name": "GS38",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS39 - Staircase Room on Vines",
+                        "name": "Staircase Room on Vines",
+                        "short_name": "GS39",
                         "access_rules": [
-                          "@logic/explosives",
-                          "boomerang",
-                          "sling,lift1",
-                          "dinsfire,magic",
-                          "sword2,hookshot",
-                          "sword2,bow",
-                          "sword2,sword3"
+                          "@Dodongos Cavern/Small Chest Upstairs,@logic/explosives",
+                          "@Dodongos Cavern/Small Chest Upstairs,boomerang",
+                          "@Dodongos Cavern/Small Chest Upstairs,sling",
+                          "@Dodongos Cavern/Small Chest Upstairs,dinsfire,magic",
+                          "@Dodongos Cavern/Small Chest Upstairs,sword2,hookshot",
+                          "@Dodongos Cavern/Small Chest Upstairs,sword2,bow"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS40 - Before Boss Room Bombable",
+                        "name": "Before Boss Room Bombable",
+                        "short_name": "GS40",
+                        "access_rules":[
+                          "@Dodongos Cavern/King Dodongo"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS41 - Top of Stairs, Re-enter",
+                        "name": "Top of Stairs, Re-enter",
+                        "short_name": "GS41",
                         "access_rules": [
-                          "boomerang,@logic/explosives",
-                          "boomerang,lift1",
-                          "sword2,hookshot"
+                          "@Dodongos Cavern/Bomb Bag Chest,boomerang,@logic/explosives",
+                          "@Dodongos Cavern/Bomb Bag Chest,boomerang,lift1",
+                          "@Dodongos Cavern/Bomb Bag Chest,sword2,hookshot",
+                          "@Dodongos Cavern/Small Chest Upstairs,sword2,longshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS42 - Scarecrow Song",
+                        "name": "Scarecrow Song",
+                        "short_name": "GS42",
                         "access_rules": [
                           "sword2,ocarina,hookshot",
                           "sword2,longshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1604,
-                        "y": 178
+                        "x": 1650,
+                        "y": 220
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1604,
-                        "y": 178
+                        "x": 1650,
+                        "y": 220
                       }
                     ]
                   }
@@ -2905,7 +2936,7 @@
                           "scale1"
                         ],
                         "x": 2347,
-                        "y": 446
+                        "y": 425
                       },
                       {
                         "map": "adult",
@@ -2913,60 +2944,53 @@
                           "sword2,hoverboots"
                         ],
                         "x": 2347,
-                        "y": 446
+                        "y": 425
                       }
                     ]
                   },
                   {
-                    "name": "Zoras River Skulltulas",
+                    "name": "In Tree",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (4):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS43 - Roll Into Tree At Entrance",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS44 - Ladder At Entrance To Zoras Domain",
-                        "access_rules": [
-                          "@logic/explosives",
-                          "scale1"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS45 - Skulltula on Wall Near Grotto",
-                        "access_rules": [
-                          "sword2,hookshot"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS46 - Final Bridge Near Zoras Domain",
-                        "access_rules": [
-                          "sword2,hookshot"
-                        ],
+                        "name": "GS43",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2198,
-                        "y": 492
-                      },
+                        "x": 1935,
+                        "y": 545
+                      }
+                    ]
+                  },
+                  {
+                    "name": "On Ladder (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "name": "GS44",
+                        "access_rules": [
+                          "@logic/explosives",
+                          "scale1"
                         ],
-                        "x": 2198,
-                        "y": 492
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2360,
+                        "y": 458
                       }
                     ]
                   }
@@ -3048,47 +3072,47 @@
                     ]
                   },
                   {
-                    "name": "Zora Fountain Skulltulas",
+                    "name": "Tree near Fairy",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (3):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS48 - Roll Into Tree At Fairy Fountain",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS49 - Wall Near Log",
-                        "access_rules": [
-                          "boomerang"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS50 - Silver Boulder At Fairy Fountain",
-                        "access_rules": [
-                          "sword2,lift2,@logic/explosives,hookshot"
-                        ],
+                        "name": "GS48",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2434,
-                        "y": 334
-                      },
+                        "x": 2519,
+                        "y": 319
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Wall near Log (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "name": "GS49",
+                        "access_rules": [
+                          "boomerang"
                         ],
-                        "x": 2434,
-                        "y": 334
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2519,
+                        "y": 350
                       }
                     ]
                   },
@@ -4948,6 +4972,59 @@
         "color": "#0936a0",
         "children": [
           {
+            "name": "Zoras River",
+            "children": [
+              {
+                "name": "Plateau Wall (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS45",
+                    "access_rules": [
+                      "hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2060,
+                    "y": 540
+                  }
+                ]
+              },
+              {
+                "name": "Wall near Bridge (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS46",
+                    "access_rules": [
+                      "hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2280,
+                    "y": 465
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Zoras Domain",
             "access_rules": [
               "ocarina,lullaby",
@@ -5003,17 +5080,13 @@
                 ]
               },
               {
-                "name": "Zoras Domain Skulltulas",
+                "name": "Top of Waterfall (N)",
                 "access_rules": [
                   "show_skulltulas"
                 ],
                 "sections": [
                   {
-                    "name": "Total (1):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS47 - Top of Waterfall",
+                    "name": "GS47",
                     "access_rules": [
                       "hookshot",
                       "bow",
@@ -5073,6 +5146,30 @@
                     "map": "adult",
                     "x": 2554,
                     "y": 292
+                  }
+                ]
+              },
+              {
+                "name": "Under Silver Boulder (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS50",
+                    "access_rules": [
+                      "lift2,@logic/can blast,hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2585,
+                    "y": 310
                   }
                 ]
               },
