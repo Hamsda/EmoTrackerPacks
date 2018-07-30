@@ -1936,30 +1936,33 @@
                     ],
                     "sections": [
                       {
-                        "name": "Total (3):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS78 - Like-Like Room",
+                        "name": "Like-Like Room",
+                        "short_name": "GS78",
                         "access_rules": [
-                          "boomerang,@logic/explosives",
-                          "boomerang,lift1",
                           "boomerang,@logic/lens"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS79 - Left Locked Room",
+                        "name": "Left Locked Room",
+                        "short_name": "GS79",
                         "access_rules": [
                           "boomerang"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS80 - Right Locked Room",
+                        "name": "Right Locked Room",
+                        "short_name": "GS80",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang,@logic/lens"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
@@ -4354,50 +4357,61 @@
                 ],
                 "sections": [
                   {
-                    "name": "Total (5):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS81 - Invisible Spikes",
+                    "name": "Like-Like Room",
+                    "short_name":"GS81",
                     "access_rules": [
                       "@Shadow Temple/Like-Like Room,hookshot"
                     ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   },
                   {
-                    "name": "GS82 - Falling Spikes Room",
+                    "name": "Falling Spikes Room",
+                    "short_name":"GS82",
                     "access_rules": [
                       "@Shadow Temple/Like-Like Room,hookshot"
                     ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   },
                   {
-                    "name": "GS83 - Bombable Skull Room",
+                    "name": "Bombable Skull Room",
+                    "short_name":"GS83",
                     "access_rules": [
-                      "@Shadow Temple/Invisible Spikes,hookshot"
+                      "@Shadow Temple/Skull Pot Key"
                     ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   },
                   {
-                    "name": "GS84 - Near Boat",
+                    "name": "Near Boat",
+                    "short_name":"GS84",
                     "access_rules": [
-                      "@Shadow Temple/Wind Hint Room,longshot,lift1"
+                      "@Shadow Temple/Wind Hint Room,longshot"
                     ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   },
                   {
-                    "name": "GS85 - Three Skulls Room",
+                    "name": "Three Skulls Room",
+                    "short_name":"GS85",
                     "access_rules": [
                       "@Shadow Temple/Boss Key Room"
                     ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 2076,
-                    "y": 296
+                    "x": 2106,
+                    "y": 310
                   }
                 ]
               }
@@ -5276,36 +5290,41 @@
                     ],
                     "sections": [
                       {
-                        "name": "Total (3):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS70 - Near Compass Chest",
+                        "name": "Near Compass Chest",
+                        "short_name": "GS70",
                         "access_rules": [
                           "hookshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS71 - Silver Rupee Room",
+                        "name": "Silver Rupee Room",
+                        "short_name": "GS71",
                         "access_rules": [
                           "hookshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS72 - Moveable Iceblock Room",
+                        "name": "Moveable Iceblock Room",
+                        "short_name": "GS72",
                         "access_rules": [
                           "hookshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 2446,
-                        "y": 262
+                        "x": 2465,
+                        "y": 276
                       }
                     ]
                   }
@@ -5539,51 +5558,63 @@
                     ],
                     "sections": [
                       {
-                        "name": "Total (5):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS73 - Bottom South, Hit Switch Spin Attack",
+                        "name": "Bottom South, Hit Switch Spin Attack",
+                        "short_name": "GS73",
                         "access_rules": [
-                          "@logic/explosives,magic,ocarina,lullaby"
+                          "@logic/explosives,ocarina,lullaby"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS74 - River After Dark Link",
+                        "name": "River After Dark Link",
+                        "short_name": "GS74",
                         "access_rules": [
                           "@Water Temple/Dark Link,ocarina,time"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS75 - Center Pillar Inside",
+                        "name": "Center Pillar Inside",
+                        "short_name": "GS75",
                         "access_rules": [
-                          "longshot,ocarina,lullaby"
+                          "longshot,ocarina,lullaby",
+                          "faroreswind,magic,ocarina,lullaby"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS76 - Platform Room Before Dark Link",
+                        "name": "Platform Room Before Dark Link",
+                        "short_name": "GS76",
                         "access_rules": [
                           "longshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS77 - Bottom Rolling Rocks Room",
+                        "name": "Bottom Rolling Rocks Room",
+                        "short_name": "GS77",
                         "access_rules": [
-                          "ocarina,lullaby,longshot,@logic/explosives,lift1",
-                          "ocarina,lullaby,longshot,hoverboots"
+                          "longshot,@logic/explosives,lift1",
+                          "longshot,hoverboots"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 976,
-                        "y": 1422
+                        "x": 980,
+                        "y": 1380
                       }
                     ]
                   }
