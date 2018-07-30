@@ -3986,44 +3986,55 @@
                     ],
                     "sections": [
                       {
-                        "name": "Total (5):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS60 - Vines At Entrance",
+                        "name": "Vines At Entrance",
+                        "short_name": "GS60",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS61 - Wall Northern Main Room",
+                        "name": "Wall Northern Main Room",
+                        "short_name": "GS61",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS62 - Below Scarecrow",
+                        "name": "Below Scarecrow",
+                        "short_name": "GS62",
                         "access_rules": [
                           "@Forest Temple/Below Scarecrow"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS63 - Wall Near Columns",
+                        "name": "Wall Near Columns",
+                        "short_name": "GS63",
                         "access_rules": [
-                          "longshot,sword2",
-                          "hookshot,@Forest Temple/Boss Key Chest"
+                          "@Forest Temple/Map Chest,longshot",
+                          "@Forest Temple/Floormaster,hookshot"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS64 - Basement Room",
+                        "name": "Basement Room",
+                        "short_name": "GS64",
                         "access_rules": [
                           "@Forest Temple/Basement"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 2202,
+                        "x": 2195,
                         "y": 610
                       }
                     ]
@@ -4753,50 +4764,61 @@
                     ],
                     "sections": [
                       {
-                        "name": "Total (5):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS65 - Time Block First Room",
+                        "name": "Time Block First Room",
+                        "short_name": "GS65",
                         "access_rules": [
-                          "ocarina,time"
+                          "@Fire Temple/North Lava Room,ocarina,time"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS66 - Bombable Wall Boulder Maze",
+                        "name": "Bombable Wall Boulder Maze",
+                        "short_name": "GS66",
                         "access_rules": [
                           "@Fire Temple/North Boulder Maze,@logic/explosives"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS67 - Top Floor Scarecrow",
+                        "name": "Top Floor Scarecrow",
+                        "short_name": "GS67",
                         "access_rules": [
                           "@Fire Temple/Scarecrow"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS68 - Top Floor Through Door",
+                        "name": "Top Floor Through Door",
+                        "short_name": "GS68",
                         "access_rules": [
-                          "hookshot"
+                          "@Fire Temple/Scarecrow"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "GS69 - Near Boss Key Chest",
+                        "name": "Near Boss Key Chest",
+                        "short_name": "GS69",
                         "access_rules": [
                           "@Fire Temple/Boss Key Rooms"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1902,
-                        "y": 132
+                        "x": 1912,
+                        "y": 115
                       }
                     ]
                   }
