@@ -141,47 +141,78 @@
                 ]
               },
               {
-                "name": "Gold Skulltulas",
+                "name": "Know It All House (N)",
                 "access_rules": [
                   "show_skulltulas"
                 ],
                 "sections": [
                   {
-                    "name": "Total (3):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS1 - Back of House",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS2 - Shop Soil Patch",
+                    "name": "GS1",
                     "access_rules": [
-                      "bottle"
+                      "open_forest",
+                      "sling,sword1"
                     ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS3 - Top of Twins House",
-                    "access_rules": [
-                      "hookshot,sword2"
-                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 2216,
-                    "y": 894
-                  },
+                    "x": 2055,
+                    "y": 958
+                  }
+                ]
+              },
+              {
+                "name": "Bean Patch",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS2",
+                    "access_rules": [
+                      "bottle"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2256,
+                    "y": 917
+                  }
+                ]
+              },
+              {
+                "name": "House of Twins (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS3",
+                    "access_rules": [
+                      "sword2,hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
                   {
                     "map": "adult",
                     "visibility_rules": [
                       "sword2"
                     ],
-                    "x": 2216,
-                    "y": 894
+                    "x": 2262,
+                    "y": 981
                   }
                 ]
               }
@@ -203,7 +234,7 @@
                 "item_count": 1
               },
               {
-                "name": "Slingshot room",
+                "name": "Slingshot Room",
                 "access_rules": [
                   "shield1"
                 ],
@@ -214,7 +245,44 @@
                 "item_count": 2
               },
               {
+                "name": "Compass Room GS",
+                "short_name": "GS8",
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
                 "name": "Basement",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Vines GS",
+                "short_name": "GS9",
+                "access_rules": [
+                  "sling",
+                  "@logic/explosives",
+                  "boomerang",
+                  "dinsfire,magic"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Gate GS",
+                "short_name": "GS10",
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Back Room GS",
+                "short_name": "GS11",
+                "access_rules": [
+                  "@logic/explosives,boomerang"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
               },
               {
@@ -231,52 +299,6 @@
                 "map": "child",
                 "x": 2426,
                 "y": 860
-              }
-            ],
-            "children": [
-              {
-                "name": "Deku Tree Skulltulas",
-                "access_rules": [
-                  "show_skulltulas"
-                ],
-                "sections": [
-                  {
-                    "name": "Total (4):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS8 - Compass Room",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS9 - Basment vines",
-                    "access_rules": [
-                      "sling",
-                      "@logic/explosives",
-                      "boomerang",
-                      "dinsfire,magic"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS10 - Basment gate",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS11 - Bombable wall",
-                    "access_rules": [
-                      "@logic/explosives,boomerang"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 2416,
-                    "y": 742
-                  }
-                ]
               }
             ]
           },
@@ -320,8 +342,8 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 2062,
-                    "y": 824
+                    "x": 2016,
+                    "y": 927
                   }
                 ]
               },
@@ -447,56 +469,84 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 2142,
+                    "x": 2110,
                     "y": 740
                   }
                 ]
               },
               {
-                "name": "Lost Woods Skulltulas",
+                "name": "Bean Patch Near Bridge",
                 "access_rules": [
                   "show_skulltulas"
                 ],
                 "sections": [
                   {
-                    "name": "Total (3):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS4 - Bridge Soil Patch",
+                    "name": "GS4",
                     "access_rules": [
                       "bottle"
                     ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS5 - Deku Theater Soil Patch",
-                    "access_rules": [
-                      "bottle"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS6 - Magic Bean Skulltula",
-                    "access_rules": [
-                      "sword2,beans"
-                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 2080,
-                    "y": 736
-                  },
+                    "x": 2062,
+                    "y": 824
+                  }
+                ]
+              },
+              {
+                "name": "Bean Patch Near Stage",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS5",
+                    "access_rules": [
+                      "bottle"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2142,
+                    "y": 740
+                  }
+                ]
+              },
+              {
+                "name": "Above Stage (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS6",
+                    "access_rules": [
+                      "sword2,beans",
+                      "sword2,bombchu,longshot,[beans]"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
                   {
                     "map": "adult",
                     "visibility_rules": [
                       "sword2"
                     ],
-                    "x": 2080,
-                    "y": 736
+                    "x": 2142,
+                    "y": 740
                   }
                 ]
               }
@@ -802,45 +852,74 @@
                 ]
               },
               {
-                "name": "Hyrule Field Skulltulas",
+                "name": "Kakariko Tree Grotto",
                 "access_rules": [
                   "show_skulltulas"
                 ],
                 "sections": [
                   {
-                    "name": "Total (2):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS12 - Kakariko Entrance Grotto",
+                    "name": "GS12",
                     "access_rules": [
                       "@logic/explosives,boomerang",
                       "@logic/can blast,sword2,hookshot"
                     ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GS13 - Gerudo Valley Entrance Rock Circle Grotto",
-                    "access_rules": [
-                      "@logic/explosives,dinsfire,magic,boomerang",
-                      "sword2,hammer,@logic/has fire,hookshot"
-                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1478,
-                    "y": 648
+                    "visibility_rules": [
+                      "@logic/explosives,boomerang"
+                    ],
+                    "x": 1552,
+                    "y": 406
                   },
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2"
+                      "@logic/can blast,sword2,hookshot"
                     ],
-                    "x": 1478,
-                    "y": 648
+                    "x": 1552,
+                    "y": 406
+                  }
+                ]
+              },
+              {
+                "name": "Rock Circle Grotto",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS13",
+                    "access_rules": [
+                      "@logic/explosives,dinsfire,magic,boomerang",
+                      "sword2,hammer,@logic/has fire,hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives,dinsfire,magic,boomerang"
+                    ],
+                    "x": 972,
+                    "y": 658
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2,hammer,@logic/has fire,hookshot"
+                    ],
+                    "x": 972,
+                    "y": 658
                   }
                 ]
               },
@@ -1011,7 +1090,7 @@
                       {
                         "map": "child",
                         "x": 1348,
-                        "y": 586
+                        "y": 580
                       }
                     ]
                   },
@@ -1026,8 +1105,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1218,
-                        "y": 676
+                        "x": 1227,
+                        "y": 690
                       }
                     ]
                   },
@@ -1051,43 +1130,92 @@
                     ]
                   },
                   {
-                    "name": "Lon Lon Ranch Skulltulas",
+                    "name": "Lone Tree",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (4):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS18 - Roll Into Tree",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS19 - Horse Pen Shed",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS20 - Window of Farm",
-                        "access_rules": [
-                          "boomerang"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS21 - Near Backroom",
-                        "access_rules": [
-                          "boomerang"
-                        ],
+                        "name": "GS18",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1350,
-                        "y": 680
+                        "x": 1363,
+                        "y": 617
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Rain Shed (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS19",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1325,
+                        "y": 677
+                      }
+                    ]
+                  },
+                  {
+                    "name": "House Window (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS20",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1332,
+                        "y": 610
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Back Wall (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS21",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1197,
+                        "y": 663
                       }
                     ]
                   }
@@ -1143,7 +1271,7 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1894,
+                        "x": 1865,
                         "y": 326
                       },
                       {
@@ -1151,7 +1279,7 @@
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1894,
+                        "x": 1865,
                         "y": 326
                       }
                     ]
@@ -1171,16 +1299,16 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1801,
-                        "y": 429
+                        "x": 1827,
+                        "y": 431
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1801,
-                        "y": 429
+                        "x": 1827,
+                        "y": 431
                       }
                     ]
                   },
@@ -1334,74 +1462,125 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1778,
-                        "y": 408
+                        "x": 1797,
+                        "y": 418
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1778,
-                        "y": 408
+                        "x": 1797,
+                        "y": 418
                       }
                     ]
                   },
                   {
-                    "name": "Kakariko Village Skulltulas",
+                    "name": "Tree (N)",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (6):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS22 - Roll Into First Tree",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS23 - Side of Skulltula House",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS24 - Brick Pile Building",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS25 - Side of House Near DM",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS26 - Ladder of Lookout Tower",
-                        "access_rules": [
-                          "@logic/explosives",
-                          "sling"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS27 - Roof of Impas House",
-                        "access_rules": [
-                          "hookshot,sword2"
-                        ],
+                        "name": "GS22",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1737,
-                        "y": 356
-                      },
+                        "x": 1734,
+                        "y": 387
+                      }
+                    ]
+                  },
+                  {
+                    "name": "House Wall (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "name": "GS23",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1767,
+                        "y": 418
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Under Construction (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS24",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1837,
+                        "y": 401
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bazaar Wall (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS25",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1771,
+                        "y": 337
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Watchtower (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS26",
+                        "access_rules": [
+                          "sling",
+                          "bombchu"
                         ],
-                        "x": 1737,
-                        "y": 356
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1814,
+                        "y": 341
                       }
                     ]
                   }
@@ -1421,8 +1600,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2016,
-                        "y": 331
+                        "x": 2030,
+                        "y": 342
                       }
                     ]
                   },
@@ -1466,16 +1645,16 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2066,
-                        "y": 369
+                        "x": 2065,
+                        "y": 350
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 2066,
-                        "y": 369
+                        "x": 2065,
+                        "y": 350
                       }
                     ]
                   },
@@ -1493,8 +1672,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1983,
-                        "y": 360
+                        "x": 2000,
+                        "y": 372
                       }
                     ]
                   },
@@ -1517,7 +1696,7 @@
                         "visibility_rules": [
                           "boomerang"
                         ],
-                        "x": 1982,
+                        "x": 1970,
                         "y": 335
                       },
                       {
@@ -1526,7 +1705,7 @@
                           "sword2,beans",
                           "sword2,longshot"
                         ],
-                        "x": 1982,
+                        "x": 1970,
                         "y": 335
                       }
                     ]
@@ -1570,35 +1749,50 @@
                     ]
                   },
                   {
-                    "name": "Graveyard Skulltulas",
+                    "name": "Wall (N)",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (2):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS28 - Wall Skulltula",
+                        "name": "GS28",
                         "access_rules": [
                           "boomerang"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS29 - Graveyard Soil Patch",
-                        "access_rules": [
-                          "bottle"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2068,
-                        "y": 292
+                        "x": 2065,
+                        "y": 380
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bean Patch",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS29",
+                        "access_rules": [
+                          "bottle"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2000,
+                        "y": 335
                       }
                     ]
                   }
@@ -2358,7 +2552,7 @@
                       {
                         "map": "child",
                         "x": 1463,
-                        "y": 356
+                        "y": 355
                       }
                     ]
                   },
@@ -2459,25 +2653,23 @@
                     ]
                   },
                   {
-                    "name": "Hyrule Town Skulltulas",
+                    "name": "Guardhouse",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (1)",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS14 - Crate In Guardhouse",
+                        "name": "GS14",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1366,
-                        "y": 258
+                        "x": 1464,
+                        "y": 390
                       }
                     ]
                   }
@@ -2559,52 +2751,52 @@
                       {
                         "map": "child",
                         "x": 1491,
-                        "y": 233
+                        "y": 236
                       }
                     ]
                   },
                   {
-                    "name": "Hyrule Castle Skulltulas",
+                    "name": "Tree near Malon",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (3):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS15 - Tree At Entrance",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS16 - Song Of Storms Near Moat",
-                        "access_rules": [
-                          "boomerang,ocarina,storm,@logic/explosives"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS17 - Gatehouse Ganons Castle",
-                        "access_rules": [
-                          "sword2,hookshot"
-                        ],
+                        "name": "GS15",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1528,
-                        "y": 138
-                      },
+                        "x": 1409,
+                        "y": 246
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Song of Storms Grotto",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "name": "GS16",
+                        "access_rules": [
+                          "boomerang,ocarina,storm,@logic/explosives"
                         ],
-                        "x": 1528,
-                        "y": 138
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1479,
+                        "y": 206
                       }
                     ]
                   }
@@ -3635,26 +3827,27 @@
                 ]
               },
               {
-                "name": "Sacred Forest Meadow Skulltulas",
+                "name": "Top of Maze (N)",
                 "access_rules": [
                   "show_skulltulas"
                 ],
                 "sections": [
                   {
-                    "name": "Total (1):",
-                    "hosted_item": "skulltula"
-                  },
-                  {
-                    "name": "GS7 - Top of Maze",
+                    "name": "GS7",
                     "access_rules": [
                       "hookshot"
                     ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
                     "x": 2230,
                     "y": 664
                   }
@@ -3880,8 +4073,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1855,
-                    "y": 349
+                    "x": 1860,
+                    "y": 355
                   }
                 ]
               },
@@ -3900,7 +4093,7 @@
                   {
                     "map": "adult",
                     "x": 1837,
-                    "y": 403
+                    "y": 401
                   }
                 ]
               },
@@ -3945,6 +4138,30 @@
                     "y": 387
                   }
                 ]
+              },
+              {
+                "name": "Top of Roof (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS27",
+                    "access_rules": [
+                      "hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1767,
+                    "y": 418
+                  }
+                ]
               }
             ]
           },
@@ -3966,8 +4183,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 2016,
-                    "y": 331
+                    "x": 2030,
+                    "y": 342
                   }
                 ]
               }
@@ -4532,7 +4749,7 @@
                 ]
               },
               {
-                "name": "10 Big Poes",
+                "name": "Big Poes",
                 "sections": [
                   {
                     "name": "Happy Hunting",
@@ -4548,7 +4765,7 @@
                   {
                     "map": "adult",
                     "x": 1464,
-                    "y": 385
+                    "y": 390
                   }
                 ]
               }
@@ -4557,6 +4774,33 @@
           {
             "name": "Ganons Castle Grounds",
             "children": [
+              {
+                "name": "Destroyed Bridge",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS17",
+                    "access_rules": [
+                      "hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 1479,
+                    "y": 206
+                  }
+                ]
+              },
               {
                 "name": "Ganons Castle Fairy",
                 "access_rules": [
@@ -4571,8 +4815,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1491,
-                    "y": 233
+                    "x": 1520,
+                    "y": 206
                   }
                 ]
               },
