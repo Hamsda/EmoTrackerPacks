@@ -1953,7 +1953,7 @@
                 "name": "Goron City",
                 "children": [
                   {
-                    "name": "Boulder Maze",
+                    "name": "Boulder Maze Right",
                     "sections": [
                       {
                         "name": "Right",
@@ -1962,16 +1962,6 @@
                           "sword2,lift2"
                         ],
                         "item_count": 2
-                      },
-                      {
-                        "name": "Left",
-                        "access_rules": [
-                          "sword2,lift2",
-                          "sword2,hammer",
-                          "{agony}"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1980,7 +1970,7 @@
                         "visibility_rules": [
                           "@logic/explosives"
                         ],
-                        "x": 1591,
+                        "x": 1606,
                         "y": 98
                       },
                       {
@@ -1988,7 +1978,7 @@
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1591,
+                        "x": 1606,
                         "y": 98
                       }
                     ]
@@ -2058,43 +2048,26 @@
                     ]
                   },
                   {
-                    "name": "Goron City Skulltulas",
+                    "name": "Boulder Maze Crate",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (2):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS34 - Boulder Maze Crate",
+                        "name": "GS34",
                         "access_rules": [
                           "@logic/explosives"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS35 - Back of Pedestal",
-                        "access_rules": [
-                          "sword2"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1672,
-                        "y": 32
-                      },
-                      {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
-                        "x": 1672,
-                        "y": 32
+                        "x": 1591,
+                        "y": 68
                       }
                     ]
                   }
@@ -2172,7 +2145,7 @@
                       {
                         "map": "child",
                         "x": 1705,
-                        "y": 162
+                        "y": 158
                       },
                       {
                         "map": "adult",
@@ -2180,7 +2153,7 @@
                           "sword2"
                         ],
                         "x": 1705,
-                        "y": 162
+                        "y": 158
                       }
                     ]
                   },
@@ -2215,58 +2188,59 @@
                     ]
                   },
                   {
-                    "name": "Death Mountain Trail Skulltulas",
+                    "name": "Bean Patch",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (4):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS30 - Dodongos Cavern Soil Patch",
+                        "name": "GS30",
                         "access_rules": [
                           "bottle,@logic/explosives",
                           "bottle,lift1"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS31 - Bombable Wall Near Kakariko",
-                        "access_rules": [
-                          "@logic/can blast"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS32 - Inside Red Rock Over DC",
-                        "access_rules": [
-                          "hammer"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS33 - Inside Red Rock Bottom of Crater Wall",
-                        "access_rules": [
-                          "hammer"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1744,
-                        "y": 158
+                        "x": 1684,
+                        "y": 252
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bombable Wall",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS31",
+                        "access_rules": [
+                          "@logic/can blast"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1728,
+                        "y": 278
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1744,
-                        "y": 158
+                        "x": 1728,
+                        "y": 278
                       }
                     ]
                   }
@@ -2338,27 +2312,18 @@
                     ]
                   },
                   {
-                    "name": "Death Mountain Crater Skulltulas",
+                    "name": "Crate at Entrance",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (2):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS36 - Crate At Entrance From Top",
+                        "name": "GS36",
                         "access_rules": [
                           "@logic/explosives"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS37 - Crater Soil Patch",
-                        "access_rules": [
-                          "bottle,ocarina,bolero"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
@@ -2367,6 +2332,30 @@
                         "map": "child",
                         "x": 1796,
                         "y": 80
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bean Patch",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS37",
+                        "access_rules": [
+                          "ocarina,bolero,bottle"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1871,
+                        "y": 66
                       }
                     ]
                   }
@@ -4372,6 +4361,28 @@
                 ]
               },
               {
+                "name": "Boulder Maze Left",
+                "sections": [
+                  {
+                    "name": "Go through",
+                    "access_rules": [
+                      "lift2",
+                      "hammer",
+                      "{agony}"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1576,
+                    "y": 98
+                  }
+                ]
+              },
+              {
                 "name": "Shop",
                 "sections": [
                   {
@@ -4387,6 +4398,27 @@
                     "map": "adult",
                     "x": 1646,
                     "y": 128
+                  }
+                ]
+              },
+              {
+                "name": "Back of Pedestal (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS35",
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1646,
+                    "y": 90
                   }
                 ]
               }
@@ -4434,6 +4466,54 @@
                     "map": "adult",
                     "x": 1825,
                     "y": 94
+                  }
+                ]
+              },
+              {
+                "name": "Red Rock (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS32",
+                    "access_rules": [
+                      "hammer"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1694,
+                    "y": 190
+                  }
+                ]
+              },
+              {
+                "name": "Red Rock (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS33",
+                    "access_rules": [
+                      "hammer"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1744,
+                    "y": 158
                   }
                 ]
               }
