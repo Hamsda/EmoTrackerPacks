@@ -963,14 +963,6 @@
                     "name": "Lakeside Lab",
                     "sections": [
                       {
-                        "name": "Tower HP",
-                        "access_rules": [
-                          "sword2,beans",
-                          "sword2,ocarina,hookshot"
-                        ],
-                        "item_count": 1
-                      },
-                      {
                         "name": "Dive down",
                         "access_rules": [
                           "scale2",
@@ -989,6 +981,9 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "scale2"
+                        ],
                         "x": 961,
                         "y": 1200
                       },
@@ -1024,61 +1019,71 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Skulltulas",
+                    "name": "Bean Patch",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (5):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS55 - Lab Soil Patch",
+                        "name": "GS55",
                         "access_rules": [
                           "bottle"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS56 - Lab Wall",
-                        "access_rules": [
-                          "boomerang"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS57 - Fire Arrow Island",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS58 - Top of Tree Warppoint",
-                        "access_rules": [
-                          "sword2,longshot"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS59 - Crate At Bottom of Lab",
-                        "access_rules": [
-                          "sword2,hookshot,ironboots"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 866,
-                        "y": 1312
-                      },
+                        "x": 1002,
+                        "y": 1179
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lab Wall (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "name": "GS56",
+                        "access_rules": [
+                          "boomerang"
                         ],
-                        "x": 866,
-                        "y": 1312
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 930,
+                        "y": 1207
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Island (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS57",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1132,
+                        "y": 1405
                       }
                     ]
                   }
@@ -3160,23 +3165,31 @@
                         ],
                         "sections": [
                           {
-                            "name": "Total (4):",
-                            "hosted_item": "skulltula"
-                          },
-                          {
-                            "name": "GS51 - Water Switch Room",
+                            "name": "Water Switch Room",
+                            "short_name": "GS51",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS52 - Wall Near Bigocto",
+                            "name": "Wall Near Bigocto",
+                            "short_name": "GS52",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS53 - Wall Near Bigocto (further away)",
+                            "name": "Wall Near Bigocto (further away)",
+                            "short_name": "GS53",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS54 - Room Before Barinade",
+                            "name": "Room Before Barinade",
+                            "short_name": "GS54",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           }
                         ],
@@ -3184,7 +3197,7 @@
                           {
                             "map": "child",
                             "x": 2476,
-                            "y": 280
+                            "y": 293
                           }
                         ]
                       }
@@ -5308,6 +5321,74 @@
                     "map": "adult",
                     "x": 1132,
                     "y": 1405
+                  }
+                ]
+              },
+              {
+                "name": "Lab Tower",
+                "sections": [
+                  {
+                    "name": "HP",
+                    "access_rules": [
+                      "beans",
+                      "ocarina,hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 961,
+                    "y": 1160
+                  }
+                ]
+              },
+              {
+                "name": "Top of Tree (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS58",
+                    "access_rules": [
+                      "longshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1009,
+                    "y": 1415
+                  }
+                ]
+              },
+              {
+                "name": "Lab Crate",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS59",
+                    "access_rules": [
+                      "ironboots,hookshot"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 959,
+                    "y": 1229
                   }
                 ]
               },
