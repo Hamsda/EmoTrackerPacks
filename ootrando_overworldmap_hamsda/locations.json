@@ -3282,59 +3282,50 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Skulltulas",
+                    "name": "Waterfall Near Entrance (N)",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (4):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS86 - Waterfall Near Entrance",
+                        "name": "GS86",
                         "access_rules": [
                           "boomerang"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS87 - Soil Patch River Edge",
-                        "access_rules": [
-                          "bottle"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS88 - Behind Carpenters Tent",
-                        "access_rules": [
-                          "sword2,ocarina,epona,hookshot",
-                          "sword2,longshot"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS89 - Underside Rock Arch",
-                        "access_rules": [
-                          "sword2,ocarina,epona,hookshot",
-                          "sword2,longshot"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 722,
-                        "y": 564
-                      },
+                        "x": 806,
+                        "y": 560
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bean Patch",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "name": "GS87",
+                        "access_rules": [
+                          "bottle"
                         ],
-                        "x": 722,
-                        "y": 564
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 667,
+                        "y": 594
                       }
                     ]
                   }
@@ -3357,6 +3348,18 @@
                         ],
                         "capture_item": true,
                         "item_count": 1
+                      },
+                      {
+                        "name": "GS92",
+                        "access_rules": [
+                          "sword2,card,hoverboots,hookshot",
+                          "sword2,card,longshot",
+                          "ocarina,requiem,[sword2],[card],[hoverboots],[hookshot]",
+                          "ocarina,requiem,[sword2],[card],[longshot]"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -3366,33 +3369,6 @@
                           "sword2"
                         ],
                         "x": 346,
-                        "y": 283
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Haunted Wasteland Skulltulas",
-                    "access_rules": [
-                      "show_skulltulas"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Total (1):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS92 - Inside Structure",
-                        "access_rules": [
-                          "sword2,card,hoverboots,hookshot",
-                          "sword2,card,longshot"
-                        ],
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "adult",
-                        "x": 385,
                         "y": 283
                       }
                     ]
@@ -3489,51 +3465,75 @@
                     ]
                   },
                   {
-                    "name": "Colossus Skulltulas",
+                    "name": "Bean Patch",
                     "access_rules": [
                       "show_skulltulas"
                     ],
                     "sections": [
                       {
-                        "name": "Total (3):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS93 - Soil Patch Outside Spirit Temple",
+                        "name": "GS93",
                         "access_rules": [
                           "ocarina,requiem,bottle"
                         ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS94 - Tree Next To Dried Oasis",
-                        "access_rules": [
-                          "hookshot,sword2,@logic/colossus"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "GS95 - Top Of Platform",
-                        "access_rules": [
-                          "ocarina,requiem,beans",
-                          "@logic/colossus,longshot"
-                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 218,
-                        "y": 342
-                      },
+                        "x": 88,
+                        "y": 347
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tree Near Oasis",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS94",
+                        "access_rules": [
+                          "hookshot,sword2,@logic/colossus"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
+                        "x": 157,
+                        "y": 433
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Top Of Platform",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS95",
+                        "access_rules": [
+                          "ocarina,requiem,beans,sword2",
+                          "@logic/colossus,longshot,sword2"
                         ],
-                        "x": 218,
-                        "y": 342
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 233,
+                        "y": 322
                       }
                     ]
                   },
@@ -3707,43 +3707,58 @@
                         ],
                         "sections": [
                           {
-                            "name": "Total (5):",
-                            "hosted_item": "skulltula"
-                          },
-                          {
-                            "name": "GS96 - Cage Room Lower Child",
+                            "name": "Cage Room Lower Child",
+                            "short_name": "GS96",
                             "access_rules": [
-                              "boomerang"
+                              "@Spirit Temple/Lower Child"
                             ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS97 - Pit Upper Child",
+                            "name": "Pit Upper Child",
+                            "short_name": "GS97",
+                            "access_rules": [
+                              "@Spirit Temple/Upper Child"
+                            ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS98 - Room Before Iron Knuckle Child Side",
+                            "name": "Room Before Iron Knuckle Child Side",
+                            "short_name": "GS98",
                             "access_rules": [
                               "boomerang,@Spirit Temple/Torch Puzzle",
                               "hookshot,@Spirit Temple/Torch Puzzle"
                             ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS99 - Boulder Room Behind Block",
+                            "name": "Boulder Room Behind Block",
+                            "short_name": "GS99",
                             "access_rules": [
                               "ocarina,time,hookshot",
                               "ocarina,time,bow",
                               "ocarina,time,@logic/explosives"
                             ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "GS100 - Statue Room, Left Ledge",
+                            "name": "Statue Room, Left Ledge",
+                            "short_name": "GS100",
                             "access_rules": [
-                              "lift2,hookshot,sword2",
+                              "lift2,sword2,hookshot,ocarina",
+                              "lift2,sword2,longshot",
                               "lift2,sword2,hoverboots"
                             ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           }
                         ],
@@ -3751,7 +3766,7 @@
                           {
                             "map": "child",
                             "x": 82,
-                            "y": 236
+                            "y": 246
                           },
                           {
                             "map": "adult",
@@ -3759,7 +3774,7 @@
                               "sword2"
                             ],
                             "x": 82,
-                            "y": 236
+                            "y": 246
                           }
                         ]
                       }
@@ -4358,7 +4373,7 @@
                 "sections": [
                   {
                     "name": "Like-Like Room",
-                    "short_name":"GS81",
+                    "short_name": "GS81",
                     "access_rules": [
                       "@Shadow Temple/Like-Like Room,hookshot"
                     ],
@@ -4368,7 +4383,7 @@
                   },
                   {
                     "name": "Falling Spikes Room",
-                    "short_name":"GS82",
+                    "short_name": "GS82",
                     "access_rules": [
                       "@Shadow Temple/Like-Like Room,hookshot"
                     ],
@@ -4378,7 +4393,7 @@
                   },
                   {
                     "name": "Bombable Skull Room",
-                    "short_name":"GS83",
+                    "short_name": "GS83",
                     "access_rules": [
                       "@Shadow Temple/Skull Pot Key"
                     ],
@@ -4388,7 +4403,7 @@
                   },
                   {
                     "name": "Near Boat",
-                    "short_name":"GS84",
+                    "short_name": "GS84",
                     "access_rules": [
                       "@Shadow Temple/Wind Hint Room,longshot"
                     ],
@@ -4398,7 +4413,7 @@
                   },
                   {
                     "name": "Three Skulls Room",
-                    "short_name":"GS85",
+                    "short_name": "GS85",
                     "access_rules": [
                       "@Shadow Temple/Boss Key Room"
                     ],
@@ -5679,6 +5694,54 @@
                     ]
                   },
                   {
+                    "name": "Behind Carpenters Tent (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS88",
+                        "access_rules": [
+                          "hookshot"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 635,
+                        "y": 517
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Underside Rock Arch (N)",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS89",
+                        "access_rules": [
+                          "hookshot"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 571,
+                        "y": 581
+                      }
+                    ]
+                  },
+                  {
                     "name": "Gerudo Fortress",
                     "access_rules": [
                       "[bow]",
@@ -5752,32 +5815,47 @@
                         ]
                       },
                       {
-                        "name": "Gerudo Fortress Skulltulas",
+                        "name": "Archery Range (N)",
                         "access_rules": [
                           "show_skulltulas"
                         ],
                         "sections": [
                           {
-                            "name": "Total (2)",
-                            "hosted_item": "skulltula"
-                          },
-                          {
-                            "name": "GS90 - Archery Backside",
+                            "name": "GS90",
                             "access_rules": [
-                              "card,sword2,hookshot"
+                              "hookshot"
                             ],
-                            "item_count": 1
-                          },
-                          {
-                            "name": "GS91 - Top of Buildings",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           }
                         ],
                         "map_locations": [
                           {
                             "map": "adult",
-                            "x": 538,
-                            "y": 418
+                            "x": 660,
+                            "y": 306
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Rooftop (N)",
+                        "access_rules": [
+                          "show_skulltulas"
+                        ],
+                        "sections": [
+                          {
+                            "name": "GS91",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 544,
+                            "y": 390
                           }
                         ]
                       },

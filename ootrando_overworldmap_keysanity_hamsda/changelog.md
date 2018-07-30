@@ -14,6 +14,7 @@
 - added a settings section to the layout and changed some icons
 - changed/added a lot of logic from TRs fork
 - added gerudo fortress small keys to tracker
+- changed skulltulas to be separate icons for tokensanity
 
 ## 2.0.2.1
 
