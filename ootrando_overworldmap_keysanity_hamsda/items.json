@@ -1115,6 +1115,20 @@
     ]
   },
   {
+    "name": "Heart Piece",
+    "type": "consumable",
+    "img": "images/HP.png",
+    "codes": "HP,PoH",
+    "max_quantity": 36
+  },
+  {
+    "name": "Heart Container",
+    "type": "consumable",
+    "img": "images/HC.png",
+    "codes": "HC",
+    "max_quantity": 8
+  },
+  {
     "name": "Freebie Label",
     "type": "static",
     "img": "images/free.png",
