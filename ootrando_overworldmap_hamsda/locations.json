@@ -542,34 +542,6 @@
                     "y": 740
                   }
                 ]
-              },
-              {
-                "name": "Above Stage (N)",
-                "access_rules": [
-                  "show_skulltulas"
-                ],
-                "sections": [
-                  {
-                    "name": "GS6",
-                    "access_rules": [
-                      "sword2,beans",
-                      "sword2,bombchu,longshot,[beans]"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
-                    "x": 2142,
-                    "y": 740
-                  }
-                ]
               }
             ]
           },
@@ -3854,7 +3826,7 @@
             "name": "Lost Woods",
             "children": [
               {
-                "name": "Lost Brother",
+                "name": "Grog",
                 "sections": [
                   {
                     "name": "Trade",
@@ -3873,7 +3845,7 @@
                 ]
               },
               {
-                "name": "Kokiri Girl",
+                "name": "Fado",
                 "sections": [
                   {
                     "name": "Trade",
@@ -3888,6 +3860,33 @@
                     "map": "adult",
                     "x": 2085,
                     "y": 785
+                  }
+                ]
+              },
+              {
+                "name": "Above Stage (N)",
+                "access_rules": [
+                  "show_skulltulas"
+                ],
+                "sections": [
+                  {
+                    "name": "GS6",
+                    "access_rules": [
+                      "[ocarina],[saria],beans",
+                      "[ocarina],[minuet],beans",
+                      "[ocarina],[saria],bombchu,longshot,[beans]",
+                      "[ocarina],[minuet],bombchu,longshot,[beans]"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2142,
+                    "y": 740
                   }
                 ]
               }
@@ -5022,9 +5021,6 @@
                 "sections": [
                   {
                     "name": "GS17",
-                    "access_rules": [
-                      "hookshot"
-                    ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -5078,26 +5074,51 @@
                     "item_count": 2
                   },
                   {
-                    "name": "Shadow Trial",
+                    "name": "Shadow Trial Front",
                     "access_rules": [
-                      "longshot,hoverboots,@logic/lens",
-                      "magic,bow,firearrow,@logic/lens"
+                      "hookshot",
+                      "hoverboots",
+                      "ocarina,time",
+                      "magic,bow,firearrow"
                     ],
-                    "item_count": 2
+                    "item_count": 1
                   },
                   {
-                    "name": "Light Trial",
+                    "name": "Shadow Trial Back",
                     "access_rules": [
-                      "lift3,@logic/lens,[ocarina],[lullaby]"
+                      "longshot,hoverboots",
+                      "longshot,magic,dinsfire",
+                      "magic,bow,firearrow"
                     ],
-                    "item_count": 8
+                    "item_count": 1
                   },
                   {
-                    "name": "Spirit Trial",
+                    "name": "Light Trial Front",
+                    "access_rules": [
+                      "lift3,@logic/lens"
+                    ],
+                    "item_count": 7
+                  },
+                  {
+                    "name": "Light Trial Back",
+                    "access_rules": [
+                      "lift3,ocarina,lullaby"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Spirit Trial Front",
+                    "access_rules": [
+                      "hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Spirit Trial Back",
                     "access_rules": [
                       "hookshot,bombchu,@logic/lens"
                     ],
-                    "item_count": 2
+                    "item_count": 1
                   },
                   {
                     "name": "Castle Tower",
