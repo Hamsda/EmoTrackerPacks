@@ -6,11 +6,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/closed_door.png",
+        "img": "images/door_closed.png",
         "codes": "type_door,closed_door"
       },
       {
-        "img": "images/open_door.png",
+        "img": "images/door_open.png",
         "codes": "type_door,open_door",
         "inherit_codes": false
       }
@@ -23,11 +23,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/closed_forest.png",
+        "img": "images/forest_closed.png",
         "codes": "type_forest,closed_forest"
       },
       {
-        "img": "images/open_forest.png",
+        "img": "images/forest_open.png",
         "codes": "type_forest,open_forest",
         "inherit_codes": false
       }
@@ -58,6 +58,59 @@
         "img": "images/bridge_open.png",
         "codes": "type_bridge,bridge_open",
         "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Lens Requirement",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/lens_all.png",
+        "codes": "type_lens,lens_all"
+      },
+      {
+        "img": "images/lens_wasteland.png",
+        "codes": "lens_wasteland"
+      },
+      {
+        "img": "images/lens_chest.png",
+        "codes": "lens_chest"
+      }
+    ]
+  },
+  {
+    "name": "Bombchu in Logic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/logic_chus_no.png",
+        "codes": "logic_chus,logic_chus_no"
+      },
+      {
+        "img": "images/logic_chus_yes.png",
+        "codes": "logic_chus,logic_chus_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Show Gold Skulltulas",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/skulltula_hide.png",
+        "codes": "hide_skulltulas"
+      },
+      {
+        "img": "images/skulltula_show.png",
+        "codes": "show_skulltulas"
       }
     ]
   },
@@ -261,7 +314,7 @@
     "name": "Zelda's Lullaby",
     "type": "toggle",
     "loop": true,
-    "img": "images/zelda.png",
+    "img": "images/zelda_grey.png",
     "codes": "lullaby"
   },
   {
@@ -275,7 +328,7 @@
     "name": "Saria's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/saria.png",
+    "img": "images/saria_grey.png",
     "codes": "saria"
   },
   {
@@ -289,7 +342,7 @@
     "name": "Epona's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/epona.png",
+    "img": "images/epona_grey.png",
     "codes": "epona"
   },
   {
@@ -303,7 +356,7 @@
     "name": "Sun's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/sunsong.png",
+    "img": "images/sun_grey.png",
     "codes": "sun"
   },
   {
@@ -317,7 +370,7 @@
     "name": "Song of Time",
     "type": "toggle",
     "loop": true,
-    "img": "images/songoftime.png",
+    "img": "images/time_grey.png",
     "codes": "time"
   },
   {
@@ -331,7 +384,7 @@
     "name": "Song of Storms",
     "type": "toggle",
     "loop": true,
-    "img": "images/songofstorms.png",
+    "img": "images/storms_grey.png",
     "codes": "storm"
   },
   {
@@ -1016,12 +1069,6 @@
     "max_quantity": 50
   },
   {
-    "name": "Show Gold Skulltulas",
-    "type": "toggle",
-    "img": "images/skulltula.png",
-    "codes": "show_skulltulas"
-  },
-  {
     "name": "Zora Scales",
     "type": "progressive",
     "stages": [
@@ -1066,6 +1113,20 @@
         "codes": "magic2"
       }
     ]
+  },
+  {
+    "name": "Heart Piece",
+    "type": "consumable",
+    "img": "images/HP.png",
+    "codes": "HP,PoH",
+    "max_quantity": 36
+  },
+  {
+    "name": "Heart Container",
+    "type": "consumable",
+    "img": "images/HC.png",
+    "codes": "HC",
+    "max_quantity": 8
   },
   {
     "name": "Freebie Label",
@@ -1119,7 +1180,7 @@
   {
     "name": "Deku Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "deku_treasures",
     "max_quantity": 7
   },
@@ -1168,7 +1229,7 @@
   {
     "name": "Dodongo Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "dodongo_treasures",
     "max_quantity": 7
   },
@@ -1217,7 +1278,7 @@
   {
     "name": "Jabu Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "jabu_treasures",
     "max_quantity": 4
   },
@@ -1266,7 +1327,7 @@
   {
     "name": "Forest Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "forest_treasures",
     "max_quantity": 8
   },
@@ -1322,7 +1383,7 @@
   {
     "name": "Fire Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "fire_treasures",
     "max_quantity": 6
   },
@@ -1378,7 +1439,7 @@
   {
     "name": "Water Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "water_treasures",
     "max_quantity": 4
   },
@@ -1434,7 +1495,7 @@
   {
     "name": "Spirit Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "spirit_treasures",
     "max_quantity": 14
   },
@@ -1490,7 +1551,7 @@
   {
     "name": "Shadow Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "shadow_treasures",
     "max_quantity": 12
   },
@@ -1546,7 +1607,7 @@
   {
     "name": "BotW Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "botw_treasures",
     "max_quantity": 11
   },
@@ -1566,8 +1627,21 @@
   {
     "name": "Ice Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "ice_treasures",
+    "max_quantity": 4
+  },
+  {
+    "name": "GF Label",
+    "type": "static",
+    "img": "images/gf.png",
+    "codes": "gf_label"
+  },
+  {
+    "name": "GF Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gf_small_keys",
     "max_quantity": 4
   },
   {
@@ -1579,7 +1653,7 @@
   {
     "name": "GTG Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "gtg_treasures",
     "max_quantity": 13
   },
@@ -1599,7 +1673,7 @@
   {
     "name": "GC Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "gc_treasures",
     "max_quantity": 13
   },
