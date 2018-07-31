@@ -611,12 +611,14 @@
               },
               {
                 "name": "Saria",
-                "access_rules": [
-                  "postzelda"
-                ],
                 "sections": [
                   {
                     "name": "Song",
+                    "access_rules": [
+                      "postzelda"
+                    ],
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -844,6 +846,8 @@
                   {
                     "name": "Song",
                     "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -1148,6 +1152,8 @@
                         "access_rules": [
                           "postzelda,ocarina"
                         ],
+                        "chest_unopened_img": "images/grey_note.png",
+                        "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
                       }
                     ],
@@ -1758,6 +1764,8 @@
                           "{agony}"
                         ],
                         "capture_item": true,
+                        "chest_unopened_img": "images/grey_note.png",
+                        "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
                       },
                       {
@@ -2773,6 +2781,8 @@
                     "sections": [
                       {
                         "name": "Song",
+                        "chest_unopened_img": "images/grey_note.png",
+                        "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
                       },
                       {
@@ -3478,6 +3488,8 @@
                           "{agony}"
                         ],
                         "capture_item": true,
+                        "chest_unopened_img": "images/grey_note.png",
+                        "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
                       }
                     ],
@@ -3899,6 +3911,8 @@
                       "{agony}"
                     ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -4204,6 +4218,8 @@
                       "{agony}"
                     ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -4225,6 +4241,8 @@
                       "{agony}"
                     ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -4718,16 +4736,18 @@
               },
               {
                 "name": "Sheik in Crater",
-                "access_rules": [
-                  "ocarina,bolero",
-                  "hoverboots",
-                  "@Link the Goron,hookshot",
-                  "{agony}"
-                ],
                 "sections": [
                   {
                     "name": "Song",
+                    "access_rules": [
+                      "ocarina,bolero",
+                      "hoverboots",
+                      "@Link the Goron,hookshot",
+                      "{agony}"
+                    ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -4948,6 +4968,8 @@
                       "{agony}"
                     ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   },
                   {
