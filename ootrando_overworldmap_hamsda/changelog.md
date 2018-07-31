@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.2.2
+## 2.0.3.0
 
 - removed sequence breakable lullaby from Water Temple
 - added lens+magic (sequence breakable) to clockwise GTG
@@ -10,6 +10,13 @@
 - added a settings section to the layout and changed some icons
 - changed/added a lot of logic from TRs fork
 - changed skulltulas to be separate icons for tokensanity
+- changed icons:
+  - default chests use a brown OoT style chest
+  - freestanding HPs are HPs
+  - boss HCs are HCs
+  - song locations are grey notes
+  - grey note songs are grey notes with text
+- fixed logic for some trials chests, GS6, and GS17
 
 ## 2.0.2.1
 

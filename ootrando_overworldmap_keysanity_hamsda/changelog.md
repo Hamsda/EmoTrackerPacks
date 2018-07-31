@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.2.2
+## 2.0.3.0
 
 - improved Water Temple:
   - reduced small key requirements to absolute minimum needed
@@ -15,6 +15,13 @@
 - changed/added a lot of logic from TRs fork
 - added gerudo fortress small keys to tracker
 - changed skulltulas to be separate icons for tokensanity
+- changed icons:
+  - default chests use a brown OoT style chest
+  - freestanding HPs are HPs
+  - boss HCs are HCs
+  - song locations are grey notes
+  - grey note songs are grey notes with text
+- fixed logic for some trials chests, GS6, and GS17
 
 ## 2.0.2.1
 
