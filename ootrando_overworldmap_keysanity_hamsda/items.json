@@ -298,7 +298,7 @@
     "name": "Zelda's Lullaby",
     "type": "toggle",
     "loop": true,
-    "img": "images/zelda.png",
+    "img": "images/zelda_grey.png",
     "codes": "lullaby"
   },
   {
@@ -312,7 +312,7 @@
     "name": "Saria's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/saria.png",
+    "img": "images/saria_grey.png",
     "codes": "saria"
   },
   {
@@ -326,7 +326,7 @@
     "name": "Epona's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/epona.png",
+    "img": "images/epona_grey.png",
     "codes": "epona"
   },
   {
@@ -340,7 +340,7 @@
     "name": "Sun's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/sunsong.png",
+    "img": "images/sun_grey.png",
     "codes": "sun"
   },
   {
@@ -354,7 +354,7 @@
     "name": "Song of Time",
     "type": "toggle",
     "loop": true,
-    "img": "images/songoftime.png",
+    "img": "images/time_grey.png",
     "codes": "time"
   },
   {
@@ -368,7 +368,7 @@
     "name": "Song of Storms",
     "type": "toggle",
     "loop": true,
-    "img": "images/songofstorms.png",
+    "img": "images/storms_grey.png",
     "codes": "storm"
   },
   {
