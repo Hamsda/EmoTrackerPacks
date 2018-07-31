@@ -658,6 +658,8 @@
                       "scale2",
                       "sword2,ironboots"
                     ],
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -1121,6 +1123,8 @@
                     "sections": [
                       {
                         "name": "HP",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -1315,6 +1319,8 @@
                           "[bombs]",
                           "sword2,[hookshot]"
                         ],
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -1359,6 +1365,8 @@
                           "sword2,[ocarina],[time]",
                           "boomerang"
                         ],
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -1616,6 +1624,8 @@
                     "sections": [
                       {
                         "name": "Digging Tour",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -1709,6 +1719,8 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -2044,6 +2056,8 @@
                           "{agony}"
                         ],
                         "capture_item": true,
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -2110,6 +2124,8 @@
                     "sections": [
                       {
                         "name": "HP",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -2318,6 +2334,8 @@
                           "ocarina,bolero,beans",
                           "@Link the Goron"
                         ],
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -2906,6 +2924,8 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -2939,6 +2959,8 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -3230,6 +3252,8 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -3254,6 +3278,8 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -3440,6 +3466,8 @@
                           "{agony}"
                         ],
                         "capture_item": true,
+                        "chest_unopened_img": "images/HP.png",
+                        "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -4252,6 +4280,8 @@
                   },
                   {
                     "name": "2nd race",
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -4654,6 +4684,8 @@
                       "{agony}"
                     ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -5231,6 +5263,8 @@
                       "{agony}"
                     ],
                     "capture_item": true,
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -5247,6 +5281,8 @@
                 "sections": [
                   {
                     "name": "Get it",
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -5298,6 +5334,8 @@
                   },
                   {
                     "name": "Frozen HP",
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   },
                   {
@@ -5434,6 +5472,8 @@
                       "beans",
                       "ocarina,hookshot"
                     ],
+                    "chest_unopened_img": "images/HP.png",
+                    "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   }
                 ],
