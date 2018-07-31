@@ -252,6 +252,8 @@
                   "[sling],shield1"
                 ],
                 "hosted_item": "deku",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
                 "item_count": 1
               }
             ],
@@ -2445,6 +2447,8 @@
                       "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
                     ],
                     "hosted_item": "dodongo",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -3152,6 +3156,8 @@
                           "boomerang"
                         ],
                         "hosted_item": "jabu",
+                        "chest_unopened_img": "images/HC.png",
+                        "chest_opened_img": "images/HC_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -3690,6 +3696,8 @@
                           "@Spirit Temple/Topmost Sun,spirit_boss_key,hookshot"
                         ],
                         "hosted_item": "spirit",
+                        "chest_unopened_img": "images/HC.png",
+                        "chest_opened_img": "images/HC_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -4017,6 +4025,8 @@
                       "@Forest Temple/Basement,forest_boss_key"
                     ],
                     "hosted_item": "forest",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -4360,6 +4370,8 @@
                   "@Shadow Temple/Boss Key Room,shadow_boss_key,shadow_small_keys:5,longshot"
                 ],
                 "hosted_item": "shadow",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
                 "item_count": 1
               }
             ],
@@ -4806,6 +4818,8 @@
                       "hoverboots,fire_boss_key,hammer"
                     ],
                     "hosted_item": "fire",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -5566,6 +5580,8 @@
                       "longshot,water_boss_key"
                     ],
                     "hosted_item": "water",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],

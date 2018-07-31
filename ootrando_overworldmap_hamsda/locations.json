@@ -256,6 +256,8 @@
                   "[sling],shield1"
                 ],
                 "hosted_item": "deku",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
                 "item_count": 1
               }
             ],
@@ -2457,6 +2459,8 @@
                       "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
                     ],
                     "hosted_item": "dodongo",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -3168,6 +3172,8 @@
                           "boomerang"
                         ],
                         "hosted_item": "jabu",
+                        "chest_unopened_img": "images/HC.png",
+                        "chest_opened_img": "images/HC_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -3680,6 +3686,8 @@
                           "@Spirit Temple/Topmost Sun,hookshot"
                         ],
                         "hosted_item": "spirit",
+                        "chest_unopened_img": "images/HC.png",
+                        "chest_opened_img": "images/HC_grey.png",
                         "item_count": 1
                       }
                     ],
@@ -4011,6 +4019,8 @@
                       "@Forest Temple/Basement"
                     ],
                     "hosted_item": "forest",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -4358,6 +4368,8 @@
                   "@Shadow Temple/Boss Key Room,longshot"
                 ],
                 "hosted_item": "shadow",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
                 "item_count": 1
               }
             ],
@@ -4803,6 +4815,8 @@
                       "hoverboots,hammer"
                     ],
                     "hosted_item": "fire",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -5559,6 +5573,8 @@
                       "longshot"
                     ],
                     "hosted_item": "water",
+                    "chest_unopened_img": "images/HC.png",
+                    "chest_opened_img": "images/HC_grey.png",
                     "item_count": 1
                   }
                 ],
