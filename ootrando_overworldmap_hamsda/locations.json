@@ -73,6 +73,8 @@
   },
   {
     "name": "Child",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "children": [
       {
         "name": "Forest",
@@ -3793,6 +3795,8 @@
     "access_rules": [
       "sword2"
     ],
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "children": [
       {
         "name": "Forest",

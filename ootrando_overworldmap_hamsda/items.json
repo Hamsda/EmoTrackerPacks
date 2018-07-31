@@ -1166,7 +1166,7 @@
   {
     "name": "Deku Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "deku_treasures",
     "max_quantity": 7
   },
@@ -1215,7 +1215,7 @@
   {
     "name": "Dodongo Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "dodongo_treasures",
     "max_quantity": 7
   },
@@ -1264,7 +1264,7 @@
   {
     "name": "Jabu Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "jabu_treasures",
     "max_quantity": 4
   },
@@ -1313,7 +1313,7 @@
   {
     "name": "Forest Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "forest_treasures",
     "max_quantity": 8
   },
@@ -1369,7 +1369,7 @@
   {
     "name": "Fire Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "fire_treasures",
     "max_quantity": 6
   },
@@ -1425,7 +1425,7 @@
   {
     "name": "Water Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "water_treasures",
     "max_quantity": 4
   },
@@ -1481,7 +1481,7 @@
   {
     "name": "Spirit Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "spirit_treasures",
     "max_quantity": 14
   },
@@ -1537,7 +1537,7 @@
   {
     "name": "Shadow Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "shadow_treasures",
     "max_quantity": 12
   },
@@ -1593,7 +1593,7 @@
   {
     "name": "BotW Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "botw_treasures",
     "max_quantity": 11
   },
@@ -1613,7 +1613,7 @@
   {
     "name": "Ice Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "ice_treasures",
     "max_quantity": 4
   },
@@ -1639,7 +1639,7 @@
   {
     "name": "GTG Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "gtg_treasures",
     "max_quantity": 13
   },
@@ -1659,7 +1659,7 @@
   {
     "name": "GC Treasures",
     "type": "consumable",
-    "img": "images/chest_brown.png",
+    "img": "images/chest_brown_closed.png",
     "codes": "gc_treasures",
     "max_quantity": 13
   },
