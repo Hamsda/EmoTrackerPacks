@@ -99,6 +99,22 @@
     ]
   },
   {
+    "name": "Show Gold Skulltulas",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/skulltula_hide.png",
+        "codes": "hide_skulltulas"
+      },
+      {
+        "img": "images/skulltula_show.png",
+        "codes": "show_skulltulas"
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,
@@ -1051,12 +1067,6 @@
     "img": "images/skulltula_token.png",
     "codes": "skulltula,goldskulltula,token",
     "max_quantity": 50
-  },
-  {
-    "name": "Show Gold Skulltulas",
-    "type": "toggle",
-    "img": "images/skulltula.png",
-    "codes": "show_skulltulas"
   },
   {
     "name": "Zora Scales",

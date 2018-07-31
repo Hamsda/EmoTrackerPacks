@@ -1054,9 +1054,19 @@
   },
   {
     "name": "Show Gold Skulltulas",
-    "type": "toggle",
-    "img": "images/skulltula.png",
-    "codes": "show_skulltulas"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/skulltula_hide.png",
+        "codes": "hide_skulltulas"
+      },
+      {
+        "img": "images/skulltula_show.png",
+        "codes": "show_skulltulas"
+      }
+    ]
   },
   {
     "name": "Zora Scales",

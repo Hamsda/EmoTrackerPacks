@@ -158,7 +158,7 @@
                           "magic",
                           "gerudocard",
                           "agony",
-                          "show_skulltulas",
+                          "",
                           "skulltula"
                         ],
                         [
@@ -523,7 +523,8 @@
                       "open_forest",
                       "open_door",
                       "type_lens",
-                      "logic_chus"
+                      "logic_chus",
+                      "show_skulltulas"
                     ]
                   ]
                 }
@@ -669,7 +670,7 @@
                               "preludecheck",
                               "gerudocard",
                               "agony",
-                              "show_skulltulas"
+                              ""
                             ],
                             [
                               "forest",
@@ -987,7 +988,8 @@
                           "open_forest",
                           "open_door",
                           "type_lens",
-                          "logic_chus"
+                          "logic_chus",
+                          "show_skulltulas"
                         ]
                       ]
                     }
