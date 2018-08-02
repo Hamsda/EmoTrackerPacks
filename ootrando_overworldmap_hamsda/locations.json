@@ -4357,7 +4357,7 @@
               {
                 "name": "Falling Spikes Upper",
                 "access_rules": [
-                  "@Shadow Temple/Like-Like Room,[lift1]"
+                  "@Shadow Temple/Like-Like Room,lift1"
                 ],
                 "clear_as_group": false,
                 "item_count": 2

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3.1
+
+- fixed Shadow Temple falling spikes room upper chests strength can't be sequence broken
+
 ## 2.0.3.0
 
 - improved Water Temple:
