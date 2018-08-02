@@ -3336,14 +3336,17 @@
                 "children": [
                   {
                     "name": "Central Structure",
+                    "access_rules":[
+                      "sword2,card,hoverboots",
+                      "sword2,card,longshot",
+                      "ocarina,requiem,[sword2],[card],[hoverboots]",
+                      "ocarina,requiem,[sword2],[card],[longshot]"
+                    ],
                     "sections": [
                       {
                         "name": "Light the torches",
                         "access_rules": [
-                          "sword2,card,hoverboots,@logic/has fire",
-                          "sword2,card,longshot,@logic/has fire",
-                          "ocarina,requiem,@logic/has fire,[sword2],[card],[hoverboots]",
-                          "ocarina,requiem,@logic/has fire,[sword2],[card],[longshot]",
+                          "@logic/has fire",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3352,10 +3355,7 @@
                       {
                         "name": "GS92",
                         "access_rules": [
-                          "sword2,card,hoverboots,hookshot",
-                          "sword2,card,longshot",
-                          "ocarina,requiem,[sword2],[card],[hoverboots],[hookshot]",
-                          "ocarina,requiem,[sword2],[card],[longshot]"
+                          "show_skulltulas,hookshot"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3369,36 +3369,6 @@
                           "sword2"
                         ],
                         "x": 346,
-                        "y": 283
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Haunted Wasteland Skulltulas",
-                    "access_rules": [
-                      "show_skulltulas"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Total (1):",
-                        "hosted_item": "skulltula"
-                      },
-                      {
-                        "name": "GS92 - Inside Structure",
-                        "access_rules": [
-                          "sword2,card,hoverboots,hookshot",
-                          "sword2,card,longshot"
-                        ],
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
-                        "x": 385,
                         "y": 283
                       }
                     ]

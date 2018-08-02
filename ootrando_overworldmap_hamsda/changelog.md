@@ -3,6 +3,7 @@
 ## 2.0.3.1
 
 - fixed Shadow Temple falling spikes room upper chests strength can't be sequence broken
+- fixed Haunted Wasteland GS
 
 ## 2.0.3.0
 
