@@ -4,6 +4,7 @@
 
 - fixed Shadow Temple falling spikes room upper chests strength can't be sequence broken
 - fixed Haunted Wasteland GS
+- fixed Jabu Jabus Belly GS52-54
 
 ## 2.0.3.0
 

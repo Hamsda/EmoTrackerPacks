@@ -3163,12 +3163,18 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Map/Compass Chests",
-                        "clear_as_group": false,
+                        "name": "Map Chest",
                         "access_rules": [
                           "boomerang"
                         ],
-                        "item_count": 2
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Compass Chest",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
                       },
                       {
                         "name": "Barinade",
@@ -3205,6 +3211,9 @@
                           {
                             "name": "Wall Near Bigocto",
                             "short_name": "GS52",
+                            "access_rules":[
+                              "boomerang"
+                            ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
@@ -3212,6 +3221,9 @@
                           {
                             "name": "Wall Near Bigocto (further away)",
                             "short_name": "GS53",
+                            "access_rules":[
+                              "boomerang"
+                            ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
@@ -3219,6 +3231,9 @@
                           {
                             "name": "Room Before Barinade",
                             "short_name": "GS54",
+                            "access_rules":[
+                              "boomerang"
+                            ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
