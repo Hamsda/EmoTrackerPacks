@@ -53,10 +53,10 @@
       {
         "name": "colossus",
         "access_rules": [
-          "sword2,card,hoverboots,[lens],[magic]",
-          "sword2,card,hoverboots,lens_chest",
-          "sword2,card,longshot,[lens],[magic]",
-          "sword2,card,longshot,lens_chest",
+          "sword2,carpenter,hoverboots,[lens],[magic]",
+          "sword2,carpenter,hoverboots,lens_chest",
+          "sword2,carpenter,longshot,[lens],[magic]",
+          "sword2,carpenter,longshot,lens_chest",
           "ocarina,requiem"
         ],
         "item_count": 1
@@ -3352,10 +3352,10 @@
                   {
                     "name": "Central Structure",
                     "access_rules":[
-                      "sword2,card,hoverboots",
-                      "sword2,card,longshot",
-                      "ocarina,requiem,[sword2],[card],[hoverboots]",
-                      "ocarina,requiem,[sword2],[card],[longshot]"
+                      "sword2,carpenter,hoverboots",
+                      "sword2,carpenter,longshot",
+                      "ocarina,requiem,[sword2],[carpenter],[hoverboots]",
+                      "ocarina,requiem,[sword2],[carpenter],[longshot]"
                     ],
                     "sections": [
                       {
@@ -5741,7 +5741,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "card",
+                  "carpenter",
                   "ocarina,epona",
                   "longshot",
                   "hookshot,[longshot]"
@@ -5845,7 +5845,28 @@
                         "name": "Carpenter Rescue",
                         "sections": [
                           {
-                            "name": "Free them",
+                            "name": "1st key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "2nd key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "3rd key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "4th key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Free the carpenters",
+                            "access_rules":[
+                              "gf_small_keys:4",
+                              "gf_small_keys:1,[gf_small_keys:4]"
+                            ],
+                            "hosted_item": "carpenter",
                             "item_count": 1
                           }
                         ],
@@ -5884,14 +5905,14 @@
                           {
                             "name": "1000",
                             "access_rules": [
-                              "ocarina,epona,bow,card"
+                              "ocarina,epona,bow,carpenter"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "1500",
                             "access_rules": [
-                              "ocarina,epona,bow,card",
+                              "ocarina,epona,bow,carpenter",
                               "{agony}"
                             ],
                             "capture_item": true,
@@ -5954,7 +5975,7 @@
                       {
                         "name": "Gerudo Training Grounds",
                         "access_rules": [
-                          "card"
+                          "carpenter,card"
                         ],
                         "sections": [
                           {

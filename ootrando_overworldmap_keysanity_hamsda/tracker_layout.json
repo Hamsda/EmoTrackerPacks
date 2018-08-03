@@ -73,8 +73,8 @@
             "requiem",
             "nocturne",
             "prelude",
+            "carpenter",
             "card",
-            "",
             ""
           ]
         ]
@@ -156,9 +156,9 @@
                         [
                           "wallet1",
                           "magic",
-                          "gerudocard",
+                          "carpenter",
+                          "card",
                           "agony",
-                          "",
                           "skulltula"
                         ],
                         [
@@ -668,9 +668,9 @@
                               "requiemcheck",
                               "nocturnecheck",
                               "preludecheck",
-                              "gerudocard",
-                              "agony",
-                              ""
+                              "carpenter",
+                              "card",
+                              "agony"
                             ],
                             [
                               "forest",

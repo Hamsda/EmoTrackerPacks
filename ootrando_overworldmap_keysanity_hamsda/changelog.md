@@ -5,6 +5,11 @@
 - fixed Shadow Temple falling spikes room upper chests strength can't be sequence broken
 - fixed Haunted Wasteland GS
 - fixed Jabu Jabus Belly GS 52-54
+- changed how Gerudo Fortress settings are handled:
+  - added key logic to carpenter rescue (1 key is marked as sequence break for the fast option)
+  - added Gerudo symbol to indicate the carpenters being rescued
+  - changed logic for everything that referenced card to use the carpenters instead
+  - added the card to GTG access logic (its only use)
 
 ## 2.0.3.0
 
