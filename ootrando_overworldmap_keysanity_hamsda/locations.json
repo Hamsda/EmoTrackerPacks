@@ -5845,6 +5845,22 @@
                         "name": "Carpenter Rescue",
                         "sections": [
                           {
+                            "name": "1st key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "2nd key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "3rd key",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "4th key",
+                            "item_count": 1
+                          },
+                          {
                             "name": "Free the carpenters",
                             "access_rules": [
                               "gf_small_keys:4",
