@@ -813,7 +813,7 @@
                 "sections": [
                   {
                     "name": "Item",
-                    "hosted_item": "ocarina"
+                    "item_count": 1
                   },
                   {
                     "name": "Song",
@@ -3211,7 +3211,7 @@
                           {
                             "name": "Wall Near Bigocto",
                             "short_name": "GS52",
-                            "access_rules":[
+                            "access_rules": [
                               "boomerang"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
@@ -3221,7 +3221,7 @@
                           {
                             "name": "Wall Near Bigocto (further away)",
                             "short_name": "GS53",
-                            "access_rules":[
+                            "access_rules": [
                               "boomerang"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
@@ -3231,7 +3231,7 @@
                           {
                             "name": "Room Before Barinade",
                             "short_name": "GS54",
-                            "access_rules":[
+                            "access_rules": [
                               "boomerang"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
@@ -3367,7 +3367,7 @@
                 "children": [
                   {
                     "name": "Central Structure",
-                    "access_rules":[
+                    "access_rules": [
                       "sword2,carpenter,hoverboots",
                       "sword2,carpenter,longshot",
                       "ocarina,requiem,[sword2],[carpenter],[hoverboots]",
