@@ -3348,15 +3348,15 @@
               },
               {
                 "name": "Haunted Wasteland",
+                "access_rules": [
+                  "sword2,carpenter,hoverboots",
+                  "sword2,carpenter,longshot",
+                  "ocarina,requiem,[sword2],[carpenter],[hoverboots]",
+                  "ocarina,requiem,[sword2],[carpenter],[longshot]"
+                ],
                 "children": [
                   {
                     "name": "Central Structure",
-                    "access_rules": [
-                      "sword2,carpenter,hoverboots",
-                      "sword2,carpenter,longshot",
-                      "ocarina,requiem,[sword2],[carpenter],[hoverboots]",
-                      "ocarina,requiem,[sword2],[carpenter],[longshot]"
-                    ],
                     "sections": [
                       {
                         "name": "Light the torches",
@@ -3366,11 +3366,29 @@
                         ],
                         "capture_item": true,
                         "item_count": 1
-                      },
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 360,
+                        "y": 283
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Central Structure",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
                         "name": "GS92",
                         "access_rules": [
-                          "show_skulltulas,hookshot"
+                          "hookshot"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3383,8 +3401,8 @@
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 346,
-                        "y": 283
+                        "x": 360,
+                        "y": 313
                       }
                     ]
                   }
