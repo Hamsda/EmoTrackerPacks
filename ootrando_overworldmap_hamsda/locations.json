@@ -3632,7 +3632,7 @@
                         "name": "Southern Hand",
                         "access_rules": [
                           "@Spirit Temple/Lower Child,@logic/explosives",
-                          "@Spirit Temple/Northern Hand,longshot",
+                          "@Spirit Temple/Mirror Room",
                           "{agony}"
                         ],
                         "capture_item": true,

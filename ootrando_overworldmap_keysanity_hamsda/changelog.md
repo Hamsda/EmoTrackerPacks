@@ -11,6 +11,7 @@
   - changed logic for everything that referenced card to use the carpenters instead
   - added the card to GTG access logic (its only use)
 - Ocarina of Time no longer hosts the item so it works with ocarina shuffle
+- fixed Spirit Temple southern hand adult accessibility
 
 ## 2.0.3.0
 
