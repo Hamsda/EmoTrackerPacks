@@ -190,6 +190,12 @@
     "codes": "gerudocard,card"
   },
   {
+    "name": "Carpenter Rescue",
+    "type": "toggle",
+    "img": "images/gerudo_symbol.png",
+    "codes": "carpenter,rescue"
+  },
+  {
     "name": "Fire Arrows",
     "type": "toggle",
     "img": "images/firearrow.png",

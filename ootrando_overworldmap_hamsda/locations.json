@@ -53,10 +53,10 @@
       {
         "name": "colossus",
         "access_rules": [
-          "sword2,card,hoverboots,[lens],[magic]",
-          "sword2,card,hoverboots,lens_chest",
-          "sword2,card,longshot,[lens],[magic]",
-          "sword2,card,longshot,lens_chest",
+          "sword2,carpenter,hoverboots,[lens],[magic]",
+          "sword2,carpenter,hoverboots,lens_chest",
+          "sword2,carpenter,longshot,[lens],[magic]",
+          "sword2,carpenter,longshot,lens_chest",
           "ocarina,requiem"
         ],
         "item_count": 1
@@ -813,7 +813,7 @@
                 "sections": [
                   {
                     "name": "Item",
-                    "hosted_item": "ocarina"
+                    "item_count": 1
                   },
                   {
                     "name": "Song",
@@ -3163,12 +3163,18 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Map/Compass Chests",
-                        "clear_as_group": false,
+                        "name": "Map Chest",
                         "access_rules": [
                           "boomerang"
                         ],
-                        "item_count": 2
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Compass Chest",
+                        "access_rules": [
+                          "boomerang"
+                        ],
+                        "item_count": 1
                       },
                       {
                         "name": "Barinade",
@@ -3205,6 +3211,9 @@
                           {
                             "name": "Wall Near Bigocto",
                             "short_name": "GS52",
+                            "access_rules": [
+                              "boomerang"
+                            ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
@@ -3212,6 +3221,9 @@
                           {
                             "name": "Wall Near Bigocto (further away)",
                             "short_name": "GS53",
+                            "access_rules": [
+                              "boomerang"
+                            ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
@@ -3219,6 +3231,9 @@
                           {
                             "name": "Room Before Barinade",
                             "short_name": "GS54",
+                            "access_rules": [
+                              "boomerang"
+                            ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
@@ -3349,6 +3364,12 @@
               },
               {
                 "name": "Haunted Wasteland",
+                "access_rules": [
+                  "sword2,carpenter,hoverboots",
+                  "sword2,carpenter,longshot",
+                  "ocarina,requiem,[sword2],[carpenter],[hoverboots]",
+                  "ocarina,requiem,[sword2],[carpenter],[longshot]"
+                ],
                 "children": [
                   {
                     "name": "Central Structure",
@@ -3356,22 +3377,34 @@
                       {
                         "name": "Light the torches",
                         "access_rules": [
-                          "sword2,card,hoverboots,@logic/has fire",
-                          "sword2,card,longshot,@logic/has fire",
-                          "ocarina,requiem,@logic/has fire,[sword2],[card],[hoverboots]",
-                          "ocarina,requiem,@logic/has fire,[sword2],[card],[longshot]",
+                          "@logic/has fire",
                           "{agony}"
                         ],
                         "capture_item": true,
                         "item_count": 1
-                      },
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 360,
+                        "y": 283
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Central Structure",
+                    "access_rules": [
+                      "show_skulltulas"
+                    ],
+                    "sections": [
                       {
                         "name": "GS92",
                         "access_rules": [
-                          "sword2,card,hoverboots,hookshot",
-                          "sword2,card,longshot",
-                          "ocarina,requiem,[sword2],[card],[hoverboots],[hookshot]",
-                          "ocarina,requiem,[sword2],[card],[longshot]"
+                          "hookshot"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3384,8 +3417,8 @@
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 346,
-                        "y": 283
+                        "x": 360,
+                        "y": 313
                       }
                     ]
                   }
@@ -3599,7 +3632,7 @@
                         "name": "Southern Hand",
                         "access_rules": [
                           "@Spirit Temple/Lower Child,@logic/explosives",
-                          "@Spirit Temple/Northern Hand,longshot",
+                          "@Spirit Temple/Mirror Room",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -4357,7 +4390,7 @@
               {
                 "name": "Falling Spikes Upper",
                 "access_rules": [
-                  "@Shadow Temple/Like-Like Room,[lift1]"
+                  "@Shadow Temple/Like-Like Room,lift1"
                 ],
                 "clear_as_group": false,
                 "item_count": 2
@@ -5752,7 +5785,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "card",
+                  "carpenter",
                   "ocarina,epona",
                   "longshot",
                   "hookshot,[longshot]"
@@ -5856,7 +5889,8 @@
                         "name": "Carpenter Rescue",
                         "sections": [
                           {
-                            "name": "Free them",
+                            "name": "Free the carpenters",
+                            "hosted_item": "carpenter",
                             "item_count": 1
                           }
                         ],
@@ -5895,14 +5929,14 @@
                           {
                             "name": "1000",
                             "access_rules": [
-                              "ocarina,epona,bow,card"
+                              "ocarina,epona,bow,carpenter"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "1500",
                             "access_rules": [
-                              "ocarina,epona,bow,card",
+                              "ocarina,epona,bow,carpenter",
                               "{agony}"
                             ],
                             "capture_item": true,
@@ -5965,7 +5999,7 @@
                       {
                         "name": "Gerudo Training Grounds",
                         "access_rules": [
-                          "card"
+                          "carpenter,card"
                         ],
                         "sections": [
                           {
