@@ -645,7 +645,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "@logic/explosives,scale2"
                     ],
                     "x": 1152,
                     "y": 481
