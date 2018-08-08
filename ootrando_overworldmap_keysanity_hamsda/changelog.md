@@ -3,6 +3,7 @@
 ## 2.0.3.2
 
 - fixed tektite grotto only on child map with gold scale
+- fixed Gerudo archery range GS90 needs carpenters rescued
 
 ## 2.0.3.1
 

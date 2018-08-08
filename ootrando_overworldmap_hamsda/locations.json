@@ -5960,7 +5960,7 @@
                           {
                             "name": "GS90",
                             "access_rules": [
-                              "hookshot"
+                              "hookshot,carpenter"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
