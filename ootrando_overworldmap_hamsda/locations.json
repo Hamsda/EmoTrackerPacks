@@ -5743,7 +5743,8 @@
                         "name": "Platform Room Before Dark Link",
                         "short_name": "GS76",
                         "access_rules": [
-                          "longshot"
+                          "longshot",
+                          "hookshot,[longshot]"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",

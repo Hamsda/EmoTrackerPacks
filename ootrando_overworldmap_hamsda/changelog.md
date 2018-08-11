@@ -4,6 +4,7 @@
 
 - fixed tektite grotto only on child map with gold scale
 - fixed Gerudo archery range GS90 needs carpenters rescued
+- changed Water Temple GS76 to be sequence breakable by hookshot extension
 
 ## 2.0.3.1
 
