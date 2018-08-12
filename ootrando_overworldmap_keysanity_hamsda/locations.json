@@ -4436,7 +4436,7 @@
                     "name": "Like-Like Room",
                     "short_name": "GS81",
                     "access_rules": [
-                      "@Shadow Temple/Like-Like Room,hookshot"
+                      "@Shadow Temple/Like-Like Room,[hookshot]"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
