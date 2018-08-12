@@ -370,7 +370,9 @@
                   {
                     "name": "Pay 40",
                     "access_rules": [
-                      "@logic/can blast"
+                      "@logic/explosives",
+                      "sword2,hammer,[ocarina],[saria]",
+                      "sword2,hammer,[ocarina],[minuet]"
                     ],
                     "item_count": 1
                   }
@@ -387,8 +389,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,ocarina,saria",
-                      "sword2,ocarina,minuet"
+                      "sword2"
                     ],
                     "x": 2192,
                     "y": 724
@@ -548,8 +549,8 @@
                 "name": "Wolfos Grotto",
                 "access_rules": [
                   "@logic/explosives",
-                  "sword2,hammer,ocarina,saria",
-                  "sword2,hammer,ocarina,minuet"
+                  "sword2,hammer,[ocarina],[saria]",
+                  "sword2,hammer,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -569,8 +570,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,ocarina,saria",
-                      "sword2,ocarina,minuet"
+                      "sword2"
                     ],
                     "x": 2180,
                     "y": 686
@@ -597,13 +597,6 @@
                     "y": 626
                   }
                 ]
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "child",
-                "x": 2178,
-                "y": 683
               }
             ]
           }
@@ -3908,8 +3901,8 @@
           {
             "name": "Sacred Forest Meadow",
             "access_rules": [
-              "ocarina,saria",
-              "ocarina,minuet"
+              "[ocarina],[saria]",
+              "[ocarina],[minuet]"
             ],
             "children": [
               {
@@ -3918,8 +3911,8 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "ocarina,saria",
-                      "ocarina,minuet",
+                      "[ocarina],[saria]",
+                      "[ocarina],[minuet]",
                       "{agony}"
                     ],
                     "capture_item": true,
