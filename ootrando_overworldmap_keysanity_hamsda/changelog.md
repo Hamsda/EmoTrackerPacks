@@ -8,6 +8,7 @@
 - changed adult SFM/LW behind Mido marked sequence breakable (will show up as completeable without sequence break if you have explosives due to limitations of the tracker)
 - changed Shadow Temple GS81 to be sequence breakable w/o hookshot (can jumpslash from the chests)
 - changed GS short names for (mini) dungeons to be recognizable when pinned
+- fixed Fire Temple access
 
 ## 2.0.3.1
 

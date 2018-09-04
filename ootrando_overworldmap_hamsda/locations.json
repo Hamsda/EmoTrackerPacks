@@ -4761,6 +4761,11 @@
               },
               {
                 "name": "Sheik in Crater",
+                "access_rules": [
+                  "ocarina,bolero",
+                  "hoverboots",
+                  "@Link the Goron,hookshot"
+                ],
                 "sections": [
                   {
                     "name": "Song",
