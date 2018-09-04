@@ -51,6 +51,13 @@
         "item_count": 1
       },
       {
+        "name": "can leave forest",
+        "access_rules":[
+          "open_forest",
+          "sling,sword1"
+        ]
+      },
+      {
         "name": "colossus",
         "access_rules": [
           "sword2,carpenter,hoverboots,[lens],[magic]",
@@ -151,8 +158,7 @@
                   {
                     "name": "GS1",
                     "access_rules": [
-                      "open_forest",
-                      "sling,sword1"
+                      "@logic/can leave forest"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -272,15 +278,15 @@
                 ],
                 "sections": [
                   {
-                    "name": "Compass Room",
-                    "short_name": "GS8",
+                    "name": "GS8 - Compass Room",
+                    "short_name": "Compass Room",
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   },
                   {
-                    "name": "Basement Vines",
-                    "short_name": "GS9",
+                    "name": "GS9 - Basement Vines",
+                    "short_name": "Vines",
                     "access_rules": [
                       "sling",
                       "@logic/explosives",
@@ -292,15 +298,15 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Basement Gate",
-                    "short_name": "GS10",
+                    "name": "GS10 - Basement Gate",
+                    "short_name": "Gate",
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
                   },
                   {
-                    "name": "Basement Back Room",
-                    "short_name": "GS11",
+                    "name": "GS11 - Basement Back Room",
+                    "short_name": "Back Room",
                     "access_rules": [
                       "@logic/explosives,boomerang"
                     ],
@@ -370,7 +376,9 @@
                   {
                     "name": "Pay 40",
                     "access_rules": [
-                      "@logic/can blast"
+                      "@logic/explosives",
+                      "sword2,hammer,[ocarina],[saria]",
+                      "sword2,hammer,[ocarina],[minuet]"
                     ],
                     "item_count": 1
                   }
@@ -387,8 +395,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,ocarina,saria",
-                      "sword2,ocarina,minuet"
+                      "sword2"
                     ],
                     "x": 2192,
                     "y": 724
@@ -548,8 +555,8 @@
                 "name": "Wolfos Grotto",
                 "access_rules": [
                   "@logic/explosives",
-                  "sword2,hammer,ocarina,saria",
-                  "sword2,hammer,ocarina,minuet"
+                  "sword2,hammer,[ocarina],[saria]",
+                  "sword2,hammer,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -569,8 +576,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,ocarina,saria",
-                      "sword2,ocarina,minuet"
+                      "sword2"
                     ],
                     "x": 2180,
                     "y": 686
@@ -598,13 +604,6 @@
                   }
                 ]
               }
-            ],
-            "map_locations": [
-              {
-                "map": "child",
-                "x": 2178,
-                "y": 683
-              }
             ]
           }
         ]
@@ -612,8 +611,7 @@
       {
         "name": "Outside Forest",
         "access_rules": [
-          "open_forest",
-          "sling,sword1"
+          "@logic/can leave forest"
         ],
         "children": [
           {
@@ -641,7 +639,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "@logic/explosives,scale2"
                     ],
                     "x": 1152,
                     "y": 481
@@ -1876,7 +1874,8 @@
                     "name": "Basement",
                     "access_rules": [
                       "@logic/explosives",
-                      "lift1,botw_small_keys:1,@logic/lens"
+                      "lift1,botw_small_keys:1,@logic/lens",
+                      "lift1,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
@@ -1924,8 +1923,8 @@
                     ],
                     "sections": [
                       {
-                        "name": "Like-Like Room",
-                        "short_name": "GS78",
+                        "name": "GS78 - Like-Like Room",
+                        "short_name": "Like-Like",
                         "access_rules": [
                           "botw_small_keys:1,boomerang,@logic/lens"
                         ],
@@ -1934,8 +1933,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Left Locked Room",
-                        "short_name": "GS79",
+                        "name": "GS79 - Left Locked Room",
+                        "short_name": "Left Locked",
                         "access_rules": [
                           "botw_small_keys:1,boomerang"
                         ],
@@ -1944,8 +1943,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Right Locked Room",
-                        "short_name": "GS80",
+                        "name": "GS80 - Right Locked Room",
+                        "short_name": "Right Locked",
                         "access_rules": [
                           "botw_small_keys:1,boomerang,@logic/lens"
                         ],
@@ -2477,15 +2476,15 @@
                     ],
                     "sections": [
                       {
-                        "name": "Bombable Wall Right Hallway",
-                        "short_name": "GS38",
+                        "name": "GS38 - Bombable Wall Right Hallway",
+                        "short_name": "Right Bombable",
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "Staircase Room on Vines",
-                        "short_name": "GS39",
+                        "name": "GS39 - Staircase Room on Vines",
+                        "short_name": "Vines",
                         "access_rules": [
                           "@Dodongos Cavern/Small Chest Upstairs,@logic/explosives",
                           "@Dodongos Cavern/Small Chest Upstairs,boomerang",
@@ -2499,8 +2498,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Before Boss Room Bombable",
-                        "short_name": "GS40",
+                        "name": "GS40 - Before Boss Room Bombable",
+                        "short_name": "Back Room",
                         "access_rules": [
                           "@Dodongos Cavern/King Dodongo"
                         ],
@@ -2509,8 +2508,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Top of Stairs, Re-enter",
-                        "short_name": "GS41",
+                        "name": "GS41 - Top of Stairs, Re-enter",
+                        "short_name": "Top of Stairs",
                         "access_rules": [
                           "@Dodongos Cavern/Bomb Bag Chest,boomerang,@logic/explosives",
                           "@Dodongos Cavern/Bomb Bag Chest,boomerang,lift1",
@@ -2522,8 +2521,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Scarecrow Song",
-                        "short_name": "GS42",
+                        "name": "GS42 - Scarecrow Song",
+                        "short_name": "Scarecrow",
                         "access_rules": [
                           "sword2,ocarina,hookshot",
                           "sword2,longshot"
@@ -3186,15 +3185,15 @@
                         ],
                         "sections": [
                           {
-                            "name": "Water Switch Room",
-                            "short_name": "GS51",
+                            "name": "GS51 - Water Switch Room",
+                            "short_name": "Water Switch",
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "Wall Near Bigocto",
-                            "short_name": "GS52",
+                            "name": "GS52 - Wall Near Bigocto",
+                            "short_name": "Bigocto 1",
                             "access_rules": [
                               "boomerang"
                             ],
@@ -3203,8 +3202,8 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Wall Near Bigocto (further away)",
-                            "short_name": "GS53",
+                            "name": "GS53 - Wall Near Bigocto (further away)",
+                            "short_name": "Bigocto 2",
                             "access_rules": [
                               "boomerang"
                             ],
@@ -3213,8 +3212,8 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Room Before Barinade",
-                            "short_name": "GS54",
+                            "name": "GS54 - Room Before Barinade",
+                            "short_name": "Before Boss",
                             "access_rules": [
                               "boomerang"
                             ],
@@ -3526,7 +3525,7 @@
                     ]
                   },
                   {
-                    "name": "Tree Near Oasis",
+                    "name": "Tree Near Oasis (N)",
                     "access_rules": [
                       "show_skulltulas"
                     ],
@@ -3550,7 +3549,7 @@
                     ]
                   },
                   {
-                    "name": "Top Of Platform",
+                    "name": "Top Of Platform (N)",
                     "access_rules": [
                       "show_skulltulas"
                     ],
@@ -3742,8 +3741,8 @@
                         ],
                         "sections": [
                           {
-                            "name": "Cage Room Lower Child",
-                            "short_name": "GS96",
+                            "name": "GS96 - Cage Room Lower Child",
+                            "short_name": "Lower Child",
                             "access_rules": [
                               "@Spirit Temple/Lower Child"
                             ],
@@ -3752,8 +3751,8 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Pit Upper Child",
-                            "short_name": "GS97",
+                            "name": "GS97 - Pit Upper Child",
+                            "short_name": "Upper Child",
                             "access_rules": [
                               "@Spirit Temple/Upper Child"
                             ],
@@ -3762,8 +3761,8 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Room Before Iron Knuckle Child Side",
-                            "short_name": "GS98",
+                            "name": "GS98 - Room Before Iron Knuckle Child Side",
+                            "short_name": "Before Knuckle",
                             "access_rules": [
                               "boomerang,@Spirit Temple/Torch Puzzle",
                               "hookshot,@Spirit Temple/Torch Puzzle"
@@ -3773,20 +3772,18 @@
                             "item_count": 1
                           },
                           {
-                            "name": "Boulder Room Behind Block",
-                            "short_name": "GS99",
+                            "name": "GS99 - Boulder Room Behind Block",
+                            "short_name": "Boulder Room",
                             "access_rules": [
-                              "ocarina,time,hookshot",
-                              "ocarina,time,bow",
-                              "ocarina,time,@logic/explosives"
+                              "ocarina,time,@Spirit Temple/Boulder Room"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
                           },
                           {
-                            "name": "Statue Room, Left Ledge",
-                            "short_name": "GS100",
+                            "name": "GS100 - Statue Room, Left Ledge",
+                            "short_name": "Statue Ledge",
                             "access_rules": [
                               "lift2,sword2,hookshot,ocarina",
                               "lift2,sword2,longshot",
@@ -3908,8 +3905,8 @@
           {
             "name": "Sacred Forest Meadow",
             "access_rules": [
-              "ocarina,saria",
-              "ocarina,minuet"
+              "[ocarina],[saria]",
+              "[ocarina],[minuet]"
             ],
             "children": [
               {
@@ -3918,8 +3915,8 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "ocarina,saria",
-                      "ocarina,minuet",
+                      "[ocarina],[saria]",
+                      "[ocarina],[minuet]",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4089,22 +4086,22 @@
                     ],
                     "sections": [
                       {
-                        "name": "Vines At Entrance",
-                        "short_name": "GS60",
+                        "name": "GS60 - Vines At Entrance",
+                        "short_name": "First Room",
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "Wall Northern Main Room",
-                        "short_name": "GS61",
+                        "name": "GS61 - Wall Northern Main Room",
+                        "short_name": "Main Room",
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "Below Scarecrow",
-                        "short_name": "GS62",
+                        "name": "GS62 - Below Scarecrow",
+                        "short_name": "Scarecrow",
                         "access_rules": [
                           "@Forest Temple/Below Scarecrow"
                         ],
@@ -4113,8 +4110,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Wall Near Columns",
-                        "short_name": "GS63",
+                        "name": "GS63 - Wall Near Columns",
+                        "short_name": "Columns",
                         "access_rules": [
                           "@Forest Temple/Map Chest,longshot",
                           "@Forest Temple/Floormaster,hookshot"
@@ -4124,8 +4121,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Basement Room",
-                        "short_name": "GS64",
+                        "name": "GS64 - Basement Room",
+                        "short_name": "Basement",
                         "access_rules": [
                           "@Forest Temple/Basement"
                         ],
@@ -4384,7 +4381,7 @@
               {
                 "name": "Wind Hint Room",
                 "access_rules": [
-                  "@Shadow Temple/Skull Pot Key,shadow_small_keys:3"
+                  "@Shadow Temple/Invisible Spikes,hookshot,shadow_small_keys:3"
                 ],
                 "item_count": 1
               },
@@ -4440,8 +4437,18 @@
                 ],
                 "sections": [
                   {
-                    "name": "Like-Like Room",
-                    "short_name": "GS81",
+                    "name": "GS81 - Like-Like Room",
+                    "short_name": "Like-Like",
+                    "access_rules": [
+                      "@Shadow Temple/Like-Like Room,[hookshot]"
+                    ],
+                    "chest_unopened_img": "images/skulltula.png",
+                    "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "GS82 - Falling Spikes Room",
+                    "short_name": "Falling Spikes",
                     "access_rules": [
                       "@Shadow Temple/Like-Like Room,hookshot"
                     ],
@@ -4450,18 +4457,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Falling Spikes Room",
-                    "short_name": "GS82",
-                    "access_rules": [
-                      "@Shadow Temple/Like-Like Room,hookshot"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Bombable Skull Room",
-                    "short_name": "GS83",
+                    "name": "GS83 - Bombable Skull Room",
+                    "short_name": "Bombable Skull",
                     "access_rules": [
                       "@Shadow Temple/Skull Pot Key"
                     ],
@@ -4470,8 +4467,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Near Boat",
-                    "short_name": "GS84",
+                    "name": "GS84 - Near Boat",
+                    "short_name": "Near Boat",
                     "access_rules": [
                       "@Shadow Temple/After Wind Room,shadow_small_keys:4,longshot"
                     ],
@@ -4480,8 +4477,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Three Skulls Room",
-                    "short_name": "GS85",
+                    "name": "GS85 - Three Skulls Room",
+                    "short_name": "Three Skulls",
                     "access_rules": [
                       "@Shadow Temple/Boss Key Room"
                     ],
@@ -4740,6 +4737,11 @@
               },
               {
                 "name": "Sheik in Crater",
+                "access_rules": [
+                  "ocarina,bolero",
+                  "hoverboots",
+                  "@Link the Goron,hookshot"
+                ],
                 "sections": [
                   {
                     "name": "Song",
@@ -4892,8 +4894,8 @@
                     ],
                     "sections": [
                       {
-                        "name": "Time Block First Room",
-                        "short_name": "GS65",
+                        "name": "GS65 - Time Block First Room",
+                        "short_name": "Time Block",
                         "access_rules": [
                           "@Fire Temple/North Lava Room,ocarina,time"
                         ],
@@ -4902,8 +4904,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Bombable Wall Boulder Maze",
-                        "short_name": "GS66",
+                        "name": "GS66 - Bombable Wall Boulder Maze",
+                        "short_name": "Boulder Maze",
                         "access_rules": [
                           "@Fire Temple/North Boulder Maze,@logic/explosives"
                         ],
@@ -4912,8 +4914,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Top Floor Scarecrow",
-                        "short_name": "GS67",
+                        "name": "GS67 - Top Floor Scarecrow",
+                        "short_name": "Scarecrow 1",
                         "access_rules": [
                           "@Fire Temple/Scarecrow"
                         ],
@@ -4922,8 +4924,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Top Floor Through Door",
-                        "short_name": "GS68",
+                        "name": "GS68 - Top Floor Through Door",
+                        "short_name": "Scarecrow 2",
                         "access_rules": [
                           "@Fire Temple/Scarecrow"
                         ],
@@ -4932,8 +4934,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Near Boss Key Chest",
-                        "short_name": "GS69",
+                        "name": "GS69 - Near Boss Key Chest",
+                        "short_name": "Near BK",
                         "access_rules": [
                           "@Fire Temple/Boss Key Rooms"
                         ],
@@ -5364,11 +5366,11 @@
                 ],
                 "sections": [
                   {
-                    "name": "Map Chests",
+                    "name": "Map Chest",
                     "item_count": 1
                   },
                   {
-                    "name": "Compass Chests",
+                    "name": "Compass Chest",
                     "item_count": 1
                   },
                   {
@@ -5406,8 +5408,8 @@
                     ],
                     "sections": [
                       {
-                        "name": "Near Compass Chest",
-                        "short_name": "GS70",
+                        "name": "GS70 - Near Compass Chest",
+                        "short_name": "Compass",
                         "access_rules": [
                           "hookshot"
                         ],
@@ -5416,8 +5418,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Silver Rupee Room",
-                        "short_name": "GS71",
+                        "name": "GS71 - Silver Rupee Room",
+                        "short_name": "Silver Rupee",
                         "access_rules": [
                           "hookshot"
                         ],
@@ -5426,8 +5428,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Moveable Iceblock Room",
-                        "short_name": "GS72",
+                        "name": "GS72 - Moveable Iceblock Room",
+                        "short_name": "Iceblock",
                         "access_rules": [
                           "hookshot"
                         ],
@@ -5679,8 +5681,8 @@
                     ],
                     "sections": [
                       {
-                        "name": "Bottom South, Hit Switch Spin Attack",
-                        "short_name": "GS73",
+                        "name": "GS73 - Bottom South, Hit Switch Spin Attack",
+                        "short_name": "Bottom South",
                         "access_rules": [
                           "@logic/explosives,ocarina,lullaby"
                         ],
@@ -5689,8 +5691,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "River After Dark Link",
-                        "short_name": "GS74",
+                        "name": "GS74 - River After Dark Link",
+                        "short_name": "River",
                         "access_rules": [
                           "@Water Temple/Dark Link,ocarina,time"
                         ],
@@ -5699,8 +5701,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Center Pillar Inside",
-                        "short_name": "GS75",
+                        "name": "GS75 - Center Pillar Inside",
+                        "short_name": "Center Pillar",
                         "access_rules": [
                           "water_small_keys:1,ocarina,lullaby,longshot",
                           "water_small_keys:1,ocarina,lullaby,faroreswind,magic",
@@ -5714,18 +5716,19 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Platform Room Before Dark Link",
-                        "short_name": "GS76",
+                        "name": "GS76 - Platform Room Before Dark Link",
+                        "short_name": "Platform Room",
                         "access_rules": [
-                          "water_small_keys:1,longshot"
+                          "water_small_keys:1,longshot",
+                          "water_small_keys:1,hookshot,[longshot]"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       },
                       {
-                        "name": "Bottom Rolling Rocks Room",
-                        "short_name": "GS77",
+                        "name": "GS77 - Bottom Rolling Rocks Room",
+                        "short_name": "Rolling Rocks",
                         "access_rules": [
                           "water_small_keys:1,longshot,@logic/explosives,lift1",
                           "water_small_keys:1,longshot,hoverboots"
@@ -5954,7 +5957,7 @@
                           {
                             "name": "GS90",
                             "access_rules": [
-                              "hookshot"
+                              "hookshot,carpenter"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",

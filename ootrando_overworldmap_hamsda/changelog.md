@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.0.3.2
+
+- fixed tektite grotto only on child map with gold scale
+- fixed Gerudo archery range GS90 needs carpenters rescued
+- changed Water Temple GS76 to be sequence breakable by hookshot extension
+- changed adult SFM/LW behind Mido marked sequence breakable (will show up as completeable without sequence break if you have explosives due to limitations of the tracker)
+- changed Shadow Temple GS81 to be sequence breakable w/o hookshot (can jumpslash from the chests)
+- changed GS short names for (mini) dungeons to be recognizable when pinned
+- fixed Fire Temple access
+- fixed Spirit Temple GS99 to require strength2
+- fixed Bottom of the Well basement reachable with dins and strength1
+
 ## 2.0.3.1
 
 - fixed Shadow Temple falling spikes room upper chests strength can't be sequence broken
