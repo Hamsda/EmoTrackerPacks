@@ -10,6 +10,7 @@
 - changed GS short names for (mini) dungeons to be recognizable when pinned
 - fixed Fire Temple access
 - fixed Spirit Temple GS99 to require strength2
+- fixed Bottom of the Well basement reachable with dins and strength1
 
 ## 2.0.3.1
 

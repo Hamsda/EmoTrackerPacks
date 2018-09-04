@@ -1877,7 +1877,8 @@
                     "name": "Basement",
                     "access_rules": [
                       "@logic/explosives",
-                      "lift1,@logic/lens"
+                      "lift1,@logic/lens",
+                      "lift1,dinsfire,magic"
                     ],
                     "item_count": 1
                   },
