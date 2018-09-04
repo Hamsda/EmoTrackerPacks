@@ -3769,9 +3769,7 @@
                             "name": "GS99 - Boulder Room Behind Block",
                             "short_name": "Boulder Room",
                             "access_rules": [
-                              "ocarina,time,hookshot",
-                              "ocarina,time,bow",
-                              "ocarina,time,@logic/explosives"
+                              "ocarina,time,@Spirit Temple/Boulder Room"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
