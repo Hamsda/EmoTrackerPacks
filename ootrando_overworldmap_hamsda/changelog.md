@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3.3
+
+- fixed open forest (forgot the `item_count` again... oops)
+
 ## 2.0.3.2
 
 - fixed tektite grotto only on child map with gold scale
