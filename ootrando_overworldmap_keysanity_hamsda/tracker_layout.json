@@ -522,9 +522,17 @@
                       "type_bridge",
                       "open_forest",
                       "open_door",
+                      "show_skulltulas",
+                      "",
+                      ""
+                    ],
+                    [
                       "type_lens",
                       "logic_chus",
-                      "show_skulltulas"
+                      "scrub_shuffle",
+                      "",
+                      "",
+                      ""
                     ]
                   ]
                 }
@@ -987,9 +995,17 @@
                           "type_bridge",
                           "open_forest",
                           "open_door",
+                          "show_skulltulas",
+                          "",
+                          ""
+                        ],
+                        [
                           "type_lens",
                           "logic_chus",
-                          "show_skulltulas"
+                          "scrub_shuffle",
+                          "",
+                          "",
+                          ""
                         ]
                       ]
                     }

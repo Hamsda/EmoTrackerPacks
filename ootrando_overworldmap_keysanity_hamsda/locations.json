@@ -52,7 +52,7 @@
       },
       {
         "name": "can leave forest",
-        "access_rules":[
+        "access_rules": [
           "open_forest",
           "sling,sword1"
         ],
@@ -359,7 +359,9 @@
                 "name": "Deku Scrub below Bridge",
                 "sections": [
                   {
-                    "name": "Pay 40",
+                    "name": "Pay up",
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -372,15 +374,26 @@
                 ]
               },
               {
-                "name": "Deku Scrub in Grotto",
+                "name": "Deku Scrubs in Grotto",
+                "access_rules": [
+                  "@logic/explosives",
+                  "sword2,hammer,[ocarina],[saria]",
+                  "sword2,hammer,[ocarina],[minuet]"
+                ],
                 "sections": [
                   {
-                    "name": "Pay 40",
+                    "name": "Nut Capacity",
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Arrows",
                     "access_rules": [
-                      "@logic/explosives",
-                      "sword2,hammer,[ocarina],[saria]",
-                      "sword2,hammer,[ocarina],[minuet]"
+                      "scrub_shuffle_yes"
                     ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
                     "item_count": 1
                   }
                 ],
@@ -494,7 +507,7 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 2110,
+                    "x": 2078,
                     "y": 740
                   }
                 ]
@@ -543,6 +556,35 @@
                   {
                     "map": "child",
                     "x": 2142,
+                    "y": 740
+                  }
+                ]
+              },
+              {
+                "name": "Deku Scrubs Near Stage",
+                "access_rules": [
+                  "scrub_shuffle_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Deku Scrubs",
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2110,
+                    "y": 740
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 2110,
                     "y": 740
                   }
                 ]
@@ -602,6 +644,42 @@
                     "map": "child",
                     "x": 2155,
                     "y": 626
+                  }
+                ]
+              },
+              {
+                "name": "Storms Grotto",
+                "access_rules": [
+                  "scrub_shuffle_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Deku Scrubs",
+                    "access_rules": [
+                      "ocarina,storm"
+                    ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "visibility_rules": [
+                      "@logic/explosives",
+                      "scale1"
+                    ],
+                    "x": 2190,
+                    "y": 635
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 2190,
+                    "y": 635
                   }
                 ]
               }
@@ -1067,6 +1145,35 @@
                         "y": 1405
                       }
                     ]
+                  },
+                  {
+                    "name": "Under Gravestone",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 3
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 870,
+                        "y": 1309
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 870,
+                        "y": 1309
+                      }
+                    ]
                   }
                 ]
               },
@@ -1129,6 +1236,27 @@
                         "map": "child",
                         "x": 1295,
                         "y": 647
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Grotto",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 3
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1375,
+                        "y": 690
                       }
                     ]
                   },
@@ -2019,7 +2147,7 @@
                       {
                         "map": "child",
                         "x": 1689,
-                        "y": 99
+                        "y": 80
                       }
                     ]
                   },
@@ -2339,6 +2467,30 @@
                     ]
                   },
                   {
+                    "name": "Deku Scrub Near Ladder",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrub",
+                        "access_rules": [
+                          "@logic/explosives"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1834,
+                        "y": 30
+                      }
+                    ]
+                  },
+                  {
                     "name": "Crate at Entrance",
                     "access_rules": [
                       "show_skulltulas"
@@ -2546,6 +2698,60 @@
                         ],
                         "x": 1650,
                         "y": 220
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dodongos Cavern Scrubs",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Main Room - Deku Shield",
+                        "short_name": "Main Room",
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "1F Right - Deku Stick",
+                        "short_name": "1F Right",
+                        "access_rules": [
+                          "sword2",
+                          "sword1",
+                          "sticks",
+                          "sling",
+                          "@logic/explosives"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "2F Near Bomb Chest",
+                        "short_name": "2F Bomb Chest",
+                        "access_rules": [
+                          "@Dodongos Cavern/Small Chest Upstairs,@logic/can blast"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1650,
+                        "y": 252
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 1650,
+                        "y": 252
                       }
                     ]
                   }
@@ -2988,6 +3194,44 @@
                     ]
                   },
                   {
+                    "name": "Rock Circle Grotto",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "access_rules": [
+                          "@logic/explosives,ocarina,storm",
+                          "scale1,ocarina,storm",
+                          "sword2,ocarina,storm"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "visibility_rules": [
+                          "@logic/explosives",
+                          "scale1"
+                        ],
+                        "x": 1940,
+                        "y": 505
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 1940,
+                        "y": 505
+                      }
+                    ]
+                  },
+                  {
                     "name": "On Ladder (N)",
                     "access_rules": [
                       "show_skulltulas"
@@ -3230,6 +3474,28 @@
                             "y": 293
                           }
                         ]
+                      },
+                      {
+                        "name": "Jabu Jabu Scrubs",
+                        "access_rules": [
+                          "scrub_shuffle_yes"
+                        ],
+                        "sections": [
+                          {
+                            "name": "B1 Under Water",
+                            "short_name": "B1 Under Water",
+                            "chest_unopened_img": "images/deku_scrub.png",
+                            "chest_opened_img": "images/deku_scrub_grey.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "child",
+                            "x": 2458,
+                            "y": 328
+                          }
+                        ]
                       }
                     ]
                   }
@@ -3463,6 +3729,33 @@
                           "sword2"
                         ],
                         "x": 160,
+                        "y": 305
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Under Silver Rock",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "access_rules": [
+                          "@logic/colossus,lift2"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 195,
                         "y": 305
                       }
                     ]
@@ -4135,8 +4428,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 2195,
-                        "y": 610
+                        "x": 2180,
+                        "y": 586
                       }
                     ]
                   }
@@ -4524,7 +4817,7 @@
                   {
                     "map": "adult",
                     "x": 1689,
-                    "y": 99
+                    "y": 80
                   }
                 ]
               },
@@ -4566,6 +4859,32 @@
                     "map": "adult",
                     "x": 1646,
                     "y": 128
+                  }
+                ]
+              },
+              {
+                "name": "Lava Room Grotto",
+                "access_rules": [
+                  "scrub_shuffle_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Deku Scrubs",
+                    "access_rules": [
+                      "hookshot,redtunic",
+                      "hookshot,nayruslove,magic",
+                      "ocarina,time"
+                    ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 3
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1689,
+                    "y": 115
                   }
                 ]
               },
@@ -4732,6 +5051,32 @@
                   {
                     "map": "adult",
                     "x": 1834,
+                    "y": 30
+                  }
+                ]
+              },
+              {
+                "name": "Under Hammer Rock",
+                "access_rules": [
+                  "scrub_shuffle_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Deku Scrubs",
+                    "access_rules": [
+                      "hammer,@Link the Goron",
+                      "hammer,ocarina,bolero,hookshot",
+                      "hammer,ocarina,bolero,hoverboots"
+                    ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 3
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1870,
                     "y": 30
                   }
                 ]
@@ -5143,6 +5488,30 @@
                     "map": "adult",
                     "x": 1439,
                     "y": 206
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "Ganons Castle Scrubs",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Hidden Room",
+                        "short_name": "Hidden Room",
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 4
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 1400,
+                        "y": 206
+                      }
+                    ]
                   }
                 ]
               }
@@ -5804,6 +6173,30 @@
                         "map": "adult",
                         "x": 638,
                         "y": 547
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storms Grotto",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "access_rules": [
+                          "ocarina,storm"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 605,
+                        "y": 530
                       }
                     ]
                   },

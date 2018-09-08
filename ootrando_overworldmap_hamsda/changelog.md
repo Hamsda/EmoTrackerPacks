@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3.4
+
+- added Deku Scrub shuffle support
+
 ## 2.0.3.3
 
 - fixed open forest (forgot the `item_count` again... oops)

@@ -99,6 +99,39 @@
     ]
   },
   {
+    "name": "Show Gold Skulltulas",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/skulltula_hide.png",
+        "codes": "hide_skulltulas"
+      },
+      {
+        "img": "images/skulltula_show.png",
+        "codes": "show_skulltulas"
+      }
+    ]
+  },
+  {
+    "name": "Deku Scrub Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/scrub_shuffle_no.png",
+        "codes": "scrub_shuffle,scrub_shuffle_no"
+      },
+      {
+        "img": "images/scrub_shuffle_yes.png",
+        "codes": "scrub_shuffle,scrub_shuffle_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,
@@ -1057,22 +1090,6 @@
     "img": "images/skulltula_token.png",
     "codes": "skulltula,goldskulltula,token",
     "max_quantity": 50
-  },
-  {
-    "name": "Show Gold Skulltulas",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/skulltula_hide.png",
-        "codes": "hide_skulltulas"
-      },
-      {
-        "img": "images/skulltula_show.png",
-        "codes": "show_skulltulas"
-      }
-    ]
   },
   {
     "name": "Zora Scales",

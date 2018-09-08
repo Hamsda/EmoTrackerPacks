@@ -115,6 +115,23 @@
     ]
   },
   {
+    "name": "Deku Scrub Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/scrub_shuffle_no.png",
+        "codes": "scrub_shuffle,scrub_shuffle_no"
+      },
+      {
+        "img": "images/scrub_shuffle_yes.png",
+        "codes": "scrub_shuffle,scrub_shuffle_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,
