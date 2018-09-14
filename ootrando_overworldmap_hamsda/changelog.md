@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0.0
+
+- switched to EmoTracker 2.1 variants
+- added Deku Scrub shuffle support
+- added Shopsanity support
+
 ## 2.0.3.3
 
 - fixed open forest (forgot the `item_count` again... oops)

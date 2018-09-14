@@ -2,22 +2,32 @@
   "name": "Trackers by Hamsda",
   "packages": [
     {
-      "name": "OoT Randomizer - Map and Item Tracker",
+      "name": "OoT Randomizer Map Tracker",
       "author": "Hamsda",
-      "version": "2.0.3.3",
+      "game_name": "Ocarina of Time Randomizer",
+      "flags": [
+        "map",
+        "pins"
+      ],
+      "version": "2.1.0.0",
       "uid": "ootrando_overworldmap_hamsda",
-      "game_name": "Ocarina of Time Randomizer",
-      "flags": [ "map", "pins" ],
-      "link": "https://hamsda.github.io/OoTRMapTracker/ootrando_overworldmap_hamsda.zip"
-    },
-    {
-      "name": "OoT Randomizer - Keysanity Map and Item Tracker",
-      "author": "Hamsda",
-      "version": "2.0.3.3",
-      "uid": "ootrando_overworldmap_keysanity_hamsda",
-      "game_name": "Ocarina of Time Randomizer",
-      "flags": [ "map", "pins" ],
-      "link": "https://hamsda.github.io/OoTRMapTracker/ootrando_overworldmap_keysanity_hamsda.zip"
+      "link": "https://hamsda.github.io/OoTRMapTracker/ootrando_overworldmap_hamsda.zip",
+      "variants": [
+        {
+          "name": "Regular Map Tracker",
+          "flags": [
+            "map",
+            "pins"
+          ]
+        },
+        {
+          "name": "Keysanity Map Tracker",
+          "flags": [
+            "map",
+            "pins"
+          ]
+        }
+      ]
     }
   ]
 }
