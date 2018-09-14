@@ -4,6 +4,7 @@
 
 - switched to EmoTracker 2.1 variants
 - added Deku Scrub shuffle support
+- added Shopsanity support
 
 ## 2.0.3.3
 

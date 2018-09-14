@@ -151,6 +151,49 @@
                 ]
               },
               {
+                "name": "Kokiri Shop",
+                "access_rules": [
+                  "shopsanity_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Item 1",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 2",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 3",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 4",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2220,
+                    "y": 917
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 2220,
+                    "y": 917
+                  }
+                ]
+              },
+              {
                 "name": "Know It All House (N)",
                 "access_rules": [
                   "show_skulltulas"
@@ -1590,8 +1633,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1771,
-                        "y": 337
+                        "x": 1780,
+                        "y": 347
                       }
                     ]
                   },
@@ -1967,6 +2010,53 @@
                         "map": "child",
                         "x": 1591,
                         "y": 68
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Goron Shop",
+                    "access_rules": [
+                      "shopsanity_yes,@logic/explosives",
+                      "shopsanity_yes,lift1",
+                      "shopsanity_yes,sword2,bow",
+                      "shopsanity_yes,dinsfire,magic",
+                      "shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Item 1",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 2",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 3",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 4",
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1646,
+                        "y": 128
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 1646,
+                        "y": 128
                       }
                     ]
                   }
@@ -2386,6 +2476,111 @@
                         "map": "child",
                         "x": 1416,
                         "y": 360
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bombchu Shop",
+                    "access_rules": [
+                      "shopsanity_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Item 1",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 2",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 3",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 4",
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1386,
+                        "y": 360
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Market Potion Shop",
+                    "access_rules": [
+                      "shopsanity_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Item 1",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 2",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 3",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 4",
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1493,
+                        "y": 325
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Market Bazaar",
+                    "access_rules": [
+                      "shopsanity_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Item 1",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 2",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 3",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 4",
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1493,
+                        "y": 355
                       }
                     ]
                   },
@@ -2825,6 +3020,49 @@
                         "map": "child",
                         "x": 2556,
                         "y": 429
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Zora Shop",
+                    "access_rules": [
+                      "shopsanity_yes"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Item 1",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 2",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 3",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Item 4",
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2619,
+                        "y": 499
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2,bottle"
+                        ],
+                        "x": 2619,
+                        "y": 499
                       }
                     ]
                   }
@@ -3544,6 +3782,76 @@
                 ]
               },
               {
+                "name": "Kakariko Potion Shop",
+                "access_rules": [
+                  "shopsanity_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Item 1",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 2",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 3",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 4",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1814,
+                    "y": 341
+                  }
+                ]
+              },
+              {
+                "name": "Kakariko Bazaar",
+                "access_rules": [
+                  "shopsanity_yes"
+                ],
+                "sections": [
+                  {
+                    "name": "Item 1",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 2",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 3",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 4",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1780,
+                    "y": 347
+                  }
+                ]
+              },
+              {
                 "name": "Top of Roof (N)",
                 "access_rules": [
                   "show_skulltulas"
@@ -3645,25 +3953,6 @@
                     "map": "adult",
                     "x": 1576,
                     "y": 98
-                  }
-                ]
-              },
-              {
-                "name": "Shop",
-                "sections": [
-                  {
-                    "name": "Tunic",
-                    "access_rules": [
-                      "@Link the Goron,wallet1"
-                    ],
-                    "hosted_item": "redtunic"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1646,
-                    "y": 128
                   }
                 ]
               },
@@ -4119,26 +4408,6 @@
                     "map": "adult",
                     "x": 2624,
                     "y": 367
-                  }
-                ]
-              },
-              {
-                "name": "Shop",
-                "sections": [
-                  {
-                    "name": "Tunic",
-                    "access_rules": [
-                      "bottle,wallet2",
-                      "bottle,@logic/ice cavern"
-                    ],
-                    "hosted_item": "bluetunic"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 2619,
-                    "y": 499
                   }
                 ]
               },

@@ -132,6 +132,23 @@
     ]
   },
   {
+    "name": "Shopsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/shopsanity_no.png",
+        "codes": "shopsanity,shopsanity_no"
+      },
+      {
+        "img": "images/shopsanity_yes.png",
+        "codes": "shopsanity,shopsanity_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bow",
     "type": "progressive",
     "allow_disabled": false,
