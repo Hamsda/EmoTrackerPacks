@@ -1,7 +1,8 @@
 # Changelog
 
-## 2.0.3.4
+## 2.1.0.0
 
+- switched to EmoTracker 2.1 variants
 - added Deku Scrub shuffle support
 
 ## 2.0.3.3
