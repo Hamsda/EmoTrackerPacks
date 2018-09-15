@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0.1
+
+- new colored versions of the non warp songs (thanks Raizuto_Gaming#1769)
+
 ## 2.1.0.0
 
 - switched to EmoTracker 2.1 variants
