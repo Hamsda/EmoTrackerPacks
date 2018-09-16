@@ -105,7 +105,7 @@
     "name": "Minuet of Forest",
     "type": "toggle",
     "loop": true,
-    "img": "images/green_note.png",
+    "img": "images/minuet.png",
     "codes": "minuet,mof"
   },
   {
@@ -119,7 +119,7 @@
     "name": "Bolero of Fire",
     "type": "toggle",
     "loop": true,
-    "img": "images/red_note.png",
+    "img": "images/bolero.png",
     "codes": "bolero,bof"
   },
   {
@@ -133,7 +133,7 @@
     "name": "Serenade of Water",
     "type": "toggle",
     "loop": true,
-    "img": "images/blue_note.png",
+    "img": "images/serenade.png",
     "codes": "serenade,sow"
   },
   {
@@ -147,7 +147,7 @@
     "name": "Requiem of Spirit",
     "type": "toggle",
     "loop": true,
-    "img": "images/orange_note.png",
+    "img": "images/requiem.png",
     "codes": "requiem,ros"
   },
   {
@@ -161,7 +161,7 @@
     "name": "Nocturne of Shadow",
     "type": "toggle",
     "loop": true,
-    "img": "images/purple_note.png",
+    "img": "images/nocturne.png",
     "codes": "nocturne,nos"
   },
   {
@@ -175,7 +175,7 @@
     "name": "Prelude of Light",
     "type": "toggle",
     "loop": true,
-    "img": "images/yellow_note.png",
+    "img": "images/prelude.png",
     "codes": "prelude,pol"
   },
   {
