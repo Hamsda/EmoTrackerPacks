@@ -180,7 +180,7 @@
       },
       {
         "img": "images/sling3.png",
-        "codes": "slingshot,sling"
+        "codes": "slingshot,sling,ss"
       },
       {
         "img": "images/sling4.png"
@@ -201,7 +201,7 @@
       },
       {
         "img": "images/nut2.png",
-        "codes": "nuts,dekunuts"
+        "codes": "nuts,dekunuts,dn"
       },
       {
         "img": "images/nut3.png"
@@ -215,7 +215,7 @@
     "name": "Stone of Agony",
     "type": "toggle",
     "img": "images/agony.png",
-    "codes": "agony"
+    "codes": "agony,soa"
   },
   {
     "name": "Gerudo Card",
@@ -226,26 +226,26 @@
   {
     "name": "Carpenter Rescue",
     "type": "toggle",
-    "img": "images/gerudo_symbol.png",
+    "img": "images/gerudo_symbol_colored.png",
     "codes": "carpenter,rescue"
   },
   {
     "name": "Fire Arrows",
     "type": "toggle",
     "img": "images/firearrow.png",
-    "codes": "firearrow"
+    "codes": "firearrow,farrow,fa"
   },
   {
     "name": "Ice Arrows",
     "type": "toggle",
     "img": "images/icearrow.png",
-    "codes": "icearrow"
+    "codes": "icearrow,iarrow,ia"
   },
   {
     "name": "Light Arrows",
     "type": "toggle",
     "img": "images/lightarrow.png",
-    "codes": "lightarrow"
+    "codes": "lightarrow,larrow,la"
   },
   {
     "name": "Magic Beans",
@@ -264,7 +264,7 @@
       },
       {
         "img": "images/stick1.png",
-        "codes": "sticks"
+        "codes": "sticks,dekusticks,ds"
       },
       {
         "img": "images/stick2.png"
@@ -285,7 +285,7 @@
       },
       {
         "img": "images/bomb2.png",
-        "codes": "bombs"
+        "codes": "bombs,bombbag"
       },
       {
         "img": "images/bomb3.png"
@@ -299,7 +299,7 @@
     "name": "Boomerang",
     "type": "toggle",
     "img": "images/boomerang.png",
-    "codes": "boomerang"
+    "codes": "boomerang,rang"
   },
   {
     "name": "Hookshot",
@@ -324,45 +324,45 @@
     "name": "Bombchu",
     "type": "toggle",
     "img": "images/bombchu.png",
-    "codes": "bombchu"
+    "codes": "bombchu,bombchus,chus"
   },
   {
     "name": "Lens of Truth",
     "type": "toggle",
     "img": "images/lens.png",
-    "codes": "lens,lensoftruth"
+    "codes": "lens,lensoftruth,lot"
   },
   {
     "name": "Din's Fire",
     "type": "toggle",
     "img": "images/din.png",
-    "codes": "dinsfire"
+    "codes": "dinsfire,dins,df"
   },
   {
     "name": "Farore's Wind",
     "type": "toggle",
     "img": "images/farore.png",
-    "codes": "faroreswind"
+    "codes": "faroreswind,farores,fw"
   },
   {
     "name": "Nayru's Love",
     "type": "toggle",
     "img": "images/nayru.png",
-    "codes": "nayruslove"
+    "codes": "nayruslove,nayrus,nl"
   },
   {
     "name": "Zelda's Lullaby",
     "type": "toggle",
     "loop": true,
     "img": "images/zelda_colored.png",
-    "codes": "lullaby"
+    "codes": "lullaby,zl"
   },
   {
     "name": "Zelda's Lullaby Check",
     "type": "toggle_badged",
     "base_item": "lullaby",
     "img": "images/check.png",
-    "codes": "lullabycheck"
+    "codes": "lullabycheck,zlcheck"
   },
   {
     "name": "Saria's Song",
@@ -411,112 +411,112 @@
     "type": "toggle",
     "loop": true,
     "img": "images/time_colored.png",
-    "codes": "time"
+    "codes": "time,sot"
   },
   {
     "name": "Song of Time Check",
     "type": "toggle_badged",
     "base_item": "time",
     "img": "images/check.png",
-    "codes": "timecheck"
+    "codes": "timecheck,sotcheck"
   },
   {
     "name": "Song of Storms",
     "type": "toggle",
     "loop": true,
     "img": "images/storms_colored.png",
-    "codes": "storm"
+    "codes": "storm,sos"
   },
   {
     "name": "Song of Storms Check",
     "type": "toggle_badged",
     "base_item": "storm",
     "img": "images/check.png",
-    "codes": "stormcheck"
+    "codes": "stormcheck,soscheck"
   },
   {
     "name": "Minuet of Forest",
     "type": "toggle",
     "loop": true,
     "img": "images/green_note.png",
-    "codes": "minuet"
+    "codes": "minuet,mof"
   },
   {
     "name": "Minuet of Forest Check",
     "type": "toggle_badged",
     "base_item": "minuet",
     "img": "images/check.png",
-    "codes": "minuetcheck"
+    "codes": "minuetcheck,mofcheck"
   },
   {
     "name": "Bolero of Fire",
     "type": "toggle",
     "loop": true,
     "img": "images/red_note.png",
-    "codes": "bolero"
+    "codes": "bolero,bof"
   },
   {
     "name": "Bolero of Fire Check",
     "type": "toggle_badged",
     "base_item": "bolero",
     "img": "images/check.png",
-    "codes": "bolerocheck"
+    "codes": "bolerocheck,bofcheck"
   },
   {
     "name": "Serenade of Water",
     "type": "toggle",
     "loop": true,
     "img": "images/blue_note.png",
-    "codes": "serenade"
+    "codes": "serenade,sow"
   },
   {
     "name": "Serenade of Water Check",
     "type": "toggle_badged",
     "base_item": "serenade",
     "img": "images/check.png",
-    "codes": "serenadecheck"
+    "codes": "serenadecheck,sowcheck"
   },
   {
     "name": "Requiem of Spirit",
     "type": "toggle",
     "loop": true,
     "img": "images/orange_note.png",
-    "codes": "requiem"
+    "codes": "requiem,ros"
   },
   {
     "name": "Requiem of Spirit Check",
     "type": "toggle_badged",
     "base_item": "requiem",
     "img": "images/check.png",
-    "codes": "requiemcheck"
+    "codes": "requiemcheck,roscheck"
   },
   {
     "name": "Nocturne of Shadow",
     "type": "toggle",
     "loop": true,
     "img": "images/purple_note.png",
-    "codes": "nocturne"
+    "codes": "nocturne,nos"
   },
   {
     "name": "Nocturne of Shadow Check",
     "type": "toggle_badged",
     "base_item": "nocturne",
     "img": "images/check.png",
-    "codes": "nocturnecheck"
+    "codes": "nocturnecheck,noscheck"
   },
   {
     "name": "Prelude of Light",
     "type": "toggle",
     "loop": true,
     "img": "images/yellow_note.png",
-    "codes": "prelude"
+    "codes": "prelude,pol"
   },
   {
     "name": "Prelude of Light Check",
     "type": "toggle_badged",
     "base_item": "prelude",
     "img": "images/check.png",
-    "codes": "preludecheck"
+    "codes": "preludecheck,polcheck"
   },
   {
     "name": "Forest Medallion",
@@ -576,7 +576,7 @@
     "name": "Kokiri Sword",
     "type": "toggle",
     "img": "images/sword1.png",
-    "codes": "sword1,kokirisword"
+    "codes": "sword1,kokirisword,ksword"
   },
   {
     "name": "Master Sword",
@@ -588,25 +588,25 @@
     "name": "Biggoron Sword",
     "type": "toggle",
     "img": "images/sword3.png",
-    "codes": "sword3,biggoronsword"
+    "codes": "sword3,biggoronsword,bgs"
   },
   {
     "name": "Kokiri Shield",
     "type": "toggle",
     "img": "images/shield1.png",
-    "codes": "shield1,kokirishield"
+    "codes": "shield1,dekushield,dshield"
   },
   {
     "name": "Hylian Shield",
     "type": "toggle",
     "img": "images/shield2.png",
-    "codes": "shield2,hylianshield"
+    "codes": "shield2,hylianshield,hshield"
   },
   {
     "name": "Mirror Shield",
     "type": "toggle",
     "img": "images/shield3.png",
-    "codes": "shield3,mirrorshield"
+    "codes": "shield3,mirrorshield,mshield"
   },
   {
     "name": "Kokiri Tunic",
@@ -618,13 +618,13 @@
     "name": "Goron Tunic",
     "type": "toggle",
     "img": "images/redtunic.png",
-    "codes": "gorontunic,redtunic"
+    "codes": "gorontunic,redtunic,gtunic,rtunic"
   },
   {
     "name": "Zora Tunic",
     "type": "toggle",
     "img": "images/bluetunic.png",
-    "codes": "zoratunic,bluetunic"
+    "codes": "zoratunic,bluetunic,ztunic,btunic"
   },
   {
     "name": "Red and Blue Tunics",
@@ -666,13 +666,13 @@
     "name": "Iron Boots",
     "type": "toggle",
     "img": "images/ironboots.png",
-    "codes": "ironboots"
+    "codes": "ironboots,ib,irons,iboots"
   },
   {
     "name": "Hover Boots",
     "type": "toggle",
     "img": "images/hoverboots.png",
-    "codes": "hoverboots"
+    "codes": "hoverboots,hb,hovers,hboots"
   },
   {
     "name": "Iron and Hover Boots",
@@ -716,7 +716,7 @@
       },
       {
         "img": "images/egg.png",
-        "codes": "kidtrade,childegg",
+        "codes": "kidtrade,childegg,weirdegg",
         "inherit_codes": false
       },
       {
@@ -776,7 +776,7 @@
       },
       {
         "img": "images/truth.png",
-        "codes": "kidtrade,truth,maskoftruth,postzelda",
+        "codes": "kidtrade,truth,maskoftruth,mot,postzelda",
         "inherit_codes": false
       }
     ]
@@ -793,7 +793,7 @@
       },
       {
         "img": "images/egg.png",
-        "codes": "adulttrade,adultegg",
+        "codes": "adulttrade,adultegg,pocketegg",
         "inherit_codes": false
       },
       {
@@ -852,7 +852,7 @@
     "name": "Hammer",
     "type": "toggle",
     "img": "images/hammer.png",
-    "codes": "hammer"
+    "codes": "hammer,mh,megatonhammer"
   },
   {
     "name": "Ocarina",
@@ -860,7 +860,7 @@
     "stages": [
       {
         "img": "images/fairyocarina.png",
-        "codes": "ocarina,fairyocarina"
+        "codes": "ocarina,fairyocarina,fo"
       },
       {
         "img": "images/ocarina.png",
@@ -875,48 +875,68 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle1,bottle",
+        "codes": "bottle,bottle1",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle1,bottle,ruto",
+        "codes": "bottle,bottle1,ruto,ruto1,rutosletter,rutosletter1",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle1,bottle",
+        "codes": "bottle,bottle1,redpot1,redpotion1",
         "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png"
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle1,greenpot1,greenpotion1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_blue.png"
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle1,bluepot1,bluepotion1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fairy.png"
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle1,fairy1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fish.png"
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle1,fish1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bugs.png"
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle1,bugs1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_milk.png"
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle1,milk1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_halfmilk.png"
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle1,halfmilk1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fire.png"
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle1,bfire1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bigpoe.png"
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle1,bigpoe1",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_poe.png"
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle1,poe1",
+        "inherit_codes": false
       }
     ]
   },
@@ -927,48 +947,68 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle2,bottle",
+        "codes": "bottle,bottle2",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle2,bottle,ruto",
+        "codes": "bottle,bottle2,ruto,ruto2,rutosletter,rutosletter2",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle2,bottle",
+        "codes": "bottle,bottle2,redpot2,redpotion2",
         "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png"
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle2,greenpot2,greenpotion2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_blue.png"
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle2,bluepot2,bluepotion2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fairy.png"
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle2,fairy2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fish.png"
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle2,fish2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bugs.png"
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle2,bugs2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_milk.png"
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle2,milk2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_halfmilk.png"
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle2,halfmilk2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fire.png"
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle2,bfire2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bigpoe.png"
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle2,bigpoe2",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_poe.png"
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle2,poe2",
+        "inherit_codes": false
       }
     ]
   },
@@ -979,48 +1019,68 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle3,bottle",
+        "codes": "bottle,bottle3",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle3,bottle,ruto",
+        "codes": "bottle,bottle3,ruto,ruto3,rutosletter,rutosletter3",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle3,bottle",
+        "codes": "bottle,bottle3,redpot3,redpotion3",
         "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png"
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle3,greenpot3,greenpotion3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_blue.png"
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle3,bluepot3,bluepotion3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fairy.png"
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle3,fairy3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fish.png"
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle3,fish3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bugs.png"
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle3,bugs3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_milk.png"
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle3,milk3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_halfmilk.png"
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle3,halfmilk3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fire.png"
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle3,bfire3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bigpoe.png"
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle3,bigpoe3",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_poe.png"
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle3,poe3",
+        "inherit_codes": false
       }
     ]
   },
@@ -1031,57 +1091,70 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle4,bottle",
+        "codes": "bottle,bottle4",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle4,bottle,ruto",
+        "codes": "bottle,bottle4,ruto,ruto4,rutosletter,rutosletter4",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "bottle4,bottle",
+        "codes": "bottle,bottle4,redpot4,redpotion4",
         "inherit_codes": false
       },
       {
-        "img": "images/bottle_green.png"
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle4,greenpot4,greenpotion4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_blue.png"
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle4,bluepot4,bluepotion4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fairy.png"
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle4,fairy4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fish.png"
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle4,fish4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bugs.png"
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle4,bugs4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_milk.png"
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle4,milk4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_halfmilk.png"
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle4,halfmilk4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_fire.png"
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle4,bfire4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_bigpoe.png"
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle4,bigpoe4",
+        "inherit_codes": false
       },
       {
-        "img": "images/bottle_poe.png"
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle4,poe4",
+        "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Rutos Letter",
-    "type": "toggle_badged",
-    "base_item": "bottle",
-    "img": "images/bottle-letter.png",
-    "codes": "ruto"
   },
   {
     "name": "Gauntlets",
@@ -1089,15 +1162,15 @@
     "stages": [
       {
         "img": "images/lift1.png",
-        "codes": "bracelet,lift1"
+        "codes": "bracelet,lift1,gb,goronsbracelet"
       },
       {
         "img": "images/lift2.png",
-        "codes": "silvergauntlets,lift2"
+        "codes": "silvergauntlets,lift2,sg,silvers"
       },
       {
         "img": "images/lift3.png",
-        "codes": "goldgauntlets,lift3"
+        "codes": "goldgauntlets,lift3,gg,golds"
       }
     ]
   },
@@ -1114,11 +1187,11 @@
     "stages": [
       {
         "img": "images/scale1.png",
-        "codes": "silverscale,scale1"
+        "codes": "scale,silverscale,scale1,sscale"
       },
       {
         "img": "images/scale2.png",
-        "codes": "goldscale,scale2"
+        "codes": "goldscale,scale2,gscale"
       }
     ]
   },
