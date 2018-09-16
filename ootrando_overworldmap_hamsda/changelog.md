@@ -3,6 +3,7 @@
 ## 2.1.1.1
 
 - fixed Spirit Temple GS98 to separate hookshot/rang for adult/child
+- fixed keysanity layouts
 
 ## 2.1.1.0
 
