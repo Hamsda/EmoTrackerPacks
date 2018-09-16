@@ -1,0 +1,78 @@
+{
+  "tracker_capture_item": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "sticks",
+          "nuts",
+          "bombs",
+          "bow",
+          "firearrow",
+          "dinsfire",
+          "sword1",
+          "",
+          "sword3"
+        ],
+        [
+          "slingshot",
+          "ocarina",
+          "bombchu",
+          "hookshot",
+          "icearrow",
+          "faroreswind",
+          "shield1",
+          "shield2",
+          "shield3"
+        ],
+        [
+          "boomerang",
+          "lens",
+          "beans",
+          "hammer",
+          "lightarrow",
+          "nayruslove",
+          "lift1",
+          "redtunic",
+          "bluetunic"
+        ],
+        [
+          "bottle1",
+          "",
+          "",
+          "",
+          "adulttrade",
+          "kidtrade",
+          "scale1",
+          "ironboots",
+          "hoverboots"
+        ],
+        [
+          "lullaby",
+          "epona",
+          "saria",
+          "sun",
+          "time",
+          "storm",
+          "wallet1",
+          "magic",
+          ""
+        ],
+        [
+          "minuet",
+          "bolero",
+          "serenade",
+          "requiem",
+          "nocturne",
+          "prelude",
+          "carpenter",
+          "card",
+          ""
+        ]
+      ]
+    }
+  }
+}
