@@ -6,6 +6,7 @@
 - improved chathud codes greatly (thanks Raizuto_Gaming#1769)
 - added magic bean vendor
 - added rupee item (if you want to add it to the capture)
+- added open Kakariko option and logic
 
 ## 2.1.0.0
 
