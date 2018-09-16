@@ -1,3 +1,4 @@
+Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/common.json")
 Tracker:AddItems("items/keys.json")
 
