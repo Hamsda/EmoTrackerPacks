@@ -1364,8 +1364,9 @@
             "name": "GS98 - Room Before Iron Knuckle Child Side",
             "short_name": "Before Knuckle",
             "access_rules": [
-              "boomerang,@Spirit Temple/Torch Puzzle",
-              "hookshot,@Spirit Temple/Torch Puzzle"
+              "@Spirit Temple/Lower Child,spirit_small_keys:1,@logic/explosives,sticks,boomerang",
+              "@Spirit Temple/Lower Child,spirit_small_keys:1,@logic/explosives,dinsfire,magic,boomerang",
+              "@Spirit Temple/Mirror Room,@logic/has fire,hookshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
