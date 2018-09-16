@@ -323,5 +323,11 @@
     "img": "images/HC.png",
     "codes": "HC",
     "max_quantity": 8
+  },
+  {
+    "name": "Rupee",
+    "type": "toggle",
+    "img": "images/rupee.png",
+    "codes": "rupee"
   }
 ]
