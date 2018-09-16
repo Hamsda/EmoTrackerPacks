@@ -34,6 +34,23 @@
     ]
   },
   {
+    "name": "Open Kakariko",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/kak_closed.png",
+        "codes": "type_kak,closed_kak"
+      },
+      {
+        "img": "images/kak_open.png",
+        "codes": "type_kak,open_kak",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bridge Requirement",
     "type": "progressive",
     "allow_disabled": false,
