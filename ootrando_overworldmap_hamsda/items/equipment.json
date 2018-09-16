@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Kokiri Sword",
+    "type": "toggle",
+    "img": "images/sword1.png",
+    "codes": "sword1,kokirisword,ksword"
+  },
+  {
+    "name": "Master Sword",
+    "type": "toggle",
+    "img": "images/sword2.png",
+    "codes": "sword2,mastersword,ms"
+  },
+  {
+    "name": "Biggoron Sword",
+    "type": "toggle",
+    "img": "images/sword3.png",
+    "codes": "sword3,biggoronsword,bgs"
+  },
+  {
+    "name": "Kokiri Shield",
+    "type": "toggle",
+    "img": "images/shield1.png",
+    "codes": "shield1,dekushield,dshield"
+  },
+  {
+    "name": "Hylian Shield",
+    "type": "toggle",
+    "img": "images/shield2.png",
+    "codes": "shield2,hylianshield,hshield"
+  },
+  {
+    "name": "Mirror Shield",
+    "type": "toggle",
+    "img": "images/shield3.png",
+    "codes": "shield3,mirrorshield,mshield"
+  },
+  {
+    "name": "Kokiri Tunic",
+    "type": "static",
+    "img": "images/greentunic.png",
+    "codes": "greentunic"
+  },
+  {
+    "name": "Goron Tunic",
+    "type": "toggle",
+    "img": "images/redtunic.png",
+    "codes": "gorontunic,redtunic,gtunic,rtunic"
+  },
+  {
+    "name": "Zora Tunic",
+    "type": "toggle",
+    "img": "images/bluetunic.png",
+    "codes": "zoratunic,bluetunic,ztunic,btunic"
+  },
+  {
+    "name": "Red and Blue Tunics",
+    "type": "composite_toggle",
+    "codes": "tunics",
+    "item_left": "bluetunic",
+    "item_right": "redtunic",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/redbluetunic.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/bluetunic-disabled.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/redtunic-disabled.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/redbluetunic.png"
+      }
+    ]
+  },
+  {
+    "name": "Kokiri Boots",
+    "type": "static",
+    "img": "images/kokiriboots.png",
+    "codes": "kokiriboots"
+  },
+  {
+    "name": "Iron Boots",
+    "type": "toggle",
+    "img": "images/ironboots.png",
+    "codes": "ironboots,ib,irons,iboots"
+  },
+  {
+    "name": "Hover Boots",
+    "type": "toggle",
+    "img": "images/hoverboots.png",
+    "codes": "hoverboots,hb,hovers,hboots"
+  },
+  {
+    "name": "Iron and Hover Boots",
+    "type": "composite_toggle",
+    "codes": "boots",
+    "item_left": "ironboots",
+    "item_right": "hoverboots",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/boots.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/ironboots-disabled.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/hoverboots-disabled.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/boots.png"
+      }
+    ]
+  }
+]

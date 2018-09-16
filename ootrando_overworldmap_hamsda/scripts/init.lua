@@ -1,6 +1,8 @@
 Tracker:AddItems("items/options.json")
-Tracker:AddItems("items/common.json")
-Tracker:AddItems("items/keys.json")
+Tracker:AddItems("items/dungeons.json")
+Tracker:AddItems("items/equipment.json")
+Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/quest.json")
 
 Tracker:AddMaps("maps/maps.json")
 
