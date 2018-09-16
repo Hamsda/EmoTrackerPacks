@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.1.0.1
+## 2.1.1.0
 
 - changed song icons (thanks Raizuto_Gaming#1769)
 - improved chathud codes greatly (thanks Raizuto_Gaming#1769)
