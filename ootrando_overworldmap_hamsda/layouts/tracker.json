@@ -121,17 +121,25 @@
                 "rows": [
                   [
                     "type_bridge",
-                    "open_forest",
-                    "open_door",
-                    "show_skulltulas",
+                    "type_forest",
+                    "type_door",
+                    "",
                     "",
                     ""
                   ],
                   [
+                    "type_kak",
                     "type_lens",
                     "logic_chus",
+                    "",
+                    "",
+                    ""
+                  ],
+                  [
                     "scrub_shuffle",
                     "shopsanity",
+                    "show_skulltulas",
+                    "",
                     "",
                     ""
                   ]
@@ -315,19 +323,14 @@
                     "rows": [
                       [
                         "type_bridge",
-                        "open_forest",
-                        "open_door",
-                        "show_skulltulas",
-                        "",
-                        ""
-                      ],
-                      [
+                        "type_forest",
+                        "type_door",
+                        "type_kak",
                         "type_lens",
                         "logic_chus",
                         "scrub_shuffle",
                         "shopsanity",
-                        "",
-                        ""
+                        "show_skulltulas"
                       ]
                     ]
                   }
