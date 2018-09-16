@@ -2759,11 +2759,11 @@
             ]
           },
           {
-            "name": "Zora Area",
+            "name": "Zora Area C",
             "color": "#0936a0",
             "children": [
               {
-                "name": "Zoras River",
+                "name": "Zoras River C",
                 "children": [
                   {
                     "name": "Frogs",
@@ -2792,6 +2792,26 @@
                         "map": "child",
                         "x": 2094,
                         "y": 481
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Magic Bean Vendor",
+                    "access_rules": [
+                      "@logic/explosives",
+                      "scale1"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Buy Beans",
+                        "hosted_item": "beans"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2000,
+                        "y": 505
                       }
                     ]
                   },
@@ -4320,11 +4340,11 @@
         ]
       },
       {
-        "name": "Zora Area",
+        "name": "Zora Area A",
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zoras River",
+            "name": "Zoras River A",
             "children": [
               {
                 "name": "Plateau Wall (N)",
