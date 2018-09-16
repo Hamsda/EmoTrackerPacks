@@ -6,11 +6,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/door_closed.png",
+        "img": "images/dot_closed.png",
         "codes": "type_door,closed_door"
       },
       {
-        "img": "images/door_open.png",
+        "img": "images/dot_open.png",
         "codes": "type_door,open_door",
         "inherit_codes": false
       }
@@ -23,11 +23,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/forest_closed.png",
+        "img": "images/mido_closed.png",
         "codes": "type_forest,closed_forest"
       },
       {
-        "img": "images/forest_open.png",
+        "img": "images/mido_open.png",
         "codes": "type_forest,open_forest",
         "inherit_codes": false
       }
@@ -40,22 +40,22 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/bridge_medallions.png",
+        "img": "images/rainbow_medallions.png",
         "codes": "type_bridge,bridge_medallions",
         "inherit_codes": false
       },
       {
-        "img": "images/bridge_vanilla.png",
+        "img": "images/rainbow_vanilla.png",
         "codes": "type_bridge,bridge_vanilla",
         "inherit_codes": false
       },
       {
-        "img": "images/bridge_dungeons.png",
+        "img": "images/rainbow_dungeons.png",
         "codes": "type_bridge,bridge_dungeons",
         "inherit_codes": false
       },
       {
-        "img": "images/bridge_open.png",
+        "img": "images/rainbow_open.png",
         "codes": "type_bridge,bridge_open",
         "inherit_codes": false
       }
