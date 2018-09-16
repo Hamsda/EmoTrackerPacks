@@ -1888,6 +1888,12 @@
           {
             "name": "Death Mountain C",
             "color": "#a01009",
+            "access_rules": [
+              "postzelda",
+              "open_kak",
+              "sword2",
+              "@logic/explosives"
+            ],
             "children": [
               {
                 "name": "Goron City",
@@ -2020,6 +2026,8 @@
                       "shopsanity_yes,lift1",
                       "shopsanity_yes,sword2,bow",
                       "shopsanity_yes,dinsfire,magic",
+                      "shopsanity_yes,ocarina,lullaby,sticks,postzelda",
+                      "shopsanity_yes,ocarina,lullaby,sticks,open_kak",
                       "shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
                     ],
                     "sections": [
@@ -2759,11 +2767,11 @@
             ]
           },
           {
-            "name": "Zora Area",
+            "name": "Zora Area C",
             "color": "#0936a0",
             "children": [
               {
-                "name": "Zoras River",
+                "name": "Zoras River C",
                 "children": [
                   {
                     "name": "Frogs",
@@ -2792,6 +2800,26 @@
                         "map": "child",
                         "x": 2094,
                         "y": 481
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Magic Bean Vendor",
+                    "access_rules": [
+                      "@logic/explosives",
+                      "scale1"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Buy Beans",
+                        "hosted_item": "beans"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2000,
+                        "y": 505
                       }
                     ]
                   },
@@ -4320,11 +4348,11 @@
         ]
       },
       {
-        "name": "Zora Area",
+        "name": "Zora Area A",
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zoras River",
+            "name": "Zoras River A",
             "children": [
               {
                 "name": "Plateau Wall (N)",

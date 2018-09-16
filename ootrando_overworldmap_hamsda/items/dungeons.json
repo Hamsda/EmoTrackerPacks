@@ -1,0 +1,594 @@
+[
+  {
+    "name": "Freebie Label",
+    "type": "static",
+    "img": "images/free.png",
+    "codes": "free_label"
+  },
+  {
+    "name": "Free Prize",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "free"
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "free,lightmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "free,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "free,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "free,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "free,stones",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Deku Tree Label",
+    "type": "static",
+    "img": "images/deku.png",
+    "codes": "deku_label"
+  },
+  {
+    "name": "Deku Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "deku_treasures",
+    "max_quantity": 7
+  },
+  {
+    "name": "Deku Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "deku"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "deku,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "deku,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "deku,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "deku,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "deku,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dodongo's Cavern Label",
+    "type": "static",
+    "img": "images/dodongo.png",
+    "codes": "dodongo_label"
+  },
+  {
+    "name": "Dodongo Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "dodongo_treasures",
+    "max_quantity": 7
+  },
+  {
+    "name": "Dodongo Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "dodongo,dc"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "dodongo,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "dodongo,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "dodongo,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "dodongo,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "dodongo,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Jabu-Jabu Label",
+    "type": "static",
+    "img": "images/jabu.png",
+    "codes": "jabu_label"
+  },
+  {
+    "name": "Jabu Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "jabu_treasures",
+    "max_quantity": 4
+  },
+  {
+    "name": "Jabu Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "jabu"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "jabu,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "jabu,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "jabu,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "jabu,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "jabu,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Forest Temple Label",
+    "type": "static",
+    "img": "images/forest.png",
+    "codes": "forest_label"
+  },
+  {
+    "name": "Forest Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "forest_treasures",
+    "max_quantity": 8
+  },
+  {
+    "name": "Forest Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "forest"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "forest,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "forest,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "forest,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "forest,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "forest,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Fire Temple Label",
+    "type": "static",
+    "img": "images/fire.png",
+    "codes": "fire_label"
+  },
+  {
+    "name": "Fire Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "fire_treasures",
+    "max_quantity": 6
+  },
+  {
+    "name": "Fire Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "fire"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "fire,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "fire,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "fire,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "fire,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "fire,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Water Temple Label",
+    "type": "static",
+    "img": "images/water.png",
+    "codes": "water_label"
+  },
+  {
+    "name": "Water Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "water_treasures",
+    "max_quantity": 4
+  },
+  {
+    "name": "Water Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "water"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "water,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "water,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "water,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "water,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "water,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Spirit Temple Label",
+    "type": "static",
+    "img": "images/spirit.png",
+    "codes": "spirit_label"
+  },
+  {
+    "name": "Spirit Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "spirit_treasures",
+    "max_quantity": 14
+  },
+  {
+    "name": "Spirit Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "spirit"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "spirit,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "spirit,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "spirit,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "spirit,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "spirit,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shadow Temple Label",
+    "type": "static",
+    "img": "images/shadow.png",
+    "codes": "shadow_label"
+  },
+  {
+    "name": "Shadow Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "shadow_treasures",
+    "max_quantity": 12
+  },
+  {
+    "name": "Shadow Prize",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/unknown-small.png",
+        "codes": "shadow"
+      },
+      {
+        "img": "images/stones.png",
+        "codes": "shadow,stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/forestmedallion.png",
+        "codes": "shadow,forestmed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/nocturne_medallions.png",
+        "codes": "shadow,noct_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lacs_medallions.png",
+        "codes": "shadow,lacs_meds",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "shadow,lightmed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "BotW Label",
+    "type": "static",
+    "img": "images/botw.png",
+    "codes": "botw_label"
+  },
+  {
+    "name": "BotW Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "botw_treasures",
+    "max_quantity": 11
+  },
+  {
+    "name": "Ice Label",
+    "type": "static",
+    "img": "images/ice.png",
+    "codes": "ice_label"
+  },
+  {
+    "name": "Ice Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "ice_treasures",
+    "max_quantity": 4
+  },
+  {
+    "name": "GF Label",
+    "type": "static",
+    "img": "images/gf.png",
+    "codes": "gf_label"
+  },
+  {
+    "name": "GTG Label",
+    "type": "static",
+    "img": "images/gtg.png",
+    "codes": "gtg_label"
+  },
+  {
+    "name": "GTG Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "gtg_treasures",
+    "max_quantity": 13
+  },
+  {
+    "name": "GC Label",
+    "type": "static",
+    "img": "images/gc.png",
+    "codes": "gc_label"
+  },
+  {
+    "name": "GC Treasures",
+    "type": "consumable",
+    "img": "images/chest_brown_closed.png",
+    "codes": "gc_treasures",
+    "max_quantity": 13
+  },
+  {
+    "name": "Forest Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "forest_small_keys,forestsmall,forestsk",
+    "max_quantity": 5
+  },
+  {
+    "name": "Forest Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "forest_boss_key,forestboss,forestbk"
+  },
+  {
+    "name": "Fire Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "fire_small_keys,firesmall,firesk",
+    "max_quantity": 8
+  },
+  {
+    "name": "Fire Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "fire_boss_key,fireboss,firebk"
+  },
+  {
+    "name": "Water Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "water_small_keys,watersmall,watersk",
+    "max_quantity": 6
+  },
+  {
+    "name": "Water Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "water_boss_key,waterboss,waterbk"
+  },
+  {
+    "name": "Spirit Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "spirit_small_keys,spiritsmall,spiritsk",
+    "max_quantity": 5
+  },
+  {
+    "name": "Spirit Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "spirit_boss_key,spiritboss,spiritbk"
+  },
+  {
+    "name": "Shadow Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "shadow_small_keys,shadowsmall,shadowsk",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "shadow_boss_key,shadowboss,shadowbk"
+  },
+  {
+    "name": "BotW Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "botw_small_keys,botwsmall,botwsk",
+    "max_quantity": 3
+  },
+  {
+    "name": "GF Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gf_small_keys,gfsmall,gfsk",
+    "max_quantity": 4
+  },
+  {
+    "name": "GTG Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gtg_small_keys,gtgsmall,gtgsk",
+    "max_quantity": 9
+  },
+  {
+    "name": "GC Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gc_small_keys,gcsmall,gcsk",
+    "max_quantity": 2
+  },
+  {
+    "name": "GC Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "gc_boss_key,gcboss,gcbk"
+  }
+]

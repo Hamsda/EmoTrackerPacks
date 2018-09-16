@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Open Door",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/dot_closed.png",
+        "codes": "type_door,closed_door"
+      },
+      {
+        "img": "images/dot_open.png",
+        "codes": "type_door,open_door",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Open Forest",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/mido_closed.png",
+        "codes": "type_forest,closed_forest"
+      },
+      {
+        "img": "images/mido_open.png",
+        "codes": "type_forest,open_forest",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Open Kakariko",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/kak_closed.png",
+        "codes": "type_kak,closed_kak"
+      },
+      {
+        "img": "images/kak_open.png",
+        "codes": "type_kak,open_kak",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bridge Requirement",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/rainbow_medallions.png",
+        "codes": "type_bridge,bridge_medallions",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/rainbow_vanilla.png",
+        "codes": "type_bridge,bridge_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/rainbow_dungeons.png",
+        "codes": "type_bridge,bridge_dungeons",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/rainbow_open.png",
+        "codes": "type_bridge,bridge_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Lens Requirement",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/lens_all.png",
+        "codes": "type_lens,lens_all"
+      },
+      {
+        "img": "images/lens_wasteland.png",
+        "codes": "lens_wasteland"
+      },
+      {
+        "img": "images/lens_chest.png",
+        "codes": "lens_chest"
+      }
+    ]
+  },
+  {
+    "name": "Bombchu in Logic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/logic_chus_no.png",
+        "codes": "logic_chus,logic_chus_no"
+      },
+      {
+        "img": "images/logic_chus_yes.png",
+        "codes": "logic_chus,logic_chus_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Show Gold Skulltulas",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/skulltula_hide.png",
+        "codes": "hide_skulltulas"
+      },
+      {
+        "img": "images/skulltula_show.png",
+        "codes": "show_skulltulas"
+      }
+    ]
+  },
+  {
+    "name": "Deku Scrub Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/scrub_shuffle_no.png",
+        "codes": "scrub_shuffle,scrub_shuffle_no"
+      },
+      {
+        "img": "images/scrub_shuffle_yes.png",
+        "codes": "scrub_shuffle,scrub_shuffle_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shopsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/shopsanity_no.png",
+        "codes": "shopsanity,shopsanity_no"
+      },
+      {
+        "img": "images/shopsanity_yes.png",
+        "codes": "shopsanity,shopsanity_yes",
+        "inherit_codes": false
+      }
+    ]
+  }
+]
