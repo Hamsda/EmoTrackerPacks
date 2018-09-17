@@ -590,5 +590,18 @@
     "type": "toggle",
     "img": "images/oot_boss_key.png",
     "codes": "gc_boss_key,gcboss,gcbk"
+  },
+  {
+    "name": "Generic Small Keys",
+    "type": "toggle",
+    "img": "images/oot_small_key.png",
+    "codes": "generic_small_key",
+    "max_quantity": 2
+  },
+  {
+    "name": "Generic Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "generic_boss_key"
   }
 ]

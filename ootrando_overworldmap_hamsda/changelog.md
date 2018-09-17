@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.2.0
+
+- added new item only variants
+- changed boss key chest icons
+- added generic small and boss key to capture layout
+
 ## 2.1.1.1
 
 - fixed Spirit Temple GS98 to separate hookshot/rang for adult/child
