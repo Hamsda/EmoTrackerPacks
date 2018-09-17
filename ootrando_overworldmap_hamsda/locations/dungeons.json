@@ -492,6 +492,8 @@
         "access_rules": [
           "bow,lift1"
         ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
       },
       {
@@ -633,12 +635,20 @@
         "item_count": 1
       },
       {
-        "name": "Boss Key Rooms",
+        "name": "Flare Dancer",
         "access_rules": [
           "hammer"
         ],
-        "clear_as_group": false,
-        "item_count": 2
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "access_rules": [
+          "hammer"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
       },
       {
         "name": "North Lava Room",
@@ -789,7 +799,7 @@
             "name": "GS69 - Near Boss Key Chest",
             "short_name": "Near BK",
             "access_rules": [
-              "@Fire Temple/Boss Key Rooms"
+              "@Fire Temple/Flare Dancer"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -881,6 +891,8 @@
           "{agony}"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
       },
       {
@@ -1059,8 +1071,16 @@
         "access_rules": [
           "@Shadow Temple/After Wind Room,ocarina,lullaby"
         ],
-        "clear_as_group": false,
-        "item_count": 2
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "access_rules": [
+          "@Shadow Temple/After Wind Room,ocarina,lullaby"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
       },
       {
         "name": "Floormaster",
@@ -1281,6 +1301,8 @@
         "access_rules": [
           "@Spirit Temple/Mirror Room,@logic/explosives,ocarina,lullaby,[bow],[hookshot]"
         ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
       },
       {
@@ -1628,6 +1650,8 @@
           "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,[redtunic]",
           "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
         ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
       }
     ],

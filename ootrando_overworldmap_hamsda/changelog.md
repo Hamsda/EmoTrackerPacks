@@ -3,6 +3,7 @@
 ## 2.1.2.0
 
 - added new item only variants
+- changed boss key chest icons
 
 ## 2.1.1.1
 
