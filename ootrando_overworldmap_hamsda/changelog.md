@@ -4,6 +4,7 @@
 
 - added new item only variants
 - changed boss key chest icons
+- added generic small and boss key to capture layout
 
 ## 2.1.1.1
 
