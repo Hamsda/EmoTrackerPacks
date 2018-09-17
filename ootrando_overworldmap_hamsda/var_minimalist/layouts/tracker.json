@@ -1,0 +1,20 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#212121",
+    "dropshadow": true,
+    "content": {
+      "type": "layout",
+      "key": "item_grid_mini"
+    }
+  },
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#212121",
+    "dropshadow": true,
+    "content": {
+      "type": "layout",
+      "key": "item_grid_mini"
+    }
+  }
+}

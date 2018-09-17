@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.2.0
+
+- added new item only variants
+
 ## 2.1.1.1
 
 - fixed Spirit Temple GS98 to separate hookshot/rang for adult/child

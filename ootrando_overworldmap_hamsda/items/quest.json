@@ -18,6 +18,101 @@
     "codes": "carpenter,rescue"
   },
   {
+    "name": "Gold Skulltula Tokens",
+    "type": "consumable",
+    "img": "images/skulltula_token.png",
+    "codes": "skulltula,goldskulltula,token",
+    "max_quantity": 50
+  },
+  {
+    "name": "Zora Scales",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/scale1.png",
+        "codes": "scale,silverscale,scale1,sscale"
+      },
+      {
+        "img": "images/scale2.png",
+        "codes": "goldscale,scale2,gscale"
+      }
+    ]
+  },
+  {
+    "name": "Gauntlets",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/lift1.png",
+        "codes": "bracelet,lift1,gb,goronsbracelet"
+      },
+      {
+        "img": "images/lift2.png",
+        "codes": "silvergauntlets,lift2,sg,silvers"
+      },
+      {
+        "img": "images/lift3.png",
+        "codes": "goldgauntlets,lift3,gg,golds"
+      }
+    ]
+  },
+  {
+    "name": "Wallet Upgrades",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/wallet.png"
+      },
+      {
+        "img": "images/wallet1.png",
+        "codes": "adultswallet,wallet1,wallet"
+      },
+      {
+        "img": "images/wallet2.png",
+        "codes": "giantswallet,wallet2"
+      },
+      {
+        "img": "images/wallet3.png",
+        "codes": "tycoonswallet,wallet3"
+      }
+    ]
+  },
+  {
+    "name": "Magic Meter",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/magic1.png",
+        "codes": "magic,magic1"
+      },
+      {
+        "img": "images/magic2.png",
+        "codes": "magic2"
+      }
+    ]
+  },
+  {
+    "name": "Heart Piece",
+    "type": "consumable",
+    "img": "images/HP.png",
+    "codes": "HP,PoH",
+    "max_quantity": 36
+  },
+  {
+    "name": "Heart Container",
+    "type": "consumable",
+    "img": "images/HC.png",
+    "codes": "HC",
+    "max_quantity": 8
+  },
+  {
+    "name": "Rupee",
+    "type": "toggle",
+    "img": "images/rupee.png",
+    "codes": "rupee"
+  },
+  {
     "name": "Zelda's Lullaby",
     "type": "toggle",
     "loop": true,
@@ -240,98 +335,213 @@
     "codes": "sapphire"
   },
   {
-    "name": "Gold Skulltula Tokens",
-    "type": "consumable",
-    "img": "images/skulltula_token.png",
-    "codes": "skulltula,goldskulltula,token",
-    "max_quantity": 50
-  },
-  {
-    "name": "Zora Scales",
-    "type": "progressive",
+    "name": "Forest Medallion with Label",
+    "type": "progressive_toggle",
+    "loop": true,
     "stages": [
       {
-        "img": "images/scale1.png",
-        "codes": "scale,silverscale,scale1,sscale"
+        "img": "images/forestmedallion.png",
+        "codes": "forestmedlabel"
       },
       {
-        "img": "images/scale2.png",
-        "codes": "goldscale,scale2,gscale"
+        "img": "images/forestmedallion_deku.png",
+      },
+      {
+        "img": "images/forestmedallion_dc.png",
+      },
+      {
+        "img": "images/forestmedallion_jabu.png",
+      },
+      {
+        "img": "images/forestmedallion_ft.png",
+      },
+      {
+        "img": "images/forestmedallion_fit.png",
+      },
+      {
+        "img": "images/forestmedallion_wt.png",
+      },
+      {
+        "img": "images/forestmedallion_st.png",
+      },
+      {
+        "img": "images/forestmedallion_sht.png",
       }
     ]
   },
   {
-    "name": "Gauntlets",
-    "type": "progressive",
+    "name": "Fire Medallion with Label",
+    "type": "progressive_toggle",
+    "loop": true,
     "stages": [
       {
-        "img": "images/lift1.png",
-        "codes": "bracelet,lift1,gb,goronsbracelet"
+        "img": "images/firemedallion.png",
+        "codes": "firemedlabel"
       },
       {
-        "img": "images/lift2.png",
-        "codes": "silvergauntlets,lift2,sg,silvers"
+        "img": "images/firemedallion_deku.png",
       },
       {
-        "img": "images/lift3.png",
-        "codes": "goldgauntlets,lift3,gg,golds"
+        "img": "images/firemedallion_dc.png",
+      },
+      {
+        "img": "images/firemedallion_jabu.png",
+      },
+      {
+        "img": "images/firemedallion_ft.png",
+      },
+      {
+        "img": "images/firemedallion_fit.png",
+      },
+      {
+        "img": "images/firemedallion_wt.png",
+      },
+      {
+        "img": "images/firemedallion_st.png",
+      },
+      {
+        "img": "images/firemedallion_sht.png",
       }
     ]
   },
   {
-    "name": "Wallet Upgrades",
-    "type": "progressive",
-    "allow_disabled": false,
+    "name": "Water Medallion with Label",
+    "type": "progressive_toggle",
+    "loop": true,
     "stages": [
       {
-        "img": "images/wallet.png"
+        "img": "images/watermedallion.png",
+        "codes": "watermedlabel"
       },
       {
-        "img": "images/wallet1.png",
-        "codes": "adultswallet,wallet1,wallet"
+        "img": "images/watermedallion_deku.png",
       },
       {
-        "img": "images/wallet2.png",
-        "codes": "giantswallet,wallet2"
+        "img": "images/watermedallion_dc.png",
       },
       {
-        "img": "images/wallet3.png",
-        "codes": "tycoonswallet,wallet3"
+        "img": "images/watermedallion_jabu.png",
+      },
+      {
+        "img": "images/watermedallion_ft.png",
+      },
+      {
+        "img": "images/watermedallion_fit.png",
+      },
+      {
+        "img": "images/watermedallion_wt.png",
+      },
+      {
+        "img": "images/watermedallion_st.png",
+      },
+      {
+        "img": "images/watermedallion_sht.png",
       }
     ]
   },
   {
-    "name": "Magic Meter",
-    "type": "progressive",
+    "name": "Spirit Medallion with Label",
+    "type": "progressive_toggle",
+    "loop": true,
     "stages": [
       {
-        "img": "images/magic1.png",
-        "codes": "magic,magic1"
+        "img": "images/spiritmedallion.png",
+        "codes": "spiritmedlabel"
       },
       {
-        "img": "images/magic2.png",
-        "codes": "magic2"
+        "img": "images/spiritmedallion_deku.png",
+      },
+      {
+        "img": "images/spiritmedallion_dc.png",
+      },
+      {
+        "img": "images/spiritmedallion_jabu.png",
+      },
+      {
+        "img": "images/spiritmedallion_ft.png",
+      },
+      {
+        "img": "images/spiritmedallion_fit.png",
+      },
+      {
+        "img": "images/spiritmedallion_wt.png",
+      },
+      {
+        "img": "images/spiritmedallion_st.png",
+      },
+      {
+        "img": "images/spiritmedallion_sht.png",
       }
     ]
   },
   {
-    "name": "Heart Piece",
-    "type": "consumable",
-    "img": "images/HP.png",
-    "codes": "HP,PoH",
-    "max_quantity": 36
+    "name": "Shadow Medallion with Label",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/shadowmedallion.png",
+        "codes": "shadowmedlabel"
+      },
+      {
+        "img": "images/shadowmedallion_deku.png",
+      },
+      {
+        "img": "images/shadowmedallion_dc.png",
+      },
+      {
+        "img": "images/shadowmedallion_jabu.png",
+      },
+      {
+        "img": "images/shadowmedallion_ft.png",
+      },
+      {
+        "img": "images/shadowmedallion_fit.png",
+      },
+      {
+        "img": "images/shadowmedallion_wt.png",
+      },
+      {
+        "img": "images/shadowmedallion_st.png",
+      },
+      {
+        "img": "images/shadowmedallion_sht.png",
+      }
+    ]
   },
   {
-    "name": "Heart Container",
-    "type": "consumable",
-    "img": "images/HC.png",
-    "codes": "HC",
-    "max_quantity": 8
+    "name": "Light Medallion with Label",
+    "type": "progressive_toggle",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/lightmedallion.png",
+        "codes": "lightmedlabel"
+      },
+      {
+        "img": "images/lightmedallion_deku.png",
+      },
+      {
+        "img": "images/lightmedallion_dc.png",
+      },
+      {
+        "img": "images/lightmedallion_jabu.png",
+      },
+      {
+        "img": "images/lightmedallion_ft.png",
+      },
+      {
+        "img": "images/lightmedallion_fit.png",
+      },
+      {
+        "img": "images/lightmedallion_wt.png",
+      },
+      {
+        "img": "images/lightmedallion_st.png",
+      },
+      {
+        "img": "images/lightmedallion_sht.png",
+      }
+    ]
   },
-  {
-    "name": "Rupee",
-    "type": "toggle",
-    "img": "images/rupee.png",
-    "codes": "rupee"
-  }
 ]

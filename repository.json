@@ -29,6 +29,18 @@
             "pins",
             "chathud"
           ]
+        },
+        {
+          "name": "Items Only",
+          "flags": [
+            "chathud"
+          ]
+        },
+        {
+          "name": "Items Only (minimal)",
+          "flags": [
+            "chathud"
+          ]
         }
       ]
     }

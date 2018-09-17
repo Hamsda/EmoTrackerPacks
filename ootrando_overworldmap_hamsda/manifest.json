@@ -10,6 +10,12 @@
     },
     "var_keysanity": {
       "display_name": "Keysanity Map Tracker"
+    },
+    "var_itemsonly": {
+      "display_name": "Items Only"
+    },
+    "var_minimalist": {
+      "display_name": "Items Only (minimal)"
     }
   }
 }
