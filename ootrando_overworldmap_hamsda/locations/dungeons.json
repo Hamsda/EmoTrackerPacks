@@ -1429,10 +1429,6 @@
     ],
     "sections": [
       {
-        "name": "9 (+2) Items",
-        "hosted_item": "botw_treasures"
-      },
-      {
         "name": "Front Left Hidden",
         "access_rules": [
           "@logic/lens"
@@ -1813,10 +1809,6 @@
           "carpenter,card"
         ],
         "sections": [
-          {
-            "name": "13 Items",
-            "hosted_item": "gtg_treasures"
-          },
           {
             "name": "Lobby",
             "access_rules": [
