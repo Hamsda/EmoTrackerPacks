@@ -3,6 +3,7 @@
 ## 2.1.2.1
 
 - moved around a few more layout files
+- moved Ice Cavern to dungeons file
 
 ## 2.1.2.0
 

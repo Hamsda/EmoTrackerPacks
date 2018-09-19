@@ -1974,5 +1974,97 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Ice Cavern",
+    "parent": "Zoras Fountain A",
+    "access_rules": [
+      "@logic/ice cavern"
+    ],
+    "sections": [
+      {
+        "name": "Map Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Frozen HP",
+        "chest_unopened_img": "images/HP.png",
+        "chest_opened_img": "images/HP_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Ironboots Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Sheik in Ice Cavern",
+        "access_rules": [
+          "@logic/ice cavern",
+          "{agony}"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/grey_note.png",
+        "chest_opened_img": "images/grey_note_check.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "adult",
+        "x": 2501,
+        "y": 276
+      }
+    ],
+    "children": [
+      {
+        "name": "Ice Cavern Skulltulas",
+        "access_rules": [
+          "show_skulltulas"
+        ],
+        "sections": [
+          {
+            "name": "GS70 - Near Compass Chest",
+            "short_name": "Compass",
+            "access_rules": [
+              "hookshot"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS71 - Silver Rupee Room",
+            "short_name": "Silver Rupee",
+            "access_rules": [
+              "hookshot"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS72 - Moveable Iceblock Room",
+            "short_name": "Iceblock",
+            "access_rules": [
+              "hookshot"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "adult",
+            "x": 2465,
+            "y": 276
+          }
+        ]
+      }
+    ]
   }
 ]
