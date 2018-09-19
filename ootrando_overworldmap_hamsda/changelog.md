@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.2.1
+
+- moved around a few more layout files
+
 ## 2.1.2.0
 
 - added new item only variants
