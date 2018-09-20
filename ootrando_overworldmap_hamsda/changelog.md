@@ -6,6 +6,7 @@
 - moved Ice Cavern to dungeons file
 - changed graveyard box hp to be a sequence break with boomerang
 - changed DMC volcano hp to be a sequence break with hovers
+- added scarecrow toggle to ocarina
 
 ## 2.1.2.0
 
