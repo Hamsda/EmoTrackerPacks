@@ -1761,9 +1761,10 @@
                   {
                     "name": "Box HP",
                     "access_rules": [
-                      "boomerang",
-                      "beans",
-                      "longshot"
+                      "sword2,beans",
+                      "sword2,longshot",
+                      "boomerang,[sword2],[beans]",
+                      "boomerang,[sword2],[longshot]"
                     ],
                     "sections": [
                       {
