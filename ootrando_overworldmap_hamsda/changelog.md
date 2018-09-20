@@ -5,6 +5,7 @@
 - moved around a few more layout files
 - moved Ice Cavern to dungeons file
 - changed graveyard box hp to be a sequence break with boomerang
+- changed DMC volcano hp to be a sequence break with hovers
 
 ## 2.1.2.0
 

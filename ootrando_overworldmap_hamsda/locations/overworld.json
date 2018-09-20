@@ -4139,8 +4139,8 @@
                     "name": "Get it",
                     "access_rules": [
                       "ocarina,bolero,beans",
-                      "ocarina,bolero,hoverboots",
-                      "@Link the Goron,hoverboots",
+                      "ocarina,bolero,hoverboots,[beans]",
+                      "@Link the Goron,hoverboots,[ocarina],[bolero],[beans]",
                       "{agony}"
                     ],
                     "capture_item": true,
