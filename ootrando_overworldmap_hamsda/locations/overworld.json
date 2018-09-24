@@ -28,6 +28,28 @@
         "item_count": 1
       },
       {
+        "name": "can child attack",
+        "access_rules": [
+          "sling",
+          "boomerang",
+          "sticks",
+          "@logic/explosives",
+          "sword1",
+          "dinsfire,magic"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "can stun deku",
+        "access_rules": [
+          "sword2",
+          "@logic/can child attack",
+          "nuts",
+          "shield1"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "can LA",
         "access_rules": [
           "sword2,magic,bow,lightarrow"

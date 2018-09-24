@@ -8,6 +8,7 @@ Tracker:AddMaps("maps/maps.json")
 
 Tracker:AddLocations("locations/overworld.json")
 Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/mq.json")
 
 Tracker:AddLayouts("layouts/shared.json")
 Tracker:AddLayouts("layouts/tracker.json")

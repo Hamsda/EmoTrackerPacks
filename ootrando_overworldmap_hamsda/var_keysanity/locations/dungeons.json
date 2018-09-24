@@ -3,8 +3,8 @@
     "name": "Deku Tree",
     "parent": "Forest C",
     "access_rules": [
-      "open_forest",
-      "sword1,shield1"
+      "deku_reg,open_forest",
+      "deku_reg,sword1,shield1"
     ],
     "sections": [
       {
@@ -103,8 +103,8 @@
     "name": "Dodongos Cavern",
     "parent": "Death Mountain C",
     "access_rules": [
-      "@logic/can blast",
-      "lift1"
+      "dodongo_reg,@logic/can blast",
+      "dodongo_reg,lift1"
     ],
     "sections": [
       {
@@ -321,9 +321,9 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain C",
     "access_rules": [
-      "sling",
-      "@logic/explosives",
-      "boomerang"
+      "jabu_reg,sling",
+      "jabu_reg,@logic/explosives",
+      "jabu_reg,boomerang"
     ],
     "sections": [
       {
@@ -443,7 +443,7 @@
     "name": "Forest Temple",
     "parent": "Sacred Forest Meadow A",
     "access_rules": [
-      "hookshot"
+      "forest_reg,hookshot"
     ],
     "sections": [
       {
@@ -627,7 +627,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "@Sheik in Crater,[redtunic]"
+      "fire_reg,@Sheik in Crater,[redtunic]"
     ],
     "sections": [
       {
@@ -825,7 +825,7 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "ironboots,hookshot,[bluetunic]"
+      "water_reg,ironboots,hookshot,[bluetunic]"
     ],
     "sections": [
       {
@@ -1002,8 +1002,8 @@
     "name": "Shadow Temple",
     "parent": "Kakariko A",
     "access_rules": [
-      "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
-      "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
+      "shadow_reg,ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
+      "shadow_reg,ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1196,7 +1196,7 @@
     "name": "Spirit Temple",
     "parent": "Colossus",
     "access_rules": [
-      "@logic/colossus"
+      "spirit_reg,@logic/colossus"
     ],
     "sections": [
       {
@@ -1439,7 +1439,7 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko C",
     "access_rules": [
-      "ocarina,storm"
+      "botw_reg,ocarina,storm"
     ],
     "sections": [
       {
@@ -1593,10 +1593,10 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "bridge_open,sword2"
+      "gc_reg,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "gc_reg,bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "gc_reg,bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "gc_reg,bridge_open,sword2"
     ],
     "sections": [
       {
@@ -1840,7 +1840,7 @@
       {
         "name": "Gerudo Training Grounds",
         "access_rules": [
-          "carpenter,card"
+          "gtg_reg,carpenter,card"
         ],
         "sections": [
           {
@@ -1979,7 +1979,7 @@
     "name": "Ice Cavern",
     "parent": "Zoras Fountain A",
     "access_rules": [
-      "@logic/ice cavern"
+      "ice_reg,@logic/ice cavern"
     ],
     "sections": [
       {
