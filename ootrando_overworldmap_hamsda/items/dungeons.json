@@ -44,9 +44,20 @@
   },
   {
     "name": "Deku Tree Label",
-    "type": "static",
-    "img": "images/deku.png",
-    "codes": "deku_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/deku.png",
+        "codes": "deku_label,deku_reg"
+      },
+      {
+        "img": "images/deku_mq.png",
+        "codes": "deku_label,deku_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Deku Treasures",
@@ -93,9 +104,20 @@
   },
   {
     "name": "Dodongo's Cavern Label",
-    "type": "static",
-    "img": "images/dodongo.png",
-    "codes": "dodongo_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/dodongo.png",
+        "codes": "dodongo_label,dodongo_reg"
+      },
+      {
+        "img": "images/dodongo_mq.png",
+        "codes": "dodongo_label,dodongo_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Dodongo Treasures",
@@ -142,9 +164,20 @@
   },
   {
     "name": "Jabu-Jabu Label",
-    "type": "static",
-    "img": "images/jabu.png",
-    "codes": "jabu_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/jabu.png",
+        "codes": "jabu_label,jabu_reg"
+      },
+      {
+        "img": "images/jabu_mq.png",
+        "codes": "jabu_label,jabu_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Jabu Treasures",
@@ -191,9 +224,20 @@
   },
   {
     "name": "Forest Temple Label",
-    "type": "static",
-    "img": "images/forest.png",
-    "codes": "forest_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/forest.png",
+        "codes": "forest_label,forest_reg"
+      },
+      {
+        "img": "images/forest_mq.png",
+        "codes": "forest_label,forest_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Forest Treasures",
@@ -201,6 +245,19 @@
     "img": "images/chest_brown_closed.png",
     "codes": "forest_treasures",
     "max_quantity": 8
+  },
+  {
+    "name": "Forest Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "forest_small_keys,forestsmall,forestsk",
+    "max_quantity": 5
+  },
+  {
+    "name": "Forest Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "forest_boss_key,forestboss,forestbk"
   },
   {
     "name": "Forest Prize",
@@ -240,9 +297,20 @@
   },
   {
     "name": "Fire Temple Label",
-    "type": "static",
-    "img": "images/fire.png",
-    "codes": "fire_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/fire.png",
+        "codes": "fire_label,fire_reg"
+      },
+      {
+        "img": "images/fire_mq.png",
+        "codes": "fire_label,fire_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Fire Treasures",
@@ -250,6 +318,19 @@
     "img": "images/chest_brown_closed.png",
     "codes": "fire_treasures",
     "max_quantity": 6
+  },
+  {
+    "name": "Fire Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "fire_small_keys,firesmall,firesk",
+    "max_quantity": 8
+  },
+  {
+    "name": "Fire Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "fire_boss_key,fireboss,firebk"
   },
   {
     "name": "Fire Prize",
@@ -289,9 +370,20 @@
   },
   {
     "name": "Water Temple Label",
-    "type": "static",
-    "img": "images/water.png",
-    "codes": "water_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/water.png",
+        "codes": "water_label,water_reg"
+      },
+      {
+        "img": "images/water_mq.png",
+        "codes": "water_label,water_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Water Treasures",
@@ -299,6 +391,19 @@
     "img": "images/chest_brown_closed.png",
     "codes": "water_treasures",
     "max_quantity": 4
+  },
+  {
+    "name": "Water Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "water_small_keys,watersmall,watersk",
+    "max_quantity": 6
+  },
+  {
+    "name": "Water Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "water_boss_key,waterboss,waterbk"
   },
   {
     "name": "Water Prize",
@@ -338,9 +443,20 @@
   },
   {
     "name": "Spirit Temple Label",
-    "type": "static",
-    "img": "images/spirit.png",
-    "codes": "spirit_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/spirit.png",
+        "codes": "spirit_label,spirit_reg"
+      },
+      {
+        "img": "images/spirit_mq.png",
+        "codes": "spirit_label,spirit_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Spirit Treasures",
@@ -348,6 +464,19 @@
     "img": "images/chest_brown_closed.png",
     "codes": "spirit_treasures",
     "max_quantity": 14
+  },
+  {
+    "name": "Spirit Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "spirit_small_keys,spiritsmall,spiritsk",
+    "max_quantity": 5
+  },
+  {
+    "name": "Spirit Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "spirit_boss_key,spiritboss,spiritbk"
   },
   {
     "name": "Spirit Prize",
@@ -387,9 +516,20 @@
   },
   {
     "name": "Shadow Temple Label",
-    "type": "static",
-    "img": "images/shadow.png",
-    "codes": "shadow_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/shadow.png",
+        "codes": "shadow_label,shadow_reg"
+      },
+      {
+        "img": "images/shadow_mq.png",
+        "codes": "shadow_label,shadow_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Shadow Treasures",
@@ -397,6 +537,19 @@
     "img": "images/chest_brown_closed.png",
     "codes": "shadow_treasures",
     "max_quantity": 12
+  },
+  {
+    "name": "Shadow Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "shadow_small_keys,shadowsmall,shadowsk",
+    "max_quantity": 5
+  },
+  {
+    "name": "Shadow Boss Key",
+    "type": "toggle",
+    "img": "images/oot_boss_key.png",
+    "codes": "shadow_boss_key,shadowboss,shadowbk"
   },
   {
     "name": "Shadow Prize",
@@ -436,9 +589,20 @@
   },
   {
     "name": "BotW Label",
-    "type": "static",
-    "img": "images/botw.png",
-    "codes": "botw_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/botw.png",
+        "codes": "botw_label,botw_reg"
+      },
+      {
+        "img": "images/botw_mq.png",
+        "codes": "botw_label,botw_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "BotW Treasures",
@@ -448,10 +612,28 @@
     "max_quantity": 11
   },
   {
+    "name": "BotW Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "botw_small_keys,botwsmall,botwsk",
+    "max_quantity": 3
+  },
+  {
     "name": "Ice Label",
-    "type": "static",
-    "img": "images/ice.png",
-    "codes": "ice_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/ice.png",
+        "codes": "ice_label,ice_reg"
+      },
+      {
+        "img": "images/ice_mq.png",
+        "codes": "ice_label,ice_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Ice Treasures",
@@ -467,10 +649,28 @@
     "codes": "gf_label"
   },
   {
+    "name": "GF Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gf_small_keys,gfsmall,gfsk",
+    "max_quantity": 4
+  },
+  {
     "name": "GTG Label",
-    "type": "static",
-    "img": "images/gtg.png",
-    "codes": "gtg_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/gtg.png",
+        "codes": "gtg_label,gtg_reg"
+      },
+      {
+        "img": "images/gtg_mq.png",
+        "codes": "gtg_label,gtg_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "GTG Treasures",
@@ -480,10 +680,28 @@
     "max_quantity": 13
   },
   {
+    "name": "GTG Small Keys",
+    "type": "consumable",
+    "img": "images/oot_small_key.png",
+    "codes": "gtg_small_keys,gtgsmall,gtgsk",
+    "max_quantity": 9
+  },
+  {
     "name": "GC Label",
-    "type": "static",
-    "img": "images/gc.png",
-    "codes": "gc_label"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/gc.png",
+        "codes": "gc_label,gc_reg"
+      },
+      {
+        "img": "images/gc_mq.png",
+        "codes": "gc_label,gc_mq",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "GC Treasures",
@@ -491,92 +709,6 @@
     "img": "images/chest_brown_closed.png",
     "codes": "gc_treasures",
     "max_quantity": 13
-  },
-  {
-    "name": "Forest Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "forest_small_keys,forestsmall,forestsk",
-    "max_quantity": 5
-  },
-  {
-    "name": "Forest Boss Key",
-    "type": "toggle",
-    "img": "images/oot_boss_key.png",
-    "codes": "forest_boss_key,forestboss,forestbk"
-  },
-  {
-    "name": "Fire Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "fire_small_keys,firesmall,firesk",
-    "max_quantity": 8
-  },
-  {
-    "name": "Fire Boss Key",
-    "type": "toggle",
-    "img": "images/oot_boss_key.png",
-    "codes": "fire_boss_key,fireboss,firebk"
-  },
-  {
-    "name": "Water Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "water_small_keys,watersmall,watersk",
-    "max_quantity": 6
-  },
-  {
-    "name": "Water Boss Key",
-    "type": "toggle",
-    "img": "images/oot_boss_key.png",
-    "codes": "water_boss_key,waterboss,waterbk"
-  },
-  {
-    "name": "Spirit Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "spirit_small_keys,spiritsmall,spiritsk",
-    "max_quantity": 5
-  },
-  {
-    "name": "Spirit Boss Key",
-    "type": "toggle",
-    "img": "images/oot_boss_key.png",
-    "codes": "spirit_boss_key,spiritboss,spiritbk"
-  },
-  {
-    "name": "Shadow Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "shadow_small_keys,shadowsmall,shadowsk",
-    "max_quantity": 5
-  },
-  {
-    "name": "Shadow Boss Key",
-    "type": "toggle",
-    "img": "images/oot_boss_key.png",
-    "codes": "shadow_boss_key,shadowboss,shadowbk"
-  },
-  {
-    "name": "BotW Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "botw_small_keys,botwsmall,botwsk",
-    "max_quantity": 3
-  },
-  {
-    "name": "GF Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "gf_small_keys,gfsmall,gfsk",
-    "max_quantity": 4
-  },
-  {
-    "name": "GTG Small Keys",
-    "type": "consumable",
-    "img": "images/oot_small_key.png",
-    "codes": "gtg_small_keys,gtgsmall,gtgsk",
-    "max_quantity": 9
   },
   {
     "name": "GC Small Keys",
