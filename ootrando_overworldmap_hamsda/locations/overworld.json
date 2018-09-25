@@ -272,7 +272,8 @@
                   {
                     "name": "GS3",
                     "access_rules": [
-                      "sword2,hookshot"
+                      "sword2,hookshot",
+                      "sword2,hoverboots,[hookshot]"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
