@@ -504,14 +504,18 @@
               },
               {
                 "name": "Bean Patch Near Stage",
-                "access_rules": [
-                  "show_skulltulas"
-                ],
                 "sections": [
+                  {
+                    "name": "Plant Bean",
+                    "access_rules": [
+                      "beans,bean_stage_no"
+                    ],
+                    "hosted_item": "bean_stage_yes"
+                  },
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "bottle"
+                      "show_skulltulas,bottle"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -1037,14 +1041,18 @@
                   },
                   {
                     "name": "Bean Patch",
-                    "access_rules": [
-                      "show_skulltulas"
-                    ],
                     "sections": [
+                      {
+                        "name": "Plant Bean",
+                        "access_rules": [
+                          "beans,bean_lake_no"
+                        ],
+                        "hosted_item": "bean_lake_yes"
+                      },
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "bottle"
+                          "show_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1775,9 +1783,9 @@
                   {
                     "name": "Box HP",
                     "access_rules": [
-                      "sword2,beans",
+                      "sword2,bean_graveyard_yes",
                       "sword2,longshot",
-                      "boomerang,[sword2],[beans]",
+                      "boomerang,[sword2],[bean_graveyard_yes]",
                       "boomerang,[sword2],[longshot]"
                     ],
                     "sections": [
@@ -1800,7 +1808,7 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,beans",
+                          "sword2,bean_graveyard_yes",
                           "sword2,longshot"
                         ],
                         "x": 1970,
@@ -1874,14 +1882,18 @@
                   },
                   {
                     "name": "Bean Patch",
-                    "access_rules": [
-                      "show_skulltulas"
-                    ],
                     "sections": [
+                      {
+                        "name": "Plant Bean",
+                        "access_rules": [
+                          "beans,bean_graveyard_no"
+                        ],
+                        "hosted_item": "bean_graveyard_yes"
+                      },
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "bottle"
+                          "show_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2204,14 +2216,21 @@
                   {
                     "name": "Bean Patch",
                     "access_rules": [
-                      "show_skulltulas"
+                      "@logic/explosives",
+                      "lift1"
                     ],
                     "sections": [
                       {
+                        "name": "Plant Bean",
+                        "access_rules": [
+                          "beans,bean_trail_no"
+                        ],
+                        "hosted_item": "bean_trail_yes"
+                      },
+                      {
                         "name": "GS30",
                         "access_rules": [
-                          "bottle,@logic/explosives",
-                          "bottle,lift1"
+                          "show_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2300,7 +2319,7 @@
                         "name": "Get it",
                         "access_rules": [
                           "@logic/can blast",
-                          "ocarina,bolero,beans",
+                          "ocarina,bolero,bean_crater_yes",
                           "@Link the Goron"
                         ],
                         "chest_unopened_img": "images/HP.png",
@@ -2378,13 +2397,20 @@
                   {
                     "name": "Bean Patch",
                     "access_rules": [
-                      "show_skulltulas"
+                      "ocarina,bolero"
                     ],
                     "sections": [
                       {
+                        "name": "Plant Bean",
+                        "access_rules": [
+                          "beans,bean_crater_no"
+                        ],
+                        "hosted_item": "bean_crater_yes"
+                      },
+                      {
                         "name": "GS37",
                         "access_rules": [
-                          "ocarina,bolero,bottle"
+                          "show_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3404,7 +3430,7 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "ocarina,requiem,beans,sword2",
+                          "@logic/colossus,bean_colossus_yes,sword2",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3488,13 +3514,20 @@
                   {
                     "name": "Bean Patch",
                     "access_rules": [
-                      "show_skulltulas"
+                      "ocarina,requiem"
                     ],
                     "sections": [
                       {
+                        "name": "Plant Bean",
+                        "access_rules": [
+                          "beans,bean_colossus_no"
+                        ],
+                        "hosted_item": "bean_colossus_yes"
+                      },
+                      {
                         "name": "GS93",
                         "access_rules": [
-                          "ocarina,requiem,bottle"
+                          "show_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3542,7 +3575,7 @@
                       {
                         "name": "GS95",
                         "access_rules": [
-                          "ocarina,requiem,beans,sword2",
+                          "ocarina,requiem,bean_colossus_yes,sword2",
                           "@logic/colossus,longshot,sword2"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
@@ -3628,10 +3661,10 @@
                   {
                     "name": "GS6",
                     "access_rules": [
-                      "[ocarina],[saria],beans",
-                      "[ocarina],[minuet],beans",
-                      "[ocarina],[saria],bombchu,longshot,[beans]",
-                      "[ocarina],[minuet],bombchu,longshot,[beans]"
+                      "[ocarina],[saria],bean_stage_yes",
+                      "[ocarina],[minuet],bean_stage_yes",
+                      "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
+                      "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -4056,7 +4089,7 @@
                 "access_rules": [
                   "@logic/can blast",
                   "@Link the Goron",
-                  "ocarina,bolero,beans",
+                  "ocarina,bolero,bean_trail_yes",
                   "ocarina,bolero,hoverboots",
                   "ocarina,bolero,hookshot"
                 ],
@@ -4152,9 +4185,9 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "ocarina,bolero,beans",
-                      "ocarina,bolero,hoverboots,[beans]",
-                      "@Link the Goron,hoverboots,[ocarina],[bolero],[beans]",
+                      "ocarina,bolero,bean_crater_yes",
+                      "ocarina,bolero,hoverboots,[bean_crater_yes]",
+                      "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4571,7 +4604,7 @@
                     "access_rules": [
                       "ocarina,hookshot",
                       "water",
-                      "beans",
+                      "bean_lake_yes",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4614,7 +4647,7 @@
                   {
                     "name": "HP",
                     "access_rules": [
-                      "beans",
+                      "bean_lake_yes",
                       "ocarina,hookshot"
                     ],
                     "chest_unopened_img": "images/HP.png",

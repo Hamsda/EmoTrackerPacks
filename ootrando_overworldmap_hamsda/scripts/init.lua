@@ -3,6 +3,7 @@ Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
+Tracker:AddItems("items/beans.json")
 
 Tracker:AddMaps("maps/maps.json")
 

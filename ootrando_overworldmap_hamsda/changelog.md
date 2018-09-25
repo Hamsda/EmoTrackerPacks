@@ -8,6 +8,7 @@
 - changed DMC volcano hp to be a sequence break with hovers
 - added scarecrow toggle to ocarina
 - fixed deku scrubs near LW forest stage are child only
+- added relevant bean locations to child patches and checks to adult for those
 
 ## 2.1.2.0
 
