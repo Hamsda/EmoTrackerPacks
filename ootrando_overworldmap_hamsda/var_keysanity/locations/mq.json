@@ -1807,8 +1807,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "gc_boss_key,gc_small_keys:3,@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
-          "gc_boss_key,gc_small_keys:3,@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
+          "gc_small_keys:3,@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
+          "gc_small_keys:3,@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
