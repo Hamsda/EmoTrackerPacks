@@ -7,6 +7,11 @@
 - changed graveyard box hp to be a sequence break with boomerang
 - changed DMC volcano hp to be a sequence break with hovers
 - fixed deku scrubs near LW forest stage are child only
+- fixed GC BK chest doesn't require BK, derp
+- added GS3 twins house sequence break with hoverboots
+- added DMT bomb wall sequence break with bomb flower and lift1
+- added Deku Tree GS9 sequence break with sword1/sticks
+- changed Fire Temple SoT room as sequence break without SoT
 
 ## 2.1.2.0
 
