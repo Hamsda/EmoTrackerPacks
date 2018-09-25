@@ -2129,12 +2129,13 @@
                   },
                   {
                     "name": "Bombable Wall",
-                    "access_rules": [
-                      "@logic/can blast"
-                    ],
                     "sections": [
                       {
                         "name": "Blast it",
+                        "access_rules": [
+                          "@logic/can blast",
+                          "lift1,[@logic/can blast]"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -2142,7 +2143,8 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "@logic/explosives",
+                          "lift1"
                         ],
                         "x": 1744,
                         "y": 221
@@ -2150,7 +2152,8 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2"
+                          "sword2,hammer",
+                          "sword2,@logic/explosives"
                         ],
                         "x": 1744,
                         "y": 221
