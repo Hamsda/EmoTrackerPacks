@@ -1,14 +1,12 @@
 # Changelog
 
-## 2.1.2.1
+## 2.1.3.0
 
-- moved around a few more layout files
-- moved Ice Cavern to dungeons file
+- added scarecrow toggle to ocarina and checks for it
+- added relevant bean locations to child patches and checks to adult for those
 - changed graveyard box hp to be a sequence break with boomerang
 - changed DMC volcano hp to be a sequence break with hovers
-- added scarecrow toggle to ocarina
 - fixed deku scrubs near LW forest stage are child only
-- added relevant bean locations to child patches and checks to adult for those
 
 ## 2.1.2.0
 

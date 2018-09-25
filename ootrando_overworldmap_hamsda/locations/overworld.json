@@ -4602,7 +4602,7 @@
                   {
                     "name": "Bite pls",
                     "access_rules": [
-                      "ocarina,hookshot",
+                      "ocarina,scarecrow,hookshot",
                       "water",
                       "bean_lake_yes",
                       "{agony}"
@@ -4625,7 +4625,7 @@
                   {
                     "name": "Shoot it",
                     "access_rules": [
-                      "bow,ocarina,longshot",
+                      "bow,ocarina,scarecrow,longshot",
                       "bow,water",
                       "{agony}"
                     ],
@@ -4648,7 +4648,7 @@
                     "name": "HP",
                     "access_rules": [
                       "bean_lake_yes",
-                      "ocarina,hookshot"
+                      "ocarina,scarecrow,hookshot"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",

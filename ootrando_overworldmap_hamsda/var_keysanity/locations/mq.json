@@ -989,7 +989,7 @@
         "name": "Freestanding Key",
         "access_rules": [
           "@Water Temple MQ/Boss Key Chest,hoverboots",
-          "@Water Temple MQ/Boss Key Chest,ocarina"
+          "@Water Temple MQ/Boss Key Chest,ocarina,scarecrow"
         ],
         "item_count": 1
       },
@@ -1900,7 +1900,7 @@
             "name": "Open it",
             "access_rules": [
               "hoverboots",
-              "ocarina,hookshot",
+              "ocarina,scarecrow,hookshot",
               "longshot"
             ],
             "item_count": 1
@@ -2181,7 +2181,7 @@
             "name": "GS71 - Scarecrow",
             "short_name": "Scarecrow",
             "access_rules": [
-              "hookshot,ocarina",
+              "hookshot,ocarina,scarecrow",
               "longshot,hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",
