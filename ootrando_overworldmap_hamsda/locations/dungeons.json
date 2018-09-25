@@ -724,7 +724,9 @@
         "name": "Time Block Room",
         "access_rules": [
           "@Fire Temple/Compass Chest,hammer,ocarina,time",
-          "@Fire Temple/Compass Chest,hammer,hoverboots"
+          "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
+          "@Fire Temple/Compass Chest,hammer,@logic/explosives,[ocarina],[time]",
+
         ],
         "item_count": 1
       },
