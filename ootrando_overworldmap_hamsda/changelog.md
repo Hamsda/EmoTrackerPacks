@@ -2,6 +2,7 @@
 
 ## 2.1.3.0
 
+- added new variant `Items Only (Keysanity)`
 - added scarecrow toggle to ocarina and checks for it
 - added relevant bean locations to child patches and checks to adult for those
 - changed graveyard box hp to be a sequence break with boomerang

@@ -37,6 +37,12 @@
           ]
         },
         {
+          "name": "Items Only (Keysanity)",
+          "flags": [
+            "chathud"
+          ]
+        },
+        {
           "name": "Items Only (minimal)",
           "flags": [
             "chathud"

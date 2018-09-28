@@ -5,6 +5,7 @@
     "content": [
       {
         "type": "itemgrid",
+        "h_alignment": "left",
         "item_margin": "1,2",
         "rows": [
           [
@@ -485,6 +486,7 @@
       {
         "type": "itemgrid",
         "item_margin": "1,2",
+        "h_alignment": "left",
         "rows": [
           [
             "sticks",
