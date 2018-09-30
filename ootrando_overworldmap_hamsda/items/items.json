@@ -337,6 +337,7 @@
   {
     "name": "Ocarina",
     "type": "progressive",
+    "loop": true,
     "stages": [
       {
         "img": "images/fairyocarina.png",
@@ -347,6 +348,13 @@
         "codes": "ocarinaoftime,oot"
       }
     ]
+  },
+  {
+    "name": "Ocarina with Scarecrow",
+    "type": "toggle_badged",
+    "base_item": "ocarina",
+    "img": "images/scarecrow.png",
+    "codes": "ocarinacrow,scarecrow,pierre"
   },
   {
     "name": "Bottle 1",

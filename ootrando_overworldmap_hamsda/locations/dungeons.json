@@ -3,8 +3,8 @@
     "name": "Deku Tree",
     "parent": "Forest C",
     "access_rules": [
-      "open_forest",
-      "sword1,shield1"
+      "deku_reg,open_forest",
+      "deku_reg,sword1,shield1"
     ],
     "sections": [
       {
@@ -62,6 +62,14 @@
             "name": "GS9 - Basement Vines",
             "short_name": "Vines",
             "access_rules": [
+              "sticks,[sling]",
+              "sticks,[@logic/explosives]",
+              "sticks,[boomerang]",
+              "sticks,[dinsfire],[magic]",
+              "sword1,[sling]",
+              "sword1,[@logic/explosives]",
+              "sword1,[boomerang]",
+              "sword1,[dinsfire],[magic]",
               "sling",
               "@logic/explosives",
               "boomerang",
@@ -103,8 +111,8 @@
     "name": "Dodongos Cavern",
     "parent": "Death Mountain C",
     "access_rules": [
-      "@logic/can blast",
-      "lift1"
+      "dodongo_reg,@logic/can blast",
+      "dodongo_reg,lift1"
     ],
     "sections": [
       {
@@ -237,7 +245,7 @@
             "name": "GS42 - Scarecrow Song",
             "short_name": "Scarecrow",
             "access_rules": [
-              "sword2,ocarina,hookshot",
+              "sword2,ocarina,scarecrow,hookshot",
               "sword2,longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
@@ -321,9 +329,9 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain C",
     "access_rules": [
-      "sling",
-      "@logic/explosives",
-      "boomerang"
+      "jabu_reg,sling",
+      "jabu_reg,@logic/explosives",
+      "jabu_reg,boomerang"
     ],
     "sections": [
       {
@@ -443,7 +451,7 @@
     "name": "Forest Temple",
     "parent": "Sacred Forest Meadow A",
     "access_rules": [
-      "hookshot"
+      "forest_reg,hookshot"
     ],
     "sections": [
       {
@@ -627,7 +635,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "@Sheik in Crater,[redtunic]"
+      "fire_reg,@Sheik in Crater,[redtunic]"
     ],
     "sections": [
       {
@@ -699,7 +707,7 @@
       {
         "name": "Scarecrow",
         "access_rules": [
-          "@Fire Temple/Above Boulder Maze,ocarina,hookshot",
+          "@Fire Temple/Above Boulder Maze,ocarina,scarecrow,hookshot",
           "{agony}"
         ],
         "capture_item": true,
@@ -716,7 +724,9 @@
         "name": "Time Block Room",
         "access_rules": [
           "@Fire Temple/Compass Chest,hammer,ocarina,time",
-          "@Fire Temple/Compass Chest,hammer,hoverboots"
+          "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
+          "@Fire Temple/Compass Chest,hammer,@logic/explosives,[ocarina],[time]",
+
         ],
         "item_count": 1
       },
@@ -820,7 +830,7 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "ironboots,hookshot,[bluetunic]"
+      "water_reg,ironboots,hookshot,[bluetunic]"
     ],
     "sections": [
       {
@@ -988,8 +998,8 @@
     "name": "Shadow Temple",
     "parent": "Kakariko A",
     "access_rules": [
-      "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
-      "ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
+      "shadow_reg,ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
+      "shadow_reg,ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1095,7 +1105,7 @@
         "name": "Bongo Bongo",
         "access_rules": [
           "@Shadow Temple/Boss Key Room,bow",
-          "@Shadow Temple/Boss Key Room,longshot"
+          "@Shadow Temple/Boss Key Room,longshot,ocarina,scarecrow"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
@@ -1182,7 +1192,7 @@
     "name": "Spirit Temple",
     "parent": "Colossus",
     "access_rules": [
-      "@logic/colossus"
+      "spirit_reg,@logic/colossus"
     ],
     "sections": [
       {
@@ -1394,7 +1404,7 @@
             "name": "GS100 - Statue Room, Left Ledge",
             "short_name": "Statue Ledge",
             "access_rules": [
-              "lift2,sword2,hookshot,ocarina",
+              "lift2,sword2,hookshot,ocarina,scarecrow",
               "lift2,sword2,longshot",
               "lift2,sword2,hoverboots"
             ],
@@ -1425,13 +1435,9 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko C",
     "access_rules": [
-      "ocarina,storm"
+      "botw_reg,ocarina,storm"
     ],
     "sections": [
-      {
-        "name": "9 (+2) Items",
-        "hosted_item": "botw_treasures"
-      },
       {
         "name": "Front Left Hidden",
         "access_rules": [
@@ -1583,10 +1589,10 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "bridge_open,sword2"
+      "gc_reg,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "gc_reg,bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "gc_reg,bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "gc_reg,bridge_open,sword2"
     ],
     "sections": [
       {
@@ -1720,7 +1726,7 @@
             "name": "Open it",
             "access_rules": [
               "hoverboots",
-              "ocarina,hookshot",
+              "ocarina,scarecrow,hookshot",
               "longshot"
             ],
             "item_count": 1
@@ -1810,13 +1816,9 @@
       {
         "name": "Gerudo Training Grounds",
         "access_rules": [
-          "carpenter,card"
+          "gtg_reg,carpenter,card"
         ],
         "sections": [
-          {
-            "name": "13 Items",
-            "hosted_item": "gtg_treasures"
-          },
           {
             "name": "Lobby",
             "access_rules": [
@@ -1924,6 +1926,98 @@
             "map": "adult",
             "x": 481,
             "y": 444
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ice Cavern",
+    "parent": "Zoras Fountain A",
+    "access_rules": [
+      "ice_reg,@logic/ice cavern"
+    ],
+    "sections": [
+      {
+        "name": "Map Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Frozen HP",
+        "chest_unopened_img": "images/HP.png",
+        "chest_opened_img": "images/HP_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Ironboots Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Sheik in Ice Cavern",
+        "access_rules": [
+          "@logic/ice cavern",
+          "{agony}"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/grey_note.png",
+        "chest_opened_img": "images/grey_note_check.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "adult",
+        "x": 2501,
+        "y": 276
+      }
+    ],
+    "children": [
+      {
+        "name": "Ice Cavern Skulltulas",
+        "access_rules": [
+          "show_skulltulas"
+        ],
+        "sections": [
+          {
+            "name": "GS70 - Near Compass Chest",
+            "short_name": "Compass",
+            "access_rules": [
+              "hookshot"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS71 - Silver Rupee Room",
+            "short_name": "Silver Rupee",
+            "access_rules": [
+              "hookshot"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS72 - Moveable Iceblock Room",
+            "short_name": "Iceblock",
+            "access_rules": [
+              "hookshot"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "adult",
+            "x": 2465,
+            "y": 276
           }
         ]
       }

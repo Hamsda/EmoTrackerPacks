@@ -1,7 +1,7 @@
 ﻿{
   "name": "OoT Randomizer - Map and Item Tracker",
   "game_name": "Ocarina of Time Randomizer",
-  "package_version": "2.1.2.0",
+  "package_version": "2.1.3.0",
   "package_uid": "ootrando_overworldmap_hamsda",
   "author": "Hamsda",
   "variants": {
@@ -13,6 +13,9 @@
     },
     "var_itemsonly": {
       "display_name": "Items Only"
+    },
+    "var_itemsonlykeysanity": {
+      "display_name": "Items Only (Keysanity)"
     },
     "var_minimalist": {
       "display_name": "Items Only (minimal)"
