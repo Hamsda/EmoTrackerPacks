@@ -587,7 +587,8 @@
       {
         "name": "Chest Behind Lobby",
         "access_rules": [
-          "forest_small_keys:1,ocarina,time"
+          "forest_small_keys:1,ocarina,time",
+          "@Forest Temple MQ/Bow Chest"
         ],
         "item_count": 1
       },
@@ -596,7 +597,8 @@
         "access_rules": [
           "forest_small_keys:2,lift1",
           "forest_small_keys:2,hoverboots",
-          "forest_small_keys:2,bombchu" //TODO
+          "forest_small_keys:2,bombchu,[lift1]",
+          "forest_small_keys:2,bombchu,[hoverboots]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
