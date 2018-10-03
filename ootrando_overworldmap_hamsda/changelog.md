@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3.1
+
+- changed scarecrow checks to be sequence breakable
+
 ## 2.1.3.0
 
 - added MQ dungeons!
