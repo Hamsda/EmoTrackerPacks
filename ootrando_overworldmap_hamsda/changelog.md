@@ -4,6 +4,7 @@
 
 - changed scarecrow checks to be sequence breakable
 - added scarecrow locations for child and adult as reminders
+- moved Goron City spinning pot to not overlap with shop
 
 ## 2.1.3.0
 
