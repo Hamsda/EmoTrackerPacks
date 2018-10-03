@@ -3,6 +3,7 @@
 ## 2.1.3.1
 
 - changed scarecrow checks to be sequence breakable
+- added scarecrow locations for child and adult as reminders
 
 ## 2.1.3.0
 

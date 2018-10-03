@@ -1041,6 +1041,25 @@
                     ]
                   },
                   {
+                    "name": "Scarecrow C",
+                    "sections": [
+                      {
+                        "name": "Play Song",
+                        "access_rules": [
+                          "ocarina,scarecrow_kid"
+                        ],
+                        "hosted_item": "scarecrow_adult"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1150,
+                        "y": 1180
+                      }
+                    ]
+                  },
+                  {
                     "name": "Bean Patch",
                     "sections": [
                       {
@@ -4664,6 +4683,25 @@
                     "map": "adult",
                     "x": 961,
                     "y": 1160
+                  }
+                ]
+              },
+              {
+                "name": "Scarecrow A",
+                "sections": [
+                  {
+                    "name": "Repeat Song",
+                    "access_rules": [
+                      "ocarina,scarecrow_adult"
+                    ],
+                    "hosted_item": "scarecrow"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1150,
+                    "y": 1180
                   }
                 ]
               },

@@ -100,5 +100,22 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Scarecrow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/scarecrow.png",
+        "img_mods": "@disabled",
+        "codes": "scarecrow_kid"
+      },
+      {
+        "img": "images/scarecrow.png",
+        "codes": "scarecrow_adult",
+        "inherit_codes": false
+      }
+    ]
   }
 ]
