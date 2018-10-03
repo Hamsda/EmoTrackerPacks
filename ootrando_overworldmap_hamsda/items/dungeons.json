@@ -60,13 +60,6 @@
     ]
   },
   {
-    "name": "Deku Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "deku_treasures",
-    "max_quantity": 7
-  },
-  {
     "name": "Deku Prize",
     "type": "progressive_toggle",
     "loop": true,
@@ -118,13 +111,6 @@
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Dodongo Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "dodongo_treasures",
-    "max_quantity": 7
   },
   {
     "name": "Dodongo Prize",
@@ -180,13 +166,6 @@
     ]
   },
   {
-    "name": "Jabu Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "jabu_treasures",
-    "max_quantity": 4
-  },
-  {
     "name": "Jabu Prize",
     "type": "progressive_toggle",
     "loop": true,
@@ -240,18 +219,11 @@
     ]
   },
   {
-    "name": "Forest Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "forest_treasures",
-    "max_quantity": 8
-  },
-  {
     "name": "Forest Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "forest_small_keys,forestsmall,forestsk",
-    "max_quantity": 5
+    "max_quantity": 6
   },
   {
     "name": "Forest Boss Key",
@@ -311,13 +283,6 @@
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Fire Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "fire_treasures",
-    "max_quantity": 6
   },
   {
     "name": "Fire Small Keys",
@@ -386,13 +351,6 @@
     ]
   },
   {
-    "name": "Water Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "water_treasures",
-    "max_quantity": 4
-  },
-  {
     "name": "Water Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
@@ -459,18 +417,11 @@
     ]
   },
   {
-    "name": "Spirit Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "spirit_treasures",
-    "max_quantity": 14
-  },
-  {
     "name": "Spirit Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "spirit_small_keys,spiritsmall,spiritsk",
-    "max_quantity": 5
+    "max_quantity": 7
   },
   {
     "name": "Spirit Boss Key",
@@ -532,18 +483,11 @@
     ]
   },
   {
-    "name": "Shadow Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "shadow_treasures",
-    "max_quantity": 12
-  },
-  {
     "name": "Shadow Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "shadow_small_keys,shadowsmall,shadowsk",
-    "max_quantity": 5
+    "max_quantity": 6
   },
   {
     "name": "Shadow Boss Key",
@@ -605,13 +549,6 @@
     ]
   },
   {
-    "name": "BotW Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "botw_treasures",
-    "max_quantity": 11
-  },
-  {
     "name": "BotW Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
@@ -634,13 +571,6 @@
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Ice Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "ice_treasures",
-    "max_quantity": 4
   },
   {
     "name": "GF Label",
@@ -673,13 +603,6 @@
     ]
   },
   {
-    "name": "GTG Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "gtg_treasures",
-    "max_quantity": 13
-  },
-  {
     "name": "GTG Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
@@ -704,18 +627,11 @@
     ]
   },
   {
-    "name": "GC Treasures",
-    "type": "consumable",
-    "img": "images/chest_brown_closed.png",
-    "codes": "gc_treasures",
-    "max_quantity": 13
-  },
-  {
     "name": "GC Small Keys",
     "type": "consumable",
     "img": "images/oot_small_key.png",
     "codes": "gc_small_keys,gcsmall,gcsk",
-    "max_quantity": 2
+    "max_quantity": 3
   },
   {
     "name": "GC Boss Key",
@@ -727,8 +643,7 @@
     "name": "Generic Small Keys",
     "type": "toggle",
     "img": "images/oot_small_key.png",
-    "codes": "generic_small_key",
-    "max_quantity": 2
+    "codes": "generic_small_key"
   },
   {
     "name": "Generic Boss Key",
