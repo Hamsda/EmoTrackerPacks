@@ -1368,23 +1368,23 @@
       {
         "name": "Silver Block Hallway Chest",
         "access_rules": [
-          "ocarina,requiem,bombchu,spirit_small_keys:7,sling,dinsfire,magic",
-          "ocarina,requiem,bombchu,spirit_small_keys:7,sling,longshot,lift2,bow,firearrow,magic",
-          "ocarina,requiem,bombchu,spirit_small_keys:7,sling,longshot,lift2,bow,[firearrow],[magic],time"
+          "ocarina,requiem,bombchu,spirit_small_keys:2,sling,dinsfire,magic",
+          "ocarina,requiem,bombchu,spirit_small_keys:2,sling,sword2,longshot,lift2,bow,firearrow,magic",
+          "ocarina,requiem,bombchu,spirit_small_keys:2,sling,sword2,longshot,lift2,bow,[firearrow],[magic],time"
         ],
         "item_count": 1
       },
       {
         "name": "Child Center Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer,spirit_small_keys:7"
+          "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer,spirit_small_keys:2"
         ],
         "item_count": 1
       },
       {
         "name": "Child Climb South Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:7"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:1"
         ],
         "item_count": 1
       },
@@ -1405,7 +1405,7 @@
       {
         "name": "Beamos Room Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:5"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:1"
         ],
         "item_count": 1
       },
@@ -1428,8 +1428,8 @@
       {
         "name": "Child Climb North Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:6",
-          "ocarina,requiem,bombchu,spirit_small_keys:6"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:1",
+          "ocarina,requiem,bombchu,spirit_small_keys:1"
         ],
         "item_count": 1
       },
@@ -1437,7 +1437,7 @@
         "name": "Compass Chest",
         "access_rules": [
           "sword2,lift2,longshot,bombchu,bow",
-          "ocarina,requiem,bombchu,spirit_small_keys:7,sling"
+          "ocarina,requiem,bombchu,spirit_small_keys:2,sling"
         ],
         "item_count": 1
       },
@@ -1458,7 +1458,7 @@
       {
         "name": "Lower Adult Right Chest",
         "access_rules": [
-          "@Spirit Temple MQ/Lower Adult Left Chest,spirit_small_keys:7,hammer,ocarina,time,epona,sun,storm,lullaby"
+          "@Spirit Temple MQ/Lower Adult Left Chest,spirit_small_keys:1,hammer,ocarina,time,epona,sun,storm,lullaby"
         ],
         "item_count": 1
       },
@@ -1472,31 +1472,29 @@
       {
         "name": "Mirror Puzzle Invisible Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:6,ocarina,lullaby,hammer,@logic/lens"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:2,ocarina,lullaby,hammer,@logic/lens"
         ],
         "item_count": 1
       },
       {
         "name": "Mirror Shield Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:5,ocarina,time,@logic/lens"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:1,ocarina,time,@logic/lens"
         ],
         "item_count": 1
       },
       {
         "name": "Silver Gauntlets Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:7",
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:4,ocarina,time,@logic/lens",
-          "ocarina,requiem,bombchu,spirit_small_keys:7,time",
-          "ocarina,requiem,bombchu,spirit_small_keys:4,time,@logic/lens" //TODO
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:1",
+          "ocarina,requiem,bombchu,spirit_small_keys:3,time"
         ],
         "item_count": 1
       },
       {
         "name": "Twinrova",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:6,ocarina,lullaby,hammer,shield3,spirit_boss_key"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:2,ocarina,lullaby,hammer,shield3,spirit_boss_key"
         ],
         "hosted_item": "spirit",
         "chest_unopened_img": "images/HC.png",
@@ -1563,7 +1561,7 @@
             "name": "GS99 - Iron Knuckle North",
             "short_name": "Iron Knuckle North",
             "access_rules": [
-              "sword2,lift2,longshot,bombchu,spirit_small_keys:7"
+              "sword2,lift2,longshot,bombchu,spirit_small_keys:3"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1573,7 +1571,7 @@
             "name": "GS100 - Iron Knuckle West",
             "short_name": "Iron Knuckle West",
             "access_rules": [
-              "sword2,lift2,longshot,bombchu,spirit_small_keys:7"
+              "sword2,lift2,longshot,bombchu,spirit_small_keys:3"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
