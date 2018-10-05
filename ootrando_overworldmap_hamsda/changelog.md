@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.3.1
+
+- changed scarecrow checks to be sequence breakable
+- added scarecrow locations for child and adult as reminders
+- moved Goron City spinning pot to not overlap with shop
+- changed small key cap to be the maximum of vanilla and MQ dungeons
+- changed small key requirements for MQ dungeons to be minimum instead of logically required amount
+
 ## 2.1.3.0
 
 - added MQ dungeons!

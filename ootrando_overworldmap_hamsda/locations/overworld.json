@@ -1041,6 +1041,25 @@
                     ]
                   },
                   {
+                    "name": "Scarecrow C",
+                    "sections": [
+                      {
+                        "name": "Play Song",
+                        "access_rules": [
+                          "ocarina,scarecrow_kid"
+                        ],
+                        "hosted_item": "scarecrow_adult"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1150,
+                        "y": 1180
+                      }
+                    ]
+                  },
+                  {
                     "name": "Bean Patch",
                     "sections": [
                       {
@@ -1997,8 +2016,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1648,
-                        "y": 128
+                        "x": 1689,
+                        "y": 115
                       }
                     ]
                   },
@@ -4606,7 +4625,7 @@
                   {
                     "name": "Bite pls",
                     "access_rules": [
-                      "ocarina,scarecrow,hookshot",
+                      "ocarina,[scarecrow],hookshot",
                       "water",
                       "bean_lake_yes",
                       "{agony}"
@@ -4629,7 +4648,7 @@
                   {
                     "name": "Shoot it",
                     "access_rules": [
-                      "bow,ocarina,scarecrow,longshot",
+                      "bow,ocarina,[scarecrow],longshot",
                       "bow,water",
                       "{agony}"
                     ],
@@ -4652,7 +4671,7 @@
                     "name": "HP",
                     "access_rules": [
                       "bean_lake_yes",
-                      "ocarina,scarecrow,hookshot"
+                      "ocarina,[scarecrow],hookshot"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -4664,6 +4683,25 @@
                     "map": "adult",
                     "x": 961,
                     "y": 1160
+                  }
+                ]
+              },
+              {
+                "name": "Scarecrow A",
+                "sections": [
+                  {
+                    "name": "Repeat Song",
+                    "access_rules": [
+                      "ocarina,scarecrow_adult"
+                    ],
+                    "hosted_item": "scarecrow"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1150,
+                    "y": 1180
                   }
                 ]
               },

@@ -939,7 +939,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_mq,ironboots,hookshot,[bluetunic]"
+      "water_mq,ironboots,hookshot,[bluetunic]",
+      "water_mq,scale2,hookshot,[bluetunic]"
     ],
     "sections": [
       {
@@ -950,10 +951,9 @@
         "item_count": 1
       },
       {
-        "name": "Central Pillar Chest",
+        "name": "Longshot Chest",
         "access_rules": [
-          "ironboots,bow,firearrow,magic",
-          "ironboots,dinsfire,magic,ocarina,time"
+          "ocarina,lullaby,ironboots"
         ],
         "item_count": 1
       },
@@ -966,9 +966,10 @@
         "item_count": 1
       },
       {
-        "name": "Longshot Chest",
+        "name": "Central Pillar Chest",
         "access_rules": [
-          "ocarina,lullaby,ironboots"
+          "ironboots,bow,firearrow,magic",
+          "ironboots,dinsfire,magic,ocarina,time"
         ],
         "item_count": 1
       },
@@ -985,7 +986,7 @@
         "name": "Freestanding Key",
         "access_rules": [
           "@Water Temple MQ/Boss Key Chest,hoverboots",
-          "@Water Temple MQ/Boss Key Chest,ocarina,scarecrow"
+          "@Water Temple MQ/Boss Key Chest,ocarina,[scarecrow]"
         ],
         "item_count": 1
       },
@@ -1106,13 +1107,6 @@
         "item_count": 1
       },
       {
-        "name": "Early Gibdos Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Map Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Near Ship Invisible Chest",
         "access_rules": [
           "@Shadow Temple MQ/Map Chest"
@@ -1120,23 +1114,9 @@
         "item_count": 1
       },
       {
-        "name": "Invisible Blades Visible Chest",
+        "name": "Early Gibdos Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,ocarina,time"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Invisible Blades Invisible Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Invisible Blades Visible Chest"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Beamos Silver Rupees Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,longshot"
+          "@Shadow Temple MQ/Map Chest"
         ],
         "item_count": 1
       },
@@ -1158,6 +1138,27 @@
         "name": "Falling Spikes Switch Chest",
         "access_rules": [
           "@Shadow Temple MQ/Falling Spikes Upper Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Visible Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,ocarina,time"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Invisible Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Invisible Blades Visible Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Beamos Silver Rupees Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,longshot"
         ],
         "item_count": 1
       },
@@ -1363,8 +1364,8 @@
         "name": "Silver Block Hallway Chest",
         "access_rules": [
           "ocarina,requiem,bombchu,sling,dinsfire,magic",
-          "ocarina,requiem,bombchu,sling,longshot,lift2,bow,firearrow,magic",
-          "ocarina,requiem,bombchu,sling,longshot,lift2,bow,[firearrow],[magic],time"
+          "ocarina,requiem,bombchu,sling,sword2,longshot,lift2,bow,firearrow,magic",
+          "ocarina,requiem,bombchu,sling,sword2,longshot,lift2,bow,[firearrow],[magic],time"
         ],
         "item_count": 1
       },
@@ -1876,7 +1877,7 @@
             "name": "Open it",
             "access_rules": [
               "hoverboots",
-              "ocarina,scarecrow,hookshot",
+              "ocarina,[scarecrow],hookshot",
               "longshot"
             ],
             "item_count": 1
@@ -2154,7 +2155,7 @@
             "name": "GS71 - Scarecrow",
             "short_name": "Scarecrow",
             "access_rules": [
-              "hookshot,ocarina,scarecrow",
+              "hookshot,ocarina,[scarecrow]",
               "longshot,hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",

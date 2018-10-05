@@ -1,11 +1,9 @@
 # OoTRMapTracker
 
-## What this is
+## Content
 
 This is a pack for [EmoTracker](https://emotracker.net/) designed for the [Ocarina of Time Randomizer](https://github.com/AmazingAmpharos/OoT-Randomizer).
 You can easily download it from within the EmoTracker application.
-
-## Content
 
 This pack allows you to keep track of your current item loadout and has maps with all item locations for child and adult Link. These locations get filtered by your current item loadout to only show what you can actually reach.
 
@@ -14,13 +12,20 @@ This pack allows you to keep track of your current item loadout and has maps wit
 The pack offers 4 different variants:
 
 1. Regular Map Tracker
-2. Keysanity Map Tracker (additional space to keep track of your keys, which also get considered in the map logic)
+2. Keysanity Map Tracker
 3. Items Only
-4. Items Only (minimal)
+4. Items Only (Keysanity)
+5. Items Only (minimal)
 
-### Settings
+### Vanilla vs Master Quest Dungeons
 
-There is also a variety of settings available to accomodate the different options that the Randomizer offers:
+The Randomizer has the option to switch some or all dungeons to their Master Quest equivalents.  
+To accomodate for this, you can click on the dungeon labels to change them from vanilla ![vanilla deku](ootrando_overworldmap_hamsda/images/deku.png) to Master Quest ![mq deku](ootrando_overworldmap_hamsda/images/deku_mq.png). You can use this in the non map variants as well as a reminder.  
+This also means that the key counts for the dungeons in the Keysanity variants will always go up to the maximum of vanilla and Master Quest: Forest Temple goes up to 6 small keys, because MQ Forest Temple has 6 small keys instead of 5 in vanilla; Water Temple also goes up to 6 small keys, because vanilla Water Temple has 6 small keys unlike the 2 it has in MQ.
+
+### Settings (for map variants)
+
+There is a variety of settings available to accomodate the different options that the Randomizer offers:
 
 #### Rainbow Bridge
 
@@ -92,7 +97,7 @@ This setting determines if Gold Skulltulas are shown (especially useful for Toke
 
 There are a few special items whose purpose might not be directly obvious:
 
-- ![Gerudo symbol](ootrando_overworldmap_hamsda/images/gerudo_symbol_colored.png "Gerudo symbol") Checking this item reflects the carpenters being rescued from Gerudo Fortress. This is separate from the Gerudo Card ![Gerudo card](ootrando_overworldmap_hamsda/images/gerudocard.png "Gerudo card") because of [various settings related to Gerudo Fortress in the randomizer](https://github.com/TestRunnerSRL/OoT-Randomizer/tree/Dev#gerudo-fortress-options).
+- ![Gerudo symbol](ootrando_overworldmap_hamsda/images/gerudo_symbol_colored.png "Gerudo symbol") Checking this item reflects the carpenters being rescued from Gerudo Fortress. This is separate from the Gerudo Card ![Gerudo card](ootrando_overworldmap_hamsda/images/gerudocard.png "Gerudo card") because of [various settings related to Gerudo Fortress in the randomizer](https://github.com/TestRunnerSRL/OoT-Randomizer/tree/Dev#gerudo-fortress).
 - ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony") Checking this item enables you to capture items placed at locations you received hints for by the Gossip Stones, even if you selected hints to be always on or require Mask of Truth instead of Stone of Agony.
 
 ## Questions

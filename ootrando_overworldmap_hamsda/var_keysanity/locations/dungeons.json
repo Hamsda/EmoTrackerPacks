@@ -245,7 +245,7 @@
             "name": "GS42 - Scarecrow Song",
             "short_name": "Scarecrow",
             "access_rules": [
-              "sword2,ocarina,scarecrow,hookshot",
+              "sword2,ocarina,[scarecrow],hookshot",
               "sword2,longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
@@ -711,7 +711,7 @@
       {
         "name": "Scarecrow",
         "access_rules": [
-          "@Fire Temple/Above Boulder Maze,ocarina,scarecrow,hookshot",
+          "@Fire Temple/Above Boulder Maze,ocarina,[scarecrow],hookshot",
           "{agony}"
         ],
         "capture_item": true,
@@ -1119,7 +1119,7 @@
         "name": "Bongo Bongo",
         "access_rules": [
           "@Shadow Temple/Boss Key Room,shadow_boss_key,shadow_small_keys:5,bow",
-          "@Shadow Temple/Boss Key Room,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,scarecrow"
+          "@Shadow Temple/Boss Key Room,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,[scarecrow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
@@ -1418,7 +1418,7 @@
             "name": "GS100 - Statue Room, Left Ledge",
             "short_name": "Statue Ledge",
             "access_rules": [
-              "lift2,sword2,spirit_small_keys:1,hookshot,ocarina,scarecrow",
+              "lift2,sword2,spirit_small_keys:1,hookshot,ocarina,[scarecrow]",
               "lift2,sword2,spirit_small_keys:1,longshot",
               "lift2,sword2,spirit_small_keys:1,hoverboots"
             ],
@@ -1760,7 +1760,7 @@
             "name": "Open it",
             "access_rules": [
               "hoverboots",
-              "ocarina,scarecrow,hookshot",
+              "ocarina,[scarecrow],hookshot",
               "longshot"
             ],
             "item_count": 1
