@@ -945,7 +945,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_mq,ironboots,hookshot,[bluetunic]"
+      "water_mq,ironboots,hookshot,[bluetunic]",
+      "water_mq,scale2,hookshot,[bluetunic]"
     ],
     "sections": [
       {
@@ -956,10 +957,9 @@
         "item_count": 1
       },
       {
-        "name": "Central Pillar Chest",
+        "name": "Longshot Chest",
         "access_rules": [
-          "ironboots,bow,firearrow,magic",
-          "ironboots,dinsfire,magic,ocarina,time"
+          "ocarina,lullaby,ironboots"
         ],
         "item_count": 1
       },
@@ -972,9 +972,10 @@
         "item_count": 1
       },
       {
-        "name": "Longshot Chest",
+        "name": "Central Pillar Chest",
         "access_rules": [
-          "ocarina,lullaby,ironboots"
+          "ironboots,bow,firearrow,magic",
+          "ironboots,dinsfire,magic,ocarina,time"
         ],
         "item_count": 1
       },
@@ -1034,7 +1035,7 @@
             "name": "GS74 - North Basement",
             "short_name": "North Basement",
             "access_rules": [
-              "@Water Temple MQ/Freestanding Key"
+              "@Water Temple MQ/Freestanding Key,water_small_keys:2"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
