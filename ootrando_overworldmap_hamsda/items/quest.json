@@ -25,38 +25,6 @@
     "max_quantity": 50
   },
   {
-    "name": "Zora Scales",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/scale1.png",
-        "codes": "scale,silverscale,scale1,sscale"
-      },
-      {
-        "img": "images/scale2.png",
-        "codes": "goldscale,scale2,gscale"
-      }
-    ]
-  },
-  {
-    "name": "Gauntlets",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/lift1.png",
-        "codes": "bracelet,lift1,gb,goronsbracelet"
-      },
-      {
-        "img": "images/lift2.png",
-        "codes": "silvergauntlets,lift2,sg,silvers"
-      },
-      {
-        "img": "images/lift3.png",
-        "codes": "goldgauntlets,lift3,gg,golds"
-      }
-    ]
-  },
-  {
     "name": "Wallet Upgrades",
     "type": "progressive",
     "allow_disabled": false,
