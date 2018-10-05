@@ -1106,13 +1106,6 @@
         "item_count": 1
       },
       {
-        "name": "Early Gibdos Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Map Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Near Ship Invisible Chest",
         "access_rules": [
           "@Shadow Temple MQ/Map Chest"
@@ -1120,23 +1113,9 @@
         "item_count": 1
       },
       {
-        "name": "Invisible Blades Visible Chest",
+        "name": "Early Gibdos Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,ocarina,time"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Invisible Blades Invisible Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Invisible Blades Visible Chest"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Beamos Silver Rupees Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,longshot"
+          "@Shadow Temple MQ/Map Chest"
         ],
         "item_count": 1
       },
@@ -1158,6 +1137,27 @@
         "name": "Falling Spikes Switch Chest",
         "access_rules": [
           "@Shadow Temple MQ/Falling Spikes Upper Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Visible Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,ocarina,time"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Invisible Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Invisible Blades Visible Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Beamos Silver Rupees Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,longshot"
         ],
         "item_count": 1
       },

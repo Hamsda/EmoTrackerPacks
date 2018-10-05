@@ -1092,7 +1092,7 @@
       {
         "name": "Compass Chest",
         "access_rules": [
-          "@logic/explosives,shadow_small_keys:6"
+          "@logic/explosives,shadow_small_keys:1"
         ],
         "item_count": 1
       },
@@ -1112,6 +1112,13 @@
         "item_count": 1
       },
       {
+        "name": "Near Ship Invisible Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Map Chest"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Early Gibdos Chest",
         "access_rules": [
           "@Shadow Temple MQ/Map Chest"
@@ -1119,9 +1126,23 @@
         "item_count": 1
       },
       {
-        "name": "Near Ship Invisible Chest",
+        "name": "Falling Spikes Lower Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Map Chest"
+          "@Shadow Temple MQ/Map Chest,@logic/explosives,shadow_small_keys:1"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Falling Spikes Upper Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,lift1"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Falling Spikes Switch Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Upper Chest"
         ],
         "item_count": 1
       },
@@ -1147,30 +1168,9 @@
         "item_count": 1
       },
       {
-        "name": "Falling Spikes Lower Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Map Chest,@logic/explosives,shadow_small_keys:2"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Falling Spikes Upper Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,lift1"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Falling Spikes Switch Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Upper Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Invisible Spikes Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,shadow_small_keys:3,hoverboots"
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,shadow_small_keys:2,hoverboots"
         ],
         "item_count": 1
       },
@@ -1184,7 +1184,7 @@
       {
         "name": "Wind Hint Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,shadow_small_keys:4,hoverboots,hookshot"
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,shadow_small_keys:3,hoverboots,hookshot"
         ],
         "item_count": 1
       },
@@ -1205,7 +1205,7 @@
       {
         "name": "Spike Walls Left Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest,shadow_small_keys:6"
+          "@Shadow Temple MQ/Bomb Flower Chest,shadow_small_keys:5"
         ],
         "item_count": 1
       },
@@ -1221,7 +1221,7 @@
       {
         "name": "Bomb Flower Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:5,ocarina,lullaby,bow,time,longshot"
+          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,bow,time,longshot"
         ],
         "item_count": 1
       },
@@ -1235,7 +1235,7 @@
       {
         "name": "Bongo Bongo",
         "access_rules": [
-          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:5,ocarina,lullaby,shadow_boss_key"
+          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,shadow_boss_key"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
@@ -1291,7 +1291,7 @@
             "name": "GS84 - After Ship",
             "short_name": "After Ship",
             "access_rules": [
-              "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:5,ocarina,lullaby"
+              "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
