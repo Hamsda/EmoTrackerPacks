@@ -4211,6 +4211,7 @@
                       "ocarina,bolero,bean_crater_yes",
                       "ocarina,bolero,hoverboots,[bean_crater_yes]",
                       "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                      "hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4259,7 +4260,7 @@
                     "access_rules": [
                       "hammer,@Link the Goron",
                       "hammer,ocarina,bolero,hookshot",
-                      "hammer,ocarina,bolero,hoverboots"
+                      "hammer,hoverboots"
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
@@ -4278,7 +4279,8 @@
                 "name": "Sheik in Crater",
                 "access_rules": [
                   "ocarina,bolero",
-                  "hoverboots",
+                  "hammer,hoverboots",
+                  "@Link the Goron,hoverboots",
                   "@Link the Goron,hookshot"
                 ],
                 "sections": [
@@ -4286,7 +4288,8 @@
                     "name": "Song",
                     "access_rules": [
                       "ocarina,bolero",
-                      "hoverboots",
+                      "hammer,hoverboots",
+                      "@Link the Goron,hoverboots",
                       "@Link the Goron,hookshot",
                       "{agony}"
                     ],

@@ -3,8 +3,9 @@
 ## 2.1.3.2
 
 - changed beginning of MQ Water Temple:
-  - iron boots sequence break with longshot for map and compass chests
+  - ironboots sequence break with longshot for map and compass chests
   - ocarina and lullaby sequence break for longshot chest
+- fixed lower DMC access with hammer + hoverboots
 
 ## 2.1.3.1
 
