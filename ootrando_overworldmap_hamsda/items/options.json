@@ -126,8 +126,12 @@
         "codes": "hide_skulltulas"
       },
       {
-        "img": "images/skulltula_show.png",
-        "codes": "show_skulltulas"
+        "img": "images/skulltula_dungeon.png",
+        "codes": "dungeon_skulltulas"
+      },
+      {
+        "img": "images/skulltula_all.png",
+        "codes": "all_skulltulas"
       }
     ]
   },

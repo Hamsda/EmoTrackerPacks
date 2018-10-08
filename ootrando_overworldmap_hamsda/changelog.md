@@ -6,6 +6,7 @@
   - ironboots sequence break with longshot for map and compass chests
   - ocarina and lullaby sequence break for longshot chest
 - fixed lower DMC access with hammer + hoverboots
+- added dungeon only to skulltula settings
 
 ## 2.1.3.1
 
