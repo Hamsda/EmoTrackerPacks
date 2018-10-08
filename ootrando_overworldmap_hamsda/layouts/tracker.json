@@ -32,25 +32,17 @@
                   [
                     "type_bridge",
                     "type_forest",
-                    "type_door",
-                    "",
-                    "",
-                    ""
-                  ],
-                  [
                     "type_kak",
+                    "type_door",
                     "type_lens",
-                    "logic_chus",
-                    "",
-                    "",
                     ""
                   ],
                   [
+                    "logic_chus",
                     "scrub_shuffle",
                     "shopsanity",
                     "all_skulltulas",
-                    "",
-                    "",
+                    "beans_plant",
                     ""
                   ]
                 ]
@@ -142,13 +134,24 @@
                       [
                         "type_bridge",
                         "type_forest",
-                        "type_door",
                         "type_kak",
+                        "type_door",
                         "type_lens",
+                        "",
+                        "",
+                        "",
+                        ""
+                      ],
+                      [
                         "logic_chus",
                         "scrub_shuffle",
                         "shopsanity",
-                        "all_skulltulas"
+                        "all_skulltulas",
+                        "beans_plant",
+                        "",
+                        "",
+                        "",
+                        ""
                       ]
                     ]
                   }

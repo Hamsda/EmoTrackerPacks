@@ -7,6 +7,9 @@
   - ocarina and lullaby sequence break for longshot chest
 - fixed lower DMC access with hammer + hoverboots
 - added dungeon only to skulltula settings
+- added option for bean behavior:
+  - `off` means just having beans will show the spots you can reach on the adult map (old behavior)
+  - `plant` means you have to mark them planted on the child map before the locations will show on the adult map (new behavior)
 
 ## 2.1.3.1
 

@@ -509,7 +509,7 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "beans,bean_stage_no"
+                      "beans,beans_plant_yes,bean_stage_no"
                     ],
                     "hosted_item": "bean_stage_yes"
                   },
@@ -1065,7 +1065,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_lake_no"
+                          "beans,beans_plant_yes,bean_lake_no"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
@@ -1803,8 +1803,10 @@
                   {
                     "name": "Box HP",
                     "access_rules": [
+                      "sword2,beans_plant_no,beans",
                       "sword2,bean_graveyard_yes",
                       "sword2,longshot",
+                      "boomerang,[sword2],[beans_plant_no],[beans]",
                       "boomerang,[sword2],[bean_graveyard_yes]",
                       "boomerang,[sword2],[longshot]"
                     ],
@@ -1828,6 +1830,7 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
+                          "sword2,beans_plant_no,beans",
                           "sword2,bean_graveyard_yes",
                           "sword2,longshot"
                         ],
@@ -1906,7 +1909,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_graveyard_no"
+                          "beans,beans_plant_yes,bean_graveyard_no"
                         ],
                         "hosted_item": "bean_graveyard_yes"
                       },
@@ -2246,7 +2249,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_trail_no"
+                          "beans,beans_plant_yes,bean_trail_no"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
@@ -2342,6 +2345,7 @@
                         "name": "Get it",
                         "access_rules": [
                           "@logic/can blast",
+                          "ocarina,bolero,beans_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "@Link the Goron"
                         ],
@@ -2426,7 +2430,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_crater_no"
+                          "beans,beans_plant_yes,bean_crater_no"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
@@ -3453,6 +3457,7 @@
                       {
                         "name": "Get it",
                         "access_rules": [
+                          "@logic/colossus,beans_plant_no,beans,sword2",
                           "@logic/colossus,bean_colossus_yes,sword2",
                           "{agony}"
                         ],
@@ -3543,7 +3548,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_colossus_no"
+                          "beans,beans_plant_yes,bean_colossus_no"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
@@ -3598,6 +3603,7 @@
                       {
                         "name": "GS95",
                         "access_rules": [
+                          "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "@logic/colossus,longshot,sword2"
                         ],
@@ -3684,8 +3690,12 @@
                   {
                     "name": "GS6",
                     "access_rules": [
+                      "[ocarina],[saria],beans_plant_no,beans",
+                      "[ocarina],[minuet],beans_plant_no,beans",
                       "[ocarina],[saria],bean_stage_yes",
                       "[ocarina],[minuet],bean_stage_yes",
+                      "[ocarina],[saria],bombchu,longshot,[beans_plant_no,beans]",
+                      "[ocarina],[minuet],bombchu,longshot,[beans_plant_no,beans]",
                       "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
                       "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
                     ],
@@ -4112,6 +4122,7 @@
                 "access_rules": [
                   "@logic/can blast",
                   "@Link the Goron",
+                  "ocarina,bolero,beans_plant_no,beans",
                   "ocarina,bolero,bean_trail_yes",
                   "ocarina,bolero,hoverboots",
                   "ocarina,bolero,hookshot"
@@ -4208,9 +4219,13 @@
                   {
                     "name": "Get it",
                     "access_rules": [
+                      "ocarina,bolero,beans_plant_no,beans",
                       "ocarina,bolero,bean_crater_yes",
+                      "ocarina,bolero,hoverboots,[beans_plant_no],[beans]",
                       "ocarina,bolero,hoverboots,[bean_crater_yes]",
+                      "@Link the Goron,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
                       "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                      "hammer,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
                       "hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                       "{agony}"
                     ],
@@ -4630,6 +4645,7 @@
                     "access_rules": [
                       "ocarina,[scarecrow],hookshot",
                       "water",
+                      "beans_plant_no,beans",
                       "bean_lake_yes",
                       "{agony}"
                     ],
@@ -4673,6 +4689,7 @@
                   {
                     "name": "HP",
                     "access_rules": [
+                      "beans_plant_no,beans",
                       "bean_lake_yes",
                       "ocarina,[scarecrow],hookshot"
                     ],

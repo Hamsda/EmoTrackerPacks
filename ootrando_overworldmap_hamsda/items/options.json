@@ -168,5 +168,22 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Beans",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bean_off.png",
+        "codes": "beans_plant,beans_plant_no"
+      },
+      {
+        "img": "images/bean_plant.png",
+        "codes": "beans_plant,beans_plant_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]
