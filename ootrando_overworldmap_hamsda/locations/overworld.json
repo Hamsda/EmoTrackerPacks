@@ -218,7 +218,7 @@
               {
                 "name": "Know It All House (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -242,7 +242,7 @@
               {
                 "name": "Bean Patch",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -266,7 +266,7 @@
               {
                 "name": "House of Twins (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -482,7 +482,7 @@
               {
                 "name": "Bean Patch Near Bridge",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -509,14 +509,14 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "beans,bean_stage_no"
+                      "beans,beans_plant_yes,bean_stage_no"
                     ],
                     "hosted_item": "bean_stage_yes"
                   },
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "show_skulltulas,bottle"
+                      "all_skulltulas,bottle"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -889,7 +889,7 @@
               {
                 "name": "Kakariko Tree Grotto",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -925,7 +925,7 @@
               {
                 "name": "Rock Circle Grotto",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -1065,14 +1065,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_lake_no"
+                          "beans,beans_plant_yes,bean_lake_no"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "show_skulltulas,bottle"
+                          "all_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1090,7 +1090,7 @@
                   {
                     "name": "Lab Wall (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1114,7 +1114,7 @@
                   {
                     "name": "Island (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1249,7 +1249,7 @@
                   {
                     "name": "Lone Tree",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1270,7 +1270,7 @@
                   {
                     "name": "Rain Shed (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1291,7 +1291,7 @@
                   {
                     "name": "House Window (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1315,7 +1315,7 @@
                   {
                     "name": "Back Wall (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1599,7 +1599,7 @@
                   {
                     "name": "Tree (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1620,7 +1620,7 @@
                   {
                     "name": "House Wall (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1641,7 +1641,7 @@
                   {
                     "name": "Under Construction (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1662,7 +1662,7 @@
                   {
                     "name": "Bazaar Wall (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1683,7 +1683,7 @@
                   {
                     "name": "Watchtower (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1803,8 +1803,10 @@
                   {
                     "name": "Box HP",
                     "access_rules": [
+                      "sword2,beans_plant_no,beans",
                       "sword2,bean_graveyard_yes",
                       "sword2,longshot",
+                      "boomerang,[sword2],[beans_plant_no],[beans]",
                       "boomerang,[sword2],[bean_graveyard_yes]",
                       "boomerang,[sword2],[longshot]"
                     ],
@@ -1828,6 +1830,7 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
+                          "sword2,beans_plant_no,beans",
                           "sword2,bean_graveyard_yes",
                           "sword2,longshot"
                         ],
@@ -1879,7 +1882,7 @@
                   {
                     "name": "Wall (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -1906,14 +1909,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_graveyard_no"
+                          "beans,beans_plant_yes,bean_graveyard_no"
                         ],
                         "hosted_item": "bean_graveyard_yes"
                       },
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "show_skulltulas,bottle"
+                          "all_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2045,7 +2048,7 @@
                   {
                     "name": "Boulder Maze Crate",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -2246,14 +2249,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_trail_no"
+                          "beans,beans_plant_yes,bean_trail_no"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "show_skulltulas,bottle"
+                          "all_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2271,7 +2274,7 @@
                   {
                     "name": "Bombable Wall",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -2342,6 +2345,7 @@
                         "name": "Get it",
                         "access_rules": [
                           "@logic/can blast",
+                          "ocarina,bolero,beans_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "@Link the Goron"
                         ],
@@ -2396,7 +2400,7 @@
                   {
                     "name": "Crate at Entrance",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -2426,14 +2430,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_crater_no"
+                          "beans,beans_plant_yes,bean_crater_no"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
                       {
                         "name": "GS37",
                         "access_rules": [
-                          "show_skulltulas,bottle"
+                          "all_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2679,7 +2683,7 @@
                   {
                     "name": "Guardhouse",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -2784,7 +2788,7 @@
                   {
                     "name": "Tree near Malon",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -2805,7 +2809,7 @@
                   {
                     "name": "Castle Storms Grotto",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -2993,7 +2997,7 @@
                   {
                     "name": "In Tree",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3052,7 +3056,7 @@
                   {
                     "name": "On Ladder (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3197,7 +3201,7 @@
                   {
                     "name": "Tree near Fairy",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3218,7 +3222,7 @@
                   {
                     "name": "Wall near Log (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3305,7 +3309,7 @@
                   {
                     "name": "Waterfall Near Entrance (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3329,7 +3333,7 @@
                   {
                     "name": "Bean Patch",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3388,7 +3392,7 @@
                   {
                     "name": "Central Structure",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3453,6 +3457,7 @@
                       {
                         "name": "Get it",
                         "access_rules": [
+                          "@logic/colossus,beans_plant_no,beans,sword2",
                           "@logic/colossus,bean_colossus_yes,sword2",
                           "{agony}"
                         ],
@@ -3543,14 +3548,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,bean_colossus_no"
+                          "beans,beans_plant_yes,bean_colossus_no"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
                       {
                         "name": "GS93",
                         "access_rules": [
-                          "show_skulltulas,bottle"
+                          "all_skulltulas,bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3568,7 +3573,7 @@
                   {
                     "name": "Tree Near Oasis (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -3592,12 +3597,13 @@
                   {
                     "name": "Top Of Platform (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
                         "name": "GS95",
                         "access_rules": [
+                          "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "@logic/colossus,longshot,sword2"
                         ],
@@ -3678,14 +3684,18 @@
               {
                 "name": "Above Stage (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
                     "name": "GS6",
                     "access_rules": [
+                      "[ocarina],[saria],beans_plant_no,beans",
+                      "[ocarina],[minuet],beans_plant_no,beans",
                       "[ocarina],[saria],bean_stage_yes",
                       "[ocarina],[minuet],bean_stage_yes",
+                      "[ocarina],[saria],bombchu,longshot,[beans_plant_no,beans]",
+                      "[ocarina],[minuet],bombchu,longshot,[beans_plant_no,beans]",
                       "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
                       "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
                     ],
@@ -3738,7 +3748,7 @@
               {
                 "name": "Top of Maze (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -3953,7 +3963,7 @@
               {
                 "name": "Top of Roof (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4084,7 +4094,7 @@
               {
                 "name": "Back of Pedestal (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4112,6 +4122,7 @@
                 "access_rules": [
                   "@logic/can blast",
                   "@Link the Goron",
+                  "ocarina,bolero,beans_plant_no,beans",
                   "ocarina,bolero,bean_trail_yes",
                   "ocarina,bolero,hoverboots",
                   "ocarina,bolero,hookshot"
@@ -4152,7 +4163,7 @@
               {
                 "name": "Red Rock (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4176,7 +4187,7 @@
               {
                 "name": "Red Rock (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4208,9 +4219,14 @@
                   {
                     "name": "Get it",
                     "access_rules": [
+                      "ocarina,bolero,beans_plant_no,beans",
                       "ocarina,bolero,bean_crater_yes",
+                      "ocarina,bolero,hoverboots,[beans_plant_no],[beans]",
                       "ocarina,bolero,hoverboots,[bean_crater_yes]",
+                      "@Link the Goron,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
                       "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                      "hammer,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
+                      "hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4259,7 +4275,7 @@
                     "access_rules": [
                       "hammer,@Link the Goron",
                       "hammer,ocarina,bolero,hookshot",
-                      "hammer,ocarina,bolero,hoverboots"
+                      "hammer,hoverboots"
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
@@ -4278,7 +4294,8 @@
                 "name": "Sheik in Crater",
                 "access_rules": [
                   "ocarina,bolero",
-                  "hoverboots",
+                  "hammer,hoverboots",
+                  "@Link the Goron,hoverboots",
                   "@Link the Goron,hookshot"
                 ],
                 "sections": [
@@ -4286,7 +4303,8 @@
                     "name": "Song",
                     "access_rules": [
                       "ocarina,bolero",
-                      "hoverboots",
+                      "hammer,hoverboots",
+                      "@Link the Goron,hoverboots",
                       "@Link the Goron,hookshot",
                       "{agony}"
                     ],
@@ -4374,7 +4392,7 @@
               {
                 "name": "Destroyed Bridge",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4428,7 +4446,7 @@
               {
                 "name": "Plateau Wall (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4452,7 +4470,7 @@
               {
                 "name": "Wall near Bridge (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4513,7 +4531,7 @@
               {
                 "name": "Top of Waterfall (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4587,7 +4605,7 @@
               {
                 "name": "Under Silver Boulder (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4627,6 +4645,7 @@
                     "access_rules": [
                       "ocarina,[scarecrow],hookshot",
                       "water",
+                      "beans_plant_no,beans",
                       "bean_lake_yes",
                       "{agony}"
                     ],
@@ -4670,6 +4689,7 @@
                   {
                     "name": "HP",
                     "access_rules": [
+                      "beans_plant_no,beans",
                       "bean_lake_yes",
                       "ocarina,[scarecrow],hookshot"
                     ],
@@ -4708,7 +4728,7 @@
               {
                 "name": "Top of Tree (N)",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4732,7 +4752,7 @@
               {
                 "name": "Lab Crate",
                 "access_rules": [
-                  "show_skulltulas"
+                  "all_skulltulas"
                 ],
                 "sections": [
                   {
@@ -4838,7 +4858,7 @@
                   {
                     "name": "Behind Carpenters Tent (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
@@ -4862,7 +4882,7 @@
                   {
                     "name": "Underside Rock Arch (N)",
                     "access_rules": [
-                      "show_skulltulas"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {

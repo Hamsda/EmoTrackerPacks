@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.1.3.2
+
+- added dungeon only to skulltula settings
+- added option for bean behavior:
+  - `off` means just having beans will show the spots you can reach on the adult map (old behavior)
+  - `plant` means you have to mark them planted on the child map before the locations will show on the adult map (new behavior)
+- changed beginning of MQ Water Temple:
+  - ironboots sequence break with longshot for map and compass chests
+  - ocarina and lullaby sequence break for longshot chest
+- fixed MQ Forest Temple:
+  - BK chest and onwards should work correctly now
+  - moved `Chest Behind Lobby` and `NE Outdoors Lower Chest` back in the list for the tracker to work
+- fixed lower DMC access with hammer + hoverboots
+
 ## 2.1.3.1
 
 - changed scarecrow checks to be sequence breakable

@@ -126,8 +126,12 @@
         "codes": "hide_skulltulas"
       },
       {
-        "img": "images/skulltula_show.png",
-        "codes": "show_skulltulas"
+        "img": "images/skulltula_dungeon.png",
+        "codes": "dungeon_skulltulas"
+      },
+      {
+        "img": "images/skulltula_all.png",
+        "codes": "all_skulltulas"
       }
     ]
   },
@@ -161,6 +165,23 @@
       {
         "img": "images/shopsanity_yes.png",
         "codes": "shopsanity,shopsanity_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Beans",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bean_off.png",
+        "codes": "beans_plant,beans_plant_no"
+      },
+      {
+        "img": "images/bean_plant.png",
+        "codes": "beans_plant,beans_plant_yes",
         "inherit_codes": false
       }
     ]

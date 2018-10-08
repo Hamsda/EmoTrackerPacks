@@ -79,7 +79,7 @@
       {
         "name": "Deku Tree MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -265,7 +265,7 @@
       {
         "name": "Dodongos Cavern MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -518,7 +518,7 @@
       {
         "name": "Jabu Jabus Belly MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -585,20 +585,10 @@
         "item_count": 1
       },
       {
-        "name": "Chest Behind Lobby",
-        "access_rules": [
-          "ocarina,time",
-          "@Forest Temple MQ/Bow Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Boss Key Chest",
         "access_rules": [
           "lift1",
-          "hoverboots",
-          "bombchu,[lift1]",
-          "bombchu,[hoverboots]"
+          "bombchu,[lift1]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -607,7 +597,8 @@
       {
         "name": "Redead Chest",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest"
+          "[lift1]",
+          "[bombchu]"
         ],
         "item_count": 1
       },
@@ -628,17 +619,17 @@
         "item_count": 1
       },
       {
-        "name": "NE Outdoors Lower Chest",
+        "name": "Bow Chest",
         "access_rules": [
-          "bow,longshot",
-          "@Forest Temple MQ/Falling Room Chest"
+          "@Forest Temple MQ/Boss Key Chest"
         ],
         "item_count": 1
       },
       {
-        "name": "Bow Chest",
+        "name": "Chest Behind Lobby",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest"
+          "ocarina,time",
+          "@Forest Temple MQ/Bow Chest"
         ],
         "item_count": 1
       },
@@ -659,15 +650,23 @@
       {
         "name": "Falling Room Chest",
         "access_rules": [
-          "bow",
-          "dinsfire,magic",
+          "@Forest Temple MQ/Bow Chest,bow",
+          "@Forest Temple MQ/Bow Chest,dinsfire,magic",
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "NE Outdoors Lower Chest",
+        "access_rules": [
+          "bow,longshot",
+          "@Forest Temple MQ/Falling Room Chest"
         ],
         "item_count": 1
       },
       {
         "name": "Near Boss Chest",
         "access_rules": [
-          "bow"
+          "@Forest Temple MQ/Falling Room Chest,bow"
         ],
         "item_count": 1
       },
@@ -693,7 +692,7 @@
       {
         "name": "Forest Temple MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -869,7 +868,7 @@
       {
         "name": "Fire Temple MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -946,22 +945,25 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "ironboots,@logic/has fire"
+          "ironboots,@logic/has fire",
+          "longshot,[ironboots],@logic/has fire"
         ],
         "item_count": 1
       },
       {
         "name": "Longshot Chest",
         "access_rules": [
-          "ocarina,lullaby,ironboots"
+          "[ocarina],[lullaby],ironboots"
         ],
         "item_count": 1
       },
       {
         "name": "Compass Chest",
         "access_rules": [
-          "@Water Temple MQ/Longshot Chest,bow",
-          "@Water Temple MQ/Longshot Chest,dinsfire,magic"
+          "ocarina,lullaby,ironboots,bow",
+          "ocarina,lullaby,ironboots,dinsfire,magic",
+          "ocarina,lullaby,longshot,[ironboots],bow",
+          "ocarina,lullaby,longshot,[ironboots],dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -1012,7 +1014,7 @@
       {
         "name": "Water Temple MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -1249,7 +1251,7 @@
       {
         "name": "Shadow Temple MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -1521,7 +1523,7 @@
       {
         "name": "Spirit Temple MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -1650,7 +1652,7 @@
       {
         "name": "Bottom of the Well MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -1922,7 +1924,7 @@
       {
         "name": "Archery Range (N)",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -1946,7 +1948,7 @@
       {
         "name": "Rooftop (N)",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
@@ -2138,7 +2140,7 @@
       {
         "name": "Ice Cavern MQ Skulltulas",
         "access_rules": [
-          "show_skulltulas"
+          "dungeon_skulltulas"
         ],
         "sections": [
           {
