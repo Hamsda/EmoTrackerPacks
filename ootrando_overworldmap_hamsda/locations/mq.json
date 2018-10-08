@@ -946,22 +946,25 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "ironboots,@logic/has fire"
+          "ironboots,@logic/has fire",
+          "longshot,[ironboots],@logic/has fire"
         ],
         "item_count": 1
       },
       {
         "name": "Longshot Chest",
         "access_rules": [
-          "ocarina,lullaby,ironboots"
+          "[ocarina],[lullaby],ironboots"
         ],
         "item_count": 1
       },
       {
         "name": "Compass Chest",
         "access_rules": [
-          "@Water Temple MQ/Longshot Chest,bow",
-          "@Water Temple MQ/Longshot Chest,dinsfire,magic"
+          "ocarina,lullaby,ironboots,bow",
+          "ocarina,lullaby,ironboots,dinsfire,magic",
+          "ocarina,lullaby,longshot,[ironboots],bow",
+          "ocarina,lullaby,longshot,[ironboots],dinsfire,magic"
         ],
         "item_count": 1
       },

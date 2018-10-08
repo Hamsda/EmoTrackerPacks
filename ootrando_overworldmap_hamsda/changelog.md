@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.3.2
+
+- changed beginning of MQ Water Temple:
+  - iron boots sequence break with longshot for map and compass chests
+  - ocarina and lullaby sequence break for longshot chest
+
 ## 2.1.3.1
 
 - changed scarecrow checks to be sequence breakable
