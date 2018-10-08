@@ -585,20 +585,10 @@
         "item_count": 1
       },
       {
-        "name": "Chest Behind Lobby",
-        "access_rules": [
-          "forest_small_keys:1,ocarina,time",
-          "@Forest Temple MQ/Bow Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Boss Key Chest",
         "access_rules": [
           "forest_small_keys:2,lift1",
-          "forest_small_keys:2,hoverboots",
-          "forest_small_keys:2,bombchu,[lift1]",
-          "forest_small_keys:2,bombchu,[hoverboots]"
+          "forest_small_keys:2,bombchu,[lift1]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -607,7 +597,9 @@
       {
         "name": "Redead Chest",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest"
+          "@Forest Temple MQ/Boss Key Chest",
+          "[@Forest Temple MQ/Boss Key Chest],[lift1],forest_small_keys:1",
+          "[@Forest Temple MQ/Boss Key Chest],[bombchu],forest_small_keys:1"
         ],
         "item_count": 1
       },
@@ -628,17 +620,17 @@
         "item_count": 1
       },
       {
-        "name": "NE Outdoors Lower Chest",
+        "name": "Bow Chest",
         "access_rules": [
-          "forest_small_keys:1,bow,longshot",
-          "@Forest Temple MQ/Falling Room Chest"
+          "@Forest Temple MQ/Boss Key Chest,forest_small_keys:3"
         ],
         "item_count": 1
       },
       {
-        "name": "Bow Chest",
+        "name": "Chest Behind Lobby",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest,forest_small_keys:3"
+          "forest_small_keys:1,ocarina,time",
+          "@Forest Temple MQ/Bow Chest"
         ],
         "item_count": 1
       },
@@ -659,15 +651,23 @@
       {
         "name": "Falling Room Chest",
         "access_rules": [
-          "forest_small_keys:5,bow",
-          "forest_small_keys:5,dinsfire,magic",
+          "@Forest Temple MQ/Bow Chest,forest_small_keys:5,bow",
+          "@Forest Temple MQ/Bow Chest,forest_small_keys:5,dinsfire,magic",
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "NE Outdoors Lower Chest",
+        "access_rules": [
+          "forest_small_keys:1,bow,longshot",
+          "@Forest Temple MQ/Falling Room Chest"
         ],
         "item_count": 1
       },
       {
         "name": "Near Boss Chest",
         "access_rules": [
-          "forest_small_keys:6,bow"
+          "@Forest Temple MQ/Falling Room Chest,forest_small_keys:6,bow"
         ],
         "item_count": 1
       },

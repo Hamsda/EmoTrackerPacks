@@ -585,20 +585,10 @@
         "item_count": 1
       },
       {
-        "name": "Chest Behind Lobby",
-        "access_rules": [
-          "ocarina,time",
-          "@Forest Temple MQ/Bow Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Boss Key Chest",
         "access_rules": [
           "lift1",
-          "hoverboots",
-          "bombchu,[lift1]",
-          "bombchu,[hoverboots]"
+          "bombchu,[lift1]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -607,7 +597,8 @@
       {
         "name": "Redead Chest",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest"
+          "[lift1]",
+          "[bombchu]"
         ],
         "item_count": 1
       },
@@ -628,17 +619,17 @@
         "item_count": 1
       },
       {
-        "name": "NE Outdoors Lower Chest",
+        "name": "Bow Chest",
         "access_rules": [
-          "bow,longshot",
-          "@Forest Temple MQ/Falling Room Chest"
+          "@Forest Temple MQ/Boss Key Chest"
         ],
         "item_count": 1
       },
       {
-        "name": "Bow Chest",
+        "name": "Chest Behind Lobby",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest"
+          "ocarina,time",
+          "@Forest Temple MQ/Bow Chest"
         ],
         "item_count": 1
       },
@@ -659,15 +650,23 @@
       {
         "name": "Falling Room Chest",
         "access_rules": [
-          "bow",
-          "dinsfire,magic",
+          "@Forest Temple MQ/Bow Chest,bow",
+          "@Forest Temple MQ/Bow Chest,dinsfire,magic",
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "NE Outdoors Lower Chest",
+        "access_rules": [
+          "bow,longshot",
+          "@Forest Temple MQ/Falling Room Chest"
         ],
         "item_count": 1
       },
       {
         "name": "Near Boss Chest",
         "access_rules": [
-          "bow"
+          "@Forest Temple MQ/Falling Room Chest,bow"
         ],
         "item_count": 1
       },
