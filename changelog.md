@@ -3,6 +3,7 @@
 ## 2.1.3.3
 
 - changed Biggoron to be visible with just Stone of Agony (so you can mark him off without access)
+- added Jabu Jabu GS51 sequence break with boomerang
 
 ## 2.1.3.2
 

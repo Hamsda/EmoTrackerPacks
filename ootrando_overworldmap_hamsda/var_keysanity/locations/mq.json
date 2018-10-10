@@ -525,7 +525,8 @@
             "name": "GS51 - Boomerang Room",
             "short_name": "Boomerang Room",
             "access_rules": [
-              "@Jabu Jabus Belly MQ/Boomerang Chest,ocarina,time"
+              "@Jabu Jabus Belly MQ/Boomerang Chest,ocarina,time",
+              "@Jabu Jabus Belly MQ/Boomerang Chest,boomerang,[ocarina],[time]"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
