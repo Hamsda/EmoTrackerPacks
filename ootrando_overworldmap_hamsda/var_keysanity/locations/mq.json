@@ -607,7 +607,8 @@
       {
         "name": "Well Chest",
         "access_rules": [
-          "forest_small_keys:1,bow"
+          "forest_small_keys:1,bow",
+          "@Forest Temple MQ/Redead Chest,ironboots,[bow]"
         ],
         "item_count": 1
       },
