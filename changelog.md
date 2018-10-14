@@ -5,6 +5,7 @@
 - changed Biggoron to be visible with just Stone of Agony (so you can mark him off without access)
 - added Jabu Jabu GS51 sequence break with boomerang
 - added MQ Forest Temple well chest sequence break with ironboots
+- fixed Gerudo Fortress location duplicates
 
 ## 2.1.3.2
 

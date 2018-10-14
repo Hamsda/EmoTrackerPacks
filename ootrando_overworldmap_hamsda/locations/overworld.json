@@ -4903,6 +4903,110 @@
                         "y": 581
                       }
                     ]
+                  },
+                  {
+                    "name": "Gerudo Fortress",
+                    "access_rules": [
+                      "[bow]",
+                      "[hookshot]",
+                      "[hoverboots]"
+                    ],
+                    "children": [
+                      {
+                        "name": "Rooftop Chest",
+                        "sections": [
+                          {
+                            "name": "Open it",
+                            "access_rules": [
+                              "hoverboots",
+                              "ocarina,[scarecrow],hookshot",
+                              "longshot"
+                            ],
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 544,
+                            "y": 358
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Horseback Archery",
+                        "sections": [
+                          {
+                            "name": "1000",
+                            "access_rules": [
+                              "ocarina,epona,bow,carpenter"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "1500",
+                            "access_rules": [
+                              "ocarina,epona,bow,carpenter",
+                              "{agony}"
+                            ],
+                            "capture_item": true,
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 620,
+                            "y": 438
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Archery Range (N)",
+                        "access_rules": [
+                          "dungeon_skulltulas"
+                        ],
+                        "sections": [
+                          {
+                            "name": "GS90",
+                            "access_rules": [
+                              "hookshot,carpenter"
+                            ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 660,
+                            "y": 306
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Rooftop (N)",
+                        "access_rules": [
+                          "dungeon_skulltulas"
+                        ],
+                        "sections": [
+                          {
+                            "name": "GS91",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 544,
+                            "y": 390
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
