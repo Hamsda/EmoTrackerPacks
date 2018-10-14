@@ -6,6 +6,7 @@
 - added Jabu Jabu GS51 sequence break with boomerang
 - added MQ Forest Temple well chest sequence break with ironboots
 - fixed Gerudo Fortress location duplicates
+- fixed Gerudo Fortress GS are not in dungeons
 
 ## 2.1.3.2
 

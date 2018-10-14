@@ -4964,7 +4964,7 @@
                       {
                         "name": "Archery Range (N)",
                         "access_rules": [
-                          "dungeon_skulltulas"
+                          "all_skulltulas"
                         ],
                         "sections": [
                           {
@@ -4988,7 +4988,7 @@
                       {
                         "name": "Rooftop (N)",
                         "access_rules": [
-                          "dungeon_skulltulas"
+                          "all_skulltulas"
                         ],
                         "sections": [
                           {
