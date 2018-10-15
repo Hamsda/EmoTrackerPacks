@@ -59,8 +59,8 @@
           [
             "wallet1",
             "magic",
-            "carpenter",
             "card",
+            "carpenter",
             "agony",
             "skulltula"
           ],
@@ -268,7 +268,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "gc_label",
+                    "item": "free_label",
                     "canvas_depth": 1,
                     "width": 32,
                     "height": 12
@@ -311,6 +311,13 @@
                 "margin": "1,2",
                 "width": 32,
                 "height": 32
+              },
+              {
+                "type": "item",
+                "item": "gc_label",
+                "margin": "1,2",
+                "width": 32,
+                "height": 12
               }
             ]
           }
@@ -389,8 +396,8 @@
             "requiemcheck",
             "nocturnecheck",
             "preludecheck",
-            "carpenter",
             "card",
+            "carpenter",
             "agony"
           ]
         ]
@@ -516,6 +523,15 @@
                     "canvas_depth": 1,
                     "width": 32,
                     "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "ice_label",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 20,
+                    "width": 32,
+                    "height": 12
                   }
                 ]
               },
@@ -575,14 +591,14 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "gc_label",
+                    "item": "free_label",
                     "canvas_depth": 1,
                     "width": 32,
                     "height": 12
                   },
                   {
                     "type": "item",
-                    "item": "ice_label",
+                    "item": "gc_label",
                     "canvas_depth": 1,
                     "canvas_left": 0,
                     "canvas_top": 20,

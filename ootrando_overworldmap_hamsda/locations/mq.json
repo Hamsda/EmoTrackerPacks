@@ -54,6 +54,7 @@
         "access_rules": [
           "@Deku Tree MQ/Compass Chest,ocarina,time"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -223,7 +224,6 @@
           "@Dodongos Cavern MQ/Under Grave",
           "{agony}"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -525,7 +525,8 @@
             "name": "GS51 - Boomerang Room",
             "short_name": "Boomerang Room",
             "access_rules": [
-              "@Jabu Jabus Belly MQ/Boomerang Chest,ocarina,time"
+              "@Jabu Jabus Belly MQ/Boomerang Chest,ocarina,time",
+              "@Jabu Jabus Belly MQ/Boomerang Chest,boomerang,[ocarina],[time]"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -548,6 +549,7 @@
             "access_rules": [
               "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,@logic/lens"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -605,7 +607,8 @@
       {
         "name": "Well Chest",
         "access_rules": [
-          "bow"
+          "bow",
+          "@Forest Temple MQ/Redead Chest,ironboots,[bow]"
         ],
         "item_count": 1
       },
@@ -758,7 +761,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "fire_mq,@Sheik in Crater,[redtunic]"
+      "fire_mq,@Sheik in Crater,@logic/redtunic"
     ],
     "sections": [
       {
@@ -770,9 +773,7 @@
         "access_rules": [
           "hoverboots,@logic/has fire",
           "hookshot,bow,firearrow,magic",
-          "hookshot,dinsfire,magic,bow",
-          "hookshot,dinsfire,magic,redtunic",
-          "longshot,dinsfire,magic"
+          "hookshot,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -806,7 +807,7 @@
       {
         "name": "Maze Lower Chest",
         "access_rules": [
-          "hammer,@logic/has fire"
+          "hammer,@logic/has fire,[redtunic]"
         ],
         "item_count": 1
       },
@@ -843,13 +844,14 @@
         "access_rules": [
           "@Fire Temple MQ/Freestanding Key"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple MQ/Freestanding Key,hammer,@logic/has fire",
-          "hoverboots,hammer,@logic/has fire"
+          "hoverboots,hammer,@logic/has fire,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -938,8 +940,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_mq,ironboots,hookshot,[bluetunic]",
-      "water_mq,scale2,hookshot,[bluetunic]"
+      "water_mq,ironboots,hookshot,@logic/bluetunic",
+      "water_mq,scale2,hookshot,@logic/bluetunic"
     ],
     "sections": [
       {
@@ -970,8 +972,8 @@
       {
         "name": "Central Pillar Chest",
         "access_rules": [
-          "ironboots,bow,firearrow,magic",
-          "ironboots,dinsfire,magic,ocarina,time"
+          "ironboots,bow,firearrow,magic,[bluetunic]",
+          "ironboots,dinsfire,magic,ocarina,time,[bluetunic]"
         ],
         "item_count": 1
       },
@@ -980,6 +982,7 @@
         "access_rules": [
           "longshot,ironboots,dinsfire,magic"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
@@ -990,6 +993,7 @@
           "@Water Temple MQ/Boss Key Chest,hoverboots",
           "@Water Temple MQ/Boss Key Chest,ocarina,[scarecrow]"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1033,6 +1037,7 @@
             "access_rules": [
               "@Water Temple MQ/Freestanding Key"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1200,6 +1205,21 @@
         "item_count": 1
       },
       {
+        "name": "Bomb Flower Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Wind Hint Chest,ocarina,lullaby,bow,time,longshot"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "access_rules": [
+          "@Shadow Temple MQ/Bomb Flower Chest"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Spike Walls Left Chest",
         "access_rules": [
           "@Shadow Temple MQ/Bomb Flower Chest"
@@ -1213,20 +1233,6 @@
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
-        "item_count": 1
-      },
-      {
-        "name": "Bomb Flower Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Wind Hint Chest,ocarina,lullaby,bow,time,longshot"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Freestanding Key",
-        "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest"
-        ],
         "item_count": 1
       },
       {
@@ -1376,6 +1382,7 @@
         "access_rules": [
           "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1457,6 +1464,7 @@
         "access_rules": [
           "@Spirit Temple MQ/Lower Adult Left Chest,hammer,ocarina,time,epona,sun,storm,lullaby"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1552,6 +1560,7 @@
             "access_rules": [
               "@Spirit Temple MQ/Lower Adult Right Chest"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1608,6 +1617,7 @@
           "sword1",
           "sticks,[sword1]"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1806,8 +1816,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
-          "@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
+          "@logic/can LA,lift3,ocarina,time,@logic/redtunic,bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
+          "@logic/can LA,lift3,ocarina,time,@logic/redtunic,bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1841,249 +1851,6 @@
             "map": "adult",
             "x": 1400,
             "y": 206
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Gerudo Fortress",
-    "parent": "Bridge Crossing",
-    "access_rules": [
-      "[bow]",
-      "[hookshot]",
-      "[hoverboots]"
-    ],
-    "children": [
-      {
-        "name": "Carpenter Rescue",
-        "sections": [
-          {
-            "name": "Free the carpenters",
-            "hosted_item": "carpenter",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 503,
-            "y": 392
-          }
-        ]
-      },
-      {
-        "name": "Rooftop Chest",
-        "sections": [
-          {
-            "name": "Open it",
-            "access_rules": [
-              "hoverboots",
-              "ocarina,[scarecrow],hookshot",
-              "longshot"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 544,
-            "y": 358
-          }
-        ]
-      },
-      {
-        "name": "Horseback Archery",
-        "sections": [
-          {
-            "name": "1000",
-            "access_rules": [
-              "ocarina,epona,bow,carpenter"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "1500",
-            "access_rules": [
-              "ocarina,epona,bow,carpenter",
-              "{agony}"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 620,
-            "y": 438
-          }
-        ]
-      },
-      {
-        "name": "Archery Range (N)",
-        "access_rules": [
-          "dungeon_skulltulas"
-        ],
-        "sections": [
-          {
-            "name": "GS90",
-            "access_rules": [
-              "hookshot,carpenter"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 660,
-            "y": 306
-          }
-        ]
-      },
-      {
-        "name": "Rooftop (N)",
-        "access_rules": [
-          "dungeon_skulltulas"
-        ],
-        "sections": [
-          {
-            "name": "GS91",
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 544,
-            "y": 390
-          }
-        ]
-      },
-      {
-        "name": "Gerudo Training Grounds MQ",
-        "access_rules": [
-          "gtg_mq,carpenter,card"
-        ],
-        "sections": [
-          {
-            "name": "Lobby Left Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Lobby Right Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Hidden Ceiling Chest",
-            "access_rules": [
-              "@logic/lens"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Maze Path First Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Maze Path Second Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Maze Path Third Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Dinolfos Chest",
-            "access_rules": [
-              "bow",
-              "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Underwater Silver Rupee Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,[bluetunic]",
-              "@Gerudo Training Grounds MQ/Maze Right Central Chest,@logic/has fire,ironboots,[bluetunic]"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "First Iron Knuckle Chest",
-            "access_rules": [
-              "@logic/has fire"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Before Heavy Block Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/First Iron Knuckle Chest,longshot"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Heavy Block Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Before Heavy Block Chest,lift2"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Eye Statue Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,bow"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Second Iron Knuckle Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Before Heavy Block Chest,ocarina,time,@logic/lens,bottle"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Flame Circle Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Maze Right Central Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,hammer"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Maze Right Side Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Maze Right Central Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Ice Arrows Chest",
-            "access_rules": [
-              "@Gerudo Training Grounds MQ/Maze Right Central Chest"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 481,
-            "y": 444
           }
         ]
       }
@@ -2179,6 +1946,130 @@
             "y": 276
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Gerudo Training Grounds MQ",
+    "parent": "Gerudo Fortress",
+    "access_rules": [
+      "gtg_mq,carpenter,card"
+    ],
+    "sections": [
+      {
+        "name": "Lobby Left Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Lobby Right Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Hidden Ceiling Chest",
+        "access_rules": [
+          "@logic/lens"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path First Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Second Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Third Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Dinolfos Chest",
+        "access_rules": [
+          "bow",
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Silver Rupee Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,@logic/bluetunic",
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,@logic/has fire,ironboots,@logic/bluetunic"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "First Iron Knuckle Chest",
+        "access_rules": [
+          "@logic/has fire"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Before Heavy Block Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/First Iron Knuckle Chest,longshot"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Heavy Block Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,lift2"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,bow"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Second Iron Knuckle Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,ocarina,time,@logic/lens,bottle"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Flame Circle Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Right Central Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,hammer"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Right Side Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Ice Arrows Chest",
+        "access_rules": [
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "adult",
+        "x": 481,
+        "y": 444
       }
     ]
   }

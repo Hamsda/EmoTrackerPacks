@@ -156,7 +156,6 @@
           "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives",
           "{agony}"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -635,7 +634,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "fire_reg,@Sheik in Crater,[redtunic]"
+      "fire_reg,@Sheik in Crater,@logic/redtunic"
     ],
     "sections": [
       {
@@ -672,7 +671,7 @@
       {
         "name": "South Boulder Maze",
         "access_rules": [
-          "[lift1]"
+          "[lift1],[redtunic]"
         ],
         "item_count": 1
       },
@@ -726,7 +725,6 @@
           "@Fire Temple/Compass Chest,hammer,ocarina,time",
           "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
           "@Fire Temple/Compass Chest,hammer,@logic/explosives,[ocarina],[time]",
-
         ],
         "item_count": 1
       },
@@ -743,7 +741,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple/Compass Chest,@logic/explosives,hammer",
-          "hoverboots,hammer"
+          "hoverboots,hammer,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -830,7 +828,7 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_reg,ironboots,hookshot,[bluetunic]"
+      "water_reg,ironboots,hookshot,@logic/bluetunic"
     ],
     "sections": [
       {
@@ -860,7 +858,7 @@
       {
         "name": "Basement",
         "access_rules": [
-          "ocarina,lullaby"
+          "ocarina,lullaby,[bluetunic]"
         ],
         "item_count": 1
       },
@@ -1044,7 +1042,6 @@
         "access_rules": [
           "@Shadow Temple/Like-Like Room,lift1"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1211,7 +1208,6 @@
           "@Spirit Temple/Lower Child",
           "@Spirit Temple/Mirror Room"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1254,7 +1250,6 @@
         "access_rules": [
           "sword2,lift2"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1294,7 +1289,6 @@
         "access_rules": [
           "@Spirit Temple/Mirror Room,@logic/explosives,@logic/lens"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1468,10 +1462,10 @@
       },
       {
         "name": "Locked Pits",
-        "clear_as_group": false,
         "access_rules": [
           "@logic/lens"
         ],
+        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1520,6 +1514,7 @@
         "access_rules": [
           "ocarina,lullaby,[sword1]"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1653,8 +1648,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,[redtunic]",
-          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
+          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,@logic/redtunic",
+          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,@logic/redtunic"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1688,244 +1683,6 @@
             "map": "adult",
             "x": 1400,
             "y": 206
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Gerudo Fortress",
-    "parent": "Bridge Crossing",
-    "access_rules": [
-      "[bow]",
-      "[hookshot]",
-      "[hoverboots]"
-    ],
-    "children": [
-      {
-        "name": "Carpenter Rescue",
-        "sections": [
-          {
-            "name": "Free the carpenters",
-            "hosted_item": "carpenter",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 503,
-            "y": 392
-          }
-        ]
-      },
-      {
-        "name": "Rooftop Chest",
-        "sections": [
-          {
-            "name": "Open it",
-            "access_rules": [
-              "hoverboots",
-              "ocarina,[scarecrow],hookshot",
-              "longshot"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 544,
-            "y": 358
-          }
-        ]
-      },
-      {
-        "name": "Horseback Archery",
-        "sections": [
-          {
-            "name": "1000",
-            "access_rules": [
-              "ocarina,epona,bow,carpenter"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "1500",
-            "access_rules": [
-              "ocarina,epona,bow,carpenter",
-              "{agony}"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 620,
-            "y": 438
-          }
-        ]
-      },
-      {
-        "name": "Archery Range (N)",
-        "access_rules": [
-          "dungeon_skulltulas"
-        ],
-        "sections": [
-          {
-            "name": "GS90",
-            "access_rules": [
-              "hookshot,carpenter"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 660,
-            "y": 306
-          }
-        ]
-      },
-      {
-        "name": "Rooftop (N)",
-        "access_rules": [
-          "dungeon_skulltulas"
-        ],
-        "sections": [
-          {
-            "name": "GS91",
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 544,
-            "y": 390
-          }
-        ]
-      },
-      {
-        "name": "Gerudo Training Grounds",
-        "access_rules": [
-          "gtg_reg,carpenter,card"
-        ],
-        "sections": [
-          {
-            "name": "Lobby",
-            "access_rules": [
-              "bow"
-            ],
-            "item_count": 2
-          },
-          {
-            "name": "Stalfos",
-            "item_count": 1
-          },
-          {
-            "name": "Wolfos",
-            "access_rules": [
-              "hookshot"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Like-Like",
-            "access_rules": [
-              "hookshot,lift2,@logic/lens"
-            ],
-            "item_count": 4
-          },
-          {
-            "name": "Eye Statue",
-            "access_rules": [
-              "hookshot,bow,@logic/lens",
-              "hookshot,hammer,bow"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Near Scarecrow",
-            "access_rules": [
-              "hookshot,bow,@logic/lens"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Flaming Enemies",
-            "access_rules": [
-              "hookshot"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Hammer Pillar",
-            "access_rules": [
-              "hookshot,[hammer]"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Lava Pit Ledge",
-            "access_rules": [
-              "[hookshot],[ocarina],[time]",
-              "@logic/explosives,ocarina,time"
-            ],
-            "item_count": 3
-          },
-          {
-            "name": "Under Water",
-            "access_rules": [
-              "hookshot,ocarina,time,ironboots,[bluetunic]",
-              "{agony}"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Beamos",
-            "access_rules": [
-              "@logic/explosives"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Above Maze",
-            "access_rules": [
-              "@logic/lens"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Maze 1",
-            "item_count": 1
-          },
-          {
-            "name": "Maze 2",
-            "item_count": 1
-          },
-          {
-            "name": "Maze 3",
-            "item_count": 1
-          },
-          {
-            "name": "Ice Arrow Chest",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "x": 481,
-            "y": 444
           }
         ]
       }
@@ -2020,6 +1777,142 @@
             "y": 276
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Carpenter Rescue",
+    "parent": "Gerudo Fortress",
+    "sections": [
+      {
+        "name": "Free the carpenters",
+        "hosted_item": "carpenter",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "adult",
+        "x": 503,
+        "y": 392
+      }
+    ]
+  },
+  {
+    "name": "Gerudo Training Grounds",
+    "parent": "Gerudo Fortress",
+    "access_rules": [
+      "gtg_reg,carpenter,card"
+    ],
+    "sections": [
+      {
+        "name": "Lobby",
+        "access_rules": [
+          "bow"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Stalfos",
+        "item_count": 1
+      },
+      {
+        "name": "Wolfos",
+        "access_rules": [
+          "hookshot"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Like-Like",
+        "access_rules": [
+          "hookshot,lift2,@logic/lens"
+        ],
+        "item_count": 4
+      },
+      {
+        "name": "Eye Statue",
+        "access_rules": [
+          "hookshot,bow,@logic/lens",
+          "hookshot,hammer,bow"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Near Scarecrow",
+        "access_rules": [
+          "hookshot,bow,@logic/lens"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Flaming Enemies",
+        "access_rules": [
+          "hookshot"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hammer Pillar",
+        "access_rules": [
+          "hookshot,[hammer]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Pit Ledge",
+        "access_rules": [
+          "[hookshot],[ocarina],[time]",
+          "@logic/explosives,ocarina,time"
+        ],
+        "item_count": 3
+      },
+      {
+        "name": "Under Water",
+        "access_rules": [
+          "hookshot,ocarina,time,ironboots,@logic/bluetunic",
+          "{agony}"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Beamos",
+        "access_rules": [
+          "@logic/explosives"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Above Maze",
+        "access_rules": [
+          "@logic/lens"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze 1",
+        "item_count": 1
+      },
+      {
+        "name": "Maze 2",
+        "item_count": 1
+      },
+      {
+        "name": "Maze 3",
+        "item_count": 1
+      },
+      {
+        "name": "Ice Arrow Chest",
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "adult",
+        "x": 481,
+        "y": 444
       }
     ]
   }

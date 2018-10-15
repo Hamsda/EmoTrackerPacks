@@ -185,5 +185,22 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Fewer Tunic Requirements",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/fewer_tunics_no.png",
+        "codes": "fewer_tunics,fewer_tunics_no"
+      },
+      {
+        "img": "images/fewer_tunics_yes.png",
+        "codes": "fewer_tunics,fewer_tunics_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

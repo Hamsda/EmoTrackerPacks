@@ -73,6 +73,22 @@
         "item_count": 1
       },
       {
+        "name": "redtunic",
+        "access_rules": [
+          "fewer_tunics_yes",
+          "fewer_tunics_no,[redtunic]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "bluetunic",
+        "access_rules": [
+          "fewer_tunics_yes",
+          "fewer_tunics_no,[bluetunic]"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "can leave forest",
         "access_rules": [
           "open_forest",
@@ -849,6 +865,7 @@
                 "sections": [
                   {
                     "name": "Item",
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -934,6 +951,7 @@
                       "@logic/explosives,dinsfire,magic,boomerang",
                       "sword2,hammer,@logic/has fire,hookshot"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2817,6 +2835,7 @@
                         "access_rules": [
                           "boomerang,ocarina,storm,@logic/explosives"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4125,7 +4144,8 @@
                   "ocarina,bolero,beans_plant_no,beans",
                   "ocarina,bolero,bean_trail_yes",
                   "ocarina,bolero,hoverboots",
-                  "ocarina,bolero,hookshot"
+                  "ocarina,bolero,hookshot",
+                  "{agony}"
                 ],
                 "sections": [
                   {
@@ -4567,7 +4587,7 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "ironboots,[bluetunic]",
+                      "ironboots,@logic/bluetunic",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4613,6 +4633,7 @@
                     "access_rules": [
                       "lift2,@logic/can blast,hookshot"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -4900,6 +4921,110 @@
                         "map": "adult",
                         "x": 571,
                         "y": 581
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gerudo Fortress",
+                    "access_rules": [
+                      "[bow]",
+                      "[hookshot]",
+                      "[hoverboots]"
+                    ],
+                    "children": [
+                      {
+                        "name": "Rooftop Chest",
+                        "sections": [
+                          {
+                            "name": "Open it",
+                            "access_rules": [
+                              "hoverboots",
+                              "ocarina,[scarecrow],hookshot",
+                              "longshot"
+                            ],
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 544,
+                            "y": 358
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Horseback Archery",
+                        "sections": [
+                          {
+                            "name": "1000",
+                            "access_rules": [
+                              "ocarina,epona,bow,carpenter"
+                            ],
+                            "item_count": 1
+                          },
+                          {
+                            "name": "1500",
+                            "access_rules": [
+                              "ocarina,epona,bow,carpenter",
+                              "{agony}"
+                            ],
+                            "capture_item": true,
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 620,
+                            "y": 438
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Archery Range (N)",
+                        "access_rules": [
+                          "all_skulltulas"
+                        ],
+                        "sections": [
+                          {
+                            "name": "GS90",
+                            "access_rules": [
+                              "hookshot,carpenter"
+                            ],
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 660,
+                            "y": 306
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Rooftop (N)",
+                        "access_rules": [
+                          "all_skulltulas"
+                        ],
+                        "sections": [
+                          {
+                            "name": "GS91",
+                            "chest_unopened_img": "images/skulltula.png",
+                            "chest_opened_img": "images/skulltula_token.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "adult",
+                            "x": 544,
+                            "y": 390
+                          }
+                        ]
                       }
                     ]
                   }
