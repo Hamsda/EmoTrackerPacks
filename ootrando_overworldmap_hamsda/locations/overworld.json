@@ -73,6 +73,22 @@
         "item_count": 1
       },
       {
+        "name": "redtunic",
+        "access_rules": [
+          "fewer_tunics_yes",
+          "fewer_tunics_no,[redtunic]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "bluetunic",
+        "access_rules": [
+          "fewer_tunics_yes",
+          "fewer_tunics_no,[bluetunic]"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "can leave forest",
         "access_rules": [
           "open_forest",
@@ -4568,7 +4584,7 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "ironboots,[bluetunic]",
+                      "ironboots,@logic/bluetunic",
                       "{agony}"
                     ],
                     "capture_item": true,

@@ -635,7 +635,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "fire_reg,@Sheik in Crater,[redtunic]"
+      "fire_reg,@Sheik in Crater,@logic/redtunic"
     ],
     "sections": [
       {
@@ -675,7 +675,7 @@
       {
         "name": "South Boulder Maze",
         "access_rules": [
-          "fire_small_keys:3,[lift1]"
+          "fire_small_keys:3,[lift1],[redtunic]"
         ],
         "item_count": 1
       },
@@ -730,7 +730,6 @@
           "@Fire Temple/Compass Chest,fire_small_keys:7,hammer,ocarina,time",
           "@Fire Temple/Compass Chest,fire_small_keys:7,@logic/explosives,hammer,[ocarina],[time]",
           "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
-
         ],
         "item_count": 1
       },
@@ -748,7 +747,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple/Compass Chest,fire_small_keys:7,@logic/explosives,fire_boss_key,hammer",
-          "hoverboots,fire_boss_key,hammer"
+          "hoverboots,fire_boss_key,hammer,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -835,7 +834,7 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_reg,ironboots,hookshot,[bluetunic]"
+      "water_reg,ironboots,hookshot,@logic/bluetunic"
     ],
     "sections": [
       {
@@ -865,9 +864,9 @@
       {
         "name": "Basement",
         "access_rules": [
-          "water_small_keys:1,ocarina,lullaby",
-          "ocarina,lullaby,bow",
-          "ocarina,lullaby,dinsfire,magic"
+          "water_small_keys:1,ocarina,lullaby,[bluetunic]",
+          "ocarina,lullaby,bow,[bluetunic]",
+          "ocarina,lullaby,dinsfire,magic,[bluetunic]"
         ],
         "item_count": 1
       },
@@ -1667,8 +1666,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,[redtunic]",
-          "gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
+          "gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,@logic/redtunic",
+          "gc_small_keys:2,@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,@logic/redtunic"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1915,9 +1914,9 @@
       {
         "name": "Under Water",
         "access_rules": [
-          "hookshot,@logic/lens,ocarina,time,ironboots,[bluetunic]",
-          "@logic/explosives,hookshot,ocarina,time,ironboots,[bluetunic]",
-          "gtg_small_keys:2,hookshot,ocarina,time,ironboots,[bluetunic]",
+          "hookshot,@logic/lens,ocarina,time,ironboots,@logic/bluetunic",
+          "@logic/explosives,hookshot,ocarina,time,ironboots,@logic/bluetunic",
+          "gtg_small_keys:2,hookshot,ocarina,time,ironboots,@logic/bluetunic",
           "{agony}"
         ],
         "capture_item": true,

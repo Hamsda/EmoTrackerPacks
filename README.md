@@ -76,6 +76,13 @@ This setting changes where the logic requires the Lens of Truth.
 - ![Wasteland and Chest Minigame](ootrando_overworldmap_hamsda/images/lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
 - ![Only Chest Minigame](ootrando_overworldmap_hamsda/images/lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
 
+### Fewer Tunic Requirements
+
+This setting changes where the [logic requires Goron and Zora tunics](https://github.com/TestRunnerSRL/OoT-Randomizer/tree/Dev#fewer-tunic-requirements).
+
+- ![Required everywhere](ootrando_overworldmap_hamsda/images/fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
+- ![Fewer requirements](ootrando_overworldmap_hamsda/images/fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
+
 ### Bombchus in logic
 
 This setting determines if Bombchus are considered by the logic.

@@ -760,7 +760,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "fire_mq,@Sheik in Crater,[redtunic]"
+      "fire_mq,@Sheik in Crater,@logic/redtunic"
     ],
     "sections": [
       {
@@ -772,9 +772,7 @@
         "access_rules": [
           "hoverboots,@logic/has fire",
           "hookshot,bow,firearrow,magic",
-          "hookshot,dinsfire,magic,bow",
-          "hookshot,dinsfire,magic,redtunic",
-          "longshot,dinsfire,magic"
+          "hookshot,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -808,7 +806,7 @@
       {
         "name": "Maze Lower Chest",
         "access_rules": [
-          "hammer,@logic/has fire"
+          "hammer,@logic/has fire,[redtunic]"
         ],
         "item_count": 1
       },
@@ -851,7 +849,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple MQ/Freestanding Key,hammer,@logic/has fire",
-          "hoverboots,hammer,@logic/has fire"
+          "hoverboots,hammer,@logic/has fire,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -940,8 +938,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_mq,ironboots,hookshot,[bluetunic]",
-      "water_mq,scale2,hookshot,[bluetunic]"
+      "water_mq,ironboots,hookshot,@logic/bluetunic",
+      "water_mq,scale2,hookshot,@logic/bluetunic"
     ],
     "sections": [
       {
@@ -972,8 +970,8 @@
       {
         "name": "Central Pillar Chest",
         "access_rules": [
-          "ironboots,bow,firearrow,magic",
-          "ironboots,dinsfire,magic,ocarina,time"
+          "ironboots,bow,firearrow,magic,[bluetunic]",
+          "ironboots,dinsfire,magic,ocarina,time,[bluetunic]"
         ],
         "item_count": 1
       },
@@ -1808,8 +1806,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
-          "@logic/can LA,lift3,ocarina,time,[redtunic],bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
+          "@logic/can LA,lift3,ocarina,time,@logic/redtunic,bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
+          "@logic/can LA,lift3,ocarina,time,@logic/redtunic,bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1986,8 +1984,8 @@
       {
         "name": "Underwater Silver Rupee Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,[bluetunic]",
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest,@logic/has fire,ironboots,[bluetunic]"
+          "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,@logic/bluetunic",
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,@logic/has fire,ironboots,@logic/bluetunic"
         ],
         "item_count": 1
       },

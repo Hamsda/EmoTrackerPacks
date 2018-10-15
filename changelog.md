@@ -7,6 +7,7 @@
 - added MQ Forest Temple well chest sequence break with ironboots
 - fixed Gerudo Fortress location duplicates
 - fixed Gerudo Fortress GS are not in dungeons
+- added fewer tunic requirements option and logic
 
 ## 2.1.3.2
 

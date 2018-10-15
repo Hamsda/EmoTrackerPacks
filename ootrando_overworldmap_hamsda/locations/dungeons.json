@@ -635,7 +635,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "fire_reg,@Sheik in Crater,[redtunic]"
+      "fire_reg,@Sheik in Crater,@logic/redtunic"
     ],
     "sections": [
       {
@@ -672,7 +672,7 @@
       {
         "name": "South Boulder Maze",
         "access_rules": [
-          "[lift1]"
+          "[lift1],[redtunic]"
         ],
         "item_count": 1
       },
@@ -726,7 +726,6 @@
           "@Fire Temple/Compass Chest,hammer,ocarina,time",
           "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
           "@Fire Temple/Compass Chest,hammer,@logic/explosives,[ocarina],[time]",
-
         ],
         "item_count": 1
       },
@@ -743,7 +742,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple/Compass Chest,@logic/explosives,hammer",
-          "hoverboots,hammer"
+          "hoverboots,hammer,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -830,7 +829,7 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_reg,ironboots,hookshot,[bluetunic]"
+      "water_reg,ironboots,hookshot,@logic/bluetunic"
     ],
     "sections": [
       {
@@ -860,7 +859,7 @@
       {
         "name": "Basement",
         "access_rules": [
-          "ocarina,lullaby"
+          "ocarina,lullaby,[bluetunic]"
         ],
         "item_count": 1
       },
@@ -1653,8 +1652,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,[redtunic]",
-          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,[redtunic]"
+          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,@logic/lens,@logic/redtunic",
+          "@logic/can LA,longshot,bombchu,shield3,lift3,bottle,hammer,@logic/has fire,hoverboots,@logic/redtunic"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1875,7 +1874,7 @@
       {
         "name": "Under Water",
         "access_rules": [
-          "hookshot,ocarina,time,ironboots,[bluetunic]",
+          "hookshot,ocarina,time,ironboots,@logic/bluetunic",
           "{agony}"
         ],
         "capture_item": true,
