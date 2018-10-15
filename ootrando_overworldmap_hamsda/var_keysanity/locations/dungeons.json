@@ -1057,7 +1057,6 @@
         "access_rules": [
           "@Shadow Temple/Like-Like Room,lift1"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1224,7 +1223,6 @@
           "@Spirit Temple/Lower Child,spirit_small_keys:1",
           "@Spirit Temple/Mirror Room"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1267,7 +1265,6 @@
         "access_rules": [
           "sword2,lift2,spirit_small_keys:1"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1307,7 +1304,6 @@
         "access_rules": [
           "@Spirit Temple/Mirror Room,spirit_small_keys:2,@logic/explosives,@logic/lens"
         ],
-        "clear_as_group": false,
         "item_count": 2
       },
       {
@@ -1481,10 +1477,10 @@
       },
       {
         "name": "Locked Pits",
-        "clear_as_group": false,
         "access_rules": [
           "botw_small_keys:1,@logic/lens"
         ],
+        "clear_as_group": false,
         "item_count": 2
       },
       {
