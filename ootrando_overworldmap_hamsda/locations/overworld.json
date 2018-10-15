@@ -865,6 +865,7 @@
                 "sections": [
                   {
                     "name": "Item",
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -950,6 +951,7 @@
                       "@logic/explosives,dinsfire,magic,boomerang",
                       "sword2,hammer,@logic/has fire,hookshot"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2833,6 +2835,7 @@
                         "access_rules": [
                           "boomerang,ocarina,storm,@logic/explosives"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4630,6 +4633,7 @@
                     "access_rules": [
                       "lift2,@logic/can blast,hookshot"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1

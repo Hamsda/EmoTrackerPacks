@@ -156,7 +156,6 @@
           "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives",
           "{agony}"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1529,6 +1528,7 @@
         "access_rules": [
           "ocarina,lullaby,[sword1]"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1958,6 +1958,7 @@
         "access_rules": [
           "gtg_small_keys:7"
         ],
+        "capture_item": true,
         "item_count": 1
       }
     ],

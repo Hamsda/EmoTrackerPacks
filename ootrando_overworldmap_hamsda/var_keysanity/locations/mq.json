@@ -54,6 +54,7 @@
         "access_rules": [
           "@Deku Tree MQ/Compass Chest,ocarina,time"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -223,7 +224,6 @@
           "@Dodongos Cavern MQ/Under Grave",
           "{agony}"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -549,6 +549,7 @@
             "access_rules": [
               "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,@logic/lens"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -850,6 +851,7 @@
         "access_rules": [
           "@Fire Temple MQ/Freestanding Key,fire_small_keys:3"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -987,6 +989,7 @@
         "access_rules": [
           "water_small_keys:1,longshot,ironboots,dinsfire,magic"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
@@ -997,6 +1000,7 @@
           "@Water Temple MQ/Boss Key Chest,hoverboots",
           "@Water Temple MQ/Boss Key Chest,ocarina,[scarecrow]"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1040,6 +1044,7 @@
             "access_rules": [
               "@Water Temple MQ/Freestanding Key,water_small_keys:2"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1207,6 +1212,21 @@
         "item_count": 1
       },
       {
+        "name": "Bomb Flower Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,bow,time,longshot"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "access_rules": [
+          "@Shadow Temple MQ/Bomb Flower Chest"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Spike Walls Left Chest",
         "access_rules": [
           "@Shadow Temple MQ/Bomb Flower Chest,shadow_small_keys:5"
@@ -1220,20 +1240,6 @@
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
-        "item_count": 1
-      },
-      {
-        "name": "Bomb Flower Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,bow,time,longshot"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Freestanding Key",
-        "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest"
-        ],
         "item_count": 1
       },
       {
@@ -1383,6 +1389,7 @@
         "access_rules": [
           "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer,spirit_small_keys:2"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1464,6 +1471,7 @@
         "access_rules": [
           "@Spirit Temple MQ/Lower Adult Left Chest,spirit_small_keys:1,hammer,ocarina,time,epona,sun,storm,lullaby"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1557,6 +1565,7 @@
             "access_rules": [
               "@Spirit Temple MQ/Lower Adult Right Chest"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1613,6 +1622,7 @@
           "sword1",
           "sticks,[sword1]"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1995,6 +2005,7 @@
           "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,@logic/bluetunic",
           "@Gerudo Training Grounds MQ/Maze Right Central Chest,@logic/has fire,ironboots,@logic/bluetunic"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2058,6 +2069,7 @@
         "access_rules": [
           "@Gerudo Training Grounds MQ/Maze Right Central Chest,gtg_small_keys:3"
         ],
+        "capture_item": true,
         "item_count": 1
       }
     ],
