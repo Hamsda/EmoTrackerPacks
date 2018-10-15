@@ -8,6 +8,11 @@
 - fixed Gerudo Fortress location duplicates
 - fixed Gerudo Fortress GS are not in dungeons
 - added fewer tunic requirements option and logic
+- changed layouts:
+  - added a few items to capture layout and rearranged it
+  - changed dungeon label font
+  - added free label back in and rearranged layouts to fit it
+  - changed the dungeon labels to be separate from medallions for minimalist variant (so one can cycle both ways through it)
 
 ## 2.1.3.2
 

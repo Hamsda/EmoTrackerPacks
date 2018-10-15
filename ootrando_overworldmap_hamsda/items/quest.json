@@ -303,212 +303,218 @@
     "codes": "sapphire"
   },
   {
-    "name": "Forest Medallion with Label",
-    "type": "progressive_toggle",
+    "name": "Forest Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/forestmedallion.png",
+        "img": "images/label_unknown.png",
         "codes": "forestmedlabel"
       },
       {
-        "img": "images/forestmedallion_deku.png",
+        "img": "images/label_deku.png",
       },
       {
-        "img": "images/forestmedallion_dc.png",
+        "img": "images/label_dodongo.png",
       },
       {
-        "img": "images/forestmedallion_jabu.png",
+        "img": "images/label_jabu.png",
       },
       {
-        "img": "images/forestmedallion_ft.png",
+        "img": "images/label_forest.png",
       },
       {
-        "img": "images/forestmedallion_fit.png",
+        "img": "images/label_fire.png",
       },
       {
-        "img": "images/forestmedallion_wt.png",
+        "img": "images/label_water.png",
       },
       {
-        "img": "images/forestmedallion_st.png",
+        "img": "images/label_spirit.png",
       },
       {
-        "img": "images/forestmedallion_sht.png",
+        "img": "images/label_shadow.png",
       }
     ]
   },
   {
-    "name": "Fire Medallion with Label",
-    "type": "progressive_toggle",
+    "name": "Fire Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/firemedallion.png",
+        "img": "images/label_unknown.png",
         "codes": "firemedlabel"
       },
       {
-        "img": "images/firemedallion_deku.png",
+        "img": "images/label_deku.png",
       },
       {
-        "img": "images/firemedallion_dc.png",
+        "img": "images/label_dodongo.png",
       },
       {
-        "img": "images/firemedallion_jabu.png",
+        "img": "images/label_jabu.png",
       },
       {
-        "img": "images/firemedallion_ft.png",
+        "img": "images/label_forest.png",
       },
       {
-        "img": "images/firemedallion_fit.png",
+        "img": "images/label_fire.png",
       },
       {
-        "img": "images/firemedallion_wt.png",
+        "img": "images/label_water.png",
       },
       {
-        "img": "images/firemedallion_st.png",
+        "img": "images/label_spirit.png",
       },
       {
-        "img": "images/firemedallion_sht.png",
+        "img": "images/label_shadow.png",
       }
     ]
   },
   {
-    "name": "Water Medallion with Label",
-    "type": "progressive_toggle",
+    "name": "Water Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/watermedallion.png",
+        "img": "images/label_unknown.png",
         "codes": "watermedlabel"
       },
       {
-        "img": "images/watermedallion_deku.png",
+        "img": "images/label_deku.png",
       },
       {
-        "img": "images/watermedallion_dc.png",
+        "img": "images/label_dodongo.png",
       },
       {
-        "img": "images/watermedallion_jabu.png",
+        "img": "images/label_jabu.png",
       },
       {
-        "img": "images/watermedallion_ft.png",
+        "img": "images/label_forest.png",
       },
       {
-        "img": "images/watermedallion_fit.png",
+        "img": "images/label_fire.png",
       },
       {
-        "img": "images/watermedallion_wt.png",
+        "img": "images/label_water.png",
       },
       {
-        "img": "images/watermedallion_st.png",
+        "img": "images/label_spirit.png",
       },
       {
-        "img": "images/watermedallion_sht.png",
+        "img": "images/label_shadow.png",
       }
     ]
   },
   {
-    "name": "Spirit Medallion with Label",
-    "type": "progressive_toggle",
+    "name": "Spirit Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/spiritmedallion.png",
+        "img": "images/label_unknown.png",
         "codes": "spiritmedlabel"
       },
       {
-        "img": "images/spiritmedallion_deku.png",
+        "img": "images/label_deku.png",
       },
       {
-        "img": "images/spiritmedallion_dc.png",
+        "img": "images/label_dodongo.png",
       },
       {
-        "img": "images/spiritmedallion_jabu.png",
+        "img": "images/label_jabu.png",
       },
       {
-        "img": "images/spiritmedallion_ft.png",
+        "img": "images/label_forest.png",
       },
       {
-        "img": "images/spiritmedallion_fit.png",
+        "img": "images/label_fire.png",
       },
       {
-        "img": "images/spiritmedallion_wt.png",
+        "img": "images/label_water.png",
       },
       {
-        "img": "images/spiritmedallion_st.png",
+        "img": "images/label_spirit.png",
       },
       {
-        "img": "images/spiritmedallion_sht.png",
+        "img": "images/label_shadow.png",
       }
     ]
   },
   {
-    "name": "Shadow Medallion with Label",
-    "type": "progressive_toggle",
+    "name": "Shadow Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/shadowmedallion.png",
+        "img": "images/label_unknown.png",
         "codes": "shadowmedlabel"
       },
       {
-        "img": "images/shadowmedallion_deku.png",
+        "img": "images/label_deku.png",
       },
       {
-        "img": "images/shadowmedallion_dc.png",
+        "img": "images/label_dodongo.png",
       },
       {
-        "img": "images/shadowmedallion_jabu.png",
+        "img": "images/label_jabu.png",
       },
       {
-        "img": "images/shadowmedallion_ft.png",
+        "img": "images/label_forest.png",
       },
       {
-        "img": "images/shadowmedallion_fit.png",
+        "img": "images/label_fire.png",
       },
       {
-        "img": "images/shadowmedallion_wt.png",
+        "img": "images/label_water.png",
       },
       {
-        "img": "images/shadowmedallion_st.png",
+        "img": "images/label_spirit.png",
       },
       {
-        "img": "images/shadowmedallion_sht.png",
+        "img": "images/label_shadow.png",
       }
     ]
   },
   {
-    "name": "Light Medallion with Label",
-    "type": "progressive_toggle",
+    "name": "Light Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/lightmedallion.png",
+        "img": "images/label_unknown.png",
         "codes": "lightmedlabel"
       },
       {
-        "img": "images/lightmedallion_deku.png",
+        "img": "images/label_deku.png",
       },
       {
-        "img": "images/lightmedallion_dc.png",
+        "img": "images/label_dodongo.png",
       },
       {
-        "img": "images/lightmedallion_jabu.png",
+        "img": "images/label_jabu.png",
       },
       {
-        "img": "images/lightmedallion_ft.png",
+        "img": "images/label_forest.png",
       },
       {
-        "img": "images/lightmedallion_fit.png",
+        "img": "images/label_fire.png",
       },
       {
-        "img": "images/lightmedallion_wt.png",
+        "img": "images/label_water.png",
       },
       {
-        "img": "images/lightmedallion_st.png",
+        "img": "images/label_spirit.png",
       },
       {
-        "img": "images/lightmedallion_sht.png",
+        "img": "images/label_shadow.png",
       }
     ]
   },

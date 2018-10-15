@@ -2,7 +2,7 @@
   {
     "name": "Freebie Label",
     "type": "static",
-    "img": "images/free.png",
+    "img": "images/label_free.png",
     "codes": "free_label"
   },
   {
@@ -49,11 +49,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/deku.png",
+        "img": "images/label_deku.png",
         "codes": "deku_label,deku_reg"
       },
       {
-        "img": "images/deku_mq.png",
+        "img": "images/label_deku_mq.png",
         "codes": "deku_label,deku_mq",
         "inherit_codes": false
       }
@@ -102,11 +102,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/dodongo.png",
+        "img": "images/label_dodongo.png",
         "codes": "dodongo_label,dodongo_reg"
       },
       {
-        "img": "images/dodongo_mq.png",
+        "img": "images/label_dodongo_mq.png",
         "codes": "dodongo_label,dodongo_mq",
         "inherit_codes": false
       }
@@ -155,11 +155,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/jabu.png",
+        "img": "images/label_jabu.png",
         "codes": "jabu_label,jabu_reg"
       },
       {
-        "img": "images/jabu_mq.png",
+        "img": "images/label_jabu_mq.png",
         "codes": "jabu_label,jabu_mq",
         "inherit_codes": false
       }
@@ -208,11 +208,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/forest.png",
+        "img": "images/label_forest.png",
         "codes": "forest_label,forest_reg"
       },
       {
-        "img": "images/forest_mq.png",
+        "img": "images/label_forest_mq.png",
         "codes": "forest_label,forest_mq",
         "inherit_codes": false
       }
@@ -274,11 +274,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/fire.png",
+        "img": "images/label_fire.png",
         "codes": "fire_label,fire_reg"
       },
       {
-        "img": "images/fire_mq.png",
+        "img": "images/label_fire_mq.png",
         "codes": "fire_label,fire_mq",
         "inherit_codes": false
       }
@@ -340,11 +340,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/water.png",
+        "img": "images/label_water.png",
         "codes": "water_label,water_reg"
       },
       {
-        "img": "images/water_mq.png",
+        "img": "images/label_water_mq.png",
         "codes": "water_label,water_mq",
         "inherit_codes": false
       }
@@ -406,11 +406,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/spirit.png",
+        "img": "images/label_spirit.png",
         "codes": "spirit_label,spirit_reg"
       },
       {
-        "img": "images/spirit_mq.png",
+        "img": "images/label_spirit_mq.png",
         "codes": "spirit_label,spirit_mq",
         "inherit_codes": false
       }
@@ -472,11 +472,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/shadow.png",
+        "img": "images/label_shadow.png",
         "codes": "shadow_label,shadow_reg"
       },
       {
-        "img": "images/shadow_mq.png",
+        "img": "images/label_shadow_mq.png",
         "codes": "shadow_label,shadow_mq",
         "inherit_codes": false
       }
@@ -538,11 +538,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/botw.png",
+        "img": "images/label_botw.png",
         "codes": "botw_label,botw_reg"
       },
       {
-        "img": "images/botw_mq.png",
+        "img": "images/label_botw_mq.png",
         "codes": "botw_label,botw_mq",
         "inherit_codes": false
       }
@@ -562,11 +562,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/ice.png",
+        "img": "images/label_ice.png",
         "codes": "ice_label,ice_reg"
       },
       {
-        "img": "images/ice_mq.png",
+        "img": "images/label_ice_mq.png",
         "codes": "ice_label,ice_mq",
         "inherit_codes": false
       }
@@ -575,7 +575,7 @@
   {
     "name": "GF Label",
     "type": "static",
-    "img": "images/gf.png",
+    "img": "images/label_gf.png",
     "codes": "gf_label"
   },
   {
@@ -592,11 +592,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/gtg.png",
+        "img": "images/label_gtg.png",
         "codes": "gtg_label,gtg_reg"
       },
       {
-        "img": "images/gtg_mq.png",
+        "img": "images/label_gtg_mq.png",
         "codes": "gtg_label,gtg_mq",
         "inherit_codes": false
       }
@@ -616,11 +616,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/gc.png",
+        "img": "images/label_gc.png",
         "codes": "gc_label,gc_reg"
       },
       {
-        "img": "images/gc_mq.png",
+        "img": "images/label_gc_mq.png",
         "codes": "gc_label,gc_mq",
         "inherit_codes": false
       }

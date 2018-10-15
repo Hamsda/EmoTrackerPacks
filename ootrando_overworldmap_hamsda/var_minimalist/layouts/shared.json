@@ -1,57 +1,208 @@
 {
   "item_grid_mini": {
-    "type": "itemgrid",
-    "h_alignment": "left",
-    "item_margin": "1,2",
-    "rows": [
-      [
-        "forestmedlabel",
-        "firemedlabel",
-        "watermedlabel",
-        "spiritmedlabel",
-        "shadowmedlabel",
-        "lightmedlabel"
-      ],
-      [
-        "minuetcheck",
-        "bolerocheck",
-        "serenadecheck",
-        "requiemcheck",
-        "nocturnecheck",
-        "preludecheck"
-      ],
-      [
-        "lullabycheck",
-        "eponacheck",
-        "sariacheck",
-        "suncheck",
-        "timecheck",
-        "stormcheck"
-      ],
-      [
-        "bombs",
-        "bombchu",
-        "slingshot",
-        "bow",
-        "firearrow",
-        "lightarrow"
-      ],
-      [
-        "lift1",
-        "hammer",
-        "boomerang",
-        "hookshot",
-        "dinsfire",
-        "bottle1"
-      ],
-      [
-        "scale1",
-        "shield3",
-        "ironboots",
-        "hoverboots",
-        "adulttrade",
-        "kidtrade"
-      ]
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,10",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 12,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "forestmedlabel",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 12,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "firemedlabel",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 12,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "watermedlabel",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 12,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "spiritmedlabel",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 12,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "shadowmedlabel",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 12,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "lightmedlabel",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "forestmed",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "firemed",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "watermed",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "spiritmed",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "shadowmed",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "lightmed",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "minuetcheck",
+            "bolerocheck",
+            "serenadecheck",
+            "requiemcheck",
+            "nocturnecheck",
+            "preludecheck"
+          ],
+          [
+            "lullabycheck",
+            "eponacheck",
+            "sariacheck",
+            "suncheck",
+            "timecheck",
+            "stormcheck"
+          ],
+          [
+            "bombs",
+            "bombchu",
+            "slingshot",
+            "bow",
+            "firearrow",
+            "lightarrow"
+          ],
+          [
+            "lift1",
+            "hammer",
+            "boomerang",
+            "hookshot",
+            "dinsfire",
+            "bottle1"
+          ],
+          [
+            "scale1",
+            "shield3",
+            "ironboots",
+            "hoverboots",
+            "adulttrade",
+            "kidtrade"
+          ]
+        ]
+      }
     ]
   }
 }
