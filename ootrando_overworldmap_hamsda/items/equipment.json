@@ -57,29 +57,29 @@
     "name": "Red and Blue Tunics",
     "type": "composite_toggle",
     "codes": "tunics",
-    "item_left": "bluetunic",
-    "item_right": "redtunic",
+    "item_left": "redtunic",
+    "item_right": "bluetunic",
     "images": [
       {
         "left": false,
         "right": false,
-        "img": "images/redbluetunic.png",
+        "img": "images/tunics.png",
         "img_mods": "@disabled"
       },
       {
         "left": true,
         "right": false,
-        "img": "images/bluetunic-disabled.png"
+        "img": "images/redtunic-disabled.png"
       },
       {
         "left": false,
         "right": true,
-        "img": "images/redtunic-disabled.png"
+        "img": "images/bluetunic-disabled.png"
       },
       {
         "left": true,
         "right": true,
-        "img": "images/redbluetunic.png"
+        "img": "images/tunics.png"
       }
     ]
   },
