@@ -645,17 +645,14 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "@logic/explosives",
-                      "scale1"
-                    ],
                     "x": 2190,
                     "y": 635
                   },
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2"
+                      "sword2,[ocarina],[minuet]",
+                      "sword2,[ocarina],[saria]"
                     ],
                     "x": 2190,
                     "y": 635
