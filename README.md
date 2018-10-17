@@ -24,7 +24,7 @@ The pack offers 4 different variants:
 ## Vanilla vs Master Quest Dungeons
 
 The Randomizer has the option to switch some or all dungeons to their Master Quest equivalents.  
-To accomodate for this, you can click on the dungeon labels to change them from vanilla ![vanilla deku](ootrando_overworldmap_hamsda/images/deku.png) to Master Quest ![mq deku](ootrando_overworldmap_hamsda/images/deku_mq.png). You can use this in the non map variants as well as a reminder.  
+To accomodate for this, you can click on the dungeon labels to change them from vanilla ![vanilla deku](ootrando_overworldmap_hamsda/images/label_deku.png) to Master Quest ![mq deku](ootrando_overworldmap_hamsda/images/label_deku_mq.png). You can use this in the non map variants as well as a reminder.  
 This also means that the key counts for the dungeons in the Keysanity variants will always go up to the maximum of vanilla and Master Quest: Forest Temple goes up to 6 small keys, because MQ Forest Temple has 6 small keys instead of 5 in vanilla; Water Temple also goes up to 6 small keys, because vanilla Water Temple has 6 small keys unlike the 2 it has in MQ.
 
 ## Special items
