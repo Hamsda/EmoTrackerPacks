@@ -4067,6 +4067,8 @@
                     "access_rules": [
                       "lift2",
                       "hammer",
+                      "@logic/explosives,hoverboots,[lift2]",
+                      "@logic/explosives,hoverboots,[hammer]",
                       "{agony}"
                     ],
                     "capture_item": true,

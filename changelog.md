@@ -3,6 +3,7 @@
 ## 2.1.3.4
 
 - fixed SFM Storms grotto visibility
+- added Goron City left boulder maze sequence break with explosives and hoverboots
 
 ## 2.1.3.3
 
