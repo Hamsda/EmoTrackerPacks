@@ -658,5 +658,19 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Bottle Minimal",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottleminimal,bottle",
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "ruto,rutosletter",
+      }
+    ],
   }
 ]

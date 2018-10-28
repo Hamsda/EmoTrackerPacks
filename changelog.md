@@ -6,6 +6,7 @@
 - added Goron City left boulder maze sequence break with explosives and hoverboots
 - fixed child Goron City entrance with Dins
 - added Water Temple boss key chest sequence breaks with only hoverboots or only longshot
+- changed the bottle for minimal layout to only have 2 stages (bottle and letter)
 
 ## 2.1.3.3
 
