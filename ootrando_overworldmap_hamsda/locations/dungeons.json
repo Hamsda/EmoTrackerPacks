@@ -896,6 +896,9 @@
         "access_rules": [
           "longshot,hoverboots",
           "longshot,@logic/explosives,lift1",
+          "hoverboots,[longshot]",
+          "longshot,[hoverboots]",
+          "longshot,[@logic/explosives],[lift1]",
           "{agony}"
         ],
         "capture_item": true,
