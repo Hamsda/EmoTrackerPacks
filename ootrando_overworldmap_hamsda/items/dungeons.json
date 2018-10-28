@@ -66,32 +66,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "deku"
+        "codes": "deku",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "deku,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "deku,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "deku,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "deku,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "deku,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -119,32 +120,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "dodongo,dc"
+        "codes": "dodongo,dc",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
-        "codes": "dodongo,stones",
-        "inherit_codes": false
+        "codes": "dodongo,dc,stones",
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "dodongo,forestmed",
-        "inherit_codes": false
+        "codes": "dodongo,dc,forestmed",
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "dodongo,noct_meds",
-        "inherit_codes": false
+        "codes": "dodongo,dc,noct_meds",
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "dodongo,lacs_meds",
-        "inherit_codes": false
+        "codes": "dodongo,dc,lacs_meds",
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "dodongo,lightmed",
-        "inherit_codes": false
+        "codes": "dodongo,dc,lightmed",
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -172,32 +174,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "jabu"
+        "codes": "jabu",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "jabu,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "jabu,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "jabu,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "jabu,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "jabu,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -238,32 +241,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "forest"
+        "codes": "forest",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "forest,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "forest,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "forest,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "forest,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "forest,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -304,32 +308,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "fire"
+        "codes": "fire",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "fire,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "fire,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "fire,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "fire,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "fire,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -370,32 +375,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "water"
+        "codes": "water",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "water,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "water,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "water,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "water,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "water,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -436,32 +442,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "spirit"
+        "codes": "spirit",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "spirit,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "spirit,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "spirit,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "spirit,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "spirit,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -502,32 +509,33 @@
     "stages": [
       {
         "img": "images/unknown.png",
-        "codes": "shadow"
+        "codes": "shadow",
+        "secondary_codes": "unknown"
       },
       {
         "img": "images/stones.png",
         "codes": "shadow,stones",
-        "inherit_codes": false
+        "secondary_codes": "stones,stone"
       },
       {
         "img": "images/forestmedallion.png",
         "codes": "shadow,forestmed",
-        "inherit_codes": false
+        "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
         "codes": "shadow,noct_meds",
-        "inherit_codes": false
+        "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
         "codes": "shadow,lacs_meds",
-        "inherit_codes": false
+        "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
         "codes": "shadow,lightmed",
-        "inherit_codes": false
+        "secondary_codes": "light,lightmed"
       }
     ]
   },
