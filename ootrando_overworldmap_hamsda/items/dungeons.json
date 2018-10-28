@@ -12,7 +12,7 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "free"
       },
       {
@@ -65,7 +65,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "deku"
       },
       {
@@ -118,7 +118,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "dodongo,dc"
       },
       {
@@ -171,7 +171,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "jabu"
       },
       {
@@ -237,7 +237,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "forest"
       },
       {
@@ -303,7 +303,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "fire"
       },
       {
@@ -369,7 +369,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "water"
       },
       {
@@ -435,7 +435,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "spirit"
       },
       {
@@ -501,7 +501,7 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/unknown-small.png",
+        "img": "images/unknown.png",
         "codes": "shadow"
       },
       {
