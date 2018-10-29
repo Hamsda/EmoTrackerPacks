@@ -645,17 +645,14 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "@logic/explosives",
-                      "scale1"
-                    ],
                     "x": 2190,
                     "y": 635
                   },
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2"
+                      "sword2,[ocarina],[minuet]",
+                      "sword2,[ocarina],[saria]"
                     ],
                     "x": 2190,
                     "y": 635
@@ -1960,7 +1957,8 @@
               "postzelda",
               "open_kak",
               "sword2",
-              "@logic/explosives"
+              "@logic/explosives",
+              "dinsfire,magic"
             ],
             "children": [
               {
@@ -1982,7 +1980,8 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "@logic/explosives",
+                          "dinsfire,magic"
                         ],
                         "x": 1606,
                         "y": 98
@@ -4070,6 +4069,8 @@
                     "access_rules": [
                       "lift2",
                       "hammer",
+                      "@logic/explosives,hoverboots,[lift2]",
+                      "@logic/explosives,hoverboots,[hammer]",
                       "{agony}"
                     ],
                     "capture_item": true,

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.3.4
+
+- fixed SFM Storms grotto visibility
+- fixed child Goron City entrance with Dins
+- added Goron City left boulder maze sequence break with explosives and hoverboots
+- added Water Temple boss key chest sequence breaks with only hoverboots or only longshot
+- changed the bottle for minimal layout to only have 2 stages (bottle and letter)
+- changed the compact items for boots and tunics when only one half is obtained
+- improved chathud commands for dungeon prizes with secondary codes
+
 ## 2.1.3.3
 
 - changed Biggoron to be visible with just Stone of Agony (so you can mark him off without access)

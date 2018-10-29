@@ -906,6 +906,9 @@
         "access_rules": [
           "water_small_keys:2,longshot,hoverboots",
           "water_small_keys:2,longshot,@logic/explosives,lift1",
+          "water_small_keys:2,hoverboots,[longshot]",
+          "water_small_keys:2,longshot,[hoverboots]",
+          "water_small_keys:2,longshot,[@logic/explosives],[lift1]",
           "{agony}"
         ],
         "capture_item": true,

@@ -9,14 +9,17 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/bow3.png",
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_30.png",
         "codes": "bow"
       },
       {
-        "img": "images/bow4.png"
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_40.png"
       },
       {
-        "img": "images/bow5.png"
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_50_green.png"
       }
     ]
   },
@@ -30,14 +33,17 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/sling3.png",
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_30.png",
         "codes": "slingshot,sling,ss"
       },
       {
-        "img": "images/sling4.png"
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_40.png"
       },
       {
-        "img": "images/sling5.png"
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_50_green.png"
       }
     ]
   },
@@ -51,14 +57,17 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/nut2.png",
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_20.png",
         "codes": "nuts,dekunuts,dn"
       },
       {
-        "img": "images/nut3.png"
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_30.png"
       },
       {
-        "img": "images/nut4.png"
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_40_green.png"
       }
     ]
   },
@@ -97,14 +106,17 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/stick1.png",
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_10.png",
         "codes": "sticks,dekusticks,ds"
       },
       {
-        "img": "images/stick2.png"
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_20.png"
       },
       {
-        "img": "images/stick3.png"
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_30_green.png"
       }
     ]
   },
@@ -118,14 +130,17 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/bomb2.png",
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_20.png",
         "codes": "bombs,bombbag"
       },
       {
-        "img": "images/bomb3.png"
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_30.png"
       },
       {
-        "img": "images/bomb4.png"
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_40_green.png"
       }
     ]
   },
@@ -643,5 +658,19 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Bottle Minimal",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottleminimal,bottle",
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "ruto,rutosletter",
+      }
+    ],
   }
 ]
