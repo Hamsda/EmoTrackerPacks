@@ -117,5 +117,22 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Move King Zora",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/king_zora.png",
+        "img_mods": "@disabled",
+        "codes": "king_zora_moved_no"
+      },
+      {
+        "img": "images/king_zora.png",
+        "codes": "king_zora_moved_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

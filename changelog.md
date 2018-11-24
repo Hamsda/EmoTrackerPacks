@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.3.5
+
+- added `Move King Zora`
+  - new location on child map to indicate you showed Rutos letter
+  - added sequence breakable checks to the Zoras Fountain locations for moving him
+
 ## 2.1.3.4
 
 - fixed SFM Storms grotto visibility
