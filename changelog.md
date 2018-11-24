@@ -5,6 +5,7 @@
 - added `Move King Zora`
   - new location on child map to indicate you showed Rutos letter
   - added sequence breakable checks to the Zoras Fountain locations for moving him
+- fixed Impas cow is always in logic
 
 ## 2.1.3.4
 

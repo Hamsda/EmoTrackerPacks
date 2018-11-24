@@ -1421,10 +1421,6 @@
                     "sections": [
                       {
                         "name": "HP in Cage",
-                        "access_rules": [
-                          "[bombs]",
-                          "sword2,[hookshot]"
-                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
