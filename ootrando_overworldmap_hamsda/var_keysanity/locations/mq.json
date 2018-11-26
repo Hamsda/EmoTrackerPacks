@@ -1866,7 +1866,7 @@
     "name": "Ice Cavern MQ",
     "parent": "Zoras Fountain A",
     "access_rules": [
-      "ice_mq,@logic/ice cavern"
+      "ice_mq,@logic/adult fountain,bottle"
     ],
     "sections": [
       {
@@ -1893,7 +1893,7 @@
       {
         "name": "Sheik in Ice Cavern",
         "access_rules": [
-          "@logic/ice cavern",
+          "bottle",
           "{agony}"
         ],
         "capture_item": true,
