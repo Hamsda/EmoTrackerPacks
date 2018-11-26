@@ -37,8 +37,7 @@
       {
         "name": "Basement",
         "access_rules": [
-          "sticks",
-          "dinsfire,magic"
+          "@Deku Tree MQ/Slingshot Room Back"
         ],
         "item_count": 1
       },
@@ -60,8 +59,8 @@
       {
         "name": "Queen Gohma",
         "access_rules": [
-          "sling,sticks,shield1",
-          "sling,dinsfire,magic,sword1,shield1"
+          "[sling],sticks,shield1",
+          "[sling],dinsfire,magic,sword1,shield1"
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",
@@ -1186,14 +1185,15 @@
       {
         "name": "Stalfos Room Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Invisible Spikes Chest,longshot"
+          "@Shadow Temple MQ/Invisible Spikes Chest,longshot",
+          "@Shadow Temple MQ/Invisible Spikes Chest,hookshot,[longshot]"
         ],
         "item_count": 1
       },
       {
         "name": "Wind Hint Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,shadow_small_keys:3,hoverboots,hookshot"
+          "@Shadow Temple MQ/Invisible Spikes Chest,shadow_small_keys:3,hookshot"
         ],
         "item_count": 1
       },
@@ -1245,7 +1245,8 @@
       {
         "name": "Bongo Bongo",
         "access_rules": [
-          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,shadow_boss_key"
+          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,shadow_boss_key,ocarina,lullaby,bow",
+          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,shadow_boss_key,ocarina,lullaby,bombchu,[bow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
