@@ -108,10 +108,20 @@
         "item_count": 1
       },
       {
-        "name": "ice cavern",
+        "name": "child fountain",
         "access_rules": [
-          "@logic/explosives,[ocarina],[lullaby],ruto,sword2",
-          "scale1,[ocarina],[lullaby],ruto,sword2"
+          "@logic/explosives,[ocarina],[lullaby],ruto,[king_zora_moved_yes]",
+          "scale1,ruto,[king_zora_moved_yes]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "adult fountain",
+        "access_rules": [
+          "@logic/explosives,ocarina,lullaby,ruto,[king_zora_moved_yes],sword2",
+          "scale1,ruto,[king_zora_moved_yes],sword2,ocarina,lullaby",
+          "@logic/explosives,[ocarina],[lullaby],ruto,[king_zora_moved_yes],sword2,hoverboots",
+          "scale1,ruto,[king_zora_moved_yes],sword2,[ocarina],[lullaby],hoverboots"
         ],
         "item_count": 1
       }
@@ -1421,10 +1431,6 @@
                     "sections": [
                       {
                         "name": "HP in Cage",
-                        "access_rules": [
-                          "[bombs]",
-                          "sword2,[hookshot]"
-                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -3138,6 +3144,25 @@
                     ]
                   },
                   {
+                    "name": "Move King Zora",
+                    "sections": [
+                      {
+                        "name": "Show Letter",
+                        "access_rules": [
+                          "king_zora_moved_no,ruto"
+                        ],
+                        "hosted_item": "king_zora_moved_yes"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2624,
+                        "y": 367
+                      }
+                    ]
+                  },
+                  {
                     "name": "Zora Shop",
                     "access_rules": [
                       "shopsanity_yes"
@@ -3185,8 +3210,7 @@
               {
                 "name": "Zoras Fountain C",
                 "access_rules": [
-                  "@logic/explosives,[ocarina],[lullaby],ruto",
-                  "scale1,ruto"
+                  "@logic/child fountain"
                 ],
                 "children": [
                   {
@@ -4525,8 +4549,9 @@
                 "name": "King Zora",
                 "access_rules": [
                   "bottle,[wallet2]",
-                  "bottle,@logic/ice cavern",
-                  "bottle,@Ganons Castle/Water Trial"
+                  "bottle,@logic/adult fountain",
+                  "bottle,@Ganons Castle/Water Trial",
+                  "bottle,@Gerudo Training Grounds MQ/Before Heavy Block Chest"
                 ],
                 "sections": [
                   {
@@ -4578,8 +4603,7 @@
           {
             "name": "Zoras Fountain A",
             "access_rules": [
-              "@logic/explosives,[ocarina],[lullaby],ruto",
-              "scale1,[ocarina],[lullaby],ruto"
+              "@logic/adult fountain"
             ],
             "children": [
               {
