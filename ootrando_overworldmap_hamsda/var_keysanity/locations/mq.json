@@ -775,8 +775,7 @@
         "name": "Chest Near Boss",
         "access_rules": [
           "hoverboots,@logic/has fire",
-          "hookshot,bow,firearrow,magic",
-          "hookshot,dinsfire,magic"
+          "hookshot,@logic/has fire"
         ],
         "item_count": 1
       },
@@ -953,8 +952,7 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "ironboots,@logic/has fire",
-          "longshot,[ironboots],@logic/has fire"
+          "ironboots,@logic/has fire"
         ],
         "item_count": 1
       },
@@ -969,9 +967,7 @@
         "name": "Compass Chest",
         "access_rules": [
           "ocarina,lullaby,ironboots,bow",
-          "ocarina,lullaby,ironboots,dinsfire,magic",
-          "ocarina,lullaby,longshot,[ironboots],bow",
-          "ocarina,lullaby,longshot,[ironboots],dinsfire,magic"
+          "ocarina,lullaby,ironboots,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -1062,7 +1058,7 @@
             "name": "GS76 - Lizalfos Hallway",
             "short_name": "Lizalfos Hallway",
             "access_rules": [
-              "@Water Temple MQ/Longshot Chest,dinsfire,magic"
+              "ocarina,lullaby,ironboots,dinsfire,magic"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1072,7 +1068,7 @@
             "name": "GS77 - Before Upper Water Switch",
             "short_name": "Before Upper Water Switch",
             "access_rules": [
-              "@Water Temple MQ/Longshot Chest,longshot"
+              "ocarina,lullaby,ironboots,longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
