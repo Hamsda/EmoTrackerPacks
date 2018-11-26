@@ -1996,7 +1996,8 @@
         "name": "Underwater Silver Rupee Chest",
         "access_rules": [
           "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,@logic/bluetunic",
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest,@logic/has fire,ironboots,@logic/bluetunic"
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,longshot,@logic/has fire,ironboots,@logic/bluetunic",
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,bow,@logic/has fire,ironboots,@logic/bluetunic"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2011,7 +2012,7 @@
       {
         "name": "Before Heavy Block Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/First Iron Knuckle Chest,longshot"
+          "@Gerudo Training Grounds MQ/First Iron Knuckle Chest,hookshot,[longshot]"
         ],
         "item_count": 1
       },
@@ -2023,16 +2024,16 @@
         "item_count": 1
       },
       {
-        "name": "Eye Statue Chest",
+        "name": "Second Iron Knuckle Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,bow"
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,ocarina,time,@logic/lens,bottle"
         ],
         "item_count": 1
       },
       {
-        "name": "Second Iron Knuckle Chest",
+        "name": "Eye Statue Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,ocarina,time,@logic/lens,bottle"
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,bow"
         ],
         "item_count": 1
       },

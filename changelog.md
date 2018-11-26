@@ -13,6 +13,7 @@
   - fixed MQ Water Temple wrong ironboots and lullaby sequence breaks
   - fixed MQ Spirit Temple sun block room
   - fixed MQ Ganons Castle scrubs lens logic
+  - added MQ GTG stalfos room sequence break with just hookshot
 - fixed Zoras Fountain child/adult logic
 
 ## 2.1.3.4
