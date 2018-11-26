@@ -6,11 +6,13 @@
   - new location on child map to indicate you showed Rutos letter
   - added sequence breakable checks to the Zoras Fountain locations for moving him
 - fixed Impas cow is always in logic
-- added MQ Deku Tree Gohma sequence break for sling
-- added MQ Shadow Temple stalfos room sequence break with just hookshot
-- fixed MQ Shadow Temple Bongo requires bow (and added chu sequence break for it)
-- fixed MQ Water Temple wrong ironboots and lullaby sequence breaks
-- fixed MQ Spirit Temple sun block room
+- added/fixed a few MQ things:
+  - added MQ Deku Tree Gohma sequence break for sling
+  - added MQ Shadow Temple stalfos room sequence break with just hookshot
+  - fixed MQ Shadow Temple Bongo requires bow (and added chu sequence break for it)
+  - fixed MQ Water Temple wrong ironboots and lullaby sequence breaks
+  - fixed MQ Spirit Temple sun block room
+  - fixed MQ Ganons Castle scrubs lens logic
 
 ## 2.1.3.4
 

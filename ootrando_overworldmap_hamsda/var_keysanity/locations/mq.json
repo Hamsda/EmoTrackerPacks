@@ -1844,6 +1844,9 @@
           {
             "name": "Hidden Room",
             "short_name": "Hidden Room",
+            "access_rules": [
+              "@logic/lens"
+            ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
             "item_count": 5
