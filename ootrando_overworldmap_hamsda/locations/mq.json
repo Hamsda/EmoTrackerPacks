@@ -1445,7 +1445,8 @@
       {
         "name": "Sun Block Room Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,ocarina,time"
+          "sword2,lift2,longshot,bombchu",
+          "ocarina,requiem,bombchu,time"
         ],
         "item_count": 1
       },

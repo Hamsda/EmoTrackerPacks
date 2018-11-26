@@ -9,7 +9,8 @@
 - added MQ Deku Tree Gohma sequence break for sling
 - added MQ Shadow Temple stalfos room sequence break with just hookshot
 - fixed MQ Shadow Temple Bongo requires bow (and added chu sequence break for it)
-- fixed wrong MQ Water Temple ironboots and lullaby sequence breaks
+- fixed MQ Water Temple wrong ironboots and lullaby sequence breaks
+- fixed MQ Spirit Temple sun block room
 
 ## 2.1.3.4
 
