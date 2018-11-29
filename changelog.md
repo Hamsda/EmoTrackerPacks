@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3.6
+
+- changed horizontal tracker layout to be the same as vertical
+
 ## 2.1.3.5
 
 - added `Move King Zora`
