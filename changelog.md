@@ -6,6 +6,7 @@
 - changed items only variants to be fixed size
 - fixed Colossus arch HP logic
 - added MQ GTG SoT block sequence break
+- fixed MQ Forest Temple logic (hopefully)
 
 ## 2.1.3.5
 

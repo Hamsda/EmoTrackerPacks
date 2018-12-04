@@ -598,16 +598,16 @@
       {
         "name": "Redead Chest",
         "access_rules": [
-          "[lift1]",
-          "[bombchu]"
+          "hoverboots",
+          "lift1",
+          "bombchu,[lift1]"
         ],
         "item_count": 1
       },
       {
         "name": "Well Chest",
         "access_rules": [
-          "bow",
-          "@Forest Temple MQ/Redead Chest,ironboots,[bow]"
+          "bow"
         ],
         "item_count": 1
       },
@@ -615,8 +615,14 @@
         "name": "NE Outdoors Upper Chest",
         "access_rules": [
           "bow,[firearrow]",
-          "bow,[ocarina],[time]",
           "bow,[longshot]",
+          "bow,[ocarina],[time]",
+          "bow,[hoverboots]",
+          "@Forest Temple MQ/Redead Chest,longshot",
+          "@Forest Temple MQ/Redead Chest,ironboots,[ocarina],[time]",
+          "@Forest Temple MQ/Redead Chest,ironboots,[hoverboots]",
+          "@Forest Temple MQ/Redead Chest,scale2,[ocarina],[time]",
+          "@Forest Temple MQ/Redead Chest,scale2,[hoverboots]"
         ],
         "item_count": 1
       },
@@ -654,6 +660,7 @@
         "access_rules": [
           "@Forest Temple MQ/Bow Chest,bow",
           "@Forest Temple MQ/Bow Chest,dinsfire,magic",
+          "bow,longshot,ocarina,time"
         ],
         "item_count": 1
       },
@@ -661,6 +668,7 @@
         "name": "NE Outdoors Lower Chest",
         "access_rules": [
           "bow,longshot",
+          "@Forest Temple MQ/Redead Chest,longshot",
           "@Forest Temple MQ/Falling Room Chest"
         ],
         "item_count": 1
@@ -668,7 +676,7 @@
       {
         "name": "Near Boss Chest",
         "access_rules": [
-          "@Forest Temple MQ/Falling Room Chest,bow"
+          "@Forest Temple MQ/Falling Room Chest,@Forest Temple MQ/Bow Chest,bow"
         ],
         "item_count": 1
       },
@@ -727,6 +735,7 @@
             "short_name": "Outdoor East",
             "access_rules": [
               "@Forest Temple MQ/Redead Chest,ironboots",
+              "@Forest Temple MQ/Redead Chest,longshot",
               "@Forest Temple MQ/Redead Chest,scale2",
               "bow"
             ],
