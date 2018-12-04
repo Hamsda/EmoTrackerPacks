@@ -3,6 +3,7 @@
 ## 2.1.3.6
 
 - changed horizontal tracker layout to be the same as vertical
+- changed items only variants to be fixed size
 - fixed Colossus arch HP logic
 
 ## 2.1.3.5
