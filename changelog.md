@@ -5,6 +5,7 @@
 - changed horizontal tracker layout to be the same as vertical
 - changed items only variants to be fixed size
 - fixed Colossus arch HP logic
+- added MQ GTG SoT block sequence break
 
 ## 2.1.3.5
 

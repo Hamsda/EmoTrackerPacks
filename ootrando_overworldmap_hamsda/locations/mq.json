@@ -2026,7 +2026,7 @@
       {
         "name": "Second Iron Knuckle Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,ocarina,time,@logic/lens,bottle"
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],@logic/lens,bottle"
         ],
         "item_count": 1
       },
