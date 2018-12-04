@@ -3499,7 +3499,7 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "@logic/colossus,beans_plant_no,beans,sword2",
+                          "ocarina,requiem,beans_plant_no,beans,sword2",
                           "@logic/colossus,bean_colossus_yes,sword2",
                           "{agony}"
                         ],
