@@ -54,6 +54,9 @@
           {
             "name": "GS8 - Compass Room",
             "short_name": "Compass Room",
+            "access_rules": [
+              "@logic/can child attack"
+            ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -82,6 +85,9 @@
           {
             "name": "GS10 - Basement Gate",
             "short_name": "Gate",
+            "access_rules": [
+              "@logic/can child attack"
+            ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
