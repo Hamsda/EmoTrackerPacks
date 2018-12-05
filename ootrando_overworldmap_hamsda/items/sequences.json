@@ -119,6 +119,23 @@
     ]
   },
   {
+    "name": "Carpenter Rescue",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/gerudo_symbol_colored.png",
+        "img_mods": "@disabled",
+        "codes": "carpenter_rescue_no"
+      },
+      {
+        "img": "images/gerudo_symbol_colored.png",
+        "codes": "carpenter_rescue_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Move King Zora",
     "type": "progressive",
     "allow_disabled": false,

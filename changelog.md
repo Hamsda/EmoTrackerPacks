@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.1.4.0
+
+- changed horizontal tracker layout to be the same as vertical
+- changed items only variants to be fixed size
+- fixed Colossus arch HP logic
+- added MQ GTG SoT block sequence break
+- fixed MQ Forest Temple logic (hopefully)
+- fixed end of DC with chus in logic
+- added wasteland sequence break for longshot/hoverboots
+- added checks for child being able to attack to a lot of locations
+- fixed upper DMC can be opened as adult with hammer for child
+- added Zoras River upper HP hoverboots sequence break
+- fixed DMC bean to access middle and upper DMC
+- added Gerudo Fortress option and changed logic accordingly
+
 ## 2.1.3.5
 
 - added `Move King Zora`

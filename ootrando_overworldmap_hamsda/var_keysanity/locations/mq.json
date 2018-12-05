@@ -213,7 +213,8 @@
       {
         "name": "Under Grave",
         "access_rules": [
-          "@logic/explosives"
+          "bombs",
+          "bombchu,[bombs]"
         ],
         "item_count": 1
       },
@@ -321,7 +322,7 @@
             "name": "GS42 - Back Area",
             "short_name": "Back Area",
             "access_rules": [
-              "@logic/explosives"
+              "@Dodongos Cavern MQ/Under Grave"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -598,17 +599,16 @@
       {
         "name": "Redead Chest",
         "access_rules": [
-          "@Forest Temple MQ/Boss Key Chest",
-          "[@Forest Temple MQ/Boss Key Chest],[lift1],forest_small_keys:1",
-          "[@Forest Temple MQ/Boss Key Chest],[bombchu],forest_small_keys:1"
+          "forest_small_keys:1,hoverboots",
+          "forest_small_keys:1,lift1",
+          "forest_small_keys:1,bombchu,[lift1]"
         ],
         "item_count": 1
       },
       {
         "name": "Well Chest",
         "access_rules": [
-          "forest_small_keys:1,bow",
-          "@Forest Temple MQ/Redead Chest,ironboots,[bow]"
+          "forest_small_keys:1,bow"
         ],
         "item_count": 1
       },
@@ -616,8 +616,14 @@
         "name": "NE Outdoors Upper Chest",
         "access_rules": [
           "forest_small_keys:1,bow,[firearrow]",
-          "forest_small_keys:1,bow,[ocarina],[time]",
           "forest_small_keys:1,bow,[longshot]",
+          "forest_small_keys:1,bow,[ocarina],[time]",
+          "forest_small_keys:1,bow,[hoverboots]",
+          "@Forest Temple MQ/Redead Chest,longshot",
+          "@Forest Temple MQ/Redead Chest,ironboots,[ocarina],[time]",
+          "@Forest Temple MQ/Redead Chest,ironboots,[hoverboots]",
+          "@Forest Temple MQ/Redead Chest,scale2,[ocarina],[time]",
+          "@Forest Temple MQ/Redead Chest,scale2,[hoverboots]"
         ],
         "item_count": 1
       },
@@ -655,6 +661,7 @@
         "access_rules": [
           "@Forest Temple MQ/Bow Chest,forest_small_keys:5,bow",
           "@Forest Temple MQ/Bow Chest,forest_small_keys:5,dinsfire,magic",
+          "forest_small_keys:1,bow,longshot,ocarina,time"
         ],
         "item_count": 1
       },
@@ -662,6 +669,7 @@
         "name": "NE Outdoors Lower Chest",
         "access_rules": [
           "forest_small_keys:1,bow,longshot",
+          "@Forest Temple MQ/Redead Chest,longshot",
           "@Forest Temple MQ/Falling Room Chest"
         ],
         "item_count": 1
@@ -669,7 +677,7 @@
       {
         "name": "Near Boss Chest",
         "access_rules": [
-          "@Forest Temple MQ/Falling Room Chest,forest_small_keys:6,bow"
+          "@Forest Temple MQ/Falling Room Chest,@Forest Temple MQ/Bow Chest,forest_small_keys:6,bow"
         ],
         "item_count": 1
       },
@@ -731,6 +739,7 @@
             "short_name": "Outdoor East",
             "access_rules": [
               "@Forest Temple MQ/Redead Chest,ironboots",
+              "@Forest Temple MQ/Redead Chest,longshot",
               "@Forest Temple MQ/Redead Chest,scale2",
               "forest_small_keys:1,bow"
             ],
@@ -1959,7 +1968,8 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_mq,carpenter,card"
+      "gtg_mq,carpenter_rescue_yes,card",
+      "gtg_mq,gerudo_fortress_open,card"
     ],
     "sections": [
       {
@@ -2034,7 +2044,7 @@
       {
         "name": "Second Iron Knuckle Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,ocarina,time,@logic/lens,bottle"
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],@logic/lens,bottle"
         ],
         "item_count": 1
       },

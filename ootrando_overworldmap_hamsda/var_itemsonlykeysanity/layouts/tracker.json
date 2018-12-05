@@ -2,15 +2,8 @@
   "tracker_default": {
     "type": "container",
     "background": "#212121",
-    "dropshadow": true,
-    "content": {
-      "type": "layout",
-      "key": "item_grid_tall"
-    }
-  },
-  "tracker_horizontal": {
-    "type": "container",
-    "background": "#212121",
+    "width": 320,
+    //"width": 220,
     "dropshadow": true,
     "content": {
       "type": "layout",

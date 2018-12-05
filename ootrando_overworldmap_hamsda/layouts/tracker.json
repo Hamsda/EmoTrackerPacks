@@ -34,16 +34,16 @@
                     "type_forest",
                     "type_kak",
                     "type_door",
-                    "type_lens",
-                    "fewer_tunics"
+                    "gerudo_fortress",
+                    "logic_chus"
                   ],
                   [
-                    "logic_chus",
+                    "type_lens",
+                    "fewer_tunics",
                     "scrub_shuffle",
                     "shopsanity",
                     "all_skulltulas",
-                    "beans_plant",
-                    ""
+                    "beans_plant"
                   ]
                 ]
               }
@@ -97,7 +97,7 @@
       ]
     }
   },
-  "tracker_horizontal": {
+  "tracker_horizontal_old": {
     "type": "container",
     "background": "#212121",
     "content": {
@@ -136,19 +136,19 @@
                         "type_forest",
                         "type_kak",
                         "type_door",
-                        "type_lens",
-                        "fewer_tunics",
+                        "gerudo_fortress",
+                        "logic_chus",
                         "",
                         "",
                         ""
                       ],
                       [
-                        "logic_chus",
+                        "type_lens",
+                        "fewer_tunics",
                         "scrub_shuffle",
                         "shopsanity",
                         "all_skulltulas",
                         "beans_plant",
-                        "",
                         "",
                         "",
                         ""

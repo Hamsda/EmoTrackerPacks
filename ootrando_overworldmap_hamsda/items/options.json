@@ -79,6 +79,28 @@
     ]
   },
   {
+    "name": "Gerudo Fortress",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/gerudo_fortress_normal.png",
+        "codes": "gerudo_fortress,gerudo_fortress_normal"
+      },
+      {
+        "img": "images/gerudo_fortress_fast.png",
+        "codes": "gerudo_fortress,gerudo_fortress_fast",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/gerudo_fortress_open.png",
+        "codes": "gerudo_fortress,gerudo_fortress_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Lens Requirement",
     "type": "progressive",
     "allow_disabled": false,

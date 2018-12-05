@@ -54,6 +54,9 @@
           {
             "name": "GS8 - Compass Room",
             "short_name": "Compass Room",
+            "access_rules": [
+              "@logic/can child attack"
+            ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -82,6 +85,9 @@
           {
             "name": "GS10 - Basement Gate",
             "short_name": "Gate",
+            "access_rules": [
+              "@logic/can child attack"
+            ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -153,7 +159,8 @@
       {
         "name": "Above Boss",
         "access_rules": [
-          "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives",
+          "@Dodongos Cavern/Bomb Bag Chest,bombs",
+          "@Dodongos Cavern/Bomb Bag Chest,bombchu,[bombs]",
           "{agony}"
         ],
         "item_count": 1
@@ -161,7 +168,8 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
+          "@Dodongos Cavern/Bomb Bag Chest,bombs",
+          "@Dodongos Cavern/Bomb Bag Chest,bombchu,[bombs]"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
@@ -1789,7 +1797,13 @@
     "sections": [
       {
         "name": "Free the carpenters",
-        "hosted_item": "carpenter",
+        "access_rules":[
+          "gerudo_fortress_normal,[bow]",
+          "gerudo_fortress_normal,[hookshot]",
+          "gerudo_fortress_normal,[hoverboots]",
+          "gerudo_fortress_fast"
+        ],
+        "hosted_item": "carpenter_rescue_yes",
         "item_count": 1
       }
     ],
@@ -1805,7 +1819,8 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_reg,carpenter,card"
+      "gtg_reg,carpenter_rescue_yes,card",
+      "gtg_reg,gerudo_fortress_open,card"
     ],
     "sections": [
       {
