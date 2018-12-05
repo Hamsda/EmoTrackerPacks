@@ -213,7 +213,8 @@
       {
         "name": "Under Grave",
         "access_rules": [
-          "@logic/explosives"
+          "bombs",
+          "bombchu,[bombs]"
         ],
         "item_count": 1
       },
@@ -321,7 +322,7 @@
             "name": "GS42 - Back Area",
             "short_name": "Back Area",
             "access_rules": [
-              "@logic/explosives"
+              "@Dodongos Cavern MQ/Under Grave"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",

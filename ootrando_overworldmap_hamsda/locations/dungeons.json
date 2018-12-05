@@ -153,7 +153,8 @@
       {
         "name": "Above Boss",
         "access_rules": [
-          "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives",
+          "@Dodongos Cavern/Bomb Bag Chest,bombs",
+          "@Dodongos Cavern/Bomb Bag Chest,bombchu,[bombs]",
           "{agony}"
         ],
         "item_count": 1
@@ -161,7 +162,8 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern/Bomb Bag Chest,@logic/explosives"
+          "@Dodongos Cavern/Bomb Bag Chest,bombs",
+          "@Dodongos Cavern/Bomb Bag Chest,bombchu,[bombs]"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",

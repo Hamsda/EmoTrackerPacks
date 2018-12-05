@@ -7,6 +7,7 @@
 - fixed Colossus arch HP logic
 - added MQ GTG SoT block sequence break
 - fixed MQ Forest Temple logic (hopefully)
+- fixed end of DC with chus in logic
 
 ## 2.1.3.5
 
