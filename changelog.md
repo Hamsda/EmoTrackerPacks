@@ -13,6 +13,7 @@
 - fixed upper DMC can be opened as adult with hammer for child
 - added Zoras River upper HP hoverboots sequence break
 - fixed DMC bean to access middle and upper DMC
+- added Gerudo Fortress option and changed logic accordingly
 
 ## 2.1.3.5
 

@@ -99,10 +99,14 @@
       {
         "name": "colossus",
         "access_rules": [
-          "sword2,carpenter,[hoverboots],[lens],[magic]",
-          "sword2,carpenter,[hoverboots],lens_chest",
-          "sword2,carpenter,[longshot],[lens],[magic]",
-          "sword2,carpenter,[longshot],lens_chest",
+          "sword2,carpenter_rescue_yes,[hoverboots],[lens],[magic]",
+          "sword2,carpenter_rescue_yes,[hoverboots],lens_chest",
+          "sword2,carpenter_rescue_yes,[longshot],[lens],[magic]",
+          "sword2,carpenter_rescue_yes,[longshot],lens_chest",
+          "sword2,gerudo_fortress_open,[hoverboots],[lens],[magic]",
+          "sword2,gerudo_fortress_open,[hoverboots],lens_chest",
+          "sword2,gerudo_fortress_open,[longshot],[lens],[magic]",
+          "sword2,gerudo_fortress_open,[longshot],lens_chest",
           "ocarina,requiem"
         ],
         "item_count": 1
@@ -3451,10 +3455,14 @@
               {
                 "name": "Haunted Wasteland",
                 "access_rules": [
-                  "sword2,carpenter,[hoverboots]",
-                  "sword2,carpenter,[longshot]",
-                  "ocarina,requiem,[sword2],[carpenter],[hoverboots]",
-                  "ocarina,requiem,[sword2],[carpenter],[longshot]"
+                  "sword2,carpenter_rescue_yes,[hoverboots]",
+                  "sword2,carpenter_rescue_yes,[longshot]",
+                  "sword2,gerudo_fortress_open,[hoverboots]",
+                  "sword2,gerudo_fortress_open,[longshot]",
+                  "ocarina,requiem,[sword2],[carpenter_rescue_yes],[hoverboots]",
+                  "ocarina,requiem,[sword2],[carpenter_rescue_yes],[longshot]",
+                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[hoverboots]",
+                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[longshot]"
                 ],
                 "children": [
                   {
@@ -4887,7 +4895,8 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "carpenter",
+                  "carpenter_rescue_yes",
+                  "gerudo_fortress_open",
                   "ocarina,epona",
                   "longshot",
                   "hookshot,[longshot]"
@@ -5005,11 +5014,6 @@
                   },
                   {
                     "name": "Gerudo Fortress",
-                    "access_rules": [
-                      "[bow]",
-                      "[hookshot]",
-                      "[hoverboots]"
-                    ],
                     "children": [
                       {
                         "name": "Rooftop Chest",
@@ -5038,14 +5042,16 @@
                           {
                             "name": "1000",
                             "access_rules": [
-                              "ocarina,epona,bow,carpenter"
+                              "ocarina,epona,bow,carpenter_rescue_yes",
+                              "ocarina,epona,bow,gerudo_fortress_open"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "1500",
                             "access_rules": [
-                              "ocarina,epona,bow,carpenter",
+                              "ocarina,epona,bow,carpenter_rescue_yes",
+                              "ocarina,epona,bow,gerudo_fortress_open",
                               "{agony}"
                             ],
                             "capture_item": true,
@@ -5069,7 +5075,8 @@
                           {
                             "name": "GS90",
                             "access_rules": [
-                              "hookshot,carpenter"
+                              "hookshot,carpenter_rescue_yes",
+                              "hookshot,gerudo_fortress_open"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
