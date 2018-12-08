@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.4.1
+
+- fixed DMC wall HP display error
+
 ## 2.1.4.0
 
 - changed horizontal tracker layout to be the same as vertical
