@@ -3,6 +3,7 @@
 ## 2.1.4.1
 
 - fixed DMC wall HP display error
+- changed adult trade items to be loopable
 
 ## 2.1.4.0
 
