@@ -553,7 +553,7 @@
       {
         "name": "Basement",
         "access_rules": [
-          "@Forest Temple/Checkerboard"
+          "forest_small_keys:5,lift1,bow"
         ],
         "item_count": 1
       },

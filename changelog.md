@@ -4,6 +4,7 @@
 
 - fixed DMC wall HP display error
 - changed adult trade items to be loopable
+- fixed Forest Temple basement requires bow
 
 ## 2.1.4.0
 
