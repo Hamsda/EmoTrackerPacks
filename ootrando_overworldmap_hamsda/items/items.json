@@ -279,6 +279,7 @@
   {
     "name": "Adult Trade",
     "type": "progressive",
+    "loop": true,
     "allow_disabled": false,
     "stages": [
       {

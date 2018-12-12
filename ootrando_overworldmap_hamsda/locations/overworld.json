@@ -2414,7 +2414,8 @@
                           "@logic/can blast",
                           "ocarina,bolero,beans_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
-                          "@Link the Goron"
+                          "lift1",
+                          "bow"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -2425,7 +2426,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "@logic/can blast"
                         ],
                         "x": 1834,
                         "y": 66
