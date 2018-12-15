@@ -716,7 +716,8 @@
                     "name": "Dive down",
                     "access_rules": [
                       "scale2",
-                      "sword2,ironboots"
+                      "sword2,ironboots",
+                      "{}"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -727,7 +728,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives,scale2"
+                      "@logic/explosives"
                     ],
                     "x": 1152,
                     "y": 481
@@ -1512,7 +1513,8 @@
                         "name": "HP",
                         "access_rules": [
                           "sword2,[ocarina],[time]",
-                          "boomerang"
+                          "boomerang",
+                          "{}"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -1522,16 +1524,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "boomerang"
-                        ],
                         "x": 1915,
                         "y": 376
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,[ocarina],[time]"
+                          "sword2"
                         ],
                         "x": 1915,
                         "y": 376
@@ -2415,7 +2414,8 @@
                           "ocarina,bolero,beans_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "lift1",
-                          "bow"
+                          "bow",
+                          "{ocarina,bolero}"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -2425,9 +2425,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "@logic/can blast"
-                        ],
                         "x": 1834,
                         "y": 66
                       },
@@ -3560,7 +3557,8 @@
                         "access_rules": [
                           "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
-                          "{agony}"
+                          "{agony}",
+                          "{@logic/colossus}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -4331,7 +4329,10 @@
                       "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                       "hammer,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
                       "hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                      "{agony}"
+                      "{agony}",
+                      "{ocarina,bolero}",
+                      "{@Link the Goron}",
+                      "{hammer}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
