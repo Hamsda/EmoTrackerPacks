@@ -1081,6 +1081,8 @@
         "access_rules": [
           "@Shadow Temple/Invisible Spikes,hookshot"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -1495,6 +1497,8 @@
       },
       {
         "name": "Coffin Key",
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -1918,13 +1922,24 @@
         "item_count": 1
       },
       {
-        "name": "Lava Pit Ledge",
+        "name": "Ledge Key",
         "access_rules": [
           "hookshot,@logic/lens,ocarina,time",
           "@logic/explosives,ocarina,time",
           "gtg_small_keys:2"
         ],
-        "item_count": 3
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Right Maze",
+        "access_rules": [
+          "hookshot,@logic/lens,ocarina,time",
+          "@logic/explosives,ocarina,time",
+          "gtg_small_keys:2"
+        ],
+        "item_count": 2
       },
       {
         "name": "Under Water",

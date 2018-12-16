@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.4.2
+
+- changed images for freestanding keys
+
 ## 2.1.4.1
 
 - fixed DMC wall HP display error

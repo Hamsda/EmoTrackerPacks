@@ -845,6 +845,8 @@
         "access_rules": [
           "@Fire Temple MQ/Maze Upper Chest,bow"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -999,6 +1001,8 @@
           "@Water Temple MQ/Boss Key Chest,ocarina,[scarecrow]"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -1223,6 +1227,8 @@
         "access_rules": [
           "@Shadow Temple MQ/Bomb Flower Chest"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -1648,6 +1654,8 @@
         "access_rules": [
           "@logic/explosives"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -1656,6 +1664,8 @@
           "@logic/explosives",
           "ocarina,lullaby"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
     ],
@@ -1744,6 +1754,8 @@
         "access_rules": [
           "hookshot"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
