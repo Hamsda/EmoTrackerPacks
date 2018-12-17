@@ -3,6 +3,7 @@
 ## 2.1.4.2
 
 - changed images for freestanding keys
+- changed GS counter to go up to 100
 
 ## 2.1.4.1
 
