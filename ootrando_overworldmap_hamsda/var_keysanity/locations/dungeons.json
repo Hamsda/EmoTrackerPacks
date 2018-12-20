@@ -800,7 +800,7 @@
             "name": "GS67 - Top Floor Scarecrow",
             "short_name": "Scarecrow 1",
             "access_rules": [
-              "@Fire Temple/Scarecrow"
+              "@Fire Temple/Above Boulder Maze,ocarina,[scarecrow],hookshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -810,7 +810,7 @@
             "name": "GS68 - Top Floor Through Door",
             "short_name": "Scarecrow 2",
             "access_rules": [
-              "@Fire Temple/Scarecrow"
+              "@Fire Temple/Above Boulder Maze,ocarina,[scarecrow],hookshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",

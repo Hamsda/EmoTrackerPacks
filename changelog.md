@@ -6,6 +6,7 @@
 - changed images for freestanding keys
 - changed GS counter to go up to 100
 - added capture for relevant freestanding models
+- fixed Fire Temple GS67 and GS68 capture
 
 ## 2.1.4.1
 
