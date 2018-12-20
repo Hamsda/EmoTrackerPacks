@@ -1,7 +1,8 @@
 # Changelog
 
-## 2.1.4.2
+## 2.2.0.0
 
+- moved logic to lua
 - changed images for freestanding keys
 - changed GS counter to go up to 100
 
