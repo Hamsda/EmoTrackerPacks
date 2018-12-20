@@ -885,7 +885,8 @@
                       {
                         "name": "Dive down",
                         "access_rules": [
-                          "scale1"
+                          "scale1",
+                          "{}"
                         ],
                         "item_count": 1
                       }

@@ -1756,7 +1756,8 @@
       {
         "name": "Forest Trial Freestanding Key",
         "access_rules": [
-          "hookshot"
+          "hookshot",
+          "{}"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -1901,7 +1902,8 @@
       {
         "name": "Freestanding HP",
         "access_rules": [
-          "$has_explosives"
+          "$has_explosives",
+          "{}"
         ],
         "chest_unopened_img": "images/HP.png",
         "chest_opened_img": "images/HP_grey.png",

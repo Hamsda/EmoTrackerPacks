@@ -5,6 +5,7 @@
 - moved logic to lua
 - changed images for freestanding keys
 - changed GS counter to go up to 100
+- added capture for relevant freestanding models
 
 ## 2.1.4.1
 

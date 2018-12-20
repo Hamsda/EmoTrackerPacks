@@ -1885,7 +1885,9 @@
         "name": "Ledge Key",
         "access_rules": [
           "[hookshot],[ocarina],[time]",
-          "$has_explosives,ocarina,time"
+          "{hookshot,$can_see_with_lens}",
+          "$has_explosives,ocarina,time",
+          "{$has_explosives}"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
