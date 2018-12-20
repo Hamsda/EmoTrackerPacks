@@ -7,6 +7,7 @@
 - changed GS counter to go up to 100
 - added capture for relevant freestanding models
 - fixed Fire Temple GS67 and GS68 capture
+- improved bottle logic to take Rutos letter and big poes into account
 
 ## 2.1.4.1
 

@@ -201,3 +201,16 @@ function adult_fountain()
     end
   end
 end
+
+function has_bottle()
+  local bottles = Tracker:ProviderCountForCode("bottle")
+  local ruto = Tracker:ProviderCountForCode("ruto")
+  local bigpoe = Tracker:ProviderCountForCode("bigpoe")
+  if child_fountain() > 0 then
+    ruto = 0
+  end
+  if Tracker:ProviderCountForCode("sword2") > 0 then
+    bigpoe = 0
+  end
+  return (bottles - ruto - bigpoe)
+end

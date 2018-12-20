@@ -147,7 +147,7 @@
                   {
                     "name": "GS2",
                     "access_rules": [
-                      "bottle,$can_child_attack"
+                      "$has_bottle,$can_child_attack"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -392,7 +392,7 @@
                   {
                     "name": "GS4",
                     "access_rules": [
-                      "bottle,$can_child_attack"
+                      "$has_bottle,$can_child_attack"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -420,8 +420,8 @@
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "all_skulltulas,bottle,$can_child_attack",
-                      "all_skulltulas,bottle,shield1"
+                      "all_skulltulas,$has_bottle,$can_child_attack",
+                      "all_skulltulas,$has_bottle,shield1"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -990,7 +990,7 @@
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "all_skulltulas,bottle,$can_child_attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1850,7 +1850,7 @@
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "all_skulltulas,bottle,$can_child_attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2191,7 +2191,7 @@
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "all_skulltulas,bottle"
+                          "all_skulltulas,$has_bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2373,7 +2373,7 @@
                       {
                         "name": "GS37",
                         "access_rules": [
-                          "all_skulltulas,bottle,$can_child_attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3119,7 +3119,7 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,bottle"
+                          "sword2,$has_bottle"
                         ],
                         "x": 2619,
                         "y": 499
@@ -3302,7 +3302,7 @@
                       {
                         "name": "GS87",
                         "access_rules": [
-                          "bottle,$can_child_attack"
+                          "$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3520,7 +3520,7 @@
                       {
                         "name": "GS93",
                         "access_rules": [
-                          "all_skulltulas,bottle,$can_child_attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4341,7 +4341,7 @@
                   {
                     "name": "Happy Hunting",
                     "access_rules": [
-                      "bow,ocarina,epona,bottle",
+                      "bow,ocarina,epona,$has_bottle",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4475,10 +4475,10 @@
               {
                 "name": "King Zora",
                 "access_rules": [
-                  "bottle,[wallet2]",
-                  "bottle,$adult_fountain",
-                  "bottle,@Ganons Castle/Water Trial",
-                  "bottle,@Gerudo Training Grounds MQ/Before Heavy Block Chest"
+                  "$has_bottle,[wallet2]",
+                  "$has_bottle,$adult_fountain",
+                  "$has_bottle,@Ganons Castle/Water Trial",
+                  "$has_bottle,@Gerudo Training Grounds MQ/Before Heavy Block Chest"
                 ],
                 "sections": [
                   {

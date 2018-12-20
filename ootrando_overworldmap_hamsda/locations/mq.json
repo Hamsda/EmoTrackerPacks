@@ -1762,7 +1762,7 @@
       {
         "name": "Water Trial Chest",
         "access_rules": [
-          "bottle"
+          "$has_bottle"
         ],
         "item_count": 1
       },
@@ -1837,8 +1837,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "$can_LA,lift3,ocarina,time,$has_goron_tunic,bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,longshot",
-          "$can_LA,lift3,ocarina,time,$has_goron_tunic,bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
+          "$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,longshot",
+          "$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1884,7 +1884,7 @@
     "name": "Ice Cavern MQ",
     "parent": "Zoras Fountain A",
     "access_rules": [
-      "ice_mq,$adult_fountain,bottle"
+      "ice_mq,$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -1912,7 +1912,7 @@
       {
         "name": "Sheik in Ice Cavern",
         "access_rules": [
-          "bottle",
+          "$has_bottle",
           "{agony}"
         ],
         "capture_item": true,
@@ -2051,7 +2051,7 @@
       {
         "name": "Second Iron Knuckle Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],$can_see_with_lens,bottle"
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],$can_see_with_lens,$has_bottle"
         ],
         "item_count": 1
       },

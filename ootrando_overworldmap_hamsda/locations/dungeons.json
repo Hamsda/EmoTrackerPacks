@@ -1663,8 +1663,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "$can_LA,longshot,bombchu,shield3,lift3,bottle,hammer,$has_fire,$can_see_with_lens,$has_goron_tunic",
-          "$can_LA,longshot,bombchu,shield3,lift3,bottle,hammer,$has_fire,hoverboots,$has_goron_tunic"
+          "$can_LA,longshot,bombchu,shield3,lift3,$has_bottle,hammer,$has_fire,$can_see_with_lens,$has_goron_tunic",
+          "$can_LA,longshot,bombchu,shield3,lift3,$has_bottle,hammer,$has_fire,hoverboots,$has_goron_tunic"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1707,7 +1707,7 @@
     "name": "Ice Cavern",
     "parent": "Zoras Fountain A",
     "access_rules": [
-      "ice_reg,$adult_fountain,bottle"
+      "ice_reg,$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -1731,7 +1731,7 @@
       {
         "name": "Sheik in Ice Cavern",
         "access_rules": [
-          "bottle",
+          "$has_bottle",
           "{agony}"
         ],
         "capture_item": true,
