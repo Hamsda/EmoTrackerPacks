@@ -206,11 +206,16 @@ function has_bottle()
   local bottles = Tracker:ProviderCountForCode("bottle")
   local ruto = Tracker:ProviderCountForCode("ruto")
   local bigpoe = Tracker:ProviderCountForCode("bigpoe")
-  if child_fountain() > 0 then
+  local kz_count, kz_level = child_fountain()
+  local level = AccessibilityLevel.Normal
+  
+  if kz_count > 0 then
     ruto = 0
+    level = kz_level
   end
   if Tracker:ProviderCountForCode("sword2") > 0 then
     bigpoe = 0
   end
-  return (bottles - ruto - bigpoe)
+  
+  return (bottles - ruto - bigpoe), level
 end
