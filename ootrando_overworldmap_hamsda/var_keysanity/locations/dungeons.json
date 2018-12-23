@@ -522,13 +522,6 @@
         "item_count": 1
       },
       {
-        "name": "Red Poe",
-        "access_rules": [
-          "forest_small_keys:3,lift1,bow"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Bow Chest",
         "access_rules": [
           "forest_small_keys:3,lift1"
@@ -536,9 +529,16 @@
         "item_count": 1
       },
       {
+        "name": "Red Poe",
+        "access_rules": [
+          "@Forest Temple/Bow Chest,bow"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Blue Poe",
         "access_rules": [
-          "forest_small_keys:3,lift1,bow"
+          "@Forest Temple/Bow Chest,bow"
         ],
         "item_count": 1
       },
@@ -546,14 +546,19 @@
         "name": "Checkerboard",
         "access_rules": [
           "forest_small_keys:5,lift1,bow",
-          "forest_small_keys:5,lift1,dinsfire,magic"
+          "forest_small_keys:5,lift1,dinsfire,magic",
+          "forest_small_keys:1,hoverboots,ocarina,[scarecrow],[forest_small_keys:5],[lift1],[bow]",
+          "forest_small_keys:1,hoverboots,ocarina,[scarecrow],[forest_small_keys:5],[lift1],[dinsfire],[magic]",
+          "hoverboots,ocarina,time,[scarecrow],[forest_small_keys:5],[lift1],[bow]",
+          "hoverboots,ocarina,time,[scarecrow],[forest_small_keys:5],[lift1],[dinsfire],[magic]",
+          "bow,hoverboots,ocarina,[scarecrow],[forest_small_keys:5],[lift1],[longshot]"
         ],
         "item_count": 1
       },
       {
         "name": "Basement",
         "access_rules": [
-          "forest_small_keys:5,lift1,bow"
+          "@Forest Temple/Red Poe,@Forest Temple/Checkerboard"
         ],
         "item_count": 1
       },
