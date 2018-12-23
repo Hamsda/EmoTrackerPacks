@@ -4341,7 +4341,7 @@
                   {
                     "name": "Happy Hunting",
                     "access_rules": [
-                      "bow,ocarina,epona,$has_bottle",
+                      "bow,[ocarina],[epona],$has_bottle",
                       "{agony}"
                     ],
                     "capture_item": true,
