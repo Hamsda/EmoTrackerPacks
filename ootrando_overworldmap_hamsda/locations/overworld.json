@@ -589,6 +589,7 @@
                       "sword2,ironboots",
                       "{}"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
@@ -893,6 +894,7 @@
                           "scale1",
                           "{}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -1386,6 +1388,7 @@
                           "boomerang",
                           "{}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -2288,6 +2291,7 @@
                           "bow",
                           "{ocarina,bolero}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0.1
+
+- fixed a few capture locations that were missing a `"capture_item": true` oops
+
 ## 2.2.0.0
 
 - moved logic to lua
