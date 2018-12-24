@@ -206,16 +206,18 @@
     "stages": [
       {
         "img": "images/egg.png",
-        "img_mods": "@disabled",
+        "img_mods": "@disabled,overlay|images/overlay_child.png",
         "codes": "nokidtrade"
       },
       {
         "img": "images/egg.png",
+        "img_mods": "overlay|images/overlay_child.png",
         "codes": "kidtrade,childegg,weirdegg",
         "inherit_codes": false
       },
       {
         "img": "images/cucco.png",
+        "img_mods": "overlay|images/overlay_child.png",
         "codes": "kidtrade,childcucco",
         "inherit_codes": false
       },
@@ -284,16 +286,18 @@
     "stages": [
       {
         "img": "images/egg.png",
-        "img_mods": "@disabled",
+        "img_mods": "@disabled,overlay|images/overlay_adult.png",
         "codes": "noadulttrade"
       },
       {
         "img": "images/egg.png",
+        "img_mods": "overlay|images/overlay_adult.png",
         "codes": "adulttrade,adultegg,pocketegg",
         "inherit_codes": false
       },
       {
         "img": "images/cucco.png",
+        "img_mods": "overlay|images/overlay_adult.png",
         "codes": "adulttrade,adultcucco,pocketcucco",
         "inherit_codes": false
       },

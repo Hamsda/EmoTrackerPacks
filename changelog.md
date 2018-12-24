@@ -13,6 +13,7 @@
 - added/fixed a bunch of hint locations, mainly MQ related
 - fixed Water Temple cracked wall sequence break
 - moved a bunch of locations around to make dungeons not overlap
+- added adult/child overlay to the first trade items
 
 ## 2.1.4.1
 
