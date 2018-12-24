@@ -14,7 +14,7 @@
       {
         "name": "Slingshot Chest",
         "access_rules": [
-          "@logic/can child attack"
+          "$can_child_attack"
         ],
         "item_count": 1
       },
@@ -51,7 +51,8 @@
       {
         "name": "After Spinning Log",
         "access_rules": [
-          "@Deku Tree MQ/Compass Chest,ocarina,time"
+          "@Deku Tree MQ/Compass Chest,ocarina,time",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -86,7 +87,7 @@
             "name": "GS8 - Crate Near Map",
             "short_name": "Crate Near Map",
             "access_rules": [
-              "@logic/can child attack"
+              "$can_child_attack"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -163,7 +164,7 @@
     "name": "Dodongos Cavern MQ",
     "parent": "Death Mountain C",
     "access_rules": [
-      "dodongo_mq,@logic/can blast",
+      "dodongo_mq,$can_blast",
       "dodongo_mq,lift1"
     ],
     "sections": [
@@ -175,7 +176,7 @@
         "name": "Compass Chest",
         "access_rules": [
           "sword2",
-          "@logic/can child attack",
+          "$can_child_attack",
           "nuts"
         ],
         "item_count": 1
@@ -183,8 +184,8 @@
       {
         "name": "Larva Room",
         "access_rules": [
-          "@logic/has fire",
-          "sticks,@logic/explosives",
+          "$has_fire",
+          "sticks,$has_explosives",
           "sticks,lift1"
         ],
         "item_count": 1
@@ -192,7 +193,7 @@
       {
         "name": "Torch Puzzle Room",
         "access_rules": [
-          "@logic/can blast",
+          "$can_blast",
           "sticks",
           "dinsfire,magic",
           "sword2,[hoverboots]",
@@ -206,7 +207,7 @@
           "sword2",
           "sling,sticks",
           "sling,dinsfire,magic",
-          "sling,@logic/explosives"
+          "sling,$has_explosives"
         ],
         "item_count": 1
       },
@@ -221,8 +222,7 @@
       {
         "name": "Above Boss",
         "access_rules": [
-          "@Dodongos Cavern MQ/Under Grave",
-          "{agony}"
+          "@Dodongos Cavern MQ/Under Grave"
         ],
         "item_count": 1
       },
@@ -246,11 +246,11 @@
       {
         "map": "child",
         "visibility_rules": [
-          "@logic/explosives",
+          "$has_explosives",
           "lift1"
         ],
         "x": 1684,
-        "y": 220
+        "y": 250
       },
       {
         "map": "adult",
@@ -258,7 +258,7 @@
           "sword2"
         ],
         "x": 1684,
-        "y": 220
+        "y": 250
       }
     ],
     "children": [
@@ -272,7 +272,7 @@
             "name": "GS38 - Song of Time Block Room",
             "short_name": "Song of Time Block Room",
             "access_rules": [
-              "ocarina,time,@logic/can child attack",
+              "ocarina,time,$can_child_attack",
               "ocarina,time,sword2"
             ],
             "chest_unopened_img": "images/skulltula.png",
@@ -293,7 +293,7 @@
             "name": "GS40 - Lizalfos Room",
             "short_name": "Lizalfos Room",
             "access_rules": [
-              "@logic/can blast"
+              "$can_blast"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -303,13 +303,13 @@
             "name": "GS41 - Scrub/Poe Room",
             "short_name": "Scrub/Poe Room",
             "access_rules": [
-              "boomerang,sling,@logic/explosives",
-              "boomerang,sword2,@logic/explosives",
+              "boomerang,sling,$has_explosives",
+              "boomerang,sword2,$has_explosives",
               "boomerang,sling,lift1,sticks",
               "boomerang,sling,lift1,dinsfire,magic",
               "boomerang,sling,lift1,sword2,[hoverboots]",
               "boomerang,sling,lift1,sword2,[hammer]",
-              "sword2,hookshot,@logic/explosives",
+              "sword2,hookshot,$has_explosives",
               "sword2,hookshot,lift1",
               "sword2,hookshot,bow",
               "sword2,hookshot,dinsfire,magic"
@@ -333,19 +333,19 @@
           {
             "map": "child",
             "visibility_rules": [
-              "@logic/explosives",
+              "$has_explosives",
               "lift1"
             ],
-            "x": 1650,
-            "y": 220
+            "x": 1654,
+            "y": 250
           },
           {
             "map": "adult",
             "visibility_rules": [
               "sword2"
             ],
-            "x": 1650,
-            "y": 220
+            "x": 1654,
+            "y": 250
           }
         ]
       },
@@ -359,7 +359,7 @@
             "name": "Main Room",
             "short_name": "Main Room",
             "access_rules": [
-              "@logic/can stun deku"
+              "$can_stun_deku"
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
@@ -372,7 +372,7 @@
               "sword2",
               "sticks",
               "dinsfire,magic",
-              "@logic/explosives"
+              "$has_explosives"
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
@@ -382,7 +382,7 @@
             "name": "Above Stairs",
             "short_name": "Above Stairs",
             "access_rules": [
-              "@logic/can stun deku"
+              "$can_stun_deku"
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
@@ -393,19 +393,19 @@
           {
             "map": "child",
             "visibility_rules": [
-              "@logic/explosives",
+              "$has_explosives",
               "lift1"
             ],
-            "x": 1650,
-            "y": 252
+            "x": 1624,
+            "y": 250
           },
           {
             "map": "adult",
             "visibility_rules": [
               "sword2"
             ],
-            "x": 1650,
-            "y": 252
+            "x": 1624,
+            "y": 250
           }
         ]
       }
@@ -421,7 +421,7 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "@logic/explosives"
+          "$has_explosives"
         ],
         "item_count": 1
       },
@@ -477,7 +477,7 @@
       {
         "name": "Falling Like Like Room Chest",
         "access_rules": [
-          "@Jabu Jabus Belly MQ/Entry Side Chest,boomerang,@logic/explosives"
+          "@Jabu Jabus Belly MQ/Entry Side Chest,boomerang,$has_explosives"
         ],
         "item_count": 1
       },
@@ -510,7 +510,7 @@
     "map_locations": [
       {
         "map": "child",
-        "x": 2488,
+        "x": 2458,
         "y": 328
       }
     ],
@@ -547,7 +547,8 @@
             "name": "GS53 - Invisible Enemies Room",
             "short_name": "Invisible Enemies Room",
             "access_rules": [
-              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,@logic/lens"
+              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,$can_see_with_lens",
+              "{agony}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
@@ -568,8 +569,8 @@
         "map_locations": [
           {
             "map": "child",
-            "x": 2476,
-            "y": 293
+            "x": 2458,
+            "y": 298
           }
         ]
       }
@@ -695,8 +696,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "x": 2148,
-        "y": 586
+        "x": 2178,
+        "y": 596
       }
     ],
     "children": [
@@ -762,8 +763,8 @@
         "map_locations": [
           {
             "map": "adult",
-            "x": 2180,
-            "y": 586
+            "x": 2178,
+            "y": 566
           }
         ]
       }
@@ -773,7 +774,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater A",
     "access_rules": [
-      "fire_mq,@Sheik in Crater,@logic/redtunic"
+      "fire_mq,@Sheik in Crater,$has_goron_tunic"
     ],
     "sections": [
       {
@@ -783,8 +784,8 @@
       {
         "name": "Chest Near Boss",
         "access_rules": [
-          "hoverboots,@logic/has fire",
-          "hookshot,@logic/has fire"
+          "hoverboots,$has_fire",
+          "hookshot,$has_fire"
         ],
         "item_count": 1
       },
@@ -805,7 +806,7 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "hammer,hookshot,@logic/has fire,[bow]"
+          "hammer,hookshot,$has_fire,[bow]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -814,35 +815,35 @@
       {
         "name": "Big Lava Room Bombable Chest",
         "access_rules": [
-          "hammer,hookshot,@logic/has fire,@logic/explosives"
+          "hammer,hookshot,$has_fire,$has_explosives"
         ],
         "item_count": 1
       },
       {
         "name": "Maze Lower Chest",
         "access_rules": [
-          "hammer,fire_small_keys:1,@logic/has fire,[redtunic]"
+          "hammer,fire_small_keys:1,$has_fire,[redtunic]"
         ],
         "item_count": 1
       },
       {
         "name": "Maze Upper Chest",
         "access_rules": [
-          "@Fire Temple MQ/Maze Lower Chest,hookshot,[@logic/explosives]"
+          "@Fire Temple MQ/Maze Lower Chest,hookshot,[$has_explosives]"
         ],
         "item_count": 1
       },
       {
         "name": "Maze Side Room",
         "access_rules": [
-          "@Fire Temple MQ/Maze Upper Chest,@logic/explosives"
+          "@Fire Temple MQ/Maze Upper Chest,$has_explosives"
         ],
         "item_count": 1
       },
       {
         "name": "Compass Chest",
         "access_rules": [
-          "@Fire Temple MQ/Maze Upper Chest,@logic/explosives"
+          "@Fire Temple MQ/Maze Upper Chest,$has_explosives"
         ],
         "item_count": 1
       },
@@ -851,12 +852,15 @@
         "access_rules": [
           "@Fire Temple MQ/Maze Upper Chest,fire_small_keys:2,bow"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
         "name": "West Tower Top Chest",
         "access_rules": [
-          "@Fire Temple MQ/Freestanding Key,fire_small_keys:3"
+          "@Fire Temple MQ/Freestanding Key,fire_small_keys:3",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -864,8 +868,8 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "@Fire Temple MQ/Freestanding Key,hammer,fire_boss_key,@logic/has fire",
-          "hoverboots,hammer,fire_boss_key,@logic/has fire,[redtunic]"
+          "@Fire Temple MQ/Freestanding Key,hammer,fire_boss_key,$has_fire",
+          "hoverboots,hammer,fire_boss_key,$has_fire,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -877,7 +881,7 @@
       {
         "map": "adult",
         "x": 1912,
-        "y": 80
+        "y": 115
       }
     ],
     "children": [
@@ -933,7 +937,7 @@
             "name": "GS69 - Fire Wall Maze Center",
             "short_name": "Fire Wall Maze Center",
             "access_rules": [
-              "@Fire Temple MQ/Freestanding Key,@logic/explosives"
+              "@Fire Temple MQ/Freestanding Key,$has_explosives"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -943,7 +947,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "x": 1912,
+            "x": 1942,
             "y": 115
           }
         ]
@@ -954,14 +958,14 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_mq,ironboots,hookshot,@logic/bluetunic",
-      "water_mq,scale2,hookshot,@logic/bluetunic"
+      "water_mq,ironboots,hookshot,$has_zora_tunic",
+      "water_mq,scale2,hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
         "name": "Map Chest",
         "access_rules": [
-          "ironboots,@logic/has fire"
+          "ironboots,$has_fire"
         ],
         "item_count": 1
       },
@@ -991,7 +995,8 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "water_small_keys:1,longshot,ironboots,dinsfire,magic"
+          "water_small_keys:1,longshot,ironboots,dinsfire,magic",
+          "{agony}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
@@ -1001,10 +1006,13 @@
       {
         "name": "Freestanding Key",
         "access_rules": [
-          "@Water Temple MQ/Boss Key Chest,hoverboots",
-          "@Water Temple MQ/Boss Key Chest,ocarina,[scarecrow]"
+          "water_small_keys:1,longshot,ironboots,dinsfire,magic,hoverboots",
+          "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,[scarecrow]",
+          "{agony}"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
@@ -1021,7 +1029,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "x": 1015,
+        "x": 985,
         "y": 1380
       }
     ],
@@ -1036,7 +1044,8 @@
             "name": "GS73 - South Basement",
             "short_name": "South Basement",
             "access_rules": [
-              "@Water Temple MQ/Freestanding Key,bow,firearrow,magic"
+              "water_small_keys:1,longshot,ironboots,dinsfire,magic,hoverboots,bow,firearrow",
+              "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,[scarecrow],bow,firearrow"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1087,8 +1096,8 @@
         "map_locations": [
           {
             "map": "adult",
-            "x": 980,
-            "y": 1380
+            "x": 985,
+            "y": 1350
           }
         ]
       }
@@ -1098,14 +1107,14 @@
     "name": "Shadow Temple MQ",
     "parent": "Kakariko A",
     "access_rules": [
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hoverboots",
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,@logic/lens,sword2,hookshot"
+      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
+      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot"
     ],
     "sections": [
       {
         "name": "Compass Chest",
         "access_rules": [
-          "@logic/explosives,shadow_small_keys:1"
+          "$has_explosives,shadow_small_keys:1"
         ],
         "item_count": 1
       },
@@ -1141,7 +1150,7 @@
       {
         "name": "Falling Spikes Lower Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Map Chest,@logic/explosives,shadow_small_keys:1"
+          "@Shadow Temple MQ/Map Chest,$has_explosives,shadow_small_keys:1"
         ],
         "item_count": 1
       },
@@ -1217,24 +1226,27 @@
         "item_count": 1
       },
       {
-        "name": "Bomb Flower Chest",
+        "name": "Freestanding Key",
         "access_rules": [
           "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,bow,time,longshot"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Flower Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Freestanding Key",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
       },
       {
-        "name": "Freestanding Key",
-        "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Spike Walls Left Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest,shadow_small_keys:5"
+          "@Shadow Temple MQ/Freestanding Key,shadow_small_keys:5"
         ],
         "item_count": 1
       },
@@ -1263,7 +1275,7 @@
       {
         "map": "adult",
         "x": 2144,
-        "y": 326
+        "y": 296
       }
     ],
     "children": [
@@ -1327,8 +1339,8 @@
         "map_locations": [
           {
             "map": "adult",
-            "x": 2106,
-            "y": 310
+            "x": 2174,
+            "y": 296
           }
         ]
       }
@@ -1338,7 +1350,7 @@
     "name": "Spirit Temple MQ",
     "parent": "Colossus",
     "access_rules": [
-      "spirit_mq,@logic/colossus"
+      "spirit_mq,$colossus"
     ],
     "sections": [
       {
@@ -1348,8 +1360,8 @@
       {
         "name": "Entrance Back Left Chest",
         "access_rules": [
-          "@logic/can blast,ocarina,requiem,sling",
-          "@logic/can blast,sword2,bow"
+          "$can_blast,ocarina,requiem,sling",
+          "$can_blast,sword2,bow"
         ],
         "item_count": 1
       },
@@ -1377,7 +1389,7 @@
         "access_rules": [
           "ocarina,requiem,sticks",
           "ocarina,requiem,sword1",
-          "ocarina,requiem,@logic/explosives"
+          "ocarina,requiem,$has_explosives"
         ],
         "item_count": 1
       },
@@ -1393,7 +1405,8 @@
       {
         "name": "Child Center Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer,spirit_small_keys:2"
+          "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer,spirit_small_keys:2",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1415,7 +1428,7 @@
       {
         "name": "Upper NE Main Room Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,@logic/lens"
+          "sword2,lift2,longshot,bombchu,$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -1476,7 +1489,8 @@
       {
         "name": "Lower Adult Right Chest",
         "access_rules": [
-          "@Spirit Temple MQ/Lower Adult Left Chest,spirit_small_keys:1,hammer,ocarina,time,epona,sun,storm,lullaby"
+          "@Spirit Temple MQ/Lower Adult Left Chest,spirit_small_keys:1,hammer,ocarina,time,epona,sun,storm,lullaby",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1491,14 +1505,14 @@
       {
         "name": "Mirror Puzzle Invisible Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:2,ocarina,lullaby,hammer,@logic/lens"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:2,ocarina,lullaby,hammer,$can_see_with_lens"
         ],
         "item_count": 1
       },
       {
         "name": "Mirror Shield Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,spirit_small_keys:1,ocarina,time,@logic/lens"
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:1,ocarina,time,$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -1527,7 +1541,7 @@
         "visibility_rules": [
           "ocarina,requiem"
         ],
-        "x": 85,
+        "x": 55,
         "y": 301
       },
       {
@@ -1535,7 +1549,7 @@
         "visibility_rules": [
           "sword2"
         ],
-        "x": 85,
+        "x": 55,
         "y": 301
       }
     ],
@@ -1601,16 +1615,16 @@
         "map_locations": [
           {
             "map": "child",
-            "x": 82,
-            "y": 246
+            "x": 55,
+            "y": 271
           },
           {
             "map": "adult",
             "visibility_rules": [
               "sword2"
             ],
-            "x": 82,
-            "y": 246
+            "x": 55,
+            "y": 271
           }
         ]
       }
@@ -1627,7 +1641,8 @@
         "name": "Compass Chest",
         "access_rules": [
           "sword1",
-          "sticks,[sword1]"
+          "sticks,[sword1]",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1635,7 +1650,7 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "@logic/explosives",
+          "$has_explosives",
           "ocarina,lullaby"
         ],
         "item_count": 1
@@ -1643,30 +1658,34 @@
       {
         "name": "Lens Chest",
         "access_rules": [
-          "@logic/explosives,botw_small_keys:1"
+          "$has_explosives,botw_small_keys:1"
         ],
         "item_count": 1
       },
       {
         "name": "Dead Hand Freestanding Key",
         "access_rules": [
-          "@logic/explosives"
+          "$has_explosives"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
         "name": "East Inner Room Freestanding Key",
         "access_rules": [
-          "@logic/explosives",
+          "$has_explosives",
           "ocarina,lullaby"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
     ],
     "map_locations": [
       {
         "map": "child",
-        "x": 1884,
+        "x": 1920,
         "y": 383
       }
     ],
@@ -1681,8 +1700,8 @@
             "name": "GS78 - West Inner Room",
             "short_name": "West Inner Room",
             "access_rules": [
-              "@logic/can child attack,@logic/lens,ocarina,lullaby",
-              "@logic/can child attack,@logic/lens,@logic/explosives"
+              "$can_child_attack,$can_see_with_lens,ocarina,lullaby",
+              "$can_child_attack,$can_see_with_lens,$has_explosives"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1692,7 +1711,7 @@
             "name": "GS79 - Basement",
             "short_name": "Basement",
             "access_rules": [
-              "@logic/can child attack"
+              "$can_child_attack"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1702,7 +1721,7 @@
             "name": "GS80 - Coffin Room",
             "short_name": "Coffin Room",
             "access_rules": [
-              "@logic/can child attack,botw_small_keys:1"
+              "$can_child_attack,botw_small_keys:1"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1712,7 +1731,7 @@
         "map_locations": [
           {
             "map": "child",
-            "x": 1900,
+            "x": 1920,
             "y": 414
           }
         ]
@@ -1739,21 +1758,24 @@
       {
         "name": "Forest Trial Second Chest",
         "access_rules": [
-          "@logic/has fire"
+          "$has_fire"
         ],
         "item_count": 1
       },
       {
         "name": "Forest Trial Freestanding Key",
         "access_rules": [
-          "hookshot"
+          "hookshot",
+          "{}"
         ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
         "name": "Water Trial Chest",
         "access_rules": [
-          "bottle"
+          "$has_bottle"
         ],
         "item_count": 1
       },
@@ -1762,17 +1784,17 @@
         "access_rules": [
           "bow,hookshot",
           "bow,hoverboots",
-          "hoverboots,@logic/lens,@logic/explosives",
-          "hoverboots,@logic/lens,lift1",
-          "hoverboots,@logic/lens,dinsfire,magic"
+          "hoverboots,$can_see_with_lens,$has_explosives",
+          "hoverboots,$can_see_with_lens,lift1",
+          "hoverboots,$can_see_with_lens,dinsfire,magic"
         ],
         "item_count": 1
       },
       {
         "name": "Shadow Trial Second Chest",
         "access_rules": [
-          "bow,@logic/lens,hoverboots",
-          "bow,@logic/lens,hookshot,@logic/has fire"
+          "bow,$can_see_with_lens,hoverboots",
+          "bow,$can_see_with_lens,hookshot,$has_fire"
         ],
         "item_count": 1
       },
@@ -1786,7 +1808,7 @@
       {
         "name": "Spirit Trial Second Chest",
         "access_rules": [
-          "@Ganons Castle MQ/Spirit Trial First Chest,bombchu,@logic/lens"
+          "@Ganons Castle MQ/Spirit Trial First Chest,bombchu,$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -1828,8 +1850,8 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "gc_small_keys:3,@logic/can LA,lift3,ocarina,time,@logic/redtunic,bottle,@logic/lens,hammer,bombchu,shield3,firearrow,longshot",
-          "gc_small_keys:3,@logic/can LA,lift3,ocarina,time,@logic/redtunic,bottle,@logic/lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
+          "gc_small_keys:3,$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,longshot",
+          "gc_small_keys:3,$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1839,7 +1861,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "x": 1439,
+        "x": 1409,
         "y": 206
       }
     ],
@@ -1854,7 +1876,7 @@
             "name": "Hidden Room",
             "short_name": "Hidden Room",
             "access_rules": [
-              "@logic/lens"
+              "$can_see_with_lens"
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
@@ -1864,8 +1886,8 @@
         "map_locations": [
           {
             "map": "adult",
-            "x": 1400,
-            "y": 206
+            "x": 1409,
+            "y": 176
           }
         ]
       }
@@ -1875,7 +1897,7 @@
     "name": "Ice Cavern MQ",
     "parent": "Zoras Fountain A",
     "access_rules": [
-      "ice_mq,@logic/adult fountain,bottle"
+      "ice_mq,$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -1889,7 +1911,8 @@
       {
         "name": "Freestanding HP",
         "access_rules": [
-          "@logic/explosives"
+          "$has_explosives",
+          "{}"
         ],
         "chest_unopened_img": "images/HP.png",
         "chest_opened_img": "images/HP_grey.png",
@@ -1902,7 +1925,7 @@
       {
         "name": "Sheik in Ice Cavern",
         "access_rules": [
-          "bottle",
+          "$has_bottle",
           "{agony}"
         ],
         "capture_item": true,
@@ -1914,7 +1937,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "x": 2501,
+        "x": 2471,
         "y": 276
       }
     ],
@@ -1957,8 +1980,8 @@
         "map_locations": [
           {
             "map": "adult",
-            "x": 2465,
-            "y": 276
+            "x": 2471,
+            "y": 246
           }
         ]
       }
@@ -1983,7 +2006,7 @@
       {
         "name": "Hidden Ceiling Chest",
         "access_rules": [
-          "@logic/lens"
+          "$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -2013,9 +2036,10 @@
       {
         "name": "Underwater Silver Rupee Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,@logic/has fire,ironboots,@logic/bluetunic",
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest,longshot,@logic/has fire,ironboots,@logic/bluetunic",
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest,bow,@logic/has fire,ironboots,@logic/bluetunic"
+          "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,$has_fire,ironboots,$has_zora_tunic",
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,longshot,$has_fire,ironboots,$has_zora_tunic",
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,bow,$has_fire,ironboots,$has_zora_tunic",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2023,7 +2047,7 @@
       {
         "name": "First Iron Knuckle Chest",
         "access_rules": [
-          "@logic/has fire"
+          "$has_fire"
         ],
         "item_count": 1
       },
@@ -2044,7 +2068,7 @@
       {
         "name": "Second Iron Knuckle Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],@logic/lens,bottle"
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],$can_see_with_lens,$has_bottle"
         ],
         "item_count": 1
       },
@@ -2079,7 +2103,8 @@
       {
         "name": "Ice Arrows Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest,gtg_small_keys:3"
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,gtg_small_keys:3",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2089,7 +2114,7 @@
       {
         "map": "adult",
         "x": 481,
-        "y": 444
+        "y": 474
       }
     ]
   }

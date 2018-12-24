@@ -1,137 +1,5 @@
 [
   {
-    "name": "logic",
-    "sections": [
-      {
-        "name": "bombchus",
-        "access_rules": [
-          "logic_chus_no,bombs",
-          "logic_chus_yes,bombchu"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "explosives",
-        "access_rules": [
-          "bombs",
-          "@logic/bombchus",
-          "bombchu,[bombs]"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "can blast",
-        "access_rules": [
-          "@logic/explosives",
-          "sword2,hammer"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "can child attack",
-        "access_rules": [
-          "sling",
-          "boomerang",
-          "sticks",
-          "@logic/explosives",
-          "sword1",
-          "dinsfire,magic"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "can stun deku",
-        "access_rules": [
-          "sword2",
-          "@logic/can child attack",
-          "nuts",
-          "shield1"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "can LA",
-        "access_rules": [
-          "sword2,magic,bow,lightarrow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "has fire",
-        "access_rules": [
-          "dinsfire,magic",
-          "sword2,firearrow,bow,magic"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "lens",
-        "access_rules": [
-          "lens_all,[lens],[magic]",
-          "lens_wasteland"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "redtunic",
-        "access_rules": [
-          "fewer_tunics_yes",
-          "fewer_tunics_no,[redtunic]"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "bluetunic",
-        "access_rules": [
-          "fewer_tunics_yes",
-          "fewer_tunics_no,[bluetunic]"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "can leave forest",
-        "access_rules": [
-          "open_forest",
-          "sling,sword1"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "colossus",
-        "access_rules": [
-          "sword2,carpenter_rescue_yes,[hoverboots],[lens],[magic]",
-          "sword2,carpenter_rescue_yes,[hoverboots],lens_chest",
-          "sword2,carpenter_rescue_yes,[longshot],[lens],[magic]",
-          "sword2,carpenter_rescue_yes,[longshot],lens_chest",
-          "sword2,gerudo_fortress_open,[hoverboots],[lens],[magic]",
-          "sword2,gerudo_fortress_open,[hoverboots],lens_chest",
-          "sword2,gerudo_fortress_open,[longshot],[lens],[magic]",
-          "sword2,gerudo_fortress_open,[longshot],lens_chest",
-          "ocarina,requiem"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "child fountain",
-        "access_rules": [
-          "@logic/explosives,[ocarina],[lullaby],ruto,[king_zora_moved_yes]",
-          "scale1,ruto,[king_zora_moved_yes]"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "adult fountain",
-        "access_rules": [
-          "@logic/explosives,ocarina,lullaby,ruto,[king_zora_moved_yes],sword2",
-          "scale1,ruto,[king_zora_moved_yes],sword2,ocarina,lullaby",
-          "@logic/explosives,[ocarina],[lullaby],ruto,[king_zora_moved_yes],sword2,hoverboots",
-          "scale1,ruto,[king_zora_moved_yes],sword2,[ocarina],[lullaby],hoverboots"
-        ],
-        "item_count": 1
-      }
-    ]
-  },
-  {
     "name": "Child",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
@@ -254,8 +122,8 @@
                   {
                     "name": "GS1",
                     "access_rules": [
-                      "@logic/can leave forest,@logic/can child attack",
-                      "ocarina,sun,@logic/can child attack"
+                      "$can_leave_forest,$can_child_attack",
+                      "ocarina,sun,$can_child_attack"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -279,7 +147,7 @@
                   {
                     "name": "GS2",
                     "access_rules": [
-                      "bottle,@logic/can child attack"
+                      "$has_bottle,$can_child_attack"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -356,7 +224,7 @@
               {
                 "name": "Deku Scrub below Bridge",
                 "access_rules": [
-                  "@logic/can child attack",
+                  "$can_child_attack",
                   "nuts",
                   "shield1"
                 ],
@@ -379,7 +247,7 @@
               {
                 "name": "Deku Scrubs in Grotto",
                 "access_rules": [
-                  "@logic/explosives",
+                  "$has_explosives",
                   "sword2,hammer,[ocarina],[saria]",
                   "sword2,hammer,[ocarina],[minuet]"
                 ],
@@ -404,7 +272,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "$has_explosives"
                     ],
                     "x": 2192,
                     "y": 724
@@ -425,7 +293,7 @@
                   {
                     "name": "Blast it",
                     "access_rules": [
-                      "@logic/can blast"
+                      "$can_blast"
                     ],
                     "item_count": 1
                   }
@@ -434,7 +302,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "$has_explosives"
                     ],
                     "x": 2149,
                     "y": 776
@@ -493,8 +361,10 @@
                   {
                     "name": "Skull Mask",
                     "access_rules": [
-                      "skullmask"
+                      "skullmask",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -524,7 +394,7 @@
                   {
                     "name": "GS4",
                     "access_rules": [
-                      "bottle,@logic/can child attack"
+                      "$has_bottle,$can_child_attack"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -552,8 +422,8 @@
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "all_skulltulas,bottle,@logic/can child attack",
-                      "all_skulltulas,bottle,shield1"
+                      "all_skulltulas,$has_bottle,$can_child_attack",
+                      "all_skulltulas,$has_bottle,shield1"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -571,7 +441,7 @@
               {
                 "name": "Deku Scrubs Near Stage",
                 "access_rules": [
-                  "scrub_shuffle_yes,@logic/can stun deku"
+                  "scrub_shuffle_yes,$can_stun_deku"
                 ],
                 "sections": [
                   {
@@ -597,7 +467,7 @@
               {
                 "name": "Wolfos Grotto",
                 "access_rules": [
-                  "@logic/explosives",
+                  "$has_explosives",
                   "sword2,hammer,[ocarina],[saria]",
                   "sword2,hammer,[ocarina],[minuet]"
                 ],
@@ -611,7 +481,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "$has_explosives"
                     ],
                     "x": 2180,
                     "y": 686
@@ -634,7 +504,7 @@
                     "access_rules": [
                       "postzelda,sling",
                       "postzelda,sticks",
-                      "postzelda,@logic/explosives",
+                      "postzelda,$has_explosives",
                       "postzelda,sword1",
                       "postzelda,dinsfire,magic"
                     ],
@@ -647,7 +517,7 @@
                   {
                     "map": "child",
                     "x": 2155,
-                    "y": 626
+                    "y": 635
                   }
                 ]
               },
@@ -662,7 +532,7 @@
                     "access_rules": [
                       "sling",
                       "sticks",
-                      "@logic/explosives",
+                      "$has_explosives",
                       "sword1",
                       "dinsfire,magic",
                       "minuet,nuts",
@@ -699,7 +569,7 @@
       {
         "name": "Outside Forest",
         "access_rules": [
-          "@logic/can leave forest"
+          "$can_leave_forest"
         ],
         "children": [
           {
@@ -709,14 +579,15 @@
                 "name": "Tektite Grotto",
                 "color": "#09a09d",
                 "access_rules": [
-                  "@logic/can blast"
+                  "$can_blast"
                 ],
                 "sections": [
                   {
                     "name": "Dive down",
                     "access_rules": [
                       "scale2",
-                      "sword2,ironboots"
+                      "sword2,ironboots",
+                      "{}"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -727,7 +598,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives,scale2"
+                      "$has_explosives"
                     ],
                     "x": 1152,
                     "y": 481
@@ -749,7 +620,7 @@
                   {
                     "name": "Deku Scrub",
                     "access_rules": [
-                      "@logic/can blast"
+                      "$can_blast"
                     ],
                     "item_count": 1
                   }
@@ -758,7 +629,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "$has_explosives"
                     ],
                     "x": 1141,
                     "y": 999
@@ -805,7 +676,7 @@
                   {
                     "name": "Blast it",
                     "access_rules": [
-                      "@logic/can blast"
+                      "$can_blast"
                     ],
                     "item_count": 1
                   }
@@ -814,7 +685,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "$has_explosives"
                     ],
                     "x": 1372,
                     "y": 440
@@ -836,7 +707,7 @@
                   {
                     "name": "Blast it",
                     "access_rules": [
-                      "@logic/can blast"
+                      "$can_blast"
                     ],
                     "item_count": 1
                   }
@@ -845,7 +716,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives"
+                      "$has_explosives"
                     ],
                     "x": 1427,
                     "y": 925
@@ -942,8 +813,8 @@
                   {
                     "name": "GS12",
                     "access_rules": [
-                      "@logic/explosives,boomerang",
-                      "@logic/can blast,sword2,hookshot"
+                      "$has_explosives,boomerang",
+                      "$can_blast,sword2,hookshot"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -954,7 +825,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives,boomerang"
+                      "$has_explosives,boomerang"
                     ],
                     "x": 1552,
                     "y": 406
@@ -962,7 +833,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "@logic/can blast,sword2,hookshot"
+                      "$can_blast,sword2,hookshot"
                     ],
                     "x": 1552,
                     "y": 406
@@ -978,8 +849,9 @@
                   {
                     "name": "GS13",
                     "access_rules": [
-                      "@logic/explosives,dinsfire,magic,boomerang",
-                      "sword2,hammer,@logic/has fire,hookshot"
+                      "$has_explosives,dinsfire,magic,boomerang",
+                      "sword2,hammer,$has_fire,hookshot",
+                      "{agony}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -991,7 +863,8 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "@logic/explosives,dinsfire,magic,boomerang"
+                      "$has_explosives,dinsfire,magic,boomerang",
+                      "{agony}"
                     ],
                     "x": 972,
                     "y": 658
@@ -999,7 +872,8 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,hammer,@logic/has fire,hookshot"
+                      "sword2,hammer,$has_fire,hookshot",
+                      "{agony}"
                     ],
                     "x": 972,
                     "y": 658
@@ -1016,7 +890,8 @@
                       {
                         "name": "Dive down",
                         "access_rules": [
-                          "scale1"
+                          "scale1",
+                          "{}"
                         ],
                         "item_count": 1
                       }
@@ -1072,10 +947,6 @@
                     "sections": [
                       {
                         "name": "Bite pls",
-                        "access_rules": [
-                          "sword1",
-                          "{agony}"
-                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -1120,7 +991,7 @@
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "all_skulltulas,bottle,@logic/can child attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1168,7 +1039,7 @@
                       {
                         "name": "GS57",
                         "access_rules": [
-                          "@logic/can child attack"
+                          "$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1186,7 +1057,7 @@
                   {
                     "name": "Under Gravestone",
                     "access_rules": [
-                      "scrub_shuffle_yes,@logic/can stun deku"
+                      "scrub_shuffle_yes,$can_stun_deku"
                     ],
                     "sections": [
                       {
@@ -1284,8 +1155,8 @@
                     "sections": [
                       {
                         "name": "Deku Scrubs",
-                        "access_rules":[
-                          "@logic/can child attack",
+                        "access_rules": [
+                          "$can_child_attack",
                           "nuts",
                           "shield1"
                         ],
@@ -1406,7 +1277,7 @@
                   {
                     "name": "Center Grotto",
                     "access_rules": [
-                      "@logic/can blast"
+                      "$can_blast"
                     ],
                     "sections": [
                       {
@@ -1424,7 +1295,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "$has_explosives"
                         ],
                         "x": 1787,
                         "y": 381
@@ -1512,7 +1383,8 @@
                         "name": "HP",
                         "access_rules": [
                           "sword2,[ocarina],[time]",
-                          "boomerang"
+                          "boomerang",
+                          "{}"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -1522,19 +1394,16 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "boomerang"
-                        ],
-                        "x": 1915,
-                        "y": 376
+                        "x": 1935,
+                        "y": 346
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,[ocarina],[time]"
+                          "sword2"
                         ],
-                        "x": 1915,
-                        "y": 376
+                        "x": 1935,
+                        "y": 346
                       }
                     ]
                   },
@@ -1899,8 +1768,9 @@
                   },
                   {
                     "name": "Royal Tomb",
-                    "access_rules":[
-                      "ocarina,lullaby"
+                    "access_rules": [
+                      "ocarina,lullaby",
+                      "{agony}"
                     ],
                     "sections": [
                       {
@@ -1911,7 +1781,7 @@
                           "sticks",
                           "sling",
                           "boomerang",
-                          "@logic/explosives",
+                          "$has_explosives",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -1922,7 +1792,7 @@
                       {
                         "name": "Torches",
                         "access_rules": [
-                          "@logic/has fire",
+                          "$has_fire",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -1982,7 +1852,7 @@
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "all_skulltulas,bottle,@logic/can child attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2008,7 +1878,7 @@
               "postzelda",
               "open_kak",
               "sword2",
-              "@logic/explosives",
+              "$has_explosives",
               "dinsfire,magic"
             ],
             "children": [
@@ -2021,7 +1891,7 @@
                       {
                         "name": "Right",
                         "access_rules": [
-                          "@logic/can blast",
+                          "$can_blast",
                           "sword2,lift2"
                         ],
                         "item_count": 2
@@ -2031,7 +1901,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "$has_explosives"
                         ],
                         "x": 1606,
                         "y": 98
@@ -2121,7 +1991,7 @@
                       {
                         "name": "GS34",
                         "access_rules": [
-                          "@logic/explosives"
+                          "$has_explosives"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2139,7 +2009,7 @@
                   {
                     "name": "Goron Shop",
                     "access_rules": [
-                      "shopsanity_yes,@logic/explosives",
+                      "shopsanity_yes,$has_explosives",
                       "shopsanity_yes,lift1",
                       "shopsanity_yes,sword2,bow",
                       "shopsanity_yes,dinsfire,magic",
@@ -2222,8 +2092,8 @@
                       {
                         "name": "Blast it",
                         "access_rules": [
-                          "@logic/can blast",
-                          "lift1,[@logic/can blast]"
+                          "$can_blast",
+                          "lift1,[$can_blast]"
                         ],
                         "item_count": 1
                       }
@@ -2232,7 +2102,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives",
+                          "$has_explosives",
                           "lift1"
                         ],
                         "x": 1744,
@@ -2242,7 +2112,7 @@
                         "map": "adult",
                         "visibility_rules": [
                           "sword2,hammer",
-                          "sword2,@logic/explosives"
+                          "sword2,$has_explosives"
                         ],
                         "x": 1744,
                         "y": 221
@@ -2279,7 +2149,7 @@
                   {
                     "name": "Mountain Summit Fairy",
                     "access_rules": [
-                      "ocarina,lullaby,@logic/can blast"
+                      "ocarina,lullaby,$can_blast"
                     ],
                     "sections": [
                       {
@@ -2291,7 +2161,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "$has_explosives"
                         ],
                         "x": 1764,
                         "y": 66
@@ -2309,7 +2179,7 @@
                   {
                     "name": "Bean Patch",
                     "access_rules": [
-                      "@logic/explosives",
+                      "$has_explosives",
                       "lift1"
                     ],
                     "sections": [
@@ -2323,7 +2193,7 @@
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "all_skulltulas,bottle"
+                          "all_skulltulas,$has_bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2333,7 +2203,7 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1684,
+                        "x": 1714,
                         "y": 252
                       }
                     ]
@@ -2347,7 +2217,7 @@
                       {
                         "name": "GS31",
                         "access_rules": [
-                          "@logic/can blast"
+                          "$can_blast"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2357,16 +2227,16 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1728,
-                        "y": 278
+                        "x": 1730,
+                        "y": 285
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
                           "sword2"
                         ],
-                        "x": 1728,
-                        "y": 278
+                        "x": 1730,
+                        "y": 285
                       }
                     ]
                   }
@@ -2381,7 +2251,7 @@
                       {
                         "name": "Blast it",
                         "access_rules": [
-                          "@logic/can blast"
+                          "$can_blast"
                         ],
                         "item_count": 1
                       }
@@ -2390,7 +2260,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives"
+                          "$has_explosives"
                         ],
                         "x": 1798,
                         "y": 42
@@ -2411,11 +2281,12 @@
                       {
                         "name": "Get it",
                         "access_rules": [
-                          "@logic/can blast",
+                          "$can_blast",
                           "ocarina,bolero,beans_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "lift1",
-                          "bow"
+                          "bow",
+                          "{ocarina,bolero}"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -2425,9 +2296,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "@logic/can blast"
-                        ],
                         "x": 1834,
                         "y": 66
                       },
@@ -2450,9 +2318,9 @@
                       {
                         "name": "Deku Scrub",
                         "access_rules": [
-                          "@logic/can blast,@logic/can child attack",
-                          "@logic/can blast,nuts",
-                          "@logic/can blast,shield1"
+                          "$can_blast,$can_child_attack",
+                          "$can_blast,nuts",
+                          "$can_blast,shield1"
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -2476,7 +2344,7 @@
                       {
                         "name": "GS36",
                         "access_rules": [
-                          "@logic/can blast,@logic/can child attack"
+                          "$can_blast,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2507,7 +2375,7 @@
                       {
                         "name": "GS37",
                         "access_rules": [
-                          "all_skulltulas,bottle,@logic/can child attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2587,7 +2455,7 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "@logic/bombchus"
+                      "$has_bombchus"
                     ],
                     "sections": [
                       {
@@ -2839,7 +2707,7 @@
                   {
                     "name": "Hyrule Castle Fairy",
                     "access_rules": [
-                      "ocarina,lullaby,@logic/explosives"
+                      "ocarina,lullaby,$has_explosives"
                     ],
                     "sections": [
                       {
@@ -2864,7 +2732,7 @@
                       {
                         "name": "GS15",
                         "access_rules": [
-                          "@logic/can child attack"
+                          "$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2882,13 +2750,14 @@
                   {
                     "name": "Castle Storms Grotto",
                     "access_rules": [
-                      "ocarina,storm"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
                         "name": "GS16",
                         "access_rules": [
-                          "all_skulltulas,boomerang,@logic/explosives"
+                          "ocarina,storm,boomerang,$has_explosives",
+                          "{agony}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -2917,8 +2786,8 @@
                 "children": [
                   {
                     "name": "Frogs",
-                    "access_rules":[
-                      "@logic/explosives",
+                    "access_rules": [
+                      "$has_explosives",
                       "scale1"
                     ],
                     "sections": [
@@ -2950,7 +2819,7 @@
                   {
                     "name": "Magic Bean Vendor",
                     "access_rules": [
-                      "@logic/explosives",
+                      "$has_explosives",
                       "scale1"
                     ],
                     "sections": [
@@ -2970,7 +2839,7 @@
                   {
                     "name": "Plateau Grotto",
                     "access_rules": [
-                      "@logic/explosives",
+                      "$has_explosives",
                       "scale1",
                       "sword2"
                     ],
@@ -2984,7 +2853,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives",
+                          "$has_explosives",
                           "scale1"
                         ],
                         "x": 2092,
@@ -3003,7 +2872,7 @@
                   {
                     "name": "Lower HP",
                     "access_rules": [
-                      "@logic/explosives",
+                      "$has_explosives",
                       "scale1",
                       "sword2,[hoverboots]"
                     ],
@@ -3019,7 +2888,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives",
+                          "$has_explosives",
                           "scale1"
                         ],
                         "x": 2037,
@@ -3038,7 +2907,7 @@
                   {
                     "name": "Upper HP",
                     "access_rules": [
-                      "@logic/explosives",
+                      "$has_explosives",
                       "scale1",
                       "sword2,[hoverboots]"
                     ],
@@ -3054,7 +2923,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives",
+                          "$has_explosives",
                           "scale1"
                         ],
                         "x": 2347,
@@ -3073,7 +2942,7 @@
                   {
                     "name": "In Tree",
                     "access_rules": [
-                      "all_skulltulas,@logic/can child attack"
+                      "all_skulltulas,$can_child_attack"
                     ],
                     "sections": [
                       {
@@ -3100,7 +2969,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "@logic/explosives",
+                          "$has_explosives",
                           "scale1",
                           "sword2"
                         ],
@@ -3113,7 +2982,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "@logic/explosives",
+                          "$has_explosives",
                           "scale1"
                         ],
                         "x": 1940,
@@ -3138,8 +3007,8 @@
                       {
                         "name": "GS44",
                         "access_rules": [
-                          "@logic/explosives",
-                          "scale1,@logic/can child attack"
+                          "$has_explosives",
+                          "scale1,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3159,7 +3028,7 @@
               {
                 "name": "Zoras Domain",
                 "access_rules": [
-                  "@logic/explosives,[ocarina],[lullaby]",
+                  "$has_explosives,[ocarina],[lullaby]",
                   "scale1"
                 ],
                 "children": [
@@ -3168,7 +3037,7 @@
                     "sections": [
                       {
                         "name": "Run",
-                        "access_rules":[
+                        "access_rules": [
                           "sticks"
                         ],
                         "item_count": 1
@@ -3253,7 +3122,7 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,bottle"
+                          "sword2,$has_bottle"
                         ],
                         "x": 2619,
                         "y": 499
@@ -3265,7 +3134,7 @@
               {
                 "name": "Zoras Fountain C",
                 "access_rules": [
-                  "@logic/child fountain"
+                  "$child_fountain"
                 ],
                 "children": [
                   {
@@ -3274,7 +3143,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "ocarina,lullaby,@logic/explosives"
+                          "ocarina,lullaby,$has_explosives"
                         ],
                         "item_count": 1
                       }
@@ -3436,7 +3305,7 @@
                       {
                         "name": "GS87",
                         "access_rules": [
-                          "bottle,@logic/can child attack"
+                          "$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3472,7 +3341,7 @@
                       {
                         "name": "Light the torches",
                         "access_rules": [
-                          "@logic/has fire",
+                          "$has_fire",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3528,7 +3397,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "@logic/colossus,ocarina,lullaby,@logic/explosives"
+                          "$colossus,ocarina,lullaby,$has_explosives"
                         ],
                         "item_count": 1
                       }
@@ -3560,7 +3429,8 @@
                         "access_rules": [
                           "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
-                          "{agony}"
+                          "{agony}",
+                          "{$colossus}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -3581,14 +3451,11 @@
                   },
                   {
                     "name": "Under Silver Rock",
-                    "access_rules": [
-                      "scrub_shuffle_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "@logic/colossus,lift2"
+                          "scrub_shuffle_yes,$colossus,lift2"
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -3612,7 +3479,7 @@
                       {
                         "name": "Song",
                         "access_rules": [
-                          "@logic/colossus",
+                          "$colossus",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3656,7 +3523,7 @@
                       {
                         "name": "GS93",
                         "access_rules": [
-                          "all_skulltulas,bottle,@logic/can child attack"
+                          "all_skulltulas,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3673,14 +3540,11 @@
                   },
                   {
                     "name": "Tree Near Oasis (N)",
-                    "access_rules": [
-                      "all_skulltulas"
-                    ],
                     "sections": [
                       {
                         "name": "GS94",
                         "access_rules": [
-                          "hookshot,sword2,@logic/colossus"
+                          "all_skulltulas,$colossus,hookshot,sword2"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3706,7 +3570,7 @@
                         "access_rules": [
                           "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
-                          "@logic/colossus,longshot,sword2"
+                          "$colossus,longshot,sword2"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3842,7 +3706,7 @@
                   {
                     "map": "adult",
                     "x": 2155,
-                    "y": 626
+                    "y": 635
                   }
                 ]
               },
@@ -4127,7 +3991,7 @@
                 "name": "Link the Goron",
                 "access_rules": [
                   "lift1",
-                  "@logic/explosives",
+                  "$has_explosives",
                   "bow"
                 ],
                 "sections": [
@@ -4152,8 +4016,8 @@
                     "access_rules": [
                       "lift2",
                       "hammer",
-                      "@logic/explosives,hoverboots,[lift2]",
-                      "@logic/explosives,hoverboots,[hammer]",
+                      "$has_explosives,hoverboots,[lift2]",
+                      "$has_explosives,hoverboots,[hammer]",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4223,7 +4087,7 @@
               {
                 "name": "Biggoron",
                 "access_rules": [
-                  "@logic/can blast",
+                  "$can_blast",
                   "@Link the Goron",
                   "ocarina,bolero,beans_plant_no,beans",
                   "ocarina,bolero,bean_crater_yes",
@@ -4331,7 +4195,10 @@
                       "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                       "hammer,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
                       "hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                      "{agony}"
+                      "{agony}",
+                      "{ocarina,bolero}",
+                      "{@Link the Goron}",
+                      "{hammer}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
@@ -4477,7 +4344,7 @@
                   {
                     "name": "Happy Hunting",
                     "access_rules": [
-                      "bow,ocarina,epona,bottle",
+                      "bow,[ocarina],[epona],$has_bottle",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4611,10 +4478,10 @@
               {
                 "name": "King Zora",
                 "access_rules": [
-                  "bottle,[wallet2]",
-                  "bottle,@logic/adult fountain",
-                  "bottle,@Ganons Castle/Water Trial",
-                  "bottle,@Gerudo Training Grounds MQ/Before Heavy Block Chest"
+                  "$has_bottle,[wallet2]",
+                  "$has_bottle,$adult_fountain",
+                  "$has_bottle,@Ganons Castle/Water Trial",
+                  "$has_bottle,@Gerudo Training Grounds MQ/Before Heavy Block Chest"
                 ],
                 "sections": [
                   {
@@ -4666,7 +4533,7 @@
           {
             "name": "Zoras Fountain A",
             "access_rules": [
-              "@logic/adult fountain"
+              "$adult_fountain"
             ],
             "children": [
               {
@@ -4675,7 +4542,7 @@
                   {
                     "name": "Get it",
                     "access_rules": [
-                      "ironboots,@logic/bluetunic",
+                      "ironboots,$has_zora_tunic",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -4719,7 +4586,8 @@
                   {
                     "name": "GS50",
                     "access_rules": [
-                      "lift2,@logic/can blast,hookshot"
+                      "lift2,$can_blast,hookshot",
+                      "{agony}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",

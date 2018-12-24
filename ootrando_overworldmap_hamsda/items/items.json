@@ -206,16 +206,18 @@
     "stages": [
       {
         "img": "images/egg.png",
-        "img_mods": "@disabled",
+        "img_mods": "@disabled,overlay|images/overlay_child.png",
         "codes": "nokidtrade"
       },
       {
         "img": "images/egg.png",
+        "img_mods": "overlay|images/overlay_child.png",
         "codes": "kidtrade,childegg,weirdegg",
         "inherit_codes": false
       },
       {
         "img": "images/cucco.png",
+        "img_mods": "overlay|images/overlay_child.png",
         "codes": "kidtrade,childcucco",
         "inherit_codes": false
       },
@@ -284,16 +286,18 @@
     "stages": [
       {
         "img": "images/egg.png",
-        "img_mods": "@disabled",
+        "img_mods": "@disabled,overlay|images/overlay_adult.png",
         "codes": "noadulttrade"
       },
       {
         "img": "images/egg.png",
+        "img_mods": "overlay|images/overlay_adult.png",
         "codes": "adulttrade,adultegg,pocketegg",
         "inherit_codes": false
       },
       {
         "img": "images/cucco.png",
+        "img_mods": "overlay|images/overlay_adult.png",
         "codes": "adulttrade,adultcucco,pocketcucco",
         "inherit_codes": false
       },
@@ -434,7 +438,7 @@
       },
       {
         "img": "images/bottle_bigpoe.png",
-        "codes": "bottle,bottle1,bigpoe1",
+        "codes": "bottle,bottle1,bigpoe,bigpoe1",
         "inherit_codes": false
       },
       {
@@ -506,7 +510,7 @@
       },
       {
         "img": "images/bottle_bigpoe.png",
-        "codes": "bottle,bottle2,bigpoe2",
+        "codes": "bottle,bottle2,bigpoe,bigpoe2",
         "inherit_codes": false
       },
       {
@@ -578,7 +582,7 @@
       },
       {
         "img": "images/bottle_bigpoe.png",
-        "codes": "bottle,bottle3,bigpoe3",
+        "codes": "bottle,bottle3,bigpoe,bigpoe3",
         "inherit_codes": false
       },
       {
@@ -650,7 +654,7 @@
       },
       {
         "img": "images/bottle_bigpoe.png",
-        "codes": "bottle,bottle4,bigpoe4",
+        "codes": "bottle,bottle4,bigpoe,bigpoe4",
         "inherit_codes": false
       },
       {

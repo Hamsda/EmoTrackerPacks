@@ -5,6 +5,8 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 Tracker:AddItems("items/sequences.json")
 
+ScriptHost:LoadScript("scripts/logic.lua")
+
 Tracker:AddMaps("maps/maps.json")
 
 Tracker:AddLocations("locations/overworld.json")
