@@ -8,9 +8,10 @@
 - added capture for relevant freestanding models
 - fixed Fire Temple GS67 and GS68 capture
 - improved bottle logic to take Rutos letter and big poes into account
-- added Forest Temple scarecrow sequence break (https://i.imgur.com/acQ97kk.gif)
+- added Forest Temple scarecrow sequence break ([example](https://i.imgur.com/acQ97kk.gif))
 - added big poes sequence break for epona (chance to spawn while on foot)
 - added/fixed a bunch of hint locations, mainly MQ related
+- fixed Water Temple cracked wall sequence break
 
 ## 2.1.4.1
 

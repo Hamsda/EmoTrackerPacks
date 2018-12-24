@@ -885,7 +885,7 @@
         "name": "Cracked Wall",
         "access_rules": [
           "@Water Temple/Basement,$has_explosives",
-          "bombchu"
+          "bombchu,[@Water Temple/Basement]"
         ],
         "item_count": 1
       },
