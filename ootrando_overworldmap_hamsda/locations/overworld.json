@@ -361,8 +361,10 @@
                   {
                     "name": "Skull Mask",
                     "access_rules": [
-                      "skullmask"
+                      "skullmask",
+                      "{agony}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -848,7 +850,8 @@
                     "name": "GS13",
                     "access_rules": [
                       "$has_explosives,dinsfire,magic,boomerang",
-                      "sword2,hammer,$has_fire,hookshot"
+                      "sword2,hammer,$has_fire,hookshot",
+                      "{agony}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -860,7 +863,8 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "$has_explosives,dinsfire,magic,boomerang"
+                      "$has_explosives,dinsfire,magic,boomerang",
+                      "{agony}"
                     ],
                     "x": 972,
                     "y": 658
@@ -868,7 +872,8 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,hammer,$has_fire,hookshot"
+                      "sword2,hammer,$has_fire,hookshot",
+                      "{agony}"
                     ],
                     "x": 972,
                     "y": 658
@@ -942,10 +947,6 @@
                     "sections": [
                       {
                         "name": "Bite pls",
-                        "access_rules": [
-                          "sword1",
-                          "{agony}"
-                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -1154,7 +1155,7 @@
                     "sections": [
                       {
                         "name": "Deku Scrubs",
-                        "access_rules":[
+                        "access_rules": [
                           "$can_child_attack",
                           "nuts",
                           "shield1"
@@ -1767,8 +1768,9 @@
                   },
                   {
                     "name": "Royal Tomb",
-                    "access_rules":[
-                      "ocarina,lullaby"
+                    "access_rules": [
+                      "ocarina,lullaby",
+                      "{agony}"
                     ],
                     "sections": [
                       {
@@ -2748,13 +2750,14 @@
                   {
                     "name": "Castle Storms Grotto",
                     "access_rules": [
-                      "ocarina,storm"
+                      "all_skulltulas"
                     ],
                     "sections": [
                       {
                         "name": "GS16",
                         "access_rules": [
-                          "all_skulltulas,boomerang,$has_explosives"
+                          "ocarina,storm,boomerang,$has_explosives",
+                          "{agony}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -2783,7 +2786,7 @@
                 "children": [
                   {
                     "name": "Frogs",
-                    "access_rules":[
+                    "access_rules": [
                       "$has_explosives",
                       "scale1"
                     ],
@@ -3034,7 +3037,7 @@
                     "sections": [
                       {
                         "name": "Run",
-                        "access_rules":[
+                        "access_rules": [
                           "sticks"
                         ],
                         "item_count": 1
@@ -4583,7 +4586,8 @@
                   {
                     "name": "GS50",
                     "access_rules": [
-                      "lift2,$can_blast,hookshot"
+                      "lift2,$can_blast,hookshot",
+                      "{agony}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",

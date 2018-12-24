@@ -10,6 +10,7 @@
 - improved bottle logic to take Rutos letter and big poes into account
 - added Forest Temple scarecrow sequence break (https://i.imgur.com/acQ97kk.gif)
 - added big poes sequence break for epona (chance to spawn while on foot)
+- added/fixed a bunch of hint locations, mainly MQ related
 
 ## 2.1.4.1
 

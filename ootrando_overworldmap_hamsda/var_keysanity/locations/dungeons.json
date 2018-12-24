@@ -160,8 +160,7 @@
         "name": "Above Boss",
         "access_rules": [
           "@Dodongos Cavern/Bomb Bag Chest,bombs",
-          "@Dodongos Cavern/Bomb Bag Chest,bombchu,[bombs]",
-          "{agony}"
+          "@Dodongos Cavern/Bomb Bag Chest,bombchu,[bombs]"
         ],
         "item_count": 1
       },
@@ -1998,7 +1997,8 @@
       {
         "name": "Ice Arrow Chest",
         "access_rules": [
-          "gtg_small_keys:7"
+          "gtg_small_keys:7",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1

@@ -51,7 +51,8 @@
       {
         "name": "After Spinning Log",
         "access_rules": [
-          "@Deku Tree MQ/Compass Chest,ocarina,time"
+          "@Deku Tree MQ/Compass Chest,ocarina,time",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -221,8 +222,7 @@
       {
         "name": "Above Boss",
         "access_rules": [
-          "@Dodongos Cavern MQ/Under Grave",
-          "{agony}"
+          "@Dodongos Cavern MQ/Under Grave"
         ],
         "item_count": 1
       },
@@ -547,7 +547,8 @@
             "name": "GS53 - Invisible Enemies Room",
             "short_name": "Invisible Enemies Room",
             "access_rules": [
-              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,$can_see_with_lens"
+              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,$can_see_with_lens",
+              "{agony}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
@@ -852,7 +853,8 @@
       {
         "name": "West Tower Top Chest",
         "access_rules": [
-          "@Fire Temple MQ/Freestanding Key"
+          "@Fire Temple MQ/Freestanding Key",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -987,7 +989,8 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "longshot,ironboots,dinsfire,magic"
+          "longshot,ironboots,dinsfire,magic",
+          "{agony}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
@@ -997,8 +1000,9 @@
       {
         "name": "Freestanding Key",
         "access_rules": [
-          "@Water Temple MQ/Boss Key Chest,hoverboots",
-          "@Water Temple MQ/Boss Key Chest,ocarina,[scarecrow]"
+          "longshot,ironboots,dinsfire,magic,hoverboots",
+          "longshot,ironboots,dinsfire,magic,ocarina,[scarecrow]",
+          "{agony}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
@@ -1034,7 +1038,8 @@
             "name": "GS73 - South Basement",
             "short_name": "South Basement",
             "access_rules": [
-              "@Water Temple MQ/Freestanding Key,bow,firearrow,magic"
+              "longshot,ironboots,dinsfire,magic,hoverboots,bow,firearrow",
+              "longshot,ironboots,dinsfire,magic,ocarina,[scarecrow],bow,firearrow"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1215,26 +1220,27 @@
         "item_count": 1
       },
       {
-        "name": "Bomb Flower Chest",
-        "access_rules": [
-          "@Shadow Temple MQ/Wind Hint Chest,ocarina,lullaby,bow,time,longshot"
-        ],
-        "capture_item": true,
-        "item_count": 1
-      },
-      {
         "name": "Freestanding Key",
         "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest"
+          "@Shadow Temple MQ/Wind Hint Chest,ocarina,lullaby,bow,time,longshot"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
+        "name": "Bomb Flower Chest",
+        "access_rules": [
+          "@Shadow Temple MQ/Freestanding Key",
+          "{agony}"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
         "name": "Spike Walls Left Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Bomb Flower Chest"
+          "@Shadow Temple MQ/Freestanding Key"
         ],
         "item_count": 1
       },
@@ -1393,7 +1399,8 @@
       {
         "name": "Child Center Chest",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer"
+          "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1476,7 +1483,8 @@
       {
         "name": "Lower Adult Right Chest",
         "access_rules": [
-          "@Spirit Temple MQ/Lower Adult Left Chest,hammer,ocarina,time,epona,sun,storm,lullaby"
+          "@Spirit Temple MQ/Lower Adult Left Chest,hammer,ocarina,time,epona,sun,storm,lullaby",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1629,7 +1637,8 @@
         "name": "Compass Chest",
         "access_rules": [
           "sword1",
-          "sticks,[sword1]"
+          "sticks,[sword1]",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2022,7 +2031,8 @@
         "access_rules": [
           "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,$has_fire,ironboots,$has_zora_tunic",
           "@Gerudo Training Grounds MQ/Maze Right Central Chest,longshot,$has_fire,ironboots,$has_zora_tunic",
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest,bow,$has_fire,ironboots,$has_zora_tunic"
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest,bow,$has_fire,ironboots,$has_zora_tunic",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2086,7 +2096,8 @@
       {
         "name": "Ice Arrows Chest",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest"
+          "@Gerudo Training Grounds MQ/Maze Right Central Chest",
+          "{agony}"
         ],
         "capture_item": true,
         "item_count": 1
