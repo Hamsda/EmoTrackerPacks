@@ -4650,7 +4650,8 @@
                     "access_rules": [
                       "bow,ocarina,[scarecrow],longshot",
                       "bow,water",
-                      "{agony}"
+                      "{agony}",
+                      "{bow}"
                     ],
                     "capture_item": true,
                     "item_count": 1
