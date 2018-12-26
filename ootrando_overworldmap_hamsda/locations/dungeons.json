@@ -1802,7 +1802,7 @@
     "sections": [
       {
         "name": "Free the carpenters",
-        "access_rules":[
+        "access_rules": [
           "gerudo_fortress_normal,[bow]",
           "gerudo_fortress_normal,[hookshot]",
           "gerudo_fortress_normal,[hoverboots]",
@@ -1890,6 +1890,7 @@
           "$has_explosives,ocarina,time",
           "{$has_explosives}"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
@@ -1939,7 +1940,7 @@
       },
       {
         "name": "Ice Arrow Chest",
-        "access_rules":[
+        "access_rules": [
           "card",
           "{agony}"
         ],
