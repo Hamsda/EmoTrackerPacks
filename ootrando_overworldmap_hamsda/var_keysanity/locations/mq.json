@@ -927,7 +927,7 @@
             "name": "GS68 - Above Fire Wall Maze",
             "short_name": "Above Fire Wall Maze",
             "access_rules": [
-              "@Fire Temple MQ/West Tower Top Chest"
+              "@Fire Temple MQ/Freestanding Key,fire_small_keys:4"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",

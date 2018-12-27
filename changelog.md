@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0.2
+
+- fixed MQ Fire Temple GS68 key requirement and capture
+
 ## 2.2.0.1
 
 - fixed a few capture locations that were missing a `"capture_item": true` oops
