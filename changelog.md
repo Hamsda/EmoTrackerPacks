@@ -7,6 +7,7 @@
   - added Shadow Temple falling spikes upper sequence break for strength
   - added Shadow Temple entrance with fire arrows sequence break
   - added royal tomb torches sequence break for fire
+  - added GTG sequence break for hookshot
 - added Shadow Temple Bongo sequence break with chus (I only added it to MQ oops)
 
 ## 2.2.0.1

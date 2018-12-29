@@ -1885,14 +1885,16 @@
       {
         "name": "Wolfos",
         "access_rules": [
-          "hookshot"
+          "[hookshot]"
         ],
         "item_count": 1
       },
       {
         "name": "Like-Like",
         "access_rules": [
-          "hookshot,lift2,$can_see_with_lens"
+          "hookshot,lift2,$can_see_with_lens",
+          "bombs,shield2,[hookshot],lift2,$can_see_with_lens",
+          "bombs,shield3,[hookshot],lift2,$can_see_with_lens"
         ],
         "item_count": 4
       },
@@ -1900,6 +1902,8 @@
         "name": "Eye Statue",
         "access_rules": [
           "hookshot,bow,$can_see_with_lens",
+          "bombs,shield2,[hookshot],bow,$can_see_with_lens",
+          "bombs,shield3,[hookshot],bow,$can_see_with_lens",
           "$has_explosives,hookshot,hammer,bow",
           "gtg_small_keys:2,hookshot,hammer,bow"
         ],
@@ -1908,7 +1912,9 @@
       {
         "name": "Near Scarecrow",
         "access_rules": [
-          "hookshot,bow,$can_see_with_lens"
+          "hookshot,bow,$can_see_with_lens",
+          "bombs,shield2,[hookshot],bow,$can_see_with_lens",
+          "bombs,shield3,[hookshot],bow,$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -1916,6 +1922,8 @@
         "name": "Flaming Enemies",
         "access_rules": [
           "hookshot,$can_see_with_lens",
+          "bombs,shield2,[hookshot],$can_see_with_lens",
+          "bombs,shield3,[hookshot],$can_see_with_lens",
           "$has_explosives,hookshot",
           "gtg_small_keys:2,hookshot"
         ],
@@ -1925,6 +1933,8 @@
         "name": "Hammer Pillar",
         "access_rules": [
           "hookshot,$can_see_with_lens,[hammer]",
+          "bombs,shield2,[hookshot],[hammer],$can_see_with_lens",
+          "bombs,shield3,[hookshot],[hammer],$can_see_with_lens",
           "$has_explosives,hookshot,[hammer]",
           "gtg_small_keys:2,hookshot,[hammer]"
         ],
