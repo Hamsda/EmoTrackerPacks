@@ -1796,6 +1796,7 @@
                         "name": "Torches",
                         "access_rules": [
                           "$has_fire",
+                          "sticks,[$has_fire]",
                           "{agony}"
                         ],
                         "capture_item": true,
