@@ -1135,7 +1135,9 @@
         "name": "Bongo Bongo",
         "access_rules": [
           "@Shadow Temple/After Wind Room,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,bow",
-          "@Shadow Temple/After Wind Room,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,[scarecrow]"
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,[scarecrow]",
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,bombchu,[bow]",
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,bombchu,[longshot],[ocarina],[scarecrow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",

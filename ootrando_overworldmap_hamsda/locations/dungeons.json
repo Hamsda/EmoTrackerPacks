@@ -1118,7 +1118,9 @@
         "name": "Bongo Bongo",
         "access_rules": [
           "@Shadow Temple/After Wind Room,ocarina,lullaby,bow",
-          "@Shadow Temple/After Wind Room,ocarina,lullaby,longshot,ocarina,[scarecrow]"
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,longshot,ocarina,[scarecrow]",
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,bombchu,[bow]",
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,bombchu,[longshot],[ocarina],[scarecrow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
