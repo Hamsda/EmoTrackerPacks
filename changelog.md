@@ -3,6 +3,8 @@
 ## 2.2.0.2
 
 - fixed MQ Fire Temple GS68 key requirement and capture
+- recent accessible changes:
+  - added Shadow Temple falling spikes upper sequence break for strength
 
 ## 2.2.0.1
 

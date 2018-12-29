@@ -1157,7 +1157,7 @@
       {
         "name": "Falling Spikes Upper Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,lift1"
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,[lift1]"
         ],
         "item_count": 1
       },
