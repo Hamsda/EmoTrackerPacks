@@ -1514,9 +1514,7 @@
         "name": "Silver Gauntlets Chest",
         "access_rules": [
           "sword2,lift2,longshot,bombchu",
-          "sword2,lift2,longshot,bombchu,ocarina,time,$can_see_with_lens",
-          "ocarina,requiem,bombchu,time",
-          "ocarina,requiem,bombchu,time,$can_see_with_lens" //TODO
+          "ocarina,requiem,bombchu,time"
         ],
         "item_count": 1
       },
