@@ -1102,7 +1102,9 @@
     "parent": "Kakariko A",
     "access_rules": [
       "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot"
+      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
+      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
+      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1240,7 +1242,7 @@
       {
         "name": "Spike Walls Left Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Freestanding Key"
+          "@Shadow Temple MQ/Freestanding Key,dinsfire,magic"
         ],
         "item_count": 1
       },

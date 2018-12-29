@@ -1009,7 +1009,9 @@
     "parent": "Kakariko A",
     "access_rules": [
       "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot"
+      "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
+      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
+      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1090,14 +1092,14 @@
       {
         "name": "Boss Key Room",
         "access_rules": [
-          "@Shadow Temple/After Wind Room,ocarina,lullaby"
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,dinsfire,magic"
         ],
         "item_count": 1
       },
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "@Shadow Temple/After Wind Room,ocarina,lullaby"
+          "@Shadow Temple/Boss Key Room"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1115,8 +1117,8 @@
       {
         "name": "Bongo Bongo",
         "access_rules": [
-          "@Shadow Temple/Boss Key Room,bow",
-          "@Shadow Temple/Boss Key Room,longshot,ocarina,[scarecrow]"
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,bow",
+          "@Shadow Temple/After Wind Room,ocarina,lullaby,longshot,ocarina,[scarecrow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",

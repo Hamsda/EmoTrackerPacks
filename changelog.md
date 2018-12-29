@@ -5,6 +5,7 @@
 - fixed MQ Fire Temple GS68 key requirement and capture
 - recent accessible changes:
   - added Shadow Temple falling spikes upper sequence break for strength
+  - added Shadow Temple entrance with fire arrows sequence break
   - added royal tomb torches sequence break for fire
 
 ## 2.2.0.1
