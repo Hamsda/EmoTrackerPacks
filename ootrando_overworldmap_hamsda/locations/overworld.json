@@ -1796,6 +1796,7 @@
                         "name": "Torches",
                         "access_rules": [
                           "$has_fire",
+                          "sticks,[$has_fire]",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -4772,8 +4773,7 @@
                   "carpenter_rescue_yes",
                   "gerudo_fortress_open",
                   "ocarina,epona",
-                  "longshot",
-                  "hookshot,[longshot]"
+                  "longshot"
                 ],
                 "children": [
                   {

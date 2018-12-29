@@ -927,7 +927,7 @@
             "name": "GS68 - Above Fire Wall Maze",
             "short_name": "Above Fire Wall Maze",
             "access_rules": [
-              "@Fire Temple MQ/West Tower Top Chest"
+              "@Fire Temple MQ/Freestanding Key,fire_small_keys:4"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1108,7 +1108,9 @@
     "parent": "Kakariko A",
     "access_rules": [
       "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot"
+      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
+      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
+      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1157,7 +1159,7 @@
       {
         "name": "Falling Spikes Upper Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,lift1"
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,[lift1]"
         ],
         "item_count": 1
       },
@@ -1246,7 +1248,7 @@
       {
         "name": "Spike Walls Left Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Freestanding Key,shadow_small_keys:5"
+          "@Shadow Temple MQ/Freestanding Key,shadow_small_keys:5,dinsfire,magic"
         ],
         "item_count": 1
       },

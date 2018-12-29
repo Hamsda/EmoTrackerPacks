@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.2.0.2
+
+- fixed MQ Fire Temple GS68 key requirement and capture
+- recent accessible changes:
+  - added Shadow Temple falling spikes upper sequence break for strength
+  - added Shadow Temple entrance with fire arrows sequence break
+  - added royal tomb torches sequence break for fire
+  - added GTG sequence break for hookshot
+  - removed Gerudo Valley bridge crossing sequence break with hookshot
+- added Shadow Temple Bongo sequence break with chus (I only added it to MQ oops)
+
 ## 2.2.0.1
 
 - fixed a few capture locations that were missing a `"capture_item": true` oops

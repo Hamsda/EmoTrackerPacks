@@ -921,7 +921,7 @@
             "name": "GS68 - Above Fire Wall Maze",
             "short_name": "Above Fire Wall Maze",
             "access_rules": [
-              "@Fire Temple MQ/West Tower Top Chest"
+              "@Fire Temple MQ/Freestanding Key"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1102,7 +1102,9 @@
     "parent": "Kakariko A",
     "access_rules": [
       "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot"
+      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
+      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
+      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1151,7 +1153,7 @@
       {
         "name": "Falling Spikes Upper Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Falling Spikes Lower Chest,lift1"
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,[lift1]"
         ],
         "item_count": 1
       },
@@ -1240,7 +1242,7 @@
       {
         "name": "Spike Walls Left Chest",
         "access_rules": [
-          "@Shadow Temple MQ/Freestanding Key"
+          "@Shadow Temple MQ/Freestanding Key,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -1514,9 +1516,7 @@
         "name": "Silver Gauntlets Chest",
         "access_rules": [
           "sword2,lift2,longshot,bombchu",
-          "sword2,lift2,longshot,bombchu,ocarina,time,$can_see_with_lens",
-          "ocarina,requiem,bombchu,time",
-          "ocarina,requiem,bombchu,time,$can_see_with_lens" //TODO
+          "ocarina,requiem,bombchu,time"
         ],
         "item_count": 1
       },
