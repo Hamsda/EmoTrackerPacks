@@ -51,6 +51,23 @@
     ]
   },
   {
+    "name": "Open Fountain",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_fountain_closed.png",
+        "codes": "setting_fountain,closed_fountain"
+      },
+      {
+        "img": "images/setting_fountain_open.png",
+        "codes": "setting_fountain,open_fountain",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bridge Requirement",
     "type": "progressive",
     "allow_disabled": false,

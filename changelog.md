@@ -2,6 +2,7 @@
 
 ## 2.2.0.3
 
+- added Open Fountain setting
 - fixed Forest Temple courtyards reachable from checkerboard room with dins
 
 ## 2.2.0.2

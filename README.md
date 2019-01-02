@@ -37,15 +37,6 @@ This special items purpose might not be immediately obvious:
 
 There is a variety of settings available to accomodate the different options that the Randomizer offers:
 
-### Rainbow Bridge
-
-This setting determines what is needed to trigger the rainbow bridge in front of Ganons castle ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#rainbow-bridge-requirement)).
-
-- ![All Medallions](ootrando_overworldmap_hamsda/images/rainbow_medallions.png "All Medallions") All 6 medallions required
-- ![Vanilla](ootrando_overworldmap_hamsda/images/rainbow_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
-- ![All Dungeons](ootrando_overworldmap_hamsda/images/rainbow_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
-- ![Open](ootrando_overworldmap_hamsda/images/rainbow_open.png "Open") Nothing required, bridge is always open
-
 ### Forest
 
 This setting determines if you can leave the Kokiri Forest without beating the Deku Tree ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-forest)).
@@ -67,6 +58,13 @@ This setting determines whether the Door of Time starts open or closed ([see wik
 - ![Closed Door](ootrando_overworldmap_hamsda/images/dot_closed.png "Closed Door") You will find the Song of Time as a child to open the Door of Time.
 - ![Open Door](ootrando_overworldmap_hamsda/images/dot_open.png "Open Door") The Door of Time starts open and you can immediately go adult.
 
+### Zoras Fountain
+
+This setting determines whether Zoras Fountain starts open or closed.
+
+- ![Closed Fountain](ootrando_overworldmap_hamsda/images/setting_fountain_closed.png "Closed Fountain") You can find Rutos Letter and open Zoras Fountain by moving King Zora.
+- ![Open Fountain](ootrando_overworldmap_hamsda/images/setting_fountain_open.png "Open Fountain") Rutos Letter can no longer be found, but Zoras Fountain can be accessed without moving King Zora.
+
 ### Gerudo Fortress
 
 This setting determines the state of the ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#gerudo-fortress)).
@@ -74,6 +72,15 @@ This setting determines the state of the ([see wiki](https://github.com/TestRunn
 - ![Normal Gerudo Fortress](ootrando_overworldmap_hamsda/images/gerudo_fortress_normal.png "Normal Gerudo Fortress") You will have to rescue all 4 carpenters.
 - ![Fast Gerudo Fortress](ootrando_overworldmap_hamsda/images/gerudo_fortress_fast.png "Fast Gerudo Fortress") You only need to free one carpenter (F1 North).
 - ![Open Gerudo Fortress](ootrando_overworldmap_hamsda/images/gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible.
+
+### Rainbow Bridge
+
+This setting determines what is needed to trigger the rainbow bridge in front of Ganons castle ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#rainbow-bridge-requirement)).
+
+- ![All Medallions](ootrando_overworldmap_hamsda/images/rainbow_medallions.png "All Medallions") All 6 medallions required
+- ![Vanilla](ootrando_overworldmap_hamsda/images/rainbow_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
+- ![All Dungeons](ootrando_overworldmap_hamsda/images/rainbow_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
+- ![Open](ootrando_overworldmap_hamsda/images/rainbow_open.png "Open") Nothing required, bridge is always open
 
 ### Bombchus in logic
 

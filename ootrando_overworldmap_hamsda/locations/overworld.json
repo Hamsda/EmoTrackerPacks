@@ -3078,7 +3078,7 @@
                       {
                         "name": "Show Letter",
                         "access_rules": [
-                          "king_zora_moved_no,ruto"
+                          "closed_fountain,king_zora_moved_no,ruto"
                         ],
                         "hosted_item": "king_zora_moved_yes"
                       }
