@@ -43,22 +43,22 @@ There is a variety of settings available to accomodate the different options tha
 
 This setting determines if you can leave the Kokiri Forest without beating the Deku Tree ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-forest)).
 
-- ![Closed Forest](ootrando_overworldmap_hamsda/images/mido_closed.png "Closed Forest") You will find the Kokiri Sword and Slingshot early on to beat the Deku Tree before leaving the Kokiri Forest.
-- ![Open Forest](ootrando_overworldmap_hamsda/images/mido_open.png "Open Forest") You can immediately leave the Kokiri Forest.
+- ![Closed Forest](ootrando_overworldmap_hamsda/images/setting_forest_closed.png "Closed Forest") You will find the Kokiri Sword and Slingshot early on to beat the Deku Tree before leaving the Kokiri Forest.
+- ![Open Forest](ootrando_overworldmap_hamsda/images/setting_forest_open.png "Open Forest") You can immediately leave the Kokiri Forest.
 
 ### Kakariko Gate
 
 This setting determines whether the Kakariko Gate starts open or closed as a child ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-kakariko-gate)).
 
-- ![Closed Kakariko](ootrando_overworldmap_hamsda/images/kak_closed.png "Closed Kakariko") You will need to show Zeldas Letter to the guard in front of the gate to open it.
-- ![Open Kakariko](ootrando_overworldmap_hamsda/images/kak_open.png "Open Kakariko") The Kakariko Gate starts open and you can go to Death Mountain Trail.
+- ![Closed Kakariko](ootrando_overworldmap_hamsda/images/setting_kak_closed.png "Closed Kakariko") You will need to show Zeldas Letter to the guard in front of the gate to open it.
+- ![Open Kakariko](ootrando_overworldmap_hamsda/images/setting_kak_open.png "Open Kakariko") The Kakariko Gate starts open and you can go to Death Mountain Trail.
 
 ### Door of Time
 
 This setting determines whether the Door of Time starts open or closed ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-door-of-time)).
 
-- ![Closed Door](ootrando_overworldmap_hamsda/images/dot_closed.png "Closed Door") You will find the Song of Time as a child to open the Door of Time.
-- ![Open Door](ootrando_overworldmap_hamsda/images/dot_open.png "Open Door") The Door of Time starts open and you can immediately go adult.
+- ![Closed Door](ootrando_overworldmap_hamsda/images/setting_door_closed.png "Closed Door") You will find the Song of Time as a child to open the Door of Time.
+- ![Open Door](ootrando_overworldmap_hamsda/images/setting_door_open.png "Open Door") The Door of Time starts open and you can immediately go adult.
 
 ### Zoras Fountain
 
@@ -71,18 +71,18 @@ This setting determines whether Zoras Fountain starts open or closed.
 
 This setting determines the state of the ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#gerudo-fortress)).
 
-- ![Normal Gerudo Fortress](ootrando_overworldmap_hamsda/images/gerudo_fortress_normal.png "Normal Gerudo Fortress") You will have to rescue all 4 carpenters.
-- ![Fast Gerudo Fortress](ootrando_overworldmap_hamsda/images/gerudo_fortress_fast.png "Fast Gerudo Fortress") You only need to free one carpenter (F1 North).
-- ![Open Gerudo Fortress](ootrando_overworldmap_hamsda/images/gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible.
+- ![Normal Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_normal.png "Normal Gerudo Fortress") You will have to rescue all 4 carpenters.
+- ![Fast Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_fast.png "Fast Gerudo Fortress") You only need to free one carpenter (F1 North).
+- ![Open Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible.
 
 ### Rainbow Bridge
 
 This setting determines what is needed to trigger the rainbow bridge in front of Ganons castle ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#rainbow-bridge-requirement)).
 
-- ![All Medallions](ootrando_overworldmap_hamsda/images/rainbow_medallions.png "All Medallions") All 6 medallions required
-- ![Vanilla](ootrando_overworldmap_hamsda/images/rainbow_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
-- ![All Dungeons](ootrando_overworldmap_hamsda/images/rainbow_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
-- ![Open](ootrando_overworldmap_hamsda/images/rainbow_open.png "Open") Nothing required, bridge is always open
+- ![All Medallions](ootrando_overworldmap_hamsda/images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
+- ![Vanilla](ootrando_overworldmap_hamsda/images/setting_bridge_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
+- ![All Dungeons](ootrando_overworldmap_hamsda/images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
+- ![Open](ootrando_overworldmap_hamsda/images/setting_bridge_open.png "Open") Nothing required, bridge is always open
 
 ### Lens of Truth
 

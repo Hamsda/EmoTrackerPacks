@@ -6,11 +6,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/mido_closed.png",
+        "img": "images/setting_forest_closed.png",
         "codes": "setting_forest,closed_forest"
       },
       {
-        "img": "images/mido_open.png",
+        "img": "images/setting_forest_open.png",
         "codes": "setting_forest,open_forest",
         "inherit_codes": false
       }
@@ -23,11 +23,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/kak_closed.png",
+        "img": "images/setting_kak_closed.png",
         "codes": "setting_kak,closed_kak"
       },
       {
-        "img": "images/kak_open.png",
+        "img": "images/setting_kak_open.png",
         "codes": "setting_kak,open_kak",
         "inherit_codes": false
       }
@@ -40,11 +40,11 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/dot_closed.png",
+        "img": "images/setting_door_closed.png",
         "codes": "setting_door,closed_door"
       },
       {
-        "img": "images/dot_open.png",
+        "img": "images/setting_door_open.png",
         "codes": "setting_door,open_door",
         "inherit_codes": false
       }
@@ -74,16 +74,16 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/gerudo_fortress_normal.png",
+        "img": "images/setting_gerudo_fortress_normal.png",
         "codes": "setting_gerudo,gerudo_fortress_normal"
       },
       {
-        "img": "images/gerudo_fortress_fast.png",
+        "img": "images/setting_gerudo_fortress_fast.png",
         "codes": "setting_gerudo,gerudo_fortress_fast",
         "inherit_codes": false
       },
       {
-        "img": "images/gerudo_fortress_open.png",
+        "img": "images/setting_gerudo_fortress_open.png",
         "codes": "setting_gerudo,gerudo_fortress_open",
         "inherit_codes": false
       }
@@ -96,22 +96,22 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/rainbow_medallions.png",
+        "img": "images/setting_bridge_medallions.png",
         "codes": "setting_bridge,bridge_medallions",
         "inherit_codes": false
       },
       {
-        "img": "images/rainbow_vanilla.png",
+        "img": "images/setting_bridge_vanilla.png",
         "codes": "setting_bridge,bridge_vanilla",
         "inherit_codes": false
       },
       {
-        "img": "images/rainbow_dungeons.png",
+        "img": "images/setting_bridge_dungeons.png",
         "codes": "setting_bridge,bridge_dungeons",
         "inherit_codes": false
       },
       {
-        "img": "images/rainbow_open.png",
+        "img": "images/setting_bridge_open.png",
         "codes": "setting_bridge,bridge_open",
         "inherit_codes": false
       }
