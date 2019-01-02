@@ -3,7 +3,7 @@
 ## 2.2.0.3
 
 - added Open Fountain setting
-- moved Bombchus in Logic option to right click on chus
+- moved Bombchus in Logic setting to right click on chus
 - fixed Forest Temple courtyards reachable from checkerboard room with dins
 - changed child trade items to be loopable
 
