@@ -30,12 +30,12 @@
                 "item_margin": "1,2",
                 "rows": [
                   [
-                    "type_bridge",
-                    "type_forest",
-                    "type_kak",
-                    "type_door",
-                    "gerudo_fortress",
-                    "logic_chus"
+                    "setting_forest",
+                    "setting_kak",
+                    "setting_door",
+                    "setting_fountain",
+                    "setting_gerudo",
+                    "setting_bridge"
                   ],
                   [
                     "type_lens",
@@ -132,12 +132,12 @@
                     "item_margin": "1,2",
                     "rows": [
                       [
-                        "type_bridge",
-                        "type_forest",
-                        "type_kak",
-                        "type_door",
-                        "gerudo_fortress",
-                        "logic_chus",
+                        "setting_forest",
+                        "setting_kak",
+                        "setting_door",
+                        "setting_fountain",
+                        "setting_gerudo",
+                        "setting_bridge",
                         "",
                         "",
                         ""

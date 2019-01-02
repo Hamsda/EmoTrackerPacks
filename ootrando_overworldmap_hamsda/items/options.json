@@ -1,34 +1,17 @@
 [
   {
-    "name": "Open Door",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/dot_closed.png",
-        "codes": "type_door,closed_door"
-      },
-      {
-        "img": "images/dot_open.png",
-        "codes": "type_door,open_door",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Open Forest",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/mido_closed.png",
-        "codes": "type_forest,closed_forest"
+        "img": "images/setting_forest_closed.png",
+        "codes": "setting_forest,closed_forest"
       },
       {
-        "img": "images/mido_open.png",
-        "codes": "type_forest,open_forest",
+        "img": "images/setting_forest_open.png",
+        "codes": "setting_forest,open_forest",
         "inherit_codes": false
       }
     ]
@@ -40,40 +23,46 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/kak_closed.png",
-        "codes": "type_kak,closed_kak"
+        "img": "images/setting_kak_closed.png",
+        "codes": "setting_kak,closed_kak"
       },
       {
-        "img": "images/kak_open.png",
-        "codes": "type_kak,open_kak",
+        "img": "images/setting_kak_open.png",
+        "codes": "setting_kak,open_kak",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Bridge Requirement",
+    "name": "Open Door",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/rainbow_medallions.png",
-        "codes": "type_bridge,bridge_medallions",
-        "inherit_codes": false
+        "img": "images/setting_door_closed.png",
+        "codes": "setting_door,closed_door"
       },
       {
-        "img": "images/rainbow_vanilla.png",
-        "codes": "type_bridge,bridge_vanilla",
+        "img": "images/setting_door_open.png",
+        "codes": "setting_door,open_door",
         "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Open Fountain",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_fountain_closed.png",
+        "codes": "setting_fountain,closed_fountain"
       },
       {
-        "img": "images/rainbow_dungeons.png",
-        "codes": "type_bridge,bridge_dungeons",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/rainbow_open.png",
-        "codes": "type_bridge,bridge_open",
+        "img": "images/setting_fountain_open.png",
+        "codes": "setting_fountain,open_fountain",
         "inherit_codes": false
       }
     ]
@@ -85,17 +74,45 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/gerudo_fortress_normal.png",
-        "codes": "gerudo_fortress,gerudo_fortress_normal"
+        "img": "images/setting_gerudo_fortress_normal.png",
+        "codes": "setting_gerudo,gerudo_fortress_normal"
       },
       {
-        "img": "images/gerudo_fortress_fast.png",
-        "codes": "gerudo_fortress,gerudo_fortress_fast",
+        "img": "images/setting_gerudo_fortress_fast.png",
+        "codes": "setting_gerudo,gerudo_fortress_fast",
         "inherit_codes": false
       },
       {
-        "img": "images/gerudo_fortress_open.png",
-        "codes": "gerudo_fortress,gerudo_fortress_open",
+        "img": "images/setting_gerudo_fortress_open.png",
+        "codes": "setting_gerudo,gerudo_fortress_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bridge Requirement",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_bridge_medallions.png",
+        "codes": "setting_bridge,bridge_medallions",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bridge_vanilla.png",
+        "codes": "setting_bridge,bridge_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bridge_dungeons.png",
+        "codes": "setting_bridge,bridge_dungeons",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bridge_open.png",
+        "codes": "setting_bridge,bridge_open",
         "inherit_codes": false
       }
     ]
@@ -121,39 +138,19 @@
     ]
   },
   {
-    "name": "Bombchu in Logic",
+    "name": "Fewer Tunic Requirements",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/logic_chus_no.png",
-        "codes": "logic_chus,logic_chus_no"
+        "img": "images/fewer_tunics_no.png",
+        "codes": "fewer_tunics,fewer_tunics_no"
       },
       {
-        "img": "images/logic_chus_yes.png",
-        "codes": "logic_chus,logic_chus_yes",
+        "img": "images/fewer_tunics_yes.png",
+        "codes": "fewer_tunics,fewer_tunics_yes",
         "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Show Gold Skulltulas",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/skulltula_hide.png",
-        "codes": "hide_skulltulas"
-      },
-      {
-        "img": "images/skulltula_dungeon.png",
-        "codes": "dungeon_skulltulas"
-      },
-      {
-        "img": "images/skulltula_all.png",
-        "codes": "all_skulltulas"
       }
     ]
   },
@@ -192,6 +189,26 @@
     ]
   },
   {
+    "name": "Show Gold Skulltulas",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/skulltula_hide.png",
+        "codes": "hide_skulltulas"
+      },
+      {
+        "img": "images/skulltula_dungeon.png",
+        "codes": "dungeon_skulltulas"
+      },
+      {
+        "img": "images/skulltula_all.png",
+        "codes": "all_skulltulas"
+      }
+    ]
+  },
+  {
     "name": "Beans",
     "type": "progressive",
     "allow_disabled": false,
@@ -204,23 +221,6 @@
       {
         "img": "images/bean_plant.png",
         "codes": "beans_plant,beans_plant_yes",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Fewer Tunic Requirements",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/fewer_tunics_no.png",
-        "codes": "fewer_tunics,fewer_tunics_no"
-      },
-      {
-        "img": "images/fewer_tunics_yes.png",
-        "codes": "fewer_tunics,fewer_tunics_yes",
         "inherit_codes": false
       }
     ]

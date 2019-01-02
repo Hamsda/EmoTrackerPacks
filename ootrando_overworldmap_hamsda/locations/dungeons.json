@@ -474,7 +474,8 @@
           "ocarina,time",
           "bow,[ironboots]",
           "bow,[scale2]",
-          "hoverboots"
+          "hoverboots",
+          "lift1,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -483,7 +484,8 @@
         "access_rules": [
           "ocarina,time",
           "bow",
-          "hoverboots"
+          "hoverboots",
+          "lift1,dinsfire,magic"
         ],
         "item_count": 1
       },

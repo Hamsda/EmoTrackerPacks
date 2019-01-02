@@ -1,7 +1,7 @@
 function has_bombchus()
-  if Tracker:ProviderCountForCode("logic_chus_no") > 0 then
+  if Tracker:ProviderCountForCode("logic_chus") == 0 then
     return Tracker:ProviderCountForCode("bombs")
-  elseif Tracker:ProviderCountForCode("logic_chus_yes") > 0 then
+  else
     return Tracker:ProviderCountForCode("bombchu")
   end
 end
@@ -152,11 +152,15 @@ function colossus()
 end
 
 function child_fountain()
-  if Tracker:ProviderCountForCode("ruto") == 0 then
+  if Tracker:ProviderCountForCode("ruto") == 0 
+  and Tracker:ProviderCountForCode("open_fountain") == 0 
+  then
     return 0
   else
     local level = AccessibilityLevel.Normal
-    if Tracker:ProviderCountForCode("king_zora_moved_yes") == 0 then
+    if Tracker:ProviderCountForCode("king_zora_moved_yes") == 0 
+    and Tracker:ProviderCountForCode("open_fountain") == 0 
+    then
       level = AccessibilityLevel.SequenceBreak
     end
     if Tracker:ProviderCountForCode("scale1") > 0 then
