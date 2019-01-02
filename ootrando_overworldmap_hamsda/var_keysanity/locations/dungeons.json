@@ -474,7 +474,8 @@
           "ocarina,time",
           "bow,[ironboots]",
           "bow,[scale2]",
-          "forest_small_keys:1,hoverboots"
+          "forest_small_keys:1,hoverboots",
+          "forest_small_keys:5,lift1,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -483,7 +484,8 @@
         "access_rules": [
           "ocarina,time",
           "bow",
-          "forest_small_keys:1,hoverboots"
+          "forest_small_keys:1,hoverboots",
+          "forest_small_keys:5,lift1,dinsfire,magic"
         ],
         "item_count": 1
       },

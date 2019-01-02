@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0.3
+
+- fixed Forest Temple courtyards reachable from checkerboard room with dins
+
 ## 2.2.0.2
 
 - fixed MQ Fire Temple GS68 key requirement and capture
