@@ -1,7 +1,7 @@
 function has_bombchus()
-  if Tracker:ProviderCountForCode("logic_chus_no") > 0 then
+  if Tracker:ProviderCountForCode("logic_chus") == 0 then
     return Tracker:ProviderCountForCode("bombs")
-  elseif Tracker:ProviderCountForCode("logic_chus_yes") > 0 then
+  else
     return Tracker:ProviderCountForCode("bombchu")
   end
 end

@@ -172,8 +172,16 @@
   {
     "name": "Bombchu",
     "type": "toggle",
+    "loop": true,
     "img": "images/bombchu.png",
     "codes": "bombchu,bombchus,chus"
+  },
+  {
+    "name": "Bombchus in logic",
+    "type": "toggle_badged",
+    "base_item": "bombchu",
+    "img": "images/overlay_logic.png",
+    "codes": "logic_chus"
   },
   {
     "name": "Lens of Truth",
