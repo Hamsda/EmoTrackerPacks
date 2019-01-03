@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.0.4
+
+- fixed Deku Tree GS11 requires sling (can be sequence broken)
+- fixed accidental rename of a file
+
 ## 2.2.0.3
 
 - added Open Fountain setting

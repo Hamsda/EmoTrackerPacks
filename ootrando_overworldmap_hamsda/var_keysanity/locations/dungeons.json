@@ -96,7 +96,7 @@
             "name": "GS11 - Basement Back Room",
             "short_name": "Back Room",
             "access_rules": [
-              "$has_explosives,boomerang"
+              "$has_explosives,boomerang,[sling]"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
