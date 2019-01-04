@@ -869,7 +869,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple MQ/Freestanding Key,hammer,fire_boss_key,$has_fire",
-          "hoverboots,hammer,fire_boss_key,$has_fire,[redtunic]"
+          "[hoverboots],hammer,fire_boss_key,$has_fire,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",

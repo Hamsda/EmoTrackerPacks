@@ -760,7 +760,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple/Compass Chest,fire_small_keys:7,$has_explosives,fire_boss_key,hammer",
-          "hoverboots,fire_boss_key,hammer,[redtunic]"
+          "[hoverboots],fire_boss_key,hammer,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",

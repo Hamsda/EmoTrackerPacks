@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0.5
+
+- added Fire Temple Volvagia sequence break for hoverboots
+
 ## 2.2.0.4
 
 - fixed Deku Tree GS11 requires sling (can be sequence broken)
