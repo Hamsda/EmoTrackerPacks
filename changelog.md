@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.2.0.5
+
+- added Fire Temple Volvagia sequence break for hoverboots
+- changed/fixed Spirit Temple:
+  - fixed cyclic dependencies causing chests not appearing correctly
+  - split lower child to reflect fire availability
+  - changed bombchu for child left to sequence break
+  - added torch puzzle and map chest sequence break with just bow
+  - fixed boulder room only works with chu not bomb
+  - fixed boss key chest does not require explosives (only sequence breakable blast)
+  - fixed topmost sun does not require explosives
+  - fixed GS98 does not require fire
+
 ## 2.2.0.4
 
 - fixed Deku Tree GS11 requires sling (can be sequence broken)

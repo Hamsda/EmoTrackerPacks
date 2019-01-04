@@ -752,7 +752,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple/Compass Chest,$has_explosives,hammer",
-          "hoverboots,hammer,[redtunic]"
+          "[hoverboots],hammer,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -1213,37 +1213,46 @@
     ],
     "sections": [
       {
-        "name": "Lower Child",
+        "name": "Child Left",
         "access_rules": [
           "ocarina,requiem,boomerang",
           "ocarina,requiem,sling",
-          "ocarina,requiem,$has_bombchus"
+          "ocarina,requiem,bombchu,[boomerang]",
+          "ocarina,requiem,bombchu,[sling]"
         ],
-        "clear_as_group": false,
-        "item_count": 2
+        "item_count": 1
+      },
+      {
+        "name": "Child Right",
+        "access_rules": [
+          "@Spirit Temple/Child Left,sticks",
+          "@Spirit Temple/Child Left,dinsfire,magic",
+        ],
+        "item_count": 1
       },
       {
         "name": "Upper Child",
         "access_rules": [
-          "@Spirit Temple/Lower Child",
-          "@Spirit Temple/Mirror Room"
+          "ocarina,requiem",
+          "sword2,lift2"
         ],
         "item_count": 2
       },
       {
         "name": "Torch Puzzle",
         "access_rules": [
-          "@Spirit Temple/Lower Child,$has_explosives,sticks",
-          "@Spirit Temple/Lower Child,$has_explosives,dinsfire,magic",
-          "@Spirit Temple/Mirror Room,$has_fire"
+          "ocarina,requiem,$has_explosives,sticks",
+          "ocarina,requiem,$has_explosives,dinsfire,magic",
+          "sword2,lift2,$has_fire",
+          "sword2,lift2,bow,[$has_fire]"
         ],
         "item_count": 1
       },
       {
         "name": "Southern Hand",
         "access_rules": [
-          "@Spirit Temple/Lower Child,$has_explosives",
-          "@Spirit Temple/Mirror Room",
+          "ocarina,requiem,$has_explosives",
+          "sword2,lift2",
           "{agony}"
         ],
         "capture_item": true,
@@ -1261,7 +1270,7 @@
         "access_rules": [
           "sword2,lift2,hookshot",
           "sword2,lift2,bow",
-          "sword2,lift2,$has_explosives"
+          "sword2,lift2,bombchu"
         ],
         "item_count": 1
       },
@@ -1275,10 +1284,7 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,$has_fire",
-          "@Spirit Temple/Mirror Room,bow",
-          "@Spirit Temple/Lower Child,$has_explosives,sticks",
-          "@Spirit Temple/Lower Child,$has_explosives,dinsfire,magic"
+          "@Spirit Temple/Torch Puzzle"
         ],
         "item_count": 1
       },
@@ -1323,7 +1329,7 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,$has_explosives,ocarina,lullaby,[bow],[hookshot]"
+          "@Spirit Temple/Mirror Room,ocarina,lullaby,[$can_blast],[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1332,14 +1338,14 @@
       {
         "name": "Topmost Sun",
         "access_rules": [
-          "@Spirit Temple/Near Armos"
+          "@Spirit Temple/Mirror Room,shield3"
         ],
         "item_count": 1
       },
       {
         "name": "Twinrova",
         "access_rules": [
-          "@Spirit Temple/Topmost Sun,hookshot"
+          "@Spirit Temple/Topmost Sun,$has_explosives,hookshot"
         ],
         "hosted_item": "spirit",
         "chest_unopened_img": "images/HC.png",
@@ -1373,10 +1379,10 @@
         ],
         "sections": [
           {
-            "name": "GS96 - Cage Room Lower Child",
-            "short_name": "Lower Child",
+            "name": "GS96 - Metal Fence",
+            "short_name": "Metal Fence",
             "access_rules": [
-              "@Spirit Temple/Lower Child"
+              "@Spirit Temple/Child Left"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1396,9 +1402,8 @@
             "name": "GS98 - Room Before Iron Knuckle Child Side",
             "short_name": "Before Knuckle",
             "access_rules": [
-              "@Spirit Temple/Lower Child,$has_explosives,sticks,boomerang",
-              "@Spirit Temple/Lower Child,$has_explosives,dinsfire,magic,boomerang",
-              "@Spirit Temple/Mirror Room,$has_fire,hookshot"
+              "ocarina,requiem,$has_explosives,boomerang",
+              "@Spirit Temple/Mirror Room,hookshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1418,9 +1423,9 @@
             "name": "GS100 - Statue Room, Left Ledge",
             "short_name": "Statue Ledge",
             "access_rules": [
-              "lift2,sword2,hookshot,ocarina,[scarecrow]",
-              "lift2,sword2,longshot",
-              "lift2,sword2,hoverboots"
+              "@Spirit Temple/Mirror Room,hookshot,ocarina,[scarecrow]",
+              "@Spirit Temple/Mirror Room,longshot",
+              "@Spirit Temple/Mirror Room,hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1430,6 +1435,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "ocarina,requiem"
+            ],
             "x": 85,
             "y": 271
           },

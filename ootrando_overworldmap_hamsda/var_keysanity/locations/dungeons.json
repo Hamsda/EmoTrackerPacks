@@ -760,7 +760,7 @@
         "name": "Volvagia",
         "access_rules": [
           "@Fire Temple/Compass Chest,fire_small_keys:7,$has_explosives,fire_boss_key,hammer",
-          "hoverboots,fire_boss_key,hammer,[redtunic]"
+          "[hoverboots],fire_boss_key,hammer,[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -1230,38 +1230,46 @@
     ],
     "sections": [
       {
-        "name": "Lower Child",
+        "name": "Child Left",
         "access_rules": [
           "ocarina,requiem,boomerang",
           "ocarina,requiem,sling",
-          "ocarina,requiem,[boomerang],$has_bombchus",
-          "ocarina,requiem,[sling],$has_bombchus"
+          "ocarina,requiem,bombchu,[boomerang]",
+          "ocarina,requiem,bombchu,[sling]"
         ],
-        "clear_as_group": false,
-        "item_count": 2
+        "item_count": 1
+      },
+      {
+        "name": "Child Right",
+        "access_rules": [
+          "@Spirit Temple/Child Left,sticks",
+          "@Spirit Temple/Child Left,dinsfire,magic",
+        ],
+        "item_count": 1
       },
       {
         "name": "Upper Child",
         "access_rules": [
-          "@Spirit Temple/Lower Child,spirit_small_keys:1",
-          "@Spirit Temple/Mirror Room"
+          "spirit_small_keys:1,ocarina,requiem",
+          "spirit_small_keys:1,sword2,lift2"
         ],
         "item_count": 2
       },
       {
         "name": "Torch Puzzle",
         "access_rules": [
-          "@Spirit Temple/Lower Child,spirit_small_keys:1,$has_explosives,sticks",
-          "@Spirit Temple/Lower Child,spirit_small_keys:1,$has_explosives,dinsfire,magic",
-          "@Spirit Temple/Mirror Room,$has_fire"
+          "spirit_small_keys:1,ocarina,requiem,$has_explosives,sticks",
+          "spirit_small_keys:1,ocarina,requiem,$has_explosives,dinsfire,magic",
+          "spirit_small_keys:1,sword2,lift2,$has_fire",
+          "spirit_small_keys:1,sword2,lift2,bow,[$has_fire]"
         ],
         "item_count": 1
       },
       {
         "name": "Southern Hand",
         "access_rules": [
-          "@Spirit Temple/Lower Child,spirit_small_keys:2,$has_explosives",
-          "@Spirit Temple/Mirror Room,spirit_small_keys:2",
+          "spirit_small_keys:2,ocarina,requiem,$has_explosives",
+          "spirit_small_keys:2,sword2,lift2",
           "{agony}"
         ],
         "capture_item": true,
@@ -1279,7 +1287,7 @@
         "access_rules": [
           "sword2,lift2,hookshot",
           "sword2,lift2,bow",
-          "sword2,lift2,$has_explosives"
+          "sword2,lift2,bombchu"
         ],
         "item_count": 1
       },
@@ -1293,10 +1301,7 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,$has_fire",
-          "@Spirit Temple/Mirror Room,bow",
-          "@Spirit Temple/Lower Child,spirit_small_keys:1,$has_explosives,sticks",
-          "@Spirit Temple/Lower Child,spirit_small_keys:1,$has_explosives,dinsfire,magic"
+          "@Spirit Temple/Torch Puzzle"
         ],
         "item_count": 1
       },
@@ -1341,7 +1346,7 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,spirit_small_keys:3,$has_explosives,ocarina,lullaby,[bow],[hookshot]"
+          "@Spirit Temple/Mirror Room,spirit_small_keys:3,ocarina,lullaby,[$can_blast],[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1350,14 +1355,14 @@
       {
         "name": "Topmost Sun",
         "access_rules": [
-          "@Spirit Temple/Near Armos,spirit_small_keys:3"
+          "@Spirit Temple/Mirror Room,spirit_small_keys:3,shield3"
         ],
         "item_count": 1
       },
       {
         "name": "Twinrova",
         "access_rules": [
-          "@Spirit Temple/Topmost Sun,spirit_boss_key,hookshot"
+          "@Spirit Temple/Topmost Sun,spirit_boss_key,$has_explosives,hookshot"
         ],
         "hosted_item": "spirit",
         "chest_unopened_img": "images/HC.png",
@@ -1391,10 +1396,10 @@
         ],
         "sections": [
           {
-            "name": "GS96 - Cage Room Lower Child",
-            "short_name": "Lower Child",
+            "name": "GS96 - Metal Fence",
+            "short_name": "Metal Fence",
             "access_rules": [
-              "@Spirit Temple/Lower Child"
+              "@Spirit Temple/Child Left"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1414,9 +1419,8 @@
             "name": "GS98 - Room Before Iron Knuckle Child Side",
             "short_name": "Before Knuckle",
             "access_rules": [
-              "@Spirit Temple/Lower Child,spirit_small_keys:1,$has_explosives,sticks,boomerang",
-              "@Spirit Temple/Lower Child,spirit_small_keys:1,$has_explosives,dinsfire,magic,boomerang",
-              "@Spirit Temple/Mirror Room,$has_fire,hookshot"
+              "ocarina,requiem,spirit_small_keys:1,$has_explosives,boomerang",
+              "@Spirit Temple/Mirror Room,hookshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1436,9 +1440,9 @@
             "name": "GS100 - Statue Room, Left Ledge",
             "short_name": "Statue Ledge",
             "access_rules": [
-              "lift2,sword2,spirit_small_keys:1,hookshot,ocarina,[scarecrow]",
-              "lift2,sword2,spirit_small_keys:1,longshot",
-              "lift2,sword2,spirit_small_keys:1,hoverboots"
+              "@Spirit Temple/Mirror Room,hookshot,ocarina,[scarecrow]",
+              "@Spirit Temple/Mirror Room,longshot",
+              "@Spirit Temple/Mirror Room,hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1448,6 +1452,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "ocarina,requiem"
+            ],
             "x": 85,
             "y": 271
           },
