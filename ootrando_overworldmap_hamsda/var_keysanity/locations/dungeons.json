@@ -335,9 +335,9 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain C",
     "access_rules": [
-      "jabu_reg,sling",
-      "jabu_reg,$has_explosives",
-      "jabu_reg,boomerang"
+      "jabu_reg,bottle,sling",
+      "jabu_reg,bottle,$has_explosives",
+      "jabu_reg,bottle,boomerang"
     ],
     "sections": [
       {
@@ -877,7 +877,7 @@
       {
         "name": "Basement",
         "access_rules": [
-          "water_small_keys:1,ocarina,lullaby,[bluetunic]",
+          "ocarina,lullaby,water_small_keys:1,[bluetunic]",
           "ocarina,lullaby,bow,[bluetunic]",
           "ocarina,lullaby,dinsfire,magic,[bluetunic]"
         ],
@@ -886,8 +886,12 @@
       {
         "name": "Cracked Wall",
         "access_rules": [
-          "@Water Temple/Basement,$has_explosives",
-          "bombchu,[@Water Temple/Basement]"
+          "$has_explosives,ocarina,lullaby,water_small_keys:1",
+          "$has_explosives,ocarina,lullaby,bow",
+          "$has_explosives,ocarina,lullaby,dinsfire,magic",
+          "bombchu,[bombs],[ocarina],[lullaby],[water_small_keys:1]",
+          "bombchu,[bombs],[ocarina],[lullaby],[bow]",
+          "bombchu,[bombs],[ocarina],[lullaby],[dinsfire],[magic]"
         ],
         "item_count": 1
       },

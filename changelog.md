@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0.6
+
+- fixed Water Temple cracked wall sequence break with chus in keysanity variant
+- fixed Jabu access requires bottle with open fountain
+- added reverse wasteland as a sequence break for gerudo area
+
 ## 2.2.0.5
 
 - added Fire Temple Volvagia sequence break for hoverboots
