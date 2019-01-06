@@ -877,7 +877,7 @@
         "name": "Cracked Wall",
         "access_rules": [
           "ocarina,lullaby,$has_explosives",
-          "bombchu,[ocarina],[lullaby],[$has_explosives]"
+          "bombchu,[ocarina],[lullaby],[bombs]"
         ],
         "item_count": 1
       },
