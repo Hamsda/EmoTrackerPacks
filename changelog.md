@@ -3,6 +3,7 @@
 ## 2.2.0.6
 
 - fixed Water Temple cracked wall sequence break with chus in keysanity variant
+- fixed Jabu access requires bottle with open fountain
 
 ## 2.2.0.5
 
