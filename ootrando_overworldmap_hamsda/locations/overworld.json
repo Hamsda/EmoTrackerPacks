@@ -4773,7 +4773,11 @@
                   "carpenter_rescue_yes",
                   "gerudo_fortress_open",
                   "ocarina,epona",
-                  "longshot"
+                  "longshot",
+                  "ocarina,requiem,[carpenter_rescue_yes]",
+                  "ocarina,requiem,[gerudo_fortress_open]",
+                  "ocarina,requiem,[epona]",
+                  "ocarina,requiem,[longshot]",
                 ],
                 "children": [
                   {
