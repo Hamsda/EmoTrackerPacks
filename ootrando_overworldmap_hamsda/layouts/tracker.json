@@ -76,6 +76,16 @@
                       "adult"
                     ]
                   }
+                },
+                {
+                  "title": "Gossip Stones",
+                  "icon": "images/gossip_stone.png",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "gossips"
+                    ]
+                  }
                 }
               ]
             },
@@ -193,6 +203,16 @@
                 "type": "map",
                 "maps": [
                   "adult"
+                ]
+              }
+            },
+            {
+              "title": "Gossip Stones",
+              "icon": "images/gossip_stone.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "gossips"
                 ]
               }
             }

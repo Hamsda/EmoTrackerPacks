@@ -2,6 +2,7 @@
 
 ## 2.2.0.7
 
+- added gossip stone map
 - fixed image for scrub outside Lake Hylia
 - fixed beans so they can be unmarked
 
