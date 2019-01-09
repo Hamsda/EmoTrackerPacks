@@ -623,6 +623,8 @@
                     "access_rules": [
                       "$can_blast"
                     ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
                     "item_count": 1
                   }
                 ],

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0.7
+
+- fixed image for scrub outside Lake Hylia
+
 ## 2.2.0.6
 
 - fixed Water Temple cracked wall sequence break with chus in keysanity variant
