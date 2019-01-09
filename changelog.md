@@ -3,6 +3,7 @@
 ## 2.2.0.7
 
 - fixed image for scrub outside Lake Hylia
+- fixed beans so they can be unmarked
 
 ## 2.2.0.6
 
