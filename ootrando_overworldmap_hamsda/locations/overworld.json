@@ -514,6 +514,7 @@
                     "name": "Deku Scrubs",
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
+                    "clear_as_group": false,
                     "item_count": 2
                   }
                 ],
@@ -630,6 +631,7 @@
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
+                    "clear_as_group": false,
                     "item_count": 2
                   }
                 ],
@@ -1248,6 +1250,7 @@
                         "name": "Deku Scrubs",
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
                         "item_count": 3
                       }
                     ],
@@ -1412,6 +1415,7 @@
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
                         "item_count": 3
                       }
                     ],
@@ -3475,6 +3479,7 @@
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
                         "item_count": 2
                       }
                     ],
@@ -4091,6 +4096,7 @@
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
                         "item_count": 2
                       }
                     ],
@@ -4704,6 +4710,7 @@
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
+                    "clear_as_group": false,
                     "item_count": 3
                   }
                 ],
@@ -4911,6 +4918,7 @@
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
+                    "clear_as_group": false,
                     "item_count": 3
                   }
                 ],
@@ -5483,6 +5491,7 @@
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
                         "item_count": 2
                       }
                     ],
