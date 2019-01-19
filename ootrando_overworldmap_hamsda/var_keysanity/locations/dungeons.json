@@ -848,59 +848,75 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_reg,ironboots,hookshot,$has_zora_tunic"
+      "water_reg,ironboots,hookshot,$has_zora_tunic",
+      "water_reg,scale2,[ironboots],hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
         "name": "Map Chest",
+        "access_rules": [
+          "ironboots",
+          "[ironboots],longshot"
+        ],
         "item_count": 1
       },
       {
         "name": "Compass Chest",
+        "access_rules": [
+          "ironboots",
+          "[ironboots],longshot,ocarina,lullaby"
+        ],
         "item_count": 1
       },
       {
         "name": "Torch Chest",
         "access_rules": [
-          "ocarina,lullaby,bow",
-          "ocarina,lullaby,dinsfire,magic"
+          "ironboots,ocarina,lullaby,bow",
+          "ironboots,ocarina,lullaby,dinsfire,magic",
+          "[ironboots],longshot,ocarina,lullaby,bow",
+          "[ironboots],longshot,ocarina,lullaby,dinsfire,magic"
         ],
         "item_count": 1
       },
       {
         "name": "Dragon Chest",
         "access_rules": [
-          "ocarina,lullaby,lift1",
-          "water_small_keys:2,ocarina,time,bow"
+          "ironboots,ocarina,lullaby,lift1",
+          "ironboots,water_small_keys:2,ocarina,time,bow"
         ],
         "item_count": 1
       },
       {
         "name": "Basement",
         "access_rules": [
-          "ocarina,lullaby,water_small_keys:1,[bluetunic]",
-          "ocarina,lullaby,bow,[bluetunic]",
-          "ocarina,lullaby,dinsfire,magic,[bluetunic]"
+          "ironboots,ocarina,lullaby,water_small_keys:1,[bluetunic]",
+          "ironboots,ocarina,lullaby,bow,[bluetunic]",
+          "ironboots,ocarina,lullaby,dinsfire,magic,[bluetunic]"
         ],
         "item_count": 1
       },
       {
         "name": "Cracked Wall",
         "access_rules": [
-          "$has_explosives,ocarina,lullaby,water_small_keys:1",
-          "$has_explosives,ocarina,lullaby,bow",
-          "$has_explosives,ocarina,lullaby,dinsfire,magic",
-          "bombchu,[bombs],[ocarina],[lullaby],[water_small_keys:1]",
-          "bombchu,[bombs],[ocarina],[lullaby],[bow]",
-          "bombchu,[bombs],[ocarina],[lullaby],[dinsfire],[magic]"
+          "$has_explosives,ironboots,ocarina,lullaby,water_small_keys:1",
+          "$has_explosives,ironboots,ocarina,lullaby,bow",
+          "$has_explosives,ironboots,ocarina,lullaby,dinsfire,magic",
+          "$has_explosives,[ironboots],longshot,ocarina,lullaby,water_small_keys:1",
+          "$has_explosives,[ironboots],longshot,ocarina,lullaby,bow",
+          "$has_explosives,[ironboots],longshot,ocarina,lullaby,dinsfire,magic",
+          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[water_small_keys:1]",
+          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[bow]",
+          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[dinsfire],[magic]"
         ],
         "item_count": 1
       },
       {
         "name": "Center Eye Switch",
         "access_rules": [
-          "ocarina,lullaby,bow,lift1,hoverboots",
-          "ocarina,lullaby,bow,lift1,longshot"
+          "ironboots,ocarina,lullaby,bow,lift1,hoverboots",
+          "ironboots,ocarina,lullaby,bow,lift1,longshot",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1,hoverboots",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1,longshot"
         ],
         "item_count": 1
       },
@@ -923,11 +939,15 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "water_small_keys:2,longshot,hoverboots",
-          "water_small_keys:2,longshot,$has_explosives,lift1",
-          "water_small_keys:2,hoverboots,[longshot]",
-          "water_small_keys:2,longshot,[hoverboots]",
-          "water_small_keys:2,longshot,[$has_explosives],[lift1]",
+          "water_small_keys:2,ironboots,longshot,hoverboots",
+          "water_small_keys:2,ironboots,longshot,$has_explosives,lift1",
+          "water_small_keys:2,ironboots,longshot,[hoverboots]",
+          "water_small_keys:2,ironboots,longshot,[$has_explosives],[lift1]",
+          "water_small_keys:2,ironboots,hoverboots,[longshot]",
+          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,hoverboots",
+          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
+          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,[hoverboots]",
+          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,[$has_explosives],[lift1]",
           "{agony}"
         ],
         "capture_item": true,
@@ -964,7 +984,8 @@
             "name": "GS73 - Bottom South, Hit Switch Spin Attack",
             "short_name": "Bottom South",
             "access_rules": [
-              "$has_explosives,ocarina,lullaby"
+              "$has_explosives,ocarina,lullaby,ironboots",
+              "$has_explosives,ocarina,lullaby,[ironboots],longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -974,7 +995,7 @@
             "name": "GS74 - River After Dark Link",
             "short_name": "River",
             "access_rules": [
-              "@Water Temple/Dark Link,ocarina,time"
+              "water_small_keys:2,ocarina,time"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -984,12 +1005,12 @@
             "name": "GS75 - Center Pillar Inside",
             "short_name": "Center Pillar",
             "access_rules": [
-              "water_small_keys:1,ocarina,lullaby,longshot",
-              "water_small_keys:1,ocarina,lullaby,faroreswind,magic",
-              "ocarina,lullaby,bow,longshot",
-              "ocarina,lullaby,bow,faroreswind,magic",
-              "ocarina,lullaby,dinsfire,magic,longshot",
-              "ocarina,lullaby,dinsfire,magic,faroreswind"
+              "[ironboots],ocarina,lullaby,water_small_keys:1,longshot",
+              "ironboots,ocarina,lullaby,water_small_keys:1,faroreswind,magic",
+              "[ironboots],ocarina,lullaby,bow,longshot",
+              "ironboots,ocarina,lullaby,bow,faroreswind,magic",
+              "[ironboots],ocarina,lullaby,dinsfire,magic,longshot",
+              "ironboots,ocarina,lullaby,dinsfire,magic,faroreswind"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -999,8 +1020,7 @@
             "name": "GS76 - Platform Room Before Dark Link",
             "short_name": "Platform Room",
             "access_rules": [
-              "water_small_keys:1,longshot",
-              "water_small_keys:1,hookshot,[longshot]"
+              "water_small_keys:1,longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1010,8 +1030,9 @@
             "name": "GS77 - Bottom Rolling Rocks Room",
             "short_name": "Rolling Rocks",
             "access_rules": [
-              "water_small_keys:1,longshot,$has_explosives,lift1",
-              "water_small_keys:1,longshot,hoverboots"
+              "water_small_keys:1,ironboots,longshot",
+              "water_small_keys:1,[ironboots],longshot,ocarina,lullaby",
+              "water_small_keys:1,ironboots,[longshot],hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",

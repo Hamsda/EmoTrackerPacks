@@ -8,6 +8,7 @@
 - changed scrub locations to not clear as group
 - improved scarecrow learning locations a bit
 - fixed DMC wall HP with bolero and hookshot/hoverboots
+- added Water Temple ironboots sequence break with gold scale and longshot
 
 ## 2.2.0.6
 
