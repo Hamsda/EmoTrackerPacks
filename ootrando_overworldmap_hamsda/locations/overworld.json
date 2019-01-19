@@ -1146,12 +1146,12 @@
                     ]
                   },
                   {
-                    "name": "Scarecrow C",
+                    "name": "Child Scarecrow",
                     "sections": [
                       {
                         "name": "Play Song",
                         "access_rules": [
-                          "ocarina,scarecrow_kid"
+                          "ocarina,scarecrow_kid,$has|scarecrow|0"
                         ],
                         "hosted_item": "scarecrow_adult"
                       }
@@ -5350,7 +5350,7 @@
                 ]
               },
               {
-                "name": "Scarecrow A",
+                "name": "Adult Scarecrow",
                 "sections": [
                   {
                     "name": "Repeat Song",
