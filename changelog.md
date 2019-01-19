@@ -7,6 +7,7 @@
 - fixed beans so they can be unmarked
 - changed scrub locations to not clear as group
 - improved scarecrow learning locations a bit
+- fixed DMC wall HP with bolero and hookshot/hoverboots
 
 ## 2.2.0.6
 
