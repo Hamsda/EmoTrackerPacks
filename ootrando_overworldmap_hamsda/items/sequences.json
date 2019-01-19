@@ -11,8 +11,7 @@
       },
       {
         "img": "images/bean.png",
-        "codes": "bean_stage_yes",
-        "inherit_codes": false
+        "codes": "bean_stage_yes"
       }
     ]
   },
@@ -28,8 +27,7 @@
       },
       {
         "img": "images/bean.png",
-        "codes": "bean_lake_yes",
-        "inherit_codes": false
+        "codes": "bean_lake_yes"
       }
     ]
   },
@@ -45,8 +43,7 @@
       },
       {
         "img": "images/bean.png",
-        "codes": "bean_graveyard_yes",
-        "inherit_codes": false
+        "codes": "bean_graveyard_yes"
       }
     ]
   },
@@ -62,8 +59,7 @@
       },
       {
         "img": "images/bean.png",
-        "codes": "bean_trail_yes",
-        "inherit_codes": false
+        "codes": "bean_trail_yes"
       }
     ]
   },
@@ -79,8 +75,7 @@
       },
       {
         "img": "images/bean.png",
-        "codes": "bean_crater_yes",
-        "inherit_codes": false
+        "codes": "bean_crater_yes"
       }
     ]
   },
@@ -96,8 +91,7 @@
       },
       {
         "img": "images/bean.png",
-        "codes": "bean_colossus_yes",
-        "inherit_codes": false
+        "codes": "bean_colossus_yes"
       }
     ]
   },

@@ -363,6 +363,7 @@
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
             "item_count": 2
           },
           {
@@ -959,7 +960,7 @@
     "parent": "Lake Hylia A",
     "access_rules": [
       "water_mq,ironboots,hookshot,$has_zora_tunic",
-      "water_mq,scale2,hookshot,$has_zora_tunic"
+      "water_mq,scale2,[ironboots],hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
@@ -1883,6 +1884,7 @@
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
             "item_count": 5
           }
         ],

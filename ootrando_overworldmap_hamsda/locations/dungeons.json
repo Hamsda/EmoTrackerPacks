@@ -310,6 +310,7 @@
             ],
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
             "item_count": 2
           }
         ],
@@ -839,53 +840,67 @@
     "name": "Water Temple",
     "parent": "Lake Hylia A",
     "access_rules": [
-      "water_reg,ironboots,hookshot,$has_zora_tunic"
+      "water_reg,ironboots,hookshot,$has_zora_tunic",
+      "water_reg,scale2,[ironboots],hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
         "name": "Map Chest",
+        "access_rules": [
+          "ironboots",
+          "[ironboots],longshot"
+        ],
         "item_count": 1
       },
       {
         "name": "Compass Chest",
+        "access_rules": [
+          "ironboots",
+          "[ironboots],longshot,ocarina,lullaby"
+        ],
         "item_count": 1
       },
       {
         "name": "Torch Chest",
         "access_rules": [
-          "ocarina,lullaby,bow",
-          "ocarina,lullaby,dinsfire,magic"
+          "ironboots,ocarina,lullaby,bow",
+          "ironboots,ocarina,lullaby,dinsfire,magic",
+          "[ironboots],longshot,ocarina,lullaby,bow",
+          "[ironboots],longshot,ocarina,lullaby,dinsfire,magic"
         ],
         "item_count": 1
       },
       {
         "name": "Dragon Chest",
         "access_rules": [
-          "ocarina,lullaby,lift1",
-          "ocarina,time,bow"
+          "ironboots,ocarina,lullaby,lift1",
+          "ironboots,ocarina,time,bow"
         ],
         "item_count": 1
       },
       {
         "name": "Basement",
         "access_rules": [
-          "ocarina,lullaby,[bluetunic]"
+          "ironboots,ocarina,lullaby,[bluetunic]"
         ],
         "item_count": 1
       },
       {
         "name": "Cracked Wall",
         "access_rules": [
-          "ocarina,lullaby,$has_explosives",
-          "bombchu,[ocarina],[lullaby],[bombs]"
+          "$has_explosives,ironboots,ocarina,lullaby",
+          "$has_explosives,[ironboots],longshot,ocarina,lullaby",
+          "bombchu,[bombs],ironboots,[ocarina],[lullaby]"
         ],
         "item_count": 1
       },
       {
         "name": "Center Eye Switch",
         "access_rules": [
-          "ocarina,lullaby,bow,lift1,hoverboots",
-          "ocarina,lullaby,bow,lift1,longshot"
+          "ironboots,ocarina,lullaby,bow,lift1,hoverboots",
+          "ironboots,ocarina,lullaby,bow,lift1,longshot",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1,hoverboots",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1,longshot"
         ],
         "item_count": 1
       },
@@ -905,11 +920,15 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "longshot,hoverboots",
-          "longshot,$has_explosives,lift1",
-          "hoverboots,[longshot]",
-          "longshot,[hoverboots]",
-          "longshot,[$has_explosives],[lift1]",
+          "ironboots,longshot,hoverboots",
+          "ironboots,longshot,$has_explosives,lift1",
+          "ironboots,longshot,[hoverboots]",
+          "ironboots,longshot,[$has_explosives],[lift1]",
+          "ironboots,hoverboots,[longshot]",
+          "[ironboots],longshot,ocarina,lullaby,hoverboots",
+          "[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
+          "[ironboots],longshot,ocarina,lullaby,[hoverboots]",
+          "[ironboots],longshot,ocarina,lulla0by,[$has_explosives],[lift1]",
           "{agony}"
         ],
         "capture_item": true,
@@ -946,7 +965,8 @@
             "name": "GS73 - Bottom South, Hit Switch Spin Attack",
             "short_name": "Bottom South",
             "access_rules": [
-              "$has_explosives,ocarina,lullaby"
+              "$has_explosives,ocarina,lullaby,ironboots",
+              "$has_explosives,ocarina,lullaby,[ironboots],longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -956,7 +976,7 @@
             "name": "GS74 - River After Dark Link",
             "short_name": "River",
             "access_rules": [
-              "@Water Temple/Dark Link,ocarina,time"
+              "ocarina,time"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -966,8 +986,8 @@
             "name": "GS75 - Center Pillar Inside",
             "short_name": "Center Pillar",
             "access_rules": [
-              "longshot,ocarina,lullaby",
-              "faroreswind,magic,ocarina,lullaby"
+              "[ironboots],ocarina,lullaby,longshot",
+              "ironboots,ocarina,lullaby,faroreswind,magic"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -977,8 +997,7 @@
             "name": "GS76 - Platform Room Before Dark Link",
             "short_name": "Platform Room",
             "access_rules": [
-              "longshot",
-              "hookshot,[longshot]"
+              "longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -988,8 +1007,9 @@
             "name": "GS77 - Bottom Rolling Rocks Room",
             "short_name": "Rolling Rocks",
             "access_rules": [
-              "longshot,$has_explosives,lift1",
-              "longshot,hoverboots"
+              "ironboots,longshot",
+              "[ironboots],longshot,ocarina,lullaby",
+              "ironboots,[longshot],hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1705,6 +1725,7 @@
             "short_name": "Hidden Room",
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
             "item_count": 4
           }
         ],

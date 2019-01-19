@@ -1,8 +1,18 @@
-function has_bombchus()
-  if Tracker:ProviderCountForCode("logic_chus") == 0 then
-    return Tracker:ProviderCountForCode("bombs")
+function has(item, amount)
+  local count = Tracker:ProviderCountForCode(item)
+  amount = tonumber(amount)
+  if not amount then
+    return count > 0
   else
+    return count == amount
+  end
+end
+
+function has_bombchus()
+  if has("logic_chus") then
     return Tracker:ProviderCountForCode("bombchu")
+  else
+    return Tracker:ProviderCountForCode("bombs")
   end
 end
 
@@ -22,7 +32,7 @@ function has_explosives()
 end
 
 function can_blast()
-  if Tracker:ProviderCountForCode("sword2") > 0 and Tracker:ProviderCountForCode("hammer") > 0 then
+  if has("sword2") and has("hammer") then
     return 1 
   else
     return has_explosives()
@@ -30,11 +40,11 @@ function can_blast()
 end
 
 function can_child_attack()
-  if Tracker:ProviderCountForCode("sling") > 0
-  or Tracker:ProviderCountForCode("boomerang") > 0
-  or Tracker:ProviderCountForCode("sticks") > 0
-  or Tracker:ProviderCountForCode("sword1") > 0
-  or (Tracker:ProviderCountForCode("dinsfire") > 0 and Tracker:ProviderCountForCode("magic") > 0) 
+  if has("sling")
+  or has("boomerang")
+  or has("sticks")
+  or has("sword1")
+  or (has("dinsfire") and has("magic")) 
   then
     return 1
   else
@@ -43,9 +53,9 @@ function can_child_attack()
 end
 
 function can_stun_deku()
-  if Tracker:ProviderCountForCode("sword2") > 0
-  or Tracker:ProviderCountForCode("nuts") > 0
-  or Tracker:ProviderCountForCode("shield1") > 0
+  if has("sword2")
+  or has("nuts")
+  or has("shield1")
   then
     return 1
   else
@@ -54,10 +64,10 @@ function can_stun_deku()
 end
 
 function can_LA()
-  if Tracker:ProviderCountForCode("sword2") > 0
-  and Tracker:ProviderCountForCode("magic") > 0
-  and Tracker:ProviderCountForCode("bow") > 0
-  and Tracker:ProviderCountForCode("lightarrow") > 0
+  if has("sword2")
+  and has("magic")
+  and has("bow")
+  and has("lightarrow")
   then
     return 1
   else
@@ -66,13 +76,13 @@ function can_LA()
 end
 
 function has_fire()
-  if Tracker:ProviderCountForCode("sword2") > 0
-  and Tracker:ProviderCountForCode("magic") > 0
-  and Tracker:ProviderCountForCode("bow") > 0
-  and Tracker:ProviderCountForCode("firearrow") > 0
+  if has("sword2")
+  and has("magic")
+  and has("bow")
+  and has("firearrow")
   or 
-  Tracker:ProviderCountForCode("dinsfire") > 0 
-  and Tracker:ProviderCountForCode("magic") > 0
+  has("dinsfire") 
+  and has("magic")
   then
     return 1
   else
@@ -81,9 +91,9 @@ function has_fire()
 end
 
 function can_see_with_lens()
-  if Tracker:ProviderCountForCode("lens_wasteland") > 0 
-  or Tracker:ProviderCountForCode("lens") > 0 
-  and Tracker:ProviderCountForCode("magic") > 0 then
+  if has("lens_wasteland") 
+  or has("lens") 
+  and has("magic") then
     return 1
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -91,8 +101,8 @@ function can_see_with_lens()
 end
 
 function has_goron_tunic()
-  if Tracker:ProviderCountForCode("fewer_tunics_yes") > 0 
-  or Tracker:ProviderCountForCode("redtunic") > 0 
+  if has("fewer_tunics_yes") 
+  or has("redtunic") 
   then
     return 1
   else
@@ -101,8 +111,8 @@ function has_goron_tunic()
 end
 
 function has_zora_tunic()
-  if Tracker:ProviderCountForCode("fewer_tunics_yes") > 0 
-  or Tracker:ProviderCountForCode("bluetunic") > 0 
+  if has("fewer_tunics_yes") 
+  or has("bluetunic") 
   then
     return 1
   else
@@ -111,10 +121,10 @@ function has_zora_tunic()
 end
 
 function can_leave_forest()
-  if Tracker:ProviderCountForCode("open_forest") > 0
+  if has("open_forest")
   or 
-  Tracker:ProviderCountForCode("sling") > 0
-  and Tracker:ProviderCountForCode("sword1") > 0 
+  has("sling")
+  and has("sword1") 
   then
     return 1
   else
@@ -123,26 +133,26 @@ function can_leave_forest()
 end
 
 function colossus()
-  if Tracker:ProviderCountForCode("ocarina") > 0
-  and Tracker:ProviderCountForCode("requiem") > 0
+  if has("ocarina")
+  and has("requiem")
   then
     return 1
-  elseif Tracker:ProviderCountForCode("sword2") == 0 then
+  elseif has("sword2", 0) then
     return 0
-  elseif Tracker:ProviderCountForCode("carpenter_rescue_yes") == 0
-  and Tracker:ProviderCountForCode("gerudo_fortress_open") == 0
+  elseif has("carpenter_rescue_yes", 0)
+  and has("gerudo_fortress_open", 0)
   then
     return 0
   else
-    if Tracker:ProviderCountForCode("hoverboots") == 0
-    and Tracker:ProviderCountForCode("longshot") == 0
+    if has("hoverboots", 0)
+    and has("longshot", 0)
     then
       return 1, AccessibilityLevel.SequenceBreak
     end
 
-    if Tracker:ProviderCountForCode("lens_chest") == 0 
-    and (Tracker:ProviderCountForCode("lens") == 0 
-    or Tracker:ProviderCountForCode("magic") == 0) 
+    if has("lens_chest", 0) 
+    and (has("lens", 0) 
+    or has("magic", 0)) 
     then
       return 1, AccessibilityLevel.SequenceBreak
     end
@@ -152,18 +162,18 @@ function colossus()
 end
 
 function child_fountain()
-  if Tracker:ProviderCountForCode("ruto") == 0 
-  and Tracker:ProviderCountForCode("open_fountain") == 0 
+  if has("ruto", 0) 
+  and has("open_fountain", 0) 
   then
     return 0
   else
     local level = AccessibilityLevel.Normal
-    if Tracker:ProviderCountForCode("king_zora_moved_yes") == 0 
-    and Tracker:ProviderCountForCode("open_fountain") == 0 
+    if has("king_zora_moved_yes", 0) 
+    and has("open_fountain", 0) 
     then
       level = AccessibilityLevel.SequenceBreak
     end
-    if Tracker:ProviderCountForCode("scale1") > 0 then
+    if has("scale1") then
       return 1, level
     else
       local explo_count, explo_level = has_explosives()
@@ -173,8 +183,8 @@ function child_fountain()
         if explo_level == AccessibilityLevel.SequenceBreak then
           level = AccessibilityLevel.SequenceBreak
         end
-        if Tracker:ProviderCountForCode("ocarina") == 0
-        or Tracker:ProviderCountForCode("lullaby") == 0
+        if has("ocarina", 0)
+        or has("lullaby", 0)
         then
           level = AccessibilityLevel.SequenceBreak
         end
@@ -185,17 +195,17 @@ function child_fountain()
 end
 
 function adult_fountain()
-  if Tracker:ProviderCountForCode("sword2") == 0 then
+  if has("sword2", 0) then
     return 0
   else
     local child_count, level = child_fountain()
     if child_count == 0 then
       return 0
     else
-      if Tracker:ProviderCountForCode("ocarina") == 0
-      or Tracker:ProviderCountForCode("lullaby") == 0
+      if has("ocarina", 0)
+      or has("lullaby", 0)
       then
-        if Tracker:ProviderCountForCode("hoverboots") > 0 then
+        if has("hoverboots") then
           return 1, AccessibilityLevel.SequenceBreak
         else
           return 0
@@ -217,7 +227,7 @@ function has_bottle()
     ruto = 0
     level = kz_level
   end
-  if Tracker:ProviderCountForCode("sword2") > 0 then
+  if has("sword2") then
     bigpoe = 0
   end
   

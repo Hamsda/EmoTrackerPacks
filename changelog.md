@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.2.0.7
+
+- added gossip stone map
+- fixed image for scrub outside Lake Hylia
+- fixed beans so they can be unmarked
+- changed scrub locations to not clear as group
+- improved scarecrow learning locations a bit
+- fixed DMC wall HP with bolero and hookshot/hoverboots
+- added Water Temple ironboots sequence break with gold scale and longshot
+
 ## 2.2.0.6
 
 - fixed Water Temple cracked wall sequence break with chus in keysanity variant
