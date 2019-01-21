@@ -659,14 +659,14 @@
       {
         "name": "Flare Dancer",
         "access_rules": [
-          "hammer"
+          "fire_small_keys:1,hammer"
         ],
         "item_count": 1
       },
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "hammer"
+          "fire_small_keys:1,hammer"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",

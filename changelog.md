@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0.8
+
+- fixed Fire Temple locked door to BK chest is back in keysanity
+
 ## 2.2.0.7
 
 - added gossip stone map
