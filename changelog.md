@@ -4,6 +4,7 @@
 
 - fixed Fire Temple locked door to BK chest is back in keysanity
 - changed graveyard box HP to be peakable
+- changed a lot of gold skulltulas to be peakable and have capture with ranged weapons but no ability to collect them
 - added new rainbow bridge settings
 - changed settings defaults to match commonly used settings
 - adjusted brightness for disabled items slightly down

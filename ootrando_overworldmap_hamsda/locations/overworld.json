@@ -172,8 +172,11 @@
                     "name": "GS3",
                     "access_rules": [
                       "sword2,hookshot",
-                      "sword2,hoverboots,[hookshot]"
+                      "sword2,hoverboots,[hookshot]",
+                      "{sword2,bow}",
+                      "{sword2,dinsfire,magic}"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -951,8 +954,12 @@
                     "name": "GS12",
                     "access_rules": [
                       "$has_explosives,boomerang",
-                      "$can_blast,sword2,hookshot"
+                      "{$has_explosives,sling}",
+                      "$can_blast,sword2,hookshot",
+                      "{$can_blast,sword2,bow}",
+                      "{$can_blast,dinsfire,magic}"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -962,7 +969,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "$has_explosives,boomerang"
+                      "$has_explosives"
                     ],
                     "x": 1552,
                     "y": 406
@@ -970,7 +977,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "$can_blast,sword2,hookshot"
+                      "$can_blast,sword2"
                     ],
                     "x": 1552,
                     "y": 406
@@ -987,7 +994,9 @@
                     "name": "GS13",
                     "access_rules": [
                       "$has_explosives,dinsfire,magic,boomerang",
+                      "{$has_explosives,dinsfire,magic}",
                       "sword2,hammer,$has_fire,hookshot",
+                      "{sword2,hammer,$has_fire}",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -1000,7 +1009,7 @@
                   {
                     "map": "child",
                     "visibility_rules": [
-                      "$has_explosives,dinsfire,magic,boomerang",
+                      "$has_explosives,dinsfire,magic",
                       "{agony}"
                     ],
                     "x": 972,
@@ -1009,7 +1018,7 @@
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,hammer,$has_fire,hookshot",
+                      "sword2,hammer,$has_fire",
                       "{agony}"
                     ],
                     "x": 972,
@@ -1201,8 +1210,13 @@
                       {
                         "name": "GS56",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang",
+                          "{sling}",
+                          "{sticks}",
+                          "{sword1}",
+                          "{$has_explosives}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -1478,8 +1492,11 @@
                       {
                         "name": "GS20",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang",
+                          "{sling}",
+                          "{bombchu}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -1502,8 +1519,12 @@
                       {
                         "name": "GS21",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang",
+                          "{sling}",
+                          "{dinsfire,magic}",
+                          "{$has_explosives}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -1996,6 +2017,7 @@
                     "sections": [
                       {
                         "name": "Get it",
+                        "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -2004,19 +2026,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "boomerang"
-                        ],
                         "x": 1970,
                         "y": 335
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2,beans_plant_no,beans",
-                          "sword2,bean_graveyard_yes",
-                          "sword2,longshot"
-                        ],
                         "x": 1970,
                         "y": 335
                       }
@@ -2081,8 +2095,12 @@
                       {
                         "name": "GS28",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang",
+                          "{sling}",
+                          "{dinsfire,magic}",
+                          "{$has_explosives}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -3195,6 +3213,7 @@
                         "name": "GS16",
                         "access_rules": [
                           "ocarina,storm,boomerang,$has_explosives",
+                          "{ocarina,storm,$has_explosives}",
                           "{agony}"
                         ],
                         "capture_item": true,
@@ -3768,8 +3787,12 @@
                       {
                         "name": "GS49",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang",
+                          "{sling}",
+                          "{dinsfire,magic}",
+                          "{$has_explosives}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -3899,8 +3922,12 @@
                       {
                         "name": "GS86",
                         "access_rules": [
-                          "boomerang"
+                          "boomerang",
+                          "{sling}",
+                          "{dinsfire,magic}",
+                          "{$has_explosives}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4008,8 +4035,10 @@
                       {
                         "name": "GS92",
                         "access_rules": [
-                          "hookshot"
+                          "hookshot",
+                          "{}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4185,8 +4214,12 @@
                       {
                         "name": "GS94",
                         "access_rules": [
-                          "all_skulltulas,$colossus,hookshot,sword2"
+                          "all_skulltulas,$colossus,sword2,hookshot",
+                          "{all_skulltulas,$colossus,sword2,bow}",
+                          "{all_skulltulas,$colossus,sword2,$has_explosives}",
+                          "{all_skulltulas,$colossus,sword2,dinsfire,magic}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4211,8 +4244,10 @@
                         "access_rules": [
                           "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
-                          "$colossus,longshot,sword2"
+                          "$colossus,longshot,sword2",
+                          "{$colossus,bow,sword2}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4385,8 +4420,12 @@
                   {
                     "name": "GS7",
                     "access_rules": [
-                      "hookshot"
+                      "hookshot",
+                      "{bow}",
+                      "{dinsfire,magic}",
+                      "{$has_explosives}"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -5095,8 +5134,12 @@
                   {
                     "name": "GS45",
                     "access_rules": [
-                      "hookshot"
+                      "hookshot",
+                      "{bow}",
+                      "{dinsfire,magic}",
+                      "{$has_explosives}"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -5119,8 +5162,10 @@
                   {
                     "name": "GS46",
                     "access_rules": [
-                      "hookshot"
+                      "hookshot",
+                      "{bow}"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -5255,6 +5300,9 @@
                     "name": "GS50",
                     "access_rules": [
                       "lift2,$can_blast,hookshot",
+                      "{lift2,$can_blast,bow}",
+                      "{lift2,$can_blast,dinsfire,magic}",
+                      "{lift2,$can_blast,$has_explosives}",
                       "{agony}"
                     ],
                     "capture_item": true,
@@ -5515,8 +5563,12 @@
                       {
                         "name": "GS88",
                         "access_rules": [
-                          "hookshot"
+                          "hookshot",
+                          "{bow}",
+                          "{dinsfire,magic}",
+                          "{$has_explosives}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -5539,8 +5591,11 @@
                       {
                         "name": "GS89",
                         "access_rules": [
-                          "hookshot"
+                          "hookshot",
+                          "{bow}",
+                          "{bombchu}"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -5611,15 +5666,18 @@
                       {
                         "name": "Archery Range (N)",
                         "access_rules": [
-                          "all_skulltulas"
+                          "all_skulltulas,carpenter_rescue_yes",
+                          "all_skulltulas,gerudo_fortress_open"
                         ],
                         "sections": [
                           {
                             "name": "GS90",
                             "access_rules": [
-                              "hookshot,carpenter_rescue_yes",
-                              "hookshot,gerudo_fortress_open"
+                              "hookshot",
+                              "{bow}",
+                              "{dinsfire,magic}"
                             ],
+                            "capture_item": true,
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
                             "item_count": 1
