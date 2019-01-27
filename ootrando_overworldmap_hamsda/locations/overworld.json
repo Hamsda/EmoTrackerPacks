@@ -1042,10 +1042,50 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "gossips",
+                    "map": "gossips", //DMT SoS
+                    "x": 1705,
+                    "y": 158
+                  },
+                  {
+                    "map": "gossips", //DMC exp
+                    "x": 1798,
+                    "y": 42
+                  },
+                  {
+                    "map": "gossips", //HF open
                     "x": 1206,
                     "y": 997
-                  }
+                  },
+                  {
+                    "map": "gossips", //HF near bridge
+                    "x": 1372,
+                    "y": 440
+                  },
+                  {
+                    "map": "gossips", //HF SE
+                    "x": 1427,
+                    "y": 925
+                  },
+                  {
+                    "map": "gossips", //Kak back
+                    "x": 1865,
+                    "y": 326
+                  },
+                  {
+                    "map": "gossips", //Kokiri SoS
+                    "x": 2119,
+                    "y": 845
+                  },
+                  {
+                    "map": "gossips", //LW near Goron
+                    "x": 2149,
+                    "y": 776
+                  },
+                  {
+                    "map": "gossips", //ZR open
+                    "x": 2092,
+                    "y": 540
+                  },
                 ]
               },
               {
@@ -2391,7 +2431,7 @@
                       {
                         "name": "Check it",
                         "access_rules": [
-                          "$has_explosives"
+                          "$can_blast"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",
@@ -2631,7 +2671,8 @@
                       {
                         "name": "Check it",
                         "access_rules": [
-                          "$can_blast"
+                          "$can_blast",
+                          "lift1"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",

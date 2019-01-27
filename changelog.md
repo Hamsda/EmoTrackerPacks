@@ -8,6 +8,7 @@
 - added new rainbow bridge settings
 - changed settings defaults to match commonly used settings
 - adjusted brightness for disabled items slightly down
+- added all copies of generic grotto to gossip stone map
 
 ## 2.2.0.7
 
