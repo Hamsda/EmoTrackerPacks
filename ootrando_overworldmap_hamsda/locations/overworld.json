@@ -196,7 +196,7 @@
               {
                 "name": "Kokiri Forest Gossip Stone",
                 "short_name": "Kokiri Gossip Stone",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -218,7 +218,7 @@
               {
                 "name": "Deku Tree Gossip Stone (Left)",
                 "short_name": "DT Gossip Stone (Left)",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -240,7 +240,7 @@
               {
                 "name": "Deku Tree Gossip Stone (Right)",
                 "short_name": "DT Gossip Stone (Right)",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -532,7 +532,7 @@
               {
                 "name": "Lost Woods Gossip Stone",
                 "short_name": "LW Gossip Stone",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -658,7 +658,7 @@
               {
                 "name": "Sacred Forest Meadow Maze Gossip Stones",
                 "short_name": "SFM Maze Gossip Stones",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -680,7 +680,7 @@
               {
                 "name": "Sacred Forest Meadow Saria Gossip Stone",
                 "short_name": "SFM Saria Gossip Stone",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -1029,7 +1029,7 @@
               {
                 "name": "Generic Grotto Gossip Stone",
                 "short_name": "Generic Grotto Gossip Stone",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -1091,7 +1091,7 @@
               {
                 "name": "Field Valley Grotto Gossip Stone",
                 "short_name": "Field Valley Grotto Gossip Stone",
-                "access_rules":[
+                "access_rules": [
                   "agony"
                 ],
                 "sections": [
@@ -1327,7 +1327,7 @@
                   {
                     "name": "Lake Hylia Lab Gossip Stone",
                     "short_name": "LH Lab Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -1349,7 +1349,7 @@
                   {
                     "name": "Lake Hylia Gossip Stone (Southeast)",
                     "short_name": "LH Gossip Stone (SE)",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -1371,7 +1371,7 @@
                   {
                     "name": "Lake Hylia Gossip Stone (Southwest)",
                     "short_name": "LH Gossip Stone (SW)",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -2071,6 +2071,9 @@
                       },
                       {
                         "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
                         "x": 1970,
                         "y": 335
                       }
@@ -2185,7 +2188,7 @@
                   {
                     "name": "Graveyard Gossip Stone",
                     "short_name": "Graveyard Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -2398,7 +2401,7 @@
                   {
                     "name": "Goron City Maze Gossip Stone",
                     "short_name": "GC Maze Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -2424,7 +2427,7 @@
                   {
                     "name": "Goron City Medigoron Gossip Stone",
                     "short_name": "Medigoron Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -2843,7 +2846,7 @@
                   {
                     "name": "Death Mountain Crater Gossip Stone",
                     "short_name": "DMC Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3117,7 +3120,7 @@
                   {
                     "name": "Temple of Time Gossip Stones",
                     "short_name": "ToT Gossip Stones",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3274,7 +3277,7 @@
                   {
                     "name": "Hyrule Castle Malon Gossip Stone",
                     "short_name": "HC Malon Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3296,7 +3299,7 @@
                   {
                     "name": "Hyrule Castle Rock Wall Gossip Stone",
                     "short_name": "HC Wall Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3318,7 +3321,7 @@
                   {
                     "name": "Castle Storms Grotto Gossip Stone",
                     "short_name": "HC Storms Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3594,7 +3597,7 @@
                   {
                     "name": "Zoras River Plateau Gossip Stone",
                     "short_name": "ZR Plateau Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3616,7 +3619,7 @@
                   {
                     "name": "Zoras River Waterfall Gossip Stone",
                     "short_name": "ZR Waterfall Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3744,7 +3747,7 @@
                   {
                     "name": "Zoras Domain Gossip Stone",
                     "short_name": "ZD Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3850,7 +3853,7 @@
                   {
                     "name": "Zoras Fountain Fairy Gossip Stone",
                     "short_name": "ZF Fairy Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
@@ -3872,7 +3875,7 @@
                   {
                     "name": "Zoras Fountain Jabu Gossip Stone",
                     "short_name": "ZF Jabu Gossip Stone",
-                    "access_rules":[
+                    "access_rules": [
                       "agony"
                     ],
                     "sections": [
