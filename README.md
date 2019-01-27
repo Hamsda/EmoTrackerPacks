@@ -79,10 +79,12 @@ This setting determines the state of the ([see wiki](https://github.com/TestRunn
 
 This setting determines what is needed to trigger the rainbow bridge in front of Ganons castle ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#rainbow-bridge-requirement)).
 
-- ![All Medallions](ootrando_overworldmap_hamsda/images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
+- ![Always Open](ootrando_overworldmap_hamsda/images/setting_bridge_open.png "Always Open") Nothing required, bridge is always open
 - ![Vanilla](ootrando_overworldmap_hamsda/images/setting_bridge_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
+- ![All Stones](ootrando_overworldmap_hamsda/images/setting_bridge_stones.png "All Stones") All 3 stones required
+- ![All Medallions](ootrando_overworldmap_hamsda/images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
 - ![All Dungeons](ootrando_overworldmap_hamsda/images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
-- ![Open](ootrando_overworldmap_hamsda/images/setting_bridge_open.png "Open") Nothing required, bridge is always open
+- ![100 GS tokens](ootrando_overworldmap_hamsda/images/setting_bridge_100gs.png "100 GS tokens") 100 gold skulltula tokens required
 
 ### Lens of Truth
 
