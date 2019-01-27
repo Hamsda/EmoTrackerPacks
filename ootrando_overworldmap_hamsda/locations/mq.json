@@ -98,8 +98,11 @@
             "short_name": "Compass Room",
             "access_rules": [
               "@Deku Tree MQ/Compass Chest,boomerang,bombs,ocarina,time",
-              "@Deku Tree MQ/Compass Chest,boomerang,bombchu"
+              "@Deku Tree MQ/Compass Chest,boomerang,bombchu",
+              "{@Deku Tree MQ/Compass Chest,bombs,ocarina,time}",
+              "{@Deku Tree MQ/Compass Chest,bombchu}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -108,8 +111,10 @@
             "name": "GS10 - Basement Ceiling",
             "short_name": "Basement Ceiling",
             "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time"
+              "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time",
+              "{@Deku Tree MQ/Compass Chest,sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -118,8 +123,10 @@
             "name": "GS11 - Basement Back Room",
             "short_name": "Back Room",
             "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang"
+              "@Deku Tree MQ/Compass Chest,boomerang",
+              "{@Deku Tree MQ/Compass Chest,sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1286,8 +1293,10 @@
             "name": "GS81 - Crusher Room",
             "short_name": "Crusher Room",
             "access_rules": [
-              "@Shadow Temple MQ/Falling Spikes Lower Chest,hookshot"
+              "@Shadow Temple MQ/Falling Spikes Lower Chest,hookshot",
+              "{@Shadow Temple MQ/Falling Spikes Lower Chest}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
