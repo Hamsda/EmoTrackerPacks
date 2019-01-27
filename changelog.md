@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.0.8
+## 2.2.1.0
 
 - fixed Fire Temple locked door to BK chest is back in keysanity
 - changed graveyard box HP to be peakable
