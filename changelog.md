@@ -5,6 +5,7 @@
 - fixed Fire Temple locked door to BK chest is back in keysanity
 - changed graveyard box HP to be peakable
 - added new rainbow bridge settings
+- changed settings defaults to match commonly used settings
 - adjusted brightness for disabled items slightly down
 
 ## 2.2.0.7
