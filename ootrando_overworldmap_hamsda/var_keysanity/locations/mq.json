@@ -98,8 +98,11 @@
             "short_name": "Compass Room",
             "access_rules": [
               "@Deku Tree MQ/Compass Chest,boomerang,bombs,ocarina,time",
-              "@Deku Tree MQ/Compass Chest,boomerang,bombchu"
+              "@Deku Tree MQ/Compass Chest,boomerang,bombchu",
+              "{@Deku Tree MQ/Compass Chest,bombs,ocarina,time}",
+              "{@Deku Tree MQ/Compass Chest,bombchu}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -108,8 +111,10 @@
             "name": "GS10 - Basement Ceiling",
             "short_name": "Basement Ceiling",
             "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time"
+              "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time",
+              "{@Deku Tree MQ/Compass Chest,sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -118,8 +123,10 @@
             "name": "GS11 - Basement Back Room",
             "short_name": "Back Room",
             "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang"
+              "@Deku Tree MQ/Compass Chest,boomerang",
+              "{@Deku Tree MQ/Compass Chest,sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1292,8 +1299,10 @@
             "name": "GS81 - Crusher Room",
             "short_name": "Crusher Room",
             "access_rules": [
-              "@Shadow Temple MQ/Falling Spikes Lower Chest,hookshot"
+              "@Shadow Temple MQ/Falling Spikes Lower Chest,hookshot",
+              "{@Shadow Temple MQ/Falling Spikes Lower Chest}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1745,10 +1754,12 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_mq,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "gc_mq,bridge_open,sword2",
       "gc_mq,bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "gc_mq,bridge_stones,sword2,stones:3",
+      "gc_mq,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
       "gc_mq,bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "gc_mq,bridge_open,sword2"
+      "gc_mq,bridge_100gs,sword2,token:100"
     ],
     "sections": [
       {

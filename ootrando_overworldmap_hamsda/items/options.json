@@ -4,6 +4,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_forest_closed.png",
@@ -21,6 +22,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_kak_closed.png",
@@ -38,6 +40,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_door_closed.png",
@@ -72,6 +75,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_gerudo_fortress_normal.png",
@@ -94,10 +98,11 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 3,
     "stages": [
       {
-        "img": "images/setting_bridge_medallions.png",
-        "codes": "setting_bridge,bridge_medallions",
+        "img": "images/setting_bridge_open.png",
+        "codes": "setting_bridge,bridge_open",
         "inherit_codes": false
       },
       {
@@ -106,13 +111,23 @@
         "inherit_codes": false
       },
       {
+        "img": "images/setting_bridge_stones.png",
+        "codes": "setting_bridge,bridge_stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bridge_medallions.png",
+        "codes": "setting_bridge,bridge_medallions",
+        "inherit_codes": false
+      },
+      {
         "img": "images/setting_bridge_dungeons.png",
         "codes": "setting_bridge,bridge_dungeons",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_bridge_open.png",
-        "codes": "setting_bridge,bridge_open",
+        "img": "images/setting_bridge_100gs.png",
+        "codes": "setting_bridge,bridge_100gs",
         "inherit_codes": false
       }
     ]
@@ -142,6 +157,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/fewer_tunics_no.png",

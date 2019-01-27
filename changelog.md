@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.2.1.0
+
+- fixed Fire Temple locked door to BK chest is back in keysanity
+- changed graveyard box HP to be peakable
+- changed a lot of gold skulltulas to be peakable and have capture with ranged weapons but no ability to collect them
+- added new rainbow bridge settings
+- changed settings defaults to match commonly used settings
+- adjusted brightness for disabled items slightly down
+- added all copies of generic grotto to gossip stone map
+
 ## 2.2.0.7
 
 - added gossip stone map

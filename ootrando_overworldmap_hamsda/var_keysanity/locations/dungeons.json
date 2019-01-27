@@ -96,8 +96,12 @@
             "name": "GS11 - Basement Back Room",
             "short_name": "Back Room",
             "access_rules": [
-              "$has_explosives,boomerang,[sling]"
+              "sticks,$has_explosives,boomerang,[sling]",
+              "dinsfire,magic,$has_explosives,boomerang,[sling]",
+              "{sticks,$has_explosives,sling}",
+              "{dinsfire,magic,$has_explosives,sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -241,8 +245,11 @@
               "@Dodongos Cavern/Bomb Bag Chest,boomerang,$has_explosives",
               "@Dodongos Cavern/Bomb Bag Chest,boomerang,lift1",
               "@Dodongos Cavern/Bomb Bag Chest,sword2,hookshot",
-              "@Dodongos Cavern/Small Chest Upstairs,sword2,longshot"
+              "@Dodongos Cavern/Small Chest Upstairs,sword2,longshot",
+              "{@Dodongos Cavern/Small Chest Upstairs,sling}",
+              "{@Dodongos Cavern/Small Chest Upstairs,sword2,bow}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -251,9 +258,11 @@
             "name": "GS42 - Scarecrow Song",
             "short_name": "Scarecrow",
             "access_rules": [
-              "sword2,ocarina,[scarecrow],hookshot",
-              "sword2,longshot"
+              "sword2,[ocarina],[scarecrow],[hookshot]",
+              "sword2,longshot",
+              "{sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -395,8 +404,11 @@
             "name": "GS52 - Wall Near Bigocto",
             "short_name": "Bigocto 1",
             "access_rules": [
-              "boomerang"
+              "boomerang",
+              "{sling}",
+              "{$has_explosives}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -405,8 +417,11 @@
             "name": "GS53 - Wall Near Bigocto (further away)",
             "short_name": "Bigocto 2",
             "access_rules": [
-              "boomerang"
+              "boomerang",
+              "{sling}",
+              "{$has_explosives}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -618,8 +633,10 @@
             "short_name": "Columns",
             "access_rules": [
               "@Forest Temple/Map Chest,longshot",
+              "{@Forest Temple/Map Chest,bow}",
               "@Forest Temple/Floormaster,hookshot"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -659,14 +676,14 @@
       {
         "name": "Flare Dancer",
         "access_rules": [
-          "hammer"
+          "fire_small_keys:1,hammer"
         ],
         "item_count": 1
       },
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "hammer"
+          "fire_small_keys:1,hammer"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -787,7 +804,7 @@
             "name": "GS65 - Time Block First Room",
             "short_name": "Time Block",
             "access_rules": [
-              "@Fire Temple/North Lava Room,ocarina,time"
+              "@Fire Temple/North Lava Room,[ocarina],[time]"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -985,7 +1002,7 @@
             "short_name": "Bottom South",
             "access_rules": [
               "$has_explosives,ocarina,lullaby,ironboots",
-              "$has_explosives,ocarina,lullaby,[ironboots],longshot"
+              "$has_explosives,ocarina,lullaby,[ironboots],scale2,longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1010,8 +1027,10 @@
               "[ironboots],ocarina,lullaby,bow,longshot",
               "ironboots,ocarina,lullaby,bow,faroreswind,magic",
               "[ironboots],ocarina,lullaby,dinsfire,magic,longshot",
-              "ironboots,ocarina,lullaby,dinsfire,magic,faroreswind"
+              "ironboots,ocarina,lullaby,dinsfire,magic,faroreswind",
+              "{ironboots,ocarina,lullaby,bow}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1020,8 +1039,10 @@
             "name": "GS76 - Platform Room Before Dark Link",
             "short_name": "Platform Room",
             "access_rules": [
-              "water_small_keys:1,longshot"
+              "water_small_keys:1,longshot",
+              "{water_small_keys:1,bow}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1201,8 +1222,10 @@
             "name": "GS82 - Falling Spikes Room",
             "short_name": "Falling Spikes",
             "access_rules": [
-              "@Shadow Temple/Like-Like Room,hookshot"
+              "@Shadow Temple/Like-Like Room,hookshot",
+              "{@Shadow Temple/Like-Like Room}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1221,8 +1244,10 @@
             "name": "GS84 - Near Boat",
             "short_name": "Near Boat",
             "access_rules": [
-              "@Shadow Temple/After Wind Room,shadow_small_keys:4,longshot"
+              "@Shadow Temple/After Wind Room,shadow_small_keys:4,longshot",
+              "{@Shadow Temple/After Wind Room,shadow_small_keys:4,bow}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1446,8 +1471,11 @@
             "short_name": "Before Knuckle",
             "access_rules": [
               "ocarina,requiem,spirit_small_keys:1,$has_explosives,boomerang",
-              "@Spirit Temple/Mirror Room,hookshot"
+              "{ocarina,requiem,spirit_small_keys:1,$has_explosives,sling}",
+              "@Spirit Temple/Mirror Room,hookshot",
+              "{@Spirit Temple/Mirror Room,bow}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1468,8 +1496,11 @@
             "access_rules": [
               "@Spirit Temple/Mirror Room,hookshot,ocarina,[scarecrow]",
               "@Spirit Temple/Mirror Room,longshot",
-              "@Spirit Temple/Mirror Room,hoverboots"
+              "@Spirit Temple/Mirror Room,hoverboots",
+              "{@Spirit Temple/Mirror Room,bow}",
+              "{ocarina,requiem,spirit_small_keys:1,$has_explosives,sling}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1616,8 +1647,11 @@
             "name": "GS78 - Like-Like Room",
             "short_name": "Like-Like",
             "access_rules": [
-              "botw_small_keys:1,boomerang,$can_see_with_lens"
+              "botw_small_keys:1,boomerang,$can_see_with_lens",
+              "{botw_small_keys:1,sling,$can_see_with_lens}",
+              "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1626,8 +1660,11 @@
             "name": "GS79 - Left Locked Room",
             "short_name": "Left Locked",
             "access_rules": [
-              "botw_small_keys:1,boomerang"
+              "botw_small_keys:1,boomerang",
+              "{botw_small_keys:1,sling}",
+              "{botw_small_keys:1,$has_explosives}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1636,8 +1673,11 @@
             "name": "GS80 - Right Locked Room",
             "short_name": "Right Locked",
             "access_rules": [
-              "botw_small_keys:1,boomerang,$can_see_with_lens"
+              "botw_small_keys:1,boomerang,$can_see_with_lens",
+              "{botw_small_keys:1,sling,$can_see_with_lens}",
+              "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1657,10 +1697,12 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_reg,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "gc_reg,bridge_open,sword2",
       "gc_reg,bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "gc_reg,bridge_stones,sword2,stones:3",
+      "gc_reg,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
       "gc_reg,bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "gc_reg,bridge_open,sword2"
+      "gc_reg,bridge_100gs,sword2,token:100"
     ],
     "sections": [
       {
@@ -1817,8 +1859,11 @@
             "name": "GS70 - Near Compass Chest",
             "short_name": "Compass",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "{bow}",
+              "{$has_explosives}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1827,8 +1872,11 @@
             "name": "GS71 - Silver Rupee Room",
             "short_name": "Silver Rupee",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "{bow}",
+              "{$has_explosives}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1837,8 +1885,11 @@
             "name": "GS72 - Moveable Iceblock Room",
             "short_name": "Iceblock",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "{bow}",
+              "{$has_explosives}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
