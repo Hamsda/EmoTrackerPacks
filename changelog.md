@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1.1
+
+- fixed DMC wall HP showing up without sword2
+
 ## 2.2.1.0
 
 - fixed Fire Temple locked door to BK chest is back in keysanity

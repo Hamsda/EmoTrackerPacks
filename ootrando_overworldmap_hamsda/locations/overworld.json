@@ -2732,12 +2732,12 @@
                         "name": "Get it",
                         "access_rules": [
                           "$can_blast",
-                          "ocarina,bolero,beans_plant_no,beans",
-                          "ocarina,bolero,bean_crater_yes",
+                          "ocarina,bolero,sword2,beans_plant_no,beans",
+                          "ocarina,bolero,sword2,bean_crater_yes",
                           "ocarina,bolero,sword2,hookshot",
                           "ocarina,bolero,sword2,hoverboots",
-                          "lift1",
-                          "bow",
+                          "sword2,lift1",
+                          "sword2,bow",
                           "{ocarina,bolero}"
                         ],
                         "capture_item": true,
