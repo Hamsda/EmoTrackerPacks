@@ -676,14 +676,14 @@
       {
         "name": "Flare Dancer",
         "access_rules": [
-          "fire_small_keys:1,hammer"
+          "fire_small_keys:1,[fire_small_keys:8],hammer"
         ],
         "item_count": 1
       },
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "fire_small_keys:1,hammer"
+          "fire_small_keys:1,[fire_small_keys:8],hammer"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -692,21 +692,21 @@
       {
         "name": "North Lava Room",
         "access_rules": [
-          "fire_small_keys:1"
+          "fire_small_keys:1,[fire_small_keys:2]"
         ],
         "item_count": 1
       },
       {
         "name": "South Lava Room",
         "access_rules": [
-          "fire_small_keys:1,$has_explosives"
+          "fire_small_keys:1,[fire_small_keys:2],$has_explosives"
         ],
         "item_count": 1
       },
       {
         "name": "South Boulder Maze",
         "access_rules": [
-          "fire_small_keys:3,[lift1],[redtunic]"
+          "fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic]"
         ],
         "item_count": 1
       },
@@ -720,15 +720,15 @@
       {
         "name": "Map Chest",
         "access_rules": [
-          "@Fire Temple/South Boulder Maze,fire_small_keys:4,bow",
-          "@Fire Temple/South Boulder Maze,fire_small_keys:5"
+          "@Fire Temple/South Boulder Maze,fire_small_keys:4,[fire_small_keys:5],bow",
+          "@Fire Temple/South Boulder Maze,fire_small_keys:5,[fire_small_keys:6]"
         ],
         "item_count": 1
       },
       {
         "name": "Above Boulder Maze",
         "access_rules": [
-          "@Fire Temple/South Boulder Maze,fire_small_keys:5"
+          "@Fire Temple/South Boulder Maze,fire_small_keys:5,[fire_small_keys:6]"
         ],
         "item_count": 1
       },
@@ -751,15 +751,15 @@
       {
         "name": "Compass Chest",
         "access_rules": [
-          "@Fire Temple/Above Boulder Maze,fire_small_keys:6"
+          "@Fire Temple/Above Boulder Maze,fire_small_keys:6,[fire_small_keys:7]"
         ],
         "item_count": 1
       },
       {
         "name": "Time Block Room",
         "access_rules": [
-          "@Fire Temple/Compass Chest,fire_small_keys:7,hammer,ocarina,time",
-          "@Fire Temple/Compass Chest,fire_small_keys:7,$has_explosives,hammer,[ocarina],[time]",
+          "@Fire Temple/Compass Chest,[fire_small_keys:8],hammer,ocarina,time",
+          "@Fire Temple/Compass Chest,[fire_small_keys:8],hammer,$has_explosives,[ocarina],[time]",
           "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
         ],
         "item_count": 1
@@ -767,8 +767,8 @@
       {
         "name": "Hammer Chest",
         "access_rules": [
-          "@Fire Temple/Compass Chest,fire_small_keys:7,$has_explosives",
-          "@Fire Temple/Compass Chest,hoverboots,hammer,$has_explosives",
+          "@Fire Temple/Compass Chest,[fire_small_keys:8],$has_explosives",
+          "@Fire Temple/Compass Chest,hammer,hoverboots,$has_explosives",
           "{agony}"
         ],
         "capture_item": true,
@@ -777,8 +777,9 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "@Fire Temple/Compass Chest,fire_small_keys:7,$has_explosives,fire_boss_key,hammer",
-          "[hoverboots],fire_boss_key,hammer,[redtunic]"
+          "fire_boss_key,hammer,@Fire Temple/Compass Chest,[fire_small_keys:8],ocarina,time",
+          "fire_boss_key,hammer,@Fire Temple/Compass Chest,[fire_small_keys:8],$has_explosives",
+          "fire_boss_key,hammer,[redtunic],[hoverboots]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -899,14 +900,14 @@
         "name": "Dragon Chest",
         "access_rules": [
           "ironboots,ocarina,lullaby,lift1",
-          "ironboots,water_small_keys:2,ocarina,time,bow"
+          "ironboots,water_small_keys:2,[water_small_keys:6],ocarina,time,bow"
         ],
         "item_count": 1
       },
       {
         "name": "Basement",
         "access_rules": [
-          "ironboots,ocarina,lullaby,water_small_keys:1,[bluetunic]",
+          "ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],[bluetunic]",
           "ironboots,ocarina,lullaby,bow,[bluetunic]",
           "ironboots,ocarina,lullaby,dinsfire,magic,[bluetunic]"
         ],
@@ -915,13 +916,13 @@
       {
         "name": "Cracked Wall",
         "access_rules": [
-          "$has_explosives,ironboots,ocarina,lullaby,water_small_keys:1",
+          "$has_explosives,ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5]",
           "$has_explosives,ironboots,ocarina,lullaby,bow",
           "$has_explosives,ironboots,ocarina,lullaby,dinsfire,magic",
-          "$has_explosives,[ironboots],longshot,ocarina,lullaby,water_small_keys:1",
+          "$has_explosives,[ironboots],longshot,ocarina,lullaby,water_small_keys:1,[water_small_keys:5]",
           "$has_explosives,[ironboots],longshot,ocarina,lullaby,bow",
           "$has_explosives,[ironboots],longshot,ocarina,lullaby,dinsfire,magic",
-          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[water_small_keys:1]",
+          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[water_small_keys:5]",
           "bombchu,[bombs],ironboots,[ocarina],[lullaby],[bow]",
           "bombchu,[bombs],ironboots,[ocarina],[lullaby],[dinsfire],[magic]"
         ],
@@ -940,14 +941,14 @@
       {
         "name": "Dark Link",
         "access_rules": [
-          "water_small_keys:2"
+          "water_small_keys:2,[water_small_keys:6]"
         ],
         "item_count": 1
       },
       {
         "name": "River",
         "access_rules": [
-          "water_small_keys:2,ocarina,time,bow",
+          "water_small_keys:2,[water_small_keys:6],ocarina,time,bow",
           "{agony}"
         ],
         "capture_item": true,
@@ -956,15 +957,15 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "water_small_keys:2,ironboots,longshot,hoverboots",
-          "water_small_keys:2,ironboots,longshot,$has_explosives,lift1",
-          "water_small_keys:2,ironboots,longshot,[hoverboots]",
-          "water_small_keys:2,ironboots,longshot,[$has_explosives],[lift1]",
-          "water_small_keys:2,ironboots,hoverboots,[longshot]",
-          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,hoverboots",
-          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
-          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,[hoverboots]",
-          "water_small_keys:2,[ironboots],longshot,ocarina,lullaby,[$has_explosives],[lift1]",
+          "water_small_keys:2,[water_small_keys:6],ironboots,longshot,hoverboots",
+          "water_small_keys:2,[water_small_keys:6],ironboots,longshot,$has_explosives,lift1",
+          "water_small_keys:2,[water_small_keys:6],ironboots,longshot,[hoverboots]",
+          "water_small_keys:2,[water_small_keys:6],ironboots,longshot,[$has_explosives],[lift1]",
+          "water_small_keys:2,[water_small_keys:6],ironboots,hoverboots,[longshot]",
+          "water_small_keys:2,[water_small_keys:6],[ironboots],longshot,ocarina,lullaby,hoverboots",
+          "water_small_keys:2,[water_small_keys:6],[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
+          "water_small_keys:2,[water_small_keys:6],[ironboots],longshot,ocarina,lullaby,[hoverboots]",
+          "water_small_keys:2,[water_small_keys:6],[ironboots],longshot,ocarina,lullaby,[$has_explosives],[lift1]",
           "{agony}"
         ],
         "capture_item": true,
@@ -1012,7 +1013,7 @@
             "name": "GS74 - River After Dark Link",
             "short_name": "River",
             "access_rules": [
-              "water_small_keys:2,ocarina,time"
+              "water_small_keys:2,[water_small_keys:6],ocarina,time"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1022,8 +1023,8 @@
             "name": "GS75 - Center Pillar Inside",
             "short_name": "Center Pillar",
             "access_rules": [
-              "[ironboots],ocarina,lullaby,water_small_keys:1,longshot",
-              "ironboots,ocarina,lullaby,water_small_keys:1,faroreswind,magic",
+              "[ironboots],ocarina,lullaby,water_small_keys:1,[water_small_keys:5],longshot",
+              "ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],faroreswind,magic",
               "[ironboots],ocarina,lullaby,bow,longshot",
               "ironboots,ocarina,lullaby,bow,faroreswind,magic",
               "[ironboots],ocarina,lullaby,dinsfire,magic,longshot",
@@ -1039,7 +1040,7 @@
             "name": "GS76 - Platform Room Before Dark Link",
             "short_name": "Platform Room",
             "access_rules": [
-              "water_small_keys:1,longshot",
+              "water_small_keys:1,[water_small_keys:5],longshot",
               "{water_small_keys:1,bow}"
             ],
             "capture_item": true,
@@ -1051,9 +1052,9 @@
             "name": "GS77 - Bottom Rolling Rocks Room",
             "short_name": "Rolling Rocks",
             "access_rules": [
-              "water_small_keys:1,ironboots,longshot",
-              "water_small_keys:1,[ironboots],longshot,ocarina,lullaby",
-              "water_small_keys:1,ironboots,[longshot],hoverboots"
+              "water_small_keys:1,[water_small_keys:5],ironboots,longshot",
+              "water_small_keys:1,[water_small_keys:5],[ironboots],longshot,ocarina,lullaby",
+              "water_small_keys:1,[water_small_keys:5],ironboots,[longshot],hoverboots"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1301,26 +1302,27 @@
       {
         "name": "Upper Child",
         "access_rules": [
-          "spirit_small_keys:1,ocarina,requiem",
-          "spirit_small_keys:1,sword2,lift2"
+          "spirit_small_keys:1,ocarina,requiem,sword2,lift2,$has_projectile|both",
+          "spirit_small_keys:1,[spirit_small_keys:5],ocarina,requiem,$has_projectile|child",
+          "spirit_small_keys:1,[spirit_small_keys:2],sword2,lift2,$has_projectile|adult"
         ],
         "item_count": 2
       },
       {
         "name": "Torch Puzzle",
         "access_rules": [
-          "spirit_small_keys:1,ocarina,requiem,$has_explosives,sticks",
-          "spirit_small_keys:1,ocarina,requiem,$has_explosives,dinsfire,magic",
-          "spirit_small_keys:1,sword2,lift2,$has_fire",
-          "spirit_small_keys:1,sword2,lift2,bow,[$has_fire]"
+          "spirit_small_keys:1,[spirit_small_keys:5],ocarina,requiem,$has_explosives,sticks",
+          "spirit_small_keys:1,[spirit_small_keys:3],ocarina,requiem,$has_explosives,dinsfire,magic",
+          "spirit_small_keys:1,[spirit_small_keys:3],sword2,lift2,$has_fire",
+          "spirit_small_keys:1,[spirit_small_keys:3],sword2,lift2,bow,[$has_fire]"
         ],
         "item_count": 1
       },
       {
         "name": "Southern Hand",
         "access_rules": [
-          "spirit_small_keys:2,ocarina,requiem,$has_explosives",
-          "spirit_small_keys:2,sword2,lift2",
+          "spirit_small_keys:2,[spirit_small_keys:3],ocarina,requiem,$has_explosives",
+          "spirit_small_keys:2,[spirit_small_keys:5],sword2,lift2",
           "{agony}"
         ],
         "capture_item": true,
@@ -1345,7 +1347,7 @@
       {
         "name": "Mirror Room",
         "access_rules": [
-          "sword2,lift2,spirit_small_keys:1"
+          "sword2,lift2,spirit_small_keys:1,[spirit_small_keys:3]"
         ],
         "item_count": 2
       },
@@ -1374,21 +1376,21 @@
       {
         "name": "Near Armos",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,spirit_small_keys:2,$has_explosives,shield3"
+          "@Spirit Temple/Mirror Room,spirit_small_keys:2,[spirit_small_keys:4],$has_explosives,shield3"
         ],
         "item_count": 1
       },
       {
         "name": "Invisible Hallway",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,spirit_small_keys:2,$has_explosives,$can_see_with_lens"
+          "@Spirit Temple/Mirror Room,spirit_small_keys:2,[spirit_small_keys:4],$has_explosives,$can_see_with_lens"
         ],
         "item_count": 2
       },
       {
         "name": "Northern Hand",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,spirit_small_keys:2,$has_explosives",
+          "@Spirit Temple/Mirror Room,spirit_small_keys:2,[spirit_small_keys:4],$has_explosives",
           "{agony}"
         ],
         "capture_item": true,
@@ -1397,7 +1399,7 @@
       {
         "name": "Boss Key Chest",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,spirit_small_keys:3,ocarina,lullaby,[$can_blast],[bow],[hookshot]"
+          "@Spirit Temple/Mirror Room,spirit_small_keys:3,[spirit_small_keys:5],ocarina,lullaby,[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1406,7 +1408,7 @@
       {
         "name": "Topmost Sun",
         "access_rules": [
-          "@Spirit Temple/Mirror Room,spirit_small_keys:3,shield3"
+          "@Spirit Temple/Mirror Room,spirit_small_keys:3,[spirit_small_keys:5],shield3"
         ],
         "item_count": 1
       },
@@ -1470,8 +1472,9 @@
             "name": "GS98 - Room Before Iron Knuckle Child Side",
             "short_name": "Before Knuckle",
             "access_rules": [
-              "ocarina,requiem,spirit_small_keys:1,$has_explosives,boomerang",
+              "ocarina,requiem,spirit_small_keys:1,[spirit_small_keys:5],$has_explosives,boomerang",
               "{ocarina,requiem,spirit_small_keys:1,$has_explosives,sling}",
+              "@Spirit Temple/Mirror Room,hookshot,ocarina,requiem,spirit_small_keys:1,$has_explosives,boomerang",
               "@Spirit Temple/Mirror Room,hookshot",
               "{@Spirit Temple/Mirror Room,bow}"
             ],
@@ -1565,7 +1568,7 @@
       {
         "name": "Locked Pits",
         "access_rules": [
-          "botw_small_keys:1,$can_see_with_lens"
+          "botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens"
         ],
         "clear_as_group": false,
         "item_count": 2
@@ -1594,7 +1597,7 @@
         "name": "Basement",
         "access_rules": [
           "$has_explosives",
-          "lift1,botw_small_keys:1,$can_see_with_lens",
+          "lift1,botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens",
           "lift1,dinsfire,magic"
         ],
         "item_count": 1
@@ -1647,7 +1650,7 @@
             "name": "GS78 - Like-Like Room",
             "short_name": "Like-Like",
             "access_rules": [
-              "botw_small_keys:1,boomerang,$can_see_with_lens",
+              "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_see_with_lens",
               "{botw_small_keys:1,sling,$can_see_with_lens}",
               "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
             ],
@@ -1660,7 +1663,7 @@
             "name": "GS79 - Left Locked Room",
             "short_name": "Left Locked",
             "access_rules": [
-              "botw_small_keys:1,boomerang",
+              "botw_small_keys:1,[botw_small_keys:3],boomerang",
               "{botw_small_keys:1,sling}",
               "{botw_small_keys:1,$has_explosives}"
             ],
@@ -1673,7 +1676,7 @@
             "name": "GS80 - Right Locked Room",
             "short_name": "Right Locked",
             "access_rules": [
-              "botw_small_keys:1,boomerang,$can_see_with_lens",
+              "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_see_with_lens",
               "{botw_small_keys:1,sling,$can_see_with_lens}",
               "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
             ],
@@ -1992,7 +1995,7 @@
           "bombs,shield2,[hookshot],bow,$can_see_with_lens",
           "bombs,shield3,[hookshot],bow,$can_see_with_lens",
           "$has_explosives,hookshot,hammer,bow",
-          "gtg_small_keys:2,hookshot,hammer,bow"
+          "gtg_small_keys:2,[gtg_small_keys:9],hookshot,hammer,bow"
         ],
         "item_count": 1
       },
@@ -2012,7 +2015,7 @@
           "bombs,shield2,[hookshot],$can_see_with_lens",
           "bombs,shield3,[hookshot],$can_see_with_lens",
           "$has_explosives,hookshot",
-          "gtg_small_keys:2,hookshot"
+          "gtg_small_keys:2,[gtg_small_keys:9],hookshot"
         ],
         "item_count": 1
       },
@@ -2023,7 +2026,7 @@
           "bombs,shield2,[hookshot],[hammer],$can_see_with_lens",
           "bombs,shield3,[hookshot],[hammer],$can_see_with_lens",
           "$has_explosives,hookshot,[hammer]",
-          "gtg_small_keys:2,hookshot,[hammer]"
+          "gtg_small_keys:2,[gtg_small_keys:9],hookshot,[hammer]"
         ],
         "item_count": 1
       },
@@ -2034,7 +2037,7 @@
           "{hookshot,$can_see_with_lens}",
           "$has_explosives,ocarina,time",
           "{$has_explosives}",
-          "gtg_small_keys:2"
+          "gtg_small_keys:2,[gtg_small_keys:9]"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
@@ -2046,7 +2049,7 @@
         "access_rules": [
           "hookshot,$can_see_with_lens,ocarina,time",
           "$has_explosives,ocarina,time",
-          "gtg_small_keys:2"
+          "gtg_small_keys:2,[gtg_small_keys:9]"
         ],
         "item_count": 2
       },
@@ -2055,7 +2058,7 @@
         "access_rules": [
           "hookshot,$can_see_with_lens,ocarina,time,ironboots,$has_zora_tunic",
           "$has_explosives,hookshot,ocarina,time,ironboots,$has_zora_tunic",
-          "gtg_small_keys:2,hookshot,ocarina,time,ironboots,$has_zora_tunic",
+          "gtg_small_keys:2,[gtg_small_keys:9],hookshot,ocarina,time,ironboots,$has_zora_tunic",
           "{agony}"
         ],
         "capture_item": true,
@@ -2071,35 +2074,35 @@
       {
         "name": "Above Maze",
         "access_rules": [
-          "gtg_small_keys:1,$can_see_with_lens"
+          "gtg_small_keys:1,[gtg_small_keys:3],$can_see_with_lens"
         ],
         "item_count": 1
       },
       {
         "name": "Maze 1",
         "access_rules": [
-          "gtg_small_keys:2"
+          "gtg_small_keys:2,[gtg_small_keys:4]"
         ],
         "item_count": 1
       },
       {
         "name": "Maze 2",
         "access_rules": [
-          "gtg_small_keys:4"
+          "gtg_small_keys:4,[gtg_small_keys:6]"
         ],
         "item_count": 1
       },
       {
         "name": "Maze 3",
         "access_rules": [
-          "gtg_small_keys:5"
+          "gtg_small_keys:5,[gtg_small_keys:7]"
         ],
         "item_count": 1
       },
       {
         "name": "Ice Arrow Chest",
         "access_rules": [
-          "gtg_small_keys:7",
+          "gtg_small_keys:7,[gtg_small_keys:9]",
           "{agony}"
         ],
         "capture_item": true,

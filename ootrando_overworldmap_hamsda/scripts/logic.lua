@@ -233,3 +233,21 @@ function has_bottle()
   
   return (bottles - ruto - bigpoe), level
 end
+
+function has_projectile(age)
+  local explo = has_explosives() > 0
+  local sling = has("sling")
+  local rang = has("boomerang")
+  local bow = has("bow")
+  local hook = has("hookshot")
+
+  if age == "child" then
+    return explo or sling or rang
+  elseif age == "adult" then
+    return explo or bow or hook
+  elseif age == "both" then
+    return explo or (bow or hook) and (sling or rang)
+  else
+    return explo or (bow or hook) or (sling or rang)
+  end
+end

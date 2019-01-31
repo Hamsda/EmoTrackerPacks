@@ -3,6 +3,7 @@
 ## 2.2.1.1
 
 - fixed DMC wall HP showing up without sword2
+- changed keysanity to accurately reflect small key requirements while keeping minimal key requirements as sequence break
 
 ## 2.2.1.0
 
