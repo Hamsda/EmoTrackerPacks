@@ -1,7 +1,7 @@
 [
   {
     "name": "Deku Tree",
-    "parent": "Forest C",
+    "parent": "Kokiri Forest",
     "access_rules": [
       "deku_reg,open_forest",
       "deku_reg,sword1,shield1"
@@ -123,7 +123,7 @@
   },
   {
     "name": "Dodongos Cavern",
-    "parent": "Death Mountain C",
+    "parent": "Death Mountain",
     "access_rules": [
       "dodongo_reg,$can_blast",
       "dodongo_reg,lift1"
@@ -366,7 +366,7 @@
   },
   {
     "name": "Jabu Jabus Belly",
-    "parent": "Zoras Fountain C",
+    "parent": "Zoras Fountain",
     "access_rules": [
       "jabu_reg,bottle,sling",
       "jabu_reg,bottle,$has_explosives",
@@ -498,9 +498,10 @@
   },
   {
     "name": "Forest Temple",
-    "parent": "Sacred Forest Meadow A",
+    "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "forest_reg,hookshot"
+      "forest_reg,sword2,hookshot,[ocarina],[saria]",
+      "forest_reg,sword2,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -700,7 +701,7 @@
   },
   {
     "name": "Fire Temple",
-    "parent": "Death Mountain Crater A",
+    "parent": "Death Mountain Crater",
     "access_rules": [
       "fire_reg,@Sheik in Crater,$has_goron_tunic"
     ],
@@ -910,10 +911,10 @@
   },
   {
     "name": "Water Temple",
-    "parent": "Lake Hylia A",
+    "parent": "Lake Hylia",
     "access_rules": [
-      "water_reg,ironboots,hookshot,$has_zora_tunic",
-      "water_reg,scale2,[ironboots],hookshot,$has_zora_tunic"
+      "water_reg,sword2,ironboots,hookshot,$has_zora_tunic",
+      "water_reg,sword2,scale2,[ironboots],hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
@@ -1114,7 +1115,7 @@
   },
   {
     "name": "Shadow Temple",
-    "parent": "Kakariko A",
+    "parent": "Graveyard",
     "access_rules": [
       "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
       "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
@@ -1328,7 +1329,7 @@
   },
   {
     "name": "Spirit Temple",
-    "parent": "Colossus",
+    "parent": "Desert Colossus",
     "access_rules": [
       "spirit_reg,$colossus"
     ],
@@ -1598,7 +1599,7 @@
   },
   {
     "name": "Bottom of the Well",
-    "parent": "Kakariko C",
+    "parent": "Kakariko Village",
     "access_rules": [
       "botw_reg,ocarina,storm"
     ],
@@ -1913,7 +1914,7 @@
   },
   {
     "name": "Ice Cavern",
-    "parent": "Zoras Fountain A",
+    "parent": "Zoras Fountain",
     "access_rules": [
       "ice_reg,$adult_fountain,$has_bottle"
     ],

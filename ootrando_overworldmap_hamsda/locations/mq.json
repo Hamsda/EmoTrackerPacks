@@ -1,7 +1,7 @@
 [
   {
     "name": "Deku Tree MQ",
-    "parent": "Forest C",
+    "parent": "Kokiri Forest",
     "access_rules": [
       "deku_mq,open_forest",
       "deku_mq,sword1,shield1"
@@ -174,7 +174,7 @@
   },
   {
     "name": "Dodongos Cavern MQ",
-    "parent": "Death Mountain C",
+    "parent": "Death Mountain",
     "access_rules": [
       "dodongo_mq,$can_blast",
       "dodongo_mq,lift1"
@@ -431,7 +431,7 @@
   },
   {
     "name": "Jabu Jabus Belly MQ",
-    "parent": "Zoras Fountain C",
+    "parent": "Zoras Fountain",
     "access_rules": [
       "jabu_mq,bottle"
     ],
@@ -607,9 +607,10 @@
   },
   {
     "name": "Forest Temple MQ",
-    "parent": "Sacred Forest Meadow A",
+    "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "forest_mq,hookshot"
+      "forest_mq,sword2,hookshot,[ocarina],[saria]",
+      "forest_mq,sword2,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -810,7 +811,7 @@
   },
   {
     "name": "Fire Temple MQ",
-    "parent": "Death Mountain Crater A",
+    "parent": "Death Mountain Crater",
     "access_rules": [
       "fire_mq,@Sheik in Crater,$has_goron_tunic"
     ],
@@ -1003,10 +1004,10 @@
   },
   {
     "name": "Water Temple MQ",
-    "parent": "Lake Hylia A",
+    "parent": "Lake Hylia",
     "access_rules": [
-      "water_mq,ironboots,hookshot,$has_zora_tunic",
-      "water_mq,scale2,[ironboots],hookshot,$has_zora_tunic"
+      "water_mq,sword2,ironboots,hookshot,$has_zora_tunic",
+      "water_mq,sword2,scale2,[ironboots],hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
@@ -1158,7 +1159,7 @@
   },
   {
     "name": "Shadow Temple MQ",
-    "parent": "Kakariko A",
+    "parent": "Graveyard",
     "access_rules": [
       "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
       "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
@@ -1400,7 +1401,7 @@
   },
   {
     "name": "Spirit Temple MQ",
-    "parent": "Colossus",
+    "parent": "Desert Colossus",
     "access_rules": [
       "spirit_mq,$colossus"
     ],
@@ -1706,7 +1707,7 @@
   },
   {
     "name": "Bottom of the Well MQ",
-    "parent": "Kakariko C",
+    "parent": "Kakariko Village",
     "access_rules": [
       "botw_mq,ocarina,storm"
     ],
@@ -1966,7 +1967,7 @@
   },
   {
     "name": "Ice Cavern MQ",
-    "parent": "Zoras Fountain A",
+    "parent": "Zoras Fountain",
     "access_rules": [
       "ice_mq,$adult_fountain,$has_bottle"
     ],
