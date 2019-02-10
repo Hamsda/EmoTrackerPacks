@@ -31,9 +31,10 @@ This also means that the key counts for the dungeons in the Keysanity variants w
 
 Some of this functionality might not be immediately obvious:
 
-- Right clicking the ![Bombchu](ootrando_overworldmap_hamsda/images/bombchu.png "Bombchu") item will overlay it with ![Logic](ootrando_overworldmap_hamsda/images/overlay_logic.png "Logic"), indicating that Bombchus are considered in logic by the randomizer ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#bombchus-are-considered-in-logic)).
-- Right clicking the ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") item will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/scarecrow_badge.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will shop up as sequence breaks unless this is turned on.
-- ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony") Checking this item enables you to capture items placed at locations you received hints for by the Gossip Stones, even if you selected hints to be always on or require Mask of Truth instead of Stone of Agony.
+- Right clicking ![Bombchu](ootrando_overworldmap_hamsda/images/bombchu.png "Bombchu") will overlay it with ![Logic](ootrando_overworldmap_hamsda/images/overlay_logic.png "Logic"), indicating that Bombchus are considered in logic by the randomizer ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#bombchus-are-considered-in-logic)).
+- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/scarecrow_badge.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will show up as sequence breaks unless this is turned on.
+- Checking ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony") enables you to capture items placed at locations you received hints for by the Gossip Stones, even if you selected hints to be always on or require Mask of Truth instead of Stone of Agony.
+- ![Ice Trap](ootrando_overworldmap_hamsda/images/icetrap.png "Ice Trap") is used as a counter for ice traps. This is somewhat useful to evaluate freestanding items during racing, but mostly just for fun with settings that include higher numbers of ice traps.
 
 ## Settings (for map variants)
 

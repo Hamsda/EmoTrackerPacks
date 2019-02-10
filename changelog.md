@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.0.0
+
+- fixed DMC wall HP showing up without sword2
+- changed keysanity to accurately reflect small key requirements while keeping minimal key requirements as sequence break
+- changed names for many locations in the overworld and dungeons
+- changed spiritual stones icon
+
 ## 2.2.1.0
 
 - fixed Fire Temple locked door to BK chest is back in keysanity
