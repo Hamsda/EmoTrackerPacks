@@ -13,9 +13,10 @@
             "children": [
               {
                 "name": "Kokiri Sword Chest",
+                "short_name": "Kokiri Sword",
                 "sections": [
                   {
-                    "name": "Sword",
+                    "name": "Dodge Boulder",
                     "item_count": 1
                   }
                 ],
@@ -56,7 +57,7 @@
                 "short_name": "Kokiri Storms Grotto",
                 "sections": [
                   {
-                    "name": "Play Song of Storms",
+                    "name": "Chest",
                     "access_rules": [
                       "ocarina,storm"
                     ],
@@ -300,75 +301,6 @@
                 ]
               },
               {
-                "name": "Deku Scrub Deku Stick Upgrade",
-                "short_name": "Deku Scrub below Bridge",
-                "access_rules": [
-                  "$can_child_attack",
-                  "nuts",
-                  "shield1"
-                ],
-                "sections": [
-                  {
-                    "name": "Pay up",
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 2016,
-                    "y": 927
-                  }
-                ]
-              },
-              {
-                "name": "Lost Woods Sales Grotto",
-                "access_rules": [
-                  "$has_explosives",
-                  "sword2,hammer,[ocarina],[saria]",
-                  "sword2,hammer,[ocarina],[minuet]"
-                ],
-                "sections": [
-                  {
-                    "name": "LW Grotto Deku Scrub Deku Nut Upgrade",
-                    "short_name": "Nut Capacity",
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "LW Grotto Deku Scrub Arrows",
-                    "short_name": "Arrows",
-                    "access_rules": [
-                      "scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
-                    "x": 2192,
-                    "y": 724
-                  },
-                  {
-                    "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
-                    "x": 2192,
-                    "y": 724
-                  }
-                ]
-              },
-              {
                 "name": "Lost Woods Generic Grotto",
                 "short_name": "Goron City Grotto",
                 "sections": [
@@ -469,6 +401,136 @@
                 ]
               },
               {
+                "name": "Grog",
+                "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "sword2,cojiro"
+                    ],
+                    "hosted_item": "mushroom"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2085,
+                    "y": 785
+                  }
+                ]
+              },
+              {
+                "name": "Fado",
+                "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "sword2,oddpotion"
+                    ],
+                    "hosted_item": "saw"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2085,
+                    "y": 785
+                  }
+                ]
+              },
+              {
+                "name": "LW Deku Scrub Deku Stick Upgrade",
+                "short_name": "Scrub Below Bridge",
+                "sections": [
+                  {
+                    "name": "Pay up",
+                    "access_rules": [
+                      "$can_child_attack",
+                      "nuts",
+                      "shield1"
+                    ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2016,
+                    "y": 927
+                  }
+                ]
+              },
+              {
+                "name": "Lost Woods Sales Grotto",
+                "short_name": "Sales Grotto",
+                "access_rules": [
+                  "$has_explosives",
+                  "sword2,hammer,[ocarina],[saria]",
+                  "sword2,hammer,[ocarina],[minuet]"
+                ],
+                "sections": [
+                  {
+                    "name": "LW Grotto Deku Scrub Deku Nut Upgrade",
+                    "short_name": "Nut Capacity",
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "LW Grotto Deku Scrub Arrows",
+                    "short_name": "Arrows",
+                    "access_rules": [
+                      "scrub_shuffle_yes"
+                    ],
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "visibility_rules": [
+                      "$has_explosives"
+                    ],
+                    "x": 2192,
+                    "y": 724
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 2192,
+                    "y": 724
+                  }
+                ]
+              },
+              {
+                "name": "LW Deku Scrubs",
+                "access_rules": [
+                  "scrub_shuffle_yes,$can_stun_deku"
+                ],
+                "sections": [
+                  {
+                    "name": "Deku Nuts / Deku Sticks",
+                    "chest_unopened_img": "images/deku_scrub.png",
+                    "chest_opened_img": "images/deku_scrub_grey.png",
+                    "clear_as_group": false,
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2110,
+                    "y": 740
+                  }
+                ]
+              },
+              {
                 "name": "Lost Woods Bean Patch Near Bridge",
                 "short_name": "Bean Patch Near Bridge",
                 "access_rules": [
@@ -520,66 +582,6 @@
                     "map": "child",
                     "x": 2142,
                     "y": 740
-                  }
-                ]
-              },
-              {
-                "name": "LW Deku Scrubs",
-                "access_rules": [
-                  "scrub_shuffle_yes,$can_stun_deku"
-                ],
-                "sections": [
-                  {
-                    "name": "Deku Nuts / Deku Sticks",
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 2110,
-                    "y": 740
-                  }
-                ]
-              },
-              {
-                "name": "Grog",
-                "sections": [
-                  {
-                    "name": "Trade",
-                    "access_rules": [
-                      "sword2,cojiro"
-                    ],
-                    "hosted_item": "mushroom"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 2085,
-                    "y": 785
-                  }
-                ]
-              },
-              {
-                "name": "Fado",
-                "sections": [
-                  {
-                    "name": "Trade",
-                    "access_rules": [
-                      "sword2,oddpotion"
-                    ],
-                    "hosted_item": "saw"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 2085,
-                    "y": 785
                   }
                 ]
               },
@@ -702,6 +704,31 @@
                 ]
               },
               {
+                "name": "Sheik Forest Song",
+                "short_name": "Sheik in Meadow",
+                "sections": [
+                  {
+                    "name": "Song",
+                    "access_rules": [
+                      "sword2,[ocarina],[saria]",
+                      "sword2,[ocarina],[minuet]",
+                      "{agony}"
+                    ],
+                    "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2155,
+                    "y": 635
+                  }
+                ]
+              },
+              {
                 "name": "Meadow Storms Grotto",
                 "access_rules": [
                   "scrub_shuffle_yes,ocarina,storm"
@@ -739,31 +766,6 @@
                       "sword2,[ocarina],[saria]"
                     ],
                     "x": 2190,
-                    "y": 635
-                  }
-                ]
-              },
-              {
-                "name": "Sheik Forest Song",
-                "short_name": "Sheik in Meadow",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "sword2,[ocarina],[saria]",
-                      "sword2,[ocarina],[minuet]",
-                      "{agony}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 2155,
                     "y": 635
                   }
                 ]
@@ -854,11 +856,64 @@
         "children": [
           {
             "name": "Hyrule Field",
+            "color": "#09a09d",
             "children": [
+              {
+                "name": "Lost Woods Bridge",
+                "color": "#18a50e",
+                "sections": [
+                  {
+                    "name": "Gift from Saria",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 2030,
+                    "y": 883
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 2030,
+                    "y": 883
+                  }
+                ]
+              },
+              {
+                "name": "Ocarina of Time",
+                "access_rules": [
+                  "stones:3",
+                  "{agony}"
+                ],
+                "sections": [
+                  {
+                    "name": "Item",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Song",
+                    "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "child",
+                    "x": 1439,
+                    "y": 465
+                  }
+                ]
+              },
               {
                 "name": "Field North Lon Lon Grotto",
                 "short_name": "Tektite Grotto",
-                "color": "#09a09d",
                 "access_rules": [
                   "$can_blast"
                 ],
@@ -898,7 +953,6 @@
               {
                 "name": "Field Near Lake Inside Fence Grotto",
                 "short_name": "Grotto Inside Fence",
-                "color": "#09a09d",
                 "access_rules": [
                   "$can_blast"
                 ],
@@ -935,7 +989,6 @@
               {
                 "name": "Field Near Lake Outside Fence Grotto",
                 "short_name": "Grotto Outside Fence",
-                "color": "#09a09d",
                 "sections": [
                   {
                     "name": "Chest",
@@ -961,7 +1014,6 @@
               {
                 "name": "Field West Castle Town Grotto",
                 "short_name": "Grotto near Bridge",
-                "color": "#09a09d",
                 "sections": [
                   {
                     "name": "Boulda",
@@ -992,7 +1044,6 @@
               },
               {
                 "name": "Remote Southern Grotto",
-                "color": "#09a09d",
                 "sections": [
                   {
                     "name": "Blast it",
@@ -1018,60 +1069,6 @@
                     ],
                     "x": 1427,
                     "y": 925
-                  }
-                ]
-              },
-              {
-                "name": "Lost Woods Bridge",
-                "color": "#18a50e",
-                "sections": [
-                  {
-                    "name": "Gift from Saria",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 2030,
-                    "y": 883
-                  },
-                  {
-                    "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
-                    "x": 2030,
-                    "y": 883
-                  }
-                ]
-              },
-              {
-                "name": "Ocarina of Time",
-                "color": "#09a09d",
-                "access_rules": [
-                  "stones:3",
-                  "{agony}"
-                ],
-                "sections": [
-                  {
-                    "name": "Item",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Song",
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1439,
-                    "y": 465
                   }
                 ]
               },
@@ -1313,46 +1310,6 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Lab",
-                    "short_name": "Lakeside Lab",
-                    "sections": [
-                      {
-                        "name": "Diving in the Lab",
-                        "short_name": "Dive down",
-                        "access_rules": [
-                          "scale2",
-                          "sword2,hookshot,ironboots,[scale2]"
-                        ],
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Trade",
-                        "access_rules": [
-                          "sword2,speedfrog"
-                        ],
-                        "hosted_item": "eyedrops"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "visibility_rules": [
-                          "scale2"
-                        ],
-                        "x": 961,
-                        "y": 1200
-                      },
-                      {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
-                        "x": 961,
-                        "y": 1200
-                      }
-                    ]
-                  },
-                  {
                     "name": "Child Fishing",
                     "sections": [
                       {
@@ -1442,6 +1399,46 @@
                     ]
                   },
                   {
+                    "name": "Lake Hylia Lab",
+                    "short_name": "Lakeside Lab",
+                    "sections": [
+                      {
+                        "name": "Diving in the Lab",
+                        "short_name": "Dive down",
+                        "access_rules": [
+                          "scale2",
+                          "sword2,hookshot,ironboots,[scale2]"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Trade",
+                        "access_rules": [
+                          "sword2,speedfrog"
+                        ],
+                        "hosted_item": "eyedrops"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "visibility_rules": [
+                          "scale2"
+                        ],
+                        "x": 961,
+                        "y": 1200
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 961,
+                        "y": 1200
+                      }
+                    ]
+                  },
+                  {
                     "name": "Child Scarecrow",
                     "sections": [
                       {
@@ -1476,6 +1473,37 @@
                         "map": "adult",
                         "x": 1150,
                         "y": 1180
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Lake Hylia Grotto",
+                    "short_name": "Under Gravestone",
+                    "access_rules": [
+                      "scrub_shuffle_yes,$can_stun_deku"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
+                        "item_count": 3
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 870,
+                        "y": 1309
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 870,
+                        "y": 1309
                       }
                     ]
                   },
@@ -1610,37 +1638,6 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Grotto",
-                    "short_name": "Under Gravestone",
-                    "access_rules": [
-                      "scrub_shuffle_yes,$can_stun_deku"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Deku Scrubs",
-                        "chest_unopened_img": "images/deku_scrub.png",
-                        "chest_opened_img": "images/deku_scrub_grey.png",
-                        "clear_as_group": false,
-                        "item_count": 3
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 870,
-                        "y": 1309
-                      },
-                      {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
-                        "x": 870,
-                        "y": 1309
-                      }
-                    ]
-                  },
-                  {
                     "name": "Lake Hylia Lab Gossip Stone",
                     "short_name": "LH Lab Gossip Stone",
                     "access_rules": [
@@ -1713,6 +1710,28 @@
                 "color": "#09a09d",
                 "children": [
                   {
+                    "name": "Malon",
+                    "sections": [
+                      {
+                        "name": "Song from Malon",
+                        "short_name": "Song",
+                        "access_rules": [
+                          "postzelda,ocarina"
+                        ],
+                        "chest_unopened_img": "images/grey_note.png",
+                        "chest_opened_img": "images/grey_note_check.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1295,
+                        "y": 647
+                      }
+                    ]
+                  },
+                  {
                     "name": "Talon House",
                     "sections": [
                       {
@@ -1735,7 +1754,8 @@
                     "name": "Corner Tower",
                     "sections": [
                       {
-                        "name": "HP",
+                        "name": "Freestanding PoH",
+                        "short_name": "HP",
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -1746,28 +1766,6 @@
                         "map": "child",
                         "x": 1227,
                         "y": 690
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Malon",
-                    "sections": [
-                      {
-                        "name": "Song from Malon",
-                        "short_name": "Song",
-                        "access_rules": [
-                          "postzelda,ocarina"
-                        ],
-                        "chest_unopened_img": "images/grey_note.png",
-                        "chest_opened_img": "images/grey_note_check.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1295,
-                        "y": 647
                       }
                     ]
                   },
@@ -1800,6 +1798,7 @@
                   },
                   {
                     "name": "Lon Lon Ranch Tree",
+                    "short_name": "Lone Tree",
                     "access_rules": [
                       "all_skulltulas"
                     ],
@@ -1969,10 +1968,10 @@
                 ]
               },
               {
-                "name": "Impas House Back",
+                "name": "Impa House",
                 "sections": [
                   {
-                    "name": "Impa House Freestanding PoH",
+                    "name": "Freestanding PoH",
                     "short_name": "Cow HP",
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -1996,18 +1995,48 @@
                 ]
               },
               {
-                "name": "Anjus Chickens",
+                "name": "Man on Roof",
+                "access_rules": [
+                  "[sword2],[hookshot]"
+                ],
                 "sections": [
                   {
-                    "name": "Catch them",
+                    "name": "Talk to him",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1857,
-                    "y": 431
+                    "x": 1830,
+                    "y": 371
+                  },
+                  {
+                    "map": "adult",
+                    "visibility_rules": [
+                      "sword2"
+                    ],
+                    "x": 1830,
+                    "y": 371
+                  }
+                ]
+              },
+              {
+                "name": "Kakariko Shooting Gallery",
+                "sections": [
+                  {
+                    "name": "Adult Shooting Gallery",
+                    "access_rules": [
+                      "sword2,bow"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1837,
+                    "y": 401
                   }
                 ]
               },
@@ -2045,29 +2074,91 @@
                 ]
               },
               {
-                "name": "Man on Roof",
-                "access_rules": [
-                  "[sword2],[hookshot]"
-                ],
+                "name": "Song at Windmill",
+                "short_name": "Guru-Guru",
                 "sections": [
                   {
-                    "name": "Talk to him",
+                    "name": "Song",
+                    "access_rules": [
+                      "sword2,ocarina",
+                      "{agony}"
+                    ],
+                    "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1945,
+                    "y": 376
+                  }
+                ]
+              },
+              {
+                "name": "Sheik in Kakariko",
+                "sections": [
+                  {
+                    "name": "Song",
+                    "access_rules": [
+                      "sword2,forestmed,noct_meds:2",
+                      "{agony}"
+                    ],
+                    "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1734,
+                    "y": 387
+                  }
+                ]
+              },
+              {
+                "name": "Anjus Chickens",
+                "sections": [
+                  {
+                    "name": "Catch them",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1830,
-                    "y": 371
-                  },
+                    "x": 1857,
+                    "y": 431
+                  }
+                ]
+              },
+              {
+                "name": "Anju as Adult",
+                "sections": [
                   {
-                    "map": "adult",
-                    "visibility_rules": [
+                    "name": "Talk to her",
+                    "access_rules": [
                       "sword2"
                     ],
-                    "x": 1830,
-                    "y": 371
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "sword2,pocketcucco"
+                    ],
+                    "hosted_item": "cojiro"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1857,
+                    "y": 431
                   }
                 ]
               },
@@ -2094,6 +2185,25 @@
                     "map": "child",
                     "x": 1803,
                     "y": 312
+                  }
+                ]
+              },
+              {
+                "name": "Old Hag",
+                "sections": [
+                  {
+                    "name": "Trade",
+                    "access_rules": [
+                      "sword2,mushroom"
+                    ],
+                    "hosted_item": "oddpotion"
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 1860,
+                    "y": 355
                   }
                 ]
               },
@@ -2157,117 +2267,6 @@
                     ],
                     "x": 1797,
                     "y": 418
-                  }
-                ]
-              },
-              {
-                "name": "Anju as Adult",
-                "sections": [
-                  {
-                    "name": "Talk to her",
-                    "access_rules": [
-                      "sword2"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Trade",
-                    "access_rules": [
-                      "sword2,pocketcucco"
-                    ],
-                    "hosted_item": "cojiro"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1857,
-                    "y": 431
-                  }
-                ]
-              },
-              {
-                "name": "Old Hag",
-                "sections": [
-                  {
-                    "name": "Trade",
-                    "access_rules": [
-                      "sword2,mushroom"
-                    ],
-                    "hosted_item": "oddpotion"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1860,
-                    "y": 355
-                  }
-                ]
-              },
-              {
-                "name": "Kakariko Shooting Gallery",
-                "sections": [
-                  {
-                    "name": "Adult Shooting Gallery",
-                    "access_rules": [
-                      "sword2,bow"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1837,
-                    "y": 401
-                  }
-                ]
-              },
-              {
-                "name": "Song at Windmill",
-                "short_name": "Guru-Guru",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "sword2,ocarina",
-                      "{agony}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1945,
-                    "y": 376
-                  }
-                ]
-              },
-              {
-                "name": "Sheik in Kakariko",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "sword2,forestmed,noct_meds:2",
-                      "{agony}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1734,
-                    "y": 387
                   }
                 ]
               },
@@ -2509,6 +2508,7 @@
                     "sections": [
                       {
                         "name": "Hookshot Chest",
+                        "short_name": "Hookshot",
                         "item_count": 1
                       },
                       {
@@ -2582,39 +2582,20 @@
                     ]
                   },
                   {
-                    "name": "Spooky Kid",
-                    "access_rules": [
-                      "spooky"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Sell Mask",
-                        "hosted_item": "spookysold"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 2000,
-                        "y": 372
-                      }
-                    ]
-                  },
-                  {
                     "name": "Graveyard Ledge",
-                    "access_rules": [
-                      "sword2,beans_plant_no,beans",
-                      "sword2,bean_graveyard_yes",
-                      "sword2,longshot",
-                      "boomerang,[sword2],[beans_plant_no],[beans]",
-                      "boomerang,[sword2],[bean_graveyard_yes]",
-                      "boomerang,[sword2],[longshot]",
-                      "{}"
-                    ],
                     "sections": [
                       {
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
+                        "access_rules": [
+                          "sword2,beans_plant_no,beans",
+                          "sword2,bean_graveyard_yes",
+                          "sword2,longshot",
+                          "boomerang,[sword2],[beans_plant_no],[beans]",
+                          "boomerang,[sword2],[bean_graveyard_yes]",
+                          "boomerang,[sword2],[longshot]",
+                          "{}"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -2687,6 +2668,25 @@
                         ],
                         "x": 2099,
                         "y": 353
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Spooky Kid",
+                    "access_rules": [
+                      "spooky"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Sell Mask",
+                        "hosted_item": "spookysold"
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 2000,
+                        "y": 372
                       }
                     ]
                   },
@@ -2827,7 +2827,7 @@
                     "short_name": "Boulder Maze Left",
                     "sections": [
                       {
-                        "name": "Go through",
+                        "name": "Chest",
                         "access_rules": [
                           "sword2,lift2",
                           "sword2,hammer",
@@ -2850,7 +2850,7 @@
                     "name": "Link the Goron",
                     "sections": [
                       {
-                        "name": "Blast him",
+                        "name": "Stop him",
                         "access_rules": [
                           "sword2,lift1",
                           "sword2,$has_explosives",
@@ -3206,12 +3206,12 @@
                   },
                   {
                     "name": "Mountain Summit Fairy",
-                    "access_rules": [
-                      "ocarina,lullaby,$can_blast"
-                    ],
                     "sections": [
                       {
                         "name": "Fairy Fountain",
+                        "access_rules": [
+                          "ocarina,lullaby,$can_blast"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -3623,10 +3623,6 @@
                       {
                         "name": "Song",
                         "access_rules": [
-                          //"ocarina,bolero",
-                          //"hammer,hoverboots",
-                          //"@Link the Goron,hoverboots",
-                          //"@Link the Goron,hookshot",
                           "sword2",
                           "{agony}"
                         ],
@@ -3780,6 +3776,7 @@
                   },
                   {
                     "name": "Castle Town Shooting Gallery",
+                    "short_name": "Market Shooting Gallery",
                     "sections": [
                       {
                         "name": "Child Shooting Gallery",
@@ -4101,7 +4098,7 @@
                     "name": "Talon",
                     "sections": [
                       {
-                        "name": "Wake him",
+                        "name": "Wake him up",
                         "access_rules": [
                           "childegg"
                         ],
@@ -4144,12 +4141,12 @@
                   },
                   {
                     "name": "Hyrule Castle Fairy",
-                    "access_rules": [
-                      "ocarina,lullaby,$has_explosives"
-                    ],
                     "sections": [
                       {
                         "name": "Fairy Fountain",
+                        "access_rules": [
+                          "ocarina,lullaby,$has_explosives"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -4393,14 +4390,14 @@
                   {
                     "name": "Zora River Plateau Open Grotto",
                     "short_name": "Plateau Grotto",
-                    "access_rules": [
-                      "$has_explosives",
-                      "scale1",
-                      "sword2"
-                    ],
                     "sections": [
                       {
                         "name": "Jump in",
+                        "access_rules": [
+                          "$has_explosives",
+                          "scale1",
+                          "sword2"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -4426,15 +4423,15 @@
                   },
                   {
                     "name": "Zora River Lower",
-                    "access_rules": [
-                      "$has_explosives",
-                      "scale1",
-                      "sword2,[hoverboots]"
-                    ],
                     "sections": [
                       {
                         "name": "Freestanding PoH",
                         "short_name": "HP",
+                        "access_rules": [
+                          "$has_explosives",
+                          "scale1",
+                          "sword2,[hoverboots]"
+                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -4462,15 +4459,15 @@
                   },
                   {
                     "name": "Zora River Upper",
-                    "access_rules": [
-                      "$has_explosives",
-                      "scale1",
-                      "sword2,[hoverboots]"
-                    ],
                     "sections": [
                       {
                         "name": "Freestanding PoH",
                         "short_name": "HP",
+                        "access_rules": [
+                          "$has_explosives",
+                          "scale1",
+                          "sword2,[hoverboots]"
+                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -4493,27 +4490,6 @@
                         ],
                         "x": 2347,
                         "y": 425
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Zora River Tree",
-                    "access_rules": [
-                      "all_skulltulas,$can_child_attack"
-                    ],
-                    "sections": [
-                      {
-                        "name": "GS43",
-                        "chest_unopened_img": "images/skulltula.png",
-                        "chest_opened_img": "images/skulltula_token.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1935,
-                        "y": 545
                       }
                     ]
                   },
@@ -4553,6 +4529,27 @@
                         ],
                         "x": 1940,
                         "y": 505
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Zora River Tree",
+                    "access_rules": [
+                      "all_skulltulas,$can_child_attack"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GS43",
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1935,
+                        "y": 545
                       }
                     ]
                   },
@@ -5096,7 +5093,7 @@
                 "children": [
                   {
                     "name": "Gerudo Valley Crate",
-                    "short_name": "GV Crate",
+                    "short_name": "Valley Crate",
                     "sections": [
                       {
                         "name": "Freestanding PoH",
@@ -5124,7 +5121,7 @@
                   },
                   {
                     "name": "Gerudo Valley Waterfall",
-                    "short_name": "GV Waterfall",
+                    "short_name": "Valley Waterfall",
                     "sections": [
                       {
                         "name": "Freestanding PoH",
@@ -5605,32 +5602,6 @@
                     ]
                   },
                   {
-                    "name": "Desert Colossus Grotto",
-                    "short_name": "Under Silver Rock",
-                    "sections": [
-                      {
-                        "name": "Deku Scrubs",
-                        "access_rules": [
-                          "scrub_shuffle_yes,$colossus,lift2"
-                        ],
-                        "chest_unopened_img": "images/deku_scrub.png",
-                        "chest_opened_img": "images/deku_scrub_grey.png",
-                        "clear_as_group": false,
-                        "item_count": 2
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
-                        "x": 195,
-                        "y": 305
-                      }
-                    ]
-                  },
-                  {
                     "name": "Sheik at Colossus",
                     "sections": [
                       {
@@ -5661,6 +5632,32 @@
                         ],
                         "x": 128,
                         "y": 347
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Desert Colossus Grotto",
+                    "short_name": "Under Silver Rock",
+                    "sections": [
+                      {
+                        "name": "Deku Scrubs",
+                        "access_rules": [
+                          "scrub_shuffle_yes,$colossus,lift2"
+                        ],
+                        "chest_unopened_img": "images/deku_scrub.png",
+                        "chest_opened_img": "images/deku_scrub_grey.png",
+                        "clear_as_group": false,
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 195,
+                        "y": 305
                       }
                     ]
                   },

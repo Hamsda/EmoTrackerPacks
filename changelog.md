@@ -4,6 +4,7 @@
 
 - fixed DMC wall HP showing up without sword2
 - changed keysanity to accurately reflect small key requirements while keeping minimal key requirements as sequence break
+- changed names for many locations in the overworld and dungeons
 
 ## 2.2.1.0
 
