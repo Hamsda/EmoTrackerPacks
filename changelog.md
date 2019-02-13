@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.3.0.1
+
+- added Water Temple central bow target chest sequence break for longshot/hoverboots
+- added Water Temple dragon chest sequence break for ironboots
+
 ## 2.3.0.0
 
 - fixed DMC wall HP showing up without sword2

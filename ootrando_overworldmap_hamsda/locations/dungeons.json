@@ -951,7 +951,8 @@
         "short_name": "Dragon",
         "access_rules": [
           "ironboots,ocarina,lullaby,lift1",
-          "ironboots,ocarina,time,bow"
+          "[ironboots],longshot,ocarina,lullaby,lift1,bombchu",
+          "[ironboots],ocarina,time,bow"
         ],
         "item_count": 1
       },
@@ -977,10 +978,9 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "ironboots,ocarina,lullaby,bow,lift1,hoverboots",
-          "ironboots,ocarina,lullaby,bow,lift1,longshot",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1,hoverboots",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1,longshot"
+          "ironboots,ocarina,lullaby,bow,lift1,[hoverboots]",
+          "ironboots,ocarina,lullaby,bow,lift1,[longshot]",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1"
         ],
         "item_count": 1
       },
