@@ -223,15 +223,21 @@ function has_bottle()
   local kz_count, kz_level = child_fountain()
   local level = AccessibilityLevel.Normal
   
-  if kz_count > 0 then
-    ruto = 0
-    level = kz_level
-  end
+  local usable_bottles = bottles - ruto - bigpoe
+
   if has("sword2") then
-    bigpoe = 0
+    usable_bottles = usable_bottles + bigpoe
+  end
+
+  if kz_count > 0
+  and ruto > 0 then
+    if usable_bottles == 0 then  
+      level = kz_level
+    end
+    usable_bottles = usable_bottles + ruto
   end
   
-  return (bottles - ruto - bigpoe), level
+  return usable_bottles, level
 end
 
 function has_projectile(age)
