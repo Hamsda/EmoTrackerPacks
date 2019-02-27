@@ -9,7 +9,7 @@ function has(item, amount)
 end
 
 function has_bombchus()
-  if has("logic_chus") then
+  if has("logic_chus_yes") then
     return Tracker:ProviderCountForCode("bombchu")
   else
     return Tracker:ProviderCountForCode("bombs")
@@ -223,15 +223,21 @@ function has_bottle()
   local kz_count, kz_level = child_fountain()
   local level = AccessibilityLevel.Normal
   
-  if kz_count > 0 then
-    ruto = 0
-    level = kz_level
-  end
+  local usable_bottles = bottles - ruto - bigpoe
+
   if has("sword2") then
-    bigpoe = 0
+    usable_bottles = usable_bottles + bigpoe
+  end
+
+  if kz_count > 0
+  and ruto > 0 then
+    if usable_bottles == 0 then  
+      level = kz_level
+    end
+    usable_bottles = usable_bottles + ruto
   end
   
-  return (bottles - ruto - bigpoe), level
+  return usable_bottles, level
 end
 
 function has_projectile(age)
@@ -249,5 +255,38 @@ function has_projectile(age)
     return explo or (bow or hook) and (sling or rang)
   else
     return explo or (bow or hook) or (sling or rang)
+  end
+end
+
+function spirit_wall()
+  if has("longshot")
+  or 
+  has("bombchu")
+  or 
+  (
+    (
+      has("bombs")
+      or 
+      has("nuts")
+      or 
+      (
+        has("dinsfire")
+        and 
+        has("magic")
+      )
+    )
+    and 
+    (
+      has("bow")
+      or 
+      has("hookshot")
+      or 
+      has("hammer")
+    )
+  )
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
   end
 end

@@ -807,8 +807,8 @@
         "short_name": "Highest Goron",
         "access_rules": [
           "@Fire Temple/Compass Chest,hammer,ocarina,time",
-          "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]",
-          "@Fire Temple/Compass Chest,hammer,$has_explosives,[ocarina],[time]"
+          "@Fire Temple/Compass Chest,hammer,[ocarina],[time],$has_explosives",
+          "@Fire Temple/Compass Chest,hammer,[ocarina],[time],hoverboots"
         ],
         "item_count": 1
       },
@@ -951,7 +951,8 @@
         "short_name": "Dragon",
         "access_rules": [
           "ironboots,ocarina,lullaby,lift1",
-          "ironboots,ocarina,time,bow"
+          "[ironboots],longshot,ocarina,lullaby,lift1,bombchu",
+          "[ironboots],ocarina,time,bow"
         ],
         "item_count": 1
       },
@@ -977,10 +978,9 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "ironboots,ocarina,lullaby,bow,lift1,hoverboots",
-          "ironboots,ocarina,lullaby,bow,lift1,longshot",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1,hoverboots",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1,longshot"
+          "ironboots,ocarina,lullaby,bow,lift1,[hoverboots]",
+          "ironboots,ocarina,lullaby,bow,lift1,[longshot]",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1"
         ],
         "item_count": 1
       },
@@ -1466,7 +1466,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,ocarina,lullaby,[$can_blast],[bow],[hookshot]"
+          "@Spirit Temple/First Mirror Chests,$spirit_wall,ocarina,lullaby,[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1476,7 +1476,7 @@
         "name": "Topmost Chest",
         "short_name": "Topmost Sun",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,shield3"
+          "@Spirit Temple/First Mirror Chests,$spirit_wall,shield3"
         ],
         "item_count": 1
       },
@@ -1568,6 +1568,7 @@
               "@Spirit Temple/First Mirror Chests,longshot",
               "@Spirit Temple/First Mirror Chests,hoverboots",
               "{@Spirit Temple/First Mirror Chests,bow}",
+              "ocarina,requiem,$has_explosives,boomerang,[@Spirit Temple/First Mirror Chests],[hoverboots]",
               "{ocarina,requiem,$has_explosives,sling}"
             ],
             "capture_item": true,

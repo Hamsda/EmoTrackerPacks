@@ -812,9 +812,9 @@
         "name": "Highest Goron Chest",
         "short_name": "Highest Goron",
         "access_rules": [
-          "@Fire Temple/Compass Chest,[fire_small_keys:8],hammer,ocarina,time",
-          "@Fire Temple/Compass Chest,[fire_small_keys:8],hammer,$has_explosives,[ocarina],[time]",
-          "@Fire Temple/Compass Chest,hammer,hoverboots,[ocarina],[time]"
+          "@Fire Temple/Compass Chest,hammer,ocarina,time,[fire_small_keys:8]",
+          "@Fire Temple/Compass Chest,hammer,[ocarina],[time],$has_explosives",
+          "@Fire Temple/Compass Chest,hammer,[ocarina],[time],hoverboots"
         ],
         "item_count": 1
       },
@@ -822,8 +822,8 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "@Fire Temple/Compass Chest,[fire_small_keys:8],$has_explosives",
-          "@Fire Temple/Compass Chest,hammer,hoverboots,$has_explosives",
+          "@Fire Temple/Compass Chest,$has_explosives,[fire_small_keys:8]",
+          "@Fire Temple/Compass Chest,$has_explosives,[hammer],[hoverboots]",
           "{agony}"
         ],
         "capture_item": true,
@@ -959,7 +959,8 @@
         "short_name": "Dragon",
         "access_rules": [
           "ironboots,ocarina,lullaby,lift1",
-          "ironboots,water_small_keys:2,[water_small_keys:6],ocarina,time,bow"
+          "[ironboots],longshot,ocarina,lullaby,lift1,bombchu",
+          "[ironboots],water_small_keys:2,[water_small_keys:6],ocarina,time,bow"
         ],
         "item_count": 1
       },
@@ -980,12 +981,12 @@
           "$has_explosives,ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5]",
           "$has_explosives,ironboots,ocarina,lullaby,bow",
           "$has_explosives,ironboots,ocarina,lullaby,dinsfire,magic",
+          "$has_explosives,ironboots,ocarina,lullaby,hoverboots,[bow]",
           "$has_explosives,[ironboots],longshot,ocarina,lullaby,water_small_keys:1,[water_small_keys:5]",
           "$has_explosives,[ironboots],longshot,ocarina,lullaby,bow",
           "$has_explosives,[ironboots],longshot,ocarina,lullaby,dinsfire,magic",
-          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[water_small_keys:5]",
-          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[bow]",
-          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[dinsfire],[magic]"
+          "$has_explosives,[ironboots],longshot,ocarina,lullaby,hoverboots,[bow]",
+          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[bow]"
         ],
         "item_count": 1
       },
@@ -993,10 +994,9 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "ironboots,ocarina,lullaby,bow,lift1,hoverboots",
-          "ironboots,ocarina,lullaby,bow,lift1,longshot",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1,hoverboots",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1,longshot"
+          "ironboots,ocarina,lullaby,bow,lift1,[hoverboots]",
+          "ironboots,ocarina,lullaby,bow,lift1,[longshot]",
+          "[ironboots],longshot,ocarina,lullaby,bow,lift1"
         ],
         "item_count": 1
       },
@@ -1402,7 +1402,9 @@
         "name": "Silver Gauntlets Chest",
         "short_name": "Right Hand",
         "access_rules": [
-          "spirit_small_keys:2,[spirit_small_keys:3],ocarina,requiem,$has_explosives",
+          "spirit_small_keys:2,[spirit_small_keys:3],ocarina,requiem,$has_explosives,[longshot]",
+          "spirit_small_keys:2,[spirit_small_keys:5],ocarina,requiem,$has_explosives",
+          "spirit_small_keys:2,[spirit_small_keys:3],sword2,lift2,[$has_explosives],[longshot]",
           "spirit_small_keys:2,[spirit_small_keys:5],sword2,lift2",
           "{agony}"
         ],
@@ -1490,7 +1492,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:3,[spirit_small_keys:5],ocarina,lullaby,[bow],[hookshot]"
+          "@Spirit Temple/First Mirror Chests,spirit_small_keys:3,[spirit_small_keys:5],$spirit_wall,ocarina,lullaby,[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1500,7 +1502,7 @@
         "name": "Topmost Chest",
         "short_name": "Topmost Sun",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:3,[spirit_small_keys:5],shield3"
+          "@Spirit Temple/First Mirror Chests,spirit_small_keys:3,[spirit_small_keys:5],$spirit_wall,shield3"
         ],
         "item_count": 1
       },
@@ -1592,6 +1594,7 @@
               "@Spirit Temple/First Mirror Chests,longshot",
               "@Spirit Temple/First Mirror Chests,hoverboots",
               "{@Spirit Temple/First Mirror Chests,bow}",
+              "ocarina,requiem,spirit_small_keys:1,[spirit_small_keys:5],$has_explosives,boomerang,[@Spirit Temple/First Mirror Chests],[hoverboots]",
               "{ocarina,requiem,spirit_small_keys:1,$has_explosives,sling}"
             ],
             "capture_item": true,

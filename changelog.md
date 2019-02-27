@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.3.1.0
+
+- added Water Temple central bow target chest sequence break for longshot/hoverboots
+- added Water Temple dragon chest sequence break for ironboots
+- fixed bean patch GS incorrectly showing up as sequence break because of King Zora access level
+- fixed Spirit Temple silver gauntlets chest intended logic
+- changed hot rodder goron no longer hard requires bomb bag
+- added cowsanity support
+- fixed GS47 icon
+- added a bunch of sequence breaks for newly added logic tricks:
+  - Bottom of the Well MQ Dead Hand key with boomerang
+  - Fire Temple MQ near boss without breaking crate
+  - Fire Temple MQ maze side room without box
+  - Fire Temple flame wall maze skip with nothing
+  - Spirit Temple MQ sun block room GS with boomerang
+  - Spirit Temple main room GS with boomerang
+  - Spirit Temple shifting wall with nothing
+  - Water Temple cracked wall with hoverboots
+
 ## 2.3.0.0
 
 - fixed DMC wall HP showing up without sword2
