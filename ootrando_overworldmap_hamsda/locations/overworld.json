@@ -2870,12 +2870,13 @@
                   {
                     "name": "Rolling Goron as Child",
                     "short_name": "Hot Rodder Goron",
-                    "access_rules": [
-                      "bombs"
-                    ],
                     "sections": [
                       {
-                        "name": "Bomb him",
+                        "name": "Blow him up",
+                        "access_rules": [
+                          "$has_explosives",
+                          "lift1,[$has_explosives]"
+                        ],
                         "item_count": 1
                       }
                     ],

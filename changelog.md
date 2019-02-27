@@ -6,6 +6,7 @@
 - added Water Temple dragon chest sequence break for ironboots
 - fixed bean patch GS incorrectly showing up as sequence break because of King Zora access level
 - fixed Spirit Temple silver gauntlets chest intended logic
+- changed hot rodder goron no longer hard requires bomb bag
 
 ## 2.3.0.0
 
