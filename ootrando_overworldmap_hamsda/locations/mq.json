@@ -847,6 +847,7 @@
         "short_name": "Near Boss",
         "access_rules": [
           "hoverboots,$has_fire",
+          "bow,[hoverboots],$has_fire",
           "hookshot,$has_fire"
         ],
         "item_count": 1
@@ -891,18 +892,18 @@
         "item_count": 1
       },
       {
-        "name": "Maze Upper Chest",
-        "short_name": "Maze Upper",
+        "name": "Maze Side Room",
+        "short_name": "Maze Side",
         "access_rules": [
-          "@Fire Temple MQ/Maze Lower Chest,hookshot,[$has_explosives]"
+          "@Fire Temple MQ/Maze Lower Chest,$has_explosives,[hookshot]"
         ],
         "item_count": 1
       },
       {
-        "name": "Maze Side Room",
-        "short_name": "Maze Side",
+        "name": "Maze Upper Chest",
+        "short_name": "Maze Upper",
         "access_rules": [
-          "@Fire Temple MQ/Maze Upper Chest,$has_explosives"
+          "@Fire Temple MQ/Maze Lower Chest,hookshot,[$has_explosives]"
         ],
         "item_count": 1
       },
@@ -1660,7 +1661,8 @@
             "name": "GS96 - Sun Block Room",
             "short_name": "Sun Block",
             "access_rules": [
-              "sword2,lift2,longshot,bombchu"
+              "sword2,lift2,longshot,bombchu",
+              "[sword2],[lift2],[longshot],ocarina,requiem,bombchu,time,boomerang"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1768,7 +1770,8 @@
         "name": "Dead Hand Freestanding Key",
         "short_name": "Dead Hand Key",
         "access_rules": [
-          "$has_explosives"
+          "$has_explosives",
+          "boomerang,[$has_explosives]"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",

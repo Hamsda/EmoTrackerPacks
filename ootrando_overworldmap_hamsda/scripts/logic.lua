@@ -257,3 +257,36 @@ function has_projectile(age)
     return explo or (bow or hook) or (sling or rang)
   end
 end
+
+function spirit_wall()
+  if has("longshot")
+  or 
+  has("bombchu")
+  or 
+  (
+    (
+      has("bombs")
+      or 
+      has("nuts")
+      or 
+      (
+        has("dinsfire")
+        and 
+        has("magic")
+      )
+    )
+    and 
+    (
+      has("bow")
+      or 
+      has("hookshot")
+      or 
+      has("hammer")
+    )
+  )
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
