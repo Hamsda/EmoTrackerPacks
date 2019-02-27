@@ -4937,6 +4937,8 @@
                           "bow",
                           "magic"
                         ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
                       }
                     ],

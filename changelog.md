@@ -8,6 +8,7 @@
 - fixed Spirit Temple silver gauntlets chest intended logic
 - changed hot rodder goron no longer hard requires bomb bag
 - added cowsanity support
+- fixed GS47 icon
 
 ## 2.3.0.0
 
