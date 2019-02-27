@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.3.0.1
+## 2.3.1.0
 
 - added Water Temple central bow target chest sequence break for longshot/hoverboots
 - added Water Temple dragon chest sequence break for ironboots
