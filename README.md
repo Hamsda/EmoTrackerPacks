@@ -31,7 +31,6 @@ This also means that the key counts for the dungeons in the Keysanity variants w
 
 Some of this functionality might not be immediately obvious:
 
-- Right clicking ![Bombchu](ootrando_overworldmap_hamsda/images/bombchu.png "Bombchu") will overlay it with ![Logic](ootrando_overworldmap_hamsda/images/overlay_logic.png "Logic"), indicating that Bombchus are considered in logic by the randomizer ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#bombchus-are-considered-in-logic)).
 - Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/scarecrow_badge.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will show up as sequence breaks unless this is turned on.
 - Checking ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony") enables you to capture items placed at locations you received hints for by the Gossip Stones, even if you selected hints to be always on or require Mask of Truth instead of Stone of Agony.
 - ![Ice Trap](ootrando_overworldmap_hamsda/images/icetrap.png "Ice Trap") is used as a counter for ice traps. This is somewhat useful to evaluate freestanding items during racing, but mostly just for fun with settings that include higher numbers of ice traps.
@@ -86,6 +85,13 @@ This setting determines what is needed to trigger the rainbow bridge in front of
 - ![All Medallions](ootrando_overworldmap_hamsda/images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
 - ![All Dungeons](ootrando_overworldmap_hamsda/images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
 - ![100 GS tokens](ootrando_overworldmap_hamsda/images/setting_bridge_100gs.png "100 GS tokens") 100 gold skulltula tokens required
+
+### Bombchus in logic
+
+This setting determines if Bombchus are considered by the logic ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#bombchus-are-considered-in-logic)).
+
+- ![Bombchus not in logic](ootrando_overworldmap_hamsda/images/logic_chus_no.png "Bombchus not in logic") Bombchus will never be considered by the logic and can be used to sequence break bomb locations.
+- ![Bombchus in logic](ootrando_overworldmap_hamsda/images/logic_chus_yes.png "Bombchus in logic") Bombchus can be used as regular explosives like bombs in logic.
 
 ### Lens of Truth
 

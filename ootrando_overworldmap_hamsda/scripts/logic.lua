@@ -9,7 +9,7 @@ function has(item, amount)
 end
 
 function has_bombchus()
-  if has("logic_chus") then
+  if has("logic_chus_yes") then
     return Tracker:ProviderCountForCode("bombchu")
   else
     return Tracker:ProviderCountForCode("bombs")
