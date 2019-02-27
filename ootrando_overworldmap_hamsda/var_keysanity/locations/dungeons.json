@@ -1402,7 +1402,9 @@
         "name": "Silver Gauntlets Chest",
         "short_name": "Right Hand",
         "access_rules": [
-          "spirit_small_keys:2,[spirit_small_keys:3],ocarina,requiem,$has_explosives",
+          "spirit_small_keys:2,[spirit_small_keys:3],ocarina,requiem,$has_explosives,[longshot]",
+          "spirit_small_keys:2,[spirit_small_keys:5],ocarina,requiem,$has_explosives",
+          "spirit_small_keys:2,[spirit_small_keys:3],sword2,lift2,[$has_explosives],[longshot]",
           "spirit_small_keys:2,[spirit_small_keys:5],sword2,lift2",
           "{agony}"
         ],

@@ -5,6 +5,7 @@
 - added Water Temple central bow target chest sequence break for longshot/hoverboots
 - added Water Temple dragon chest sequence break for ironboots
 - fixed bean patch GS incorrectly showing up as sequence break because of King Zora access level
+- fixed Spirit Temple silver gauntlets chest intended logic
 
 ## 2.3.0.0
 
