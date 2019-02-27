@@ -602,6 +602,27 @@
             "y": 298
           }
         ]
+      },
+      {
+        "name": "Jabu Jabus Belly MQ Cow",
+        "sections": [
+          {
+            "name": "Cow",
+            "access_rules": [
+              "@Jabu Jabus Belly MQ/Second Room Upper Chest,ocarina,epona,cowsanity_yes"
+            ],
+            "chest_unopened_img": "images/cow.png",
+            "chest_opened_img": "images/bottle_milk.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "child",
+            "x": 2458,
+            "y": 358
+          }
+        ]
       }
     ]
   },

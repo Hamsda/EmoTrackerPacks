@@ -108,6 +108,13 @@ This setting changes where the logic requires Goron and Zora tunics ([see wiki](
 - ![Required everywhere](ootrando_overworldmap_hamsda/images/fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
 - ![Fewer requirements](ootrando_overworldmap_hamsda/images/fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
 
+### Magic Beans
+
+This setting determines how the Magic Beans will be handled on the map.
+
+- ![Beans off](ootrando_overworldmap_hamsda/images/bean_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
+- ![Plant Beans](ootrando_overworldmap_hamsda/images/bean_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
+
 ### Shuffle Deku Scrubs
 
 This setting determines if all Deku Scrubs have randomized items ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-deku-salescrubs)).
@@ -122,6 +129,13 @@ This setting determines if Shopsanity is active ([see wiki](https://github.com/T
 - ![Shopsanity off](ootrando_overworldmap_hamsda/images/shopsanity_no.png "Shopsanity off") The shops have their regular items.
 - ![Shopsanity on](ootrando_overworldmap_hamsda/images/shopsanity_yes.png "Shopsanity on") A varying amount of items in the shops is randomized.
 
+### Cowsanity
+
+This setting determines if Cowsanity is active.
+
+- ![Cowsanity off](ootrando_overworldmap_hamsda/images/cowsanity_no.png "Cowsanity off") The cows just give milk when Eponas song gets played.
+- ![Cowsanity on](ootrando_overworldmap_hamsda/images/cowsanity_yes.png "Cowsanity on") The cows will give a random item the first time Eponas song gets played.
+
 ### Gold Skulltulas
 
 This setting determines which Gold Skulltulas are shown (especially useful for [Tokensanity](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#tokensanity)).
@@ -129,10 +143,3 @@ This setting determines which Gold Skulltulas are shown (especially useful for [
 - ![Skulltulas hidden](ootrando_overworldmap_hamsda/images/skulltula_hide.png "Skulltulas hidden") Gold Skulltulas will be hidden.
 - ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/skulltula_dungeon.png "Skulltulas in dungeons") The Gold Skulltulas in dungeons will be displayed.
 - ![Skulltulas everywhere](ootrando_overworldmap_hamsda/images/skulltula_all.png "Skulltulas everywhere") All Gold Skulltulas will be displayed.
-
-### Magic Beans
-
-This setting determines how the Magic Beans will be handled on the map.
-
-- ![Beans off](ootrando_overworldmap_hamsda/images/bean_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
-- ![Plant Beans](ootrando_overworldmap_hamsda/images/bean_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).

@@ -124,6 +124,28 @@
                 ]
               },
               {
+                "name": "Links House",
+                "sections": [
+                  {
+                    "name": "Links House Cow",
+                    "short_name": "Cow",
+                    "access_rules": [
+                      "sword2,ocarina,epona,cowsanity_yes"
+                    ],
+                    "chest_unopened_img": "images/cow.png",
+                    "chest_opened_img": "images/bottle_milk.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "adult",
+                    "x": 2175,
+                    "y": 1000
+                  }
+                ]
+              },
+              {
                 "name": "Know It All House",
                 "access_rules": [
                   "all_skulltulas"
@@ -1133,22 +1155,30 @@
               },
               {
                 "name": "Field Valley Grotto",
-                "access_rules": [
-                  "all_skulltulas"
-                ],
                 "sections": [
                   {
                     "name": "GS13",
                     "access_rules": [
-                      "$has_explosives,dinsfire,magic,boomerang",
-                      "{$has_explosives,dinsfire,magic}",
-                      "sword2,hammer,$has_fire,hookshot",
-                      "{sword2,hammer,$has_fire}",
-                      "{agony}"
+                      "all_skulltulas,$has_explosives,dinsfire,magic,boomerang",
+                      "{all_skulltulas,$has_explosives,dinsfire,magic}",
+                      "all_skulltulas,sword2,hammer,$has_fire,hookshot",
+                      "{all_skulltulas,sword2,hammer,$has_fire}",
+                      "{all_skulltulas,agony}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "HF Grotto Cow",
+                    "short_name": "Cow",
+                    "access_rules": [
+                      "$has_explosives,dinsfire,magic,ocarina,epona,cowsanity_yes",
+                      "sword2,hammer,$has_fire,ocarina,epona,cowsanity_yes"
+                    ],
+                    "chest_unopened_img": "images/cow.png",
+                    "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
                   }
                 ],
@@ -1759,6 +1789,16 @@
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
+                      },
+                      {
+                        "name": "LLR Tower Cows",
+                        "short_name": "Cows",
+                        "access_rules": [
+                          "ocarina,epona,cowsanity_yes"
+                        ],
+                        "chest_unopened_img": "images/cow.png",
+                        "chest_opened_img": "images/bottle_milk.png",
+                        "item_count": 2
                       }
                     ],
                     "map_locations": [
@@ -1766,6 +1806,45 @@
                         "map": "child",
                         "x": 1227,
                         "y": 690
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 1227,
+                        "y": 690
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ingo Barn",
+                    "short_name": "Stables",
+                    "sections": [
+                      {
+                        "name": "LLR Stables Cows",
+                        "short_name": "Cows",
+                        "access_rules": [
+                          "ocarina,epona,cowsanity_yes"
+                        ],
+                        "chest_unopened_img": "images/cow.png",
+                        "chest_opened_img": "images/bottle_milk.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 1300,
+                        "y": 595
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 1300,
+                        "y": 595
                       }
                     ]
                   },
@@ -1972,9 +2051,19 @@
                 "sections": [
                   {
                     "name": "Freestanding PoH",
-                    "short_name": "Cow HP",
+                    "short_name": "HP",
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Impas House Cow",
+                    "short_name": "Cow",
+                    "access_rules": [
+                      "ocarina,epona,cowsanity_yes"
+                    ],
+                    "chest_unopened_img": "images/cow.png",
+                    "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
                   }
                 ],
@@ -3276,6 +3365,39 @@
                         "map": "adult",
                         "x": 1825,
                         "y": 94
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Mountain Bombable Grotto",
+                    "sections": [
+                      {
+                        "name": "DMT Grotto Cow",
+                        "short_name": "Cow",
+                        "access_rules": [
+                          "$can_blast,ocarina,epona,cowsanity_yes"
+                        ],
+                        "chest_unopened_img": "images/cow.png",
+                        "chest_opened_img": "images/bottle_milk.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "visibility_rules": [
+                          "$has_explosives"
+                        ],
+                        "x": 1730,
+                        "y": 190
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 1730,
+                        "y": 190
                       }
                     ]
                   },
@@ -5149,6 +5271,36 @@
                     ]
                   },
                   {
+                    "name": "Gerudo Valley Cow",
+                    "short_name": "Valley Cow",
+                    "sections": [
+                      {
+                        "name": "Cow",
+                        "access_rules": [
+                          "ocarina,epona,cowsanity_yes"
+                        ],
+                        "chest_unopened_img": "images/cow.png",
+                        "chest_opened_img": "images/bottle_milk.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 670,
+                        "y": 600
+                      },
+                      {
+                        "map": "adult",
+                        "visibility_rules": [
+                          "sword2"
+                        ],
+                        "x": 670,
+                        "y": 600
+                      }
+                    ]
+                  },
+                  {
                     "name": "Gerudo Valley Small Bridge",
                     "short_name": "Waterfall Near Entrance",
                     "access_rules": [
@@ -5196,8 +5348,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 667,
-                        "y": 594
+                        "x": 640,
+                        "y": 600
                       }
                     ]
                   },

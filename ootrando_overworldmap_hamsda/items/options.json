@@ -170,7 +170,7 @@
       }
     ]
   },
-  {
+  {	
     "name": "Bombchus in Logic",	
     "type": "progressive",	
     "allow_disabled": false,	
@@ -217,6 +217,23 @@
       {
         "img": "images/shopsanity_yes.png",
         "codes": "shopsanity,shopsanity_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Cowsanity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/cowsanity_no.png",
+        "codes": "cowsanity,cowsanity_no"
+      },
+      {
+        "img": "images/cowsanity_yes.png",
+        "codes": "cowsanity,cowsanity_yes",
         "inherit_codes": false
       }
     ]
