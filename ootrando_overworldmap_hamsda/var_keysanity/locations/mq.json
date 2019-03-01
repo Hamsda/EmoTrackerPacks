@@ -85,7 +85,7 @@
       {
         "name": "Deku Tree MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -148,7 +148,7 @@
       {
         "name": "Deku Tree MQ Scrubs",
         "access_rules": [
-          "scrub_shuffle_yes"
+          "setting_scrub_shuffle_yes"
         ],
         "sections": [
           {
@@ -282,7 +282,7 @@
       {
         "name": "Dodongos Cavern MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -369,7 +369,7 @@
       {
         "name": "Dodongos Cavern MQ Scrubs",
         "access_rules": [
-          "scrub_shuffle_yes"
+          "setting_scrub_shuffle_yes"
         ],
         "sections": [
           {
@@ -547,7 +547,7 @@
       {
         "name": "Jabu Jabus Belly MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -609,7 +609,7 @@
           {
             "name": "Cow",
             "access_rules": [
-              "@Jabu Jabus Belly MQ/Second Room Upper Chest,ocarina,epona,cowsanity_yes"
+              "@Jabu Jabus Belly MQ/Second Room Upper Chest,ocarina,epona,setting_cowsanity_yes"
             ],
             "chest_unopened_img": "images/cow.png",
             "chest_opened_img": "images/bottle_milk.png",
@@ -767,7 +767,7 @@
       {
         "name": "Forest Temple MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -964,7 +964,7 @@
       {
         "name": "Fire Temple MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1119,7 +1119,7 @@
       {
         "name": "Water Temple MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1361,7 +1361,7 @@
       {
         "name": "Shadow Temple MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1661,7 +1661,7 @@
       {
         "name": "Spirit Temple MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1804,7 +1804,7 @@
       {
         "name": "Bottom of the Well MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1972,7 +1972,7 @@
       {
         "name": "Ganons Castle MQ Scrubs",
         "access_rules": [
-          "scrub_shuffle_yes"
+          "setting_scrub_shuffle_yes"
         ],
         "sections": [
           {
@@ -2054,7 +2054,7 @@
       {
         "name": "Ice Cavern MQ Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {

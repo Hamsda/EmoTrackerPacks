@@ -83,7 +83,7 @@
               {
                 "name": "Kokiri Shop",
                 "access_rules": [
-                  "shopsanity_yes"
+                  "setting_shopsanity_yes"
                 ],
                 "sections": [
                   {
@@ -130,7 +130,7 @@
                     "name": "Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "sword2,ocarina,epona,cowsanity_yes"
+                      "sword2,ocarina,epona,setting_cowsanity_yes"
                     ],
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
@@ -148,7 +148,7 @@
               {
                 "name": "Know It All House",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -173,7 +173,7 @@
               {
                 "name": "Kokiri Bean Patch",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -197,7 +197,7 @@
               {
                 "name": "House of Twins",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -504,7 +504,7 @@
                     "name": "LW Grotto Deku Scrub Arrows",
                     "short_name": "Arrows",
                     "access_rules": [
-                      "scrub_shuffle_yes"
+                      "setting_scrub_shuffle_yes"
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
@@ -533,7 +533,7 @@
               {
                 "name": "LW Deku Scrubs",
                 "access_rules": [
-                  "scrub_shuffle_yes,$can_stun_deku"
+                  "setting_scrub_shuffle_yes,$can_stun_deku"
                 ],
                 "sections": [
                   {
@@ -556,7 +556,7 @@
                 "name": "Lost Woods Bean Patch Near Bridge",
                 "short_name": "Bean Patch Near Bridge",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -584,15 +584,15 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "beans,beans_plant_yes,bean_stage_no"
+                      "beans,setting_beans_yes,bean_stage_no"
                     ],
                     "hosted_item": "bean_stage_yes"
                   },
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "all_skulltulas,$has_bottle,$can_child_attack",
-                      "all_skulltulas,$has_bottle,shield1"
+                      "setting_skulltulas_all,$has_bottle,$can_child_attack",
+                      "setting_skulltulas_all,$has_bottle,shield1"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -611,18 +611,18 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "all_skulltulas,sword2"
+                  "setting_skulltulas_all,sword2"
                 ],
                 "sections": [
                   {
                     "name": "GS6 (N)",
                     "access_rules": [
-                      "[ocarina],[saria],beans_plant_no,beans",
-                      "[ocarina],[minuet],beans_plant_no,beans",
+                      "[ocarina],[saria],setting_beans_no,beans",
+                      "[ocarina],[minuet],setting_beans_no,beans",
                       "[ocarina],[saria],bean_stage_yes",
                       "[ocarina],[minuet],bean_stage_yes",
-                      "[ocarina],[saria],bombchu,longshot,[beans_plant_no,beans]",
-                      "[ocarina],[minuet],bombchu,longshot,[beans_plant_no,beans]",
+                      "[ocarina],[saria],bombchu,longshot,[setting_beans_no,beans]",
+                      "[ocarina],[minuet],bombchu,longshot,[setting_beans_no,beans]",
                       "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
                       "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
                     ],
@@ -753,7 +753,7 @@
               {
                 "name": "Meadow Storms Grotto",
                 "access_rules": [
-                  "scrub_shuffle_yes,ocarina,storm"
+                  "setting_scrub_shuffle_yes,ocarina,storm"
                 ],
                 "sections": [
                   {
@@ -795,8 +795,8 @@
               {
                 "name": "Top of Maze",
                 "access_rules": [
-                  "all_skulltulas,sword2,[ocarina],[saria]",
-                  "all_skulltulas,sword2,[ocarina],[minuet]"
+                  "setting_skulltulas_all,sword2,[ocarina],[saria]",
+                  "setting_skulltulas_all,sword2,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -1116,7 +1116,7 @@
               {
                 "name": "Field Kakariko Grotto",
                 "access_rules": [
-                  "all_skulltulas,$can_blast"
+                  "setting_skulltulas_all,$can_blast"
                 ],
                 "sections": [
                   {
@@ -1159,11 +1159,11 @@
                   {
                     "name": "GS13",
                     "access_rules": [
-                      "all_skulltulas,$has_explosives,dinsfire,magic,boomerang",
-                      "{all_skulltulas,$has_explosives,dinsfire,magic}",
-                      "all_skulltulas,sword2,hammer,$has_fire,hookshot",
-                      "{all_skulltulas,sword2,hammer,$has_fire}",
-                      "{all_skulltulas,$hintable}"
+                      "setting_skulltulas_all,$has_explosives,dinsfire,magic,boomerang",
+                      "{setting_skulltulas_all,$has_explosives,dinsfire,magic}",
+                      "setting_skulltulas_all,sword2,hammer,$has_fire,hookshot",
+                      "{setting_skulltulas_all,sword2,hammer,$has_fire}",
+                      "{setting_skulltulas_all,$hintable}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -1174,8 +1174,8 @@
                     "name": "HF Grotto Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "$has_explosives,dinsfire,magic,ocarina,epona,cowsanity_yes",
-                      "sword2,hammer,$has_fire,ocarina,epona,cowsanity_yes"
+                      "$has_explosives,dinsfire,magic,ocarina,epona,setting_cowsanity_yes",
+                      "sword2,hammer,$has_fire,ocarina,epona,setting_cowsanity_yes"
                     ],
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
@@ -1364,7 +1364,7 @@
                         "access_rules": [
                           "sword2,ocarina,[scarecrow],hookshot",
                           "sword2,water",
-                          "sword2,beans_plant_no,beans",
+                          "sword2,setting_beans_no,beans",
                           "sword2,bean_lake_yes",
                           "{$hintable}"
                         ],
@@ -1411,7 +1411,7 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "sword2,beans_plant_no,beans",
+                          "sword2,setting_beans_no,beans",
                           "sword2,bean_lake_yes",
                           "sword2,ocarina,[scarecrow],hookshot"
                         ],
@@ -1510,7 +1510,7 @@
                     "name": "Lake Hylia Grotto",
                     "short_name": "Under Gravestone",
                     "access_rules": [
-                      "scrub_shuffle_yes,$can_stun_deku"
+                      "setting_scrub_shuffle_yes,$can_stun_deku"
                     ],
                     "sections": [
                       {
@@ -1543,14 +1543,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,beans_plant_yes,bean_lake_no"
+                          "beans,setting_beans_yes,bean_lake_no"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "all_skulltulas,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1568,7 +1568,7 @@
                   {
                     "name": "Lab Wall",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1597,7 +1597,7 @@
                   {
                     "name": "Small Island",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1621,7 +1621,7 @@
                   {
                     "name": "Giant Tree",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1646,7 +1646,7 @@
                     "name": "Lab Underwater Crate",
                     "short_name": "Lab Crate",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1794,7 +1794,7 @@
                         "name": "LLR Tower Cows",
                         "short_name": "Cows",
                         "access_rules": [
-                          "ocarina,epona,cowsanity_yes"
+                          "ocarina,epona,setting_cowsanity_yes"
                         ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
@@ -1825,7 +1825,7 @@
                         "name": "LLR Stables Cows",
                         "short_name": "Cows",
                         "access_rules": [
-                          "ocarina,epona,cowsanity_yes"
+                          "ocarina,epona,setting_cowsanity_yes"
                         ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
@@ -1851,7 +1851,7 @@
                   {
                     "name": "Lon Lon Grotto",
                     "access_rules": [
-                      "scrub_shuffle_yes"
+                      "setting_scrub_shuffle_yes"
                     ],
                     "sections": [
                       {
@@ -1879,7 +1879,7 @@
                     "name": "Lon Lon Ranch Tree",
                     "short_name": "Lone Tree",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1901,7 +1901,7 @@
                     "name": "Lon Lon Ranch Rain Shed",
                     "short_name": "Rain Shed",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1923,7 +1923,7 @@
                     "name": "Lon Lon Ranch House Window",
                     "short_name": "House Window",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -1951,7 +1951,7 @@
                     "name": "Lon Lon Ranch Back Wall",
                     "short_name": "Back Wall",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -2060,7 +2060,7 @@
                     "name": "Impas House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "ocarina,epona,cowsanity_yes"
+                      "ocarina,epona,setting_cowsanity_yes"
                     ],
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
@@ -2362,7 +2362,7 @@
               {
                 "name": "Kakariko Potion Shop",
                 "access_rules": [
-                  "shopsanity_yes,sword2"
+                  "setting_shopsanity_yes,sword2"
                 ],
                 "sections": [
                   {
@@ -2397,7 +2397,7 @@
               {
                 "name": "Kakariko Bazaar",
                 "access_rules": [
-                  "shopsanity_yes,sword2"
+                  "setting_shopsanity_yes,sword2"
                 ],
                 "sections": [
                   {
@@ -2433,7 +2433,7 @@
                 "name": "Kakariko Above Impa's House",
                 "short_name": "Above Impa's House",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -2458,7 +2458,7 @@
                 "name": "Kakariko Tree",
                 "short_name": "Tree",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -2480,7 +2480,7 @@
                 "name": "Kakariko Skulltula House",
                 "short_name": "Skulltula House",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -2502,7 +2502,7 @@
                 "name": "Kakariko House Under Construction",
                 "short_name": "Under Construction",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -2524,7 +2524,7 @@
                 "name": "Kakariko Guard's House",
                 "short_name": "Bazaar Wall",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -2546,7 +2546,7 @@
                 "name": "Kakariko Watchtower",
                 "short_name": "Watchtower",
                 "access_rules": [
-                  "all_skulltulas"
+                  "setting_skulltulas_all"
                 ],
                 "sections": [
                   {
@@ -2677,10 +2677,10 @@
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
                         "access_rules": [
-                          "sword2,beans_plant_no,beans",
+                          "sword2,setting_beans_no,beans",
                           "sword2,bean_graveyard_yes",
                           "sword2,longshot",
-                          "boomerang,[sword2],[beans_plant_no],[beans]",
+                          "boomerang,[sword2],[setting_beans_no],[beans]",
                           "boomerang,[sword2],[bean_graveyard_yes]",
                           "boomerang,[sword2],[longshot]",
                           "{}"
@@ -2783,7 +2783,7 @@
                     "name": "Graveyard Wall",
                     "short_name": "Wall",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -2814,14 +2814,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,beans_plant_yes,bean_graveyard_no"
+                          "beans,setting_beans_yes,bean_graveyard_no"
                         ],
                         "hosted_item": "bean_graveyard_yes"
                       },
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "all_skulltulas,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3030,7 +3030,7 @@
                     "name": "Goron City Grotto",
                     "short_name": "Lava Room Grotto",
                     "access_rules": [
-                      "scrub_shuffle_yes,sword2"
+                      "setting_scrub_shuffle_yes,sword2"
                     ],
                     "sections": [
                       {
@@ -3058,7 +3058,7 @@
                     "name": "Goron City Boulder Maze",
                     "short_name": "Boulder Maze Crate",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -3083,7 +3083,7 @@
                     "name": "Goron City Center Platform",
                     "short_name": "Center Platform",
                     "access_rules": [
-                      "all_skulltulas,sword2"
+                      "setting_skulltulas_all,sword2"
                     ],
                     "sections": [
                       {
@@ -3104,13 +3104,13 @@
                   {
                     "name": "Goron Shop",
                     "access_rules": [
-                      "shopsanity_yes,$has_explosives",
-                      "shopsanity_yes,lift1",
-                      "shopsanity_yes,sword2,bow",
-                      "shopsanity_yes,dinsfire,magic",
-                      "shopsanity_yes,ocarina,lullaby,sticks,postzelda",
-                      "shopsanity_yes,ocarina,lullaby,sticks,open_kak",
-                      "shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
+                      "setting_shopsanity_yes,$has_explosives",
+                      "setting_shopsanity_yes,lift1",
+                      "setting_shopsanity_yes,sword2,bow",
+                      "setting_shopsanity_yes,dinsfire,magic",
+                      "setting_shopsanity_yes,ocarina,lullaby,sticks,postzelda",
+                      "setting_shopsanity_yes,ocarina,lullaby,sticks,open_kak",
+                      "setting_shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
                     ],
                     "sections": [
                       {
@@ -3329,7 +3329,7 @@
                     "access_rules": [
                       "@Link the Goron",
                       "sword2,$can_blast",
-                      "sword2,ocarina,bolero,beans_plant_no,beans",
+                      "sword2,ocarina,bolero,setting_beans_no,beans",
                       "sword2,ocarina,bolero,bean_crater_yes",
                       "sword2,ocarina,bolero,hoverboots",
                       "sword2,ocarina,bolero,hookshot",
@@ -3375,7 +3375,7 @@
                         "name": "DMT Grotto Cow",
                         "short_name": "Cow",
                         "access_rules": [
-                          "$can_blast,ocarina,epona,cowsanity_yes"
+                          "$can_blast,ocarina,epona,setting_cowsanity_yes"
                         ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
@@ -3405,7 +3405,7 @@
                     "name": "Mountain Trail Above Dodongo's Cavern",
                     "short_name": "Rock Above DC",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -3430,7 +3430,7 @@
                     "name": "Mountain Trail Path to Crater",
                     "short_name": "Path to Crater",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -3461,14 +3461,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,beans_plant_yes,bean_trail_no"
+                          "beans,setting_beans_yes,bean_trail_no"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "all_skulltulas,$has_bottle"
+                          "setting_skulltulas_all,$has_bottle"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3486,7 +3486,7 @@
                   {
                     "name": "Mountain Trail Bomb Alcove",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -3527,7 +3527,7 @@
                         "access_rules": [
                           "$can_blast",
                           "@Link the Goron",
-                          "ocarina,bolero,beans_plant_no,beans",
+                          "ocarina,bolero,setting_beans_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "ocarina,bolero,hoverboots",
                           "ocarina,bolero,hookshot"
@@ -3614,7 +3614,7 @@
                         "short_name": "HP",
                         "access_rules": [
                           "$can_blast",
-                          "ocarina,bolero,sword2,beans_plant_no,beans",
+                          "ocarina,bolero,sword2,setting_beans_no,beans",
                           "ocarina,bolero,sword2,bean_crater_yes",
                           "ocarina,bolero,sword2,hookshot",
                           "ocarina,bolero,sword2,hoverboots",
@@ -3651,13 +3651,13 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "sword2,ocarina,bolero,beans_plant_no,beans",
+                          "sword2,ocarina,bolero,setting_beans_no,beans",
                           "sword2,ocarina,bolero,bean_crater_yes",
-                          "sword2,ocarina,bolero,hoverboots,[beans_plant_no],[beans]",
+                          "sword2,ocarina,bolero,hoverboots,[setting_beans_no],[beans]",
                           "sword2,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "@Link the Goron,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
+                          "@Link the Goron,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
                           "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                          "sword2,hammer,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
+                          "sword2,hammer,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "{$hintable}",
                           "{ocarina,bolero}",
@@ -3689,7 +3689,7 @@
                         "access_rules": [
                           "@Link the Goron",
                           "ocarina,bolero,hookshot",
-                          "ocarina,bolero,beans_plant_no,beans",
+                          "ocarina,bolero,setting_beans_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots"
                         ],
@@ -3708,7 +3708,7 @@
                     "name": "DMC Hammer Grotto",
                     "short_name": "Hammer Grotto",
                     "access_rules": [
-                      "scrub_shuffle_yes,sword2,hammer"
+                      "setting_scrub_shuffle_yes,sword2,hammer"
                     ],
                     "sections": [
                       {
@@ -3716,7 +3716,7 @@
                         "access_rules": [
                           "@Link the Goron",
                           "ocarina,bolero,hookshot",
-                          "ocarina,bolero,beans_plant_no,beans",
+                          "ocarina,bolero,setting_beans_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots"
                         ],
@@ -3766,7 +3766,7 @@
                   {
                     "name": "DMC Deku Scrub",
                     "access_rules": [
-                      "scrub_shuffle_yes"
+                      "setting_scrub_shuffle_yes"
                     ],
                     "sections": [
                       {
@@ -3793,7 +3793,7 @@
                     "name": "Death Mountain Crater Crate",
                     "short_name": "Crate at Entrance",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -3823,14 +3823,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,beans_plant_yes,bean_crater_no"
+                          "beans,setting_beans_yes,bean_crater_no"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
                       {
                         "name": "GS37",
                         "access_rules": [
-                          "all_skulltulas,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3977,7 +3977,7 @@
                   {
                     "name": "Bombchu Shop",
                     "access_rules": [
-                      "shopsanity_yes"
+                      "setting_shopsanity_yes"
                     ],
                     "sections": [
                       {
@@ -4013,7 +4013,7 @@
                     "name": "Castle Town Potion Shop",
                     "short_name": "Market Potion Shop",
                     "access_rules": [
-                      "shopsanity_yes"
+                      "setting_shopsanity_yes"
                     ],
                     "sections": [
                       {
@@ -4049,7 +4049,7 @@
                     "name": "Castle Town Bazaar",
                     "short_name": "Market Bazaar",
                     "access_rules": [
-                      "shopsanity_yes"
+                      "setting_shopsanity_yes"
                     ],
                     "sections": [
                       {
@@ -4156,7 +4156,7 @@
                     "name": "Castle Market Guard House",
                     "short_name": "Guardhouse",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -4285,7 +4285,7 @@
                     "name": "Hyrule Castle Tree",
                     "short_name": "Tree near Malon",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -4309,7 +4309,7 @@
                   {
                     "name": "Castle Storms Grotto",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -4410,7 +4410,7 @@
                   {
                     "name": "Outside Ganon's Castle",
                     "access_rules": [
-                      "all_skulltulas,sword2"
+                      "setting_skulltulas_all,sword2"
                     ],
                     "sections": [
                       {
@@ -4619,7 +4619,7 @@
                   {
                     "name": "Zora River Storms Grotto",
                     "access_rules": [
-                      "scrub_shuffle_yes,ocarina,storm"
+                      "setting_scrub_shuffle_yes,ocarina,storm"
                     ],
                     "sections": [
                       {
@@ -4658,7 +4658,7 @@
                   {
                     "name": "Zora River Tree",
                     "access_rules": [
-                      "all_skulltulas,$can_child_attack"
+                      "setting_skulltulas_all,$can_child_attack"
                     ],
                     "sections": [
                       {
@@ -4679,7 +4679,7 @@
                   {
                     "name": "Zora River Ladder",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -4705,7 +4705,7 @@
                     "name": "Zora River Near Raised Grottos",
                     "short_name": "Plateau Wall",
                     "access_rules": [
-                      "all_skulltulas,sword2"
+                      "setting_skulltulas_all,sword2"
                     ],
                     "sections": [
                       {
@@ -4734,7 +4734,7 @@
                     "name": "Zora River Above Bridge",
                     "short_name": "Wall Above Bridge",
                     "access_rules": [
-                      "all_skulltulas,sword2"
+                      "setting_skulltulas_all,sword2"
                     ],
                     "sections": [
                       {
@@ -4927,7 +4927,7 @@
                   {
                     "name": "Frozen Waterfall",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -4955,10 +4955,10 @@
               {
                 "name": "Zora Shop",
                 "access_rules": [
-                  "shopsanity_yes,$has_explosives,[ocarina],[lullaby]",
-                  "shopsanity_yes,scale1",
-                  "shopsanity_yes,sword2,ocarina,lullaby,$has_bottle",
-                  "shopsanity_yes,sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
+                  "setting_shopsanity_yes,$has_explosives,[ocarina],[lullaby]",
+                  "setting_shopsanity_yes,scale1",
+                  "setting_shopsanity_yes,sword2,ocarina,lullaby,$has_bottle",
+                  "setting_shopsanity_yes,sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
                 ],
                 "sections": [
                   {
@@ -5084,7 +5084,7 @@
                     "name": "Zora's Fountain Hidden Cave",
                     "short_name": "Hidden Cave",
                     "access_rules": [
-                      "all_skulltulas,$adult_fountain"
+                      "setting_skulltulas_all,$adult_fountain"
                     ],
                     "sections": [
                       {
@@ -5114,7 +5114,7 @@
                     "name": "Zora's Fountain Tree",
                     "short_name": "Tree",
                     "access_rules": [
-                      "all_skulltulas,$child_fountain"
+                      "setting_skulltulas_all,$child_fountain"
                     ],
                     "sections": [
                       {
@@ -5136,7 +5136,7 @@
                     "name": "Zora's Fountain Above the Log",
                     "short_name": "Wall near Log",
                     "access_rules": [
-                      "all_skulltulas,$child_fountain"
+                      "setting_skulltulas_all,$child_fountain"
                     ],
                     "sections": [
                       {
@@ -5279,7 +5279,7 @@
                       {
                         "name": "Cow",
                         "access_rules": [
-                          "ocarina,epona,cowsanity_yes"
+                          "ocarina,epona,setting_cowsanity_yes"
                         ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
@@ -5306,7 +5306,7 @@
                     "name": "Gerudo Valley Small Bridge",
                     "short_name": "Waterfall Near Entrance",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -5334,7 +5334,7 @@
                   {
                     "name": "Gerudo Valley Bean Patch",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -5433,7 +5433,7 @@
                   {
                     "name": "Gerudo Valley Storms Grotto",
                     "access_rules": [
-                      "scrub_shuffle_yes"
+                      "setting_scrub_shuffle_yes"
                     ],
                     "sections": [
                       {
@@ -5459,7 +5459,7 @@
                     "name": "Gerudo Valley Behind Tent",
                     "short_name": "GV Behind Tent",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -5488,7 +5488,7 @@
                     "name": "Gerudo Valley Pillar",
                     "short_name": "GV Pillar",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -5569,8 +5569,8 @@
                       {
                         "name": "Archery Range",
                         "access_rules": [
-                          "all_skulltulas,carpenter_rescue_yes",
-                          "all_skulltulas,gerudo_fortress_open"
+                          "setting_skulltulas_all,carpenter_rescue_yes",
+                          "setting_skulltulas_all,gerudo_fortress_open"
                         ],
                         "sections": [
                           {
@@ -5597,7 +5597,7 @@
                       {
                         "name": "Top Floor",
                         "access_rules": [
-                          "all_skulltulas"
+                          "setting_skulltulas_all"
                         ],
                         "sections": [
                           {
@@ -5665,7 +5665,7 @@
                   {
                     "name": "Wasteland Ruins",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -5734,7 +5734,7 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "ocarina,requiem,beans_plant_no,beans,sword2",
+                          "ocarina,requiem,setting_beans_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "{$hintable}",
                           "{$colossus}"
@@ -5797,7 +5797,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "scrub_shuffle_yes,$colossus,lift2"
+                          "setting_scrub_shuffle_yes,$colossus,lift2"
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -5825,14 +5825,14 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,beans_plant_yes,bean_colossus_no"
+                          "beans,setting_beans_yes,bean_colossus_no"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
                       {
                         "name": "GS93",
                         "access_rules": [
-                          "all_skulltulas,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5851,7 +5851,7 @@
                     "name": "Desert Colossus Tree",
                     "short_name": "Tree Near Oasis",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
@@ -5880,13 +5880,13 @@
                     "name": "Desert Colossus Hill",
                     "short_name": "Top Of Platform",
                     "access_rules": [
-                      "all_skulltulas"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
                         "name": "GS95 (N)",
                         "access_rules": [
-                          "ocarina,requiem,beans_plant_no,beans,sword2",
+                          "ocarina,requiem,setting_beans_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "$colossus,longshot,sword2",
                           "{$colossus,bow,sword2}"

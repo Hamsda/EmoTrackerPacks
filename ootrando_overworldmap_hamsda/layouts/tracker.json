@@ -38,18 +38,18 @@
                     "setting_bridge"
                   ],
                   [
-                    "logic_chus",
-                    "type_lens",
-                    "fewer_tunics",
-                    "beans_plant",
+                    "setting_logic_chus",
+                    "setting_lens",
+                    "setting_fewer_tunics",
+                    "setting_beans",
                     "setting_hints",
                     ""
                   ],
                   [
-                    "scrub_shuffle",
-                    "shopsanity",
-                    "cowsanity",
-                    "all_skulltulas",
+                    "setting_scrub_shuffle",
+                    "setting_shopsanity",
+                    "setting_cowsanity",
+                    "setting_skulltulas_off",
                     "",
                     ""
                   ]
@@ -161,14 +161,14 @@
                         ""
                       ],
                       [
-                        "logic_chus",
-                        "type_lens",
-                        "fewer_tunics",
-                        "beans_plant",
-                        "scrub_shuffle",
-                        "shopsanity",
-                        "cowsanity",
-                        "all_skulltulas",
+                        "setting_logic_chus",
+                        "setting_lens",
+                        "setting_fewer_tunics",
+                        "setting_beans",
+                        "setting_scrub_shuffle",
+                        "setting_shopsanity",
+                        "setting_cowsanity",
+                        "setting_skulltulas_off",
                         ""
                       ]
                     ]

@@ -9,7 +9,7 @@ function has(item, amount)
 end
 
 function has_bombchus()
-  if has("logic_chus_yes") then
+  if has("setting_logic_chus_yes") then
     return Tracker:ProviderCountForCode("bombchu")
   else
     return Tracker:ProviderCountForCode("bombs")
@@ -91,7 +91,7 @@ function has_fire()
 end
 
 function can_see_with_lens()
-  if has("lens_wasteland") 
+  if has("setting_lens_wasteland") 
   or has("lens") 
   and has("magic") then
     return 1
@@ -101,7 +101,7 @@ function can_see_with_lens()
 end
 
 function has_goron_tunic()
-  if has("fewer_tunics_yes") 
+  if has("setting_fewer_tunics_yes") 
   or has("redtunic") 
   then
     return 1
@@ -111,7 +111,7 @@ function has_goron_tunic()
 end
 
 function has_zora_tunic()
-  if has("fewer_tunics_yes") 
+  if has("setting_fewer_tunics_yes") 
   or has("bluetunic") 
   then
     return 1
@@ -150,7 +150,7 @@ function colossus()
       return 1, AccessibilityLevel.SequenceBreak
     end
 
-    if has("lens_chest", 0) 
+    if has("setting_lens_chest", 0) 
     and (has("lens", 0) 
     or has("magic", 0)) 
     then

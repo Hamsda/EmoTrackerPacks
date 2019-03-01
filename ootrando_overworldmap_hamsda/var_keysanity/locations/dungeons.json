@@ -52,7 +52,7 @@
       {
         "name": "Deku Tree Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -224,7 +224,7 @@
       {
         "name": "Dodongos Cavern Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -310,7 +310,7 @@
       {
         "name": "Dodongos Cavern Scrubs",
         "access_rules": [
-          "scrub_shuffle_yes"
+          "setting_scrub_shuffle_yes"
         ],
         "sections": [
           {
@@ -417,7 +417,7 @@
       {
         "name": "Jabu Jabu Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -475,7 +475,7 @@
       {
         "name": "Jabu Jabu Scrubs",
         "access_rules": [
-          "scrub_shuffle_yes"
+          "setting_scrub_shuffle_yes"
         ],
         "sections": [
           {
@@ -640,7 +640,7 @@
       {
         "name": "Forest Temple Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -853,7 +853,7 @@
       {
         "name": "Fire Temple Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1060,7 +1060,7 @@
       {
         "name": "Water Temple Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1282,7 +1282,7 @@
       {
         "name": "Shadow Temple Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1539,7 +1539,7 @@
       {
         "name": "Spirit Temple Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1757,7 +1757,7 @@
       {
         "name": "Bottom of the Well Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {
@@ -1915,7 +1915,7 @@
       {
         "name": "Ganons Castle Scrubs",
         "access_rules": [
-          "scrub_shuffle_yes"
+          "setting_scrub_shuffle_yes"
         ],
         "sections": [
           {
@@ -1992,7 +1992,7 @@
       {
         "name": "Ice Cavern Skulltulas",
         "access_rules": [
-          "dungeon_skulltulas"
+          "setting_skulltulas_dungeons"
         ],
         "sections": [
           {

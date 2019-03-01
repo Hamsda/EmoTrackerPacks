@@ -139,16 +139,16 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/lens_all.png",
-        "codes": "type_lens,lens_all"
+        "img": "images/setting_lens_all.png",
+        "codes": "setting_lens,setting_lens_all"
       },
       {
-        "img": "images/lens_wasteland.png",
-        "codes": "lens_wasteland"
+        "img": "images/setting_lens_wasteland.png",
+        "codes": "setting_lens_wasteland"
       },
       {
-        "img": "images/lens_chest.png",
-        "codes": "lens_chest"
+        "img": "images/setting_lens_chest.png",
+        "codes": "setting_lens_chest"
       }
     ]
   },
@@ -160,12 +160,12 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/fewer_tunics_no.png",
-        "codes": "fewer_tunics,fewer_tunics_no"
+        "img": "images/setting_fewer_tunics_no.png",
+        "codes": "setting_fewer_tunics,setting_fewer_tunics_no"
       },
       {
-        "img": "images/fewer_tunics_yes.png",
-        "codes": "fewer_tunics,fewer_tunics_yes",
+        "img": "images/setting_fewer_tunics_yes.png",
+        "codes": "setting_fewer_tunics,setting_fewer_tunics_yes",
         "inherit_codes": false
       }
     ]
@@ -177,12 +177,12 @@
     "loop": true,	
     "stages": [	
       {	
-        "img": "images/logic_chus_no.png",	
-        "codes": "logic_chus,logic_chus_no"	
+        "img": "images/setting_logic_chus_no.png",	
+        "codes": "setting_logic_chus,setting_logic_chus_no"	
       },	
       {	
-        "img": "images/logic_chus_yes.png",	
-        "codes": "logic_chus,logic_chus_yes",	
+        "img": "images/setting_logic_chus_yes.png",	
+        "codes": "setting_logic_chus,setting_logic_chus_yes",	
         "inherit_codes": false	
       }	
     ]	
@@ -194,12 +194,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/scrub_shuffle_no.png",
-        "codes": "scrub_shuffle,scrub_shuffle_no"
+        "img": "images/setting_scrub_shuffle_no.png",
+        "codes": "setting_scrub_shuffle,setting_scrub_shuffle_no"
       },
       {
-        "img": "images/scrub_shuffle_yes.png",
-        "codes": "scrub_shuffle,scrub_shuffle_yes",
+        "img": "images/setting_scrub_shuffle_yes.png",
+        "codes": "setting_scrub_shuffle,setting_scrub_shuffle_yes",
         "inherit_codes": false
       }
     ]
@@ -211,12 +211,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/shopsanity_no.png",
-        "codes": "shopsanity,shopsanity_no"
+        "img": "images/setting_shopsanity_no.png",
+        "codes": "setting_shopsanity,setting_shopsanity_no"
       },
       {
-        "img": "images/shopsanity_yes.png",
-        "codes": "shopsanity,shopsanity_yes",
+        "img": "images/setting_shopsanity_yes.png",
+        "codes": "setting_shopsanity,setting_shopsanity_yes",
         "inherit_codes": false
       }
     ]
@@ -228,12 +228,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/cowsanity_no.png",
-        "codes": "cowsanity,cowsanity_no"
+        "img": "images/setting_cowsanity_no.png",
+        "codes": "setting_cowsanity,setting_cowsanity_no"
       },
       {
-        "img": "images/cowsanity_yes.png",
-        "codes": "cowsanity,cowsanity_yes",
+        "img": "images/setting_cowsanity_yes.png",
+        "codes": "setting_cowsanity,setting_cowsanity_yes",
         "inherit_codes": false
       }
     ]
@@ -245,16 +245,16 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/skulltula_hide.png",
-        "codes": "hide_skulltulas"
+        "img": "images/setting_skulltulas_off.png",
+        "codes": "setting_skulltulas_off"
       },
       {
-        "img": "images/skulltula_dungeon.png",
-        "codes": "dungeon_skulltulas"
+        "img": "images/setting_skulltulas_dungeons.png",
+        "codes": "setting_skulltulas_dungeons"
       },
       {
-        "img": "images/skulltula_all.png",
-        "codes": "all_skulltulas"
+        "img": "images/setting_skulltulas_all.png",
+        "codes": "setting_skulltulas_all"
       }
     ]
   },
@@ -265,12 +265,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/bean_off.png",
-        "codes": "beans_plant,beans_plant_no"
+        "img": "images/setting_beans_off.png",
+        "codes": "setting_beans,setting_beans_no"
       },
       {
-        "img": "images/bean_plant.png",
-        "codes": "beans_plant,beans_plant_yes",
+        "img": "images/setting_beans_plant.png",
+        "codes": "setting_beans,setting_beans_yes",
         "inherit_codes": false
       }
     ]
