@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed stone of agony icon
+
 ## 2.3.1.0
 
 - added Water Temple central bow target chest sequence break for longshot/hoverboots
