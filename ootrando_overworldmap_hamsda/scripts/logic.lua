@@ -290,3 +290,17 @@ function spirit_wall()
     return 1, AccessibilityLevel.SequenceBreak
   end
 end
+
+function hintable()
+  if 
+  has("setting_hints_on")
+  or
+  has("setting_hints_truth") and has("maskoftruth")
+  or
+  has("setting_hints_agony") and has("agony")
+  then
+    return 1
+  else
+    return 0
+  end
+end

@@ -3,6 +3,7 @@
 ## x
 
 - changed stone of agony icon
+- added hints setting and decoupled hintable locations directly from stone of agony
 
 ## 2.3.1.0
 

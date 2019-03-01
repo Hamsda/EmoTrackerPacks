@@ -229,7 +229,7 @@
                 "name": "Kokiri Forest Gossip Stone",
                 "short_name": "Kokiri Gossip Stone",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -251,7 +251,7 @@
                 "name": "Deku Tree Gossip Stone (Left)",
                 "short_name": "DT Gossip Stone (Left)",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -273,7 +273,7 @@
                 "name": "Deku Tree Gossip Stone (Right)",
                 "short_name": "DT Gossip Stone (Right)",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -399,7 +399,7 @@
                     "name": "Skull Mask",
                     "access_rules": [
                       "skullmask",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -408,7 +408,7 @@
                     "name": "Mask of Truth",
                     "access_rules": [
                       "maskoftruth",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -643,7 +643,7 @@
                 "name": "Lost Woods Gossip Stone",
                 "short_name": "LW Gossip Stone",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -734,7 +734,7 @@
                     "access_rules": [
                       "sword2,[ocarina],[saria]",
                       "sword2,[ocarina],[minuet]",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
@@ -825,7 +825,7 @@
                 "name": "Sacred Forest Meadow Maze Gossip Stones",
                 "short_name": "SFM Maze Gossip Stones",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -848,7 +848,7 @@
                 "name": "Sacred Forest Meadow Saria Gossip Stone",
                 "short_name": "SFM Saria Gossip Stone",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -909,7 +909,7 @@
                 "name": "Ocarina of Time",
                 "access_rules": [
                   "stones:3",
-                  "{agony}"
+                  "{$hintable}"
                 ],
                 "sections": [
                   {
@@ -1163,7 +1163,7 @@
                       "{all_skulltulas,$has_explosives,dinsfire,magic}",
                       "all_skulltulas,sword2,hammer,$has_fire,hookshot",
                       "{all_skulltulas,sword2,hammer,$has_fire}",
-                      "{all_skulltulas,agony}"
+                      "{all_skulltulas,$hintable}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -1187,7 +1187,7 @@
                     "map": "child",
                     "visibility_rules": [
                       "$has_explosives,dinsfire,magic",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "x": 972,
                     "y": 658
@@ -1196,7 +1196,7 @@
                     "map": "adult",
                     "visibility_rules": [
                       "sword2,hammer,$has_fire",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "x": 972,
                     "y": 658
@@ -1207,7 +1207,7 @@
                 "name": "Generic Grotto Gossip Stone",
                 "short_name": "Generic Grotto Gossip Stone",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -1292,7 +1292,7 @@
                 "name": "Field Valley Grotto Gossip Stone",
                 "short_name": "Field Valley Grotto Gossip Stone",
                 "access_rules": [
-                  "agony"
+                  "$hintable"
                 ],
                 "sections": [
                   {
@@ -1366,7 +1366,7 @@
                           "sword2,water",
                           "sword2,beans_plant_no,beans",
                           "sword2,bean_lake_yes",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -1388,7 +1388,7 @@
                         "access_rules": [
                           "sword2,bow,ocarina,[scarecrow],longshot",
                           "sword2,bow,water",
-                          "{agony}",
+                          "{$hintable}",
                           "{sword2,bow}"
                         ],
                         "capture_item": true,
@@ -1671,7 +1671,7 @@
                     "name": "Lake Hylia Lab Gossip Stone",
                     "short_name": "LH Lab Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -1693,7 +1693,7 @@
                     "name": "Lake Hylia Gossip Stone (Southeast)",
                     "short_name": "LH Gossip Stone (SE)",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -1715,7 +1715,7 @@
                     "name": "Lake Hylia Gossip Stone (Southwest)",
                     "short_name": "LH Gossip Stone (SW)",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -2170,7 +2170,7 @@
                     "name": "Song",
                     "access_rules": [
                       "sword2,ocarina",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
@@ -2193,7 +2193,7 @@
                     "name": "Song",
                     "access_rules": [
                       "sword2,forestmed,noct_meds:2",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
@@ -2310,7 +2310,7 @@
                     "name": "20 Skulltulas",
                     "access_rules": [
                       "skulltula:20",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -2319,7 +2319,7 @@
                     "name": "30 Skulltulas",
                     "access_rules": [
                       "skulltula:30",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -2328,7 +2328,7 @@
                     "name": "40 Skulltulas",
                     "access_rules": [
                       "skulltula:40",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -2337,7 +2337,7 @@
                     "name": "50 Skulltulas",
                     "access_rules": [
                       "skulltula:50",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -2648,7 +2648,7 @@
                         "name": "Play Suns Song",
                         "access_rules": [
                           "ocarina,sun",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -2712,7 +2712,7 @@
                     "short_name": "Royal Tomb",
                     "access_rules": [
                       "ocarina,lullaby",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "sections": [
                       {
@@ -2725,7 +2725,7 @@
                           "sling",
                           "boomerang",
                           "$has_explosives",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/grey_note.png",
@@ -2738,7 +2738,7 @@
                         "access_rules": [
                           "$has_fire",
                           "sticks,[$has_fire]",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -2840,7 +2840,7 @@
                     "name": "Graveyard Gossip Stone",
                     "short_name": "Graveyard Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -2921,7 +2921,7 @@
                           "sword2,lift2",
                           "sword2,hammer",
                           "sword2,$has_explosives,hoverboots,[lift2]",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -2989,7 +2989,7 @@
                           "ocarina,lullaby,sticks,lift1",
                           "dinsfire,magic,bombs",
                           "dinsfire,magic,lift1",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -3012,7 +3012,7 @@
                         "name": "Play Sarias Song",
                         "access_rules": [
                           "ocarina,lullaby,saria",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -3154,7 +3154,7 @@
                     "name": "Goron City Maze Gossip Stone",
                     "short_name": "GC Maze Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -3180,7 +3180,7 @@
                     "name": "Goron City Medigoron Gossip Stone",
                     "short_name": "Medigoron Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -3333,7 +3333,7 @@
                       "sword2,ocarina,bolero,bean_crater_yes",
                       "sword2,ocarina,bolero,hoverboots",
                       "sword2,ocarina,bolero,hookshot",
-                      "{agony}"
+                      "{$hintable}"
                     ],
                     "sections": [
                       {
@@ -3354,7 +3354,7 @@
                         "name": "Help him",
                         "access_rules": [
                           "claimcheck",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -3519,7 +3519,7 @@
                     "name": "Death Mountain Trail Gossip Stone",
                     "short_name": "DMT Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -3549,7 +3549,7 @@
                     "name": "Dodongos Cavern Gossip Stone",
                     "short_name": "DC Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -3659,7 +3659,7 @@
                           "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[beans_plant_no],[beans]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                          "{agony}",
+                          "{$hintable}",
                           "{ocarina,bolero}",
                           "{@Link the Goron}",
                           "{sword2,hammer}"
@@ -3747,7 +3747,7 @@
                         "name": "Song",
                         "access_rules": [
                           "sword2",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/grey_note.png",
@@ -3849,7 +3849,7 @@
                     "name": "Death Mountain Crater Gossip Stone",
                     "short_name": "DMC Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -3960,7 +3960,7 @@
                         "name": "Cheater",
                         "access_rules": [
                           "[lens],[magic]",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -4108,7 +4108,7 @@
                         "name": "Sheik at Temple",
                         "access_rules": [
                           "sword2,forestmed",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/grey_note.png",
@@ -4138,7 +4138,7 @@
                         "name": "Happy Hunting",
                         "access_rules": [
                           "sword2,bow,[ocarina],[epona],$has_bottle",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -4178,7 +4178,7 @@
                     "name": "Temple of Time Gossip Stones",
                     "short_name": "ToT Gossip Stones",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -4317,7 +4317,7 @@
                         "access_rules": [
                           "ocarina,storm,boomerang,$has_explosives",
                           "{ocarina,storm,$has_explosives}",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -4337,7 +4337,7 @@
                     "name": "Hyrule Castle Malon Gossip Stone",
                     "short_name": "HC Malon Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -4359,7 +4359,7 @@
                     "name": "Hyrule Castle Rock Wall Gossip Stone",
                     "short_name": "HC Wall Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -4381,7 +4381,7 @@
                     "name": "Castle Storms Grotto Gossip Stone",
                     "short_name": "HC Storms Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -4476,7 +4476,7 @@
                         "name": "Frog Ocarina Game",
                         "access_rules": [
                           "ocarina,lullaby,saria,epona,sun,time,storm",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -4761,7 +4761,7 @@
                     "name": "Zoras River Plateau Gossip Stone",
                     "short_name": "ZR Plateau Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -4783,7 +4783,7 @@
                     "name": "Zoras River Waterfall Gossip Stone",
                     "short_name": "ZR Waterfall Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -4868,7 +4868,7 @@
                     "name": "Zoras Domain Gossip Stone",
                     "short_name": "ZD Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -5041,7 +5041,7 @@
                         "short_name": "HP",
                         "access_rules": [
                           "$adult_fountain,ironboots,$has_zora_tunic",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -5094,7 +5094,7 @@
                           "{lift2,$can_blast,bow}",
                           "{lift2,$can_blast,dinsfire,magic}",
                           "{lift2,$has_explosives}",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5165,7 +5165,7 @@
                     "name": "Zoras Fountain Fairy Gossip Stone",
                     "short_name": "ZF Fairy Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -5187,7 +5187,7 @@
                     "name": "Zoras Fountain Jabu Gossip Stone",
                     "short_name": "ZF Jabu Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -5359,7 +5359,7 @@
                     "name": "Gerudo Valley Gossip Stone",
                     "short_name": "GV Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {
@@ -5552,7 +5552,7 @@
                             "access_rules": [
                               "ocarina,epona,bow,carpenter_rescue_yes",
                               "ocarina,epona,bow,gerudo_fortress_open",
-                              "{agony}"
+                              "{$hintable}"
                             ],
                             "capture_item": true,
                             "item_count": 1
@@ -5645,7 +5645,7 @@
                         "name": "Torches",
                         "access_rules": [
                           "$has_fire",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -5736,7 +5736,7 @@
                         "access_rules": [
                           "ocarina,requiem,beans_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
-                          "{agony}",
+                          "{$hintable}",
                           "{$colossus}"
                         ],
                         "capture_item": true,
@@ -5763,7 +5763,7 @@
                         "name": "Song",
                         "access_rules": [
                           "$colossus",
-                          "{agony}"
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/grey_note.png",
@@ -5909,7 +5909,7 @@
                     "name": "Desert Colossus Gossip Stone",
                     "short_name": "Colossus Gossip Stone",
                     "access_rules": [
-                      "agony"
+                      "$hintable"
                     ],
                     "sections": [
                       {

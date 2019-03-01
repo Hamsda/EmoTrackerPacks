@@ -569,7 +569,7 @@
         "access_rules": [
           "@Forest Temple/Boss Key Chest",
           "hoverboots",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -789,7 +789,7 @@
         "short_name": "Scarecrow",
         "access_rules": [
           "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -817,7 +817,7 @@
         "short_name": "Hammer",
         "access_rules": [
           "@Fire Temple/Compass Chest,$has_explosives",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -994,7 +994,7 @@
         "short_name": "River",
         "access_rules": [
           "ocarina,time,bow",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1012,7 +1012,7 @@
           "[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
           "[ironboots],longshot,ocarina,lullaby,[hoverboots]",
           "[ironboots],longshot,ocarina,lulla0by,[$has_explosives],[lift1]",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
@@ -1230,7 +1230,7 @@
         "short_name": "Floormaster",
         "access_rules": [
           "@Shadow Temple/Wind Hint Chest,ocarina,lullaby",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1380,7 +1380,7 @@
         "access_rules": [
           "ocarina,requiem,$has_explosives",
           "sword2,lift2",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1457,7 +1457,7 @@
         "short_name": "Left Hand",
         "access_rules": [
           "@Spirit Temple/First Mirror Chests,$has_explosives",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1947,7 +1947,7 @@
         "short_name": "Sheik",
         "access_rules": [
           "$has_bottle",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/grey_note.png",
@@ -2159,7 +2159,7 @@
         "short_name": "Toilet",
         "access_rules": [
           "hookshot,ocarina,time,ironboots,$has_zora_tunic",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2192,7 +2192,7 @@
         "short_name": "Ice Arrows",
         "access_rules": [
           "card",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1

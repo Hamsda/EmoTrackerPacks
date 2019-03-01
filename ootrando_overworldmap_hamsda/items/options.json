@@ -274,5 +274,33 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Hints",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 3,
+    "stages": [
+      {
+        "img": "images/setting_hints_off.png",
+        "codes": "setting_hints,setting_hints_off"
+      },
+      {
+        "img": "images/setting_hints_truth.png",
+        "codes": "setting_hints,setting_hints_truth",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hints_agony.png",
+        "codes": "setting_hints,setting_hints_agony",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hints_on.png",
+        "codes": "setting_hints,setting_hints_on",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

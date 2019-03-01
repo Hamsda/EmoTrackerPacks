@@ -2,7 +2,6 @@
   {
     "name": "Stone of Agony",
     "type": "toggle",
-    "initial_active_state": true,
     "img": "images/agony.png",
     "codes": "agony,soa"
   },

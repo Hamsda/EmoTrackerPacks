@@ -115,6 +115,15 @@ This setting determines how the Magic Beans will be handled on the map.
 - ![Beans off](ootrando_overworldmap_hamsda/images/bean_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
 - ![Plant Beans](ootrando_overworldmap_hamsda/images/bean_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
 
+### Hints
+
+This setting determines when hintable locations will show up on the map ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#gossip-stones)).
+
+- ![Hints off](ootrando_overworldmap_hamsda/images/setting_hints_off.png "Hints off") Hintable locations will never show up on the map.
+- ![Hints Truth](ootrando_overworldmap_hamsda/images/setting_hints_truth.png "Hints Truth") Hintable locations will show up on the map if you have ![Mask of Truth](ootrando_overworldmap_hamsda/images/truth.png "Mask of Truth").
+- ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
+- ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
+
 ### Shuffle Deku Scrubs
 
 This setting determines if all Deku Scrubs have randomized items ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-deku-salescrubs)).

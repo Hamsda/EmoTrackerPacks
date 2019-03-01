@@ -57,7 +57,7 @@
         "short_name": "After Log",
         "access_rules": [
           "@Deku Tree MQ/Compass Chest,ocarina,time",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -577,7 +577,7 @@
             "short_name": "Invisible Enemies",
             "access_rules": [
               "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,$can_see_with_lens",
-              "{agony}"
+              "{$hintable}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
@@ -930,7 +930,7 @@
         "short_name": "West Tower Top",
         "access_rules": [
           "@Fire Temple MQ/Freestanding Key",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1071,7 +1071,7 @@
         "short_name": "Boss Key",
         "access_rules": [
           "longshot,ironboots,dinsfire,magic",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
@@ -1084,7 +1084,7 @@
         "access_rules": [
           "longshot,ironboots,dinsfire,magic,hoverboots",
           "longshot,ironboots,dinsfire,magic,ocarina,[scarecrow]",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
@@ -1309,7 +1309,7 @@
         "short_name": "Dead Hand 2",
         "access_rules": [
           "@Shadow Temple MQ/Freestanding Key",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1488,7 +1488,7 @@
         "short_name": "Child Center",
         "access_rules": [
           "sword2,lift2,longshot,bombchu,ocarina,requiem,hammer",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1583,7 +1583,7 @@
         "short_name": "Adult Right",
         "access_rules": [
           "@Spirit Temple MQ/Lower Adult Left Chest,hammer,ocarina,time,epona,sun,storm,lullaby",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -1761,7 +1761,7 @@
         "access_rules": [
           "sword1",
           "sticks,[sword1]",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2028,7 +2028,7 @@
         "short_name": "Sheik",
         "access_rules": [
           "$has_bottle",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/grey_note.png",
@@ -2174,7 +2174,7 @@
           "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,$has_fire,ironboots,$has_zora_tunic",
           "@Gerudo Training Grounds MQ/Maze Right Chests,longshot,$has_fire,ironboots,$has_zora_tunic",
           "@Gerudo Training Grounds MQ/Maze Right Chests,bow,$has_fire,ironboots,$has_zora_tunic",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2207,7 +2207,7 @@
         "short_name": "Ice Arrows",
         "access_rules": [
           "@Gerudo Training Grounds MQ/Maze Right Central Chest",
-          "{agony}"
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
