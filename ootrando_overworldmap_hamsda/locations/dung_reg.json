@@ -1,0 +1,605 @@
+[
+  {
+    "name": "Deku Tree",
+    "parent": "Kokiri Forest",
+    "access_rules": [
+      "deku_reg,open_forest",
+      "deku_reg,sword1,shield1"
+    ],
+    "sections": [
+      {
+        "name": "Lobby Chest",
+        "short_name": "Map",
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Room",
+        "short_name": "Slingshot",
+        "access_rules": [
+          "shield1"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Compass Room",
+        "short_name": "Compass",
+        "item_count": 2
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "item_count": 1
+      },
+      {
+        "name": "Queen Gohma",
+        "access_rules": [
+          "[sling],shield1"
+        ],
+        "hosted_item": "deku",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "child",
+        "x": 2426,
+        "y": 830
+      }
+    ],
+    "children": [
+      {
+        "name": "Deku Tree Skulltulas",
+        "access_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "sections": [
+          {
+            "name": "GS8 - Compass Room",
+            "short_name": "Compass Room",
+            "access_rules": [
+              "$can_child_attack"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS9 - Basement Vines",
+            "short_name": "Vines",
+            "access_rules": [
+              "sticks,[sling]",
+              "sticks,[$has_explosives]",
+              "sticks,[boomerang]",
+              "sticks,[dinsfire],[magic]",
+              "sword1,[sling]",
+              "sword1,[$has_explosives]",
+              "sword1,[boomerang]",
+              "sword1,[dinsfire],[magic]",
+              "sling",
+              "$has_explosives",
+              "boomerang",
+              "dinsfire,magic"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS10 - Basement Gate",
+            "short_name": "Gate",
+            "access_rules": [
+              "$can_child_attack"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS11 - Basement Back Room",
+            "short_name": "Back Room",
+            "access_rules": [
+              "sticks,$has_explosives,boomerang,[sling]",
+              "dinsfire,magic,$has_explosives,boomerang,[sling]",
+              "{sticks,$has_explosives,sling}",
+              "{dinsfire,magic,$has_explosives,sling}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "child",
+            "x": 2460,
+            "y": 830
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dodongos Cavern",
+    "parent": "Death Mountain",
+    "access_rules": [
+      "dodongo_reg,$can_blast",
+      "dodongo_reg,lift1"
+    ],
+    "sections": [
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "sword2",
+          "sticks",
+          "dinsfire,magic,sling",
+          "dinsfire,magic,sword1",
+          "dinsfire,magic,$has_explosives"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Flower Platform",
+        "short_name": "Bomb Flower",
+        "access_rules": [
+          "@Dodongos Cavern/Compass Chest,$has_explosives",
+          "@Dodongos Cavern/Compass Chest,lift1",
+          "@Dodongos Cavern/Compass Chest,dinsfire,magic",
+          "@Dodongos Cavern/Compass Chest,sword2,bow,[lift1]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Bag Chest",
+        "short_name": "Bomb Bag",
+        "access_rules": [
+          "@Dodongos Cavern/Bomb Flower Platform,$has_explosives,[sling]",
+          "@Dodongos Cavern/Bomb Flower Platform,lift1,[sling]",
+          "@Dodongos Cavern/Bomb Flower Platform,sword2,[bow]",
+          "@Dodongos Cavern/Bomb Flower Platform,sword2,[hoverboots]",
+          "@Dodongos Cavern/Bomb Flower Platform,sword2,[longshot]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "End of Bridge Chest",
+        "short_name": "Bridge",
+        "access_rules": [
+          "@Dodongos Cavern/Bomb Bag Chest,$can_blast"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest Above King Dodongo",
+        "short_name": "Above Boss",
+        "access_rules": [
+          "@Dodongos Cavern/Bomb Bag Chest,$has_explosives"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "King Dodongo",
+        "access_rules": [
+          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sword2",
+          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sword2",
+          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sword1",
+          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sword1",
+          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sticks",
+          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sticks"
+        ],
+        "hosted_item": "dodongo",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "child",
+        "visibility_rules": [
+          "$has_explosives",
+          "lift1"
+        ],
+        "x": 1684,
+        "y": 220
+      },
+      {
+        "map": "adult",
+        "visibility_rules": [
+          "sword2"
+        ],
+        "x": 1684,
+        "y": 220
+      }
+    ],
+    "children": [
+      {
+        "name": "Dodongos Cavern Skulltulas",
+        "access_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "sections": [
+          {
+            "name": "GS38 - East Side Room",
+            "short_name": "East Side",
+            "access_rules": [
+              "$has_explosives",
+              "sword2",
+              "sling",
+              "boomerang",
+              "sticks",
+              "sword1"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS39 - Vines Above Stairs",
+            "short_name": "Vines",
+            "access_rules": [
+              "@Dodongos Cavern/Bomb Flower Platform"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS40 - Back Room",
+            "short_name": "Back Room",
+            "access_rules": [
+              "@Dodongos Cavern/Chest Above King Dodongo"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS41 - Alcove Above Stairs",
+            "short_name": "Above Stairs",
+            "access_rules": [
+              "@Dodongos Cavern/Bomb Bag Chest,boomerang,$has_explosives",
+              "@Dodongos Cavern/Bomb Bag Chest,boomerang,lift1",
+              "@Dodongos Cavern/Bomb Bag Chest,sword2,hookshot",
+              "{@Dodongos Cavern/Bomb Flower Platform,sling}",
+              "{@Dodongos Cavern/Bomb Flower Platform,sword2,bow}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS42 - Scarecrow",
+            "short_name": "Scarecrow",
+            "access_rules": [
+              "sword2,[ocarina],[scarecrow],[hookshot]",
+              "sword2,longshot",
+              "{sling}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "child",
+            "x": 1654,
+            "y": 220
+          },
+          {
+            "map": "adult",
+            "visibility_rules": [
+              "sword2"
+            ],
+            "x": 1654,
+            "y": 220
+          }
+        ]
+      },
+      {
+        "name": "Dodongos Cavern Scrubs",
+        "access_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "sections": [
+          {
+            "name": "Deku Shield",
+            "short_name": "Lobby",
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": 1
+          },
+          {
+            "name": "Deku Sticks",
+            "short_name": "East Side",
+            "access_rules": [
+              "sword2",
+              "sword1",
+              "sticks",
+              "sling",
+              "$has_explosives"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": 1
+          },
+          {
+            "name": "Deku Seeds / Deku Nuts",
+            "short_name": "Near Bombs",
+            "access_rules": [
+              "@Dodongos Cavern/Bomb Flower Platform,$can_blast"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "child",
+            "x": 1624,
+            "y": 220
+          },
+          {
+            "map": "adult",
+            "visibility_rules": [
+              "sword2"
+            ],
+            "x": 1624,
+            "y": 220
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jabu Jabus Belly",
+    "parent": "Zoras Fountain",
+    "access_rules": [
+      "jabu_reg,bottle,sling",
+      "jabu_reg,bottle,$has_explosives",
+      "jabu_reg,bottle,boomerang"
+    ],
+    "sections": [
+      {
+        "name": "Boomerang Chest",
+        "short_name": "Boomerang",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "boomerang"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "boomerang"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Barinade",
+        "access_rules": [
+          "boomerang,sword1",
+          "boomerang,sticks"
+        ],
+        "hosted_item": "jabu",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "child",
+        "x": 2488,
+        "y": 328
+      }
+    ],
+    "children": [
+      {
+        "name": "Jabu Jabu Skulltulas",
+        "access_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "sections": [
+          {
+            "name": "GS51 - Water Switch Room",
+            "short_name": "Water Switch",
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS52 - Lobby Basement Lower",
+            "short_name": "Basement 1",
+            "access_rules": [
+              "boomerang",
+              "{sling}",
+              "{$has_explosives}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS53 - Lobby Basement Upper",
+            "short_name": "Basement 2",
+            "access_rules": [
+              "boomerang",
+              "{sling}",
+              "{$has_explosives}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS54 - Near Boss",
+            "short_name": "Near Boss",
+            "access_rules": [
+              "@Jabu Jabus Belly/Barinade"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "child",
+            "x": 2488,
+            "y": 298
+          }
+        ]
+      },
+      {
+        "name": "Jabu Jabu Scrubs",
+        "access_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "sections": [
+          {
+            "name": "Deku Nuts",
+            "short_name": "B1 Dive",
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "child",
+            "x": 2488,
+            "y": 358
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ice Cavern",
+    "parent": "Zoras Fountain",
+    "access_rules": [
+      "ice_reg,$adult_fountain,$has_bottle"
+    ],
+    "sections": [
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding PoH",
+        "short_name": "Frozen HP",
+        "chest_unopened_img": "images/HP.png",
+        "chest_opened_img": "images/HP_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Iron Boots Chest",
+        "short_name": "Iron Boots",
+        "item_count": 1
+      },
+      {
+        "name": "Sheik in Ice Cavern",
+        "short_name": "Sheik",
+        "access_rules": [
+          "$has_bottle",
+          "{$hintable}"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/grey_note.png",
+        "chest_opened_img": "images/grey_note_check.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "adult",
+        "x": 2501,
+        "y": 276
+      }
+    ],
+    "children": [
+      {
+        "name": "Ice Cavern Skulltulas",
+        "access_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "sections": [
+          {
+            "name": "GS70 - Heart Piece Room",
+            "short_name": "Compass",
+            "access_rules": [
+              "hookshot",
+              "{bow}",
+              "{$has_explosives}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS71 - Spinning Scythe Room",
+            "short_name": "Spinning Scythe",
+            "access_rules": [
+              "hookshot",
+              "{bow}",
+              "{$has_explosives}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "GS72 - Push Block Room",
+            "short_name": "Push Block",
+            "access_rules": [
+              "hookshot",
+              "{bow}",
+              "{$has_explosives}"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "adult",
+            "x": 2501,
+            "y": 246
+          }
+        ]
+      }
+    ]
+  }
+]

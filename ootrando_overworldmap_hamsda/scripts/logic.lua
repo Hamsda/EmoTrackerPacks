@@ -9,7 +9,7 @@ function has(item, amount)
 end
 
 function has_bombchus()
-  if has("logic_chus_yes") then
+  if has("setting_logic_chus_yes") then
     return Tracker:ProviderCountForCode("bombchu")
   else
     return Tracker:ProviderCountForCode("bombs")
@@ -91,7 +91,7 @@ function has_fire()
 end
 
 function can_see_with_lens()
-  if has("lens_wasteland") 
+  if has("setting_lens_wasteland") 
   or has("lens") 
   and has("magic") then
     return 1
@@ -101,7 +101,7 @@ function can_see_with_lens()
 end
 
 function has_goron_tunic()
-  if has("fewer_tunics_yes") 
+  if has("setting_fewer_tunics_yes") 
   or has("redtunic") 
   then
     return 1
@@ -111,7 +111,7 @@ function has_goron_tunic()
 end
 
 function has_zora_tunic()
-  if has("fewer_tunics_yes") 
+  if has("setting_fewer_tunics_yes") 
   or has("bluetunic") 
   then
     return 1
@@ -150,7 +150,7 @@ function colossus()
       return 1, AccessibilityLevel.SequenceBreak
     end
 
-    if has("lens_chest", 0) 
+    if has("setting_lens_chest", 0) 
     and (has("lens", 0) 
     or has("magic", 0)) 
     then
@@ -289,4 +289,75 @@ function spirit_wall()
   else
     return 1, AccessibilityLevel.SequenceBreak
   end
+end
+
+function hintable()
+  if 
+  has("setting_hints_on")
+  or
+  has("setting_hints_truth") and has("maskoftruth")
+  or
+  has("setting_hints_agony") and has("agony")
+  then
+    return 1
+  else
+    return 0
+  end
+end
+
+function update_smallkeys()
+  local dungeons = {
+    "forest",
+    "fire",
+    "water",
+    "spirit",
+    "shadow",
+    "botw",
+    "gtg",
+    "gc"
+  }
+  local key_counts = {
+    vanilla = {
+      forest = 5,
+      fire = 8,
+      water = 6,
+      spirit = 5,
+      shadow = 5,
+      botw = 3,
+      gtg = 9,
+      gc = 2,
+    },
+    mq = {
+      forest = 6,
+      fire = 5,
+      water = 2,
+      spirit = 7,
+      shadow = 6,
+      botw = 2,
+      gtg = 3,
+      gc = 3,
+    }
+  }
+  for _,dungeon in ipairs(dungeons) do
+    local key_object = Tracker:FindObjectForCode(dungeon.."_small_keys")
+    if has(dungeon.."_reg") then
+      key_object.MaxCount = key_counts["vanilla"][dungeon]
+    else
+      key_object.MaxCount = key_counts["mq"][dungeon]
+    end
+  end
+
+  --gerudo fortress special case depends on setting
+  local gf_keys = Tracker:FindObjectForCode("gf_small_keys")
+  if has("gerudo_fortress_normal") then
+    gf_keys.MaxCount = 4
+  elseif has("gerudo_fortress_fast") then
+    gf_keys.MaxCount = 1
+  else
+    gf_keys.MaxCount = 0
+  end
+end
+
+function tracker_on_accessibility_updated()
+  update_smallkeys()
 end
