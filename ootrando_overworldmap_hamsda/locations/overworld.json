@@ -2154,9 +2154,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1935,
                     "y": 346
                   }
@@ -2664,9 +2661,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 2065,
                         "y": 350
                       }
@@ -2701,9 +2695,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1970,
                         "y": 335
                       }
@@ -2754,9 +2745,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 2099,
                         "y": 353
                       }
@@ -5002,10 +4990,6 @@
               },
               {
                 "name": "Zoras Fountain",
-                "access_rules": [
-                  "$child_fountain",
-                  "$adult_fountain"
-                ],
                 "children": [
                   {
                     "name": "Zoras Fountain Fairy",
@@ -5013,7 +4997,8 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "ocarina,lullaby,$has_explosives"
+                          "$child_fountain,ocarina,lullaby,$has_explosives",
+                          "$adult_fountain,ocarina,lullaby,$has_explosives"
                         ],
                         "item_count": 1
                       }
@@ -5021,13 +5006,16 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "$child_fountain"
+                        ],
                         "x": 2553,
                         "y": 333
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2"
+                          "$adult_fountain"
                         ],
                         "x": 2553,
                         "y": 333
@@ -5086,16 +5074,16 @@
                     "name": "Zora's Fountain Hidden Cave",
                     "short_name": "Hidden Cave",
                     "access_rules": [
-                      "setting_skulltulas_all,$adult_fountain"
+                      "setting_skulltulas_all"
                     ],
                     "sections": [
                       {
                         "name": "GS50 (N)",
                         "access_rules": [
-                          "lift2,$can_blast,hookshot",
-                          "{lift2,$can_blast,bow}",
-                          "{lift2,$can_blast,dinsfire,magic}",
-                          "{lift2,$has_explosives}",
+                          "$adult_fountain,lift2,$can_blast,hookshot",
+                          "{$adult_fountain,lift2,$has_explosives}",
+                          "{$adult_fountain,lift2,hammer,bow}",
+                          "{$adult_fountain,lift2,hammer,dinsfire,magic}",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -5167,7 +5155,8 @@
                     "name": "Zoras Fountain Fairy Gossip Stone",
                     "short_name": "ZF Fairy Gossip Stone",
                     "access_rules": [
-                      "$hintable"
+                      "$hintable,$child_fountain",
+                      "$hintable,$adult_fountain"
                     ],
                     "sections": [
                       {
@@ -5189,7 +5178,8 @@
                     "name": "Zoras Fountain Jabu Gossip Stone",
                     "short_name": "ZF Jabu Gossip Stone",
                     "access_rules": [
-                      "$hintable"
+                      "$hintable,$child_fountain",
+                      "$hintable,$adult_fountain"
                     ],
                     "sections": [
                       {
@@ -5720,9 +5710,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 276,
                         "y": 297
                       }
@@ -5750,9 +5737,6 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 160,
                         "y": 305
                       }
@@ -5776,17 +5760,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "ocarina,requiem"
-                        ],
                         "x": 128,
                         "y": 347
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 128,
                         "y": 347
                       }
@@ -5799,7 +5777,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "setting_scrub_shuffle_yes,$colossus,lift2"
+                          "setting_scrub_shuffle_yes,$colossus,sword2,lift2"
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -5810,9 +5788,6 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 195,
                         "y": 305
                       }

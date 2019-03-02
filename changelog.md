@@ -3,6 +3,7 @@
 ## 2.3.2.1
 
 - fixed Gerudo Fortress key counter for `Items Only (Keysanity)` variant
+- changed more hintable locations to be visible from the start
 
 ## 2.3.2.0
 
