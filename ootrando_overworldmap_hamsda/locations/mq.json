@@ -2206,7 +2206,7 @@
         "name": "Ice Arrows Chest",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Maze Right Central Chest",
+          "@Gerudo Training Grounds MQ/Maze Right Chests",
           "{$hintable}"
         ],
         "capture_item": true,

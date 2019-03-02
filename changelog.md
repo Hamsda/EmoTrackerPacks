@@ -5,6 +5,7 @@
 - changed stone of agony icon
 - added hints setting and decoupled hintable locations directly from stone of agony
 - changed keysanity small key counts maximum to adjust depending on vanilla/mq dungeon
+- fixed GTG MQ ice arrows access rules
 
 ## 2.3.1.0
 
