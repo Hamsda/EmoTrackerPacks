@@ -8,6 +8,11 @@
 - fixed GTG MQ ice arrows access rules
 - fixed Fire Temple access to Volvagia with song of time
 - fixed Bottom of the Well access to get past first skulltula
+- added more sequence breaks for newly added logic tricks:
+  - Lake Hylia GS56 lab wall without boomerang
+  - Desert Colossus GS95 hill with only hookshot
+  - Kakariko GS26 watchtower with sticks or sword1
+  - Spirit Temple MQ lower adult without fire arrows
 
 ## 2.3.1.0
 

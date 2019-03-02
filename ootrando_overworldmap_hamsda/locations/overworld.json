@@ -1575,9 +1575,9 @@
                         "name": "GS56 (N)",
                         "access_rules": [
                           "boomerang",
+                          "[boomerang],sticks",
+                          "[boomerang],sword1",
                           "{sling}",
-                          "{sticks}",
-                          "{sword1}",
                           "{$has_explosives}"
                         ],
                         "capture_item": true,
@@ -2553,7 +2553,9 @@
                     "name": "GS26 (N)",
                     "access_rules": [
                       "sling",
-                      "bombchu"
+                      "bombchu",
+                      "sticks,[sling]",
+                      "sword1,[sling]"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -5888,8 +5890,8 @@
                         "access_rules": [
                           "ocarina,requiem,setting_beans_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
-                          "$colossus,longshot,sword2",
-                          "{$colossus,bow,sword2}"
+                          "$colossus,sword2,hookshot,[longshot]",
+                          "{$colossus,sword2,bow}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",

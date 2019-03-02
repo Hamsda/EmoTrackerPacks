@@ -1580,7 +1580,8 @@
         "name": "Lower Adult Left Chest",
         "short_name": "Adult Left",
         "access_rules": [
-          "sword2,lift2,longshot,bombchu,bow,firearrow,magic,shield3"
+          "sword2,lift2,longshot,bombchu,bow,firearrow,magic,shield3",
+          "sword2,lift2,longshot,bombchu,bow,[firearrow],dinsfire,magic,shield3"
         ],
         "item_count": 1
       },
