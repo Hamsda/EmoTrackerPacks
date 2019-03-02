@@ -10,8 +10,10 @@ ScriptHost:LoadScript("scripts/logic.lua")
 Tracker:AddMaps("maps/maps.json")
 
 Tracker:AddLocations("locations/overworld.json")
-Tracker:AddLocations("locations/dungeons.json")
-Tracker:AddLocations("locations/mq.json")
+Tracker:AddLocations("locations/dung_reg.json")
+Tracker:AddLocations("locations/dung_reg_keys.json")
+Tracker:AddLocations("locations/dung_mq.json")
+Tracker:AddLocations("locations/dung_mq_keys.json")
 
 Tracker:AddLayouts("layouts/shared.json")
 Tracker:AddLayouts("layouts/tracker.json")
