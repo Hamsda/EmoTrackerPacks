@@ -161,6 +161,23 @@ function colossus()
   end
 end
 
+function link_the_goron()
+  if has("sword2") then
+    if 
+    (
+      has("lift1")
+      or
+      has("bow")
+    )
+    then
+      return 1
+    else
+      return has_explosives()
+    end
+  end
+  return 0
+end
+
 function child_fountain()
   if has("ruto", 0) 
   and has("open_fountain", 0) 

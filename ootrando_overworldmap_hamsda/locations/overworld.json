@@ -2931,9 +2931,7 @@
                       {
                         "name": "Stop him",
                         "access_rules": [
-                          "sword2,lift1",
-                          "sword2,$has_explosives",
-                          "sword2,bow"
+                          "$link_the_goron"
                         ],
                         "item_count": 1
                       }
@@ -3317,12 +3315,12 @@
                   {
                     "name": "Biggoron",
                     "access_rules": [
-                      "@Link the Goron",
                       "sword2,$can_blast",
                       "sword2,ocarina,bolero,setting_beans_no,beans",
                       "sword2,ocarina,bolero,bean_crater_yes",
                       "sword2,ocarina,bolero,hoverboots",
                       "sword2,ocarina,bolero,hookshot",
+                      "$link_the_goron",
                       "{$hintable}"
                     ],
                     "sections": [
@@ -3516,7 +3514,7 @@
                         "name": "Check it",
                         "access_rules": [
                           "$can_blast",
-                          "@Link the Goron",
+                          "$link_the_goron",
                           "ocarina,bolero,setting_beans_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "ocarina,bolero,hoverboots",
@@ -3645,13 +3643,13 @@
                           "sword2,ocarina,bolero,bean_crater_yes",
                           "sword2,ocarina,bolero,hoverboots,[setting_beans_no],[beans]",
                           "sword2,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "@Link the Goron,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
-                          "@Link the Goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
+                          "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "{$hintable}",
                           "{ocarina,bolero}",
-                          "{@Link the Goron}",
+                          "{$link_the_goron}",
                           "{sword2,hammer}"
                         ],
                         "capture_item": true,
@@ -3677,7 +3675,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "@Link the Goron",
+                          "$link_the_goron",
                           "ocarina,bolero,hookshot",
                           "ocarina,bolero,setting_beans_no,beans",
                           "ocarina,bolero,bean_crater_yes",
@@ -3704,7 +3702,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "@Link the Goron",
+                          "$link_the_goron",
                           "ocarina,bolero,hookshot",
                           "ocarina,bolero,setting_beans_no,beans",
                           "ocarina,bolero,bean_crater_yes",
