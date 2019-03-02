@@ -7,6 +7,7 @@
 - changed keysanity small key counts maximum to adjust depending on vanilla/mq dungeon
 - fixed GTG MQ ice arrows access rules
 - fixed Fire Temple access to Volvagia with song of time
+- fixed Bottom of the Well access to get past first skulltula
 
 ## 2.3.1.0
 

@@ -1628,7 +1628,8 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "botw_reg,ocarina,storm"
+      "botw_reg,ocarina,storm,$can_child_attack",
+      "botw_reg,ocarina,storm,nuts"
     ],
     "sections": [
       {
