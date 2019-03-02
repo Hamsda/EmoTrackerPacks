@@ -825,8 +825,9 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "@Fire Temple/Compass Chest,$has_explosives,hammer",
-          "[hoverboots],hammer,[redtunic]"
+          "hammer,@Fire Temple/Compass Chest,ocarina,time",
+          "hammer,@Fire Temple/Compass Chest,$has_explosives",
+          "hammer,[hoverboots],[redtunic]"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
