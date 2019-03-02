@@ -178,6 +178,23 @@ function link_the_goron()
   return 0
 end
 
+function dmc_central()
+  if has("sword2") then
+    if
+    has("ocarina") and has("bolero")
+    or
+    has("hammer") and has("hoverboots")
+    then
+      return 1
+    else
+      if has("hoverboots") or has("hookshot") then
+        return link_the_goron()
+      end
+    end
+  end
+  return 0
+end
+
 function child_fountain()
   if has("ruto", 0) 
   and has("open_fountain", 0) 

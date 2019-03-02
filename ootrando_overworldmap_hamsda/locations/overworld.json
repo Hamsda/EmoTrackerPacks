@@ -3724,17 +3724,11 @@
                   },
                   {
                     "name": "Sheik in Crater",
-                    "access_rules": [
-                      "sword2,ocarina,bolero",
-                      "sword2,hammer,hoverboots",
-                      "@Link the Goron,hoverboots",
-                      "@Link the Goron,hookshot"
-                    ],
                     "sections": [
                       {
                         "name": "Song",
                         "access_rules": [
-                          "sword2",
+                          "$dmc_central",
                           "{$hintable}"
                         ],
                         "capture_item": true,
