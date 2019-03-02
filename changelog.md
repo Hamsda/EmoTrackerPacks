@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.2.1
+
+- fixed Gerudo Fortress key counter for `Items Only (Keysanity)` variant
+
 ## 2.3.2.0
 
 - changed stone of agony icon

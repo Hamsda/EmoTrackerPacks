@@ -5,6 +5,10 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 Tracker:AddItems("items/sequences.json")
 
+if Tracker.ActiveVariantUID == "var_itemsonlykeysanity" then
+  Tracker:FindObjectForCode("setting_gerudo").CurrentStage = 0
+end
+
 ScriptHost:LoadScript("scripts/logic.lua")
 
 Tracker:AddMaps("maps/maps.json")
