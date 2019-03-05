@@ -433,7 +433,7 @@
     "name": "Jabu Jabus Belly MQ",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "jabu_mq,bottle"
+      "jabu_mq,$child_fountain,bottle"
     ],
     "sections": [
       {

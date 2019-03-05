@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.2.2
+
+- fixed Jabu Jabu access
+
 ## 2.3.2.1
 
 - fixed Gerudo Fortress key counter for `Items Only (Keysanity)` variant
