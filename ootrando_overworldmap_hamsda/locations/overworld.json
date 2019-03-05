@@ -5276,14 +5276,6 @@
                         "map": "child",
                         "x": 670,
                         "y": 600
-                      },
-                      {
-                        "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
-                        "x": 670,
-                        "y": 600
                       }
                     ]
                   },
