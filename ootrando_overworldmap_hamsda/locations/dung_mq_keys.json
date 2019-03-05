@@ -207,7 +207,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "fire_mq,@Sheik in Crater,$has_goron_tunic"
+      "fire_mq,$dmc_central,$has_goron_tunic"
     ],
     "sections": [
       {
