@@ -3174,7 +3174,8 @@
                       {
                         "name": "Check it",
                         "access_rules": [
-                          "$can_blast"
+                          "$can_blast",
+                          "lift1"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",
