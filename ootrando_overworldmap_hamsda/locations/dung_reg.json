@@ -368,9 +368,9 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "jabu_reg,bottle,sling",
-      "jabu_reg,bottle,$has_explosives",
-      "jabu_reg,bottle,boomerang"
+      "jabu_reg,$child_fountain,bottle,sling",
+      "jabu_reg,$child_fountain,bottle,$has_explosives",
+      "jabu_reg,$child_fountain,bottle,boomerang"
     ],
     "sections": [
       {
