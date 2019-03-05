@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed skulltula house to always be visible on adult map
+
 ## 2.3.2.2
 
 - fixed Jabu Jabu access
