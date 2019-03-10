@@ -44,6 +44,9 @@
     "map_locations": [
       {
         "map": "child",
+        "visibility_rules": [
+          "deku_reg"
+        ],
         "x": 2426,
         "y": 830
       }
@@ -114,6 +117,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "deku_reg,setting_skulltulas_dungeons"
+            ],
             "x": 2460,
             "y": 830
           }
@@ -205,8 +211,7 @@
       {
         "map": "child",
         "visibility_rules": [
-          "$has_explosives",
-          "lift1"
+          "dodongo_reg"
         ],
         "x": 1684,
         "y": 220
@@ -214,7 +219,7 @@
       {
         "map": "adult",
         "visibility_rules": [
-          "sword2"
+          "dodongo_reg"
         ],
         "x": 1684,
         "y": 220
@@ -294,13 +299,16 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "dodongo_reg,setting_skulltulas_dungeons"
+            ],
             "x": 1654,
             "y": 220
           },
           {
             "map": "adult",
             "visibility_rules": [
-              "sword2"
+              "dodongo_reg,setting_skulltulas_dungeons"
             ],
             "x": 1654,
             "y": 220
@@ -349,13 +357,16 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "dodongo_reg,setting_scrub_shuffle_yes"
+            ],
             "x": 1624,
             "y": 220
           },
           {
             "map": "adult",
             "visibility_rules": [
-              "sword2"
+              "dodongo_reg,setting_scrub_shuffle_yes"
             ],
             "x": 1624,
             "y": 220
@@ -409,6 +420,9 @@
     "map_locations": [
       {
         "map": "child",
+        "visibility_rules": [
+          "jabu_reg"
+        ],
         "x": 2488,
         "y": 328
       }
@@ -467,6 +481,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "jabu_reg,setting_skulltulas_dungeons"
+            ],
             "x": 2488,
             "y": 298
           }
@@ -489,6 +506,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "jabu_reg,setting_scrub_shuffle_yes"
+            ],
             "x": 2488,
             "y": 358
           }
@@ -541,6 +561,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "ice_reg"
+        ],
         "x": 2501,
         "y": 276
       }
@@ -595,6 +618,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "ice_reg,setting_skulltulas_dungeons"
+            ],
             "x": 2501,
             "y": 246
           }

@@ -133,6 +133,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "forest_reg"
+        ],
         "x": 2148,
         "y": 596
       }
@@ -195,6 +198,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "forest_reg,setting_skulltulas_dungeons"
+            ],
             "x": 2148,
             "y": 566
           }
@@ -341,6 +347,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "fire_reg"
+        ],
         "x": 1912,
         "y": 80
       }
@@ -406,6 +415,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "fire_reg,setting_skulltulas_dungeons"
+            ],
             "x": 1942,
             "y": 80
           }
@@ -537,6 +549,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "water_reg"
+        ],
         "x": 1015,
         "y": 1380
       }
@@ -610,6 +625,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "water_reg,setting_skulltulas_dungeons"
+            ],
             "x": 1015,
             "y": 1350
           }
@@ -755,6 +773,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "shadow_reg"
+        ],
         "x": 2144,
         "y": 326
       }
@@ -824,6 +845,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "shadow_reg,setting_skulltulas_dungeons"
+            ],
             "x": 2174,
             "y": 326
           }
@@ -999,7 +1023,7 @@
       {
         "map": "child",
         "visibility_rules": [
-          "ocarina,requiem"
+          "spirit_reg"
         ],
         "x": 85,
         "y": 301
@@ -1007,7 +1031,7 @@
       {
         "map": "adult",
         "visibility_rules": [
-          "sword2"
+          "spirit_reg"
         ],
         "x": 85,
         "y": 301
@@ -1085,7 +1109,7 @@
           {
             "map": "child",
             "visibility_rules": [
-              "ocarina,requiem"
+              "spirit_reg,setting_skulltulas_dungeons"
             ],
             "x": 85,
             "y": 271
@@ -1093,7 +1117,7 @@
           {
             "map": "adult",
             "visibility_rules": [
-              "sword2"
+              "spirit_reg,setting_skulltulas_dungeons"
             ],
             "x": 85,
             "y": 271
@@ -1228,6 +1252,9 @@
     "map_locations": [
       {
         "map": "child",
+        "visibility_rules": [
+          "botw_reg"
+        ],
         "x": 1890,
         "y": 383
       }
@@ -1282,6 +1309,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "botw_reg,setting_skulltulas_dungeons"
+            ],
             "x": 1890,
             "y": 413
           }
@@ -1386,6 +1416,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "gc_reg"
+        ],
         "x": 1439,
         "y": 206
       }
@@ -1411,6 +1444,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "gc_reg,setting_scrub_shuffle_yes"
+            ],
             "x": 1439,
             "y": 176
           }
@@ -1600,6 +1636,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "gtg_reg"
+        ],
         "x": 481,
         "y": 444
       }
