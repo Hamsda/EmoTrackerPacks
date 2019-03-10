@@ -4,6 +4,7 @@
 
 - changed skulltula house to always be visible on adult map
 - swapped spirit and shadow medallion for the lacs medallion
+- changed various locations to be hidden if respective settings are off (scrubs, shops, cows, skulls)
 
 ## 2.3.2.2
 
