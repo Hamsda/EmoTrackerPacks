@@ -132,6 +132,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "forest_mq"
+        ],
         "x": 2178,
         "y": 596
       }
@@ -199,6 +202,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "forest_mq,setting_skulltulas_dungeons"
+            ],
             "x": 2178,
             "y": 566
           }
@@ -329,6 +335,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "fire_mq"
+        ],
         "x": 1912,
         "y": 115
       }
@@ -376,8 +385,10 @@
             "name": "GS68 - Above Fire Wall Maze",
             "short_name": "Above Fire Maze",
             "access_rules": [
-              "@Fire Temple MQ/Freestanding Key,fire_small_keys:4,[fire_small_keys:5]"
+              "@Fire Temple MQ/Freestanding Key,fire_small_keys:4,[fire_small_keys:5]",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -396,6 +407,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "fire_mq,setting_skulltulas_dungeons"
+            ],
             "x": 1942,
             "y": 115
           }
@@ -484,6 +498,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "water_mq"
+        ],
         "x": 985,
         "y": 1380
       }
@@ -510,7 +527,8 @@
             "name": "GS74 - North Basement",
             "short_name": "North Basement",
             "access_rules": [
-              "@Water Temple MQ/Freestanding Key,water_small_keys:2"
+              "@Water Temple MQ/Freestanding Key,water_small_keys:2",
+              "{$hintable}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
@@ -551,6 +569,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "water_mq,setting_skulltulas_dungeons"
+            ],
             "x": 985,
             "y": 1350
           }
@@ -726,6 +747,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "shadow_mq"
+        ],
         "x": 2144,
         "y": 296
       }
@@ -793,6 +817,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "shadow_mq,setting_skulltulas_dungeons"
+            ],
             "x": 2174,
             "y": 296
           }
@@ -1025,7 +1052,7 @@
       {
         "map": "adult",
         "visibility_rules": [
-          "sword2"
+          "spirit_mq"
         ],
         "x": 55,
         "y": 301
@@ -1094,13 +1121,16 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "ocarina,requiem,spirit_mq,setting_skulltulas_dungeons"
+            ],
             "x": 55,
             "y": 271
           },
           {
             "map": "adult",
             "visibility_rules": [
-              "sword2"
+              "spirit_mq,setting_skulltulas_dungeons"
             ],
             "x": 55,
             "y": 271
@@ -1170,6 +1200,9 @@
     "map_locations": [
       {
         "map": "child",
+        "visibility_rules": [
+          "botw_mq"
+        ],
         "x": 1920,
         "y": 383
       }
@@ -1216,6 +1249,9 @@
         "map_locations": [
           {
             "map": "child",
+            "visibility_rules": [
+              "botw_mq,setting_skulltulas_dungeons"
+            ],
             "x": 1920,
             "y": 414
           }
@@ -1338,6 +1374,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "gc_mq"
+        ],
         "x": 1409,
         "y": 206
       }
@@ -1363,6 +1402,9 @@
         "map_locations": [
           {
             "map": "adult",
+            "visibility_rules": [
+              "gc_mq,setting_scrub_shuffle_yes"
+            ],
             "x": 1409,
             "y": 176
           }
@@ -1500,6 +1542,9 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "gtg_mq"
+        ],
         "x": 481,
         "y": 474
       }

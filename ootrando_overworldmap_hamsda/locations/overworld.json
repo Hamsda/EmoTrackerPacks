@@ -44,9 +44,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2133,
                     "y": 902
                   }
@@ -72,9 +69,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2119,
                     "y": 845
                   }
@@ -110,13 +104,16 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "setting_shopsanity_yes"
+                    ],
                     "x": 2220,
                     "y": 917
                   },
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2"
+                      "setting_shopsanity_yes"
                     ],
                     "x": 2220,
                     "y": 917
@@ -131,6 +128,9 @@
                     "short_name": "Cow",
                     "access_rules": [
                       "sword2,ocarina,epona,setting_cowsanity_yes"
+                    ],
+                    "visibility_rules": [
+                      "setting_cowsanity_yes"
                     ],
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
@@ -157,6 +157,9 @@
                       "$can_leave_forest,$can_child_attack",
                       "ocarina,sun,$can_child_attack"
                     ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -180,6 +183,9 @@
                     "name": "GS2",
                     "access_rules": [
                       "$has_bottle,$can_child_attack"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -208,6 +214,9 @@
                       "{sword2,bow}",
                       "{sword2,dinsfire,magic}"
                     ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -217,9 +226,6 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2262,
                     "y": 981
                   }
@@ -298,18 +304,20 @@
             "children": [
               {
                 "name": "Skull Kid",
-                "access_rules": [
-                  "ocarina,saria"
-                ],
                 "sections": [
                   {
                     "name": "Play Sarias Song",
+                    "access_rules": [
+                      "ocarina,saria",
+                      "{$hintable}"
+                    ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Sell Mask",
                     "access_rules": [
-                      "skull"
+                      "ocarina,saria,skull"
                     ],
                     "hosted_item": "skullsold"
                   }
@@ -345,9 +353,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2149,
                     "y": 776
                   }
@@ -506,6 +511,9 @@
                     "access_rules": [
                       "setting_scrub_shuffle_yes"
                     ],
+                    "visibility_rules": [
+                      "setting_scrub_shuffle_yes"
+                    ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
                     "item_count": 1
@@ -522,9 +530,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2192,
                     "y": 724
                   }
@@ -538,6 +543,9 @@
                 "sections": [
                   {
                     "name": "Deku Nuts / Deku Sticks",
+                    "visibility_rules": [
+                      "setting_scrub_shuffle_yes"
+                    ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
                     "clear_as_group": false,
@@ -563,6 +571,9 @@
                     "name": "GS4",
                     "access_rules": [
                       "$has_bottle,$can_child_attack"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -593,6 +604,9 @@
                     "access_rules": [
                       "setting_skulltulas_all,$has_bottle,$can_child_attack",
                       "setting_skulltulas_all,$has_bottle,shield1"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -625,6 +639,9 @@
                       "[ocarina],[minuet],bombchu,longshot,[setting_beans_no,beans]",
                       "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
                       "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -691,9 +708,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2180,
                     "y": 686
                   }
@@ -769,6 +783,9 @@
                       "sword2,[minuet]",
                       "sword2,[saria]"
                     ],
+                    "visibility_rules": [
+                      "setting_scrub_shuffle_yes"
+                    ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
                     "clear_as_group": false,
@@ -806,6 +823,9 @@
                       "{bow}",
                       "{dinsfire,magic}",
                       "{$has_explosives}"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -897,9 +917,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 2030,
                     "y": 883
                   }
@@ -964,9 +981,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1152,
                     "y": 481
                   }
@@ -1000,9 +1014,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1141,
                     "y": 999
                   }
@@ -1025,9 +1036,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1206,
                     "y": 997
                   }
@@ -1056,9 +1064,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1372,
                     "y": 440
                   }
@@ -1086,9 +1091,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1427,
                     "y": 925
                   }
@@ -1128,6 +1130,9 @@
                       "{sword2,bow}",
                       "{dinsfire,magic}"
                     ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -1165,6 +1170,9 @@
                       "{setting_skulltulas_all,sword2,hammer,$has_fire}",
                       "{setting_skulltulas_all,$hintable}"
                     ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -1176,6 +1184,9 @@
                     "access_rules": [
                       "$has_explosives,dinsfire,magic,ocarina,epona,setting_cowsanity_yes",
                       "sword2,hammer,$has_fire,ocarina,epona,setting_cowsanity_yes"
+                    ],
+                    "visibility_rules": [
+                      "setting_cowsanity_yes"
                     ],
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
@@ -1460,9 +1471,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 961,
                         "y": 1200
                       }
@@ -1515,6 +1523,9 @@
                     "sections": [
                       {
                         "name": "Deku Scrubs",
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "clear_as_group": false,
@@ -1529,9 +1540,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 870,
                         "y": 1309
                       }
@@ -1551,6 +1559,9 @@
                         "name": "GS55",
                         "access_rules": [
                           "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1580,6 +1591,9 @@
                           "{sling}",
                           "{$has_explosives}"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1605,6 +1619,9 @@
                         "access_rules": [
                           "$can_child_attack"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -1628,6 +1645,9 @@
                         "name": "GS58 (N)",
                         "access_rules": [
                           "sword2,longshot"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1653,6 +1673,9 @@
                         "name": "GS59",
                         "access_rules": [
                           "sword2,ironboots,hookshot"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1796,6 +1819,9 @@
                         "access_rules": [
                           "ocarina,epona,setting_cowsanity_yes"
                         ],
+                        "visibility_rules": [
+                          "setting_cowsanity_yes"
+                        ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
                         "item_count": 2
@@ -1809,9 +1835,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1227,
                         "y": 690
                       }
@@ -1827,6 +1850,9 @@
                         "access_rules": [
                           "ocarina,epona,setting_cowsanity_yes"
                         ],
+                        "visibility_rules": [
+                          "setting_cowsanity_yes"
+                        ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
                         "item_count": 2
@@ -1840,9 +1866,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1300,
                         "y": 595
                       }
@@ -1860,6 +1883,9 @@
                           "$can_child_attack",
                           "nuts",
                           "shield1"
+                        ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
                         ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -1884,6 +1910,9 @@
                     "sections": [
                       {
                         "name": "GS18",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -1906,6 +1935,9 @@
                     "sections": [
                       {
                         "name": "GS19 (N)",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -1932,6 +1964,9 @@
                           "boomerang",
                           "{sling}",
                           "{bombchu}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -1961,6 +1996,9 @@
                           "{sling}",
                           "{dinsfire,magic}",
                           "{$has_explosives}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -2013,9 +2051,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1787,
                     "y": 381
                   }
@@ -2038,9 +2073,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1865,
                     "y": 326
                   }
@@ -2062,6 +2094,9 @@
                     "access_rules": [
                       "ocarina,epona,setting_cowsanity_yes"
                     ],
+                    "visibility_rules": [
+                      "setting_cowsanity_yes"
+                    ],
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
@@ -2075,9 +2110,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1827,
                     "y": 431
                   }
@@ -2102,9 +2134,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1830,
                     "y": 371
                   }
@@ -2116,8 +2145,10 @@
                   {
                     "name": "Adult Shooting Gallery",
                     "access_rules": [
-                      "sword2,bow"
+                      "sword2,bow",
+                      "{$hintable}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -2348,9 +2379,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2"
-                    ],
                     "x": 1797,
                     "y": 418
                   }
@@ -2386,6 +2414,9 @@
                 "map_locations": [
                   {
                     "map": "adult",
+                    "visibility_rules": [
+                      "setting_shopsanity_yes"
+                    ],
                     "x": 1814,
                     "y": 341
                   }
@@ -2421,6 +2452,9 @@
                 "map_locations": [
                   {
                     "map": "adult",
+                    "visibility_rules": [
+                      "setting_shopsanity_yes"
+                    ],
                     "x": 1780,
                     "y": 347
                   }
@@ -2437,6 +2471,9 @@
                     "name": "GS27 (N)",
                     "access_rules": [
                       "sword2,hookshot"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2460,6 +2497,9 @@
                 "sections": [
                   {
                     "name": "GS22 (N)",
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2482,6 +2522,9 @@
                 "sections": [
                   {
                     "name": "GS23 (N)",
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2504,6 +2547,9 @@
                 "sections": [
                   {
                     "name": "GS24 (N)",
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2526,6 +2572,9 @@
                 "sections": [
                   {
                     "name": "GS25 (N)",
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
+                    ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2553,6 +2602,9 @@
                       "bombchu",
                       "sticks,[sling]",
                       "sword1,[sling]"
+                    ],
+                    "visibility_rules": [
+                      "setting_skulltulas_all"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2631,9 +2683,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 2030,
                         "y": 372
                       }
@@ -2784,6 +2833,9 @@
                           "{dinsfire,magic}",
                           "{$has_explosives}"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2812,6 +2864,9 @@
                         "name": "GS29",
                         "access_rules": [
                           "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -2893,9 +2948,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1606,
                         "y": 98
                       }
@@ -3028,6 +3080,9 @@
                           "hookshot,nayruslove,magic",
                           "ocarina,time"
                         ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "clear_as_group": false,
@@ -3054,6 +3109,9 @@
                         "access_rules": [
                           "$has_explosives"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -3076,6 +3134,9 @@
                     "sections": [
                       {
                         "name": "GS35 (N)",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -3125,13 +3186,16 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "setting_shopsanity_yes"
+                        ],
                         "x": 1646,
                         "y": 128
                       },
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2"
+                          "setting_shopsanity_yes"
                         ],
                         "x": 1646,
                         "y": 128
@@ -3214,9 +3278,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1664,
                         "y": 190
                       }
@@ -3275,9 +3336,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1705,
                         "y": 158
                       }
@@ -3305,9 +3363,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1764,
                         "y": 66
                       }
@@ -3366,6 +3421,9 @@
                         "access_rules": [
                           "$can_blast,ocarina,epona,setting_cowsanity_yes"
                         ],
+                        "visibility_rules": [
+                          "setting_cowsanity_yes"
+                        ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
                         "item_count": 1
@@ -3382,9 +3440,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1730,
                         "y": 190
                       }
@@ -3401,6 +3456,9 @@
                         "name": "GS32 (N)",
                         "access_rules": [
                           "sword2,hammer"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3426,6 +3484,9 @@
                         "name": "GS33 (N)",
                         "access_rules": [
                           "sword2,hammer"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3459,6 +3520,9 @@
                         "access_rules": [
                           "setting_skulltulas_all,$has_bottle"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -3483,6 +3547,9 @@
                         "access_rules": [
                           "$can_blast"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -3496,9 +3563,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1730,
                         "y": 285
                       }
@@ -3587,9 +3651,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1798,
                         "y": 42
                       }
@@ -3625,9 +3686,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1834,
                         "y": 66
                       }
@@ -3709,6 +3767,9 @@
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots"
                         ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "clear_as_group": false,
@@ -3757,8 +3818,13 @@
                         "access_rules": [
                           "$can_blast,$can_child_attack",
                           "$can_blast,nuts",
-                          "$can_blast,shield1"
+                          "$can_blast,shield1",
+                          "{$hintable}"
                         ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "item_count": 1
@@ -3783,6 +3849,9 @@
                         "name": "GS36",
                         "access_rules": [
                           "$can_blast,$can_child_attack"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3814,6 +3883,9 @@
                         "name": "GS37",
                         "access_rules": [
                           "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3919,13 +3991,19 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "$has_bombchus"
+                      "$has_bombchus",
+                      "{$hintable}"
                     ],
                     "sections": [
                       {
-                        "name": "Boom!",
-                        "clear_as_group": false,
-                        "item_count": 2
+                        "name": "1st round",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "2nd round",
+                        "capture_item": true,
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -3987,6 +4065,9 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "setting_shopsanity_yes"
+                        ],
                         "x": 1386,
                         "y": 360
                       }
@@ -4023,6 +4104,9 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "setting_shopsanity_yes"
+                        ],
                         "x": 1493,
                         "y": 325
                       }
@@ -4059,6 +4143,9 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "visibility_rules": [
+                          "setting_shopsanity_yes"
+                        ],
                         "x": 1493,
                         "y": 355
                       }
@@ -4144,6 +4231,9 @@
                     "sections": [
                       {
                         "name": "GS14",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4276,6 +4366,9 @@
                         "access_rules": [
                           "$can_child_attack"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4301,6 +4394,9 @@
                           "ocarina,storm,boomerang,$has_explosives",
                           "{ocarina,storm,$has_explosives}",
                           "{$hintable}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -4398,6 +4494,9 @@
                     "sections": [
                       {
                         "name": "GS17",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4519,9 +4618,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 2092,
                         "y": 540
                       }
@@ -4612,6 +4708,9 @@
                           "scale1",
                           "sword2"
                         ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "clear_as_group": false,
@@ -4630,9 +4729,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 1940,
                         "y": 505
                       }
@@ -4646,6 +4742,9 @@
                     "sections": [
                       {
                         "name": "GS43",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4670,6 +4769,9 @@
                         "access_rules": [
                           "$has_explosives",
                           "scale1,$can_child_attack"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4699,6 +4801,9 @@
                           "{dinsfire,magic}",
                           "{$has_explosives}"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4725,6 +4830,9 @@
                         "access_rules": [
                           "hookshot",
                           "{bow}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -4889,6 +4997,10 @@
                     "sections": [
                       {
                         "name": "Unfreeze him",
+                        "access_rules": [
+                          "{$hintable}"
+                        ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -4919,6 +5031,9 @@
                           "hookshot",
                           "bow",
                           "magic"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4968,13 +5083,16 @@
                 "map_locations": [
                   {
                     "map": "child",
+                    "visibility_rules": [
+                      "setting_shopsanity_yes"
+                    ],
                     "x": 2619,
                     "y": 499
                   },
                   {
                     "map": "adult",
                     "visibility_rules": [
-                      "sword2,$has_bottle"
+                      "$has_bottle,setting_shopsanity_yes"
                     ],
                     "x": 2619,
                     "y": 499
@@ -5079,6 +5197,9 @@
                           "{$adult_fountain,lift2,hammer,dinsfire,magic}",
                           "{$hintable}"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5102,6 +5223,9 @@
                     "sections": [
                       {
                         "name": "GS48",
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -5129,6 +5253,9 @@
                           "{sling}",
                           "{dinsfire,magic}",
                           "{$has_explosives}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5249,9 +5376,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 701,
                         "y": 520
                       }
@@ -5265,6 +5389,9 @@
                         "name": "Cow",
                         "access_rules": [
                           "ocarina,epona,setting_cowsanity_yes"
+                        ],
+                        "visibility_rules": [
+                          "setting_cowsanity_yes"
                         ],
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
@@ -5294,6 +5421,9 @@
                           "{dinsfire,magic}",
                           "{$has_explosives}"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5318,6 +5448,9 @@
                         "name": "GS87",
                         "access_rules": [
                           "$has_bottle,$can_child_attack"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5418,6 +5551,9 @@
                         "access_rules": [
                           "ocarina,storm"
                         ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "clear_as_group": false,
@@ -5447,6 +5583,9 @@
                           "{dinsfire,magic}",
                           "{$has_explosives}"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5474,6 +5613,9 @@
                           "hookshot",
                           "{bow}",
                           "{bombchu}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5557,6 +5699,9 @@
                               "{bow}",
                               "{dinsfire,magic}"
                             ],
+                            "visibility_rules": [
+                              "setting_skulltulas_all"
+                            ],
                             "capture_item": true,
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
@@ -5583,6 +5728,9 @@
                               "[bow]",
                               "[hookshot]",
                               "[hoverboots]"
+                            ],
+                            "visibility_rules": [
+                              "setting_skulltulas_all"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
@@ -5611,7 +5759,8 @@
                   "ocarina,requiem,[sword2],[carpenter_rescue_yes],[hoverboots]",
                   "ocarina,requiem,[sword2],[carpenter_rescue_yes],[longshot]",
                   "ocarina,requiem,[sword2],[gerudo_fortress_open],[hoverboots]",
-                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[longshot]"
+                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[longshot]",
+                  "{$hintable}"
                 ],
                 "children": [
                   {
@@ -5631,9 +5780,6 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 360,
                         "y": 283
                       }
@@ -5649,7 +5795,10 @@
                         "name": "GS92",
                         "access_rules": [
                           "hookshot",
-                          "{}"
+                          "{$hintable}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5660,9 +5809,6 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2"
-                        ],
                         "x": 360,
                         "y": 313
                       }
@@ -5764,6 +5910,9 @@
                         "access_rules": [
                           "setting_scrub_shuffle_yes,$colossus,sword2,lift2"
                         ],
+                        "visibility_rules": [
+                          "setting_scrub_shuffle_yes"
+                        ],
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "clear_as_group": false,
@@ -5796,6 +5945,9 @@
                         "access_rules": [
                           "setting_skulltulas_all,$has_bottle,$can_child_attack"
                         ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
+                        ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -5823,6 +5975,9 @@
                           "{$colossus,sword2,bow}",
                           "{$colossus,sword2,$has_explosives}",
                           "{$colossus,sword2,dinsfire,magic}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5852,6 +6007,9 @@
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "$colossus,sword2,hookshot,[longshot]",
                           "{$colossus,sword2,bow}"
+                        ],
+                        "visibility_rules": [
+                          "setting_skulltulas_all"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
