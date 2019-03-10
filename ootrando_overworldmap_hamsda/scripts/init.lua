@@ -10,6 +10,7 @@ if Tracker.ActiveVariantUID == "var_itemsonlykeysanity" then
 end
 
 ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/update.lua")
 
 Tracker:AddMaps("maps/maps.json")
 
