@@ -5743,7 +5743,8 @@
                   "ocarina,requiem,[sword2],[carpenter_rescue_yes],[hoverboots]",
                   "ocarina,requiem,[sword2],[carpenter_rescue_yes],[longshot]",
                   "ocarina,requiem,[sword2],[gerudo_fortress_open],[hoverboots]",
-                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[longshot]"
+                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[longshot]",
+                  "{$hintable}"
                 ],
                 "children": [
                   {
