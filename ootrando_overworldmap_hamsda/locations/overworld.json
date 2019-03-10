@@ -304,18 +304,20 @@
             "children": [
               {
                 "name": "Skull Kid",
-                "access_rules": [
-                  "ocarina,saria"
-                ],
                 "sections": [
                   {
                     "name": "Play Sarias Song",
+                    "access_rules": [
+                      "ocarina,saria",
+                      "{$hintable}"
+                    ],
+                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Sell Mask",
                     "access_rules": [
-                      "skull"
+                      "ocarina,saria,skull"
                     ],
                     "hosted_item": "skullsold"
                   }
@@ -2143,8 +2145,10 @@
                   {
                     "name": "Adult Shooting Gallery",
                     "access_rules": [
-                      "sword2,bow"
+                      "sword2,bow",
+                      "{$hintable}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3814,11 +3818,13 @@
                         "access_rules": [
                           "$can_blast,$can_child_attack",
                           "$can_blast,nuts",
-                          "$can_blast,shield1"
+                          "$can_blast,shield1",
+                          "{$hintable}"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/deku_scrub.png",
                         "chest_opened_img": "images/deku_scrub_grey.png",
                         "item_count": 1
@@ -3985,13 +3991,19 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "$has_bombchus"
+                      "$has_bombchus",
+                      "{$hintable}"
                     ],
                     "sections": [
                       {
-                        "name": "Boom!",
-                        "clear_as_group": false,
-                        "item_count": 2
+                        "name": "1st round",
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "2nd round",
+                        "capture_item": true,
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -4985,6 +4997,10 @@
                     "sections": [
                       {
                         "name": "Unfreeze him",
+                        "access_rules": [
+                          "{$hintable}"
+                        ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -5779,7 +5795,7 @@
                         "name": "GS92",
                         "access_rules": [
                           "hookshot",
-                          "{}"
+                          "{$hintable}"
                         ],
                         "visibility_rules": [
                           "setting_skulltulas_all"

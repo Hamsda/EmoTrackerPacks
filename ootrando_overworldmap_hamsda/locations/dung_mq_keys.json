@@ -379,8 +379,10 @@
             "name": "GS68 - Above Fire Wall Maze",
             "short_name": "Above Fire Maze",
             "access_rules": [
-              "@Fire Temple MQ/Freestanding Key"
+              "@Fire Temple MQ/Freestanding Key",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -519,7 +521,8 @@
             "name": "GS74 - North Basement",
             "short_name": "North Basement",
             "access_rules": [
-              "@Water Temple MQ/Freestanding Key"
+              "@Water Temple MQ/Freestanding Key",
+              "{$hintable}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",

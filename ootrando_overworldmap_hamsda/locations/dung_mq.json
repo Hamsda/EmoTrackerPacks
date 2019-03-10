@@ -120,7 +120,8 @@
             "short_name": "Ceiling",
             "access_rules": [
               "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time",
-              "{@Deku Tree MQ/Compass Chest,sling}"
+              "{@Deku Tree MQ/Compass Chest,sling}",
+              "{$hintable}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
