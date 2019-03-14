@@ -1512,6 +1512,7 @@
           "gerudo_fortress_normal,gf_small_keys:4,[hoverboots]",
           "gerudo_fortress_fast,gf_small_keys:1"
         ],
+        "capture_item": true,
         "hosted_item": "carpenter_rescue_yes",
         "item_count": 1
       }

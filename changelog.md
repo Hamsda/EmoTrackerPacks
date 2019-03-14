@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added new settings that capture a few items to their default locations
+
 ## 2.3.3.0
 
 - changed skulltula house to always be visible on adult map

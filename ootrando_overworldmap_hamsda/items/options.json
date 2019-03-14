@@ -302,5 +302,74 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Shuffle Kokiri Sword",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_sword1_no.png",
+        "codes": "setting_shuffle_sword1,setting_shuffle_sword1_no"
+      },
+      {
+        "img": "images/setting_shuffle_sword1_yes.png",
+        "codes": "setting_shuffle_sword1,setting_shuffle_sword1_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Ocarinas",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_ocarinas_no.png",
+        "codes": "setting_shuffle_ocarinas,setting_shuffle_ocarinas_no"
+      },
+      {
+        "img": "images/setting_shuffle_ocarinas_yes.png",
+        "codes": "setting_shuffle_ocarinas,setting_shuffle_ocarinas_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Weird Egg",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_egg_no.png",
+        "codes": "setting_shuffle_egg,setting_shuffle_egg_no"
+      },
+      {
+        "img": "images/setting_shuffle_egg_yes.png",
+        "codes": "setting_shuffle_egg,setting_shuffle_egg_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Gerudo Card",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_card_no.png",
+        "codes": "setting_shuffle_card,setting_shuffle_card_no"
+      },
+      {
+        "img": "images/setting_shuffle_card_yes.png",
+        "codes": "setting_shuffle_card,setting_shuffle_card_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

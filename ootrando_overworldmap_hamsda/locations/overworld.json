@@ -17,6 +17,7 @@
                 "sections": [
                   {
                     "name": "Dodge Boulder",
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -906,6 +907,7 @@
                 "sections": [
                   {
                     "name": "Gift from Saria",
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -1763,7 +1765,7 @@
                 "color": "#09a09d",
                 "children": [
                   {
-                    "name": "Malon",
+                    "name": "Malon at Ranch",
                     "sections": [
                       {
                         "name": "Song from Malon",
@@ -4275,10 +4277,11 @@
                 "name": "Hyrule Castle",
                 "children": [
                   {
-                    "name": "Malon",
+                    "name": "Malon at Castle",
                     "sections": [
                       {
                         "name": "Talk to her",
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],

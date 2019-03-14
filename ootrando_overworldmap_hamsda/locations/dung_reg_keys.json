@@ -1466,6 +1466,7 @@
           "gerudo_fortress_normal,[hoverboots]",
           "gerudo_fortress_fast"
         ],
+        "capture_item": true,
         "hosted_item": "carpenter_rescue_yes",
         "item_count": 1
       }
