@@ -55,21 +55,21 @@
     ]
   },
   {
-    "name": "Heart Piece",
+    "name": "Heart Pieces",
     "type": "consumable",
     "img": "images/HP.png",
     "codes": "HP,PoH",
     "max_quantity": 36
   },
   {
-    "name": "Heart Container",
+    "name": "Heart Containers",
     "type": "consumable",
     "img": "images/HC.png",
     "codes": "HC",
     "max_quantity": 8
   },
   {
-    "name": "Ice Trap",
+    "name": "Ice Traps",
     "type": "consumable",
     "img": "images/icetrap.png",
     "codes": "icetrap",
@@ -89,7 +89,7 @@
     "codes": "lullaby,zl"
   },
   {
-    "name": "Zelda's Lullaby Check",
+    "name": "Zelda's Lullaby w/ check",
     "type": "toggle_badged",
     "base_item": "lullaby",
     "img": "images/check.png",
@@ -103,7 +103,7 @@
     "codes": "saria"
   },
   {
-    "name": "Saria's Song Check",
+    "name": "Saria's Song w/ check",
     "type": "toggle_badged",
     "base_item": "saria",
     "img": "images/check.png",
@@ -117,7 +117,7 @@
     "codes": "epona"
   },
   {
-    "name": "Epona's Song Check",
+    "name": "Epona's Song w/ check",
     "type": "toggle_badged",
     "base_item": "epona",
     "img": "images/check.png",
@@ -131,7 +131,7 @@
     "codes": "sun"
   },
   {
-    "name": "Sun's Song Check",
+    "name": "Sun's Song w/ check",
     "type": "toggle_badged",
     "base_item": "sun",
     "img": "images/check.png",
@@ -145,7 +145,7 @@
     "codes": "time,sot"
   },
   {
-    "name": "Song of Time Check",
+    "name": "Song of Time w/ check",
     "type": "toggle_badged",
     "base_item": "time",
     "img": "images/check.png",
@@ -159,7 +159,7 @@
     "codes": "storm,sos"
   },
   {
-    "name": "Song of Storms Check",
+    "name": "Song of Storms w/ check",
     "type": "toggle_badged",
     "base_item": "storm",
     "img": "images/check.png",
@@ -173,7 +173,7 @@
     "codes": "minuet,mof"
   },
   {
-    "name": "Minuet of Forest Check",
+    "name": "Minuet of Forest w/ check",
     "type": "toggle_badged",
     "base_item": "minuet",
     "img": "images/check.png",
@@ -187,7 +187,7 @@
     "codes": "bolero,bof"
   },
   {
-    "name": "Bolero of Fire Check",
+    "name": "Bolero of Fire w/ check",
     "type": "toggle_badged",
     "base_item": "bolero",
     "img": "images/check.png",
@@ -201,7 +201,7 @@
     "codes": "serenade,sow"
   },
   {
-    "name": "Serenade of Water Check",
+    "name": "Serenade of Water w/ check",
     "type": "toggle_badged",
     "base_item": "serenade",
     "img": "images/check.png",
@@ -215,7 +215,7 @@
     "codes": "requiem,ros"
   },
   {
-    "name": "Requiem of Spirit Check",
+    "name": "Requiem of Spirit w/ check",
     "type": "toggle_badged",
     "base_item": "requiem",
     "img": "images/check.png",
@@ -229,7 +229,7 @@
     "codes": "nocturne,nos"
   },
   {
-    "name": "Nocturne of Shadow Check",
+    "name": "Nocturne of Shadow w/ check",
     "type": "toggle_badged",
     "base_item": "nocturne",
     "img": "images/check.png",
@@ -243,7 +243,7 @@
     "codes": "prelude,pol"
   },
   {
-    "name": "Prelude of Light Check",
+    "name": "Prelude of Light w/ check",
     "type": "toggle_badged",
     "base_item": "prelude",
     "img": "images/check.png",
@@ -262,7 +262,7 @@
     "codes": "firemed"
   },
   {
-    "name": "water Medallion",
+    "name": "Water Medallion",
     "type": "toggle",
     "img": "images/watermedallion.png",
     "codes": "watermed"

@@ -170,7 +170,7 @@
     ]
   },
   {
-    "name": "Bombchu",
+    "name": "Bombchus",
     "type": "toggle",
     "img": "images/bombchu.png",
     "codes": "bombchu,bombchus,chus"
@@ -371,7 +371,7 @@
     ]
   },
   {
-    "name": "Ocarina with Scarecrow",
+    "name": "Ocarina w/ Scarecrow",
     "type": "toggle_badged",
     "base_item": "ocarina",
     "img": "images/scarecrow_badge.png",
