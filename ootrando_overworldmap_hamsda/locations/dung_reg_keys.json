@@ -1467,7 +1467,7 @@
           "gerudo_fortress_fast"
         ],
         "capture_item": true,
-        "hosted_item": "carpenter_rescue_yes",
+        "hosted_item": "carpenter_rescue",
         "item_count": 1
       }
     ],
@@ -1483,7 +1483,7 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_reg,carpenter_rescue_yes,card",
+      "gtg_reg,carpenter_rescue,card",
       "gtg_reg,gerudo_fortress_open,card"
     ],
     "sections": [

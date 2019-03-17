@@ -3,6 +3,7 @@
 ## x
 
 - added new settings that capture a few items to their default locations
+- added an icon for carpenter rescue and made a composite toggle with gerudo card
 
 ## 2.3.3.0
 
