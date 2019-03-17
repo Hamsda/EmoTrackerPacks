@@ -1,6 +1,6 @@
 [
   {
-    "name": "Freebie Label",
+    "name": "Free Label",
     "type": "static",
     "img": "images/label_free.png",
     "codes": "free_label"
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "name": "Deku Prize",
+    "name": "Deku Tree Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "name": "Dodongo's Cavern Label",
+    "name": "Dodongos Cavern Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -114,7 +114,7 @@
     ]
   },
   {
-    "name": "Dodongo Prize",
+    "name": "Dodongos Cavern Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -151,7 +151,7 @@
     ]
   },
   {
-    "name": "Jabu-Jabu Label",
+    "name": "Jabu Jabu Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "name": "Jabu Prize",
+    "name": "Jabu Jabu Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -222,20 +222,20 @@
     ]
   },
   {
-    "name": "Forest Small Keys",
+    "name": "Forest Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "forest_small_keys,forestsmall,forestsk",
     "max_quantity": 6
   },
   {
-    "name": "Forest Boss Key",
+    "name": "Forest Temple Boss Key",
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "forest_boss_key,forestboss,forestbk"
   },
   {
-    "name": "Forest Prize",
+    "name": "Forest Temple Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -289,20 +289,20 @@
     ]
   },
   {
-    "name": "Fire Small Keys",
+    "name": "Fire Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "fire_small_keys,firesmall,firesk",
     "max_quantity": 8
   },
   {
-    "name": "Fire Boss Key",
+    "name": "Fire Temple Boss Key",
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "fire_boss_key,fireboss,firebk"
   },
   {
-    "name": "Fire Prize",
+    "name": "Fire Temple Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -356,20 +356,20 @@
     ]
   },
   {
-    "name": "Water Small Keys",
+    "name": "Water Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "water_small_keys,watersmall,watersk",
     "max_quantity": 6
   },
   {
-    "name": "Water Boss Key",
+    "name": "Water Temple Boss Key",
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "water_boss_key,waterboss,waterbk"
   },
   {
-    "name": "Water Prize",
+    "name": "Water Temple Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -423,20 +423,20 @@
     ]
   },
   {
-    "name": "Spirit Small Keys",
+    "name": "Spirit Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "spirit_small_keys,spiritsmall,spiritsk",
     "max_quantity": 7
   },
   {
-    "name": "Spirit Boss Key",
+    "name": "Spirit Temple Boss Key",
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "spirit_boss_key,spiritboss,spiritbk"
   },
   {
-    "name": "Spirit Prize",
+    "name": "Spirit Temple Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -490,20 +490,20 @@
     ]
   },
   {
-    "name": "Shadow Small Keys",
+    "name": "Shadow Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "shadow_small_keys,shadowsmall,shadowsk",
     "max_quantity": 6
   },
   {
-    "name": "Shadow Boss Key",
+    "name": "Shadow Temple Boss Key",
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "shadow_boss_key,shadowboss,shadowbk"
   },
   {
-    "name": "Shadow Prize",
+    "name": "Shadow Temple Prize",
     "type": "progressive_toggle",
     "loop": true,
     "stages": [
@@ -540,7 +540,7 @@
     ]
   },
   {
-    "name": "BotW Label",
+    "name": "Bottom of the Well Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -557,14 +557,14 @@
     ]
   },
   {
-    "name": "BotW Small Keys",
+    "name": "Bottom of the Well Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "botw_small_keys,botwsmall,botwsk",
     "max_quantity": 3
   },
   {
-    "name": "Ice Label",
+    "name": "Ice Cavern Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -581,20 +581,20 @@
     ]
   },
   {
-    "name": "GF Label",
+    "name": "Gerudo Fortress Label",
     "type": "static",
     "img": "images/label_gf.png",
     "codes": "gf_label"
   },
   {
-    "name": "GF Small Keys",
+    "name": "Gerudo Fortress Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "gf_small_keys,gfsmall,gfsk",
     "max_quantity": 4
   },
   {
-    "name": "GTG Label",
+    "name": "Gerudo Training Grounds Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -611,14 +611,14 @@
     ]
   },
   {
-    "name": "GTG Small Keys",
+    "name": "Gerudo Training Grounds Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "gtg_small_keys,gtgsmall,gtgsk",
     "max_quantity": 9
   },
   {
-    "name": "GC Label",
+    "name": "Ganons Castle Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -635,14 +635,14 @@
     ]
   },
   {
-    "name": "GC Small Keys",
+    "name": "Ganons Castle Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "gc_small_keys,gcsmall,gcsk",
     "max_quantity": 3
   },
   {
-    "name": "GC Boss Key",
+    "name": "Ganons Castle Boss Key",
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "gc_boss_key,gcboss,gcbk"

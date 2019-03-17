@@ -1,4 +1,4 @@
-local dungeons = {
+dungeons = {
   "forest",
   "fire",
   "water",
@@ -8,7 +8,7 @@ local dungeons = {
   "gtg",
   "gc"
 }
-local key_counts = {
+key_counts = {
   vanilla = {
     forest = 5,
     fire = 8,
@@ -30,7 +30,6 @@ local key_counts = {
     gc = 3,
   }
 }
-
 function update_smallkeys()
   for _,dungeon in ipairs(dungeons) do
     local key_object = Tracker:FindObjectForCode(dungeon.."_small_keys")
@@ -54,6 +53,45 @@ function update_smallkeys()
   end
 end
 
+vanilla_captures = {
+  ["setting_shuffle_sword1_yes"] = {
+    ["@Kokiri Sword Chest/Dodge Boulder"] = "sword1"
+  },
+  ["setting_shuffle_ocarinas_yes"] = {
+    ["@Lost Woods Bridge/Gift from Saria"] = "ocarina",
+    ["@Ocarina of Time/Item"] = "ocarina"
+  },
+  ["setting_shuffle_egg_yes"] = {
+    ["@Malon at Castle/Talk to her"] = "childegg"
+  },
+  ["setting_shuffle_card_yes"] = {
+    ["@Carpenter Rescue/Free the carpenters"] = "gerudocard"
+  }
+}
+settings_cache = {}
+function update_captures()
+  for setting,captures in pairs(vanilla_captures) do
+    
+    local has_setting = has(setting)
+    if not settings_cache[setting] or settings_cache[setting] ~= has_setting then
+      settings_cache[setting] = has_setting
+
+      for location,item in pairs(captures) do
+        local location_object = Tracker:FindObjectForCode(location)
+        local item_object = Tracker:FindObjectForCode(item)
+        if location_object and item_object then
+          if has_setting then
+            location_object.CapturedItem = nil
+          else
+            location_object.CapturedItem = item_object
+          end
+        end
+      end
+    end
+  end
+end
+
 function tracker_on_accessibility_updated()
   update_smallkeys()
+  update_captures()
 end

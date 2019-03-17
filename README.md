@@ -86,43 +86,33 @@ This setting determines what is needed to trigger the rainbow bridge in front of
 - ![All Dungeons](ootrando_overworldmap_hamsda/images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
 - ![100 GS tokens](ootrando_overworldmap_hamsda/images/setting_bridge_100gs.png "100 GS tokens") 100 gold skulltula tokens required
 
-### Bombchus in logic
+### Shuffle Kokiri Sword
 
-This setting determines if Bombchus are considered by the logic ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#bombchus-are-considered-in-logic)).
+This setting determines if the Kokiri Sword gets shuffled ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-kokiri-sword)).
 
-- ![Bombchus not in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_no.png "Bombchus not in logic") Bombchus will never be considered by the logic and can be used to sequence break bomb locations.
-- ![Bombchus in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_yes.png "Bombchus in logic") Bombchus can be used as regular explosives like bombs in logic.
+- ![Kokiri Sword not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_sword1_no.png "Kokiri Sword not shuffled") The Kokiri Sword is not shuffled and will be captured in the corresponding chest by default.
+- ![Kokiri Sword shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_sword1_yes.png "Kokiri Sword shuffled") The Kokiri Sword is shuffled into the item pool and will not be captured.
 
-### Lens of Truth
+### Shuffle Ocarinas
 
-This setting changes where the logic requires the Lens of Truth ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#lens-of-truth)).
+This setting determines if the Ocarinas get shuffled ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-ocarinas)).
 
-- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_lens_all.png "Required everywhere") Required to see all invisible things.
-- ![Wasteland and Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
-- ![Only Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
+- ![Ocarinas not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_ocarinas_no.png "Ocarinas not shuffled") The Ocarinas are not shuffled and will be captured in the corresponding chests by default.
+- ![Ocarinas shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_ocarinas_yes.png "Ocarinas shuffled") The Ocarinas are shuffled into the item pool and will not be captured.
 
-### Fewer Tunic Requirements
+### Shuffle Weird Egg
 
-This setting changes where the logic requires Goron and Zora tunics ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#fewer-tunic-requirements)).
+This setting determines if the Weird Egg gets shuffled ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-weird-egg)).
 
-- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
-- ![Fewer requirements](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
+- ![Weird Egg not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_egg_no.png "Weird Egg not shuffled") The Weird Egg is not shuffled and will be captured in the corresponding chest by default.
+- ![Weird Egg shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_egg_yes.png "Weird Egg shuffled") The Weird Egg is shuffled into the item pool and will not be captured.
 
-### Magic Beans
+### Shuffle Gerudo Card
 
-This setting determines how the Magic Beans will be handled on the map.
+This setting determines if the Gerudo Card gets shuffled ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-gerudo-card)).
 
-- ![Beans off](ootrando_overworldmap_hamsda/images/setting_beans_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
-- ![Plant Beans](ootrando_overworldmap_hamsda/images/setting_beans_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
-
-### Hints
-
-This setting determines when hintable locations will show up on the map ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#gossip-stones)).
-
-- ![Hints off](ootrando_overworldmap_hamsda/images/setting_hints_off.png "Hints off") Hintable locations will never show up on the map.
-- ![Hints Truth](ootrando_overworldmap_hamsda/images/setting_hints_truth.png "Hints Truth") Hintable locations will show up on the map if you have ![Mask of Truth](ootrando_overworldmap_hamsda/images/truth.png "Mask of Truth").
-- ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
-- ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
+- ![Gerudo Card not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_card_no.png "Gerudo Card not shuffled") The Gerudo Card is not shuffled and will be captured in the corresponding chest by default.
+- ![Gerudo Card shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_card_yes.png "Gerudo Card shuffled") The Gerudo Card is shuffled into the item pool and will not be captured.
 
 ### Shuffle Deku Scrubs
 
@@ -152,3 +142,41 @@ This setting determines which Gold Skulltulas are shown (especially useful for [
 - ![Skulltulas hidden](ootrando_overworldmap_hamsda/images/setting_skulltulas_off.png "Skulltulas hidden") Gold Skulltulas will be hidden.
 - ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_skulltulas_dungeons.png "Skulltulas in dungeons") The Gold Skulltulas in dungeons will be displayed.
 - ![Skulltulas everywhere](ootrando_overworldmap_hamsda/images/setting_skulltulas_all.png "Skulltulas everywhere") All Gold Skulltulas will be displayed.
+
+### Bombchus in logic
+
+This setting determines if Bombchus are considered by the logic ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#bombchus-are-considered-in-logic)).
+
+- ![Bombchus not in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_no.png "Bombchus not in logic") Bombchus will never be considered by the logic and can be used to sequence break bomb locations.
+- ![Bombchus in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_yes.png "Bombchus in logic") Bombchus can be used as regular explosives like bombs in logic.
+
+### Lens of Truth
+
+This setting changes where the logic requires the Lens of Truth ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#lens-of-truth)).
+
+- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_lens_all.png "Required everywhere") Required to see all invisible things.
+- ![Wasteland and Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
+- ![Only Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
+
+### Fewer Tunic Requirements
+
+This setting changes where the logic requires Goron and Zora tunics ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#fewer-tunic-requirements)).
+
+- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
+- ![Fewer requirements](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
+
+### Hints
+
+This setting determines when hintable locations will show up on the map ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#gossip-stones)).
+
+- ![Hints off](ootrando_overworldmap_hamsda/images/setting_hints_off.png "Hints off") Hintable locations will never show up on the map.
+- ![Hints Truth](ootrando_overworldmap_hamsda/images/setting_hints_truth.png "Hints Truth") Hintable locations will show up on the map if you have ![Mask of Truth](ootrando_overworldmap_hamsda/images/truth.png "Mask of Truth").
+- ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
+- ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
+
+### Magic Beans
+
+This setting determines how the Magic Beans will be handled on the map.
+
+- ![Beans off](ootrando_overworldmap_hamsda/images/setting_beans_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
+- ![Plant Beans](ootrando_overworldmap_hamsda/images/setting_beans_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).

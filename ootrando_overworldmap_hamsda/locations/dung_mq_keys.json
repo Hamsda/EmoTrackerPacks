@@ -1409,7 +1409,7 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_mq,carpenter_rescue_yes,card",
+      "gtg_mq,carpenter_rescue,card",
       "gtg_mq,gerudo_fortress_open,card"
     ],
     "sections": [

@@ -139,7 +139,7 @@ function colossus()
     return 1
   elseif has("sword2", 0) then
     return 0
-  elseif has("carpenter_rescue_yes", 0)
+  elseif has("carpenter_rescue", 0)
   and has("gerudo_fortress_open", 0)
   then
     return 0
