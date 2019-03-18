@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed adult ZF entry with open fountain
+
 ## 2.3.3.1
 
 - added new settings that capture a few items to their default locations
