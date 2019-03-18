@@ -200,30 +200,32 @@ function child_fountain()
   and has("open_fountain", 0) 
   then
     return 0
+  end
+
+  local level = AccessibilityLevel.Normal
+  if has("king_zora_moved_yes", 0) 
+  and has("open_fountain", 0) 
+  then
+    level = AccessibilityLevel.SequenceBreak
+  end
+
+  if has("scale1") then
+    return 1, level
   else
-    local level = AccessibilityLevel.Normal
-    if has("king_zora_moved_yes", 0) 
-    and has("open_fountain", 0) 
-    then
-      level = AccessibilityLevel.SequenceBreak
-    end
-    if has("scale1") then
-      return 1, level
+    local explo_count, explo_level = has_explosives()
+    if explo_count == 0 then
+      return 0
     else
-      local explo_count, explo_level = has_explosives()
-      if explo_count == 0 then
-        return 0
-      else
-        if explo_level == AccessibilityLevel.SequenceBreak then
-          level = AccessibilityLevel.SequenceBreak
-        end
-        if has("ocarina", 0)
-        or has("lullaby", 0)
-        then
-          level = AccessibilityLevel.SequenceBreak
-        end
-        return 1, level
+      if explo_level == AccessibilityLevel.SequenceBreak then
+        level = AccessibilityLevel.SequenceBreak
       end
+      
+      if has("ocarina", 0)
+      or has("lullaby", 0)
+      then
+        level = AccessibilityLevel.SequenceBreak
+      end
+      return 1, level
     end
   end
 end
@@ -231,22 +233,29 @@ end
 function adult_fountain()
   if has("sword2", 0) then
     return 0
-  else
-    local child_count, level = child_fountain()
-    if child_count == 0 then
+  end
+
+  local level = AccessibilityLevel.Normal
+  if has("ocarina", 0)
+  or has("lullaby", 0)
+  then
+    if has("hoverboots", 0) then
       return 0
     else
-      if has("ocarina", 0)
-      or has("lullaby", 0)
-      then
-        if has("hoverboots") then
-          return 1, AccessibilityLevel.SequenceBreak
-        else
-          return 0
-        end
-      end
-      return 1, level
+      level = AccessibilityLevel.SequenceBreak
     end
+  end
+
+  if has("open_fountain") then
+    return 1, level
+  end
+
+  local child_count, child_level = child_fountain()
+  if child_count > 0 then
+    if child_level == AccessibilityLevel.SequenceBreak then
+      level = AccessibilityLevel.SequenceBreak
+    end
+    return 1, level
   end
 end
 
