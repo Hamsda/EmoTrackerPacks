@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.3.3.2
 
 - fixed adult ZF entry with open fountain
 
