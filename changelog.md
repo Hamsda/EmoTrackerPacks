@@ -4,6 +4,7 @@
 
 - fixed adult ZF entry with open fountain
 - fixed unfreezing Kind Zora only showing as hintable
+- added horizontal layout back to the map variants
 
 ## 2.3.3.1
 
