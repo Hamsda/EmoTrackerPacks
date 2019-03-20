@@ -58,19 +58,8 @@
         "setting_fountain",
         "setting_gerudo",
         "setting_bridge",
-        "setting_hints",
         "",
-        ""
-      ],
-      [
-        "setting_logic_chus",
-        "setting_lens",
-        "setting_fewer_tunics",
-        "setting_beans",
-        "setting_scrub_shuffle",
-        "setting_shopsanity",
-        "setting_cowsanity",
-        "setting_skulltulas_off",
+        "",
         ""
       ],
       [
@@ -78,7 +67,18 @@
         "setting_shuffle_ocarinas",
         "setting_shuffle_egg",
         "setting_shuffle_card",
-        "",
+        "setting_scrub_shuffle",
+        "setting_shopsanity",
+        "setting_cowsanity",
+        "setting_skulltulas_off",
+        ""
+      ],
+      [
+        "setting_logic_chus",
+        "setting_lens",
+        "setting_fewer_tunics",
+        "setting_hints",
+        "setting_beans",
         "",
         "",
         "",
