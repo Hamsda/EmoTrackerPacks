@@ -3,6 +3,7 @@
 ## 2.3.3.2
 
 - fixed adult ZF entry with open fountain
+- fixed unfreezing Kind Zora only showing as hintable
 
 ## 2.3.3.1
 
