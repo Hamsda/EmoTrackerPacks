@@ -1,0 +1,1005 @@
+{
+  "item_grid_tall": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "sticks",
+            "nuts",
+            "bombs",
+            "bow",
+            "firearrow",
+            "dinsfire"
+          ],
+          [
+            "slingshot",
+            "ocarinacrow",
+            "bombchu",
+            "hookshot",
+            "icearrow",
+            "faroreswind"
+          ],
+          [
+            "boomerang",
+            "lens",
+            "beans",
+            "hammer",
+            "lightarrow",
+            "nayruslove"
+          ],
+          [
+            "bottle1",
+            "bottle2",
+            "bottle3",
+            "bottle4",
+            "adulttrade",
+            "kidtrade"
+          ],
+          [
+            "lift1",
+            "redtunic",
+            "bluetunic",
+            "sword1",
+            "sword2",
+            "sword3"
+          ],
+          [
+            "scale1",
+            "ironboots",
+            "hoverboots",
+            "shield1",
+            "shield2",
+            "shield3"
+          ],
+          [
+            "wallet1",
+            "magic",
+            "card",
+            "agony",
+            "icetrap",
+            "skulltula"
+          ],
+          [
+            "lullabycheck",
+            "eponacheck",
+            "sariacheck",
+            "suncheck",
+            "timecheck",
+            "stormcheck"
+          ],
+          [
+            "minuetcheck",
+            "bolerocheck",
+            "serenadecheck",
+            "requiemcheck",
+            "nocturnecheck",
+            "preludecheck"
+          ]
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "forest",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "fire",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "water",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "spirit",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "shadow",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "free",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "forest_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "forest_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "forest_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "fire_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "fire_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "fire_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "water_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "water_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "water_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "spirit_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "spirit_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "spirit_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "shadow_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "shadow_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "shadow_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "item",
+                "item": "free_label",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "deku",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "dodongo",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "jabu",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gc_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "gc_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "gc_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gtg_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "gtg_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gf_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "gf_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "deku_label",
+                "margin": "1,2",
+                "width": 32,
+                "height": 12
+              },
+              {
+                "type": "item",
+                "item": "dodongo_label",
+                "margin": "1,2",
+                "width": 32,
+                "height": 12
+              },
+              {
+                "type": "item",
+                "item": "jabu_label",
+                "margin": "1,2",
+                "width": 32,
+                "height": 12
+              },
+              {
+                "type": "item",
+                "item": "ice_label",
+                "margin": "1,2",
+                "width": 32,
+                "height": 12
+              },
+              {
+                "type": "canvas",
+                "width": 66,
+                "height": 16,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "botw_label",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 2,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "botw_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 34,
+                    "canvas_top": 0,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "item_grid_wide": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "1,2",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "sticks",
+            "nuts",
+            "bombs",
+            "bow",
+            "firearrow",
+            "dinsfire",
+            "sword1",
+            "sword2",
+            "sword3"
+          ],
+          [
+            "slingshot",
+            "ocarinacrow",
+            "bombchu",
+            "hookshot",
+            "icearrow",
+            "faroreswind",
+            "shield1",
+            "shield2",
+            "shield3"
+          ],
+          [
+            "boomerang",
+            "lens",
+            "beans",
+            "hammer",
+            "lightarrow",
+            "nayruslove",
+            "lift1",
+            "redtunic",
+            "bluetunic"
+          ],
+          [
+            "bottle1",
+            "bottle2",
+            "bottle3",
+            "bottle4",
+            "adulttrade",
+            "kidtrade",
+            "scale1",
+            "ironboots",
+            "hoverboots"
+          ],
+          [
+            "lullabycheck",
+            "eponacheck",
+            "sariacheck",
+            "suncheck",
+            "timecheck",
+            "stormcheck",
+            "wallet1",
+            "magic",
+            "skulltula"
+          ],
+          [
+            "minuetcheck",
+            "bolerocheck",
+            "serenadecheck",
+            "requiemcheck",
+            "nocturnecheck",
+            "preludecheck",
+            "card",
+            "agony",
+            "icetrap"
+          ]
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "forest",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "fire",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "water",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "spirit",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "shadow",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "free",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "deku",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "dodongo",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "jabu",
+                "margin": "1,2",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "forest_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "forest_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "forest_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "fire_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "fire_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "fire_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "water_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "water_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "water_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "spirit_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "spirit_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "spirit_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "shadow_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "shadow_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 0,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "shadow_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "free_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "deku_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "dodongo_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 32,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "jabu_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "canvas",
+                "width": 66,
+                "height": 16,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gc_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "gc_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 34,
+                    "canvas_top": 0,
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "gc_boss_key",
+                    "canvas_depth": 1,
+                    "canvas_left": 50,
+                    "canvas_top": 0,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 32,
+                "height": 16,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "ice_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 66,
+                "height": 16,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "botw_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "botw_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 34,
+                    "canvas_top": 0,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 66,
+                "height": 16,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gf_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "gf_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 34,
+                    "canvas_top": 0,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "canvas",
+                "width": 66,
+                "height": 16,
+                "margin": "1,2",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "gtg_label",
+                    "canvas_depth": 1,
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "gtg_small_keys",
+                    "canvas_depth": 1,
+                    "canvas_left": 34,
+                    "canvas_top": 0,
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

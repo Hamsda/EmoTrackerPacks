@@ -5001,6 +5001,7 @@
                       {
                         "name": "Unfreeze him",
                         "access_rules": [
+                          "sword2",
                           "{$hintable}"
                         ],
                         "capture_item": true,
