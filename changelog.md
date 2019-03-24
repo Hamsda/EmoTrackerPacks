@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3.3.4
+
+- changed layout to use map on right side again
+
 ## 2.3.3.3
 
 - fixed unfreezing Kind Zora only showing as hintable

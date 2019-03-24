@@ -22,6 +22,7 @@ Tracker:AddLocations("locations/dung_mq_keys.json")
 
 Tracker:AddLayouts("layouts/item_grids.json")
 Tracker:AddLayouts("layouts/options.json")
+Tracker:AddLayouts("layouts/layouts.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/capture.json")
 Tracker:AddLayouts("layouts/broadcast.json")
