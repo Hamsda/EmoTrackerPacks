@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.3.3.4
 
 - changed layout to use map on right side again
 
