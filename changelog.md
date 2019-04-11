@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Forest Temple outdoor west GS with hookshot from floormaster chest
+
 ## 2.3.3.4
 
 - changed layout to use map on right side again
