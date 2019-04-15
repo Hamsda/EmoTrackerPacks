@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.3.3.5
 
 - fixed Forest Temple outdoor west GS with hookshot from floormaster chest
 
