@@ -53,6 +53,8 @@ function update_smallkeys()
   end
 end
 
+
+
 vanilla_captures = {
   ["setting_shuffle_sword1_yes"] = {
     ["@Kokiri Sword Chest/Dodge Boulder"] = "sword1"
@@ -71,11 +73,9 @@ vanilla_captures = {
 settings_cache = {}
 function update_captures()
   for setting,captures in pairs(vanilla_captures) do
-    
     local has_setting = has(setting)
     if not settings_cache[setting] or settings_cache[setting] ~= has_setting then
       settings_cache[setting] = has_setting
-
       for location,item in pairs(captures) do
         local location_object = Tracker:FindObjectForCode(location)
         local item_object = Tracker:FindObjectForCode(item)
@@ -91,7 +91,38 @@ function update_captures()
   end
 end
 
+
+
+capture_bottle_mapping = {
+  ["bottlecapture"] = 1,
+  ["rutocapture"] = 2
+}
+function find_first_free_bottle()
+  for i=1,4 do
+    local bottle = Tracker:FindObjectForCode("bottle"..i)
+    if bottle and bottle.CurrentStage == 0 then
+      return bottle
+    end
+  end
+  return nil
+end
+function check_capture_bottles()
+  for code,stage in pairs(capture_bottle_mapping) do
+    local capture = Tracker:FindObjectForCode(code)
+    if capture and capture.Active then
+      capture.Active = false
+      local bottle = find_first_free_bottle()
+      if bottle then
+        bottle.CurrentStage = stage
+      end
+    end
+  end
+end
+
+
+
 function tracker_on_accessibility_updated()
   update_smallkeys()
   update_captures()
+  check_capture_bottles()
 end
