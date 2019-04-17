@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.3.3.6
 
 - changed capture layout
   - added an extra line for a bit more space
