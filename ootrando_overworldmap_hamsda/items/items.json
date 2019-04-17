@@ -678,5 +678,17 @@
         "codes": "ruto,rutosletter",
       }
     ],
+  },
+  {
+    "name": "Bottle",
+    "type": "toggle",
+    "img": "images/bottle.png",
+    "codes": "bottlecapture"
+  },
+  {
+    "name": "Rutos Letter",
+    "type": "toggle",
+    "img": "images/bottle_letter.png",
+    "codes": "rutocapture"
   }
 ]

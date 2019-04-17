@@ -1,5 +1,12 @@
 # Changelog
 
+## x
+
+- changed capture layout
+  - added an extra line for a bit more space
+  - added ice traps and stone of agony
+  - changed bottles to automatically fill the first available bottle slot
+
 ## 2.3.3.5
 
 - fixed Forest Temple outdoor west GS with hookshot from floormaster chest
