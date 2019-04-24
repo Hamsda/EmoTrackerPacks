@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed carpenter rescue to be sequence breakable
+
 ## 2.3.3.6
 
 - changed capture layout

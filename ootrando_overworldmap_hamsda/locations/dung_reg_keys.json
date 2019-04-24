@@ -1483,8 +1483,8 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_reg,carpenter_rescue,card",
-      "gtg_reg,gerudo_fortress_open,card"
+      "gtg_reg,[carpenter_rescue],$gtg_card",
+      "gtg_reg,gerudo_fortress_open,$gtg_card"
     ],
     "sections": [
       {

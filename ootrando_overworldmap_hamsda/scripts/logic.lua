@@ -132,6 +132,36 @@ function can_leave_forest()
   end
 end
 
+function gerudo_bridge()
+  if has("sword2", 0) then
+    return 0
+  elseif has("longshot")
+  or has("ocarina") and has("epona")
+  or has("gerudo_fortress_open")
+  then
+    return 1, AccessibilityLevel.Normal
+  elseif has("ocarina") 
+  and has("requiem") 
+  then
+    return 1, AccessibilityLevel.SequenceBreak
+  else
+    return 0
+  end
+end
+
+function wasteland()
+  local count, level = gerudo_bridge()
+  if has("carpenter_rescue", 0) then
+    level = AccessibilityLevel.SequenceBreak
+  end
+  if has("hoverboots", 0)
+  and has("longshot", 0)
+  then
+    level = AccessibilityLevel.SequenceBreak
+  end
+  return count, level
+end
+
 function colossus()
   if has("ocarina")
   and has("requiem")
@@ -139,25 +169,38 @@ function colossus()
     return 1
   elseif has("sword2", 0) then
     return 0
-  elseif has("carpenter_rescue", 0)
-  and has("gerudo_fortress_open", 0)
-  then
-    return 0
   else
-    if has("hoverboots", 0)
-    and has("longshot", 0)
-    then
-      return 1, AccessibilityLevel.SequenceBreak
+    local bridge = gerudo_bridge()
+    if bridge == 0 then
+      return 0
+    else
+      local level = AccessibilityLevel.Normal
+      if has("carpenter_rescue", 0) then
+        level = AccessibilityLevel.SequenceBreak
+      end
+      if has("hoverboots", 0)
+      and has("longshot", 0)
+      then
+        level = AccessibilityLevel.SequenceBreak
+      end
+      if has("setting_lens_chest", 0) 
+      and (has("lens", 0) 
+      or has("magic", 0)) 
+      then
+        level = AccessibilityLevel.SequenceBreak
+      end
+      return 1, level
     end
+  end
+end
 
-    if has("setting_lens_chest", 0) 
-    and (has("lens", 0) 
-    or has("magic", 0)) 
-    then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-
-    return 1
+function gtg_card()
+  local card = has("card")
+  if has("setting_shuffle_card_yes") then
+    return card and 1 or 0
+  else
+    local level = card and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+    return 1, level
   end
 end
 
