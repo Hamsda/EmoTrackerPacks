@@ -31,7 +31,7 @@ The small key maximum amounts in the keysanity variants will dynamically update 
 
 Some of this functionality might not be immediately obvious:
 
-- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/scarecrow_badge.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will show up as sequence breaks unless this is turned on.
+- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will show up as sequence breaks unless this is turned on.
 - ![Ice Trap](ootrando_overworldmap_hamsda/images/icetrap.png "Ice Trap") is used as a counter for ice traps. This is somewhat useful to evaluate freestanding items during racing, but mostly just for fun with settings that include higher numbers of ice traps.
 
 ## Settings (for map variants)
