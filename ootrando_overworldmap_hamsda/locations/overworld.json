@@ -5496,14 +5496,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "sword2,carpenter_rescue",
-                  "sword2,gerudo_fortress_open",
-                  "sword2,ocarina,epona",
-                  "sword2,longshot",
-                  "sword2,ocarina,requiem,[carpenter_rescue]",
-                  "sword2,ocarina,requiem,[gerudo_fortress_open]",
-                  "sword2,ocarina,requiem,[epona]",
-                  "sword2,ocarina,requiem,[longshot]",
+                  "$gerudo_bridge"
                 ],
                 "children": [
                   {
@@ -5665,7 +5658,7 @@
                           {
                             "name": "1000",
                             "access_rules": [
-                              "ocarina,epona,bow,carpenter_rescue",
+                              "ocarina,epona,bow,[carpenter_rescue]",
                               "ocarina,epona,bow,gerudo_fortress_open"
                             ],
                             "item_count": 1
@@ -5673,7 +5666,7 @@
                           {
                             "name": "1500",
                             "access_rules": [
-                              "ocarina,epona,bow,carpenter_rescue",
+                              "ocarina,epona,bow,[carpenter_rescue]",
                               "ocarina,epona,bow,gerudo_fortress_open",
                               "{$hintable}"
                             ],
@@ -5756,14 +5749,7 @@
               {
                 "name": "Haunted Wasteland",
                 "access_rules": [
-                  "sword2,carpenter_rescue,[hoverboots]",
-                  "sword2,carpenter_rescue,[longshot]",
-                  "sword2,gerudo_fortress_open,[hoverboots]",
-                  "sword2,gerudo_fortress_open,[longshot]",
-                  "ocarina,requiem,[sword2],[carpenter_rescue],[hoverboots]",
-                  "ocarina,requiem,[sword2],[carpenter_rescue],[longshot]",
-                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[hoverboots]",
-                  "ocarina,requiem,[sword2],[gerudo_fortress_open],[longshot]",
+                  "$wasteland",
                   "{$hintable}"
                 ],
                 "children": [
