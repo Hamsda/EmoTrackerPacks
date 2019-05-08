@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.3.3.8
 
 - removed Open Kakariko setting
 - added Shuffle Magic Beans setting
