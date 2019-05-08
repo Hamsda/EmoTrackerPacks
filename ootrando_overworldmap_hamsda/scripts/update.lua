@@ -68,6 +68,9 @@ vanilla_captures = {
   },
   ["setting_shuffle_card_yes"] = {
     ["@Carpenter Rescue/Free the carpenters"] = "gerudocard"
+  },
+  ["setting_shuffle_beans_yes"] = {
+    ["@Magic Bean Salesman/Buy Item"] = "beans"
   }
 }
 settings_cache = {}

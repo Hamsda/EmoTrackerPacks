@@ -122,9 +122,8 @@ end
 
 function can_leave_forest()
   if has("open_forest")
-  or 
-  has("sling")
-  and has("sword1") 
+  or has("closed_deku")
+  or has("sling") and has("sword1") 
   then
     return 1
   else

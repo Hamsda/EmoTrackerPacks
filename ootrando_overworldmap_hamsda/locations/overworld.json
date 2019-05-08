@@ -596,7 +596,7 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "beans,setting_beans_yes,bean_stage_no"
+                      "beans,setting_plant_yes,bean_stage_no"
                     ],
                     "hosted_item": "bean_stage_yes"
                   },
@@ -632,12 +632,12 @@
                   {
                     "name": "GS6 (N)",
                     "access_rules": [
-                      "[ocarina],[saria],setting_beans_no,beans",
-                      "[ocarina],[minuet],setting_beans_no,beans",
+                      "[ocarina],[saria],setting_plant_no,beans",
+                      "[ocarina],[minuet],setting_plant_no,beans",
                       "[ocarina],[saria],bean_stage_yes",
                       "[ocarina],[minuet],bean_stage_yes",
-                      "[ocarina],[saria],bombchu,longshot,[setting_beans_no,beans]",
-                      "[ocarina],[minuet],bombchu,longshot,[setting_beans_no,beans]",
+                      "[ocarina],[saria],bombchu,longshot,[setting_plant_no,beans]",
+                      "[ocarina],[minuet],bombchu,longshot,[setting_plant_no,beans]",
                       "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
                       "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
                     ],
@@ -1377,7 +1377,7 @@
                         "access_rules": [
                           "sword2,ocarina,[scarecrow],hookshot",
                           "sword2,water",
-                          "sword2,setting_beans_no,beans",
+                          "sword2,setting_plant_no,beans",
                           "sword2,bean_lake_yes",
                           "{$hintable}"
                         ],
@@ -1424,7 +1424,7 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "sword2,setting_beans_no,beans",
+                          "sword2,setting_plant_no,beans",
                           "sword2,bean_lake_yes",
                           "sword2,ocarina,[scarecrow],hookshot"
                         ],
@@ -1553,7 +1553,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_beans_yes,bean_lake_no"
+                          "beans,setting_plant_yes,bean_lake_no"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
@@ -2724,10 +2724,10 @@
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
                         "access_rules": [
-                          "sword2,setting_beans_no,beans",
+                          "sword2,setting_plant_no,beans",
                           "sword2,bean_graveyard_yes",
                           "sword2,longshot",
-                          "boomerang,[sword2],[setting_beans_no],[beans]",
+                          "boomerang,[sword2],[setting_plant_no],[beans]",
                           "boomerang,[sword2],[bean_graveyard_yes]",
                           "boomerang,[sword2],[longshot]",
                           "{}"
@@ -2858,7 +2858,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_beans_yes,bean_graveyard_no"
+                          "beans,setting_plant_yes,bean_graveyard_no"
                         ],
                         "hosted_item": "bean_graveyard_yes"
                       },
@@ -2917,7 +2917,6 @@
             "color": "#a01009",
             "access_rules": [
               "postzelda",
-              "open_kak",
               "sword2",
               "$has_explosives",
               "dinsfire,magic"
@@ -3160,7 +3159,6 @@
                       "setting_shopsanity_yes,sword2,bow",
                       "setting_shopsanity_yes,dinsfire,magic",
                       "setting_shopsanity_yes,ocarina,lullaby,sticks,postzelda",
-                      "setting_shopsanity_yes,ocarina,lullaby,sticks,open_kak",
                       "setting_shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
                     ],
                     "sections": [
@@ -3374,7 +3372,7 @@
                     "name": "Biggoron",
                     "access_rules": [
                       "sword2,$can_blast",
-                      "sword2,ocarina,bolero,setting_beans_no,beans",
+                      "sword2,ocarina,bolero,setting_plant_no,beans",
                       "sword2,ocarina,bolero,bean_crater_yes",
                       "sword2,ocarina,bolero,hoverboots",
                       "sword2,ocarina,bolero,hookshot",
@@ -3513,7 +3511,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_beans_yes,bean_trail_no"
+                          "beans,setting_plant_yes,bean_trail_no"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
@@ -3582,7 +3580,7 @@
                         "access_rules": [
                           "$can_blast",
                           "$link_the_goron",
-                          "ocarina,bolero,setting_beans_no,beans",
+                          "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "ocarina,bolero,hoverboots",
                           "ocarina,bolero,hookshot"
@@ -3666,7 +3664,7 @@
                         "short_name": "HP",
                         "access_rules": [
                           "$can_blast",
-                          "ocarina,bolero,sword2,setting_beans_no,beans",
+                          "ocarina,bolero,sword2,setting_plant_no,beans",
                           "ocarina,bolero,sword2,bean_crater_yes",
                           "ocarina,bolero,sword2,hookshot",
                           "ocarina,bolero,sword2,hoverboots",
@@ -3700,13 +3698,13 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "sword2,ocarina,bolero,setting_beans_no,beans",
+                          "sword2,ocarina,bolero,setting_plant_no,beans",
                           "sword2,ocarina,bolero,bean_crater_yes",
-                          "sword2,ocarina,bolero,hoverboots,[setting_beans_no],[beans]",
+                          "sword2,ocarina,bolero,hoverboots,[setting_plant_no],[beans]",
                           "sword2,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
+                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
                           "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                          "sword2,hammer,hoverboots,[ocarina],[bolero],[setting_beans_no],[beans]",
+                          "sword2,hammer,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "{$hintable}",
                           "{ocarina,bolero}",
@@ -3738,7 +3736,7 @@
                         "access_rules": [
                           "$link_the_goron",
                           "ocarina,bolero,hookshot",
-                          "ocarina,bolero,setting_beans_no,beans",
+                          "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots"
                         ],
@@ -3765,7 +3763,7 @@
                         "access_rules": [
                           "$link_the_goron",
                           "ocarina,bolero,hookshot",
-                          "ocarina,bolero,setting_beans_no,beans",
+                          "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots"
                         ],
@@ -3877,7 +3875,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_beans_yes,bean_crater_no"
+                          "beans,setting_plant_yes,bean_crater_no"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
@@ -4583,8 +4581,9 @@
                     ],
                     "sections": [
                       {
-                        "name": "Buy Beans",
-                        "hosted_item": "beans"
+                        "name": "Buy Item",
+                        "capture_item": true,
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -5844,7 +5843,7 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "ocarina,requiem,setting_beans_no,beans,sword2",
+                          "ocarina,requiem,setting_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "{$hintable}",
                           "{$colossus}"
@@ -5926,7 +5925,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_beans_yes,bean_colossus_no"
+                          "beans,setting_plant_yes,bean_colossus_no"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
@@ -5993,7 +5992,7 @@
                       {
                         "name": "GS95 (N)",
                         "access_rules": [
-                          "ocarina,requiem,setting_beans_no,beans,sword2",
+                          "ocarina,requiem,setting_plant_no,beans,sword2",
                           "ocarina,requiem,bean_colossus_yes,sword2",
                           "$colossus,sword2,hookshot,[longshot]",
                           "{$colossus,sword2,bow}"

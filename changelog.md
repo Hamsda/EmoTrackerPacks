@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.3.8
+
+- removed Open Kakariko setting
+- added Shuffle Magic Beans setting
+- changed Open Forest setting to include Closed Deku
+- changed the icon for Bean Plant setting
+
 ## 2.3.3.7
 
 - changed carpenter rescue to be sequence breakable

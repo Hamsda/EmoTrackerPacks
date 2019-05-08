@@ -4,34 +4,21 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 2,
     "stages": [
       {
         "img": "images/setting_forest_closed.png",
         "codes": "setting_forest,closed_forest"
       },
       {
-        "img": "images/setting_forest_open.png",
-        "codes": "setting_forest,open_forest",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Open Kakariko",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_kak_closed.png",
-        "codes": "setting_kak,closed_kak"
+        "img": "images/setting_forest_deku.png",
+        "codes": "setting_forest,closed_deku",
+        "inherits_codes": false
       },
       {
-        "img": "images/setting_kak_open.png",
-        "codes": "setting_kak,open_kak",
-        "inherit_codes": false
+        "img": "images/setting_forest_open.png",
+        "codes": "setting_forest,open_forest",
+        "inherits_codes": false
       }
     ]
   },
@@ -265,12 +252,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_beans_off.png",
-        "codes": "setting_beans,setting_beans_no"
+        "img": "images/setting_plant_no.png",
+        "codes": "setting_plant,setting_plant_no"
       },
       {
-        "img": "images/setting_beans_plant.png",
-        "codes": "setting_beans,setting_beans_yes",
+        "img": "images/setting_plant_yes.png",
+        "codes": "setting_plant,setting_plant_yes",
         "inherit_codes": false
       }
     ]
@@ -368,6 +355,23 @@
       {
         "img": "images/setting_shuffle_card_yes.png",
         "codes": "setting_shuffle_card,setting_shuffle_card_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bean Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_beans_no.png",
+        "codes": "setting_shuffle_beans,setting_shuffle_beans_no"
+      },
+      {
+        "img": "images/setting_shuffle_beans_yes.png",
+        "codes": "setting_shuffle_beans,setting_shuffle_beans_yes",
         "inherit_codes": false
       }
     ]

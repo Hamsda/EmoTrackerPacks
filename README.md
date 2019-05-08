@@ -42,15 +42,9 @@ There is a variety of settings available to accomodate the different options tha
 
 This setting determines if you can leave the Kokiri Forest without beating the Deku Tree ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-forest)).
 
-- ![Closed Forest](ootrando_overworldmap_hamsda/images/setting_forest_closed.png "Closed Forest") You will find the Kokiri Sword and Slingshot early on to beat the Deku Tree before leaving the Kokiri Forest.
-- ![Open Forest](ootrando_overworldmap_hamsda/images/setting_forest_open.png "Open Forest") You can immediately leave the Kokiri Forest.
-
-### Kakariko Gate
-
-This setting determines whether the Kakariko Gate starts open or closed as a child ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-kakariko-gate)).
-
-- ![Closed Kakariko](ootrando_overworldmap_hamsda/images/setting_kak_closed.png "Closed Kakariko") You will need to show Zeldas Letter to the guard in front of the gate to open it.
-- ![Open Kakariko](ootrando_overworldmap_hamsda/images/setting_kak_open.png "Open Kakariko") The Kakariko Gate starts open and you can go to Death Mountain Trail.
+- ![Closed Forest](ootrando_overworldmap_hamsda/images/setting_forest_closed.png "Closed Forest") You will find the Kokiri Sword and Slingshot early on to beat the Deku Tree before leaving Kokiri Forest.
+- ![Closed Deku](ootrando_overworldmap_hamsda/images/setting_forest_deku.png "Closed Deku") You can leave Kokiri Forest but will need the Kokiri Sword and Deku Shield to go to the Deku Tree.
+- ![Open Forest](ootrando_overworldmap_hamsda/images/setting_forest_open.png "Open Forest") You can immediately leave Kokiri Forest and go to the Deku Tree.
 
 ### Door of Time
 
@@ -113,6 +107,13 @@ This setting determines if the Gerudo Card gets shuffled ([see wiki](https://git
 - ![Gerudo Card not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_card_no.png "Gerudo Card not shuffled") The Gerudo Card is not shuffled and will be captured in the corresponding chest by default.
 - ![Gerudo Card shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_card_yes.png "Gerudo Card shuffled") The Gerudo Card is shuffled into the item pool and will not be captured.
 
+### Shuffle Magic Beans
+
+This setting determines if Magic Beans are shuffled.
+
+- ![Magic Beans not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
+- ![Magic Beans shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
+
 ### Shuffle Deku Scrubs
 
 This setting determines if all Deku Scrubs have randomized items ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-deku-salescrubs)).
@@ -173,9 +174,9 @@ This setting determines when hintable locations will show up on the map ([see wi
 - ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
 - ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
 
-### Magic Beans
+### Bean Planting
 
 This setting determines how the Magic Beans will be handled on the map.
 
-- ![Beans off](ootrando_overworldmap_hamsda/images/setting_beans_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
-- ![Plant Beans](ootrando_overworldmap_hamsda/images/setting_beans_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
+- ![Plant off](ootrando_overworldmap_hamsda/images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
+- ![Plant on](ootrando_overworldmap_hamsda/images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
