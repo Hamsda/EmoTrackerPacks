@@ -3,6 +3,7 @@
 ## x
 
 - removed Open Kakariko option
+- added Shuffle Magic Beans option
 
 ## 2.3.3.7
 

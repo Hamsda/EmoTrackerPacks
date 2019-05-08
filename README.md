@@ -106,6 +106,13 @@ This setting determines if the Gerudo Card gets shuffled ([see wiki](https://git
 - ![Gerudo Card not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_card_no.png "Gerudo Card not shuffled") The Gerudo Card is not shuffled and will be captured in the corresponding chest by default.
 - ![Gerudo Card shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_card_yes.png "Gerudo Card shuffled") The Gerudo Card is shuffled into the item pool and will not be captured.
 
+### Shuffle Magic Beans
+
+This setting determines if Magic Beans are shuffled.
+
+- ![Magic Beans not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
+- ![Magic Beans shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
+
 ### Shuffle Deku Scrubs
 
 This setting determines if all Deku Scrubs have randomized items ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#shuffle-deku-salescrubs)).
@@ -166,7 +173,7 @@ This setting determines when hintable locations will show up on the map ([see wi
 - ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
 - ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
 
-### Magic Beans
+### Bean Planting
 
 This setting determines how the Magic Beans will be handled on the map.
 

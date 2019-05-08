@@ -4581,8 +4581,9 @@
                     ],
                     "sections": [
                       {
-                        "name": "Buy Beans",
-                        "hosted_item": "beans"
+                        "name": "Buy Item",
+                        "capture_item": true,
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [

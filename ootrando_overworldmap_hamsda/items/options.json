@@ -353,5 +353,22 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Bean Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_beans_no.png",
+        "codes": "setting_shuffle_beans,setting_shuffle_beans_no"
+      },
+      {
+        "img": "images/setting_shuffle_beans_yes.png",
+        "codes": "setting_shuffle_beans,setting_shuffle_beans_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]
