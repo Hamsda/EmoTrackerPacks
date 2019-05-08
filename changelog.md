@@ -4,6 +4,7 @@
 
 - removed Open Kakariko option
 - added Shuffle Magic Beans option
+- changed Open Forest option to include Closed Deku
 
 ## 2.3.3.7
 
