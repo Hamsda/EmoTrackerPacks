@@ -3,6 +3,7 @@
 ## x
 
 - fixed back of MQ DC with chus in logic
+- added King Dodongo sequence break with chus
 
 ## 2.3.3.8
 
