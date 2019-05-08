@@ -18,24 +18,6 @@
     ]
   },
   {
-    "name": "Open Kakariko",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_kak_closed.png",
-        "codes": "setting_kak,closed_kak"
-      },
-      {
-        "img": "images/setting_kak_open.png",
-        "codes": "setting_kak,open_kak",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Open Door of Time",
     "type": "progressive",
     "allow_disabled": false,

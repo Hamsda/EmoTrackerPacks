@@ -45,13 +45,6 @@ This setting determines if you can leave the Kokiri Forest without beating the D
 - ![Closed Forest](ootrando_overworldmap_hamsda/images/setting_forest_closed.png "Closed Forest") You will find the Kokiri Sword and Slingshot early on to beat the Deku Tree before leaving the Kokiri Forest.
 - ![Open Forest](ootrando_overworldmap_hamsda/images/setting_forest_open.png "Open Forest") You can immediately leave the Kokiri Forest.
 
-### Kakariko Gate
-
-This setting determines whether the Kakariko Gate starts open or closed as a child ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-kakariko-gate)).
-
-- ![Closed Kakariko](ootrando_overworldmap_hamsda/images/setting_kak_closed.png "Closed Kakariko") You will need to show Zeldas Letter to the guard in front of the gate to open it.
-- ![Open Kakariko](ootrando_overworldmap_hamsda/images/setting_kak_open.png "Open Kakariko") The Kakariko Gate starts open and you can go to Death Mountain Trail.
-
 ### Door of Time
 
 This setting determines whether the Door of Time starts open or closed ([see wiki](https://github.com/TestRunnerSRL/OoT-Randomizer/wiki/setting-information#open-door-of-time)).

@@ -2917,7 +2917,6 @@
             "color": "#a01009",
             "access_rules": [
               "postzelda",
-              "open_kak",
               "sword2",
               "$has_explosives",
               "dinsfire,magic"
@@ -3160,7 +3159,6 @@
                       "setting_shopsanity_yes,sword2,bow",
                       "setting_shopsanity_yes,dinsfire,magic",
                       "setting_shopsanity_yes,ocarina,lullaby,sticks,postzelda",
-                      "setting_shopsanity_yes,ocarina,lullaby,sticks,open_kak",
                       "setting_shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
                     ],
                     "sections": [
