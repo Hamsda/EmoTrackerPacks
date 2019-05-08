@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed back of MQ DC with chus in logic
+
 ## 2.3.3.8
 
 - removed Open Kakariko setting

@@ -241,8 +241,7 @@
       {
         "name": "Under Grave",
         "access_rules": [
-          "bombs",
-          "bombchu,[bombs]"
+          "$has_explosives"
         ],
         "item_count": 1
       },
