@@ -252,12 +252,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_beans_off.png",
-        "codes": "setting_beans,setting_beans_no"
+        "img": "images/setting_plant_no.png",
+        "codes": "setting_plant,setting_plant_no"
       },
       {
-        "img": "images/setting_beans_plant.png",
-        "codes": "setting_beans,setting_beans_yes",
+        "img": "images/setting_plant_yes.png",
+        "codes": "setting_plant,setting_plant_yes",
         "inherit_codes": false
       }
     ]

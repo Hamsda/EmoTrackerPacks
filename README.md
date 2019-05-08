@@ -178,5 +178,5 @@ This setting determines when hintable locations will show up on the map ([see wi
 
 This setting determines how the Magic Beans will be handled on the map.
 
-- ![Beans off](ootrando_overworldmap_hamsda/images/setting_beans_off.png "Beans off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
-- ![Plant Beans](ootrando_overworldmap_hamsda/images/setting_beans_plant.png "Plant Beans") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
+- ![Plant off](ootrando_overworldmap_hamsda/images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
+- ![Plant on](ootrando_overworldmap_hamsda/images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).

@@ -2,9 +2,10 @@
 
 ## x
 
-- removed Open Kakariko option
-- added Shuffle Magic Beans option
-- changed Open Forest option to include Closed Deku
+- removed Open Kakariko setting
+- added Shuffle Magic Beans setting
+- changed Open Forest setting to include Closed Deku
+- changed the icon for Bean Plant setting
 
 ## 2.3.3.7
 
