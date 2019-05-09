@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed MQ Spirit unintentionally showing up on child map
+
 ## 2.3.3.9
 
 - fixed back of MQ DC with chus in logic
