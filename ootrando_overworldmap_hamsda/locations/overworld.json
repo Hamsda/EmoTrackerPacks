@@ -4654,7 +4654,8 @@
                     "name": "Frogs",
                     "access_rules": [
                       "$has_explosives",
-                      "scale1"
+                      "scale1",
+                      "{$hintable}"
                     ],
                     "sections": [
                       {

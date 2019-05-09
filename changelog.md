@@ -5,6 +5,7 @@
 - fixed back of MQ DC with chus in logic
 - added King Dodongo sequence break with chus
 - split generic grotto gossip stones
+- fixed Frog Ocarina Game hintable from the start
 
 ## 2.3.3.8
 
