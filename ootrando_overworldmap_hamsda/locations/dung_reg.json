@@ -194,12 +194,15 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sword2",
-          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sword2",
-          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sword1",
+          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sticks",
           "@Dodongos Cavern/Chest Above King Dodongo,lift1,sword1",
+          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sword2",
           "@Dodongos Cavern/Chest Above King Dodongo,bombs,sticks",
-          "@Dodongos Cavern/Chest Above King Dodongo,lift1,sticks"
+          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sword1",
+          "@Dodongos Cavern/Chest Above King Dodongo,bombs,sword2",
+          "@Dodongos Cavern/Chest Above King Dodongo,bombchu,[bombs],sticks",
+          "@Dodongos Cavern/Chest Above King Dodongo,bombchu,[bombs],sword1",
+          "@Dodongos Cavern/Chest Above King Dodongo,bombchu,[bombs],sword2",
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",

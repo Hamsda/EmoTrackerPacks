@@ -241,8 +241,7 @@
       {
         "name": "Under Grave",
         "access_rules": [
-          "bombs",
-          "bombchu,[bombs]"
+          "$has_explosives"
         ],
         "item_count": 1
       },
@@ -256,12 +255,15 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern MQ/Under Grave,bombs,sword2",
+          "@Dodongos Cavern MQ/Under Grave,lift1,sticks",
+          "@Dodongos Cavern MQ/Under Grave,lift1,sword1",
           "@Dodongos Cavern MQ/Under Grave,lift1,sword2",
           "@Dodongos Cavern MQ/Under Grave,bombs,sticks",
-          "@Dodongos Cavern MQ/Under Grave,lift1,sticks",
           "@Dodongos Cavern MQ/Under Grave,bombs,sword1",
-          "@Dodongos Cavern MQ/Under Grave,lift1,sword1"
+          "@Dodongos Cavern MQ/Under Grave,bombs,sword2",
+          "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sticks",
+          "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sword1",
+          "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sword2",
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
