@@ -4,6 +4,7 @@
 
 - fixed back of MQ DC with chus in logic
 - added King Dodongo sequence break with chus
+- split generic grotto gossip stones
 
 ## 2.3.3.8
 

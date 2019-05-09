@@ -249,7 +249,32 @@
                 "map_locations": [
                   {
                     "map": "gossips",
-                    "x": 2119,
+                    "x": 2090,
+                    "y": 845
+                  }
+                ]
+              },
+              {
+                "name": "Kokiri Forest Storms Grotto Gossip Stone",
+                "short_name": "Kokiri Storms Grotto Gossip Stone",
+                "access_rules": [
+                  "$hintable"
+                ],
+                "sections": [
+                  {
+                    "name": "Check it",
+                    "access_rules": [
+                      "ocarina,storm"
+                    ],
+                    "chest_unopened_img": "images/gossip_stone.png",
+                    "chest_opened_img": "images/gossip_stone.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "gossips",
+                    "x": 2120,
                     "y": 845
                   }
                 ]
@@ -654,6 +679,31 @@
                     "map": "adult",
                     "x": 2142,
                     "y": 740
+                  }
+                ]
+              },
+              {
+                "name": "Lost Woods Generic Grotto Gossip Stone",
+                "short_name": "Goron City Grotto Gossip Stone",
+                "access_rules": [
+                  "$hintable"
+                ],
+                "sections": [
+                  {
+                    "name": "Check it",
+                    "access_rules": [
+                      "$can_blast"
+                    ],
+                    "chest_unopened_img": "images/gossip_stone.png",
+                    "chest_opened_img": "images/gossip_stone.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "gossips",
+                    "x": 2149,
+                    "y": 776
                   }
                 ]
               },
@@ -1217,8 +1267,8 @@
                 ]
               },
               {
-                "name": "Generic Grotto Gossip Stone",
-                "short_name": "Generic Grotto Gossip Stone",
+                "name": "Field Near Lake Outside Fence Grotto Gossip Stone",
+                "short_name": "Grotto Outside Fence Gossip Stone",
                 "access_rules": [
                   "$hintable"
                 ],
@@ -1232,73 +1282,60 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "gossips", //DMT SoS
-                    "visibility_rules": [
-                      "ocarina,storm"
-                    ],
-                    "x": 1705,
-                    "y": 158
-                  },
-                  {
-                    "map": "gossips", //DMC exp
-                    "visibility_rules": [
-                      "$can_blast"
-                    ],
-                    "x": 1798,
-                    "y": 42
-                  },
-                  {
-                    "map": "gossips", //HF open
+                    "map": "gossips",
                     "x": 1206,
                     "y": 997
-                  },
+                  }
+                ]
+              },
+              {
+                "name": "Field West Castle Town Grotto Gossip Stone",
+                "short_name": "Grotto near Bridge Gossip Stone",
+                "access_rules": [
+                  "$hintable"
+                ],
+                "sections": [
                   {
-                    "map": "gossips", //HF near bridge
-                    "visibility_rules": [
+                    "name": "Check it",
+                    "access_rules": [
                       "$can_blast"
                     ],
+                    "chest_unopened_img": "images/gossip_stone.png",
+                    "chest_opened_img": "images/gossip_stone.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "gossips",
                     "x": 1372,
                     "y": 440
-                  },
+                  }
+                ]
+              },
+              {
+                "name": "Remote Southern Grotto Gossip Stone",
+                "short_name": "Open Grotto Gossip Stone",
+                "access_rules": [
+                  "$hintable"
+                ],
+                "sections": [
                   {
-                    "map": "gossips", //HF SE
-                    "visibility_rules": [
+                    "name": "Check it",
+                    "access_rules": [
                       "$can_blast"
                     ],
+                    "chest_unopened_img": "images/gossip_stone.png",
+                    "chest_opened_img": "images/gossip_stone.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "gossips",
                     "x": 1427,
                     "y": 925
-                  },
-                  {
-                    "map": "gossips", //Kak back
-                    "x": 1865,
-                    "y": 326
-                  },
-                  {
-                    "map": "gossips", //Kokiri SoS
-                    "visibility_rules": [
-                      "ocarina,storm"
-                    ],
-                    "x": 2119,
-                    "y": 845
-                  },
-                  {
-                    "map": "gossips", //LW near Goron
-                    "visibility_rules": [
-                      "$can_blast"
-                    ],
-                    "x": 2149,
-                    "y": 776
-                  },
-                  {
-                    "map": "gossips", //ZR open
-                    "visibility_rules": [
-                      "sword2",
-                      "$has_explosives",
-                      "scale1"
-                    ],
-                    "x": 2092,
-                    "y": 540
-                  },
+                  }
                 ]
               },
               {
@@ -2622,6 +2659,28 @@
                 ]
               },
               {
+                "name": "Kakariko Back Grotto Gossip Stone",
+                "short_name": "Back Grotto Gossip Stone",
+                "access_rules": [
+                  "$hintable"
+                ],
+                "sections": [
+                  {
+                    "name": "Check it",
+                    "chest_unopened_img": "images/gossip_stone.png",
+                    "chest_opened_img": "images/gossip_stone.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "gossips",
+                    "x": 1865,
+                    "y": 326
+                  }
+                ]
+              },
+              {
                 "name": "Graveyard",
                 "children": [
                   {
@@ -3569,6 +3628,31 @@
                     ]
                   },
                   {
+                    "name": "Mountain Storms Grotto Gossip Stone",
+                    "short_name": "DMT Grotto Gossip Stone",
+                    "access_rules": [
+                      "$hintable"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Check it",
+                        "access_rules": [
+                          "ocarina,storm"
+                        ],
+                        "chest_unopened_img": "images/gossip_stone.png",
+                        "chest_opened_img": "images/gossip_stone.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "gossips",
+                        "x": 1705,
+                        "y": 158
+                      }
+                    ]
+                  },
+                  {
                     "name": "Death Mountain Trail Gossip Stone",
                     "short_name": "DMT Gossip Stone",
                     "access_rules": [
@@ -3901,6 +3985,31 @@
                     ]
                   },
                   {
+                    "name": "Top of Crater Grotto Gossip Stone",
+                    "short_name": "DMC Grotto Gossip Stone",
+                    "access_rules": [
+                      "$hintable"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Check it",
+                        "access_rules": [
+                          "$can_blast"
+                        ],
+                        "chest_unopened_img": "images/gossip_stone.png",
+                        "chest_opened_img": "images/gossip_stone.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "gossips",
+                        "x": 1798,
+                        "y": 42
+                      }
+                    ]
+                  },
+                  {
                     "name": "Death Mountain Crater Gossip Stone",
                     "short_name": "DMC Gossip Stone",
                     "access_rules": [
@@ -3920,7 +4029,7 @@
                     "map_locations": [
                       {
                         "map": "gossips",
-                        "x": 1798,
+                        "x": 1840,
                         "y": 42
                       }
                     ]
@@ -4848,6 +4957,33 @@
                         "x": 2280,
                         "y": 465
                       }
+                    ]
+                  },
+                  {
+                    "name": "Zora River Plateau Open Grotto Gossip Stone",
+                    "short_name": "Plateau Grotto Gossip Stone",
+                    "access_rules": [
+                      "$hintable"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Check it",
+                        "access_rules": [
+                          "sword2",
+                          "$has_explosives",
+                          "scale1"
+                        ],
+                        "chest_unopened_img": "images/gossip_stone.png",
+                        "chest_opened_img": "images/gossip_stone.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "gossips",
+                        "x": 2092,
+                        "y": 540
+                      },
                     ]
                   },
                   {
