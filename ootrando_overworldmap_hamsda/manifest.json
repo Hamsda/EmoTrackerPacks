@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "OoT Randomizer - Map and Item Tracker",
   "game_name": "Ocarina of Time Randomizer",
   "package_version": "2.3.3.9",
@@ -19,6 +19,9 @@
     },
     "var_minimalist": {
       "display_name": "Items Only (minimal)"
+    },
+    "var_entrance": {
+      "display_name": "Entrance Randomizer"
     }
   }
 }
