@@ -9,7 +9,7 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Kokiri Forest Storms Grotto",
+            "name": "Kokiri Forest -> Kokiri Forest Storms Grotto",
             "short_name": "Kokiri Storms Grotto",
             "sections": [
               {
@@ -36,7 +36,8 @@
             ]
           },
           {
-            "name": "House of Twins",
+            "name": "Kokiri Forest -> House of Twins",
+            "short_name": "House of Twins",
             "sections": [
               {
                 "name": "House",
@@ -59,7 +60,8 @@
             ]
           },
           {
-            "name": "Know It All House",
+            "name": "Kokiri Forest -> Know It All House",
+            "short_name": "Know It All House",
             "sections": [
               {
                 "name": "House",
@@ -82,7 +84,8 @@
             ]
           },
           {
-            "name": "Kokiri Shop",
+            "name": "Kokiri Forest -> Kokiri Shop",
+            "short_name": "Kokiri Shop",
             "sections": [
               {
                 "name": "House",
@@ -105,7 +108,8 @@
             ]
           },
           {
-            "name": "Links House",
+            "name": "Kokiri Forest -> Links House",
+            "short_name": "Links House",
             "sections": [
               {
                 "name": "House",
@@ -128,7 +132,8 @@
             ]
           },
           {
-            "name": "Mido House",
+            "name": "Kokiri Forest -> Mido House",
+            "short_name": "Mido House",
             "sections": [
               {
                 "name": "House",
@@ -151,7 +156,8 @@
             ]
           },
           {
-            "name": "Saria House",
+            "name": "Kokiri Forest -> Saria House",
+            "short_name": "Saria House",
             "sections": [
               {
                 "name": "House",
@@ -174,7 +180,8 @@
             ]
           },
           {
-            "name": "Deku Tree",
+            "name": "Outside Deku Tree -> Deku Tree Lobby",
+            "short_name": "Deku Tree",
             "sections": [
               {
                 "name": "Dungeon",
@@ -257,7 +264,8 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Lost Woods Generic Grotto",
+            "name": "Lost Woods -> Lost Woods Generic Grotto",
+            "short_name": "LW Generic Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -283,7 +291,8 @@
             ]
           },
           {
-            "name": "Deku Theater",
+            "name": "Lost Woods Beyond Mido -> Deku Theater",
+            "short_name": "Deku Theater",
             "sections": [
               {
                 "name": "Grotto",
@@ -306,7 +315,8 @@
             ]
           },
           {
-            "name": "Lost Woods Sales Grotto",
+            "name": "Lost Woods Beyond Mido -> Lost Woods Sales Grotto",
+            "short_name": "LW Sales Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -507,7 +517,8 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Meadow Fairy Grotto",
+            "name": "Sacred Forest Meadow -> Meadow Fairy Grotto",
+            "short_name": "SFM Fairy Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -530,7 +541,8 @@
             ]
           },
           {
-            "name": "Meadow Storms Grotto",
+            "name": "Sacred Forest Meadow -> Meadow Storms Grotto",
+            "short_name": "SFM Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -556,7 +568,8 @@
             ]
           },
           {
-            "name": "Front of Meadow Grotto",
+            "name": "Sacred Forest Meadow Entryway -> Front of Meadow Grotto",
+            "short_name": "Wolfos Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -582,7 +595,8 @@
             ]
           },
           {
-            "name": "Forest Temple",
+            "name": "Sacred Forest Meadow -> Forest Temple Lobby",
+            "short_name": "Forest Temple",
             "sections": [
               {
                 "name": "Dungeon",
@@ -638,7 +652,8 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Field Far West Castle Town Grotto",
+            "name": "Hyrule Field -> Field Far West Castle Town Grotto",
+            "short_name": "HF Fairy Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -664,7 +679,8 @@
             ]
           },
           {
-            "name": "Field Kakariko Grotto",
+            "name": "Hyrule Field -> Field Kakariko Grotto",
+            "short_name": "HF Kakariko Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -690,7 +706,8 @@
             ]
           },
           {
-            "name": "Field Near Lake Inside Fence Grotto",
+            "name": "Hyrule Field -> Field Near Lake Inside Fence Grotto",
+            "short_name": "HF Inside Fence Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -716,7 +733,8 @@
             ]
           },
           {
-            "name": "Field Near Lake Outside Fence Grotto",
+            "name": "Hyrule Field -> Field Near Lake Outside Fence Grotto",
+            "short_name": "HF Outside Fence Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -739,7 +757,8 @@
             ]
           },
           {
-            "name": "Field North Lon Lon Grotto",
+            "name": "Hyrule Field -> Field North Lon Lon Grotto",
+            "short_name": "HF Tektite Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -765,7 +784,8 @@
             ]
           },
           {
-            "name": "Field Valley Grotto",
+            "name": "Hyrule Field -> Field Valley Grotto",
+            "short_name": "HF Valley Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -791,7 +811,8 @@
             ]
           },
           {
-            "name": "Field West Castle Town Grotto",
+            "name": "Hyrule Field -> Field West Castle Town Grotto",
+            "short_name": "HF Near Bridge Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -817,7 +838,8 @@
             ]
           },
           {
-            "name": "Remote Southern Grotto",
+            "name": "Hyrule Field -> Remote Southern Grotto",
+            "short_name": "Remote Southern Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1038,7 +1060,8 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Lon Lon Grotto",
+            "name": "Lon Lon Ranch -> Lon Lon Grotto",
+            "short_name": "LLR Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1056,7 +1079,8 @@
             ]
           },
           {
-            "name": "Ingo Barn",
+            "name": "Lon Lon Ranch -> Ingo Barn",
+            "short_name": "Ingo Barn",
             "sections": [
               {
                 "name": "House",
@@ -1079,7 +1103,8 @@
             ]
           },
           {
-            "name": "Lon Lon Corner Tower",
+            "name": "Lon Lon Ranch -> Lon Lon Corner Tower",
+            "short_name": "LLR Tower",
             "sections": [
               {
                 "name": "House",
@@ -1102,7 +1127,8 @@
             ]
           },
           {
-            "name": "Talon House",
+            "name": "Lon Lon Ranch -> Talon House",
+            "short_name": "Talon House",
             "sections": [
               {
                 "name": "House",
@@ -1158,7 +1184,8 @@
         "color": "#6909a0",
         "children": [
           {
-            "name": "Kakariko Back Grotto",
+            "name": "Kakariko Village -> Kakariko Back Grotto",
+            "short_name": "Kakariko Back Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1181,7 +1208,8 @@
             ]
           },
           {
-            "name": "Kakariko Bombable Grotto",
+            "name": "Kakariko Village -> Kakariko Bombable Grotto",
+            "short_name": "Kakariko Bombable Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1207,7 +1235,8 @@
             ]
           },
           {
-            "name": "Carpenter Boss House",
+            "name": "Kakariko Village -> Carpenter Boss House",
+            "short_name": "Carpenter Boss House",
             "sections": [
               {
                 "name": "House",
@@ -1230,7 +1259,8 @@
             ]
           },
           {
-            "name": "House of Skulltula",
+            "name": "Kakariko Village -> House of Skulltula",
+            "short_name": "House of Skulltula",
             "sections": [
               {
                 "name": "House",
@@ -1253,7 +1283,8 @@
             ]
           },
           {
-            "name": "Impas House",
+            "name": "Kakariko Village -> Impas House",
+            "short_name": "Impas House",
             "sections": [
               {
                 "name": "House",
@@ -1276,7 +1307,8 @@
             ]
           },
           {
-            "name": "Impas House Back",
+            "name": "Kakariko Village -> Impas House Back",
+            "short_name": "Impas House Back",
             "sections": [
               {
                 "name": "House",
@@ -1299,7 +1331,8 @@
             ]
           },
           {
-            "name": "Kakariko Bazaar",
+            "name": "Kakariko Village -> Kakariko Bazaar",
+            "short_name": "Kakariko Bazaar",
             "sections": [
               {
                 "name": "House",
@@ -1317,7 +1350,8 @@
             ]
           },
           {
-            "name": "Kakariko Shooting Gallery",
+            "name": "Kakariko Village -> Kakariko Shooting Gallery",
+            "short_name": "Kakariko Shooting Gallery",
             "sections": [
               {
                 "name": "House",
@@ -1335,7 +1369,8 @@
             ]
           },
           {
-            "name": "Odd Medicine Building",
+            "name": "Kakariko Village -> Odd Medicine Building",
+            "short_name": "Odd Medicine Building",
             "sections": [
               {
                 "name": "House",
@@ -1353,7 +1388,8 @@
             ]
           },
           {
-            "name": "Windmill",
+            "name": "Kakariko Village -> Windmill",
+            "short_name": "Windmill",
             "sections": [
               {
                 "name": "House",
@@ -1376,7 +1412,8 @@
             ]
           },
           {
-            "name": "Bottom of the Well",
+            "name": "Kakariko Village -> Bottom of the Well",
+            "short_name": "Bottom of the Well",
             "sections": [
               {
                 "name": "Dungeon",
@@ -1499,7 +1536,8 @@
         "color": "#6909a0",
         "children": [
           {
-            "name": "Dampes House",
+            "name": "Graveyard -> Dampes House",
+            "short_name": "Dampes House",
             "sections": [
               {
                 "name": "House",
@@ -1522,7 +1560,8 @@
             ]
           },
           {
-            "name": "Shadow Temple",
+            "name": "Shadow Temple Warp Region -> Shadow Temple Entryway",
+            "short_name": "Shadow Temple",
             "sections": [
               {
                 "name": "Dungeon",
@@ -1581,7 +1620,8 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Castle Town Bazaar",
+            "name": "Castle Town -> Castle Town Bazaar",
+            "short_name": "Castle Town Bazaar",
             "sections": [
               {
                 "name": "House",
@@ -1599,7 +1639,8 @@
             ]
           },
           {
-            "name": "Castle Town Bombchu Bowling",
+            "name": "Castle Town -> Castle Town Bombchu Bowling",
+            "short_name": "Bombchu Bowling",
             "sections": [
               {
                 "name": "House",
@@ -1617,7 +1658,8 @@
             ]
           },
           {
-            "name": "Castle Town Bombchu Shop",
+            "name": "Castle Town -> Castle Town Bombchu Shop",
+            "short_name": "Bombchu Shop",
             "sections": [
               {
                 "name": "House",
@@ -1635,7 +1677,8 @@
             ]
           },
           {
-            "name": "Castle Town Man in Green House",
+            "name": "Castle Town -> Castle Town Man in Green House",
+            "short_name": "Man in Green House",
             "sections": [
               {
                 "name": "House",
@@ -1653,7 +1696,8 @@
             ]
           },
           {
-            "name": "Castle Town Mask Shop",
+            "name": "Castle Town -> Castle Town Mask Shop",
+            "short_name": "Mask Shop",
             "sections": [
               {
                 "name": "House",
@@ -1671,7 +1715,8 @@
             ]
           },
           {
-            "name": "Castle Town Potion Shop",
+            "name": "Castle Town -> Castle Town Potion Shop",
+            "short_name": "Potion Shop",
             "sections": [
               {
                 "name": "House",
@@ -1689,7 +1734,8 @@
             ]
           },
           {
-            "name": "Castle Town Shooting Gallery",
+            "name": "Castle Town -> Castle Town Shooting Gallery",
+            "short_name": "Castle Town Shooting Gallery",
             "sections": [
               {
                 "name": "House",
@@ -1707,7 +1753,8 @@
             ]
           },
           {
-            "name": "Castle Town Treasure Chest Game",
+            "name": "Castle Town -> Castle Town Treasure Chest Game",
+            "short_name": "Treasure Chest Game",
             "sections": [
               {
                 "name": "House",
@@ -1725,7 +1772,8 @@
             ]
           },
           {
-            "name": "Castle Town Rupee Room",
+            "name": "Castle Town Entrance -> Castle Town Rupee Room",
+            "short_name": "Castle Town Rupee Room",
             "sections": [
               {
                 "name": "House",
@@ -1889,7 +1937,8 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Castle Storms Grotto",
+            "name": "Hyrule Castle Grounds -> Castle Storms Grotto",
+            "short_name": "Castle Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1910,7 +1959,8 @@
             ]
           },
           {
-            "name": "Ganons Castle Fairy",
+            "name": "Ganons Castle Grounds -> Ganons Castle Fairy",
+            "short_name": "Ganons Castle Fairy",
             "sections": [
               {
                 "name": "House",
@@ -1928,7 +1978,8 @@
             ]
           },
           {
-            "name": "Hyrule Castle Fairy",
+            "name": "Hyrule Castle Grounds -> Hyrule Castle Fairy",
+            "short_name": "Hyrule Castle Fairy",
             "sections": [
               {
                 "name": "House",
@@ -1979,7 +2030,8 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Mountain Bombable Grotto",
+            "name": "Death Mountain -> Mountain Bombable Grotto",
+            "short_name": "DMT Bombable Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2005,7 +2057,8 @@
             ]
           },
           {
-            "name": "Mountain Storms Grotto",
+            "name": "Death Mountain -> Mountain Storms Grotto",
+            "short_name": "DMT Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2031,7 +2084,8 @@
             ]
           },
           {
-            "name": "Mountain Summit Fairy",
+            "name": "Death Mountain Summit -> Mountain Summit Fairy",
+            "short_name": "DMT Fairy",
             "sections": [
               {
                 "name": "House",
@@ -2057,7 +2111,8 @@
             ]
           },
           {
-            "name": "Dodongos Cavern",
+            "name": "Dodongos Cavern Entryway -> Dodongos Cavern Beginning",
+            "short_name": "Dodongos Cavern",
             "sections": [
               {
                 "name": "Dungeon",
@@ -2201,7 +2256,8 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Top of Crater Grotto",
+            "name": "Death Mountain Crater Upper -> Top of Crater Grotto",
+            "short_name": "Top of DMC Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2227,7 +2283,8 @@
             ]
           },
           {
-            "name": "DMC Hammer Grotto",
+            "name": "Death Mountain Crater Lower -> DMC Hammer Grotto",
+            "short_name": "DMC Hammer Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2248,7 +2305,8 @@
             ]
           },
           {
-            "name": "Crater Fairy",
+            "name": "Death Mountain Crater Lower -> Crater Fairy",
+            "short_name": "DMC Fairy",
             "sections": [
               {
                 "name": "House",
@@ -2269,7 +2327,8 @@
             ]
           },
           {
-            "name": "Fire Temple",
+            "name": "Death Mountain Crater Central -> Fire Temple Lower",
+            "short_name": "Fire Temple",
             "sections": [
               {
                 "name": "Dungeon",
@@ -2352,7 +2411,8 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Goron City Grotto",
+            "name": "Goron City -> Goron City Grotto",
+            "short_name": "Goron City Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2375,7 +2435,8 @@
             ]
           },
           {
-            "name": "Goron Shop",
+            "name": "Goron City -> Goron Shop",
+            "short_name": "Goron Shop",
             "sections": [
               {
                 "name": "House",
@@ -2480,7 +2541,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Lake Hylia Grotto",
+            "name": "Lake Hylia -> Lake Hylia Grotto",
+            "short_name": "Lake Hylia Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2503,7 +2565,8 @@
             ]
           },
           {
-            "name": "Fishing Hole",
+            "name": "Lake Hylia -> Fishing Hole",
+            "short_name": "Fishing Hole",
             "sections": [
               {
                 "name": "House",
@@ -2526,7 +2589,8 @@
             ]
           },
           {
-            "name": "Lake Hylia Lab",
+            "name": "Lake Hylia -> Lake Hylia Lab",
+            "short_name": "Lake Hylia Lab",
             "sections": [
               {
                 "name": "House",
@@ -2549,7 +2613,8 @@
             ]
           },
           {
-            "name": "Water Temple",
+            "name": "Lake Hylia -> Water Temple Lobby",
+            "short_name": "Water Temple",
             "sections": [
               {
                 "name": "Dungeon",
@@ -2649,7 +2714,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zora River Plateau Bombable Grotto",
+            "name": "Zora River -> Zora River Plateau Bombable Grotto",
+            "short_name": "ZR Plateau Bombable Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2675,7 +2741,8 @@
             ]
           },
           {
-            "name": "Zora River Plateau Open Grotto",
+            "name": "Zora River -> Zora River Plateau Open Grotto",
+            "short_name": "ZR Plateau Open Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2698,7 +2765,8 @@
             ]
           },
           {
-            "name": "Zora River Storms Grotto",
+            "name": "Zora River -> Zora River Storms Grotto",
+            "short_name": "ZR Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2811,7 +2879,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zoras Domain Storms Grotto",
+            "name": "Zoras Domain -> Zoras Domain Storms Grotto",
+            "short_name": "ZD Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2837,7 +2906,8 @@
             ]
           },
           {
-            "name": "Zora Shop",
+            "name": "Zoras Domain -> Zora Shop",
+            "short_name": "Zora Shop",
             "sections": [
               {
                 "name": "House",
@@ -2942,7 +3012,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zoras Fountain Fairy",
+            "name": "Zoras Fountain -> Zoras Fountain Fairy",
+            "short_name": "ZF Fairy",
             "sections": [
               {
                 "name": "House",
@@ -2968,7 +3039,8 @@
             ]
           },
           {
-            "name": "Jabu Jabu",
+            "name": "Zoras Fountain -> Jabu Jabus Belly Beginning",
+            "short_name": "Jabu Jabu",
             "sections": [
               {
                 "name": "Dungeon",
@@ -2989,7 +3061,8 @@
             ]
           },
           {
-            "name": "Ice Cavern",
+            "name": "Zoras Fountain -> Ice Cavern Beginning",
+            "short_name": "Ice Cavern",
             "sections": [
               {
                 "name": "Dungeon",
@@ -3040,7 +3113,8 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Gerudo Valley Octorok Grotto",
+            "name": "Gerudo Valley -> Gerudo Valley Octorok Grotto",
+            "short_name": "Octorok Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -3061,7 +3135,8 @@
             ]
           },
           {
-            "name": "Gerudo Valley Storms Grotto",
+            "name": "Gerudo Valley Far Side -> Gerudo Valley Storms Grotto",
+            "short_name": "GV Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -3082,7 +3157,8 @@
             ]
           },
           {
-            "name": "Carpenter Tent",
+            "name": "Gerudo Valley Far Side -> Carpenter Tent",
+            "short_name": "Carpenter Tent",
             "sections": [
               {
                 "name": "House",
@@ -3160,7 +3236,8 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Gerudo Fortress Storms Grotto",
+            "name": "Gerudo Fortress -> Gerudo Fortress Storms Grotto",
+            "short_name": "GF Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -3186,7 +3263,8 @@
             ]
           },
           {
-            "name": "Gerudo Training Grounds",
+            "name": "Gerudo Fortress -> Gerudo Training Grounds Lobby",
+            "short_name": "Gerudo Training Grounds",
             "sections": [
               {
                 "name": "Dungeon",
@@ -3324,7 +3402,8 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Desert Colossus Grotto",
+            "name": "Desert Colossus -> Desert Colossus Grotto",
+            "short_name": "Colossus Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -3345,7 +3424,8 @@
             ]
           },
           {
-            "name": "Colossus Fairy",
+            "name": "Desert Colossus -> Colossus Fairy",
+            "short_name": "Colossus Fairy",
             "sections": [
               {
                 "name": "House",
@@ -3371,7 +3451,8 @@
             ]
           },
           {
-            "name": "Spirit Temple",
+            "name": "Desert Colossus -> Spirit Temple Lobby",
+            "short_name": "Spirit Temple",
             "sections": [
               {
                 "name": "Dungeon",
