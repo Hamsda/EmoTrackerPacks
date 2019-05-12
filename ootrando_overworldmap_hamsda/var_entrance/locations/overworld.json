@@ -595,6 +595,9 @@
             "sections": [
               {
                 "name": "Dungeon",
+                "access_rules": [
+                  "sword2,hookshot"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -1969,8 +1972,8 @@
                 "x": 1535,
                 "y": 292
               }
-        ]
-      },
+            ]
+          },
         ]
       },
       {
@@ -2159,7 +2162,8 @@
                 "name": "Dungeon",
                 "access_rules": [
                   "sword2",
-                  "$has_explosives"
+                  "$has_explosives",
+                  "lift1"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
@@ -2170,7 +2174,8 @@
               {
                 "map": "child",
                 "restrict_visibility_rules": [
-                  "$has_explosives"
+                  "$has_explosives",
+                  "lift1"
                 ],
                 "x": 1684,
                 "y": 220
@@ -2368,6 +2373,11 @@
             "sections": [
               {
                 "name": "Dungeon",
+                "access_rules": [
+                  "ocarina,bolero",
+                  "sword2,hookshot",
+                  "sword2,hoverboots"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -2376,6 +2386,9 @@
             "map_locations": [
               {
                 "map": "child",
+                "restrict_visibility_rules": [
+                  "ocarina,bolero"
+                ],
                 "x": 1912,
                 "y": 80
               },
@@ -2654,6 +2667,10 @@
             "sections": [
               {
                 "name": "Dungeon",
+                "access_rules": [
+                  "sword2,ironboots,hookshot",
+                  "sword2,scale2,longshot"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -2662,6 +2679,9 @@
             "map_locations": [
               {
                 "map": "child",
+                "restrict_visibility_rules": [
+                  "scale2,longshot"
+                ],
                 "x": 1015,
                 "y": 1380
               },
@@ -3304,6 +3324,9 @@
             "sections": [
               {
                 "name": "Dungeon",
+                "access_rules": [
+                  "card"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
