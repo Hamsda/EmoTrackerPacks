@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Deku",
+    "type": "toggle",
+    "img": "images/label_deku.png",
+    "codes": "entrance_dungeon_deku"
+  },
+  {
+    "name": "DC",
+    "type": "toggle",
+    "img": "images/label_dodongo.png",
+    "codes": "entrance_dungeon_dodongo"
+  },
+  {
+    "name": "Jabu",
+    "type": "toggle",
+    "img": "images/label_jabu.png",
+    "codes": "entrance_dungeon_jabu"
+  },
+  {
+    "name": "Forest",
+    "type": "toggle",
+    "img": "images/label_forest.png",
+    "codes": "entrance_dungeon_forest"
+  },
+  {
+    "name": "Fire",
+    "type": "toggle",
+    "img": "images/label_fire.png",
+    "codes": "entrance_dungeon_fire"
+  },
+  {
+    "name": "Water",
+    "type": "toggle",
+    "img": "images/label_water.png",
+    "codes": "entrance_dungeon_water"
+  },
+  {
+    "name": "Spirit",
+    "type": "toggle",
+    "img": "images/label_spirit.png",
+    "codes": "entrance_dungeon_spirit"
+  },
+  {
+    "name": "Shadow",
+    "type": "toggle",
+    "img": "images/label_shadow.png",
+    "codes": "entrance_dungeon_shadow"
+  },
+  {
+    "name": "Well",
+    "type": "toggle",
+    "img": "images/label_botw.png",
+    "codes": "entrance_dungeon_botw"
+  },
+  {
+    "name": "IC",
+    "type": "toggle",
+    "img": "images/label_ice.png",
+    "codes": "entrance_dungeon_ice"
+  },
+  {
+    "name": "GTG",
+    "type": "toggle",
+    "img": "images/label_gtg.png",
+    "codes": "entrance_dungeon_gtg"
+  },
+]
