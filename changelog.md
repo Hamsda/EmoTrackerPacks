@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.4.0.0
 
 - fixed MQ Spirit unintentionally showing up on child map
 - added entrance randomizer variant
