@@ -18,6 +18,12 @@
     "codes": "entrance_overworld_cte"
   },
   {
+    "name": "Temple of Time Exterior",
+    "type": "toggle",
+    "img": "images/entrance_house_tot.png",
+    "codes": "entrance_overworld_tot"
+  },
+  {
     "name": "Death Mountain Trail",
     "type": "toggle",
     "img": "images/entrance_overworld_dmt.png",

@@ -1796,6 +1796,30 @@
             ]
           },
           {
+            "name": "Temple of Time Exterior -> Temple of Time",
+            "short_name": "Temple of Time",
+            "sections": [
+              {
+                "name": "House",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_houses",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "child",
+                "x": 1535,
+                "y": 257
+              },
+              {
+                "map": "adult",
+                "x": 1535,
+                "y": 257
+              }
+            ]
+          },
+          {
             "name": "Castle Town -> Castle Grounds",
             "short_name": "CT -> CG",
             "access_rules": [
@@ -1930,6 +1954,33 @@
               }
             ]
           },
+          {
+            "name": "Temple of Time Exterior -> Castle Town",
+            "short_name": "ToT -> CT",
+            "access_rules": [
+              "setting_entrance_ext"
+            ],
+            "sections": [
+              {
+                "name": "Overworld",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_overworld",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "child",
+                "x": 1535,
+                "y": 292
+              },
+              {
+                "map": "adult",
+                "x": 1535,
+                "y": 292
+              }
+        ]
+      },
         ]
       },
       {

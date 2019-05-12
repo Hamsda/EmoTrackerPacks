@@ -109,39 +109,40 @@
       "item_margin": "1,2",
       "rows": [
         [
-          "entrance_overworld_cg",
-          "entrance_overworld_ct",
-          "entrance_overworld_cte",
-          "entrance_overworld_dmt",
-          "entrance_overworld_dmc"
-        ],
-        [
-          "entrance_overworld_col",
-          "entrance_overworld_gf",
-          "entrance_overworld_gv",
-          "entrance_overworld_gc",
-          "entrance_overworld_gy"
-        ],
-        [
-          "entrance_overworld_wl",
-          "entrance_overworld_hf",
-          "entrance_overworld_kak",
           "entrance_overworld_kf",
-          "entrance_overworld_lh"
-        ],
-        [
-          "entrance_overworld_llr",
           "entrance_overworld_lw",
           "entrance_overworld_bridge",
           "entrance_overworld_sfm",
-          ""
         ],
         [
+          "entrance_overworld_cg",
+          "entrance_overworld_ct",
+          "entrance_overworld_cte",
+          "entrance_overworld_tot",
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv",
+        ],
+        [
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "entrance_overworld_kak",
+          "entrance_overworld_gy",
+        ],
+        [
+          "entrance_overworld_lh",
           "entrance_overworld_zr",
           "entrance_overworld_zd",
           "entrance_overworld_zf",
+        ],
+        [
+          "entrance_overworld_dmt",
+          "entrance_overworld_dmc",
+          "entrance_overworld_gc",
           "",
-          ""
         ]
       ]
     }
