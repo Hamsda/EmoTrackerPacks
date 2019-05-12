@@ -658,5 +658,17 @@
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "generic_boss_key"
+  },
+  {
+    "name": "Generic Map",
+    "type": "toggle",
+    "img": "images/map.png",
+    "codes": "generic_map"
+  },
+  {
+    "name": "Generic Compass",
+    "type": "toggle",
+    "img": "images/compass.png",
+    "codes": "generic_compass"
   }
 ]

@@ -4,6 +4,7 @@
 
 - fixed MQ Spirit unintentionally showing up on child map
 - added entrance randomizer variant
+- added map and compass to capture layout
 
 ## 2.3.3.9
 
