@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.4.0.1
 
 - changed entrance variant:
   - fixed Gerudo Fortress Storms Grotto is adult only
