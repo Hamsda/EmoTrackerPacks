@@ -114,7 +114,8 @@
         "name": "Near Boss Chest",
         "short_name": "Basement",
         "access_rules": [
-          "@Forest Temple MQ/Falling Room Chest,@Forest Temple MQ/Bow Chest,forest_small_keys:6,bow"
+          "@Forest Temple MQ/Falling Room Chest,@Forest Temple MQ/Bow Chest,forest_small_keys:6,bow",
+          "@Forest Temple MQ/Bow Chest,forest_small_keys:4,[forest_small_keys:6],bow,longshot,ocarina,time"
         ],
         "item_count": 1
       },

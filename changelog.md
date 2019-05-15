@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added MQ Forest Temple basement sequence break with 4 keys
+
 ## 2.4.0.1
 
 - changed entrance variant:
