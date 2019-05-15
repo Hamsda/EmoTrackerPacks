@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.4.0.1
+
+- changed entrance variant:
+  - fixed Gerudo Fortress Storms Grotto is adult only
+  - removed access rules from many overworld and dungeon entrances to make capturing from hints or by getting spit out easier
+  - added access rules to Castle Grounds fairies
+
 ## 2.4.0.0
 
 - fixed MQ Spirit unintentionally showing up on child map

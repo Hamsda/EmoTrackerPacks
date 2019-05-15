@@ -372,10 +372,6 @@
             "sections": [
               {
                 "name": "Overworld",
-                "access_rules": [
-                  "scale",
-                  "sword2,ironboots"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
                 "item_count": 1
@@ -384,9 +380,6 @@
             "map_locations": [
               {
                 "map": "child",
-                "restrict_visibility_rules": [
-                  "scale"
-                ],
                 "x": 2184,
                 "y": 776
               },
@@ -595,9 +588,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "sword2,hookshot"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -1410,9 +1400,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -1494,10 +1481,6 @@
             "sections": [
               {
                 "name": "Overworld",
-                "access_rules": [
-                  "sword2",
-                  "postzelda"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_overworld",
                 "item_count": 1
@@ -1506,17 +1489,11 @@
             "map_locations": [
               {
                 "map": "child",
-                "restrict_visibility_rules": [
-                  "postzelda"
-                ],
                 "x": 1771,
                 "y": 300
               },
               {
                 "map": "adult",
-                "restrict_visibility_rules": [
-                  "sword2"
-                ],
                 "x": 1771,
                 "y": 300
               }
@@ -1558,9 +1535,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "ocarina,nocturne,dinsfire,magic"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -2008,6 +1982,9 @@
             "sections": [
               {
                 "name": "House",
+                "access_rules": [
+                  "sword2,lift3"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2027,6 +2004,9 @@
             "sections": [
               {
                 "name": "House",
+                "access_rules": [
+                  "$has_explosives"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2160,11 +2140,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "sword2",
-                  "$has_explosives",
-                  "lift1"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -2173,10 +2148,6 @@
             "map_locations": [
               {
                 "map": "child",
-                "restrict_visibility_rules": [
-                  "$has_explosives",
-                  "lift1"
-                ],
                 "x": 1684,
                 "y": 220
               },
@@ -2373,11 +2344,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "ocarina,bolero",
-                  "sword2,hookshot",
-                  "sword2,hoverboots"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -2386,9 +2352,6 @@
             "map_locations": [
               {
                 "map": "child",
-                "restrict_visibility_rules": [
-                  "ocarina,bolero"
-                ],
                 "x": 1912,
                 "y": 80
               },
@@ -2667,10 +2630,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "sword2,ironboots,hookshot",
-                  "sword2,scale2,longshot"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -2679,9 +2638,6 @@
             "map_locations": [
               {
                 "map": "child",
-                "restrict_visibility_rules": [
-                  "scale2,longshot"
-                ],
                 "x": 1015,
                 "y": 1380
               },
@@ -3100,9 +3056,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "bottle"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
@@ -3307,11 +3260,6 @@
             ],
             "map_locations": [
               {
-                "map": "child",
-                "x": 526,
-                "y": 393
-              },
-              {
                 "map": "adult",
                 "x": 526,
                 "y": 393
@@ -3324,9 +3272,6 @@
             "sections": [
               {
                 "name": "Dungeon",
-                "access_rules": [
-                  "card"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_dungeons",
                 "item_count": 1
