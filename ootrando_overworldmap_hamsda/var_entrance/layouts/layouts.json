@@ -23,10 +23,19 @@
             },
             {
               "type": "group",
+              "header": "Counters",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "counters_tall"
+              }
+            },
+            {
+              "type": "group",
               "header": "Settings",
               "content": {
                 "type": "layout",
-                "key": "options_tall"
+                "key": "options_tall",
               }
             }
           ]
@@ -114,8 +123,16 @@
                 },
                 {
                   "type": "group",
+                  "header": "Counters",
+                  "dock": "top",
+                  "content": {
+                    "type": "layout",
+                    "key": "counters_wide"
+                  }
+                },
+                {
+                  "type": "group",
                   "header": "Settings",
-                  "h_alignment": "stretch",
                   "content": {
                     "type": "layout",
                     "key": "options_wide",
@@ -199,10 +216,19 @@
             },
             {
               "type": "group",
+              "header": "Counters",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "counters_tall"
+              }
+            },
+            {
+              "type": "group",
               "header": "Settings",
               "content": {
                 "type": "layout",
-                "key": "options_tall"
+                "key": "options_tall",
               }
             }
           ]

@@ -8,6 +8,7 @@ if Tracker.ActiveVariantUID == "var_entrance" then
   Tracker:AddItems("items/cap_houses.json")
   Tracker:AddItems("items/cap_dungeons.json")
   Tracker:AddItems("items/cap_overworld.json")
+  Tracker:AddItems("items/counters.json")
   
   ScriptHost:LoadScript("scripts/logic.lua")
   ScriptHost:LoadScript("scripts/update.lua")
@@ -18,6 +19,7 @@ if Tracker.ActiveVariantUID == "var_entrance" then
   
   Tracker:AddLayouts("layouts/item_grids.json")
   Tracker:AddLayouts("layouts/options.json")
+  Tracker:AddLayouts("layouts/counters.json")
   Tracker:AddLayouts("layouts/layouts.json")
   Tracker:AddLayouts("layouts/tracker.json")
   Tracker:AddLayouts("layouts/capture.json")

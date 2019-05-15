@@ -184,12 +184,10 @@ This setting determines how the Magic Beans will be handled on the map.
 
 ## Entrance Randomizer variant
 
-The entrance randomizer variant is very different from the regular map tracker variants. The map does not include any item locations to be checked, because that would be way too many spots on the map, but has locations for the randomized entrances instead.
+The entrance randomizer variant is very different from the regular map tracker variants. The map does not include any item locations to be checked, because that would be way too many spots on the map, but has locations for the randomized entrances instead. They all have a capture spot, where you can mark what you have found at that spot. If you find something useless, just mark off the icon. Later you can see what led where by simply hovering over the locations.
 
-The item layout is just a general keysanity layout, only a few of the items are actually used for "logic" (to hide some entrances). There is only one setting to select how many of the entrances you randomized:
+The item layout is just a general keysanity layout, only a few of the items are actually used for "logic" (to show/hide some entrances). Additionally there are counters for the useful indoors entrances, so you can evaluate how much focus to put on exploring more entrances. There is only one setting to select how many of the entrances you randomized:
 
 - ![ER Dungeons](ootrando_overworldmap_hamsda/images/setting_entrance_dungeons.png "ER Dungeons") Only the dungeon entrances are shuffled with each other.
 - ![ER Indoors](ootrando_overworldmap_hamsda/images/setting_entrance_indoors.png "ER Indoors") Indoor entrances like grottos and houses are shuffled as well.
 - ![ER Overworld](ootrando_overworldmap_hamsda/images/setting_entrance_overworld.png "ER Overworld") In addition most overworld connections are shuffled.
-
-The entrances all have a capture spot, where you can mark what you have found at that spot. If you find something useless, just mark off the icon. Later you can see what led where by simply hovering over the locations.
