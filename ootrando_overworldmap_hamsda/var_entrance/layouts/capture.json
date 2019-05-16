@@ -20,19 +20,19 @@
       "item_margin": "1,2",
       "rows": [
         [
-          "entrance_grotto_cow",
           "entrance_grotto_scrub",
-          "entrance_grotto_theater"
+          "entrance_grotto_cow",
+          "entrance_grotto_theater",
+        ],
+        [
+          "entrance_grotto_wolfos",
+          "entrance_grotto_tektite",
+          "entrance_grotto_castle_storms",
         ],
         [
           "entrance_grotto_kak_bomb",
-          "entrance_grotto_wolfos",
-          "entrance_grotto_castle_storms"
-        ],
-        [
           "entrance_grotto_field_kak",
-          "entrance_grotto_tektite",
-          "entrance_grotto_field_valley"
+          "entrance_grotto_field_valley",
         ]
       ]
     }
@@ -46,27 +46,27 @@
       "rows": [
         [
           "entrance_house_shop",
-          "entrance_house_bowling",
-          "entrance_house_masks",
-          "entrance_house_shoot_child "
+          "entrance_house_fairy",
+          "entrance_house_link",
+          "entrance_house_tot",
         ],
         [
+          "entrance_house_shoot_child",
           "entrance_house_shoot_adult",
+          "entrance_house_fishing",
           "entrance_house_chest",
-          "entrance_house_pot",
-          "entrance_house_fairy"
+        ],
+        [
+          "entrance_house_cow",
+          "entrance_house_bowling",
+          "entrance_house_masks",
+          "entrance_house_talon",
         ],
         [
           "entrance_house_skull",
-          "entrance_house_cow",
           "entrance_house_windmill",
-          "entrance_house_link"
-        ],
-        [
-          "entrance_house_fishing",
+          "entrance_house_pot", 
           "entrance_house_lab",
-          "entrance_house_talon",
-          "entrance_house_tot"
         ]
       ]
     }
@@ -121,12 +121,6 @@
           "entrance_overworld_tot",
         ],
         [
-          "entrance_overworld_col",
-          "entrance_overworld_wl",
-          "entrance_overworld_gf",
-          "entrance_overworld_gv",
-        ],
-        [
           "entrance_overworld_hf",
           "entrance_overworld_llr",
           "entrance_overworld_kak",
@@ -137,6 +131,12 @@
           "entrance_overworld_zr",
           "entrance_overworld_zd",
           "entrance_overworld_zf",
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv",
         ],
         [
           "entrance_overworld_dmt",
