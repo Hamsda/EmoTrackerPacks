@@ -5,6 +5,7 @@
 - added MQ Forest Temple basement sequence break with 4 keys
 - changed entrance rando option a bit
 - added counters for useful indoors to ER
+- changed images for many of the indoors ER captures
 
 ## 2.4.0.1
 
