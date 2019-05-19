@@ -1,0 +1,20 @@
+﻿[
+  {
+    "name": "child",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/overworld_map.png"
+  },
+  {
+    "name": "adult",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/overworld_map.png"
+  },
+  {
+    "name": "gossips",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/overworld_map.png"
+  }
+]

@@ -1,0 +1,694 @@
+[
+  {
+    "name": "Bow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_30.png",
+        "codes": "bow"
+      },
+      {
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_40.png"
+      },
+      {
+        "img": "images/bow.png",
+        "img_mods": "overlay|images/overlay_50_green.png"
+      }
+    ]
+  },
+  {
+    "name": "Slingshot",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_30.png",
+        "codes": "slingshot,sling,ss"
+      },
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_40.png"
+      },
+      {
+        "img": "images/slingshot.png",
+        "img_mods": "overlay|images/overlay_50_green.png"
+      }
+    ]
+  },
+  {
+    "name": "Deku Nuts",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/nut.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_20.png",
+        "codes": "nuts,dekunuts,dn"
+      },
+      {
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_30.png"
+      },
+      {
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_40_green.png"
+      }
+    ]
+  },
+  {
+    "name": "Fire Arrows",
+    "type": "toggle",
+    "img": "images/firearrow.png",
+    "codes": "firearrow,farrow,fa"
+  },
+  {
+    "name": "Ice Arrows",
+    "type": "toggle",
+    "img": "images/icearrow.png",
+    "codes": "icearrow,iarrow,ia"
+  },
+  {
+    "name": "Light Arrows",
+    "type": "toggle",
+    "img": "images/lightarrow.png",
+    "codes": "lightarrow,larrow,la"
+  },
+  {
+    "name": "Magic Beans",
+    "type": "consumable",
+    "img": "images/bean.png",
+    "codes": "beans",
+    "max_quantity": 10
+  },
+  {
+    "name": "Deku Sticks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/stick.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_10.png",
+        "codes": "sticks,dekusticks,ds"
+      },
+      {
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_20.png"
+      },
+      {
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_30_green.png"
+      }
+    ]
+  },
+  {
+    "name": "Bombs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bomb.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_20.png",
+        "codes": "bombs,bombbag"
+      },
+      {
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_30.png"
+      },
+      {
+        "img": "images/bomb.png",
+        "img_mods": "overlay|images/overlay_40_green.png"
+      }
+    ]
+  },
+  {
+    "name": "Boomerang",
+    "type": "toggle",
+    "img": "images/boomerang.png",
+    "codes": "boomerang,rang"
+  },
+  {
+    "name": "Hookshot",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/hookshotd.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/hookshot.png",
+        "codes": "hookshot,hs"
+      },
+      {
+        "img": "images/longshot.png",
+        "codes": "longshot,ls"
+      }
+    ]
+  },
+  {
+    "name": "Bombchus",
+    "type": "toggle",
+    "img": "images/bombchu.png",
+    "codes": "bombchu,bombchus,chus"
+  },
+  {
+    "name": "Lens of Truth",
+    "type": "toggle",
+    "img": "images/lens.png",
+    "codes": "lens,lensoftruth,lot"
+  },
+  {
+    "name": "Din's Fire",
+    "type": "toggle",
+    "img": "images/din.png",
+    "codes": "dinsfire,dins,df"
+  },
+  {
+    "name": "Farore's Wind",
+    "type": "toggle",
+    "img": "images/farore.png",
+    "codes": "faroreswind,farores,fw"
+  },
+  {
+    "name": "Nayru's Love",
+    "type": "toggle",
+    "img": "images/nayru.png",
+    "codes": "nayruslove,nayrus,nl"
+  },
+  {
+    "name": "Child Trade",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/egg.png",
+        "img_mods": "@disabled,overlay|images/overlay_child.png",
+        "codes": "nokidtrade"
+      },
+      {
+        "img": "images/egg.png",
+        "img_mods": "overlay|images/overlay_child.png",
+        "codes": "kidtrade,childegg,weirdegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/cucco.png",
+        "img_mods": "overlay|images/overlay_child.png",
+        "codes": "kidtrade,childcucco",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/letter.png",
+        "codes": "kidtrade,letter,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,lettershown,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/keaton.png",
+        "codes": "kidtrade,keaton,keatonmask,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,keatonsold,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/skull.png",
+        "codes": "kidtrade,skullmask,skull,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,skullsold,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/spooky.png",
+        "codes": "kidtrade,spooky,spookymask,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,spookysold,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bunny.png",
+        "codes": "kidtrade,bunny,bunnyhood,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/sold_out.png",
+        "codes": "kidtrade,soldout,bunnysold,postzelda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/truth.png",
+        "codes": "kidtrade,truth,maskoftruth,mot,postzelda",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Adult Trade",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/egg.png",
+        "img_mods": "@disabled,overlay|images/overlay_adult.png",
+        "codes": "noadulttrade"
+      },
+      {
+        "img": "images/egg.png",
+        "img_mods": "overlay|images/overlay_adult.png",
+        "codes": "adulttrade,adultegg,pocketegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/cucco.png",
+        "img_mods": "overlay|images/overlay_adult.png",
+        "codes": "adulttrade,adultcucco,pocketcucco",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/cojiro.png",
+        "codes": "adulttrade,cojiro",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/mushroom.png",
+        "codes": "adulttrade,mushroom,oddmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/medicine.png",
+        "codes": "adulttrade,oddpotion,oddpoultice",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/saw.png",
+        "codes": "adulttrade,saw,poachersaw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/broken_sword.png",
+        "codes": "adulttrade,brokensword",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/perscription.png",
+        "codes": "adulttrade,prescription",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/frog.png",
+        "codes": "adulttrade,frog,eyeballfrog,speedfrog",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/eyedrops.png",
+        "codes": "adulttrade,eyedrops,drops",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/claim.png",
+        "codes": "adulttrade,claim,claimcheck",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hammer",
+    "type": "toggle",
+    "img": "images/hammer.png",
+    "codes": "hammer,mh,megatonhammer"
+  },
+  {
+    "name": "Ocarina",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/fairyocarina.png",
+        "codes": "ocarina,fairyocarina,fo"
+      },
+      {
+        "img": "images/ocarina.png",
+        "codes": "ocarinaoftime,oot"
+      }
+    ]
+  },
+  {
+    "name": "Ocarina w/ Scarecrow",
+    "type": "toggle_badged",
+    "base_item": "ocarina",
+    "img": "images/overlay_scarecrow.png",
+    "codes": "ocarinacrow,scarecrow,pierre"
+  },
+  {
+    "name": "Bottle 1",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle,bottle1,ruto,ruto1,rutosletter,rutosletter1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "bottle,bottle1,redpot1,redpotion1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle1,greenpot1,greenpotion1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle1,bluepot1,bluepotion1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle1,fairy1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle1,fish1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle1,bugs1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle1,milk1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle1,halfmilk1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle1,bfire1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle1,bigpoe,bigpoe1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle1,poe1",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 2",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle,bottle2,ruto,ruto2,rutosletter,rutosletter2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "bottle,bottle2,redpot2,redpotion2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle2,greenpot2,greenpotion2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle2,bluepot2,bluepotion2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle2,fairy2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle2,fish2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle2,bugs2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle2,milk2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle2,halfmilk2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle2,bfire2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle2,bigpoe,bigpoe2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle2,poe2",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 3",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle,bottle3,ruto,ruto3,rutosletter,rutosletter3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "bottle,bottle3,redpot3,redpotion3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle3,greenpot3,greenpotion3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle3,bluepot3,bluepotion3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle3,fairy3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle3,fish3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle3,bugs3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle3,milk3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle3,halfmilk3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle3,bfire3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle3,bigpoe,bigpoe3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle3,poe3",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 4",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle,bottle4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle,bottle4,ruto,ruto4,rutosletter,rutosletter4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "bottle,bottle4,redpot4,redpotion4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "bottle,bottle4,greenpot4,greenpotion4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "bottle,bottle4,bluepot4,bluepotion4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fairy.png",
+        "codes": "bottle,bottle4,fairy4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle,bottle4,fish4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle,bottle4,bugs4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_milk.png",
+        "codes": "bottle,bottle4,milk4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_halfmilk.png",
+        "codes": "bottle,bottle4,halfmilk4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle,bottle4,bfire4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bigpoe.png",
+        "codes": "bottle,bottle4,bigpoe,bigpoe4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_poe.png",
+        "codes": "bottle,bottle4,poe4",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle Minimal",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottleminimal,bottle",
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "ruto,rutosletter",
+      }
+    ],
+  },
+  {
+    "name": "Bottle",
+    "type": "toggle",
+    "img": "images/bottle.png",
+    "codes": "bottlecapture"
+  },
+  {
+    "name": "Rutos Letter",
+    "type": "toggle",
+    "img": "images/bottle_letter.png",
+    "codes": "rutocapture"
+  }
+]

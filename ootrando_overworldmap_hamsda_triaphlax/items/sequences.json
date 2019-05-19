@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Forest Stage Bean",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bean.png",
+        "img_mods": "@disabled",
+        "codes": "bean_stage_no"
+      },
+      {
+        "img": "images/bean.png",
+        "codes": "bean_stage_yes"
+      }
+    ]
+  },
+  {
+    "name": "Lake Hylia Bean",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bean.png",
+        "img_mods": "@disabled",
+        "codes": "bean_lake_no"
+      },
+      {
+        "img": "images/bean.png",
+        "codes": "bean_lake_yes"
+      }
+    ]
+  },
+  {
+    "name": "Graveyard Bean",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bean.png",
+        "img_mods": "@disabled",
+        "codes": "bean_graveyard_no"
+      },
+      {
+        "img": "images/bean.png",
+        "codes": "bean_graveyard_yes"
+      }
+    ]
+  },
+  {
+    "name": "DMT Bean",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bean.png",
+        "img_mods": "@disabled",
+        "codes": "bean_trail_no"
+      },
+      {
+        "img": "images/bean.png",
+        "codes": "bean_trail_yes"
+      }
+    ]
+  },
+  {
+    "name": "DMC Bean",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bean.png",
+        "img_mods": "@disabled",
+        "codes": "bean_crater_no"
+      },
+      {
+        "img": "images/bean.png",
+        "codes": "bean_crater_yes"
+      }
+    ]
+  },
+  {
+    "name": "Colossus Bean",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bean.png",
+        "img_mods": "@disabled",
+        "codes": "bean_colossus_no"
+      },
+      {
+        "img": "images/bean.png",
+        "codes": "bean_colossus_yes"
+      }
+    ]
+  },
+  {
+    "name": "Scarecrow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/scarecrow.png",
+        "img_mods": "@disabled",
+        "codes": "scarecrow_kid"
+      },
+      {
+        "img": "images/scarecrow.png",
+        "codes": "scarecrow_adult",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Move King Zora",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/king_zora.png",
+        "img_mods": "@disabled",
+        "codes": "king_zora_moved_no"
+      },
+      {
+        "img": "images/king_zora.png",
+        "codes": "king_zora_moved_yes",
+        "inherit_codes": false
+      }
+    ]
+  }
+]
