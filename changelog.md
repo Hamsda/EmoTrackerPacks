@@ -3,6 +3,7 @@
 ## x
 
 - changed images for overworld ER to be more colorful
+- changed ER Darunias spot visible on child map
 
 ## 2.4.0.2
 

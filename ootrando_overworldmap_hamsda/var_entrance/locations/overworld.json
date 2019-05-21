@@ -2675,6 +2675,11 @@
             ],
             "map_locations": [
               {
+                "map": "child",
+                "x": 1646,
+                "y": 90
+              },
+              {
                 "map": "adult",
                 "x": 1646,
                 "y": 90
