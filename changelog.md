@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed images for overworld ER to be more colorful
+
 ## 2.4.0.2
 
 - added MQ Forest Temple basement sequence break with 4 keys
