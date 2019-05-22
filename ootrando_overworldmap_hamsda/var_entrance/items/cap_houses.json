@@ -6,16 +6,22 @@
     "codes": "entrance_house_shop"
   },
   {
-    "name": "Bombchu Bowling",
+    "name": "Great Fairy",
     "type": "toggle",
-    "img": "images/entrance_house_bowling.png",
-    "codes": "entrance_house_bowling"
+    "img": "images/entrance_house_fairy.png",
+    "codes": "entrance_house_fairy"
   },
   {
-    "name": "Mask Shop",
+    "name": "Links House",
     "type": "toggle",
-    "img": "images/entrance_house_masks.png",
-    "codes": "entrance_house_masks"
+    "img": "images/entrance_house_link.png",
+    "codes": "entrance_house_link"
+  },
+  {
+    "name": "Temple of Time",
+    "type": "toggle",
+    "img": "images/entrance_house_tot.png",
+    "codes": "entrance_house_tot"
   },
   {
     "name": "Child Shooting Gallery",
@@ -30,28 +36,16 @@
     "codes": "entrance_house_shoot_adult"
   },
   {
+    "name": "Fishing Hole",
+    "type": "toggle",
+    "img": "images/entrance_house_fishing.png",
+    "codes": "entrance_house_fishing"
+  },
+  {
     "name": "Treasure Chest Game",
     "type": "toggle",
     "img": "images/entrance_house_chest.png",
     "codes": "entrance_house_chest"
-  },
-  {
-    "name": "Castle Town Rupee Room",
-    "type": "toggle",
-    "img": "images/entrance_house_pot.png",
-    "codes": "entrance_house_pot"
-  },
-  {
-    "name": "Great Fairy",
-    "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
-    "codes": "entrance_house_fairy"
-  },
-  {
-    "name": "House of Skulltula",
-    "type": "toggle",
-    "img": "images/entrance_house_skull.png",
-    "codes": "entrance_house_skull"
   },
   {
     "name": "Cow",
@@ -60,28 +54,16 @@
     "codes": "entrance_house_cow"
   },
   {
-    "name": "Windmill",
+    "name": "Bombchu Bowling",
     "type": "toggle",
-    "img": "images/entrance_house_windmill.png",
-    "codes": "entrance_house_windmill"
+    "img": "images/entrance_house_bowling.png",
+    "codes": "entrance_house_bowling"
   },
   {
-    "name": "Links House",
+    "name": "Mask Shop",
     "type": "toggle",
-    "img": "images/entrance_house_link.png",
-    "codes": "entrance_house_link"
-  },
-  {
-    "name": "Fishing Hole",
-    "type": "toggle",
-    "img": "images/entrance_house_fishing.png",
-    "codes": "entrance_house_fishing"
-  },
-  {
-    "name": "Lake Hylia Lab",
-    "type": "toggle",
-    "img": "images/entrance_house_lab.png",
-    "codes": "entrance_house_lab"
+    "img": "images/entrance_house_masks.png",
+    "codes": "entrance_house_masks"
   },
   {
     "name": "Talon House",
@@ -90,9 +72,27 @@
     "codes": "entrance_house_talon"
   },
   {
-    "name": "Temple of Time",
+    "name": "House of Skulltula",
     "type": "toggle",
-    "img": "images/entrance_house_tot.png",
-    "codes": "entrance_house_tot"
+    "img": "images/entrance_house_skull.png",
+    "codes": "entrance_house_skull"
+  },
+  {
+    "name": "Windmill",
+    "type": "toggle",
+    "img": "images/entrance_house_windmill.png",
+    "codes": "entrance_house_windmill"
+  },
+  {
+    "name": "Castle Town Rupee Room",
+    "type": "toggle",
+    "img": "images/entrance_house_pot.png",
+    "codes": "entrance_house_pot"
+  },
+  {
+    "name": "Lake Hylia Lab",
+    "type": "toggle",
+    "img": "images/entrance_house_lab.png",
+    "codes": "entrance_house_lab"
   },
 ]

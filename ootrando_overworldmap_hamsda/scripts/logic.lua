@@ -205,16 +205,17 @@ end
 
 function link_the_goron()
   if has("sword2") then
-    if 
-    (
-      has("lift1")
-      or
-      has("bow")
-    )
+    if has("lift1")
+    or has("bow")
     then
-      return 1
+      return 1, AccessibilityLevel.Normal
     else
-      return has_explosives()
+      local explo_count, explo_level = has_explosives()
+      if explo_count > 0 then
+        return explo_count, explo_level
+      elseif has("dinsfire") and has("magic") then
+        return 1, AccessibilityLevel.SequenceBreak
+      end
     end
   end
   return 0
@@ -222,15 +223,22 @@ end
 
 function dmc_central()
   if has("sword2") then
-    if
-    has("ocarina") and has("bolero")
-    or
-    has("hammer") and has("hoverboots")
-    then
-      return 1
+    if has("ocarina") and has("bolero") then
+      return 1, AccessibilityLevel.Normal
     else
-      if has("hoverboots") or has("hookshot") then
-        return link_the_goron()
+      local goron_count, goron_level = link_the_goron()
+      if has("hoverboots") then
+        if has("hammer") then
+          return 1, AccessibilityLevel.Normal
+        else
+          return goron_count, goron_level
+        end
+      elseif has("hookshot") then
+        if goron_count > 0 then
+          return goron_count, goron_level
+        elseif has("hammer") then
+          return 1, AccessibilityLevel.SequenceBreak
+        end
       end
     end
   end

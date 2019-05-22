@@ -1,15 +1,15 @@
 [
   {
-    "name": "Cow",
-    "type": "toggle",
-    "img": "images/entrance_grotto_cow.png",
-    "codes": "entrance_grotto_cow"
-  },
-  {
     "name": "Scrub",
     "type": "toggle",
     "img": "images/entrance_grotto_scrub.png",
     "codes": "entrance_grotto_scrub"
+  },
+  {
+    "name": "Cow",
+    "type": "toggle",
+    "img": "images/entrance_grotto_cow.png",
+    "codes": "entrance_grotto_cow"
   },
   {
     "name": "Deku Theater",
@@ -18,10 +18,22 @@
     "codes": "entrance_grotto_theater"
   },
   {
-    "name": "Kakariko Bombable Grotto",
+    "name": "Composer Grave",
     "type": "toggle",
-    "img": "images/entrance_grotto_kak_bomb.png",
-    "codes": "entrance_grotto_kak_bomb"
+    "img": "images/entrance_grotto_comp.png",
+    "codes": "entrance_grotto_comp"
+  },
+  {
+    "name": "Dampes Grave",
+    "type": "toggle",
+    "img": "images/entrance_grotto_dampe.png",
+    "codes": "entrance_grotto_dampe"
+  },
+  {
+    "name": "Heart Piece Grave",
+    "type": "toggle",
+    "img": "images/entrance_grotto_hp.png",
+    "codes": "entrance_grotto_hp"
   },
   {
     "name": "Front of Meadow Grotto",
@@ -30,22 +42,28 @@
     "codes": "entrance_grotto_wolfos"
   },
   {
+    "name": "Field North Lon Lon Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_tektite.png",
+    "codes": "entrance_grotto_tektite"
+  },
+  {
     "name": "Castle Storms Grotto",
     "type": "toggle",
     "img": "images/entrance_grotto_castle_storms.png",
     "codes": "entrance_grotto_castle_storms"
   },
   {
+    "name": "Kakariko Bombable Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_kak_bomb.png",
+    "codes": "entrance_grotto_kak_bomb"
+  },
+  {
     "name": "Field Kakariko Grotto",
     "type": "toggle",
     "img": "images/entrance_grotto_field_kak.png",
     "codes": "entrance_grotto_field_kak"
-  },
-  {
-    "name": "Field North Lon Lon Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_tektite.png",
-    "codes": "entrance_grotto_tektite"
   },
   {
     "name": "Field Valley Grotto",
