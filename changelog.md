@@ -1,11 +1,11 @@
 # Changelog
 
-## x
+## 2.4.1.0
 
 - changed images for overworld ER to be more colorful
 - changed ER Darunias spot visible on child map
 - added new graves to ER captures
-- added new sequence breaks:
+- added sequence breaks for new logic tricks:
   - Forest Temple MQ NE outdoors ledge w/ hovers
   - Fire Temple MQ big lava room bombable chest w/o hookshot
   - Fire Temple MQ flame wall maze skip
