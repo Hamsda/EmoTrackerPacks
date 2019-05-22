@@ -106,7 +106,8 @@
         "access_rules": [
           "bow,longshot",
           "@Forest Temple MQ/Redead Chest,longshot",
-          "@Forest Temple MQ/Falling Room Chest"
+          "@Forest Temple MQ/Falling Room Chest",
+          "@Forest Temple MQ/NE Outdoors Upper Chest,hoverboots,[longshot]"
         ],
         "item_count": 1
       },
@@ -258,7 +259,7 @@
         "name": "Big Lava Room Bombable Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "hammer,hookshot,$has_fire,$has_explosives"
+          "hammer,[hookshot],$has_fire,$has_explosives"
         ],
         "item_count": 1
       },
@@ -369,7 +370,7 @@
             "short_name": "Fire Maze Side",
             "access_rules": [
               "@Fire Temple MQ/Freestanding Key,ocarina,time",
-              "@Fire Temple MQ/Freestanding Key,hoverboots"
+              "@Fire Temple MQ/Freestanding Key,[hoverboots]"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -801,7 +802,8 @@
             "name": "GS85 - Near Boss",
             "short_name": "Near Boss",
             "access_rules": [
-              "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bow"
+              "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bow",
+              "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bombchu,[bow]"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -1357,7 +1359,7 @@
         "name": "Castle Tower",
         "access_rules": [
           "$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,longshot",
-          "$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,hookshot,hoverboots"
+          "$can_LA,lift3,ocarina,time,$has_goron_tunic,$has_bottle,$can_see_with_lens,hammer,bombchu,shield3,firearrow,[hookshot],hoverboots"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",

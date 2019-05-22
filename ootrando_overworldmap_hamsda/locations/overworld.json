@@ -3752,8 +3752,7 @@
                           "ocarina,bolero,sword2,bean_crater_yes",
                           "ocarina,bolero,sword2,hookshot",
                           "ocarina,bolero,sword2,hoverboots",
-                          "sword2,lift1",
-                          "sword2,bow",
+                          "$link_the_goron",
                           "{ocarina,bolero}"
                         ],
                         "capture_item": true,
@@ -3786,10 +3785,10 @@
                           "sword2,ocarina,bolero,bean_crater_yes",
                           "sword2,ocarina,bolero,hoverboots,[setting_plant_no],[beans]",
                           "sword2,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
                           "sword2,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
+                          "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "{$hintable}",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
@@ -3822,7 +3821,8 @@
                           "ocarina,bolero,hookshot",
                           "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
-                          "hoverboots"
+                          "hoverboots",
+                          "[]"
                         ],
                         "item_count": 1
                       }
@@ -3849,7 +3849,8 @@
                           "ocarina,bolero,hookshot",
                           "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
-                          "hoverboots"
+                          "hoverboots",
+                          "[]"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"

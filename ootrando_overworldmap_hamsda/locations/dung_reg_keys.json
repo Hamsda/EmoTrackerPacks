@@ -519,15 +519,11 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "ironboots,longshot,hoverboots",
           "ironboots,longshot,$has_explosives,lift1",
           "ironboots,longshot,[hoverboots]",
-          "ironboots,longshot,[$has_explosives],[lift1]",
-          "ironboots,hoverboots,[longshot]",
-          "[ironboots],longshot,ocarina,lullaby,hoverboots",
+          "ironboots,[longshot],hoverboots",
           "[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
           "[ironboots],longshot,ocarina,lullaby,[hoverboots]",
-          "[ironboots],longshot,ocarina,lulla0by,[$has_explosives],[lift1]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -602,6 +598,7 @@
             "short_name": "Platform Room",
             "access_rules": [
               "longshot",
+              "[longshot],hookshot",
               "{bow}"
             ],
             "capture_item": true,
@@ -614,8 +611,8 @@
             "short_name": "Near Boss Key",
             "access_rules": [
               "ironboots,longshot",
-              "[ironboots],longshot,ocarina,lullaby",
-              "ironboots,[longshot],hoverboots"
+              "ironboots,[longshot],hoverboots",
+              "[ironboots],longshot,ocarina,lullaby"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -760,8 +757,8 @@
       {
         "name": "Bongo Bongo",
         "access_rules": [
-          "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,bow",
           "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,longshot,ocarina,[scarecrow]",
+          "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,bow",
           "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,bombchu,[bow]"
         ],
         "hosted_item": "shadow",

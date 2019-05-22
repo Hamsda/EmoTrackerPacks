@@ -4,6 +4,15 @@
 
 - changed images for overworld ER to be more colorful
 - changed ER Darunias spot visible on child map
+- added new sequence breaks:
+  - Forest Temple MQ NE outdoors ledge w/ hovers
+  - Fire Temple MQ big lava room bombable chest w/o hookshot
+  - Fire Temple MQ flame wall maze skip
+  - Water Temple falling platform room GS w/ hookshot
+  - Ice Cavern MQ scarecrow GS w/o anything
+  - Light Trial MQ w/o hookshot
+  - Link the Goron w/ dins
+  - DMC upper to lower w/ hammer
 
 ## 2.4.0.2
 
