@@ -186,8 +186,20 @@ This setting determines how the Magic Beans will be handled on the map.
 
 The entrance randomizer variant is very different from the regular map tracker variants. The map does not include any item locations to be checked, because that would be way too many spots on the map, but has locations for the randomized entrances instead. They all have a capture spot, where you can mark what you have found at that spot. If you find something useless, just mark off the icon. Later you can see what led where by simply hovering over the locations.
 
-The item layout is just a general keysanity layout, only a few of the items are actually used for "logic" (to show/hide some entrances). Additionally there are counters for the useful indoors entrances, so you can evaluate how much focus to put on exploring more entrances. There is only one setting to select how many of the entrances you randomized:
+There is only one setting to select how many of the entrances you randomized:
 
 - ![ER Dungeons](ootrando_overworldmap_hamsda/images/setting_entrance_dungeons.png "ER Dungeons") Only the dungeon entrances are shuffled with each other.
 - ![ER Indoors](ootrando_overworldmap_hamsda/images/setting_entrance_indoors.png "ER Indoors") Indoor entrances like grottos and houses are shuffled as well.
 - ![ER Overworld](ootrando_overworldmap_hamsda/images/setting_entrance_overworld.png "ER Overworld") In addition most overworld connections are shuffled.
+
+The item layout is just a general keysanity layout, only a few of the items are actually used for "logic" (to show/hide some entrances).
+
+Additionally there are counters for the useful indoors entrances, so you can evaluate how much focus to put on exploring more entrances:
+
+- ![Counter: Generic Grottos](ootrando_overworldmap_hamsda/images/entrance_grotto_generic.png "Counter: Generic Grottos") 9 generic grottos (1 chest, 1 gossip stone).
+- ![Counter: Scrubs](ootrando_overworldmap_hamsda/images/entrance_grotto_scrub.png "Counter: Scrubs") 10 grottos that contain 2 or 3 scrubs each. Only 2 of these are relevant if scrubsanity is off.
+- ![Counter: Cows](ootrando_overworldmap_hamsda/images/entrance_grotto_cow.png "Counter: Cows") 4 grottos/houses that only have a cow (Impas House Back, Ingo Barn, Lon Lon Corner Tower, Mountain Bombable Grotto). The other cow spots have their own markers (![Links House](ootrando_overworldmap_hamsda/images/entrance_house_link.png) and ![Field Valley Grotto](ootrando_overworldmap_hamsda/images/entrance_grotto_field_valley.png))
+- ![Counter: Great Fairies](ootrando_overworldmap_hamsda/images/entrance_house_fairy.png "Counter: Great Fairies") 6 Great Fairy Fountains.
+- ![Counter: Shops](ootrando_overworldmap_hamsda/images/entrance_house_shop.png "Counter: Shops") 7 randomized shops (Kakariko Potion Shop is fixed).
+
+I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant.
