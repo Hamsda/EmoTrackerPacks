@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.1.1
+
+- fixed typo in ER for CG -> CT
+
 ## 2.4.1.0
 
 - changed images for overworld ER to be more colorful
