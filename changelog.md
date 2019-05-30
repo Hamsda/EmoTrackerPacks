@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Water Temple small key logic
+
 ## 2.4.1.1
 
 - fixed typo in ER for CG -> CT

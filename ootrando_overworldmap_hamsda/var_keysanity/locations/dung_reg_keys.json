@@ -475,7 +475,7 @@
         "access_rules": [
           "ironboots,ocarina,lullaby,lift1",
           "[ironboots],longshot,ocarina,lullaby,lift1,bombchu",
-          "[ironboots],water_small_keys:2,[water_small_keys:6],ocarina,time,bow"
+          "[ironboots],water_small_keys:2,[water_small_keys:5],ocarina,time,bow"
         ],
         "item_count": 1
       },
@@ -519,7 +519,7 @@
         "name": "Dark Link Chest",
         "short_name": "Dark Link",
         "access_rules": [
-          "water_small_keys:2,[water_small_keys:6]"
+          "water_small_keys:2,[water_small_keys:5]"
         ],
         "item_count": 1
       },
@@ -527,7 +527,7 @@
         "name": "River Chest",
         "short_name": "River",
         "access_rules": [
-          "water_small_keys:2,[water_small_keys:6],ocarina,time,bow",
+          "water_small_keys:2,[water_small_keys:5],ocarina,time,bow",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -537,11 +537,11 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "water_small_keys:2,[water_small_keys:6],ironboots,longshot,$has_explosives,lift1",
-          "water_small_keys:2,[water_small_keys:6],ironboots,longshot,[hoverboots]",
-          "water_small_keys:2,[water_small_keys:6],ironboots,[longshot],hoverboots",
-          "water_small_keys:2,[water_small_keys:6],[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
-          "water_small_keys:2,[water_small_keys:6],[ironboots],longshot,ocarina,lullaby,[hoverboots]",
+          "water_small_keys:2,[water_small_keys:5],ironboots,longshot,$has_explosives,lift1",
+          "water_small_keys:2,[water_small_keys:5],ironboots,longshot,[hoverboots]",
+          "water_small_keys:2,[water_small_keys:5],ironboots,[longshot],hoverboots",
+          "water_small_keys:2,[water_small_keys:5],[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
+          "water_small_keys:2,[water_small_keys:5],[ironboots],longshot,ocarina,lullaby,[hoverboots]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -592,7 +592,7 @@
             "name": "GS74 - Serpent River",
             "short_name": "River",
             "access_rules": [
-              "water_small_keys:2,[water_small_keys:6],ocarina,time"
+              "water_small_keys:2,[water_small_keys:5],ocarina,time"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -619,8 +619,8 @@
             "name": "GS76 - Falling Platform Room",
             "short_name": "Platform Room",
             "access_rules": [
-              "water_small_keys:1,[water_small_keys:5],longshot",
-              "water_small_keys:1,[water_small_keys:5],[longshot],hookshot",
+              "water_small_keys:1,[water_small_keys:4],longshot",
+              "water_small_keys:1,[water_small_keys:4],[longshot],hookshot",
               "{water_small_keys:1,bow}"
             ],
             "capture_item": true,
@@ -632,9 +632,9 @@
             "name": "GS77 - Near Boss Key Chest",
             "short_name": "Near Boss Key",
             "access_rules": [
-              "water_small_keys:1,[water_small_keys:5],ironboots,longshot",
-              "water_small_keys:1,[water_small_keys:5],ironboots,[longshot],hoverboots",
-              "water_small_keys:1,[water_small_keys:5],[ironboots],longshot,ocarina,lullaby"
+              "water_small_keys:1,[water_small_keys:4],ironboots,longshot",
+              "water_small_keys:1,[water_small_keys:4],ironboots,[longshot],hoverboots",
+              "water_small_keys:1,[water_small_keys:4],[ironboots],longshot,ocarina,lullaby"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
