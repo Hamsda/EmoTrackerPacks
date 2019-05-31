@@ -122,7 +122,6 @@
                 {
                   "type": "group",
                   "header": "Settings",
-                  "h_alignment": "stretch",
                   "content": {
                     "type": "layout",
                     "key": "options_wide",
