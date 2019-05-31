@@ -35,13 +35,32 @@
               "header": "Settings",
               "content": {
                 "type": "layout",
-                "key": "options_tall",
+                "key": "options_tall"
               }
             }
           ]
         },
         {
           "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "dock",
+          "dock": "top",
           "content": [
             {
               "type": "tabbed",
@@ -66,30 +85,8 @@
                       "adult"
                     ]
                   }
-                },
-                {
-                  "title": "Gossip Stones",
-                  "icon": "images/gossip_stone.png",
-                  "content": {
-                    "type": "map",
-                    "maps": [
-                      "gossips"
-                    ]
-                  }
                 }
               ]
-            },
-            {
-              "type": "group",
-              "header": "Pinned Locations",
-              "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "horizontal",
-                "compact": true
-              }
             }
           ]
         }
@@ -176,16 +173,6 @@
                   "adult"
                 ]
               }
-            },
-            {
-              "title": "Gossip Stones",
-              "icon": "images/gossip_stone.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "gossips"
-                ]
-              }
             }
           ]
         }
@@ -228,34 +215,51 @@
               "header": "Settings",
               "content": {
                 "type": "layout",
-                "key": "options_tall",
+                "key": "options_tall"
               }
             }
           ]
         },
         {
-          "type": "group",
-          "header": "Maps",
-          "dock": "top",
-          "content": {
-            "type": "dock",
-            "content": [
-              {
-                "type": "map",
-                "dock": "top",
-                "maps": [
-                  "child"
-                ]
-              },
-              {
-                "type": "map",
-                "dock": "bottom",
-                "maps": [
-                  "adult"
+          "type": "dock",
+          "content": [
+            {
+              "type": "group",
+              "header": "Maps",
+              "dock": "top",
+              "content": {
+                "type": "dock",
+                "content": [
+                  {
+                    "type": "map",
+                    "dock": "top",
+                    "maps": [
+                      "child"
+                    ]
+                  },
+                  {
+                    "type": "map",
+                    "dock": "bottom",
+                    "maps": [
+                      "adult"
+                    ]
+                  }
                 ]
               }
-            ]
-          }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
         }
       ]
     }
