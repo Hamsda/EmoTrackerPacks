@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.4.1.2
 
 - fixed Water Temple small key logic
 - removed gossip stone map from ER variant
