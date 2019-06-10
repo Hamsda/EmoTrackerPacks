@@ -13,14 +13,15 @@ If you have any questions regarding the pack or the tracker itself, I recommend 
 
 ## Variants
 
-The pack offers 6 different variants:
+The pack offers 7 different variants:
 
-1. Regular Map Tracker
-2. Keysanity Map Tracker
+1. Map Tracker
+2. Map Tracker (Keysanity)
 3. Items Only
 4. Items Only (Keysanity)
 5. Items Only (minimal)
 6. Entrance Randomizer
+7. Entrance Randomizer (Keysanity)
 
 ## Vanilla vs Master Quest Dungeons
 
@@ -182,17 +183,17 @@ This setting determines how the Magic Beans will be handled on the map.
 - ![Plant off](ootrando_overworldmap_hamsda/images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
 - ![Plant on](ootrando_overworldmap_hamsda/images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
 
-## Entrance Randomizer variant
+## Entrance Randomizer variants
 
-The entrance randomizer variant is very different from the regular map tracker variants. The map does not include any item locations to be checked, because that would be way too many spots on the map, but has locations for the randomized entrances instead. They all have a capture spot, where you can mark what you have found at that spot. If you find something useless, just mark off the icon. Later you can see what led where by simply hovering over the locations.
+The entrance randomizer variants are very different from the regular map tracker variants. The map does not include any item locations to be checked, because that would result in way too many spots on the map, but instead has locations for the randomized entrances. They all have a capture spot, where one can mark what is at that location. If the location is useless, just mark off the icon to clean up your map. Later you can see what led where by simply hovering over the locations.
 
-There is only one setting to select how many of the entrances you randomized:
+There are two variants, one for keysanity and one without, but only a few of the items are actually used for "logic" (to show/hide some entrances).
+
+The only setting to select is how many of the entrances are randomized:
 
 - ![ER Dungeons](ootrando_overworldmap_hamsda/images/setting_entrance_dungeons.png "ER Dungeons") Only the dungeon entrances are shuffled with each other.
 - ![ER Indoors](ootrando_overworldmap_hamsda/images/setting_entrance_indoors.png "ER Indoors") Indoor entrances like grottos and houses are shuffled as well.
 - ![ER Overworld](ootrando_overworldmap_hamsda/images/setting_entrance_overworld.png "ER Overworld") In addition most overworld connections are shuffled.
-
-The item layout is just a general keysanity layout, only a few of the items are actually used for "logic" (to show/hide some entrances).
 
 Additionally there are counters for the useful indoors entrances, so you can evaluate how much focus to put on exploring more entrances:
 

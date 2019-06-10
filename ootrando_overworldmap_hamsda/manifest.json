@@ -6,15 +6,15 @@
   "author": "Hamsda",
   "variants": {
     "standard": {
-      "display_name": "Regular Map Tracker"
+      "display_name": "Map Tracker"
     },
     "var_keysanity": {
-      "display_name": "Keysanity Map Tracker"
+      "display_name": "Map Tracker (Keysanity)"
     },
     "var_itemsonly": {
       "display_name": "Items Only"
     },
-    "var_itemsonlykeysanity": {
+    "var_itemsonly_keysanity": {
       "display_name": "Items Only (Keysanity)"
     },
     "var_minimalist": {
@@ -22,6 +22,9 @@
     },
     "var_entrance": {
       "display_name": "Entrance Randomizer"
+    },
+    "var_entrance_keysanity": {
+      "display_name": "Entrance Randomizer (Keysanity)"
     }
   }
 }

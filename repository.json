@@ -15,7 +15,7 @@
       "link": "https://hamsda.github.io/OoTRMapTracker/ootrando_overworldmap_hamsda.zip",
       "variants": [
         {
-          "name": "Regular Map Tracker",
+          "name": "Map Tracker",
           "flags": [
             "map",
             "pins",
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "name": "Keysanity Map Tracker",
+          "name": "Map Tracker (Keysanity)",
           "flags": [
             "map",
             "pins",
@@ -52,6 +52,15 @@
           "name": "Entrance Randomizer",
           "flags": [
             "map",
+            "pins",
+            "chathud"
+          ]
+        },
+        {
+          "name": "Entrance Randomizer (Keysanity)",
+          "flags": [
+            "map",
+            "pins",
             "chathud"
           ]
         }
