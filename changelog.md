@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed not being able to undo King Zora Moves
+
 ## 2.4.1.2
 
 - fixed Water Temple small key logic
