@@ -1,5 +1,11 @@
 [
   {
+    "name": "Generic Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_generic.png",
+    "codes": "entrance_grotto_generic"
+  },
+  {
     "name": "Scrub",
     "type": "toggle",
     "img": "images/entrance_grotto_scrub.png",
@@ -12,10 +18,40 @@
     "codes": "entrance_grotto_cow"
   },
   {
+    "name": "Enemy Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_enemy.png",
+    "codes": "entrance_grotto_enemy"
+  },
+  {
+    "name": "Field North Lon Lon Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_tektite.png",
+    "codes": "entrance_grotto_tektite"
+  },
+  {
     "name": "Deku Theater",
     "type": "toggle",
     "img": "images/entrance_grotto_theater.png",
     "codes": "entrance_grotto_theater"
+  },
+  {
+    "name": "Castle Storms Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_castle_storms.png",
+    "codes": "entrance_grotto_castle_storms"
+  },
+  {
+    "name": "Field Kakariko Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_field_kak.png",
+    "codes": "entrance_grotto_field_kak"
+  },
+  {
+    "name": "Field Valley Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_field_valley.png",
+    "codes": "entrance_grotto_field_valley"
   },
   {
     "name": "Composer Grave",
@@ -36,39 +72,9 @@
     "codes": "entrance_grotto_hp"
   },
   {
-    "name": "Front of Meadow Grotto",
+    "name": "Fairy Fountain",
     "type": "toggle",
-    "img": "images/entrance_grotto_wolfos.png",
-    "codes": "entrance_grotto_wolfos"
-  },
-  {
-    "name": "Field North Lon Lon Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_tektite.png",
-    "codes": "entrance_grotto_tektite"
-  },
-  {
-    "name": "Castle Storms Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_castle_storms.png",
-    "codes": "entrance_grotto_castle_storms"
-  },
-  {
-    "name": "Kakariko Bombable Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_kak_bomb.png",
-    "codes": "entrance_grotto_kak_bomb"
-  },
-  {
-    "name": "Field Kakariko Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_field_kak.png",
-    "codes": "entrance_grotto_field_kak"
-  },
-  {
-    "name": "Field Valley Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_field_valley.png",
-    "codes": "entrance_grotto_field_valley"
+    "img": "images/entrance_grotto_fairy.png",
+    "codes": "entrance_grotto_fairy"
   },
 ]

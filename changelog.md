@@ -4,6 +4,7 @@
 
 - fixed not being able to undo King Zora Moves
 - added a new `Both` option for the maps
+- changed captures for ER
 
 ## 2.4.1.2
 
