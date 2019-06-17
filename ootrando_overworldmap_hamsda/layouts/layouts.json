@@ -33,25 +33,6 @@
         },
         {
           "type": "dock",
-          "dock": "bottom",
-          "content": [
-            {
-              "type": "group",
-              "header": "Pinned Locations",
-              "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "horizontal",
-                "compact": true
-              }
-            }
-          ]
-        },
-        {
-          "type": "dock",
-          "dock": "top",
           "content": [
             {
               "type": "tabbed",
@@ -78,6 +59,28 @@
                   }
                 },
                 {
+                  "title": "Both",
+                  "icon": "images/map.png",
+                  "content": {
+                    "type": "array",
+                    "orientation": "vertical",
+                    "content": [
+                      {
+                        "type": "map",
+                        "maps": [
+                          "child"
+                        ]
+                      },
+                      {
+                        "type": "map",
+                        "maps": [
+                          "adult"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
                   "title": "Gossip Stones",
                   "icon": "images/gossip_stone.png",
                   "content": {
@@ -88,6 +91,18 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
             }
           ]
         }
@@ -167,6 +182,17 @@
               }
             },
             {
+              "title": "Both",
+              "icon": "images/map.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "child",
+                  "adult"
+                ]
+              }
+            },
+            {
               "title": "Gossip Stones",
               "icon": "images/gossip_stone.png",
               "content": {
@@ -174,82 +200,6 @@
                 "maps": [
                   "gossips"
                 ]
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "tracker_dual_map": {
-    "type": "container",
-    "background": "#212121",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
-          "dock": "left",
-          "v_alignment": "stretch",
-          "margin": "0,0,3,0",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "item_grid_tall"
-              }
-            },
-            {
-              "type": "group",
-              "header": "Settings",
-              "content": {
-                "type": "layout",
-                "key": "options_tall"
-              }
-            }
-          ]
-        },
-        {
-          "type": "dock",
-          "content": [
-            {
-              "type": "group",
-              "header": "Maps",
-              "dock": "top",
-              "content": {
-                "type": "dock",
-                "content": [
-                  {
-                    "type": "map",
-                    "dock": "top",
-                    "maps": [
-                      "child"
-                    ]
-                  },
-                  {
-                    "type": "map",
-                    "dock": "bottom",
-                    "maps": [
-                      "adult"
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "header": "Pinned Locations",
-              "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "horizontal",
-                "compact": true
               }
             }
           ]
