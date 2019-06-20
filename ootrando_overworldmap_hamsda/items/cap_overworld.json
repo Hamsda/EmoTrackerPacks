@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Kokiri Forest",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kf.png",
+    "codes": "entrance_overworld_kf"
+  },
+  {
+    "name": "Lost Woods",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw.png",
+    "codes": "entrance_overworld_lw"
+  },
+  {
+    "name": "Lost Woods Bridge",
+    "type": "toggle",
+    "img": "images/entrance_overworld_bridge.png",
+    "codes": "entrance_overworld_bridge"
+  },
+  {
+    "name": "Sacred Forest Meadow",
+    "type": "toggle",
+    "img": "images/entrance_overworld_sfm.png",
+    "codes": "entrance_overworld_sfm"
+  },
+  {
+    "name": "Castle Grounds",
+    "type": "toggle",
+    "img": "images/entrance_overworld_cg.png",
+    "codes": "entrance_overworld_cg"
+  },
+  {
+    "name": "Castle Town",
+    "type": "toggle",
+    "img": "images/entrance_overworld_ct.png",
+    "codes": "entrance_overworld_ct"
+  },
+  {
+    "name": "Castle Town Entrance",
+    "type": "toggle",
+    "img": "images/entrance_overworld_cte.png",
+    "codes": "entrance_overworld_cte"
+  },
+  {
+    "name": "Temple of Time Exterior",
+    "type": "toggle",
+    "img": "images/entrance_house_tot.png",
+    "codes": "entrance_overworld_tot"
+  },
+  {
+    "name": "Hyrule Field",
+    "type": "toggle",
+    "img": "images/entrance_overworld_hf.png",
+    "codes": "entrance_overworld_hf"
+  },
+  {
+    "name": "Lon Lon Ranch",
+    "type": "toggle",
+    "img": "images/entrance_overworld_llr.png",
+    "codes": "entrance_overworld_llr"
+  },
+  {
+    "name": "Kakariko Village",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kak.png",
+    "codes": "entrance_overworld_kak"
+  },
+  {
+    "name": "Graveyard",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gy.png",
+    "codes": "entrance_overworld_gy"
+  },
+  {
+    "name": "Lake Hylia",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lh.png",
+    "codes": "entrance_overworld_lh"
+  },
+  {
+    "name": "Zora River",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zr.png",
+    "codes": "entrance_overworld_zr"
+  },
+  {
+    "name": "Zoras Domain",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zd.png",
+    "codes": "entrance_overworld_zd"
+  },
+  {
+    "name": "Zoras Fountain",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zf.png",
+    "codes": "entrance_overworld_zf"
+  },
+  {
+    "name": "Desert Colossus",
+    "type": "toggle",
+    "img": "images/entrance_overworld_col.png",
+    "codes": "entrance_overworld_col"
+  },
+  {
+    "name": "Haunted Wasteland",
+    "type": "toggle",
+    "img": "images/entrance_overworld_wl.png",
+    "codes": "entrance_overworld_wl"
+  },
+  {
+    "name": "Gerudo Fortress",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gf.png",
+    "codes": "entrance_overworld_gf"
+  },
+  {
+    "name": "Gerudo Valley",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gv.png",
+    "codes": "entrance_overworld_gv"
+  },
+  {
+    "name": "Death Mountain Trail",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmt.png",
+    "codes": "entrance_overworld_dmt"
+  },
+  {
+    "name": "Death Mountain Crater",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc.png",
+    "codes": "entrance_overworld_dmc"
+  },
+  {
+    "name": "Goron City",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gc.png",
+    "codes": "entrance_overworld_gc"
+  },
+]
