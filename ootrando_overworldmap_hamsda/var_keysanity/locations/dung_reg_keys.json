@@ -1482,23 +1482,33 @@
     "sections": [
       {
         "name": "North F1 Carpenter",
+        "access_rules": [
+          "gerudo_fortress_normal",
+          "gerudo_fortress_fast"
+        ],
         "item_count": 1
       },
       {
         "name": "North F2 Carpenter",
         "access_rules": [
-          "[bow]",
-          "[hookshot]",
-          "[hoverboots]"
+          "gerudo_fortress_normal,[bow]",
+          "gerudo_fortress_normal,[hookshot]",
+          "gerudo_fortress_normal,[hoverboots]"
         ],
         "item_count": 1
       },
       {
         "name": "South F1 Carpenter",
+        "access_rules": [
+          "gerudo_fortress_normal"
+        ],
         "item_count": 1
       },
       {
         "name": "South F2 Carpenter",
+        "access_rules": [
+          "gerudo_fortress_normal"
+        ],
         "item_count": 1
       },
       {

@@ -3,6 +3,7 @@
 ## x
 
 - fixed back of GTG sequence break for hookshot w/ hovers
+- fixed open GF not hiding carpenter checks
 
 ## 2.5.0.0
 
