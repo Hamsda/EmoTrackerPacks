@@ -1412,7 +1412,7 @@
         "name": "Spirit Trial First Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
-          "hookshot"
+          "[hookshot]"
         ],
         "item_count": 1
       },
@@ -1420,7 +1420,7 @@
         "name": "Spirit Trial Second Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "hookshot,bombchu,$can_see_with_lens"
+          "[hookshot],bombchu,$can_see_with_lens"
         ],
         "item_count": 1
       },

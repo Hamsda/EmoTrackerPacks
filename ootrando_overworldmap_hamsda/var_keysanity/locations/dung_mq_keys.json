@@ -612,6 +612,7 @@
         "short_name": "Map",
         "access_rules": [
           "hoverboots",
+          "longshot,[hoverboots]",
           "bow,firearrow,magic"
         ],
         "item_count": 1
@@ -1429,15 +1430,6 @@
         "item_count": 2
       },
       {
-        "name": "Dinolfos Chest",
-        "short_name": "Dinolfos",
-        "access_rules": [
-          "bow",
-          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "First Iron Knuckle Chest",
         "short_name": "Knuckle 1",
         "access_rules": [
@@ -1449,7 +1441,7 @@
         "name": "Before Heavy Block Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/First Iron Knuckle Chest,hookshot,[longshot]"
+          "@Gerudo Training Grounds MQ/First Iron Knuckle Chest,[longshot]"
         ],
         "item_count": 1
       },
@@ -1462,18 +1454,21 @@
         "item_count": 1
       },
       {
-        "name": "Eye Statue Chest",
-        "short_name": "Eye Statue",
+        "name": "Second Iron Knuckle Chest",
+        "short_name": "Knuckle 2",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],$can_see_with_lens,$has_bottle,bow"
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,$can_see_with_lens,$has_bottle,ocarina,time",
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,$can_see_with_lens,$has_bottle,[ocarina],[time],hoverboots",
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,$can_see_with_lens,$has_bottle,[ocarina],[time],bombs,shield2",
+          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,$can_see_with_lens,$has_bottle,[ocarina],[time],bombs,shield3"
         ],
         "item_count": 1
       },
       {
-        "name": "Second Iron Knuckle Chest",
-        "short_name": "Knuckle 2",
+        "name": "Eye Statue Chest",
+        "short_name": "Eye Statue",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Before Heavy Block Chest,[ocarina],[time],$can_see_with_lens,$has_bottle"
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,bow"
         ],
         "item_count": 1
       },
@@ -1481,7 +1476,9 @@
         "name": "Flame Circle Chest",
         "short_name": "Flame Circle",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest"
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,bow",
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,hookshot",
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,$has_explosives"
         ],
         "item_count": 1
       },
@@ -1494,12 +1491,23 @@
         "item_count": 2
       },
       {
+        "name": "Dinolfos Chest",
+        "short_name": "Dinolfos",
+        "access_rules": [
+          "bow",
+          "@Gerudo Training Grounds MQ/Second Iron Knuckle Chest,longshot",
+          "@Gerudo Training Grounds MQ/Maze Right Chests,hookshot"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,$has_fire,ironboots,$has_zora_tunic",
-          "@Gerudo Training Grounds MQ/Maze Right Chests,longshot,$has_fire,ironboots,$has_zora_tunic",
-          "@Gerudo Training Grounds MQ/Maze Right Chests,bow,$has_fire,ironboots,$has_zora_tunic",
+          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,bow",
+          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,longshot",
+          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Maze Right Chests,longshot",
+          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Maze Right Chests,hookshot,bow",
           "{$hintable}"
         ],
         "capture_item": true,
