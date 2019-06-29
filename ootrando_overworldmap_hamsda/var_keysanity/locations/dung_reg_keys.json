@@ -1564,6 +1564,7 @@
         "short_name": "Like Like",
         "access_rules": [
           "hookshot,lift2,$can_see_with_lens",
+          "hoverboots,[hookshot],lift2,$can_see_with_lens",
           "bombs,shield2,[hookshot],lift2,$can_see_with_lens",
           "bombs,shield3,[hookshot],lift2,$can_see_with_lens"
         ],
@@ -1574,6 +1575,7 @@
         "short_name": "Eye Statue",
         "access_rules": [
           "hookshot,bow,$can_see_with_lens",
+          "hoverboots,[hookshot],bow,$can_see_with_lens",
           "bombs,shield2,[hookshot],bow,$can_see_with_lens",
           "bombs,shield3,[hookshot],bow,$can_see_with_lens",
           "$has_explosives,hookshot,hammer,bow",
@@ -1586,6 +1588,7 @@
         "short_name": "Near Scarecrow",
         "access_rules": [
           "hookshot,bow,$can_see_with_lens",
+          "hoverboots,[hookshot],bow,$can_see_with_lens",
           "bombs,shield2,[hookshot],bow,$can_see_with_lens",
           "bombs,shield3,[hookshot],bow,$can_see_with_lens"
         ],
@@ -1596,6 +1599,7 @@
         "short_name": "Flaming Enemies",
         "access_rules": [
           "hookshot,$can_see_with_lens",
+          "hoverboots,[hookshot],$can_see_with_lens",
           "bombs,shield2,[hookshot],$can_see_with_lens",
           "bombs,shield3,[hookshot],$can_see_with_lens",
           "$has_explosives,hookshot",
@@ -1608,6 +1612,7 @@
         "short_name": "Hammer Switch",
         "access_rules": [
           "hookshot,$can_see_with_lens,[hammer]",
+          "hoverboots,[hookshot],[hammer],$can_see_with_lens",
           "bombs,shield2,[hookshot],[hammer],$can_see_with_lens",
           "bombs,shield3,[hookshot],[hammer],$can_see_with_lens",
           "$has_explosives,hookshot,[hammer]",
