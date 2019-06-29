@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.5.1.0
 
 - fixed back of GTG sequence break for hookshot w/ hovers
 - fixed open GF not hiding carpenter checks
