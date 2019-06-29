@@ -26,11 +26,6 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 
 ScriptHost:LoadScript("scripts/logic.lua")
-if is_er then
-  ScriptHost:LoadScript("scripts/update_entrance.lua")
-else
-  ScriptHost:LoadScript("scripts/update.lua")
-end
 
 if has_map then
   Tracker:AddMaps("maps/maps.json")
@@ -46,6 +41,14 @@ if has_map then
     Tracker:AddLayouts("layouts/options.json")
   end
 end
+
+if is_er then
+  ScriptHost:LoadScript("scripts/update_entrance.lua")
+else
+  ScriptHost:LoadScript("scripts/update.lua")
+end
+tracker_on_accessibility_updated()
+
 if has_keys then
   Tracker:AddLayouts("layouts/dungeon_grids_keysanity.json")
 else

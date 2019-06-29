@@ -661,10 +661,10 @@
                       "[ocarina],[minuet],setting_plant_no,beans",
                       "[ocarina],[saria],bean_stage_yes",
                       "[ocarina],[minuet],bean_stage_yes",
-                      "[ocarina],[saria],bombchu,longshot,[setting_plant_no,beans]",
-                      "[ocarina],[minuet],bombchu,longshot,[setting_plant_no,beans]",
-                      "[ocarina],[saria],bombchu,longshot,[bean_stage_yes]",
-                      "[ocarina],[minuet],bombchu,longshot,[bean_stage_yes]"
+                      "[ocarina],[minuet],[bean_stage_yes],longshot",
+                      "[ocarina],[minuet],[bean_stage_yes],hookshot,bow",
+                      "[ocarina],[minuet],[bean_stage_yes],hookshot,bombchu",
+                      "[ocarina],[minuet],[bean_stage_yes],hookshot,dinsfire,magic"
                     ],
                     "visibility_rules": [
                       "setting_skulltulas_all"
@@ -3562,22 +3562,21 @@
                   },
                   {
                     "name": "Mountain Trail Bean Patch",
-                    "access_rules": [
-                      "$has_explosives",
-                      "lift1"
-                    ],
                     "sections": [
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_plant_yes,bean_trail_no"
+                          "setting_plant_yes,beans,bean_trail_no,$has_explosives",
+                          "setting_plant_yes,beans,bean_trail_no,lift1"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "setting_skulltulas_all,$has_bottle"
+                          "setting_skulltulas_all,$has_bottle,$has_explosives",
+                          "setting_skulltulas_all,$has_bottle,lift1",
+                          "setting_skulltulas_all,$has_bottle,[lift1],boomerang"
                         ],
                         "visibility_rules": [
                           "setting_skulltulas_all"

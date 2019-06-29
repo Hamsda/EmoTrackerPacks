@@ -1,3 +1,21 @@
+settings_cache = {}
+queued_changes = {}
+function not_like_cache(setting, current)
+  if settings_cache[setting] == nil or settings_cache[setting] ~= current then
+    queued_changes[setting] = current
+    return true
+  end
+  return false
+end
+function apply_queued_changes()
+  for setting,value in pairs(queued_changes) do
+    settings_cache[setting] = value
+  end
+  queued_changes = {}
+end
+
+
+
 dungeons = {
   "forest",
   "fire",
@@ -41,15 +59,45 @@ function update_smallkeys()
       end
     end
   end
+end
 
-  --gerudo fortress special case depends on setting
-  local gf_keys = Tracker:FindObjectForCode("gf_small_keys")
-  if has("gerudo_fortress_normal") then
-    gf_keys.MaxCount = 4
-  elseif has("gerudo_fortress_fast") then
-    gf_keys.MaxCount = 1
-  else
-    gf_keys.MaxCount = 0
+
+
+function update_fortress()
+  local setting_card = has("setting_shuffle_card_yes")
+  local setting_normal = has("gerudo_fortress_normal")
+  local setting_fast = has("gerudo_fortress_fast")
+  local setting_open = has("gerudo_fortress_open")
+  
+  local item_carpenters = Tracker:FindObjectForCode("carpenter_rescue")
+  local item_card = Tracker:FindObjectForCode("gerudocard")
+  local item_gf_keys = Tracker:FindObjectForCode("gf_small_keys")
+
+  if item_gf_keys then
+    if setting_open then
+      item_gf_keys.MaxCount = 0
+    elseif setting_fast then
+      item_gf_keys.MaxCount = 1
+    elseif setting_normal then
+      item_gf_keys.MaxCount = 4
+    end
+  end
+
+  if item_carpenters then
+    if setting_open then
+      item_carpenters.Active = true
+    elseif not_like_cache("gerudo_fortress_open", setting_open) then
+      item_carpenters.Active = false
+    end
+  end
+
+  if item_card and setting_open then
+    if not setting_card then
+      item_card.Active = true
+    elseif not_like_cache("gerudo_fortress_open", setting_open) 
+    or not_like_cache("setting_shuffle_card_yes", setting_card) then
+      item_card.Active = not setting_card
+    end
   end
 end
 
@@ -73,12 +121,10 @@ vanilla_captures = {
     ["@Magic Bean Salesman/Buy Item"] = "beans"
   }
 }
-settings_cache = {}
 function update_captures()
   for setting,captures in pairs(vanilla_captures) do
     local has_setting = has(setting)
-    if not settings_cache[setting] or settings_cache[setting] ~= has_setting then
-      settings_cache[setting] = has_setting
+    if not_like_cache(setting, has_setting) then
       for location,item in pairs(captures) do
         local location_object = Tracker:FindObjectForCode(location)
         local item_object = Tracker:FindObjectForCode(item)
@@ -126,6 +172,8 @@ end
 
 function tracker_on_accessibility_updated()
   update_smallkeys()
+  update_fortress()
   update_captures()
   check_capture_bottles()
+  apply_queued_changes()
 end

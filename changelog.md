@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.5.1.0
+
+- fixed back of GTG sequence break for hookshot w/ hovers
+- fixed open GF not hiding carpenter checks
+- fixed some logic errors for GTG MQ
+- added sequence breaks for new logic tricks:
+  - Shadow Temple MQ truth spinner gap w/ longshot
+  - Lost Woods adult GS w/o bean
+  - DMT soil GS w/o destroying boulder
+  - GTG MQ left side w/o hookshot
+  - GTG MQ back area w/o song of time
+  - Spirit Trial w/o hookshot
+
 ## 2.5.0.0
 
 - fixed not being able to undo King Zora Moves

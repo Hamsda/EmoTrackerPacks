@@ -301,7 +301,9 @@ function adult_fountain()
   end
 
   local child_count, child_level = child_fountain()
-  if child_count > 0 then
+  if child_count == 0 then
+    return 0
+  else
     if child_level == AccessibilityLevel.SequenceBreak then
       level = AccessibilityLevel.SequenceBreak
     end
