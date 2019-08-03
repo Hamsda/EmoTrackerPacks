@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed lens setting default to wasteland
+
 ## 2.5.1.0
 
 - fixed back of GTG sequence break for hookshot w/ hovers
