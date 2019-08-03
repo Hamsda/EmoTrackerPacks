@@ -3,6 +3,7 @@
 ## x
 
 - changed lens setting default to wasteland
+- changed keysanity GF hides checks based on setting
 
 ## 2.5.1.0
 

@@ -1495,6 +1495,9 @@
           "gerudo_fortress_normal,[hookshot]",
           "gerudo_fortress_normal,[hoverboots]"
         ],
+        "visibility_rules": [
+          "gerudo_fortress_normal"
+        ],
         "item_count": 1
       },
       {
@@ -1502,11 +1505,17 @@
         "access_rules": [
           "gerudo_fortress_normal"
         ],
+        "visibility_rules": [
+          "gerudo_fortress_normal"
+        ],
         "item_count": 1
       },
       {
         "name": "South F2 Carpenter",
         "access_rules": [
+          "gerudo_fortress_normal"
+        ],
+        "visibility_rules": [
           "gerudo_fortress_normal"
         ],
         "item_count": 1
@@ -1527,6 +1536,10 @@
     "map_locations": [
       {
         "map": "adult",
+        "visibility_rules": [
+          "gerudo_fortress_normal",
+          "gerudo_fortress_fast"
+        ],
         "x": 503,
         "y": 392
       }
