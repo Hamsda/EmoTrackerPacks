@@ -3086,8 +3086,10 @@
                         "short_name": "HP :)",
                         "access_rules": [
                           "ocarina,lullaby,sticks,bombs",
+                          "ocarina,lullaby,sticks,[bombs],bombchu",
                           "ocarina,lullaby,sticks,lift1",
                           "dinsfire,magic,bombs",
+                          "dinsfire,magic,[bombs],bombchu",
                           "dinsfire,magic,lift1",
                           "{$hintable}"
                         ],
@@ -3514,7 +3516,8 @@
                       {
                         "name": "GS32 (N)",
                         "access_rules": [
-                          "sword2,hammer"
+                          "sword2,hammer",
+                          "sword2,[hammer],hookshot"
                         ],
                         "visibility_rules": [
                           "setting_skulltulas_all"
@@ -3542,7 +3545,7 @@
                       {
                         "name": "GS33 (N)",
                         "access_rules": [
-                          "sword2,hammer"
+                          "sword2,[hammer]"
                         ],
                         "visibility_rules": [
                           "setting_skulltulas_all"

@@ -168,7 +168,8 @@
         "short_name": "Bomb Bag",
         "access_rules": [
           "@Dodongos Cavern/Bomb Flower Platform,$has_explosives,[sling]",
-          "@Dodongos Cavern/Bomb Flower Platform,lift1,[sling]",
+          "@Dodongos Cavern/Bomb Flower Platform,lift1,sticks,[sling]",
+          "@Dodongos Cavern/Bomb Flower Platform,lift1,sword1,[sling]",
           "@Dodongos Cavern/Bomb Flower Platform,sword2,[bow]",
           "@Dodongos Cavern/Bomb Flower Platform,sword2,[hoverboots]",
           "@Dodongos Cavern/Bomb Flower Platform,sword2,[longshot]"

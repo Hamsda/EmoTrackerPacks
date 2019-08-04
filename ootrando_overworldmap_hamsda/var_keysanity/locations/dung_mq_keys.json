@@ -27,7 +27,7 @@
         "name": "Redead Chest",
         "short_name": "Redead",
         "access_rules": [
-          "forest_small_keys:1,hoverboots",
+          "forest_small_keys:1,[hoverboots]",
           "forest_small_keys:1,lift1",
           "forest_small_keys:1,bombchu,[lift1]"
         ],
@@ -1328,7 +1328,7 @@
         "short_name": "Shadow Trial 2",
         "access_rules": [
           "bow,$can_see_with_lens,hoverboots",
-          "bow,$can_see_with_lens,hookshot,$has_fire"
+          "bow,$can_see_with_lens,hookshot,[$has_fire]"
         ],
         "item_count": 1
       },

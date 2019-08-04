@@ -25,6 +25,7 @@
           "bow,[ironboots]",
           "bow,[scale2]",
           "hoverboots",
+          "[hoverboots],lift1",
           "lift1,dinsfire,magic"
         ],
         "item_count": 1
@@ -36,6 +37,7 @@
           "ocarina,time",
           "bow",
           "hoverboots",
+          "[hoverboots],lift1",
           "lift1,dinsfire,magic"
         ],
         "item_count": 1
@@ -72,6 +74,7 @@
         "access_rules": [
           "@Forest Temple/Boss Key Chest",
           "hoverboots",
+          "[hoverboots],lift1",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -298,6 +301,7 @@
         "short_name": "Scarecrow",
         "access_rules": [
           "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
+          "@Fire Temple/Boulder Maze Upper Chest,[ocarina],[scarecrow],longshot",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -385,7 +389,8 @@
             "name": "GS67 - East Tower Climb",
             "short_name": "Scarecrow 1",
             "access_rules": [
-              "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot"
+              "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
+              "@Fire Temple/Boulder Maze Upper Chest,[ocarina],[scarecrow],longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -395,7 +400,8 @@
             "name": "GS68 - East Tower Top",
             "short_name": "Scarecrow 2",
             "access_rules": [
-              "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot"
+              "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
+              "@Fire Temple/Boulder Maze Upper Chest,[ocarina],[scarecrow],longshot"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
@@ -924,7 +930,8 @@
         "access_rules": [
           "sword2,lift2,hookshot",
           "sword2,lift2,bow",
-          "sword2,lift2,bombchu"
+          "sword2,lift2,bombchu",
+          "sword2,lift2,[bombchu],bombs"
         ],
         "item_count": 1
       },
@@ -1267,9 +1274,8 @@
             "name": "GS78 - Like Like Cage",
             "short_name": "Like Like",
             "access_rules": [
-              "boomerang,$can_see_with_lens",
-              "{sling,$can_see_with_lens}",
-              "{$has_explosives,$can_see_with_lens}"
+              "$can_see_with_lens,boomerang",
+              "$can_see_with_lens,[boomerang],$can_child_attack"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",

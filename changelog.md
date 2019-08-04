@@ -4,6 +4,16 @@
 
 - changed lens setting default to wasteland
 - changed keysanity GF hides checks based on setting
+- added sequence breaks for new logic tricks:
+  - DC MQ early bomb bag area as child
+  - Forest Temple outside backdoor w/o hovers
+  - Forest Temple MQ early hallway switch
+  - Fire Temple east tower w/o scarecrow
+  - Spirit Temple lower adult switch w/ bombs
+  - BotW cage GS w/o rang
+  - Shadow Trial MQ torch w/o fire
+  - DMT rock GS w/o hammer
+  - Goron City spinning pot w/ chus
 
 ## 2.5.1.0
 

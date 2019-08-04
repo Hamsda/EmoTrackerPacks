@@ -232,7 +232,8 @@
         "short_name": "Bomb Bag",
         "access_rules": [
           "sword2",
-          "sling,sticks",
+          "[sling],sticks",
+          "[sling],sword1",
           "sling,dinsfire,magic",
           "sling,$has_explosives"
         ],
