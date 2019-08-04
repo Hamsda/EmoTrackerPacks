@@ -4,6 +4,7 @@
 
 - changed lens setting default to wasteland
 - changed keysanity GF hides checks based on setting
+- changed Shadow Temple like like GS w/o hookshot
 - added sequence breaks for new logic tricks:
   - DC MQ early bomb bag area as child
   - Forest Temple outside backdoor w/o hovers
