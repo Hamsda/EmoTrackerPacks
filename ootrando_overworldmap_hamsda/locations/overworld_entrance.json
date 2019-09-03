@@ -1248,33 +1248,6 @@
         "color": "#6909a0",
         "children": [
           {
-            "name": "Kakariko Village -> Kakariko Back Grotto",
-            "short_name": "Kakariko Back Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
-            "sections": [
-              {
-                "name": "Grotto",
-                "capture_item": true,
-                "capture_item_layout": "tracker_capture_grottos",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "child",
-                "x": 1865,
-                "y": 326
-              },
-              {
-                "map": "adult",
-                "x": 1865,
-                "y": 326
-              }
-            ]
-          },
-          {
             "name": "Kakariko Village -> Kakariko Bombable Grotto",
             "short_name": "Kakariko Bombable Grotto",
             "access_rules": [
@@ -1301,6 +1274,33 @@
                 "map": "adult",
                 "x": 1787,
                 "y": 381
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village Backyard -> Kakariko Back Grotto",
+            "short_name": "Kakariko Back Grotto",
+            "access_rules": [
+              "setting_entrance_indoors"
+            ],
+            "sections": [
+              {
+                "name": "Grotto",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_grottos",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "child",
+                "x": 1865,
+                "y": 326
+              },
+              {
+                "map": "adult",
+                "x": 1865,
+                "y": 326
               }
             ]
           },
@@ -1429,8 +1429,35 @@
             "map_locations": [
               {
                 "map": "adult",
-                "x": 1780,
-                "y": 347
+                "x": 1775,
+                "y": 345
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kakariko Potion Shop Front",
+            "short_name": "Kakariko Potion Shop Front",
+            "access_rules": [
+              "setting_entrance_indoors"
+            ],
+            "sections": [
+              {
+                "name": "House",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_houses",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "child",
+                "x": 1805,
+                "y": 326
+              },
+              {
+                "map": "adult",
+                "x": 1805,
+                "y": 326
               }
             ]
           },
@@ -1453,28 +1480,6 @@
                 "map": "adult",
                 "x": 1837,
                 "y": 401
-              }
-            ]
-          },
-          {
-            "name": "Kakariko Village -> Odd Medicine Building",
-            "short_name": "Odd Medicine Building",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
-            "sections": [
-              {
-                "name": "House",
-                "capture_item": true,
-                "capture_item_layout": "tracker_capture_houses",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "adult",
-                "x": 1860,
-                "y": 355
               }
             ]
           },
@@ -1502,6 +1507,50 @@
                 "map": "adult",
                 "x": 1935,
                 "y": 346
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village Backyard -> Kakariko Potion Shop Back",
+            "short_name": "Kakariko Potion Shop Back",
+            "access_rules": [
+              "setting_entrance_indoors"
+            ],
+            "sections": [
+              {
+                "name": "House",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_houses",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "adult",
+                "x": 1835,
+                "y": 326
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village Backyard -> Odd Medicine Building",
+            "short_name": "Odd Medicine Building",
+            "access_rules": [
+              "setting_entrance_indoors"
+            ],
+            "sections": [
+              {
+                "name": "House",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_houses",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "adult",
+                "x": 1860,
+                "y": 355
               }
             ]
           },

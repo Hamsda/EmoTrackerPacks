@@ -201,6 +201,6 @@ Additionally there are counters for the useful indoors entrances, so you can eva
 - ![Counter: Scrubs](ootrando_overworldmap_hamsda/images/entrance_grotto_scrub.png "Counter: Scrubs") 10 grottos that contain 2 or 3 scrubs each. Only 2 of these are relevant if scrubsanity is off.
 - ![Counter: Cows](ootrando_overworldmap_hamsda/images/entrance_grotto_cow.png "Counter: Cows") 4 grottos/houses that only have a cow (Impas House Back, Ingo Barn, Lon Lon Corner Tower, Mountain Bombable Grotto). The other cow spots have their own markers (![Links House](ootrando_overworldmap_hamsda/images/entrance_house_link.png) and ![Field Valley Grotto](ootrando_overworldmap_hamsda/images/entrance_grotto_field_valley.png))
 - ![Counter: Great Fairies](ootrando_overworldmap_hamsda/images/entrance_house_fairy.png "Counter: Great Fairies") 6 Great Fairy Fountains.
-- ![Counter: Shops](ootrando_overworldmap_hamsda/images/entrance_house_shop.png "Counter: Shops") 7 randomized shops (Kakariko Potion Shop is fixed).
+- ![Counter: Shops](ootrando_overworldmap_hamsda/images/entrance_house_shop.png "Counter: Shops") 8 randomized shops (Kakariko Potion Shop has 2 separate entrances, only counted once).
 
 I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant.

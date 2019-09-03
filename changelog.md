@@ -15,6 +15,7 @@
   - Shadow Trial MQ torch w/o fire
   - DMT rock GS w/o hammer
   - Goron City spinning pot w/ chus
+- added Kakariko Potion Shop to ER
 
 ## 2.5.1.0
 
