@@ -16,6 +16,9 @@
   - DMT rock GS w/o hammer
   - Goron City spinning pot w/ chus
 - added Kakariko Potion Shop to ER
+- added sequence breaks for last 5.0 batch of logic tricks:
+  - Fire Temple MQ climb w/o fire
+  - GV crate as adult w/ hovers
 
 ## 2.5.1.0
 

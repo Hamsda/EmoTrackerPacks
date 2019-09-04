@@ -230,9 +230,9 @@
         "name": "Chest Near Boss",
         "short_name": "Near Boss",
         "access_rules": [
-          "hoverboots,$has_fire",
-          "bow,[hoverboots],$has_fire",
-          "hookshot,$has_fire"
+          "$has_fire,hoverboots",
+          "$has_fire,bow,[hoverboots]",
+          "$has_fire,hookshot"
         ],
         "item_count": 1
       },
@@ -274,7 +274,8 @@
         "name": "Maze Lower Chest",
         "short_name": "Maze Lower",
         "access_rules": [
-          "hammer,fire_small_keys:1,[fire_small_keys:2],$has_fire,[redtunic]"
+          "hammer,fire_small_keys:1,[fire_small_keys:2],[redtunic],$has_fire",
+          "hammer,fire_small_keys:1,[fire_small_keys:2],[redtunic],[$has_fire],hoverboots"
         ],
         "item_count": 1
       },

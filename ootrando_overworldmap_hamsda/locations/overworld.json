@@ -5492,7 +5492,8 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,longshot"
+                          "sword2,longshot",
+                          "sword2,$gerudo_bridge,hoverboots,[longshot]"
                         ],
                         "x": 654,
                         "y": 633
