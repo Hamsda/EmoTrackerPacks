@@ -142,7 +142,8 @@ This setting determines if Cowsanity is active.
 This setting determines which Gold Skulltulas are shown (especially useful for [Tokensanity](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
 
 - ![Skulltulas hidden](ootrando_overworldmap_hamsda/images/setting_skulltulas_off.png "Skulltulas hidden") Gold Skulltulas will be hidden.
-- ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_skulltulas_dungeons.png "Skulltulas in dungeons") The Gold Skulltulas in dungeons will be displayed.
+- ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_skulltulas_dungeons.png "Skulltulas in dungeons") Gold Skulltulas in dungeons will be displayed.
+- ![Skulltulas in overworld](ootrando_overworldmap_hamsda/images/setting_skulltulas_overworld.png "Skulltulas in overworld") Gold Skulltulas in the overworld will be displayed.
 - ![Skulltulas everywhere](ootrando_overworldmap_hamsda/images/setting_skulltulas_all.png "Skulltulas everywhere") All Gold Skulltulas will be displayed.
 
 ### Bombchus in logic

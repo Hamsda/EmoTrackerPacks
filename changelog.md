@@ -19,6 +19,7 @@
 - added sequence breaks for last 5.0 batch of logic tricks:
   - Fire Temple MQ climb w/o fire
   - GV crate as adult w/ hovers
+- added overworld gold skulltula setting
 
 ## 2.5.1.0
 
