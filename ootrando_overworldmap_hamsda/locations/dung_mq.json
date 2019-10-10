@@ -167,7 +167,7 @@
             "chest_unopened_img": "images/deku_scrub.png",
             "chest_opened_img": "images/deku_scrub_grey.png",
             "item_count": 1
-          },
+          }
         ],
         "map_locations": [
           {
@@ -264,7 +264,7 @@
           "@Dodongos Cavern MQ/Under Grave,bombs,sword2",
           "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sticks",
           "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sword1",
-          "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sword2",
+          "@Dodongos Cavern MQ/Under Grave,bombchu,[bombs],sword2"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
