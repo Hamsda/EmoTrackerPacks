@@ -24,6 +24,7 @@
   - restructured them internally
   - logic pass
   - merged GS/scrubs
+- added Triforce piece counter (not used in any layouts)
 
 ## 2.5.1.0
 
