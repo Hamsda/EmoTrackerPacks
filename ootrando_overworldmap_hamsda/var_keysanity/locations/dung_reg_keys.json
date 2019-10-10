@@ -54,7 +54,7 @@
         "access_rules": [
           "@Forest Temple/Bow Region,forest_small_keys:5,sword2,bow",
           "@Forest Temple/Bow Region,forest_small_keys:5,dinsfire,magic",
-          "forest_small_keys:1,sword2,hoverboots,ocarina,[scarecrow],[@Forest Temple/Bow Region],[forest_small_keys:5],[bow]"
+          "forest_small_keys:1,sword2,hoverboots,ocarina,scarecrow,[@Forest Temple/Bow Region],[forest_small_keys:5],[bow]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -365,7 +365,7 @@
       {
         "name": "East Tower",
         "access_rules": [
-          "@Fire Temple/Maze Upper,ocarina,[scarecrow],hookshot",
+          "@Fire Temple/Maze Upper,ocarina,scarecrow,hookshot",
           "@Fire Temple/Maze Upper,[ocarina],[scarecrow],longshot"
         ],
         "visibility_rules": [
@@ -1148,7 +1148,7 @@
       {
         "name": "Bongo Bongo",
         "access_rules": [
-          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,[scarecrow]",
+          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,scarecrow",
           "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bow",
           "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bombchu,[bow]"
         ],

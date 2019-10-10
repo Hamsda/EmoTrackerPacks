@@ -1412,7 +1412,7 @@
                       {
                         "name": "Bite pls",
                         "access_rules": [
-                          "sword2,ocarina,[scarecrow],hookshot",
+                          "sword2,ocarina,scarecrow,hookshot",
                           "sword2,water",
                           "sword2,setting_plant_no,beans",
                           "sword2,bean_lake_yes",
@@ -1436,7 +1436,7 @@
                       {
                         "name": "Shoot it",
                         "access_rules": [
-                          "sword2,bow,ocarina,[scarecrow],longshot",
+                          "sword2,bow,ocarina,scarecrow,longshot",
                           "sword2,bow,water",
                           "{$hintable}",
                           "{sword2,bow}"
@@ -1463,7 +1463,7 @@
                         "access_rules": [
                           "sword2,setting_plant_no,beans",
                           "sword2,bean_lake_yes",
-                          "sword2,ocarina,[scarecrow],hookshot"
+                          "sword2,ocarina,scarecrow,hookshot"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -5778,7 +5778,7 @@
                             "name": "Open it",
                             "access_rules": [
                               "hoverboots",
-                              "ocarina,[scarecrow],hookshot",
+                              "ocarina,scarecrow,hookshot",
                               "longshot"
                             ],
                             "item_count": 1

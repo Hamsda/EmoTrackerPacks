@@ -479,7 +479,7 @@
         "short_name": "Key",
         "access_rules": [
           "water_small_keys:1,longshot,ironboots,dinsfire,magic,hoverboots",
-          "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,[scarecrow]",
+          "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,scarecrow",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -520,7 +520,7 @@
             "short_name": "South Basement",
             "access_rules": [
               "water_small_keys:1,longshot,ironboots,dinsfire,magic,hoverboots,bow,firearrow",
-              "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,[scarecrow],bow,firearrow"
+              "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,scarecrow,bow,firearrow"
             ],
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
