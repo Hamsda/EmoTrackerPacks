@@ -35,9 +35,7 @@ if has_map then
   else
     Tracker:AddLocations("locations/overworld.json")
     Tracker:AddLocations("locations/dung_reg.json")
-    Tracker:AddLocations("locations/dung_reg_keys.json")
     Tracker:AddLocations("locations/dung_mq.json")
-    Tracker:AddLocations("locations/dung_mq_keys.json")
     Tracker:AddLayouts("layouts/options.json")
   end
 end
@@ -67,7 +65,7 @@ Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 
 
---fix GF key counter in this variant only going to 1 because of the default settings for GF
+--change GF key counter in this variant only going to 1 because of the default settings for GF
 if variant == "var_itemsonly_keysanity" then
   local gf = Tracker:FindObjectForCode("setting_gerudo")
   if gf then

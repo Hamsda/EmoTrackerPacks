@@ -48,6 +48,7 @@ key_counts = {
     gc = 3,
   }
 }
+has_keys = Tracker.ActiveVariantUID:find("keysanity")
 function update_smallkeys()
   for _,dungeon in ipairs(dungeons) do
     local key_object = Tracker:FindObjectForCode(dungeon.."_small_keys")
@@ -56,6 +57,13 @@ function update_smallkeys()
         key_object.MaxCount = key_counts["vanilla"][dungeon]
       else
         key_object.MaxCount = key_counts["mq"][dungeon]
+      end
+      if not has_keys then
+        key_object.AcquiredCount = key_object.MaxCount
+        local bk = Tracker:FindObjectForCode(dungeon.."_boss_key")
+        if bk then
+          bk.Active = true
+        end
       end
     end
   end

@@ -1,5 +1,33 @@
 # Changelog
 
+## 2.6.0.0
+
+- changed lens setting default to wasteland
+- changed keysanity GF hides checks based on setting
+- changed Shadow Temple like like GS w/o hookshot
+- added sequence breaks for new logic tricks:
+  - DC MQ early bomb bag area as child
+  - Forest Temple outside backdoor w/o hovers
+  - Forest Temple MQ early hallway switch
+  - Fire Temple east tower w/o scarecrow
+  - Spirit Temple lower adult switch w/ bombs
+  - BotW cage GS w/o rang
+  - Shadow Trial MQ torch w/o fire
+  - DMT rock GS w/o hammer
+  - Goron City spinning pot w/ chus
+- added Kakariko Potion Shop to ER
+- added sequence breaks for last 5.0 batch of logic tricks:
+  - Fire Temple MQ climb w/o fire
+  - GV crate as adult w/ hovers
+- added overworld gold skulltula setting
+- changed vanilla dungeons (MQ dungeons soon...):
+  - restructured them internally
+  - logic pass
+  - merged GS/scrubs
+- added Triforce piece counter (not used in any layouts)
+- added 3rd state to dungeon indicators to represent unknown (will show both versions)
+- changed scarecrow checks to no longer be sequence breakable
+
 ## 2.5.1.0
 
 - fixed back of GTG sequence break for hookshot w/ hovers

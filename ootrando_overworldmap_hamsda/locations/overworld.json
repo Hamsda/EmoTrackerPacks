@@ -149,7 +149,7 @@
               {
                 "name": "Know It All House",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
@@ -159,7 +159,7 @@
                       "ocarina,sun,$can_child_attack"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -177,7 +177,7 @@
               {
                 "name": "Kokiri Bean Patch",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
@@ -186,7 +186,7 @@
                       "$has_bottle,$can_child_attack"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -204,7 +204,7 @@
               {
                 "name": "House of Twins",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
@@ -216,7 +216,7 @@
                       "{sword2,dinsfire,magic}"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -590,7 +590,7 @@
                 "name": "Lost Woods Bean Patch Near Bridge",
                 "short_name": "Bean Patch Near Bridge",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
@@ -599,7 +599,7 @@
                       "$has_bottle,$can_child_attack"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -628,11 +628,11 @@
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "setting_skulltulas_all,$has_bottle,$can_child_attack",
-                      "setting_skulltulas_all,$has_bottle,shield1"
+                      "setting_skulltulas_overworld,$has_bottle,$can_child_attack",
+                      "setting_skulltulas_overworld,$has_bottle,shield1"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -651,7 +651,7 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "setting_skulltulas_all,sword2"
+                  "setting_skulltulas_overworld,sword2"
                 ],
                 "sections": [
                   {
@@ -667,7 +667,7 @@
                       "[ocarina],[minuet],[bean_stage_yes],hookshot,dinsfire,magic"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -863,8 +863,8 @@
               {
                 "name": "Top of Maze",
                 "access_rules": [
-                  "setting_skulltulas_all,sword2,[ocarina],[saria]",
-                  "setting_skulltulas_all,sword2,[ocarina],[minuet]"
+                  "setting_skulltulas_overworld,sword2,[ocarina],[saria]",
+                  "setting_skulltulas_overworld,sword2,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -876,7 +876,7 @@
                       "{$has_explosives}"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -1170,7 +1170,7 @@
               {
                 "name": "Field Kakariko Grotto",
                 "access_rules": [
-                  "setting_skulltulas_all,$can_blast"
+                  "setting_skulltulas_overworld,$can_blast"
                 ],
                 "sections": [
                   {
@@ -1183,7 +1183,7 @@
                       "{dinsfire,magic}"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -1216,14 +1216,14 @@
                   {
                     "name": "GS13",
                     "access_rules": [
-                      "setting_skulltulas_all,$has_explosives,dinsfire,magic,boomerang",
-                      "{setting_skulltulas_all,$has_explosives,dinsfire,magic}",
-                      "setting_skulltulas_all,sword2,hammer,$has_fire,hookshot",
-                      "{setting_skulltulas_all,sword2,hammer,$has_fire}",
-                      "{setting_skulltulas_all,$hintable}"
+                      "setting_skulltulas_overworld,$has_explosives,dinsfire,magic,boomerang",
+                      "{setting_skulltulas_overworld,$has_explosives,dinsfire,magic}",
+                      "setting_skulltulas_overworld,sword2,hammer,$has_fire,hookshot",
+                      "{setting_skulltulas_overworld,sword2,hammer,$has_fire}",
+                      "{setting_skulltulas_overworld,$hintable}"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
@@ -1412,7 +1412,7 @@
                       {
                         "name": "Bite pls",
                         "access_rules": [
-                          "sword2,ocarina,[scarecrow],hookshot",
+                          "sword2,ocarina,scarecrow,hookshot",
                           "sword2,water",
                           "sword2,setting_plant_no,beans",
                           "sword2,bean_lake_yes",
@@ -1436,7 +1436,7 @@
                       {
                         "name": "Shoot it",
                         "access_rules": [
-                          "sword2,bow,ocarina,[scarecrow],longshot",
+                          "sword2,bow,ocarina,scarecrow,longshot",
                           "sword2,bow,water",
                           "{$hintable}",
                           "{sword2,bow}"
@@ -1463,7 +1463,7 @@
                         "access_rules": [
                           "sword2,setting_plant_no,beans",
                           "sword2,bean_lake_yes",
-                          "sword2,ocarina,[scarecrow],hookshot"
+                          "sword2,ocarina,scarecrow,hookshot"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -1597,10 +1597,10 @@
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_overworld,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1618,7 +1618,7 @@
                   {
                     "name": "Lab Wall",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -1631,7 +1631,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -1650,7 +1650,7 @@
                   {
                     "name": "Small Island",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -1659,7 +1659,7 @@
                           "$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1677,7 +1677,7 @@
                   {
                     "name": "Giant Tree",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -1686,7 +1686,7 @@
                           "sword2,longshot"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1705,7 +1705,7 @@
                     "name": "Lab Underwater Crate",
                     "short_name": "Lab Crate",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -1714,7 +1714,7 @@
                           "sword2,ironboots,hookshot"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1944,13 +1944,13 @@
                     "name": "Lon Lon Ranch Tree",
                     "short_name": "Lone Tree",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS18",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1969,13 +1969,13 @@
                     "name": "Lon Lon Ranch Rain Shed",
                     "short_name": "Rain Shed",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS19 (N)",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -1994,7 +1994,7 @@
                     "name": "Lon Lon Ranch House Window",
                     "short_name": "House Window",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -2005,7 +2005,7 @@
                           "{bombchu}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -2025,7 +2025,7 @@
                     "name": "Lon Lon Ranch Back Wall",
                     "short_name": "Back Wall",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -2037,7 +2037,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -2503,7 +2503,7 @@
                 "name": "Kakariko Above Impa's House",
                 "short_name": "Above Impa's House",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
@@ -2512,7 +2512,7 @@
                       "sword2,hookshot"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2531,13 +2531,13 @@
                 "name": "Kakariko Tree",
                 "short_name": "Tree",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
                     "name": "GS22 (N)",
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2556,13 +2556,13 @@
                 "name": "Kakariko Skulltula House",
                 "short_name": "Skulltula House",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
                     "name": "GS23 (N)",
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2581,13 +2581,13 @@
                 "name": "Kakariko House Under Construction",
                 "short_name": "Under Construction",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
                     "name": "GS24 (N)",
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2606,13 +2606,13 @@
                 "name": "Kakariko Guard's House",
                 "short_name": "Bazaar Wall",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
                     "name": "GS25 (N)",
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2631,7 +2631,7 @@
                 "name": "Kakariko Watchtower",
                 "short_name": "Watchtower",
                 "access_rules": [
-                  "setting_skulltulas_all"
+                  "setting_skulltulas_overworld"
                 ],
                 "sections": [
                   {
@@ -2643,7 +2643,7 @@
                       "sword1,[sling]"
                     ],
                     "visibility_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2883,7 +2883,7 @@
                     "name": "Graveyard Wall",
                     "short_name": "Wall",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -2895,7 +2895,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -2924,10 +2924,10 @@
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_overworld,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3086,8 +3086,10 @@
                         "short_name": "HP :)",
                         "access_rules": [
                           "ocarina,lullaby,sticks,bombs",
+                          "ocarina,lullaby,sticks,[bombs],bombchu",
                           "ocarina,lullaby,sticks,lift1",
                           "dinsfire,magic,bombs",
+                          "dinsfire,magic,[bombs],bombchu",
                           "dinsfire,magic,lift1",
                           "{$hintable}"
                         ],
@@ -3161,7 +3163,7 @@
                     "name": "Goron City Boulder Maze",
                     "short_name": "Boulder Maze Crate",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -3170,7 +3172,7 @@
                           "$has_explosives"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3189,13 +3191,13 @@
                     "name": "Goron City Center Platform",
                     "short_name": "Center Platform",
                     "access_rules": [
-                      "setting_skulltulas_all,sword2"
+                      "setting_skulltulas_overworld,sword2"
                     ],
                     "sections": [
                       {
                         "name": "GS35 (N)",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3508,16 +3510,17 @@
                     "name": "Mountain Trail Above Dodongo's Cavern",
                     "short_name": "Rock Above DC",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS32 (N)",
                         "access_rules": [
-                          "sword2,hammer"
+                          "sword2,hammer",
+                          "sword2,[hammer],hookshot"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3536,16 +3539,16 @@
                     "name": "Mountain Trail Path to Crater",
                     "short_name": "Path to Crater",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS33 (N)",
                         "access_rules": [
-                          "sword2,hammer"
+                          "sword2,[hammer]"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3574,12 +3577,12 @@
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "setting_skulltulas_all,$has_bottle,$has_explosives",
-                          "setting_skulltulas_all,$has_bottle,lift1",
-                          "setting_skulltulas_all,$has_bottle,[lift1],boomerang"
+                          "setting_skulltulas_overworld,$has_bottle,$has_explosives",
+                          "setting_skulltulas_overworld,$has_bottle,lift1",
+                          "setting_skulltulas_overworld,$has_bottle,[lift1],boomerang"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3597,7 +3600,7 @@
                   {
                     "name": "Mountain Trail Bomb Alcove",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -3606,7 +3609,7 @@
                           "$can_blast"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3926,7 +3929,7 @@
                     "name": "Death Mountain Crater Crate",
                     "short_name": "Crate at Entrance",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -3935,7 +3938,7 @@
                           "$can_blast,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -3966,10 +3969,10 @@
                       {
                         "name": "GS37",
                         "access_rules": [
-                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_overworld,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4335,13 +4338,13 @@
                     "name": "Castle Market Guard House",
                     "short_name": "Guardhouse",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS14",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4468,7 +4471,7 @@
                     "name": "Hyrule Castle Tree",
                     "short_name": "Tree near Malon",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -4477,7 +4480,7 @@
                           "$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4495,7 +4498,7 @@
                   {
                     "name": "Castle Storms Grotto",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -4506,7 +4509,7 @@
                           "{$hintable}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -4599,13 +4602,13 @@
                   {
                     "name": "Outside Ganon's Castle",
                     "access_rules": [
-                      "setting_skulltulas_all,sword2"
+                      "setting_skulltulas_overworld,sword2"
                     ],
                     "sections": [
                       {
                         "name": "GS17",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4849,13 +4852,13 @@
                   {
                     "name": "Zora River Tree",
                     "access_rules": [
-                      "setting_skulltulas_all,$can_child_attack"
+                      "setting_skulltulas_overworld,$can_child_attack"
                     ],
                     "sections": [
                       {
                         "name": "GS43",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4873,7 +4876,7 @@
                   {
                     "name": "Zora River Ladder",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -4883,7 +4886,7 @@
                           "scale1,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -4902,7 +4905,7 @@
                     "name": "Zora River Near Raised Grottos",
                     "short_name": "Plateau Wall",
                     "access_rules": [
-                      "setting_skulltulas_all,sword2"
+                      "setting_skulltulas_overworld,sword2"
                     ],
                     "sections": [
                       {
@@ -4914,7 +4917,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -4934,7 +4937,7 @@
                     "name": "Zora River Above Bridge",
                     "short_name": "Wall Above Bridge",
                     "access_rules": [
-                      "setting_skulltulas_all,sword2"
+                      "setting_skulltulas_overworld,sword2"
                     ],
                     "sections": [
                       {
@@ -4944,7 +4947,7 @@
                           "{bow}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -4984,7 +4987,7 @@
                         "map": "gossips",
                         "x": 2092,
                         "y": 540
-                      },
+                      }
                     ]
                   },
                   {
@@ -5162,7 +5165,7 @@
                   {
                     "name": "Frozen Waterfall",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5173,7 +5176,7 @@
                           "magic"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5325,7 +5328,7 @@
                     "name": "Zora's Fountain Hidden Cave",
                     "short_name": "Hidden Cave",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5338,7 +5341,7 @@
                           "{$hintable}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5358,13 +5361,13 @@
                     "name": "Zora's Fountain Tree",
                     "short_name": "Tree",
                     "access_rules": [
-                      "setting_skulltulas_all,$child_fountain"
+                      "setting_skulltulas_overworld,$child_fountain"
                     ],
                     "sections": [
                       {
                         "name": "GS48",
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5383,7 +5386,7 @@
                     "name": "Zora's Fountain Above the Log",
                     "short_name": "Wall near Log",
                     "access_rules": [
-                      "setting_skulltulas_all,$child_fountain"
+                      "setting_skulltulas_overworld,$child_fountain"
                     ],
                     "sections": [
                       {
@@ -5395,7 +5398,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5489,7 +5492,8 @@
                       {
                         "map": "adult",
                         "visibility_rules": [
-                          "sword2,longshot"
+                          "sword2,longshot",
+                          "sword2,$gerudo_bridge,hoverboots,[longshot]"
                         ],
                         "x": 654,
                         "y": 633
@@ -5550,7 +5554,7 @@
                     "name": "Gerudo Valley Small Bridge",
                     "short_name": "Waterfall Near Entrance",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5562,7 +5566,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5581,7 +5585,7 @@
                   {
                     "name": "Gerudo Valley Bean Patch",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5590,7 +5594,7 @@
                           "$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -5705,7 +5709,7 @@
                     "name": "Gerudo Valley Behind Tent",
                     "short_name": "GV Behind Tent",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5717,7 +5721,7 @@
                           "{$has_explosives}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5737,7 +5741,7 @@
                     "name": "Gerudo Valley Pillar",
                     "short_name": "GV Pillar",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5748,7 +5752,7 @@
                           "{bombchu}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5774,7 +5778,7 @@
                             "name": "Open it",
                             "access_rules": [
                               "hoverboots",
-                              "ocarina,[scarecrow],hookshot",
+                              "ocarina,scarecrow,hookshot",
                               "longshot"
                             ],
                             "item_count": 1
@@ -5821,8 +5825,8 @@
                       {
                         "name": "Archery Range",
                         "access_rules": [
-                          "setting_skulltulas_all,carpenter_rescue",
-                          "setting_skulltulas_all,gerudo_fortress_open"
+                          "setting_skulltulas_overworld,carpenter_rescue",
+                          "setting_skulltulas_overworld,gerudo_fortress_open"
                         ],
                         "sections": [
                           {
@@ -5833,7 +5837,7 @@
                               "{dinsfire,magic}"
                             ],
                             "visibility_rules": [
-                              "setting_skulltulas_all"
+                              "setting_skulltulas_overworld"
                             ],
                             "capture_item": true,
                             "chest_unopened_img": "images/skulltula.png",
@@ -5852,7 +5856,7 @@
                       {
                         "name": "Top Floor",
                         "access_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "sections": [
                           {
@@ -5863,7 +5867,7 @@
                               "[hoverboots]"
                             ],
                             "visibility_rules": [
-                              "setting_skulltulas_all"
+                              "setting_skulltulas_overworld"
                             ],
                             "chest_unopened_img": "images/skulltula.png",
                             "chest_opened_img": "images/skulltula_token.png",
@@ -5914,7 +5918,7 @@
                   {
                     "name": "Wasteland Ruins",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
@@ -5924,7 +5928,7 @@
                           "{$hintable}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -5951,7 +5955,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "$colossus,ocarina,lullaby,$has_explosives"
+                          "$adult_colossus,ocarina,lullaby,$has_explosives"
                         ],
                         "item_count": 1
                       }
@@ -5960,7 +5964,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "ocarina,requiem"
+                          "$child_colossus"
                         ],
                         "x": 276,
                         "y": 297
@@ -5980,10 +5984,10 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "ocarina,requiem,setting_plant_no,beans,sword2",
-                          "ocarina,requiem,bean_colossus_yes,sword2",
-                          "{$hintable}",
-                          "{$colossus}"
+                          "$child_colossus,setting_plant_no,beans,sword2",
+                          "$child_colossus,bean_colossus_yes,sword2",
+                          "{$adult_colossus}",
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -5992,6 +5996,11 @@
                       }
                     ],
                     "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 160,
+                        "y": 305
+                      },
                       {
                         "map": "adult",
                         "x": 160,
@@ -6005,7 +6014,7 @@
                       {
                         "name": "Song",
                         "access_rules": [
-                          "$colossus",
+                          "$adult_colossus",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -6034,7 +6043,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "setting_scrub_shuffle_yes,$colossus,sword2,lift2"
+                          "setting_scrub_shuffle_yes,$adult_colossus,sword2,lift2"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -6069,10 +6078,10 @@
                       {
                         "name": "GS93",
                         "access_rules": [
-                          "setting_skulltulas_all,$has_bottle,$can_child_attack"
+                          "setting_skulltulas_overworld,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
@@ -6091,19 +6100,19 @@
                     "name": "Desert Colossus Tree",
                     "short_name": "Tree Near Oasis",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS94 (N)",
                         "access_rules": [
-                          "$colossus,sword2,hookshot",
-                          "{$colossus,sword2,bow}",
-                          "{$colossus,sword2,$has_explosives}",
-                          "{$colossus,sword2,dinsfire,magic}"
+                          "$adult_colossus,sword2,hookshot",
+                          "{$adult_colossus,sword2,bow}",
+                          "{$adult_colossus,sword2,$has_explosives}",
+                          "{$adult_colossus,sword2,dinsfire,magic}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -6123,19 +6132,19 @@
                     "name": "Desert Colossus Hill",
                     "short_name": "Top Of Platform",
                     "access_rules": [
-                      "setting_skulltulas_all"
+                      "setting_skulltulas_overworld"
                     ],
                     "sections": [
                       {
                         "name": "GS95 (N)",
                         "access_rules": [
-                          "ocarina,requiem,setting_plant_no,beans,sword2",
-                          "ocarina,requiem,bean_colossus_yes,sword2",
-                          "$colossus,sword2,hookshot,[longshot]",
-                          "{$colossus,sword2,bow}"
+                          "$child_colossus,setting_plant_no,beans,sword2",
+                          "$child_colossus,bean_colossus_yes,sword2",
+                          "$adult_colossus,sword2,hookshot,[longshot]",
+                          "{$adult_colossus,sword2,bow}"
                         ],
                         "visibility_rules": [
-                          "setting_skulltulas_all"
+                          "setting_skulltulas_overworld"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
@@ -6161,7 +6170,7 @@
                       {
                         "name": "Check it",
                         "access_rules": [
-                          "$colossus"
+                          "$adult_colossus"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",

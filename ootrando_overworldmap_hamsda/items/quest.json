@@ -15,7 +15,7 @@
     "name": "Carpenter Rescue",
     "type": "toggle",
     "img": "images/gerudosymbol.png",
-    "codes": "carpenter_rescue",
+    "codes": "carpenter_rescue"
   },
   {
     "name": "Gerudo Card and Carpenter Rescue",
@@ -110,6 +110,13 @@
     "img": "images/icetrap.png",
     "codes": "icetrap",
     "max_quantity": 999
+  },
+  {
+    "name": "Triforce Piece",
+    "type": "consumable",
+    "img": "images/triforce_piece.png",
+    "codes": "triforce",
+    "max_quantity": 100
   },
   {
     "name": "Rupee",
@@ -350,28 +357,28 @@
         "codes": "forestmedlabel"
       },
       {
-        "img": "images/label_deku.png",
+        "img": "images/label_deku.png"
       },
       {
-        "img": "images/label_dodongo.png",
+        "img": "images/label_dodongo.png"
       },
       {
-        "img": "images/label_jabu.png",
+        "img": "images/label_jabu.png"
       },
       {
-        "img": "images/label_forest.png",
+        "img": "images/label_forest.png"
       },
       {
-        "img": "images/label_fire.png",
+        "img": "images/label_fire.png"
       },
       {
-        "img": "images/label_water.png",
+        "img": "images/label_water.png"
       },
       {
-        "img": "images/label_spirit.png",
+        "img": "images/label_spirit.png"
       },
       {
-        "img": "images/label_shadow.png",
+        "img": "images/label_shadow.png"
       }
     ]
   },
@@ -386,28 +393,28 @@
         "codes": "firemedlabel"
       },
       {
-        "img": "images/label_deku.png",
+        "img": "images/label_deku.png"
       },
       {
-        "img": "images/label_dodongo.png",
+        "img": "images/label_dodongo.png"
       },
       {
-        "img": "images/label_jabu.png",
+        "img": "images/label_jabu.png"
       },
       {
-        "img": "images/label_forest.png",
+        "img": "images/label_forest.png"
       },
       {
-        "img": "images/label_fire.png",
+        "img": "images/label_fire.png"
       },
       {
-        "img": "images/label_water.png",
+        "img": "images/label_water.png"
       },
       {
-        "img": "images/label_spirit.png",
+        "img": "images/label_spirit.png"
       },
       {
-        "img": "images/label_shadow.png",
+        "img": "images/label_shadow.png"
       }
     ]
   },
@@ -422,28 +429,28 @@
         "codes": "watermedlabel"
       },
       {
-        "img": "images/label_deku.png",
+        "img": "images/label_deku.png"
       },
       {
-        "img": "images/label_dodongo.png",
+        "img": "images/label_dodongo.png"
       },
       {
-        "img": "images/label_jabu.png",
+        "img": "images/label_jabu.png"
       },
       {
-        "img": "images/label_forest.png",
+        "img": "images/label_forest.png"
       },
       {
-        "img": "images/label_fire.png",
+        "img": "images/label_fire.png"
       },
       {
-        "img": "images/label_water.png",
+        "img": "images/label_water.png"
       },
       {
-        "img": "images/label_spirit.png",
+        "img": "images/label_spirit.png"
       },
       {
-        "img": "images/label_shadow.png",
+        "img": "images/label_shadow.png"
       }
     ]
   },
@@ -458,28 +465,28 @@
         "codes": "spiritmedlabel"
       },
       {
-        "img": "images/label_deku.png",
+        "img": "images/label_deku.png"
       },
       {
-        "img": "images/label_dodongo.png",
+        "img": "images/label_dodongo.png"
       },
       {
-        "img": "images/label_jabu.png",
+        "img": "images/label_jabu.png"
       },
       {
-        "img": "images/label_forest.png",
+        "img": "images/label_forest.png"
       },
       {
-        "img": "images/label_fire.png",
+        "img": "images/label_fire.png"
       },
       {
-        "img": "images/label_water.png",
+        "img": "images/label_water.png"
       },
       {
-        "img": "images/label_spirit.png",
+        "img": "images/label_spirit.png"
       },
       {
-        "img": "images/label_shadow.png",
+        "img": "images/label_shadow.png"
       }
     ]
   },
@@ -494,28 +501,28 @@
         "codes": "shadowmedlabel"
       },
       {
-        "img": "images/label_deku.png",
+        "img": "images/label_deku.png"
       },
       {
-        "img": "images/label_dodongo.png",
+        "img": "images/label_dodongo.png"
       },
       {
-        "img": "images/label_jabu.png",
+        "img": "images/label_jabu.png"
       },
       {
-        "img": "images/label_forest.png",
+        "img": "images/label_forest.png"
       },
       {
-        "img": "images/label_fire.png",
+        "img": "images/label_fire.png"
       },
       {
-        "img": "images/label_water.png",
+        "img": "images/label_water.png"
       },
       {
-        "img": "images/label_spirit.png",
+        "img": "images/label_spirit.png"
       },
       {
-        "img": "images/label_shadow.png",
+        "img": "images/label_shadow.png"
       }
     ]
   },
@@ -530,29 +537,29 @@
         "codes": "lightmedlabel"
       },
       {
-        "img": "images/label_deku.png",
+        "img": "images/label_deku.png"
       },
       {
-        "img": "images/label_dodongo.png",
+        "img": "images/label_dodongo.png"
       },
       {
-        "img": "images/label_jabu.png",
+        "img": "images/label_jabu.png"
       },
       {
-        "img": "images/label_forest.png",
+        "img": "images/label_forest.png"
       },
       {
-        "img": "images/label_fire.png",
+        "img": "images/label_fire.png"
       },
       {
-        "img": "images/label_water.png",
+        "img": "images/label_water.png"
       },
       {
-        "img": "images/label_spirit.png",
+        "img": "images/label_spirit.png"
       },
       {
-        "img": "images/label_shadow.png",
+        "img": "images/label_shadow.png"
       }
     ]
-  },
+  }
 ]

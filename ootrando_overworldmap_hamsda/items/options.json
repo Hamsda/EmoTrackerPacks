@@ -124,6 +124,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_lens_all.png",
@@ -237,11 +238,18 @@
       },
       {
         "img": "images/setting_skulltulas_dungeons.png",
-        "codes": "setting_skulltulas_dungeons"
+        "codes": "setting_skulltulas_dungeons",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skulltulas_overworld.png",
+        "codes": "setting_skulltulas_overworld",
+        "inherit_codes": false
       },
       {
         "img": "images/setting_skulltulas_all.png",
-        "codes": "setting_skulltulas_all"
+        "codes": "setting_skulltulas_dungeons,setting_skulltulas_overworld",
+        "inherit_codes": false
       }
     ]
   },

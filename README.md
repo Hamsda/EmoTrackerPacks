@@ -25,15 +25,23 @@ The pack offers 7 different variants:
 
 ## Vanilla vs Master Quest Dungeons
 
-The Randomizer has the option to switch some or all dungeons to their Master Quest equivalents.  
-To accomodate for this, you can click on the dungeon labels to change them from vanilla ![vanilla deku](ootrando_overworldmap_hamsda/images/label_deku.png) to Master Quest ![mq deku](ootrando_overworldmap_hamsda/images/label_deku_mq.png). You can use this in the non map variants as a reminder.
+The Randomizer has the option to switch some or all dungeons to their Master Quest equivalents.
+To accomodate for this, you can click on the dungeon labels to change their current status:
+
+- ![Vanilla](ootrando_overworldmap_hamsda/images/label_deku.png "Vanilla") The dungeons vanilla checks will be shown.
+- ![Master Quest](ootrando_overworldmap_hamsda/images/label_deku_mq.png "Master Quest") The dungeons MQ checks will be shown.
+- ![Unknown](ootrando_overworldmap_hamsda/images/label_deku_red.png "Unknown") Both versions of the dungeon will be shown.
+
+You can use this in the non map variants as a reminder.
+
 The small key maximum amounts in the keysanity variants will dynamically update according to what you selected for the corresponding dungeon.
+If you have a dungeon marked as unknown in non-keysanity, some of the checks in the dungeon might not show up correctly until you pick either vanilla or MQ.
 
 ## Special items
 
 Some of this functionality might not be immediately obvious:
 
-- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will show up as sequence breaks unless this is turned on.
+- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on.
 - ![Ice Trap](ootrando_overworldmap_hamsda/images/icetrap.png "Ice Trap") is used as a counter for ice traps. This is somewhat useful to evaluate freestanding items during racing, but mostly just for fun with settings that include higher numbers of ice traps.
 
 ## Settings (for map variants)
@@ -142,7 +150,8 @@ This setting determines if Cowsanity is active.
 This setting determines which Gold Skulltulas are shown (especially useful for [Tokensanity](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
 
 - ![Skulltulas hidden](ootrando_overworldmap_hamsda/images/setting_skulltulas_off.png "Skulltulas hidden") Gold Skulltulas will be hidden.
-- ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_skulltulas_dungeons.png "Skulltulas in dungeons") The Gold Skulltulas in dungeons will be displayed.
+- ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_skulltulas_dungeons.png "Skulltulas in dungeons") Gold Skulltulas in dungeons will be displayed.
+- ![Skulltulas in overworld](ootrando_overworldmap_hamsda/images/setting_skulltulas_overworld.png "Skulltulas in overworld") Gold Skulltulas in the overworld will be displayed.
 - ![Skulltulas everywhere](ootrando_overworldmap_hamsda/images/setting_skulltulas_all.png "Skulltulas everywhere") All Gold Skulltulas will be displayed.
 
 ### Bombchus in logic
@@ -201,6 +210,6 @@ Additionally there are counters for the useful indoors entrances, so you can eva
 - ![Counter: Scrubs](ootrando_overworldmap_hamsda/images/entrance_grotto_scrub.png "Counter: Scrubs") 10 grottos that contain 2 or 3 scrubs each. Only 2 of these are relevant if scrubsanity is off.
 - ![Counter: Cows](ootrando_overworldmap_hamsda/images/entrance_grotto_cow.png "Counter: Cows") 4 grottos/houses that only have a cow (Impas House Back, Ingo Barn, Lon Lon Corner Tower, Mountain Bombable Grotto). The other cow spots have their own markers (![Links House](ootrando_overworldmap_hamsda/images/entrance_house_link.png) and ![Field Valley Grotto](ootrando_overworldmap_hamsda/images/entrance_grotto_field_valley.png))
 - ![Counter: Great Fairies](ootrando_overworldmap_hamsda/images/entrance_house_fairy.png "Counter: Great Fairies") 6 Great Fairy Fountains.
-- ![Counter: Shops](ootrando_overworldmap_hamsda/images/entrance_house_shop.png "Counter: Shops") 7 randomized shops (Kakariko Potion Shop is fixed).
+- ![Counter: Shops](ootrando_overworldmap_hamsda/images/entrance_house_shop.png "Counter: Shops") 8 randomized shops (Kakariko Potion Shop has 2 separate entrances, only counted once).
 
 I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant.
