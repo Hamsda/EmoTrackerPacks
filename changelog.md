@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.6.0.0
 
 - changed lens setting default to wasteland
 - changed keysanity GF hides checks based on setting
