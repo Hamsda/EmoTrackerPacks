@@ -25,6 +25,7 @@
   - logic pass
   - merged GS/scrubs
 - added Triforce piece counter (not used in any layouts)
+- added 3rd state to dungeon indicators to represent unknown (will show both versions)
 
 ## 2.5.1.0
 

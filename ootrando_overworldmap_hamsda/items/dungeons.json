@@ -56,6 +56,11 @@
         "img": "images/label_deku_mq.png",
         "codes": "deku_label,deku_mq",
         "inherit_codes": false
+      },
+      {
+        "img": "images/label_deku_red.png",
+        "codes": "deku_label,deku_reg,deku_mq",
+        "inherit_codes": false
       }
     ]
   },
@@ -109,6 +114,11 @@
       {
         "img": "images/label_dodongo_mq.png",
         "codes": "dodongo_label,dodongo_mq",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/label_dodongo_red.png",
+        "codes": "dodongo_label,dodongo_reg,dodongo_mq",
         "inherit_codes": false
       }
     ]
@@ -164,6 +174,11 @@
         "img": "images/label_jabu_mq.png",
         "codes": "jabu_label,jabu_mq",
         "inherit_codes": false
+      },
+      {
+        "img": "images/label_jabu_red.png",
+        "codes": "jabu_label,jabu_reg,jabu_mq",
+        "inherit_codes": false
       }
     ]
   },
@@ -217,6 +232,11 @@
       {
         "img": "images/label_forest_mq.png",
         "codes": "forest_label,forest_mq",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/label_forest_red.png",
+        "codes": "forest_label,forest_reg,forest_mq",
         "inherit_codes": false
       }
     ]
@@ -285,6 +305,11 @@
         "img": "images/label_fire_mq.png",
         "codes": "fire_label,fire_mq",
         "inherit_codes": false
+      },
+      {
+        "img": "images/label_fire_red.png",
+        "codes": "fire_label,fire_reg,fire_mq",
+        "inherit_codes": false
       }
     ]
   },
@@ -351,6 +376,11 @@
       {
         "img": "images/label_water_mq.png",
         "codes": "water_label,water_mq",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/label_water_red.png",
+        "codes": "water_label,water_reg,water_mq",
         "inherit_codes": false
       }
     ]
@@ -419,6 +449,11 @@
         "img": "images/label_spirit_mq.png",
         "codes": "spirit_label,spirit_mq",
         "inherit_codes": false
+      },
+      {
+        "img": "images/label_spirit_red.png",
+        "codes": "spirit_label,spirit_reg,spirit_mq",
+        "inherit_codes": false
       }
     ]
   },
@@ -485,6 +520,11 @@
       {
         "img": "images/label_shadow_mq.png",
         "codes": "shadow_label,shadow_mq",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/label_shadow_red.png",
+        "codes": "shadow_label,shadow_reg,shadow_mq",
         "inherit_codes": false
       }
     ]
@@ -553,6 +593,11 @@
         "img": "images/label_botw_mq.png",
         "codes": "botw_label,botw_mq",
         "inherit_codes": false
+      },
+      {
+        "img": "images/label_botw_red.png",
+        "codes": "botw_label,botw_reg,botw_mq",
+        "inherit_codes": false
       }
     ]
   },
@@ -576,6 +621,11 @@
       {
         "img": "images/label_ice_mq.png",
         "codes": "ice_label,ice_mq",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/label_ice_red.png",
+        "codes": "ice_label,ice_reg,ice_mq",
         "inherit_codes": false
       }
     ]
@@ -607,6 +657,11 @@
         "img": "images/label_gtg_mq.png",
         "codes": "gtg_label,gtg_mq",
         "inherit_codes": false
+      },
+      {
+        "img": "images/label_gtg_red.png",
+        "codes": "gtg_label,gtg_reg,gtg_mq",
+        "inherit_codes": false
       }
     ]
   },
@@ -630,6 +685,11 @@
       {
         "img": "images/label_gc_mq.png",
         "codes": "gc_label,gc_mq",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/label_gc_red.png",
+        "codes": "gc_label,gc_reg,gc_mq",
         "inherit_codes": false
       }
     ]
