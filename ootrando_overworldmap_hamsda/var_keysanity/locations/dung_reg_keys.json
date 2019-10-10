@@ -8,25 +8,147 @@
     ],
     "sections": [
       {
+        "name": "Block Push Room",
+        "access_rules": [
+          "forest_small_keys:1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Straightened Hall",
+        "access_rules": [
+          "@Forest Temple/Block Push Room,forest_small_keys:2,sword2,lift1,bow"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Outside Upper Ledge",
+        "access_rules": [
+          "@Forest Temple/Block Push Room,sword2,hoverboots",
+          "@Forest Temple/Block Push Room,sword2,[hoverboots],lift1",
+          "@Forest Temple/Straightened Hall"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bow Region",
+        "access_rules": [
+          "@Forest Temple/Block Push Room,forest_small_keys:3,sword2,lift1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Falling Room",
+        "access_rules": [
+          "@Forest Temple/Bow Region,forest_small_keys:5,sword2,bow",
+          "@Forest Temple/Bow Region,forest_small_keys:5,dinsfire,magic",
+          "forest_small_keys:1,sword2,hoverboots,ocarina,[scarecrow],[@Forest Temple/Bow Region],[forest_small_keys:5],[bow]"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Region",
+        "access_rules": [
+          "@Forest Temple/Bow Region,@Forest Temple/Falling Room,sword2,bow"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Outdoors High Balconies",
+        "access_rules": [
+          "ocarina,time,sword2",
+          "@Forest Temple/Outside Upper Ledge,sword2",
+          "sword2,bow,[longshot],hookshot",
+          "sword2,bow,ironboots",
+          "sword2,bow,scale2",
+          "@Forest Temple/Falling Room,sword2,[longshot],hookshot",
+          "@Forest Temple/Falling Room,sword2,ironboots",
+          "@Forest Temple/Falling Room,sword2,scale2"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "NE Outdoors",
+        "access_rules": [
+          "@Forest Temple/Outdoors High Balconies",
+          "@Forest Temple/Falling Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "NW Outdoors",
+        "access_rules": [
+          "@Forest Temple/Outdoors High Balconies",
+          "@Forest Temple/Outside Upper Ledge"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS60 - First Room",
+        "short_name": "First Room",
+        "access_rules": [
+          "dinsfire,magic",
+          "$has_explosives",
+          "sword2,hookshot",
+          "sword2,bow"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
         "name": "First Chest",
         "short_name": "Tree",
         "item_count": 1
       },
       {
-        "name": "Chest Behind Lobby",
-        "short_name": "Stalfos",
+        "name": "GS61 - Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "sword2,hookshot"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
-        "name": "Map Chest",
-        "short_name": "Map",
+        "name": "Chest Behind Lobby",
+        "short_name": "Stalfos",
         "access_rules": [
-          "ocarina,time",
-          "bow,[ironboots]",
-          "bow,[scale2]",
-          "forest_small_keys:1,hoverboots",
-          "forest_small_keys:1,[hoverboots],lift1",
-          "forest_small_keys:5,lift1,dinsfire,magic"
+          "sword2"
         ],
         "item_count": 1
       },
@@ -34,11 +156,33 @@
         "name": "Outside Hookshot Chest",
         "short_name": "Island",
         "access_rules": [
-          "ocarina,time",
-          "bow",
-          "forest_small_keys:1,hoverboots",
-          "forest_small_keys:1,[hoverboots],lift1",
-          "forest_small_keys:5,lift1,dinsfire,magic"
+          "@Forest Temple/NE Outdoors,hookshot",
+          "@Forest Temple/Falling Room",
+          "@Forest Temple/Outdoors High Balconies,hoverboots,[hookshot]"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS62 - Outdoor East",
+        "short_name": "Outdoor East",
+        "access_rules": [
+          "@Forest Temple/NE Outdoors,hookshot",
+          "@Forest Temple/Falling Room,sword2,bow",
+          "@Forest Temple/Falling Room,dinsfire,magic",
+          "@Forest Temple/Falling Room,$has_explosives"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "@Forest Temple/Outdoors High Balconies"
         ],
         "item_count": 1
       },
@@ -46,15 +190,31 @@
         "name": "Well Chest",
         "short_name": "Well",
         "access_rules": [
-          "@Forest Temple/Map Chest"
+          "@Forest Temple/Outdoors High Balconies"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS63 - Outdoor West",
+        "short_name": "Outdoor West",
+        "access_rules": [
+          "@Forest Temple/NW Outdoors,longshot",
+          "{@Forest Temple/NW Outdoors,bow}",
+          "@Forest Temple/Outside Upper Ledge,hookshot"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Block Push Chest",
         "short_name": "Block Push",
         "access_rules": [
-          "forest_small_keys:1,lift1,bow"
+          "@Forest Temple/Block Push Room,lift1,sword2,bow"
         ],
         "item_count": 1
       },
@@ -62,7 +222,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "forest_small_keys:2,bow,lift1"
+          "@Forest Temple/Straightened Hall"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -72,27 +232,25 @@
         "name": "Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
-          "@Forest Temple/Boss Key Chest",
-          "forest_small_keys:1,hoverboots",
-          "forest_small_keys:1,[hoverboots],lift1",
+          "@Forest Temple/Outside Upper Ledge",
           "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
       },
       {
-        "name": "Bow Chest",
-        "short_name": "Bow",
+        "name": "Red Poe Chest",
+        "short_name": "Red Poe",
         "access_rules": [
-          "forest_small_keys:3,lift1"
+          "@Forest Temple/Bow Region,bow"
         ],
         "item_count": 1
       },
       {
-        "name": "Red Poe Chest",
-        "short_name": "Red Poe",
+        "name": "Bow Chest",
+        "short_name": "Bow",
         "access_rules": [
-          "@Forest Temple/Bow Chest,bow"
+          "@Forest Temple/Bow Region"
         ],
         "item_count": 1
       },
@@ -100,7 +258,7 @@
         "name": "Blue Poe Chest",
         "short_name": "Blue Poe",
         "access_rules": [
-          "@Forest Temple/Bow Chest,bow"
+          "@Forest Temple/Bow Region,bow"
         ],
         "item_count": 1
       },
@@ -108,11 +266,7 @@
         "name": "Falling Room Chest",
         "short_name": "Checkerboard",
         "access_rules": [
-          "forest_small_keys:5,lift1,bow",
-          "forest_small_keys:5,lift1,dinsfire,magic",
-          "forest_small_keys:1,hoverboots,ocarina,[scarecrow],[forest_small_keys:5],[lift1],[bow]",
-          "hoverboots,ocarina,time,[scarecrow],[forest_small_keys:5],[lift1],[bow]",
-          "bow,hoverboots,ocarina,[scarecrow],[forest_small_keys:5],[lift1],[longshot]"
+          "@Forest Temple/Falling Room"
         ],
         "item_count": 1
       },
@@ -120,14 +274,27 @@
         "name": "Near Boss Chest",
         "short_name": "Basement",
         "access_rules": [
-          "@Forest Temple/Red Poe Chest,@Forest Temple/Falling Room Chest"
+          "@Forest Temple/Boss Region"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS64 - Basement",
+        "short_name": "Basement",
+        "access_rules": [
+          "@Forest Temple/Boss Region,sword2,hookshot"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Phantom Ganon",
         "access_rules": [
-          "@Forest Temple/Near Boss Chest,forest_boss_key"
+          "@Forest Temple/Boss Region,forest_boss_key"
         ],
         "hosted_item": "forest",
         "chest_unopened_img": "images/HC.png",
@@ -144,73 +311,6 @@
         "x": 2148,
         "y": 596
       }
-    ],
-    "children": [
-      {
-        "name": "Forest Temple Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS60 - First Room",
-            "short_name": "First Room",
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS61 - Lobby",
-            "short_name": "Lobby",
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS62 - Outdoor East",
-            "short_name": "Outdoor East",
-            "access_rules": [
-              "@Forest Temple/Outside Hookshot Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS63 - Outdoor West",
-            "short_name": "Outdoor West",
-            "access_rules": [
-              "@Forest Temple/Map Chest,longshot",
-              "{@Forest Temple/Map Chest,bow}",
-              "@Forest Temple/Floormaster Chest,hookshot"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS64 - Basement",
-            "short_name": "Basement",
-            "access_rules": [
-              "@Forest Temple/Near Boss Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "visibility_rules": [
-              "forest_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 2148,
-            "y": 566
-          }
-        ]
-      }
     ]
   },
   {
@@ -221,15 +321,92 @@
     ],
     "sections": [
       {
+        "name": "Boss Key Region",
+        "access_rules": [
+          "fire_small_keys:1,[fire_small_keys:8],sword2,hammer"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Big Lava Room",
+        "access_rules": [
+          "fire_small_keys:1,[fire_small_keys:2],$has_goron_tunic"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Lower",
+        "access_rules": [
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],$has_explosives",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],bow",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Upper",
+        "access_rules": [
+          "@Fire Temple/Maze Lower,fire_small_keys:5,[fire_small_keys:6]"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "East Tower",
+        "access_rules": [
+          "@Fire Temple/Maze Upper,ocarina,[scarecrow],hookshot",
+          "@Fire Temple/Maze Upper,[ocarina],[scarecrow],longshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "West Tower",
+        "access_rules": [
+          "@Fire Temple/Maze Upper,fire_small_keys:7,[fire_small_keys:8]",
+          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],[hammer],[hoverboots]"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Chest Near Boss",
         "short_name": "Near Boss",
+        "item_count": 1
+      },
+      {
+        "name": "GS69 - Basement",
+        "short_name": "Basement",
+        "access_rules": [
+          "@Fire Temple/Boss Key Region"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Fire Dancer Chest",
         "short_name": "Flare Dancer",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:8],hammer"
+          "@Fire Temple/Boss Key Region"
         ],
         "item_count": 1
       },
@@ -237,17 +414,30 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:8],hammer"
+          "@Fire Temple/Boss Key Region"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
       },
       {
+        "name": "GS65 - Song of Time Room",
+        "short_name": "Time Block",
+        "access_rules": [
+          "@Fire Temple/Big Lava Room,sword2,[ocarina],[time]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
         "name": "Big Lava Room Open Chest",
         "short_name": "Lava Room Open",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:2]"
+          "@Fire Temple/Big Lava Room"
         ],
         "item_count": 1
       },
@@ -255,7 +445,7 @@
         "name": "Big Lava Room Bombable Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:2],$has_explosives"
+          "@Fire Temple/Big Lava Room,sword2,$has_explosives"
         ],
         "item_count": 1
       },
@@ -263,9 +453,7 @@
         "name": "Boulder Maze Lower Chest",
         "short_name": "Boulder Maze Lower",
         "access_rules": [
-          "fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],bow",
-          "fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],hookshot",
-          "fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],$has_explosives"
+          "@Fire Temple/Maze Lower"
         ],
         "item_count": 1
       },
@@ -273,16 +461,29 @@
         "name": "Boulder Maze Side Room",
         "short_name": "Boulder Maze Side",
         "access_rules": [
-          "@Fire Temple/Boulder Maze Lower Chest"
+          "@Fire Temple/Maze Lower"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS66 - Unmarked Bomb Wall",
+        "short_name": "Boulder Maze",
+        "access_rules": [
+          "@Fire Temple/Maze Lower,$has_explosives"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Fire Temple/Boulder Maze Lower Chest,fire_small_keys:4,[fire_small_keys:5],bow",
-          "@Fire Temple/Boulder Maze Lower Chest,fire_small_keys:5,[fire_small_keys:6]"
+          "@Fire Temple/Maze Lower,fire_small_keys:4,[fire_small_keys:5],bow",
+          "@Fire Temple/Maze Upper"
         ],
         "item_count": 1
       },
@@ -290,7 +491,7 @@
         "name": "Boulder Maze Upper Chest",
         "short_name": "Boulder Maze Upper",
         "access_rules": [
-          "@Fire Temple/Boulder Maze Lower Chest,fire_small_keys:5,[fire_small_keys:6]"
+          "@Fire Temple/Maze Upper"
         ],
         "item_count": 1
       },
@@ -298,7 +499,7 @@
         "name": "Boulder Maze Bombable Pit",
         "short_name": "Shortcut",
         "access_rules": [
-          "@Fire Temple/Boulder Maze Upper Chest,$has_explosives"
+          "@Fire Temple/Maze Upper,$has_explosives"
         ],
         "item_count": 1
       },
@@ -306,18 +507,43 @@
         "name": "Scarecrow Chest",
         "short_name": "Scarecrow",
         "access_rules": [
-          "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
-          "@Fire Temple/Boulder Maze Upper Chest,[ocarina],[scarecrow],longshot",
+          "@Fire Temple/East Tower",
           "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
       },
       {
+        "name": "GS67 - East Tower Climb",
+        "short_name": "Scarecrow 1",
+        "access_rules": [
+          "@Fire Temple/East Tower"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS68 - East Tower Top",
+        "short_name": "Scarecrow 2",
+        "access_rules": [
+          "@Fire Temple/East Tower"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Fire Temple/Boulder Maze Upper Chest,fire_small_keys:6,[fire_small_keys:7]"
+          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7]"
         ],
         "item_count": 1
       },
@@ -325,9 +551,9 @@
         "name": "Highest Goron Chest",
         "short_name": "Highest Goron",
         "access_rules": [
-          "@Fire Temple/Compass Chest,hammer,ocarina,time,[fire_small_keys:8]",
-          "@Fire Temple/Compass Chest,hammer,[ocarina],[time],$has_explosives",
-          "@Fire Temple/Compass Chest,hammer,[ocarina],[time],hoverboots"
+          "@Fire Temple/West Tower,hammer,ocarina,time",
+          "@Fire Temple/West Tower,hammer,[ocarina],[time],hoverboots",
+          "@Fire Temple/West Tower,hammer,[ocarina],[time],$has_explosives"
         ],
         "item_count": 1
       },
@@ -335,8 +561,7 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "@Fire Temple/Compass Chest,$has_explosives,[fire_small_keys:8]",
-          "@Fire Temple/Compass Chest,$has_explosives,[hammer],[hoverboots]",
+          "@Fire Temple/West Tower,$has_explosives",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -345,8 +570,8 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "fire_boss_key,hammer,@Fire Temple/Compass Chest,[fire_small_keys:8],ocarina,time",
-          "fire_boss_key,hammer,@Fire Temple/Compass Chest,[fire_small_keys:8],$has_explosives",
+          "fire_boss_key,hammer,[redtunic],@Fire Temple/West Tower,ocarina,time",
+          "fire_boss_key,hammer,[redtunic],@Fire Temple/West Tower,$has_explosives",
           "fire_boss_key,hammer,[redtunic],[hoverboots]"
         ],
         "hosted_item": "fire",
@@ -364,134 +589,123 @@
         "x": 1912,
         "y": 80
       }
-    ],
-    "children": [
-      {
-        "name": "Fire Temple Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS65 - Song of Time Room",
-            "short_name": "Time Block",
-            "access_rules": [
-              "@Fire Temple/Big Lava Room Open Chest,[ocarina],[time]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS66 - Unmarked Bomb Wall",
-            "short_name": "Boulder Maze",
-            "access_rules": [
-              "@Fire Temple/Boulder Maze Lower Chest,$has_explosives"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS67 - East Tower Climb",
-            "short_name": "Scarecrow 1",
-            "access_rules": [
-              "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
-              "@Fire Temple/Boulder Maze Upper Chest,[ocarina],[scarecrow],longshot"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS68 - East Tower Top",
-            "short_name": "Scarecrow 2",
-            "access_rules": [
-              "@Fire Temple/Boulder Maze Upper Chest,ocarina,[scarecrow],hookshot",
-              "@Fire Temple/Boulder Maze Upper Chest,[ocarina],[scarecrow],longshot"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS69 - Basement",
-            "short_name": "Basement",
-            "access_rules": [
-              "@Fire Temple/Fire Dancer Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "visibility_rules": [
-              "fire_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 1942,
-            "y": 80
-          }
-        ]
-      }
     ]
   },
   {
     "name": "Water Temple",
     "parent": "Lake Hylia",
     "access_rules": [
-      "water_reg,sword2,ironboots,hookshot,$has_zora_tunic",
-      "water_reg,sword2,scale2,[ironboots],hookshot,$has_zora_tunic"
+      "water_reg,sword2,hookshot,ironboots",
+      "water_reg,sword2,hookshot,scale2,[longshot]"
     ],
     "sections": [
+      {
+        "name": "Lobby",
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Highest Water Level",
+        "access_rules": [
+          "@Water Temple/Lobby,sword2"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Falling Platforms",
+        "access_rules": [
+          "@Water Temple/Highest Water Level,water_small_keys:1,[water_small_keys:4]"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dark Link Region",
+        "access_rules": [
+          "@Water Temple/Falling Platforms,water_small_keys:2,[water_small_keys:5],hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dive",
+        "access_rules": [
+          "@Water Temple/Highest Water Level,$has_zora_tunic,ironboots",
+          "@Water Temple/Highest Water Level,$has_zora_tunic,[ironboots],longshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Middle Water Level",
+        "access_rules": [
+          "@Water Temple/Dive,ocarina,lullaby,bow",
+          "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic",
+          "@Water Temple/Dive,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Cracked Wall",
+        "access_rules": [
+          "@Water Temple/Middle Water Level",
+          "@Water Temple/Dive,[@Water Temple/Middle Water Level],bombchu,ironboots,hookshot",
+          "@Water Temple/Dive,[@Water Temple/Middle Water Level],ocarina,lullaby,hookshot",
+          "@Water Temple/Dive,[@Water Temple/Middle Water Level],ocarina,lullaby,[hoverboots]"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "North Basement",
+        "access_rules": [
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ironboots",
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ocarina,lullaby",
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ironboots",
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ocarina,lullaby"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dragon Statue",
+        "access_rules": [
+          "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[ironboots],[hookshot],bombchu,scale",
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$has_zora_tunic]",
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$has_zora_tunic],bombchu,scale" //not relevant until I add tricks
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
       {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "ironboots",
-          "[ironboots],longshot"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Compass Chest",
-        "short_name": "Compass",
-        "access_rules": [
-          "ironboots",
-          "[ironboots],longshot,ocarina,lullaby"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Torches Chest",
-        "short_name": "Torches",
-        "access_rules": [
-          "ironboots,ocarina,lullaby,bow",
-          "ironboots,ocarina,lullaby,dinsfire,magic",
-          "[ironboots],longshot,ocarina,lullaby,bow",
-          "[ironboots],longshot,ocarina,lullaby,dinsfire,magic"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Dragon Chest",
-        "short_name": "Dragon",
-        "access_rules": [
-          "ironboots,ocarina,lullaby,lift1",
-          "[ironboots],longshot,ocarina,lullaby,lift1,bombchu",
-          "[ironboots],water_small_keys:2,[water_small_keys:5],ocarina,time,bow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Central Pillar Chest",
-        "short_name": "Basement",
-        "access_rules": [
-          "ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],[bluetunic]",
-          "ironboots,ocarina,lullaby,bow,[bluetunic]",
-          "ironboots,ocarina,lullaby,dinsfire,magic,[bluetunic]"
+          "@Water Temple/Dive,hoverboots",
+          "@Water Temple/Dive,hookshot", //these don't really matter since you always need hook in non ER
+          "@Water Temple/Dive,bow",
+          "@Water Temple/Dive,$has_fire,$has_projectile|adult"
         ],
         "item_count": 1
       },
@@ -499,15 +713,41 @@
         "name": "Cracked Wall Chest",
         "short_name": "Cracked Wall",
         "access_rules": [
-          "$has_explosives,ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5]",
-          "$has_explosives,ironboots,ocarina,lullaby,bow",
-          "$has_explosives,ironboots,ocarina,lullaby,dinsfire,magic",
-          "$has_explosives,ironboots,ocarina,lullaby,hoverboots,[bow]",
-          "$has_explosives,[ironboots],longshot,ocarina,lullaby,water_small_keys:1,[water_small_keys:5]",
-          "$has_explosives,[ironboots],longshot,ocarina,lullaby,bow",
-          "$has_explosives,[ironboots],longshot,ocarina,lullaby,dinsfire,magic",
-          "$has_explosives,[ironboots],longshot,ocarina,lullaby,hoverboots,[bow]",
-          "bombchu,[bombs],ironboots,[ocarina],[lullaby],[bow]"
+          "@Water Temple/Cracked Wall,$has_explosives"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Torches Chest",
+        "short_name": "Torches",
+        "access_rules": [
+          "@Water Temple/Dive,ocarina,lullaby,bow",
+          "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS73 - South Basement",
+        "short_name": "South Basement",
+        "access_rules": [
+          "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,ironboots",
+          "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,scale",
+          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,ironboots",
+          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,scale"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "@Water Temple/Dive,hookshot,ironboots",
+          "@Water Temple/Dive,hookshot,ocarina,lullaby"
         ],
         "item_count": 1
       },
@@ -515,39 +755,117 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "ironboots,ocarina,lullaby,bow,lift1,[hoverboots]",
-          "ironboots,ocarina,lullaby,bow,lift1,[longshot]",
-          "[ironboots],longshot,ocarina,lullaby,bow,lift1"
+          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[hoverboots]",
+          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[longshot]"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS75 - Central Room",
+        "short_name": "Central Room",
+        "access_rules": [
+          "@Water Temple/Middle Water Level,longshot,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Middle Water Level,longshot,bow",
+          "@Water Temple/Middle Water Level,longshot,dinsfire,magic",
+          "@Water Temple/Middle Water Level,hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Middle Water Level,hookshot,faroreswind,magic,bow",
+          "@Water Temple/Middle Water Level,hookshot,faroreswind,magic,dinsfire",
+          "{@Water Temple/Middle Water Level,bow}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Central Pillar Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,bow",
+          "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,dinsfire,magic"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS76 - Falling Platform Room",
+        "short_name": "Platform Room",
+        "access_rules": [
+          "@Water Temple/Falling Platforms,longshot",
+          "@Water Temple/Falling Platforms,[longshot],hookshot",
+          "{@Water Temple/Falling Platforms,bow}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Dark Link Chest",
         "short_name": "Dark Link",
         "access_rules": [
-          "water_small_keys:2,[water_small_keys:5]"
+          "@Water Temple/Dark Link Region"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS74 - Serpent River",
+        "short_name": "River",
+        "access_rules": [
+          "@Water Temple/Dark Link Region,ocarina,time,ironboots",
+          "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,bow",
+          "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,bombchu"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "River Chest",
         "short_name": "River",
         "access_rules": [
-          "water_small_keys:2,[water_small_keys:5],ocarina,time,bow",
+          "@Water Temple/Dark Link Region,ocarina,time,bow",
           "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
       },
       {
+        "name": "Dragon Chest",
+        "short_name": "Dragon",
+        "access_rules": [
+          "@Water Temple/Dragon Statue"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS77 - Near Boss Key Chest",
+        "short_name": "Near Boss Key",
+        "access_rules": [
+          "@Water Temple/North Basement"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "water_small_keys:2,[water_small_keys:5],ironboots,longshot,$has_explosives,lift1",
-          "water_small_keys:2,[water_small_keys:5],ironboots,longshot,[hoverboots]",
-          "water_small_keys:2,[water_small_keys:5],ironboots,[longshot],hoverboots",
-          "water_small_keys:2,[water_small_keys:5],[ironboots],longshot,ocarina,lullaby,$has_explosives,lift1",
-          "water_small_keys:2,[water_small_keys:5],[ironboots],longshot,ocarina,lullaby,[hoverboots]",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[ironboots],[$has_explosives],[lift1]",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[ironboots],[hoverboots]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -558,7 +876,7 @@
       {
         "name": "Morpha",
         "access_rules": [
-          "longshot,water_boss_key"
+          "@Water Temple/Highest Water Level,water_boss_key,longshot"
         ],
         "hosted_item": "water",
         "chest_unopened_img": "images/HC.png",
@@ -575,116 +893,90 @@
         "x": 1015,
         "y": 1380
       }
-    ],
-    "children": [
-      {
-        "name": "Water Temple Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS73 - South Basement",
-            "short_name": "South Basement",
-            "access_rules": [
-              "$has_explosives,ocarina,lullaby,ironboots",
-              "$has_explosives,ocarina,lullaby,[ironboots],scale2,longshot"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS74 - Serpent River",
-            "short_name": "River",
-            "access_rules": [
-              "water_small_keys:2,[water_small_keys:5],ocarina,time"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS75 - Central Room",
-            "short_name": "Central Room",
-            "access_rules": [
-              "[ironboots],ocarina,lullaby,water_small_keys:1,[water_small_keys:5],longshot",
-              "ironboots,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],faroreswind,magic",
-              "[ironboots],ocarina,lullaby,bow,longshot",
-              "ironboots,ocarina,lullaby,bow,faroreswind,magic",
-              "[ironboots],ocarina,lullaby,dinsfire,magic,longshot",
-              "ironboots,ocarina,lullaby,dinsfire,magic,faroreswind",
-              "{ironboots,ocarina,lullaby,bow}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS76 - Falling Platform Room",
-            "short_name": "Platform Room",
-            "access_rules": [
-              "water_small_keys:1,[water_small_keys:4],longshot",
-              "water_small_keys:1,[water_small_keys:4],[longshot],hookshot",
-              "{water_small_keys:1,bow}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS77 - Near Boss Key Chest",
-            "short_name": "Near Boss Key",
-            "access_rules": [
-              "water_small_keys:1,[water_small_keys:4],ironboots,longshot",
-              "water_small_keys:1,[water_small_keys:4],ironboots,[longshot],hoverboots",
-              "water_small_keys:1,[water_small_keys:4],[ironboots],longshot,ocarina,lullaby"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "visibility_rules": [
-              "water_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 1015,
-            "y": 1350
-          }
-        ]
-      }
     ]
   },
   {
     "name": "Shadow Temple",
     "parent": "Graveyard",
     "access_rules": [
-      "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_reg,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
-      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
+      "shadow_reg,ocarina,nocturne,dinsfire,magic",
+      "shadow_reg,ocarina,nocturne,dinsfire,magic",
+      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic",
+      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic"
     ],
     "sections": [
       {
+        "name": "Beginning",
+        "access_rules": [
+          "$can_see_with_lens,sword2,hoverboots",
+          "$can_see_with_lens,sword2,hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "First Beamos",
+        "access_rules": [
+          "@Shadow Temple/Beginning,hoverboots"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Huge Pit",
+        "access_rules": [
+          "@Shadow Temple/First Beamos,shadow_small_keys:1,$has_explosives"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wind Tunnel",
+        "access_rules": [
+          "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Beyond Boat",
+        "access_rules": [
+          "@Shadow Temple/Wind Tunnel,shadow_small_keys:4,ocarina,lullaby"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
+        "access_rules": [
+          "@Shadow Temple/Beginning"
+        ],
         "item_count": 1
       },
       {
         "name": "Hover Boots Chest",
         "short_name": "Dead Hand",
+        "access_rules": [
+          "@Shadow Temple/Beginning"
+        ],
         "item_count": 1
       },
       {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "hoverboots"
+          "@Shadow Temple/First Beamos"
         ],
         "item_count": 1
       },
@@ -692,7 +984,7 @@
         "name": "Early Silver Rupee Chest",
         "short_name": "Early Silver Rupee",
         "access_rules": [
-          "hoverboots"
+          "@Shadow Temple/First Beamos"
         ],
         "item_count": 1
       },
@@ -700,23 +992,51 @@
         "name": "Invisible Blades Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "shadow_small_keys:1,hoverboots,$has_explosives"
+          "@Shadow Temple/Huge Pit"
         ],
         "item_count": 2
+      },
+      {
+        "name": "GS81 - Like Like Room",
+        "short_name": "Like Like",
+        "access_rules": [
+          "@Shadow Temple/Huge Pit"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       },
       {
         "name": "Falling Spikes Lower Chest",
         "short_name": "Crusher Lower",
         "access_rules": [
-          "@Shadow Temple/Invisible Blades Chests"
+          "@Shadow Temple/Huge Pit"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS82 - Crusher Room",
+        "short_name": "Crusher",
+        "access_rules": [
+          "@Shadow Temple/Huge Pit,hookshot",
+          "{@Shadow Temple/Huge Pit}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Falling Spikes Upper Chests",
         "short_name": "Crusher Upper",
         "access_rules": [
-          "@Shadow Temple/Invisible Blades Chests,[lift1]"
+          "@Shadow Temple/Huge Pit,[lift1]"
         ],
         "item_count": 2
       },
@@ -724,7 +1044,7 @@
         "name": "Invisible Spikes Chest",
         "short_name": "Invisible Spikes",
         "access_rules": [
-          "@Shadow Temple/Invisible Blades Chests,shadow_small_keys:2"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2"
         ],
         "item_count": 1
       },
@@ -732,17 +1052,32 @@
         "name": "Freestanding Key",
         "short_name": "Skull Pot",
         "access_rules": [
-          "@Shadow Temple/Invisible Spikes Chest,hookshot"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,bombs",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,lift1",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[bombs],bombchu"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
       {
+        "name": "GS83 - Single Giant Pot",
+        "short_name": "Single Skull",
+        "access_rules": [
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
         "name": "Wind Hint Chest",
         "short_name": "Wind Hint",
         "access_rules": [
-          "@Shadow Temple/Invisible Spikes Chest,hookshot,shadow_small_keys:3"
+          "@Shadow Temple/Wind Tunnel"
         ],
         "item_count": 1
       },
@@ -750,15 +1085,30 @@
         "name": "After Wind Chests",
         "short_name": "After Wind",
         "access_rules": [
-          "@Shadow Temple/Wind Hint Chest"
+          "@Shadow Temple/Wind Tunnel"
         ],
         "item_count": 2
+      },
+      {
+        "name": "GS84 - Near Ship",
+        "short_name": "Near Boat",
+        "access_rules": [
+          "@Shadow Temple/Wind Tunnel,shadow_small_keys:4,longshot",
+          "{@Shadow Temple/Wind Tunnel,shadow_small_keys:4,bow}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       },
       {
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Shadow Temple/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby,dinsfire,magic"
+          "@Shadow Temple/Beyond Boat,dinsfire,magic"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -768,15 +1118,28 @@
         "name": "Spike Walls Left Chest",
         "short_name": "Near Boss Key",
         "access_rules": [
-          "@Shadow Temple/Boss Key Chest"
+          "@Shadow Temple/Beyond Boat,dinsfire,magic"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS85 - Triple Giant Pot",
+        "short_name": "Triple Skull",
+        "access_rules": [
+          "@Shadow Temple/Beyond Boat"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Hidden Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
-          "@Shadow Temple/Wind Hint Chest,shadow_small_keys:4,ocarina,lullaby",
+          "@Shadow Temple/Beyond Boat",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -785,9 +1148,9 @@
       {
         "name": "Bongo Bongo",
         "access_rules": [
-          "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,[scarecrow]",
-          "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,bow",
-          "@Shadow Temple/Wind Hint Chest,ocarina,lullaby,shadow_boss_key,shadow_small_keys:5,bombchu,[bow]"
+          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,[scarecrow]",
+          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bow",
+          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bombchu,[bow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
@@ -804,97 +1167,111 @@
         "x": 2144,
         "y": 326
       }
-    ],
-    "children": [
-      {
-        "name": "Shadow Temple Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS81 - Like Like Room",
-            "short_name": "Like Like",
-            "access_rules": [
-              "@Shadow Temple/Invisible Blades Chests"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS82 - Crusher Room",
-            "short_name": "Crusher",
-            "access_rules": [
-              "@Shadow Temple/Invisible Blades Chests,hookshot",
-              "{@Shadow Temple/Invisible Blades Chests}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS83 - Single Giant Pot",
-            "short_name": "Single Skull",
-            "access_rules": [
-              "@Shadow Temple/Freestanding Key"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS84 - Near Ship",
-            "short_name": "Near Boat",
-            "access_rules": [
-              "@Shadow Temple/Wind Hint Chest,shadow_small_keys:4,longshot",
-              "{@Shadow Temple/Wind Hint Chest,shadow_small_keys:4,bow}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS85 - Triple Giant Pot",
-            "short_name": "Triple Skull",
-            "access_rules": [
-              "@Shadow Temple/Boss Key Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "visibility_rules": [
-              "shadow_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 2174,
-            "y": 326
-          }
-        ]
-      }
     ]
   },
   {
     "name": "Spirit Temple",
     "parent": "Desert Colossus",
     "access_rules": [
-      "spirit_reg,$colossus"
+      "spirit_reg,$adult_colossus"
     ],
     "sections": [
+      {
+        "name": "Child Entry",
+        "access_rules": [
+          "$child_colossus"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Child Back",
+        "access_rules": [
+          "@Spirit Temple/Child Entry,boomerang,sticks",
+          "@Spirit Temple/Child Entry,boomerang,$has_explosives",
+          "@Spirit Temple/Child Entry,boomerang,sword1",
+          "@Spirit Temple/Child Entry,boomerang,sling",
+          "@Spirit Temple/Child Entry,sling,sticks",
+          "@Spirit Temple/Child Entry,sling,$has_explosives",
+          "@Spirit Temple/Child Entry,sling,nuts",
+          "@Spirit Temple/Child Entry,[sling],bombchu,sticks",
+          "@Spirit Temple/Child Entry,[sling],bombchu,$has_explosives",
+          "@Spirit Temple/Child Entry,[sling],bombchu,sword1,nuts"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Early Adult",
+        "access_rules": [
+          "sword2,lift2"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Child Climb",
+        "access_rules": [
+          "@Spirit Temple/Child Entry,spirit_small_keys:1",
+          "@Spirit Temple/Early Adult,spirit_small_keys:1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Central Chamber",
+        "access_rules": [
+          "@Spirit Temple/Child Climb,$has_explosives",
+          "@Spirit Temple/Early Adult,spirit_small_keys:1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Outdoor Hands",
+        "access_rules": [
+          "@Spirit Temple/Central Chamber"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Beyond Central Locked Door",
+        "access_rules": [
+          "@Spirit Temple/Central Chamber,spirit_small_keys:2,[spirit_small_keys:4],sword2,lift2"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Beyond Final Locked Door",
+        "access_rules": [
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],$spirit_wall"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
       {
         "name": "Child Left Chest",
         "short_name": "Child Left",
         "access_rules": [
-          "ocarina,requiem,boomerang",
-          "ocarina,requiem,sling",
-          "ocarina,requiem,bombchu,[boomerang]",
-          "ocarina,requiem,bombchu,[sling]"
+          "@Spirit Temple/Child Back"
         ],
         "item_count": 1
       },
@@ -902,71 +1279,98 @@
         "name": "Child Right Chest",
         "short_name": "Child Right",
         "access_rules": [
-          "@Spirit Temple/Child Left Chest,sticks",
-          "@Spirit Temple/Child Left Chest,dinsfire,magic",
+          "@Spirit Temple/Child Back,sticks",
+          "@Spirit Temple/Child Back,dinsfire,magic"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS96 - Metal Fence",
+        "short_name": "Metal Fence",
+        "access_rules": [
+          "@Spirit Temple/Child Back"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Child Climb Chests",
         "short_name": "Child Climb",
         "access_rules": [
-          "spirit_small_keys:1,ocarina,requiem,sword2,lift2,$has_projectile|both",
-          "spirit_small_keys:1,[spirit_small_keys:5],ocarina,requiem,$has_projectile|child",
-          "spirit_small_keys:1,[spirit_small_keys:2],sword2,lift2,$has_projectile|adult"
+          "@Spirit Temple/Child Climb,$has_projectile|both",
+          "@Spirit Temple/Child Climb,$has_projectile|child,[spirit_small_keys:5],$child_colossus",
+          "@Spirit Temple/Child Climb,$has_projectile|adult,[spirit_small_keys:3],lift2",
+          "@Spirit Temple/Child Climb,$has_projectile|adult,[spirit_small_keys:2],lift2,setting_logic_chus_yes"
         ],
         "item_count": 2
+      },
+      {
+        "name": "GS97 - Bomb for Light Room", //have fun with ohko settings, future me
+        "short_name": "Child Climb",
+        "access_rules": [
+          "@Spirit Temple/Child Climb,dinsfire,magic",
+          "@Spirit Temple/Child Climb,$has_projectile|both",
+          "@Spirit Temple/Child Climb,$child_colossus,sticks",
+          "@Spirit Temple/Child Climb,$child_colossus,sword1",
+          "@Spirit Temple/Child Climb,$child_colossus,$has_projectile|child",
+          "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:3]",
+          "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:2],setting_logic_chus_yes"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       },
       {
         "name": "Sun Block Room Chest",
         "short_name": "Sun Block",
         "access_rules": [
-          "spirit_small_keys:1,[spirit_small_keys:5],ocarina,requiem,$has_explosives,sticks",
-          "spirit_small_keys:1,[spirit_small_keys:3],ocarina,requiem,$has_explosives,dinsfire,magic",
-          "spirit_small_keys:1,[spirit_small_keys:3],sword2,lift2,$has_fire",
-          "spirit_small_keys:1,[spirit_small_keys:3],sword2,lift2,bow,[$has_fire]"
+          "@Spirit Temple/Central Chamber,$has_explosives,dinsfire,magic",
+          "@Spirit Temple/Central Chamber,$has_explosives,sticks,bow,[firearrow],[magic]",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],dinsfire,magic",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sticks,bow,[firearrow],[magic]",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,dinsfire,magic",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,sticks,bow,[firearrow],[magic]",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$child_colossus,$has_explosives,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,bow,[firearrow],[magic]"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS98 - Hall to West Iron Knuckle",
+        "short_name": "Before Knuckle",
+        "access_rules": [
+          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,hookshot",
+          "@Spirit Temple/Central Chamber,$child_colossus,boomerang,[spirit_small_keys:5],$has_explosives",
+          "@Spirit Temple/Central Chamber,hookshot,sword2,lift2,[spirit_small_keys:3]",
+          "@Spirit Temple/Central Chamber,hookshot,sword2,lift2,[spirit_small_keys:2],boomerang,setting_logic_chus_yes",
+          "{@Spirit Temple/Central Chamber,$child_colossus,sling,$has_explosives}",
+          "{@Spirit Temple/Central Chamber,bow,sword2,lift2}"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
         "name": "Silver Gauntlets Chest",
         "short_name": "Right Hand",
         "access_rules": [
-          "spirit_small_keys:2,[spirit_small_keys:3],ocarina,requiem,$has_explosives,[longshot]",
-          "spirit_small_keys:2,[spirit_small_keys:5],ocarina,requiem,$has_explosives",
-          "spirit_small_keys:2,[spirit_small_keys:3],sword2,lift2,[$has_explosives],[longshot]",
-          "spirit_small_keys:2,[spirit_small_keys:5],sword2,lift2",
+          "@Spirit Temple/Outdoor Hands,spirit_small_keys:2,[spirit_small_keys:3],longshot,$has_explosives",
+          "@Spirit Temple/Outdoor Hands,spirit_small_keys:2,[spirit_small_keys:5]",
           "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
-      },
-      {
-        "name": "Compass Chest",
-        "short_name": "Compass",
-        "access_rules": [
-          "sword2,lift2,ocarina,lullaby,hookshot"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Early Adult Right Chest",
-        "short_name": "Boulders",
-        "access_rules": [
-          "sword2,lift2,hookshot",
-          "sword2,lift2,bow",
-          "sword2,lift2,bombchu",
-          "sword2,lift2,[bombchu],bombs"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "First Mirror Chests",
-        "short_name": "Mirror",
-        "access_rules": [
-          "sword2,lift2,spirit_small_keys:1,[spirit_small_keys:3]"
-        ],
-        "item_count": 2
       },
       {
         "name": "Map Chest",
@@ -977,10 +1381,74 @@
         "item_count": 1
       },
       {
+        "name": "GS100 - Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[sword2],[lift2],hookshot",
+          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[sword2],[lift2],hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[sword2],[lift2],hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[sword2],[lift2],hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[sword2],[lift2],hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[sword2],[lift2],hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,$child_colossus,boomerang",
+          "{@Spirit Temple/Central Chamber,$has_explosives,$child_colossus,sling}",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,hoverboots",
+          "{@Spirit Temple/Central Chamber,sword2,lift2,bow}"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "@Spirit Temple/Early Adult,hookshot,ocarina,lullaby"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Early Adult Right Chest",
+        "short_name": "Boulders",
+        "access_rules": [
+          "@Spirit Temple/Early Adult,bow",
+          "@Spirit Temple/Early Adult,hookshot",
+          "@Spirit Temple/Early Adult,bombchu",
+          "@Spirit Temple/Early Adult,[bow],bombs"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS99 - Boulder Room",
+        "short_name": "Boulders",
+        "access_rules": [
+          "@Spirit Temple/Early Adult Right Chest,ocarina,time"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Mirror Chests",
+        "short_name": "Mirror",
+        "access_rules": [
+          "@Spirit Temple/Early Adult,spirit_small_keys:1,[spirit_small_keys:3]"
+        ],
+        "item_count": 2
+      },
+      {
         "name": "Statue Hand Chest",
         "short_name": "Statue Hand",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,ocarina,lullaby"
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,ocarina,lullaby"
         ],
         "item_count": 1
       },
@@ -997,7 +1465,7 @@
         "name": "Near Four Armos Chest",
         "short_name": "Near Armos",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:2,[spirit_small_keys:4],$has_explosives,shield3"
+          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,shield3"
         ],
         "item_count": 1
       },
@@ -1005,7 +1473,7 @@
         "name": "Hallway Invisible Chests",
         "short_name": "Invisible Hallway",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:2,[spirit_small_keys:4],$has_explosives,$can_see_with_lens"
+          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,$can_see_with_lens"
         ],
         "item_count": 2
       },
@@ -1013,7 +1481,7 @@
         "name": "Mirror Shield Chest",
         "short_name": "Left Hand",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:2,[spirit_small_keys:4],$has_explosives",
+          "@Spirit Temple/Outdoor Hands,spirit_small_keys:2,[spirit_small_keys:4],sword2,lift2,$has_explosives",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1023,7 +1491,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:3,[spirit_small_keys:5],$spirit_wall,ocarina,lullaby,[bow],[hookshot]"
+          "@Spirit Temple/Beyond Final Locked Door,ocarina,lullaby,[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1033,14 +1501,14 @@
         "name": "Topmost Chest",
         "short_name": "Topmost Sun",
         "access_rules": [
-          "@Spirit Temple/First Mirror Chests,spirit_small_keys:3,[spirit_small_keys:5],$spirit_wall,shield3"
+          "@Spirit Temple/Beyond Final Locked Door,shield3"
         ],
         "item_count": 1
       },
       {
         "name": "Twinrova",
         "access_rules": [
-          "@Spirit Temple/Topmost Chest,spirit_boss_key,$has_explosives,hookshot"
+          "@Spirit Temple/Beyond Final Locked Door,shield3,$has_explosives,hookshot,spirit_boss_key"
         ],
         "hosted_item": "spirit",
         "chest_unopened_img": "images/HC.png",
@@ -1064,94 +1532,6 @@
         ],
         "x": 85,
         "y": 301
-      }
-    ],
-    "children": [
-      {
-        "name": "Spirit Temple Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS96 - Metal Fence",
-            "short_name": "Metal Fence",
-            "access_rules": [
-              "@Spirit Temple/Child Left Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS97 - Bomb for Light Room",
-            "short_name": "Child Climb",
-            "access_rules": [
-              "@Spirit Temple/Child Climb Chests"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS98 - Hall to West Iron Knuckle",
-            "short_name": "Before Knuckle",
-            "access_rules": [
-              "ocarina,requiem,spirit_small_keys:1,[spirit_small_keys:5],$has_explosives,boomerang",
-              "{ocarina,requiem,spirit_small_keys:1,$has_explosives,sling}",
-              "@Spirit Temple/First Mirror Chests,hookshot",
-              "{@Spirit Temple/First Mirror Chests,bow}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS99 - Boulder Room",
-            "short_name": "Boulders",
-            "access_rules": [
-              "ocarina,time,@Spirit Temple/Early Adult Right Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS100 - Lobby",
-            "short_name": "Lobby",
-            "access_rules": [
-              "@Spirit Temple/First Mirror Chests,hookshot,ocarina,[scarecrow]",
-              "@Spirit Temple/First Mirror Chests,longshot",
-              "@Spirit Temple/First Mirror Chests,hoverboots",
-              "{@Spirit Temple/First Mirror Chests,bow}",
-              "ocarina,requiem,spirit_small_keys:1,[spirit_small_keys:5],$has_explosives,boomerang,[@Spirit Temple/First Mirror Chests],[hoverboots]",
-              "{ocarina,requiem,spirit_small_keys:1,$has_explosives,sling}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "visibility_rules": [
-              "spirit_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 85,
-            "y": 271
-          },
-          {
-            "map": "adult",
-            "visibility_rules": [
-              "spirit_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 85,
-            "y": 271
-          }
-        ]
       }
     ]
   },
@@ -1196,6 +1576,38 @@
         "item_count": 1
       },
       {
+        "name": "GS79 - West Inner Room",
+        "short_name": "West Inner",
+        "access_rules": [
+          "botw_small_keys:1,[botw_small_keys:3],boomerang",
+          "{botw_small_keys:1,sling}",
+          "{botw_small_keys:1,$has_explosives}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS80 - East Inner Room",
+        "short_name": "East Inner",
+        "access_rules": [
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_see_with_lens",
+          "{botw_small_keys:1,sling,$can_see_with_lens}",
+          "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
         "name": "Locked Pits",
         "access_rules": [
           "botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens"
@@ -1208,6 +1620,21 @@
         "access_rules": [
           "@Bottom of the Well/Locked Pits"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "GS78 - Like Like Cage",
+        "short_name": "Like Like",
+        "access_rules": [
+          "@Bottom of the Well/Behind Right Grate,boomerang",
+          "@Bottom of the Well/Behind Right Grate,[boomerang],$can_child_attack"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
       {
@@ -1286,64 +1713,6 @@
         ],
         "x": 1890,
         "y": 383
-      }
-    ],
-    "children": [
-      {
-        "name": "Bottom of the Well Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS78 - Like Like Cage",
-            "short_name": "Like Like",
-            "access_rules": [
-              "botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens,boomerang",
-              "botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens,[boomerang],$can_child_attack"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS79 - West Inner Room",
-            "short_name": "West Inner",
-            "access_rules": [
-              "botw_small_keys:1,[botw_small_keys:3],boomerang",
-              "{botw_small_keys:1,sling}",
-              "{botw_small_keys:1,$has_explosives}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS80 - East Inner Room",
-            "short_name": "East Inner",
-            "access_rules": [
-              "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_see_with_lens",
-              "{botw_small_keys:1,sling,$can_see_with_lens}",
-              "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "visibility_rules": [
-              "botw_reg,setting_skulltulas_dungeons"
-            ],
-            "x": 1890,
-            "y": 413
-          }
-        ]
       }
     ]
   },
@@ -1431,6 +1800,19 @@
         "item_count": 1
       },
       {
+        "name": "Deku Scrubs",
+        "access_rules": [
+          "$can_see_with_lens"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 4
+      },
+      {
         "name": "Castle Tower",
         "access_rules": [
           "gc_small_keys:2,$can_LA,longshot,bombchu,shield3,lift3,$has_bottle,hammer,$has_fire,$can_see_with_lens,$has_goron_tunic",
@@ -1449,36 +1831,6 @@
         ],
         "x": 1439,
         "y": 206
-      }
-    ],
-    "children": [
-      {
-        "name": "Ganons Castle Scrubs",
-        "access_rules": [
-          "setting_scrub_shuffle_yes"
-        ],
-        "sections": [
-          {
-            "name": "Hidden Room",
-            "access_rules": [
-              "$can_see_with_lens"
-            ],
-            "chest_unopened_img": "images/deku_scrub.png",
-            "chest_opened_img": "images/deku_scrub_grey.png",
-            "clear_as_group": false,
-            "item_count": 4
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "visibility_rules": [
-              "gc_reg,setting_scrub_shuffle_yes"
-            ],
-            "x": 1439,
-            "y": 176
-          }
-        ]
       }
     ]
   },
@@ -1560,10 +1912,107 @@
     ],
     "sections": [
       {
+        "name": "Lobby",
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Central Maze",
+        "access_rules": [
+          "@Gerudo Training Grounds/Lobby"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Heavy Block Room",
+        "access_rules": [
+          "@Gerudo Training Grounds/Lobby,sword2,[hookshot]"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Upper",
+        "access_rules": [
+          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,hookshot",
+          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,[hookshot],hoverboots",
+          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,[hookshot],bombs,shield2",
+          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,[hookshot],bombs,shield3"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Like Like Room",
+        "access_rules": [
+          "@Gerudo Training Grounds/Eye Statue Upper,lift2"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room",
+        "access_rules": [
+          "@Gerudo Training Grounds/Lobby,sword2,$has_explosives",
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
+          "@Gerudo Training Grounds/Eye Statue Upper"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Central Maze Right",
+        "access_rules": [
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
+          "@Gerudo Training Grounds/Lava Room,ocarina,time"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hammer Room",
+        "access_rules": [
+          "@Gerudo Training Grounds/Central Maze Right,sword2,hookshot",
+          "@Gerudo Training Grounds/Lava Room,sword2,longshot",
+          "@Gerudo Training Grounds/Lava Room,sword2,hookshot,hoverboots",
+          "@Gerudo Training Grounds/Eye Statue Upper"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Lower",
+        "access_rules": [
+          "@Gerudo Training Grounds/Hammer Room,sword2,hammer,bow",
+          "@Gerudo Training Grounds/Eye Statue Upper"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Lobby Chests",
         "short_name": "Lobby",
         "access_rules": [
-          "bow"
+          "@Gerudo Training Grounds/Lobby,sword2,bow"
         ],
         "item_count": 2
       },
@@ -1571,20 +2020,23 @@
         "name": "Beamos Chest",
         "short_name": "Beamos",
         "access_rules": [
-          "$has_explosives"
+          "@Gerudo Training Grounds/Lobby,sword2,$has_explosives"
         ],
         "item_count": 1
       },
       {
         "name": "Stalfos Chest",
         "short_name": "Stalfos",
+        "access_rules": [
+          "@Gerudo Training Grounds/Lobby,sword2"
+        ],
         "item_count": 1
       },
       {
         "name": "Before Heavy Block Chest",
         "short_name": "Wolfos",
         "access_rules": [
-          "[hookshot]"
+          "@Gerudo Training Grounds/Heavy Block Room"
         ],
         "item_count": 1
       },
@@ -1592,10 +2044,7 @@
         "name": "Heavy Block Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "hookshot,lift2,$can_see_with_lens",
-          "hoverboots,[hookshot],lift2,$can_see_with_lens",
-          "bombs,shield2,[hookshot],lift2,$can_see_with_lens",
-          "bombs,shield3,[hookshot],lift2,$can_see_with_lens"
+          "@Gerudo Training Grounds/Like Like Room"
         ],
         "item_count": 4
       },
@@ -1603,12 +2052,7 @@
         "name": "Eye Statue Chest",
         "short_name": "Eye Statue",
         "access_rules": [
-          "hookshot,bow,$can_see_with_lens",
-          "hoverboots,[hookshot],bow,$can_see_with_lens",
-          "bombs,shield2,[hookshot],bow,$can_see_with_lens",
-          "bombs,shield3,[hookshot],bow,$can_see_with_lens",
-          "$has_explosives,hookshot,hammer,bow",
-          "gtg_small_keys:2,[gtg_small_keys:9],hookshot,hammer,bow"
+          "@Gerudo Training Grounds/Eye Statue Lower,sword2,bow"
         ],
         "item_count": 1
       },
@@ -1616,10 +2060,7 @@
         "name": "Near Scarecrow Chest",
         "short_name": "Near Scarecrow",
         "access_rules": [
-          "hookshot,bow,$can_see_with_lens",
-          "hoverboots,[hookshot],bow,$can_see_with_lens",
-          "bombs,shield2,[hookshot],bow,$can_see_with_lens",
-          "bombs,shield3,[hookshot],bow,$can_see_with_lens"
+          "@Gerudo Training Grounds/Eye Statue Upper,sword2,bow"
         ],
         "item_count": 1
       },
@@ -1627,12 +2068,7 @@
         "name": "Hammer Room Clear Chest",
         "short_name": "Flaming Enemies",
         "access_rules": [
-          "hookshot,$can_see_with_lens",
-          "hoverboots,[hookshot],$can_see_with_lens",
-          "bombs,shield2,[hookshot],$can_see_with_lens",
-          "bombs,shield3,[hookshot],$can_see_with_lens",
-          "$has_explosives,hookshot",
-          "gtg_small_keys:2,[gtg_small_keys:9],hookshot"
+          "@Gerudo Training Grounds/Hammer Room"
         ],
         "item_count": 1
       },
@@ -1640,12 +2076,7 @@
         "name": "Hammer Room Switch Chest",
         "short_name": "Hammer Switch",
         "access_rules": [
-          "hookshot,$can_see_with_lens,[hammer]",
-          "hoverboots,[hookshot],[hammer],$can_see_with_lens",
-          "bombs,shield2,[hookshot],[hammer],$can_see_with_lens",
-          "bombs,shield3,[hookshot],[hammer],$can_see_with_lens",
-          "$has_explosives,hookshot,[hammer]",
-          "gtg_small_keys:2,[gtg_small_keys:9],hookshot,[hammer]"
+          "@Gerudo Training Grounds/Hammer Room,sword2,[hammer]"
         ],
         "item_count": 1
       },
@@ -1653,11 +2084,7 @@
         "name": "Freestanding Key",
         "short_name": "Ledge Key",
         "access_rules": [
-          "hookshot,$can_see_with_lens,ocarina,time",
-          "{hookshot,$can_see_with_lens}",
-          "$has_explosives,ocarina,time",
-          "{$has_explosives}",
-          "gtg_small_keys:2,[gtg_small_keys:9]"
+          "@Gerudo Training Grounds/Central Maze Right"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
@@ -1668,9 +2095,7 @@
         "name": "Maze Right Chests",
         "short_name": "Maze Right",
         "access_rules": [
-          "hookshot,$can_see_with_lens,ocarina,time",
-          "$has_explosives,ocarina,time",
-          "gtg_small_keys:2,[gtg_small_keys:9]"
+          "@Gerudo Training Grounds/Central Maze Right"
         ],
         "item_count": 2
       },
@@ -1678,9 +2103,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "hookshot,$can_see_with_lens,ocarina,time,ironboots,$has_zora_tunic",
-          "$has_explosives,hookshot,ocarina,time,ironboots,$has_zora_tunic",
-          "gtg_small_keys:2,[gtg_small_keys:9],hookshot,ocarina,time,ironboots,$has_zora_tunic",
+          "@Gerudo Training Grounds/Lava Room,sword2,hookshot,ocarina,time,ironboots,$has_zora_tunic",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1690,7 +2113,7 @@
         "name": "Hidden Ceiling Chest",
         "short_name": "Hidden Ceiling",
         "access_rules": [
-          "gtg_small_keys:1,[gtg_small_keys:3],$can_see_with_lens"
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -1698,7 +2121,7 @@
         "name": "Maze Path First Chest",
         "short_name": "Maze 1",
         "access_rules": [
-          "gtg_small_keys:2,[gtg_small_keys:4]"
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:4]"
         ],
         "item_count": 1
       },
@@ -1706,7 +2129,7 @@
         "name": "Maze Path Second Chest",
         "short_name": "Maze 2",
         "access_rules": [
-          "gtg_small_keys:4,[gtg_small_keys:6]"
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:4,[gtg_small_keys:6]"
         ],
         "item_count": 1
       },
@@ -1714,7 +2137,7 @@
         "name": "Maze Path Third Chest",
         "short_name": "Maze 3",
         "access_rules": [
-          "gtg_small_keys:5,[gtg_small_keys:7]"
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:5,[gtg_small_keys:7]"
         ],
         "item_count": 1
       },
@@ -1722,7 +2145,7 @@
         "name": "Maze Path Final Chest",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "gtg_small_keys:7,[gtg_small_keys:9]",
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:7,[gtg_small_keys:9]",
           "{$hintable}"
         ],
         "capture_item": true,

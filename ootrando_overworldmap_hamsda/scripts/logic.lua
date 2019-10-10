@@ -161,36 +161,46 @@ function wasteland()
   return count, level
 end
 
-function colossus()
+function child_colossus()
   if has("ocarina")
   and has("requiem")
   then
     return 1
-  elseif has("sword2", 0) then
+  else
+    return 0
+  end
+end
+
+function adult_colossus()
+  if has("ocarina")
+  and has("requiem")
+  then
+    return 1
+  end
+
+  local bridge = gerudo_bridge()
+  if bridge == 0 then
     return 0
   else
-    local bridge = gerudo_bridge()
-    if bridge == 0 then
-      return 0
-    else
-      local level = AccessibilityLevel.Normal
-      if has("carpenter_rescue", 0) then
-        level = AccessibilityLevel.SequenceBreak
-      end
-      if has("hoverboots", 0)
-      and has("longshot", 0)
-      then
-        level = AccessibilityLevel.SequenceBreak
-      end
-      if has("setting_lens_chest", 0) 
-      and (has("lens", 0) 
-      or has("magic", 0)) 
-      then
-        level = AccessibilityLevel.SequenceBreak
-      end
-      return 1, level
+    local level = AccessibilityLevel.Normal
+    if has("carpenter_rescue", 0) then
+      level = AccessibilityLevel.SequenceBreak
     end
+    if has("hoverboots", 0)
+    and has("longshot", 0)
+    then
+      level = AccessibilityLevel.SequenceBreak
+    end
+    if has("setting_lens_chest", 0) 
+    and (has("lens", 0) 
+    or has("magic", 0)) 
+    then
+      level = AccessibilityLevel.SequenceBreak
+    end
+    return 1, level
   end
+
+  return 0
 end
 
 function gtg_card()

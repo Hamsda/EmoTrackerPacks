@@ -67,7 +67,7 @@ Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 
 
---fix GF key counter in this variant only going to 1 because of the default settings for GF
+--change GF key counter in this variant only going to 1 because of the default settings for GF
 if variant == "var_itemsonly_keysanity" then
   local gf = Tracker:FindObjectForCode("setting_gerudo")
   if gf then

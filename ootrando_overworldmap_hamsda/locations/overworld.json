@@ -5955,7 +5955,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "$colossus,ocarina,lullaby,$has_explosives"
+                          "$adult_colossus,ocarina,lullaby,$has_explosives"
                         ],
                         "item_count": 1
                       }
@@ -5964,7 +5964,7 @@
                       {
                         "map": "child",
                         "visibility_rules": [
-                          "ocarina,requiem"
+                          "$child_colossus"
                         ],
                         "x": 276,
                         "y": 297
@@ -5984,10 +5984,10 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "ocarina,requiem,setting_plant_no,beans,sword2",
-                          "ocarina,requiem,bean_colossus_yes,sword2",
-                          "{$hintable}",
-                          "{$colossus}"
+                          "$child_colossus,setting_plant_no,beans,sword2",
+                          "$child_colossus,bean_colossus_yes,sword2",
+                          "{$adult_colossus}",
+                          "{$hintable}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -5996,6 +5996,11 @@
                       }
                     ],
                     "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 160,
+                        "y": 305
+                      },
                       {
                         "map": "adult",
                         "x": 160,
@@ -6009,7 +6014,7 @@
                       {
                         "name": "Song",
                         "access_rules": [
-                          "$colossus",
+                          "$adult_colossus",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -6038,7 +6043,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "setting_scrub_shuffle_yes,$colossus,sword2,lift2"
+                          "setting_scrub_shuffle_yes,$adult_colossus,sword2,lift2"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -6101,10 +6106,10 @@
                       {
                         "name": "GS94 (N)",
                         "access_rules": [
-                          "$colossus,sword2,hookshot",
-                          "{$colossus,sword2,bow}",
-                          "{$colossus,sword2,$has_explosives}",
-                          "{$colossus,sword2,dinsfire,magic}"
+                          "$adult_colossus,sword2,hookshot",
+                          "{$adult_colossus,sword2,bow}",
+                          "{$adult_colossus,sword2,$has_explosives}",
+                          "{$adult_colossus,sword2,dinsfire,magic}"
                         ],
                         "visibility_rules": [
                           "setting_skulltulas_overworld"
@@ -6133,10 +6138,10 @@
                       {
                         "name": "GS95 (N)",
                         "access_rules": [
-                          "ocarina,requiem,setting_plant_no,beans,sword2",
-                          "ocarina,requiem,bean_colossus_yes,sword2",
-                          "$colossus,sword2,hookshot,[longshot]",
-                          "{$colossus,sword2,bow}"
+                          "$child_colossus,setting_plant_no,beans,sword2",
+                          "$child_colossus,bean_colossus_yes,sword2",
+                          "$adult_colossus,sword2,hookshot,[longshot]",
+                          "{$adult_colossus,sword2,bow}"
                         ],
                         "visibility_rules": [
                           "setting_skulltulas_overworld"
@@ -6165,7 +6170,7 @@
                       {
                         "name": "Check it",
                         "access_rules": [
-                          "$colossus"
+                          "$adult_colossus"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",

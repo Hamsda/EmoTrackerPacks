@@ -836,7 +836,7 @@
     "name": "Spirit Temple MQ",
     "parent": "Desert Colossus",
     "access_rules": [
-      "spirit_mq,$colossus"
+      "spirit_mq,$adult_colossus"
     ],
     "sections": [
       {

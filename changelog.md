@@ -20,6 +20,10 @@
   - Fire Temple MQ climb w/o fire
   - GV crate as adult w/ hovers
 - added overworld gold skulltula setting
+- changed vanilla dungeons (MQ dungeons soon...):
+  - restructured them internally
+  - logic pass
+  - merged GS/scrubs
 
 ## 2.5.1.0
 
