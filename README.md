@@ -25,15 +25,23 @@ The pack offers 7 different variants:
 
 ## Vanilla vs Master Quest Dungeons
 
-The Randomizer has the option to switch some or all dungeons to their Master Quest equivalents.  
-To accomodate for this, you can click on the dungeon labels to change them from vanilla ![vanilla deku](ootrando_overworldmap_hamsda/images/label_deku.png) to Master Quest ![mq deku](ootrando_overworldmap_hamsda/images/label_deku_mq.png). You can use this in the non map variants as a reminder.
+The Randomizer has the option to switch some or all dungeons to their Master Quest equivalents.
+To accomodate for this, you can click on the dungeon labels to change their current status:
+
+- ![Vanilla](ootrando_overworldmap_hamsda/images/label_deku.png "Vanilla") The dungeons vanilla checks will be shown.
+- ![Master Quest](ootrando_overworldmap_hamsda/images/label_deku_mq.png "Master Quest") The dungeons MQ checks will be shown.
+- ![Unknown](ootrando_overworldmap_hamsda/images/label_deku_red.png "Unknown") Both versions of the dungeon will be shown.
+
+You can use this in the non map variants as a reminder.
+
 The small key maximum amounts in the keysanity variants will dynamically update according to what you selected for the corresponding dungeon.
+If you have a dungeon marked as unknown in non-keysanity, some of the checks in the dungeon might not show up correctly until you pick either vanilla or MQ.
 
 ## Special items
 
 Some of this functionality might not be immediately obvious:
 
-- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will show up as sequence breaks unless this is turned on.
+- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on.
 - ![Ice Trap](ootrando_overworldmap_hamsda/images/icetrap.png "Ice Trap") is used as a counter for ice traps. This is somewhat useful to evaluate freestanding items during racing, but mostly just for fun with settings that include higher numbers of ice traps.
 
 ## Settings (for map variants)
