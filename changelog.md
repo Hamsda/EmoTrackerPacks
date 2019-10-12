@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Gerudo Fortress not working correctly in non-keysanity
+
 ## 2.6.0.0
 
 - changed lens setting default to wasteland

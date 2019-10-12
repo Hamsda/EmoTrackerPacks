@@ -15,6 +15,8 @@ function apply_queued_changes()
 end
 
 
+has_keys = Tracker.ActiveVariantUID:find("keysanity")
+
 
 dungeons = {
   "forest",
@@ -48,7 +50,6 @@ key_counts = {
     gc = 3,
   }
 }
-has_keys = Tracker.ActiveVariantUID:find("keysanity")
 function update_smallkeys()
   for _,dungeon in ipairs(dungeons) do
     local key_object = Tracker:FindObjectForCode(dungeon.."_small_keys")
@@ -88,6 +89,9 @@ function update_fortress()
       item_gf_keys.MaxCount = 1
     elseif setting_normal then
       item_gf_keys.MaxCount = 4
+    end
+    if not has_keys then
+      item_gf_keys.AcquiredCount = item_gf_keys.MaxCount
     end
   end
 
