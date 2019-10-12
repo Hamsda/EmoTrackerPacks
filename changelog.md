@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.6.0.1
 
 - fixed Gerudo Fortress not working correctly in non-keysanity
 
