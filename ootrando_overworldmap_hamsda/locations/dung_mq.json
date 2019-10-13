@@ -77,7 +77,7 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "deku_mq"
         ],
         "x": 2426,
@@ -144,7 +144,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "deku_mq,setting_skulltulas_dungeons"
             ],
             "x": 2460,
@@ -172,7 +172,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "deku_mq,setting_scrub_shuffle_yes"
             ],
             "x": 2426,
@@ -275,7 +275,7 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "dodongo_mq"
         ],
         "x": 1684,
@@ -283,7 +283,7 @@
       },
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "dodongo_mq"
         ],
         "x": 1684,
@@ -361,7 +361,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "dodongo_mq,setting_skulltulas_dungeons"
             ],
             "x": 1654,
@@ -369,7 +369,7 @@
           },
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "dodongo_mq,setting_skulltulas_dungeons"
             ],
             "x": 1654,
@@ -421,7 +421,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "dodongo_mq,setting_scrub_shuffle_yes"
             ],
             "x": 1624,
@@ -429,7 +429,7 @@
           },
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "dodongo_mq,setting_scrub_shuffle_yes"
             ],
             "x": 1624,
@@ -549,7 +549,7 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "jabu_mq"
         ],
         "x": 2458,
@@ -611,7 +611,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "jabu_mq,setting_skulltulas_dungeons"
             ],
             "x": 2458,
@@ -635,7 +635,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "jabu_mq,setting_cowsanity_yes"
             ],
             "x": 2458,
@@ -695,7 +695,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "ice_mq"
         ],
         "x": 2471,
@@ -741,7 +741,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "ice_mq,setting_skulltulas_dungeons"
             ],
             "x": 2471,
@@ -886,7 +886,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "forest_mq"
         ],
         "x": 2178,
@@ -956,7 +956,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "forest_mq,setting_skulltulas_dungeons"
             ],
             "x": 2178,
@@ -1090,7 +1090,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "fire_mq"
         ],
         "x": 1912,
@@ -1162,7 +1162,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "fire_mq,setting_skulltulas_dungeons"
             ],
             "x": 1942,
@@ -1253,7 +1253,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "water_mq"
         ],
         "x": 985,
@@ -1324,7 +1324,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "water_mq,setting_skulltulas_dungeons"
             ],
             "x": 985,
@@ -1503,7 +1503,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "shadow_mq"
         ],
         "x": 2144,
@@ -1574,7 +1574,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "shadow_mq,setting_skulltulas_dungeons"
             ],
             "x": 2174,
@@ -1800,7 +1800,7 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "spirit_mq"
         ],
         "x": 55,
@@ -1808,7 +1808,7 @@
       },
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "spirit_mq"
         ],
         "x": 55,
@@ -1878,7 +1878,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "ocarina,requiem,spirit_mq,setting_skulltulas_dungeons"
             ],
             "x": 55,
@@ -1886,7 +1886,7 @@
           },
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "spirit_mq,setting_skulltulas_dungeons"
             ],
             "x": 55,
@@ -1957,7 +1957,7 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "botw_mq"
         ],
         "x": 1920,
@@ -2006,7 +2006,7 @@
         "map_locations": [
           {
             "map": "child",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "botw_mq,setting_skulltulas_dungeons"
             ],
             "x": 1920,
@@ -2131,7 +2131,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "gc_mq"
         ],
         "x": 1409,
@@ -2159,7 +2159,7 @@
         "map_locations": [
           {
             "map": "adult",
-            "visibility_rules": [
+            "restrict_visibility_rules": [
               "gc_mq,setting_scrub_shuffle_yes"
             ],
             "x": 1409,
@@ -2306,7 +2306,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
+        "restrict_visibility_rules": [
           "gtg_mq"
         ],
         "x": 481,
