@@ -371,9 +371,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 2149,
                     "y": 776
                   },
@@ -548,9 +545,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 2192,
                     "y": 724
                   },
@@ -751,9 +745,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 2180,
                     "y": 686
                   },
@@ -1025,9 +1016,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1152,
                     "y": 481
                   },
@@ -1058,9 +1046,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1141,
                     "y": 999
                   },
@@ -1108,9 +1093,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1372,
                     "y": 440
                   },
@@ -1135,9 +1117,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1427,
                     "y": 925
                   },
@@ -1194,17 +1173,11 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1552,
                     "y": 406
                   },
                   {
                     "map": "adult",
-                    "restrict_visibility_rules": [
-                      "$can_blast,sword2"
-                    ],
                     "x": 1552,
                     "y": 406
                   }
@@ -1248,19 +1221,11 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives,dinsfire,magic",
-                      "{$hintable}"
-                    ],
                     "x": 972,
                     "y": 658
                   },
                   {
                     "map": "adult",
-                    "restrict_visibility_rules": [
-                      "sword2,hammer,$has_fire",
-                      "{$hintable}"
-                    ],
                     "x": 972,
                     "y": 658
                   }
@@ -2082,9 +2047,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "restrict_visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1787,
                     "y": 381
                   },
@@ -3000,9 +2962,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1606,
                         "y": 98
                       },
@@ -3360,19 +3319,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives",
-                          "lift1"
-                        ],
                         "x": 1744,
                         "y": 221
                       },
                       {
                         "map": "adult",
-                        "restrict_visibility_rules": [
-                          "sword2,hammer",
-                          "sword2,$has_explosives"
-                        ],
                         "x": 1744,
                         "y": 221
                       }
@@ -3416,9 +3367,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1764,
                         "y": 66
                       },
@@ -3493,9 +3441,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1730,
                         "y": 190
                       },
@@ -3729,9 +3674,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1798,
                         "y": 42
                       },
@@ -4724,10 +4666,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 2092,
                         "y": 540
                       },
@@ -4757,18 +4695,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 2037,
                         "y": 474
                       },
                       {
                         "map": "adult",
-                        "restrict_visibility_rules": [
-                          "sword2,[hoverboots]"
-                        ],
                         "x": 2037,
                         "y": 474
                       }
@@ -4793,18 +4724,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 2347,
                         "y": 425
                       },
                       {
                         "map": "adult",
-                        "restrict_visibility_rules": [
-                          "sword2,[hoverboots]"
-                        ],
                         "x": 2347,
                         "y": 425
                       }
@@ -4835,10 +4759,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 1940,
                         "y": 505
                       },
@@ -5235,7 +5155,7 @@
                   {
                     "map": "adult",
                     "restrict_visibility_rules": [
-                      "$has_bottle,setting_shopsanity_yes"
+                      "setting_shopsanity_yes"
                     ],
                     "x": 2619,
                     "y": 499
@@ -5260,17 +5180,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$child_fountain"
-                        ],
                         "x": 2553,
                         "y": 333
                       },
                       {
                         "map": "adult",
-                        "restrict_visibility_rules": [
-                          "$adult_fountain"
-                        ],
                         "x": 2553,
                         "y": 333
                       }
@@ -5963,9 +5877,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "$child_colossus"
-                        ],
                         "x": 276,
                         "y": 297
                       },

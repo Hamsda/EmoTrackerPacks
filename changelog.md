@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- removed visibility restrictions based on items
+
 ## 2.6.0.1
 
 - fixed Gerudo Fortress not working correctly in non-keysanity
