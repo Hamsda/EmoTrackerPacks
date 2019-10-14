@@ -3,6 +3,7 @@
 ## x
 
 - removed visibility restrictions based on items
+- fixed broken visibility options for dungeons and shops
 
 ## 2.6.0.1
 

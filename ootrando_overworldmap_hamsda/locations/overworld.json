@@ -77,9 +77,6 @@
               },
               {
                 "name": "Kokiri Shop",
-                "access_rules": [
-                  "setting_shopsanity_yes"
-                ],
                 "sections": [
                   {
                     "name": "Item 1",
@@ -106,7 +103,7 @@
                   {
                     "map": "child",
                     "restrict_visibility_rules": [
-                      "setting_shopsanity_yes"
+                      "setting_shopsanity_no"
                     ],
                     "x": 2220,
                     "y": 917
@@ -114,7 +111,7 @@
                   {
                     "map": "adult",
                     "restrict_visibility_rules": [
-                      "setting_shopsanity_yes"
+                      "setting_shopsanity_no"
                     ],
                     "x": 2220,
                     "y": 917
@@ -2388,7 +2385,7 @@
               {
                 "name": "Kakariko Potion Shop",
                 "access_rules": [
-                  "setting_shopsanity_yes,sword2"
+                  "sword2"
                 ],
                 "sections": [
                   {
@@ -2416,7 +2413,7 @@
                   {
                     "map": "adult",
                     "restrict_visibility_rules": [
-                      "setting_shopsanity_yes"
+                      "setting_shopsanity_no"
                     ],
                     "x": 1814,
                     "y": 341
@@ -2426,7 +2423,7 @@
               {
                 "name": "Kakariko Bazaar",
                 "access_rules": [
-                  "setting_shopsanity_yes,sword2"
+                  "sword2"
                 ],
                 "sections": [
                   {
@@ -2454,7 +2451,7 @@
                   {
                     "map": "adult",
                     "restrict_visibility_rules": [
-                      "setting_shopsanity_yes"
+                      "setting_shopsanity_no"
                     ],
                     "x": 1780,
                     "y": 347
@@ -3174,12 +3171,12 @@
                   {
                     "name": "Goron Shop",
                     "access_rules": [
-                      "setting_shopsanity_yes,$has_explosives",
-                      "setting_shopsanity_yes,lift1",
-                      "setting_shopsanity_yes,sword2,bow",
-                      "setting_shopsanity_yes,dinsfire,magic",
-                      "setting_shopsanity_yes,ocarina,lullaby,sticks,postzelda",
-                      "setting_shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
+                      "$has_explosives",
+                      "lift1",
+                      "sword2,bow",
+                      "dinsfire,magic",
+                      "ocarina,lullaby,sticks,postzelda",
+                      "ocarina,lullaby,sticks,sword2,hammer"
                     ],
                     "sections": [
                       {
@@ -3207,7 +3204,7 @@
                       {
                         "map": "child",
                         "restrict_visibility_rules": [
-                          "setting_shopsanity_yes"
+                          "setting_shopsanity_no"
                         ],
                         "x": 1646,
                         "y": 128
@@ -3215,7 +3212,7 @@
                       {
                         "map": "adult",
                         "restrict_visibility_rules": [
-                          "setting_shopsanity_yes"
+                          "setting_shopsanity_no"
                         ],
                         "x": 1646,
                         "y": 128
@@ -4091,9 +4088,6 @@
                   },
                   {
                     "name": "Bombchu Shop",
-                    "access_rules": [
-                      "setting_shopsanity_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4120,7 +4114,7 @@
                       {
                         "map": "child",
                         "restrict_visibility_rules": [
-                          "setting_shopsanity_yes"
+                          "setting_shopsanity_no"
                         ],
                         "x": 1386,
                         "y": 360
@@ -4130,9 +4124,6 @@
                   {
                     "name": "Castle Town Potion Shop",
                     "short_name": "Market Potion Shop",
-                    "access_rules": [
-                      "setting_shopsanity_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4159,7 +4150,7 @@
                       {
                         "map": "child",
                         "restrict_visibility_rules": [
-                          "setting_shopsanity_yes"
+                          "setting_shopsanity_no"
                         ],
                         "x": 1493,
                         "y": 325
@@ -4169,9 +4160,6 @@
                   {
                     "name": "Castle Town Bazaar",
                     "short_name": "Market Bazaar",
-                    "access_rules": [
-                      "setting_shopsanity_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4198,7 +4186,7 @@
                       {
                         "map": "child",
                         "restrict_visibility_rules": [
-                          "setting_shopsanity_yes"
+                          "setting_shopsanity_no"
                         ],
                         "x": 1493,
                         "y": 355
@@ -5116,10 +5104,10 @@
               {
                 "name": "Zora Shop",
                 "access_rules": [
-                  "setting_shopsanity_yes,$has_explosives,[ocarina],[lullaby]",
-                  "setting_shopsanity_yes,scale1",
-                  "setting_shopsanity_yes,sword2,ocarina,lullaby,$has_bottle",
-                  "setting_shopsanity_yes,sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
+                  "$has_explosives,[ocarina],[lullaby]",
+                  "scale1",
+                  "sword2,ocarina,lullaby,$has_bottle",
+                  "sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
                 ],
                 "sections": [
                   {
@@ -5147,7 +5135,7 @@
                   {
                     "map": "child",
                     "restrict_visibility_rules": [
-                      "setting_shopsanity_yes"
+                      "setting_shopsanity_no"
                     ],
                     "x": 2619,
                     "y": 499
@@ -5155,7 +5143,7 @@
                   {
                     "map": "adult",
                     "restrict_visibility_rules": [
-                      "setting_shopsanity_yes"
+                      "setting_shopsanity_no"
                     ],
                     "x": 2619,
                     "y": 499

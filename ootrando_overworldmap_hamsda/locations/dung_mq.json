@@ -3,8 +3,8 @@
     "name": "Deku Tree MQ",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "deku_mq,open_forest",
-      "deku_mq,sword1,shield1"
+      "open_forest",
+      "sword1,shield1"
     ],
     "sections": [
       {
@@ -72,113 +72,90 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS8 - Crate Near Map",
+        "short_name": "Near Map",
+        "access_rules": [
+          "$can_child_attack"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS9 - Compass Room",
+        "short_name": "Compass",
+        "access_rules": [
+          "@Deku Tree MQ/Compass Chest,boomerang,bombs,ocarina,time",
+          "@Deku Tree MQ/Compass Chest,boomerang,bombchu",
+          "{@Deku Tree MQ/Compass Chest,bombs,ocarina,time}",
+          "{@Deku Tree MQ/Compass Chest,bombchu}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS10 - Basement Ceiling",
+        "short_name": "Ceiling",
+        "access_rules": [
+          "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time",
+          "{@Deku Tree MQ/Compass Chest,sling}",
+          "{$hintable}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS11 - Basement Back Room",
+        "short_name": "Back Room",
+        "access_rules": [
+          "@Deku Tree MQ/Compass Chest,boomerang",
+          "{@Deku Tree MQ/Compass Chest,sling}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Upper Basement",
+        "short_name": "Basement",
+        "access_rules": [
+          "@Deku Tree MQ/Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "child",
         "restrict_visibility_rules": [
-          "deku_mq"
+          "deku_reg"
         ],
         "x": 2426,
         "y": 860
-      }
-    ],
-    "children": [
-      {
-        "name": "Deku Tree MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS8 - Crate Near Map",
-            "short_name": "Near Map",
-            "access_rules": [
-              "$can_child_attack"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS9 - Compass Room",
-            "short_name": "Compass",
-            "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang,bombs,ocarina,time",
-              "@Deku Tree MQ/Compass Chest,boomerang,bombchu",
-              "{@Deku Tree MQ/Compass Chest,bombs,ocarina,time}",
-              "{@Deku Tree MQ/Compass Chest,bombchu}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS10 - Basement Ceiling",
-            "short_name": "Ceiling",
-            "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang,ocarina,time",
-              "{@Deku Tree MQ/Compass Chest,sling}",
-              "{$hintable}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS11 - Basement Back Room",
-            "short_name": "Back Room",
-            "access_rules": [
-              "@Deku Tree MQ/Compass Chest,boomerang",
-              "{@Deku Tree MQ/Compass Chest,sling}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "deku_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 2460,
-            "y": 860
-          }
-        ]
-      },
-      {
-        "name": "Deku Tree MQ Scrubs",
-        "access_rules": [
-          "setting_scrub_shuffle_yes"
-        ],
-        "sections": [
-          {
-            "name": "Upper Basement",
-            "short_name": "Basement",
-            "access_rules": [
-              "@Deku Tree MQ/Compass Chest"
-            ],
-            "chest_unopened_img": "images/deku_scrub.png",
-            "chest_opened_img": "images/deku_scrub_grey.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "deku_mq,setting_scrub_shuffle_yes"
-            ],
-            "x": 2426,
-            "y": 890
-          }
-        ]
       }
     ]
   },
@@ -186,8 +163,8 @@
     "name": "Dodongos Cavern MQ",
     "parent": "Death Mountain",
     "access_rules": [
-      "dodongo_mq,$can_blast",
-      "dodongo_mq,lift1"
+      "$can_blast",
+      "lift1"
     ],
     "sections": [
       {
@@ -270,13 +247,131 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS38 - Song of Time Block Room",
+        "short_name": "Song of Time",
+        "access_rules": [
+          "ocarina,time,$can_child_attack",
+          "ocarina,time,sword2"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS39 - Larva Room",
+        "short_name": "Larva",
+        "access_rules": [
+          "@Dodongos Cavern MQ/Larva Room"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS40 - Lizalfos Room",
+        "short_name": "Lizalfos",
+        "access_rules": [
+          "$can_blast"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS41 - Scrub Room",
+        "short_name": "Scrub",
+        "access_rules": [
+          "boomerang,sling,$has_explosives",
+          "boomerang,sword2,$has_explosives",
+          "boomerang,sling,lift1,sticks",
+          "boomerang,sling,lift1,dinsfire,magic",
+          "boomerang,sling,lift1,sword2,[hoverboots]",
+          "boomerang,sling,lift1,sword2,[hammer]",
+          "sword2,hookshot,$has_explosives",
+          "sword2,hookshot,lift1",
+          "sword2,hookshot,bow",
+          "sword2,hookshot,dinsfire,magic"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS42 - Back Area",
+        "short_name": "Back Area",
+        "access_rules": [
+          "@Dodongos Cavern MQ/Under Grave"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Sticks / Deku Seeds",
+        "short_name": "Main Room",
+        "access_rules": [
+          "$can_stun_deku"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 2
+      },
+      {
+        "name": "Red Potion",
+        "short_name": "East Side",
+        "access_rules": [
+          "sword2",
+          "sticks",
+          "dinsfire,magic",
+          "$has_explosives"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Shield",
+        "short_name": "Above Stairs",
+        "access_rules": [
+          "$can_stun_deku"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "child",
         "restrict_visibility_rules": [
-          "dodongo_mq"
+          "dodongo_reg"
         ],
         "x": 1684,
         "y": 250
@@ -284,158 +379,10 @@
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "dodongo_mq"
+          "dodongo_reg"
         ],
         "x": 1684,
         "y": 250
-      }
-    ],
-    "children": [
-      {
-        "name": "Dodongos Cavern MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS38 - Song of Time Block Room",
-            "short_name": "Song of Time",
-            "access_rules": [
-              "ocarina,time,$can_child_attack",
-              "ocarina,time,sword2"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS39 - Larva Room",
-            "short_name": "Larva",
-            "access_rules": [
-              "@Dodongos Cavern MQ/Larva Room"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS40 - Lizalfos Room",
-            "short_name": "Lizalfos",
-            "access_rules": [
-              "$can_blast"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS41 - Scrub Room",
-            "short_name": "Scrub",
-            "access_rules": [
-              "boomerang,sling,$has_explosives",
-              "boomerang,sword2,$has_explosives",
-              "boomerang,sling,lift1,sticks",
-              "boomerang,sling,lift1,dinsfire,magic",
-              "boomerang,sling,lift1,sword2,[hoverboots]",
-              "boomerang,sling,lift1,sword2,[hammer]",
-              "sword2,hookshot,$has_explosives",
-              "sword2,hookshot,lift1",
-              "sword2,hookshot,bow",
-              "sword2,hookshot,dinsfire,magic"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS42 - Back Area",
-            "short_name": "Back Area",
-            "access_rules": [
-              "@Dodongos Cavern MQ/Under Grave"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "dodongo_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 1654,
-            "y": 250
-          },
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "dodongo_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 1654,
-            "y": 250
-          }
-        ]
-      },
-      {
-        "name": "Dodongos Cavern MQ Scrubs",
-        "access_rules": [
-          "setting_scrub_shuffle_yes"
-        ],
-        "sections": [
-          {
-            "name": "Deku Sticks / Deku Seeds",
-            "short_name": "Main Room",
-            "access_rules": [
-              "$can_stun_deku"
-            ],
-            "chest_unopened_img": "images/deku_scrub.png",
-            "chest_opened_img": "images/deku_scrub_grey.png",
-            "clear_as_group": false,
-            "item_count": 2
-          },
-          {
-            "name": "Red Potion",
-            "short_name": "East Side",
-            "access_rules": [
-              "sword2",
-              "sticks",
-              "dinsfire,magic",
-              "$has_explosives"
-            ],
-            "chest_unopened_img": "images/deku_scrub.png",
-            "chest_opened_img": "images/deku_scrub_grey.png",
-            "item_count": 1
-          },
-          {
-            "name": "Deku Shield",
-            "short_name": "Above Stairs",
-            "access_rules": [
-              "$can_stun_deku"
-            ],
-            "chest_unopened_img": "images/deku_scrub.png",
-            "chest_opened_img": "images/deku_scrub_grey.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "dodongo_mq,setting_scrub_shuffle_yes"
-            ],
-            "x": 1624,
-            "y": 250
-          },
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "dodongo_mq,setting_scrub_shuffle_yes"
-            ],
-            "x": 1624,
-            "y": 250
-          }
-        ]
       }
     ]
   },
@@ -443,7 +390,7 @@
     "name": "Jabu Jabus Belly MQ",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "jabu_mq,$child_fountain,bottle"
+      "$child_fountain,bottle"
     ],
     "sections": [
       {
@@ -544,104 +491,84 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS51 - Boomerang Room",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "@Jabu Jabus Belly MQ/Boomerang Chest,ocarina,time",
+          "@Jabu Jabus Belly MQ/Boomerang Chest,boomerang,[ocarina],[time]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS52 - Tailpasaran Room",
+        "short_name": "Tailpasaran",
+        "access_rules": [
+          "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,sticks",
+          "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,dinsfire,magic"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS53 - Invisible Enemies Room",
+        "short_name": "Invisible Enemies",
+        "access_rules": [
+          "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,$can_see_with_lens",
+          "{$hintable}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS54 - Near Boss",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "@Jabu Jabus Belly MQ/Second Room Upper Chest"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Cow",
+        "access_rules": [
+          "@Jabu Jabus Belly MQ/Second Room Upper Chest,ocarina,epona"
+        ],
+        "visibility_rules": [
+          "setting_cowsanity_yes"
+        ],
+        "chest_unopened_img": "images/cow.png",
+        "chest_opened_img": "images/bottle_milk.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "child",
         "restrict_visibility_rules": [
-          "jabu_mq"
+          "jabu_reg"
         ],
         "x": 2458,
         "y": 328
-      }
-    ],
-    "children": [
-      {
-        "name": "Jabu Jabus Belly MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS51 - Boomerang Room",
-            "short_name": "Boomerang",
-            "access_rules": [
-              "@Jabu Jabus Belly MQ/Boomerang Chest,ocarina,time",
-              "@Jabu Jabus Belly MQ/Boomerang Chest,boomerang,[ocarina],[time]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS52 - Tailpasaran Room",
-            "short_name": "Tailpasaran",
-            "access_rules": [
-              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,sticks",
-              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,dinsfire,magic"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS53 - Invisible Enemies Room",
-            "short_name": "Invisible Enemies",
-            "access_rules": [
-              "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,$can_see_with_lens",
-              "{$hintable}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS54 - Near Boss",
-            "short_name": "Near Boss",
-            "access_rules": [
-              "@Jabu Jabus Belly MQ/Second Room Upper Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "jabu_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 2458,
-            "y": 298
-          }
-        ]
-      },
-      {
-        "name": "Jabu Jabus Belly MQ Cow",
-        "sections": [
-          {
-            "name": "Cow",
-            "access_rules": [
-              "@Jabu Jabus Belly MQ/Second Room Upper Chest,ocarina,epona,setting_cowsanity_yes"
-            ],
-            "chest_unopened_img": "images/cow.png",
-            "chest_opened_img": "images/bottle_milk.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "jabu_mq,setting_cowsanity_yes"
-            ],
-            "x": 2458,
-            "y": 358
-          }
-        ]
       }
     ]
   },
@@ -649,7 +576,7 @@
     "name": "Ice Cavern MQ",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "ice_mq,$adult_fountain,$has_bottle"
+      "$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -690,64 +617,53 @@
         "chest_unopened_img": "images/grey_note.png",
         "chest_opened_img": "images/grey_note_check.png",
         "item_count": 1
+      },
+      {
+        "name": "GS70 - Red Ice",
+        "short_name": "Red Ice",
+        "access_rules": [
+          "ocarina,time"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS71 - Scarecrow",
+        "short_name": "Scarecrow",
+        "access_rules": [
+          "[hookshot],[ocarina],[scarecrow]",
+          "longshot,hoverboots"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS72 - Ice Block",
+        "short_name": "Ice Block",
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "ice_mq"
+          "ice_reg"
         ],
         "x": 2471,
         "y": 276
-      }
-    ],
-    "children": [
-      {
-        "name": "Ice Cavern MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS70 - Red Ice",
-            "short_name": "Red Ice",
-            "access_rules": [
-              "ocarina,time"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS71 - Scarecrow",
-            "short_name": "Scarecrow",
-            "access_rules": [
-              "[hookshot],[ocarina],[scarecrow]",
-              "longshot,hoverboots"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS72 - Ice Block",
-            "short_name": "Ice Block",
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "ice_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 2471,
-            "y": 246
-          }
-        ]
       }
     ]
   },
@@ -755,8 +671,8 @@
     "name": "Forest Temple MQ",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "forest_mq,sword2,hookshot,[ocarina],[saria]",
-      "forest_mq,sword2,hookshot,[ocarina],[minuet]"
+      "sword2,hookshot,[ocarina],[saria]",
+      "sword2,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -881,88 +797,83 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS60 - First Hallway",
+        "short_name": "First Hallway",
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS61 - Block Push Room",
+        "short_name": "Block Push",
+        "access_rules": [
+          "forest_small_keys:1"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS62 - Outdoor West",
+        "short_name": "Outdoor West",
+        "access_rules": [
+          "@Forest Temple MQ/Redead Chest",
+          "forest_small_keys:1,bow"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS63 - Outdoor East",
+        "short_name": "Outdoor East",
+        "access_rules": [
+          "@Forest Temple MQ/Redead Chest,ironboots",
+          "@Forest Temple MQ/Redead Chest,longshot",
+          "@Forest Temple MQ/Redead Chest,scale2",
+          "forest_small_keys:1,bow"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS64 - Well",
+        "short_name": "Well",
+        "access_rules": [
+          "@Forest Temple MQ/Redead Chest,ironboots",
+          "forest_small_keys:1,bow"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "forest_mq"
+          "forest_reg"
         ],
         "x": 2178,
         "y": 596
-      }
-    ],
-    "children": [
-      {
-        "name": "Forest Temple MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS60 - First Hallway",
-            "short_name": "First Hallway",
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS61 - Block Push Room",
-            "short_name": "Block Push",
-            "access_rules": [
-              "forest_small_keys:1"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS62 - Outdoor West",
-            "short_name": "Outdoor West",
-            "access_rules": [
-              "@Forest Temple MQ/Redead Chest",
-              "forest_small_keys:1,bow"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS63 - Outdoor East",
-            "short_name": "Outdoor East",
-            "access_rules": [
-              "@Forest Temple MQ/Redead Chest,ironboots",
-              "@Forest Temple MQ/Redead Chest,longshot",
-              "@Forest Temple MQ/Redead Chest,scale2",
-              "forest_small_keys:1,bow"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS64 - Well",
-            "short_name": "Well",
-            "access_rules": [
-              "@Forest Temple MQ/Redead Chest,ironboots",
-              "forest_small_keys:1,bow"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "forest_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 2178,
-            "y": 566
-          }
-        ]
       }
     ]
   },
@@ -970,7 +881,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "fire_mq,$dmc_central,$has_goron_tunic"
+      "$dmc_central,$has_goron_tunic"
     ],
     "sections": [
       {
@@ -1085,90 +996,85 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS65 - Big Lava Room",
+        "short_name": "Lava Room",
+        "access_rules": [
+          "hammer"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS66 - East Tower Top",
+        "short_name": "East Tower Top",
+        "access_rules": [
+          "@Fire Temple MQ/Maze Upper Chest,ocarina,time",
+          "@Fire Temple MQ/Maze Upper Chest,longshot"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS67 - Fire Wall Maze Side Room",
+        "short_name": "Fire Maze Side",
+        "access_rules": [
+          "@Fire Temple MQ/Freestanding Key,ocarina,time",
+          "@Fire Temple MQ/Freestanding Key,[hoverboots]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS68 - Above Fire Wall Maze",
+        "short_name": "Above Fire Maze",
+        "access_rules": [
+          "@Fire Temple MQ/Freestanding Key,fire_small_keys:4,[fire_small_keys:5]",
+          "{$hintable}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS69 - Fire Wall Maze Center",
+        "short_name": "Fire Maze Center",
+        "access_rules": [
+          "@Fire Temple MQ/Freestanding Key,$has_explosives"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "fire_mq"
+          "fire_reg"
         ],
         "x": 1912,
         "y": 115
-      }
-    ],
-    "children": [
-      {
-        "name": "Fire Temple MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS65 - Big Lava Room",
-            "short_name": "Lava Room",
-            "access_rules": [
-              "hammer"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS66 - East Tower Top",
-            "short_name": "East Tower Top",
-            "access_rules": [
-              "@Fire Temple MQ/Maze Upper Chest,ocarina,time",
-              "@Fire Temple MQ/Maze Upper Chest,longshot"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS67 - Fire Wall Maze Side Room",
-            "short_name": "Fire Maze Side",
-            "access_rules": [
-              "@Fire Temple MQ/Freestanding Key,ocarina,time",
-              "@Fire Temple MQ/Freestanding Key,[hoverboots]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS68 - Above Fire Wall Maze",
-            "short_name": "Above Fire Maze",
-            "access_rules": [
-              "@Fire Temple MQ/Freestanding Key,fire_small_keys:4,[fire_small_keys:5]",
-              "{$hintable}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS69 - Fire Wall Maze Center",
-            "short_name": "Fire Maze Center",
-            "access_rules": [
-              "@Fire Temple MQ/Freestanding Key,$has_explosives"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "fire_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 1942,
-            "y": 115
-          }
-        ]
       }
     ]
   },
@@ -1176,8 +1082,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia",
     "access_rules": [
-      "water_mq,sword2,ironboots,hookshot,$has_zora_tunic",
-      "water_mq,sword2,scale2,[ironboots],hookshot,$has_zora_tunic"
+      "sword2,ironboots,hookshot,$has_zora_tunic",
+      "sword2,scale2,[ironboots],hookshot,$has_zora_tunic"
     ],
     "sections": [
       {
@@ -1248,89 +1154,84 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS73 - South Basement",
+        "short_name": "South Basement",
+        "access_rules": [
+          "water_small_keys:1,longshot,ironboots,dinsfire,magic,hoverboots,bow,firearrow",
+          "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,scarecrow,bow,firearrow"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS74 - North Basement",
+        "short_name": "North Basement",
+        "access_rules": [
+          "@Water Temple MQ/Freestanding Key,water_small_keys:2",
+          "{$hintable}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS75 - Serpent River",
+        "short_name": "River",
+        "access_rules": [
+          "water_small_keys:1,longshot,ironboots"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS76 - Lizalfos Hallway",
+        "short_name": "Lizalfos",
+        "access_rules": [
+          "ocarina,lullaby,ironboots,dinsfire,magic"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS77 - Before Upper Water Switch",
+        "short_name": "Before Upper Water Switch",
+        "access_rules": [
+          "ocarina,lullaby,ironboots,longshot"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "water_mq"
+          "water_reg"
         ],
         "x": 985,
         "y": 1380
-      }
-    ],
-    "children": [
-      {
-        "name": "Water Temple MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS73 - South Basement",
-            "short_name": "South Basement",
-            "access_rules": [
-              "water_small_keys:1,longshot,ironboots,dinsfire,magic,hoverboots,bow,firearrow",
-              "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,scarecrow,bow,firearrow"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS74 - North Basement",
-            "short_name": "North Basement",
-            "access_rules": [
-              "@Water Temple MQ/Freestanding Key,water_small_keys:2",
-              "{$hintable}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS75 - Serpent River",
-            "short_name": "River",
-            "access_rules": [
-              "water_small_keys:1,longshot,ironboots"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS76 - Lizalfos Hallway",
-            "short_name": "Lizalfos",
-            "access_rules": [
-              "ocarina,lullaby,ironboots,dinsfire,magic"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS77 - Before Upper Water Switch",
-            "short_name": "Before Upper Water Switch",
-            "access_rules": [
-              "ocarina,lullaby,ironboots,longshot"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "water_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 985,
-            "y": 1350
-          }
-        ]
       }
     ]
   },
@@ -1338,10 +1239,10 @@
     "name": "Shadow Temple MQ",
     "parent": "Graveyard",
     "access_rules": [
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_mq,ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
-      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
-      "shadow_mq,ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
+      "ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hoverboots",
+      "ocarina,nocturne,dinsfire,magic,$can_see_with_lens,sword2,hookshot",
+      "ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hoverboots",
+      "ocarina,nocturne,bow,firearrow,[dinsfire],magic,$can_see_with_lens,sword2,hookshot"
     ],
     "sections": [
       {
@@ -1498,89 +1399,84 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS81 - Crusher Room",
+        "short_name": "Crusher",
+        "access_rules": [
+          "@Shadow Temple MQ/Falling Spikes Lower Chest,hookshot",
+          "{@Shadow Temple MQ/Falling Spikes Lower Chest}"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS82 - Wind Hint Room",
+        "short_name": "Wind Hint",
+        "access_rules": [
+          "@Shadow Temple MQ/Wind Hint Chest"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS83 - After Wind",
+        "short_name": "After Wind",
+        "access_rules": [
+          "@Shadow Temple MQ/Wind Hint Chest"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS84 - After Ship",
+        "short_name": "After Ship",
+        "access_rules": [
+          "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,[shadow_small_keys:5],ocarina,lullaby"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS85 - Near Boss",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bow",
+          "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bombchu,[bow]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "shadow_mq"
+          "shadow_reg"
         ],
         "x": 2144,
         "y": 296
-      }
-    ],
-    "children": [
-      {
-        "name": "Shadow Temple MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS81 - Crusher Room",
-            "short_name": "Crusher",
-            "access_rules": [
-              "@Shadow Temple MQ/Falling Spikes Lower Chest,hookshot",
-              "{@Shadow Temple MQ/Falling Spikes Lower Chest}"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS82 - Wind Hint Room",
-            "short_name": "Wind Hint",
-            "access_rules": [
-              "@Shadow Temple MQ/Wind Hint Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS83 - After Wind",
-            "short_name": "After Wind",
-            "access_rules": [
-              "@Shadow Temple MQ/Wind Hint Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS84 - After Ship",
-            "short_name": "After Ship",
-            "access_rules": [
-              "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,[shadow_small_keys:5],ocarina,lullaby"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS85 - Near Boss",
-            "short_name": "Near Boss",
-            "access_rules": [
-              "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bow",
-              "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bombchu,[bow]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "shadow_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 2174,
-            "y": 296
-          }
-        ]
       }
     ]
   },
@@ -1588,7 +1484,7 @@
     "name": "Spirit Temple MQ",
     "parent": "Desert Colossus",
     "access_rules": [
-      "spirit_mq,$adult_colossus"
+      "$adult_colossus"
     ],
     "sections": [
       {
@@ -1795,13 +1691,80 @@
         "chest_unopened_img": "images/HC.png",
         "chest_opened_img": "images/HC_grey.png",
         "item_count": 1
+      },
+      {
+        "name": "GS96 - Sun Block Room",
+        "short_name": "Sun Block",
+        "access_rules": [
+          "sword2,lift2,longshot,bombchu",
+          "[sword2],[lift2],[longshot],ocarina,requiem,bombchu,spirit_small_keys:2,time,boomerang"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS97 - Lower Adult Left",
+        "short_name": "Adult Left",
+        "access_rules": [
+          "@Spirit Temple MQ/Lower Adult Left Chest"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS98 - Lower Adult Right",
+        "short_name": "Adult Right",
+        "access_rules": [
+          "@Spirit Temple MQ/Lower Adult Right Chest"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS99 - Iron Knuckle North",
+        "short_name": "Iron Knuckle 1",
+        "access_rules": [
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:3,[spirit_small_keys:7]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS100 - Iron Knuckle West",
+        "short_name": "Iron Knuckle 2",
+        "access_rules": [
+          "sword2,lift2,longshot,bombchu,spirit_small_keys:3,[spirit_small_keys:7]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "child",
         "restrict_visibility_rules": [
-          "spirit_mq"
+          "spirit_reg"
         ],
         "x": 55,
         "y": 301
@@ -1809,90 +1772,10 @@
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "spirit_mq"
+          "spirit_reg"
         ],
         "x": 55,
         "y": 301
-      }
-    ],
-    "children": [
-      {
-        "name": "Spirit Temple MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS96 - Sun Block Room",
-            "short_name": "Sun Block",
-            "access_rules": [
-              "sword2,lift2,longshot,bombchu",
-              "[sword2],[lift2],[longshot],ocarina,requiem,bombchu,spirit_small_keys:2,time,boomerang"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS97 - Lower Adult Left",
-            "short_name": "Adult Left",
-            "access_rules": [
-              "@Spirit Temple MQ/Lower Adult Left Chest"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS98 - Lower Adult Right",
-            "short_name": "Adult Right",
-            "access_rules": [
-              "@Spirit Temple MQ/Lower Adult Right Chest"
-            ],
-            "capture_item": true,
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS99 - Iron Knuckle North",
-            "short_name": "Iron Knuckle 1",
-            "access_rules": [
-              "sword2,lift2,longshot,bombchu,spirit_small_keys:3,[spirit_small_keys:7]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS100 - Iron Knuckle West",
-            "short_name": "Iron Knuckle 2",
-            "access_rules": [
-              "sword2,lift2,longshot,bombchu,spirit_small_keys:3,[spirit_small_keys:7]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "ocarina,requiem,spirit_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 55,
-            "y": 271
-          },
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "spirit_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 55,
-            "y": 271
-          }
-        ]
       }
     ]
   },
@@ -1900,7 +1783,7 @@
     "name": "Bottom of the Well MQ",
     "parent": "Kakariko Village",
     "access_rules": [
-      "botw_mq,ocarina,storm"
+      "ocarina,storm"
     ],
     "sections": [
       {
@@ -1952,67 +1835,56 @@
           "$has_explosives,botw_small_keys:1,[botw_small_keys:2]"
         ],
         "item_count": 1
+      },
+      {
+        "name": "GS78 - West Inner Room",
+        "short_name": "West Inner",
+        "access_rules": [
+          "$can_child_attack,$can_see_with_lens,ocarina,lullaby",
+          "$can_child_attack,$can_see_with_lens,$has_explosives"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS79 - Basement",
+        "short_name": "Basement",
+        "access_rules": [
+          "$can_child_attack"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS80 - Coffin Room",
+        "short_name": "Coffin",
+        "access_rules": [
+          "$can_child_attack,botw_small_keys:1,[botw_small_keys:2]"
+        ],
+        "visibility_rules": [
+          "setting_skulltulas_dungeons"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
       {
         "map": "child",
         "restrict_visibility_rules": [
-          "botw_mq"
+          "botw_reg"
         ],
         "x": 1920,
         "y": 383
-      }
-    ],
-    "children": [
-      {
-        "name": "Bottom of the Well MQ Skulltulas",
-        "access_rules": [
-          "setting_skulltulas_dungeons"
-        ],
-        "sections": [
-          {
-            "name": "GS78 - West Inner Room",
-            "short_name": "West Inner",
-            "access_rules": [
-              "$can_child_attack,$can_see_with_lens,ocarina,lullaby",
-              "$can_child_attack,$can_see_with_lens,$has_explosives"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS79 - Basement",
-            "short_name": "Basement",
-            "access_rules": [
-              "$can_child_attack"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          },
-          {
-            "name": "GS80 - Coffin Room",
-            "short_name": "Coffin",
-            "access_rules": [
-              "$can_child_attack,botw_small_keys:1,[botw_small_keys:2]"
-            ],
-            "chest_unopened_img": "images/skulltula.png",
-            "chest_opened_img": "images/skulltula_token.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "child",
-            "restrict_visibility_rules": [
-              "botw_mq,setting_skulltulas_dungeons"
-            ],
-            "x": 1920,
-            "y": 414
-          }
-        ]
       }
     ]
   },
@@ -2020,12 +1892,12 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_mq,bridge_open,sword2",
-      "gc_mq,bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "gc_mq,bridge_stones,sword2,stones:3",
-      "gc_mq,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "gc_mq,bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "gc_mq,bridge_100gs,sword2,token:100"
+      "bridge_open,sword2",
+      "bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "bridge_stones,sword2,stones:3",
+      "bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "bridge_100gs,sword2,token:100"
     ],
     "sections": [
       {
@@ -2126,46 +1998,29 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Hidden Room",
+        "access_rules": [
+          "$can_see_with_lens"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 5
       }
     ],
     "map_locations": [
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "gc_mq"
+          "gc_reg"
         ],
         "x": 1409,
         "y": 206
-      }
-    ],
-    "children": [
-      {
-        "name": "Ganons Castle MQ Scrubs",
-        "access_rules": [
-          "setting_scrub_shuffle_yes"
-        ],
-        "sections": [
-          {
-            "name": "Hidden Room",
-            "access_rules": [
-              "$can_see_with_lens"
-            ],
-            "chest_unopened_img": "images/deku_scrub.png",
-            "chest_opened_img": "images/deku_scrub_grey.png",
-            "clear_as_group": false,
-            "item_count": 5
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "adult",
-            "restrict_visibility_rules": [
-              "gc_mq,setting_scrub_shuffle_yes"
-            ],
-            "x": 1409,
-            "y": 176
-          }
-        ]
       }
     ]
   },
@@ -2173,8 +2028,8 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_mq,[carpenter_rescue],$gtg_card",
-      "gtg_mq,gerudo_fortress_open,$gtg_card"
+      "[carpenter_rescue],$gtg_card",
+      "gerudo_fortress_open,$gtg_card"
     ],
     "sections": [
       {
@@ -2307,7 +2162,7 @@
       {
         "map": "adult",
         "restrict_visibility_rules": [
-          "gtg_mq"
+          "gtg_reg"
         ],
         "x": 481,
         "y": 474
