@@ -77,9 +77,6 @@
               },
               {
                 "name": "Kokiri Shop",
-                "access_rules": [
-                  "setting_shopsanity_yes"
-                ],
                 "sections": [
                   {
                     "name": "Item 1",
@@ -105,16 +102,16 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "setting_shopsanity_yes"
+                    "restrict_visibility_rules": [
+                      "setting_shopsanity_no"
                     ],
                     "x": 2220,
                     "y": 917
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "setting_shopsanity_yes"
+                    "restrict_visibility_rules": [
+                      "setting_shopsanity_no"
                     ],
                     "x": 2220,
                     "y": 917
@@ -371,9 +368,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 2149,
                     "y": 776
                   },
@@ -534,9 +528,6 @@
                   {
                     "name": "LW Grotto Deku Scrub Arrows",
                     "short_name": "Arrows",
-                    "access_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
                     ],
@@ -548,9 +539,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 2192,
                     "y": 724
                   },
@@ -751,9 +739,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 2180,
                     "y": 686
                   },
@@ -851,10 +836,6 @@
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2,[ocarina],[minuet]",
-                      "sword2,[ocarina],[saria]"
-                    ],
                     "x": 2190,
                     "y": 635
                   }
@@ -1025,9 +1006,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1152,
                     "y": 481
                   },
@@ -1058,9 +1036,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1141,
                     "y": 999
                   },
@@ -1108,9 +1083,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1372,
                     "y": 440
                   },
@@ -1135,9 +1107,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1427,
                     "y": 925
                   },
@@ -1194,17 +1163,11 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1552,
                     "y": 406
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "$can_blast,sword2"
-                    ],
                     "x": 1552,
                     "y": 406
                   }
@@ -1248,19 +1211,11 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives,dinsfire,magic",
-                      "{$hintable}"
-                    ],
                     "x": 972,
                     "y": 658
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "sword2,hammer,$has_fire",
-                      "{$hintable}"
-                    ],
                     "x": 972,
                     "y": 658
                   }
@@ -1502,9 +1457,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "scale2"
-                        ],
                         "x": 961,
                         "y": 1200
                       },
@@ -2082,9 +2034,6 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "$has_explosives"
-                    ],
                     "x": 1787,
                     "y": 381
                   },
@@ -2426,7 +2375,7 @@
               {
                 "name": "Kakariko Potion Shop",
                 "access_rules": [
-                  "setting_shopsanity_yes,sword2"
+                  "sword2"
                 ],
                 "sections": [
                   {
@@ -2453,8 +2402,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "setting_shopsanity_yes"
+                    "restrict_visibility_rules": [
+                      "setting_shopsanity_no"
                     ],
                     "x": 1814,
                     "y": 341
@@ -2464,7 +2413,7 @@
               {
                 "name": "Kakariko Bazaar",
                 "access_rules": [
-                  "setting_shopsanity_yes,sword2"
+                  "sword2"
                 ],
                 "sections": [
                   {
@@ -2491,8 +2440,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "setting_shopsanity_yes"
+                    "restrict_visibility_rules": [
+                      "setting_shopsanity_no"
                     ],
                     "x": 1780,
                     "y": 347
@@ -3000,9 +2949,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1606,
                         "y": 98
                       },
@@ -3215,12 +3161,12 @@
                   {
                     "name": "Goron Shop",
                     "access_rules": [
-                      "setting_shopsanity_yes,$has_explosives",
-                      "setting_shopsanity_yes,lift1",
-                      "setting_shopsanity_yes,sword2,bow",
-                      "setting_shopsanity_yes,dinsfire,magic",
-                      "setting_shopsanity_yes,ocarina,lullaby,sticks,postzelda",
-                      "setting_shopsanity_yes,ocarina,lullaby,sticks,sword2,hammer"
+                      "$has_explosives",
+                      "lift1",
+                      "sword2,bow",
+                      "dinsfire,magic",
+                      "ocarina,lullaby,sticks,postzelda",
+                      "ocarina,lullaby,sticks,sword2,hammer"
                     ],
                     "sections": [
                       {
@@ -3247,16 +3193,16 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "setting_shopsanity_yes"
+                        "restrict_visibility_rules": [
+                          "setting_shopsanity_no"
                         ],
                         "x": 1646,
                         "y": 128
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "setting_shopsanity_yes"
+                        "restrict_visibility_rules": [
+                          "setting_shopsanity_no"
                         ],
                         "x": 1646,
                         "y": 128
@@ -3360,19 +3306,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives",
-                          "lift1"
-                        ],
                         "x": 1744,
                         "y": 221
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2,hammer",
-                          "sword2,$has_explosives"
-                        ],
                         "x": 1744,
                         "y": 221
                       }
@@ -3416,9 +3354,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1764,
                         "y": 66
                       },
@@ -3493,9 +3428,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1730,
                         "y": 190
                       },
@@ -3729,9 +3661,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives"
-                        ],
                         "x": 1798,
                         "y": 42
                       },
@@ -4149,9 +4078,6 @@
                   },
                   {
                     "name": "Bombchu Shop",
-                    "access_rules": [
-                      "setting_shopsanity_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4177,8 +4103,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "setting_shopsanity_yes"
+                        "restrict_visibility_rules": [
+                          "setting_shopsanity_no"
                         ],
                         "x": 1386,
                         "y": 360
@@ -4188,9 +4114,6 @@
                   {
                     "name": "Castle Town Potion Shop",
                     "short_name": "Market Potion Shop",
-                    "access_rules": [
-                      "setting_shopsanity_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4216,8 +4139,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "setting_shopsanity_yes"
+                        "restrict_visibility_rules": [
+                          "setting_shopsanity_no"
                         ],
                         "x": 1493,
                         "y": 325
@@ -4227,9 +4150,6 @@
                   {
                     "name": "Castle Town Bazaar",
                     "short_name": "Market Bazaar",
-                    "access_rules": [
-                      "setting_shopsanity_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4255,8 +4175,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "setting_shopsanity_yes"
+                        "restrict_visibility_rules": [
+                          "setting_shopsanity_no"
                         ],
                         "x": 1493,
                         "y": 355
@@ -4724,10 +4644,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 2092,
                         "y": 540
                       },
@@ -4757,18 +4673,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 2037,
                         "y": 474
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2,[hoverboots]"
-                        ],
                         "x": 2037,
                         "y": 474
                       }
@@ -4793,18 +4702,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 2347,
                         "y": 425
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2,[hoverboots]"
-                        ],
                         "x": 2347,
                         "y": 425
                       }
@@ -4835,10 +4737,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$has_explosives",
-                          "scale1"
-                        ],
                         "x": 1940,
                         "y": 505
                       },
@@ -5196,10 +5094,10 @@
               {
                 "name": "Zora Shop",
                 "access_rules": [
-                  "setting_shopsanity_yes,$has_explosives,[ocarina],[lullaby]",
-                  "setting_shopsanity_yes,scale1",
-                  "setting_shopsanity_yes,sword2,ocarina,lullaby,$has_bottle",
-                  "setting_shopsanity_yes,sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
+                  "$has_explosives,[ocarina],[lullaby]",
+                  "scale1",
+                  "sword2,ocarina,lullaby,$has_bottle",
+                  "sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
                 ],
                 "sections": [
                   {
@@ -5226,16 +5124,16 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "visibility_rules": [
-                      "setting_shopsanity_yes"
+                    "restrict_visibility_rules": [
+                      "setting_shopsanity_no"
                     ],
                     "x": 2619,
                     "y": 499
                   },
                   {
                     "map": "adult",
-                    "visibility_rules": [
-                      "$has_bottle,setting_shopsanity_yes"
+                    "restrict_visibility_rules": [
+                      "setting_shopsanity_no"
                     ],
                     "x": 2619,
                     "y": 499
@@ -5260,17 +5158,11 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$child_fountain"
-                        ],
                         "x": 2553,
                         "y": 333
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "$adult_fountain"
-                        ],
                         "x": 2553,
                         "y": 333
                       }
@@ -5491,10 +5383,6 @@
                       },
                       {
                         "map": "adult",
-                        "visibility_rules": [
-                          "sword2,longshot",
-                          "sword2,$gerudo_bridge,hoverboots,[longshot]"
-                        ],
                         "x": 654,
                         "y": 633
                       }
@@ -5963,9 +5851,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "visibility_rules": [
-                          "$child_colossus"
-                        ],
                         "x": 276,
                         "y": 297
                       },

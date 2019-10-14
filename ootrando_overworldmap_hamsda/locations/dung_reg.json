@@ -3,8 +3,8 @@
     "name": "Deku Tree",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "deku_reg,open_forest",
-      "deku_reg,sword1,shield1"
+      "open_forest",
+      "sword1,shield1"
     ],
     "sections": [
       {
@@ -110,8 +110,8 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
-          "deku_reg"
+        "restrict_visibility_rules": [
+          "deku_mq"
         ],
         "x": 2426,
         "y": 830
@@ -122,8 +122,8 @@
     "name": "Dodongos Cavern",
     "parent": "Death Mountain",
     "access_rules": [
-      "dodongo_reg,$can_blast",
-      "dodongo_reg,lift1"
+      "$can_blast",
+      "lift1"
     ],
     "sections": [
       {
@@ -363,16 +363,16 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
-          "dodongo_reg"
+        "restrict_visibility_rules": [
+          "dodongo_mq"
         ],
         "x": 1684,
         "y": 220
       },
       {
         "map": "adult",
-        "visibility_rules": [
-          "dodongo_reg"
+        "restrict_visibility_rules": [
+          "dodongo_mq"
         ],
         "x": 1684,
         "y": 220
@@ -383,9 +383,9 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "jabu_reg,$child_fountain,bottle,sling",
-      "jabu_reg,$child_fountain,bottle,$has_explosives",
-      "jabu_reg,$child_fountain,bottle,boomerang"
+      "$child_fountain,bottle,sling",
+      "$child_fountain,bottle,$has_explosives",
+      "$child_fountain,bottle,boomerang"
     ],
     "sections": [
       {
@@ -509,8 +509,8 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
-          "jabu_reg"
+        "restrict_visibility_rules": [
+          "jabu_mq"
         ],
         "x": 2488,
         "y": 328
@@ -521,7 +521,7 @@
     "name": "Ice Cavern",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "ice_reg,$adult_fountain,$has_bottle"
+      "$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -610,8 +610,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "ice_reg"
+        "restrict_visibility_rules": [
+          "ice_mq"
         ],
         "x": 2501,
         "y": 276
@@ -622,8 +622,8 @@
     "name": "Forest Temple",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "forest_reg,sword2,hookshot,[ocarina],[saria]",
-      "forest_reg,sword2,hookshot,[ocarina],[minuet]"
+      "sword2,hookshot,[ocarina],[saria]",
+      "sword2,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -924,8 +924,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "forest_reg"
+        "restrict_visibility_rules": [
+          "forest_mq"
         ],
         "x": 2148,
         "y": 596
@@ -936,7 +936,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "fire_reg,$dmc_central,$has_goron_tunic"
+      "$dmc_central,$has_goron_tunic"
     ],
     "sections": [
       {
@@ -1202,8 +1202,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "fire_reg"
+        "restrict_visibility_rules": [
+          "fire_mq"
         ],
         "x": 1912,
         "y": 80
@@ -1214,8 +1214,8 @@
     "name": "Water Temple",
     "parent": "Lake Hylia",
     "access_rules": [
-      "water_reg,sword2,hookshot,ironboots",
-      "water_reg,sword2,hookshot,scale2,[longshot]"
+      "sword2,hookshot,ironboots",
+      "sword2,hookshot,scale2,[longshot]"
     ],
     "sections": [
       {
@@ -1506,8 +1506,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "water_reg"
+        "restrict_visibility_rules": [
+          "water_mq"
         ],
         "x": 1015,
         "y": 1380
@@ -1518,10 +1518,10 @@
     "name": "Shadow Temple",
     "parent": "Graveyard",
     "access_rules": [
-      "shadow_reg,ocarina,nocturne,dinsfire,magic",
-      "shadow_reg,ocarina,nocturne,dinsfire,magic",
-      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic",
-      "shadow_reg,ocarina,nocturne,bow,firearrow,[dinsfire],magic"
+      "ocarina,nocturne,dinsfire,magic",
+      "ocarina,nocturne,dinsfire,magic",
+      "ocarina,nocturne,bow,firearrow,[dinsfire],magic",
+      "ocarina,nocturne,bow,firearrow,[dinsfire],magic"
     ],
     "sections": [
       {
@@ -1780,8 +1780,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "shadow_reg"
+        "restrict_visibility_rules": [
+          "shadow_mq"
         ],
         "x": 2144,
         "y": 326
@@ -1792,7 +1792,7 @@
     "name": "Spirit Temple",
     "parent": "Desert Colossus",
     "access_rules": [
-      "spirit_reg,$adult_colossus"
+      "$adult_colossus"
     ],
     "sections": [
       {
@@ -2138,16 +2138,16 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
-          "spirit_reg"
+        "restrict_visibility_rules": [
+          "spirit_mq"
         ],
         "x": 85,
         "y": 301
       },
       {
         "map": "adult",
-        "visibility_rules": [
-          "spirit_reg"
+        "restrict_visibility_rules": [
+          "spirit_mq"
         ],
         "x": 85,
         "y": 301
@@ -2158,8 +2158,8 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "botw_reg,ocarina,storm,$can_child_attack",
-      "botw_reg,ocarina,storm,nuts"
+      "ocarina,storm,$can_child_attack",
+      "ocarina,storm,nuts"
     ],
     "sections": [
       {
@@ -2327,8 +2327,8 @@
     "map_locations": [
       {
         "map": "child",
-        "visibility_rules": [
-          "botw_reg"
+        "restrict_visibility_rules": [
+          "botw_mq"
         ],
         "x": 1890,
         "y": 383
@@ -2339,12 +2339,12 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_reg,bridge_open,sword2",
-      "gc_reg,bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "gc_reg,bridge_stones,sword2,stones:3",
-      "gc_reg,bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "gc_reg,bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "gc_reg,bridge_100gs,sword2,token:100"
+      "bridge_open,sword2",
+      "bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "bridge_stones,sword2,stones:3",
+      "bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "bridge_100gs,sword2,token:100"
     ],
     "sections": [
       {
@@ -2445,8 +2445,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "gc_reg"
+        "restrict_visibility_rules": [
+          "gc_mq"
         ],
         "x": 1439,
         "y": 206
@@ -2513,9 +2513,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "gerudo_fortress_normal",
-          "gerudo_fortress_fast"
+        "restrict_visibility_rules": [
+          "gerudo_fortress_open"
         ],
         "x": 503,
         "y": 392
@@ -2526,8 +2525,8 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_reg,[carpenter_rescue],$gtg_card",
-      "gtg_reg,gerudo_fortress_open,$gtg_card"
+      "[carpenter_rescue],$gtg_card",
+      "gerudo_fortress_open,$gtg_card"
     ],
     "sections": [
       {
@@ -2774,8 +2773,8 @@
     "map_locations": [
       {
         "map": "adult",
-        "visibility_rules": [
-          "gtg_reg"
+        "restrict_visibility_rules": [
+          "gtg_mq"
         ],
         "x": 481,
         "y": 444

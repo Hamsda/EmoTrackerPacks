@@ -59,7 +59,7 @@
       },
       {
         "img": "images/label_deku_red.png",
-        "codes": "deku_label,deku_reg,deku_mq",
+        "codes": "deku_label",
         "inherit_codes": false
       }
     ]
@@ -118,7 +118,7 @@
       },
       {
         "img": "images/label_dodongo_red.png",
-        "codes": "dodongo_label,dodongo_reg,dodongo_mq",
+        "codes": "dodongo_label",
         "inherit_codes": false
       }
     ]
@@ -177,7 +177,7 @@
       },
       {
         "img": "images/label_jabu_red.png",
-        "codes": "jabu_label,jabu_reg,jabu_mq",
+        "codes": "jabu_label",
         "inherit_codes": false
       }
     ]
@@ -236,7 +236,7 @@
       },
       {
         "img": "images/label_forest_red.png",
-        "codes": "forest_label,forest_reg,forest_mq",
+        "codes": "forest_label",
         "inherit_codes": false
       }
     ]
@@ -308,7 +308,7 @@
       },
       {
         "img": "images/label_fire_red.png",
-        "codes": "fire_label,fire_reg,fire_mq",
+        "codes": "fire_label",
         "inherit_codes": false
       }
     ]
@@ -380,7 +380,7 @@
       },
       {
         "img": "images/label_water_red.png",
-        "codes": "water_label,water_reg,water_mq",
+        "codes": "water_label",
         "inherit_codes": false
       }
     ]
@@ -452,7 +452,7 @@
       },
       {
         "img": "images/label_spirit_red.png",
-        "codes": "spirit_label,spirit_reg,spirit_mq",
+        "codes": "spirit_label",
         "inherit_codes": false
       }
     ]
@@ -524,7 +524,7 @@
       },
       {
         "img": "images/label_shadow_red.png",
-        "codes": "shadow_label,shadow_reg,shadow_mq",
+        "codes": "shadow_label",
         "inherit_codes": false
       }
     ]
@@ -596,7 +596,7 @@
       },
       {
         "img": "images/label_botw_red.png",
-        "codes": "botw_label,botw_reg,botw_mq",
+        "codes": "botw_label",
         "inherit_codes": false
       }
     ]
@@ -625,7 +625,7 @@
       },
       {
         "img": "images/label_ice_red.png",
-        "codes": "ice_label,ice_reg,ice_mq",
+        "codes": "ice_label",
         "inherit_codes": false
       }
     ]
@@ -660,7 +660,7 @@
       },
       {
         "img": "images/label_gtg_red.png",
-        "codes": "gtg_label,gtg_reg,gtg_mq",
+        "codes": "gtg_label",
         "inherit_codes": false
       }
     ]
@@ -689,7 +689,7 @@
       },
       {
         "img": "images/label_gc_red.png",
-        "codes": "gc_label,gc_reg,gc_mq",
+        "codes": "gc_label",
         "inherit_codes": false
       }
     ]

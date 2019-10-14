@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.0.2
+
+- removed visibility restrictions based on items
+- fixed broken visibility options for dungeons and shops
+
 ## 2.6.0.1
 
 - fixed Gerudo Fortress not working correctly in non-keysanity
