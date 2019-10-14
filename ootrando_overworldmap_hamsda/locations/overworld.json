@@ -528,9 +528,6 @@
                   {
                     "name": "LW Grotto Deku Scrub Arrows",
                     "short_name": "Arrows",
-                    "access_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
                     ],
@@ -839,10 +836,6 @@
                   },
                   {
                     "map": "adult",
-                    "restrict_visibility_rules": [
-                      "sword2,[ocarina],[minuet]",
-                      "sword2,[ocarina],[saria]"
-                    ],
                     "x": 2190,
                     "y": 635
                   }
@@ -1464,9 +1457,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "restrict_visibility_rules": [
-                          "scale2"
-                        ],
                         "x": 961,
                         "y": 1200
                       },
@@ -5393,10 +5383,6 @@
                       },
                       {
                         "map": "adult",
-                        "restrict_visibility_rules": [
-                          "sword2,longshot",
-                          "sword2,$gerudo_bridge,hoverboots,[longshot]"
-                        ],
                         "x": 654,
                         "y": 633
                       }
