@@ -2459,18 +2459,14 @@
     "sections": [
       {
         "name": "North F1 Carpenter",
-        "access_rules": [
-          "gerudo_fortress_normal",
-          "gerudo_fortress_fast"
-        ],
         "item_count": 1
       },
       {
         "name": "North F2 Carpenter",
         "access_rules": [
-          "gerudo_fortress_normal,[bow]",
-          "gerudo_fortress_normal,[hookshot]",
-          "gerudo_fortress_normal,[hoverboots]"
+          "[bow]",
+          "[hookshot]",
+          "[hoverboots]"
         ],
         "visibility_rules": [
           "gerudo_fortress_normal"
@@ -2479,9 +2475,6 @@
       },
       {
         "name": "South F1 Carpenter",
-        "access_rules": [
-          "gerudo_fortress_normal"
-        ],
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
@@ -2489,9 +2482,6 @@
       },
       {
         "name": "South F2 Carpenter",
-        "access_rules": [
-          "gerudo_fortress_normal"
-        ],
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
@@ -2506,7 +2496,6 @@
           "gerudo_fortress_fast,gf_small_keys:1"
         ],
         "capture_item": true,
-        "hosted_item": "carpenter_rescue",
         "item_count": 1
       }
     ],
@@ -2525,8 +2514,7 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "[carpenter_rescue],$gtg_card",
-      "gerudo_fortress_open,$gtg_card"
+      "$gerudo_card"
     ],
     "sections": [
       {

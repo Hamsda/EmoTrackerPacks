@@ -12,42 +12,6 @@
     "codes": "gerudocard,card"
   },
   {
-    "name": "Carpenter Rescue",
-    "type": "toggle",
-    "img": "images/gerudosymbol.png",
-    "codes": "carpenter_rescue"
-  },
-  {
-    "name": "Gerudo Card and Carpenter Rescue",
-    "type": "composite_toggle",
-    "codes": "fortress",
-    "item_left": "card",
-    "item_right": "carpenter_rescue",
-    "images": [
-      {
-        "left": false,
-        "right": false,
-        "img": "images/gerudofortress.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "left": true,
-        "right": false,
-        "img": "images/gerudocard.png"
-      },
-      {
-        "left": false,
-        "right": true,
-        "img": "images/gerudosymbol.png"
-      },
-      {
-        "left": true,
-        "right": true,
-        "img": "images/gerudofortress.png"
-      }
-    ]
-  },
-  {
     "name": "Gold Skulltula Tokens",
     "type": "consumable",
     "img": "images/skulltula_token.png",

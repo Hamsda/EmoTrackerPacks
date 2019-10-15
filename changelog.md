@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Gerudo Fortress guard behavior around card
+
 ## 2.6.0.2
 
 - removed visibility restrictions based on items

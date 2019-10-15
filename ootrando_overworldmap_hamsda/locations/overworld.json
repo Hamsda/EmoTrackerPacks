@@ -5686,16 +5686,14 @@
                           {
                             "name": "1000",
                             "access_rules": [
-                              "ocarina,epona,bow,[carpenter_rescue]",
-                              "ocarina,epona,bow,gerudo_fortress_open"
+                              "ocarina,epona,bow,$gerudo_card"
                             ],
                             "item_count": 1
                           },
                           {
                             "name": "1500",
                             "access_rules": [
-                              "ocarina,epona,bow,[carpenter_rescue]",
-                              "ocarina,epona,bow,gerudo_fortress_open",
+                              "ocarina,epona,bow,$gerudo_card",
                               "{$hintable}"
                             ],
                             "capture_item": true,
@@ -5713,8 +5711,7 @@
                       {
                         "name": "Archery Range",
                         "access_rules": [
-                          "setting_skulltulas_overworld,carpenter_rescue",
-                          "setting_skulltulas_overworld,gerudo_fortress_open"
+                          "setting_skulltulas_overworld,$gerudo_card"
                         ],
                         "sections": [
                           {

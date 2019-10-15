@@ -2028,8 +2028,7 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "[carpenter_rescue],$gtg_card",
-      "gerudo_fortress_open,$gtg_card"
+      "$gerudo_card"
     ],
     "sections": [
       {
