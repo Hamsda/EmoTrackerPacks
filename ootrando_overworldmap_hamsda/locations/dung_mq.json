@@ -151,7 +151,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "deku_reg"
         ],
         "x": 2426,
@@ -370,7 +370,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "dodongo_reg"
         ],
         "x": 1684,
@@ -378,7 +378,7 @@
       },
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "dodongo_reg"
         ],
         "x": 1684,
@@ -564,7 +564,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "jabu_reg"
         ],
         "x": 2458,
@@ -659,7 +659,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "ice_reg"
         ],
         "x": 2471,
@@ -869,7 +869,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "forest_reg"
         ],
         "x": 2178,
@@ -1070,7 +1070,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "fire_reg"
         ],
         "x": 1912,
@@ -1227,7 +1227,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "water_reg"
         ],
         "x": 985,
@@ -1472,7 +1472,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "shadow_reg"
         ],
         "x": 2144,
@@ -1763,7 +1763,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "spirit_reg"
         ],
         "x": 55,
@@ -1771,7 +1771,7 @@
       },
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "spirit_reg"
         ],
         "x": 55,
@@ -1880,7 +1880,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "botw_reg"
         ],
         "x": 1920,
@@ -2016,7 +2016,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "gc_reg"
         ],
         "x": 1409,
@@ -2028,8 +2028,7 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "[carpenter_rescue],$gtg_card",
-      "gerudo_fortress_open,$gtg_card"
+      "$gerudo_card"
     ],
     "sections": [
       {
@@ -2161,7 +2160,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "gtg_reg"
         ],
         "x": 481,

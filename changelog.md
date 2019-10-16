@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.6.0.3
+
+- fixed Gerudo Fortress guard behavior around card
+- fixed visibility after latest EmoTracker update
+
 ## 2.6.0.2
 
 - removed visibility restrictions based on items

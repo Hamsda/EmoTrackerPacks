@@ -78,7 +78,6 @@ function update_fortress()
   local setting_fast = has("gerudo_fortress_fast")
   local setting_open = has("gerudo_fortress_open")
   
-  local item_carpenters = Tracker:FindObjectForCode("carpenter_rescue")
   local item_card = Tracker:FindObjectForCode("gerudocard")
   local item_gf_keys = Tracker:FindObjectForCode("gf_small_keys")
 
@@ -92,14 +91,6 @@ function update_fortress()
     end
     if not has_keys then
       item_gf_keys.AcquiredCount = item_gf_keys.MaxCount
-    end
-  end
-
-  if item_carpenters then
-    if setting_open then
-      item_carpenters.Active = true
-    elseif not_like_cache("gerudo_fortress_open", setting_open) then
-      item_carpenters.Active = false
     end
   end
 
