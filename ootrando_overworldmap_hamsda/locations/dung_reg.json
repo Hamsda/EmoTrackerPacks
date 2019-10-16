@@ -110,7 +110,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "deku_mq"
         ],
         "x": 2426,
@@ -363,7 +363,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "dodongo_mq"
         ],
         "x": 1684,
@@ -371,7 +371,7 @@
       },
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "dodongo_mq"
         ],
         "x": 1684,
@@ -509,7 +509,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "jabu_mq"
         ],
         "x": 2488,
@@ -610,7 +610,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "ice_mq"
         ],
         "x": 2501,
@@ -924,7 +924,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "forest_mq"
         ],
         "x": 2148,
@@ -1202,7 +1202,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "fire_mq"
         ],
         "x": 1912,
@@ -1506,7 +1506,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "water_mq"
         ],
         "x": 1015,
@@ -1780,7 +1780,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "shadow_mq"
         ],
         "x": 2144,
@@ -2138,7 +2138,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "spirit_mq"
         ],
         "x": 85,
@@ -2146,7 +2146,7 @@
       },
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "spirit_mq"
         ],
         "x": 85,
@@ -2327,7 +2327,7 @@
     "map_locations": [
       {
         "map": "child",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "botw_mq"
         ],
         "x": 1890,
@@ -2445,7 +2445,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "gc_mq"
         ],
         "x": 1439,
@@ -2502,7 +2502,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "gerudo_fortress_open"
         ],
         "x": 503,
@@ -2761,7 +2761,7 @@
     "map_locations": [
       {
         "map": "adult",
-        "restrict_visibility_rules": [
+        "force_invisibility_rules": [
           "gtg_mq"
         ],
         "x": 481,
