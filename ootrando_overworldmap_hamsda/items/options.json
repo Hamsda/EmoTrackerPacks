@@ -89,32 +89,32 @@
     "stages": [
       {
         "img": "images/setting_bridge_open.png",
-        "codes": "setting_bridge,bridge_open",
+        "codes": "setting_bridge,setting_bridge_open",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_vanilla.png",
-        "codes": "setting_bridge,bridge_vanilla",
+        "codes": "setting_bridge,setting_bridge_vanilla",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_stones.png",
-        "codes": "setting_bridge,bridge_stones",
+        "codes": "setting_bridge,setting_bridge_stones",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_medallions.png",
-        "codes": "setting_bridge,bridge_medallions",
+        "codes": "setting_bridge,setting_bridge_medallions",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_dungeons.png",
-        "codes": "setting_bridge,bridge_dungeons",
+        "codes": "setting_bridge,setting_bridge_dungeons",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_100gs.png",
-        "codes": "setting_bridge,bridge_100gs",
+        "codes": "setting_bridge,setting_bridge_100gs",
         "inherit_codes": false
       }
     ]

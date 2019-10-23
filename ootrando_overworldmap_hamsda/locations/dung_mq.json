@@ -1892,12 +1892,12 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "bridge_open,sword2",
-      "bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "bridge_stones,sword2,stones:3",
-      "bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "bridge_100gs,sword2,token:100"
+      "setting_bridge_open,sword2",
+      "setting_bridge_vanilla,sword2,lacs_meds:2,lightarrow",
+      "setting_bridge_stones,sword2,stones:3",
+      "setting_bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "setting_bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "setting_bridge_100gs,sword2,token:100"
     ],
     "sections": [
       {
