@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- moved settings into new popup window
+
 ## 2.6.0.3
 
 - fixed Gerudo Fortress guard behavior around card
