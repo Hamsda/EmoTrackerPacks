@@ -4,6 +4,7 @@
 
 - moved settings into new popup window
 - added trials setting
+- changed bean plant to only show when setting enabled
 
 ## 2.6.0.3
 

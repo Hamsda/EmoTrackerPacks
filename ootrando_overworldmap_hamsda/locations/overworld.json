@@ -611,6 +611,9 @@
                     "access_rules": [
                       "beans,setting_plant_yes,bean_stage_no"
                     ],
+                    "visibility_rules": [
+                      "setting_plant_yes"
+                    ],
                     "hosted_item": "bean_stage_yes"
                   },
                   {
@@ -1543,6 +1546,9 @@
                         "name": "Plant Bean",
                         "access_rules": [
                           "beans,setting_plant_yes,bean_lake_no"
+                        ],
+                        "visibility_rules": [
+                          "setting_plant_yes"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
@@ -2868,6 +2874,9 @@
                         "access_rules": [
                           "beans,setting_plant_yes,bean_graveyard_no"
                         ],
+                        "visibility_rules": [
+                          "setting_plant_yes"
+                        ],
                         "hosted_item": "bean_graveyard_yes"
                       },
                       {
@@ -3504,6 +3513,9 @@
                           "setting_plant_yes,beans,bean_trail_no,$has_explosives",
                           "setting_plant_yes,beans,bean_trail_no,lift1"
                         ],
+                        "visibility_rules": [
+                          "setting_plant_yes"
+                        ],
                         "hosted_item": "bean_trail_yes"
                       },
                       {
@@ -3892,6 +3904,9 @@
                         "name": "Plant Bean",
                         "access_rules": [
                           "beans,setting_plant_yes,bean_crater_no"
+                        ],
+                        "visibility_rules": [
+                          "setting_plant_yes"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
@@ -5954,6 +5969,9 @@
                         "name": "Plant Bean",
                         "access_rules": [
                           "beans,setting_plant_yes,bean_colossus_no"
+                        ],
+                        "visibility_rules": [
+                          "setting_plant_yes"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
