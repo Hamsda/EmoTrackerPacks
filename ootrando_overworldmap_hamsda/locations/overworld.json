@@ -342,6 +342,9 @@
                     "access_rules": [
                       "ocarina,saria,skull"
                     ],
+                    "visibility_rules": [
+                      "skull"
+                    ],
                     "hosted_item": "skullsold"
                   }
                 ],
@@ -455,6 +458,9 @@
                     "access_rules": [
                       "sword2,cojiro"
                     ],
+                    "visibility_rules": [
+                      "sword2,cojiro"
+                    ],
                     "hosted_item": "mushroom"
                   }
                 ],
@@ -472,6 +478,9 @@
                   {
                     "name": "Trade",
                     "access_rules": [
+                      "sword2,oddpotion"
+                    ],
+                    "visibility_rules": [
                       "sword2,oddpotion"
                     ],
                     "hosted_item": "saw"
@@ -1122,12 +1131,15 @@
               },
               {
                 "name": "Running Man",
-                "access_rules": [
-                  "bunny,stones:3"
-                ],
                 "sections": [
                   {
                     "name": "Sell Mask",
+                    "access_rules": [
+                      "bunny,stones:3"
+                    ],
+                    "visibility_rules": [
+                      "bunny"
+                    ],
                     "hosted_item": "bunnysold"
                   }
                 ],
@@ -1452,6 +1464,9 @@
                       {
                         "name": "Trade",
                         "access_rules": [
+                          "sword2,speedfrog"
+                        ],
+                        "visibility_rules": [
                           "sword2,speedfrog"
                         ],
                         "hosted_item": "eyedrops"
@@ -2262,6 +2277,9 @@
                     "access_rules": [
                       "sword2,pocketcucco"
                     ],
+                    "visibility_rules": [
+                      "sword2,pocketcucco"
+                    ],
                     "hosted_item": "cojiro"
                   }
                 ],
@@ -2281,11 +2299,17 @@
                     "access_rules": [
                       "letter"
                     ],
+                    "visibility_rules": [
+                      "letter"
+                    ],
                     "hosted_item": "lettershown"
                   },
                   {
                     "name": "Keaton",
                     "access_rules": [
+                      "keaton"
+                    ],
+                    "visibility_rules": [
                       "keaton"
                     ],
                     "hosted_item": "keatonsold"
@@ -2305,6 +2329,9 @@
                   {
                     "name": "Trade",
                     "access_rules": [
+                      "sword2,mushroom"
+                    ],
+                    "visibility_rules": [
                       "sword2,mushroom"
                     ],
                     "hosted_item": "oddpotion"
@@ -2817,12 +2844,15 @@
                   },
                   {
                     "name": "Spooky Kid",
-                    "access_rules": [
-                      "spooky"
-                    ],
                     "sections": [
                       {
                         "name": "Sell Mask",
+                        "access_rules": [
+                          "spooky"
+                        ],
+                        "visibility_rules": [
+                          "spooky"
+                        ],
                         "hosted_item": "spookysold"
                       }
                     ],
@@ -3390,11 +3420,17 @@
                         "access_rules": [
                           "brokensword"
                         ],
+                        "visibility_rules": [
+                          "brokensword"
+                        ],
                         "hosted_item": "prescription"
                       },
                       {
                         "name": "Trade",
                         "access_rules": [
+                          "eyedrops"
+                        ],
+                        "visibility_rules": [
                           "eyedrops"
                         ],
                         "hosted_item": "claimcheck"
@@ -4033,6 +4069,9 @@
                         "access_rules": [
                           "soldout"
                         ],
+                        "visibility_rules": [
+                          "soldout"
+                        ],
                         "hosted_item": "keaton"
                       }
                     ],
@@ -4346,6 +4385,9 @@
                         "access_rules": [
                           "childegg"
                         ],
+                        "visibility_rules": [
+                          "childegg"
+                        ],
                         "hosted_item": "childcucco"
                       }
                     ],
@@ -4372,6 +4414,9 @@
                       },
                       {
                         "name": "Zeldas Letter",
+                        "visibility_rules": [
+                          "childcucco"
+                        ],
                         "hosted_item": "letter"
                       }
                     ],
@@ -5064,6 +5109,9 @@
                         "access_rules": [
                           "prescription"
                         ],
+                        "visibility_rules": [
+                          "prescription"
+                        ],
                         "hosted_item": "speedfrog"
                       }
                     ],
@@ -5567,6 +5615,9 @@
                       {
                         "name": "Trade",
                         "access_rules": [
+                          "saw"
+                        ],
+                        "visibility_rules": [
                           "saw"
                         ],
                         "hosted_item": "brokensword"

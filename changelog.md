@@ -5,6 +5,7 @@
 - moved settings into new popup window
 - added trials setting
 - changed bean plant to only show when setting enabled
+- changed trade sequences to only show current step
 
 ## 2.6.0.3
 
