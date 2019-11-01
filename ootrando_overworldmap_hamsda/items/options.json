@@ -120,6 +120,14 @@
     ]
   },
   {
+    "name": "Trials Requirement",
+    "type": "consumable",
+    "img": "images/setting_trials.png",
+    "codes": "setting_trials",
+    "disabled_img_mods": "@enabled",
+    "max_quantity": 6
+  },
+  {
     "name": "Lens Requirement",
     "type": "progressive",
     "allow_disabled": false,

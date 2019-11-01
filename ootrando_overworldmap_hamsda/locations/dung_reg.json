@@ -2353,9 +2353,31 @@
         "item_count": 1
       },
       {
+        "name": "Forest Trial Clear",
+        "short_name": "Forest Trial",
+        "access_rules": [
+          "$can_LA,$has_fire"
+        ],
+        "visibility_rules": [
+          "setting_trials:1"
+        ],
+        "hosted_item": "trial_forest"
+      },
+      {
         "name": "Water Trial Chests",
         "short_name": "Water Trial",
         "item_count": 2
+      },
+      {
+        "name": "Water Trial Clear",
+        "short_name": "Water Trial",
+        "access_rules": [
+          "$has_bottle,hammer,$can_LA"
+        ],
+        "visibility_rules": [
+          "setting_trials:1"
+        ],
+        "hosted_item": "trial_water"
       },
       {
         "name": "Shadow Trial First Chest",
@@ -2379,6 +2401,30 @@
         "item_count": 1
       },
       {
+        "name": "Shadow Trial Clear",
+        "short_name": "Shadow Trial",
+        "access_rules": [
+          "$can_LA,hammer,firearrow,$can_see_with_lens",
+          "$can_LA,hammer,longshot,hoverboots",
+          "$can_LA,hammer,longshot,dinsfire,$can_see_with_lens"
+        ],
+        "visibility_rules": [
+          "setting_trials:1"
+        ],
+        "hosted_item": "trial_shadow"
+      },
+      {
+        "name": "Fire Trial Clear",
+        "short_name": "Fire Trial",
+        "access_rules": [
+          "$has_goron_tunic,lift3,$can_LA,longshot"
+        ],
+        "visibility_rules": [
+          "setting_trials:1"
+        ],
+        "hosted_item": "trial_fire"
+      },
+      {
         "name": "Light Trial Chests",
         "short_name": "Light Trial Front",
         "access_rules": [
@@ -2398,9 +2444,20 @@
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial Lullaby",
         "access_rules": [
-          "gc_small_keys:1,lift3,ocarina,lullaby"
+          "lift3,gc_small_keys:1,ocarina,lullaby"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Light Trial Clear",
+        "short_name": "Light Trial",
+        "access_rules": [
+          "lift3,$can_LA,hookshot,gc_small_keys:2,$can_see_with_lens"
+        ],
+        "visibility_rules": [
+          "setting_trials:1"
+        ],
+        "hosted_item": "trial_light"
       },
       {
         "name": "Spirit Trial First Chest",
@@ -2419,6 +2476,17 @@
         "item_count": 1
       },
       {
+        "name": "Spirit Trial Clear",
+        "short_name": "Spirit Trial",
+        "access_rules": [
+          "$can_LA,shield3,bombchu,[hookshot]"
+        ],
+        "visibility_rules": [
+          "setting_trials:1"
+        ],
+        "hosted_item": "trial_spirit"
+      },
+      {
         "name": "Deku Scrubs",
         "access_rules": [
           "$can_see_with_lens"
@@ -2434,8 +2502,7 @@
       {
         "name": "Castle Tower",
         "access_rules": [
-          "gc_small_keys:2,$can_LA,longshot,bombchu,shield3,lift3,$has_bottle,hammer,$has_fire,$can_see_with_lens,$has_goron_tunic",
-          "gc_small_keys:2,$can_LA,longshot,bombchu,shield3,lift3,$has_bottle,hammer,$has_fire,hoverboots,$has_goron_tunic"
+          "$trials_barrier_dispelled"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",

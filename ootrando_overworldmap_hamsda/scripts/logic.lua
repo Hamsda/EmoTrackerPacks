@@ -430,3 +430,16 @@ function hintable()
     return 0
   end
 end
+
+function trials_barrier_dispelled()
+  local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
+  local setting_trials = Tracker:FindObjectForCode("setting_trials").AcquiredCount
+  
+  if setting_trials == 0
+  or trials_cleared >= setting_trials 
+  then
+    return 1
+  else
+    return 0
+  end
+end

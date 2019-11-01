@@ -3,6 +3,7 @@
 ## x
 
 - moved settings into new popup window
+- added trials setting
 
 ## 2.6.0.3
 
