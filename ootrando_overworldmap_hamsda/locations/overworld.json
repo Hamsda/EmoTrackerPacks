@@ -5176,7 +5176,7 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$adult_fountain,ironboots,$has_zora_tunic",
+                          "$adult_fountain,ironboots,$FTR_or_zora",
                           "{$hintable}"
                         ],
                         "capture_item": true,

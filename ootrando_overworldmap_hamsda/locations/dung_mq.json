@@ -881,7 +881,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "$dmc_central,$has_goron_tunic"
+      "$dmc_central,$FTR_or_goron"
     ],
     "sections": [
       {
@@ -1082,8 +1082,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia",
     "access_rules": [
-      "sword2,ironboots,hookshot,$has_zora_tunic",
-      "sword2,scale2,[ironboots],hookshot,$has_zora_tunic"
+      "sword2,ironboots,hookshot,$FTR_or_zora",
+      "sword2,scale2,[ironboots],hookshot,$FTR_or_zora"
     ],
     "sections": [
       {
@@ -1995,8 +1995,8 @@
         "name": "Fire Trial Clear",
         "short_name": "Fire Trial",
         "access_rules": [
-          "$has_goron_tunic,lift3,$can_LA,longshot",
-          "$has_goron_tunic,lift3,$can_LA,hoverboots"
+          "$FTR_or_goron,lift3,$can_LA,longshot",
+          "$FTR_or_goron,lift3,$can_LA,hoverboots"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2178,10 +2178,10 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,bow",
-          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,longshot",
-          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Maze Right Chests,longshot",
-          "$has_fire,ironboots,$has_zora_tunic,@Gerudo Training Grounds MQ/Maze Right Chests,hookshot,bow",
+          "$has_fire,ironboots,$FTR_or_zora,@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,bow",
+          "$has_fire,ironboots,$FTR_or_zora,@Gerudo Training Grounds MQ/Dinolfos Chest,hoverboots,longshot",
+          "$has_fire,ironboots,$FTR_or_zora,@Gerudo Training Grounds MQ/Maze Right Chests,longshot",
+          "$has_fire,ironboots,$FTR_or_zora,@Gerudo Training Grounds MQ/Maze Right Chests,hookshot,bow",
           "{$hintable}"
         ],
         "capture_item": true,

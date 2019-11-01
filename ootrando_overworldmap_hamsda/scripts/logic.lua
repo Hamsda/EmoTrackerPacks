@@ -100,7 +100,7 @@ function can_see_with_lens()
   end
 end
 
-function has_goron_tunic()
+function FTR_or_goron()
   if has("setting_fewer_tunics_yes") 
   or has("redtunic") 
   then
@@ -110,7 +110,7 @@ function has_goron_tunic()
   end
 end
 
-function has_zora_tunic()
+function FTR_or_zora()
   if has("setting_fewer_tunics_yes") 
   or has("bluetunic") 
   then

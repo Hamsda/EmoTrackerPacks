@@ -936,7 +936,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "$dmc_central,$has_goron_tunic"
+      "$dmc_central,$FTR_or_goron"
     ],
     "sections": [
       {
@@ -952,7 +952,7 @@
       {
         "name": "Big Lava Room",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:2],$has_goron_tunic"
+          "fire_small_keys:1,[fire_small_keys:2],$FTR_or_goron"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1258,8 +1258,8 @@
       {
         "name": "Dive",
         "access_rules": [
-          "@Water Temple/Highest Water Level,$has_zora_tunic,ironboots",
-          "@Water Temple/Highest Water Level,$has_zora_tunic,[ironboots],longshot"
+          "@Water Temple/Highest Water Level,$FTR_or_zora,ironboots",
+          "@Water Temple/Highest Water Level,$FTR_or_zora,[ironboots],longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1309,8 +1309,8 @@
         "access_rules": [
           "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
           "@Water Temple/Dive,ocarina,lullaby,lift1,[ironboots],[hookshot],bombchu,scale",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$has_zora_tunic]",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$has_zora_tunic],bombchu,scale" //not relevant until I add tricks
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora]",
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora],bombchu,scale" //not relevant until I add tricks
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2417,7 +2417,7 @@
         "name": "Fire Trial Clear",
         "short_name": "Fire Trial",
         "access_rules": [
-          "$has_goron_tunic,lift3,$can_LA,longshot"
+          "$FTR_or_goron,lift3,$can_LA,longshot"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2776,7 +2776,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds/Lava Room,sword2,hookshot,ocarina,time,ironboots,$has_zora_tunic",
+          "@Gerudo Training Grounds/Lava Room,sword2,hookshot,ocarina,time,ironboots,$FTR_or_zora",
           "{$hintable}"
         ],
         "capture_item": true,
