@@ -17,10 +17,10 @@
               "header": "Items",
               "dock": "top",
               "header_content": {
-                  "type": "button_popup",
-                  "style": "settings",
-                  "popup_background": "#50212121",
-                  "layout": "options_popup"
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#50212121",
+                "layout": "options_popup"
               },
               "content": {
                 "type": "layout",
@@ -65,13 +65,9 @@
                     "content": [
                       {
                         "type": "map",
+                        "orientation": "vertical",
                         "maps": [
-                          "child"
-                        ]
-                      },
-                      {
-                        "type": "map",
-                        "maps": [
+                          "child",
                           "adult"
                         ]
                       }
@@ -128,10 +124,10 @@
                   "header": "Items",
                   "dock": "top",
                   "header_content": {
-                      "type": "button_popup",
-                      "style": "settings",
-                      "popup_background": "#50212121",
-                      "layout": "options_popup"
+                    "type": "button_popup",
+                    "style": "settings",
+                    "popup_background": "#50212121",
+                    "layout": "options_popup"
                   },
                   "content": {
                     "type": "layout",
@@ -182,6 +178,7 @@
               "icon": "images/map.png",
               "content": {
                 "type": "map",
+                "orientation": "horizontal",
                 "maps": [
                   "child",
                   "adult"
