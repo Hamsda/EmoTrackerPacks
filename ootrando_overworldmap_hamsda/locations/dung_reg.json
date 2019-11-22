@@ -10,6 +10,7 @@
       {
         "name": "Lobby Chest",
         "short_name": "Map",
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -23,6 +24,7 @@
       {
         "name": "Compass Room",
         "short_name": "Compass",
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 2
       },
       {
@@ -226,6 +228,7 @@
       {
         "name": "Map Chest",
         "short_name": "Map",
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -248,6 +251,7 @@
           "dinsfire,magic,sword1",
           "dinsfire,magic,$has_explosives"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -440,6 +444,7 @@
         "access_rules": [
           "@Jabu Jabus Belly/Depths"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -448,6 +453,7 @@
         "access_rules": [
           "@Jabu Jabus Belly/Depths"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -543,11 +549,13 @@
       {
         "name": "Map Chest",
         "short_name": "Map",
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
         "name": "Compass Chest",
         "short_name": "Compass",
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -748,6 +756,7 @@
       {
         "name": "First Chest",
         "short_name": "Tree",
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -769,6 +778,7 @@
         "access_rules": [
           "sword2"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -803,6 +813,7 @@
         "access_rules": [
           "@Forest Temple/Outdoors High Balconies"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -811,6 +822,7 @@
         "access_rules": [
           "@Forest Temple/Outdoors High Balconies"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -855,6 +867,7 @@
           "{$hintable}"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -863,6 +876,7 @@
         "access_rules": [
           "@Forest Temple/Bow Region,bow"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -879,6 +893,7 @@
         "access_rules": [
           "@Forest Temple/Bow Region,bow"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -1006,6 +1021,7 @@
       {
         "name": "Chest Near Boss",
         "short_name": "Near Boss",
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1058,6 +1074,7 @@
         "access_rules": [
           "@Fire Temple/Big Lava Room"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1066,6 +1083,7 @@
         "access_rules": [
           "@Fire Temple/Big Lava Room,sword2,$has_explosives"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1074,6 +1092,7 @@
         "access_rules": [
           "@Fire Temple/Maze Lower"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1082,6 +1101,7 @@
         "access_rules": [
           "@Fire Temple/Maze Lower"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1104,6 +1124,7 @@
           "@Fire Temple/Maze Lower,fire_small_keys:4,[fire_small_keys:5],bow",
           "@Fire Temple/Maze Upper"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -1112,6 +1133,7 @@
         "access_rules": [
           "@Fire Temple/Maze Upper"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1120,6 +1142,7 @@
         "access_rules": [
           "@Fire Temple/Maze Upper,$has_explosives"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1164,6 +1187,7 @@
         "access_rules": [
           "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7]"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -1174,6 +1198,7 @@
           "@Fire Temple/West Tower,hammer,[ocarina],[time],hoverboots",
           "@Fire Temple/West Tower,hammer,[ocarina],[time],$has_explosives"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1326,6 +1351,7 @@
           "@Water Temple/Dive,bow",
           "@Water Temple/Dive,$has_fire,$has_projectile|adult"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -1334,6 +1360,7 @@
         "access_rules": [
           "@Water Temple/Cracked Wall,$has_explosives"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1343,6 +1370,7 @@
           "@Water Temple/Dive,ocarina,lullaby,bow",
           "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1368,6 +1396,7 @@
           "@Water Temple/Dive,hookshot,ironboots",
           "@Water Temple/Dive,hookshot,ocarina,lullaby"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -1377,6 +1406,7 @@
           "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[hoverboots]",
           "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[longshot]"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1407,6 +1437,7 @@
           "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,bow",
           "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,dinsfire,magic"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1456,6 +1487,7 @@
           "{$hintable}"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1464,6 +1496,7 @@
         "access_rules": [
           "@Water Temple/Dragon Statue"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1581,6 +1614,7 @@
         "access_rules": [
           "@Shadow Temple/Beginning"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -1597,6 +1631,7 @@
         "access_rules": [
           "@Shadow Temple/First Beamos"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -1605,6 +1640,7 @@
         "access_rules": [
           "@Shadow Temple/First Beamos"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1657,6 +1693,7 @@
         "access_rules": [
           "@Shadow Temple/Huge Pit,[lift1]"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 2
       },
       {
@@ -1706,6 +1743,7 @@
         "access_rules": [
           "@Shadow Temple/Wind Tunnel"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 2
       },
       {
@@ -1762,6 +1800,7 @@
           "{$hintable}"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1901,6 +1940,7 @@
           "@Spirit Temple/Child Back,sticks",
           "@Spirit Temple/Child Back,dinsfire,magic"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1959,6 +1999,7 @@
           "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$child_colossus,$has_explosives,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,bow,[firearrow],[magic]"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -1997,6 +2038,7 @@
         "access_rules": [
           "@Spirit Temple/Sun Block Room Chest"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -2029,6 +2071,7 @@
         "access_rules": [
           "@Spirit Temple/Early Adult,hookshot,ocarina,lullaby"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -2040,6 +2083,7 @@
           "@Spirit Temple/Early Adult,bombchu",
           "@Spirit Temple/Early Adult,[bow],bombs"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2069,6 +2113,7 @@
         "access_rules": [
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,ocarina,lullaby"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2086,6 +2131,7 @@
         "access_rules": [
           "@Spirit Temple/Beyond Central Locked Door,$has_explosives,shield3"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2168,6 +2214,7 @@
         "access_rules": [
           "$can_see_with_lens"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2176,6 +2223,7 @@
         "access_rules": [
           "$can_see_with_lens"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2184,6 +2232,7 @@
         "access_rules": [
           "$can_see_with_lens"
         ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
@@ -2288,6 +2337,7 @@
           "lift1,dinsfire,magic",
           "lift1,sticks,[dinsfire],[magic]"
         ],
+        "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
@@ -2438,6 +2488,7 @@
         "access_rules": [
           "lift3,$can_see_with_lens"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2446,6 +2497,7 @@
         "access_rules": [
           "lift3,gc_small_keys:1,ocarina,lullaby"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2526,6 +2578,7 @@
     "sections": [
       {
         "name": "North F1 Carpenter",
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2538,6 +2591,7 @@
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2545,6 +2599,7 @@
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2552,6 +2607,7 @@
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2695,6 +2751,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Lobby,sword2,$has_explosives"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2703,6 +2760,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Lobby,sword2"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2719,6 +2777,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Like Like Room"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 4
       },
       {
@@ -2727,6 +2786,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Eye Statue Lower,sword2,bow"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2735,6 +2795,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Eye Statue Upper,sword2,bow"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2751,6 +2812,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Hammer Room,sword2,[hammer]"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2780,6 +2842,7 @@
           "{$hintable}"
         ],
         "capture_item": true,
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
@@ -2788,6 +2851,7 @@
         "access_rules": [
           "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_see_with_lens"
         ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {

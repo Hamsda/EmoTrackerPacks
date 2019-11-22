@@ -6,6 +6,7 @@
 - added trials setting
 - changed bean plant to only show when setting enabled
 - changed trade sequences to only show current step
+- added indicators for vanilla small key/map/compass chests
 
 ## 2.6.0.3
 
