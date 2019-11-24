@@ -90,6 +90,15 @@ function has_fire()
   end
 end
 
+function night_gs()
+  if has("setting_skulltulas_sun_on")
+  and (has("ocarina", 0) or has("sun", 0))
+  then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+  return 1
+end
+
 function can_see_with_lens()
   if has("setting_lens_wasteland") 
   or has("lens") 

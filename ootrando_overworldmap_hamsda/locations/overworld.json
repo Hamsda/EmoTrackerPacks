@@ -146,7 +146,7 @@
               {
                 "name": "Know It All House",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -201,7 +201,7 @@
               {
                 "name": "House of Twins",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -651,7 +651,7 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "setting_tokens_overworld,sword2"
+                  "setting_tokens_overworld,$night_gs,sword2"
                 ],
                 "sections": [
                   {
@@ -856,8 +856,8 @@
               {
                 "name": "Top of Maze",
                 "access_rules": [
-                  "setting_tokens_overworld,sword2,[ocarina],[saria]",
-                  "setting_tokens_overworld,sword2,[ocarina],[minuet]"
+                  "setting_tokens_overworld,$night_gs,sword2,[ocarina],[saria]",
+                  "setting_tokens_overworld,$night_gs,sword2,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -1591,7 +1591,7 @@
                   {
                     "name": "Lab Wall",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -1623,7 +1623,7 @@
                   {
                     "name": "Small Island",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -1650,7 +1650,7 @@
                   {
                     "name": "Giant Tree",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -1942,7 +1942,7 @@
                     "name": "Lon Lon Ranch Rain Shed",
                     "short_name": "Rain Shed",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -1967,7 +1967,7 @@
                     "name": "Lon Lon Ranch House Window",
                     "short_name": "House Window",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -1998,7 +1998,7 @@
                     "name": "Lon Lon Ranch Back Wall",
                     "short_name": "Back Wall",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -2485,7 +2485,7 @@
                 "name": "Kakariko Above Impa's House",
                 "short_name": "Above Impa's House",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2513,7 +2513,7 @@
                 "name": "Kakariko Tree",
                 "short_name": "Tree",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2538,7 +2538,7 @@
                 "name": "Kakariko Skulltula House",
                 "short_name": "Skulltula House",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2563,7 +2563,7 @@
                 "name": "Kakariko House Under Construction",
                 "short_name": "Under Construction",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2588,7 +2588,7 @@
                 "name": "Kakariko Guard's House",
                 "short_name": "Bazaar Wall",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2613,7 +2613,7 @@
                 "name": "Kakariko Watchtower",
                 "short_name": "Watchtower",
                 "access_rules": [
-                  "setting_tokens_overworld"
+                  "setting_tokens_overworld,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2868,7 +2868,7 @@
                     "name": "Graveyard Wall",
                     "short_name": "Wall",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -3176,7 +3176,7 @@
                     "name": "Goron City Center Platform",
                     "short_name": "Center Platform",
                     "access_rules": [
-                      "setting_tokens_overworld,sword2"
+                      "setting_tokens_overworld,$night_gs,sword2"
                     ],
                     "sections": [
                       {
@@ -3487,7 +3487,7 @@
                     "name": "Mountain Trail Above Dodongo's Cavern",
                     "short_name": "Rock Above DC",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -3516,7 +3516,7 @@
                     "name": "Mountain Trail Path to Crater",
                     "short_name": "Path to Crater",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -4834,7 +4834,7 @@
                   {
                     "name": "Zora River Ladder",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -4863,7 +4863,7 @@
                     "name": "Zora River Near Raised Grottos",
                     "short_name": "Plateau Wall",
                     "access_rules": [
-                      "setting_tokens_overworld,sword2"
+                      "setting_tokens_overworld,$night_gs,sword2"
                     ],
                     "sections": [
                       {
@@ -4895,7 +4895,7 @@
                     "name": "Zora River Above Bridge",
                     "short_name": "Wall Above Bridge",
                     "access_rules": [
-                      "setting_tokens_overworld,sword2"
+                      "setting_tokens_overworld,$night_gs,sword2"
                     ],
                     "sections": [
                       {
@@ -5127,7 +5127,7 @@
                   {
                     "name": "Frozen Waterfall",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -5284,7 +5284,7 @@
                     "name": "Zora's Fountain Hidden Cave",
                     "short_name": "Hidden Cave",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -5342,7 +5342,7 @@
                     "name": "Zora's Fountain Above the Log",
                     "short_name": "Wall near Log",
                     "access_rules": [
-                      "setting_tokens_overworld,$child_fountain"
+                      "setting_tokens_overworld,$night_gs,$child_fountain"
                     ],
                     "sections": [
                       {
@@ -5506,7 +5506,7 @@
                     "name": "Gerudo Valley Small Bridge",
                     "short_name": "Waterfall Near Entrance",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -5664,7 +5664,7 @@
                     "name": "Gerudo Valley Behind Tent",
                     "short_name": "GV Behind Tent",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -5696,7 +5696,7 @@
                     "name": "Gerudo Valley Pillar",
                     "short_name": "GV Pillar",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -5778,7 +5778,7 @@
                       {
                         "name": "Archery Range",
                         "access_rules": [
-                          "setting_tokens_overworld,$gerudo_card"
+                          "setting_tokens_overworld,$night_gs,$gerudo_card"
                         ],
                         "sections": [
                           {
@@ -5808,7 +5808,7 @@
                       {
                         "name": "Top Floor",
                         "access_rules": [
-                          "setting_tokens_overworld"
+                          "setting_tokens_overworld,$night_gs"
                         ],
                         "sections": [
                           {
@@ -6052,7 +6052,7 @@
                     "name": "Desert Colossus Tree",
                     "short_name": "Tree Near Oasis",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {
@@ -6084,7 +6084,7 @@
                     "name": "Desert Colossus Hill",
                     "short_name": "Top Of Platform",
                     "access_rules": [
-                      "setting_tokens_overworld"
+                      "setting_tokens_overworld,$night_gs"
                     ],
                     "sections": [
                       {

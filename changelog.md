@@ -8,6 +8,7 @@
 - changed trade sequences to only show current step
 - added indicators for vanilla small key/map/compass chests
 - added Adult Fountain setting
+- added night GS expect sun setting
 
 ## 2.6.0.3
 

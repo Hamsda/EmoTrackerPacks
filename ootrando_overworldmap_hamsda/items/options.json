@@ -133,6 +133,23 @@
     "max_quantity": 6
   },
   {
+    "name": "Nighttime Skulltulas Expect Sun's Song",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_skulltulas_sun_off.png",
+        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_off"
+      },
+      {
+        "img": "images/setting_skulltulas_sun_on.png",
+        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Lens Requirement",
     "type": "progressive",
     "allow_disabled": false,
