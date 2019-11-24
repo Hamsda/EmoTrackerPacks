@@ -80,7 +80,7 @@
           "$can_child_attack"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -96,7 +96,7 @@
           "{@Deku Tree MQ/Compass Chest,bombchu}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -112,7 +112,7 @@
           "{$hintable}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -127,7 +127,7 @@
           "{@Deku Tree MQ/Compass Chest,sling}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -256,7 +256,7 @@
           "ocarina,time,sword2"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -269,7 +269,7 @@
           "@Dodongos Cavern MQ/Larva Room"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -282,7 +282,7 @@
           "$can_blast"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -304,7 +304,7 @@
           "sword2,hookshot,dinsfire,magic"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -317,7 +317,7 @@
           "@Dodongos Cavern MQ/Under Grave"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -500,7 +500,7 @@
           "@Jabu Jabus Belly MQ/Boomerang Chest,boomerang,[ocarina],[time]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -514,7 +514,7 @@
           "@Jabu Jabus Belly MQ/Falling Like Like Room Chest,dinsfire,magic"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -528,7 +528,7 @@
           "{$hintable}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -542,7 +542,7 @@
           "@Jabu Jabus Belly MQ/Second Room Upper Chest"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -625,7 +625,7 @@
           "ocarina,time"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -639,7 +639,7 @@
           "longshot,hoverboots"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -649,7 +649,7 @@
         "name": "GS72 - Ice Block",
         "short_name": "Ice Block",
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -802,7 +802,7 @@
         "name": "GS60 - First Hallway",
         "short_name": "First Hallway",
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -815,7 +815,7 @@
           "forest_small_keys:1"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -829,7 +829,7 @@
           "forest_small_keys:1,bow"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -845,7 +845,7 @@
           "forest_small_keys:1,bow"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -859,7 +859,7 @@
           "forest_small_keys:1,bow"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1004,7 +1004,7 @@
           "hammer"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1018,7 +1018,7 @@
           "@Fire Temple MQ/Maze Upper Chest,longshot"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1032,7 +1032,7 @@
           "@Fire Temple MQ/Freestanding Key,[hoverboots]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1046,7 +1046,7 @@
           "{$hintable}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1060,7 +1060,7 @@
           "@Fire Temple MQ/Freestanding Key,$has_explosives"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1163,7 +1163,7 @@
           "water_small_keys:1,longshot,ironboots,dinsfire,magic,ocarina,scarecrow,bow,firearrow"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1177,7 +1177,7 @@
           "{$hintable}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1191,7 +1191,7 @@
           "water_small_keys:1,longshot,ironboots"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1204,7 +1204,7 @@
           "ocarina,lullaby,ironboots,dinsfire,magic"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1217,7 +1217,7 @@
           "ocarina,lullaby,ironboots,longshot"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1408,7 +1408,7 @@
           "{@Shadow Temple MQ/Falling Spikes Lower Chest}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1422,7 +1422,7 @@
           "@Shadow Temple MQ/Wind Hint Chest"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1435,7 +1435,7 @@
           "@Shadow Temple MQ/Wind Hint Chest"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1448,7 +1448,7 @@
           "@Shadow Temple MQ/Wind Hint Chest,shadow_small_keys:4,[shadow_small_keys:5],ocarina,lullaby"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1462,7 +1462,7 @@
           "@Shadow Temple MQ Skulltulas/GS84 - After Ship,bombchu,[bow]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1700,7 +1700,7 @@
           "[sword2],[lift2],[longshot],ocarina,requiem,bombchu,spirit_small_keys:2,time,boomerang"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1713,7 +1713,7 @@
           "@Spirit Temple MQ/Lower Adult Left Chest"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1726,7 +1726,7 @@
           "@Spirit Temple MQ/Lower Adult Right Chest"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1740,7 +1740,7 @@
           "sword2,lift2,longshot,bombchu,spirit_small_keys:3,[spirit_small_keys:7]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1753,7 +1753,7 @@
           "sword2,lift2,longshot,bombchu,spirit_small_keys:3,[spirit_small_keys:7]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1844,7 +1844,7 @@
           "$can_child_attack,$can_see_with_lens,$has_explosives"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1857,7 +1857,7 @@
           "$can_child_attack"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1870,7 +1870,7 @@
           "$can_child_attack,botw_small_keys:1,[botw_small_keys:2]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",

@@ -34,7 +34,7 @@
           "$can_child_attack"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -61,7 +61,7 @@
           "sword1,[sling]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -74,7 +74,7 @@
           "$can_child_attack"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -90,7 +90,7 @@
           "{$has_explosives,sling,dinsfire,magic}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -186,7 +186,7 @@
           "sword1"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -201,7 +201,7 @@
           "$can_child_attack,[sword2],[longshot]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -265,7 +265,7 @@
           "{@Dodongos Cavern/Climb,sword2,bow}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -279,7 +279,7 @@
           "@Dodongos Cavern/Climb"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -330,7 +330,7 @@
           "@Dodongos Cavern/Boss Area"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -417,7 +417,7 @@
         "name": "GS51 - Water Switch Room",
         "short_name": "Water Switch",
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -465,7 +465,7 @@
           "{$has_explosives}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -481,7 +481,7 @@
           "{$has_explosives}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -495,7 +495,7 @@
           "@Jabu Jabus Belly/Boss Area"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -539,7 +539,7 @@
           "{$has_explosives}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -574,7 +574,7 @@
           "{$has_explosives}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -590,7 +590,7 @@
           "{$has_explosives}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -747,7 +747,7 @@
           "sword2,bow"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -766,7 +766,7 @@
           "sword2,hookshot"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -801,7 +801,7 @@
           "@Forest Temple/Falling Room,$has_explosives"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -834,7 +834,7 @@
           "@Forest Temple/Outside Upper Ledge,hookshot"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -919,7 +919,7 @@
           "@Forest Temple/Boss Region,sword2,hookshot"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1031,7 +1031,7 @@
           "@Fire Temple/Boss Key Region"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1062,7 +1062,7 @@
           "@Fire Temple/Big Lava Room,sword2,[ocarina],[time]"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1111,7 +1111,7 @@
           "@Fire Temple/Maze Lower,$has_explosives"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1162,7 +1162,7 @@
           "@Fire Temple/East Tower"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1175,7 +1175,7 @@
           "@Fire Temple/East Tower"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1383,7 +1383,7 @@
           "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,scale"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1422,7 +1422,7 @@
           "{@Water Temple/Middle Water Level,bow}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1449,7 +1449,7 @@
           "{@Water Temple/Falling Platforms,bow}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1473,7 +1473,7 @@
           "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,bombchu"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1506,7 +1506,7 @@
           "@Water Temple/North Basement"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1658,7 +1658,7 @@
           "@Shadow Temple/Huge Pit"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1680,7 +1680,7 @@
           "{@Shadow Temple/Huge Pit}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1723,7 +1723,7 @@
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1754,7 +1754,7 @@
           "{@Shadow Temple/Wind Tunnel,shadow_small_keys:4,bow}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -1786,7 +1786,7 @@
           "@Shadow Temple/Beyond Boat"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1950,7 +1950,7 @@
           "@Spirit Temple/Child Back"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1980,7 +1980,7 @@
           "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:2],setting_logic_chus_yes"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2015,7 +2015,7 @@
         ],
         "capture_item": true,
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2059,7 +2059,7 @@
         ],
         "capture_item": true,
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2093,7 +2093,7 @@
           "@Spirit Temple/Early Adult Right Chest,ocarina,time"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2252,7 +2252,7 @@
           "{botw_small_keys:1,$has_explosives}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -2268,7 +2268,7 @@
           "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -2298,7 +2298,7 @@
           "@Bottom of the Well/Behind Right Grate,[boomerang],$can_child_attack"
         ],
         "visibility_rules": [
-          "setting_skulltulas_dungeons"
+          "setting_tokens_dungeons"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",

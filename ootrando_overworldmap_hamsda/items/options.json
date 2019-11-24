@@ -246,22 +246,22 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_skulltulas_off.png",
-        "codes": "setting_skulltulas_off"
+        "img": "images/setting_tokens_off.png",
+        "codes": "setting_tokens_off"
       },
       {
-        "img": "images/setting_skulltulas_dungeons.png",
-        "codes": "setting_skulltulas_dungeons",
+        "img": "images/setting_tokens_dungeons.png",
+        "codes": "setting_tokens_dungeons",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_skulltulas_overworld.png",
-        "codes": "setting_skulltulas_overworld",
+        "img": "images/setting_tokens_overworld.png",
+        "codes": "setting_tokens_overworld",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_skulltulas_all.png",
-        "codes": "setting_skulltulas_dungeons,setting_skulltulas_overworld",
+        "img": "images/setting_tokens_all.png",
+        "codes": "setting_tokens_dungeons,setting_tokens_overworld",
         "inherit_codes": false
       }
     ]
