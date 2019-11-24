@@ -68,6 +68,7 @@ This setting determines whether the Door of Time starts open or closed ([see wik
 This setting determines whether Zoras Fountain starts open or closed ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
 
 - ![Closed Fountain](ootrando_overworldmap_hamsda/images/setting_fountain_closed.png "Closed Fountain") You can find Rutos Letter and open Zoras Fountain by moving King Zora.
+- ![Adult Fountain](ootrando_overworldmap_hamsda/images/setting_fountain_adult.png "Adult Fountain") Zoras Fountain can be accessed as adult without handing in Rutos Letter.
 - ![Open Fountain](ootrando_overworldmap_hamsda/images/setting_fountain_open.png "Open Fountain") Rutos Letter can no longer be found, but Zoras Fountain can be accessed without moving King Zora.
 
 ### Gerudo Fortress

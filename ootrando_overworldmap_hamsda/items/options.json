@@ -48,11 +48,16 @@
     "stages": [
       {
         "img": "images/setting_fountain_closed.png",
-        "codes": "setting_fountain,closed_fountain"
+        "codes": "setting_fountain,setting_fountain_closed"
+      },
+      {
+        "img": "images/setting_fountain_adult.png",
+        "codes": "setting_fountain,setting_fountain_adult",
+        "inherit_codes": false
       },
       {
         "img": "images/setting_fountain_open.png",
-        "codes": "setting_fountain,open_fountain",
+        "codes": "setting_fountain,setting_fountain_open",
         "inherit_codes": false
       }
     ]

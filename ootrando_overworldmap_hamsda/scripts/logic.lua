@@ -278,14 +278,14 @@ end
 
 function child_fountain()
   if has("ruto", 0) 
-  and has("open_fountain", 0) 
+  and has("setting_fountain_open", 0) 
   then
     return 0
   end
 
   local level = AccessibilityLevel.Normal
   if has("king_zora_moved_yes", 0) 
-  and has("open_fountain", 0) 
+  and has("setting_fountain_open", 0) 
   then
     level = AccessibilityLevel.SequenceBreak
   end
@@ -327,7 +327,9 @@ function adult_fountain()
     end
   end
 
-  if has("open_fountain") then
+  if has("setting_fountain_open") 
+  or has("setting_fountain_adult")
+  then
     return 1, level
   end
 
