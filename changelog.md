@@ -9,6 +9,10 @@
 - added indicators for vanilla small key/map/compass chests
 - added Adult Fountain setting
 - added night GS expect sun setting
+- changed MQ dungeons (finally...):
+  - restructured them internally
+  - logic pass
+  - re-ordered GS/scrubs/cow
 
 ## 2.6.0.3
 
