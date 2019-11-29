@@ -5877,6 +5877,8 @@
                         "name": "GS92",
                         "access_rules": [
                           "hookshot",
+                          "[hookshot],bombs,shield2",
+                          "[hookshot],bombs,shield3",
                           "{$hintable}"
                         ],
                         "visibility_rules": [

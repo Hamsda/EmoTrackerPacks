@@ -13,6 +13,7 @@
   - restructured them internally
   - logic pass
   - re-ordered GS/scrubs/cow
+- added sequence break for wasteland and Shadow Temple GS w/ ground jump
 
 ## 2.6.0.3
 

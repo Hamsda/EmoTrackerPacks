@@ -1677,6 +1677,8 @@
         "short_name": "Crusher",
         "access_rules": [
           "@Shadow Temple/Huge Pit,hookshot",
+          "@Shadow Temple/Huge Pit,[hookshot],bombs,shield2",
+          "@Shadow Temple/Huge Pit,[hookshot],bombs,shield3",
           "{@Shadow Temple/Huge Pit}"
         ],
         "visibility_rules": [
