@@ -9,39 +9,48 @@
       "rows": [
         [
           "setting_forest",
-          "setting_door",
-          "setting_fountain",
-          "setting_gerudo",
-          "setting_bridge",
-          "setting_trials"
-        ],
-        [
-          "setting_shuffle_sword1",
-          "setting_shuffle_ocarinas",
-          "setting_shuffle_egg",
-          "setting_shuffle_card",
-          "setting_shuffle_beans"
-        ],
-        [
-          "setting_scrub_shuffle",
-          "setting_shopsanity",
-          "setting_cowsanity",
-          "setting_tokens_off",
-          ""
-        ],
-        [
           "setting_logic_chus",
-          "setting_skulltulas_sun",
-          "setting_lens",
-          "setting_fewer_tunics",
-          ""
+          "setting_shopsanity"
         ],
         [
+          "setting_door",
+          "setting_skulltulas_sun",
+          "setting_tokens_off"
+        ],
+        [
+          "setting_fountain",
+          "setting_lens",
+          "setting_scrub_shuffle"
+        ],
+        [
+          "setting_gerudo",
+          "setting_fewer_tunics",
+          "setting_cowsanity"
+        ],
+        [
+          "setting_bridge",
           "setting_hints",
+          "setting_shuffle_sword1"
+        ],
+        [
+          "setting_trials",
           "setting_plant",
+          "setting_shuffle_ocarinas"
+        ],
+        [
           "",
           "",
-          ""
+          "setting_shuffle_egg"
+        ],
+        [
+          "",
+          "",
+          "setting_shuffle_card"
+        ],
+        [
+          "",
+          "",
+          "setting_shuffle_beans"
         ]
       ]
     }
