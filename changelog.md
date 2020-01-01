@@ -14,6 +14,7 @@
   - logic pass
   - re-ordered GS/scrubs/cow
 - added sequence break for wasteland and Shadow Temple GS w/ ground jump
+- added a few more ways to peek DC GS above stairs
 
 ## 2.6.0.3
 
