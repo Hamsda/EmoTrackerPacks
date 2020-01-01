@@ -76,13 +76,9 @@
                     "content": [
                       {
                         "type": "map",
+                        "orientation": "vertical",
                         "maps": [
-                          "child"
-                        ]
-                      },
-                      {
-                        "type": "map",
-                        "maps": [
+                          "child",
                           "adult"
                         ]
                       }
@@ -194,6 +190,7 @@
               "icon": "images/map.png",
               "content": {
                 "type": "map",
+                "orientation": "horizontal",
                 "maps": [
                   "child",
                   "adult"

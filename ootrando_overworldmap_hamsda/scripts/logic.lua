@@ -90,6 +90,15 @@ function has_fire()
   end
 end
 
+function night_gs()
+  if has("setting_skulltulas_sun_on")
+  and (has("ocarina", 0) or has("sun", 0))
+  then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+  return 1
+end
+
 function can_see_with_lens()
   if has("setting_lens_wasteland") 
   or has("lens") 
@@ -100,7 +109,7 @@ function can_see_with_lens()
   end
 end
 
-function has_goron_tunic()
+function FTR_or_goron()
   if has("setting_fewer_tunics_yes") 
   or has("redtunic") 
   then
@@ -110,7 +119,7 @@ function has_goron_tunic()
   end
 end
 
-function has_zora_tunic()
+function FTR_or_zora()
   if has("setting_fewer_tunics_yes") 
   or has("bluetunic") 
   then
@@ -278,14 +287,14 @@ end
 
 function child_fountain()
   if has("ruto", 0) 
-  and has("open_fountain", 0) 
+  and has("setting_fountain_open", 0) 
   then
     return 0
   end
 
   local level = AccessibilityLevel.Normal
   if has("king_zora_moved_yes", 0) 
-  and has("open_fountain", 0) 
+  and has("setting_fountain_open", 0) 
   then
     level = AccessibilityLevel.SequenceBreak
   end
@@ -327,7 +336,9 @@ function adult_fountain()
     end
   end
 
-  if has("open_fountain") then
+  if has("setting_fountain_open") 
+  or has("setting_fountain_adult")
+  then
     return 1, level
   end
 
@@ -424,6 +435,19 @@ function hintable()
   has("setting_hints_truth") and has("maskoftruth")
   or
   has("setting_hints_agony") and has("agony")
+  then
+    return 1
+  else
+    return 0
+  end
+end
+
+function trials_barrier_dispelled()
+  local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
+  local setting_trials = Tracker:FindObjectForCode("setting_trials").AcquiredCount
+  
+  if setting_trials == 0
+  or trials_cleared >= setting_trials 
   then
     return 1
   else

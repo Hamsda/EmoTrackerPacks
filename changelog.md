@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.7.0.0
+
+- reworked settings:
+  - added trials setting
+  - added Adult Fountain setting
+  - added night GS expect sun setting
+  - moved settings into new popup window
+- changed bean plant to only show when setting enabled
+- changed trade sequences to only show current step
+- added indicators for vanilla small key/map/compass chests
+- changed MQ dungeons (finally):
+  - restructured them internally
+  - logic pass
+  - re-ordered GS/scrubs/cow
+- added sequence break for wasteland and Shadow Temple GS w/ ground jump
+- added a few more ways to peek DC GS above stairs
+
 ## 2.6.0.3
 
 - fixed Gerudo Fortress guard behavior around card

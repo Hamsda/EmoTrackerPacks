@@ -48,11 +48,16 @@
     "stages": [
       {
         "img": "images/setting_fountain_closed.png",
-        "codes": "setting_fountain,closed_fountain"
+        "codes": "setting_fountain,setting_fountain_closed"
+      },
+      {
+        "img": "images/setting_fountain_adult.png",
+        "codes": "setting_fountain,setting_fountain_adult",
+        "inherit_codes": false
       },
       {
         "img": "images/setting_fountain_open.png",
-        "codes": "setting_fountain,open_fountain",
+        "codes": "setting_fountain,setting_fountain_open",
         "inherit_codes": false
       }
     ]
@@ -89,32 +94,57 @@
     "stages": [
       {
         "img": "images/setting_bridge_open.png",
-        "codes": "setting_bridge,bridge_open",
+        "codes": "setting_bridge,setting_bridge_open",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_vanilla.png",
-        "codes": "setting_bridge,bridge_vanilla",
+        "codes": "setting_bridge,setting_bridge_vanilla",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_stones.png",
-        "codes": "setting_bridge,bridge_stones",
+        "codes": "setting_bridge,setting_bridge_stones",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_medallions.png",
-        "codes": "setting_bridge,bridge_medallions",
+        "codes": "setting_bridge,setting_bridge_medallions",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_dungeons.png",
-        "codes": "setting_bridge,bridge_dungeons",
+        "codes": "setting_bridge,setting_bridge_dungeons",
         "inherit_codes": false
       },
       {
         "img": "images/setting_bridge_100gs.png",
-        "codes": "setting_bridge,bridge_100gs",
+        "codes": "setting_bridge,setting_bridge_100gs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Trials Requirement",
+    "type": "consumable",
+    "img": "images/setting_trials.png",
+    "codes": "setting_trials",
+    "disabled_img_mods": "@enabled",
+    "max_quantity": 6
+  },
+  {
+    "name": "Nighttime Skulltulas Expect Sun's Song",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_skulltulas_sun_off.png",
+        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_off"
+      },
+      {
+        "img": "images/setting_skulltulas_sun_on.png",
+        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_on",
         "inherit_codes": false
       }
     ]
@@ -233,22 +263,22 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_skulltulas_off.png",
-        "codes": "setting_skulltulas_off"
+        "img": "images/setting_tokens_off.png",
+        "codes": "setting_tokens_off"
       },
       {
-        "img": "images/setting_skulltulas_dungeons.png",
-        "codes": "setting_skulltulas_dungeons",
+        "img": "images/setting_tokens_dungeons.png",
+        "codes": "setting_tokens_dungeons",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_skulltulas_overworld.png",
-        "codes": "setting_skulltulas_overworld",
+        "img": "images/setting_tokens_overworld.png",
+        "codes": "setting_tokens_overworld",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_skulltulas_all.png",
-        "codes": "setting_skulltulas_dungeons,setting_skulltulas_overworld",
+        "img": "images/setting_tokens_all.png",
+        "codes": "setting_tokens_dungeons,setting_tokens_overworld",
         "inherit_codes": false
       }
     ]
