@@ -77,7 +77,7 @@ This setting determines the state of the ([see wiki](https://wiki.ootrandomizer.
 
 - ![Normal Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_normal.png "Normal Gerudo Fortress") You will have to rescue all 4 carpenters.
 - ![Fast Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_fast.png "Fast Gerudo Fortress") You only need to free one carpenter (F1 North).
-- ![Open Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible (if `Shuffle Gerudo Card` is turned off, mark your ![Gerudo Card](ootrando_overworldmap_hamsda/images/gerudocard.png "Open Gerudo Fortress") as well).
+- ![Open Gerudo Fortress](ootrando_overworldmap_hamsda/images/setting_gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible (if `Shuffle Gerudo Card` is turned off, mark your ![Gerudo Card](ootrando_overworldmap_hamsda/images/gerudocard.png "Gerudo Card") as well).
 
 ### Rainbow Bridge
 
@@ -89,6 +89,89 @@ This setting determines what is needed to trigger the rainbow bridge in front of
 - ![All Medallions](ootrando_overworldmap_hamsda/images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
 - ![All Dungeons](ootrando_overworldmap_hamsda/images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
 - ![100 GS tokens](ootrando_overworldmap_hamsda/images/setting_bridge_100gs.png "100 GS tokens") 100 gold skulltula tokens required
+
+### Trials
+
+This setting determines how many trials are needed to dispel the barrier in Ganons castle ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
+
+![Trials](ootrando_overworldmap_hamsda/images/setting_trials.png "Trials") Increment or decrement the number of trials needed.
+
+If trials are set to at least 1, Ganons castle will show locations for the trials. When you clear a trial, mark that location as cleared. Once the number of cleared trials is greater than the number of required trials, the last chest will appear available.
+
+### Bombchus in logic
+
+This setting determines if Bombchus are considered by the logic ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
+
+- ![Bombchus not in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_no.png "Bombchus not in logic") Bombchus will never be considered by the logic and can be used to sequence break bomb locations.
+- ![Bombchus in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_yes.png "Bombchus in logic") Bombchus can be used as regular explosives like bombs in logic.
+
+### Nighttime Skulltulas Expect Sun's Song
+
+This setting determines if logic expects the player to have an ocarina and the Sun’s Song to get Gold Skulltula locations that are only found at nighttime ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
+
+- ![Sun's Song Not Expected](ootrando_overworldmap_hamsda/images/setting_skulltulas_sun_off.png "Sun's Song Not Expected") Sun's Song is not expected by logic.
+- ![Sun's Song Expected](ootrando_overworldmap_hamsda/images/setting_skulltulas_sun_on.png "Sun's Song Expected") Sun's Song is expected, but locations will show as sequence breaks.
+
+### Lens of Truth
+
+This setting changes where the logic requires the Lens of Truth ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
+
+- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_lens_all.png "Required everywhere") Required to see all invisible things.
+- ![Wasteland and Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
+- ![Only Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
+
+### Fewer Tunic Requirements
+
+This setting changes where the logic requires Goron and Zora tunics ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
+
+- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
+- ![Fewer requirements](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
+
+### Hints
+
+This setting determines when hintable locations will show up on the map ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other)).
+
+- ![Hints off](ootrando_overworldmap_hamsda/images/setting_hints_off.png "Hints off") Hintable locations will never show up on the map.
+- ![Hints Truth](ootrando_overworldmap_hamsda/images/setting_hints_truth.png "Hints Truth") Hintable locations will show up on the map if you have ![Mask of Truth](ootrando_overworldmap_hamsda/images/truth.png "Mask of Truth").
+- ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
+- ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
+
+### Bean Planting
+
+This setting determines how the Magic Beans will be handled on the map.
+
+- ![Plant off](ootrando_overworldmap_hamsda/images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
+- ![Plant on](ootrando_overworldmap_hamsda/images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
+
+### Shopsanity
+
+This setting determines if Shopsanity is active ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
+
+- ![Shopsanity off](ootrando_overworldmap_hamsda/images/setting_shopsanity_no.png "Shopsanity off") The shops have their regular items.
+- ![Shopsanity on](ootrando_overworldmap_hamsda/images/setting_shopsanity_yes.png "Shopsanity on") A varying amount of items in the shops is randomized.
+
+### Gold Skulltulas
+
+This setting determines which Gold Skulltulas are shown (especially useful for [Tokensanity](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
+
+- ![Skulltulas hidden](ootrando_overworldmap_hamsda/images/setting_tokens_off.png "Skulltulas hidden") Gold Skulltulas will be hidden.
+- ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_tokens_dungeons.png "Skulltulas in dungeons") Gold Skulltulas in dungeons will be displayed.
+- ![Skulltulas in overworld](ootrando_overworldmap_hamsda/images/setting_tokens_overworld.png "Skulltulas in overworld") Gold Skulltulas in the overworld will be displayed.
+- ![Skulltulas everywhere](ootrando_overworldmap_hamsda/images/setting_tokens_all.png "Skulltulas everywhere") All Gold Skulltulas will be displayed.
+
+### Shuffle Deku Scrubs
+
+This setting determines if all Deku Scrubs have randomized items ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
+
+- ![Scrubs not shuffled](ootrando_overworldmap_hamsda/images/setting_scrub_shuffle_no.png "Scrubs not shuffled") Only the three Deku Scrubs that give actual items in the vanilla game can have random items.
+- ![Scrubs shuffled](ootrando_overworldmap_hamsda/images/setting_scrub_shuffle_yes.png "Scrubs shuffled") All Deku Scrubs can have random items.
+
+### Cowsanity
+
+This setting determines if Cowsanity is active.
+
+- ![Cowsanity off](ootrando_overworldmap_hamsda/images/setting_cowsanity_no.png "Cowsanity off") The cows just give milk when Eponas song gets played.
+- ![Cowsanity on](ootrando_overworldmap_hamsda/images/setting_cowsanity_yes.png "Cowsanity on") The cows will give a random item the first time Eponas song gets played.
 
 ### Shuffle Kokiri Sword
 
@@ -124,74 +207,6 @@ This setting determines if Magic Beans are shuffled.
 
 - ![Magic Beans not shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
 - ![Magic Beans shuffled](ootrando_overworldmap_hamsda/images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
-
-### Shuffle Deku Scrubs
-
-This setting determines if all Deku Scrubs have randomized items ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
-
-- ![Scrubs not shuffled](ootrando_overworldmap_hamsda/images/setting_scrub_shuffle_no.png "Scrubs not shuffled") Only the three Deku Scrubs that give actual items in the vanilla game can have random items.
-- ![Scrubs shuffled](ootrando_overworldmap_hamsda/images/setting_scrub_shuffle_yes.png "Scrubs shuffled") All Deku Scrubs can have random items.
-
-### Shopsanity
-
-This setting determines if Shopsanity is active ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
-
-- ![Shopsanity off](ootrando_overworldmap_hamsda/images/setting_shopsanity_no.png "Shopsanity off") The shops have their regular items.
-- ![Shopsanity on](ootrando_overworldmap_hamsda/images/setting_shopsanity_yes.png "Shopsanity on") A varying amount of items in the shops is randomized.
-
-### Cowsanity
-
-This setting determines if Cowsanity is active.
-
-- ![Cowsanity off](ootrando_overworldmap_hamsda/images/setting_cowsanity_no.png "Cowsanity off") The cows just give milk when Eponas song gets played.
-- ![Cowsanity on](ootrando_overworldmap_hamsda/images/setting_cowsanity_yes.png "Cowsanity on") The cows will give a random item the first time Eponas song gets played.
-
-### Gold Skulltulas
-
-This setting determines which Gold Skulltulas are shown (especially useful for [Tokensanity](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
-
-- ![Skulltulas hidden](ootrando_overworldmap_hamsda/images/setting_tokens_off.png "Skulltulas hidden") Gold Skulltulas will be hidden.
-- ![Skulltulas in dungeons](ootrando_overworldmap_hamsda/images/setting_tokens_dungeons.png "Skulltulas in dungeons") Gold Skulltulas in dungeons will be displayed.
-- ![Skulltulas in overworld](ootrando_overworldmap_hamsda/images/setting_tokens_overworld.png "Skulltulas in overworld") Gold Skulltulas in the overworld will be displayed.
-- ![Skulltulas everywhere](ootrando_overworldmap_hamsda/images/setting_tokens_all.png "Skulltulas everywhere") All Gold Skulltulas will be displayed.
-
-### Bombchus in logic
-
-This setting determines if Bombchus are considered by the logic ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
-
-- ![Bombchus not in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_no.png "Bombchus not in logic") Bombchus will never be considered by the logic and can be used to sequence break bomb locations.
-- ![Bombchus in logic](ootrando_overworldmap_hamsda/images/setting_logic_chus_yes.png "Bombchus in logic") Bombchus can be used as regular explosives like bombs in logic.
-
-### Lens of Truth
-
-This setting changes where the logic requires the Lens of Truth ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
-
-- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_lens_all.png "Required everywhere") Required to see all invisible things.
-- ![Wasteland and Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
-- ![Only Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
-
-### Fewer Tunic Requirements
-
-This setting changes where the logic requires Goron and Zora tunics ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
-
-- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
-- ![Fewer requirements](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
-
-### Hints
-
-This setting determines when hintable locations will show up on the map ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other)).
-
-- ![Hints off](ootrando_overworldmap_hamsda/images/setting_hints_off.png "Hints off") Hintable locations will never show up on the map.
-- ![Hints Truth](ootrando_overworldmap_hamsda/images/setting_hints_truth.png "Hints Truth") Hintable locations will show up on the map if you have ![Mask of Truth](ootrando_overworldmap_hamsda/images/truth.png "Mask of Truth").
-- ![Hints Agony](ootrando_overworldmap_hamsda/images/setting_hints_agony.png "Hints Agony") Hintable locations will show up on the map if you have ![Stone of Agony](ootrando_overworldmap_hamsda/images/agony.png "Stone of Agony").
-- ![Hints on](ootrando_overworldmap_hamsda/images/setting_hints_on.png "Hints on") Hintable locations will always show up on the map.
-
-### Bean Planting
-
-This setting determines how the Magic Beans will be handled on the map.
-
-- ![Plant off](ootrando_overworldmap_hamsda/images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
-- ![Plant on](ootrando_overworldmap_hamsda/images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
 
 ## Entrance Randomizer variants
 
