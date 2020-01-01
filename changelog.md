@@ -1,15 +1,16 @@
 # Changelog
 
-## x
+## 2.7.0.0
 
-- moved settings into new popup window
-- added trials setting
+- reworked settings:
+  - added trials setting
+  - added Adult Fountain setting
+  - added night GS expect sun setting
+  - moved settings into new popup window
 - changed bean plant to only show when setting enabled
 - changed trade sequences to only show current step
 - added indicators for vanilla small key/map/compass chests
-- added Adult Fountain setting
-- added night GS expect sun setting
-- changed MQ dungeons (finally...):
+- changed MQ dungeons (finally):
   - restructured them internally
   - logic pass
   - re-ordered GS/scrubs/cow
