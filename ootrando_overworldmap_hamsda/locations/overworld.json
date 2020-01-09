@@ -3176,11 +3176,11 @@
                     "name": "Goron City Center Platform",
                     "short_name": "Center Platform",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs,sword2"
+                      "setting_tokens_overworld,sword2"
                     ],
                     "sections": [
                       {
-                        "name": "GS35 (N)",
+                        "name": "GS35",
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],

@@ -3,6 +3,7 @@
 ## x
 
 - fixed ER deku theater as adult
+- fixed GS35 (adult Goron City) not nighttime
 
 ## 2.7.0.0
 
