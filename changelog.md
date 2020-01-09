@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed ER deku theater as adult
+
 ## 2.7.0.0
 
 - reworked settings:
