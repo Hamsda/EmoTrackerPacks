@@ -428,6 +428,35 @@ function spirit_wall()
   end
 end
 
+function damage_below_quadruple()
+  if has("setting_damage_ohko", 0) 
+  and has("setting_damage_quadruple", 0) 
+  then
+    return 1
+  else
+    return 0
+  end
+end
+
+function damage_below_ohko()
+  if has("setting_damage_ohko", 0) 
+  then
+    return 1
+  else
+    return 0
+  end
+end
+
+function damage_single_instance()
+  if has("setting_damage_ohko", 0) 
+  or has("nayrus") and has("magic")
+  then
+    return 1
+  else
+    return has_bottle()
+  end
+end
+
 function hintable()
   if 
   has("setting_hints_on")

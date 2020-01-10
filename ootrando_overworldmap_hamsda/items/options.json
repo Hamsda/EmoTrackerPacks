@@ -329,6 +329,39 @@
     ]
   },
   {
+    "name": "Damage Multiplier",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_damage_half.png",
+        "codes": "setting_damage,setting_damage_half"
+      },
+      {
+        "img": "images/setting_damage_normal.png",
+        "codes": "setting_damage,setting_damage_normal",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_double.png",
+        "codes": "setting_damage,setting_damage_double",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_quadruple.png",
+        "codes": "setting_damage,setting_damage_quadruple",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_ohko.png",
+        "codes": "setting_damage,setting_damage_ohko",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shuffle Kokiri Sword",
     "type": "progressive",
     "allow_disabled": false,

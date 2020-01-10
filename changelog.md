@@ -4,6 +4,7 @@
 
 - fixed ER deku theater as adult
 - fixed GS35 (adult Goron City) not nighttime
+- added damage multiplier setting
 
 ## 2.7.0.0
 

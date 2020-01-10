@@ -2127,7 +2127,7 @@
               {
                 "name": "Man on Roof",
                 "access_rules": [
-                  "[sword2],[hookshot]"
+                  "[sword2],[hookshot]" //TODO: trick
                 ],
                 "sections": [
                   {
@@ -2621,8 +2621,8 @@
                     "access_rules": [
                       "sling",
                       "bombchu",
-                      "sticks,[sling]",
-                      "sword1,[sling]"
+                      "[sling],sticks,$damage_single_instance", //TODO: trick
+                      "[sling],sword1,$damage_single_instance" //TODO: trick
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -3123,9 +3123,12 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "hookshot,redtunic",
-                          "hookshot,nayruslove,magic",
-                          "ocarina,time"
+                          "ocarina,time,$damage_below_quadruple",
+                          "ocarina,time,redtunic",
+                          "ocarina,time,longshot",
+                          "ocarina,time,nayrus,magic",
+                          "hookshot,$damage_below_ohko,redtunic",
+                          "hookshot,nayrus,magic"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"

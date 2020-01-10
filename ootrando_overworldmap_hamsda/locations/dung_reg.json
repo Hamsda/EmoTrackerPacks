@@ -1973,16 +1973,19 @@
         "item_count": 2
       },
       {
-        "name": "GS97 - Bomb for Light Room", //have fun with ohko settings, future me
+        "name": "GS97 - Bomb for Light Room",
         "short_name": "Child Climb",
         "access_rules": [
-          "@Spirit Temple/Child Climb,dinsfire,magic",
           "@Spirit Temple/Child Climb,$has_projectile|both",
-          "@Spirit Temple/Child Climb,$child_colossus,sticks",
-          "@Spirit Temple/Child Climb,$child_colossus,sword1",
-          "@Spirit Temple/Child Climb,$child_colossus,$has_projectile|child",
-          "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:3]",
-          "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:2],setting_logic_chus_yes"
+          "@Spirit Temple/Child Climb,dinsfire,magic",
+          "@Spirit Temple/Child Climb,$damage_single_instance,sticks",
+          "@Spirit Temple/Child Climb,$damage_single_instance,sword1",
+          "@Spirit Temple/Child Climb,$damage_single_instance,$has_projectile|child",
+          "@Spirit Temple/Child Climb,$child_colossus,[spirit_small_keys:5],$has_projectile|child",
+          "@Spirit Temple/Child Climb,lift2,$has_projectile|adult,[spirit_small_keys:3]",
+          "@Spirit Temple/Child Climb,lift2,$has_projectile|adult,[spirit_small_keys:2],setting_logic_chus_yes",
+          "@Spirit Temple/Child Climb,lift2,$damage_single_instance,[spirit_small_keys:3]",
+          "@Spirit Temple/Child Climb,lift2,$damage_single_instance,[spirit_small_keys:2],setting_logic_chus_yes"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"

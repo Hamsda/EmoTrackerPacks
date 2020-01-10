@@ -227,8 +227,8 @@
         "name": "Lower Right Side",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$can_blast",
-          "@Dodongos Cavern MQ/Lobby,sticks",
-          "@Dodongos Cavern MQ/Lobby,dinsfire,magic"
+          "@Dodongos Cavern MQ/Lobby,sticks,$damage_single_instance",
+          "@Dodongos Cavern MQ/Lobby,dinsfire,magic,$damage_single_instance"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -239,8 +239,8 @@
         "name": "Bomb Bag Area",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,sword2",
-          "@Dodongos Cavern MQ/Lobby,[sword2],sword1",
-          "@Dodongos Cavern MQ/Lobby,[sword2],sticks",
+          "@Dodongos Cavern MQ/Lobby,[sword2],sword1,$damage_single_instance", //TODO: trick
+          "@Dodongos Cavern MQ/Lobby,[sword2],sticks,$damage_single_instance", //TODO: trick
           "@Dodongos Cavern MQ/Lower Right Side,sling,sword2,bow",
           "@Dodongos Cavern MQ/Lower Right Side,sling,lift1",
           "@Dodongos Cavern MQ/Lower Right Side,sling,dinsfire,magic",
@@ -1178,8 +1178,12 @@
         "short_name": "Near Boss",
         "access_rules": [
           "$FTR_or_goron,$has_fire,hoverboots",
-          "$FTR_or_goron,$has_fire,bow,[hoverboots]",
-          "$FTR_or_goron,$has_fire,hookshot"
+          "$FTR_or_goron,$has_fire,bow,[hoverboots]", //TODO: trick
+          "$FTR_or_goron,hookshot,bow,firearrow,magic",
+          "$FTR_or_goron,hookshot,dinsfire,magic,$damage_below_quadruple",
+          "$FTR_or_goron,hookshot,dinsfire,magic,redtunic",
+          "$FTR_or_goron,hookshot,dinsfire,magic,bow",
+          "$FTR_or_goron,hookshot,dinsfire,magic,longshot"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1213,7 +1217,9 @@
         "name": "Big Lava Room Bombable Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot]"
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,hookshot",
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],$damage_below_ohko", //TODO: trick
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],nayrus,magic" //TODO: trick
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2539,7 +2545,8 @@
         "name": "Light Trial Clear",
         "short_name": "Light Trial",
         "access_rules": [
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot]"
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,hookshot",
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance" //TODO: trick
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2769,7 +2776,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora",
+          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora,$damage_single_instance",
           "{$hintable}"
         ],
         "capture_item": true,

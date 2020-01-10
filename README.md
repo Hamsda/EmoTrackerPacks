@@ -143,6 +143,16 @@ This setting determines how the Magic Beans will be handled on the map.
 - ![Plant off](ootrando_overworldmap_hamsda/images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
 - ![Plant on](ootrando_overworldmap_hamsda/images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
 
+### Damage Multiplier
+
+This setting determines how much damage you take ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other)).
+
+- ![Damage x0.5](ootrando_overworldmap_hamsda/images/setting_damage_half.png "Damage x0.5") Damage is halved.
+- ![Damage x1](ootrando_overworldmap_hamsda/images/setting_damage_normal.png "Damage x1") Damage is normal.
+- ![Damage x2](ootrando_overworldmap_hamsda/images/setting_damage_double.png "Damage x2") Damage is doubled.
+- ![Damage x4](ootrando_overworldmap_hamsda/images/setting_damage_quadruple.png "Damage x4") Damage is quadrupled.
+- ![OHKO](ootrando_overworldmap_hamsda/images/setting_damage_ohko.png "OHKO") Damage kills you in one hit.
+
 ### Shopsanity
 
 This setting determines if Shopsanity is active ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
