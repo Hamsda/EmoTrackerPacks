@@ -6,6 +6,7 @@
 - fixed GS35 (adult Goron City) not nighttime
 - added damage multiplier setting
 - added starting age setting
+- changed ER default capture to contain every other capture
 
 ## 2.7.0.0
 
