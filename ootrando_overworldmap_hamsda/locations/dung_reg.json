@@ -3,8 +3,8 @@
     "name": "Deku Tree",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "open_forest",
-      "sword1,shield1"
+      "$has_age|child,open_forest",
+      "$has_age|child,sword1,shield1"
     ],
     "sections": [
       {
@@ -131,18 +131,18 @@
       {
         "name": "Climb",
         "access_rules": [
-          "$has_explosives,sword2",
-          "$has_explosives,sticks",
+          "$has_explosives,$has_age|adult",
+          "$has_explosives,$has_age|child,sticks",
           "$has_explosives,dinsfire,magic",
-          "lift1,sword2",
-          "lift1,sticks",
-          "lift1,dinsfire,magic,sling",
-          "lift1,dinsfire,magic,sword1",
-          "dinsfire,magic,sword2",
-          "dinsfire,magic,sling",
-          "dinsfire,magic,sticks",
-          "dinsfire,magic,sword1",
-          "sword2,bow,[lift1]"
+          "lift1,$has_age|adult",
+          "lift1,$has_age|child,sticks",
+          "lift1,$has_age|child,dinsfire,magic,sling",
+          "lift1,$has_age|child,dinsfire,magic,sword1",
+          "dinsfire,magic,$has_age|adult",
+          "dinsfire,magic,$has_age|child,sling",
+          "dinsfire,magic,$has_age|child,sticks",
+          "dinsfire,magic,$has_age|child,sword1",
+          "$has_age|adult,bow,[lift1]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -152,12 +152,12 @@
       {
         "name": "Far Bridge",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$has_explosives,[sling]",
-          "@Dodongos Cavern/Climb,lift1,sticks,[sling]",
-          "@Dodongos Cavern/Climb,lift1,sword1,[sling]",
-          "@Dodongos Cavern/Climb,sword2,[bow]",
-          "@Dodongos Cavern/Climb,sword2,[hoverboots]",
-          "@Dodongos Cavern/Climb,sword2,[longshot]"
+          "@Dodongos Cavern/Climb,$has_age|child,$has_explosives,[sling]",
+          "@Dodongos Cavern/Climb,$has_age|child,lift1,sticks,[sling]",
+          "@Dodongos Cavern/Climb,$has_age|child,lift1,sword1,[sling]",
+          "@Dodongos Cavern/Climb,$has_age|adult,[bow]",
+          "@Dodongos Cavern/Climb,$has_age|adult,[hoverboots]",
+          "@Dodongos Cavern/Climb,$has_age|adult,[longshot]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -179,11 +179,11 @@
         "short_name": "East Side",
         "access_rules": [
           "$has_explosives",
-          "sword2",
-          "sling",
-          "boomerang",
-          "sticks",
-          "sword1"
+          "$has_age|adult",
+          "$has_age|child,sling",
+          "$has_age|child,boomerang",
+          "$has_age|child,sticks",
+          "$has_age|child,sword1"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -196,9 +196,9 @@
         "name": "GS42 - Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
-          "sword2,[ocarina],[scarecrow],[hookshot]",
-          "sword2,longshot",
-          "$can_child_attack,[sword2],[longshot]"
+          "$has_age|adult,[ocarina],[scarecrow],[hookshot]",
+          "$has_age|adult,longshot",
+          "$can_child_attack,[$has_age|adult],[longshot]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -212,11 +212,11 @@
         "name": "Deku Scrub Deku Sticks",
         "short_name": "East Side",
         "access_rules": [
-          "sword2",
-          "sling",
-          "sticks",
-          "$has_explosives",
-          "sword1"
+          "$has_age|adult",
+          "$has_age|child,sling",
+          "$has_age|child,sticks",
+          "$has_age|child,$has_explosives",
+          "$has_age|child,sword1"
         ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
@@ -245,11 +245,11 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "sword2",
-          "sticks",
-          "dinsfire,magic,sling",
-          "dinsfire,magic,sword1",
-          "dinsfire,magic,$has_explosives"
+          "$has_age|adult",
+          "$has_age|child,sticks",
+          "$has_age|child,dinsfire,magic,sling",
+          "$has_age|child,dinsfire,magic,sword1",
+          "$has_age|child,dinsfire,magic,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -258,14 +258,14 @@
         "name": "GS41 - Alcove Above Stairs",
         "short_name": "Above Stairs",
         "access_rules": [
-          "@Dodongos Cavern/Far Bridge,boomerang,$has_explosives",
-          "@Dodongos Cavern/Far Bridge,boomerang,lift1",
-          "@Dodongos Cavern/Far Bridge,sword2,hookshot",
+          "@Dodongos Cavern/Far Bridge,$has_age|child,boomerang,$has_explosives",
+          "@Dodongos Cavern/Far Bridge,$has_age|child,boomerang,lift1",
+          "@Dodongos Cavern/Far Bridge,$has_age|adult,hookshot",
           "{@Dodongos Cavern/Far Bridge,dinsfire,magic}",
           "{@Dodongos Cavern/Far Bridge,$has_explosives}",
           "{@Dodongos Cavern/Climb,bombchu}",
-          "{@Dodongos Cavern/Climb,sling}",
-          "{@Dodongos Cavern/Climb,sword2,bow}"
+          "{@Dodongos Cavern/Climb,$has_age|child,sling}",
+          "{@Dodongos Cavern/Climb,$has_age|adult,bow}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -350,16 +350,16 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern/Boss Area,lift1,sword2",
-          "@Dodongos Cavern/Boss Area,lift1,sticks",
-          "@Dodongos Cavern/Boss Area,lift1,sword1",
-          "@Dodongos Cavern/Boss Area,bombs,sword2",
-          "@Dodongos Cavern/Boss Area,bombs,sticks",
-          "@Dodongos Cavern/Boss Area,bombs,sword1",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield2,sword2",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield3,sword2",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield1,sticks",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield1,sword1"
+          "@Dodongos Cavern/Boss Area,lift1,$has_age|adult",
+          "@Dodongos Cavern/Boss Area,lift1,$has_age|child,sticks",
+          "@Dodongos Cavern/Boss Area,lift1,$has_age|child,sword1",
+          "@Dodongos Cavern/Boss Area,bombs,$has_age|adult",
+          "@Dodongos Cavern/Boss Area,bombs,$has_age|child,sticks",
+          "@Dodongos Cavern/Boss Area,bombs,$has_age|child,sword1",
+          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield2,$has_age|adult",
+          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield3,$has_age|adult",
+          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield1,$has_age|child,sticks",
+          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield1,$has_age|child,sword1"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
@@ -633,8 +633,8 @@
     "name": "Forest Temple",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "sword2,hookshot,[ocarina],[saria]",
-      "sword2,hookshot,[ocarina],[minuet]"
+      "$has_age|adult,hookshot,[ocarina],[saria]",
+      "$has_age|adult,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -650,7 +650,7 @@
       {
         "name": "Straightened Hall",
         "access_rules": [
-          "@Forest Temple/Block Push Room,forest_small_keys:2,sword2,lift1,bow"
+          "@Forest Temple/Block Push Room,forest_small_keys:2,$has_age|adult,lift1,bow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -660,8 +660,8 @@
       {
         "name": "Outside Upper Ledge",
         "access_rules": [
-          "@Forest Temple/Block Push Room,sword2,hoverboots",
-          "@Forest Temple/Block Push Room,sword2,[hoverboots],lift1",
+          "@Forest Temple/Block Push Room,$has_age|adult,hoverboots",
+          "@Forest Temple/Block Push Room,$has_age|adult,[hoverboots],lift1",
           "@Forest Temple/Straightened Hall"
         ],
         "visibility_rules": [
@@ -672,7 +672,7 @@
       {
         "name": "Bow Region",
         "access_rules": [
-          "@Forest Temple/Block Push Room,forest_small_keys:3,sword2,lift1"
+          "@Forest Temple/Block Push Room,forest_small_keys:3,$has_age|adult,lift1"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -682,9 +682,9 @@
       {
         "name": "Falling Room",
         "access_rules": [
-          "@Forest Temple/Bow Region,forest_small_keys:5,sword2,bow",
+          "@Forest Temple/Bow Region,forest_small_keys:5,$has_age|adult,bow",
           "@Forest Temple/Bow Region,forest_small_keys:5,dinsfire,magic",
-          "forest_small_keys:1,sword2,hoverboots,ocarina,scarecrow,[@Forest Temple/Bow Region],[forest_small_keys:5],[bow]"
+          "forest_small_keys:1,$has_age|adult,hoverboots,ocarina,scarecrow,[@Forest Temple/Bow Region],[forest_small_keys:5],[bow]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -694,7 +694,7 @@
       {
         "name": "Boss Region",
         "access_rules": [
-          "@Forest Temple/Bow Region,@Forest Temple/Falling Room,sword2,bow"
+          "@Forest Temple/Bow Region,@Forest Temple/Falling Room,$has_age|adult,bow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -704,14 +704,14 @@
       {
         "name": "Outdoors High Balconies",
         "access_rules": [
-          "ocarina,time,sword2",
-          "@Forest Temple/Outside Upper Ledge,sword2",
-          "sword2,bow,[longshot],hookshot",
-          "sword2,bow,ironboots",
-          "sword2,bow,scale2",
-          "@Forest Temple/Falling Room,sword2,[longshot],hookshot",
-          "@Forest Temple/Falling Room,sword2,ironboots",
-          "@Forest Temple/Falling Room,sword2,scale2"
+          "ocarina,time,$has_age|adult",
+          "@Forest Temple/Outside Upper Ledge,$has_age|adult",
+          "$has_age|adult,bow,[longshot],hookshot",
+          "$has_age|adult,bow,ironboots",
+          "$has_age|adult,bow,scale2",
+          "@Forest Temple/Falling Room,$has_age|adult,[longshot],hookshot",
+          "@Forest Temple/Falling Room,$has_age|adult,ironboots",
+          "@Forest Temple/Falling Room,$has_age|adult,scale2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -746,8 +746,8 @@
         "access_rules": [
           "dinsfire,magic",
           "$has_explosives",
-          "sword2,hookshot",
-          "sword2,bow"
+          "$has_age|adult,hookshot",
+          "$has_age|adult,bow"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -766,7 +766,7 @@
         "name": "GS61 - Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "sword2,hookshot"
+          "$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -779,7 +779,7 @@
         "name": "Chest Behind Lobby",
         "short_name": "Stalfos",
         "access_rules": [
-          "sword2"
+          "$has_age|adult"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -799,7 +799,7 @@
         "short_name": "Outdoor East",
         "access_rules": [
           "@Forest Temple/NE Outdoors,hookshot",
-          "@Forest Temple/Falling Room,sword2,bow",
+          "@Forest Temple/Falling Room,$has_age|adult,bow",
           "@Forest Temple/Falling Room,dinsfire,magic",
           "@Forest Temple/Falling Room,$has_explosives"
         ],
@@ -848,7 +848,7 @@
         "name": "Block Push Chest",
         "short_name": "Block Push",
         "access_rules": [
-          "@Forest Temple/Block Push Room,lift1,sword2,bow"
+          "@Forest Temple/Block Push Room,lift1,$has_age|adult,bow"
         ],
         "item_count": 1
       },
@@ -919,7 +919,7 @@
         "name": "GS64 - Basement",
         "short_name": "Basement",
         "access_rules": [
-          "@Forest Temple/Boss Region,sword2,hookshot"
+          "@Forest Temple/Boss Region,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -960,7 +960,7 @@
       {
         "name": "Boss Key Region",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:8],sword2,hammer"
+          "fire_small_keys:1,[fire_small_keys:8],$has_age|adult,hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1062,7 +1062,7 @@
         "name": "GS65 - Song of Time Room",
         "short_name": "Time Block",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,sword2,[ocarina],[time]"
+          "@Fire Temple/Big Lava Room,$has_age|adult,[ocarina],[time]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1084,7 +1084,7 @@
         "name": "Big Lava Room Bombable Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,sword2,$has_explosives"
+          "@Fire Temple/Big Lava Room,$has_age|adult,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1242,8 +1242,8 @@
     "name": "Water Temple",
     "parent": "Lake Hylia",
     "access_rules": [
-      "sword2,hookshot,ironboots",
-      "sword2,hookshot,scale2,[longshot]"
+      "$has_age|adult,hookshot,ironboots",
+      "$has_age|adult,hookshot,scale2,[longshot]"
     ],
     "sections": [
       {
@@ -1256,7 +1256,7 @@
       {
         "name": "Highest Water Level",
         "access_rules": [
-          "@Water Temple/Lobby,sword2"
+          "@Water Temple/Lobby,$has_age|adult"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1556,15 +1556,15 @@
     "access_rules": [
       "ocarina,nocturne,dinsfire,magic",
       "ocarina,nocturne,dinsfire,magic",
-      "ocarina,nocturne,bow,firearrow,[dinsfire],magic",
-      "ocarina,nocturne,bow,firearrow,[dinsfire],magic"
+      "ocarina,nocturne,$has_age|adult,bow,firearrow,[dinsfire],magic",
+      "ocarina,nocturne,$has_age|adult,bow,firearrow,[dinsfire],magic"
     ],
     "sections": [
       {
         "name": "Beginning",
         "access_rules": [
-          "$can_see_with_lens,sword2,hoverboots",
-          "$can_see_with_lens,sword2,hookshot"
+          "$can_see_with_lens,$has_age|adult,hoverboots",
+          "$can_see_with_lens,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1871,7 +1871,7 @@
       {
         "name": "Early Adult",
         "access_rules": [
-          "sword2,lift2"
+          "$has_age|adult,lift2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1913,7 +1913,7 @@
       {
         "name": "Beyond Central Locked Door",
         "access_rules": [
-          "@Spirit Temple/Central Chamber,spirit_small_keys:2,[spirit_small_keys:4],sword2,lift2"
+          "@Spirit Temple/Central Chamber,spirit_small_keys:2,[spirit_small_keys:4],$has_age|adult,lift2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1973,16 +1973,19 @@
         "item_count": 2
       },
       {
-        "name": "GS97 - Bomb for Light Room", //have fun with ohko settings, future me
+        "name": "GS97 - Bomb for Light Room",
         "short_name": "Child Climb",
         "access_rules": [
-          "@Spirit Temple/Child Climb,dinsfire,magic",
           "@Spirit Temple/Child Climb,$has_projectile|both",
-          "@Spirit Temple/Child Climb,$child_colossus,sticks",
-          "@Spirit Temple/Child Climb,$child_colossus,sword1",
-          "@Spirit Temple/Child Climb,$child_colossus,$has_projectile|child",
-          "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:3]",
-          "@Spirit Temple/Child Climb,lift2,[spirit_small_keys:2],setting_logic_chus_yes"
+          "@Spirit Temple/Child Climb,dinsfire,magic",
+          "@Spirit Temple/Child Climb,$damage_single_instance,sticks",
+          "@Spirit Temple/Child Climb,$damage_single_instance,sword1",
+          "@Spirit Temple/Child Climb,$damage_single_instance,$has_projectile|child",
+          "@Spirit Temple/Child Climb,$child_colossus,[spirit_small_keys:5],$has_projectile|child",
+          "@Spirit Temple/Child Climb,lift2,$has_projectile|adult,[spirit_small_keys:3]",
+          "@Spirit Temple/Child Climb,lift2,$has_projectile|adult,[spirit_small_keys:2],setting_logic_chus_yes",
+          "@Spirit Temple/Child Climb,lift2,$damage_single_instance,[spirit_small_keys:3]",
+          "@Spirit Temple/Child Climb,lift2,$damage_single_instance,[spirit_small_keys:2],setting_logic_chus_yes"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2002,7 +2005,7 @@
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,dinsfire,magic",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,sticks,bow,[firearrow],[magic]",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$child_colossus,$has_explosives,sticks",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,bow,[firearrow],[magic]"
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,bow,[firearrow],[magic]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2013,10 +2016,10 @@
         "access_rules": [
           "@Spirit Temple/Central Chamber,$has_explosives,boomerang,hookshot",
           "@Spirit Temple/Central Chamber,$child_colossus,boomerang,[spirit_small_keys:5],$has_explosives",
-          "@Spirit Temple/Central Chamber,hookshot,sword2,lift2,[spirit_small_keys:3]",
-          "@Spirit Temple/Central Chamber,hookshot,sword2,lift2,[spirit_small_keys:2],boomerang,setting_logic_chus_yes",
+          "@Spirit Temple/Central Chamber,hookshot,$has_age|adult,lift2,[spirit_small_keys:3]",
+          "@Spirit Temple/Central Chamber,hookshot,$has_age|adult,lift2,[spirit_small_keys:2],boomerang,setting_logic_chus_yes",
           "{@Spirit Temple/Central Chamber,$child_colossus,sling,$has_explosives}",
-          "{@Spirit Temple/Central Chamber,bow,sword2,lift2}"
+          "{@Spirit Temple/Central Chamber,bow,$has_age|adult,lift2}"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -2050,17 +2053,17 @@
         "name": "GS100 - Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[sword2],[lift2],hookshot",
-          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[sword2],[lift2],hoverboots",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[sword2],[lift2],hookshot",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[sword2],[lift2],hoverboots",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[sword2],[lift2],hookshot",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[sword2],[lift2],hoverboots",
+          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[$has_age|adult],[lift2],hookshot",
+          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[$has_age|adult],[lift2],hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[$has_age|adult],[lift2],hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[$has_age|adult],[lift2],hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[$has_age|adult],[lift2],hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[$has_age|adult],[lift2],hoverboots",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,$child_colossus,boomerang",
           "{@Spirit Temple/Central Chamber,$has_explosives,$child_colossus,sling}",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,hookshot",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,hoverboots",
-          "{@Spirit Temple/Central Chamber,sword2,lift2,bow}"
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,hoverboots",
+          "{@Spirit Temple/Central Chamber,$has_age|adult,lift2,bow}"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -2116,7 +2119,7 @@
         "name": "Statue Hand Chest",
         "short_name": "Statue Hand",
         "access_rules": [
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sword2,lift2,ocarina,lullaby"
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,ocarina,lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2151,7 +2154,7 @@
         "name": "Mirror Shield Chest",
         "short_name": "Left Hand",
         "access_rules": [
-          "@Spirit Temple/Outdoor Hands,spirit_small_keys:2,[spirit_small_keys:4],sword2,lift2,$has_explosives",
+          "@Spirit Temple/Outdoor Hands,spirit_small_keys:2,[spirit_small_keys:4],$has_age|adult,lift2,$has_explosives",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -2209,8 +2212,8 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "ocarina,storm,$can_child_attack",
-      "ocarina,storm,nuts"
+      "$has_age|child,ocarina,storm,$can_child_attack",
+      "$has_age|child,ocarina,storm,nuts"
     ],
     "sections": [
       {
@@ -2394,12 +2397,12 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "setting_bridge_open,sword2",
-      "setting_bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "setting_bridge_stones,sword2,stones:3",
-      "setting_bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "setting_bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "setting_bridge_100gs,sword2,token:100"
+      "$has_age|adult,setting_bridge_open",
+      "$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
+      "$has_age|adult,setting_bridge_stones,stones:3",
+      "$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "$has_age|adult,setting_bridge_100gs,token:100"
     ],
     "sections": [
       {
@@ -2642,7 +2645,7 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "$gerudo_card"
+      "$has_age|adult,$gerudo_card"
     ],
     "sections": [
       {
@@ -2665,7 +2668,7 @@
       {
         "name": "Heavy Block Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,sword2,[hookshot]"
+          "@Gerudo Training Grounds/Lobby,$has_age|adult,[hookshot]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2675,10 +2678,10 @@
       {
         "name": "Eye Statue Upper",
         "access_rules": [
-          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,hookshot",
-          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,[hookshot],hoverboots",
-          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,[hookshot],bombs,shield2",
-          "@Gerudo Training Grounds/Heavy Block Room,sword2,$can_see_with_lens,[hookshot],bombs,shield3"
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,hookshot",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],hoverboots",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],bombs,shield2",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],bombs,shield3"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2698,7 +2701,7 @@
       {
         "name": "Lava Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,sword2,$has_explosives",
+          "@Gerudo Training Grounds/Lobby,$has_age|adult,$has_explosives",
           "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
           "@Gerudo Training Grounds/Eye Statue Upper"
         ],
@@ -2721,9 +2724,9 @@
       {
         "name": "Hammer Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze Right,sword2,hookshot",
-          "@Gerudo Training Grounds/Lava Room,sword2,longshot",
-          "@Gerudo Training Grounds/Lava Room,sword2,hookshot,hoverboots",
+          "@Gerudo Training Grounds/Central Maze Right,$has_age|adult,hookshot",
+          "@Gerudo Training Grounds/Lava Room,$has_age|adult,longshot",
+          "@Gerudo Training Grounds/Lava Room,$has_age|adult,hookshot,hoverboots",
           "@Gerudo Training Grounds/Eye Statue Upper"
         ],
         "visibility_rules": [
@@ -2734,7 +2737,7 @@
       {
         "name": "Eye Statue Lower",
         "access_rules": [
-          "@Gerudo Training Grounds/Hammer Room,sword2,hammer,bow",
+          "@Gerudo Training Grounds/Hammer Room,$has_age|adult,hammer,bow",
           "@Gerudo Training Grounds/Eye Statue Upper"
         ],
         "visibility_rules": [
@@ -2746,7 +2749,7 @@
         "name": "Lobby Chests",
         "short_name": "Lobby",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,sword2,bow"
+          "@Gerudo Training Grounds/Lobby,$has_age|adult,bow"
         ],
         "item_count": 2
       },
@@ -2754,7 +2757,7 @@
         "name": "Beamos Chest",
         "short_name": "Beamos",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,sword2,$has_explosives"
+          "@Gerudo Training Grounds/Lobby,$has_age|adult,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2763,7 +2766,7 @@
         "name": "Stalfos Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,sword2"
+          "@Gerudo Training Grounds/Lobby,$has_age|adult"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2789,7 +2792,7 @@
         "name": "Eye Statue Chest",
         "short_name": "Eye Statue",
         "access_rules": [
-          "@Gerudo Training Grounds/Eye Statue Lower,sword2,bow"
+          "@Gerudo Training Grounds/Eye Statue Lower,$has_age|adult,bow"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2798,7 +2801,7 @@
         "name": "Near Scarecrow Chest",
         "short_name": "Near Scarecrow",
         "access_rules": [
-          "@Gerudo Training Grounds/Eye Statue Upper,sword2,bow"
+          "@Gerudo Training Grounds/Eye Statue Upper,$has_age|adult,bow"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2815,7 +2818,7 @@
         "name": "Hammer Room Switch Chest",
         "short_name": "Hammer Switch",
         "access_rules": [
-          "@Gerudo Training Grounds/Hammer Room,sword2,[hammer]"
+          "@Gerudo Training Grounds/Hammer Room,$has_age|adult,[hammer]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2843,7 +2846,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds/Lava Room,sword2,hookshot,ocarina,time,ironboots,$FTR_or_zora",
+          "@Gerudo Training Grounds/Lava Room,$has_age|adult,hookshot,ocarina,time,ironboots,$FTR_or_zora",
           "{$hintable}"
         ],
         "capture_item": true,

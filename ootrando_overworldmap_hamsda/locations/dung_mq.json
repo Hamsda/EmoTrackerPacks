@@ -3,8 +3,8 @@
     "name": "Deku Tree MQ",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "open_forest",
-      "sword1,shield1"
+      "$has_age|child,open_forest",
+      "$has_age|child,sword1,shield1"
     ],
     "sections": [
       {
@@ -227,8 +227,8 @@
         "name": "Lower Right Side",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$can_blast",
-          "@Dodongos Cavern MQ/Lobby,sticks",
-          "@Dodongos Cavern MQ/Lobby,dinsfire,magic"
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks,$damage_single_instance",
+          "@Dodongos Cavern MQ/Lobby,dinsfire,magic,$damage_single_instance"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -238,13 +238,13 @@
       {
         "name": "Bomb Bag Area",
         "access_rules": [
-          "@Dodongos Cavern MQ/Lobby,sword2",
-          "@Dodongos Cavern MQ/Lobby,[sword2],sword1",
-          "@Dodongos Cavern MQ/Lobby,[sword2],sticks",
-          "@Dodongos Cavern MQ/Lower Right Side,sling,sword2,bow",
-          "@Dodongos Cavern MQ/Lower Right Side,sling,lift1",
-          "@Dodongos Cavern MQ/Lower Right Side,sling,dinsfire,magic",
-          "@Dodongos Cavern MQ/Lower Right Side,sling,$has_explosives"
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult",
+          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sword1,$damage_single_instance", //TODO: trick
+          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sticks,$damage_single_instance", //TODO: trick
+          "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,$has_age|adult,bow",
+          "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,lift1",
+          "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,dinsfire,magic",
+          "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,$has_explosives"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -282,19 +282,19 @@
         "name": "GS41 - Scrub Room",
         "short_name": "Scrub",
         "access_rules": [
-          "@Dodongos Cavern MQ/Bomb Bag Area,sling,boomerang,lift1",
-          "@Dodongos Cavern MQ/Bomb Bag Area,sling,boomerang,dinsfire,magic",
-          "@Dodongos Cavern MQ/Bomb Bag Area,sling,boomerang,$has_explosives",
-          "@Dodongos Cavern MQ/Bomb Bag Area,[sling],sticks,boomerang,lift1",
-          "@Dodongos Cavern MQ/Bomb Bag Area,[sling],sticks,boomerang,dinsfire,magic",
-          "@Dodongos Cavern MQ/Bomb Bag Area,[sling],sticks,boomerang,$has_explosives",
-          "@Dodongos Cavern MQ/Bomb Bag Area,[sling],sword1,boomerang,lift1",
-          "@Dodongos Cavern MQ/Bomb Bag Area,[sling],sword1,boomerang,dinsfire,magic",
-          "@Dodongos Cavern MQ/Bomb Bag Area,[sling],sword1,boomerang,$has_explosives",
-          "@Dodongos Cavern MQ/Bomb Bag Area,sword2,hookshot,bow",
-          "@Dodongos Cavern MQ/Bomb Bag Area,sword2,hookshot,lift1",
-          "@Dodongos Cavern MQ/Bomb Bag Area,sword2,hookshot,dinsfire,magic",
-          "@Dodongos Cavern MQ/Bomb Bag Area,sword2,hookshot,$has_explosives"
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sling,boomerang,lift1",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sling,boomerang,dinsfire,magic",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sling,boomerang,$has_explosives",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,[sling],sticks,boomerang,lift1",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,[sling],sticks,boomerang,dinsfire,magic",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,[sling],sticks,boomerang,$has_explosives",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,[sling],sword1,boomerang,lift1",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,[sling],sword1,boomerang,dinsfire,magic",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,[sling],sword1,boomerang,$has_explosives",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,bow",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,lift1",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,dinsfire,magic",
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,$has_explosives"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -321,10 +321,10 @@
         "short_name": "Platform",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$can_blast",
-          "@Dodongos Cavern MQ/Lobby,sticks",
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks",
           "@Dodongos Cavern MQ/Lobby,dinsfire,magic",
-          "@Dodongos Cavern MQ/Lobby,sword2,[hoverboots]",
-          "@Dodongos Cavern MQ/Lobby,sword2,[hookshot]"
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult,[hoverboots]",
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult,[hookshot]"
         ],
         "item_count": 1
       },
@@ -346,8 +346,8 @@
         "short_name": "Larva",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$has_fire",
-          "@Dodongos Cavern MQ/Lobby,sticks,$has_explosives",
-          "@Dodongos Cavern MQ/Lobby,sticks,lift1"
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks,$has_explosives",
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks,lift1"
         ],
         "item_count": 1
       },
@@ -368,7 +368,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Dodongos Cavern MQ/Lobby,sword2",
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult",
           "@Dodongos Cavern MQ/Lobby,$can_child_attack",
           "@Dodongos Cavern MQ/Lobby,nuts"
         ],
@@ -393,7 +393,7 @@
         "short_name": "Song of Time",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,ocarina,time,$can_child_attack",
-          "@Dodongos Cavern MQ/Lobby,ocarina,time,sword2"
+          "@Dodongos Cavern MQ/Lobby,ocarina,time,$has_age|adult"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -446,14 +446,14 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern MQ/Boss Area,lift1,sticks",
-          "@Dodongos Cavern MQ/Boss Area,lift1,sword1",
-          "@Dodongos Cavern MQ/Boss Area,lift1,sword2",
-          "@Dodongos Cavern MQ/Boss Area,bombs,sticks",
-          "@Dodongos Cavern MQ/Boss Area,bombs,sword1",
-          "@Dodongos Cavern MQ/Boss Area,bombs,sword2",
-          "@Dodongos Cavern MQ/Boss Area,bombchu,[bombs],sword2,shield2",
-          "@Dodongos Cavern MQ/Boss Area,bombchu,[bombs],sword2,shield3"
+          "@Dodongos Cavern MQ/Boss Area,lift1,$has_age|child,sticks",
+          "@Dodongos Cavern MQ/Boss Area,lift1,$has_age|child,sword1",
+          "@Dodongos Cavern MQ/Boss Area,lift1,$has_age|adult",
+          "@Dodongos Cavern MQ/Boss Area,bombs,$has_age|child,sticks",
+          "@Dodongos Cavern MQ/Boss Area,bombs,$has_age|child,sword1",
+          "@Dodongos Cavern MQ/Boss Area,bombs,$has_age|adult",
+          "@Dodongos Cavern MQ/Boss Area,bombchu,[bombs],$has_age|adult,shield2",
+          "@Dodongos Cavern MQ/Boss Area,bombchu,[bombs],$has_age|adult,shield3"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
@@ -783,14 +783,14 @@
     "name": "Forest Temple MQ",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "sword2,hookshot,[ocarina],[saria]",
-      "sword2,hookshot,[ocarina],[minuet]"
+      "$has_age|adult,hookshot,[ocarina],[saria]",
+      "$has_age|adult,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
         "name": "Central Area",
         "access_rules": [
-          "forest_small_keys:1,sword2"
+          "forest_small_keys:1,$has_age|adult"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -800,8 +800,8 @@
       {
         "name": "After Block Puzzle",
         "access_rules": [
-          "@Forest Temple MQ/Central Area,sword2,lift1",
-          "@Forest Temple MQ/Central Area,sword2,[lift1],bombchu,hookshot"
+          "@Forest Temple MQ/Central Area,$has_age|adult,lift1",
+          "@Forest Temple MQ/Central Area,$has_age|adult,[lift1],bombchu,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -835,7 +835,7 @@
       {
         "name": "NW Outdoors",
         "access_rules": [
-          "@Forest Temple MQ/Central Area,sword2,bow",
+          "@Forest Temple MQ/Central Area,$has_age|adult,bow",
           "@Forest Temple MQ/Outdoor Ledge"
         ],
         "visibility_rules": [
@@ -846,7 +846,7 @@
       {
         "name": "NE Outdoors",
         "access_rules": [
-          "@Forest Temple MQ/Central Area,sword2,bow",
+          "@Forest Temple MQ/Central Area,$has_age|adult,bow",
           "@Forest Temple MQ/NW Outdoors,ironboots",
           "@Forest Temple MQ/NW Outdoors,hookshot,[longshot]",
           "@Forest Temple MQ/NW Outdoors,scale2",
@@ -911,7 +911,7 @@
         "name": "First Chest",
         "short_name": "Tree",
         "access_rules": [
-          "sword2"
+          "$has_age|adult"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -920,7 +920,7 @@
         "name": "GS60 - First Hallway",
         "short_name": "First Hallway",
         "access_rules": [
-          "sword2,hookshot"
+          "$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1113,8 +1113,8 @@
         "name": "Lower Locked Door",
         "access_rules": [
           "fire_small_keys:1,[fire_small_keys:5],$has_explosives",
-          "fire_small_keys:1,[fire_small_keys:5],sword2,hammer",
-          "fire_small_keys:1,[fire_small_keys:5],sword2,hookshot"
+          "fire_small_keys:1,[fire_small_keys:5],$has_age|adult,hammer",
+          "fire_small_keys:1,[fire_small_keys:5],$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1124,7 +1124,7 @@
       {
         "name": "Big Lava Room",
         "access_rules": [
-          "$FTR_or_goron,sword2,hammer"
+          "$FTR_or_goron,$has_age|adult,hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1165,8 +1165,8 @@
       {
         "name": "Boss Room",
         "access_rules": [
-          "sword2,[redtunic],hammer,fire_boss_key,$has_fire,[hoverboots]",
-          "sword2,[redtunic],hammer,fire_boss_key,@Fire Temple MQ/West Top"
+          "$has_age|adult,[redtunic],hammer,fire_boss_key,$has_fire,[hoverboots]",
+          "$has_age|adult,[redtunic],hammer,fire_boss_key,@Fire Temple MQ/West Top"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1178,8 +1178,12 @@
         "short_name": "Near Boss",
         "access_rules": [
           "$FTR_or_goron,$has_fire,hoverboots",
-          "$FTR_or_goron,$has_fire,bow,[hoverboots]",
-          "$FTR_or_goron,$has_fire,hookshot"
+          "$FTR_or_goron,$has_fire,bow,[hoverboots]", //TODO: trick
+          "$FTR_or_goron,hookshot,bow,firearrow,magic",
+          "$FTR_or_goron,hookshot,dinsfire,magic,$damage_below_quadruple",
+          "$FTR_or_goron,hookshot,dinsfire,magic,redtunic",
+          "$FTR_or_goron,hookshot,dinsfire,magic,bow",
+          "$FTR_or_goron,hookshot,dinsfire,magic,longshot"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1188,7 +1192,7 @@
         "name": "Entrance Hallway Small Chest",
         "short_name": "Like Like",
         "access_rules": [
-          "sword2"
+          "$has_age|adult"
         ],
         "item_count": 1
       },
@@ -1196,7 +1200,7 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "@Fire Temple MQ/Lower Locked Door,sword2"
+          "@Fire Temple MQ/Lower Locked Door,$has_age|adult"
         ],
         "item_count": 1
       },
@@ -1204,7 +1208,7 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Fire Temple MQ/Lower Locked Door,sword2,hammer"
+          "@Fire Temple MQ/Lower Locked Door,$has_age|adult,hammer"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -1213,7 +1217,9 @@
         "name": "Big Lava Room Bombable Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot]"
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,hookshot",
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],$damage_below_ohko", //TODO: trick
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],nayrus,magic" //TODO: trick
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1378,14 +1384,14 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia",
     "access_rules": [
-      "sword2,hookshot,ironboots",
-      "sword2,hookshot,scale2,[longshot]"
+      "$has_age|adult,hookshot,ironboots",
+      "$has_age|adult,hookshot,scale2,[longshot]"
     ],
     "sections": [
       {
         "name": "Dive",
         "access_rules": [
-          "$FTR_or_zora,sword2,ironboots"
+          "$FTR_or_zora,$has_age|adult,ironboots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1395,7 +1401,7 @@
       {
         "name": "Dark Link Region",
         "access_rules": [
-          "water_small_keys:1,sword2,longshot"
+          "water_small_keys:1,$has_age|adult,longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1415,7 +1421,7 @@
       {
         "name": "Basement Gated Areas",
         "access_rules": [
-          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,sword2,ironboots"
+          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,$has_age|adult,ironboots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1556,7 +1562,7 @@
       {
         "name": "Morpha",
         "access_rules": [
-          "water_boss_key,sword2,longshot"
+          "water_boss_key,$has_age|adult,longshot"
         ],
         "hosted_item": "water",
         "chest_unopened_img": "images/HC.png",
@@ -1580,14 +1586,14 @@
     "parent": "Graveyard",
     "access_rules": [
       "ocarina,nocturne,dinsfire,magic",
-      "ocarina,nocturne,[dinsfire],magic,sword2,bow,firearrow"
+      "ocarina,nocturne,[dinsfire],magic,$has_age|adult,bow,firearrow"
     ],
     "sections": [
       {
         "name": "Beginning",
         "access_rules": [
-          "$can_see_with_lens,sword2,hoverboots",
-          "$can_see_with_lens,sword2,hookshot"
+          "$can_see_with_lens,$has_age|adult,hoverboots",
+          "$can_see_with_lens,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1929,7 +1935,7 @@
       {
         "name": "Adult",
         "access_rules": [
-          "bombchu,sword2,longshot,lift2"
+          "bombchu,$has_age|adult,longshot,lift2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1982,7 +1988,7 @@
         "name": "Silver Gauntlets Hand",
         "access_rules": [
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],sword2",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
           "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_see_with_lens"
         ],
         "visibility_rules": [
@@ -1990,15 +1996,6 @@
         ],
         "item_count": 1
       },
-
-
-
-
-
-
-
-
-
       {
         "name": "Entrance Front Left Chest",
         "short_name": "Entry Front Left",
@@ -2009,7 +2006,7 @@
         "short_name": "Entry Back Left",
         "access_rules": [
           "$can_blast,$child_colossus,sling",
-          "$can_blast,sword2,bow"
+          "$can_blast,$has_age|adult,bow"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2019,8 +2016,8 @@
         "short_name": "Entry Back Right",
         "access_rules": [
           "bombchu",
-          "sword2,bow",
-          "sword2,hookshot",
+          "$has_age|adult,bow",
+          "$has_age|adult,hookshot",
           "$child_colossus,sling",
           "$child_colossus,boomerang"
         ],
@@ -2074,7 +2071,7 @@
         "short_name": "Compass",
         "access_rules": [
           "@Spirit Temple MQ/Child,bombchu,sling,spirit_small_keys:2,[spirit_small_keys:7]",
-          "@Spirit Temple MQ/Adult,sword2,bow",
+          "@Spirit Temple MQ/Adult,$has_age|adult,bow",
           "@Spirit Temple MQ/Shared,bow,sling"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
@@ -2108,7 +2105,7 @@
         "short_name": "Right Hand",
         "access_rules": [          
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],sword2",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_see_with_lens"
         ],
         "item_count": 1
@@ -2304,7 +2301,7 @@
     "name": "Bottom of the Well MQ",
     "parent": "Kakariko Village",
     "access_rules": [
-      "ocarina,storm"
+      "$has_age|child,ocarina,storm"
     ],
     "sections": [
       {
@@ -2415,12 +2412,12 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "setting_bridge_open,sword2",
-      "setting_bridge_vanilla,sword2,lacs_meds:2,lightarrow",
-      "setting_bridge_stones,sword2,stones:3",
-      "setting_bridge_medallions,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "setting_bridge_dungeons,sword2,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "setting_bridge_100gs,sword2,token:100"
+      "$has_age|adult,setting_bridge_open",
+      "$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
+      "$has_age|adult,setting_bridge_stones,stones:3",
+      "$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "$has_age|adult,setting_bridge_100gs,token:100"
     ],
     "sections": [
       {
@@ -2539,7 +2536,8 @@
         "name": "Light Trial Clear",
         "short_name": "Light Trial",
         "access_rules": [
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot]"
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,hookshot",
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance" //TODO: trick
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2620,7 +2618,7 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "$gerudo_card"
+      "$has_age|adult,$gerudo_card"
     ],
     "sections": [
       {
@@ -2669,7 +2667,7 @@
       {
         "name": "Right Side",
         "access_rules": [
-          "sword2,bow",
+          "$has_age|adult,bow",
           "@Gerudo Training Grounds MQ/Back Areas,longshot",
           "@Gerudo Training Grounds MQ/Central Maze Right,hookshot"
         ],
@@ -2700,7 +2698,7 @@
         "name": "First Iron Knuckle Chest",
         "short_name": "Knuckle 1",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Left Side,sword2",
+          "@Gerudo Training Grounds MQ/Left Side,$has_age|adult",
           "@Gerudo Training Grounds MQ/Left Side,$has_explosives"
         ],
         "item_count": 1
@@ -2709,7 +2707,7 @@
         "name": "Before Heavy Block Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Stalfos Room,sword2"
+          "@Gerudo Training Grounds MQ/Stalfos Room,$has_age|adult"
         ],
         "item_count": 1
       },
@@ -2717,7 +2715,7 @@
         "name": "Heavy Block Chest",
         "short_name": "Freezards",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Stalfos Room,sword2,lift2"
+          "@Gerudo Training Grounds MQ/Stalfos Room,$has_age|adult,lift2"
         ],
         "item_count": 1
       },
@@ -2760,7 +2758,7 @@
         "name": "Dinolfos Chest",
         "short_name": "Dinolfos",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Right Side,sword2"
+          "@Gerudo Training Grounds MQ/Right Side,$has_age|adult"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2769,7 +2767,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora",
+          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora,$damage_single_instance",
           "{$hintable}"
         ],
         "capture_item": true,

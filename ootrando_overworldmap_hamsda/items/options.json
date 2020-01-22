@@ -189,6 +189,23 @@
     ]
   },
   {	
+    "name": "Starting Age",	
+    "type": "progressive",	
+    "allow_disabled": false,	
+    "loop": true,	
+    "stages": [	
+      {	
+        "img": "images/setting_age_child.png",	
+        "codes": "setting_age,setting_age_child"	
+      },	
+      {	
+        "img": "images/setting_age_adult.png",	
+        "codes": "setting_age,setting_age_adult",	
+        "inherit_codes": false	
+      }	
+    ]	
+  },
+  {	
     "name": "Bombchus in Logic",	
     "type": "progressive",	
     "allow_disabled": false,	
@@ -324,6 +341,39 @@
       {
         "img": "images/setting_hints_on.png",
         "codes": "setting_hints,setting_hints_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Damage Multiplier",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_damage_half.png",
+        "codes": "setting_damage,setting_damage_half"
+      },
+      {
+        "img": "images/setting_damage_normal.png",
+        "codes": "setting_damage,setting_damage_normal",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_double.png",
+        "codes": "setting_damage,setting_damage_double",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_quadruple.png",
+        "codes": "setting_damage,setting_damage_quadruple",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_ohko.png",
+        "codes": "setting_damage,setting_damage_ohko",
         "inherit_codes": false
       }
     ]
