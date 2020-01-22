@@ -8,6 +8,24 @@ function has(item, amount)
   end
 end
 
+function has_age(age)
+  if not age then
+    print("missing argument: age")
+  end
+
+  if age == "child" then
+    return (has("time_travel") or has("setting_age_child")) and 1 or 0
+  elseif age == "adult" then
+    return (has("time_travel") or has("setting_age_adult")) and 1 or 0
+  elseif age == "both" then
+    return has("time_travel") and 1 or 0
+  else
+    print("wrong argument: age")
+  end
+
+  return 0
+end
+
 function has_bombchus()
   if has("setting_logic_chus_yes") then
     return Tracker:ProviderCountForCode("bombchu")
@@ -32,7 +50,7 @@ function has_explosives()
 end
 
 function can_blast()
-  if has("sword2") and has("hammer") then
+  if has_age("adult") == 1 and has("hammer") then
     return 1 
   else
     return has_explosives()
@@ -40,6 +58,10 @@ function can_blast()
 end
 
 function can_child_attack()
+  if has_age("child") == 0 then
+    return 0
+  end
+
   if has("sling")
   or has("boomerang")
   or has("sticks")
@@ -53,7 +75,7 @@ function can_child_attack()
 end
 
 function can_stun_deku()
-  if has("sword2")
+  if has_age("adult") == 1
   or has("nuts")
   or has("shield1")
   then
@@ -64,7 +86,7 @@ function can_stun_deku()
 end
 
 function can_LA()
-  if has("sword2")
+  if has_age("adult") == 1
   and has("magic")
   and has("bow")
   and has("lightarrow")
@@ -76,7 +98,7 @@ function can_LA()
 end
 
 function has_fire()
-  if has("sword2")
+  if has_age("adult") == 1
   and has("magic")
   and has("bow")
   and has("firearrow")
@@ -151,7 +173,7 @@ function gerudo_card()
 end
 
 function gerudo_bridge()
-  if has("sword2", 0) then
+  if has_age("adult") == 0 then
     return 0
   elseif has("longshot")
   or has("ocarina") and has("epona")
@@ -200,6 +222,7 @@ end
 function child_colossus()
   if has("ocarina")
   and has("requiem")
+  and has_age("child") == 1
   then
     return 1
   else
@@ -244,48 +267,61 @@ function adult_colossus()
 end
 
 function link_the_goron()
-  if has("sword2") then
-    if has("lift1")
-    or has("bow")
-    then
-      return 1, AccessibilityLevel.Normal
-    else
-      local explo_count, explo_level = has_explosives()
-      if explo_count > 0 then
-        return explo_count, explo_level
-      elseif has("dinsfire") and has("magic") then
-        return 1, AccessibilityLevel.SequenceBreak
-      end
-    end
+  if has_age("adult") == 0 then
+    return 0
   end
+
+  if has("lift1")
+  or has("bow")
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  local explo_count, explo_level = has_explosives()
+  if explo_count > 0 then
+    return explo_count, explo_level
+  end 
+
+  if has("dinsfire") and has("magic") then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+
   return 0
 end
 
 function dmc_central()
-  if has("sword2") then
-    if has("ocarina") and has("bolero") then
+  if has_age("adult") == 0 then
+    return 0
+  end
+
+  if has("ocarina") and has("bolero") then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  local goron_count, goron_level = link_the_goron()
+  if has("hoverboots") then
+    if has("hammer") then
       return 1, AccessibilityLevel.Normal
     else
-      local goron_count, goron_level = link_the_goron()
-      if has("hoverboots") then
-        if has("hammer") then
-          return 1, AccessibilityLevel.Normal
-        else
-          return goron_count, goron_level
-        end
-      elseif has("hookshot") then
-        if goron_count > 0 then
-          return goron_count, goron_level
-        elseif has("hammer") then
-          return 1, AccessibilityLevel.SequenceBreak
-        end
-      end
+      return goron_count, goron_level
     end
   end
+  if has("hookshot") then
+    if goron_count > 0 then
+      return goron_count, goron_level
+    elseif has("hammer") then
+      return 1, AccessibilityLevel.SequenceBreak
+    end
+  end
+
   return 0
 end
 
 function child_fountain()
+  if has_age("child") == 0 then
+    return 0
+  end
+
   if has("ruto", 0) 
   and has("setting_fountain_open", 0) 
   then
@@ -293,6 +329,7 @@ function child_fountain()
   end
 
   local level = AccessibilityLevel.Normal
+
   if has("king_zora_moved_yes", 0) 
   and has("setting_fountain_open", 0) 
   then
@@ -301,31 +338,33 @@ function child_fountain()
 
   if has("scale1") then
     return 1, level
-  else
-    local explo_count, explo_level = has_explosives()
-    if explo_count == 0 then
-      return 0
-    else
-      if explo_level == AccessibilityLevel.SequenceBreak then
-        level = AccessibilityLevel.SequenceBreak
-      end
-      
-      if has("ocarina", 0)
-      or has("lullaby", 0)
-      then
-        level = AccessibilityLevel.SequenceBreak
-      end
-      return 1, level
-    end
   end
+
+  local explo_count, explo_level = has_explosives()
+  if explo_count == 0 then
+    return 0
+  end
+
+  if explo_level == AccessibilityLevel.SequenceBreak then
+    level = AccessibilityLevel.SequenceBreak
+  end
+  
+  if has("ocarina", 0)
+  or has("lullaby", 0)
+  then
+    level = AccessibilityLevel.SequenceBreak
+  end
+
+  return 1, level
 end
 
 function adult_fountain()
-  if has("sword2", 0) then
+  if has_age("adult") == 0 then
     return 0
   end
 
   local level = AccessibilityLevel.Normal
+
   if has("ocarina", 0)
   or has("lullaby", 0)
   then
@@ -345,12 +384,11 @@ function adult_fountain()
   local child_count, child_level = child_fountain()
   if child_count == 0 then
     return 0
-  else
-    if child_level == AccessibilityLevel.SequenceBreak then
-      level = AccessibilityLevel.SequenceBreak
-    end
-    return 1, level
   end
+  if child_level == AccessibilityLevel.SequenceBreak then
+    level = AccessibilityLevel.SequenceBreak
+  end
+  return 1, level
 end
 
 function has_bottle()
@@ -362,7 +400,7 @@ function has_bottle()
   
   local usable_bottles = bottles - ruto - bigpoe
 
-  if has("sword2") then
+  if has_age("adult") == 1 then
     usable_bottles = usable_bottles + bigpoe
   end
 

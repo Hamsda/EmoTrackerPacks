@@ -17,6 +17,9 @@
                 "sections": [
                   {
                     "name": "Dodge Boulder",
+                    "access_rules": [
+                      "$has_age|child"
+                    ],
                     "capture_item": true,
                     "item_count": 1
                   }
@@ -125,7 +128,7 @@
                     "name": "Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "sword2,ocarina,epona,setting_cowsanity_yes"
+                      "$has_age|adult,ocarina,epona,setting_cowsanity_yes"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
@@ -152,8 +155,8 @@
                   {
                     "name": "GS1 (N)",
                     "access_rules": [
-                      "$can_leave_forest,$can_child_attack",
-                      "ocarina,sun,$can_child_attack"
+                      "$has_age|child,$can_leave_forest,$can_child_attack",
+                      "$has_age|child,ocarina,sun,$can_child_attack"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -180,7 +183,7 @@
                   {
                     "name": "GS2",
                     "access_rules": [
-                      "$has_bottle,$can_child_attack"
+                      "$has_age|child,$has_bottle,$can_child_attack"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -207,10 +210,10 @@
                   {
                     "name": "GS3 (N)",
                     "access_rules": [
-                      "sword2,hookshot",
-                      "sword2,hoverboots,[hookshot]",
-                      "{sword2,bow}",
-                      "{sword2,dinsfire,magic}"
+                      "$has_age|adult,hookshot",
+                      "$has_age|adult,hoverboots,[hookshot]",
+                      "{$has_age|adult,bow}",
+                      "{$has_age|adult,dinsfire,magic}"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -331,7 +334,7 @@
                   {
                     "name": "Play Sarias Song",
                     "access_rules": [
-                      "ocarina,saria",
+                      "$has_age|child,ocarina,saria",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -340,7 +343,7 @@
                   {
                     "name": "Sell Mask",
                     "access_rules": [
-                      "ocarina,saria,skull"
+                      "$has_age|child,ocarina,saria,skull"
                     ],
                     "visibility_rules": [
                       "skull"
@@ -388,7 +391,7 @@
                   {
                     "name": "Repeat",
                     "access_rules": [
-                      "ocarina"
+                      "$has_age|child,ocarina"
                     ],
                     "item_count": 1
                   }
@@ -407,7 +410,7 @@
                   {
                     "name": "Shoot it",
                     "access_rules": [
-                      "sling"
+                      "$has_age|child,sling"
                     ],
                     "item_count": 1
                   }
@@ -426,7 +429,7 @@
                   {
                     "name": "Skull Mask",
                     "access_rules": [
-                      "skullmask",
+                      "$has_age|child,skullmask",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -435,7 +438,7 @@
                   {
                     "name": "Mask of Truth",
                     "access_rules": [
-                      "maskoftruth",
+                      "$has_age|child,maskoftruth",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -456,10 +459,10 @@
                   {
                     "name": "Trade",
                     "access_rules": [
-                      "sword2,cojiro"
+                      "$has_age|adult,cojiro"
                     ],
                     "visibility_rules": [
-                      "sword2,cojiro"
+                      "cojiro"
                     ],
                     "hosted_item": "mushroom"
                   }
@@ -478,10 +481,10 @@
                   {
                     "name": "Trade",
                     "access_rules": [
-                      "sword2,oddpotion"
+                      "$has_age|adult,oddpotion"
                     ],
                     "visibility_rules": [
-                      "sword2,oddpotion"
+                      "oddpotion"
                     ],
                     "hosted_item": "saw"
                   }
@@ -501,9 +504,9 @@
                   {
                     "name": "Pay up",
                     "access_rules": [
-                      "$can_child_attack",
-                      "nuts",
-                      "shield1"
+                      "$has_age|child,$can_child_attack",
+                      "$has_age|child,nuts",
+                      "$has_age|child,shield1"
                     ],
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
@@ -523,8 +526,8 @@
                 "short_name": "Sales Grotto",
                 "access_rules": [
                   "$has_explosives",
-                  "sword2,hammer,[ocarina],[saria]",
-                  "sword2,hammer,[ocarina],[minuet]"
+                  "$has_age|adult,hammer,[ocarina],[saria]",
+                  "$has_age|adult,hammer,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -560,12 +563,12 @@
               },
               {
                 "name": "LW Deku Scrubs",
-                "access_rules": [
-                  "setting_scrub_shuffle_yes,$can_stun_deku"
-                ],
                 "sections": [
                   {
                     "name": "Deku Nuts / Deku Sticks",
+                    "access_rules": [
+                      "$has_age|child,$can_stun_deku"
+                    ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
                     ],
@@ -586,14 +589,11 @@
               {
                 "name": "Lost Woods Bean Patch Near Bridge",
                 "short_name": "Bean Patch Near Bridge",
-                "access_rules": [
-                  "setting_tokens_overworld"
-                ],
                 "sections": [
                   {
                     "name": "GS4",
                     "access_rules": [
-                      "$has_bottle,$can_child_attack"
+                      "$has_age|child,$has_bottle,$can_child_attack"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -618,7 +618,7 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "beans,setting_plant_yes,bean_stage_no"
+                      "$has_age|child,beans,setting_plant_yes,bean_stage_no"
                     ],
                     "visibility_rules": [
                       "setting_plant_yes"
@@ -628,8 +628,8 @@
                   {
                     "name": "GS5",
                     "access_rules": [
-                      "setting_tokens_overworld,$has_bottle,$can_child_attack",
-                      "setting_tokens_overworld,$has_bottle,shield1"
+                      "$has_age|child,$has_bottle,$can_child_attack",
+                      "$has_age|child,$has_bottle,shield1"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -651,7 +651,7 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "setting_tokens_overworld,$night_gs,sword2"
+                  "setting_tokens_overworld,$night_gs,$has_age|adult"
                 ],
                 "sections": [
                   {
@@ -739,8 +739,8 @@
                 "short_name": "Wolfos Grotto",
                 "access_rules": [
                   "$has_explosives",
-                  "sword2,hammer,[ocarina],[saria]",
-                  "sword2,hammer,[ocarina],[minuet]"
+                  "$has_age|adult,hammer,[ocarina],[saria]",
+                  "$has_age|adult,hammer,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -768,11 +768,11 @@
                     "name": "Song from Saria",
                     "short_name": "Song",
                     "access_rules": [
-                      "postzelda,sling",
-                      "postzelda,sticks",
-                      "postzelda,$has_explosives",
-                      "postzelda,sword1",
-                      "postzelda,dinsfire,magic"
+                      "$has_age|child,postzelda,sling",
+                      "$has_age|child,postzelda,sticks",
+                      "$has_age|child,postzelda,$has_explosives",
+                      "$has_age|child,postzelda,sword1",
+                      "$has_age|child,postzelda,dinsfire,magic"
                     ],
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
@@ -794,8 +794,8 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "sword2,[ocarina],[saria]",
-                      "sword2,[ocarina],[minuet]",
+                      "$has_age|adult,[ocarina],[saria]",
+                      "$has_age|adult,[ocarina],[minuet]",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -815,21 +815,21 @@
               {
                 "name": "Meadow Storms Grotto",
                 "access_rules": [
-                  "setting_scrub_shuffle_yes,ocarina,storm"
+                  "ocarina,storm"
                 ],
                 "sections": [
                   {
                     "name": "Deku Scrubs",
                     "access_rules": [
-                      "sling",
-                      "sticks",
+                      "$has_age|child,sling",
+                      "$has_age|child,sticks",
                       "$has_explosives",
-                      "sword1",
+                      "$has_age|child,sword1",
                       "dinsfire,magic",
-                      "minuet,nuts",
-                      "minuet,shield1",
-                      "sword2,[minuet]",
-                      "sword2,[saria]"
+                      "$has_age|child,minuet,nuts",
+                      "$has_age|child,minuet,shield1",
+                      "$has_age|adult,[minuet]",
+                      "$has_age|adult,[saria]"
                     ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
@@ -856,8 +856,8 @@
               {
                 "name": "Top of Maze",
                 "access_rules": [
-                  "setting_tokens_overworld,$night_gs,sword2,[ocarina],[saria]",
-                  "setting_tokens_overworld,$night_gs,sword2,[ocarina],[minuet]"
+                  "$night_gs,$has_age|adult,[ocarina],[saria]",
+                  "$night_gs,$has_age|adult,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -970,7 +970,7 @@
               {
                 "name": "Ocarina of Time",
                 "access_rules": [
-                  "stones:3",
+                  "$has_age|child,stones:3",
                   "{$hintable}"
                 ],
                 "sections": [
@@ -1006,7 +1006,7 @@
                     "name": "Dive down",
                     "access_rules": [
                       "scale2",
-                      "sword2,ironboots",
+                      "$has_age|adult,ironboots",
                       "{}"
                     ],
                     "capture_item": true,
@@ -1135,7 +1135,7 @@
                   {
                     "name": "Sell Mask",
                     "access_rules": [
-                      "bunny,stones:3"
+                      "$has_age|child,bunny,stones:3"
                     ],
                     "visibility_rules": [
                       "bunny"
@@ -1154,16 +1154,16 @@
               {
                 "name": "Field Kakariko Grotto",
                 "access_rules": [
-                  "setting_tokens_overworld,$can_blast"
+                  "$can_blast"
                 ],
                 "sections": [
                   {
                     "name": "GS12",
                     "access_rules": [
-                      "$has_explosives,boomerang",
-                      "{$has_explosives,sling}",
-                      "sword2,hookshot",
-                      "{sword2,bow}",
+                      "$has_age|child,$has_explosives,boomerang",
+                      "{$has_age|child,$has_explosives,sling}",
+                      "$has_age|adult,hookshot",
+                      "{$has_age|adult,bow}",
                       "{dinsfire,magic}"
                     ],
                     "visibility_rules": [
@@ -1194,11 +1194,11 @@
                   {
                     "name": "GS13",
                     "access_rules": [
-                      "setting_tokens_overworld,$has_explosives,dinsfire,magic,boomerang",
-                      "{setting_tokens_overworld,$has_explosives,dinsfire,magic}",
-                      "setting_tokens_overworld,sword2,hammer,$has_fire,hookshot",
-                      "{setting_tokens_overworld,sword2,hammer,$has_fire}",
-                      "{setting_tokens_overworld,$hintable}"
+                      "$has_age|child,$has_explosives,dinsfire,magic,boomerang",
+                      "{$has_age|child,$has_explosives,dinsfire,magic}",
+                      "$has_age|adult,hammer,$has_fire,hookshot",
+                      "{$has_age|adult,hammer,$has_fire}",
+                      "{$hintable}"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -1212,8 +1212,8 @@
                     "name": "HF Grotto Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "$has_explosives,dinsfire,magic,ocarina,epona,setting_cowsanity_yes",
-                      "sword2,hammer,$has_fire,ocarina,epona,setting_cowsanity_yes"
+                      "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
+                      "$has_age|adult,hammer,$has_fire,ocarina,epona"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
@@ -1318,8 +1318,8 @@
                   {
                     "name": "Check it",
                     "access_rules": [
-                      "$has_explosives,dinsfire,magic",
-                      "sword2,hammer,$has_fire"
+                      "$has_age|child,$has_explosives,dinsfire,magic",
+                      "$has_age|adult,hammer,$has_fire"
                     ],
                     "chest_unopened_img": "images/gossip_stone.png",
                     "chest_opened_img": "images/gossip_stone.png",
@@ -1344,8 +1344,8 @@
                       {
                         "name": "Dive down",
                         "access_rules": [
-                          "scale1",
-                          "{}"
+                          "$has_age|child,scale1",
+                          "{$has_age|child}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -1364,6 +1364,9 @@
                     "sections": [
                       {
                         "name": "Bite pls",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -1382,10 +1385,10 @@
                       {
                         "name": "Bite pls",
                         "access_rules": [
-                          "sword2,ocarina,scarecrow,hookshot",
-                          "sword2,water",
-                          "sword2,setting_plant_no,beans",
-                          "sword2,bean_lake_yes",
+                          "$has_age|adult,ocarina,scarecrow,hookshot",
+                          "$has_age|adult,water",
+                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,bean_lake_yes",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -1406,10 +1409,10 @@
                       {
                         "name": "Shoot it",
                         "access_rules": [
-                          "sword2,bow,ocarina,scarecrow,longshot",
-                          "sword2,bow,water",
+                          "$has_age|adult,bow,ocarina,scarecrow,longshot",
+                          "$has_age|adult,bow,water",
                           "{$hintable}",
-                          "{sword2,bow}"
+                          "{$has_age|adult,bow}"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -1431,9 +1434,9 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "sword2,setting_plant_no,beans",
-                          "sword2,bean_lake_yes",
-                          "sword2,ocarina,scarecrow,hookshot"
+                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,bean_lake_yes",
+                          "$has_age|adult,ocarina,scarecrow,hookshot"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -1457,17 +1460,17 @@
                         "short_name": "Dive down",
                         "access_rules": [
                           "scale2",
-                          "sword2,hookshot,ironboots,[scale2]"
+                          "$has_age|adult,hookshot,ironboots,[scale2]"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Trade",
                         "access_rules": [
-                          "sword2,speedfrog"
+                          "$has_age|adult,speedfrog"
                         ],
                         "visibility_rules": [
-                          "sword2,speedfrog"
+                          "speedfrog"
                         ],
                         "hosted_item": "eyedrops"
                       }
@@ -1491,7 +1494,7 @@
                       {
                         "name": "Play Song",
                         "access_rules": [
-                          "ocarina,scarecrow_kid,$has|scarecrow|0"
+                          "$has_age|child,ocarina,scarecrow_kid,$has|scarecrow|0"
                         ],
                         "hosted_item": "scarecrow_adult"
                       }
@@ -1510,7 +1513,7 @@
                       {
                         "name": "Repeat Song",
                         "access_rules": [
-                          "sword2,ocarina,scarecrow_adult"
+                          "$has_age|adult,ocarina,scarecrow_adult"
                         ],
                         "hosted_item": "scarecrow"
                       }
@@ -1526,12 +1529,12 @@
                   {
                     "name": "Lake Hylia Grotto",
                     "short_name": "Under Gravestone",
-                    "access_rules": [
-                      "setting_scrub_shuffle_yes,$can_stun_deku"
-                    ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
+                        "access_rules": [
+                          "$can_stun_deku"
+                        ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
                         ],
@@ -1560,7 +1563,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_plant_yes,bean_lake_no"
+                          "$has_age|child,beans,bean_lake_no"
                         ],
                         "visibility_rules": [
                           "setting_plant_yes"
@@ -1570,7 +1573,7 @@
                       {
                         "name": "GS55",
                         "access_rules": [
-                          "setting_tokens_overworld,$has_bottle,$can_child_attack"
+                          "$has_age|child,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -1591,7 +1594,7 @@
                   {
                     "name": "Lab Wall",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
@@ -1622,14 +1625,11 @@
                   },
                   {
                     "name": "Small Island",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS57 (N)",
                         "access_rules": [
-                          "$can_child_attack"
+                          "$has_age|child,$night_gs,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -1649,14 +1649,11 @@
                   },
                   {
                     "name": "Giant Tree",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS58 (N)",
                         "access_rules": [
-                          "sword2,longshot"
+                          "$has_age|adult,$night_gs,longshot"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -1677,14 +1674,11 @@
                   {
                     "name": "Lab Underwater Crate",
                     "short_name": "Lab Crate",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS59",
                         "access_rules": [
-                          "sword2,ironboots,hookshot"
+                          "$has_age|adult,ironboots,hookshot"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -1781,7 +1775,7 @@
                         "name": "Song from Malon",
                         "short_name": "Song",
                         "access_rules": [
-                          "postzelda,ocarina"
+                          "$has_age|child,postzelda,ocarina"
                         ],
                         "chest_unopened_img": "images/grey_note.png",
                         "chest_opened_img": "images/grey_note_check.png",
@@ -1802,7 +1796,7 @@
                       {
                         "name": "Talons Chickens",
                         "access_rules": [
-                          "postzelda"
+                          "$has_age|child,postzelda"
                         ],
                         "item_count": 1
                       }
@@ -1821,6 +1815,9 @@
                       {
                         "name": "Freestanding PoH",
                         "short_name": "HP",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -1829,7 +1826,7 @@
                         "name": "LLR Tower Cows",
                         "short_name": "Cows",
                         "access_rules": [
-                          "ocarina,epona,setting_cowsanity_yes"
+                          "ocarina,epona"
                         ],
                         "visibility_rules": [
                           "setting_cowsanity_yes"
@@ -1860,7 +1857,7 @@
                         "name": "LLR Stables Cows",
                         "short_name": "Cows",
                         "access_rules": [
-                          "ocarina,epona,setting_cowsanity_yes"
+                          "ocarina,epona"
                         ],
                         "visibility_rules": [
                           "setting_cowsanity_yes"
@@ -1885,16 +1882,13 @@
                   },
                   {
                     "name": "Lon Lon Grotto",
-                    "access_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "$can_child_attack",
-                          "nuts",
-                          "shield1"
+                          "$has_age|child,$can_child_attack",
+                          "$has_age|child,nuts",
+                          "$has_age|child,shield1"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -1916,12 +1910,12 @@
                   {
                     "name": "Lon Lon Ranch Tree",
                     "short_name": "Lone Tree",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS18",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -1941,12 +1935,12 @@
                   {
                     "name": "Lon Lon Ranch Rain Shed",
                     "short_name": "Rain Shed",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS19 (N)",
+                        "access_rules": [
+                          "$has_age|child,$night_gs"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -1966,16 +1960,13 @@
                   {
                     "name": "Lon Lon Ranch House Window",
                     "short_name": "House Window",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS20 (N)",
                         "access_rules": [
-                          "boomerang",
-                          "{sling}",
-                          "{bombchu}"
+                          "$has_age|child,$night_gs,boomerang",
+                          "{$has_age|child,sling}",
+                          "{$has_age|child,bombchu}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -1997,17 +1988,14 @@
                   {
                     "name": "Lon Lon Ranch Back Wall",
                     "short_name": "Back Wall",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS21 (N)",
                         "access_rules": [
-                          "boomerang",
-                          "{sling}",
-                          "{dinsfire,magic}",
-                          "{$has_explosives}"
+                          "$has_age|child,$night_gs,boomerang",
+                          "{$has_age|child,sling}",
+                          "{$has_age|child,dinsfire,magic}",
+                          "{$has_age|child,$has_explosives}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -2044,10 +2032,10 @@
                   {
                     "name": "Kill them",
                     "access_rules": [
-                      "sword2",
-                      "sticks",
-                      "sword1",
-                      "dinsfire,magic"
+                      "$has_age|adult",
+                      "$has_age|child,sticks",
+                      "$has_age|child,sword1",
+                      "$has_age|child,dinsfire,magic"
                     ],
                     "item_count": 1
                   }
@@ -2101,7 +2089,7 @@
                     "name": "Impas House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "ocarina,epona,setting_cowsanity_yes"
+                      "ocarina,epona"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
@@ -2126,12 +2114,12 @@
               },
               {
                 "name": "Man on Roof",
-                "access_rules": [
-                  "[sword2],[hookshot]" //TODO: trick
-                ],
                 "sections": [
                   {
                     "name": "Talk to him",
+                    "access_rules": [
+                      "[$has_age|adult],[hookshot]" //TODO: trick
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -2154,7 +2142,7 @@
                   {
                     "name": "Adult Shooting Gallery",
                     "access_rules": [
-                      "sword2,bow",
+                      "$has_age|adult,bow",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -2176,8 +2164,8 @@
                     "name": "Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
-                      "sword2,[ocarina],[time]",
-                      "boomerang",
+                      "$has_age|adult,[ocarina],[time]",
+                      "$has_age|child,boomerang",
                       "{}"
                     ],
                     "capture_item": true,
@@ -2206,7 +2194,7 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "sword2,ocarina",
+                      "$has_age|adult,ocarina",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -2229,7 +2217,7 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "sword2,forestmed,noct_meds:2",
+                      "$has_age|adult,forestmed,noct_meds:2",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -2251,6 +2239,9 @@
                 "sections": [
                   {
                     "name": "Catch them",
+                    "access_rules": [
+                      "$has_age|child"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -2268,17 +2259,17 @@
                   {
                     "name": "Talk to her",
                     "access_rules": [
-                      "sword2"
+                      "$has_age|adult"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Trade",
                     "access_rules": [
-                      "sword2,pocketcucco"
+                      "$has_age|adult,pocketcucco"
                     ],
                     "visibility_rules": [
-                      "sword2,pocketcucco"
+                      "pocketcucco"
                     ],
                     "hosted_item": "cojiro"
                   }
@@ -2297,7 +2288,7 @@
                   {
                     "name": "Letter",
                     "access_rules": [
-                      "letter"
+                      "$has_age|child,letter"
                     ],
                     "visibility_rules": [
                       "letter"
@@ -2307,7 +2298,7 @@
                   {
                     "name": "Keaton",
                     "access_rules": [
-                      "keaton"
+                      "$has_age|child,keaton"
                     ],
                     "visibility_rules": [
                       "keaton"
@@ -2329,10 +2320,10 @@
                   {
                     "name": "Trade",
                     "access_rules": [
-                      "sword2,mushroom"
+                      "$has_age|adult,mushroom"
                     ],
                     "visibility_rules": [
-                      "sword2,mushroom"
+                      "mushroom"
                     ],
                     "hosted_item": "oddpotion"
                   }
@@ -2408,7 +2399,7 @@
               {
                 "name": "Kakariko Potion Shop",
                 "access_rules": [
-                  "sword2"
+                  "$has_age|adult"
                 ],
                 "sections": [
                   {
@@ -2446,7 +2437,7 @@
               {
                 "name": "Kakariko Bazaar",
                 "access_rules": [
-                  "sword2"
+                  "$has_age|adult"
                 ],
                 "sections": [
                   {
@@ -2484,14 +2475,11 @@
               {
                 "name": "Kakariko Above Impa's House",
                 "short_name": "Above Impa's House",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS27 (N)",
                     "access_rules": [
-                      "sword2,hookshot"
+                      "$has_age|adult,$night_gs,hookshot"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2512,12 +2500,12 @@
               {
                 "name": "Kakariko Tree",
                 "short_name": "Tree",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS22 (N)",
+                    "access_rules": [
+                      "$has_age|child,$night_gs"
+                    ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
                     ],
@@ -2537,12 +2525,12 @@
               {
                 "name": "Kakariko Skulltula House",
                 "short_name": "Skulltula House",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS23 (N)",
+                    "access_rules": [
+                      "$has_age|child,$night_gs"
+                    ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
                     ],
@@ -2562,12 +2550,12 @@
               {
                 "name": "Kakariko House Under Construction",
                 "short_name": "Under Construction",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS24 (N)",
+                    "access_rules": [
+                      "$has_age|child,$night_gs"
+                    ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
                     ],
@@ -2587,12 +2575,12 @@
               {
                 "name": "Kakariko Guard's House",
                 "short_name": "Bazaar Wall",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS25 (N)",
+                    "access_rules": [
+                      "$has_age|child,$night_gs"
+                    ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
                     ],
@@ -2613,7 +2601,7 @@
                 "name": "Kakariko Watchtower",
                 "short_name": "Watchtower",
                 "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
+                  "$has_age|child,$night_gs"
                 ],
                 "sections": [
                   {
@@ -2670,6 +2658,9 @@
                     "sections": [
                       {
                         "name": "Gravedigging Tour",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -2686,7 +2677,7 @@
                   {
                     "name": "Dampes Grave",
                     "access_rules": [
-                      "sword2"
+                      "$has_age|adult"
                     ],
                     "sections": [
                       {
@@ -2765,12 +2756,10 @@
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
                         "access_rules": [
-                          "sword2,setting_plant_no,beans",
-                          "sword2,bean_graveyard_yes",
-                          "sword2,longshot",
-                          "boomerang,[sword2],[setting_plant_no],[beans]",
-                          "boomerang,[sword2],[bean_graveyard_yes]",
-                          "boomerang,[sword2],[longshot]",
+                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,bean_graveyard_yes",
+                          "$has_age|adult,longshot",
+                          "[$has_age|adult],[longshot],$has_age|child,boomerang",
                           "{}"
                         ],
                         "capture_item": true,
@@ -2804,12 +2793,12 @@
                         "name": "Song from Composer Grave",
                         "short_name": "Song",
                         "access_rules": [
-                          "sword2",
-                          "sword1",
-                          "sticks",
-                          "sling",
-                          "boomerang",
-                          "$has_explosives",
+                          "$has_age|adult",
+                          "$has_age|child,sword1",
+                          "$has_age|child,sticks",
+                          "$has_age|child,sling",
+                          "$has_age|child,boomerang",
+                          "$has_age|child,$has_explosives",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -2822,7 +2811,7 @@
                         "short_name": "Torches",
                         "access_rules": [
                           "$has_fire",
-                          "sticks,[$has_fire]",
+                          "$has_age|child,sticks,[$has_fire]",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -2848,7 +2837,7 @@
                       {
                         "name": "Sell Mask",
                         "access_rules": [
-                          "spooky"
+                          "$has_age|child,spooky"
                         ],
                         "visibility_rules": [
                           "spooky"
@@ -2868,7 +2857,7 @@
                     "name": "Graveyard Wall",
                     "short_name": "Wall",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
@@ -2902,7 +2891,7 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_plant_yes,bean_graveyard_no"
+                          "$has_age|child,beans,bean_graveyard_no"
                         ],
                         "visibility_rules": [
                           "setting_plant_yes"
@@ -2912,7 +2901,7 @@
                       {
                         "name": "GS29",
                         "access_rules": [
-                          "setting_tokens_overworld,$has_bottle,$can_child_attack"
+                          "$has_age|child,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -2964,7 +2953,7 @@
             "color": "#a01009",
             "access_rules": [
               "postzelda",
-              "sword2",
+              "$has_age|adult",
               "$has_explosives",
               "dinsfire,magic"
             ],
@@ -2980,7 +2969,7 @@
                         "name": "Chests",
                         "access_rules": [
                           "$can_blast",
-                          "sword2,lift2"
+                          "$has_age|adult,lift2"
                         ],
                         "item_count": 2
                       }
@@ -3005,9 +2994,9 @@
                       {
                         "name": "Chest",
                         "access_rules": [
-                          "sword2,lift2",
-                          "sword2,hammer",
-                          "sword2,$has_explosives,hoverboots,[lift2]",
+                          "$has_age|adult,lift2",
+                          "$has_age|adult,hammer",
+                          "$has_age|adult,$has_explosives,hoverboots,[lift2]",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3048,8 +3037,8 @@
                       {
                         "name": "Blow him up",
                         "access_rules": [
-                          "$has_explosives",
-                          "lift1,[$has_explosives]"
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,lift1,[$has_explosives]"
                         ],
                         "item_count": 1
                       }
@@ -3070,12 +3059,12 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP :)",
                         "access_rules": [
-                          "ocarina,lullaby,sticks,bombs",
-                          "ocarina,lullaby,sticks,[bombs],bombchu",
-                          "ocarina,lullaby,sticks,lift1",
-                          "dinsfire,magic,bombs",
-                          "dinsfire,magic,[bombs],bombchu",
-                          "dinsfire,magic,lift1",
+                          "$has_age|child,ocarina,lullaby,sticks,bombs",
+                          "$has_age|child,ocarina,lullaby,sticks,[bombs],bombchu",
+                          "$has_age|child,ocarina,lullaby,sticks,lift1",
+                          "$has_age|child,dinsfire,magic,bombs",
+                          "$has_age|child,dinsfire,magic,[bombs],bombchu",
+                          "$has_age|child,dinsfire,magic,lift1",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3098,7 +3087,7 @@
                       {
                         "name": "Play Sarias Song",
                         "access_rules": [
-                          "ocarina,lullaby,saria",
+                          "$has_age|child,ocarina,lullaby,saria",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3117,7 +3106,7 @@
                     "name": "Goron City Grotto",
                     "short_name": "Lava Room Grotto",
                     "access_rules": [
-                      "setting_scrub_shuffle_yes,sword2"
+                      "$has_age|adult"
                     ],
                     "sections": [
                       {
@@ -3150,14 +3139,11 @@
                   {
                     "name": "Goron City Boulder Maze",
                     "short_name": "Boulder Maze Crate",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS34",
                         "access_rules": [
-                          "$has_explosives"
+                          "$has_age|child,$has_explosives"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3178,12 +3164,12 @@
                   {
                     "name": "Goron City Center Platform",
                     "short_name": "Center Platform",
-                    "access_rules": [
-                      "setting_tokens_overworld,sword2"
-                    ],
                     "sections": [
                       {
                         "name": "GS35",
+                        "access_rules": [
+                          "$has_age|adult"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -3203,12 +3189,12 @@
                   {
                     "name": "Goron Shop",
                     "access_rules": [
-                      "$has_explosives",
-                      "lift1",
-                      "sword2,bow",
-                      "dinsfire,magic",
-                      "ocarina,lullaby,sticks,postzelda",
-                      "ocarina,lullaby,sticks,sword2,hammer"
+                      "$link_the_goron",
+                      "$has_age|child,$has_explosives",
+                      "$has_age|child,lift1",
+                      "$has_age|child,dinsfire,magic",
+                      "$has_age|child,ocarina,lullaby,sticks,postzelda",
+                      "$has_age|child,ocarina,lullaby,sticks,$has_age|adult,hammer"
                     ],
                     "sections": [
                       {
@@ -3262,7 +3248,7 @@
                         "name": "Check it",
                         "access_rules": [
                           "$can_blast",
-                          "sword2,lift2"
+                          "$has_age|adult,lift2"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",
@@ -3340,7 +3326,7 @@
                         "name": "Blast it",
                         "access_rules": [
                           "$can_blast",
-                          "lift1,[$can_blast]"
+                          "$has_age|child,lift1,[$can_blast]"
                         ],
                         "item_count": 1
                       }
@@ -3409,11 +3395,11 @@
                   {
                     "name": "Biggoron",
                     "access_rules": [
-                      "sword2,$can_blast",
-                      "sword2,ocarina,bolero,setting_plant_no,beans",
-                      "sword2,ocarina,bolero,bean_crater_yes",
-                      "sword2,ocarina,bolero,hoverboots",
-                      "sword2,ocarina,bolero,hookshot",
+                      "$has_age|adult,$can_blast",
+                      "$has_age|adult,ocarina,bolero,setting_plant_no,beans",
+                      "$has_age|adult,ocarina,bolero,bean_crater_yes",
+                      "$has_age|adult,ocarina,bolero,hoverboots",
+                      "$has_age|adult,ocarina,bolero,hookshot",
                       "$link_the_goron",
                       "{$hintable}"
                     ],
@@ -3463,7 +3449,7 @@
                         "name": "DMT Grotto Cow",
                         "short_name": "Cow",
                         "access_rules": [
-                          "$can_blast,ocarina,epona,setting_cowsanity_yes"
+                          "$can_blast,ocarina,epona"
                         ],
                         "visibility_rules": [
                           "setting_cowsanity_yes"
@@ -3489,15 +3475,12 @@
                   {
                     "name": "Mountain Trail Above Dodongo's Cavern",
                     "short_name": "Rock Above DC",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS32 (N)",
                         "access_rules": [
-                          "sword2,hammer",
-                          "sword2,[hammer],hookshot"
+                          "$has_age|adult,$night_gs,hammer",
+                          "$has_age|adult,$night_gs,[hammer],hookshot"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3518,14 +3501,11 @@
                   {
                     "name": "Mountain Trail Path to Crater",
                     "short_name": "Path to Crater",
-                    "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
-                    ],
                     "sections": [
                       {
                         "name": "GS33 (N)",
                         "access_rules": [
-                          "sword2,[hammer]"
+                          "$has_age|adult,$night_gs,[hammer]"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3549,8 +3529,8 @@
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "setting_plant_yes,beans,bean_trail_no,$has_explosives",
-                          "setting_plant_yes,beans,bean_trail_no,lift1"
+                          "$has_age|child,beans,bean_trail_no,$has_explosives",
+                          "$has_age|child,beans,bean_trail_no,lift1"
                         ],
                         "visibility_rules": [
                           "setting_plant_yes"
@@ -3560,9 +3540,9 @@
                       {
                         "name": "GS30",
                         "access_rules": [
-                          "setting_tokens_overworld,$has_bottle,$has_explosives",
-                          "setting_tokens_overworld,$has_bottle,lift1",
-                          "setting_tokens_overworld,$has_bottle,[lift1],boomerang"
+                          "$has_age|child,$has_bottle,$has_explosives",
+                          "$has_age|child,$has_bottle,lift1",
+                          "$has_age|child,$has_bottle,[lift1],boomerang"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3582,9 +3562,6 @@
                   },
                   {
                     "name": "Mountain Trail Bomb Alcove",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS31",
@@ -3730,10 +3707,10 @@
                         "short_name": "HP",
                         "access_rules": [
                           "$can_blast",
-                          "ocarina,bolero,sword2,setting_plant_no,beans",
-                          "ocarina,bolero,sword2,bean_crater_yes",
-                          "ocarina,bolero,sword2,hookshot",
-                          "ocarina,bolero,sword2,hoverboots",
+                          "ocarina,bolero,$has_age|adult,setting_plant_no,beans",
+                          "ocarina,bolero,$has_age|adult,bean_crater_yes",
+                          "ocarina,bolero,$has_age|adult,hookshot",
+                          "ocarina,bolero,$has_age|adult,hoverboots",
                           "$link_the_goron",
                           "{ocarina,bolero}"
                         ],
@@ -3763,18 +3740,18 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "sword2,ocarina,bolero,setting_plant_no,beans",
-                          "sword2,ocarina,bolero,bean_crater_yes",
-                          "sword2,ocarina,bolero,hoverboots,[setting_plant_no],[beans]",
-                          "sword2,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "sword2,hammer,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
-                          "sword2,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                          "$has_age|adult,ocarina,bolero,setting_plant_no,beans",
+                          "$has_age|adult,ocarina,bolero,bean_crater_yes",
+                          "$has_age|adult,ocarina,bolero,hoverboots,[setting_plant_no],[beans]",
+                          "$has_age|adult,ocarina,bolero,hoverboots,[bean_crater_yes]",
+                          "$has_age|adult,hammer,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
+                          "$has_age|adult,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
                           "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
                           "{$hintable}",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
-                          "{sword2,hammer}"
+                          "{$has_age|adult,hammer}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -3793,7 +3770,7 @@
                   {
                     "name": "Crater Fairy",
                     "access_rules": [
-                      "ocarina,lullaby,sword2,hammer"
+                      "ocarina,lullaby,$has_age|adult,hammer"
                     ],
                     "sections": [
                       {
@@ -3821,7 +3798,7 @@
                     "name": "DMC Hammer Grotto",
                     "short_name": "Hammer Grotto",
                     "access_rules": [
-                      "setting_scrub_shuffle_yes,sword2,hammer"
+                      "$has_age|adult,hammer"
                     ],
                     "sections": [
                       {
@@ -3876,16 +3853,13 @@
                   },
                   {
                     "name": "DMC Deku Scrub",
-                    "access_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Bombs",
                         "access_rules": [
-                          "$can_blast,$can_child_attack",
-                          "$can_blast,nuts",
-                          "$can_blast,shield1",
+                          "$can_blast,$has_age|child,$can_child_attack",
+                          "$can_blast,$has_age|child,nuts",
+                          "$can_blast,$has_age|child,shield1",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -3908,14 +3882,11 @@
                   {
                     "name": "Death Mountain Crater Crate",
                     "short_name": "Crate at Entrance",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS36",
                         "access_rules": [
-                          "$can_blast,$can_child_attack"
+                          "$can_blast,$has_age|child,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3936,13 +3907,13 @@
                   {
                     "name": "Mountain Crater Bean Patch",
                     "access_rules": [
-                      "ocarina,bolero"
+                      "$has_age|child,ocarina,bolero"
                     ],
                     "sections": [
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_plant_yes,bean_crater_no"
+                          "beans,bean_crater_no"
                         ],
                         "visibility_rules": [
                           "setting_plant_yes"
@@ -3952,7 +3923,7 @@
                       {
                         "name": "GS37",
                         "access_rules": [
-                          "setting_tokens_overworld,$has_bottle,$can_child_attack"
+                          "$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -4036,6 +4007,9 @@
                     "sections": [
                       {
                         "name": "RichardZ",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -4053,6 +4027,9 @@
                     "sections": [
                       {
                         "name": "Child Shooting Gallery",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -4070,7 +4047,7 @@
                       {
                         "name": "Get Mask",
                         "access_rules": [
-                          "soldout"
+                          "$has_age|child,soldout"
                         ],
                         "visibility_rules": [
                           "soldout"
@@ -4089,7 +4066,7 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "$has_bombchus",
+                      "$has_age|child,$has_bombchus",
                       "{$hintable}"
                     ],
                     "sections": [
@@ -4118,7 +4095,7 @@
                       {
                         "name": "Cheater",
                         "access_rules": [
-                          "[lens],[magic]",
+                          "$has_age|child,[lens],[magic]",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -4135,6 +4112,9 @@
                   },
                   {
                     "name": "Bombchu Shop",
+                    "access_rules": [
+                      "$has_age|child"
+                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4171,6 +4151,9 @@
                   {
                     "name": "Castle Town Potion Shop",
                     "short_name": "Market Potion Shop",
+                    "access_rules": [
+                      "$has_age|child"
+                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4207,6 +4190,9 @@
                   {
                     "name": "Castle Town Bazaar",
                     "short_name": "Market Bazaar",
+                    "access_rules": [
+                      "$has_age|child"
+                    ],
                     "sections": [
                       {
                         "name": "Item 1",
@@ -4249,12 +4235,17 @@
                           "open_door",
                           "ocarina,time"
                         ],
-                        "hosted_item": "sword2"
+                        "hosted_item": "time_travel"
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "child",
+                        "x": 1539,
+                        "y": 294
+                      },
+                      {
+                        "map": "adult",
                         "x": 1539,
                         "y": 294
                       }
@@ -4266,7 +4257,7 @@
                       {
                         "name": "Sheik at Temple",
                         "access_rules": [
-                          "sword2,forestmed",
+                          "$has_age|adult,forestmed",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -4277,7 +4268,7 @@
                       {
                         "name": "Zelda",
                         "access_rules": [
-                          "sword2,lacs_meds:2"
+                          "$has_age|adult,lacs_meds:2"
                         ],
                         "item_count": 1
                       }
@@ -4285,7 +4276,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1539,
+                        "x": 1569,
                         "y": 294
                       }
                     ]
@@ -4296,7 +4287,7 @@
                       {
                         "name": "Happy Hunting",
                         "access_rules": [
-                          "sword2,bow,[ocarina],[epona],$has_bottle",
+                          "$has_age|adult,bow,[ocarina],[epona],$has_bottle",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -4314,12 +4305,12 @@
                   {
                     "name": "Castle Market Guard House",
                     "short_name": "Guardhouse",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS14",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -4368,6 +4359,9 @@
                     "sections": [
                       {
                         "name": "Talk to her",
+                        "access_rules": [
+                          "$has_age|child"
+                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -4386,7 +4380,7 @@
                       {
                         "name": "Wake him up",
                         "access_rules": [
-                          "childegg"
+                          "$has_age|child,childegg"
                         ],
                         "visibility_rules": [
                           "childegg"
@@ -4405,7 +4399,7 @@
                   {
                     "name": "Hyrule Castle Garden",
                     "access_rules": [
-                      "childcucco"
+                      "$has_age|child,childcucco"
                     ],
                     "sections": [
                       {
@@ -4437,7 +4431,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "ocarina,lullaby,$has_explosives"
+                          "$has_age|child,ocarina,lullaby,$has_explosives"
                         ],
                         "item_count": 1
                       }
@@ -4453,14 +4447,11 @@
                   {
                     "name": "Hyrule Castle Tree",
                     "short_name": "Tree near Malon",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS15",
                         "access_rules": [
-                          "$can_child_attack"
+                          "$has_age|child,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -4480,15 +4471,12 @@
                   },
                   {
                     "name": "Castle Storms Grotto",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS16",
                         "access_rules": [
-                          "ocarina,storm,boomerang,$has_explosives",
-                          "{ocarina,storm,$has_explosives}",
+                          "$has_age|child,ocarina,storm,boomerang,$has_explosives",
+                          "{$has_age|child,ocarina,storm,$has_explosives}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -4584,12 +4572,12 @@
                 "children": [
                   {
                     "name": "Outside Ganon's Castle",
-                    "access_rules": [
-                      "setting_tokens_overworld,sword2"
-                    ],
                     "sections": [
                       {
                         "name": "GS17",
+                        "access_rules": [
+                          "$has_age|adult"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -4612,7 +4600,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "ocarina,lullaby,lift3,sword2"
+                          "ocarina,lullaby,lift3,$has_age|adult"
                         ],
                         "item_count": 1
                       }
@@ -4639,22 +4627,22 @@
                   {
                     "name": "Frogs",
                     "access_rules": [
-                      "$has_explosives",
-                      "scale1",
+                      "$has_age|child,$has_explosives",
+                      "$has_age|child,scale1",
                       "{$hintable}"
                     ],
                     "sections": [
                       {
                         "name": "Frogs in the Rain",
                         "access_rules": [
-                          "ocarina,storm"
+                          "$has_age|child,ocarina,storm"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "Frog Ocarina Game",
                         "access_rules": [
-                          "ocarina,lullaby,saria,epona,sun,time,storm",
+                          "$has_age|child,ocarina,lullaby,saria,epona,sun,time,storm",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -4671,13 +4659,13 @@
                   },
                   {
                     "name": "Magic Bean Salesman",
-                    "access_rules": [
-                      "$has_explosives",
-                      "scale1"
-                    ],
                     "sections": [
                       {
                         "name": "Buy Item",
+                        "access_rules": [
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1"
+                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -4697,9 +4685,9 @@
                       {
                         "name": "Jump in",
                         "access_rules": [
-                          "$has_explosives",
-                          "scale1",
-                          "sword2"
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1",
+                          "$has_age|adult"
                         ],
                         "item_count": 1
                       }
@@ -4724,10 +4712,11 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_explosives",
-                          "scale1",
-                          "sword2,[hoverboots]"
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1",
+                          "$has_age|adult,[hoverboots]"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -4753,10 +4742,11 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_explosives",
-                          "scale1",
-                          "sword2,[hoverboots]"
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1",
+                          "$has_age|adult,[hoverboots]"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -4778,15 +4768,15 @@
                   {
                     "name": "Zora River Storms Grotto",
                     "access_rules": [
-                      "setting_scrub_shuffle_yes,ocarina,storm"
+                      "ocarina,storm"
                     ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "$has_explosives",
-                          "scale1",
-                          "sword2"
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1",
+                          "$has_age|adult"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -4812,12 +4802,12 @@
                   },
                   {
                     "name": "Zora River Tree",
-                    "access_rules": [
-                      "setting_tokens_overworld,$can_child_attack"
-                    ],
                     "sections": [
                       {
                         "name": "GS43",
+                        "access_rules": [
+                          "$has_age|child,$can_child_attack"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -4837,7 +4827,7 @@
                   {
                     "name": "Zora River Ladder",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
@@ -4866,7 +4856,7 @@
                     "name": "Zora River Near Raised Grottos",
                     "short_name": "Plateau Wall",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs,sword2"
+                      "$night_gs,$has_age|adult"
                     ],
                     "sections": [
                       {
@@ -4898,7 +4888,7 @@
                     "name": "Zora River Above Bridge",
                     "short_name": "Wall Above Bridge",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs,sword2"
+                      "$night_gs,$has_age|adult"
                     ],
                     "sections": [
                       {
@@ -4934,9 +4924,9 @@
                       {
                         "name": "Check it",
                         "access_rules": [
-                          "sword2",
-                          "$has_explosives",
-                          "scale1"
+                          "$has_age|adult",
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1"
                         ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",
@@ -4960,6 +4950,11 @@
                     "sections": [
                       {
                         "name": "Check it",
+                        "access_rules": [
+                          "$has_age|adult",
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1"
+                        ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",
                         "item_count": 1
@@ -4982,6 +4977,11 @@
                     "sections": [
                       {
                         "name": "Check it",
+                        "access_rules": [
+                          "$has_age|adult",
+                          "$has_age|child,$has_explosives",
+                          "$has_age|child,scale1"
+                        ],
                         "chest_unopened_img": "images/gossip_stone.png",
                         "chest_opened_img": "images/gossip_stone.png",
                         "item_count": 1
@@ -5000,8 +5000,8 @@
               {
                 "name": "Zoras Domain",
                 "access_rules": [
-                  "$has_explosives,[ocarina],[lullaby]",
-                  "scale1"
+                  "$has_age|child,$has_explosives,[ocarina],[lullaby]",
+                  "$has_age|child,scale1"
                 ],
                 "children": [
                   {
@@ -5086,8 +5086,8 @@
               {
                 "name": "Zoras Domain Frozen",
                 "access_rules": [
-                  "sword2,ocarina,lullaby",
-                  "sword2,hoverboots,[ocarina],[lullaby]"
+                  "$has_age|adult,ocarina,lullaby",
+                  "$has_age|adult,hoverboots,[ocarina],[lullaby]"
                 ],
                 "children": [
                   {
@@ -5102,7 +5102,7 @@
                       {
                         "name": "Unfreeze him",
                         "access_rules": [
-                          "sword2",
+                          "$has_age|adult",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -5130,7 +5130,7 @@
                   {
                     "name": "Frozen Waterfall",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$night_gs"
                     ],
                     "sections": [
                       {
@@ -5161,10 +5161,10 @@
               {
                 "name": "Zora Shop",
                 "access_rules": [
-                  "$has_explosives,[ocarina],[lullaby]",
-                  "scale1",
-                  "sword2,ocarina,lullaby,$has_bottle",
-                  "sword2,hoverboots,[ocarina],[lullaby],$has_bottle"
+                  "$has_age|child,$has_explosives,[ocarina],[lullaby]",
+                  "$has_age|child,scale1",
+                  "$has_age|adult,ocarina,lullaby,$has_bottle",
+                  "$has_age|adult,hoverboots,[ocarina],[lullaby],$has_bottle"
                 ],
                 "sections": [
                   {
@@ -5212,12 +5212,15 @@
                 "children": [
                   {
                     "name": "Zoras Fountain Fairy",
+                    "access_rules": [
+                      "ocarina,lullaby,$has_explosives"
+                    ],
                     "sections": [
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "$child_fountain,ocarina,lullaby,$has_explosives",
-                          "$adult_fountain,ocarina,lullaby,$has_explosives"
+                          "$child_fountain",
+                          "$adult_fountain"
                         ],
                         "item_count": 1
                       }
@@ -5287,7 +5290,7 @@
                     "name": "Zora's Fountain Hidden Cave",
                     "short_name": "Hidden Cave",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$night_gs"
                     ],
                     "sections": [
                       {
@@ -5319,12 +5322,12 @@
                   {
                     "name": "Zora's Fountain Tree",
                     "short_name": "Tree",
-                    "access_rules": [
-                      "setting_tokens_overworld,$child_fountain"
-                    ],
                     "sections": [
                       {
                         "name": "GS48",
+                        "access_rules": [
+                          "$child_fountain"
+                        ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
@@ -5345,7 +5348,7 @@
                     "name": "Zora's Fountain Above the Log",
                     "short_name": "Wall near Log",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs,$child_fountain"
+                      "$night_gs,$child_fountain"
                     ],
                     "sections": [
                       {
@@ -5437,6 +5440,11 @@
                       {
                         "name": "Freestanding PoH",
                         "short_name": "HP",
+                        "access_rules": [
+                          "$has_age|child",
+                          "$has_age|adult,longshot",
+                          "$gerudo_bridge,[longshot],hoverboots"
+                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -5487,7 +5495,7 @@
                       {
                         "name": "Cow",
                         "access_rules": [
-                          "ocarina,epona,setting_cowsanity_yes"
+                          "$has_age|child,ocarina,epona"
                         ],
                         "visibility_rules": [
                           "setting_cowsanity_yes"
@@ -5509,7 +5517,7 @@
                     "name": "Gerudo Valley Small Bridge",
                     "short_name": "Waterfall Near Entrance",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
@@ -5539,14 +5547,11 @@
                   },
                   {
                     "name": "Gerudo Valley Bean Patch",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS87",
                         "access_rules": [
-                          "$has_bottle,$can_child_attack"
+                          "$has_age|child,$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -5637,9 +5642,6 @@
                   },
                   {
                     "name": "Gerudo Valley Storms Grotto",
-                    "access_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
@@ -5667,7 +5669,7 @@
                     "name": "Gerudo Valley Behind Tent",
                     "short_name": "GV Behind Tent",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$night_gs"
                     ],
                     "sections": [
                       {
@@ -5699,7 +5701,7 @@
                     "name": "Gerudo Valley Pillar",
                     "short_name": "GV Pillar",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$night_gs"
                     ],
                     "sections": [
                       {
@@ -5781,7 +5783,7 @@
                       {
                         "name": "Archery Range",
                         "access_rules": [
-                          "setting_tokens_overworld,$night_gs,$gerudo_card"
+                          "$night_gs,$gerudo_card"
                         ],
                         "sections": [
                           {
@@ -5811,7 +5813,7 @@
                       {
                         "name": "Top Floor",
                         "access_rules": [
-                          "setting_tokens_overworld,$night_gs"
+                          "$night_gs"
                         ],
                         "sections": [
                           {
@@ -5872,9 +5874,6 @@
                   },
                   {
                     "name": "Wasteland Ruins",
-                    "access_rules": [
-                      "setting_tokens_overworld"
-                    ],
                     "sections": [
                       {
                         "name": "GS92",
@@ -5938,8 +5937,8 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$child_colossus,setting_plant_no,beans,sword2",
-                          "$child_colossus,bean_colossus_yes,sword2",
+                          "$child_colossus,setting_plant_no,beans,$has_age|adult",
+                          "$child_colossus,bean_colossus_yes,$has_age|adult",
                           "{$adult_colossus}",
                           "{$hintable}"
                         ],
@@ -5997,7 +5996,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "setting_scrub_shuffle_yes,$adult_colossus,sword2,lift2"
+                          "$adult_colossus,$has_age|adult,lift2"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -6019,13 +6018,13 @@
                   {
                     "name": "Desert Colossus Bean Patch",
                     "access_rules": [
-                      "ocarina,requiem"
+                      "$child_colossus"
                     ],
                     "sections": [
                       {
                         "name": "Plant Bean",
                         "access_rules": [
-                          "beans,setting_plant_yes,bean_colossus_no"
+                          "beans,bean_colossus_no"
                         ],
                         "visibility_rules": [
                           "setting_plant_yes"
@@ -6035,7 +6034,7 @@
                       {
                         "name": "GS93",
                         "access_rules": [
-                          "setting_tokens_overworld,$has_bottle,$can_child_attack"
+                          "$has_bottle,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -6057,16 +6056,16 @@
                     "name": "Desert Colossus Tree",
                     "short_name": "Tree Near Oasis",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$adult_colossus,$has_age|adult,$night_gs"
                     ],
                     "sections": [
                       {
                         "name": "GS94 (N)",
                         "access_rules": [
-                          "$adult_colossus,sword2,hookshot",
-                          "{$adult_colossus,sword2,bow}",
-                          "{$adult_colossus,sword2,$has_explosives}",
-                          "{$adult_colossus,sword2,dinsfire,magic}"
+                          "hookshot",
+                          "{bow}",
+                          "{$has_explosives}",
+                          "{dinsfire,magic}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -6089,16 +6088,16 @@
                     "name": "Desert Colossus Hill",
                     "short_name": "Top Of Platform",
                     "access_rules": [
-                      "setting_tokens_overworld,$night_gs"
+                      "$has_age|adult,$night_gs"
                     ],
                     "sections": [
                       {
                         "name": "GS95 (N)",
                         "access_rules": [
-                          "$child_colossus,setting_plant_no,beans,sword2",
-                          "$child_colossus,bean_colossus_yes,sword2",
-                          "$adult_colossus,sword2,hookshot,[longshot]",
-                          "{$adult_colossus,sword2,bow}"
+                          "$child_colossus,setting_plant_no,beans",
+                          "$child_colossus,bean_colossus_yes",
+                          "$adult_colossus,hookshot,[longshot]",
+                          "{$adult_colossus,bow}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"

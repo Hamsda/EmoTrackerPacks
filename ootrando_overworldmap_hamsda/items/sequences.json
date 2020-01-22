@@ -223,5 +223,11 @@
         "codes": "trial_cleared"
       }
     ]
+  },
+  {
+    "name": "Time Travel",
+    "type": "toggle",
+    "img": "images/sword2.png",
+    "codes": "time_travel"
   }
 ]

@@ -189,6 +189,23 @@
     ]
   },
   {	
+    "name": "Starting Age",	
+    "type": "progressive",	
+    "allow_disabled": false,	
+    "loop": true,	
+    "stages": [	
+      {	
+        "img": "images/setting_age_child.png",	
+        "codes": "setting_age,setting_age_child"	
+      },	
+      {	
+        "img": "images/setting_age_adult.png",	
+        "codes": "setting_age,setting_age_adult",	
+        "inherit_codes": false	
+      }	
+    ]	
+  },
+  {	
     "name": "Bombchus in Logic",	
     "type": "progressive",	
     "allow_disabled": false,	
