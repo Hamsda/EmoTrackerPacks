@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.8.0.0
 
 - fixed ER deku theater as adult
 - fixed GS35 (adult Goron City) not nighttime
