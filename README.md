@@ -41,8 +41,8 @@ If you have a dungeon marked as unknown in non-keysanity, some of the checks in 
 
 Some of this functionality might not be immediately obvious:
 
-- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow"), indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on.
-- ![Ice Trap](ootrando_overworldmap_hamsda/images/icetrap.png "Ice Trap") is used as a counter for ice traps. This is somewhat useful to evaluate freestanding items during racing, but mostly just for fun with settings that include higher numbers of ice traps.
+- Right clicking ![Fairy Ocarina](ootrando_overworldmap_hamsda/images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](ootrando_overworldmap_hamsda/images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](ootrando_overworldmap_hamsda/images/overlay_scarecrow.png "Scarecrow") indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on. The location of the scarecrow in Lake Hylia will automatically mark this when cleared first as child and then as adult.
+- ![Triforce Piece](ootrando_overworldmap_hamsda/images/triforce_piece.png "Triforce Piece") is used as a counter for Triforce pieces in the Triforce Hunt mode.
 
 ## Settings (for map variants)
 
@@ -97,6 +97,15 @@ This setting determines how many trials are needed to dispel the barrier in Gano
 ![Trials](ootrando_overworldmap_hamsda/images/setting_trials.png "Trials") Increment or decrement the number of trials needed.
 
 If trials are set to at least 1, Ganons castle will show locations for the trials. When you clear a trial, mark that location as cleared. Once the number of cleared trials is greater than the number of required trials, the last chest will appear available.
+
+### Starting Age
+
+This setting determines which age you started as. Most relevant in combination with Closed Door of Time.
+
+- ![Child Start](ootrando_overworldmap_hamsda/images/setting_age_child.png "Child Start") Link started as child.
+- ![Adult Start](ootrando_overworldmap_hamsda/images/setting_age_adult.png "Adult Start") Link started as adult.
+
+Getting ![Time Travel](ootrando_overworldmap_hamsda/images/sword2.png "Time Travel") from Temple of Time unlocks checks for the other age.
 
 ### Bombchus in logic
 
