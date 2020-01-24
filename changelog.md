@@ -7,6 +7,7 @@
 - added damage multiplier setting
 - added starting age setting
 - changed ER default capture to contain every other capture
+- replaced ice traps with triforce pieces
 
 ## 2.7.0.0
 
