@@ -170,24 +170,6 @@
       }
     ]
   },
-  {
-    "name": "Fewer Tunic Requirements",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_fewer_tunics_no.png",
-        "codes": "setting_fewer_tunics,setting_fewer_tunics_no"
-      },
-      {
-        "img": "images/setting_fewer_tunics_yes.png",
-        "codes": "setting_fewer_tunics,setting_fewer_tunics_yes",
-        "inherit_codes": false
-      }
-    ]
-  },
   {	
     "name": "Starting Age",	
     "type": "progressive",	

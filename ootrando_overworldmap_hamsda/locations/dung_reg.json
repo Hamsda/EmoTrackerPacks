@@ -152,12 +152,13 @@
       {
         "name": "Far Bridge",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$has_age|child,$has_explosives,[sling]",
+          "@Dodongos Cavern/Climb,$has_age|child,$has_explosives,[sling]", //TODO: trick logic_dc_slingshot_skip
           "@Dodongos Cavern/Climb,$has_age|child,lift1,sticks,[sling]",
           "@Dodongos Cavern/Climb,$has_age|child,lift1,sword1,[sling]",
-          "@Dodongos Cavern/Climb,$has_age|adult,[bow]",
-          "@Dodongos Cavern/Climb,$has_age|adult,[hoverboots]",
-          "@Dodongos Cavern/Climb,$has_age|adult,[longshot]"
+          "@Dodongos Cavern/Climb,$has_age|adult,bow",
+          "@Dodongos Cavern/Climb,$has_age|adult,hoverboots",
+          "@Dodongos Cavern/Climb,$has_age|adult,longshot",
+          "@Dodongos Cavern/Climb,$has_age|adult,[logic_dc_jump]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -706,10 +707,12 @@
         "access_rules": [
           "ocarina,time,$has_age|adult",
           "@Forest Temple/Outside Upper Ledge,$has_age|adult",
-          "$has_age|adult,bow,[longshot],hookshot",
+          "$has_age|adult,bow,longshot",
+          "$has_age|adult,bow,[logic_forest_vines],hookshot",
           "$has_age|adult,bow,ironboots",
           "$has_age|adult,bow,scale2",
-          "@Forest Temple/Falling Room,$has_age|adult,[longshot],hookshot",
+          "@Forest Temple/Falling Room,$has_age|adult,longshot",
+          "@Forest Temple/Falling Room,$has_age|adult,[logic_forest_vines],hookshot",
           "@Forest Temple/Falling Room,$has_age|adult,ironboots",
           "@Forest Temple/Falling Room,$has_age|adult,scale2"
         ],
@@ -1014,7 +1017,7 @@
         "name": "West Tower",
         "access_rules": [
           "@Fire Temple/Maze Upper,fire_small_keys:7,[fire_small_keys:8]",
-          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],[hammer],[hoverboots]"
+          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],[hammer],[hoverboots]" //TODO: trick logic_fire_flame_maze
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1024,6 +1027,9 @@
       {
         "name": "Chest Near Boss",
         "short_name": "Near Boss",
+        "access_rules": [
+          "$FTR_or_goron"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1198,8 +1204,8 @@
         "short_name": "Highest Goron",
         "access_rules": [
           "@Fire Temple/West Tower,hammer,ocarina,time",
-          "@Fire Temple/West Tower,hammer,[ocarina],[time],hoverboots",
-          "@Fire Temple/West Tower,hammer,[ocarina],[time],$has_explosives"
+          "@Fire Temple/West Tower,hammer,[logic_rusted_switches],hoverboots",
+          "@Fire Temple/West Tower,hammer,[logic_rusted_switches],$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1287,7 +1293,7 @@
         "name": "Dive",
         "access_rules": [
           "@Water Temple/Highest Water Level,$FTR_or_zora,ironboots",
-          "@Water Temple/Highest Water Level,$FTR_or_zora,[ironboots],longshot"
+          "@Water Temple/Highest Water Level,$FTR_or_zora,[ironboots],longshot" //TODO: trick
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1337,7 +1343,7 @@
         "access_rules": [
           "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
           "@Water Temple/Dive,ocarina,lullaby,lift1,[ironboots],[hookshot],bombchu,scale",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora]",
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora]", //TODO: trick
           "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora],bombchu,scale" //not relevant until I add tricks
         ],
         "visibility_rules": [
@@ -2369,7 +2375,7 @@
         "short_name": "Dead Hand",
         "access_rules": [
           "ocarina,lullaby,sword1",
-          "ocarina,lullaby,sticks,[sword1]"
+          "ocarina,lullaby,sticks,[logic_child_deadhand]"
         ],
         "capture_item": true,
         "item_count": 1

@@ -129,13 +129,6 @@ This setting changes where the logic requires the Lens of Truth ([see wiki](http
 - ![Wasteland and Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
 - ![Only Chest Minigame](ootrando_overworldmap_hamsda/images/setting_lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
 
-### Fewer Tunic Requirements
-
-This setting changes where the logic requires Goron and Zora tunics ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
-
-- ![Required everywhere](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_no.png "Required everywhere") Required basically everywhere a heat/breath timer shows up.
-- ![Fewer requirements](ootrando_overworldmap_hamsda/images/setting_fewer_tunics_yes.png "Fewer requirements") Required for fewer locations.
-
 ### Hints
 
 This setting determines when hintable locations will show up on the map ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other)).

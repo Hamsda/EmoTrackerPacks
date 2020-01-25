@@ -2118,7 +2118,9 @@
                   {
                     "name": "Talk to him",
                     "access_rules": [
-                      "[$has_age|adult],[hookshot]" //TODO: trick
+                      "$has_age|adult,hookshot",
+                      "[logic_man_on_roof],$has_age|adult",
+                      "[logic_man_on_roof],$has_age|child"
                     ],
                     "item_count": 1
                   }
@@ -2164,8 +2166,9 @@
                     "name": "Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
-                      "$has_age|adult,[ocarina],[time]",
                       "$has_age|child,boomerang",
+                      "$has_age|adult,[logic_windmill_poh]",
+                      "$has_age|adult,ocarina,time",
                       "{}"
                     ],
                     "capture_item": true,
@@ -3742,12 +3745,9 @@
                         "access_rules": [
                           "$has_age|adult,ocarina,bolero,setting_plant_no,beans",
                           "$has_age|adult,ocarina,bolero,bean_crater_yes",
-                          "$has_age|adult,ocarina,bolero,hoverboots,[setting_plant_no],[beans]",
-                          "$has_age|adult,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "$has_age|adult,hammer,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
-                          "$has_age|adult,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                          "$has_age|adult,ocarina,bolero,[logic_crater_bean_poh_with_hovers],hoverboots",
+                          "$has_age|adult,hammer,[logic_crater_bean_poh_with_hovers],hoverboots",
+                          "$link_the_goron,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "{$hintable}",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
