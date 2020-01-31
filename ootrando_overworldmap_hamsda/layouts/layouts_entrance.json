@@ -29,14 +29,6 @@
                 "type": "layout",
                 "key": "counters_tall"
               }
-            },
-            {
-              "type": "group",
-              "header": "Settings",
-              "content": {
-                "type": "layout",
-                "key": "options_tall"
-              }
             }
           ]
         },
@@ -133,14 +125,6 @@
                   "content": {
                     "type": "layout",
                     "key": "counters_wide"
-                  }
-                },
-                {
-                  "type": "group",
-                  "header": "Settings",
-                  "content": {
-                    "type": "layout",
-                    "key": "options_wide"
                   }
                 }
               ]

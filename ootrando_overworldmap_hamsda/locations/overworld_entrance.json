@@ -11,15 +11,9 @@
           {
             "name": "Kokiri Forest -> Kokiri Forest Storms Grotto",
             "short_name": "Kokiri Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -36,9 +30,6 @@
           {
             "name": "Kokiri Forest -> House of Twins",
             "short_name": "House of Twins",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -58,9 +49,6 @@
           {
             "name": "Kokiri Forest -> Know It All House",
             "short_name": "Know It All House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -80,9 +68,6 @@
           {
             "name": "Kokiri Forest -> Kokiri Shop",
             "short_name": "Kokiri Shop",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -102,9 +87,6 @@
           {
             "name": "Kokiri Forest -> Links House",
             "short_name": "Links House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -124,9 +106,6 @@
           {
             "name": "Kokiri Forest -> Mido House",
             "short_name": "Mido House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -146,9 +125,6 @@
           {
             "name": "Kokiri Forest -> Saria House",
             "short_name": "Saria House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -168,9 +144,6 @@
           {
             "name": "Outside Deku Tree -> Deku Tree Lobby",
             "short_name": "Deku Tree",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -190,9 +163,6 @@
           {
             "name": "Kokiri Forest -> Lost Woods",
             "short_name": "KF -> LW",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -212,9 +182,6 @@
           {
             "name": "Kokiri Forest -> Lost Woods Bridge From Forest",
             "short_name": "KF -> Bridge",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -240,15 +207,9 @@
           {
             "name": "Lost Woods -> Lost Woods Generic Grotto",
             "short_name": "LW Generic Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -265,9 +226,6 @@
           {
             "name": "Lost Woods Beyond Mido -> Deku Theater",
             "short_name": "Deku Theater",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -287,15 +245,9 @@
           {
             "name": "Lost Woods Beyond Mido -> Lost Woods Sales Grotto",
             "short_name": "LW Sales Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -312,9 +264,6 @@
           {
             "name": "Lost Woods -> Goron City Woods Warp",
             "short_name": "LW -> GC",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -334,9 +283,6 @@
           {
             "name": "Lost Woods -> Zora River",
             "short_name": "LW -> ZR",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -356,9 +302,6 @@
           {
             "name": "Lost Woods Beyond Mido -> Sacred Forest Meadow Entryway",
             "short_name": "LW -> SFM",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -378,9 +321,6 @@
           {
             "name": "Lost Woods Forest Exit -> Kokiri Forest",
             "short_name": "LW -> KF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -400,9 +340,6 @@
           {
             "name": "Lost Woods Bridge -> Kokiri Forest",
             "short_name": "Bridge -> KF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -422,9 +359,6 @@
           {
             "name": "Lost Woods Bridge -> Hyrule Field",
             "short_name": "Bridge -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -450,9 +384,6 @@
           {
             "name": "Sacred Forest Meadow -> Meadow Fairy Grotto",
             "short_name": "SFM Fairy Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -472,15 +403,9 @@
           {
             "name": "Sacred Forest Meadow -> Meadow Storms Grotto",
             "short_name": "SFM Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -497,15 +422,9 @@
           {
             "name": "Sacred Forest Meadow Entryway -> Front of Meadow Grotto",
             "short_name": "Wolfos Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -522,9 +441,6 @@
           {
             "name": "Sacred Forest Meadow -> Forest Temple Lobby",
             "short_name": "Forest Temple",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -544,9 +460,6 @@
           {
             "name": "Sacred Forest Meadow Entryway -> Lost Woods Beyond Mido",
             "short_name": "SFM -> LW",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -572,15 +485,9 @@
           {
             "name": "Hyrule Field -> Field Far West Castle Town Grotto",
             "short_name": "HF Fairy Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -597,15 +504,9 @@
           {
             "name": "Hyrule Field -> Field Kakariko Grotto",
             "short_name": "HF Kakariko Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -622,15 +523,9 @@
           {
             "name": "Hyrule Field -> Field Near Lake Inside Fence Grotto",
             "short_name": "HF Inside Fence Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -647,9 +542,6 @@
           {
             "name": "Hyrule Field -> Field Near Lake Outside Fence Grotto",
             "short_name": "HF Outside Fence Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -669,15 +561,9 @@
           {
             "name": "Hyrule Field -> Field North Lon Lon Grotto",
             "short_name": "HF Tektite Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -694,15 +580,9 @@
           {
             "name": "Hyrule Field -> Field Valley Grotto",
             "short_name": "HF Valley Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -719,15 +599,9 @@
           {
             "name": "Hyrule Field -> Field West Castle Town Grotto",
             "short_name": "HF Near Bridge Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -744,15 +618,9 @@
           {
             "name": "Hyrule Field -> Remote Southern Grotto",
             "short_name": "Remote Southern Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -769,9 +637,6 @@
           {
             "name": "Hyrule Field -> Castle Town Entrance",
             "short_name": "HF -> CTE",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -791,9 +656,6 @@
           {
             "name": "Hyrule Field -> Gerudo Valley",
             "short_name": "HF -> GV",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -813,9 +675,6 @@
           {
             "name": "Hyrule Field -> Kakariko Village",
             "short_name": "HF -> Kak",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -835,9 +694,6 @@
           {
             "name": "Hyrule Field -> Lake Hylia",
             "short_name": "HF -> LH",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -857,9 +713,6 @@
           {
             "name": "Hyrule Field -> Lon Lon Ranch",
             "short_name": "HF -> LLR",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -879,9 +732,6 @@
           {
             "name": "Hyrule Field -> Lost Woods Bridge",
             "short_name": "HF -> Bridge",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -901,9 +751,6 @@
           {
             "name": "Hyrule Field -> Zora River Front",
             "short_name": "HF -> ZR",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -929,9 +776,6 @@
           {
             "name": "Lon Lon Ranch -> Lon Lon Grotto",
             "short_name": "LLR Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -951,9 +795,6 @@
           {
             "name": "Lon Lon Ranch -> Ingo Barn",
             "short_name": "Ingo Barn",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -973,9 +814,6 @@
           {
             "name": "Lon Lon Ranch -> Lon Lon Corner Tower",
             "short_name": "LLR Tower",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -995,9 +833,6 @@
           {
             "name": "Lon Lon Ranch -> Talon House",
             "short_name": "Talon House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1017,9 +852,6 @@
           {
             "name": "Lon Lon Ranch -> Hyrule Field",
             "short_name": "LLR -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1045,15 +877,9 @@
           {
             "name": "Kakariko Village -> Kakariko Bombable Grotto",
             "short_name": "Kakariko Bombable Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -1070,9 +896,6 @@
           {
             "name": "Kakariko Village Backyard -> Kakariko Back Grotto",
             "short_name": "Kakariko Back Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -1092,9 +915,6 @@
           {
             "name": "Kakariko Village -> Carpenter Boss House",
             "short_name": "Carpenter Boss House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1114,9 +934,6 @@
           {
             "name": "Kakariko Village -> House of Skulltula",
             "short_name": "House of Skulltula",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1136,9 +953,6 @@
           {
             "name": "Kakariko Village -> Impas House",
             "short_name": "Impas House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1158,9 +972,6 @@
           {
             "name": "Kakariko Village -> Impas House Back",
             "short_name": "Impas House Back",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1180,9 +991,6 @@
           {
             "name": "Kakariko Village -> Kakariko Bazaar",
             "short_name": "Kakariko Bazaar",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1202,9 +1010,6 @@
           {
             "name": "Kakariko Village -> Kakariko Potion Shop Front",
             "short_name": "Kakariko Potion Shop Front",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1224,9 +1029,6 @@
           {
             "name": "Kakariko Village -> Kakariko Shooting Gallery",
             "short_name": "Kakariko Shooting Gallery",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1246,9 +1048,6 @@
           {
             "name": "Kakariko Village -> Windmill",
             "short_name": "Windmill",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1268,9 +1067,6 @@
           {
             "name": "Kakariko Village Backyard -> Kakariko Potion Shop Back",
             "short_name": "Kakariko Potion Shop Back",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1290,9 +1086,6 @@
           {
             "name": "Kakariko Village Backyard -> Odd Medicine Building",
             "short_name": "Odd Medicine Building",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1312,9 +1105,6 @@
           {
             "name": "Kakariko Village -> Bottom of the Well",
             "short_name": "Bottom of the Well",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -1334,9 +1124,6 @@
           {
             "name": "Kakariko Village -> Graveyard",
             "short_name": "Kak -> GY",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1356,9 +1143,6 @@
           {
             "name": "Kakariko Village -> Hyrule Field",
             "short_name": "Kak -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1378,9 +1162,6 @@
           {
             "name": "Kakariko Village Behind Gate -> Death Mountain",
             "short_name": "Kak -> DMT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1406,15 +1187,9 @@
           {
             "name": "Graveyard -> Composer Grave",
             "short_name": "Composer Grave",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,lullaby"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -1431,9 +1206,6 @@
           {
             "name": "Graveyard -> Dampes Grave",
             "short_name": "Dampes Grave",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -1453,9 +1225,6 @@
           {
             "name": "Graveyard -> Heart Piece Grave",
             "short_name": "Heart Piece Grave",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -1475,9 +1244,6 @@
           {
             "name": "Graveyard -> Shield Grave",
             "short_name": "Shield Grave",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -1497,9 +1263,6 @@
           {
             "name": "Graveyard -> Dampes House",
             "short_name": "Dampes House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1519,9 +1282,6 @@
           {
             "name": "Shadow Temple Warp Region -> Shadow Temple Entryway",
             "short_name": "Shadow Temple",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -1541,9 +1301,6 @@
           {
             "name": "Graveyard -> Kakariko Village",
             "short_name": "GY -> Kak",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1569,9 +1326,6 @@
           {
             "name": "Castle Town -> Castle Town Bazaar",
             "short_name": "Castle Town Bazaar",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1591,9 +1345,6 @@
           {
             "name": "Castle Town -> Castle Town Bombchu Bowling",
             "short_name": "Bombchu Bowling",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1613,9 +1364,6 @@
           {
             "name": "Castle Town -> Castle Town Bombchu Shop",
             "short_name": "Bombchu Shop",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1635,9 +1383,6 @@
           {
             "name": "Castle Town -> Castle Town Man in Green House",
             "short_name": "Man in Green House",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1657,9 +1402,6 @@
           {
             "name": "Castle Town -> Castle Town Mask Shop",
             "short_name": "Mask Shop",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1679,9 +1421,6 @@
           {
             "name": "Castle Town -> Castle Town Potion Shop",
             "short_name": "Potion Shop",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1701,9 +1440,6 @@
           {
             "name": "Castle Town -> Castle Town Shooting Gallery",
             "short_name": "Castle Town Shooting Gallery",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1723,9 +1459,6 @@
           {
             "name": "Castle Town -> Castle Town Treasure Chest Game",
             "short_name": "Treasure Chest Game",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1745,9 +1478,6 @@
           {
             "name": "Castle Town Entrance -> Castle Town Rupee Room",
             "short_name": "Castle Town Rupee Room",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1767,9 +1497,6 @@
           {
             "name": "Temple of Time Exterior -> Temple of Time",
             "short_name": "Temple of Time",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -1789,9 +1516,6 @@
           {
             "name": "Castle Town -> Castle Grounds",
             "short_name": "CT -> CG",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1811,9 +1535,6 @@
           {
             "name": "Castle Town -> Castle Town Entrance",
             "short_name": "CT -> CTE",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1833,9 +1554,6 @@
           {
             "name": "Castle Town -> Temple of Time Exterior",
             "short_name": "CT -> ToT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1855,9 +1573,6 @@
           {
             "name": "Castle Town Entrance -> Castle Town",
             "short_name": "CTE -> CT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1877,9 +1592,6 @@
           {
             "name": "Castle Town Entrance -> Hyrule Field",
             "short_name": "CTE -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1899,9 +1611,6 @@
           {
             "name": "Temple of Time Exterior -> Castle Town",
             "short_name": "ToT -> CT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -1927,15 +1636,9 @@
           {
             "name": "Hyrule Castle Grounds -> Castle Storms Grotto",
             "short_name": "Castle Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -1952,15 +1655,9 @@
           {
             "name": "Ganons Castle Grounds -> Ganons Castle Fairy",
             "short_name": "Ganons Castle Fairy",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
-                "access_rules": [
-                  "sword2,lift3"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -1977,15 +1674,9 @@
           {
             "name": "Hyrule Castle Grounds -> Hyrule Castle Fairy",
             "short_name": "Hyrule Castle Fairy",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
-                "access_rules": [
-                  "$has_explosives"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2002,9 +1693,6 @@
           {
             "name": "Castle Grounds -> Castle Town",
             "short_name": "CG -> CT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2030,15 +1718,9 @@
           {
             "name": "Death Mountain -> Mountain Bombable Grotto",
             "short_name": "DMT Bombable Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2055,15 +1737,9 @@
           {
             "name": "Death Mountain -> Mountain Storms Grotto",
             "short_name": "DMT Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2080,15 +1756,9 @@
           {
             "name": "Death Mountain Summit -> Mountain Summit Fairy",
             "short_name": "DMT Fairy",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2105,9 +1775,6 @@
           {
             "name": "Dodongos Cavern Entryway -> Dodongos Cavern Beginning",
             "short_name": "Dodongos Cavern",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -2127,9 +1794,6 @@
           {
             "name": "Death Mountain -> Goron City",
             "short_name": "DMT -> GC",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2149,9 +1813,6 @@
           {
             "name": "Death Mountain -> Kakariko Village Behind Gate",
             "short_name": "DMT -> Kak",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2171,9 +1832,6 @@
           {
             "name": "Death Mountain Summit -> Death Mountain Crater Upper",
             "short_name": "DMT -> DMC",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2193,9 +1851,6 @@
           {
             "name": "Death Mountain Summit Owl Flight -> Kakariko Village",
             "short_name": "DMT Owl",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2221,15 +1876,9 @@
           {
             "name": "Death Mountain Crater Upper -> Top of Crater Grotto",
             "short_name": "Top of DMC Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2246,15 +1895,9 @@
           {
             "name": "Death Mountain Crater Lower -> DMC Hammer Grotto",
             "short_name": "DMC Hammer Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "sword2,hammer"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2271,15 +1914,9 @@
           {
             "name": "Death Mountain Crater Lower -> Crater Fairy",
             "short_name": "DMC Fairy",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
-                "access_rules": [
-                  "sword2,hammer"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2296,9 +1933,6 @@
           {
             "name": "Death Mountain Crater Central -> Fire Temple Lower",
             "short_name": "Fire Temple",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -2318,9 +1952,6 @@
           {
             "name": "Death Mountain Crater Lower -> Darunias Chamber",
             "short_name": "DMC -> GC",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2340,9 +1971,6 @@
           {
             "name": "Death Mountain Crater Upper -> Death Mountain Summit",
             "short_name": "DMC -> DMT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2368,17 +1996,9 @@
           {
             "name": "Goron City -> Goron City Grotto",
             "short_name": "Goron City Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "sword2,hookshot,redtunic",
-                  "sword2,hookshot,nayruslove,magic",
-                  "sword2,ocarina,time"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2395,9 +2015,6 @@
           {
             "name": "Goron City -> Goron Shop",
             "short_name": "Goron Shop",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -2417,9 +2034,6 @@
           {
             "name": "Darunias Chamber -> Death Mountain Crater Lower",
             "short_name": "GC -> DMC",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2439,9 +2053,6 @@
           {
             "name": "Goron City -> Death Mountain",
             "short_name": "GC -> DMT",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2461,9 +2072,6 @@
           {
             "name": "Goron City Woods Warp -> Lost Woods",
             "short_name": "GC -> LW",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2489,9 +2097,6 @@
           {
             "name": "Lake Hylia -> Lake Hylia Grotto",
             "short_name": "Lake Hylia Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -2511,9 +2116,6 @@
           {
             "name": "Lake Hylia -> Fishing Hole",
             "short_name": "Fishing Hole",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -2533,9 +2135,6 @@
           {
             "name": "Lake Hylia -> Lake Hylia Lab",
             "short_name": "Lake Hylia Lab",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -2555,9 +2154,6 @@
           {
             "name": "Lake Hylia -> Water Temple Lobby",
             "short_name": "Water Temple",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -2577,9 +2173,6 @@
           {
             "name": "Lake Hylia -> Hyrule Field",
             "short_name": "LH -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2599,9 +2192,6 @@
           {
             "name": "Lake Hylia -> Zoras Domain",
             "short_name": "LH -> ZD",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2621,9 +2211,6 @@
           {
             "name": "Lake Hylia Owl Flight -> Hyrule Field",
             "short_name": "LH Owl",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2649,15 +2236,9 @@
           {
             "name": "Zora River -> Zora River Plateau Bombable Grotto",
             "short_name": "ZR Plateau Bombable Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2674,9 +2255,6 @@
           {
             "name": "Zora River -> Zora River Plateau Open Grotto",
             "short_name": "ZR Plateau Open Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
@@ -2696,15 +2274,9 @@
           {
             "name": "Zora River -> Zora River Storms Grotto",
             "short_name": "ZR Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2721,9 +2293,6 @@
           {
             "name": "Zora River -> Lost Woods",
             "short_name": "ZR -> LW",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2743,9 +2312,6 @@
           {
             "name": "Zora River Behind Waterfall -> Zoras Domain",
             "short_name": "ZR -> ZD",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2765,9 +2331,6 @@
           {
             "name": "Zora River Front -> Hyrule Field",
             "short_name": "ZR -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2793,15 +2356,9 @@
           {
             "name": "Zoras Domain -> Zoras Domain Storms Grotto",
             "short_name": "ZD Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2818,9 +2375,6 @@
           {
             "name": "Zoras Domain -> Zora Shop",
             "short_name": "Zora Shop",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -2840,9 +2394,6 @@
           {
             "name": "Zoras Domain -> Lake Hylia",
             "short_name": "ZD -> LH",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2862,9 +2413,6 @@
           {
             "name": "Zoras Domain -> Zora River Behind Waterfall",
             "short_name": "ZD -> ZR",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2884,9 +2432,6 @@
           {
             "name": "Zoras Domain Behind King Zora -> Zoras Fountain",
             "short_name": "ZD -> ZF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -2912,15 +2457,9 @@
           {
             "name": "Zoras Fountain -> Zoras Fountain Fairy",
             "short_name": "ZF Fairy",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
-                "access_rules": [
-                  "$has_explosives"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2937,9 +2476,6 @@
           {
             "name": "Zoras Fountain -> Jabu Jabus Belly Beginning",
             "short_name": "Jabu Jabu",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -2959,9 +2495,6 @@
           {
             "name": "Zoras Fountain -> Ice Cavern Beginning",
             "short_name": "Ice Cavern",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -2981,9 +2514,6 @@
           {
             "name": "Zoras Fountain -> Zoras Domain Behind King Zora",
             "short_name": "ZF -> ZD",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3009,15 +2539,9 @@
           {
             "name": "Gerudo Valley -> Gerudo Valley Octorok Grotto",
             "short_name": "Octorok Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "sword2,lift2"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -3034,15 +2558,9 @@
           {
             "name": "Gerudo Valley Far Side -> Gerudo Valley Storms Grotto",
             "short_name": "GV Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -3059,9 +2577,6 @@
           {
             "name": "Gerudo Valley Far Side -> Carpenter Tent",
             "short_name": "Carpenter Tent",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
@@ -3081,9 +2596,6 @@
           {
             "name": "Gerudo Valley -> Hyrule Field",
             "short_name": "GV -> HF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3103,9 +2615,6 @@
           {
             "name": "Gerudo Valley Far Side -> Gerudo Fortress",
             "short_name": "GV -> GF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3131,15 +2640,9 @@
           {
             "name": "Gerudo Fortress -> Gerudo Fortress Storms Grotto",
             "short_name": "GF Storms Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "ocarina,storm"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -3156,9 +2659,6 @@
           {
             "name": "Gerudo Fortress -> Gerudo Training Grounds Lobby",
             "short_name": "Gerudo Training Grounds",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -3178,9 +2678,6 @@
           {
             "name": "Gerudo Fortress -> Gerudo Valley Far Side",
             "short_name": "GF -> GV",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3200,9 +2697,6 @@
           {
             "name": "Gerudo Fortress Outside Gate -> Haunted Wasteland Near Fortress",
             "short_name": "GF -> WL",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3228,9 +2722,6 @@
           {
             "name": "Haunted Wasteland Near Colossus -> Desert Colossus",
             "short_name": "WL -> Col",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3250,9 +2741,6 @@
           {
             "name": "Haunted Wasteland Near Fortress -> Gerudo Fortress Outside Gate",
             "short_name": "WL -> GF",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",
@@ -3278,15 +2766,9 @@
           {
             "name": "Desert Colossus -> Desert Colossus Grotto",
             "short_name": "Colossus Grotto",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "Grotto",
-                "access_rules": [
-                  "sword2,lift2"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -3303,15 +2785,9 @@
           {
             "name": "Desert Colossus -> Colossus Fairy",
             "short_name": "Colossus Fairy",
-            "access_rules": [
-              "setting_entrance_indoors"
-            ],
             "sections": [
               {
                 "name": "House",
-                "access_rules": [
-                  "$has_explosives"
-                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -3328,9 +2804,6 @@
           {
             "name": "Desert Colossus -> Spirit Temple Lobby",
             "short_name": "Spirit Temple",
-            "access_rules": [
-              "setting_entrance_dungeons"
-            ],
             "sections": [
               {
                 "name": "Dungeon",
@@ -3350,9 +2823,6 @@
           {
             "name": "Desert Colossus -> Haunted Wasteland Near Colossus",
             "short_name": "Col -> WL",
-            "access_rules": [
-              "setting_entrance_overworld"
-            ],
             "sections": [
               {
                 "name": "Overworld",

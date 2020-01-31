@@ -2,9 +2,12 @@
 
 ## x
 
+- replaced ice traps with triforce pieces
+- added first batch of logic tricks
 - changed ER maps:
   - unified child and adult (too few differences)
   - split entrances (dungeons, houses, grottos) from connectors
+  - removed setting
 
 ## 2.8.0.0
 
@@ -13,7 +16,6 @@
 - added damage multiplier setting
 - added starting age setting
 - changed ER default capture to contain every other capture
-- replaced ice traps with triforce pieces
 
 ## 2.7.0.0
 
