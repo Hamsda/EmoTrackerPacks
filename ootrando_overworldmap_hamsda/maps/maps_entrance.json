@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "entrances",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/overworld_map.png"
+  },
+  {
+    "name": "connectors",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/overworld_map.png"
+  }
+]

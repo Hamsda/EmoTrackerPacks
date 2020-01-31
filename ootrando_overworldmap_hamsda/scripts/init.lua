@@ -2,9 +2,7 @@ local variant = Tracker.ActiveVariantUID
 local has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 local has_keys = variant:find("keysanity")
 local is_er = variant:find("entrance")
---print("map", has_map)
---print("keys", has_keys)
---print("er", is_er)
+
 
 
 if has_map then
@@ -29,11 +27,12 @@ Tracker:AddItems("items/dungeons.json")
 ScriptHost:LoadScript("scripts/logic.lua")
 
 if has_map then
-  Tracker:AddMaps("maps/maps.json")
   if is_er then
+    Tracker:AddMaps("maps/maps_entrance.json")
     Tracker:AddLocations("locations/overworld_entrance.json")
     Tracker:AddLayouts("layouts/options_entrance.json")
   else
+    Tracker:AddMaps("maps/maps.json")
     Tracker:AddLocations("locations/overworld.json")
     Tracker:AddLocations("locations/dung_reg.json")
     Tracker:AddLocations("locations/dung_mq.json")

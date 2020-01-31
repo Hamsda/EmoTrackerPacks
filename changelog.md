@@ -1,5 +1,11 @@
 # Changelog
 
+## x
+
+- changed ER maps:
+  - unified child and adult (too few differences)
+  - split entrances (dungeons, houses, grottos) from connectors
+
 ## 2.8.0.0
 
 - fixed ER deku theater as adult
