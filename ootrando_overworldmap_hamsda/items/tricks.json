@@ -7,6 +7,13 @@
     "codes": "logic_fewer_tunic_requirements"
   },
   {
+    "name": "Hidden Grottos without Stone of Agony",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_grottos_without_agony.png",
+    "codes": "logic_grottos_without_agony"
+  },
+  {
     "name": "Child Deadhand without Kokiri Sword",
     "type": "toggle",
     "initial_active_state": true,

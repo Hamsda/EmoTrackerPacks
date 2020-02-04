@@ -151,6 +151,16 @@ function FTR_or_zora()
   end
 end
 
+function hidden_grotto()
+  if has("logic_grottos_without_agony")
+  or has("agony")
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
 function can_leave_forest()
   if has("open_forest")
   or has("closed_deku")
