@@ -12,47 +12,44 @@
             [
               "setting_forest",
               "setting_age",
-              "setting_shopsanity"
+              "setting_shopsanity",
+              "setting_shuffle_sword1",
+              "setting_hints"
             ],
             [
               "setting_door",
               "setting_logic_chus",
-              "setting_tokens_off"
+              "setting_tokens_off",
+              "setting_shuffle_ocarinas",
+              "setting_damage"
             ],
             [
               "setting_fountain",
-              "setting_skulltulas_sun",
-              "setting_scrub_shuffle"
+              "",
+              "setting_scrub_shuffle",
+              "setting_shuffle_egg",
+              "setting_plant"
             ],
             [
               "setting_gerudo",
-              "setting_lens",
-              "setting_cowsanity"
+              "",
+              "setting_cowsanity",
+              "setting_shuffle_card",
+              ""
             ],
             [
               "setting_bridge",
               "",
-              "setting_shuffle_sword1"
+              "",
+              "setting_shuffle_beans",
+              ""
             ],
             [
               "setting_trials",
-              "setting_hints",
-              "setting_shuffle_ocarinas"
-            ],
-            [
-              "",
-              "setting_plant",
-              "setting_shuffle_egg"
-            ],
-            [
-              "",
-              "setting_damage",
-              "setting_shuffle_card"
-            ],
-            [
               "",
               "",
-              "setting_shuffle_beans"
+              "",
+              ""
             ]
           ]
         }
@@ -62,73 +59,81 @@
         "content": {
           "type": "array",
           "orientation": "vertical",
-          //"h_alignment": "left",
-          "item_margin": "1,2",
           "content": [
             {
-              "type": "item",
-              "item": "logic_fewer_tunic_requirements",
-              "width": 200,
-              "height": 16
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "1,2",
+              "rows": [
+                [
+                  "setting_skulltulas_sun",
+                  "setting_lens"
+                ]
+              ]
             },
             {
-              "type": "item",
-              "item": "logic_grottos_without_agony",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_child_deadhand",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_man_on_roof",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_dc_jump",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_rusted_switches",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_windmill_poh",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_crater_bean_poh_with_hovers",
-              "width": 200,
-              "height": 16
-            },
-            {
-              "type": "item",
-              "item": "logic_forest_vines",
-              "width": 200,
-              "height": 16
+              "type": "array",
+              "orientation": "vertical",
+              //"h_alignment": "left",
+              "item_margin": "1,2",
+              "content": [
+                {
+                  "type": "item",
+                  "item": "logic_fewer_tunic_requirements",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_grottos_without_agony",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_child_deadhand",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_man_on_roof",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_dc_jump",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_rusted_switches",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_windmill_poh",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_crater_bean_poh_with_hovers",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_forest_vines",
+                  "width": 200,
+                  "height": 16
+                }
+              ]
             }
           ]
-        }
-      },
-      {
-        "title": "Other",
-        "content": {
-          "type": "itemgrid",
-          "h_alignment": "left",
-          "item_margin": "1,2",
-          "rows": []
         }
       }
     ]

@@ -8,6 +8,7 @@
   - unified child and adult (too few differences)
   - split entrances (dungeons, houses, grottos) from connectors
   - removed setting
+- rearranged/renamed some settings
 
 ## 2.8.0.0
 
