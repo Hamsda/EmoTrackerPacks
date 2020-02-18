@@ -7,18 +7,17 @@ local is_er = variant:find("entrance")
 
 if has_map then
   if is_er then
-    Tracker:AddItems("items/options_entrance.json")
     Tracker:AddItems("items/cap_grottos.json")
     Tracker:AddItems("items/cap_houses.json")
     Tracker:AddItems("items/cap_dungeons.json")
     Tracker:AddItems("items/cap_overworld.json")
     Tracker:AddItems("items/counters.json")
   else
-    Tracker:AddItems("items/options.json")
     Tracker:AddItems("items/tricks.json")
     Tracker:AddItems("items/sequences.json")
   end
 end
+Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
