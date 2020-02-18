@@ -5,9 +5,10 @@
 - replaced ice traps with triforce pieces
 - added first batch of logic tricks
 - changed ER maps:
+  - removed setting
   - unified child and adult (too few differences)
   - split entrances (dungeons, houses, grottos) from connectors
-  - removed setting
+  - repositioned most locations a little
 - rearranged/renamed some settings
 
 ## 2.8.0.0
