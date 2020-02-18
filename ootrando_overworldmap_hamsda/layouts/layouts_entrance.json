@@ -29,14 +29,6 @@
                 "type": "layout",
                 "key": "counters_tall"
               }
-            },
-            {
-              "type": "group",
-              "header": "Settings",
-              "content": {
-                "type": "layout",
-                "key": "options_tall"
-              }
             }
           ]
         },
@@ -48,28 +40,25 @@
               "dock": "top",
               "tabs": [
                 {
-                  "title": "Child",
-                  "icon": "images/sword1.png",
+                  "title": "Entrances",
                   "content": {
                     "type": "map",
                     "maps": [
-                      "child"
+                      "entrances"
                     ]
                   }
                 },
                 {
-                  "title": "Adult",
-                  "icon": "images/sword2.png",
+                  "title": "Connectors",
                   "content": {
                     "type": "map",
                     "maps": [
-                      "adult"
+                      "connectors"
                     ]
                   }
                 },
                 {
                   "title": "Both",
-                  "icon": "images/map.png",
                   "content": {
                     "type": "array",
                     "orientation": "vertical",
@@ -78,8 +67,8 @@
                         "type": "map",
                         "orientation": "vertical",
                         "maps": [
-                          "child",
-                          "adult"
+                          "entrances",
+                          "connectors"
                         ]
                       }
                     ]
@@ -137,14 +126,6 @@
                     "type": "layout",
                     "key": "counters_wide"
                   }
-                },
-                {
-                  "type": "group",
-                  "header": "Settings",
-                  "content": {
-                    "type": "layout",
-                    "key": "options_wide"
-                  }
                 }
               ]
             },
@@ -166,34 +147,31 @@
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Child",
-              "icon": "images/sword1.png",
+              "title": "Entrances",
               "content": {
                 "type": "map",
                 "maps": [
-                  "child"
+                  "entrances"
                 ]
               }
             },
             {
-              "title": "Adult",
-              "icon": "images/sword2.png",
+              "title": "Connectors",
               "content": {
                 "type": "map",
                 "maps": [
-                  "adult"
+                  "connectors"
                 ]
               }
             },
             {
               "title": "Both",
-              "icon": "images/map.png",
               "content": {
                 "type": "map",
                 "orientation": "horizontal",
                 "maps": [
-                  "child",
-                  "adult"
+                  "entrances",
+                  "connectors"
                 ]
               }
             }

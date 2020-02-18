@@ -56,12 +56,12 @@
               {
                 "name": "Kokiri Forest Storms Grotto",
                 "short_name": "Kokiri Storms Grotto",
+                "access_rules": [
+                  "$hidden_grotto,ocarina,storm"
+                ],
                 "sections": [
                   {
                     "name": "Chest",
-                    "access_rules": [
-                      "ocarina,storm"
-                    ],
                     "item_count": 1
                   }
                 ],
@@ -738,9 +738,9 @@
                 "name": "Front of Meadow Grotto",
                 "short_name": "Wolfos Grotto",
                 "access_rules": [
-                  "$has_explosives",
-                  "$has_age|adult,hammer,[ocarina],[saria]",
-                  "$has_age|adult,hammer,[ocarina],[minuet]"
+                  "$hidden_grotto,$has_explosives",
+                  "$hidden_grotto,$has_age|adult,hammer,[ocarina],[saria]",
+                  "$hidden_grotto,$has_age|adult,hammer,[ocarina],[minuet]"
                 ],
                 "sections": [
                   {
@@ -815,7 +815,7 @@
               {
                 "name": "Meadow Storms Grotto",
                 "access_rules": [
-                  "ocarina,storm"
+                  "$hidden_grotto,ocarina,storm"
                 ],
                 "sections": [
                   {
@@ -999,7 +999,7 @@
                 "name": "Field North Lon Lon Grotto",
                 "short_name": "Tektite Grotto",
                 "access_rules": [
-                  "$can_blast"
+                  "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
@@ -1032,7 +1032,7 @@
                 "name": "Field Near Lake Inside Fence Grotto",
                 "short_name": "Grotto Inside Fence",
                 "access_rules": [
-                  "$can_blast"
+                  "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
@@ -1154,7 +1154,7 @@
               {
                 "name": "Field Kakariko Grotto",
                 "access_rules": [
-                  "$can_blast"
+                  "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
@@ -1190,6 +1190,9 @@
               },
               {
                 "name": "Field Valley Grotto",
+                "access_rules": [
+                  "$hidden_grotto"
+                ],
                 "sections": [
                   {
                     "name": "GS13",
@@ -2026,7 +2029,7 @@
                 "name": "Kakariko Bombable Grotto",
                 "short_name": "Center Grotto",
                 "access_rules": [
-                  "$can_blast"
+                  "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
@@ -2118,7 +2121,9 @@
                   {
                     "name": "Talk to him",
                     "access_rules": [
-                      "[$has_age|adult],[hookshot]" //TODO: trick
+                      "$has_age|adult,hookshot",
+                      "[logic_man_on_roof],$has_age|adult",
+                      "[logic_man_on_roof],$has_age|child"
                     ],
                     "item_count": 1
                   }
@@ -2164,8 +2169,9 @@
                     "name": "Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
-                      "$has_age|adult,[ocarina],[time]",
                       "$has_age|child,boomerang",
+                      "$has_age|adult,[logic_windmill_poh]",
+                      "$has_age|adult,ocarina,time",
                       "{}"
                     ],
                     "capture_item": true,
@@ -3346,12 +3352,12 @@
                   },
                   {
                     "name": "Mountain Storms Grotto",
+                    "access_rules": [
+                      "$hidden_grotto,ocarina,storm"
+                    ],
                     "sections": [
                       {
-                        "name": "Play Song of Storms",
-                        "access_rules": [
-                          "ocarina,storm"
-                        ],
+                        "name": "Chest",
                         "item_count": 1
                       }
                     ],
@@ -3742,12 +3748,9 @@
                         "access_rules": [
                           "$has_age|adult,ocarina,bolero,setting_plant_no,beans",
                           "$has_age|adult,ocarina,bolero,bean_crater_yes",
-                          "$has_age|adult,ocarina,bolero,hoverboots,[setting_plant_no],[beans]",
-                          "$has_age|adult,ocarina,bolero,hoverboots,[bean_crater_yes]",
-                          "$has_age|adult,hammer,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
-                          "$has_age|adult,hammer,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[setting_plant_no],[beans]",
-                          "$link_the_goron,hoverboots,[ocarina],[bolero],[bean_crater_yes]",
+                          "$has_age|adult,ocarina,bolero,[logic_crater_bean_poh_with_hovers],hoverboots",
+                          "$has_age|adult,hammer,[logic_crater_bean_poh_with_hovers],hoverboots",
+                          "$link_the_goron,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "{$hintable}",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
@@ -4471,12 +4474,15 @@
                   },
                   {
                     "name": "Castle Storms Grotto",
+                    "access_rules": [
+                      "$hidden_grotto,$has_age|child,ocarina,storm"
+                    ],
                     "sections": [
                       {
                         "name": "GS16",
                         "access_rules": [
-                          "$has_age|child,ocarina,storm,boomerang,$has_explosives",
-                          "{$has_age|child,ocarina,storm,$has_explosives}",
+                          "boomerang,$has_explosives",
+                          "{$has_explosives}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -4768,15 +4774,15 @@
                   {
                     "name": "Zora River Storms Grotto",
                     "access_rules": [
-                      "ocarina,storm"
+                      "$hidden_grotto,ocarina,storm"
                     ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1",
-                          "$has_age|adult"
+                          "$has_age|child,$has_explosives,$can_stun_deku",
+                          "$has_age|child,scale1,$can_stun_deku",
+                          "$has_age|adult,$can_stun_deku"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -5642,12 +5648,12 @@
                   },
                   {
                     "name": "Gerudo Valley Storms Grotto",
+                    "access_rules": [
+                      "$hidden_grotto,ocarina,storm"
+                    ],
                     "sections": [
                       {
                         "name": "Deku Scrubs",
-                        "access_rules": [
-                          "ocarina,storm"
-                        ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
                         ],

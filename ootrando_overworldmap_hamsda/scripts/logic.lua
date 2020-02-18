@@ -132,7 +132,7 @@ function can_see_with_lens()
 end
 
 function FTR_or_goron()
-  if has("setting_fewer_tunics_yes") 
+  if has("logic_fewer_tunic_requirements") 
   or has("redtunic") 
   then
     return 1
@@ -142,8 +142,18 @@ function FTR_or_goron()
 end
 
 function FTR_or_zora()
-  if has("setting_fewer_tunics_yes") 
+  if has("logic_fewer_tunic_requirements") 
   or has("bluetunic") 
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
+function hidden_grotto()
+  if has("logic_grottos_without_agony")
+  or has("agony")
   then
     return 1
   else

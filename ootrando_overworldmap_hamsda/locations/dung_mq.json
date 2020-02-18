@@ -323,8 +323,9 @@
           "@Dodongos Cavern MQ/Lobby,$can_blast",
           "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks",
           "@Dodongos Cavern MQ/Lobby,dinsfire,magic",
-          "@Dodongos Cavern MQ/Lobby,$has_age|adult,[hoverboots]",
-          "@Dodongos Cavern MQ/Lobby,$has_age|adult,[hookshot]"
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult,[logic_dc_jump]",
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult,hoverboots",
+          "@Dodongos Cavern MQ/Lobby,$has_age|adult,hookshot"
         ],
         "item_count": 1
       },
@@ -848,9 +849,8 @@
         "access_rules": [
           "@Forest Temple MQ/Central Area,$has_age|adult,bow",
           "@Forest Temple MQ/NW Outdoors,ironboots",
-          "@Forest Temple MQ/NW Outdoors,hookshot,[longshot]",
+          "@Forest Temple MQ/NW Outdoors,hookshot,[longshot]", //TODO: trick logic_forest_well_swim
           "@Forest Temple MQ/NW Outdoors,scale2",
-          //cyclic: Outdoors Top Ledges
           "@Forest Temple MQ/NW Outdoors,bow,firearrow,magic"
         ],
         "visibility_rules": [
@@ -862,9 +862,10 @@
         "name": "Outdoors Top Ledges",
         "access_rules": [
           "@Forest Temple MQ/NW Outdoors,bow,firearrow,magic",
-          "@Forest Temple MQ/NE Outdoors,hookshot,[longshot]",
+          "@Forest Temple MQ/NE Outdoors,longshot",
           "@Forest Temple MQ/NE Outdoors,hookshot,hoverboots",
-          "@Forest Temple MQ/NE Outdoors,hookshot,ocarina,time"
+          "@Forest Temple MQ/NE Outdoors,hookshot,ocarina,time",
+          "@Forest Temple MQ/NE Outdoors,hookshot,[logic_forest_vines]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -876,7 +877,6 @@
         "access_rules": [
           "@Forest Temple MQ/NE Outdoors,longshot",
           "@Forest Temple MQ/Outdoors Top Ledges,hoverboots,[longshot]",
-          //cyclic: Falling Room
           "@Forest Temple MQ/Bow Region,forest_small_keys:5,bow",
           "@Forest Temple MQ/Bow Region,forest_small_keys:5,dinsfire,magic"
         ],
@@ -1145,7 +1145,8 @@
       {
         "name": "Upper Maze",
         "access_rules": [
-          "@Fire Temple MQ/Lower Maze,[$has_explosives],hookshot"
+          "@Fire Temple MQ/Lower Maze,$has_explosives,hookshot",
+          "@Fire Temple MQ/Lower Maze,[logic_rusted_switches],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2344,7 +2345,7 @@
         "short_name": "Dead Hand",
         "access_rules": [
           "sword1",
-          "sticks,[sword1]",
+          "sticks,[logic_child_deadhand]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -2548,7 +2549,8 @@
         "name": "Spirit Trial First Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
-          "[bow],hammer"
+          "bow,hammer",
+          "[logic_rusted_switches],hammer"
         ],
         "item_count": 1
       },
@@ -2556,7 +2558,7 @@
         "name": "Spirit Trial Second Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "[bow],hammer,bombchu,$can_see_with_lens"
+          "@Ganons Castle MQ/Spirit Trial First Chest,bombchu,$can_see_with_lens"
         ],
         "item_count": 1
       },

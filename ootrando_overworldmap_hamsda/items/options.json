@@ -1,6 +1,6 @@
 [
   {
-    "name": "Open Forest",
+    "name": "Forest",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "name": "Open Door of Time",
+    "name": "Door of Time",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "name": "Open Fountain",
+    "name": "Zora's Fountain",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "name": "Bridge Requirement",
+    "name": "Rainbow Bridge Requirement",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -125,68 +125,12 @@
     ]
   },
   {
-    "name": "Trials Requirement",
+    "name": "Number of Trials",
     "type": "consumable",
     "img": "images/setting_trials.png",
     "codes": "setting_trials",
     "disabled_img_mods": "@enabled",
     "max_quantity": 6
-  },
-  {
-    "name": "Nighttime Skulltulas Expect Sun's Song",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/setting_skulltulas_sun_off.png",
-        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_off"
-      },
-      {
-        "img": "images/setting_skulltulas_sun_on.png",
-        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Lens Requirement",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_lens_all.png",
-        "codes": "setting_lens,setting_lens_all"
-      },
-      {
-        "img": "images/setting_lens_wasteland.png",
-        "codes": "setting_lens_wasteland"
-      },
-      {
-        "img": "images/setting_lens_chest.png",
-        "codes": "setting_lens_chest"
-      }
-    ]
-  },
-  {
-    "name": "Fewer Tunic Requirements",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_fewer_tunics_no.png",
-        "codes": "setting_fewer_tunics,setting_fewer_tunics_no"
-      },
-      {
-        "img": "images/setting_fewer_tunics_yes.png",
-        "codes": "setting_fewer_tunics,setting_fewer_tunics_yes",
-        "inherit_codes": false
-      }
-    ]
   },
   {	
     "name": "Starting Age",	
@@ -206,7 +150,7 @@
     ]	
   },
   {	
-    "name": "Bombchus in Logic",	
+    "name": "Bombchus Are Considered in Logic",	
     "type": "progressive",	
     "allow_disabled": false,	
     "loop": true,	
@@ -221,23 +165,6 @@
         "inherit_codes": false	
       }	
     ]	
-  },
-  {
-    "name": "Deku Scrub Shuffle",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/setting_scrub_shuffle_no.png",
-        "codes": "setting_scrub_shuffle,setting_scrub_shuffle_no"
-      },
-      {
-        "img": "images/setting_scrub_shuffle_yes.png",
-        "codes": "setting_scrub_shuffle,setting_scrub_shuffle_yes",
-        "inherit_codes": false
-      }
-    ]
   },
   {
     "name": "Shopsanity",
@@ -257,24 +184,7 @@
     ]
   },
   {
-    "name": "Cowsanity",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/setting_cowsanity_no.png",
-        "codes": "setting_cowsanity,setting_cowsanity_no"
-      },
-      {
-        "img": "images/setting_cowsanity_yes.png",
-        "codes": "setting_cowsanity,setting_cowsanity_yes",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Gold Skulltulas",
+    "name": "Tokensanity",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -301,79 +211,35 @@
     ]
   },
   {
-    "name": "Bean Planting",
+    "name": "Scrub Shuffle",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_plant_no.png",
-        "codes": "setting_plant,setting_plant_no"
+        "img": "images/setting_scrub_shuffle_no.png",
+        "codes": "setting_scrub_shuffle,setting_scrub_shuffle_no"
       },
       {
-        "img": "images/setting_plant_yes.png",
-        "codes": "setting_plant,setting_plant_yes",
+        "img": "images/setting_scrub_shuffle_yes.png",
+        "codes": "setting_scrub_shuffle,setting_scrub_shuffle_yes",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Hints",
+    "name": "Shuffle Cows",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 3,
     "stages": [
       {
-        "img": "images/setting_hints_off.png",
-        "codes": "setting_hints,setting_hints_off"
+        "img": "images/setting_cowsanity_no.png",
+        "codes": "setting_cowsanity,setting_cowsanity_no"
       },
       {
-        "img": "images/setting_hints_truth.png",
-        "codes": "setting_hints,setting_hints_truth",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_hints_agony.png",
-        "codes": "setting_hints,setting_hints_agony",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_hints_on.png",
-        "codes": "setting_hints,setting_hints_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Damage Multiplier",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_damage_half.png",
-        "codes": "setting_damage,setting_damage_half"
-      },
-      {
-        "img": "images/setting_damage_normal.png",
-        "codes": "setting_damage,setting_damage_normal",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_damage_double.png",
-        "codes": "setting_damage,setting_damage_double",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_damage_quadruple.png",
-        "codes": "setting_damage,setting_damage_quadruple",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_damage_ohko.png",
-        "codes": "setting_damage,setting_damage_ohko",
+        "img": "images/setting_cowsanity_yes.png",
+        "codes": "setting_cowsanity,setting_cowsanity_yes",
         "inherit_codes": false
       }
     ]
@@ -448,7 +314,7 @@
     ]
   },
   {
-    "name": "Bean Shuffle",
+    "name": "Shuffle Magic Beans",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -461,6 +327,122 @@
         "img": "images/setting_shuffle_beans_yes.png",
         "codes": "setting_shuffle_beans,setting_shuffle_beans_yes",
         "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hints",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 3,
+    "stages": [
+      {
+        "img": "images/setting_hints_off.png",
+        "codes": "setting_hints,setting_hints_off"
+      },
+      {
+        "img": "images/setting_hints_truth.png",
+        "codes": "setting_hints,setting_hints_truth",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hints_agony.png",
+        "codes": "setting_hints,setting_hints_agony",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hints_on.png",
+        "codes": "setting_hints,setting_hints_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Damage Multiplier",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_damage_half.png",
+        "codes": "setting_damage,setting_damage_half"
+      },
+      {
+        "img": "images/setting_damage_normal.png",
+        "codes": "setting_damage,setting_damage_normal",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_double.png",
+        "codes": "setting_damage,setting_damage_double",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_quadruple.png",
+        "codes": "setting_damage,setting_damage_quadruple",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_damage_ohko.png",
+        "codes": "setting_damage,setting_damage_ohko",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bean Planting",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_plant_no.png",
+        "codes": "setting_plant,setting_plant_no"
+      },
+      {
+        "img": "images/setting_plant_yes.png",
+        "codes": "setting_plant,setting_plant_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Nighttime Skulltulas Expect Sun's Song",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_skulltulas_sun_off.png",
+        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_off"
+      },
+      {
+        "img": "images/setting_skulltulas_sun_on.png",
+        "codes": "setting_skulltulas_sun,setting_skulltulas_sun_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Lens of Truth",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_lens_all.png",
+        "codes": "setting_lens,setting_lens_all"
+      },
+      {
+        "img": "images/setting_lens_wasteland.png",
+        "codes": "setting_lens_wasteland"
+      },
+      {
+        "img": "images/setting_lens_chest.png",
+        "codes": "setting_lens_chest"
       }
     ]
   }

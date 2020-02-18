@@ -19,7 +19,7 @@
               "header_content": {
                 "type": "button_popup",
                 "style": "settings",
-                "popup_background": "#50212121",
+                "popup_background": "#FF212121",
                 "layout": "options_popup"
               },
               "content": {
@@ -126,7 +126,7 @@
                   "header_content": {
                     "type": "button_popup",
                     "style": "settings",
-                    "popup_background": "#50212121",
+                    "popup_background": "#FF212121",
                     "layout": "options_popup"
                   },
                   "content": {
