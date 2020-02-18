@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.9.0.0
 
 - replaced ice traps with triforce pieces
 - added first batch of logic tricks
