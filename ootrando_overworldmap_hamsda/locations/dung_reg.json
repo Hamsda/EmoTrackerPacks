@@ -1155,16 +1155,6 @@
         "item_count": 1
       },
       {
-        "name": "Scarecrow Chest",
-        "short_name": "Scarecrow",
-        "access_rules": [
-          "@Fire Temple/East Tower",
-          "{$hintable}"
-        ],
-        "capture_item": true,
-        "item_count": 1
-      },
-      {
         "name": "GS67 - East Tower Climb",
         "short_name": "Scarecrow 1",
         "access_rules": [
@@ -1188,6 +1178,16 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Scarecrow Chest",
+        "short_name": "Scarecrow",
+        "access_rules": [
+          "@Fire Temple/East Tower",
+          "{$hintable}"
+        ],
+        "capture_item": true,
         "item_count": 1
       },
       {
