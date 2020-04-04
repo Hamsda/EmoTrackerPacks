@@ -128,7 +128,7 @@
                     "name": "Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "$has_age|adult,ocarina,epona,setting_cowsanity_yes"
+                      "$has_age|adult,ocarina,epona"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
@@ -148,15 +148,12 @@
               },
               {
                 "name": "Know It All House",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS1 (N)",
                     "access_rules": [
-                      "$has_age|child,$can_leave_forest,$can_child_attack",
-                      "$has_age|child,ocarina,sun,$can_child_attack"
+                      "$has_age|child,$night_gs,$can_child_attack,$can_leave_forest",
+                      "$has_age|child,$night_gs,$can_child_attack,ocarina,sun"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -176,9 +173,6 @@
               },
               {
                 "name": "Kokiri Bean Patch",
-                "access_rules": [
-                  "setting_tokens_overworld"
-                ],
                 "sections": [
                   {
                     "name": "GS2",
@@ -203,17 +197,14 @@
               },
               {
                 "name": "House of Twins",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS3 (N)",
                     "access_rules": [
-                      "$has_age|adult,hookshot",
-                      "$has_age|adult,hoverboots,[hookshot]",
-                      "{$has_age|adult,bow}",
-                      "{$has_age|adult,dinsfire,magic}"
+                      "$has_age|adult,$night_gs,hookshot",
+                      "$has_age|adult,$night_gs,hoverboots,[hookshot]",
+                      "{$has_age|adult,$night_gs,bow}",
+                      "{$has_age|adult,$night_gs,dinsfire,magic}"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -618,7 +609,7 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "$has_age|child,beans,setting_plant_yes,bean_stage_no"
+                      "$has_age|child,beans,bean_stage_no"
                     ],
                     "visibility_rules": [
                       "setting_plant_yes"
@@ -651,7 +642,7 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "setting_tokens_overworld,$night_gs,$has_age|adult"
+                  "$night_gs,$has_age|adult"
                 ],
                 "sections": [
                   {
@@ -5053,7 +5044,7 @@
                         "access_rules": [
                           "setting_fountain_closed,king_zora_moved_no,ruto",
                           "setting_fountain_adult,king_zora_moved_no,ruto"
-                        ],
+                        ], //TODO: use visibility instead
                         "hosted_item": "king_zora_moved_yes"
                       }
                     ],
