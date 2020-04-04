@@ -11,12 +11,12 @@ if has_map then
     Tracker:AddItems("items/cap_houses.json")
     Tracker:AddItems("items/cap_dungeons.json")
     Tracker:AddItems("items/cap_overworld.json")
-    Tracker:AddItems("items/counters.json")
   else
     Tracker:AddItems("items/tricks.json")
     Tracker:AddItems("items/sequences.json")
   end
 end
+Tracker:AddItems("items/counters.json")
 Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/equipment.json")
@@ -52,10 +52,11 @@ else
 end
 Tracker:AddLayouts("layouts/item_grids.json")
 if is_er then
-  Tracker:AddLayouts("layouts/counters.json")
+  Tracker:AddLayouts("layouts/counters_entrance.json")
   Tracker:AddLayouts("layouts/layouts_entrance.json")
   Tracker:AddLayouts("layouts/capture_entrance.json")
 else
+  Tracker:AddLayouts("layouts/counters.json")
   Tracker:AddLayouts("layouts/layouts.json")
   Tracker:AddLayouts("layouts/capture.json")
 end

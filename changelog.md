@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added available/in logic skulltula counters
+
 ## 2.9.0.0
 
 - replaced ice traps with triforce pieces

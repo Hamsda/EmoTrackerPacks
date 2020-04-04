@@ -33,5 +33,19 @@
     "img": "images/entrance_house_shop.png",
     "codes": "counter_shops",
     "max_quantity": 8
+  },
+  {
+    "name": "Skulltulas: Available",
+    "type": "consumable",
+    "img": "images/skulltula_available.png",
+    "codes": "counter_gs_available",
+    "max_quantity": 100
+  },
+  {
+    "name": "Skulltulas: In Logic",
+    "type": "consumable",
+    "img": "images/skulltula_logic.png",
+    "codes": "counter_gs_logic",
+    "max_quantity": 100
   }
 ]

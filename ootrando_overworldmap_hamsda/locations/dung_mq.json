@@ -3,8 +3,8 @@
     "name": "Deku Tree MQ",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "$has_age|child,open_forest",
-      "$has_age|child,sword1,shield1"
+      "deku_mq,$has_age|child,open_forest",
+      "deku_mq,$has_age|child,sword1,shield1"
     ],
     "sections": [
       {
@@ -211,6 +211,11 @@
   {
     "name": "Dodongos Cavern MQ",
     "parent": "Death Mountain",
+    "access_rules": [
+      "dodongo_mq,$has_age|adult",
+      "dodongo_mq,$has_explosives",
+      "dodongo_mq,lift1"
+    ],
     "sections": [
       {
         "name": "Lobby",
@@ -485,7 +490,7 @@
     "name": "Jabu Jabus Belly MQ",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "$child_fountain,bottle"
+      "jabu_mq,$child_fountain,bottle"
     ],
     "sections": [
       {
@@ -687,7 +692,7 @@
     "name": "Ice Cavern MQ",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "$adult_fountain,$has_bottle"
+      "ice_mq,$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -784,8 +789,8 @@
     "name": "Forest Temple MQ",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "$has_age|adult,hookshot,[ocarina],[saria]",
-      "$has_age|adult,hookshot,[ocarina],[minuet]"
+      "forest_mq,$has_age|adult,hookshot,[ocarina],[saria]",
+      "forest_mq,$has_age|adult,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -1106,7 +1111,7 @@
     "name": "Fire Temple MQ",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "$dmc_central,$FTR_or_goron"
+      "fire_mq,$dmc_central,$FTR_or_goron"
     ],
     "sections": [
       {
@@ -1385,8 +1390,8 @@
     "name": "Water Temple MQ",
     "parent": "Lake Hylia",
     "access_rules": [
-      "$has_age|adult,hookshot,ironboots",
-      "$has_age|adult,hookshot,scale2,[longshot]"
+      "water_mq,$has_age|adult,hookshot,ironboots",
+      "water_mq,$has_age|adult,hookshot,scale2,[longshot]"
     ],
     "sections": [
       {
@@ -1586,8 +1591,8 @@
     "name": "Shadow Temple MQ",
     "parent": "Graveyard",
     "access_rules": [
-      "ocarina,nocturne,dinsfire,magic",
-      "ocarina,nocturne,[dinsfire],magic,$has_age|adult,bow,firearrow"
+      "shadow_mq,ocarina,nocturne,dinsfire,magic",
+      "shadow_mq,ocarina,nocturne,[dinsfire],magic,$has_age|adult,bow,firearrow"
     ],
     "sections": [
       {
@@ -1920,7 +1925,7 @@
     "name": "Spirit Temple MQ",
     "parent": "Desert Colossus",
     "access_rules": [
-      "$adult_colossus"
+      "spirit_mq,$adult_colossus"
     ],
     "sections": [
       {
@@ -2302,7 +2307,7 @@
     "name": "Bottom of the Well MQ",
     "parent": "Kakariko Village",
     "access_rules": [
-      "$has_age|child,ocarina,storm"
+      "botw_mq,$has_age|child,ocarina,storm"
     ],
     "sections": [
       {
@@ -2413,12 +2418,12 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "$has_age|adult,setting_bridge_open",
-      "$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
-      "$has_age|adult,setting_bridge_stones,stones:3",
-      "$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "$has_age|adult,setting_bridge_100gs,token:100"
+      "gc_mq,$has_age|adult,setting_bridge_open",
+      "gc_mq,$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
+      "gc_mq,$has_age|adult,setting_bridge_stones,stones:3",
+      "gc_mq,$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "gc_mq,$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "gc_mq,$has_age|adult,setting_bridge_100gs,token:100"
     ],
     "sections": [
       {
@@ -2620,7 +2625,7 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "$has_age|adult,$gerudo_card"
+      "gtg_mq,$has_age|adult,$gerudo_card"
     ],
     "sections": [
       {

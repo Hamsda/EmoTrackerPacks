@@ -26,6 +26,15 @@
                 "type": "layout",
                 "key": "item_grid_tall"
               }
+            },
+            {
+              "type": "group",
+              "header": "Counters",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "counters_tall"
+              }
             }
           ]
         },
@@ -132,6 +141,15 @@
                   "content": {
                     "type": "layout",
                     "key": "item_grid_wide"
+                  }
+                },
+                {
+                  "type": "group",
+                  "header": "Counters",
+                  "dock": "top",
+                  "content": {
+                    "type": "layout",
+                    "key": "counters_wide"
                   }
                 }
               ]

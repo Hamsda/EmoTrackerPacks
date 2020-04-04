@@ -3,8 +3,8 @@
     "name": "Deku Tree",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "$has_age|child,open_forest",
-      "$has_age|child,sword1,shield1"
+      "deku_reg,$has_age|child,open_forest",
+      "deku_reg,$has_age|child,sword1,shield1"
     ],
     "sections": [
       {
@@ -124,8 +124,9 @@
     "name": "Dodongos Cavern",
     "parent": "Death Mountain",
     "access_rules": [
-      "$can_blast",
-      "lift1"
+      "dodongo_reg,$has_age|adult",
+      "dodongo_reg,$has_explosives",
+      "dodongo_reg,lift1"
     ],
     "sections": [
       {
@@ -391,15 +392,25 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "$child_fountain,bottle,sling",
-      "$child_fountain,bottle,$has_explosives",
-      "$child_fountain,bottle,boomerang"
+      "jabu_reg,$child_fountain,bottle"
     ],
     "sections": [
       {
+        "name": "Main",
+        "access_rules": [
+          "$has_explosives",
+          "sling",
+          "boomerang"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Depths",
         "access_rules": [
-          "boomerang"
+          "@Jabu Jabus Belly/Main,boomerang"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -420,6 +431,9 @@
       {
         "name": "GS51 - Water Switch Room",
         "short_name": "Water Switch",
+        "access_rules": [
+          "@Jabu Jabus Belly/Main"
+        ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
@@ -430,6 +444,9 @@
       {
         "name": "Deku Nuts",
         "short_name": "B1 Dive",
+        "access_rules": [
+          "@Jabu Jabus Belly/Main"
+        ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
         ],
@@ -440,6 +457,9 @@
       {
         "name": "Boomerang Chest",
         "short_name": "Boomerang",
+        "access_rules": [
+          "@Jabu Jabus Belly/Main"
+        ],
         "item_count": 1
       },
       {
@@ -464,9 +484,9 @@
         "name": "GS52 - Lobby Basement Lower",
         "short_name": "Basement 1",
         "access_rules": [
-          "boomerang",
-          "{sling}",
-          "{$has_explosives}"
+          "@Jabu Jabus Belly/Main,boomerang",
+          "{@Jabu Jabus Belly/Main,sling}",
+          "{@Jabu Jabus Belly/Main,$has_explosives}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -480,9 +500,9 @@
         "name": "GS53 - Lobby Basement Upper",
         "short_name": "Basement 2",
         "access_rules": [
-          "boomerang",
-          "{sling}",
-          "{$has_explosives}"
+          "@Jabu Jabus Belly/Main,boomerang",
+          "{@Jabu Jabus Belly/Main,sling}",
+          "{@Jabu Jabus Belly/Main,$has_explosives}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -531,7 +551,7 @@
     "name": "Ice Cavern",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "$adult_fountain,$has_bottle"
+      "ice_reg,$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
@@ -634,8 +654,8 @@
     "name": "Forest Temple",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "$has_age|adult,hookshot,[ocarina],[saria]",
-      "$has_age|adult,hookshot,[ocarina],[minuet]"
+      "forest_reg,$has_age|adult,hookshot,[ocarina],[saria]",
+      "forest_reg,$has_age|adult,hookshot,[ocarina],[minuet]"
     ],
     "sections": [
       {
@@ -957,7 +977,7 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "$dmc_central,$FTR_or_goron"
+      "fire_reg,$dmc_central,$FTR_or_goron"
     ],
     "sections": [
       {
@@ -1248,8 +1268,8 @@
     "name": "Water Temple",
     "parent": "Lake Hylia",
     "access_rules": [
-      "$has_age|adult,hookshot,ironboots",
-      "$has_age|adult,hookshot,scale2,[longshot]"
+      "water_reg,$has_age|adult,hookshot,ironboots",
+      "water_reg,$has_age|adult,hookshot,scale2,[longshot]"
     ],
     "sections": [
       {
@@ -1560,10 +1580,8 @@
     "name": "Shadow Temple",
     "parent": "Graveyard",
     "access_rules": [
-      "ocarina,nocturne,dinsfire,magic",
-      "ocarina,nocturne,dinsfire,magic",
-      "ocarina,nocturne,$has_age|adult,bow,firearrow,[dinsfire],magic",
-      "ocarina,nocturne,$has_age|adult,bow,firearrow,[dinsfire],magic"
+      "shadow_reg,ocarina,nocturne,dinsfire,magic",
+      "shadow_reg,ocarina,nocturne,$has_age|adult,bow,firearrow,[dinsfire],magic"
     ],
     "sections": [
       {
@@ -1842,7 +1860,7 @@
     "name": "Spirit Temple",
     "parent": "Desert Colossus",
     "access_rules": [
-      "$adult_colossus"
+      "spirit_reg,$adult_colossus"
     ],
     "sections": [
       {
@@ -2218,8 +2236,8 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "$has_age|child,ocarina,storm,$can_child_attack",
-      "$has_age|child,ocarina,storm,nuts"
+      "botw_reg,$has_age|child,ocarina,storm,$can_child_attack",
+      "botw_reg,$has_age|child,ocarina,storm,nuts"
     ],
     "sections": [
       {
@@ -2403,12 +2421,12 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "$has_age|adult,setting_bridge_open",
-      "$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
-      "$has_age|adult,setting_bridge_stones,stones:3",
-      "$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "$has_age|adult,setting_bridge_100gs,token:100"
+      "gc_reg,$has_age|adult,setting_bridge_open",
+      "gc_reg,$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
+      "gc_reg,$has_age|adult,setting_bridge_stones,stones:3",
+      "gc_reg,$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
+      "gc_reg,$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
+      "gc_reg,$has_age|adult,setting_bridge_100gs,token:100"
     ],
     "sections": [
       {
@@ -2651,7 +2669,7 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "$has_age|adult,$gerudo_card"
+      "gtg_reg,$has_age|adult,$gerudo_card"
     ],
     "sections": [
       {
