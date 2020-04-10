@@ -352,10 +352,6 @@ function count_skulltulas()
   if in_logic_object then
     in_logic_object.AcquiredCount = in_logic
   end
-  print("----")
-  print("total:", total)
-  print("available:", available)
-  print("in_logic:", in_logic)
 end
 
 
