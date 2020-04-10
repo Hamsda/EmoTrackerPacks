@@ -28,6 +28,13 @@
     "codes": "logic_man_on_roof"
   },
   {
+    "name": "Dodongo's Cavern Staircase with Bow",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dc_staircase.png",
+    "codes": "logic_dc_staircase"
+  },
+  {
     "name": "Dodongo's Cavern Spike Trap Room Jump without Hover Boots",
     "type": "toggle",
     "initial_active_state": true,
@@ -35,11 +42,32 @@
     "codes": "logic_dc_jump"
   },
   {
+    "name": "Gerudo Fortress \"Kitchen\" with No Additional Items",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_gerudo_kitchen.png",
+    "codes": "logic_gerudo_kitchen"
+  },
+  {
+    "name": "Deku Tree Basement Vines GS with Jump Slash",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_deku_basement_gs.png",
+    "codes": "logic_deku_basement_gs"
+  },
+  {
     "name": "Hammer Rusted Switches Through Walls",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/logic_rusted_switches.png",
     "codes": "logic_rusted_switches"
+  },
+  {
+    "name": "Bottom of the Well Basement Chest with Strength & Sticks",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_botw_basement.png",
+    "codes": "logic_botw_basement"
   },
   {
     "name": "Windmill PoH as Adult with Nothing",
@@ -61,5 +89,19 @@
     "initial_active_state": true,
     "img": "images/logic_forest_vines.png",
     "codes": "logic_forest_vines"
+  },
+  {
+    "name": "Goron City Spinning Pot PoH with Strength",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_goron_city_pot_with_strength.png",
+    "codes": "logic_goron_city_pot_with_strength"
+  },
+  {
+    "name": "Goron City Spinning Pot PoH with Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_goron_city_pot.png",
+    "codes": "logic_goron_city_pot"
   }
 ]

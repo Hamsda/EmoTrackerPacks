@@ -57,8 +57,8 @@
           "$has_explosives",
           "boomerang",
           "dinsfire,magic",
-          "sticks,[sling]",
-          "sword1,[sling]"
+          "sticks,[logic_deku_basement_gs]",
+          "sword1,[logic_deku_basement_gs]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -130,20 +130,31 @@
     ],
     "sections": [
       {
+        "name": "Lobby",
+        "access_rules": [
+          "$can_blast",
+          "lift1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Climb",
         "access_rules": [
-          "$has_explosives,$has_age|adult",
-          "$has_explosives,$has_age|child,sticks",
-          "$has_explosives,dinsfire,magic",
-          "lift1,$has_age|adult",
-          "lift1,$has_age|child,sticks",
-          "lift1,$has_age|child,dinsfire,magic,sling",
-          "lift1,$has_age|child,dinsfire,magic,sword1",
-          "dinsfire,magic,$has_age|adult",
-          "dinsfire,magic,$has_age|child,sling",
-          "dinsfire,magic,$has_age|child,sticks",
-          "dinsfire,magic,$has_age|child,sword1",
-          "$has_age|adult,bow,[lift1]"
+          "@Dodongos Cavern/Lobby,$has_explosives,$has_age|adult",
+          "@Dodongos Cavern/Lobby,$has_explosives,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,$has_explosives,dinsfire,magic",
+          "@Dodongos Cavern/Lobby,lift1,$has_age|adult",
+          "@Dodongos Cavern/Lobby,lift1,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,lift1,$has_age|child,dinsfire,magic,sling",
+          "@Dodongos Cavern/Lobby,lift1,$has_age|child,dinsfire,magic,sword1",
+          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|adult",
+          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|child,sling",
+          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|child,sword1",
+          "@Dodongos Cavern/Lobby,$has_age|adult,bow,[logic_dc_staircase]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -180,12 +191,12 @@
         "name": "GS38 - East Side Room",
         "short_name": "East Side",
         "access_rules": [
-          "$has_explosives",
-          "$has_age|adult",
-          "$has_age|child,sling",
-          "$has_age|child,boomerang",
-          "$has_age|child,sticks",
-          "$has_age|child,sword1"
+          "@Dodongos Cavern/Lobby,$has_explosives",
+          "@Dodongos Cavern/Lobby,$has_age|adult",
+          "@Dodongos Cavern/Lobby,$has_age|child,sling",
+          "@Dodongos Cavern/Lobby,$has_age|child,boomerang",
+          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,$has_age|child,sword1"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -198,9 +209,9 @@
         "name": "GS42 - Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
-          "$has_age|adult,[ocarina],[scarecrow],[hookshot]",
-          "$has_age|adult,longshot",
-          "$can_child_attack,[$has_age|adult],[longshot]"
+          "@Dodongos Cavern/Lobby,$has_age|adult,[ocarina],[scarecrow],[hookshot]",
+          "@Dodongos Cavern/Lobby,$has_age|adult,longshot",
+          "@Dodongos Cavern/Lobby,$can_child_attack,[$has_age|adult],[longshot]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -214,11 +225,11 @@
         "name": "Deku Scrub Deku Sticks",
         "short_name": "East Side",
         "access_rules": [
-          "$has_age|adult",
-          "$has_age|child,sling",
-          "$has_age|child,sticks",
-          "$has_age|child,$has_explosives",
-          "$has_age|child,sword1"
+          "@Dodongos Cavern/Lobby,$has_age|adult",
+          "@Dodongos Cavern/Lobby,$has_age|child,sling",
+          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,$has_age|child,$has_explosives",
+          "@Dodongos Cavern/Lobby,$has_age|child,sword1"
         ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
@@ -230,12 +241,18 @@
       {
         "name": "Map Chest",
         "short_name": "Map",
+        "access_rules": [
+          "@Dodongos Cavern/Lobby"
+        ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
         "name": "Deku Scrub Deku Shield",
         "short_name": "Lobby",
+        "access_rules": [
+          "@Dodongos Cavern/Lobby"
+        ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
         ],
@@ -247,11 +264,11 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "$has_age|adult",
-          "$has_age|child,sticks",
-          "$has_age|child,dinsfire,magic,sling",
-          "$has_age|child,dinsfire,magic,sword1",
-          "$has_age|child,dinsfire,magic,$has_explosives"
+          "@Dodongos Cavern/Lobby,$has_age|adult",
+          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sling",
+          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sword1",
+          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -2367,7 +2384,7 @@
           "$has_explosives",
           "lift1,botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens",
           "lift1,dinsfire,magic",
-          "lift1,sticks,[dinsfire],[magic]"
+          "lift1,sticks,[logic_botw_basement]"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -2610,15 +2627,20 @@
     "sections": [
       {
         "name": "North F1 Carpenter",
+        "access_rules": [
+          "$has_age|adult"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
         "name": "North F2 Carpenter",
         "access_rules": [
-          "[bow]",
-          "[hookshot]",
-          "[hoverboots]"
+          "$has_age|adult,$gerudo_card",
+          "$has_age|adult,bow",
+          "$has_age|adult,hookshot",
+          "$has_age|adult,hoverboots",
+          "$has_age|adult,[logic_gerudo_kitchen]"
         ],
         "visibility_rules": [
           "gerudo_fortress_normal"
@@ -2628,6 +2650,9 @@
       },
       {
         "name": "South F1 Carpenter",
+        "access_rules": [
+          "$has_age|adult"
+        ],
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
@@ -2636,6 +2661,9 @@
       },
       {
         "name": "South F2 Carpenter",
+        "access_rules": [
+          "$has_age|adult"
+        ],
         "visibility_rules": [
           "gerudo_fortress_normal"
         ],
@@ -2645,9 +2673,11 @@
       {
         "name": "Free the carpenters",
         "access_rules": [
-          "gerudo_fortress_normal,gf_small_keys:4,[bow]",
-          "gerudo_fortress_normal,gf_small_keys:4,[hookshot]",
-          "gerudo_fortress_normal,gf_small_keys:4,[hoverboots]",
+          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,$gerudo_card",
+          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,bow",
+          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,hookshot",
+          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,hoverboots",
+          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,[logic_gerudo_kitchen]",
           "gerudo_fortress_fast,gf_small_keys:1"
         ],
         "capture_item": true,

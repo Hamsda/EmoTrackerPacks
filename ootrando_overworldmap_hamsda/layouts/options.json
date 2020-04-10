@@ -103,13 +103,37 @@
                 },
                 {
                   "type": "item",
+                  "item": "logic_dc_staircase",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_dc_jump",
                   "width": 200,
                   "height": 16
                 },
                 {
                   "type": "item",
+                  "item": "logic_gerudo_kitchen",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_deku_basement_gs",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_rusted_switches",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_botw_basement",
                   "width": 200,
                   "height": 16
                 },
@@ -128,6 +152,18 @@
                 {
                   "type": "item",
                   "item": "logic_forest_vines",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_goron_city_pot_with_strength",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_goron_city_pot",
                   "width": 200,
                   "height": 16
                 }
