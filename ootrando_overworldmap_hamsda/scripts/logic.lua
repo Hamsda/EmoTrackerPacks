@@ -359,8 +359,8 @@ function child_fountain()
     level = AccessibilityLevel.SequenceBreak
   end
   
-  if has("ocarina", 0)
-  or has("lullaby", 0)
+  if has("logic_zora_with_cucco", 0)
+  and (has("ocarina", 0) or has("lullaby", 0))
   then
     level = AccessibilityLevel.SequenceBreak
   end

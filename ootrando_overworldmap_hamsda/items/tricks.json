@@ -70,6 +70,13 @@
     "codes": "logic_botw_basement"
   },
   {
+    "name": "Spirit Temple Child Side Bridge with Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_child_bombchu.png",
+    "codes": "logic_spirit_child_bombchu"
+  },
+  {
     "name": "Windmill PoH as Adult with Nothing",
     "type": "toggle",
     "initial_active_state": true,
@@ -84,6 +91,13 @@
     "codes": "logic_crater_bean_poh_with_hovers"
   },
   {
+    "name": "Zora's Domain Entry with Cucco",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_zora_with_cucco.png",
+    "codes": "logic_zora_with_cucco"
+  },
+  {
     "name": "Forest Temple East Courtyard Vines with Hookshot",
     "type": "toggle",
     "initial_active_state": true,
@@ -91,11 +105,39 @@
     "codes": "logic_forest_vines"
   },
   {
+    "name": "Death Mountain Trail Bombable Chest with Strength",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dmt_bombable.png",
+    "codes": "logic_dmt_bombable"
+  },
+  {
     "name": "Goron City Spinning Pot PoH with Strength",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/logic_goron_city_pot_with_strength.png",
     "codes": "logic_goron_city_pot_with_strength"
+  },
+  {
+    "name": "Water Temple Boss Key Chest with Iron Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_bk_chest.png",
+    "codes": "logic_water_bk_chest"
+  },
+  {
+    "name": "Water Temple North Basement Ledge with Precise Jump",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_north_basement_ledge_jump.png",
+    "codes": "logic_water_north_basement_ledge_jump"
+  },
+  {
+    "name": "Water Temple Boss Key Jump Dive",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_bk_jump_dive.png",
+    "codes": "logic_water_bk_jump_dive"
   },
   {
     "name": "Goron City Spinning Pot PoH with Bombchu",

@@ -1526,8 +1526,9 @@
         "name": "Freestanding Key",
         "short_name": "Key",
         "access_rules": [
-          "@Water Temple MQ/Basement Gated Areas,[hoverboots]",
+          "@Water Temple MQ/Basement Gated Areas,hoverboots",
           "@Water Temple MQ/Basement Gated Areas,ocarina,scarecrow",
+          "@Water Temple MQ/Basement Gated Areas,[logic_water_north_basement_ledge_jump]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1539,8 +1540,9 @@
         "name": "GS74 - North Basement",
         "short_name": "North Basement",
         "access_rules": [
-          "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,[hoverboots]",
+          "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,hoverboots",
           "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,ocarina,scarecrow",
+          "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,[logic_water_north_basement_ledge_jump]",
           "{$hintable}"
         ],
         "visibility_rules": [

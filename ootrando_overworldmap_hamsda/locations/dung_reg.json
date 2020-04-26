@@ -1562,8 +1562,13 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[ironboots],[$has_explosives],[lift1]",
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[ironboots],[hoverboots]",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,[logic_water_bk_chest]",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,[logic_water_north_basement_ledge_jump]",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,$has_explosives,lift1",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,hoverboots",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[logic_water_bk_jump_dive],[logic_water_north_basement_ledge_jump]",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[logic_water_bk_jump_dive],$has_explosives,lift1",
+          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[logic_water_bk_jump_dive],hoverboots",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1900,9 +1905,9 @@
           "@Spirit Temple/Child Entry,sling,sticks",
           "@Spirit Temple/Child Entry,sling,$has_explosives",
           "@Spirit Temple/Child Entry,sling,nuts",
-          "@Spirit Temple/Child Entry,[sling],bombchu,sticks",
-          "@Spirit Temple/Child Entry,[sling],bombchu,$has_explosives",
-          "@Spirit Temple/Child Entry,[sling],bombchu,sword1,nuts"
+          "@Spirit Temple/Child Entry,[logic_spirit_child_bombchu],$has_bombchus,sticks",
+          "@Spirit Temple/Child Entry,[logic_spirit_child_bombchu],$has_bombchus,$has_explosives",
+          "@Spirit Temple/Child Entry,[logic_spirit_child_bombchu],$has_bombchus,sword1,nuts"
         ],
         "visibility_rules": [
           "hidden_region"

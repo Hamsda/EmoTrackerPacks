@@ -3323,7 +3323,7 @@
                         "name": "Blast it",
                         "access_rules": [
                           "$can_blast",
-                          "$has_age|child,lift1,[$can_blast]"
+                          "$has_age|child,lift1,[logic_dmt_bombable]"
                         ],
                         "item_count": 1
                       }
@@ -4997,7 +4997,8 @@
               {
                 "name": "Zoras Domain",
                 "access_rules": [
-                  "$has_age|child,$has_explosives,[ocarina],[lullaby]",
+                  "$has_age|child,$has_explosives,ocarina,lullaby",
+                  "$has_age|child,$has_explosives,[logic_zora_with_cucco]",
                   "$has_age|child,scale1"
                 ],
                 "children": [

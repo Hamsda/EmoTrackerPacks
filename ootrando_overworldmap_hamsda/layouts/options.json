@@ -139,6 +139,12 @@
                 },
                 {
                   "type": "item",
+                  "item": "logic_spirit_child_bombchu",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_windmill_poh",
                   "width": 200,
                   "height": 16
@@ -151,13 +157,43 @@
                 },
                 {
                   "type": "item",
+                  "item": "logic_zora_with_cucco",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_forest_vines",
                   "width": 200,
                   "height": 16
                 },
                 {
                   "type": "item",
+                  "item": "logic_dmt_bombable",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_goron_city_pot_with_strength",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_water_bk_chest",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_water_north_basement_ledge_jump",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_water_bk_jump_dive",
                   "width": 200,
                   "height": 16
                 },
