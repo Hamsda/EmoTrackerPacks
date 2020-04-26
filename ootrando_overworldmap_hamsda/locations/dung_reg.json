@@ -282,7 +282,7 @@
           "@Dodongos Cavern/Far Bridge,$has_age|adult,hookshot",
           "{@Dodongos Cavern/Far Bridge,dinsfire,magic}",
           "{@Dodongos Cavern/Far Bridge,$has_explosives}",
-          "{@Dodongos Cavern/Climb,bombchu}",
+          "{@Dodongos Cavern/Climb,$has_bombchus}",
           "{@Dodongos Cavern/Climb,$has_age|child,sling}",
           "{@Dodongos Cavern/Climb,$has_age|adult,bow}"
         ],
@@ -376,9 +376,7 @@
           "@Dodongos Cavern/Boss Area,bombs,$has_age|child,sticks",
           "@Dodongos Cavern/Boss Area,bombs,$has_age|child,sword1",
           "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield2,$has_age|adult",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield3,$has_age|adult",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield1,$has_age|child,sticks",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield1,$has_age|child,sword1"
+          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield3,$has_age|adult"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
@@ -1353,7 +1351,7 @@
         "name": "Cracked Wall",
         "access_rules": [
           "@Water Temple/Middle Water Level",
-          "@Water Temple/Dive,[@Water Temple/Middle Water Level],bombchu,ironboots,hookshot",
+          "@Water Temple/Dive,[@Water Temple/Middle Water Level],$has_bombchus,ironboots,hookshot",
           "@Water Temple/Dive,[@Water Temple/Middle Water Level],ocarina,lullaby,hookshot",
           "@Water Temple/Dive,[@Water Temple/Middle Water Level],ocarina,lullaby,[hoverboots]"
         ],
@@ -1367,7 +1365,7 @@
         "access_rules": [
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ironboots",
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ocarina,lullaby",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ironboots",
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ironboots", //TODO: trick logic_water_boss_key_region
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ocarina,lullaby"
         ],
         "visibility_rules": [
@@ -1379,9 +1377,9 @@
         "name": "Dragon Statue",
         "access_rules": [
           "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[ironboots],[hookshot],bombchu,scale",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[ironboots],[hookshot],$has_bombchus,scale",
           "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora]", //TODO: trick
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora],bombchu,scale" //not relevant until I add tricks
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora],$has_bombchus,scale" //not relevant until I add tricks
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1516,7 +1514,7 @@
         "access_rules": [
           "@Water Temple/Dark Link Region,ocarina,time,ironboots",
           "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,bow",
-          "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,bombchu"
+          "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,$has_bombchus"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1761,7 +1759,7 @@
         "access_rules": [
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,bombs",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,lift1",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[bombs],bombchu"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[bombs],bombchu" //TODO: compare with logic files
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -1859,7 +1857,7 @@
         "access_rules": [
           "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,scarecrow",
           "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bow",
-          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bombchu,[bow]"
+          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,$has_bombchus,[bow]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
@@ -2134,7 +2132,7 @@
         "access_rules": [
           "@Spirit Temple/Early Adult,bow",
           "@Spirit Temple/Early Adult,hookshot",
-          "@Spirit Temple/Early Adult,bombchu",
+          "@Spirit Temple/Early Adult,bombchu", //TODO: compare with logic files
           "@Spirit Temple/Early Adult,[bow],bombs"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
@@ -2577,7 +2575,7 @@
         "name": "Spirit Trial Second Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "[hookshot],bombchu,$can_see_with_lens"
+          "[hookshot],$has_bombchus,$can_see_with_lens"
         ],
         "item_count": 1
       },
@@ -2585,7 +2583,7 @@
         "name": "Spirit Trial Clear",
         "short_name": "Spirit Trial",
         "access_rules": [
-          "$can_LA,shield3,bombchu,[hookshot]"
+          "$can_LA,shield3,$has_bombchus,[hookshot]"
         ],
         "visibility_rules": [
           "setting_trials:1"

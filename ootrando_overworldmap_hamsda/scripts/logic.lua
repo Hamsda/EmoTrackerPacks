@@ -446,7 +446,7 @@ end
 function spirit_wall()
   if has("longshot")
   or 
-  has("bombchu")
+  has("bombchu") --TODO: has_bombchus() instead?
   or 
   (
     (
