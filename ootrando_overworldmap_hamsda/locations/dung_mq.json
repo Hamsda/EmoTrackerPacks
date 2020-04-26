@@ -789,8 +789,7 @@
     "name": "Forest Temple MQ",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "forest_mq,$has_age|adult,hookshot,[ocarina],[saria]",
-      "forest_mq,$has_age|adult,hookshot,[ocarina],[minuet]"
+      "forest_mq,$has_age|adult,hookshot,$beyond_mido"
     ],
     "sections": [
       {
@@ -1171,7 +1170,8 @@
       {
         "name": "Boss Room",
         "access_rules": [
-          "$has_age|adult,[redtunic],hammer,fire_boss_key,$has_fire,[hoverboots]",
+          "$has_age|adult,[redtunic],hammer,fire_boss_key,$has_fire,[logic_fire_boss_door_jump]",
+          "$has_age|adult,[redtunic],hammer,fire_boss_key,$has_fire,hoverboots",
           "$has_age|adult,[redtunic],hammer,fire_boss_key,@Fire Temple MQ/West Top"
         ],
         "visibility_rules": [

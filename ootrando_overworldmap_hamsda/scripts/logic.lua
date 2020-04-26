@@ -172,6 +172,16 @@ function can_leave_forest()
   end
 end
 
+function beyond_mido()
+  if has("ocarina") and (has("saria") or has("minuet"))
+  or has("logic_mido_backflip")
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
 function gerudo_card()
   local card = has("card")
   if has("setting_shuffle_card_yes") then
@@ -440,39 +450,6 @@ function has_projectile(age)
     return explo or (bow or hook) and (sling or rang)
   else
     return explo or (bow or hook) or (sling or rang)
-  end
-end
-
-function spirit_wall()
-  if has("longshot")
-  or 
-  has("bombchu") --TODO: has_bombchus() instead?
-  or 
-  (
-    (
-      has("bombs")
-      or 
-      has("nuts")
-      or 
-      (
-        has("dinsfire")
-        and 
-        has("magic")
-      )
-    )
-    and 
-    (
-      has("bow")
-      or 
-      has("hookshot")
-      or 
-      has("hammer")
-    )
-  )
-  then
-    return 1
-  else
-    return 1, AccessibilityLevel.SequenceBreak
   end
 end
 

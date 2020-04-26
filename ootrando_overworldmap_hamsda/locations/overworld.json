@@ -202,7 +202,7 @@
                     "name": "GS3 (N)",
                     "access_rules": [
                       "$has_age|adult,$night_gs,hookshot",
-                      "$has_age|adult,$night_gs,hoverboots,[hookshot]",
+                      "$has_age|adult,$night_gs,hoverboots,[logic_adult_kokiri_gs]", //TODO: can be done itemless, no trick yet
                       "{$has_age|adult,$night_gs,bow}",
                       "{$has_age|adult,$night_gs,dinsfire,magic}"
                     ],
@@ -517,8 +517,7 @@
                 "short_name": "Sales Grotto",
                 "access_rules": [
                   "$has_explosives",
-                  "$has_age|adult,hammer,[ocarina],[saria]",
-                  "$has_age|adult,hammer,[ocarina],[minuet]"
+                  "$has_age|adult,hammer,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -642,20 +641,18 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "$night_gs,$has_age|adult"
+                  "$night_gs,$has_age|adult,$beyond_mido"
                 ],
                 "sections": [
                   {
                     "name": "GS6 (N)",
                     "access_rules": [
-                      "[ocarina],[saria],setting_plant_no,beans",
-                      "[ocarina],[minuet],setting_plant_no,beans",
-                      "[ocarina],[saria],bean_stage_yes",
-                      "[ocarina],[minuet],bean_stage_yes",
-                      "[ocarina],[minuet],[bean_stage_yes],longshot",
-                      "[ocarina],[minuet],[bean_stage_yes],hookshot,bow",
-                      "[ocarina],[minuet],[bean_stage_yes],hookshot,$has_bombchus", //TODO: compare with logic files
-                      "[ocarina],[minuet],[bean_stage_yes],hookshot,dinsfire,magic"
+                      "setting_plant_no,beans",
+                      "bean_stage_yes",
+                      "[logic_lost_woods_gs_bean],longshot",
+                      "[logic_lost_woods_gs_bean],hookshot,bow",
+                      "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
+                      "[logic_lost_woods_gs_bean],hookshot,dinsfire,magic"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -730,8 +727,7 @@
                 "short_name": "Wolfos Grotto",
                 "access_rules": [
                   "$hidden_grotto,$has_explosives",
-                  "$hidden_grotto,$has_age|adult,hammer,[ocarina],[saria]",
-                  "$hidden_grotto,$has_age|adult,hammer,[ocarina],[minuet]"
+                  "$hidden_grotto,$has_age|adult,hammer,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -761,7 +757,7 @@
                     "access_rules": [
                       "$has_age|child,postzelda,sling",
                       "$has_age|child,postzelda,sticks",
-                      "$has_age|child,postzelda,$has_explosives",
+                      "$has_age|child,postzelda,[sticks],$has_explosives",
                       "$has_age|child,postzelda,sword1",
                       "$has_age|child,postzelda,dinsfire,magic"
                     ],
@@ -785,8 +781,7 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "$has_age|adult,[ocarina],[saria]",
-                      "$has_age|adult,[ocarina],[minuet]",
+                      "$has_age|adult,$beyond_mido",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -812,15 +807,14 @@
                   {
                     "name": "Deku Scrubs",
                     "access_rules": [
-                      "$has_age|child,sling",
-                      "$has_age|child,sticks",
-                      "$has_explosives",
-                      "$has_age|child,sword1",
-                      "dinsfire,magic",
+                      "$has_age|adult,$beyond_mido",
                       "$has_age|child,minuet,nuts",
                       "$has_age|child,minuet,shield1",
-                      "$has_age|adult,[minuet]",
-                      "$has_age|adult,[saria]"
+                      "$has_age|child,[minuet],$has_explosives",
+                      "$has_age|child,sling",
+                      "$has_age|child,sticks",
+                      "$has_age|child,sword1",
+                      "$has_age|child,dinsfire,magic"
                     ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
@@ -847,8 +841,7 @@
               {
                 "name": "Top of Maze",
                 "access_rules": [
-                  "$night_gs,$has_age|adult,[ocarina],[saria]",
-                  "$night_gs,$has_age|adult,[ocarina],[minuet]"
+                  "$night_gs,$has_age|adult,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -4711,7 +4704,8 @@
                         "access_rules": [
                           "$has_age|child,$has_explosives",
                           "$has_age|child,scale1",
-                          "$has_age|adult,[hoverboots]"
+                          "$has_age|adult,hoverboots",
+                          "$has_age|adult,[logic_zora_river_lower]"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",

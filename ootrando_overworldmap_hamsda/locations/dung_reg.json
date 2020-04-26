@@ -669,8 +669,7 @@
     "name": "Forest Temple",
     "parent": "Sacred Forest Meadow",
     "access_rules": [
-      "forest_reg,$has_age|adult,hookshot,[ocarina],[saria]",
-      "forest_reg,$has_age|adult,hookshot,[ocarina],[minuet]"
+      "forest_reg,$has_age|adult,hookshot,$beyond_mido"
     ],
     "sections": [
       {
@@ -1052,7 +1051,8 @@
         "name": "West Tower",
         "access_rules": [
           "@Fire Temple/Maze Upper,fire_small_keys:7,[fire_small_keys:8]",
-          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],[hammer],[hoverboots]" //TODO: trick logic_fire_flame_maze
+          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],hammer,hoverboots",
+          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],[logic_fire_flame_maze]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1258,9 +1258,10 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "fire_boss_key,hammer,[redtunic],@Fire Temple/West Tower,ocarina,time",
-          "fire_boss_key,hammer,[redtunic],@Fire Temple/West Tower,$has_explosives",
-          "fire_boss_key,hammer,[redtunic],[hoverboots]"
+          "[redtunic],hammer,fire_boss_key,[logic_fire_boss_door_jump]",
+          "[redtunic],hammer,fire_boss_key,hoverboots",
+          "[redtunic],hammer,fire_boss_key,@Fire Temple/West Tower,ocarina,time",
+          "[redtunic],hammer,fire_boss_key,@Fire Temple/West Tower,$has_explosives"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -1351,9 +1352,10 @@
         "name": "Cracked Wall",
         "access_rules": [
           "@Water Temple/Middle Water Level",
-          "@Water Temple/Dive,[@Water Temple/Middle Water Level],$has_bombchus,ironboots,hookshot",
-          "@Water Temple/Dive,[@Water Temple/Middle Water Level],ocarina,lullaby,hookshot",
-          "@Water Temple/Dive,[@Water Temple/Middle Water Level],ocarina,lullaby,[hoverboots]"
+          "@Water Temple/Dive,[@Water Temple/Middle Water Level],$has_bombchus,ironboots,hookshot", //TODO: not in logic?
+          "@Water Temple/Dive,ocarina,lullaby,hookshot,[logic_water_cracked_wall_nothing]",
+          "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_nothing]",
+          "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_hovers]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1759,7 +1761,7 @@
         "access_rules": [
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,bombs",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,lift1",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[bombs],bombchu" //TODO: compare with logic files
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_shadow_freestanding_key],$has_bombchus"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -1967,7 +1969,18 @@
       {
         "name": "Beyond Final Locked Door",
         "access_rules": [
-          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],$spirit_wall"
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],[logic_spirit_wall]",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],longshot",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],$has_bombchus",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],bombs,bow",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],bombs,hookshot",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],bombs,hammer",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],nuts,bow",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],nuts,hookshot",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],nuts,hammer",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],dinsfire,magic,bow",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],dinsfire,magic,hookshot",
+          "@Spirit Temple/Beyond Central Locked Door,spirit_small_keys:3,[spirit_small_keys:5],dinsfire,magic,hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2097,13 +2110,13 @@
         "name": "GS100 - Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[$has_age|adult],[lift2],hookshot",
-          "@Spirit Temple/Central Chamber,$has_explosives,boomerang,[$has_age|adult],[lift2],hoverboots",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[$has_age|adult],[lift2],hookshot",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],boomerang,[$has_age|adult],[lift2],hoverboots",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[$has_age|adult],[lift2],hookshot",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,boomerang,[$has_age|adult],[lift2],hoverboots",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,$child_colossus,boomerang",
+          "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
+          "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],[logic_spirit_lobby_gs],$has_explosives,$child_colossus,boomerang",
           "{@Spirit Temple/Central Chamber,$has_explosives,$child_colossus,sling}",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,hookshot",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,hoverboots",
@@ -2347,7 +2360,7 @@
         "short_name": "Like Like",
         "access_rules": [
           "@Bottom of the Well/Behind Right Grate,boomerang",
-          "@Bottom of the Well/Behind Right Grate,[boomerang],$can_child_attack"
+          "@Bottom of the Well/Behind Right Grate,[logic_botw_cage_gs],$can_child_attack"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"

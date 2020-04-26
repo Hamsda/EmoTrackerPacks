@@ -126,6 +126,90 @@
     "codes": "logic_water_bk_chest"
   },
   {
+    "name": "Adult Kokiri Forest GS with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_adult_kokiri_gs.png",
+    "codes": "logic_adult_kokiri_gs"
+  },
+  {
+    "name": "Spirit Temple Shifting Wall with No Additional Items",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_wall.png",
+    "codes": "logic_spirit_wall"
+  },
+  {
+    "name": "Spirit Temple Main Room GS with Boomerang",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_lobby_gs.png",
+    "codes": "logic_spirit_lobby_gs"
+  },
+  {
+    "name": "Bottom of the Well Cage GS without Boomerang",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_botw_cage_gs.png",
+    "codes": "logic_botw_cage_gs"
+  },
+  {
+    "name": "Fire Temple Flame Wall Maze Skip",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_fire_flame_maze.png",
+    "codes": "logic_fire_flame_maze"
+  },
+  {
+    "name": "Zora's River Lower Freestanding PoH as Adult with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_zora_river_lower.png",
+    "codes": "logic_zora_river_lower"
+  },
+  {
+    "name": "Water Temple Cracked Wall with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_cracked_wall_hovers.png",
+    "codes": "logic_water_cracked_wall_hovers"
+  },
+  {
+    "name": "Shadow Temple Freestanding Key with Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_shadow_freestanding_key.png",
+    "codes": "logic_shadow_freestanding_key"
+  },
+  {
+    "name": "Backflip over Mido as Adult",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_mido_backflip.png",
+    "codes": "logic_mido_backflip"
+  },
+  {
+    "name": "Fire Temple Boss Door without Hover Boots or Pillar",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_fire_boss_door_jump.png",
+    "codes": "logic_fire_boss_door_jump"
+  },
+  {
+    "name": "Lost Woods Adult GS without Bean",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lost_woods_gs_bean.png",
+    "codes": "logic_lost_woods_gs_bean"
+  },
+  {
+    "name": "Water Temple Cracked Wall with No Additional Items",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_cracked_wall_nothing.png",
+    "codes": "logic_water_cracked_wall_nothing"
+  },
+  {
     "name": "Water Temple North Basement Ledge with Precise Jump",
     "type": "toggle",
     "initial_active_state": false,
