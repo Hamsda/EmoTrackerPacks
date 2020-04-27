@@ -196,6 +196,34 @@
     "codes": "logic_fire_boss_door_jump"
   },
   {
+    "name": "Water Temple Boss Key Region with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_boss_key_region.png",
+    "codes": "logic_water_boss_key_region"
+  },
+  {
+    "name": "Water Temple Falling Platform Room GS with Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_falling_platform_gs.png",
+    "codes": "logic_water_falling_platform_gs"
+  },
+  {
+    "name": "Water Temple Serpent River GS without Iron Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_river_gs.png",
+    "codes": "logic_water_river_gs"
+  },
+  {
+    "name": "Water Temple Entry without Iron Boots using Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_hookshot_entry.png",
+    "codes": "logic_water_hookshot_entry"
+  },
+  {
     "name": "Lost Woods Adult GS without Bean",
     "type": "toggle",
     "initial_active_state": false,
@@ -217,6 +245,13 @@
     "codes": "logic_water_north_basement_ledge_jump"
   },
   {
+    "name": "Water Temple Torch Longshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_temple_torch_longshot.png",
+    "codes": "logic_water_temple_torch_longshot"
+  },
+  {
     "name": "Water Temple Boss Key Jump Dive",
     "type": "toggle",
     "initial_active_state": false,
@@ -224,10 +259,31 @@
     "codes": "logic_water_bk_jump_dive"
   },
   {
+    "name": "Water Temple Dragon Statue Jump Dive",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_dragon_jump_dive.png",
+    "codes": "logic_water_dragon_jump_dive"
+  },
+  {
+    "name": "Water Temple Dragon Statue with Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_dragon_bombchu.png",
+    "codes": "logic_water_dragon_bombchu"
+  },
+  {
     "name": "Goron City Spinning Pot PoH with Bombchu",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_goron_city_pot.png",
     "codes": "logic_goron_city_pot"
+  },
+  {
+    "name": "Water Temple Central Bow Target without Longshot or Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_central_bow.png",
+    "codes": "logic_water_central_bow"
   }
 ]

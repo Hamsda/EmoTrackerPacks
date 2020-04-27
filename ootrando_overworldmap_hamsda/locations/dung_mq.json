@@ -1390,7 +1390,8 @@
     "parent": "Lake Hylia",
     "access_rules": [
       "water_mq,$has_age|adult,hookshot,ironboots",
-      "water_mq,$has_age|adult,hookshot,scale2,[longshot]"
+      "water_mq,$has_age|adult,hookshot,longshot,scale2",
+      "water_mq,$has_age|adult,hookshot,[logic_water_hookshot_entry],scale2"
     ],
     "sections": [
       {

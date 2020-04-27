@@ -1285,7 +1285,8 @@
     "parent": "Lake Hylia",
     "access_rules": [
       "water_reg,$has_age|adult,hookshot,ironboots",
-      "water_reg,$has_age|adult,hookshot,scale2,[longshot]"
+      "water_reg,$has_age|adult,hookshot,longshot,scale2",
+      "water_reg,$has_age|adult,hookshot,[logic_water_hookshot_entry],scale2"
     ],
     "sections": [
       {
@@ -1329,7 +1330,7 @@
         "name": "Dive",
         "access_rules": [
           "@Water Temple/Highest Water Level,$FTR_or_zora,ironboots",
-          "@Water Temple/Highest Water Level,$FTR_or_zora,[ironboots],longshot" //TODO: trick
+          "@Water Temple/Highest Water Level,$FTR_or_zora,[logic_water_temple_torch_longshot],longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1367,21 +1368,8 @@
         "access_rules": [
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ironboots",
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ocarina,lullaby",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ironboots", //TODO: trick logic_water_boss_key_region
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[longshot],hoverboots,ocarina,lullaby"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Dragon Statue",
-        "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[ironboots],[hookshot],$has_bombchus,scale",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora]", //TODO: trick
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[ironboots],[$FTR_or_zora],$has_bombchus,scale" //not relevant until I add tricks
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,ironboots",
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,ocarina,lullaby"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1449,8 +1437,9 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[hoverboots]",
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[longshot]"
+          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[logic_water_central_bow]",
+          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,hoverboots",
+          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,longshot"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1491,7 +1480,7 @@
         "short_name": "Platform Room",
         "access_rules": [
           "@Water Temple/Falling Platforms,longshot",
-          "@Water Temple/Falling Platforms,[longshot],hookshot",
+          "@Water Temple/Falling Platforms,[logic_water_falling_platform_gs],hookshot",
           "{@Water Temple/Falling Platforms,bow}"
         ],
         "visibility_rules": [
@@ -1515,8 +1504,8 @@
         "short_name": "River",
         "access_rules": [
           "@Water Temple/Dark Link Region,ocarina,time,ironboots",
-          "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,bow",
-          "@Water Temple/Dark Link Region,ocarina,time,[ironboots],longshot,$has_bombchus"
+          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,bow",
+          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,$has_bombchus"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1540,7 +1529,11 @@
         "name": "Dragon Chest",
         "short_name": "Dragon",
         "access_rules": [
-          "@Water Temple/Dragon Statue"
+          "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_bombchu],$has_bombchus,scale",
+          "@Water Temple/Dark Link Region,ocarina,time,bow,ironboots,$FTR_or_zora", 
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_jump_dive]", 
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_bombchu],$has_bombchus,scale"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
