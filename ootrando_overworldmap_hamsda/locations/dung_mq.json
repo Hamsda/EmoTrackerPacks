@@ -826,7 +826,6 @@
       {
         "name": "Outdoor Ledge",
         "access_rules": [
-          //TODO: logic check
           "@Forest Temple MQ/Central Area,hoverboots",
           "@Forest Temple MQ/Central Area,hookshot,[lift1]",
           "@Forest Temple MQ/Central Area,hookshot,[lift1],$has_bombchus",

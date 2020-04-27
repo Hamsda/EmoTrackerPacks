@@ -2145,8 +2145,8 @@
         "access_rules": [
           "@Spirit Temple/Early Adult,bow",
           "@Spirit Temple/Early Adult,hookshot",
-          "@Spirit Temple/Early Adult,bombchu", //TODO: compare with logic files
-          "@Spirit Temple/Early Adult,[bow],bombs"
+          "@Spirit Temple/Early Adult,$has_bombchus",
+          "@Spirit Temple/Early Adult,[bow],bombs" //TODO: trick logic_spirit_lower_adult_switch
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1

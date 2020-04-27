@@ -5037,9 +5037,12 @@
                       {
                         "name": "Show Letter",
                         "access_rules": [
-                          "setting_fountain_closed,king_zora_moved_no,ruto",
-                          "setting_fountain_adult,king_zora_moved_no,ruto"
-                        ], //TODO: use visibility instead
+                          "king_zora_moved_no,ruto"
+                        ],
+                        "visibility_rules": [
+                          "setting_fountain_closed",
+                          "setting_fountain_adult"
+                        ],
                         "hosted_item": "king_zora_moved_yes"
                       }
                     ],
