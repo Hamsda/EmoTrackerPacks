@@ -1447,7 +1447,7 @@
                         "short_name": "Dive down",
                         "access_rules": [
                           "scale2",
-                          "$has_age|adult,hookshot,ironboots,[scale2]"
+                          "$has_age|adult,[logic_lab_diving],ironboots,hookshot"
                         ],
                         "item_count": 1
                       },
@@ -5438,7 +5438,7 @@
                         "access_rules": [
                           "$has_age|child",
                           "$has_age|adult,longshot",
-                          "$gerudo_bridge,[longshot],hoverboots"
+                          "$gerudo_valley_far_side,[longshot],hoverboots"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -5591,7 +5591,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "$gerudo_bridge"
+                  "$gerudo_valley_far_side"
                 ],
                 "children": [
                   {

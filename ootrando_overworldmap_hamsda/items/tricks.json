@@ -196,6 +196,20 @@
     "codes": "logic_fire_boss_door_jump"
   },
   {
+    "name": "Diving in the Lab without Gold Scale",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lab_diving.png",
+    "codes": "logic_lab_diving"
+  },
+  {
+    "name": "Wasteland Crossing without Hover Boots or Longshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_wasteland_crossing.png",
+    "codes": "logic_wasteland_crossing"
+  },
+  {
     "name": "Water Temple Boss Key Region with Hover Boots",
     "type": "toggle",
     "initial_active_state": false,
@@ -222,6 +236,13 @@
     "initial_active_state": false,
     "img": "images/logic_water_hookshot_entry.png",
     "codes": "logic_water_hookshot_entry"
+  },
+  {
+    "name": "Reverse Wasteland",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_reverse_wasteland.png",
+    "codes": "logic_reverse_wasteland"
   },
   {
     "name": "Lost Woods Adult GS without Bean",

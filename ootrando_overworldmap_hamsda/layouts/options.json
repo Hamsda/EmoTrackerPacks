@@ -247,6 +247,18 @@
                 },
                 {
                   "type": "item",
+                  "item": "logic_lab_diving",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_wasteland_crossing",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_water_boss_key_region",
                   "width": 200,
                   "height": 16
@@ -266,6 +278,12 @@
                 {
                   "type": "item",
                   "item": "logic_water_hookshot_entry",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_reverse_wasteland",
                   "width": 200,
                   "height": 16
                 },
