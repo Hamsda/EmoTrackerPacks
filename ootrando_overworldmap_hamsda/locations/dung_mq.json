@@ -244,8 +244,8 @@
         "name": "Bomb Bag Area",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$has_age|adult",
-          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sword1,$damage_single_instance", //TODO: trick
-          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sticks,$damage_single_instance", //TODO: trick
+          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sword1,$damage_single_instance", //TODO: trick logic_dc_mq_child_bombs
+          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sticks,$damage_single_instance", //TODO: trick logic_dc_mq_child_bombs
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,$has_age|adult,bow",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,lift1",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,dinsfire,magic",
@@ -1183,7 +1183,7 @@
         "short_name": "Near Boss",
         "access_rules": [
           "$FTR_or_goron,$has_fire,hoverboots",
-          "$FTR_or_goron,$has_fire,bow,[hoverboots]", //TODO: trick
+          "$FTR_or_goron,$has_fire,bow,[hoverboots]", //TODO: trick logic_fire_mq_near_boss
           "$FTR_or_goron,hookshot,bow,firearrow,magic",
           "$FTR_or_goron,hookshot,dinsfire,magic,$damage_below_quadruple",
           "$FTR_or_goron,hookshot,dinsfire,magic,redtunic",
@@ -1223,8 +1223,8 @@
         "short_name": "Lava Room Bombable",
         "access_rules": [
           "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,hookshot",
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],$damage_below_ohko", //TODO: trick
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],nayrus,magic" //TODO: trick
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],$damage_below_ohko", //TODO: trick logic_fire_mq_bombable_chest
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],nayrus,magic" //TODO: trick logic_fire_mq_bombable_chest
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2545,7 +2545,7 @@
         "short_name": "Light Trial",
         "access_rules": [
           "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,hookshot",
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance" //TODO: trick
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance" //TODO: trick logic_light_trial_mq
         ],
         "visibility_rules": [
           "setting_trials:1"

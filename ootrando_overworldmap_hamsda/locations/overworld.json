@@ -2599,8 +2599,8 @@
                     "access_rules": [
                       "sling",
                       "$has_bombchus",
-                      "[sling],sticks,$damage_single_instance", //TODO: trick
-                      "[sling],sword1,$damage_single_instance" //TODO: trick
+                      "[sling],sticks,$damage_single_instance", //TODO: trick logic_kakariko_tower_gs
+                      "[sling],sword1,$damage_single_instance" 
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
