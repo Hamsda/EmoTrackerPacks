@@ -259,6 +259,48 @@
                 },
                 {
                   "type": "item",
+                  "item": "logic_colossus_gs",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_dc_scarecrow_gs",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_kakariko_tower_gs",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_lab_wall_gs",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_spirit_map_chest",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_spirit_sun_chest",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
+                  "item": "logic_forest_outdoors_ledge",
+                  "width": 200,
+                  "height": 16
+                },
+                {
+                  "type": "item",
                   "item": "logic_water_boss_key_region",
                   "width": 200,
                   "height": 16

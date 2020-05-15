@@ -209,9 +209,10 @@
         "name": "GS42 - Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$has_age|adult,[ocarina],[scarecrow],[hookshot]",
+          "@Dodongos Cavern/Lobby,$has_age|adult,ocarina,scarecrow,hookshot",
           "@Dodongos Cavern/Lobby,$has_age|adult,longshot",
-          "@Dodongos Cavern/Lobby,$can_child_attack,[$has_age|adult],[longshot]"
+          "@Dodongos Cavern/Lobby,[logic_dc_scarecrow_gs],$has_age|adult",
+          "@Dodongos Cavern/Lobby,[logic_dc_scarecrow_gs],$can_child_attack"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -827,7 +828,7 @@
         "access_rules": [
           "@Forest Temple/NE Outdoors,hookshot",
           "@Forest Temple/Falling Room",
-          "@Forest Temple/Outdoors High Balconies,hoverboots,[hookshot]"
+          "@Forest Temple/Outdoors High Balconies,[logic_forest_outdoors_ledge],hoverboots"
         ],
         "item_count": 1
       },
@@ -2049,13 +2050,17 @@
         "short_name": "Sun Block",
         "access_rules": [
           "@Spirit Temple/Central Chamber,$has_explosives,dinsfire,magic",
-          "@Spirit Temple/Central Chamber,$has_explosives,sticks,bow,[firearrow],[magic]",
+          "@Spirit Temple/Central Chamber,$has_explosives,magic,firearrow,bow,sticks",
+          "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_map_chest],bow,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],dinsfire,magic",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],sticks,bow,[firearrow],[magic]",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],magic,firearrow,bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_map_chest],bow,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,dinsfire,magic",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,sticks,bow,[firearrow],[magic]",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$child_colossus,$has_explosives,sticks",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,bow,[firearrow],[magic]"
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,magic,firearrow,bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_map_chest],bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],magic,firearrow,bow,lift2",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_map_chest],bow,lift2"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2094,7 +2099,18 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Spirit Temple/Sun Block Room Chest"
+          "@Spirit Temple/Central Chamber,$has_explosives,dinsfire,magic",
+          "@Spirit Temple/Central Chamber,$has_explosives,magic,firearrow,bow,sticks",
+          "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_sun_chest],bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],dinsfire,magic",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],magic,firearrow,bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_sun_chest],bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,dinsfire,magic",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,magic,firearrow,bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_sun_chest],bow,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,sticks",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],magic,firearrow,bow,lift2",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_sun_chest],bow,lift2"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1

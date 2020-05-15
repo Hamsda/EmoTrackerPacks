@@ -210,6 +210,55 @@
     "codes": "logic_wasteland_crossing"
   },
   {
+    "name": "Desert Colossus Hill GS with Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_colossus_gs.png",
+    "codes": "logic_colossus_gs"
+  },
+  {
+    "name": "Dodongo's Cavern Scarecrow GS with Armos Statue",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dc_scarecrow_gs.png",
+    "codes": "logic_dc_scarecrow_gs"
+  },
+  {
+    "name": "Kakariko Tower GS with Jump Slash",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_kakariko_tower_gs.png",
+    "codes": "logic_kakariko_tower_gs"
+  },
+  {
+    "name": "Lake Hylia Lab Wall GS with Jump Slash",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lab_wall_gs.png",
+    "codes": "logic_lab_wall_gs"
+  },
+  {
+    "name": "Spirit Temple Map Chest with Bow",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_map_chest.png",
+    "codes": "logic_spirit_map_chest"
+  },
+  {
+    "name": "Spirit Temple Sun Block Room Chest with Bow",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_sun_chest.png",
+    "codes": "logic_spirit_sun_chest"
+  },
+  {
+    "name": "Forest Temple NE Outdoors Ledge with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_forest_outdoors_ledge.png",
+    "codes": "logic_forest_outdoors_ledge"
+  },
+  {
     "name": "Water Temple Boss Key Region with Hover Boots",
     "type": "toggle",
     "initial_active_state": false,

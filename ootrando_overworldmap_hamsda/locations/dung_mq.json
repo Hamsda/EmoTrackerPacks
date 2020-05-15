@@ -879,7 +879,7 @@
         "name": "NE Outdoors Ledge",
         "access_rules": [
           "@Forest Temple MQ/NE Outdoors,longshot",
-          "@Forest Temple MQ/Outdoors Top Ledges,hoverboots,[longshot]",
+          "@Forest Temple MQ/Outdoors Top Ledges,[logic_forest_outdoors_ledge],hoverboots",
           "@Forest Temple MQ/Bow Region,forest_small_keys:5,bow",
           "@Forest Temple MQ/Bow Region,forest_small_keys:5,dinsfire,magic"
         ],

@@ -1588,8 +1588,8 @@
                         "name": "GS56 (N)",
                         "access_rules": [
                           "boomerang",
-                          "[boomerang],sticks",
-                          "[boomerang],sword1",
+                          "[logic_lab_wall_gs],sticks",
+                          "[logic_lab_wall_gs],sword1",
                           "{sling}",
                           "{$has_explosives}"
                         ],
@@ -2106,8 +2106,7 @@
                     "name": "Talk to him",
                     "access_rules": [
                       "$has_age|adult,hookshot",
-                      "[logic_man_on_roof],$has_age|adult",
-                      "[logic_man_on_roof],$has_age|child"
+                      "[logic_man_on_roof]"
                     ],
                     "item_count": 1
                   }
@@ -2599,8 +2598,8 @@
                     "access_rules": [
                       "sling",
                       "$has_bombchus",
-                      "[sling],sticks,$damage_single_instance", //TODO: trick logic_kakariko_tower_gs
-                      "[sling],sword1,$damage_single_instance" 
+                      "[logic_kakariko_tower_gs],sticks,$damage_single_instance",
+                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance" 
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -6093,7 +6092,8 @@
                         "access_rules": [
                           "$child_colossus,setting_plant_no,beans",
                           "$child_colossus,bean_colossus_yes",
-                          "$adult_colossus,hookshot,[longshot]",
+                          "$adult_colossus,longshot",
+                          "$adult_colossus,hookshot,[logic_colossus_gs]",
                           "{$adult_colossus,bow}"
                         ],
                         "visibility_rules": [
