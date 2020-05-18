@@ -1,8 +1,9 @@
 # Changelog
 
-## x
+## 2.9.1.0
 
 - added available/in logic skulltula counters
+- added more logic tricks
 
 ## 2.9.0.0
 
