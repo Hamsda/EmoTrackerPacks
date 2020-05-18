@@ -331,6 +331,24 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_trail_gs_upper",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_trail_gs_lower_hookshot",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_trail_gs_lower_bean",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_reverse_wasteland",
                       "width": 200,
                       "height": 16

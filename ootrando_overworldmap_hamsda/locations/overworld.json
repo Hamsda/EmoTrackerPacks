@@ -2598,8 +2598,8 @@
                     "access_rules": [
                       "sling",
                       "$has_bombchus",
-                      "[logic_kakariko_tower_gs],sticks,$damage_single_instance",
-                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance" 
+                      "[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
+                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko" 
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -3469,7 +3469,10 @@
                         "name": "GS32 (N)",
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
-                          "$has_age|adult,$night_gs,[hammer],hookshot"
+                          "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,$has_explosives",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,lift1",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3494,7 +3497,8 @@
                       {
                         "name": "GS33 (N)",
                         "access_rules": [
-                          "$has_age|adult,$night_gs,[hammer]"
+                          "$has_age|adult,$night_gs,hammer",
+                          "$has_age|adult,$night_gs,[logic_trail_gs_upper]"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3767,7 +3771,7 @@
                           "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots",
-                          "[]"
+                          "[logic_crater_upper_to_lower]"
                         ],
                         "item_count": 1
                       }
@@ -3795,7 +3799,7 @@
                           "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots",
-                          "[]"
+                          "[logic_crater_upper_to_lower]"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"

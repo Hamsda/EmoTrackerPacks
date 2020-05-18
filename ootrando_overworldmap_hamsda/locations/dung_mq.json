@@ -232,8 +232,8 @@
         "name": "Lower Right Side",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$can_blast",
-          "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks,$damage_single_instance",
-          "@Dodongos Cavern MQ/Lobby,dinsfire,magic,$damage_single_instance"
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,sticks,$damage_single_instance_ohko",
+          "@Dodongos Cavern MQ/Lobby,dinsfire,magic,$damage_single_instance_ohko"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -244,8 +244,8 @@
         "name": "Bomb Bag Area",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$has_age|adult",
-          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sword1,$damage_single_instance", //TODO: trick logic_dc_mq_child_bombs
-          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sticks,$damage_single_instance", //TODO: trick logic_dc_mq_child_bombs
+          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sword1,$damage_single_instance_ohko", //TODO: trick logic_dc_mq_child_bombs
+          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sticks,$damage_single_instance_ohko", //TODO: trick logic_dc_mq_child_bombs
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,$has_age|adult,bow",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,lift1",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,dinsfire,magic",
@@ -2545,7 +2545,7 @@
         "short_name": "Light Trial",
         "access_rules": [
           "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,hookshot",
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance" //TODO: trick logic_light_trial_mq
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance_ohko" //TODO: trick logic_light_trial_mq
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2776,7 +2776,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora,$damage_single_instance",
+          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora,$damage_single_instance_ohko",
           "{$hintable}"
         ],
         "capture_item": true,

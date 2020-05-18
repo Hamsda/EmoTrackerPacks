@@ -287,6 +287,27 @@
     "codes": "logic_water_hookshot_entry"
   },
   {
+    "name": "Death Mountain Trail Upper Red Rock GS without Hammer",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_trail_gs_upper.png",
+    "codes": "logic_trail_gs_upper"
+  },
+  {
+    "name": "Death Mountain Trail Lower Red Rock GS with Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_trail_gs_lower_hookshot.png",
+    "codes": "logic_trail_gs_lower_hookshot"
+  },
+  {
+    "name": "Death Mountain Trail Lower Red Rock GS with Magic Bean",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_trail_gs_lower_bean.png",
+    "codes": "logic_trail_gs_lower_bean"
+  },
+  {
     "name": "Reverse Wasteland",
     "type": "toggle",
     "initial_active_state": false,

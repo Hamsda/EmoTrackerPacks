@@ -513,8 +513,18 @@ function damage_below_ohko()
   end
 end
 
-function damage_single_instance()
-  if has("setting_damage_ohko", 0) 
+function damage_single_instance_quadruple()
+  if damage_below_quadruple() > 0
+  or has("nayrus") and has("magic")
+  then
+    return 1
+  else
+    return has_bottle()
+  end
+end
+
+function damage_single_instance_ohko()
+  if damage_below_ohko() > 0
   or has("nayrus") and has("magic")
   then
     return 1
