@@ -172,6 +172,16 @@ function can_leave_forest()
   end
 end
 
+function beyond_mido()
+  if has("ocarina") and (has("saria") or has("minuet"))
+  or has("logic_mido_backflip")
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
 function gerudo_card()
   local card = has("card")
   if has("setting_shuffle_card_yes") then
@@ -185,48 +195,98 @@ end
 function gerudo_bridge()
   if has_age("adult") == 0 then
     return 0
-  elseif has("longshot")
+  end
+  if has("longshot")
   or has("ocarina") and has("epona")
   or has("gerudo_fortress_open")
   then
-    return 1, AccessibilityLevel.Normal
-  elseif has("ocarina") 
-  and has("requiem") 
-  then
-    return 1, AccessibilityLevel.SequenceBreak
+    return 1
   else
     return 0
   end
 end
 
+function quicksand()
+  if has("longshot")
+  or has("hoverboots")
+  or has("logic_wasteland_crossing")
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
+function wasteland_forward()
+  if has("setting_lens_chest")
+  or has("lens") and has("magic")
+  then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
+function wasteland_reverse()
+  if has("logic_reverse_wasteland") then
+    return 1
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
+function gerudo_valley_far_side()
+  if has_age("adult") == 0 then
+    return 0
+  end
+
+  if gerudo_bridge() > 0 then
+    return 1
+  end
+
+  if has("ocarina") and has("requiem") then
+    local _, reverse_level = wasteland_reverse()
+    local _, quicksand_level = quicksand()
+
+    if reverse_level == AccessibilityLevel.SequenceBreak
+    or quicksand_level == AccessibilityLevel.SequenceBreak
+    then
+      return 1, AccessibilityLevel.SequenceBreak
+    else
+      return 1
+    end
+  end
+
+  return 0
+end
+
 function wasteland()
-  local count = 0
-  local level = AccessibilityLevel.Normal
+  local forward_count = 0
+  local forward_level = AccessibilityLevel.Normal
   
-  local bridge_count, bridge_level = gerudo_bridge()
+  local bridge_count = gerudo_bridge()
   local card_count, card_level = gerudo_card()
+  local _, quicksand_level = quicksand()
 
   if bridge_count > 0
   and card_count > 0
   then
-    count = 1
+    forward_count = 1
 
-    if bridge_level == AccessibilityLevel.SequenceBreak
-    or card_level == AccessibilityLevel.SequenceBreak
-    or has("hoverboots", 0) and has("longshot", 0)
+    if card_level == AccessibilityLevel.SequenceBreak
+    or quicksand_level == AccessibilityLevel.SequenceBreak
     then
-      level = AccessibilityLevel.SequenceBreak
+      forward_level = AccessibilityLevel.SequenceBreak
+    else
+      return 1
     end
   end
 
-  if count == 0
-  and has("ocarina")
-  and has("requiem")
-  then
-    return 1, AccessibilityLevel.SequenceBreak
+  if has("ocarina") and has("requiem") then
+    return wasteland_reverse()
   end
 
-  return count, level
+  return forward_count, forward_level
 end
 
 function child_colossus()
@@ -241,38 +301,29 @@ function child_colossus()
 end
 
 function adult_colossus()
-  if has("ocarina")
-  and has("requiem")
-  then
+  if has("ocarina") and has("requiem") then
     return 1
   end
-  
-  local level = AccessibilityLevel.Normal
-
-  local bridge = gerudo_bridge()
-  if bridge == 0 then
+    
+  local bridge_count = gerudo_bridge()
+  if bridge_count == 0 then
     return 0
   end
-
+  
   local card_count, card_level = gerudo_card()
   if card_count == 0 then
     return 0
   end
-  level = card_level
-
-  if has("hoverboots", 0)
-  and has("longshot", 0)
+  local level = card_level
+  
+  local _, quicksand_level = quicksand()
+  local _, forward_level = wasteland_forward()
+  if quicksand_level == AccessibilityLevel.SequenceBreak
+  or forward_level == AccessibilityLevel.SequenceBreak
   then
     level = AccessibilityLevel.SequenceBreak
   end
-
-  if has("setting_lens_chest", 0) 
-  and (has("lens", 0) 
-  or has("magic", 0)) 
-  then
-    level = AccessibilityLevel.SequenceBreak
-  end
-
+  
   return 1, level
 end
 
@@ -359,8 +410,8 @@ function child_fountain()
     level = AccessibilityLevel.SequenceBreak
   end
   
-  if has("ocarina", 0)
-  or has("lullaby", 0)
+  if has("logic_zora_with_cucco", 0)
+  and (has("ocarina", 0) or has("lullaby", 0))
   then
     level = AccessibilityLevel.SequenceBreak
   end
@@ -443,39 +494,6 @@ function has_projectile(age)
   end
 end
 
-function spirit_wall()
-  if has("longshot")
-  or 
-  has("bombchu")
-  or 
-  (
-    (
-      has("bombs")
-      or 
-      has("nuts")
-      or 
-      (
-        has("dinsfire")
-        and 
-        has("magic")
-      )
-    )
-    and 
-    (
-      has("bow")
-      or 
-      has("hookshot")
-      or 
-      has("hammer")
-    )
-  )
-  then
-    return 1
-  else
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-end
-
 function damage_below_quadruple()
   if has("setting_damage_ohko", 0) 
   and has("setting_damage_quadruple", 0) 
@@ -495,8 +513,18 @@ function damage_below_ohko()
   end
 end
 
-function damage_single_instance()
-  if has("setting_damage_ohko", 0) 
+function damage_single_instance_quadruple()
+  if damage_below_quadruple() > 0
+  or has("nayrus") and has("magic")
+  then
+    return 1
+  else
+    return has_bottle()
+  end
+end
+
+function damage_single_instance_ohko()
+  if damage_below_ohko() > 0
   or has("nayrus") and has("magic")
   then
     return 1

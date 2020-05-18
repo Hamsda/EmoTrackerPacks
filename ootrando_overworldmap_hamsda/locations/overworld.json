@@ -128,7 +128,7 @@
                     "name": "Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "$has_age|adult,ocarina,epona,setting_cowsanity_yes"
+                      "$has_age|adult,ocarina,epona"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
@@ -148,15 +148,12 @@
               },
               {
                 "name": "Know It All House",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS1 (N)",
                     "access_rules": [
-                      "$has_age|child,$can_leave_forest,$can_child_attack",
-                      "$has_age|child,ocarina,sun,$can_child_attack"
+                      "$has_age|child,$night_gs,$can_child_attack,$can_leave_forest",
+                      "$has_age|child,$night_gs,$can_child_attack,ocarina,sun"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -176,9 +173,6 @@
               },
               {
                 "name": "Kokiri Bean Patch",
-                "access_rules": [
-                  "setting_tokens_overworld"
-                ],
                 "sections": [
                   {
                     "name": "GS2",
@@ -203,17 +197,14 @@
               },
               {
                 "name": "House of Twins",
-                "access_rules": [
-                  "setting_tokens_overworld,$night_gs"
-                ],
                 "sections": [
                   {
                     "name": "GS3 (N)",
                     "access_rules": [
-                      "$has_age|adult,hookshot",
-                      "$has_age|adult,hoverboots,[hookshot]",
-                      "{$has_age|adult,bow}",
-                      "{$has_age|adult,dinsfire,magic}"
+                      "$has_age|adult,$night_gs,hookshot",
+                      "$has_age|adult,$night_gs,hoverboots,[logic_adult_kokiri_gs]", //TODO: can be done itemless, no trick yet
+                      "{$has_age|adult,$night_gs,bow}",
+                      "{$has_age|adult,$night_gs,dinsfire,magic}"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -526,8 +517,7 @@
                 "short_name": "Sales Grotto",
                 "access_rules": [
                   "$has_explosives",
-                  "$has_age|adult,hammer,[ocarina],[saria]",
-                  "$has_age|adult,hammer,[ocarina],[minuet]"
+                  "$has_age|adult,hammer,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -618,7 +608,7 @@
                   {
                     "name": "Plant Bean",
                     "access_rules": [
-                      "$has_age|child,beans,setting_plant_yes,bean_stage_no"
+                      "$has_age|child,beans,bean_stage_no"
                     ],
                     "visibility_rules": [
                       "setting_plant_yes"
@@ -651,20 +641,18 @@
                 "name": "Lost Woods Above Stage",
                 "short_name": "Above Stage",
                 "access_rules": [
-                  "setting_tokens_overworld,$night_gs,$has_age|adult"
+                  "$night_gs,$has_age|adult,$beyond_mido"
                 ],
                 "sections": [
                   {
                     "name": "GS6 (N)",
                     "access_rules": [
-                      "[ocarina],[saria],setting_plant_no,beans",
-                      "[ocarina],[minuet],setting_plant_no,beans",
-                      "[ocarina],[saria],bean_stage_yes",
-                      "[ocarina],[minuet],bean_stage_yes",
-                      "[ocarina],[minuet],[bean_stage_yes],longshot",
-                      "[ocarina],[minuet],[bean_stage_yes],hookshot,bow",
-                      "[ocarina],[minuet],[bean_stage_yes],hookshot,bombchu",
-                      "[ocarina],[minuet],[bean_stage_yes],hookshot,dinsfire,magic"
+                      "setting_plant_no,beans",
+                      "bean_stage_yes",
+                      "[logic_lost_woods_gs_bean],longshot",
+                      "[logic_lost_woods_gs_bean],hookshot,bow",
+                      "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
+                      "[logic_lost_woods_gs_bean],hookshot,dinsfire,magic"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -739,8 +727,7 @@
                 "short_name": "Wolfos Grotto",
                 "access_rules": [
                   "$hidden_grotto,$has_explosives",
-                  "$hidden_grotto,$has_age|adult,hammer,[ocarina],[saria]",
-                  "$hidden_grotto,$has_age|adult,hammer,[ocarina],[minuet]"
+                  "$hidden_grotto,$has_age|adult,hammer,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -770,7 +757,7 @@
                     "access_rules": [
                       "$has_age|child,postzelda,sling",
                       "$has_age|child,postzelda,sticks",
-                      "$has_age|child,postzelda,$has_explosives",
+                      "$has_age|child,postzelda,[sticks],$has_explosives",
                       "$has_age|child,postzelda,sword1",
                       "$has_age|child,postzelda,dinsfire,magic"
                     ],
@@ -794,8 +781,7 @@
                   {
                     "name": "Song",
                     "access_rules": [
-                      "$has_age|adult,[ocarina],[saria]",
-                      "$has_age|adult,[ocarina],[minuet]",
+                      "$has_age|adult,$beyond_mido",
                       "{$hintable}"
                     ],
                     "capture_item": true,
@@ -821,15 +807,14 @@
                   {
                     "name": "Deku Scrubs",
                     "access_rules": [
-                      "$has_age|child,sling",
-                      "$has_age|child,sticks",
-                      "$has_explosives",
-                      "$has_age|child,sword1",
-                      "dinsfire,magic",
+                      "$has_age|adult,$beyond_mido",
                       "$has_age|child,minuet,nuts",
                       "$has_age|child,minuet,shield1",
-                      "$has_age|adult,[minuet]",
-                      "$has_age|adult,[saria]"
+                      "$has_age|child,[minuet],$has_explosives",
+                      "$has_age|child,sling",
+                      "$has_age|child,sticks",
+                      "$has_age|child,sword1",
+                      "$has_age|child,dinsfire,magic"
                     ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
@@ -856,8 +841,7 @@
               {
                 "name": "Top of Maze",
                 "access_rules": [
-                  "$night_gs,$has_age|adult,[ocarina],[saria]",
-                  "$night_gs,$has_age|adult,[ocarina],[minuet]"
+                  "$night_gs,$has_age|adult,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -1463,7 +1447,7 @@
                         "short_name": "Dive down",
                         "access_rules": [
                           "scale2",
-                          "$has_age|adult,hookshot,ironboots,[scale2]"
+                          "$has_age|adult,[logic_lab_diving],ironboots,hookshot"
                         ],
                         "item_count": 1
                       },
@@ -1604,8 +1588,8 @@
                         "name": "GS56 (N)",
                         "access_rules": [
                           "boomerang",
-                          "[boomerang],sticks",
-                          "[boomerang],sword1",
+                          "[logic_lab_wall_gs],sticks",
+                          "[logic_lab_wall_gs],sword1",
                           "{sling}",
                           "{$has_explosives}"
                         ],
@@ -1969,7 +1953,7 @@
                         "access_rules": [
                           "$has_age|child,$night_gs,boomerang",
                           "{$has_age|child,sling}",
-                          "{$has_age|child,bombchu}"
+                          "{$has_age|child,$has_bombchus}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -2122,8 +2106,7 @@
                     "name": "Talk to him",
                     "access_rules": [
                       "$has_age|adult,hookshot",
-                      "[logic_man_on_roof],$has_age|adult",
-                      "[logic_man_on_roof],$has_age|child"
+                      "[logic_man_on_roof]"
                     ],
                     "item_count": 1
                   }
@@ -2614,9 +2597,9 @@
                     "name": "GS26 (N)",
                     "access_rules": [
                       "sling",
-                      "bombchu",
-                      "[sling],sticks,$damage_single_instance", //TODO: trick
-                      "[sling],sword1,$damage_single_instance" //TODO: trick
+                      "$has_bombchus",
+                      "[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
+                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko" 
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -3066,11 +3049,11 @@
                         "short_name": "HP :)",
                         "access_rules": [
                           "$has_age|child,ocarina,lullaby,sticks,bombs",
-                          "$has_age|child,ocarina,lullaby,sticks,[bombs],bombchu",
-                          "$has_age|child,ocarina,lullaby,sticks,lift1",
+                          "$has_age|child,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                          "$has_age|child,ocarina,lullaby,sticks,$has_bombchus,[logic_goron_city_pot]",
                           "$has_age|child,dinsfire,magic,bombs",
-                          "$has_age|child,dinsfire,magic,[bombs],bombchu",
-                          "$has_age|child,dinsfire,magic,lift1",
+                          "$has_age|child,dinsfire,magic,lift1,[logic_goron_city_pot_with_strength]",
+                          "$has_age|child,dinsfire,magic,$has_bombchus,[logic_goron_city_pot]",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3332,7 +3315,7 @@
                         "name": "Blast it",
                         "access_rules": [
                           "$can_blast",
-                          "$has_age|child,lift1,[$can_blast]"
+                          "$has_age|child,lift1,[logic_dmt_bombable]"
                         ],
                         "item_count": 1
                       }
@@ -3486,7 +3469,10 @@
                         "name": "GS32 (N)",
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
-                          "$has_age|adult,$night_gs,[hammer],hookshot"
+                          "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,$has_explosives",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,lift1",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3511,7 +3497,8 @@
                       {
                         "name": "GS33 (N)",
                         "access_rules": [
-                          "$has_age|adult,$night_gs,[hammer]"
+                          "$has_age|adult,$night_gs,hammer",
+                          "$has_age|adult,$night_gs,[logic_trail_gs_upper]"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3784,7 +3771,7 @@
                           "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots",
-                          "[]"
+                          "[logic_crater_upper_to_lower]"
                         ],
                         "item_count": 1
                       }
@@ -3812,7 +3799,7 @@
                           "ocarina,bolero,setting_plant_no,beans",
                           "ocarina,bolero,bean_crater_yes",
                           "hoverboots",
-                          "[]"
+                          "[logic_crater_upper_to_lower]"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -4720,7 +4707,8 @@
                         "access_rules": [
                           "$has_age|child,$has_explosives",
                           "$has_age|child,scale1",
-                          "$has_age|adult,[hoverboots]"
+                          "$has_age|adult,hoverboots",
+                          "$has_age|adult,[logic_zora_river_lower]"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -5006,7 +4994,8 @@
               {
                 "name": "Zoras Domain",
                 "access_rules": [
-                  "$has_age|child,$has_explosives,[ocarina],[lullaby]",
+                  "$has_age|child,$has_explosives,ocarina,lullaby",
+                  "$has_age|child,$has_explosives,[logic_zora_with_cucco]",
                   "$has_age|child,scale1"
                 ],
                 "children": [
@@ -5051,8 +5040,11 @@
                       {
                         "name": "Show Letter",
                         "access_rules": [
-                          "setting_fountain_closed,king_zora_moved_no,ruto",
-                          "setting_fountain_adult,king_zora_moved_no,ruto"
+                          "king_zora_moved_no,ruto"
+                        ],
+                        "visibility_rules": [
+                          "setting_fountain_closed",
+                          "setting_fountain_adult"
                         ],
                         "hosted_item": "king_zora_moved_yes"
                       }
@@ -5449,7 +5441,7 @@
                         "access_rules": [
                           "$has_age|child",
                           "$has_age|adult,longshot",
-                          "$gerudo_bridge,[longshot],hoverboots"
+                          "$gerudo_valley_far_side,[longshot],hoverboots"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -5602,7 +5594,7 @@
               {
                 "name": "Bridge Crossing",
                 "access_rules": [
-                  "$gerudo_bridge"
+                  "$gerudo_valley_far_side"
                 ],
                 "children": [
                   {
@@ -5715,7 +5707,7 @@
                         "access_rules": [
                           "hookshot",
                           "{bow}",
-                          "{bombchu}"
+                          "{$has_bombchus}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -5825,9 +5817,11 @@
                           {
                             "name": "GS91 (N)",
                             "access_rules": [
-                              "[bow]",
-                              "[hookshot]",
-                              "[hoverboots]"
+                              "$gerudo_card",
+                              "bow",
+                              "hookshot",
+                              "hoverboots",
+                              "[logic_gerudo_kitchen]"
                             ],
                             "visibility_rules": [
                               "setting_tokens_overworld"
@@ -6102,7 +6096,8 @@
                         "access_rules": [
                           "$child_colossus,setting_plant_no,beans",
                           "$child_colossus,bean_colossus_yes",
-                          "$adult_colossus,hookshot,[longshot]",
+                          "$adult_colossus,longshot",
+                          "$adult_colossus,hookshot,[logic_colossus_gs]",
                           "{$adult_colossus,bow}"
                         ],
                         "visibility_rules": [

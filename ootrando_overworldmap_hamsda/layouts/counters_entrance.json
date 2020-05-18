@@ -1,0 +1,35 @@
+{
+  "counters_tall": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_margin": "1,2",
+    "rows": [
+      [
+        "counter_generic",
+        "counter_scrubs",
+        "counter_cows",
+        "counter_fairies",
+        "counter_shops",
+        ""
+      ]
+    ]
+  },
+  "counters_wide": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_margin": "1,2",
+    "rows": [
+      [
+        "counter_generic",
+        "counter_scrubs",
+        "counter_cows",
+        "counter_fairies",
+        "counter_shops",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  }
+}
