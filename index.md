@@ -1,3 +1,3 @@
-# OoTRMapTracker
+# EmoTrackerPacks
 
-You are probably looking for [the link to the zip.](https://hamsda.github.io/OoTRMapTracker/ootrando_overworldmap_hamsda.zip)
+You are probably looking for [the link to the zip.](https://hamsda.github.io/EmoTrackerPacks/ootrando_overworldmap_hamsda.zip)
