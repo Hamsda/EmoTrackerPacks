@@ -1,0 +1,52 @@
+{
+  "tracker_top_map": {
+    "type": "container",
+    "background": "#212121",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "dock",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": [
+                {
+                  "type": "group",
+                  "header": "Items",
+                  "dock": "top",
+                  "content": {
+                    "type": "layout",
+                    "key": "charm_grid"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "map",
+          "maps": [
+            "hallownest"
+          ]
+        }
+      ]
+    }
+  }
+}

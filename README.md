@@ -5,6 +5,7 @@ This repository contains the packs I maintain for [EmoTracker](https://emotracke
 ## Packs
 
 - [Ocarina of Time Randomizer Map Tracker](ootrando_overworldmap_hamsda/README.md)
+- [Hollow Knight Randomizer 3 Map Tracker](hkr3_hamsda/README.md)
 
 ## Questions
 

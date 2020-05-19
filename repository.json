@@ -66,6 +66,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hollow Knight Randomizer 3 Map Tracker",
+      "author": "Hamsda",
+      "game_name": "Hollow Knight Randomizer",
+      "flags": [
+        "map",
+        "pins",
+        "chathud"
+      ],
+      "version": "1.0.0.0",
+      "uid": "hkr3_hamsda",
+      "link": "https://hamsda.github.io/OoTRMapTracker/hkr3_hamsda.zip",
+      "documentation_url": "https://github.com/Hamsda/OoTRMapTracker/blob/master/hkr3_hamsda/README.md",
+      "variants": [
+        {
+          "name": "Map Tracker",
+          "flags": [
+            "map",
+            "pins",
+            "chathud"
+          ]
+        },
+        {
+          "name": "Items Only",
+          "flags": [
+            "chathud"
+          ]
+        }
+      ]
     }
   ]
 }

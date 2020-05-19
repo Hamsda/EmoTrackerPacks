@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Glowing Womb",
+    "type": "toggle",
+    "img": "images/charm_glowing_womb.png",
+    "codes": "glowing_womb"
+  },
+  {
+    "name": "Grubberfly's Elegy",
+    "type": "toggle",
+    "img": "images/charm_elegy.png",
+    "codes": "elegy"
+  },
+  {
+    "name": "Mark of Pride",
+    "type": "toggle",
+    "img": "images/charm_mark_of_pride.png",
+    "codes": "mark_of_pride"
+  },
+  {
+    "name": "Spore Shroom",
+    "type": "toggle",
+    "img": "images/charm_spore_shroom.png",
+    "codes": "spore_shroom"
+  },
+  {
+    "name": "Weaversong",
+    "type": "toggle",
+    "img": "images/charm_weaversong.png",
+    "codes": "weaversong"
+  }
+]

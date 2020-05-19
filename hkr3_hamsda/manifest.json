@@ -1,0 +1,15 @@
+﻿{
+  "name": "Hollow Knight Randomizer 3 Map Tracker",
+  "game_name": "Hollow Knight Randomizer",
+  "package_version": "1.0.0.0",
+  "package_uid": "hkr3_hamsda",
+  "author": "Hamsda",
+  "variants": {
+    "standard": {
+      "display_name": "Map Tracker"
+    },
+    "var_itemsonly": {
+      "display_name": "Items Only"
+    }
+  }
+}

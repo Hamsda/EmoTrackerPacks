@@ -1,0 +1,8 @@
+Tracker:AddItems("items/charms.json")
+Tracker:AddMaps("maps/maps.json")
+Tracker:AddLocations("locations/locations.json")
+Tracker:AddLayouts("layouts/charms.json")
+Tracker:AddLayouts("layouts/layouts.json")
+Tracker:AddLayouts("layouts/capture.json")
+Tracker:AddLayouts("layouts/broadcast.json")
+Tracker:AddLayouts("layouts/tracker.json")

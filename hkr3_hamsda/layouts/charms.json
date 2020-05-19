@@ -1,0 +1,16 @@
+{
+  "charm_grid": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_margin": "1,2",
+    "rows": [
+      [
+        "glowing_womb",
+        "elegy",
+        "mark_of_pride",
+        "spore_shroom",
+        "weaversong"
+      ]
+    ]
+  }
+}

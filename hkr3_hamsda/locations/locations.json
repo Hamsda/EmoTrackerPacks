@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Hallownest",
+    "children": [
+      {
+        "name": "Dirtmouth",
+        "color": "#212121",
+        "children": [
+          {
+            "name": "Test",
+            "sections": [
+              {
+                "name": "1",
+                "access_rules": [
+                  "glowing_womb"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1000,
+                "y": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
