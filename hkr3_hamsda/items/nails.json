@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Nail",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/ability_nail_old.png",
+        "codes": "nail"
+      },
+      {
+        "img": "images/ability_nail_sharpened.png"
+      },
+      {
+        "img": "images/ability_nail_channelled.png"
+      },
+      {
+        "img": "images/ability_nail_coiled.png"
+      },
+      {
+        "img": "images/ability_nail_pure.png"
+      }
+    ]
+  },
+  {
+    "name": "Cyclone Slash",
+    "type": "toggle",
+    "img": "images/nailart_cyclone_slash.png",
+    "codes": "nailart,cyclone_slash"
+  },
+  {
+    "name": "Dash Slash",
+    "type": "toggle",
+    "img": "images/nailart_dash_slash.png",
+    "codes": "nailart,dash_slash"
+  },
+  {
+    "name": "Great Slash",
+    "type": "toggle",
+    "img": "images/nailart_great_slash.png",
+    "codes": "nailart,great_slash"
+  }
+]
