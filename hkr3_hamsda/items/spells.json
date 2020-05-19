@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Vengeful Spirit",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/spell_vengeful_spirit.png",
+        "codes": "vengeful_spirit"
+      },
+      {
+        "img": "images/spell_shade_soul.png",
+        "codes": "shade_soul"
+      }
+    ]
+  },
+  {
+    "name": "Desolate Dive",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/spell_desolate_dive.png",
+        "codes": "desolate_dive"
+      },
+      {
+        "img": "images/spell_descending_dark.png",
+        "codes": "descending_dark"
+      }
+    ]
+  },
+  {
+    "name": "Howling Wraiths",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/spell_howling_wraiths.png",
+        "codes": "howling_wraiths"
+      },
+      {
+        "img": "images/spell_abyss_shriek.png",
+        "codes": "abyss_shriek"
+      }
+    ]
+  }
+]
