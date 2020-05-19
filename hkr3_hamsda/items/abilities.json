@@ -9,6 +9,7 @@
       },
       {
         "img": "images/ability_shade_cloak.png",
+        "img_mods": "brightness|2",
         "codes": "shade_cloak"
       }
     ]

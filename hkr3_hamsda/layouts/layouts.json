@@ -11,20 +11,33 @@
           "dock": "bottom",
           "content": [
             {
-              "type": "dock",
-              "dock": "left",
-              "margin": "0,0,3,0",
-              "content": [
-                {
-                  "type": "group",
-                  "header": "Items",
-                  "dock": "top",
-                  "content": {
+              "type": "group",
+              "header": "Items",
+              "margin": "0, 0, 3, 0",
+              "content": {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                  {
                     "type": "layout",
-                    "key": "charm_grid"
+                    "key": "item_grid_left"
+                  },
+                  {
+                    "type": "layout",
+                    "key": "item_grid_right"
                   }
-                }
-              ]
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "header": "Charms",
+              "dock": "left",
+              "margin": "0, 0, 3, 0",
+              "content": {
+                "type": "layout",
+                "key": "charm_grid"
+              }
             },
             {
               "type": "group",

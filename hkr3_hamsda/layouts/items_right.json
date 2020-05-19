@@ -1,0 +1,39 @@
+{
+  "item_grid_right": {
+    "type": "itemgrid",
+    "h_alignment": "left",
+    "item_margin": "1,2",
+    "rows": [
+      [
+        "mothwing_cloak",
+        "mantis_claw",
+        "crystal_heart",
+        "monarch_wings"
+      ],
+      [
+        "ismas_tear",
+        "lumafly_lantern",
+        "map_and_quill",
+        "simple_key"
+      ],
+      [
+        "elegant_key",
+        "love_key",
+        "shopkeepers_key",
+        "city_crest"
+      ],
+      [
+        "kings_brand",
+        "tram_pass",
+        "rancid_egg",
+        "pale_ore"
+      ],
+      [
+        "wanderers_journal",
+        "hallownest_seal",
+        "kings_idol",
+        "arcane_egg"
+      ]
+    ]
+  }
+}

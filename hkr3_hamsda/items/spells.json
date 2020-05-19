@@ -1,5 +1,11 @@
 [
   {
+    "name": "Focus",
+    "type": "static",
+    "img": "images/spell_focus.png",
+    "codes": "focus"
+  },
+  {
     "name": "Vengeful Spirit",
     "type": "progressive",
     "stages": [

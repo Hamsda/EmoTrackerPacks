@@ -1,0 +1,123 @@
+{
+  "item_grid_left": {
+    "type": "canvas",
+    "width": 156,
+    "height": 199,
+    "content": [
+      {
+        "type": "item",
+        "item": "mask_shard",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 0,
+        "canvas_top": 0,
+        "height": 70
+      },
+      {
+        "type": "item",
+        "item": "vessel_fragment",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 50,
+        "canvas_top": 20,
+        "width": 40,
+        "height": 40
+      },
+      {
+        "type": "item",
+        "item": "dream_nail",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 90,
+        "canvas_top": 5,
+        "height": 60
+      },
+      {
+        "type": "item",
+        "item": "nail",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 10,
+        "canvas_top": 79,
+        "height": 120
+      },
+      {
+        "type": "canvas",
+        "canvas_depth": 0,
+        "canvas_left": 53,
+        "canvas_top": 70,
+        "width": 80,
+        "height": 90,
+        "content": [
+          {
+            "type": "item",
+            "item": "focus",
+            "hit_test_visible": true,
+            "canvas_depth": 0,
+            "canvas_left": 15,
+            "canvas_top": 15,
+            "width": 50,
+            "height": 50
+          },
+          {
+            "type": "item",
+            "item": "vengeful_spirit",
+            "hit_test_visible": true,
+            "canvas_depth": 1,
+            "canvas_left": 0,
+            "canvas_top": 0,
+            "width": 30,
+            "height": 30
+          },
+          {
+            "type": "item",
+            "item": "desolate_dive",
+            "hit_test_visible": true,
+            "canvas_depth": 1,
+            "canvas_left": 50,
+            "canvas_top": 0,
+            "width": 30,
+            "height": 30
+          },
+          {
+            "type": "item",
+            "item": "howling_wraiths",
+            "hit_test_visible": true,
+            "canvas_depth": 1,
+            "canvas_left": 25,
+            "canvas_top": 60,
+            "width": 30,
+            "height": 30
+          }
+        ]
+      },
+      {
+        "type": "item",
+        "item": "cyclone_slash",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 39,
+        "canvas_top": 169,
+        "width": 30
+      },
+      {
+        "type": "item",
+        "item": "dash_slash",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 78,
+        "canvas_top": 169,
+        "width": 30
+      },
+      {
+        "type": "item",
+        "item": "great_slash",
+        "hit_test_visible": true,
+        "canvas_depth": 0,
+        "canvas_left": 117,
+        "canvas_top": 169,
+        "width": 30
+      }
+    ]
+  }
+}

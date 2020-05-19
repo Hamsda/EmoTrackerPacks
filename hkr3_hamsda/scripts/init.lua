@@ -1,7 +1,15 @@
+Tracker:AddItems("items/abilities.json")
 Tracker:AddItems("items/charms.json")
+Tracker:AddItems("items/items.json")
+Tracker:AddItems("items/nails.json")
+Tracker:AddItems("items/spells.json")
+
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddLocations("locations/locations.json")
+
 Tracker:AddLayouts("layouts/charms.json")
+Tracker:AddLayouts("layouts/items_left.json")
+Tracker:AddLayouts("layouts/items_right.json")
 Tracker:AddLayouts("layouts/layouts.json")
 Tracker:AddLayouts("layouts/capture.json")
 Tracker:AddLayouts("layouts/broadcast.json")

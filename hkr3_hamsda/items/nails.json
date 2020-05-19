@@ -2,22 +2,23 @@
   {
     "name": "Nail",
     "type": "progressive",
+    "allow_disabled": false,
     "stages": [
       {
-        "img": "images/ability_nail_old.png",
+        "img": "images/nail_old.png",
         "codes": "nail"
       },
       {
-        "img": "images/ability_nail_sharpened.png"
+        "img": "images/nail_sharpened.png"
       },
       {
-        "img": "images/ability_nail_channelled.png"
+        "img": "images/nail_channelled.png"
       },
       {
-        "img": "images/ability_nail_coiled.png"
+        "img": "images/nail_coiled.png"
       },
       {
-        "img": "images/ability_nail_pure.png"
+        "img": "images/nail_pure.png"
       }
     ]
   },
