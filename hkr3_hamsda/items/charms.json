@@ -1,9 +1,57 @@
 [
   {
-    "name": "Glowing Womb",
+    "name": "Wayward Compass",
     "type": "toggle",
-    "img": "images/charm_glowing_womb.png",
-    "codes": "glowing_womb"
+    "img": "images/charm_wayward_compass.png",
+    "codes": "wayward_compass"
+  },
+  {
+    "name": "Gathering Swarm",
+    "type": "toggle",
+    "img": "images/charm_gathering_swarm.png",
+    "codes": "gathering_swarm"
+  },
+  {
+    "name": "Stalwart Shell",
+    "type": "toggle",
+    "img": "images/charm_stalwart_shell.png",
+    "codes": "stalwart_shell"
+  },
+  {
+    "name": "Soul Catcher",
+    "type": "toggle",
+    "img": "images/charm_soul_catcher.png",
+    "codes": "soul_catcher"
+  },
+  {
+    "name": "Shaman Stone",
+    "type": "toggle",
+    "img": "images/charm_shaman_stone.png",
+    "codes": "shaman_stone"
+  },
+  {
+    "name": "Soul Eater",
+    "type": "toggle",
+    "img": "images/charm_soul_eater.png",
+    "codes": "soul_eater"
+  },
+  {
+    "name": "Dashmaster",
+    "type": "toggle",
+    "img": "images/charm_dashmaster.png",
+    "codes": "dashmaster"
+  },
+  {
+    "name": "Sprintmaster",
+    "type": "toggle",
+    "img": "images/charm_sprintmaster.png",
+    "codes": "sprintmaster"
+  },
+  {
+    "name": "Grubsong",
+    "type": "toggle",
+    "img": "images/charm_grubsong.png",
+    "codes": "grubsong"
   },
   {
     "name": "Grubberfly's Elegy",
@@ -12,10 +60,130 @@
     "codes": "elegy"
   },
   {
+    "name": "Unbreakable Heart",
+    "type": "toggle",
+    "img": "images/charm_unbreakable_heart.png",
+    "codes": "unbreakable_heart"
+  },
+  {
+    "name": "Unbreakable Greed",
+    "type": "toggle",
+    "img": "images/charm_unbreakable_greed.png",
+    "codes": "unbreakable_greed"
+  },
+  {
+    "name": "Unbreakable Strength",
+    "type": "toggle",
+    "img": "images/charm_unbreakable_strength.png",
+    "codes": "unbreakable_strength"
+  },
+  {
+    "name": "Spell Twister",
+    "type": "toggle",
+    "img": "images/charm_spell_twister.png",
+    "codes": "spell_twister"
+  },
+  {
+    "name": "Steady Body",
+    "type": "toggle",
+    "img": "images/charm_steady_body.png",
+    "codes": "steady_body"
+  },
+  {
+    "name": "Heavy Blow",
+    "type": "toggle",
+    "img": "images/charm_heavy_blow.png",
+    "codes": "heavy_blow"
+  },
+  {
+    "name": "Quick Slash",
+    "type": "toggle",
+    "img": "images/charm_quick_slash.png",
+    "codes": "quick_slash"
+  },
+  {
+    "name": "Longnail",
+    "type": "toggle",
+    "img": "images/charm_longnail.png",
+    "codes": "longnail"
+  },
+  {
     "name": "Mark of Pride",
     "type": "toggle",
     "img": "images/charm_mark_of_pride.png",
     "codes": "mark_of_pride"
+  },
+  {
+    "name": "Fury of the Fallen",
+    "type": "toggle",
+    "img": "images/charm_fury_of_the_fallen.png",
+    "codes": "fury_of_the_fallen"
+  },
+  {
+    "name": "Thorns of Agony",
+    "type": "toggle",
+    "img": "images/charm_thorns_of_agony.png",
+    "codes": "thorns_of_agony"
+  },
+  {
+    "name": "Baldur Shell",
+    "type": "toggle",
+    "img": "images/charm_baldur_shell.png",
+    "codes": "baldur_shell"
+  },
+  {
+    "name": "Flukenest",
+    "type": "toggle",
+    "img": "images/charm_flukenest.png",
+    "codes": "flukenest"
+  },
+  {
+    "name": "Defender's Crest",
+    "type": "toggle",
+    "img": "images/charm_defenders_crest.png",
+    "codes": "defenders_crest"
+  },
+  {
+    "name": "Glowing Womb",
+    "type": "toggle",
+    "img": "images/charm_glowing_womb.png",
+    "codes": "glowing_womb"
+  },
+  {
+    "name": "Quick Focus",
+    "type": "toggle",
+    "img": "images/charm_quick_focus.png",
+    "codes": "quick_focus"
+  },
+  {
+    "name": "Deep Focus",
+    "type": "toggle",
+    "img": "images/charm_deep_focus.png",
+    "codes": "deep_focus"
+  },
+  {
+    "name": "Lifeblood Heart",
+    "type": "toggle",
+    "img": "images/charm_lifeblood_heart.png",
+    "codes": "lifeblood_heart"
+  },
+  {
+    "name": "Lifeblood Core",
+    "type": "toggle",
+    "img": "images/charm_lifeblood_core.png",
+    "codes": "lifeblood_core"
+  },
+  {
+    "name": "Joni's Blessing",
+    "type": "toggle",
+    "img": "images/charm_jonis_blessing.png",
+    "codes": "jonis_blessing"
+  },
+  {
+    "name": "Hiveblood",
+    "type": "toggle",
+    "img": "images/charm_hiveblood.png",
+    "codes": "hiveblood"
   },
   {
     "name": "Spore Shroom",
@@ -24,9 +192,63 @@
     "codes": "spore_shroom"
   },
   {
+    "name": "Sharp Shadow",
+    "type": "toggle",
+    "img": "images/charm_sharp_shadow.png",
+    "codes": "sharp_shadow"
+  },
+  {
+    "name": "Shape of Unn",
+    "type": "toggle",
+    "img": "images/charm_shape_of_unn.png",
+    "codes": "shape_of_unn"
+  },
+  {
+    "name": "Nailmaster's Glory",
+    "type": "toggle",
+    "img": "images/charm_nailmasters_glory.png",
+    "codes": "nailmasters_glory"
+  },
+  {
     "name": "Weaversong",
     "type": "toggle",
     "img": "images/charm_weaversong.png",
     "codes": "weaversong"
+  },
+  {
+    "name": "Dream Wielder",
+    "type": "toggle",
+    "img": "images/charm_dream_wielder.png",
+    "codes": "dream_wielder"
+  },
+  {
+    "name": "Dreamshield",
+    "type": "toggle",
+    "img": "images/charm_dreamshield.png",
+    "codes": "dreamshield"
+  },
+  {
+    "name": "Grimmchild",
+    "type": "toggle",
+    "img": "images/charm_grimmchild.png",
+    "codes": "grimmchild"
+  },
+  {
+    "name": "Kingsoul",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/charm_kingsoul_left.png",
+        "codes": "kingsoul"
+      },
+      {
+        "img": "images/charm_kingsoul.png",
+        "codes": "kingsoul_full"
+      },
+      {
+        "img": "images/charm_void_heart.png",
+        "codes": "void_heart"
+      }
+    ]
   }
 ]
