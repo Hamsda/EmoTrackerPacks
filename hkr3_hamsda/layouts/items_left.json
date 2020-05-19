@@ -10,23 +10,23 @@
         "canvas_depth": 0,
         "canvas_left": 0,
         "canvas_top": 10,
-        "height": 60
+        "height": 55
       },
       {
         "type": "item",
         "item": "lurien",
         "canvas_depth": 0,
-        "canvas_left": 30,
+        "canvas_left": 35,
         "canvas_top": 0,
-        "height": 60
+        "height": 55
       },
       {
         "type": "item",
         "item": "herrah",
         "canvas_depth": 0,
-        "canvas_left": 60,
+        "canvas_left": 70,
         "canvas_top": 10,
-        "height": 60
+        "height": 55
       },
       {
         "type": "item",
@@ -95,24 +95,24 @@
         "item": "cyclone_slash",
         "canvas_depth": 0,
         "canvas_left": 39,
-        "canvas_top": 169,
-        "width": 30
+        "canvas_top": 167,
+        "width": 32
       },
       {
         "type": "item",
         "item": "dash_slash",
         "canvas_depth": 0,
-        "canvas_left": 78,
-        "canvas_top": 169,
-        "width": 30
+        "canvas_left": 77,
+        "canvas_top": 167,
+        "width": 32
       },
       {
         "type": "item",
         "item": "great_slash",
         "canvas_depth": 0,
-        "canvas_left": 117,
-        "canvas_top": 169,
-        "width": 30
+        "canvas_left": 115,
+        "canvas_top": 167,
+        "width": 32
       }
     ]
   }

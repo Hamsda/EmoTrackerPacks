@@ -1,57 +1,85 @@
 {
   "charm_grid": {
-    "type": "itemgrid",
-    "h_alignment": "left",
-    "item_margin": "1,2",
-    "rows": [
-      [
-        "wayward_compass",
-        "gathering_swarm",
-        "stalwart_shell",
-        "soul_catcher",
-        "shaman_stone",
-        "soul_eater",
-        "dashmaster",
-        "sprintmaster",
-        "grubsong",
-        "elegy"
-      ],
-      [
-        "unbreakable_heart",
-        "unbreakable_greed",
-        "unbreakable_strength",
-        "spell_twister",
-        "steady_body",
-        "heavy_blow",
-        "quick_slash",
-        "longnail",
-        "mark_of_pride",
-        "fury_of_the_fallen"
-      ],
-      [
-        "thorns_of_agony",
-        "baldur_shell",
-        "flukenest",
-        "defenders_crest",
-        "glowing_womb",
-        "quick_focus",
-        "deep_focus",
-        "lifeblood_heart",
-        "lifeblood_core",
-        "jonis_blessing"
-      ],
-      [
-        "hiveblood",
-        "spore_shroom",
-        "sharp_shadow",
-        "shape_of_unn",
-        "nailmasters_glory",
-        "weaversong",
-        "dream_wielder",
-        "dreamshield",
-        "grimmchild",
-        "kingsoul"
-      ]
+    "type": "canvas",
+    "width": 450,
+    "height": 200,
+    "content":[
+      {
+        "type": "itemgrid",
+        "canvas_left": 0,
+        "canvas_top": 0,
+        "rows": [
+          [
+            "wayward_compass",
+            "gathering_swarm",
+            "stalwart_shell",
+            "soul_catcher",
+            "shaman_stone",
+            "soul_eater",
+            "dashmaster",
+            "sprintmaster",
+            "grubsong",
+            "elegy"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "canvas_left": 20,
+        "canvas_top": 40,
+        "rows": [
+          [
+            "unbreakable_heart",
+            "unbreakable_greed",
+            "unbreakable_strength",
+            "spell_twister",
+            "steady_body",
+            "heavy_blow",
+            "quick_slash",
+            "longnail",
+            "mark_of_pride",
+            "fury_of_the_fallen"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "canvas_left": 0,
+        "canvas_top": 80,
+        "rows": [
+          [
+            "thorns_of_agony",
+            "baldur_shell",
+            "flukenest",
+            "defenders_crest",
+            "glowing_womb",
+            "quick_focus",
+            "deep_focus",
+            "lifeblood_heart",
+            "lifeblood_core",
+            "jonis_blessing"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "canvas_left": 20,
+        "canvas_top": 120,
+        "rows": [
+          [
+            "hiveblood",
+            "spore_shroom",
+            "sharp_shadow",
+            "shape_of_unn",
+            "nailmasters_glory",
+            "weaversong",
+            "dream_wielder",
+            "dreamshield",
+            "grimmchild",
+            "kingsoul"
+          ]
+        ]
+      }
     ]
   }
 }
