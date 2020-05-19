@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Mothwing Cloak",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/ability_mothwing_cloak.png",
+        "codes": "mothwing_cloak"
+      },
+      {
+        "img": "images/ability_shade_cloak.png",
+        "codes": "shade_cloak"
+      }
+    ]
+  },
+  {
+    "name": "Mantis Claw",
+    "type": "toggle",
+    "img": "images/ability_mantis_claw.png",
+    "codes": "mantis_claw"
+  },
+  {
+    "name": "Crystal Heart",
+    "type": "toggle",
+    "img": "images/ability_crystal_heart.png",
+    "codes": "crystal_heart"
+  },
+  {
+    "name": "Monarch Wings",
+    "type": "toggle",
+    "img": "images/ability_monarch_wings.png",
+    "codes": "monarch_wings"
+  },
+  {
+    "name": "Isma's Tear",
+    "type": "toggle",
+    "img": "images/ability_ismas_tear.png",
+    "codes": "ismas_tear"
+  },
+  {
+    "name": "Dream Nail",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/ability_dream_nail.png",
+        "codes": "dream_nail"
+      },
+      {
+        "img": "images/ability_dreamgate.png",
+        "codes": "dreamgate"
+      },
+      {
+        "img": "images/ability_awoken_dream_nail.png",
+        "codes": "awoken_dream_nail"
+      }
+    ]
+  },
+  {
+    "name": "World Sense",
+    "type": "toggle",
+    "img": "images/ability_world_sense.png",
+    "codes": "world_sense"
+  }
+]
