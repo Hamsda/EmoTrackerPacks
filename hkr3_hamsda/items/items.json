@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Simple Key",
+    "type": "consumable",
+    "img": "images/item_simple_key.png",
+    "codes": "simple_key",
+    "max_quantity": 4
+  },
+  {
+    "name": "Elegant Key",
+    "type": "toggle",
+    "img": "images/item_elegant_key.png",
+    "codes": "elegant_key"
+  },
+  {
+    "name": "Love Key",
+    "type": "toggle",
+    "img": "images/item_love_key.png",
+    "codes": "love_key"
+  },
+  {
+    "name": "Shopkeeper's Key",
+    "type": "toggle",
+    "img": "images/item_shopkeepers_key.png",
+    "codes": "shopkeepers_key"
+  },
+  {
+    "name": "City Crest",
+    "type": "toggle",
+    "img": "images/item_city_crest.png",
+    "codes": "city_crest"
+  },
+  {
+    "name": "King's Brand",
+    "type": "toggle",
+    "img": "images/item_kings_brand.png",
+    "codes": "kings_brand"
+  },
+  {
+    "name": "Tram Pass",
+    "type": "toggle",
+    "img": "images/item_tram_pass.png",
+    "codes": "tram_pass"
+  },
+  {
+    "name": "Lumafly Lantern",
+    "type": "toggle",
+    "img": "images/item_lumafly_lantern.png",
+    "codes": "lumafly_lantern"
+  },
+  {
+    "name": "Map and Quill",
+    "type": "toggle",
+    "img": "images/item_map_and_quill.png",
+    "codes": "map_and_quill"
+  },
+  {
+    "name": "Mask Shard",
+    "type": "consumable",
+    "img": "images/item_mask_shard.png",
+    "codes": "mask_shard",
+    "max_quantity": 16
+  },
+  {
+    "name": "Vessel Fragment",
+    "type": "consumable",
+    "img": "images/item_vessel_fragment.png",
+    "codes": "vessel_fragment",
+    "max_quantity": 9
+  },
+  {
+    "name": "Pale Ore",
+    "type": "consumable",
+    "img": "images/item_pale_ore.png",
+    "codes": "pale_ore",
+    "max_quantity": 6
+  },
+  {
+    "name": "Rancid Egg",
+    "type": "consumable",
+    "img": "images/item_rancid_egg.png",
+    "codes": "rancid_egg",
+    "max_quantity": 22
+  },
+  {
+    "name": "Wanderer's Journal",
+    "type": "consumable",
+    "img": "images/item_wanderers_journal.png",
+    "codes": "wanderers_journal",
+    "max_quantity": 14
+  },
+  {
+    "name": "Hallownest Seal",
+    "type": "consumable",
+    "img": "images/item_hallownest_seal.png",
+    "codes": "hallownest_seal",
+    "max_quantity": 17
+  },
+  {
+    "name": "King's Idol",
+    "type": "consumable",
+    "img": "images/item_kings_idol.png",
+    "codes": "kings_idol",
+    "max_quantity": 8
+  },
+  {
+    "name": "Arcane Egg",
+    "type": "consumable",
+    "img": "images/item_arcane_egg.png",
+    "codes": "arcane_egg",
+    "max_quantity": 4
+  }
+]
