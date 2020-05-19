@@ -109,5 +109,12 @@
     "img": "images/item_arcane_egg.png",
     "codes": "arcane_egg",
     "max_quantity": 4
+  },
+  {
+    "name": "Grub",
+    "type": "consumable",
+    "img": "images/grub.png",
+    "codes": "grub",
+    "max_quantity": 46
   }
 ]

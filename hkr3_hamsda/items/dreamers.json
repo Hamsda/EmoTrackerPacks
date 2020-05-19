@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Monomon the Teacher",
+    "type": "toggle",
+    "img": "images/dreamer_teacher.png",
+    "codes": "dreamer,teacher,monomon"
+  },
+  {
+    "name": "Lurien the Watcher",
+    "type": "toggle",
+    "img": "images/dreamer_watcher.png",
+    "codes": "dreamer,watcher,lurien"
+  },
+  {
+    "name": "Herrah the Beast",
+    "type": "toggle",
+    "img": "images/dreamer_beast.png",
+    "codes": "dreamer,beast,herrah"
+  }
+]

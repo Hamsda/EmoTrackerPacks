@@ -1,5 +1,6 @@
 Tracker:AddItems("items/abilities.json")
 Tracker:AddItems("items/charms.json")
+Tracker:AddItems("items/dreamers.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/nails.json")
 Tracker:AddItems("items/spells.json")
