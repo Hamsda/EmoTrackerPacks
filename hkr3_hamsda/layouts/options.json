@@ -1,0 +1,164 @@
+{
+  "options_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Required Skips",
+        "content": {
+          "type": "array",
+          "orientation": "vertical",
+          "h_alignment": "center",
+          "item_margin": "1,2",
+          "content": [
+            {
+              "type": "item",
+              "item": "mild_skips",
+              "h_alignment": "center"
+            },
+            {
+              "type": "item",
+              "item": "shade_skips",
+              "h_alignment": "center"
+            },
+            {
+              "type": "item",
+              "item": "fireball_skips",
+              "h_alignment": "center"
+            },
+            {
+              "type": "item",
+              "item": "acid_skips",
+              "h_alignment": "center"
+            },
+            {
+              "type": "item",
+              "item": "spike_tunnels",
+              "h_alignment": "center"
+            },
+            {
+              "type": "item",
+              "item": "dark_rooms",
+              "h_alignment": "center"
+            },
+            {
+              "type": "item",
+              "item": "spicy_skips",
+              "h_alignment": "center"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Randomization",
+        "content": {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "canvas",
+              "width": 240,
+              "height": 200,
+              "content": [
+                {
+                  "type": "item",
+                  "item": "setting_dreamers",
+                  "canvas_top": 0,
+                  "canvas_left": 23
+                },
+                {
+                  "type": "item",
+                  "item": "setting_skills",
+                  "canvas_top": 0,
+                  "canvas_left": 160
+                },
+                {
+                  "type": "item",
+                  "item": "setting_charms",
+                  "canvas_top": 25,
+                  "canvas_left": 31
+                },
+                {
+                  "type": "item",
+                  "item": "setting_keys",
+                  "canvas_top": 25,
+                  "canvas_left": 160
+                },
+                {
+                  "type": "item",
+                  "item": "setting_geo_chests",
+                  "canvas_top": 50,
+                  "canvas_left": 76
+                },
+                {
+                  "type": "item",
+                  "item": "setting_mask_shards",
+                  "canvas_top": 75,
+                  "canvas_left": 14
+                },
+                {
+                  "type": "item",
+                  "item": "setting_vessel_fragments",
+                  "canvas_top": 75,
+                  "canvas_left": 117
+                },
+                {
+                  "type": "item",
+                  "item": "setting_pale_ore",
+                  "canvas_top": 100,
+                  "canvas_left": 28
+                },
+                {
+                  "type": "item",
+                  "item": "setting_charm_notches",
+                  "canvas_top": 100,
+                  "canvas_left": 120
+                },
+                {
+                  "type": "item",
+                  "item": "setting_rancid_eggs",
+                  "canvas_top": 125,
+                  "canvas_left": 14
+                },
+                {
+                  "type": "item",
+                  "item": "setting_relics",
+                  "canvas_top": 125,
+                  "canvas_left": 157
+                },
+                {
+                  "type": "item",
+                  "item": "setting_maps",
+                  "canvas_top": 150,
+                  "canvas_left": 40
+                },
+                {
+                  "type": "item",
+                  "item": "setting_stags",
+                  "canvas_top": 150,
+                  "canvas_left": 158
+                },
+                {
+                  "type": "item",
+                  "item": "setting_grubs",
+                  "canvas_top": 175,
+                  "canvas_left": 37
+                },
+                {
+                  "type": "item",
+                  "item": "setting_whispering_roots",
+                  "canvas_top": 175,
+                  "canvas_left": 114
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "item": "setting_start",
+              "h_alignment": "center"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

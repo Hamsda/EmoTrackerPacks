@@ -1,0 +1,181 @@
+[
+  //colors:
+  //227, 227, 147 = yellow
+  //121, 117, 116 = grey
+  //229, 229, 229 = white
+  //
+  //skips
+  {
+    "name": "Mild Skips",
+    "type": "toggle",
+    "img": "images/setting_mild_skips.png",
+    "codes": "mild_skips"
+  },
+  {
+    "name": "Shade Skips",
+    "type": "toggle",
+    "img": "images/setting_shade_skips.png",
+    "codes": "shade_skips"
+  },
+  {
+    "name": "Fireball Skips",
+    "type": "toggle",
+    "img": "images/setting_fireball_skips.png",
+    "codes": "fireball_skips"
+  },
+  {
+    "name": "Acid Skips",
+    "type": "toggle",
+    "img": "images/setting_acid_skips.png",
+    "codes": "acid_skips"
+  },
+  {
+    "name": "Spike Tunnels",
+    "type": "toggle",
+    "img": "images/setting_spike_tunnels.png",
+    "codes": "spike_tunnels"
+  },
+  {
+    "name": "Dark Rooms",
+    "type": "toggle",
+    "img": "images/setting_dark_rooms.png",
+    "codes": "dark_rooms"
+  },
+  {
+    "name": "Spicy Skips",
+    "type": "toggle",
+    "img": "images/setting_spicy_skips.png",
+    "codes": "spicy_skips"
+  },
+  //randomization
+  {
+    "name": "Dreamers",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_dreamers.png",
+    "codes": "setting_dreamers"
+  },
+  {
+    "name": "Skills",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_skills.png",
+    "codes": "setting_skills"
+  },
+  {
+    "name": "Charms",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_charms.png",
+    "codes": "setting_charms"
+  },
+  {
+    "name": "Keys",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_keys.png",
+    "codes": "setting_keys"
+  },
+  {
+    "name": "Geo Chests",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_geo_chests.png",
+    "codes": "setting_geo_chests"
+  },
+  {
+    "name": "Mask Shards",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_mask_shards.png",
+    "codes": "setting_mask_shards"
+  },
+  {
+    "name": "Vessel Fragments",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_vessel_fragments.png",
+    "codes": "setting_vessel_fragments"
+  },
+  {
+    "name": "Pale Ore",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_pale_ore.png",
+    "codes": "setting_pale_ore"
+  },
+  {
+    "name": "Charm Notches",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_charm_notches.png",
+    "codes": "setting_charm_notches"
+  },
+  {
+    "name": "Rancid Eggs",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_rancid_eggs.png",
+    "codes": "setting_rancid_eggs"
+  },
+  {
+    "name": "Relics",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_relics.png",
+    "codes": "setting_relics"
+  },
+  {
+    "name": "Maps",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_maps.png",
+    "codes": "setting_maps"
+  },
+  {
+    "name": "Stags",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_stags.png",
+    "codes": "setting_stags"
+  },
+  {
+    "name": "Grubs",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_grubs.png",
+    "codes": "setting_grubs"
+  },
+  {
+    "name": "Whispering Roots",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/setting_whispering_roots.png",
+    "codes": "setting_whispering_roots"
+  },
+  //start location
+  //king's pass, stag nest, west fog canyon, east fog canyon, queen's station, fungal core?, distant village, abyss, hive, kingdom's edge, hallownest's crown, crystallized mound, royal waterways, queen's gardens, far greenpath, greenpath, king's station, outside colosseum, city of tears
+  {
+    "name": "Start Location",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_start_kings_pass.png",
+        "codes": "setting_start,setting_start_kings_pass",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_start_stag_nest.png",
+        "codes": "setting_start,setting_start_stag_nest",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_start_west_fog_canyon.png",
+        "codes": "setting_start,setting_start_west_fog_canyon",
+        "inherit_codes": false
+      }
+    ]
+  }
+]

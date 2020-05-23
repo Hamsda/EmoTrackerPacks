@@ -3,11 +3,13 @@ Tracker:AddItems("items/charms.json")
 Tracker:AddItems("items/dreamers.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/nails.json")
+Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/spells.json")
 
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddLocations("locations/locations.json")
 
+Tracker:AddLayouts("layouts/options.json")
 Tracker:AddLayouts("layouts/charms.json")
 Tracker:AddLayouts("layouts/items_left.json")
 Tracker:AddLayouts("layouts/items_right.json")

@@ -14,6 +14,12 @@
               "type": "group",
               "header": "Items",
               "margin": "0, 0, 3, 0",
+              "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#FF212121",
+                "layout": "options_popup"
+              },
               "content": {
                 "type": "array",
                 "orientation": "horizontal",
