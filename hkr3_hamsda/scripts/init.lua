@@ -6,6 +6,10 @@ Tracker:AddItems("items/nails.json")
 Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/spells.json")
 
+ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/areas.lua")
+ScriptHost:LoadScript("scripts/update.lua")
+
 Tracker:AddMaps("maps/maps.json")
 Tracker:AddLocations("locations/locations.json")
 

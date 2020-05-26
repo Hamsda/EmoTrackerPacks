@@ -11,7 +11,7 @@
     "stages": [
       {
         "img": "images/spell_vengeful_spirit.png",
-        "codes": "vengeful_spirit"
+        "codes": "vengeful_spirit,fireball,spell"
       },
       {
         "img": "images/spell_shade_soul.png",
@@ -25,7 +25,7 @@
     "stages": [
       {
         "img": "images/spell_desolate_dive.png",
-        "codes": "desolate_dive"
+        "codes": "desolate_dive,quake,spell"
       },
       {
         "img": "images/spell_descending_dark.png",
@@ -39,7 +39,7 @@
     "stages": [
       {
         "img": "images/spell_howling_wraiths.png",
-        "codes": "howling_wraiths"
+        "codes": "howling_wraiths,scream,spell"
       },
       {
         "img": "images/spell_abyss_shriek.png",

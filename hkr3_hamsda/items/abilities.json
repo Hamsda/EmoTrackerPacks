@@ -5,7 +5,7 @@
     "stages": [
       {
         "img": "images/ability_mothwing_cloak.png",
-        "codes": "mothwing_cloak"
+        "codes": "mothwing_cloak,dash"
       },
       {
         "img": "images/ability_shade_cloak.png",
@@ -18,25 +18,25 @@
     "name": "Mantis Claw",
     "type": "toggle",
     "img": "images/ability_mantis_claw.png",
-    "codes": "mantis_claw"
+    "codes": "mantis_claw,claw"
   },
   {
     "name": "Crystal Heart",
     "type": "toggle",
     "img": "images/ability_crystal_heart.png",
-    "codes": "crystal_heart"
+    "codes": "crystal_heart,superdash"
   },
   {
     "name": "Monarch Wings",
     "type": "toggle",
     "img": "images/ability_monarch_wings.png",
-    "codes": "monarch_wings"
+    "codes": "monarch_wings,wings"
   },
   {
     "name": "Isma's Tear",
     "type": "toggle",
     "img": "images/ability_ismas_tear.png",
-    "codes": "ismas_tear"
+    "codes": "ismas_tear,acid"
   },
   {
     "name": "Dream Nail",

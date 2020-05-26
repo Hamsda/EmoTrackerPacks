@@ -40,13 +40,13 @@
     "name": "Tram Pass",
     "type": "toggle",
     "img": "images/item_tram_pass.png",
-    "codes": "tram_pass"
+    "codes": "tram_pass,tram"
   },
   {
     "name": "Lumafly Lantern",
     "type": "toggle",
     "img": "images/item_lumafly_lantern.png",
-    "codes": "lumafly_lantern"
+    "codes": "lumafly_lantern,lantern"
   },
   {
     "name": "Map and Quill",
