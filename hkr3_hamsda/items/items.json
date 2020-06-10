@@ -116,5 +116,11 @@
     "img": "images/grub.png",
     "codes": "grub",
     "max_quantity": 46
+  },
+  {
+    "name": "Dummy",
+    "type": "toggle",
+    "img": "images/grub.png",
+    "codes": "dummy"
   }
 ]

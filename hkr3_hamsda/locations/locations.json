@@ -1,18 +1,248 @@
-[
+[ //TODO: Relics next
   {
     "name": "Hallownest",
     "children": [
       {
-        "name": "Dirtmouth",
-        "color": "#212121",
+        "name": "Howling Cliffs",
+        "color": "#717171",
         "children": [
           {
-            "name": "Test",
+            "name": "Nailmaster Mato",
             "sections": [
               {
-                "name": "1",
+                "name": "Cyclone Slash",
                 "access_rules": [
-                  "glowing_womb"
+                  "$access|Howling_Cliffs"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1405,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "name": "Fury of the Fallen", //TODO: Name
+            "sections": [
+              {
+                "name": "Fury of the Fallen",
+                "access_rules": [
+                  "$access|King's_Pass"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1730,
+                "y": 655
+              }
+            ]
+          },
+          {
+            "name": "Joni's Blessing", //TODO: Name
+            "sections": [
+              {
+                "name": "Joni's Blessing",
+                "access_rules": [
+                  "$access|Howling_Cliffs,dark_rooms",
+                  "$access|Howling_Cliffs,lantern"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1460,
+                "y": 505
+              }
+            ]
+          },
+          {
+            "name": "Stag Nest",
+            "sections": [
+              {
+                "name": "Vessel Fragment",
+                "access_rules": [
+                  "$access|Stag_Nest"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1220,
+                "y": 305
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dirtmouth",
+        "color": "#B6B6B6",
+        "children": [
+          {
+            "name": "Sly",
+            "access_rules": [
+              "$access|Crossroads,$access|Dirtmouth"
+            ],
+            "sections": [
+              {
+                "name": "Gathering Swarm",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Stalwart Shell",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Heavy Blow",
+                "access_rules": [
+                  "shopkeepers_key"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Sprintmaster",
+                "access_rules": [
+                  "shopkeepers_key"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Nailmaster's Glory",
+                "access_rules": [
+                  "nailart:3"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Lumafly Lantern",
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Simple Key",
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Elegant Key",
+                "access_rules": [
+                  "shopkeepers_key"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Mask Shard 1",
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Mask Shard 2",
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Mask Shard 3",
+                "access_rules": [
+                  "shopkeepers_key"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Mask Shard 4",
+                "access_rules": [
+                  "shopkeepers_key"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Vessel Fragment 1",
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Vessel Fragment 2",
+                "access_rules": [
+                  "shopkeepers_key"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Rancid Egg",
+                "visibility_rules": [
+                  "setting_rancid_eggs"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -21,8 +251,2547 @@
             "map_locations": [
               {
                 "map": "hallownest",
-                "x": 1000,
-                "y": 1000
+                "x": 1985,
+                "y": 630
+              }
+            ]
+          },
+          {
+            "name": "Iselda",
+            "access_rules": [
+              "$access|Dirtmouth"
+            ],
+            "sections": [
+              {
+                "name": "Wayward Compass",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2040,
+                "y": 630
+              }
+            ]
+          },
+          {
+            "name": "Grimm Troupe",
+            "sections": [
+              {
+                "name": "Grimmchild",
+                "access_rules": [
+                  "$access|Dirtmouth,$access|Howling_Cliffs,dream_nail",
+                  "$access|Dirtmouth,grimmchild"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Grimm",
+                "access_rules": [
+                  "$access|Dirtmouth,grimmchild,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_charm_notches"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1935,
+                "y": 630
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Forgotten Crossroads",
+        "color": "#A9D1EA",
+        "children": [
+          {
+            "name": "Black Egg Temple",
+            "sections": [
+              {
+                "name": "World Sense",
+                "access_rules": [
+                  "$access|Crossroads,dreamer:3"
+                ],
+                "visibility_rules": [
+                  "setting_dreamers"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2240,
+                "y": 700
+              }
+            ]
+          },
+          {
+            "name": "Ancestral Mound",
+            "sections": [
+              {
+                "name": "Vengeful Spirit",
+                "access_rules": [
+                  "$access|Ancestral_Mound"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Soul Catcher",
+                "access_rules": [
+                  "$access|Ancestral_Mound,claw",
+                  "$access|Ancestral_Mound,$baldurs",
+                  "$access|Ancestral_Mound,wings,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2055,
+                "y": 840
+              }
+            ]
+          },
+          {
+            "name": "Grubfather",
+            "access_rules": [
+              "$access|Crossroads"
+            ],
+            "sections": [
+              {
+                "name": "Grubsong",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Grubberfly's Elegy",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Mask Shard",
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Pale Ore",
+                "visibility_rules": [
+                  "setting_pale_ore"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Rancid Egg",
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1900,
+                "y": 710
+              }
+            ]
+          },
+          {
+            "name": "Salubra",
+            "access_rules": [
+              "$access|Crossroads,claw",
+              "$access|Crossroads,dash",
+              "$access|Crossroads,wings",
+              "$access|Crossroads,superdash",
+              "$access|Crossroads,$infected",
+              "$access|Crossroads,scream,fireball_skips",
+              "$access|Crossroads,fireball,fireball_skips",
+              "$access|Crossroads,shade_skips"
+            ],
+            "sections": [
+              {
+                "name": "Quick Focus",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Lifeblood Heart",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Steady Body",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Longnail",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Shaman Stone",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2675,
+                "y": 1010
+              }
+            ]
+          },
+          {
+            "name": "Glowing Womb", //TODO: Name
+            "sections": [
+              {
+                "name": "Glowing Womb",
+                "access_rules": [
+                  "$access|Crossroads,superdash,claw",
+                  "$access|Crossroads,superdash,wings",
+                  "$access|Crossroads,superdash,$infected",
+                  "$access|Crossroads,$tunnel,claw",
+                  "$access|Crossroads,$tunnel,wings",
+                  "$access|Crossroads,$tunnel,$infected"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2335,
+                "y": 810
+              }
+            ]
+          },
+          {
+            "name": "False Knight",
+            "sections": [
+              {
+                "name": "City Crest",
+                "access_rules": [
+                  "$access|Crossroads"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Crossroads"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2140,
+                "y": 850
+              }
+            ]
+          },
+          {
+            "name": "Brooding Mawlek",
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Crossroads,$miniboss"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1885,
+                "y": 870
+              }
+            ]
+          },
+          {
+            "name": "Goams",
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Crossroads,claw",
+                  "$access|Crossroads,wings",
+                  "$access|Crossroads,mild_skips"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2130,
+                "y": 945
+              }
+            ]
+          },
+          {
+            "name": "Vessel Fragment", //TODO: Name
+            "sections": [
+              {
+                "name": "Vessel Fragment",
+                "access_rules": [
+                  "$access|Left_Elevator"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2085,
+                "y": 985
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Greenpath",
+        "color": "#CEFEC2",
+        "children": [
+          {
+            "name": "Hornet 1",
+            "sections": [
+              {
+                "name": "Mothwing Cloak",
+                "access_rules": [
+                  "$access|Greenpath"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 815,
+                "y": 760
+              }
+            ]
+          },
+          {
+            "name": "Nailmaster Sheo",
+            "access_rules": [
+              "$access|Greenpath,claw,dash,superdash",
+              "$access|Greenpath,claw,dash,wings",
+              "$access|Greenpath,claw,wings,superdash"
+            ],
+            "sections": [
+              {
+                "name": "Great Slash",
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rancid Egg",
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 475,
+                "y": 950
+              }
+            ]
+          },
+          {
+            "name": "Baldur Shell", //TODO: Name
+            "sections": [
+              {
+                "name": "Baldur Shell",
+                "access_rules": [
+                  "$baldurs,$access|Howling_Cliffs",
+                  "$baldurs,$access|Greenpath,claw",
+                  "$baldurs,$access|Greenpath,wings",
+                  "$baldurs,$access|Greenpath,dash",
+                  "$baldurs,$access|Greenpath,superdash",
+                  "$baldurs,$access|Greenpath,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1300,
+                "y": 650
+              }
+            ]
+          },
+          {
+            "name": "Thorns of Agony", //TODO: Name
+            "sections": [
+              {
+                "name": "Thorns of Agony",
+                "access_rules": [
+                  "$access|Greenpath,dash",
+                  "$access|Greenpath,claw,superdash"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1305,
+                "y": 930
+              }
+            ]
+          },
+          {
+            "name": "Unn",
+            "sections": [
+              {
+                "name": "Shape of Unn",
+                "access_rules": [
+                  "$access|Lake_of_Unn,acid,claw",
+                  "$access|Lake_of_Unn,acid,wings",
+                  "$access|Lake_of_Unn,$skipacid,wings,fireball,fireball_skips,spicy_skips",
+                  "$access|Lake_of_Unn,$skipacid,wings,shade_cloak,sharp_shadow,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 375,
+                "y": 905
+              }
+            ]
+          },
+          {
+            "name": "Stone Sanctuary",
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Stone_Sanctuary"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1670,
+                "y": 1030
+              }
+            ]
+          },
+          {
+            "name": "Vessel Fragment", //TODO: Name
+            "sections": [
+              {
+                "name": "Vessel Fragment",
+                "access_rules": [
+                  "$access|Greenpath,claw",
+                  "$access|Greenpath,spicy_skips,wings"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1010,
+                "y": 1055
+              }
+            ]
+          },
+          {
+            "name": "Geo Chest", //TODO: Name
+            "sections": [
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Greenpath,dash",
+                  "$access|Greenpath,claw",
+                  "$access|Greenpath,wings",
+                  "$access|Greenpath,superdash",
+                  "$access|Greenpath,$airstall",
+                  "$access|Greenpath,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1175,
+                "y": 1080
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Queen's Gardens",
+        "color": "#91B293",
+        "children": [
+          {
+            "name": "White Lady",
+            "sections": [
+              {
+                "name": "Queen Fragment",
+                "access_rules": [
+                  "$access|Far_Queen's_Gardens,shade_cloak,claw,$boss",
+                  "$access|Far_Queen's_Gardens,shade_cloak,wings,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 550,
+                "y": 1145
+              }
+            ]
+          },
+          {
+            "name": "Love Key", //TODO: Name
+            "sections": [
+              {
+                "name": "Love Key",
+                "access_rules": [
+                  "$access|Bottom_Right_Queen's_Gardens,acid",
+                  "$access|Bottom_Right_Queen's_Gardens,$skipacid"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1345,
+                "y": 1480
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Top_Right_Queen's_Gardens,claw",
+                  "$access|Top_Right_Queen's_Gardens,wings",
+                  "$access|Top_Right_Queen's_Gardens,dash"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1085,
+                "y": 1280
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fungal Wastes",
+        "color": "#ECF5C8",
+        "children": [
+          {
+            "name": "Mantis Claw", //TODO: Name
+            "sections": [
+              {
+                "name": "Mantis Claw",
+                "access_rules": [
+                  "$access|Mantis_Village,dash",
+                  "$access|Mantis_Village,wings",
+                  "$access|Mantis_Village,claw",
+                  "$access|Mantis_Village,mild_skips"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1810,
+                "y": 1660
+              }
+            ]
+          },
+          {
+            "name": "Mantis Lords",
+            "sections": [
+              {
+                "name": "Mark of Pride",
+                "access_rules": [
+                  "$access|Mantis_Village,claw",
+                  "$access|Mantis_Village,wings,mild_skips"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Mantis_Village,claw",
+                  "$access|Mantis_Village,wings,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1980,
+                "y": 1715
+              }
+            ]
+          },
+          {
+            "name": "Spore Shroom", //TODO: Name
+            "sections": [
+              {
+                "name": "Spore Shroom",
+                "access_rules": [
+                  "$access|Bottom_Left_Fungal_Wastes,claw,acid",
+                  "$access|Bottom_Left_Fungal_Wastes,claw,dash",
+                  "$access|Bottom_Left_Fungal_Wastes,claw,superdash",
+                  "$access|Bottom_Left_Fungal_Wastes,wings,acid",
+                  "$access|Bottom_Left_Fungal_Wastes,wings,dash"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1520,
+                "y": 1550
+              }
+            ]
+          },
+          {
+            "name": "Dashmaster", //TODO: Name
+            "sections": [
+              {
+                "name": "Dashmaster",
+                "access_rules": [
+                  "$access|Mantis_Outskirts"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1985,
+                "y": 1840
+              }
+            ]
+          },
+          {
+            "name": "Leg Eater",
+            "access_rules": [
+              "$access|Fungal_Wastes,dash",
+              "$access|Fungal_Wastes,wings",
+              "$access|Fungal_Wastes,acid",
+              "$access|Fungal_Wastes,$airstall",
+              "$access|Crossroads,$infected",
+              "$access|Crossroads,dash",
+              "$access|Crossroads,wings",
+              "$access|Crossroads,claw,$airstall"
+            ],
+            "sections": [
+              {
+                "name": "Fragile Heart",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Fragile Greed",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Fragile Strength",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2110,
+                "y": 1190
+              }
+            ]
+          },
+          {
+            "name": "Queen's Station",
+            "access_rules": [
+              "$access|Queen's_Station"
+            ],
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "claw,dash",
+                  "claw,superdash",
+                  "wings"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1570,
+                "y": 1425
+              }
+            ]
+          },
+          {
+            "name": "Bretta",
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Mantis_Outskirts,$access|Dirtmouth,claw,dash",
+                  "$access|Mantis_Outskirts,$access|Dirtmouth,claw,wings",
+                  "$access|Mantis_Outskirts,$access|Dirtmouth,claw,superdash",
+                  "$access|Mantis_Outskirts,$access|Dirtmouth,claw,$airstall,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2020,
+                "y": 1765
+              }
+            ]
+          },
+          {
+            "name": "Shrumal Ogres",
+            "sections": [
+              {
+                "name": "Charm Notch",
+                "access_rules": [
+                  "$access|Fungal_Wastes"
+                ],
+                "visibility_rules": [
+                  "setting_charm_notches"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1905,
+                "y": 1255
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Fungal_Core,claw",
+                  "$access|Fungal_Core,wings"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1725,
+                "y": 1565
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crystal Peak",
+        "color": "#E8C1ED",
+        "children": [
+          {
+            "name": "Mines", //TODO: Name
+            "sections": [
+              {
+                "name": "Crystal Heart",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,superdash",
+                  "$access|Upper_Crystal_Peak,claw,dash",
+                  "$access|Upper_Crystal_Peak,claw,wings",
+                  "$access|Upper_Crystal_Peak,claw,$airstall",
+                  "$access|Upper_Crystal_Peak,wings,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3415,
+                "y": 635
+              }
+            ]
+          },
+          {
+            "name": "Crystallized Mound",
+            "sections": [
+              {
+                "name": "Descending Dark",
+                "access_rules": [
+                  "$access|Crystallized_Mound,quake,claw",
+                  "$access|Crystallized_Mound,quake,wings"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3305,
+                "y": 760
+              }
+            ]
+          },
+          {
+            "name": "Deep Focus", //TODO: Name
+            "sections": [
+              {
+                "name": "Deep Focus",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw,superdash",
+                  "$access|Upper_Crystal_Peak,wings,superdash",
+                  "$access|Upper_Crystal_Peak,spicy_skips,wings,dash"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2475,
+                "y": 650
+              }
+            ]
+          },
+          {
+            "name": "Shopkeeper's Key", //TODO: Name
+            "sections": [
+              {
+                "name": "Shopkeeper's Key",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw",
+                  "$access|Upper_Crystal_Peak,wings"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2805,
+                "y": 480
+              }
+            ]
+          },
+          {
+            "name": "Enraged Guardian",
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw,wings,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2865,
+                "y": 485
+              }
+            ]
+          },
+          {
+            "name": "Hallownest's Crown",
+            "sections": [
+              {
+                "name": "Pale Ore",
+                "access_rules": [
+                  "$access|Hallownest's_Crown"
+                ],
+                "visibility_rules": [
+                  "setting_pale_ore"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3120,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "name": "Geo Chest", //TODO: Name
+            "sections": [
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw,sprintmaster,dashmaster",
+                  "$access|Upper_Crystal_Peak,claw,dash",
+                  "$access|Upper_Crystal_Peak,claw,superdash",
+                  "$access|Upper_Crystal_Peak,wings,elegy,shade_skips,spicy_skips,dash",
+                  "$access|Upper_Crystal_Peak,wings,elegy,shade_skips,spicy_skips,sprintmaster,dashmaster"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2960,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Crossroads,quake,wings",
+                  "$access|Crossroads,quake,dash",
+                  "$access|Crystal_Peak,claw,wings",
+                  "$access|Crystal_Peak,claw,superdash"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2650,
+                "y": 745
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Crystal_Peak"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2865,
+                "y": 785
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,quake"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2945,
+                "y": 480
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "City of Tears",
+        "color": "#ACB5FA",
+        "children": [
+          {
+            "name": "Watcher Knights",
+            "sections": [
+              {
+                "name": "Lurien the Watcher",
+                "access_rules": [
+                  "$access|Right_City,claw,dream_nail,wings,$boss",
+                  "$access|Right_City,claw,dream_nail,mild_skips,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_dreamers"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Right_City,claw,wings,$boss",
+                  "$access|Right_City,claw,mild_skips,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3040,
+                "y": 1120
+              }
+            ]
+          },
+          {
+            "name": "Soul Warrior",
+            "sections": [
+              {
+                "name": "Shade Soul",
+                "access_rules": [
+                  "$access|Soul_Sanctum,elegant_key,$miniboss"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2685,
+                "y": 1355
+              }
+            ]
+          },
+          {
+            "name": "Soul Master",
+            "sections": [
+              {
+                "name": "Desolate Dive",
+                "access_rules": [
+                  "$access|Soul_Sanctum,claw",
+                  "$access|Soul_Sanctum,wings"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Soul_Sanctum,claw"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2650,
+                "y": 1275
+              }
+            ]
+          },
+          {
+            "name": "Spell Twister", //TODO: Name
+            "sections": [
+              {
+                "name": "Spell Twister",
+                "access_rules": [
+                  "$access|Soul_Sanctum,claw",
+                  "$access|Soul_Sanctum,wings"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2825,
+                "y": 1205
+              }
+            ]
+          },
+          {
+            "name": "Simple Key", //TODO: Name
+            "sections": [
+              {
+                "name": "Simple Key",
+                "access_rules": [
+                  "$access|Left_Elevator"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2465,
+                "y": 1320
+              }
+            ]
+          },
+          {
+            "name": "The Collector",
+            "sections": [
+              {
+                "name": "Collector's Map",
+                "access_rules": [
+                  "$access|Tower_of_Love,love_key,claw,$boss",
+                  "$access|Tower_of_Love,love_key,wings,spicy_skips,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3605,
+                "y": 1525
+              }
+            ]
+          },
+          {
+            "name": "Vessel Fragment", //TODO: Name
+            "sections": [
+              {
+                "name": "Vessel Fragment",
+                "access_rules": [
+                  "$access|Upper_King's_Station,$miniboss"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3420,
+                "y": 1470
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Left_City,claw",
+                  "$access|Left_City,wings",
+                  "$access|Left_City,mild_skips"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2690,
+                "y": 1550
+              }
+            ]
+          },
+          {
+            "name": "Pleasure House",
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Pleasure_House"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3215,
+                "y": 1390
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fog Canyon",
+        "color": "#E9C0E0",
+        "children": [
+          {
+            "name": "Teacher's Archives",
+            "sections": [
+              {
+                "name": "Monomon the Teacher",
+                "access_rules": [
+                  "$access|Teacher's_Archives,claw,dream_nail,acid",
+                  "$access|Teacher's_Archives,claw,dream_nail,superdash,acid_skips"
+                ],
+                "visibility_rules": [
+                  "setting_dreamers"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1600,
+                "y": 1230
+              }
+            ]
+          },
+          {
+            "name": "Overgrown Mound",
+            "sections": [
+              {
+                "name": "Howling Wraiths",
+                "access_rules": [
+                  "$access|Overgrown_Mound"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1090,
+                "y": 1190
+              }
+            ]
+          },
+          {
+            "name": "Charm Notch", //TODO: Name
+            "sections": [
+              {
+                "name": "Charm Notch",
+                "access_rules": [
+                  "$access|Right_Fog_Canyon,claw,acid",
+                  "$access|Right_Fog_Canyon,claw,dash,superdash,acid_skips",
+                  "$access|Right_Fog_Canyon,claw,wings,dash,acid_skips",
+                  "$access|Right_Fog_Canyon,claw,wings,$airstall,acid_skips",
+                  "$access|Right_Fog_Canyon,claw,dash,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_charm_notches"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1730,
+                "y": 1075
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deepnest",
+        "color": "#A1AFCA",
+        "children": [
+          {
+            "name": "Beast's Den",
+            "access_rules": [
+              "$access|Beast's_Den"
+            ],
+            "sections": [
+              {
+                "name": "Herrah the Beast",
+                "access_rules": [
+                  "claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_dreamers"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "claw",
+                  "wings,spicy_skips,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 325,
+                "y": 1860
+              }
+            ]
+          },
+          {
+            "name": "Sharp Shadow", //TODO: Name
+            "sections": [
+              {
+                "name": "Sharp Shadow",
+                "access_rules": [
+                  "$access|Deepnest,shade_cloak"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1700,
+                "y": 2180
+              }
+            ]
+          },
+          {
+            "name": "Weaver's Den",
+            "access_rules": [
+              "$access|Weaver's_Den"
+            ],
+            "sections": [
+              {
+                "name": "Weaversong",
+                "access_rules": [
+                  "claw",
+                  "wings"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "claw,superdash",
+                  "wings,dash"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "spike_tunnels",
+                  "dash"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 950,
+                "y": 1950
+              }
+            ]
+          },
+          {
+            "name": "Ruined Tramway",
+            "sections": [
+              {
+                "name": "Tram Pass",
+                "access_rules": [
+                  "$access|Failed_Tramway,claw",
+                  "$access|Failed_Tramway,wings,mild_skips"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 890,
+                "y": 1740
+              }
+            ]
+          },
+          {
+            "name": "Mask Shard", //TODO: Name
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Fungal_Core"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1700,
+                "y": 1855
+              }
+            ]
+          },
+          {
+            "name": "Vessel Fragment", //TODO: Name
+            "sections": [
+              {
+                "name": "Vessel Fragment",
+                "access_rules": [
+                  "$access|Deepnest,claw",
+                  "$access|Deepnest,wings"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1850,
+                "y": 1990
+              }
+            ]
+          },
+          {
+            "name": "Nosk",
+            "sections": [
+              {
+                "name": "Pale Ore",
+                "access_rules": [
+                  "$access|Deepnest,claw,wings,$boss",
+                  "$access|Deepnest,claw,superdash,$boss",
+                  "$access|Deepnest,claw,shade_skips,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_pale_ore"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1545,
+                "y": 2130
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Dark_Deepnest,claw",
+                  "$access|Dark_Deepnest,wings"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 735,
+                "y": 1985
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Resting Grounds",
+        "color": "#DEB295",
+        "children": [
+          {
+            "name": "Dream Nail", //TODO: Name
+            "sections": [
+              {
+                "name": "Dream Nail",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3320,
+                "y": 945
+              }
+            ]
+          },
+          {
+            "name": "Seer",
+            "access_rules": [
+              "$access|Upper_Resting_Grounds"
+            ],
+            "sections": [
+              {
+                "name": "Dream Gate",
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Awoken Dream Nail",
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Dream Wielder",
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Mask Shard",
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Vessel Fragment",
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Pale Ore",
+                "visibility_rules": [
+                  "setting_pale_ore"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3420,
+                "y": 810
+              }
+            ]
+          },
+          {
+            "name": "Soul Eater", //TODO: Name
+            "sections": [
+              {
+                "name": "Soul Eater",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds,quake,claw",
+                  "$access|Upper_Resting_Grounds,quake,wings"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3735,
+                "y": 980
+              }
+            ]
+          },
+          {
+            "name": "Dreamshield", //TODO: Name
+            "sections": [
+              {
+                "name": "Dreamshield",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3325,
+                "y": 855
+              }
+            ]
+          },
+          {
+            "name": "Grey Mourner",
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds,$access|Top_Left_Queen's_Gardens,quake,claw,wings,superdash,acid,shade_cloak"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3660,
+                "y": 940
+              }
+            ]
+          },
+          {
+            "name": "Geo Chest", //TODO: Name
+            "sections": [
+              {
+                "name": "Geo Chest",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds,quake"
+                ],
+                "visibility_rules": [
+                  "setting_geo_chests"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3600,
+                "y": 990
+              }
+            ]
+          },
+          {
+            "name": "Blue Lake",
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Blue_Lake,wings",
+                  "$access|Blue_Lake,superdash"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2860,
+                "y": 990
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kingdom's Edge",
+        "color": "#D4C7B6",
+        "children": [
+          {
+            "name": "Nailmaster Oro",
+            "sections": [
+              {
+                "name": "Dash Slash",
+                "access_rules": [
+                  "$access|Central_Kingdom's_Edge,claw",
+                  "$access|Central_Kingdom's_Edge,wings",
+                  "$access|Central_Kingdom's_Edge,acid,dash,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4290,
+                "y": 1845
+              }
+            ]
+          },
+          {
+            "name": "Quick Slash", //TODO: Name
+            "sections": [
+              {
+                "name": "Quick Slash",
+                "access_rules": [
+                  "$access|Central_Kingdom's_Edge,claw,quake,dash",
+                  "$access|Central_Kingdom's_Edge,claw,quake,spike_tunnels",
+                  "$access|Central_Kingdom's_Edge,wings,quake,dash",
+                  "$access|Central_Kingdom's_Edge,wings,quake,spike_tunnels"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4180,
+                "y": 1925
+              }
+            ]
+          },
+          {
+            "name": "Pale Lurker",
+            "sections": [
+              {
+                "name": "Simple Key",
+                "access_rules": [
+                  "$access|Pale_Lurker_Area,claw,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4075,
+                "y": 1330
+              }
+            ]
+          },
+          {
+            "name": "Hornet 2",
+            "sections": [
+              {
+                "name": "King's Brand",
+                "access_rules": [
+                  "$access|Cast_Off_Shell,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4310,
+                "y": 1735
+              }
+            ]
+          },
+          {
+            "name": "Colosseum",
+            "sections": [
+              {
+                "name": "Trial of the Warrior",
+                "access_rules": [
+                  "$access|Colosseum,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_charm_notches"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Trial of the Conqueror",
+                "access_rules": [
+                  "$access|Colosseum,claw,$boss",
+                  "$access|Colosseum,spicy_skips,wings,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_pale_ore"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3650,
+                "y": 1260
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Upper_Kingdom's_Edge,quake,claw",
+                  "$access|Upper_Kingdom's_Edge,quake,wings"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4270,
+                "y": 1930
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Upper_Kingdom's_Edge,claw",
+                  "$access|Upper_Kingdom's_Edge,wings"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3750,
+                "y": 1375
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Hive",
+        "color": "#D8CB85",
+        "children": [
+          {
+            "name": "Hive Knight",
+            "sections": [
+              {
+                "name": "Hiveblood",
+                "access_rules": [
+                  "$access|Hive,claw,wings,$boss",
+                  "$access|Hive,mild_skips,claw,$boss",
+                  "$access|Hive,mild_skips,wings,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4070,
+                "y": 1960
+              }
+            ]
+          },
+          {
+            "name": "Mask Shard", //TODO: Name
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Hive,claw,wings",
+                  "$access|Hive,mild_skips,claw",
+                  "$access|Hive,mild_skips,wings"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3800,
+                "y": 1965
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Royal Waterways",
+        "color": "#94F5FB",
+        "children": [
+          {
+            "name": "Isma's Tear", //TODO: Name
+            "sections": [
+              {
+                "name": "Isma's Tear",
+                "access_rules": [
+                  "$access|Isma's_Grove"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3370,
+                "y": 1950
+              }
+            ]
+          },
+          {
+            "name": "Dung Defender",
+            "sections": [
+              {
+                "name": "Defender's Crest",
+                "access_rules": [
+                  "$access|Central_Left_Waterways,claw,$boss",
+                  "$access|Central_Left_Waterways,wings,spicy_skips,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2960,
+                "y": 1805
+              }
+            ]
+          },
+          {
+            "name": "Flukemarm",
+            "sections": [
+              {
+                "name": "Flukenest",
+                "access_rules": [
+                  "$access|Lower_Left_Waterways,$boss"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2435,
+                "y": 1940
+              }
+            ]
+          },
+          {
+            "name": "Godseeker",
+            "sections": [
+              {
+                "name": "Godtuner",
+                "access_rules": [
+                  "$access|Junk_Pit,simple_key:4"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2085,
+                "y": 1965
+              }
+            ]
+          },
+          {
+            "name": "Mask Shard", //TODO: Name
+            "sections": [
+              {
+                "name": "Mask Shard",
+                "access_rules": [
+                  "$access|Upper_Left_Waterways",
+                  "$access|Far_Left_Waterways"
+                ],
+                "visibility_rules": [
+                  "setting_mask_shards"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2160,
+                "y": 1815
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Right_Waterways"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3145,
+                "y": 1940
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Upper_Left_Waterways",
+                  "$access|Central_Left_Waterways,claw",
+                  "$access|Central_Left_Waterways,wings",
+                  "$access|Central_Left_Waterways,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2665,
+                "y": 1850
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Upper_Left_Waterways",
+                  "$access|Far_Left_Waterways"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2395,
+                "y": 1805
+              }
+            ]
+          },
+          {
+            "name": "Rancid Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Rancid Egg",
+                "access_rules": [
+                  "$access|Upper_Left_Waterways,claw",
+                  "$access|Upper_Left_Waterways,wings,spicy_skips",
+                  "$access|Far_Left_Waterways,claw",
+                  "$access|Far_Left_Waterways,wings,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2215,
+                "y": 1770
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ancient Basin",
+        "color": "#AEAEAE",
+        "children": [
+          {
+            "name": "Broken Vessel",
+            "sections": [
+              {
+                "name": "Monarch Wings",
+                "access_rules": [
+                  "$access|Far_Left_Basin,claw,$miniboss",
+                  "$access|Far_Left_Basin,wings,mild_skips,$miniboss"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1860,
+                "y": 2265
+              }
+            ]
+          },
+          {
+            "name": "Shade Cloak", //TODO: Name
+            "sections": [
+              {
+                "name": "Shade Cloak",
+                "access_rules": [
+                  "$access|Abyss,claw,dash",
+                  "$access|Abyss,claw,wings",
+                  "$access|Abyss,wings,shade_skips",
+                  "$access|Abyss,wings,shade_cloak"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3640,
+                "y": 2730
+              }
+            ]
+          },
+          {
+            "name": "Abyss Shriek",
+            "sections": [
+              {
+                "name": "Abyss Shriek",
+                "access_rules": [
+                  "$access|Abyss,scream"
+                ],
+                "visibility_rules": [
+                  "setting_skills"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2365,
+                "y": 2770
+              }
+            ]
+          },
+          {
+            "name": "Lifeblood Core", //TODO: Name
+            "sections": [
+              {
+                "name": "Lifeblood Core",
+                "access_rules": [
+                  "$access|Abyss,$lifeblood,spicy_skips",
+                  "$access|Abyss,$lifeblood,dash,wings"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2545,
+                "y": 2630
+              }
+            ]
+          },
+          {
+            "name": "The Pale King",
+            "sections": [
+              {
+                "name": "King Fragment",
+                "access_rules": [
+                  "$access|Palace_Grounds,awoken_dream_nail,claw,dash,wings,superdash"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3035,
+                "y": 2230
+              }
+            ]
+          },
+          {
+            "name": "Birthplace",
+            "sections": [
+              {
+                "name": "Void Heart",
+                "access_rules": [
+                  "$access|Abyss,shade_cloak,dream_nail,kingsoul_full,mild_skips",
+                  "$access|Abyss,shade_cloak,dream_nail,kingsoul_full,claw",
+                  "$access|Abyss,shade_cloak,dream_nail,kingsoul_full,wings"
+                ],
+                "visibility_rules": [
+                  "setting_charms"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2675,
+                "y": 2765
+              }
+            ]
+          },
+          {
+            "name": "Simple Key", //TODO: Name
+            "sections": [
+              {
+                "name": "Simple Key",
+                "access_rules": [
+                  "$access|Far_Left_Basin"
+                ],
+                "visibility_rules": [
+                  "setting_keys"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2125,
+                "y": 2375
+              }
+            ]
+          },
+          {
+            "name": "Fountain",
+            "sections": [
+              {
+                "name": "Vessel Fragment",
+                "access_rules": [
+                  "$access|Mid_Basin,claw",
+                  "$access|Mid_Basin,wings"
+                ],
+                "visibility_rules": [
+                  "setting_vessel_fragments"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2800,
+                "y": 2130
+              }
+            ]
+          },
+          {
+            "name": "Pale Ore", //TODO: Name
+            "sections": [
+              {
+                "name": "Pale Ore",
+                "access_rules": [
+                  "$access|Mid_Basin,claw",
+                  "$access|Mid_Basin,wings",
+                  "$access|Mid_Basin,dash,mild_skips",
+                  "$access|Mid_Basin,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_pale_ore"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2350,
+                "y": 2135
               }
             ]
           }

@@ -88,3 +88,45 @@ function tunnel()
   end
   return 0
 end
+
+function miniboss()
+  if
+  has("fireball")
+  or
+  has("scream")
+  or
+  has("spicy_skips")
+  then
+    return 1
+  end
+  return 0
+end
+
+function boss()
+  local spells = Tracker:ProviderCountForCode("spell")
+  if
+  spells >= 2
+  or
+  has("shade_soul")
+  or
+  has("descending_dark")
+  or
+  has("abyss_shriek")
+  then
+    return 1
+  end
+  return 0
+end
+
+function lifeblood()
+  if
+  has("lifeblood_heart")
+  or
+  has("lifeblood_core")
+  or
+  has("jonis_blessing")
+  then
+    return 1
+  end
+  return 0
+end

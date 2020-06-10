@@ -915,3 +915,10 @@ function build_areas()
     end
   end
 end
+
+function access(area)
+  if areas[area] then
+    return 1
+  end
+  return 0
+end
