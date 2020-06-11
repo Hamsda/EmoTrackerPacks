@@ -1,4 +1,4 @@
-[ //TODO: Relics next
+[ //TODO: Hallownest Seals next
   {
     "name": "Hallownest",
     "children": [
@@ -92,6 +92,50 @@
                 "map": "hallownest",
                 "x": 1220,
                 "y": 305
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Howling_Cliffs"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1145,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "name": "King's Idol", //TODO: Name
+            "sections": [
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "$access|Howling_Cliffs"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1015,
+                "y": 575
               }
             ]
           }
@@ -419,6 +463,22 @@
                 ],
                 "capture_item": true,
                 "item_count": 1
+              },
+              {
+                "name": "Hallownest Seal",
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "King's Idol",
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "capture_item": true,
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -615,6 +675,30 @@
                 "map": "hallownest",
                 "x": 2085,
                 "y": 985
+              }
+            ]
+          },
+          {
+            "name": "Well",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Crossroads,claw",
+                  "$access|Crossroads,wings,shade_skips",
+                  "$access|Crossroads,wings,$infected"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2090,
+                "y": 665
               }
             ]
           }
@@ -823,6 +907,77 @@
                 "y": 1080
               }
             ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Greenpath"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 965,
+                "y": 770
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Greenpath,claw"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1485,
+                "y": 1060
+              }
+            ]
+          },
+          {
+            "name": "Hallownest Seal",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Greenpath,acid",
+                  "$access|Greenpath,wings,$airstall",
+                  "$access|Greenpath,dash,$airstall",
+                  "$access|Greenpath,dash,dashmaster",
+                  "$access|Greenpath,dash,wings",
+                  "$access|Greenpath,superdash"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1110,
+                "y": 980
+              }
+            ]
           }
         ]
       },
@@ -899,6 +1054,30 @@
                 "y": 1280
               }
             ]
+          },
+          {
+            "name": "Hallownest Seal", //TODO: Name
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Top_Left_Queen's_Gardens,claw",
+                  "$access|Top_Left_Queen's_Gardens,wings",
+                  "$access|Top_Left_Queen's_Gardens,dash,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 485,
+                "y": 1285
+              }
+            ]
           }
         ]
       },
@@ -933,12 +1112,15 @@
           },
           {
             "name": "Mantis Lords",
+            "access_rules": [
+              "$access|Mantis_Village"
+            ],
             "sections": [
               {
                 "name": "Mark of Pride",
                 "access_rules": [
-                  "$access|Mantis_Village,claw",
-                  "$access|Mantis_Village,wings,mild_skips"
+                  "claw",
+                  "wings,mild_skips"
                 ],
                 "visibility_rules": [
                   "setting_charms"
@@ -948,11 +1130,22 @@
               {
                 "name": "Geo Chest",
                 "access_rules": [
-                  "$access|Mantis_Village,claw",
-                  "$access|Mantis_Village,wings,spicy_skips"
+                  "claw",
+                  "wings,spicy_skips"
                 ],
                 "visibility_rules": [
                   "setting_geo_chests"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "claw",
+                  "wings,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -1076,6 +1269,16 @@
                   "setting_mask_shards"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "wings"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1153,6 +1356,76 @@
                 "map": "hallownest",
                 "x": 1725,
                 "y": 1565
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Fungal_Wastes,claw,wings",
+                  "$access|Fungal_Wastes,claw,dash",
+                  "$access|Fungal_Wastes,claw,superdash",
+                  "$access|Fungal_Wastes,claw,$airstall"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1865,
+                "y": 1360
+              }
+            ]
+          },
+          {
+            "name": "Above Mantis Village",
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Fungal_Wastes,claw",
+                  "$access|Fungal_Wastes,wings,shade_skips"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1865,
+                "y": 1580
+              }
+            ]
+          },
+          {
+            "name": "Sporgs",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Fungal_Wastes"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1785,
+                "y": 1305
               }
             ]
           }
@@ -1396,6 +1669,53 @@
                 "y": 480
               }
             ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw",
+                  "$access|Upper_Crystal_Peak,wings",
+                  "$access|Upper_Crystal_Peak,mild_skips"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3000,
+                "y": 475
+              }
+            ]
+          },
+          {
+            "name": "King's Idol", //TODO: Name
+            "sections": [
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw,dash",
+                  "$access|Upper_Crystal_Peak,wings"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2725,
+                "y": 550
+              }
+            ]
           }
         ]
       },
@@ -1405,12 +1725,15 @@
         "children": [
           {
             "name": "Watcher Knights",
+            "access_rules": [
+              "$access|Right_City,claw,wings,$boss",
+              "$access|Right_City,claw,mild_skips,$boss"
+            ],
             "sections": [
               {
                 "name": "Lurien the Watcher",
                 "access_rules": [
-                  "$access|Right_City,claw,dream_nail,wings,$boss",
-                  "$access|Right_City,claw,dream_nail,mild_skips,$boss"
+                  "dream_nail"
                 ],
                 "visibility_rules": [
                   "setting_dreamers"
@@ -1419,12 +1742,15 @@
               },
               {
                 "name": "Geo Chest",
-                "access_rules": [
-                  "$access|Right_City,claw,wings,$boss",
-                  "$access|Right_City,claw,mild_skips,$boss"
-                ],
                 "visibility_rules": [
                   "setting_geo_chests"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Hallownest Seal",
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -1618,6 +1944,16 @@
                   "setting_rancid_eggs"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Pleasure_House"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1625,6 +1961,117 @@
                 "map": "hallownest",
                 "x": 3215,
                 "y": 1390
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Upper_King's_Station"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3415,
+                "y": 1570
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Left_Elevator"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2325,
+                "y": 1295
+              }
+            ]
+          },
+          {
+            "name": "King's Station",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Upper_King's_Station,claw",
+                  "$access|Upper_King's_Station,wings"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3500,
+                "y": 1655
+              }
+            ]
+          },
+          {
+            "name": "Rafters",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Left_City"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2550,
+                "y": 1645
+              }
+            ]
+          },
+          {
+            "name": "Hallownest Seal", //TODO: Name
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Soul_Sanctum,claw,quake"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2540,
+                "y": 1310
               }
             ]
           }
@@ -1701,7 +2148,53 @@
               {
                 "map": "hallownest",
                 "x": 1730,
-                "y": 1075
+                "y": 1080
+              }
+            ]
+          },
+          {
+            "name": "Hallownest Seal",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Left_Fog_Canyon"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1300,
+                "y": 1135
+              }
+            ]
+          },
+          {
+            "name": "Hallownest Seal",
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Right_Fog_Canyon,claw",
+                  "$access|Right_Fog_Canyon,wings",
+                  "$access|Right_Fog_Canyon,dash"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1685,
+                "y": 1080
               }
             ]
           }
@@ -1735,6 +2228,13 @@
                 ],
                 "visibility_rules": [
                   "setting_rancid_eggs"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Hallownest Seal",
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -1931,6 +2431,50 @@
                 "y": 1985
               }
             ]
+          },
+          {
+            "name": "Hallownest Seal", //TODO: Name
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Far_Right_Deepnest,claw,wings"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1580,
+                "y": 1745
+              }
+            ]
+          },
+          {
+            "name": "King's Idol", //TODO: Name
+            "sections": [
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "$access|Failed_Tramway"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1255,
+                "y": 1855
+              }
+            ]
           }
         ]
       },
@@ -2013,6 +2557,22 @@
                 ],
                 "capture_item": true,
                 "item_count": 1
+              },
+              {
+                "name": "Hallownest Seal",
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Arcane Egg",
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "capture_item": true,
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -2024,16 +2584,23 @@
             ]
           },
           {
-            "name": "Soul Eater", //TODO: Name
+            "name": "Below Grey Mourner",
+            "access_rules": [
+              "$access|Upper_Resting_Grounds,quake,claw",
+              "$access|Upper_Resting_Grounds,quake,wings"
+            ],
             "sections": [
               {
                 "name": "Soul Eater",
-                "access_rules": [
-                  "$access|Upper_Resting_Grounds,quake,claw",
-                  "$access|Upper_Resting_Grounds,quake,wings"
-                ],
                 "visibility_rules": [
                   "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Wanderer's Journal",
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -2132,6 +2699,51 @@
                 "map": "hallownest",
                 "x": 2860,
                 "y": 990
+              }
+            ]
+          },
+          {
+            "name": "Hallownest Seal", //TODO: Name
+            "sections": [
+              {
+                "name": "Hallownest Seal",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds,quake"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3435,
+                "y": 980
+              }
+            ]
+          },
+          {
+            "name": "King's Idol", //TODO: Name
+            "sections": [
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "$access|Spirits_Glade,claw",
+                  "$access|Spirits_Glade,wings,dash"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3690,
+                "y": 790
               }
             ]
           }
@@ -2312,6 +2924,118 @@
                 "y": 1375
               }
             ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Central_Kingdom's_Edge,claw"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3675,
+                "y": 1655
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Upper_Kingdom's_Edge,claw,wings",
+                  "$access|Upper_Kingdom's_Edge,claw,spicy_skips",
+                  "$access|Upper_Kingdom's_Edge,wings,spicy_skips"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4030,
+                "y": 1575
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Upper_Kingdom's_Edge,quake"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3950,
+                "y": 1765
+              }
+            ]
+          },
+          {
+            "name": "King's Idol", //TODO: Name
+            "sections": [
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "$access|Top_Kingdom's_Edge"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3555,
+                "y": 1320
+              }
+            ]
+          },
+          {
+            "name": "King's Idol", //TODO: Name
+            "sections": [
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "$access|Pale_Lurker_Area"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 4200,
+                "y": 1340
+              }
+            ]
           }
         ]
       },
@@ -2397,15 +3121,25 @@
           },
           {
             "name": "Dung Defender",
+            "access_rules": [
+              "$access|Central_Left_Waterways,claw,$boss",
+              "$access|Central_Left_Waterways,wings,spicy_skips,$boss"
+            ],
             "sections": [
               {
                 "name": "Defender's Crest",
-                "access_rules": [
-                  "$access|Central_Left_Waterways,claw,$boss",
-                  "$access|Central_Left_Waterways,wings,spicy_skips,$boss"
-                ],
                 "visibility_rules": [
                   "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "King's Idol",
+                "access_rules": [
+                  "quake"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -2657,16 +3391,30 @@
             ]
           },
           {
-            "name": "Lifeblood Core", //TODO: Name
+            "name": "Lifeblood Gate", //TODO: Name
+            "access_rules": [
+              "$access|Abyss,$lifeblood"
+            ],
             "sections": [
               {
                 "name": "Lifeblood Core",
                 "access_rules": [
-                  "$access|Abyss,$lifeblood,spicy_skips",
-                  "$access|Abyss,$lifeblood,dash,wings"
+                  "spicy_skips",
+                  "dash,wings"
                 ],
                 "visibility_rules": [
                   "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Arcane Egg",
+                "access_rules": [
+                  "superdash,claw",
+                  "superdash,wings"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -2674,8 +3422,8 @@
             "map_locations": [
               {
                 "map": "hallownest",
-                "x": 2545,
-                "y": 2630
+                "x": 2590,
+                "y": 2510
               }
             ]
           },
@@ -2703,16 +3451,26 @@
           },
           {
             "name": "Birthplace",
+            "access_rules": [
+              "$access|Abyss,kingsoul_full"
+            ],
             "sections": [
               {
                 "name": "Void Heart",
                 "access_rules": [
-                  "$access|Abyss,shade_cloak,dream_nail,kingsoul_full,mild_skips",
-                  "$access|Abyss,shade_cloak,dream_nail,kingsoul_full,claw",
-                  "$access|Abyss,shade_cloak,dream_nail,kingsoul_full,wings"
+                  "shade_cloak,dream_nail,mild_skips",
+                  "shade_cloak,dream_nail,claw",
+                  "shade_cloak,dream_nail,wings"
                 ],
                 "visibility_rules": [
                   "setting_charms"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Arcane Egg",
+                "visibility_rules": [
+                  "setting_relics"
                 ],
                 "item_count": 1
               }
@@ -2792,6 +3550,52 @@
                 "map": "hallownest",
                 "x": 2350,
                 "y": 2135
+              }
+            ]
+          },
+          {
+            "name": "Wanderer's Journal", //TODO: Name
+            "sections": [
+              {
+                "name": "Wanderer's Journal",
+                "access_rules": [
+                  "$access|Upper_Basin,dash",
+                  "$access|Upper_Basin,spike_tunnels"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2970,
+                "y": 2035
+              }
+            ]
+          },
+          {
+            "name": "Arcane Egg", //TODO: Name
+            "sections": [
+              {
+                "name": "Arcane Egg",
+                "access_rules": [
+                  "$access|Abyss,claw,dash,shade_cloak",
+                  "$access|Abyss,wings,shade_cloak"
+                ],
+                "visibility_rules": [
+                  "setting_relics"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3570,
+                "y": 2760
               }
             ]
           }
