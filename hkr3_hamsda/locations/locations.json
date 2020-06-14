@@ -1,4 +1,4 @@
-[ //TODO: Hallownest Seals next
+[
   {
     "name": "Hallownest",
     "children": [
@@ -136,6 +136,31 @@
                 "map": "hallownest",
                 "x": 1015,
                 "y": 575
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Howling_Cliffs,claw,dream_nail",
+                  "$access|Howling_Cliffs,wings,dream_nail",
+                  "$access|Howling_Cliffs,dash,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1085,
+                "y": 545
               }
             ]
           }
@@ -407,6 +432,19 @@
                 "visibility_rules": [
                   "setting_charms"
                 ],
+                "item_count": 1
+              },
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Ancestral_Mound,wings,claw,dream_nail",
+                  "$access|Ancestral_Mound,wings,$baldurs,dream_nail",
+                  "$access|Ancestral_Mound,claw,spicy_skips,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -701,6 +739,29 @@
                 "y": 665
               }
             ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Crossroads,claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1980,
+                "y": 695
+              }
+            ]
           }
         ]
       },
@@ -978,6 +1039,29 @@
                 "y": 980
               }
             ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Far_Queen's_Gardens,$access|Greenpath,claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 915,
+                "y": 1070
+              }
+            ]
           }
         ]
       },
@@ -1076,6 +1160,29 @@
                 "map": "hallownest",
                 "x": 485,
                 "y": 1285
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Bottom_Right_Queen's_Gardens,claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1165,
+                "y": 1465
               }
             ]
           }
@@ -1397,6 +1504,17 @@
                   "setting_relics"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Fungal_Wastes,claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1426,6 +1544,29 @@
                 "map": "hallownest",
                 "x": 1785,
                 "y": 1305
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Right_Fog_Canyon,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1920,
+                "y": 1180
               }
             ]
           }
@@ -1714,6 +1855,30 @@
                 "map": "hallownest",
                 "x": 2725,
                 "y": 550
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Upper_Crystal_Peak,claw,dash,dream_nail",
+                  "$access|Upper_Crystal_Peak,wings,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3200,
+                "y": 420
               }
             ]
           }
@@ -2072,6 +2237,29 @@
                 "map": "hallownest",
                 "x": 2540,
                 "y": 1310
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Left_Elevator,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 2470,
+                "y": 1360
               }
             ]
           }
@@ -2475,6 +2663,32 @@
                 "y": 1855
               }
             ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Dark_Deepnest,lantern,claw,dream_nail",
+                  "$access|Dark_Deepnest,lantern,wings,dream_nail",
+                  "$access|Dark_Deepnest,dark_rooms,claw,dream_nail",
+                  "$access|Dark_Deepnest,dark_rooms,wings,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 740,
+                "y": 1985
+              }
+            ]
           }
         ]
       },
@@ -2744,6 +2958,54 @@
                 "map": "hallownest",
                 "x": 3690,
                 "y": 790
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Upper_Resting_Grounds,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3445,
+                "y": 850
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Spirits_Glade,claw,dash,dream_nail",
+                  "$access|Spirits_Glade,claw,wings,dream_nail",
+                  "$access|Spirits_Glade,claw,$airstall,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3685,
+                "y": 725
               }
             ]
           }
@@ -3036,6 +3298,30 @@
                 "y": 1340
               }
             ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Upper_Kingdom's_Edge,claw,dream_nail",
+                  "$access|Upper_Kingdom's_Edge,wings,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3750,
+                "y": 1605
+              }
+            ]
           }
         ]
       },
@@ -3088,6 +3374,29 @@
                 "map": "hallownest",
                 "x": 3800,
                 "y": 1965
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Hive,claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 1980,
+                "y": 695
               }
             ]
           }
@@ -3311,6 +3620,29 @@
                 "map": "hallownest",
                 "x": 2215,
                 "y": 1770
+              }
+            ]
+          },
+          {
+            "name": "Whispering Root", //TODO: Name
+            "sections": [
+              {
+                "name": "Whispering Root",
+                "access_rules": [
+                  "$access|Waterways_Shaft,claw,dream_nail"
+                ],
+                "visibility_rules": [
+                  "setting_whispering_roots"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "hallownest",
+                "x": 3050,
+                "y": 2000
               }
             ]
           }
