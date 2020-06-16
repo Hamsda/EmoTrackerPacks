@@ -1024,6 +1024,7 @@
                   "$access|Greenpath,dash,$airstall",
                   "$access|Greenpath,dash,dashmaster",
                   "$access|Greenpath,dash,wings",
+                  "$access|Greenpath,dash,claw",
                   "$access|Greenpath,superdash"
                 ],
                 "visibility_rules": [
@@ -1099,7 +1100,10 @@
                 "name": "Love Key",
                 "access_rules": [
                   "$access|Bottom_Right_Queen's_Gardens,acid",
-                  "$access|Bottom_Right_Queen's_Gardens,$skipacid"
+                  "$access|Bottom_Right_Queen's_Gardens,$skipacid",
+                  "$access|Bottom_Right_Queen's_Gardens,spicy_skips,claw,dash,wings,dashmaster",
+                  "$access|Bottom_Right_Queen's_Gardens,spicy_skips,claw,dash,wings,$airstall",
+                  "$access|Bottom_Right_Queen's_Gardens,spicy_skips,shade_cloak,sharp_shadow,wings"
                 ],
                 "visibility_rules": [
                   "setting_keys"
@@ -1320,6 +1324,7 @@
               "$access|Fungal_Wastes,wings",
               "$access|Fungal_Wastes,acid",
               "$access|Fungal_Wastes,$airstall",
+              "$access|Fungal_Wastes,claw",
               "$access|Crossroads,$infected",
               "$access|Crossroads,dash",
               "$access|Crossroads,wings",

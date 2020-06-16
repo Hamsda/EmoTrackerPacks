@@ -431,6 +431,9 @@ area_connections = {
     end
   },
   ["Central_Left_Waterways"] = {
+    ["Right_City"] = function()
+      return has("spicy_skips") and has("wings")
+    end,
     ["Upper_Left_Waterways"] = function()
       return has("claw") or (has("wings") and has("mild_skips"))
     end,
@@ -458,6 +461,9 @@ area_connections = {
     end
   },
   ["Waterways_Shaft"] = {
+    ["Right_City"] = function()
+      return has("claw")
+    end,
     ["Central_Left_Waterways"] = function()
       return tunnel() > 0 and (has("superdash") or has("acid")) and (has("claw") or has("wings") or has("spicy_skips"))
     end,
