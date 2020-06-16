@@ -2017,7 +2017,10 @@
               {
                 "name": "Simple Key",
                 "access_rules": [
-                  "$access|Left_Elevator"
+                  "$access|Left_Elevator,dash",
+                  "$access|Left_Elevator,wings",
+                  "$access|Left_Elevator,superdash",
+                  "$access|Left_Elevator,mild_skips"
                 ],
                 "visibility_rules": [
                   "setting_keys"
@@ -2280,8 +2283,8 @@
               {
                 "name": "Monomon the Teacher",
                 "access_rules": [
-                  "$access|Teacher's_Archives,claw,dream_nail,acid",
-                  "$access|Teacher's_Archives,claw,dream_nail,superdash,acid_skips"
+                  "$access|Teacher's_Archives,claw,dream_nail,$aerialminiboss,acid",
+                  "$access|Teacher's_Archives,claw,dream_nail,$aerialminiboss,superdash,acid_skips"
                 ],
                 "visibility_rules": [
                   "setting_dreamers"
@@ -2632,7 +2635,7 @@
               {
                 "name": "Hallownest Seal",
                 "access_rules": [
-                  "$access|Far_Right_Deepnest,claw,wings"
+                  "$access|Far_Right_Deepnest,claw"
                 ],
                 "visibility_rules": [
                   "setting_relics"

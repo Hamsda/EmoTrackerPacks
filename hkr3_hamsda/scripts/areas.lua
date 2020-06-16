@@ -319,6 +319,9 @@ area_connections = {
     end
   },
   ["Mantis_Outskirts"] = {
+    ["Fungal_Wastes"] = function()
+      return true
+    end,
     ["Mantis_Village"] = function()
       return has("dash") or has("claw") or has("wings") or has("superdash") or has("acid")
     end
@@ -352,6 +355,9 @@ area_connections = {
     end
   },
   ["Left_Elevator"] = {
+    ["Crossroads"] = function()
+      return true
+    end,
     ["Can_Stag"] = function()
       return true
     end,
@@ -437,7 +443,7 @@ area_connections = {
   },
   ["Central_Left_Waterways"] = {
     ["Right_City"] = function()
-      return has("spicy_skips") and has("wings")
+      return (has("spicy_skips") and has("wings") and boss() > 0) or (has("superdash") and has("mild_skips") and has("wings"))
     end,
     ["Upper_Left_Waterways"] = function()
       return has("claw") or (has("wings") and has("mild_skips"))
@@ -467,7 +473,7 @@ area_connections = {
   },
   ["Waterways_Shaft"] = {
     ["Right_City"] = function()
-      return has("claw")
+      return has("claw") and (has("dash") or has("wings") or has("superdash") or has("mild_skips"))
     end,
     ["Central_Left_Waterways"] = function()
       return tunnel() > 0 and (has("superdash") or has("acid")) and (has("claw") or has("wings") or has("spicy_skips"))
@@ -803,7 +809,7 @@ area_connections = {
       return true
     end,
     ["Upper_Resting_Grounds"] = function()
-      return true
+      return has("dash") or has("claw") or has("wings") or has("mild_skips")
     end,
     ["Blue_Lake"] = function()
       return has("claw") or has("wings")
@@ -865,7 +871,7 @@ area_connections = {
   },
   ["Howling_Cliffs"] = {
     ["King's_Pass"] = function()
-      return has("dash") or has("claw") or has("wings") or has("mild_skips")
+      return true
     end,
     ["Dirtmouth"] = function()
       return has("superdash") or (has("wings") and has("dash"))
