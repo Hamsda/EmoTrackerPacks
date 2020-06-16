@@ -1729,7 +1729,7 @@
                 "access_rules": [
                   "$access|Upper_Crystal_Peak,claw,sprintmaster,dashmaster",
                   "$access|Upper_Crystal_Peak,claw,dash",
-                  "$access|Upper_Crystal_Peak,claw,superdash",
+                  "$access|Upper_Crystal_Peak,claw,superdash,spicy_skips",
                   "$access|Upper_Crystal_Peak,wings,elegy,shade_skips,spicy_skips,dash",
                   "$access|Upper_Crystal_Peak,wings,elegy,shade_skips,spicy_skips,sprintmaster,dashmaster"
                 ],
@@ -2482,7 +2482,8 @@
               {
                 "name": "Geo Chest",
                 "access_rules": [
-                  "claw,superdash",
+                  "claw,superdash,spike_tunnels",
+                  "claw,superdash,dash",
                   "wings,dash"
                 ],
                 "visibility_rules": [
@@ -2609,7 +2610,7 @@
                 "name": "Rancid Egg",
                 "access_rules": [
                   "$access|Dark_Deepnest,claw",
-                  "$access|Dark_Deepnest,wings"
+                  "$access|Dark_Deepnest,wings,mild_skips"
                 ],
                 "visibility_rules": [
                   "setting_rancid_eggs"
@@ -3026,9 +3027,7 @@
               {
                 "name": "Dash Slash",
                 "access_rules": [
-                  "$access|Central_Kingdom's_Edge,claw",
-                  "$access|Central_Kingdom's_Edge,wings",
-                  "$access|Central_Kingdom's_Edge,acid,dash,spicy_skips"
+                  "$access|Oro_Bench"
                 ],
                 "visibility_rules": [
                   "setting_skills"
@@ -3050,10 +3049,10 @@
               {
                 "name": "Quick Slash",
                 "access_rules": [
-                  "$access|Central_Kingdom's_Edge,claw,quake,dash",
-                  "$access|Central_Kingdom's_Edge,claw,quake,spike_tunnels",
-                  "$access|Central_Kingdom's_Edge,wings,quake,dash",
-                  "$access|Central_Kingdom's_Edge,wings,quake,spike_tunnels"
+                  "$access|Oro_Bench,claw,quake,dash",
+                  "$access|Oro_Bench,claw,quake,spike_tunnels",
+                  "$access|Oro_Bench,wings,quake,dash",
+                  "$access|Oro_Bench,wings,quake,spike_tunnels"
                 ],
                 "visibility_rules": [
                   "setting_charms"
@@ -3152,8 +3151,8 @@
               {
                 "name": "Rancid Egg",
                 "access_rules": [
-                  "$access|Upper_Kingdom's_Edge,quake,claw",
-                  "$access|Upper_Kingdom's_Edge,quake,wings"
+                  "$access|Oro_Bench,quake,claw",
+                  "$access|Oro_Bench,quake,wings"
                 ],
                 "visibility_rules": [
                   "setting_rancid_eggs"
@@ -3220,9 +3219,9 @@
               {
                 "name": "Wanderer's Journal",
                 "access_rules": [
-                  "$access|Upper_Kingdom's_Edge,claw,wings",
-                  "$access|Upper_Kingdom's_Edge,claw,spicy_skips",
-                  "$access|Upper_Kingdom's_Edge,wings,spicy_skips"
+                  "$access|Center_Right_Kingdom's_Edge,wings",
+                  "$access|Center_Right_Kingdom's_Edge,claw,spicy_skips",
+                  "$access|Center_Right_Kingdom's_Edge,claw,$access|Cast_Off_Shell"
                 ],
                 "visibility_rules": [
                   "setting_relics"
@@ -3244,7 +3243,7 @@
               {
                 "name": "Wanderer's Journal",
                 "access_rules": [
-                  "$access|Upper_Kingdom's_Edge,quake"
+                  "$access|Center_Right_Kingdom's_Edge,quake"
                 ],
                 "visibility_rules": [
                   "setting_relics"
@@ -3472,7 +3471,9 @@
               {
                 "name": "Flukenest",
                 "access_rules": [
-                  "$access|Lower_Left_Waterways,$boss"
+                  "$access|Lower_Left_Waterways,shade_soul",
+                  "$access|Lower_Left_Waterways,abyss_shriek",
+                  "$access|Lower_Left_Waterways,$boss,mild_skips"
                 ],
                 "visibility_rules": [
                   "setting_charms"

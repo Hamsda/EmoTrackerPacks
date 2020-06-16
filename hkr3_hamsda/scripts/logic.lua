@@ -95,7 +95,20 @@ function miniboss()
   or
   has("scream")
   or
+  has("quake")
+  or
   has("spicy_skips")
+  then
+    return 1
+  end
+  return 0
+end
+
+function aerialminiboss()
+  if
+  ((has("fireball") or has("scream"))
+  and (has("dash") or has("mild_skips")))
+  or has("spicy_skips")
   then
     return 1
   end

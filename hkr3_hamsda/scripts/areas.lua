@@ -77,6 +77,8 @@ areas = {
   ["Lower_Kingdom's_Edge"] = false,
   ["Central_Kingdom's_Edge"] = false,
   ["Upper_Kingdom's_Edge"] = false,
+  ["Center_Right_Kingdom's_Edge"] = false,
+  ["Oro_Bench"] = false,
   ["Cast_Off_Shell"] = false,
   ["Top_Kingdom's_Edge"] = false,
   ["Hive"] = false,
@@ -124,6 +126,9 @@ area_connections = {
     end
   },
   ["Can_Stag"] = {
+    ["Dirtmouth"] = function()
+      return has("stag_dirtmouth")
+    end,
     ["Crossroads"] = function()
       return has("stag_crossroads")
     end,
@@ -155,7 +160,7 @@ area_connections = {
       return has("stag_queens_gardens") and (has("claw") or has("wings") or (has("dash") and has("spicy_skips")))
     end,
     ["Stag_Nest"] = function()
-      return has("stag", 9)
+      return has("allstag", 9) or has("stag_stagnest")
     end
   },
   ["Crossroads"] = {
@@ -656,8 +661,11 @@ area_connections = {
     end
   },
   ["Central_Kingdom's_Edge"] = {
-    ["Upper_Kingdom's_Edge"] = function()
-      return (has("claw") and (has("dash") or has("wings") or has("superdash") or has("mild_skips"))) or (has("wings") and has("mild_skips")) or (has("acid") or has("dash"))
+    ["Center_Right_Kingdom's_Edge"] = function()
+      return has("claw") or (has("wings") and has("mild_skips")) or (has("acid") and (has("dash") or has("wings")))
+    end,
+    ["Oro_Bench"] = function()
+      return has("claw") or (has("wings") and has("mild_skips")) or (has("acid") and (has("dash") or has("wings")) and has("spicy_skips"))
     end
   },
   ["Upper_Kingdom's_Edge"] = {
@@ -667,6 +675,9 @@ area_connections = {
     ["Central_Kingdom's_Edge"] = function()
       return true
     end,
+    ["Center_Right_Kingdom's_Edge"] = function()
+      return true
+    end,
     ["Cast_Off_Shell"] = function()
       return has("wings") or (has("spicy_skips") and has("claw"))
     end,
@@ -674,8 +685,22 @@ area_connections = {
       return has("claw") or has("wings")
     end
   },
-  ["Cast_Off_Shell"] = {
+  ["Center_Right_Kingdom's_Edge"] = {
+    ["Central_Kingdom's_Edge"] = function()
+      return true
+    end,
     ["Upper_Kingdom's_Edge"] = function()
+      return true
+    end,
+    ["Oro_Bench"] = function()
+      return has("spicy_skips")
+    end
+  },
+  ["Oro_Bench"] = {
+
+  },
+  ["Cast_Off_Shell"] = {
+    ["Center_Right_Kingdom's_Edge"] = function()
       return true
     end
   },
