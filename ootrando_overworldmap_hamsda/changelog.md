@@ -3,6 +3,7 @@
 ## x
 
 - changed spirit boulder gs to be peekable
+- changed time travel behavior
 
 ## 2.9.1.0
 

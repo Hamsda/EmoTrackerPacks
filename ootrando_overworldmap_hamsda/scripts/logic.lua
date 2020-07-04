@@ -8,17 +8,28 @@ function has(item, amount)
   end
 end
 
+function can_time_travel()
+  if has("open_door")
+  or (has("ocarina") and has("time"))
+  then
+    return 1
+  end
+  return 0
+end
+
 function has_age(age)
   if not age then
     print("missing argument: age")
   end
 
+  local time_travel = can_time_travel() > 0
+
   if age == "child" then
-    return (has("time_travel") or has("setting_age_child")) and 1 or 0
+    return (time_travel or has("setting_age_child")) and 1 or 0
   elseif age == "adult" then
-    return (has("time_travel") or has("setting_age_adult")) and 1 or 0
+    return (time_travel or has("setting_age_adult")) and 1 or 0
   elseif age == "both" then
-    return has("time_travel") and 1 or 0
+    return time_travel and 1 or 0
   else
     print("wrong argument: age")
   end

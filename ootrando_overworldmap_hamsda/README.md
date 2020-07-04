@@ -97,12 +97,12 @@ I have not found a good way to represent that a trial started as dispelled.
 
 #### Starting Age
 
-This setting determines which age you started as. Most relevant in combination with Closed Door of Time.
+This setting determines which age you started as.
 
 - ![Child Start](images/setting_age_child.png "Child Start") Link started as child.
 - ![Adult Start](images/setting_age_adult.png "Adult Start") Link started as adult.
 
-Getting ![Time Travel](images/sword2.png "Time Travel") from Temple of Time unlocks checks for the other age.
+If you have selected ![Open Door](images/setting_door_open.png "Open Door") or collected an ![Ocarina](images/fairyocarina.png "Ocarina") and ![Song of Time](images/time_colored.png "Song of Time") the checks for the other age will unlock.
 
 #### Bombchus Are Considered in Logic
 

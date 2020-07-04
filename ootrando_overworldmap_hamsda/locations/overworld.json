@@ -4217,37 +4217,12 @@
                     ]
                   },
                   {
-                    "name": "Door of Time",
-                    "sections": [
-                      {
-                        "name": "Open Sesame",
-                        "access_rules": [
-                          "open_door",
-                          "ocarina,time"
-                        ],
-                        "hosted_item": "time_travel"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1539,
-                        "y": 294
-                      },
-                      {
-                        "map": "adult",
-                        "x": 1539,
-                        "y": 294
-                      }
-                    ]
-                  },
-                  {
                     "name": "Temple of Time",
                     "sections": [
                       {
                         "name": "Sheik at Temple",
                         "access_rules": [
-                          "$has_age|adult,forestmed",
+                          "$can_time_travel,forestmed",
                           "{$hintable}"
                         ],
                         "capture_item": true,
