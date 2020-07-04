@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed spirit boulder gs to be peekable
+
 ## 2.9.1.0
 
 - added available/in logic skulltula counters
