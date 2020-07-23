@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.9.2.0
 
 - changed spirit boulder gs to be peekable
 - changed time travel behavior
