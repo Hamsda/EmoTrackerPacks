@@ -8,17 +8,28 @@ function has(item, amount)
   end
 end
 
+function can_time_travel()
+  if has("open_door")
+  or (has("ocarina") and has("time"))
+  then
+    return 1
+  end
+  return 0
+end
+
 function has_age(age)
   if not age then
     print("missing argument: age")
   end
 
+  local time_travel = can_time_travel() > 0
+
   if age == "child" then
-    return (has("time_travel") or has("setting_age_child")) and 1 or 0
+    return (time_travel or has("setting_age_child")) and 1 or 0
   elseif age == "adult" then
-    return (has("time_travel") or has("setting_age_adult")) and 1 or 0
+    return (time_travel or has("setting_age_adult")) and 1 or 0
   elseif age == "both" then
-    return has("time_travel") and 1 or 0
+    return time_travel and 1 or 0
   else
     print("wrong argument: age")
   end
@@ -325,6 +336,26 @@ function adult_colossus()
   end
   
   return 1, level
+end
+
+function child_death_mountain()
+  if has_age("child") == 0 then
+    return 0
+  end
+
+  if has("postzelda")
+  or (has("dinsfire") and has("magic"))
+  then
+    return 1
+  end
+
+  if has_age("adult") > 0
+  and (has("lift1") or has("bow") or has("hammer"))
+  then
+    return 1
+  end
+
+  return has_explosives()
 end
 
 function link_the_goron()

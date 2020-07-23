@@ -126,7 +126,7 @@
     "access_rules": [
       "dodongo_reg,$has_age|adult",
       "dodongo_reg,$has_explosives",
-      "dodongo_reg,lift1"
+      "dodongo_reg,$child_death_mountain,lift1"
     ],
     "sections": [
       {
@@ -1532,8 +1532,8 @@
         "access_rules": [
           "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
           "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_bombchu],$has_bombchus,scale",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,ironboots,$FTR_or_zora", 
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_jump_dive]", 
+          "@Water Temple/Dark Link Region,ocarina,time,bow,ironboots,$FTR_or_zora",
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_jump_dive]",
           "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_bombchu],$has_bombchus,scale"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
@@ -2164,11 +2164,13 @@
         "name": "GS99 - Boulder Room",
         "short_name": "Boulders",
         "access_rules": [
-          "@Spirit Temple/Early Adult Right Chest,ocarina,time"
+          "@Spirit Temple/Early Adult Right Chest,ocarina,time",
+          "{@Spirit Temple/Early Adult Right Chest}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
