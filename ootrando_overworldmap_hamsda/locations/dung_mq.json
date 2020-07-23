@@ -214,7 +214,7 @@
     "access_rules": [
       "dodongo_mq,$has_age|adult",
       "dodongo_mq,$has_explosives",
-      "dodongo_mq,lift1"
+      "dodongo_mq,$child_death_mountain,lift1"
     ],
     "sections": [
       {

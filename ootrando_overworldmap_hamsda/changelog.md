@@ -4,6 +4,7 @@
 
 - changed spirit boulder gs to be peekable
 - changed time travel behavior
+- fixed some child logic on Death Mountain
 
 ## 2.9.1.0
 

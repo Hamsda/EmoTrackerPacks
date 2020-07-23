@@ -126,7 +126,7 @@
     "access_rules": [
       "dodongo_reg,$has_age|adult",
       "dodongo_reg,$has_explosives",
-      "dodongo_reg,lift1"
+      "dodongo_reg,$child_death_mountain,lift1"
     ],
     "sections": [
       {

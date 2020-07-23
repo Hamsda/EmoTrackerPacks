@@ -338,6 +338,26 @@ function adult_colossus()
   return 1, level
 end
 
+function child_death_mountain()
+  if has_age("child") == 0 then
+    return 0
+  end
+
+  if has("postzelda")
+  or (has("dinsfire") and has("magic"))
+  then
+    return 1
+  end
+
+  if has_age("adult") > 0
+  and (has("lift1") or has("bow") or has("hammer"))
+  then
+    return 1
+  end
+
+  return has_explosives()
+end
+
 function link_the_goron()
   if has_age("adult") == 0 then
     return 0

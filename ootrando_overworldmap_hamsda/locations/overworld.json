@@ -2599,7 +2599,7 @@
                       "sling",
                       "$has_bombchus",
                       "[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
-                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko" 
+                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2940,12 +2940,6 @@
           {
             "name": "Death Mountain",
             "color": "#a01009",
-            "access_rules": [
-              "postzelda",
-              "$has_age|adult",
-              "$has_explosives",
-              "dinsfire,magic"
-            ],
             "children": [
               {
                 "name": "Goron City",
@@ -3027,7 +3021,7 @@
                         "name": "Blow him up",
                         "access_rules": [
                           "$has_age|child,$has_explosives",
-                          "$has_age|child,lift1,[$has_explosives]"
+                          "$child_death_mountain,lift1,[$has_explosives]"
                         ],
                         "item_count": 1
                       }
@@ -3049,11 +3043,13 @@
                         "short_name": "HP :)",
                         "access_rules": [
                           "$has_age|child,ocarina,lullaby,sticks,bombs",
-                          "$has_age|child,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                          "$has_age|child,ocarina,lullaby,sticks,bombchu,[bombs]",
                           "$has_age|child,ocarina,lullaby,sticks,$has_bombchus,[logic_goron_city_pot]",
+                          "$child_death_mountain,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
                           "$has_age|child,dinsfire,magic,bombs",
-                          "$has_age|child,dinsfire,magic,lift1,[logic_goron_city_pot_with_strength]",
+                          "$has_age|child,dinsfire,magic,bombchu,[bombs]",
                           "$has_age|child,dinsfire,magic,$has_bombchus,[logic_goron_city_pot]",
+                          "$has_age|child,dinsfire,magic,lift1,[logic_goron_city_pot_with_strength]",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3076,7 +3072,7 @@
                       {
                         "name": "Play Sarias Song",
                         "access_rules": [
-                          "$has_age|child,ocarina,lullaby,saria",
+                          "$child_death_mountain,ocarina,lullaby,saria",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3180,10 +3176,9 @@
                     "access_rules": [
                       "$link_the_goron",
                       "$has_age|child,$has_explosives",
-                      "$has_age|child,lift1",
                       "$has_age|child,dinsfire,magic",
-                      "$has_age|child,ocarina,lullaby,sticks,postzelda",
-                      "$has_age|child,ocarina,lullaby,sticks,$has_age|adult,hammer"
+                      "$child_death_mountain,lift1",
+                      "$child_death_mountain,ocarina,lullaby,sticks"
                     ],
                     "sections": [
                       {
@@ -3289,6 +3284,10 @@
                       {
                         "name": "DM Trail Freestanding PoH",
                         "short_name": "HP",
+                        "access_rules": [
+                          "$has_age|adult",
+                          "$child_death_mountain"
+                        ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
                         "item_count": 1
@@ -3315,7 +3314,7 @@
                         "name": "Blast it",
                         "access_rules": [
                           "$can_blast",
-                          "$has_age|child,lift1,[logic_dmt_bombable]"
+                          "$child_death_mountain,lift1,[logic_dmt_bombable]"
                         ],
                         "item_count": 1
                       }
@@ -3341,6 +3340,10 @@
                     "sections": [
                       {
                         "name": "Chest",
+                        "access_rules": [
+                          "$has_age|adult",
+                          "$child_death_mountain"
+                        ],
                         "item_count": 1
                       }
                     ],
@@ -3385,8 +3388,8 @@
                     "name": "Biggoron",
                     "access_rules": [
                       "$has_age|adult,$can_blast",
-                      "$has_age|adult,ocarina,bolero,setting_plant_no,beans",
-                      "$has_age|adult,ocarina,bolero,bean_crater_yes",
+                      "$has_age|both,ocarina,bolero,setting_plant_no,beans",
+                      "$has_age|both,ocarina,bolero,bean_crater_yes",
                       "$has_age|adult,ocarina,bolero,hoverboots",
                       "$has_age|adult,ocarina,bolero,hookshot",
                       "$link_the_goron",
@@ -3523,7 +3526,7 @@
                         "name": "Plant Bean",
                         "access_rules": [
                           "$has_age|child,beans,bean_trail_no,$has_explosives",
-                          "$has_age|child,beans,bean_trail_no,lift1"
+                          "$child_death_mountain,beans,bean_trail_no,lift1"
                         ],
                         "visibility_rules": [
                           "setting_plant_yes"
@@ -3534,8 +3537,8 @@
                         "name": "GS30",
                         "access_rules": [
                           "$has_age|child,$has_bottle,$has_explosives",
-                          "$has_age|child,$has_bottle,lift1",
-                          "$has_age|child,$has_bottle,[lift1],boomerang"
+                          "$child_death_mountain,$has_bottle,lift1",
+                          "$child_death_mountain,$has_bottle,[lift1],boomerang"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3700,8 +3703,8 @@
                         "short_name": "HP",
                         "access_rules": [
                           "$can_blast",
-                          "ocarina,bolero,$has_age|adult,setting_plant_no,beans",
-                          "ocarina,bolero,$has_age|adult,bean_crater_yes",
+                          "ocarina,bolero,$has_age|both,setting_plant_no,beans",
+                          "ocarina,bolero,$has_age|both,bean_crater_yes",
                           "ocarina,bolero,$has_age|adult,hookshot",
                           "ocarina,bolero,$has_age|adult,hoverboots",
                           "$link_the_goron",
@@ -3733,8 +3736,8 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|adult,ocarina,bolero,setting_plant_no,beans",
-                          "$has_age|adult,ocarina,bolero,bean_crater_yes",
+                          "$has_age|both,ocarina,bolero,setting_plant_no,beans",
+                          "$has_age|both,ocarina,bolero,bean_crater_yes",
                           "$has_age|adult,ocarina,bolero,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "$has_age|adult,hammer,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "$link_the_goron,[logic_crater_bean_poh_with_hovers],hoverboots",
