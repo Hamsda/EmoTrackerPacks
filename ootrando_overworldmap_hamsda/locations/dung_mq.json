@@ -203,8 +203,9 @@
         "force_invisibility_rules": [
           "deku_reg"
         ],
+        "size": 50,
         "x": 2426,
-        "y": 860
+        "y": 885
       }
     ]
   },
@@ -473,16 +474,18 @@
         "force_invisibility_rules": [
           "dodongo_reg"
         ],
-        "x": 1684,
-        "y": 250
+        "size": 50,
+        "x": 1625,
+        "y": 240
       },
       {
         "map": "adult",
         "force_invisibility_rules": [
           "dodongo_reg"
         ],
-        "x": 1684,
-        "y": 250
+        "size": 50,
+        "x": 1625,
+        "y": 240
       }
     ]
   },
@@ -683,8 +686,9 @@
         "force_invisibility_rules": [
           "jabu_reg"
         ],
-        "x": 2458,
-        "y": 328
+        "size": 50,
+        "x": 2475,
+        "y": 280
       }
     ]
   },
@@ -780,8 +784,9 @@
         "force_invisibility_rules": [
           "ice_reg"
         ],
-        "x": 2471,
-        "y": 276
+        "size": 50,
+        "x": 2455,
+        "y": 275
       }
     ]
   },
@@ -1100,8 +1105,9 @@
         "force_invisibility_rules": [
           "forest_reg"
         ],
-        "x": 2178,
-        "y": 596
+        "size": 50,
+        "x": 2195,
+        "y": 595
       }
     ]
   },
@@ -1380,8 +1386,9 @@
         "force_invisibility_rules": [
           "fire_reg"
         ],
-        "x": 1912,
-        "y": 115
+        "size": 50,
+        "x": 1915,
+        "y": 110
       }
     ]
   },
@@ -1584,8 +1591,9 @@
         "force_invisibility_rules": [
           "water_reg"
         ],
-        "x": 985,
-        "y": 1380
+        "size": 50,
+        "x": 970,
+        "y": 1370
       }
     ]
   },
@@ -1918,8 +1926,9 @@
         "force_invisibility_rules": [
           "shadow_reg"
         ],
-        "x": 2144,
-        "y": 296
+        "size": 50,
+        "x": 2145,
+        "y": 295
       }
     ]
   },
@@ -2292,16 +2301,18 @@
         "force_invisibility_rules": [
           "spirit_reg"
         ],
-        "x": 55,
-        "y": 301
+        "size": 50,
+        "x": 65,
+        "y": 300
       },
       {
         "map": "adult",
         "force_invisibility_rules": [
           "spirit_reg"
         ],
-        "x": 55,
-        "y": 301
+        "size": 50,
+        "x": 65,
+        "y": 300
       }
     ]
   },
@@ -2411,8 +2422,9 @@
         "force_invisibility_rules": [
           "botw_reg"
         ],
-        "x": 1920,
-        "y": 383
+        "size": 50,
+        "x": 1940,
+        "y": 385
       }
     ]
   },
@@ -2618,8 +2630,9 @@
         "force_invisibility_rules": [
           "gc_reg"
         ],
-        "x": 1409,
-        "y": 206
+        "size": 50,
+        "x": 1385,
+        "y": 205
       }
     ]
   },
@@ -2826,8 +2839,9 @@
         "force_invisibility_rules": [
           "gtg_reg"
         ],
-        "x": 481,
-        "y": 474
+        "size": 50,
+        "x": 520,
+        "y": 445
       }
     ]
   }
