@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed dungeon size on the maps
+
 ## 2.9.2.0
 
 - changed spirit boulder gs to be peekable
