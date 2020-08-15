@@ -3,7 +3,7 @@
     "name": "Deku Tree MQ",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "deku_mq,$has_age|child,open_forest",
+      "deku_mq,$has_age|child,setting_forest_open",
       "deku_mq,$has_age|child,sword1,shield1"
     ],
     "sections": [

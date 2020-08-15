@@ -9,7 +9,7 @@ function has(item, amount)
 end
 
 function can_time_travel()
-  if has("open_door")
+  if has("setting_door_open")
   or (has("ocarina") and has("time"))
   then
     return 1
@@ -173,8 +173,8 @@ function hidden_grotto()
 end
 
 function can_leave_forest()
-  if has("open_forest")
-  or has("closed_deku")
+  if has("setting_forest_open")
+  or has("setting_forest_deku")
   or has("sling") and has("sword1") 
   then
     return 1
