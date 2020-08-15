@@ -175,12 +175,23 @@ end
 function can_leave_forest()
   if has("setting_forest_open")
   or has("setting_forest_deku")
-  or has("sling") and has("sword1") 
+  --or has_age("adult")
   then
     return 1
-  else
-    return 0
   end
+
+  if has("shield1") and has("sword1") then
+    if has("sling") then
+      return 1
+    end
+    return 1, AccessibilityLevel.SequenceBreak --TODO: trick logic_deku_b1_skip
+  end
+  
+  if has("deku") then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+
+  return 0
 end
 
 function beyond_mido()

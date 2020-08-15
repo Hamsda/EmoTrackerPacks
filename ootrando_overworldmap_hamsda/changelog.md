@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed closed forest behavior to include sequence breaking Gohma
+
 ## 2.9.3.0
 
 - changed dungeon size on the maps
