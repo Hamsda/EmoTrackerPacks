@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.9.4.0
 
 - changed closed forest behavior to include sequence breaking Gohma
 - improved trade sequences:
