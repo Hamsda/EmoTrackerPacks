@@ -8,16 +8,16 @@
     "stages": [
       {
         "img": "images/setting_forest_closed.png",
-        "codes": "setting_forest,closed_forest"
+        "codes": "setting_forest,setting_forest_closed"
       },
       {
         "img": "images/setting_forest_deku.png",
-        "codes": "setting_forest,closed_deku",
+        "codes": "setting_forest,setting_forest_deku",
         "inherits_codes": false
       },
       {
         "img": "images/setting_forest_open.png",
-        "codes": "setting_forest,open_forest",
+        "codes": "setting_forest,setting_forest_open",
         "inherits_codes": false
       }
     ]
@@ -31,11 +31,11 @@
     "stages": [
       {
         "img": "images/setting_door_closed.png",
-        "codes": "setting_door,closed_door"
+        "codes": "setting_door,setting_door_closed"
       },
       {
         "img": "images/setting_door_open.png",
-        "codes": "setting_door,open_door",
+        "codes": "setting_door,setting_door_open",
         "inherit_codes": false
       }
     ]

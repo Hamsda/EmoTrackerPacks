@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.9.4.0
+
+- changed closed forest behavior to include sequence breaking Gohma
+- improved trade sequences:
+  - added all adult trade items as captures (getting one sets the trade sequence to that item)
+  - fixed child trade to always advance stages properly
+
 ## 2.9.3.0
 
 - changed dungeon size on the maps

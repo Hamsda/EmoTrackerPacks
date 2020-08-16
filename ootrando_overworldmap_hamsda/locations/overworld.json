@@ -332,14 +332,14 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Sell Mask",
+                    "name": "Sell Skull Mask",
                     "access_rules": [
                       "$has_age|child,ocarina,saria,skull"
                     ],
                     "visibility_rules": [
                       "skull"
                     ],
-                    "hosted_item": "skullsold"
+                    "hosted_item": "capture_skullsold"
                   }
                 ],
                 "map_locations": [
@@ -448,14 +448,14 @@
                 "name": "Grog",
                 "sections": [
                   {
-                    "name": "Trade",
+                    "name": "Give Cojiro",
                     "access_rules": [
                       "$has_age|adult,cojiro"
                     ],
                     "visibility_rules": [
                       "cojiro"
                     ],
-                    "hosted_item": "mushroom"
+                    "hosted_item": "capture_mushroom"
                   }
                 ],
                 "map_locations": [
@@ -470,14 +470,14 @@
                 "name": "Fado",
                 "sections": [
                   {
-                    "name": "Trade",
+                    "name": "Give Odd Potion",
                     "access_rules": [
                       "$has_age|adult,oddpotion"
                     ],
                     "visibility_rules": [
                       "oddpotion"
                     ],
-                    "hosted_item": "saw"
+                    "hosted_item": "capture_saw"
                   }
                 ],
                 "map_locations": [
@@ -1117,14 +1117,14 @@
                 "name": "Running Man",
                 "sections": [
                   {
-                    "name": "Sell Mask",
+                    "name": "Sell Bunny Hood",
                     "access_rules": [
                       "$has_age|child,bunny,stones:3"
                     ],
                     "visibility_rules": [
                       "bunny"
                     ],
-                    "hosted_item": "bunnysold"
+                    "hosted_item": "capture_bunnysold"
                   }
                 ],
                 "map_locations": [
@@ -1452,14 +1452,14 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Trade",
+                        "name": "Give Frog",
                         "access_rules": [
                           "$has_age|adult,speedfrog"
                         ],
                         "visibility_rules": [
                           "speedfrog"
                         ],
-                        "hosted_item": "eyedrops"
+                        "hosted_item": "capture_eyedrops"
                       }
                     ],
                     "map_locations": [
@@ -2253,14 +2253,14 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Trade",
+                    "name": "Show Happy Cucco",
                     "access_rules": [
                       "$has_age|adult,pocketcucco"
                     ],
                     "visibility_rules": [
                       "pocketcucco"
                     ],
-                    "hosted_item": "cojiro"
+                    "hosted_item": "capture_cojiro"
                   }
                 ],
                 "map_locations": [
@@ -2275,24 +2275,24 @@
                 "name": "Guard",
                 "sections": [
                   {
-                    "name": "Letter",
+                    "name": "Show Letter",
                     "access_rules": [
                       "$has_age|child,letter"
                     ],
                     "visibility_rules": [
                       "letter"
                     ],
-                    "hosted_item": "lettershown"
+                    "hosted_item": "capture_lettershown"
                   },
                   {
-                    "name": "Keaton",
+                    "name": "Sell Keaton Mask",
                     "access_rules": [
                       "$has_age|child,keaton"
                     ],
                     "visibility_rules": [
                       "keaton"
                     ],
-                    "hosted_item": "keatonsold"
+                    "hosted_item": "capture_keatonsold"
                   }
                 ],
                 "map_locations": [
@@ -2307,14 +2307,14 @@
                 "name": "Old Hag",
                 "sections": [
                   {
-                    "name": "Trade",
+                    "name": "Give Mushroom",
                     "access_rules": [
                       "$has_age|adult,mushroom"
                     ],
                     "visibility_rules": [
                       "mushroom"
                     ],
-                    "hosted_item": "oddpotion"
+                    "hosted_item": "capture_oddpotion"
                   }
                 ],
                 "map_locations": [
@@ -2824,14 +2824,14 @@
                     "name": "Spooky Kid",
                     "sections": [
                       {
-                        "name": "Sell Mask",
+                        "name": "Sell Spooky Mask",
                         "access_rules": [
                           "$has_age|child,spooky"
                         ],
                         "visibility_rules": [
                           "spooky"
                         ],
-                        "hosted_item": "spookysold"
+                        "hosted_item": "capture_spookysold"
                       }
                     ],
                     "map_locations": [
@@ -3397,24 +3397,24 @@
                     ],
                     "sections": [
                       {
-                        "name": "Trade",
+                        "name": "Give Broken Sword",
                         "access_rules": [
                           "brokensword"
                         ],
                         "visibility_rules": [
                           "brokensword"
                         ],
-                        "hosted_item": "prescription"
+                        "hosted_item": "capture_prescription"
                       },
                       {
-                        "name": "Trade",
+                        "name": "Give Eyedrops",
                         "access_rules": [
                           "eyedrops"
                         ],
                         "visibility_rules": [
                           "eyedrops"
                         ],
-                        "hosted_item": "claimcheck"
+                        "hosted_item": "capture_claim"
                       },
                       {
                         "name": "Help him",
@@ -3430,7 +3430,7 @@
                       {
                         "map": "adult",
                         "x": 1825,
-                        "y": 94
+                        "y": 100
                       }
                     ]
                   },
@@ -4038,14 +4038,54 @@
                     "name": "Mask Shop",
                     "sections": [
                       {
-                        "name": "Get Mask",
+                        "name": "Get Keaton Mask",
                         "access_rules": [
-                          "$has_age|child,soldout"
+                          "$has_age|child,lettershown"
                         ],
                         "visibility_rules": [
-                          "soldout"
+                          "lettershown"
                         ],
-                        "hosted_item": "keaton"
+                        "hosted_item": "capture_keaton"
+                      },
+                      {
+                        "name": "Get Skull Mask",
+                        "access_rules": [
+                          "$has_age|child,keatonsold"
+                        ],
+                        "visibility_rules": [
+                          "keatonsold"
+                        ],
+                        "hosted_item": "capture_skullmask"
+                      },
+                      {
+                        "name": "Get Spooky Mask",
+                        "access_rules": [
+                          "$has_age|child,skullsold"
+                        ],
+                        "visibility_rules": [
+                          "skullsold"
+                        ],
+                        "hosted_item": "capture_spooky"
+                      },
+                      {
+                        "name": "Get Bunny Hood",
+                        "access_rules": [
+                          "$has_age|child,spookysold"
+                        ],
+                        "visibility_rules": [
+                          "spookysold"
+                        ],
+                        "hosted_item": "capture_bunny"
+                      },
+                      {
+                        "name": "Get Mask of Truth",
+                        "access_rules": [
+                          "$has_age|child,bunnysold"
+                        ],
+                        "visibility_rules": [
+                          "bunnysold"
+                        ],
+                        "hosted_item": "capture_truth"
                       }
                     ],
                     "map_locations": [
@@ -4353,7 +4393,7 @@
                         "visibility_rules": [
                           "childegg"
                         ],
-                        "hosted_item": "childcucco"
+                        "hosted_item": "capture_childcucco"
                       }
                     ],
                     "map_locations": [
@@ -4382,7 +4422,7 @@
                         "visibility_rules": [
                           "childcucco"
                         ],
-                        "hosted_item": "letter"
+                        "hosted_item": "capture_letter"
                       }
                     ],
                     "map_locations": [
@@ -5085,14 +5125,14 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Trade",
+                        "name": "Give Prescription",
                         "access_rules": [
                           "prescription"
                         ],
                         "visibility_rules": [
                           "prescription"
                         ],
-                        "hosted_item": "speedfrog"
+                        "hosted_item": "capture_frog"
                       }
                     ],
                     "map_locations": [
@@ -5598,14 +5638,14 @@
                     "name": "Master Carpenter",
                     "sections": [
                       {
-                        "name": "Trade",
+                        "name": "Give Saw",
                         "access_rules": [
                           "saw"
                         ],
                         "visibility_rules": [
                           "saw"
                         ],
-                        "hosted_item": "brokensword"
+                        "hosted_item": "capture_brokensword"
                       }
                     ],
                     "map_locations": [

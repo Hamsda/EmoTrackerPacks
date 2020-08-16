@@ -3,7 +3,7 @@
     "name": "Deku Tree",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "deku_reg,$has_age|child,open_forest",
+      "deku_reg,$has_age|child,setting_forest_open",
       "deku_reg,$has_age|child,sword1,shield1"
     ],
     "sections": [
@@ -84,8 +84,8 @@
         "name": "GS11 - Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
-          "$has_explosives,[sling],boomerang,sticks",
-          "$has_explosives,[sling],boomerang,dinsfire,magic",
+          "$has_explosives,[sling],boomerang,sticks", //TODO: trick logic_deku_b1_skip
+          "$has_explosives,[sling],boomerang,dinsfire,magic", //TODO: trick logic_deku_b1_skip
           "{$has_explosives,sling,sticks}",
           "{$has_explosives,sling,dinsfire,magic}"
         ],
@@ -100,8 +100,8 @@
       {
         "name": "Queen Gohma",
         "access_rules": [
-          "shield1,[sling],sticks",
-          "shield1,[sling],sword1,dinsfire,magic"
+          "shield1,[sling],sticks", //TODO: trick logic_deku_b1_skip
+          "shield1,[sling],sword1,dinsfire,magic" //TODO: trick logic_deku_b1_skip
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",

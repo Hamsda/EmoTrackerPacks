@@ -9,7 +9,7 @@ function has(item, amount)
 end
 
 function can_time_travel()
-  if has("open_door")
+  if has("setting_door_open")
   or (has("ocarina") and has("time"))
   then
     return 1
@@ -173,14 +173,25 @@ function hidden_grotto()
 end
 
 function can_leave_forest()
-  if has("open_forest")
-  or has("closed_deku")
-  or has("sling") and has("sword1") 
+  if has("setting_forest_open")
+  or has("setting_forest_deku")
+  --or has_age("adult")
   then
     return 1
-  else
-    return 0
   end
+
+  if has("shield1") and has("sword1") then
+    if has("sling") then
+      return 1
+    end
+    return 1, AccessibilityLevel.SequenceBreak --TODO: trick logic_deku_b1_skip
+  end
+  
+  if has("deku") then
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+
+  return 0
 end
 
 function beyond_mido()
