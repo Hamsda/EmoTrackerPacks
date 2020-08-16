@@ -40,12 +40,12 @@
           "bluetunic"
         ],
         [
-          "bottlecapture",
-          "rutocapture",
-          "",
-          "",
-          "adulttrade",
-          "kidtrade",
+          "capture_bottle",
+          "capture_ruto",
+          "generic_map",
+          "generic_compass",
+          "generic_small_key",
+          "generic_boss_key",
           "scale1",
           "ironboots",
           "hoverboots"
@@ -73,15 +73,26 @@
           "triforce"
         ],
         [
-          "",
-          "",
-          "generic_map",
-          "generic_compass",
-          "generic_small_key",
-          "generic_boss_key",
+          "capture_adultegg",
+          "capture_adultcucco",
+          "capture_cojiro",
+          "capture_mushroom",
+          "capture_oddpotion",
+          "capture_saw",
           "rupee",
           "HP",
           "HC"
+        ],
+        [
+          "capture_brokensword",
+          "capture_prescription",
+          "capture_frog",
+          "capture_eyedrops",
+          "capture_claim",
+          "capture_childegg",
+          "",
+          "",
+          ""
         ]
       ]
     }

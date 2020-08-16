@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Bottle",
+    "type": "toggle",
+    "img": "images/bottle.png",
+    "codes": "capture_bottle"
+  },
+  {
+    "name": "Rutos Letter",
+    "type": "toggle",
+    "img": "images/bottle_letter.png",
+    "codes": "capture_ruto"
+  },
+  {
+    "name": "Child Trade Weird Egg",
+    "type": "toggle",
+    "img": "images/egg.png",
+    "img_mods": "overlay|images/overlay_child.png",
+    "codes": "capture_childegg"
+  },
+  {
+    "name": "Child Trade Cucco",
+    "type": "toggle",
+    "img": "images/cucco.png",
+    "img_mods": "overlay|images/overlay_child.png",
+    "codes": "capture_childcucco"
+  },
+  {
+    "name": "Child Trade Letter",
+    "type": "toggle",
+    "img": "images/letter.png",
+    "codes": "capture_letter"
+  },
+  {
+    "name": "Child Trade Letter shown",
+    "type": "toggle",
+    "img": "images/sold_out.png",
+    "codes": "capture_lettershown"
+  },
+  {
+    "name": "Child Trade Keaton",
+    "type": "toggle",
+    "img": "images/keaton.png",
+    "codes": "capture_keaton"
+  },
+  {
+    "name": "Child Trade Keaton sold",
+    "type": "toggle",
+    "img": "images/sold_out.png",
+    "codes": "capture_keatonsold"
+  },
+  {
+    "name": "Child Trade Skullmask",
+    "type": "toggle",
+    "img": "images/skull.png",
+    "codes": "capture_skullmask"
+  },
+  {
+    "name": "Child Trade Skull sold",
+    "type": "toggle",
+    "img": "images/sold_out.png",
+    "codes": "capture_skullsold"
+  },
+  {
+    "name": "Child Trade Spooky",
+    "type": "toggle",
+    "img": "images/spooky.png",
+    "codes": "capture_spooky"
+  },
+  {
+    "name": "Child Trade Spooky sold",
+    "type": "toggle",
+    "img": "images/sold_out.png",
+    "codes": "capture_spookysold"
+  },
+  {
+    "name": "Child Trade Bunny",
+    "type": "toggle",
+    "img": "images/bunny.png",
+    "codes": "capture_bunny"
+  },
+  {
+    "name": "Child Trade Bunny sold",
+    "type": "toggle",
+    "img": "images/sold_out.png",
+    "codes": "capture_bunnysold"
+  },
+  {
+    "name": "Child Trade Truth",
+    "type": "toggle",
+    "img": "images/truth.png",
+    "codes": "capture_truth"
+  },
+  {
+    "name": "Adult Trade Pocket Egg",
+    "type": "toggle",
+    "img": "images/egg.png",
+    "img_mods": "overlay|images/overlay_adult.png",
+    "codes": "capture_adultegg"
+  },
+  {
+    "name": "Adult Trade Cucco",
+    "type": "toggle",
+    "img": "images/cucco.png",
+    "img_mods": "overlay|images/overlay_adult.png",
+    "codes": "capture_adultcucco"
+  },
+  {
+    "name": "Adult Trade Cojiro",
+    "type": "toggle",
+    "img": "images/cojiro.png",
+    "codes": "capture_cojiro"
+  },
+  {
+    "name": "Adult Trade Mushroom",
+    "type": "toggle",
+    "img": "images/mushroom.png",
+    "codes": "capture_mushroom"
+  },
+  {
+    "name": "Adult Trade Odd Potion",
+    "type": "toggle",
+    "img": "images/medicine.png",
+    "codes": "capture_oddpotion"
+  },
+  {
+    "name": "Adult Trade Saw",
+    "type": "toggle",
+    "img": "images/saw.png",
+    "codes": "capture_saw"
+  },
+  {
+    "name": "Adult Trade Broken Sword",
+    "type": "toggle",
+    "img": "images/broken_sword.png",
+    "codes": "capture_brokensword"
+  },
+  {
+    "name": "Adult Trade Prescription",
+    "type": "toggle",
+    "img": "images/perscription.png",
+    "codes": "capture_prescription"
+  },
+  {
+    "name": "Adult Trade Frog",
+    "type": "toggle",
+    "img": "images/frog.png",
+    "codes": "capture_frog"
+  },
+  {
+    "name": "Adult Trade Eyedrops",
+    "type": "toggle",
+    "img": "images/eyedrops.png",
+    "codes": "capture_eyedrops"
+  },
+  {
+    "name": "Adult Trade Claim Check",
+    "type": "toggle",
+    "img": "images/claim.png",
+    "codes": "capture_claim"
+  }
+]

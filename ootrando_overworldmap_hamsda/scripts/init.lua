@@ -16,6 +16,7 @@ if has_map then
     Tracker:AddItems("items/sequences.json")
   end
 end
+Tracker:AddItems("items/cap_items.json")
 Tracker:AddItems("items/counters.json")
 Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/quest.json")

@@ -115,7 +115,7 @@ vanilla_captures = {
     ["@Ocarina of Time/Item"] = "ocarina"
   },
   ["setting_shuffle_egg_yes"] = {
-    ["@Malon at Castle/Talk to her"] = "childegg"
+    ["@Malon at Castle/Talk to her"] = "capture_childegg"
   },
   ["setting_shuffle_card_yes"] = {
     ["@Carpenter Rescue/Free the carpenters"] = "gerudocard"
@@ -124,7 +124,7 @@ vanilla_captures = {
     ["@Magic Bean Salesman/Buy Item"] = "beans"
   }
 }
-function update_captures()
+function update_vanilla_captures()
   for setting,captures in pairs(vanilla_captures) do
     local has_setting = has(setting)
     if not_like_cache(setting, has_setting) then
@@ -147,11 +147,7 @@ end
 
 
 
-capture_bottle_mapping = {
-  ["bottlecapture"] = 1,
-  ["rutocapture"] = 2
-}
-function find_first_free_bottle()
+function get_first_free_bottle()
   for i=1,4 do
     local bottle = Tracker:FindObjectForCode("bottle"..i)
     if bottle and bottle.CurrentStage == 0 then
@@ -160,14 +156,134 @@ function find_first_free_bottle()
   end
   return nil
 end
-function check_capture_bottles()
-  for code,stage in pairs(capture_bottle_mapping) do
+function get_kid_trade()
+  local trade = Tracker:FindObjectForCode("kidtrade")
+  if trade then
+    return trade
+  end
+  return nil
+end
+function get_adult_trade()
+  local trade = Tracker:FindObjectForCode("adulttrade")
+  if trade then
+    return trade
+  end
+  return nil
+end
+capture_mappings = {
+  ["capture_bottle"] = {
+    1, 
+    get_first_free_bottle
+  },
+  ["capture_ruto"] = {
+    2,
+    get_first_free_bottle
+  },
+  ["capture_childegg"] = {
+    1,
+    get_kid_trade
+  },
+  ["capture_childcucco"] = {
+    2,
+    get_kid_trade
+  },
+  ["capture_letter"] = {
+    3,
+    get_kid_trade
+  },
+  ["capture_lettershown"] = {
+    4,
+    get_kid_trade
+  },
+  ["capture_keaton"] = {
+    5,
+    get_kid_trade
+  },
+  ["capture_keatonsold"] = {
+    6,
+    get_kid_trade
+  },
+  ["capture_skullmask"] = {
+    7,
+    get_kid_trade
+  },
+  ["capture_skullsold"] = {
+    8,
+    get_kid_trade
+  },
+  ["capture_spooky"] = {
+    9,
+    get_kid_trade
+  },
+  ["capture_spookysold"] = {
+    10,
+    get_kid_trade
+  },
+  ["capture_bunny"] = {
+    11,
+    get_kid_trade
+  },
+  ["capture_bunnysold"] = {
+    12,
+    get_kid_trade
+  },
+  ["capture_truth"] = {
+    13,
+    get_kid_trade
+  },
+  ["capture_adultegg"] = {
+    1,
+    get_adult_trade
+  },
+  ["capture_adultcucco"] = {
+    2,
+    get_adult_trade
+  },
+  ["capture_cojiro"] = {
+    3,
+    get_adult_trade
+  },
+  ["capture_mushroom"] = {
+    4,
+    get_adult_trade
+  },
+  ["capture_oddpotion"] = {
+    5,
+    get_adult_trade
+  },
+  ["capture_saw"] = {
+    6,
+    get_adult_trade
+  },
+  ["capture_brokensword"] = {
+    7,
+    get_adult_trade
+  },
+  ["capture_prescription"] = {
+    8,
+    get_adult_trade
+  },
+  ["capture_frog"] = {
+    9,
+    get_adult_trade
+  },
+  ["capture_eyedrops"] = {
+    10,
+    get_adult_trade
+  },
+  ["capture_claim"] = {
+    11,
+    get_adult_trade
+  }
+}
+function update_capture_items()
+  for code,data in pairs(capture_mappings) do
     local capture = Tracker:FindObjectForCode(code)
     if capture and capture.Active then
       capture.Active = false
-      local bottle = find_first_free_bottle()
-      if bottle then
-        bottle.CurrentStage = stage
+      local item = data[2]()
+      if item then
+        item.CurrentStage = data[1]
       end
     end
   end
@@ -359,8 +475,8 @@ end
 function tracker_on_accessibility_updated()
   update_smallkeys()
   update_fortress()
-  update_captures()
-  check_capture_bottles()
+  update_vanilla_captures()
+  update_capture_items()
   count_skulltulas()
   apply_queued_changes()
 end
