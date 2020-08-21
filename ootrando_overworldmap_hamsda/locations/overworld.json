@@ -2748,7 +2748,7 @@
                           "$has_age|adult,setting_plant_no,beans",
                           "$has_age|adult,bean_graveyard_yes",
                           "$has_age|adult,longshot",
-                          "[$has_age|adult],[longshot],$has_age|child,boomerang",
+                          "$has_age|child,boomerang,[logic_graveyard_poh]",
                           "{}"
                         ],
                         "capture_item": true,
@@ -2977,9 +2977,9 @@
                       {
                         "name": "Chest",
                         "access_rules": [
-                          "$has_age|adult,lift2",
                           "$has_age|adult,hammer",
-                          "$has_age|adult,$has_explosives,hoverboots,[lift2]",
+                          "$has_age|adult,lift2",
+                          "$has_age|adult,[logic_goron_city_leftmost],$has_explosives,hoverboots",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3021,7 +3021,7 @@
                         "name": "Blow him up",
                         "access_rules": [
                           "$has_age|child,$has_explosives",
-                          "$child_death_mountain,lift1,[$has_explosives]"
+                          "$child_death_mountain,lift1,[logic_child_rolling_with_strength]"
                         ],
                         "item_count": 1
                       }
@@ -3387,12 +3387,7 @@
                   {
                     "name": "Biggoron",
                     "access_rules": [
-                      "$has_age|adult,$can_blast",
-                      "$has_age|both,ocarina,bolero,setting_plant_no,beans",
-                      "$has_age|both,ocarina,bolero,bean_crater_yes",
-                      "$has_age|adult,ocarina,bolero,hoverboots",
-                      "$has_age|adult,ocarina,bolero,hookshot",
-                      "$link_the_goron",
+                      "$has_age|adult,$dmc_upper",
                       "{$hintable}"
                     ],
                     "sections": [
@@ -3538,7 +3533,7 @@
                         "access_rules": [
                           "$has_age|child,$has_bottle,$has_explosives",
                           "$child_death_mountain,$has_bottle,lift1",
-                          "$child_death_mountain,$has_bottle,[lift1],boomerang"
+                          "$child_death_mountain,$has_bottle,[logic_dmt_soil_gs],boomerang"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3702,12 +3697,7 @@
                         "name": "Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$can_blast",
-                          "ocarina,bolero,$has_age|both,setting_plant_no,beans",
-                          "ocarina,bolero,$has_age|both,bean_crater_yes",
-                          "ocarina,bolero,$has_age|adult,hookshot",
-                          "ocarina,bolero,$has_age|adult,hoverboots",
-                          "$link_the_goron",
+                          "$dmc_upper",
                           "{ocarina,bolero}"
                         ],
                         "capture_item": true,
@@ -3769,12 +3759,7 @@
                       {
                         "name": "Fairy Fountain",
                         "access_rules": [
-                          "$link_the_goron",
-                          "ocarina,bolero,hookshot",
-                          "ocarina,bolero,setting_plant_no,beans",
-                          "ocarina,bolero,bean_crater_yes",
-                          "hoverboots",
-                          "[logic_crater_upper_to_lower]"
+                          "$dmc_lower"
                         ],
                         "item_count": 1
                       }
@@ -3797,12 +3782,7 @@
                       {
                         "name": "Deku Scrubs",
                         "access_rules": [
-                          "$link_the_goron",
-                          "ocarina,bolero,hookshot",
-                          "ocarina,bolero,setting_plant_no,beans",
-                          "ocarina,bolero,bean_crater_yes",
-                          "hoverboots",
-                          "[logic_crater_upper_to_lower]"
+                          "$dmc_lower"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -4756,7 +4736,8 @@
                         "access_rules": [
                           "$has_age|child,$has_explosives",
                           "$has_age|child,scale1",
-                          "$has_age|adult,[hoverboots]"
+                          "$has_age|adult,hoverboots",
+                          "$has_age|adult,[logic_zora_river_upper]"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",
@@ -5103,7 +5084,7 @@
                 "name": "Zoras Domain Frozen",
                 "access_rules": [
                   "$has_age|adult,ocarina,lullaby",
-                  "$has_age|adult,hoverboots,[ocarina],[lullaby]"
+                  "$has_age|adult,hoverboots,[logic_zora_with_hovers]"
                 ],
                 "children": [
                   {
@@ -5459,7 +5440,7 @@
                         "access_rules": [
                           "$has_age|child",
                           "$has_age|adult,longshot",
-                          "$gerudo_valley_far_side,[longshot],hoverboots"
+                          "$gerudo_valley_far_side,[logic_valley_crate_hovers],hoverboots,$damage_single_instance_ohko"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",

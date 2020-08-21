@@ -84,10 +84,12 @@
         "name": "GS11 - Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
-          "$has_explosives,[sling],boomerang,sticks", //TODO: trick logic_deku_b1_skip
-          "$has_explosives,[sling],boomerang,dinsfire,magic", //TODO: trick logic_deku_b1_skip
-          "{$has_explosives,sling,sticks}",
-          "{$has_explosives,sling,dinsfire,magic}"
+          "$has_explosives,boomerang,sticks,sling",
+          "$has_explosives,boomerang,sticks,[logic_deku_b1_skip]",
+          "$has_explosives,boomerang,dinsfire,magic,sling",
+          "$has_explosives,boomerang,dinsfire,magic,[logic_deku_b1_skip]",
+          "{$has_explosives,sticks}",
+          "{$has_explosives,dinsfire,magic}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -100,8 +102,10 @@
       {
         "name": "Queen Gohma",
         "access_rules": [
-          "shield1,[sling],sticks", //TODO: trick logic_deku_b1_skip
-          "shield1,[sling],sword1,dinsfire,magic" //TODO: trick logic_deku_b1_skip
+          "shield1,sticks,sling",
+          "shield1,sticks,[logic_deku_b1_skip]",
+          "shield1,sword1,dinsfire,magic,sling",
+          "shield1,sword1,dinsfire,magic,[logic_deku_b1_skip]"
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",
@@ -165,9 +169,11 @@
       {
         "name": "Far Bridge",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$has_age|child,$has_explosives,[sling]", //TODO: trick logic_dc_slingshot_skip
-          "@Dodongos Cavern/Climb,$has_age|child,lift1,sticks,[sling]",
-          "@Dodongos Cavern/Climb,$has_age|child,lift1,sword1,[sling]",
+          "@Dodongos Cavern/Climb,$has_age|child,sling,$has_explosives",
+          "@Dodongos Cavern/Climb,$has_age|child,sling,lift1",
+          "@Dodongos Cavern/Climb,$has_age|child,[logic_dc_slingshot_skip],lift1,sticks",
+          "@Dodongos Cavern/Climb,$has_age|child,[logic_dc_slingshot_skip],$has_explosives",
+          "@Dodongos Cavern/Climb,$has_age|child,[logic_dc_slingshot_skip],lift1,sword1",
           "@Dodongos Cavern/Climb,$has_age|adult,bow",
           "@Dodongos Cavern/Climb,$has_age|adult,hoverboots",
           "@Dodongos Cavern/Climb,$has_age|adult,longshot",
@@ -702,7 +708,7 @@
         "name": "Outside Upper Ledge",
         "access_rules": [
           "@Forest Temple/Block Push Room,$has_age|adult,hoverboots",
-          "@Forest Temple/Block Push Room,$has_age|adult,[hoverboots],lift1",
+          "@Forest Temple/Block Push Room,$has_age|adult,[logic_forest_outside_backdoor],lift1",
           "@Forest Temple/Straightened Hall"
         ],
         "visibility_rules": [
@@ -725,7 +731,12 @@
         "access_rules": [
           "@Forest Temple/Bow Region,forest_small_keys:5,$has_age|adult,bow",
           "@Forest Temple/Bow Region,forest_small_keys:5,dinsfire,magic",
-          "forest_small_keys:1,$has_age|adult,hoverboots,ocarina,scarecrow,[@Forest Temple/Bow Region],[forest_small_keys:5],[bow]"
+          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,ocarina,time,$has_age|adult",
+          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,@Forest Temple/Outside Upper Ledge,$has_age|adult",
+          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,longshot",
+          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,[logic_forest_vines],hookshot",
+          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,ironboots",
+          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,scale2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1024,9 +1035,12 @@
       {
         "name": "Maze Lower",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],$has_explosives",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],bow",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[lift1],[redtunic],hookshot"
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[redtunic],$has_explosives",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[redtunic],$has_explosives",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[redtunic],bow",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[redtunic],bow",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[redtunic],hookshot",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[redtunic],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1047,7 +1061,7 @@
         "name": "East Tower",
         "access_rules": [
           "@Fire Temple/Maze Upper,ocarina,scarecrow,hookshot",
-          "@Fire Temple/Maze Upper,[ocarina],[scarecrow],longshot"
+          "@Fire Temple/Maze Upper,[logic_fire_scarecrow],longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1110,7 +1124,8 @@
         "name": "GS65 - Song of Time Room",
         "short_name": "Time Block",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,$has_age|adult,[ocarina],[time]"
+          "@Fire Temple/Big Lava Room,$has_age|adult,ocarina,time",
+          "@Fire Temple/Big Lava Room,$has_age|adult,[logic_fire_song_of_time]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1605,7 +1620,7 @@
     "parent": "Graveyard",
     "access_rules": [
       "shadow_reg,ocarina,nocturne,dinsfire,magic",
-      "shadow_reg,ocarina,nocturne,$has_age|adult,bow,firearrow,[dinsfire],magic"
+      "shadow_reg,ocarina,nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic"
     ],
     "sections": [
       {
@@ -1744,7 +1759,8 @@
         "name": "Falling Spikes Upper Chests",
         "short_name": "Crusher Upper",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,[lift1]"
+          "@Shadow Temple/Huge Pit,[logic_shadow_umbrella]",
+          "@Shadow Temple/Huge Pit,lift1"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 2
@@ -1861,7 +1877,7 @@
         "access_rules": [
           "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,longshot,ocarina,scarecrow",
           "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,bow",
-          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,$has_bombchus,[bow]"
+          "@Shadow Temple/Beyond Boat,shadow_boss_key,shadow_small_keys:5,$has_bombchus,[logic_shadow_statue]"
         ],
         "hosted_item": "shadow",
         "chest_unopened_img": "images/HC.png",
@@ -2164,7 +2180,7 @@
           "@Spirit Temple/Early Adult,bow",
           "@Spirit Temple/Early Adult,hookshot",
           "@Spirit Temple/Early Adult,$has_bombchus",
-          "@Spirit Temple/Early Adult,[bow],bombs" //TODO: trick logic_spirit_lower_adult_switch
+          "@Spirit Temple/Early Adult,bombs,[logic_spirit_lower_adult_switch]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2603,7 +2619,8 @@
         "name": "Spirit Trial First Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
-          "[hookshot]"
+          "[logic_spirit_trial_hookshot]",
+          "hookshot"
         ],
         "item_count": 1
       },
@@ -2611,7 +2628,8 @@
         "name": "Spirit Trial Second Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "[hookshot],$has_bombchus,$can_see_with_lens"
+          "$has_bombchus,$can_see_with_lens,[logic_spirit_trial_hookshot]",
+          "$has_bombchus,$can_see_with_lens,hookshot"
         ],
         "item_count": 1
       },
@@ -2619,7 +2637,8 @@
         "name": "Spirit Trial Clear",
         "short_name": "Spirit Trial",
         "access_rules": [
-          "$can_LA,shield3,$has_bombchus,[hookshot]"
+          "$can_LA,shield3,$has_bombchus,[logic_spirit_trial_hookshot]",
+          "$can_LA,shield3,$has_bombchus,hookshot"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2762,7 +2781,8 @@
       {
         "name": "Heavy Block Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,$has_age|adult,[hookshot]"
+          "@Gerudo Training Grounds/Lobby,$has_age|adult,hookshot",
+          "@Gerudo Training Grounds/Lobby,$has_age|adult,[logic_gtg_without_hookshot]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2773,7 +2793,7 @@
         "name": "Eye Statue Upper",
         "access_rules": [
           "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,hookshot",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],hoverboots",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[logic_gtg_fake_wall],hoverboots",
           "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],bombs,shield2",
           "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],bombs,shield3"
         ],

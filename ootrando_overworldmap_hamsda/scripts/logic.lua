@@ -8,6 +8,28 @@ function has(item, amount)
   end
 end
 
+function get_highest_accessibility(...)
+  local args = {...}
+  local count = 0
+  local level = AccessibilityLevel.None
+
+  for _,data in ipairs(args) do
+    if data[1] >= count then
+      count = data[1]
+      if level ~= AccessibilityLevel.Normal
+      and data[2] == AccessibilityLevel.Normal 
+      then
+        level = AccessibilityLevel.Normal
+      elseif level ~= AccessibilityLevel.SequenceBreak
+      and data[2] == AccessibilityLevel.SequenceBreak
+      then
+        level = AccessibilityLevel.SequenceBreak
+      end
+    end
+  end
+  return count, level
+end
+
 function can_time_travel()
   if has("setting_door_open")
   or (has("ocarina") and has("time"))
@@ -62,7 +84,7 @@ end
 
 function can_blast()
   if has_age("adult") == 1 and has("hammer") then
-    return 1 
+    return 1, AccessibilityLevel.Normal
   else
     return has_explosives()
   end
@@ -380,44 +402,198 @@ function link_the_goron()
     return 1, AccessibilityLevel.Normal
   end
 
+  local count = 0
+  local level = AccessibilityLevel.None
+
+  if has("dinsfire") and has("magic") then
+    if has("logic_link_goron_dins") then
+      return 1, AccessibilityLevel.Normal
+    else
+      count = 1
+      level = AccessibilityLevel.SequenceBreak
+    end
+  end
+
   local explo_count, explo_level = has_explosives()
   if explo_count > 0 then
     return explo_count, explo_level
   end 
 
-  if has("dinsfire") and has("magic") then
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-
-  return 0
+  return count, level
 end
 
-function dmc_central()
+function dmt_climb()
+  if has_age("both") > 0
+  and has("beans")
+  and has("lift1")
+  then
+    return 1, AccessibilityLevel.Normal
+  else
+    return can_blast()
+  end
+end
+
+function dmc_upper_to_lower()
   if has_age("adult") == 0 then
     return 0
   end
+  if has("hoverboots") then
+    return 1, AccessibilityLevel.Normal
+  end
+  if has("hammer") then
+    if has("logic_crater_upper_to_lower") then
+      return 1, AccessibilityLevel.Normal
+    end
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+  return 0, AccessibilityLevel.None
+end
 
+function dmc_upper_to_central()
+  if has_age("adult") > 0
+  and has("redtunic")
+  and has("longshot")
+  and damage_single_instance_quadruple() > 0
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function dmc_lower_to_central()
+  if has_age("adult") == 0 then
+    return 0, AccessibilityLevel.None
+  end
+  if has("hoverboots")
+  or has("hookshot")
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function dmc_central_to_lower()
+  if has_age("adult") == 0 then
+    return 0, AccessibilityLevel.None
+  end
+  if has("hoverboots")
+  or has("hookshot")
+  or (has_age("both") > 0
+  and has("ocarina")
+  and has("bolero")
+  and has("beans"))
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function dmc_upper()
+  if has("ocarina") and has("bolero")
+  and dmc_central_to_lower() > 0
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  local climb = {dmt_climb()}
+  local goron = {link_the_goron()}
+
+  return get_highest_accessibility(climb, goron)
+end
+
+function dmc_lower()
+  if has("ocarina") and has("bolero")
+  and dmc_central_to_lower() > 0
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  local count = 0
+  local level = AccessibilityLevel.None
+
+  local goron_count, goron_level = link_the_goron()
+  if goron_count > 0 then
+    if goron_level == AccessibilityLevel.Normal then
+      return 1, AccessibilityLevel.Normal
+    else
+      count = 1
+      level = AccessibilityLevel.SequenceBreak
+    end
+  end
+
+  local climb_count, climb_level = dmt_climb()
+  local upper_to_lower_count, upper_to_lower_level = dmc_upper_to_lower()
+  local upper_to_central_count, upper_to_central_level = dmc_upper_to_central()
+  if climb_count > 0 
+  and (
+    upper_to_lower_count > 0
+    or upper_to_central_count > 0
+  ) then
+    if climb_level == AccessibilityLevel.Normal
+    and (
+      upper_to_lower_level == AccessibilityLevel.Normal
+      or upper_to_central_level == AccessibilityLevel.Normal
+    ) then
+      return 1, AccessibilityLevel.Normal
+    else
+      count = 1
+      level = AccessibilityLevel.SequenceBreak
+    end
+  end
+  
+  return count, level
+end
+
+function dmc_central()
   if has("ocarina") and has("bolero") then
     return 1, AccessibilityLevel.Normal
   end
 
+  local count = 0
+  local level = AccessibilityLevel.None
+
   local goron_count, goron_level = link_the_goron()
-  if has("hoverboots") then
-    if has("hammer") then
+  local lower_to_central_count, lower_to_central_level = dmc_lower_to_central()
+  if goron_count > 0 
+  and lower_to_central_count > 0 
+  then
+    if goron_level == AccessibilityLevel.Normal 
+    and lower_to_central_level == AccessibilityLevel.Normal 
+    then
       return 1, AccessibilityLevel.Normal
     else
-      return goron_count, goron_level
-    end
-  end
-  if has("hookshot") then
-    if goron_count > 0 then
-      return goron_count, goron_level
-    elseif has("hammer") then
-      return 1, AccessibilityLevel.SequenceBreak
+      count = 1
+      level = AccessibilityLevel.SequenceBreak
     end
   end
 
-  return 0
+  local climb_count, climb_level = dmt_climb()
+  local upper_to_lower_count, upper_to_lower_level = dmc_upper_to_lower()
+  local upper_to_central_count, upper_to_central_level = dmc_upper_to_central()
+  if climb_count > 0 
+  and (
+    (
+      upper_to_lower_count > 0
+      and lower_to_central_count > 0 
+    )
+    or upper_to_central_count > 0
+  ) then
+    if climb_level == AccessibilityLevel.Normal
+    and (
+      (
+        upper_to_lower_level == AccessibilityLevel.Normal
+        and lower_to_central_level == AccessibilityLevel.Normal 
+      )
+      or upper_to_central_level == AccessibilityLevel.Normal
+    ) then
+      return 1, AccessibilityLevel.Normal
+    else
+      count = 1
+      level = AccessibilityLevel.SequenceBreak
+    end
+  end
+  
+  return count, level  
 end
 
 function child_fountain()
@@ -473,7 +649,7 @@ function adult_fountain()
   then
     if has("hoverboots", 0) then
       return 0
-    else
+    elseif has("logic_zora_with_hovers", 0) then
       level = AccessibilityLevel.SequenceBreak
     end
   end
