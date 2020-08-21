@@ -250,8 +250,8 @@
         "name": "Bomb Bag Area",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,$has_age|adult",
-          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sword1,$damage_single_instance_ohko", //TODO: trick logic_dc_mq_child_bombs
-          "@Dodongos Cavern MQ/Lobby,[$has_age|adult],$has_age|child,sticks,$damage_single_instance_ohko", //TODO: trick logic_dc_mq_child_bombs
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,[logic_dc_mq_child_bombs],sword1,$damage_single_instance_ohko",
+          "@Dodongos Cavern MQ/Lobby,$has_age|child,[logic_dc_mq_child_bombs],sticks,$damage_single_instance_ohko",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,$has_age|adult,bow",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,lift1",
           "@Dodongos Cavern MQ/Lower Right Side,$has_age|child,sling,dinsfire,magic",
@@ -587,7 +587,7 @@
         "short_name": "Boomerang",
         "access_rules": [
           "@Jabu Jabus Belly MQ/Main,ocarina,time",
-          "@Jabu Jabus Belly MQ/Main,boomerang,[ocarina],[time]"
+          "@Jabu Jabus Belly MQ/Main,[logic_jabu_mq_sot_gs],boomerang"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -745,8 +745,9 @@
         "name": "GS71 - Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
-          "[hookshot],[ocarina],[scarecrow]",
-          "longshot,hoverboots"
+          "hookshot,ocarina,scarecrow",
+          "longshot,hoverboots",
+          "[logic_ice_mq_scarecrow]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -816,7 +817,7 @@
         "name": "After Block Puzzle",
         "access_rules": [
           "@Forest Temple MQ/Central Area,$has_age|adult,lift1",
-          "@Forest Temple MQ/Central Area,$has_age|adult,[lift1],$has_bombchus,hookshot"
+          "@Forest Temple MQ/Central Area,$has_age|adult,$has_bombchus,[logic_forest_mq_block_puzzle],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -837,8 +838,9 @@
         "name": "Outdoor Ledge",
         "access_rules": [
           "@Forest Temple MQ/Central Area,hoverboots",
-          "@Forest Temple MQ/Central Area,hookshot,[lift1]",
-          "@Forest Temple MQ/Central Area,hookshot,[lift1],$has_bombchus",
+          "@Forest Temple MQ/Central Area,hookshot,lift1",
+          "@Forest Temple MQ/Central Area,hookshot,[logic_forest_mq_hallway_switch]",
+          "@Forest Temple MQ/Central Area,hookshot,$has_bombchus,[logic_forest_mq_block_puzzle]",
           "@Forest Temple MQ/After Block Puzzle,forest_small_keys:2,[forest_small_keys:3]"
         ],
         "visibility_rules": [
@@ -862,8 +864,9 @@
         "access_rules": [
           "@Forest Temple MQ/Central Area,$has_age|adult,bow",
           "@Forest Temple MQ/NW Outdoors,ironboots",
-          "@Forest Temple MQ/NW Outdoors,hookshot,[longshot]", //TODO: trick logic_forest_well_swim
+          "@Forest Temple MQ/NW Outdoors,longshot",
           "@Forest Temple MQ/NW Outdoors,scale2",
+          "@Forest Temple MQ/NW Outdoors,[logic_forest_well_swim],hookshot",
           "@Forest Temple MQ/NW Outdoors,bow,firearrow,magic"
         ],
         "visibility_rules": [
@@ -1149,7 +1152,7 @@
         "name": "Lower Maze",
         "access_rules": [
           "@Fire Temple MQ/Big Lava Room,[redtunic],fire_small_keys:1,[fire_small_keys:2],$has_fire",
-          "@Fire Temple MQ/Big Lava Room,[redtunic],fire_small_keys:1,[fire_small_keys:2],[$has_fire],hoverboots"
+          "@Fire Temple MQ/Big Lava Room,[redtunic],fire_small_keys:1,[fire_small_keys:2],[logic_fire_mq_climb],hoverboots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1194,7 +1197,7 @@
         "short_name": "Near Boss",
         "access_rules": [
           "$FTR_or_goron,$has_fire,hoverboots",
-          "$FTR_or_goron,$has_fire,bow,[hoverboots]", //TODO: trick logic_fire_mq_near_boss
+          "$FTR_or_goron,$has_fire,[logic_fire_mq_near_boss],bow",
           "$FTR_or_goron,hookshot,bow,firearrow,magic",
           "$FTR_or_goron,hookshot,dinsfire,magic,$damage_below_quadruple",
           "$FTR_or_goron,hookshot,dinsfire,magic,redtunic",
@@ -1234,8 +1237,8 @@
         "short_name": "Lava Room Bombable",
         "access_rules": [
           "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,hookshot",
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],$damage_below_ohko", //TODO: trick logic_fire_mq_bombable_chest
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[hookshot],nayrus,magic" //TODO: trick logic_fire_mq_bombable_chest
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[logic_fire_mq_bombable_chest],$damage_below_ohko",
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[logic_fire_mq_bombable_chest],nayrus,magic"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1244,7 +1247,8 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Fire Temple MQ/Big Lava Room,$has_fire,[bow],hookshot"
+          "@Fire Temple MQ/Big Lava Room,$has_fire,bow,hookshot",
+          "@Fire Temple MQ/Big Lava Room,$has_fire,[logic_fire_mq_bk_chest],hookshot"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1275,7 +1279,8 @@
         "name": "Maze Side Room",
         "short_name": "Maze Side",
         "access_rules": [
-          "@Fire Temple MQ/Lower Maze,$has_explosives,[hookshot]"
+          "@Fire Temple MQ/Lower Maze,$has_explosives,[logic_fire_mq_maze_side_room]",
+          "@Fire Temple MQ/Lower Maze,$has_explosives,hookshot"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1316,7 +1321,8 @@
         "short_name": "Fire Maze Side",
         "access_rules": [
           "@Fire Temple MQ/West Top,ocarina,time",
-          "@Fire Temple MQ/West Top,[hoverboots]"
+          "@Fire Temple MQ/West Top,hoverboots",
+          "@Fire Temple MQ/West Top,[logic_fire_mq_flame_maze]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1636,7 +1642,7 @@
         "access_rules": [
           "@Shadow Temple MQ/Beginning,bow,firearrow,magic",
           "@Shadow Temple MQ/Beginning,hoverboots",
-          "@Shadow Temple MQ/Beginning,[hoverboots],longshot"
+          "@Shadow Temple MQ/Beginning,[logic_shadow_mq_gap],longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1656,7 +1662,8 @@
       {
         "name": "Lower Huge Pit",
         "access_rules": [
-          "@Shadow Temple MQ/Upper Huge Pit,[$has_fire]"
+          "@Shadow Temple MQ/Upper Huge Pit,$has_fire",
+          "@Shadow Temple MQ/Upper Huge Pit,[logic_shadow_mq_huge_pit]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1979,7 +1986,7 @@
         "name": "Lower Adult",
         "access_rules": [
           "@Spirit Temple MQ/Adult,shield3,bow,firearrow,magic",
-          "@Spirit Temple MQ/Adult,shield3,bow,[firearrow],magic,dinsfire"
+          "@Spirit Temple MQ/Adult,shield3,[logic_spirit_mq_lower_adult],bow,magic,dinsfire"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2083,7 +2090,7 @@
         "access_rules": [
           "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,dinsfire,magic",
           "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,@Spirit Temple MQ/Adult,bow,firearrow,magic",
-          "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,@Spirit Temple MQ/Adult,bow,[firearrow],[magic],ocarina,time"
+          "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,@Spirit Temple MQ/Adult,[logic_spirit_mq_frozen_eye],bow,ocarina,time"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2112,7 +2119,7 @@
         "name": "GS96 - Sun Block Room",
         "short_name": "Sun Block",
         "access_rules": [
-          "@Spirit Temple MQ/Shared,[@Spirit Temple MQ/Adult],ocarina,time,boomerang",
+          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],ocarina,time,boomerang",
           "@Spirit Temple MQ/Adult"
         ],
         "visibility_rules": [
@@ -2380,7 +2387,7 @@
         "short_name": "Dead Hand Key",
         "access_rules": [
           "$has_explosives",
-          "boomerang,[$has_explosives]"
+          "[logic_botw_mq_dead_hand_key],boomerang"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -2520,7 +2527,8 @@
         "short_name": "Shadow Trial 2",
         "access_rules": [
           "bow,$can_see_with_lens,hoverboots",
-          "bow,$can_see_with_lens,hookshot,[$has_fire]"
+          "bow,$can_see_with_lens,hookshot,$has_fire",
+          "bow,$can_see_with_lens,hookshot,[logic_shadow_trial_mq]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2530,7 +2538,8 @@
         "short_name": "Shadow Trial",
         "access_rules": [
           "$can_LA,$can_see_with_lens,hoverboots",
-          "$can_LA,$can_see_with_lens,hookshot,[$has_fire]"
+          "$can_LA,$can_see_with_lens,hookshot,$has_fire",
+          "$can_LA,$can_see_with_lens,hookshot,[logic_shadow_trial_mq]"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2562,7 +2571,7 @@
         "short_name": "Light Trial",
         "access_rules": [
           "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,hookshot",
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[hookshot],$damage_single_instance_ohko" //TODO: trick logic_light_trial_mq
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[logic_light_trial_mq],$damage_single_instance_ohko"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2661,7 +2670,9 @@
       {
         "name": "Stalfos Room",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Left Side,[longshot]"
+          "@Gerudo Training Grounds MQ/Left Side,longshot",
+          "@Gerudo Training Grounds MQ/Left Side,[logic_gtg_mq_without_hookshot]",
+          "@Gerudo Training Grounds MQ/Left Side,[logic_gtg_mq_with_hookshot],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"

@@ -145,6 +145,12 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_forest_mq_block_puzzle",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_spirit_child_bombchu",
                       "width": 200,
                       "height": 16
@@ -169,7 +175,25 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_gtg_mq_with_hookshot",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_forest_vines",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_forest_well_swim",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_forest_mq_hallway_switch",
                       "width": 200,
                       "height": 16
                     },
@@ -199,6 +223,12 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_spirit_mq_frozen_eye",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_spirit_wall",
                       "width": 200,
                       "height": 16
@@ -211,13 +241,61 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_spirit_mq_sun_block_gs",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_jabu_mq_sot_gs",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_botw_cage_gs",
                       "width": 200,
                       "height": 16
                     },
                     {
                       "type": "item",
+                      "item": "logic_botw_mq_dead_hand_key",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_fire_flame_maze",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_fire_mq_flame_maze",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_fire_mq_climb",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_fire_mq_near_boss",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_fire_mq_maze_side_room",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_fire_mq_bk_chest",
                       "width": 200,
                       "height": 16
                     },
@@ -236,6 +314,12 @@
                     {
                       "type": "item",
                       "item": "logic_shadow_freestanding_key",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_shadow_mq_huge_pit",
                       "width": 200,
                       "height": 16
                     },
@@ -289,6 +373,12 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_spirit_mq_lower_adult",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_spirit_map_chest",
                       "width": 200,
                       "height": 16
@@ -296,6 +386,12 @@
                     {
                       "type": "item",
                       "item": "logic_spirit_sun_chest",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_shadow_trial_mq",
                       "width": 200,
                       "height": 16
                     },
@@ -385,6 +481,24 @@
                     },
                     {
                       "type": "item",
+                      "item": "logic_fire_mq_bombable_chest",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_light_trial_mq",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_ice_mq_scarecrow",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
                       "item": "logic_reverse_wasteland",
                       "width": 200,
                       "height": 16
@@ -392,6 +506,12 @@
                     {
                       "type": "item",
                       "item": "logic_zora_river_upper",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_shadow_mq_gap",
                       "width": 200,
                       "height": 16
                     },
@@ -416,6 +536,12 @@
                     {
                       "type": "item",
                       "item": "logic_gtg_without_hookshot",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_gtg_mq_without_hookshot",
                       "width": 200,
                       "height": 16
                     },
@@ -488,6 +614,12 @@
                     {
                       "type": "item",
                       "item": "logic_forest_scarecrow",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_dc_mq_child_bombs",
                       "width": 200,
                       "height": 16
                     },
