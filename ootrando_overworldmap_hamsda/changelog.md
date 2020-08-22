@@ -3,6 +3,7 @@
 ## x
 
 - added more logic tricks
+- fixed chus not showing as sequence breaks for certain checks
 
 ## 2.9.4.0
 

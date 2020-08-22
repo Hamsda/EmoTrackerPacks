@@ -60,23 +60,30 @@ function has_age(age)
 end
 
 function has_bombchus()
+  local bombs = Tracker:ProviderCountForCode("bombs")
+  local chus = Tracker:ProviderCountForCode("bombchu")
   if has("setting_logic_chus_yes") then
-    return Tracker:ProviderCountForCode("bombchu")
+    if chus > 0 then
+      return chus, AccessibilityLevel.Normal
+    else
+      return 0, AccessibilityLevel.None
+    end
   else
-    return Tracker:ProviderCountForCode("bombs")
+    if bombs > 0 then
+      return bombs, AccessibilityLevel.Normal
+    elseif chus > 0 then
+      return chus, AccessibilityLevel.SequenceBreak
+    end
   end
 end
 
 function has_explosives()
   local bombs = Tracker:ProviderCountForCode("bombs")
-  local has_bombchus = has_bombchus()
-  local chus = Tracker:ProviderCountForCode("bombchu")
+  local chus_count, chus_level = has_bombchus()
   if bombs > 0 then
-    return bombs
-  elseif has_bombchus > 0 then
-    return has_bombchus
-  elseif chus > 0 then
-    return chus, AccessibilityLevel.SequenceBreak
+    return bombs, AccessibilityLevel.Normal
+  elseif chus_count > 0 then
+    return chus_count, chus_level
   else
     return 0, AccessibilityLevel.None
   end
