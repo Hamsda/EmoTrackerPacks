@@ -424,26 +424,5 @@
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Lens of Truth",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_lens_all.png",
-        "codes": "setting_lens,setting_lens_all"
-      },
-      {
-        "img": "images/setting_lens_wasteland.png",
-        "codes": "setting_lens_wasteland"
-      },
-      {
-        "img": "images/setting_lens_chest.png",
-        "codes": "setting_lens_chest"
-      }
-    ]
   }
 ]

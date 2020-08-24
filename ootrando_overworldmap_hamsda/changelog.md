@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.9.5.0
+
+- added more logic tricks
+- fixed chus not showing as sequence breaks for certain checks
+
 ## 2.9.4.0
 
 - changed closed forest behavior to include sequence breaking Gohma
