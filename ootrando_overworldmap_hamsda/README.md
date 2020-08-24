@@ -213,14 +213,6 @@ This setting determines if logic expects the player to have an ocarina and the S
 - ![Sun's Song Not Expected](images/setting_skulltulas_sun_off.png "Sun's Song Not Expected") Sun's Song is not expected by logic.
 - ![Sun's Song Expected](images/setting_skulltulas_sun_on.png "Sun's Song Expected") Sun's Song is expected, but locations will show as sequence breaks.
 
-#### Lens of Truth
-
-This setting changes where the logic requires the Lens of Truth.
-
-- ![Required everywhere](images/setting_lens_all.png "Required everywhere") Required to see all invisible things.
-- ![Wasteland and Chest Minigame](images/setting_lens_wasteland.png "Wasteland and Chest Minigame") Required to cross the Haunted Wasteland and to win the Treasure Chest minigame.
-- ![Only Chest Minigame](images/setting_lens_chest.png "Only Chest Minigame") Required only to win the Treasure Chest minigame.
-
 #### Logic Tricks
 
 This tab also contains a list of (some of) the logic tricks that can be enabled in the randomizer.

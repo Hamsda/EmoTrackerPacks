@@ -691,5 +691,96 @@
     "initial_active_state": false,
     "img": "images/logic_shadow_fire_arrow_entry.png",
     "codes": "logic_shadow_fire_arrow_entry"
+  },
+  {
+    "name": "Lensless Wasteland",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_wasteland.png",
+    "codes": "logic_lens_wasteland"
+  },
+  {
+    "name": "Bottom of the Well without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_lens_botw.png",
+    "codes": "logic_lens_botw"
+  },
+  {
+    "name": "Ganon's Castle MQ without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_castle_mq.png",
+    "codes": "logic_lens_castle_mq"
+  },
+  {
+    "name": "Ganon's Castle without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_lens_castle.png",
+    "codes": "logic_lens_castle"
+  },
+  {
+    "name": "Gerudo Training Grounds MQ without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_gtg_mq.png",
+    "codes": "logic_lens_gtg_mq"
+  },
+  {
+    "name": "Gerudo Training Grounds without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_lens_gtg.png",
+    "codes": "logic_lens_gtg"
+  },
+  {
+    "name": "Jabu MQ without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_jabu_mq.png",
+    "codes": "logic_lens_jabu_mq"
+  },
+  {
+    "name": "Shadow Temple MQ before Invisible Moving Platform without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_shadow_mq.png",
+    "codes": "logic_lens_shadow_mq"
+  },
+  {
+    "name": "Shadow Temple MQ beyond Invisible Moving Platform without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_shadow_mq_back.png",
+    "codes": "logic_lens_shadow_mq_back"
+  },
+  {
+    "name": "Shadow Temple before Invisible Moving Platform without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_lens_shadow.png",
+    "codes": "logic_lens_shadow"
+  },
+  {
+    "name": "Shadow Temple beyond Invisible Moving Platform without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_lens_shadow_back.png",
+    "codes": "logic_lens_shadow_back"
+  },
+  {
+    "name": "Spirit Temple MQ without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_spirit_mq.png",
+    "codes": "logic_lens_spirit_mq"
+  },
+  {
+    "name": "Spirit Temple without Lens of Truth",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/logic_lens_spirit.png",
+    "codes": "logic_lens_spirit"
   }
 ]

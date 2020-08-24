@@ -161,13 +161,11 @@ function night_gs()
   return 1, AccessibilityLevel.Normal
 end
 
-function can_see_with_lens()
-  if has("setting_lens_wasteland") 
-  or has("lens") 
-  and has("magic") then
+function can_use_lens()
+  if has("lens") and has("magic") then
     return 1, AccessibilityLevel.Normal
   else
-    return 1, AccessibilityLevel.SequenceBreak
+    return 0, AccessibilityLevel.None
   end
 end
 
@@ -271,7 +269,7 @@ function quicksand()
 end
 
 function wasteland_forward()
-  if has("setting_lens_chest")
+  if has("logic_lens_wasteland")
   or has("lens") and has("magic")
   then
     return 1, AccessibilityLevel.Normal

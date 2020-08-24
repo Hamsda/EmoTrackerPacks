@@ -622,7 +622,8 @@
         "name": "GS53 - Invisible Enemies Room",
         "short_name": "Invis Enemies",
         "access_rules": [
-          "@Jabu Jabus Belly MQ/Depths,$can_see_with_lens",
+          "@Jabu Jabus Belly MQ/Depths,[logic_lens_jabu_mq]",
+          "@Jabu Jabus Belly MQ/Depths,$can_use_lens",
           "{$hintable}"
         ],
         "visibility_rules": [
@@ -1619,8 +1620,10 @@
       {
         "name": "Beginning",
         "access_rules": [
-          "$can_see_with_lens,$has_age|adult,hoverboots",
-          "$can_see_with_lens,$has_age|adult,hookshot"
+          "[logic_lens_shadow_mq],$has_age|adult,hoverboots",
+          "[logic_lens_shadow_mq],$has_age|adult,hookshot",
+          "$can_use_lens,$has_age|adult,hoverboots",
+          "$can_use_lens,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1673,7 +1676,8 @@
       {
         "name": "Wind Tunnel",
         "access_rules": [
-          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,hookshot,shadow_small_keys:3,[shadow_small_keys:4]"
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,hookshot,shadow_small_keys:3,[shadow_small_keys:4],[logic_lens_shadow_mq_back]",
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,hookshot,shadow_small_keys:3,[shadow_small_keys:4],$can_use_lens"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1800,7 +1804,8 @@
         "name": "Invisible Spikes Chest",
         "short_name": "Invisible Spikes",
         "access_rules": [
-          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3]"
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],[logic_lens_shadow_mq_back]",
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],$can_use_lens"
         ],
         "item_count": 1
       },
@@ -1808,7 +1813,8 @@
         "name": "Stalfos Room Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],hookshot"
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],hookshot,[logic_lens_shadow_mq_back]",
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],hookshot,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2006,7 +2012,8 @@
       {
         "name": "Mirror Shield Hand",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_see_with_lens"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_use_lens"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2018,7 +2025,8 @@
         "access_rules": [
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
-          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_see_with_lens"
+          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_use_lens"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2135,7 +2143,8 @@
         "access_rules": [          
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_see_with_lens"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2168,7 +2177,8 @@
         "name": "Upper NE Main Room Chest",
         "short_name": "Statue Ledge",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,$can_see_with_lens"
+          "@Spirit Temple MQ/Adult,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2257,7 +2267,8 @@
         "name": "Mirror Shield Chest",
         "short_name": "Left Hand",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_see_with_lens"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2291,7 +2302,8 @@
         "name": "Mirror Puzzle Invisible Chest",
         "short_name": "Mirror Puzzle",
         "access_rules": [
-          "@Spirit Temple MQ/Boss Area,$can_see_with_lens"
+          "@Spirit Temple MQ/Boss Area,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Boss Area,$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2349,8 +2361,8 @@
         "name": "GS78 - West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
-          "$can_child_attack,$can_see_with_lens,ocarina,lullaby",
-          "$can_child_attack,$can_see_with_lens,$has_explosives"
+          "$can_child_attack,ocarina,lullaby",
+          "$can_child_attack,$has_explosives"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2516,9 +2528,12 @@
         "access_rules": [
           "bow,hookshot",
           "bow,hoverboots",
-          "hoverboots,$can_see_with_lens,$has_explosives",
-          "hoverboots,$can_see_with_lens,lift1",
-          "hoverboots,$can_see_with_lens,dinsfire,magic"
+          "hoverboots,[logic_lens_castle_mq],$has_explosives",
+          "hoverboots,[logic_lens_castle_mq],lift1",
+          "hoverboots,[logic_lens_castle_mq],dinsfire,magic",
+          "hoverboots,$can_use_lens,$has_explosives",
+          "hoverboots,$can_use_lens,lift1",
+          "hoverboots,$can_use_lens,dinsfire,magic"
         ],
         "item_count": 1
       },
@@ -2526,9 +2541,12 @@
         "name": "Shadow Trial Second Chest",
         "short_name": "Shadow Trial 2",
         "access_rules": [
-          "bow,$can_see_with_lens,hoverboots",
-          "bow,$can_see_with_lens,hookshot,$has_fire",
-          "bow,$can_see_with_lens,hookshot,[logic_shadow_trial_mq]"
+          "bow,[logic_lens_castle_mq],hoverboots",
+          "bow,[logic_lens_castle_mq],hookshot,$has_fire",
+          "bow,[logic_lens_castle_mq],hookshot,[logic_shadow_trial_mq]",
+          "bow,$can_use_lens,hoverboots",
+          "bow,$can_use_lens,hookshot,$has_fire",
+          "bow,$can_use_lens,hookshot,[logic_shadow_trial_mq]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2537,9 +2555,12 @@
         "name": "Shadow Trial Clear",
         "short_name": "Shadow Trial",
         "access_rules": [
-          "$can_LA,$can_see_with_lens,hoverboots",
-          "$can_LA,$can_see_with_lens,hookshot,$has_fire",
-          "$can_LA,$can_see_with_lens,hookshot,[logic_shadow_trial_mq]"
+          "$can_LA,[logic_lens_castle_mq],hoverboots",
+          "$can_LA,[logic_lens_castle_mq],hookshot,$has_fire",
+          "$can_LA,[logic_lens_castle_mq],hookshot,[logic_shadow_trial_mq]",
+          "$can_LA,$can_use_lens,hoverboots",
+          "$can_LA,$can_use_lens,hookshot,$has_fire",
+          "$can_LA,$can_use_lens,hookshot,[logic_shadow_trial_mq]"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2570,8 +2591,10 @@
         "name": "Light Trial Clear",
         "short_name": "Light Trial",
         "access_rules": [
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,hookshot",
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_see_with_lens,[logic_light_trial_mq],$damage_single_instance_ohko"
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],[logic_lens_castle_mq],hookshot",
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],[logic_lens_castle_mq],[logic_light_trial_mq],$damage_single_instance_ohko",
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_use_lens,hookshot",
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_use_lens,[logic_light_trial_mq],$damage_single_instance_ohko"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2591,7 +2614,8 @@
         "name": "Spirit Trial Second Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "@Ganons Castle MQ/Spirit Trial First Chest,$has_bombchus,$can_see_with_lens"
+          "@Ganons Castle MQ/Spirit Trial First Chest,$has_bombchus,[logic_lens_castle_mq]",
+          "@Ganons Castle MQ/Spirit Trial First Chest,$has_bombchus,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2618,7 +2642,8 @@
       {
         "name": "Deku Scrubs",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_castle_mq]",
+          "$can_use_lens"
         ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
@@ -2682,10 +2707,14 @@
       {
         "name": "Back Areas",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_see_with_lens,$has_bottle,ocarina,time",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_see_with_lens,$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_see_with_lens,$has_bottle,[ocarina],[time],bombs,shield2",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_see_with_lens,$has_bottle,[ocarina],[time],bombs,shield3"
+          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,ocarina,time",
+          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield2",
+          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield3",
+          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,ocarina,time",
+          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield2",
+          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield3"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2816,7 +2845,8 @@
         "name": "Hidden Ceiling Chest",
         "short_name": "Hidden Ceiling",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_gtg_mq]",
+          "$can_use_lens"
         ],
         "item_count": 1
       },

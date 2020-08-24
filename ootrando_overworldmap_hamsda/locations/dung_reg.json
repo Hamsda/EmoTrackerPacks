@@ -1626,8 +1626,10 @@
       {
         "name": "Beginning",
         "access_rules": [
-          "$can_see_with_lens,$has_age|adult,hoverboots",
-          "$can_see_with_lens,$has_age|adult,hookshot"
+          "[logic_lens_shadow],$has_age|adult,hoverboots",
+          "[logic_lens_shadow],$has_age|adult,hookshot",
+          "$can_use_lens,$has_age|adult,hoverboots",
+          "$can_use_lens,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1657,7 +1659,8 @@
       {
         "name": "Wind Tunnel",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot,[logic_lens_shadow_back]",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot,$can_use_lens"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1769,7 +1772,8 @@
         "name": "Invisible Spikes Chest",
         "short_name": "Invisible Spikes",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,[logic_lens_shadow_back]",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -1777,9 +1781,12 @@
         "name": "Freestanding Key",
         "short_name": "Skull Pot",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,bombs",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,lift1",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_shadow_freestanding_key],$has_bombchus"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],bombs",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],lift1",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],[logic_shadow_freestanding_key],$has_bombchus",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,bombs",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,lift1",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,[logic_shadow_freestanding_key],$has_bombchus"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -1789,7 +1796,8 @@
         "name": "GS83 - Single Giant Pot",
         "short_name": "Single Skull",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back]",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2239,7 +2247,8 @@
         "name": "Hallway Invisible Chests",
         "short_name": "Invisible Hallway",
         "access_rules": [
-          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,$can_see_with_lens"
+          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,[logic_lens_spirit]",
+          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,$can_use_lens"
         ],
         "item_count": 2
       },
@@ -2315,7 +2324,8 @@
         "name": "Front Left Hidden Wall",
         "short_name": "Front Hidden",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_botw]",
+          "$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2324,7 +2334,8 @@
         "name": "Right Bottom Hidden Wall",
         "short_name": "Right Hidden",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_botw]",
+          "$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2333,7 +2344,8 @@
         "name": "Center Large Chest",
         "short_name": "Center Large",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_botw]",
+          "$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -2342,7 +2354,8 @@
         "name": "Center Small Chest",
         "short_name": "Center Small",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_botw]",
+          "$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2350,7 +2363,8 @@
         "name": "GS79 - West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang",
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_botw]",
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_use_lens",
           "{botw_small_keys:1,sling}",
           "{botw_small_keys:1,$has_explosives}"
         ],
@@ -2366,9 +2380,10 @@
         "name": "GS80 - East Inner Room",
         "short_name": "East Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_see_with_lens",
-          "{botw_small_keys:1,sling,$can_see_with_lens}",
-          "{botw_small_keys:1,$has_explosives,$can_see_with_lens}"
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_botw]",
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_use_lens",
+          "{botw_small_keys:1,sling}",
+          "{botw_small_keys:1,$has_explosives}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2381,7 +2396,8 @@
       {
         "name": "Locked Pits",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens"
+          "botw_small_keys:1,[botw_small_keys:3],[logic_lens_botw]",
+          "botw_small_keys:1,[botw_small_keys:3],$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2427,7 +2443,8 @@
         "name": "Back Left Bombable",
         "short_name": "Back Bombable",
         "access_rules": [
-          "$has_explosives"
+          "$has_explosives,[logic_lens_botw]",
+          "$has_explosives,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -2436,7 +2453,8 @@
         "short_name": "Basement",
         "access_rules": [
           "$has_explosives",
-          "lift1,botw_small_keys:1,[botw_small_keys:3],$can_see_with_lens",
+          "lift1,botw_small_keys:1,[botw_small_keys:3],[logic_lens_botw]",
+          "lift1,botw_small_keys:1,[botw_small_keys:3],$can_use_lens",
           "lift1,dinsfire,magic",
           "lift1,sticks,[logic_botw_basement]"
         ],
@@ -2472,7 +2490,8 @@
       {
         "name": "Invisible Chest",
         "access_rules": [
-          "ocarina,lullaby,$can_see_with_lens"
+          "ocarina,lullaby,[logic_lens_botw]",
+          "ocarina,lullaby,$can_use_lens"
         ],
         "item_count": 1
       }
@@ -2558,9 +2577,11 @@
         "name": "Shadow Trial Clear",
         "short_name": "Shadow Trial",
         "access_rules": [
-          "$can_LA,hammer,firearrow,$can_see_with_lens",
+          "$can_LA,hammer,firearrow,[logic_lens_castle]",
+          "$can_LA,hammer,firearrow,$can_use_lens",
           "$can_LA,hammer,longshot,hoverboots",
-          "$can_LA,hammer,longshot,dinsfire,$can_see_with_lens"
+          "$can_LA,hammer,longshot,dinsfire,[logic_lens_castle]",
+          "$can_LA,hammer,longshot,dinsfire,$can_use_lens"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2590,7 +2611,8 @@
         "name": "Light Trial Invisible Enemies Chest",
         "short_name": "Light Trial Enemies",
         "access_rules": [
-          "lift3,$can_see_with_lens"
+          "lift3,[logic_lens_castle]",
+          "lift3,$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2608,7 +2630,8 @@
         "name": "Light Trial Clear",
         "short_name": "Light Trial",
         "access_rules": [
-          "lift3,$can_LA,hookshot,gc_small_keys:2,$can_see_with_lens"
+          "lift3,$can_LA,hookshot,gc_small_keys:2,[logic_lens_castle]",
+          "lift3,$can_LA,hookshot,gc_small_keys:2,$can_use_lens"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2628,8 +2651,10 @@
         "name": "Spirit Trial Second Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "$has_bombchus,$can_see_with_lens,[logic_spirit_trial_hookshot]",
-          "$has_bombchus,$can_see_with_lens,hookshot"
+          "$has_bombchus,[logic_lens_castle],[logic_spirit_trial_hookshot]",
+          "$has_bombchus,[logic_lens_castle],hookshot",
+          "$has_bombchus,$can_use_lens,[logic_spirit_trial_hookshot]",
+          "$has_bombchus,$can_use_lens,hookshot"
         ],
         "item_count": 1
       },
@@ -2648,7 +2673,8 @@
       {
         "name": "Deku Scrubs",
         "access_rules": [
-          "$can_see_with_lens"
+          "[logic_lens_castle]",
+          "$can_use_lens"
         ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
@@ -2792,10 +2818,14 @@
       {
         "name": "Eye Statue Upper",
         "access_rules": [
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,hookshot",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],bombs,shield2",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_see_with_lens,[hookshot],bombs,shield3"
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],hookshot",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield2",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield3",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,hookshot",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield2",
+          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield3"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2971,7 +3001,8 @@
         "name": "Hidden Ceiling Chest",
         "short_name": "Hidden Ceiling",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_see_with_lens"
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],[logic_lens_gtg]",
+          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1

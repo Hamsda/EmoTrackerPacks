@@ -4108,7 +4108,7 @@
                       {
                         "name": "Cheater",
                         "access_rules": [
-                          "$has_age|child,[lens],[magic]",
+                          "$has_age|child,[$can_use_lens]",
                           "{$hintable}"
                         ],
                         "capture_item": true,

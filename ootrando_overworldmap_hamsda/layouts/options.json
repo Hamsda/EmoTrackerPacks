@@ -66,8 +66,7 @@
               "item_margin": "1,2",
               "rows": [
                 [
-                  "setting_skulltulas_sun",
-                  "setting_lens"
+                  "setting_skulltulas_sun"
                 ]
               ]
             },
@@ -674,6 +673,84 @@
                     {
                       "type": "item",
                       "item": "logic_shadow_fire_arrow_entry",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_wasteland",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_botw",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_castle_mq",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_castle",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_gtg_mq",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_gtg",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_jabu_mq",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_shadow_mq",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_shadow_mq_back",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_shadow",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_shadow_back",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_spirit_mq",
+                      "width": 200,
+                      "height": 16
+                    },
+                    {
+                      "type": "item",
+                      "item": "logic_lens_spirit",
                       "width": 200,
                       "height": 16
                     }
