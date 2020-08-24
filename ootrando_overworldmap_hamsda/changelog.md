@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 2.9.5.0
 
 - added more logic tricks
 - fixed chus not showing as sequence breaks for certain checks
