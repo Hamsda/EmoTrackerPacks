@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed error in bombchu function
+
 ## 2.9.5.0
 
 - added more logic tricks
