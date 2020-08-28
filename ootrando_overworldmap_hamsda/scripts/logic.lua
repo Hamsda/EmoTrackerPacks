@@ -75,6 +75,7 @@ function has_bombchus()
       return chus, AccessibilityLevel.SequenceBreak
     end
   end
+  return 0, AccessibilityLevel.None
 end
 
 function has_explosives()
@@ -708,14 +709,30 @@ function has_projectile(age)
   local bow = has("bow")
   local hook = has("hookshot")
 
+  local result = false
+
   if age == "child" then
-    return explo or sling or rang
+    if explo or sling or rang then
+      result = true
+    end
   elseif age == "adult" then
-    return explo or bow or hook
+    if explo or bow or hook then
+      result = true
+    end
   elseif age == "both" then
-    return explo or (bow or hook) and (sling or rang)
+    if explo or (bow or hook) and (sling or rang) then
+      result = true
+    end
   else
-    return explo or (bow or hook) or (sling or rang)
+    if explo or (bow or hook) or (sling or rang) then
+      result = true
+    end
+  end
+
+  if result then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
   end
 end
 
