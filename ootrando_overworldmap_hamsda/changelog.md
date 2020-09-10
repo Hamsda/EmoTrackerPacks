@@ -3,6 +3,7 @@
 ## x
 
 - added Kakariko Gate and Complete Mask Quest settings
+- fixed chu bowling sequence break showing when it shouldn't
 
 ## 2.9.5.1
 

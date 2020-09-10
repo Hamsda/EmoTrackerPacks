@@ -4071,7 +4071,8 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "$has_age|child,$has_bombchus",
+                      "$has_age|child,setting_logic_chus_yes,bombchu",
+                      "$has_age|child,setting_logic_chus_no,bombs",
                       "{$hintable}"
                     ],
                     "sections": [
