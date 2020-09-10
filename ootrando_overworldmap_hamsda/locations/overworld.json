@@ -2273,22 +2273,19 @@
               },
               {
                 "name": "Guard",
+                "access_rules": [
+                  "$has_age|child"
+                ],
                 "sections": [
                   {
                     "name": "Show Letter",
-                    "access_rules": [
-                      "$has_age|child,letter"
-                    ],
                     "visibility_rules": [
-                      "letter"
+                      "setting_kak_closed,letter"
                     ],
                     "hosted_item": "capture_lettershown"
                   },
                   {
                     "name": "Sell Keaton Mask",
-                    "access_rules": [
-                      "$has_age|child,keaton"
-                    ],
                     "visibility_rules": [
                       "keaton"
                     ],
@@ -4016,54 +4013,49 @@
                   },
                   {
                     "name": "Mask Shop",
+                    "access_rules": [
+                      "$has_age|child"
+                    ],
                     "sections": [
                       {
                         "name": "Get Keaton Mask",
-                        "access_rules": [
-                          "$has_age|child,lettershown"
-                        ],
                         "visibility_rules": [
-                          "lettershown"
+                          "setting_masks_off,setting_kak_open,letter",
+                          "setting_masks_off,setting_kak_letter,letter",
+                          "setting_masks_off,setting_kak_closed,lettershown",
+                          "setting_masks_complete,$mask_shop_open"
                         ],
                         "hosted_item": "capture_keaton"
                       },
                       {
                         "name": "Get Skull Mask",
-                        "access_rules": [
-                          "$has_age|child,keatonsold"
-                        ],
                         "visibility_rules": [
-                          "keatonsold"
+                          "keatonsold",
+                          "setting_masks_complete,$mask_shop_open"
                         ],
                         "hosted_item": "capture_skullmask"
                       },
                       {
                         "name": "Get Spooky Mask",
-                        "access_rules": [
-                          "$has_age|child,skullsold"
-                        ],
                         "visibility_rules": [
-                          "skullsold"
+                          "skullsold",
+                          "setting_masks_complete,$mask_shop_open"
                         ],
                         "hosted_item": "capture_spooky"
                       },
                       {
                         "name": "Get Bunny Hood",
-                        "access_rules": [
-                          "$has_age|child,spookysold"
-                        ],
                         "visibility_rules": [
-                          "spookysold"
+                          "spookysold",
+                          "setting_masks_complete,$mask_shop_open"
                         ],
                         "hosted_item": "capture_bunny"
                       },
                       {
                         "name": "Get Mask of Truth",
-                        "access_rules": [
-                          "$has_age|child,bunnysold"
-                        ],
                         "visibility_rules": [
-                          "bunnysold"
+                          "bunnysold",
+                          "setting_masks_complete,$mask_shop_open"
                         ],
                         "hosted_item": "capture_truth"
                       }
@@ -4079,7 +4071,8 @@
                   {
                     "name": "Bombchu Bowling",
                     "access_rules": [
-                      "$has_age|child,$has_bombchus",
+                      "$has_age|child,setting_logic_chus_yes,bombchu",
+                      "$has_age|child,setting_logic_chus_no,bombs",
                       "{$hintable}"
                     ],
                     "sections": [

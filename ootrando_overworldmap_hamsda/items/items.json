@@ -229,52 +229,52 @@
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,soldout,lettershown,postzelda",
+        "codes": "kidtrade,lettershown,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/keaton.png",
-        "codes": "kidtrade,keaton,keatonmask,postzelda",
+        "codes": "kidtrade,keaton,keatonmask,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,soldout,keatonsold,postzelda",
+        "codes": "kidtrade,keatonsold,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/skull.png",
-        "codes": "kidtrade,skullmask,skull,postzelda",
+        "codes": "kidtrade,skullmask,skull,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,soldout,skullsold,postzelda",
+        "codes": "kidtrade,skullsold,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/spooky.png",
-        "codes": "kidtrade,spooky,spookymask,postzelda",
+        "codes": "kidtrade,spooky,spookymask,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,soldout,spookysold,postzelda",
+        "codes": "kidtrade,spookysold,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/bunny.png",
-        "codes": "kidtrade,bunny,bunnyhood,postzelda",
+        "codes": "kidtrade,bunny,bunnyhood,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,soldout,bunnysold,postzelda",
+        "codes": "kidtrade,bunnysold,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/truth.png",
-        "codes": "kidtrade,truth,maskoftruth,mot,postzelda",
+        "codes": "kidtrade,truth,maskoftruth,mot,postguard,postzelda",
         "inherit_codes": false
       }
     ]

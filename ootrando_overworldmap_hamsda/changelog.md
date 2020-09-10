@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.9.6.0
+
+- added Kakariko Gate and Complete Mask Quest settings
+- fixed chu bowling sequence break showing when it shouldn't
+
 ## 2.9.5.1
 
 - fixed error in bombchu function

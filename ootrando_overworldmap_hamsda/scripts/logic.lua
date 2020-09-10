@@ -379,12 +379,24 @@ function adult_colossus()
   return 1, level
 end
 
+function mask_shop_open()
+  if (has("setting_kak_open") and has("postzelda"))
+  or (has("setting_kak_letter") and has("postzelda"))
+  or (has("setting_kak_closed") and has("postguard"))
+  then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
 function child_death_mountain()
   if has_age("child") == 0 then
     return 0, AccessibilityLevel.None
   end
 
-  if has("postzelda")
+  if has("setting_kak_open")
+  or (has("setting_kak_letter") and has("postzelda"))
+  or (has("setting_kak_closed") and has("postguard"))
   or (has("dinsfire") and has("magic"))
   then
     return 1, AccessibilityLevel.Normal
