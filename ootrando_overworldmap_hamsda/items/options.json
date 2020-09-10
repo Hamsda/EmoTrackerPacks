@@ -23,6 +23,29 @@
     ]
   },
   {
+    "name": "Kakariko Gate",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_kak_open.png",
+        "codes": "setting_kak,setting_kak_open"
+      },
+      {
+        "img": "images/setting_kak_letter.png",
+        "codes": "setting_kak,setting_kak_letter",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_kak_closed.png",
+        "codes": "setting_kak,setting_kak_closed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Door of Time",
     "type": "progressive",
     "allow_disabled": false,
@@ -326,6 +349,23 @@
       {
         "img": "images/setting_shuffle_beans_yes.png",
         "codes": "setting_shuffle_beans,setting_shuffle_beans_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Complete Mask Quest",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_masks_off.png",
+        "codes": "setting_masks,setting_masks_off"
+      },
+      {
+        "img": "images/setting_masks_complete.png",
+        "codes": "setting_masks,setting_masks_complete",
         "inherit_codes": false
       }
     ]

@@ -51,6 +51,14 @@ This setting determines if you can leave the Kokiri Forest without beating the D
 - ![Closed Deku](images/setting_forest_deku.png "Closed Deku") You can leave Kokiri Forest but will need the Kokiri Sword and Deku Shield to go to the Deku Tree.
 - ![Open Forest](images/setting_forest_open.png "Open Forest") You can immediately leave Kokiri Forest and go to the Deku Tree.
 
+#### Kakariko Gate
+
+This setting determines the behaviour of the Kakariko Gate to Death Mountain Trail as child as well as the Happy Mask Shop.
+
+- ![Open Gate](images/setting_kak_open.png "Open Gate") The gate is always open. The Happy Mask Shop opens once you obtain Zelda's Letter.
+- ![Zelda's Letter Opens Gate](images/setting_kak_letter.png "Zelda's Letter Opens Gate") Both the gate and the Happy Mask Shop open once you obtain Zelda's Letter.
+- ![Closed Gate](images/setting_kak_closed.png "Closed Gate") Both the gate and the Happy Mask Shop are closed until showing Zelda's Letter to the guard.
+
 #### Door of Time
 
 This setting determines whether the Door of Time starts open or closed.
@@ -175,6 +183,13 @@ This setting determines if Magic Beans are shuffled.
 
 - ![Magic Beans not shuffled](images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
 - ![Magic Beans shuffled](images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
+
+#### Complete Mask Quest
+
+This setting determines if all masks will be available once the Happy Mask Shop is open.
+
+- ![Mask Quest not complete](images/setting_masks_off.png "Mask Quest not complete") The mask quest has to be completed step by step like in the vanilla game.
+- ![Mask Quest complete](images/setting_masks_complete.png "Mask Quest complete") All the masks will be available once the Happy Mask Shop is open.
 
 #### Hints
 
