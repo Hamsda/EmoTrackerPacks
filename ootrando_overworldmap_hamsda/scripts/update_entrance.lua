@@ -50,6 +50,7 @@ end
 
 
 
+--outdated names
 capture_badge_locations = {
   ["@Death Mountain -> Mountain Bombable Grotto"] = "@Death Mountain -> Mountain Bombable Grotto/Grotto",
   ["@Death Mountain -> Mountain Storms Grotto"] = "@Death Mountain -> Mountain Storms Grotto/Grotto",

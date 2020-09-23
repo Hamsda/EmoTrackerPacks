@@ -12,8 +12,7 @@
             "name": "Kokiri Village",
             "children": [
               {
-                "name": "Kokiri Sword Chest",
-                "short_name": "Kokiri Sword",
+                "name": "KF Kokiri Sword Chest",
                 "sections": [
                   {
                     "name": "Dodge Boulder",
@@ -33,10 +32,10 @@
                 ]
               },
               {
-                "name": "Mido House",
+                "name": "KF Midos House",
                 "sections": [
                   {
-                    "name": "Mido Chests",
+                    "name": "KF Midos Chests",
                     "item_count": 4
                   }
                 ],
@@ -54,14 +53,14 @@
                 ]
               },
               {
-                "name": "Kokiri Forest Storms Grotto",
-                "short_name": "Kokiri Storms Grotto",
+                "name": "KF Storms Grotto",
                 "access_rules": [
                   "$hidden_grotto,ocarina,storm"
                 ],
                 "sections": [
                   {
-                    "name": "Chest",
+                    "name": "KF Storms Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -79,7 +78,7 @@
                 ]
               },
               {
-                "name": "Kokiri Shop",
+                "name": "KF Kokiri Shop",
                 "sections": [
                   {
                     "name": "Item 1",
@@ -122,10 +121,10 @@
                 ]
               },
               {
-                "name": "Links House",
+                "name": "KF Links House",
                 "sections": [
                   {
-                    "name": "Links House Cow",
+                    "name": "KF Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
                       "$has_age|adult,ocarina,epona"
@@ -147,10 +146,11 @@
                 ]
               },
               {
-                "name": "Know It All House",
+                "name": "KF Know It All House",
                 "sections": [
                   {
-                    "name": "GS1 (N)",
+                    "name": "KF GS Know It All House (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$night_gs,$can_child_attack,$can_leave_forest",
                       "$has_age|child,$night_gs,$can_child_attack,ocarina,sun"
@@ -172,10 +172,11 @@
                 ]
               },
               {
-                "name": "Kokiri Bean Patch",
+                "name": "KF Bean Patch",
                 "sections": [
                   {
-                    "name": "GS2",
+                    "name": "KF GS Bean Patch",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$has_bottle,$can_child_attack"
                     ],
@@ -196,10 +197,11 @@
                 ]
               },
               {
-                "name": "House of Twins",
+                "name": "KF House of Twins",
                 "sections": [
                   {
-                    "name": "GS3 (N)",
+                    "name": "KF GS House of Twins (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|adult,$night_gs,hookshot",
                       "$has_age|adult,$night_gs,hoverboots,[logic_adult_kokiri_gs]", //TODO: can be done itemless, no trick yet
@@ -222,14 +224,14 @@
                     "y": 981
                   }
                 ]
-                  }
-                ]
-              },
-              {
+              }
+            ]
+          },
+          {
             "name": "Lost Woods",
             "children": [
               {
-                "name": "Skull Kid",
+                "name": "LW Skull Kid",
                 "sections": [
                   {
                     "name": "Play Sarias Song",
@@ -260,14 +262,14 @@
                 ]
               },
               {
-                "name": "Lost Woods Generic Grotto",
-                "short_name": "Goron City Grotto",
+                "name": "LW Near Shortcuts Grotto",
+                "access_rules": [
+                  "$can_blast"
+                ],
                 "sections": [
                   {
-                    "name": "Blast it",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
+                    "name": "LW Near Shortcuts Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -285,11 +287,11 @@
                 ]
               },
               {
-                "name": "Ocarina Memory Game",
+                "name": "LW Ocarina Memory Game",
                 "short_name": "Ocarina Game",
                 "sections": [
                   {
-                    "name": "Repeat",
+                    "name": "ResidentSleeper",
                     "access_rules": [
                       "$has_age|child,ocarina"
                     ],
@@ -305,7 +307,7 @@
                 ]
               },
               {
-                "name": "Target in Woods",
+                "name": "LW Target in Woods",
                 "sections": [
                   {
                     "name": "Shoot it",
@@ -398,11 +400,10 @@
                 ]
               },
               {
-                "name": "LW Deku Scrub Deku Stick Upgrade",
-                "short_name": "Scrub Below Bridge",
+                "name": "LW Deku Scrub Near Bridge",
                 "sections": [
                   {
-                    "name": "Pay up",
+                    "name": "Stick upgrade",
                     "access_rules": [
                       "$has_age|child,$can_child_attack",
                       "$has_age|child,nuts",
@@ -422,23 +423,22 @@
                 ]
               },
               {
-                "name": "Lost Woods Sales Grotto",
-                "short_name": "Sales Grotto",
+                "name": "LW Scrubs Grotto",
                 "access_rules": [
                   "$has_explosives",
                   "$has_age|adult,hammer,$beyond_mido"
                 ],
                 "sections": [
                   {
-                    "name": "LW Grotto Deku Scrub Deku Nut Upgrade",
-                    "short_name": "Nut Capacity",
+                    "name": "LW Deku Scrub Grotto Front",
+                    "short_name": "Front",
                     "chest_unopened_img": "images/deku_scrub.png",
                     "chest_opened_img": "images/deku_scrub_grey.png",
                     "item_count": 1
                   },
                   {
-                    "name": "LW Grotto Deku Scrub Arrows",
-                    "short_name": "Arrows",
+                    "name": "LW Deku Scrub Grotto Rear",
+                    "short_name": "Rear",
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
                     ],
@@ -461,12 +461,15 @@
                 ]
               },
               {
-                "name": "LW Deku Scrubs",
+                "name": "LW Deku Scrubs Near Deku Theater",
+                "short_name": "LW Deku Scrubs",
                 "sections": [
                   {
                     "name": "Deku Nuts / Deku Sticks",
                     "access_rules": [
-                      "$has_age|child,$can_stun_deku"
+                      "$has_age|child,$can_child_attack",
+                      "$has_age|child,nuts",
+                      "$has_age|child,shield1"
                     ],
                     "visibility_rules": [
                       "setting_scrub_shuffle_yes"
@@ -486,11 +489,11 @@
                 ]
               },
               {
-                "name": "Lost Woods Bean Patch Near Bridge",
-                "short_name": "Bean Patch Near Bridge",
+                "name": "LW Bean Patch Near Bridge",
                 "sections": [
                   {
-                    "name": "GS4",
+                    "name": "LW GS Bean Patch Near Bridge",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$has_bottle,$can_child_attack"
                     ],
@@ -511,8 +514,7 @@
                 ]
               },
               {
-                "name": "Lost Woods Bean Patch Near Stage",
-                "short_name": "Bean Patch Near Stage",
+                "name": "LW Bean Patch Near Theater",
                 "sections": [
                   {
                     "name": "Plant Bean",
@@ -525,10 +527,11 @@
                     "hosted_item": "bean_stage_yes"
                   },
                   {
-                    "name": "GS5",
+                    "name": "LW GS Bean Patch Near Theater",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$has_bottle,$can_child_attack",
-                      "$has_age|child,$has_bottle,shield1"
+                      "$has_age|child,$has_bottle,shield1,setting_scrub_shuffle_no"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -547,14 +550,14 @@
                 ]
               },
               {
-                "name": "Lost Woods Above Stage",
-                "short_name": "Above Stage",
+                "name": "LW Above Theater",
                 "access_rules": [
                   "$night_gs,$has_age|adult,$beyond_mido"
                 ],
                 "sections": [
                   {
-                    "name": "GS6 (N)",
+                    "name": "LW GS Above Theater (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "setting_plant_no,beans",
                       "bean_stage_yes",
@@ -578,22 +581,22 @@
                     "y": 740
                   }
                 ]
-                  }
-                ]
-              },
-              {
+              }
+            ]
+          },
+          {
             "name": "Sacred Forest Meadow",
             "children": [
               {
-                "name": "Front of Meadow Grotto",
-                "short_name": "Wolfos Grotto",
+                "name": "SFM Wolfos Grotto",
                 "access_rules": [
                   "$hidden_grotto,$has_explosives",
                   "$hidden_grotto,$has_age|adult,hammer,$beyond_mido"
                 ],
                 "sections": [
                   {
-                    "name": "Kill them",
+                    "name": "SFM Wolfos Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -637,8 +640,7 @@
                 ]
               },
               {
-                "name": "Sheik Forest Song",
-                "short_name": "Sheik in Meadow",
+                "name": "Sheik in Forest",
                 "sections": [
                   {
                     "name": "Song",
@@ -661,13 +663,14 @@
                 ]
               },
               {
-                "name": "Meadow Storms Grotto",
+                "name": "SFM Storms Grotto",
                 "access_rules": [
                   "$hidden_grotto,ocarina,storm"
                 ],
                 "sections": [
                   {
-                    "name": "Deku Scrubs",
+                    "name": "SFM Deku Scrubs Grotto",
+                    "short_name": "Deku Scrubs",
                     "access_rules": [
                       "$has_age|adult,$beyond_mido",
                       "$has_age|child,minuet,nuts",
@@ -701,13 +704,14 @@
                 ]
               },
               {
-                "name": "Top of Maze",
+                "name": "SFM Maze",
                 "access_rules": [
                   "$night_gs,$has_age|adult,$beyond_mido"
                 ],
                 "sections": [
                   {
-                    "name": "GS7 (N)",
+                    "name": "SFM GS (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "hookshot",
                       "{bow}",
@@ -730,10 +734,10 @@
                     "y": 664
                   }
                 ]
-                  }
-                ]
-                  }
-                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Outside Forest",
@@ -746,11 +750,11 @@
             "color": "#09a09d",
             "children": [
               {
-                "name": "Lost Woods Bridge",
+                "name": "LW Bridge",
                 "color": "#18a50e",
                 "sections": [
                   {
-                    "name": "Gift from Saria",
+                    "name": "LW Gift from Saria",
                     "capture_item": true,
                     "item_count": 1
                   }
@@ -769,19 +773,21 @@
                 ]
               },
               {
-                "name": "Ocarina of Time",
+                "name": "HF Ocarina of Time",
                 "access_rules": [
                   "$has_age|child,stones:3",
                   "{$hintable}"
                 ],
                 "sections": [
                   {
-                    "name": "Item",
+                    "name": "HF Ocarina of Time Item",
+                    "short_name": "Item",
                     "capture_item": true,
                     "item_count": 1
                   },
                   {
-                    "name": "Song",
+                    "name": "Song from Ocarina of Time",
+                    "short_name": "Song",
                     "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
@@ -797,14 +803,14 @@
                 ]
               },
               {
-                "name": "Field North Lon Lon Grotto",
-                "short_name": "Tektite Grotto",
+                "name": "HF Tektite Grotto",
                 "access_rules": [
                   "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
-                    "name": "Dive down",
+                    "name": "HF Tektite Grotto Freestanding PoH",
+                    "short_name": "HP",
                     "access_rules": [
                       "scale2",
                       "$has_age|adult,ironboots",
@@ -830,14 +836,14 @@
                 ]
               },
               {
-                "name": "Field Near Lake Inside Fence Grotto",
-                "short_name": "Grotto Inside Fence",
+                "name": "HF Inside Fence Grotto",
                 "access_rules": [
                   "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
-                    "name": "Deku Scrub",
+                    "name": "HF Deku Scrub Grotto",
+                    "short_name": "Deku Scrub",
                     "access_rules": [
                       "$can_stun_deku"
                     ],
@@ -860,11 +866,11 @@
                 ]
               },
               {
-                "name": "Field Near Lake Outside Fence Grotto",
-                "short_name": "Grotto Outside Fence",
+                "name": "HF Open Grotto",
                 "sections": [
                   {
-                    "name": "Chest",
+                    "name": "HF Open Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -882,14 +888,15 @@
                 ]
               },
               {
-                "name": "Field West Castle Town Grotto",
-                "short_name": "Grotto near Bridge",
+                "name": "HF Near Market Grotto",
+                "short_name": "Boulda",
+                "access_rules": [
+                  "$can_blast"
+                ],
                 "sections": [
                   {
-                    "name": "Boulda",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
+                    "name": "HF Near Market Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -907,13 +914,14 @@
                 ]
               },
               {
-                "name": "Remote Southern Grotto",
+                "name": "HF Southeast Grotto",
+                "access_rules": [
+                  "$can_blast"
+                ],
                 "sections": [
                   {
-                    "name": "Blast it",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
+                    "name": "HF Southeast Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -953,13 +961,14 @@
                 ]
               },
               {
-                "name": "Field Kakariko Grotto",
+                "name": "HF Near Kak Grotto",
                 "access_rules": [
                   "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
-                    "name": "GS12",
+                    "name": "HF GS Near Kak Grotto",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$has_explosives,boomerang",
                       "{$has_age|child,$has_explosives,sling}",
@@ -990,13 +999,14 @@
                 ]
               },
               {
-                "name": "Field Valley Grotto",
+                "name": "HF Cow Grotto",
                 "access_rules": [
                   "$hidden_grotto"
                 ],
                 "sections": [
                   {
-                    "name": "GS13",
+                    "name": "HF GS Cow Grotto",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$has_explosives,dinsfire,magic,boomerang",
                       "{$has_age|child,$has_explosives,dinsfire,magic}",
@@ -1013,7 +1023,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "HF Grotto Cow",
+                    "name": "HF Cow Grotto Cow",
                     "short_name": "Cow",
                     "access_rules": [
                       "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
@@ -1045,7 +1055,7 @@
                 "color": "#0936a0",
                 "children": [
                   {
-                    "name": "Underwater Bottle",
+                    "name": "LH Underwater Item",
                     "sections": [
                       {
                         "name": "Dive down",
@@ -1066,7 +1076,7 @@
                     ]
                   },
                   {
-                    "name": "Child Fishing",
+                    "name": "LH Child Fishing",
                     "sections": [
                       {
                         "name": "Bite pls",
@@ -1086,7 +1096,7 @@
                     ]
                   },
                   {
-                    "name": "Adult Fishing",
+                    "name": "LH Adult Fishing",
                     "sections": [
                       {
                         "name": "Bite pls",
@@ -1110,7 +1120,7 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Sun",
+                    "name": "LH Sun",
                     "sections": [
                       {
                         "name": "Shoot it",
@@ -1133,11 +1143,10 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Freestanding PoH",
-                    "short_name": "Lab Tower",
+                    "name": "LH Lab Tower",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "LH Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$has_age|adult,setting_plant_no,beans",
@@ -1158,12 +1167,10 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Lab",
-                    "short_name": "Lakeside Lab",
+                    "name": "LH Lab",
                     "sections": [
                       {
-                        "name": "Diving in the Lab",
-                        "short_name": "Dive down",
+                        "name": "LH Lab Dive",
                         "access_rules": [
                           "scale2",
                           "$has_age|adult,[logic_lab_diving],ironboots,hookshot"
@@ -1179,6 +1186,19 @@
                           "speedfrog"
                         ],
                         "hosted_item": "capture_eyedrops"
+                      },
+                      {
+                        "name": "LH GS Lab Crate",
+                        "short_name": "GS",
+                        "access_rules": [
+                          "$has_age|adult,ironboots,hookshot"
+                        ],
+                        "visibility_rules": [
+                          "setting_tokens_overworld"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -1233,11 +1253,11 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Grotto",
-                    "short_name": "Under Gravestone",
+                    "name": "LH Grotto",
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
+                        "name": "LH Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "access_rules": [
                           "$can_stun_deku"
                         ],
@@ -1264,7 +1284,7 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Bean Patch",
+                    "name": "LH Bean Patch",
                     "sections": [
                       {
                         "name": "Plant Bean",
@@ -1277,7 +1297,8 @@
                         "hosted_item": "bean_lake_yes"
                       },
                       {
-                        "name": "GS55",
+                        "name": "LH GS Bean Patch",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$has_bottle,$can_child_attack"
                         ],
@@ -1298,13 +1319,14 @@
                     ]
                   },
                   {
-                    "name": "Lab Wall",
+                    "name": "LH Lab Wall",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS56 (N)",
+                        "name": "LH GS Lab Wall (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "boomerang",
                           "[logic_lab_wall_gs],sticks",
@@ -1330,10 +1352,11 @@
                     ]
                   },
                   {
-                    "name": "Small Island",
+                    "name": "LH Small Island",
                     "sections": [
                       {
-                        "name": "GS57 (N)",
+                        "name": "LH GS Small Island (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$night_gs,$can_child_attack"
                         ],
@@ -1354,10 +1377,11 @@
                     ]
                   },
                   {
-                    "name": "Giant Tree",
+                    "name": "LH Tree",
                     "sections": [
                       {
-                        "name": "GS58 (N)",
+                        "name": "LH GS Tree (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|adult,$night_gs,longshot"
                         ],
@@ -1376,33 +1400,10 @@
                         "y": 1415
                       }
                     ]
-                  },
-                  {
-                    "name": "Lab Underwater Crate",
-                    "short_name": "Lab Crate",
-                    "sections": [
-                      {
-                        "name": "GS59",
-                        "access_rules": [
-                          "$has_age|adult,ironboots,hookshot"
-                        ],
-                        "visibility_rules": [
-                          "setting_tokens_overworld"
-                        ],
-                        "chest_unopened_img": "images/skulltula.png",
-                        "chest_opened_img": "images/skulltula_token.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "adult",
-                        "x": 959,
-                        "y": 1229
-                      }
-                    ]
-                  },
-                  {
+                  }
+                ]
+              },
+              {
                 "name": "Lon Lon Ranch",
                 "color": "#09a09d",
                 "children": [
@@ -1429,10 +1430,10 @@
                     ]
                   },
                   {
-                    "name": "Talon House",
+                    "name": "LLR Talons House",
                     "sections": [
                       {
-                        "name": "Talons Chickens",
+                        "name": "LLR Talons Chickens",
                         "access_rules": [
                           "$has_age|child,postzelda"
                         ],
@@ -1448,10 +1449,10 @@
                     ]
                   },
                   {
-                    "name": "Corner Tower",
+                    "name": "LLR Tower",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "LLR Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$has_age|child"
@@ -1488,8 +1489,7 @@
                     ]
                   },
                   {
-                    "name": "Ingo Barn",
-                    "short_name": "Stables",
+                    "name": "LLR Stables",
                     "sections": [
                       {
                         "name": "LLR Stables Cows",
@@ -1519,10 +1519,11 @@
                     ]
                   },
                   {
-                    "name": "Lon Lon Grotto",
+                    "name": "LLR Grotto",
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
+                        "name": "LLR Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "access_rules": [
                           "$has_age|child,$can_child_attack",
                           "$has_age|child,nuts",
@@ -1546,11 +1547,11 @@
                     ]
                   },
                   {
-                    "name": "Lon Lon Ranch Tree",
-                    "short_name": "Lone Tree",
+                    "name": "LLR Tree",
                     "sections": [
                       {
-                        "name": "GS18",
+                        "name": "LLR GS Tree",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -1571,11 +1572,11 @@
                     ]
                   },
                   {
-                    "name": "Lon Lon Ranch Rain Shed",
-                    "short_name": "Rain Shed",
+                    "name": "LLR Rain Shed",
                     "sections": [
                       {
-                        "name": "GS19 (N)",
+                        "name": "LLR GS Rain Shed (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$night_gs"
                         ],
@@ -1596,11 +1597,11 @@
                     ]
                   },
                   {
-                    "name": "Lon Lon Ranch House Window",
-                    "short_name": "House Window",
+                    "name": "LLR House Window",
                     "sections": [
                       {
-                        "name": "GS20 (N)",
+                        "name": "LLR GS House Window (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$night_gs,boomerang",
                           "{$has_age|child,sling}",
@@ -1624,11 +1625,11 @@
                     ]
                   },
                   {
-                    "name": "Lon Lon Ranch Back Wall",
-                    "short_name": "Back Wall",
+                    "name": "LLR Back Wall",
                     "sections": [
                       {
-                        "name": "GS21 (N)",
+                        "name": "LLR GS Back Wall (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$night_gs,boomerang",
                           "{$has_age|child,sling}",
@@ -1661,14 +1662,14 @@
             "color": "#6909a0",
             "children": [
               {
-                "name": "Kakariko Bombable Grotto",
-                "short_name": "Center Grotto",
+                "name": "Kak Redead Grotto",
                 "access_rules": [
                   "$hidden_grotto,$can_blast"
                 ],
                 "sections": [
                   {
-                    "name": "Kill them",
+                    "name": "Kak Redead Grotto Chest",
+                    "short_name": "Chest",
                     "access_rules": [
                       "$has_age|adult",
                       "$has_age|child,sticks",
@@ -1692,11 +1693,11 @@
                 ]
               },
               {
-                "name": "Kakariko Back Grotto",
-                "short_name": "Back Grotto",
+                "name": "Kak Open Grotto",
                 "sections": [
                   {
-                    "name": "Chest",
+                    "name": "Kak Open Grotto Chest",
+                    "short_name": "Chest",
                     "item_count": 1
                   }
                 ],
@@ -1714,17 +1715,17 @@
                 ]
               },
               {
-                "name": "Impa House",
+                "name": "Kak Impas House",
                 "sections": [
                   {
-                    "name": "Freestanding PoH",
+                    "name": "Kak Impas House Freestanding PoH",
                     "short_name": "HP",
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
                   },
                   {
-                    "name": "Impas House Cow",
+                    "name": "Kak Impas House Cow",
                     "short_name": "Cow",
                     "access_rules": [
                       "ocarina,epona"
@@ -1751,7 +1752,7 @@
                 ]
               },
               {
-                "name": "Man on Roof",
+                "name": "Kak Man on Roof",
                 "sections": [
                   {
                     "name": "Talk to him",
@@ -1776,10 +1777,11 @@
                 ]
               },
               {
-                "name": "Kakariko Shooting Gallery",
+                "name": "Kak Shooting Gallery",
                 "sections": [
                   {
-                    "name": "Adult Shooting Gallery",
+                    "name": "Kak Shooting Gallery Reward",
+                    "short_name": "Reward",
                     "access_rules": [
                       "$has_age|adult,bow",
                       "{$hintable}"
@@ -1797,10 +1799,10 @@
                 ]
               },
               {
-                "name": "Windmill",
+                "name": "Kak Windmill",
                 "sections": [
                   {
-                    "name": "Freestanding PoH",
+                    "name": "Kak Windmill Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
                       "$has_age|child,boomerang",
@@ -1811,6 +1813,18 @@
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Song from Windmill",
+                    "short_name": "Guru-Guru",
+                    "access_rules": [
+                      "$has_age|adult,ocarina",
+                      "{$hintable}"
+                    ],
+                    "capture_item": true,
+                    "chest_unopened_img": "images/grey_note.png",
+                    "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   }
                 ],
@@ -1824,30 +1838,6 @@
                     "map": "adult",
                     "x": 1935,
                     "y": 346
-                  }
-                ]
-              },
-              {
-                "name": "Song at Windmill",
-                "short_name": "Guru-Guru",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "$has_age|adult,ocarina",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "adult",
-                    "x": 1945,
-                    "y": 376
                   }
                 ]
               },
@@ -1875,10 +1865,10 @@
                 ]
               },
               {
-                "name": "Anjus Chickens",
+                "name": "Kak Anju as Child",
                 "sections": [
                   {
-                    "name": "Catch them",
+                    "name": "Chickens",
                     "access_rules": [
                       "$has_age|child"
                     ],
@@ -1894,7 +1884,7 @@
                 ]
               },
               {
-                "name": "Anju as Adult",
+                "name": "Kak Anju as Adult",
                 "sections": [
                   {
                     "name": "Talk to her",
@@ -1952,7 +1942,7 @@
                 ]
               },
               {
-                "name": "Old Hag",
+                "name": "Kak Odd Medicine Building",
                 "sections": [
                   {
                     "name": "Give Mushroom",
@@ -1974,17 +1964,19 @@
                 ]
               },
               {
-                "name": "House of Skulltula",
+                "name": "Kak House of Skulltula",
                 "sections": [
                   {
-                    "name": "10 Skulltulas",
+                    "name": "Kak 10 Gold Skulltula Reward",
+                    "short_name": "10 Tokens",
                     "access_rules": [
                       "skulltula:10"
                     ],
                     "item_count": 1
                   },
                   {
-                    "name": "20 Skulltulas",
+                    "name": "Kak 10 Gold Skulltula Reward",
+                    "short_name": "20 Tokens",
                     "access_rules": [
                       "skulltula:20",
                       "{$hintable}"
@@ -1993,7 +1985,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "30 Skulltulas",
+                    "name": "Kak 10 Gold Skulltula Reward",
+                    "short_name": "30 Tokens",
                     "access_rules": [
                       "skulltula:30",
                       "{$hintable}"
@@ -2002,7 +1995,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "40 Skulltulas",
+                    "name": "Kak 10 Gold Skulltula Reward",
+                    "short_name": "40 Tokens",
                     "access_rules": [
                       "skulltula:40",
                       "{$hintable}"
@@ -2011,7 +2005,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "50 Skulltulas",
+                    "name": "Kak 10 Gold Skulltula Reward",
+                    "short_name": "50 Tokens",
                     "access_rules": [
                       "skulltula:50",
                       "{$hintable}"
@@ -2034,7 +2029,7 @@
                 ]
               },
               {
-                "name": "Kakariko Potion Shop",
+                "name": "Kak Potion Shop",
                 "access_rules": [
                   "$has_age|adult"
                 ],
@@ -2072,7 +2067,7 @@
                 ]
               },
               {
-                "name": "Kakariko Bazaar",
+                "name": "Kak Bazaar",
                 "access_rules": [
                   "$has_age|adult"
                 ],
@@ -2110,11 +2105,11 @@
                 ]
               },
               {
-                "name": "Kakariko Above Impa's House",
-                "short_name": "Above Impa's House",
+                "name": "Kak Above Impas House",
                 "sections": [
                   {
-                    "name": "GS27 (N)",
+                    "name": "Kak GS Above Impas House (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|adult,$night_gs,hookshot"
                     ],
@@ -2135,11 +2130,11 @@
                 ]
               },
               {
-                "name": "Kakariko Tree",
-                "short_name": "Tree",
+                "name": "Kak Tree",
                 "sections": [
                   {
-                    "name": "GS22 (N)",
+                    "name": "Kak GS Tree (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2160,11 +2155,11 @@
                 ]
               },
               {
-                "name": "Kakariko Skulltula House",
-                "short_name": "Skulltula House",
+                "name": "Kak Skulltula House",
                 "sections": [
                   {
-                    "name": "GS23 (N)",
+                    "name": "Kak GS Skulltula House (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2185,11 +2180,11 @@
                 ]
               },
               {
-                "name": "Kakariko House Under Construction",
-                "short_name": "Under Construction",
+                "name": "Kak House Under Construction",
                 "sections": [
                   {
-                    "name": "GS24 (N)",
+                    "name": "Kak GS House Under Construction (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2210,11 +2205,11 @@
                 ]
               },
               {
-                "name": "Kakariko Guard's House",
-                "short_name": "Bazaar Wall",
+                "name": "Kak Guards House",
                 "sections": [
                   {
-                    "name": "GS25 (N)",
+                    "name": "Kak GS Guards House (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2235,14 +2230,14 @@
                 ]
               },
               {
-                "name": "Kakariko Watchtower",
-                "short_name": "Watchtower",
+                "name": "Kak Watchtower",
                 "access_rules": [
                   "$has_age|child,$night_gs"
                 ],
                 "sections": [
                   {
-                    "name": "GS26 (N)",
+                    "name": "Kak GS Watchtower (N)",
+                    "short_name": "GS",
                     "access_rules": [
                       "sling",
                       "$has_bombchus",
@@ -2272,7 +2267,8 @@
                     "name": "Dampe",
                     "sections": [
                       {
-                        "name": "Gravedigging Tour",
+                        "name": "Graveyard Dampe Gravedigging Tour",
+                        "short_name": "HP",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -2290,18 +2286,19 @@
                     ]
                   },
                   {
-                    "name": "Dampes Grave",
+                    "name": "Graveyard Dampes Grave",
+                    "short_name": "Dampes Grave",
                     "access_rules": [
                       "$has_age|adult"
                     ],
                     "sections": [
                       {
-                        "name": "Hookshot Chest",
-                        "short_name": "Hookshot",
+                        "name": "Graveyard Hookshot Chest",
+                        "short_name": "Chest",
                         "item_count": 1
                       },
                       {
-                        "name": "Freestanding PoH",
+                        "name": "Graveyard Dampe Race Freestanding PoH",
                         "short_name": "HP",
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -2317,10 +2314,12 @@
                     ]
                   },
                   {
-                    "name": "Shield Grave",
+                    "name": "Graveyard Shield Grave",
+                    "short_name": "Shield Grave",
                     "sections": [
                       {
-                        "name": "Chest",
+                        "name": "Graveyard Shield Grave Chest",
+                        "short_name": "Chest",
                         "item_count": 1
                       }
                     ],
@@ -2338,11 +2337,12 @@
                     ]
                   },
                   {
-                    "name": "Heart Piece Grave",
-                    "short_name": "Redead Grave",
+                    "name": "Graveyard Heart Piece Grave",
+                    "short_name": "HP Grave",
                     "sections": [
                       {
-                        "name": "Play Suns Song",
+                        "name": "Graveyard Heart Piece Grave Chest",
+                        "short_name": "Play Suns Song",
                         "access_rules": [
                           "ocarina,sun",
                           "{$hintable}"
@@ -2397,7 +2397,7 @@
                     ]
                   },
                   {
-                    "name": "Composer Grave",
+                    "name": "Graveyard Composers Grave",
                     "short_name": "Royal Tomb",
                     "access_rules": [
                       "ocarina,lullaby",
@@ -2405,7 +2405,7 @@
                     ],
                     "sections": [
                       {
-                        "name": "Song from Composer Grave",
+                        "name": "Song from Composers Grave",
                         "short_name": "Song",
                         "access_rules": [
                           "$has_age|adult",
@@ -2422,8 +2422,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Composer Grave Chest",
-                        "short_name": "Torches",
+                        "name": "Graveyard Composers Grave Chest",
+                        "short_name": "Chest",
                         "access_rules": [
                           "$has_fire",
                           "$has_age|child,sticks,[$has_fire]",
@@ -2470,13 +2470,13 @@
                   },
                   {
                     "name": "Graveyard Wall",
-                    "short_name": "Wall",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS28 (N)",
+                        "name": "Graveyard GS Wall (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "boomerang",
                           "{sling}",
@@ -2514,7 +2514,8 @@
                         "hosted_item": "bean_graveyard_yes"
                       },
                       {
-                        "name": "GS29",
+                        "name": "Graveyard GS Bean Patch",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$has_bottle,$can_child_attack"
                         ],
@@ -2546,16 +2547,39 @@
                 "name": "Goron City",
                 "children": [
                   {
-                    "name": "Goron City Maze Right",
-                    "short_name": "Boulder Maze Right",
+                    "name": "GC Maze",
                     "sections": [
                       {
-                        "name": "Chests",
+                        "name": "Right and Center Chests",
                         "access_rules": [
                           "$can_blast",
                           "$has_age|adult,lift2"
                         ],
                         "item_count": 2
+                      },
+                      {
+                        "name": "Left Chest",
+                        "access_rules": [
+                          "$has_age|adult,hammer",
+                          "$has_age|adult,lift2",
+                          "$has_age|adult,[logic_goron_city_leftmost],$has_explosives,hoverboots",
+                          "{$hintable}"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "GC GS Boulder Maze",
+                        "short_name": "GS",
+                        "access_rules": [
+                          "$has_age|child,$has_explosives"
+                        ],
+                        "visibility_rules": [
+                          "setting_tokens_overworld"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -2572,31 +2596,8 @@
                     ]
                   },
                   {
-                    "name": "Goron City Maze Leftmost",
-                    "short_name": "Boulder Maze Left",
-                    "sections": [
-                      {
-                        "name": "Chest",
-                        "access_rules": [
-                          "$has_age|adult,hammer",
-                          "$has_age|adult,lift2",
-                          "$has_age|adult,[logic_goron_city_leftmost],$has_explosives,hoverboots",
-                          "{$hintable}"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "adult",
-                        "x": 1576,
-                        "y": 98
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Link the Goron",
+                    "name": "GC Rolling Goron as Adult",
+                    "short_name": "Link the Goron",
                     "sections": [
                       {
                         "name": "Stop him",
@@ -2615,8 +2616,8 @@
                     ]
                   },
                   {
-                    "name": "Rolling Goron as Child",
-                    "short_name": "Hot Rodder Goron",
+                    "name": "GC Rolling Goron as Child",
+                    "short_name": "Hot Rodder",
                     "sections": [
                       {
                         "name": "Blow him up",
@@ -2636,8 +2637,7 @@
                     ]
                   },
                   {
-                    "name": "Goron City Pot",
-                    "short_name": "Spinning Pot",
+                    "name": "GC Pot",
                     "sections": [
                       {
                         "name": "Freestanding PoH",
@@ -2668,7 +2668,7 @@
                     ]
                   },
                   {
-                    "name": "Darunias Joy",
+                    "name": "GC Darunias Joy",
                     "sections": [
                       {
                         "name": "Play Sarias Song",
@@ -2689,14 +2689,14 @@
                     ]
                   },
                   {
-                    "name": "Goron City Grotto",
-                    "short_name": "Lava Room Grotto",
+                    "name": "GC Grotto",
                     "access_rules": [
                       "$has_age|adult"
                     ],
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
+                        "name": "GC Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "access_rules": [
                           "ocarina,time,$damage_below_quadruple",
                           "ocarina,time,redtunic",
@@ -2723,36 +2723,11 @@
                     ]
                   },
                   {
-                    "name": "Goron City Boulder Maze",
-                    "short_name": "Boulder Maze Crate",
+                    "name": "GC Center Platform",
                     "sections": [
                       {
-                        "name": "GS34",
-                        "access_rules": [
-                          "$has_age|child,$has_explosives"
-                        ],
-                        "visibility_rules": [
-                          "setting_tokens_overworld"
-                        ],
-                        "chest_unopened_img": "images/skulltula.png",
-                        "chest_opened_img": "images/skulltula_token.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1591,
-                        "y": 68
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Goron City Center Platform",
-                    "short_name": "Center Platform",
-                    "sections": [
-                      {
-                        "name": "GS35",
+                        "name": "GC GS Center Platform",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|adult"
                         ],
@@ -2773,7 +2748,7 @@
                     ]
                   },
                   {
-                    "name": "Goron Shop",
+                    "name": "GC Shop",
                     "access_rules": [
                       "$link_the_goron",
                       "$has_age|child,$has_explosives",
@@ -2821,21 +2796,26 @@
                         "y": 128
                       }
                     ]
-                      }
-                    ]
-                  },
-                  {
+                  }
+                ]
+              },
+              {
                 "name": "Death Mountain Trail",
                 "children": [
                   {
                     "name": "Top of DC",
                     "sections": [
                       {
-                        "name": "DM Trail Freestanding PoH",
+                        "name": "DMT Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|adult",
-                          "$child_death_mountain"
+                          "$damage_below_ohko",
+                          "nayrus,magic",
+                          "$has_bottle",
+                          "$has_age|adult,hoverboots",
+                          "$has_age|both,setting_plant_no,beans,$has_explosives",
+                          "$has_age|both,setting_plant_no,beans,lift1,$child_death_mountain",
+                          "$has_age|both,bean_trail_yes"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -2856,11 +2836,10 @@
                     ]
                   },
                   {
-                    "name": "Death Mountain Bombable Chest",
-                    "short_name": "Bombable Wall",
+                    "name": "DMT Chest",
                     "sections": [
                       {
-                        "name": "Blast it",
+                        "name": "Blast wall",
                         "access_rules": [
                           "$can_blast",
                           "$child_death_mountain,lift1,[logic_dmt_bombable]"
@@ -2882,13 +2861,14 @@
                     ]
                   },
                   {
-                    "name": "Mountain Storms Grotto",
+                    "name": "DMT Storms Grotto",
                     "access_rules": [
                       "$hidden_grotto,ocarina,storm"
                     ],
                     "sections": [
                       {
-                        "name": "Chest",
+                        "name": "DMT Storms Grotto Chest",
+                        "short_name": "Chest",
                         "access_rules": [
                           "$has_age|adult",
                           "$child_death_mountain"
@@ -2910,10 +2890,11 @@
                     ]
                   },
                   {
-                    "name": "Mountain Summit Fairy",
+                    "name": "DMT Great Fairy Fountain",
                     "sections": [
                       {
-                        "name": "Fairy Fountain",
+                        "name": "DMT Great Fairy Reward",
+                        "short_name": "Reward",
                         "access_rules": [
                           "ocarina,lullaby,$can_blast"
                         ],
@@ -2934,7 +2915,7 @@
                     ]
                   },
                   {
-                    "name": "Biggoron",
+                    "name": "DMT Biggoron",
                     "access_rules": [
                       "$has_age|adult,$dmc_upper",
                       "{$hintable}"
@@ -2979,10 +2960,10 @@
                     ]
                   },
                   {
-                    "name": "Mountain Bombable Grotto",
+                    "name": "DMT Cow Grotto",
                     "sections": [
                       {
-                        "name": "DMT Grotto Cow",
+                        "name": "DMT Cow Grotto Cow",
                         "short_name": "Cow",
                         "access_rules": [
                           "$can_blast,ocarina,epona"
@@ -3009,11 +2990,12 @@
                     ]
                   },
                   {
-                    "name": "Mountain Trail Above Dodongo's Cavern",
+                    "name": "DMT Above Dodongos Cavern",
                     "short_name": "Rock Above DC",
                     "sections": [
                       {
-                        "name": "GS32 (N)",
+                        "name": "DMT GS Above Dodongos Cavern (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
@@ -3038,11 +3020,11 @@
                     ]
                   },
                   {
-                    "name": "Mountain Trail Path to Crater",
-                    "short_name": "Path to Crater",
+                    "name": "DMT Falling Rocks Path",
                     "sections": [
                       {
-                        "name": "GS33 (N)",
+                        "name": "DMT GS Falling Rocks Path (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_upper]"
@@ -3064,7 +3046,7 @@
                     ]
                   },
                   {
-                    "name": "Mountain Trail Bean Patch",
+                    "name": "DMT Bean Patch",
                     "sections": [
                       {
                         "name": "Plant Bean",
@@ -3078,7 +3060,8 @@
                         "hosted_item": "bean_trail_yes"
                       },
                       {
-                        "name": "GS30",
+                        "name": "DMT GS Bean Patch",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$has_bottle,$has_explosives",
                           "$child_death_mountain,$has_bottle,lift1",
@@ -3101,10 +3084,11 @@
                     ]
                   },
                   {
-                    "name": "Mountain Trail Bomb Alcove",
+                    "name": "DMT Near Kak",
                     "sections": [
                       {
-                        "name": "GS31",
+                        "name": "DMT GS Near Kak",
+                        "short_name": "GS",
                         "access_rules": [
                           "$can_blast"
                         ],
@@ -3128,17 +3112,18 @@
                         "y": 285
                       }
                     ]
-                      }
-                    ]
-                  },
-                  {
+                  }
+                ]
+              },
+              {
                 "name": "Death Mountain Crater",
                 "children": [
                   {
-                    "name": "Top of Crater Grotto",
+                    "name": "DMC Upper Grotto",
                     "sections": [
                       {
-                        "name": "Blast it",
+                        "name": "DMC Upper Grotto Chest",
+                        "short_name": "Chest",
                         "access_rules": [
                           "$can_blast"
                         ],
@@ -3159,10 +3144,10 @@
                     ]
                   },
                   {
-                    "name": "DM Crater Wall",
+                    "name": "DMC Wall",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "DMC Wall Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$dmc_upper",
@@ -3188,10 +3173,10 @@
                     ]
                   },
                   {
-                    "name": "Volcano",
+                    "name": "DMC Volcano",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "DMC Volcano Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$has_age|both,ocarina,bolero,setting_plant_no,beans",
@@ -3219,15 +3204,16 @@
                     ]
                   },
                   {
-                    "name": "Crater Fairy",
+                    "name": "DMC Great Fairy Fountain",
                     "access_rules": [
-                      "ocarina,lullaby,$has_age|adult,hammer"
+                      "$dmc_lower,$has_age|adult,hammer"
                     ],
                     "sections": [
                       {
-                        "name": "Fairy Fountain",
+                        "name": "DMC Great Fairy Reward",
+                        "short_name": "Reward",
                         "access_rules": [
-                          "$dmc_lower"
+                          "ocarina,lullaby"
                         ],
                         "item_count": 1
                       }
@@ -3242,16 +3228,13 @@
                   },
                   {
                     "name": "DMC Hammer Grotto",
-                    "short_name": "Hammer Grotto",
                     "access_rules": [
-                      "$has_age|adult,hammer"
+                      "$dmc_lower,$has_age|adult,hammer"
                     ],
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
-                        "access_rules": [
-                          "$dmc_lower"
-                        ],
+                        "name": "DMC Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
                         ],
@@ -3321,11 +3304,11 @@
                     ]
                   },
                   {
-                    "name": "Death Mountain Crater Crate",
-                    "short_name": "Crate at Entrance",
+                    "name": "DMC Crate",
                     "sections": [
                       {
-                        "name": "GS36",
+                        "name": "DMC GS Crate",
+                        "short_name": "GS",
                         "access_rules": [
                           "$can_blast,$has_age|child,$can_child_attack"
                         ],
@@ -3346,7 +3329,7 @@
                     ]
                   },
                   {
-                    "name": "Mountain Crater Bean Patch",
+                    "name": "DMC Bean Patch",
                     "access_rules": [
                       "$has_age|child,ocarina,bolero"
                     ],
@@ -3362,7 +3345,8 @@
                         "hosted_item": "bean_crater_yes"
                       },
                       {
-                        "name": "GS37",
+                        "name": "DMC GS Bean Patch",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_bottle,$can_child_attack"
                         ],
@@ -3381,10 +3365,10 @@
                         "y": 66
                       }
                     ]
-                      }
-                    ]
-                      }
-                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Hyrule Town",
@@ -3394,10 +3378,10 @@
                 "name": "Market",
                 "children": [
                   {
-                    "name": "Dog Lady",
+                    "name": "Market Dog Lady House",
                     "sections": [
                       {
-                        "name": "RichardZ",
+                        "name": "Market Lost Dog",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -3413,11 +3397,11 @@
                     ]
                   },
                   {
-                    "name": "Castle Town Shooting Gallery",
-                    "short_name": "Market Shooting Gallery",
+                    "name": "Market Shooting Gallery",
                     "sections": [
                       {
-                        "name": "Child Shooting Gallery",
+                        "name": "Market Shooting Gallery Reward",
+                        "short_name": "Reward",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -3433,7 +3417,7 @@
                     ]
                   },
                   {
-                    "name": "Mask Shop",
+                    "name": "Market Mask Shop",
                     "access_rules": [
                       "$has_age|child"
                     ],
@@ -3490,7 +3474,7 @@
                     ]
                   },
                   {
-                    "name": "Bombchu Bowling",
+                    "name": "Market Bombchu Bowling",
                     "access_rules": [
                       "$has_age|child,setting_logic_chus_yes,bombchu",
                       "$has_age|child,setting_logic_chus_no,bombs",
@@ -3498,12 +3482,14 @@
                     ],
                     "sections": [
                       {
-                        "name": "1st round",
+                        "name": "Market Bombchu Bowling First Prize",
+                        "short_name": "1st prize",
                         "capture_item": true,
                         "item_count": 1
                       },
                       {
-                        "name": "2nd round",
+                        "name": "Market Bombchu Bowling Second Prize",
+                        "short_name": "2nd prize",
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -3517,10 +3503,11 @@
                     ]
                   },
                   {
-                    "name": "Treasure Chest Game",
+                    "name": "Market Treasure Chest Game",
                     "sections": [
                       {
-                        "name": "Cheater",
+                        "name": "Market Treasure Chest Game Reward",
+                        "short_name": "Reward",
                         "access_rules": [
                           "$has_age|child,[$can_use_lens]",
                           "{$hintable}"
@@ -3538,7 +3525,7 @@
                     ]
                   },
                   {
-                    "name": "Bombchu Shop",
+                    "name": "Market Bombchu Shop",
                     "access_rules": [
                       "$has_age|child"
                     ],
@@ -3576,8 +3563,7 @@
                     ]
                   },
                   {
-                    "name": "Castle Town Potion Shop",
-                    "short_name": "Market Potion Shop",
+                    "name": "Market Potion Shop",
                     "access_rules": [
                       "$has_age|child"
                     ],
@@ -3615,8 +3601,7 @@
                     ]
                   },
                   {
-                    "name": "Castle Town Bazaar",
-                    "short_name": "Market Bazaar",
+                    "name": "Market Bazaar",
                     "access_rules": [
                       "$has_age|child"
                     ],
@@ -3668,7 +3653,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Zelda",
+                        "name": "ToT Light Arrows Cutscene",
+                        "short_name": "LACS",
                         "access_rules": [
                           "$has_age|adult,lacs_meds:2"
                         ],
@@ -3684,32 +3670,22 @@
                     ]
                   },
                   {
-                    "name": "Big Poes",
+                    "name": "Market Guard House",
                     "sections": [
                       {
-                        "name": "Happy Hunting",
+                        "name": "Market 10 Big Poes",
+                        "short_name": "Big Poes",
                         "access_rules": [
                           "$has_age|adult,bow,[ocarina],[epona],$has_bottle",
+                          "$has_age|adult,[bow],ocarina,epona,$has_bottle",
                           "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
+                      },
                       {
-                        "map": "adult",
-                        "x": 1464,
-                        "y": 390
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Castle Market Guard House",
-                    "short_name": "Guardhouse",
-                    "sections": [
-                      {
-                        "name": "GS14",
+                        "name": "Market GS Guard House",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -3723,7 +3699,7 @@
                     ],
                     "map_locations": [
                       {
-                        "map": "child",
+                        "map": "adult",
                         "x": 1464,
                         "y": 390
                       }
@@ -3732,13 +3708,13 @@
                 ]
               },
               {
-                "name": "Hyrule Castle",
+                "name": "Hyrule Castle Grounds",
                 "children": [
                   {
                     "name": "Malon at Castle",
                     "sections": [
                       {
-                        "name": "Talk to her",
+                        "name": "HC Malon Egg",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -3777,20 +3753,20 @@
                     ]
                   },
                   {
-                    "name": "Hyrule Castle Garden",
+                    "name": "HC Garden",
                     "access_rules": [
                       "$has_age|child,childcucco"
                     ],
                     "sections": [
                       {
-                        "name": "Impa at Castle",
+                        "name": "Song from Impa",
                         "short_name": "Song",
                         "chest_unopened_img": "images/grey_note.png",
                         "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
                       },
                       {
-                        "name": "Zeldas Letter",
+                        "name": "HC Zeldas Letter",
                         "visibility_rules": [
                           "childcucco"
                         ],
@@ -3806,12 +3782,16 @@
                     ]
                   },
                   {
-                    "name": "Hyrule Castle Fairy",
+                    "name": "HC Great Fairy Fountain",
+                    "access_rules": [
+                      "$has_age|child,$has_explosives"
+                    ],
                     "sections": [
                       {
-                        "name": "Fairy Fountain",
+                        "name": "HC Great Fairy Reward",
+                        "short_name": "Reward",
                         "access_rules": [
-                          "$has_age|child,ocarina,lullaby,$has_explosives"
+                          "ocarina,lullaby"
                         ],
                         "item_count": 1
                       }
@@ -3825,11 +3805,11 @@
                     ]
                   },
                   {
-                    "name": "Hyrule Castle Tree",
-                    "short_name": "Tree near Malon",
+                    "name": "HC Tree",
                     "sections": [
                       {
-                        "name": "GS15",
+                        "name": "HC GS Tree",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$can_child_attack"
                         ],
@@ -3850,13 +3830,14 @@
                     ]
                   },
                   {
-                    "name": "Castle Storms Grotto",
+                    "name": "HC Storms Grotto",
                     "access_rules": [
                       "$hidden_grotto,$has_age|child,ocarina,storm"
                     ],
                     "sections": [
                       {
-                        "name": "GS16",
+                        "name": "HC GS Storms Grotto",
+                        "short_name": "GS",
                         "access_rules": [
                           "boomerang,$has_explosives",
                           "{$has_explosives}",
@@ -3885,10 +3866,11 @@
                 "name": "Ganons Castle Grounds",
                 "children": [
                   {
-                    "name": "Outside Ganon's Castle",
+                    "name": "OGC",
                     "sections": [
                       {
-                        "name": "GS17",
+                        "name": "OGC GS",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|adult"
                         ],
@@ -3909,12 +3891,16 @@
                     ]
                   },
                   {
-                    "name": "Ganons Castle Fairy",
+                    "name": "OGC Great Fairy Fountain",
+                    "access_rules": [
+                      "$has_age|adult,lift3"
+                    ],
                     "sections": [
                       {
-                        "name": "Fairy Fountain",
+                        "name": "OGC Great Fairy Reward",
+                        "short_name": "Reward",
                         "access_rules": [
-                          "ocarina,lullaby,lift3,$has_age|adult"
+                          "ocarina,lullaby"
                         ],
                         "item_count": 1
                       }
@@ -3936,10 +3922,10 @@
             "color": "#0936a0",
             "children": [
               {
-                "name": "Zoras River",
+                "name": "Zora River",
                 "children": [
                   {
-                    "name": "Frogs",
+                    "name": "ZR Frogs",
                     "access_rules": [
                       "$has_age|child,$has_explosives",
                       "$has_age|child,scale1",
@@ -3947,14 +3933,14 @@
                     ],
                     "sections": [
                       {
-                        "name": "Frogs in the Rain",
+                        "name": "ZR Frogs in the Rain",
                         "access_rules": [
                           "$has_age|child,ocarina,storm"
                         ],
                         "item_count": 1
                       },
                       {
-                        "name": "Frog Ocarina Game",
+                        "name": "ZR Frogs Ocarina Game",
                         "access_rules": [
                           "$has_age|child,ocarina,lullaby,saria,epona,sun,time,storm",
                           "{$hintable}"
@@ -3972,14 +3958,14 @@
                     ]
                   },
                   {
-                    "name": "Magic Bean Salesman",
+                    "name": "ZR Magic Bean Salesman",
+                    "access_rules": [
+                      "$has_age|child,$has_explosives",
+                      "$has_age|child,scale1"
+                    ],
                     "sections": [
                       {
                         "name": "Buy Item",
-                        "access_rules": [
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1"
-                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -3993,16 +3979,16 @@
                     ]
                   },
                   {
-                    "name": "Zora River Plateau Open Grotto",
-                    "short_name": "Plateau Grotto",
+                    "name": "ZR Open Grotto",
+                    "access_rules": [
+                      "$has_age|child,$has_explosives",
+                      "$has_age|child,scale1",
+                      "$has_age|adult"
+                    ],
                     "sections": [
                       {
-                        "name": "Jump in",
-                        "access_rules": [
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1",
-                          "$has_age|adult"
-                        ],
+                        "name": "ZR Open Grotto Chest",
+                        "short_name": "Chest",
                         "item_count": 1
                       }
                     ],
@@ -4020,10 +4006,10 @@
                     ]
                   },
                   {
-                    "name": "Zora River Lower",
+                    "name": "ZR Near Open Grotto",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "ZR Near Open Grotto Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$has_age|child,$has_explosives",
@@ -4051,10 +4037,10 @@
                     ]
                   },
                   {
-                    "name": "Zora River Upper",
+                    "name": "ZR Near Domain",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "ZR Near Domain Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$has_age|child,$has_explosives",
@@ -4082,13 +4068,14 @@
                     ]
                   },
                   {
-                    "name": "Zora River Storms Grotto",
+                    "name": "ZR Storms Grotto",
                     "access_rules": [
                       "$hidden_grotto,ocarina,storm"
                     ],
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
+                        "name": "ZR Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "access_rules": [
                           "$has_age|child,$has_explosives,$can_stun_deku",
                           "$has_age|child,scale1,$can_stun_deku",
@@ -4117,10 +4104,11 @@
                     ]
                   },
                   {
-                    "name": "Zora River Tree",
+                    "name": "ZR Tree",
                     "sections": [
                       {
-                        "name": "GS43",
+                        "name": "ZR GS Tree",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$can_child_attack"
                         ],
@@ -4141,13 +4129,14 @@
                     ]
                   },
                   {
-                    "name": "Zora River Ladder",
+                    "name": "ZR Ladder",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS44 (N)",
+                        "name": "ZR GS Ladder (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_explosives",
                           "scale1,$can_child_attack"
@@ -4169,14 +4158,14 @@
                     ]
                   },
                   {
-                    "name": "Zora River Near Raised Grottos",
-                    "short_name": "Plateau Wall",
+                    "name": "ZR Near Raised Grottos",
                     "access_rules": [
                       "$night_gs,$has_age|adult"
                     ],
                     "sections": [
                       {
-                        "name": "GS45 (N)",
+                        "name": "ZR GS Near Raised Grottos (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "{bow}",
@@ -4201,14 +4190,14 @@
                     ]
                   },
                   {
-                    "name": "Zora River Above Bridge",
-                    "short_name": "Wall Above Bridge",
+                    "name": "ZR Above Bridge",
                     "access_rules": [
                       "$night_gs,$has_age|adult"
                     ],
                     "sections": [
                       {
-                        "name": "GS46 (N)",
+                        "name": "ZR GS Above Bridge (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "{bow}"
@@ -4241,10 +4230,10 @@
                 ],
                 "children": [
                   {
-                    "name": "Torch Run",
+                    "name": "ZD Chest",
                     "sections": [
                       {
-                        "name": "Run",
+                        "name": "Torches",
                         "access_rules": [
                           "sticks"
                         ],
@@ -4260,7 +4249,7 @@
                     ]
                   },
                   {
-                    "name": "Diving Minigame",
+                    "name": "ZD Diving Minigame",
                     "sections": [
                       {
                         "name": "Dive down",
@@ -4310,14 +4299,11 @@
                   {
                     "name": "King Zora",
                     "access_rules": [
-                      "$has_bottle,[wallet2]",
-                      "$has_bottle,$adult_fountain",
-                      "$has_bottle,@Ganons Castle/Water Trial",
-                      "$has_bottle,@Gerudo Training Grounds MQ/Before Heavy Block Chest"
+                      "$has_blue_fire"
                     ],
                     "sections": [
                       {
-                        "name": "Unfreeze him",
+                        "name": "ZD King Zora Thawed",
                         "access_rules": [
                           "$has_age|adult",
                           "{$hintable}"
@@ -4345,13 +4331,14 @@
                     ]
                   },
                   {
-                    "name": "Frozen Waterfall",
+                    "name": "ZD Frozen Waterfall",
                     "access_rules": [
                       "$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS47 (N)",
+                        "name": "ZD GS Frozen Waterfall (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "bow",
@@ -4376,12 +4363,13 @@
                 ]
               },
               {
-                "name": "Zora Shop",
+                "name": "ZD Shop",
                 "access_rules": [
-                  "$has_age|child,$has_explosives,[ocarina],[lullaby]",
                   "$has_age|child,scale1",
-                  "$has_age|adult,ocarina,lullaby,$has_bottle",
-                  "$has_age|adult,hoverboots,[ocarina],[lullaby],$has_bottle"
+                  "$has_age|child,$has_explosives,ocarina,lullaby",
+                  "$has_age|child,$has_explosives,[logic_zora_with_cucco]",
+                  "$has_age|adult,$has_blue_fire,ocarina,lullaby",
+                  "$has_age|adult,$has_blue_fire,hoverboots,[logic_zora_with_hovers]"
                 ],
                 "sections": [
                   {
@@ -4428,16 +4416,17 @@
                 "name": "Zoras Fountain",
                 "children": [
                   {
-                    "name": "Zoras Fountain Fairy",
+                    "name": "ZF Great Fairy Fountain",
                     "access_rules": [
-                      "ocarina,lullaby,$has_explosives"
+                      "$child_fountain,$has_explosives",
+                      "$adult_fountain,$has_explosives"
                     ],
                     "sections": [
                       {
-                        "name": "Fairy Fountain",
+                        "name": "ZF Great Fairy Reward",
+                        "short_name": "Reward",
                         "access_rules": [
-                          "$child_fountain",
-                          "$adult_fountain"
+                          "ocarina,lullaby"
                         ],
                         "item_count": 1
                       }
@@ -4456,11 +4445,10 @@
                     ]
                   },
                   {
-                    "name": "Zoras Fountain Bottom",
-                    "short_name": "Under Water",
+                    "name": "ZF Bottom",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "ZF Bottom Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$adult_fountain,ironboots,$FTR_or_zora",
@@ -4481,11 +4469,10 @@
                     ]
                   },
                   {
-                    "name": "Zoras Fountain Iceberg",
-                    "short_name": "Ice Floe",
+                    "name": "ZF Iceberg",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "ZF Iceberg Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$adult_fountain"
@@ -4504,14 +4491,14 @@
                     ]
                   },
                   {
-                    "name": "Zora's Fountain Hidden Cave",
-                    "short_name": "Hidden Cave",
+                    "name": "ZF Hidden Cave",
                     "access_rules": [
                       "$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS50 (N)",
+                        "name": "ZF GS Hidden Cave (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$adult_fountain,lift2,$can_blast,hookshot",
                           "{$adult_fountain,lift2,$has_explosives}",
@@ -4537,11 +4524,11 @@
                     ]
                   },
                   {
-                    "name": "Zora's Fountain Tree",
-                    "short_name": "Tree",
+                    "name": "ZF Tree",
                     "sections": [
                       {
-                        "name": "GS48",
+                        "name": "ZF GS Tree",
+                        "short_name": "GS",
                         "access_rules": [
                           "$child_fountain"
                         ],
@@ -4562,14 +4549,14 @@
                     ]
                   },
                   {
-                    "name": "Zora's Fountain Above the Log",
-                    "short_name": "Wall near Log",
+                    "name": "ZF Above the Log",
                     "access_rules": [
                       "$night_gs,$child_fountain"
                     ],
                     "sections": [
                       {
-                        "name": "GS49 (N)",
+                        "name": "ZF GS Above the Log (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "boomerang",
                           "{sling}",
@@ -4605,11 +4592,10 @@
                 "name": "Gerudo Valley",
                 "children": [
                   {
-                    "name": "Gerudo Valley Crate",
-                    "short_name": "Valley Crate",
+                    "name": "GV Crate",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "GV Crate Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$has_age|child",
@@ -4635,11 +4621,10 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Waterfall",
-                    "short_name": "Valley Waterfall",
+                    "name": "GV Waterfall",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "GV Waterfall Freestanding PoH",
                         "short_name": "HP",
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -4660,8 +4645,7 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Cow",
-                    "short_name": "Valley Cow",
+                    "name": "GV Cow",
                     "sections": [
                       {
                         "name": "Cow",
@@ -4685,14 +4669,14 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Small Bridge",
-                    "short_name": "Waterfall Near Entrance",
+                    "name": "GV Small Bridge",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS86 (N)",
+                        "name": "GV GS Small Bridge (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "boomerang",
                           "{sling}",
@@ -4717,10 +4701,11 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Bean Patch",
+                    "name": "GV Bean Patch",
                     "sections": [
                       {
-                        "name": "GS87",
+                        "name": "GV GS Bean Patch",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_age|child,$has_bottle,$can_child_attack"
                         ],
@@ -4743,13 +4728,13 @@
                 ]
               },
               {
-                "name": "Bridge Crossing",
+                "name": "GV Fortress Side",
                 "access_rules": [
                   "$gerudo_valley_far_side"
                 ],
                 "children": [
                   {
-                    "name": "Hammer Rocks",
+                    "name": "GV Chest",
                     "sections": [
                       {
                         "name": "Smash 'em",
@@ -4790,13 +4775,14 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Storms Grotto",
+                    "name": "GV Storms Grotto",
                     "access_rules": [
                       "$hidden_grotto,ocarina,storm"
                     ],
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
+                        "name": "GV Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
                         ],
@@ -4815,14 +4801,14 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Behind Tent",
-                    "short_name": "GV Behind Tent",
+                    "name": "GV Behind Tent",
                     "access_rules": [
                       "$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS88 (N)",
+                        "name": "GV GS Behind Tent (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "{bow}",
@@ -4847,14 +4833,14 @@
                     ]
                   },
                   {
-                    "name": "Gerudo Valley Pillar",
-                    "short_name": "GV Pillar",
+                    "name": "GV Pillar",
                     "access_rules": [
                       "$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS89 (N)",
+                        "name": "GV GS Pillar (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "{bow}",
@@ -4881,7 +4867,7 @@
                     "name": "Gerudo Fortress",
                     "children": [
                       {
-                        "name": "Rooftop Chest",
+                        "name": "GF Chest",
                         "sections": [
                           {
                             "name": "Open it",
@@ -4902,19 +4888,19 @@
                         ]
                       },
                       {
-                        "name": "Horseback Archery",
+                        "name": "GF HBA",
+                        "access_rules": [
+                          "ocarina,epona,bow,$gerudo_card"
+                        ],
                         "sections": [
                           {
-                            "name": "1000",
-                            "access_rules": [
-                              "ocarina,epona,bow,$gerudo_card"
-                            ],
+                            "name": "1000 Points",
                             "item_count": 1
                           },
                           {
-                            "name": "1500",
+                            "name": "1500 Points",
                             "access_rules": [
-                              "ocarina,epona,bow,$gerudo_card",
+                              "bow",
                               "{$hintable}"
                             ],
                             "capture_item": true,
@@ -4930,13 +4916,14 @@
                         ]
                       },
                       {
-                        "name": "Archery Range",
+                        "name": "GF Archery Range",
                         "access_rules": [
                           "$night_gs,$gerudo_card"
                         ],
                         "sections": [
                           {
-                            "name": "GS90 (N)",
+                            "name": "GF GS Archery Range (N)",
+                            "short_name": "GS",
                             "access_rules": [
                               "hookshot",
                               "{bow}",
@@ -4960,13 +4947,14 @@
                         ]
                       },
                       {
-                        "name": "Top Floor",
+                        "name": "GF Top Floor",
                         "access_rules": [
                           "$night_gs"
                         ],
                         "sections": [
                           {
-                            "name": "GS91 (N)",
+                            "name": "GF GS Top Floor (N)",
+                            "short_name": "GS",
                             "access_rules": [
                               "$gerudo_card",
                               "bow",
@@ -5002,32 +4990,21 @@
                 ],
                 "children": [
                   {
-                    "name": "Haunted Wasteland Structure",
-                    "short_name": "Central Structure",
+                    "name": "Wasteland Structure",
                     "sections": [
                       {
-                        "name": "Torches",
+                        "name": "Wasteland Chest",
+                        "short_name": "Chest",
                         "access_rules": [
                           "$has_fire",
                           "{$hintable}"
                         ],
                         "capture_item": true,
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
+                      },
                       {
-                        "map": "adult",
-                        "x": 360,
-                        "y": 283
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Wasteland Ruins",
-                    "sections": [
-                      {
-                        "name": "GS92",
+                        "name": "Wasteland GS",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "[hookshot],bombs,shield2",
@@ -5047,7 +5024,7 @@
                       {
                         "map": "adult",
                         "x": 360,
-                        "y": 313
+                        "y": 283
                       }
                     ]
                   }
@@ -5057,12 +5034,16 @@
                 "name": "Desert Colossus",
                 "children": [
                   {
-                    "name": "Colossus Fairy",
+                    "name": "Colossus Great Fairy Fountain",
+                    "access_rules": [
+                      "$adult_colossus,$has_explosives"
+                    ],
                     "sections": [
                       {
-                        "name": "Fairy Fountain",
+                        "name": "Colossus Great Fairy Reward",
+                        "short_name": "Reward",
                         "access_rules": [
-                          "$adult_colossus,ocarina,lullaby,$has_explosives"
+                          "ocarina,lullaby"
                         ],
                         "item_count": 1
                       }
@@ -5081,11 +5062,10 @@
                     ]
                   },
                   {
-                    "name": "Colossus Freestanding PoH",
-                    "short_name": "Arch HP",
+                    "name": "Colossus Arch",
                     "sections": [
                       {
-                        "name": "Freestanding PoH",
+                        "name": "Colossus Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
                           "$child_colossus,setting_plant_no,beans,$has_age|adult",
@@ -5141,14 +5121,14 @@
                     ]
                   },
                   {
-                    "name": "Desert Colossus Grotto",
-                    "short_name": "Under Silver Rock",
+                    "name": "Colossus Grotto",
+                    "access_rules": [
+                      "$adult_colossus,$has_age|adult,lift2"
+                    ],
                     "sections": [
                       {
-                        "name": "Deku Scrubs",
-                        "access_rules": [
-                          "$adult_colossus,$has_age|adult,lift2"
-                        ],
+                        "name": "Colossus Deku Scrubs Grotto",
+                        "short_name": "Deku Scrubs",
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
                         ],
@@ -5167,7 +5147,7 @@
                     ]
                   },
                   {
-                    "name": "Desert Colossus Bean Patch",
+                    "name": "Colossus Bean Patch",
                     "access_rules": [
                       "$child_colossus"
                     ],
@@ -5183,7 +5163,8 @@
                         "hosted_item": "bean_colossus_yes"
                       },
                       {
-                        "name": "GS93",
+                        "name": "Colossus GS Bean Patch",
+                        "short_name": "GS",
                         "access_rules": [
                           "$has_bottle,$can_child_attack"
                         ],
@@ -5204,14 +5185,14 @@
                     ]
                   },
                   {
-                    "name": "Desert Colossus Tree",
-                    "short_name": "Tree Near Oasis",
+                    "name": "Colossus Tree",
                     "access_rules": [
                       "$adult_colossus,$has_age|adult,$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS94 (N)",
+                        "name": "Colossus GS Tree (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "hookshot",
                           "{bow}",
@@ -5236,14 +5217,14 @@
                     ]
                   },
                   {
-                    "name": "Desert Colossus Hill",
-                    "short_name": "Top Of Platform",
+                    "name": "Colossus Hill",
                     "access_rules": [
                       "$has_age|adult,$night_gs"
                     ],
                     "sections": [
                       {
-                        "name": "GS95 (N)",
+                        "name": "Colossus GS Hill (N)",
+                        "short_name": "GS",
                         "access_rules": [
                           "$child_colossus,setting_plant_no,beans",
                           "$child_colossus,bean_colossus_yes",
