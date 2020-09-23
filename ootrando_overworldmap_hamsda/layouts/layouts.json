@@ -82,16 +82,6 @@
                       }
                     ]
                   }
-                },
-                {
-                  "title": "Gossip Stones",
-                  "icon": "images/gossip_stone.png",
-                  "content": {
-                    "type": "map",
-                    "maps": [
-                      "gossips"
-                    ]
-                  }
                 }
               ]
             },
@@ -200,16 +190,6 @@
                 "maps": [
                   "child",
                   "adult"
-                ]
-              }
-            },
-            {
-              "title": "Gossip Stones",
-              "icon": "images/gossip_stone.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "gossips"
                 ]
               }
             }

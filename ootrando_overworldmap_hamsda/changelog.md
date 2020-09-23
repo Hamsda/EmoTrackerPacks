@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- removed Gossip Stone map
+
 ## 2.9.6.0
 
 - added Kakariko Gate and Complete Mask Quest settings

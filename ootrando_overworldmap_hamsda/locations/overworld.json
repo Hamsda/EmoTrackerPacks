@@ -222,101 +222,10 @@
                     "y": 981
                   }
                 ]
-              },
-              {
-                "name": "Kokiri Forest Gossip Stone",
-                "short_name": "Kokiri Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2090,
-                    "y": 845
                   }
                 ]
               },
               {
-                "name": "Kokiri Forest Storms Grotto Gossip Stone",
-                "short_name": "Kokiri Storms Grotto Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "access_rules": [
-                      "ocarina,storm"
-                    ],
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2120,
-                    "y": 845
-                  }
-                ]
-              },
-              {
-                "name": "Deku Tree Gossip Stone (Left)",
-                "short_name": "DT Gossip Stone (Left)",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2390,
-                    "y": 830
-                  }
-                ]
-              },
-              {
-                "name": "Deku Tree Gossip Stone (Right)",
-                "short_name": "DT Gossip Stone (Right)",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2490,
-                    "y": 900
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "Lost Woods",
             "children": [
               {
@@ -669,57 +578,10 @@
                     "y": 740
                   }
                 ]
-              },
-              {
-                "name": "Lost Woods Generic Grotto Gossip Stone",
-                "short_name": "Goron City Grotto Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2149,
-                    "y": 776
                   }
                 ]
               },
               {
-                "name": "Lost Woods Gossip Stone",
-                "short_name": "LW Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2016,
-                    "y": 927
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "Sacred Forest Meadow",
             "children": [
               {
@@ -868,55 +730,10 @@
                     "y": 664
                   }
                 ]
-              },
-              {
-                "name": "Sacred Forest Meadow Maze Gossip Stones",
-                "short_name": "SFM Maze Gossip Stones",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2190,
-                    "y": 685
                   }
                 ]
-              },
-              {
-                "name": "Sacred Forest Meadow Saria Gossip Stone",
-                "short_name": "SFM Saria Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 2130,
-                    "y": 635
                   }
                 ]
-              }
-            ]
-          }
-        ]
       },
       {
         "name": "Outside Forest",
@@ -1218,104 +1035,6 @@
                   },
                   {
                     "map": "adult",
-                    "x": 972,
-                    "y": 658
-                  }
-                ]
-              },
-              {
-                "name": "Field Near Lake Outside Fence Grotto Gossip Stone",
-                "short_name": "Grotto Outside Fence Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 1206,
-                    "y": 997
-                  }
-                ]
-              },
-              {
-                "name": "Field West Castle Town Grotto Gossip Stone",
-                "short_name": "Grotto near Bridge Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 1372,
-                    "y": 440
-                  }
-                ]
-              },
-              {
-                "name": "Remote Southern Grotto Gossip Stone",
-                "short_name": "Open Grotto Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 1427,
-                    "y": 925
-                  }
-                ]
-              },
-              {
-                "name": "Field Valley Grotto Gossip Stone",
-                "short_name": "Field Valley Grotto Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives,dinsfire,magic",
-                      "$has_age|adult,hammer,$has_fire"
-                    ],
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
                     "x": 972,
                     "y": 658
                   }
@@ -1684,74 +1403,6 @@
                     ]
                   },
                   {
-                    "name": "Lake Hylia Lab Gossip Stone",
-                    "short_name": "LH Lab Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 900,
-                        "y": 1190
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Lake Hylia Gossip Stone (Southeast)",
-                    "short_name": "LH Gossip Stone (SE)",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1200,
-                        "y": 1510
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Lake Hylia Gossip Stone (Southwest)",
-                    "short_name": "LH Gossip Stone (SW)",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 780,
-                        "y": 1415
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
                 "name": "Lon Lon Ranch",
                 "color": "#09a09d",
                 "children": [
@@ -2615,28 +2266,6 @@
                 ]
               },
               {
-                "name": "Kakariko Back Grotto Gossip Stone",
-                "short_name": "Back Grotto Gossip Stone",
-                "access_rules": [
-                  "$hintable"
-                ],
-                "sections": [
-                  {
-                    "name": "Check it",
-                    "chest_unopened_img": "images/gossip_stone.png",
-                    "chest_opened_img": "images/gossip_stone.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "gossips",
-                    "x": 1865,
-                    "y": 326
-                  }
-                ]
-              },
-              {
                 "name": "Graveyard",
                 "children": [
                   {
@@ -2902,31 +2531,6 @@
                         "map": "child",
                         "x": 2000,
                         "y": 335
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Graveyard Gossip Stone",
-                    "short_name": "Graveyard Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "ocarina,nocturne"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 2144,
-                        "y": 326
                       }
                     ]
                   }
@@ -3217,62 +2821,10 @@
                         "y": 128
                       }
                     ]
-                  },
-                  {
-                    "name": "Goron City Maze Gossip Stone",
-                    "short_name": "GC Maze Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$can_blast",
-                          "$has_age|adult,lift2"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1606,
-                        "y": 98
                       }
                     ]
                   },
                   {
-                    "name": "Goron City Medigoron Gossip Stone",
-                    "short_name": "Medigoron Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$can_blast",
-                          "lift1"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1655,
-                        "y": 130
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
                 "name": "Death Mountain Trail",
                 "children": [
                   {
@@ -3576,91 +3128,10 @@
                         "y": 285
                       }
                     ]
-                  },
-                  {
-                    "name": "Mountain Storms Grotto Gossip Stone",
-                    "short_name": "DMT Grotto Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "ocarina,storm"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1705,
-                        "y": 158
                       }
                     ]
                   },
                   {
-                    "name": "Death Mountain Trail Gossip Stone",
-                    "short_name": "DMT Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$can_blast",
-                          "$link_the_goron",
-                          "ocarina,bolero,setting_plant_no,beans",
-                          "ocarina,bolero,bean_crater_yes",
-                          "ocarina,bolero,hoverboots",
-                          "ocarina,bolero,hookshot"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1825,
-                        "y": 94
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Dodongos Cavern Gossip Stone",
-                    "short_name": "DC Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$can_blast",
-                          "lift1"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1684,
-                        "y": 220
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
                 "name": "Death Mountain Crater",
                 "children": [
                   {
@@ -3910,60 +3381,10 @@
                         "y": 66
                       }
                     ]
-                  },
-                  {
-                    "name": "Top of Crater Grotto Gossip Stone",
-                    "short_name": "DMC Grotto Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$can_blast"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1798,
-                        "y": 42
                       }
                     ]
-                  },
-                  {
-                    "name": "Death Mountain Crater Gossip Stone",
-                    "short_name": "DMC Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$has_explosives"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1840,
-                        "y": 42
                       }
                     ]
-                  }
-                ]
-              }
-            ]
           },
           {
             "name": "Hyrule Town",
@@ -4307,28 +3728,6 @@
                         "y": 390
                       }
                     ]
-                  },
-                  {
-                    "name": "Temple of Time Gossip Stones",
-                    "short_name": "ToT Gossip Stones",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 4
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1539,
-                        "y": 294
-                      }
-                    ]
                   }
                 ]
               },
@@ -4475,75 +3874,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1479,
-                        "y": 206
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hyrule Castle Malon Gossip Stone",
-                    "short_name": "HC Malon Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1439,
-                        "y": 246
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Hyrule Castle Rock Wall Gossip Stone",
-                    "short_name": "HC Wall Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 1380,
-                        "y": 216
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Castle Storms Grotto Gossip Stone",
-                    "short_name": "HC Storms Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "ocarina,storm,$has_explosives"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
                         "x": 1479,
                         "y": 206
                       }
@@ -4899,87 +4229,6 @@
                         "y": 465
                       }
                     ]
-                  },
-                  {
-                    "name": "Zora River Plateau Open Grotto Gossip Stone",
-                    "short_name": "Plateau Grotto Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$has_age|adult",
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 2092,
-                        "y": 540
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Zoras River Plateau Gossip Stone",
-                    "short_name": "ZR Plateau Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$has_age|adult",
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 2094,
-                        "y": 481
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Zoras River Waterfall Gossip Stone",
-                    "short_name": "ZR Waterfall Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$has_age|adult",
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 2360,
-                        "y": 458
-                      }
-                    ]
                   }
                 ]
               },
@@ -5044,28 +4293,6 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2624,
-                        "y": 367
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Zoras Domain Gossip Stone",
-                    "short_name": "ZD Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
                         "x": 2624,
                         "y": 367
                       }
@@ -5365,52 +4592,6 @@
                         "y": 350
                       }
                     ]
-                  },
-                  {
-                    "name": "Zoras Fountain Fairy Gossip Stone",
-                    "short_name": "ZF Fairy Gossip Stone",
-                    "access_rules": [
-                      "$hintable,$child_fountain",
-                      "$hintable,$adult_fountain"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 2553,
-                        "y": 333
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Zoras Fountain Jabu Gossip Stone",
-                    "short_name": "ZF Jabu Gossip Stone",
-                    "access_rules": [
-                      "$hintable,$child_fountain",
-                      "$hintable,$adult_fountain"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 2458,
-                        "y": 298
-                      }
-                    ]
                   }
                 ]
               }
@@ -5556,28 +4737,6 @@
                         "map": "child",
                         "x": 640,
                         "y": 600
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Gerudo Valley Gossip Stone",
-                    "short_name": "GV Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 682,
-                        "y": 555
                       }
                     ]
                   }
@@ -6106,31 +5265,6 @@
                         "map": "adult",
                         "x": 233,
                         "y": 322
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Desert Colossus Gossip Stone",
-                    "short_name": "Colossus Gossip Stone",
-                    "access_rules": [
-                      "$hintable"
-                    ],
-                    "sections": [
-                      {
-                        "name": "Check it",
-                        "access_rules": [
-                          "$adult_colossus"
-                        ],
-                        "chest_unopened_img": "images/gossip_stone.png",
-                        "chest_opened_img": "images/gossip_stone.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "gossips",
-                        "x": 50,
-                        "y": 360
                       }
                     ]
                   }
