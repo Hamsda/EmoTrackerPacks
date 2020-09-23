@@ -3,6 +3,7 @@
 ## x
 
 - removed Gossip Stone map
+- changed names of most locations based on [this PR](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1021)
 
 ## 2.9.6.0
 

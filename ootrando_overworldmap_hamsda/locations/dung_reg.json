@@ -8,13 +8,13 @@
     ],
     "sections": [
       {
-        "name": "Lobby Chest",
+        "name": "Map Chest",
         "short_name": "Map",
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
-        "name": "Slingshot Room",
+        "name": "Slingshot Room Chests",
         "short_name": "Slingshot",
         "access_rules": [
           "shield1"
@@ -22,13 +22,13 @@
         "item_count": 2
       },
       {
-        "name": "Compass Room",
+        "name": "Compass Room Chests",
         "short_name": "Compass",
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 2
       },
       {
-        "name": "GS8 - Compass Room",
+        "name": "GS Compass Room",
         "short_name": "Compass",
         "access_rules": [
           "$can_child_attack"
@@ -50,7 +50,7 @@
         "item_count": 1
       },
       {
-        "name": "GS9 - Basement Vines",
+        "name": "GS Basement Vines",
         "short_name": "Vines",
         "access_rules": [
           "sling",
@@ -68,7 +68,7 @@
         "item_count": 1
       },
       {
-        "name": "GS10 - Basement Gate",
+        "name": "GS Basement Gate",
         "short_name": "Gate",
         "access_rules": [
           "$can_child_attack"
@@ -81,7 +81,7 @@
         "item_count": 1
       },
       {
-        "name": "GS11 - Basement Back Room",
+        "name": "GS Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
           "$has_explosives,boomerang,sticks,sling",
@@ -195,7 +195,7 @@
         "item_count": 1
       },
       {
-        "name": "GS38 - East Side Room",
+        "name": "GS Side Room Near Lower Lizalfos",
         "short_name": "East Side",
         "access_rules": [
           "@Dodongos Cavern/Lobby,$has_explosives",
@@ -213,7 +213,7 @@
         "item_count": 1
       },
       {
-        "name": "GS42 - Scarecrow",
+        "name": "GS Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
           "@Dodongos Cavern/Lobby,$has_age|adult,ocarina,scarecrow,hookshot",
@@ -230,7 +230,7 @@
         "item_count": 1
       },
       {
-        "name": "Deku Scrub Deku Sticks",
+        "name": "Deku Scrub Side Room Near Dodongos",
         "short_name": "East Side",
         "access_rules": [
           "@Dodongos Cavern/Lobby,$has_age|adult",
@@ -256,7 +256,7 @@
         "item_count": 1
       },
       {
-        "name": "Deku Scrub Deku Shield",
+        "name": "Deku Scrub Lobby",
         "short_name": "Lobby",
         "access_rules": [
           "@Dodongos Cavern/Lobby"
@@ -282,7 +282,7 @@
         "item_count": 1
       },
       {
-        "name": "GS41 - Alcove Above Stairs",
+        "name": "GS Alcove Above Stairs",
         "short_name": "Above Stairs",
         "access_rules": [
           "@Dodongos Cavern/Far Bridge,$has_age|child,boomerang,$has_explosives",
@@ -303,7 +303,7 @@
         "item_count": 1
       },
       {
-        "name": "GS39 - Vines Above Stairs",
+        "name": "GS Vines Above Stairs",
         "short_name": "Vines",
         "access_rules": [
           "@Dodongos Cavern/Climb"
@@ -316,7 +316,7 @@
         "item_count": 1
       },
       {
-        "name": "Bomb Flower Platform",
+        "name": "Bomb Flower Platform Chest",
         "short_name": "Bomb Flower",
         "access_rules": [
           "@Dodongos Cavern/Climb"
@@ -324,8 +324,8 @@
         "item_count": 1
       },
       {
-        "name": "Deku Scrub Deku Seeds / Deku Nuts",
-        "short_name": "Near Bombs",
+        "name": "Deku Scrubs Near Bomb Bag",
+        "short_name": "Near Bomb Bag",
         "access_rules": [
           "@Dodongos Cavern/Climb,$can_blast"
         ],
@@ -354,7 +354,7 @@
         "item_count": 1
       },
       {
-        "name": "GS40 - Back Room",
+        "name": "GS Back Room",
         "short_name": "Back Room",
         "access_rules": [
           "@Dodongos Cavern/Boss Area"
@@ -367,8 +367,8 @@
         "item_count": 1
       },
       {
-        "name": "Chest Above King Dodongo",
-        "short_name": "Above Boss",
+        "name": "Boss Room Chest",
+        "short_name": "Boss Room",
         "access_rules": [
           "@Dodongos Cavern/Boss Area"
         ],
@@ -454,7 +454,7 @@
         "item_count": 1
       },
       {
-        "name": "GS51 - Water Switch Room",
+        "name": "GS Water Switch Room",
         "short_name": "Water Switch",
         "access_rules": [
           "@Jabu Jabus Belly/Main"
@@ -467,8 +467,7 @@
         "item_count": 1
       },
       {
-        "name": "Deku Nuts",
-        "short_name": "B1 Dive",
+        "name": "Deku Scrub",
         "access_rules": [
           "@Jabu Jabus Belly/Main"
         ],
@@ -506,7 +505,7 @@
         "item_count": 1
       },
       {
-        "name": "GS52 - Lobby Basement Lower",
+        "name": "GS Lobby Basement Lower",
         "short_name": "Basement 1",
         "access_rules": [
           "@Jabu Jabus Belly/Main,boomerang",
@@ -522,7 +521,7 @@
         "item_count": 1
       },
       {
-        "name": "GS53 - Lobby Basement Upper",
+        "name": "GS Lobby Basement Upper",
         "short_name": "Basement 2",
         "access_rules": [
           "@Jabu Jabus Belly/Main,boomerang",
@@ -538,7 +537,7 @@
         "item_count": 1
       },
       {
-        "name": "GS54 - Near Boss",
+        "name": "GS Near Boss",
         "short_name": "Near Boss",
         "access_rules": [
           "@Jabu Jabus Belly/Boss Area"
@@ -581,7 +580,7 @@
     ],
     "sections": [
       {
-        "name": "GS71 - Spinning Scythe Room",
+        "name": "GS Spinning Scythe Room",
         "short_name": "Spinning Scythe",
         "access_rules": [
           "hookshot",
@@ -616,7 +615,7 @@
         "item_count": 1
       },
       {
-        "name": "GS70 - Heart Piece Room",
+        "name": "GS Heart Piece Room",
         "short_name": "Compass",
         "access_rules": [
           "hookshot",
@@ -632,7 +631,7 @@
         "item_count": 1
       },
       {
-        "name": "GS72 - Push Block Room",
+        "name": "GS Push Block Room",
         "short_name": "Push Block",
         "access_rules": [
           "hookshot",
@@ -654,7 +653,7 @@
       },
       {
         "name": "Sheik in Ice Cavern",
-        "short_name": "Sheik",
+        "short_name": "Song",
         "access_rules": [
           "$has_bottle",
           "{$hintable}"
@@ -795,7 +794,7 @@
         "item_count": 1
       },
       {
-        "name": "GS60 - First Room",
+        "name": "GS First Room",
         "short_name": "First Room",
         "access_rules": [
           "dinsfire,magic",
@@ -811,13 +810,13 @@
         "item_count": 1
       },
       {
-        "name": "First Chest",
+        "name": "First Room Chest",
         "short_name": "Tree",
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
       {
-        "name": "GS61 - Lobby",
+        "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
           "$has_age|adult,hookshot"
@@ -830,7 +829,7 @@
         "item_count": 1
       },
       {
-        "name": "Chest Behind Lobby",
+        "name": "First Stalfos Chest",
         "short_name": "Stalfos",
         "access_rules": [
           "$has_age|adult"
@@ -839,7 +838,7 @@
         "item_count": 1
       },
       {
-        "name": "Outside Hookshot Chest",
+        "name": "Raised Island Courtyard Chest",
         "short_name": "Island",
         "access_rules": [
           "@Forest Temple/NE Outdoors,hookshot",
@@ -849,8 +848,8 @@
         "item_count": 1
       },
       {
-        "name": "GS62 - Outdoor East",
-        "short_name": "Outdoor East",
+        "name": "GS Raised Island Courtyard",
+        "short_name": "Island",
         "access_rules": [
           "@Forest Temple/NE Outdoors,hookshot",
           "@Forest Temple/Falling Room,$has_age|adult,bow",
@@ -883,7 +882,7 @@
         "item_count": 1
       },
       {
-        "name": "GS63 - Outdoor West",
+        "name": "GS Level Island Courtyard",
         "short_name": "Outdoor West",
         "access_rules": [
           "@Forest Temple/NW Outdoors,longshot",
@@ -899,7 +898,7 @@
         "item_count": 1
       },
       {
-        "name": "Block Push Chest",
+        "name": "Eye Switch Chest",
         "short_name": "Block Push",
         "access_rules": [
           "@Forest Temple/Block Push Room,lift1,$has_age|adult,bow"
@@ -954,7 +953,7 @@
         "item_count": 1
       },
       {
-        "name": "Falling Room Chest",
+        "name": "Falling Ceiling Room Chest",
         "short_name": "Checkerboard",
         "access_rules": [
           "@Forest Temple/Falling Room"
@@ -962,7 +961,7 @@
         "item_count": 1
       },
       {
-        "name": "Near Boss Chest",
+        "name": "Basement Chest",
         "short_name": "Basement",
         "access_rules": [
           "@Forest Temple/Boss Region"
@@ -970,7 +969,7 @@
         "item_count": 1
       },
       {
-        "name": "GS64 - Basement",
+        "name": "GS Basement",
         "short_name": "Basement",
         "access_rules": [
           "@Forest Temple/Boss Region,$has_age|adult,hookshot"
@@ -1081,7 +1080,7 @@
         "item_count": 1
       },
       {
-        "name": "Chest Near Boss",
+        "name": "Near Boss Chest",
         "short_name": "Near Boss",
         "access_rules": [
           "$FTR_or_goron"
@@ -1090,8 +1089,8 @@
         "item_count": 1
       },
       {
-        "name": "GS69 - Basement",
-        "short_name": "Basement",
+        "name": "GS Boss Key Loop",
+        "short_name": "Boss Key",
         "access_rules": [
           "@Fire Temple/Boss Key Region"
         ],
@@ -1103,7 +1102,7 @@
         "item_count": 1
       },
       {
-        "name": "Fire Dancer Chest",
+        "name": "Flare Dancer Chest",
         "short_name": "Flare Dancer",
         "access_rules": [
           "@Fire Temple/Boss Key Region"
@@ -1121,7 +1120,7 @@
         "item_count": 1
       },
       {
-        "name": "GS65 - Song of Time Room",
+        "name": "GS Song of Time Room",
         "short_name": "Time Block",
         "access_rules": [
           "@Fire Temple/Big Lava Room,$has_age|adult,ocarina,time",
@@ -1135,7 +1134,7 @@
         "item_count": 1
       },
       {
-        "name": "Big Lava Room Open Chest",
+        "name": "Big Lava Room Lower Open Door Chest",
         "short_name": "Lava Room Open",
         "access_rules": [
           "@Fire Temple/Big Lava Room"
@@ -1144,7 +1143,7 @@
         "item_count": 1
       },
       {
-        "name": "Big Lava Room Bombable Chest",
+        "name": "Big Lava Room Blocked Door Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
           "@Fire Temple/Big Lava Room,$has_age|adult,$has_explosives"
@@ -1162,7 +1161,7 @@
         "item_count": 1
       },
       {
-        "name": "Boulder Maze Side Room",
+        "name": "Boulder Maze Side Room Chest",
         "short_name": "Boulder Maze Side",
         "access_rules": [
           "@Fire Temple/Maze Lower"
@@ -1171,7 +1170,7 @@
         "item_count": 1
       },
       {
-        "name": "GS66 - Unmarked Bomb Wall",
+        "name": "GS Boulder Maze",
         "short_name": "Boulder Maze",
         "access_rules": [
           "@Fire Temple/Maze Lower,$has_explosives"
@@ -1203,7 +1202,7 @@
         "item_count": 1
       },
       {
-        "name": "Boulder Maze Bombable Pit",
+        "name": "Boulder Maze Shortcut Chest",
         "short_name": "Shortcut",
         "access_rules": [
           "@Fire Temple/Maze Upper,$has_explosives"
@@ -1212,7 +1211,7 @@
         "item_count": 1
       },
       {
-        "name": "GS67 - East Tower Climb",
+        "name": "GS Scarecrow Climb",
         "short_name": "Scarecrow 1",
         "access_rules": [
           "@Fire Temple/East Tower"
@@ -1225,7 +1224,7 @@
         "item_count": 1
       },
       {
-        "name": "GS68 - East Tower Top",
+        "name": "GS Scarecrow Top",
         "short_name": "Scarecrow 2",
         "access_rules": [
           "@Fire Temple/East Tower"
@@ -1431,7 +1430,7 @@
         "item_count": 1
       },
       {
-        "name": "GS73 - South Basement",
+        "name": "GS Behind Gate",
         "short_name": "South Basement",
         "access_rules": [
           "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,ironboots",
@@ -1468,8 +1467,8 @@
         "item_count": 1
       },
       {
-        "name": "GS75 - Central Room",
-        "short_name": "Central Room",
+        "name": "GS Central Pillar",
+        "short_name": "Central Pillar",
         "access_rules": [
           "@Water Temple/Middle Water Level,longshot,water_small_keys:1,[water_small_keys:5]",
           "@Water Temple/Middle Water Level,longshot,bow",
@@ -1489,7 +1488,7 @@
       },
       {
         "name": "Central Pillar Chest",
-        "short_name": "Basement",
+        "short_name": "Central Pillar",
         "access_rules": [
           "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,water_small_keys:1,[water_small_keys:5]",
           "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,bow",
@@ -1499,7 +1498,7 @@
         "item_count": 1
       },
       {
-        "name": "GS76 - Falling Platform Room",
+        "name": "GS Falling Platform Room",
         "short_name": "Platform Room",
         "access_rules": [
           "@Water Temple/Falling Platforms,longshot",
@@ -1515,15 +1514,15 @@
         "item_count": 1
       },
       {
-        "name": "Dark Link Chest",
-        "short_name": "Dark Link",
+        "name": "Longshot Chest",
+        "short_name": "Longshot",
         "access_rules": [
           "@Water Temple/Dark Link Region"
         ],
         "item_count": 1
       },
       {
-        "name": "GS74 - Serpent River",
+        "name": "GS River",
         "short_name": "River",
         "access_rules": [
           "@Water Temple/Dark Link Region,ocarina,time,ironboots",
@@ -1562,7 +1561,7 @@
         "item_count": 1
       },
       {
-        "name": "GS77 - Near Boss Key Chest",
+        "name": "GS Near Boss Key Chest",
         "short_name": "Near Boss Key",
         "access_rules": [
           "@Water Temple/North Basement"
@@ -1721,7 +1720,7 @@
         "item_count": 2
       },
       {
-        "name": "GS81 - Like Like Room",
+        "name": "GS Like Like Room",
         "short_name": "Like Like",
         "access_rules": [
           "@Shadow Temple/Huge Pit"
@@ -1742,7 +1741,7 @@
         "item_count": 1
       },
       {
-        "name": "GS82 - Crusher Room",
+        "name": "GS Falling Spikes Room",
         "short_name": "Crusher",
         "access_rules": [
           "@Shadow Temple/Huge Pit,hookshot",
@@ -1793,7 +1792,7 @@
         "item_count": 1
       },
       {
-        "name": "GS83 - Single Giant Pot",
+        "name": "GS Single Giant Pot",
         "short_name": "Single Skull",
         "access_rules": [
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back]",
@@ -1824,7 +1823,7 @@
         "item_count": 2
       },
       {
-        "name": "GS84 - Near Ship",
+        "name": "GS Near Ship",
         "short_name": "Near Boat",
         "access_rules": [
           "@Shadow Temple/Wind Tunnel,shadow_small_keys:4,longshot",
@@ -1857,7 +1856,7 @@
         "item_count": 1
       },
       {
-        "name": "GS85 - Triple Giant Pot",
+        "name": "GS Triple Giant Pot",
         "short_name": "Triple Skull",
         "access_rules": [
           "@Shadow Temple/Beyond Boat"
@@ -1870,7 +1869,7 @@
         "item_count": 1
       },
       {
-        "name": "Hidden Floormaster Chest",
+        "name": "Invisible Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
           "@Shadow Temple/Beyond Boat",
@@ -2015,7 +2014,7 @@
         "item_count": 1
       },
       {
-        "name": "Child Left Chest",
+        "name": "Child Bridge Chest",
         "short_name": "Child Left",
         "access_rules": [
           "@Spirit Temple/Child Back"
@@ -2023,7 +2022,7 @@
         "item_count": 1
       },
       {
-        "name": "Child Right Chest",
+        "name": "Child Early Torches Chest",
         "short_name": "Child Right",
         "access_rules": [
           "@Spirit Temple/Child Back,sticks",
@@ -2033,7 +2032,7 @@
         "item_count": 1
       },
       {
-        "name": "GS96 - Metal Fence",
+        "name": "GS Metal Fence",
         "short_name": "Metal Fence",
         "access_rules": [
           "@Spirit Temple/Child Back"
@@ -2057,7 +2056,7 @@
         "item_count": 2
       },
       {
-        "name": "GS97 - Bomb for Light Room",
+        "name": "GS Sun on Floor Room",
         "short_name": "Child Climb",
         "access_rules": [
           "@Spirit Temple/Child Climb,$has_projectile|both",
@@ -2099,7 +2098,7 @@
         "item_count": 1
       },
       {
-        "name": "GS98 - Hall to West Iron Knuckle",
+        "name": "GS Hall After Sun Block Room",
         "short_name": "Before Knuckle",
         "access_rules": [
           "@Spirit Temple/Central Chamber,$has_explosives,boomerang,hookshot",
@@ -2149,7 +2148,7 @@
         "item_count": 1
       },
       {
-        "name": "GS100 - Lobby",
+        "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
           "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
@@ -2194,7 +2193,7 @@
         "item_count": 1
       },
       {
-        "name": "GS99 - Boulder Room",
+        "name": "GS Boulder Room",
         "short_name": "Boulders",
         "access_rules": [
           "@Spirit Temple/Early Adult Right Chest,ocarina,time",
@@ -2217,7 +2216,7 @@
         "item_count": 2
       },
       {
-        "name": "Statue Hand Chest",
+        "name": "Statue Room Hand Chest",
         "short_name": "Statue Hand",
         "access_rules": [
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,ocarina,lullaby"
@@ -2226,11 +2225,11 @@
         "item_count": 1
       },
       {
-        "name": "NE Main Room Chest",
+        "name": "Statue Room Northeast Chest",
         "short_name": "Statue Ledge",
         "access_rules": [
-          "@Spirit Temple/Statue Hand Chest,hookshot",
-          "@Spirit Temple/Statue Hand Chest,hoverboots"
+          "@Spirit Temple/Statue Room Hand Chest,hookshot",
+          "@Spirit Temple/Statue Room Hand Chest,hoverboots"
         ],
         "item_count": 1
       },
@@ -2321,7 +2320,7 @@
     ],
     "sections": [
       {
-        "name": "Front Left Hidden Wall",
+        "name": "Front Left Fake Wall Chest",
         "short_name": "Front Hidden",
         "access_rules": [
           "[logic_lens_botw]",
@@ -2331,7 +2330,7 @@
         "item_count": 1
       },
       {
-        "name": "Right Bottom Hidden Wall",
+        "name": "Right Bottom Fake Wall Chest",
         "short_name": "Right Hidden",
         "access_rules": [
           "[logic_lens_botw]",
@@ -2341,7 +2340,7 @@
         "item_count": 1
       },
       {
-        "name": "Center Large Chest",
+        "name": "Compass Chest",
         "short_name": "Center Large",
         "access_rules": [
           "[logic_lens_botw]",
@@ -2351,7 +2350,7 @@
         "item_count": 1
       },
       {
-        "name": "Center Small Chest",
+        "name": "Center Skulltula Chest",
         "short_name": "Center Small",
         "access_rules": [
           "[logic_lens_botw]",
@@ -2360,7 +2359,7 @@
         "item_count": 1
       },
       {
-        "name": "GS79 - West Inner Room",
+        "name": "GS West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
           "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_botw]",
@@ -2377,7 +2376,7 @@
         "item_count": 1
       },
       {
-        "name": "GS80 - East Inner Room",
+        "name": "GS East Inner Room",
         "short_name": "East Inner",
         "access_rules": [
           "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_botw]",
@@ -2394,7 +2393,7 @@
         "item_count": 1
       },
       {
-        "name": "Locked Pits",
+        "name": "Fire Keese Chest",
         "access_rules": [
           "botw_small_keys:1,[botw_small_keys:3],[logic_lens_botw]",
           "botw_small_keys:1,[botw_small_keys:3],$can_use_lens"
@@ -2402,19 +2401,19 @@
         "item_count": 1
       },
       {
-        "name": "Behind Right Grate",
+        "name": "Like Like Chest",
         "short_name": "Like Like",
         "access_rules": [
-          "@Bottom of the Well/Locked Pits"
+          "@Bottom of the Well/Fire Keese Chest"
         ],
         "item_count": 1
       },
       {
-        "name": "GS78 - Like Like Cage",
+        "name": "GS Like Like Cage",
         "short_name": "Like Like",
         "access_rules": [
-          "@Bottom of the Well/Behind Right Grate,boomerang",
-          "@Bottom of the Well/Behind Right Grate,[logic_botw_cage_gs],$can_child_attack"
+          "@Bottom of the Well/Like Like Chest,boomerang",
+          "@Bottom of the Well/Like Like Chest,[logic_botw_cage_gs],$can_child_attack"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2432,7 +2431,7 @@
         "item_count": 1
       },
       {
-        "name": "Front Center Bombable",
+        "name": "Front Center Bombable Chest",
         "short_name": "Front Bombable",
         "access_rules": [
           "$has_explosives"
@@ -2440,7 +2439,7 @@
         "item_count": 1
       },
       {
-        "name": "Back Left Bombable",
+        "name": "Back Left Bombable Chest",
         "short_name": "Back Bombable",
         "access_rules": [
           "$has_explosives,[logic_lens_botw]",
@@ -2449,7 +2448,7 @@
         "item_count": 1
       },
       {
-        "name": "Basement Chest",
+        "name": "Map Chest",
         "short_name": "Basement",
         "access_rules": [
           "$has_explosives",
@@ -2462,14 +2461,6 @@
         "item_count": 1
       },
       {
-        "name": "Underwater Front Chest",
-        "short_name": "Underwater Front",
-        "access_rules": [
-          "ocarina,lullaby"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Underwater Left Chest",
         "short_name": "Underwater Left",
         "access_rules": [
@@ -2478,7 +2469,15 @@
         "item_count": 1
       },
       {
-        "name": "Defeat Boss",
+        "name": "Underwater Front Chest",
+        "short_name": "Underwater Front",
+        "access_rules": [
+          "ocarina,lullaby"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lens of Truth Chest",
         "short_name": "Dead Hand",
         "access_rules": [
           "ocarina,lullaby,sword1",
@@ -2553,7 +2552,7 @@
         "hosted_item": "trial_water"
       },
       {
-        "name": "Shadow Trial First Chest",
+        "name": "Shadow Trial Front Chest",
         "short_name": "Shadow Trial 1",
         "access_rules": [
           "hookshot",
@@ -2564,7 +2563,7 @@
         "item_count": 1
       },
       {
-        "name": "Shadow Trial Second Chest",
+        "name": "Shadow Trial Golden Gauntlets Chest",
         "short_name": "Shadow Trial 2",
         "access_rules": [
           "longshot,hoverboots",
@@ -2639,7 +2638,7 @@
         "hosted_item": "trial_light"
       },
       {
-        "name": "Spirit Trial First Chest",
+        "name": "Spirit Trial Crystal Switch Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
           "[logic_spirit_trial_hookshot]",
@@ -2648,7 +2647,7 @@
         "item_count": 1
       },
       {
-        "name": "Spirit Trial Second Chest",
+        "name": "Spirit Trial Invisible Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
           "$has_bombchus,[logic_lens_castle],[logic_spirit_trial_hookshot]",
@@ -2685,7 +2684,8 @@
         "item_count": 4
       },
       {
-        "name": "Castle Tower",
+        "name": "Ganons Tower Boss Key Chest",
+        "short_name": "Boss Key",
         "access_rules": [
           "$trials_barrier_dispelled"
         ],
@@ -2712,6 +2712,7 @@
     "sections": [
       {
         "name": "North F1 Carpenter",
+        "short_name": "North F1",
         "access_rules": [
           "$has_age|adult"
         ],
@@ -2720,6 +2721,7 @@
       },
       {
         "name": "North F2 Carpenter",
+        "short_name": "North F2",
         "access_rules": [
           "$has_age|adult,$gerudo_card",
           "$has_age|adult,bow",
@@ -2735,6 +2737,7 @@
       },
       {
         "name": "South F1 Carpenter",
+        "short_name": "South F1",
         "access_rules": [
           "$has_age|adult"
         ],
@@ -2746,6 +2749,7 @@
       },
       {
         "name": "South F2 Carpenter",
+        "short_name": "South F2",
         "access_rules": [
           "$has_age|adult"
         ],
@@ -2756,7 +2760,7 @@
         "item_count": 1
       },
       {
-        "name": "Free the carpenters",
+        "name": "Gerudo Membership Card",
         "access_rules": [
           "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,$gerudo_card",
           "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,bow",
