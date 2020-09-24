@@ -2891,12 +2891,15 @@
                   },
                   {
                     "name": "DMT Great Fairy Fountain",
+                    "access_rules": [
+                      "$can_blast"
+                    ],
                     "sections": [
                       {
                         "name": "DMT Great Fairy Reward",
                         "short_name": "Reward",
                         "access_rules": [
-                          "ocarina,lullaby,$can_blast"
+                          "ocarina,lullaby"
                         ],
                         "item_count": 1
                       }
