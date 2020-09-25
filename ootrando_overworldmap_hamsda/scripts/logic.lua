@@ -203,7 +203,7 @@ end
 function can_leave_forest()
   if has("setting_forest_open")
   or has("setting_forest_deku")
-  --or has_age("adult")
+  or has("setting_age_adult")
   then
     return 1, AccessibilityLevel.Normal
   end
@@ -714,6 +714,41 @@ function has_bottle()
   return usable_bottles, level
 end
 
+blue_fire_locations = {
+  "@Ganons Castle/Water Trial Chests",
+  "@Ganons Castle MQ/Water Trial Chest",
+  "@Gerudo Training Grounds MQ/Before Heavy Block Chest"
+}
+function has_blue_fire()
+  local bottle_count, bottle_level = has_bottle()
+
+  if bottle_count == 0 then
+    return 0, AccessibilityLevel.None
+  end
+
+  if has("wallet2") then
+    return 1, bottle_level
+  end
+
+  local zf_count, zf_level = adult_fountain()
+  if zf_count > 0 and zf_level == AccessibilityLevel.Normal then
+    return 1, bottle_level
+  end
+
+  for _,location in ipairs(blue_fire_locations) do
+    local location_object = get_object(location)
+    if location_object 
+    and location_object.AccessibilityLevel 
+    and location_object.AccessibilityLevel == AccessibilityLevel.Normal 
+    then
+      --TODO: trigger dummy update
+      return 1, bottle_level
+    end
+  end
+
+  return 1, AccessibilityLevel.SequenceBreak
+end
+
 function has_projectile(age)
   local explo = has_explosives() > 0
   local sling = has("sling")
@@ -803,7 +838,7 @@ end
 
 function trials_barrier_dispelled()
   local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
-  local setting_trials = Tracker:FindObjectForCode("setting_trials").AcquiredCount
+  local setting_trials = get_object("setting_trials") and get_object("setting_trials").AcquiredCount or 0
   
   if setting_trials == 0
   or trials_cleared >= setting_trials 

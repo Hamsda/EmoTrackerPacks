@@ -1,7 +1,74 @@
-local variant = Tracker.ActiveVariantUID
-local has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
-local has_keys = variant:find("keysanity")
-local is_er = variant:find("entrance")
+object_cache = {}
+function get_object(name)
+  if object_cache[name] then
+    return object_cache[name]
+  end
+  local object = Tracker:FindObjectForCode(name)
+  if object then
+    object_cache[name] = object
+    return object
+  end
+end
+
+
+
+settings_cache = {}
+queued_changes = {}
+function not_like_cache(setting, current)
+  if settings_cache[setting] == nil or settings_cache[setting] ~= current then
+    queued_changes[setting] = current
+    return true
+  end
+  return false
+end
+function apply_queued_changes()
+  for setting,value in pairs(queued_changes) do
+    settings_cache[setting] = value
+  end
+  queued_changes = {}
+end
+
+
+
+dungeons = {
+  "forest",
+  "fire",
+  "water",
+  "spirit",
+  "shadow",
+  "botw",
+  "gtg",
+  "gc"
+}
+key_counts = {
+  vanilla = {
+    forest = 5,
+    fire = 8,
+    water = 6,
+    spirit = 5,
+    shadow = 5,
+    botw = 3,
+    gtg = 9,
+    gc = 2,
+  },
+  mq = {
+    forest = 6,
+    fire = 5,
+    water = 2,
+    spirit = 7,
+    shadow = 6,
+    botw = 2,
+    gtg = 3,
+    gc = 3,
+  }
+}
+
+
+
+variant = Tracker.ActiveVariantUID
+has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
+has_keys = variant:find("keysanity")
+is_er = variant:find("entrance")
 
 
 
@@ -11,14 +78,15 @@ if has_map then
     Tracker:AddItems("items/cap_houses.json")
     Tracker:AddItems("items/cap_dungeons.json")
     Tracker:AddItems("items/cap_overworld.json")
+    Tracker:AddItems("items/options_entrance.json")
   else
     Tracker:AddItems("items/tricks.json")
     Tracker:AddItems("items/sequences.json")
+    Tracker:AddItems("items/cap_items.json")
+    Tracker:AddItems("items/options.json")
   end
 end
-Tracker:AddItems("items/cap_items.json")
 Tracker:AddItems("items/counters.json")
-Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
@@ -30,6 +98,7 @@ if has_map then
   if is_er then
     Tracker:AddMaps("maps/maps_entrance.json")
     Tracker:AddLocations("locations/overworld_entrance.json")
+    Tracker:AddLayouts("layouts/options_entrance.json")
   else
     Tracker:AddMaps("maps/maps.json")
     Tracker:AddLocations("locations/overworld.json")
@@ -67,7 +136,7 @@ Tracker:AddLayouts("layouts/broadcast.json")
 
 --change GF key counter in this variant only going to 1 because of the default settings for GF
 if variant == "var_itemsonly_keysanity" then
-  local gf = Tracker:FindObjectForCode("setting_gerudo")
+  local gf = get_object("setting_gerudo")
   if gf then
     gf.CurrentStage = 0
   end

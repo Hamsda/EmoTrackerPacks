@@ -1,38 +1,6 @@
-dungeons = {
-  "forest",
-  "fire",
-  "water",
-  "spirit",
-  "shadow",
-  "botw",
-  "gtg",
-  "gc"
-}
-key_counts = {
-  vanilla = {
-    forest = 5,
-    fire = 8,
-    water = 6,
-    spirit = 5,
-    shadow = 5,
-    botw = 3,
-    gtg = 9,
-    gc = 2,
-  },
-  mq = {
-    forest = 6,
-    fire = 5,
-    water = 2,
-    spirit = 7,
-    shadow = 6,
-    botw = 2,
-    gtg = 3,
-    gc = 3,
-  }
-}
 function update_smallkeys()
   for _,dungeon in ipairs(dungeons) do
-    local key_object = Tracker:FindObjectForCode(dungeon.."_small_keys")
+    local key_object = get_object(dungeon.."_small_keys")
     if key_object then
       if has(dungeon.."_reg") then
         key_object.MaxCount = key_counts["vanilla"][dungeon]
@@ -42,7 +10,7 @@ function update_smallkeys()
     end
   end
 
-  local gf_keys = Tracker:FindObjectForCode("gf_small_keys")
+  local gf_keys = get_object("gf_small_keys")
   if gf_keys then
     gf_keys.MaxCount = 4
   end
@@ -50,148 +18,190 @@ end
 
 
 
-capture_badge_locations = {
-  ["@Death Mountain -> Mountain Bombable Grotto"] = "@Death Mountain -> Mountain Bombable Grotto/Grotto",
-  ["@Death Mountain -> Mountain Storms Grotto"] = "@Death Mountain -> Mountain Storms Grotto/Grotto",
-  ["@Death Mountain Crater Lower -> DMC Hammer Grotto"] = "@Death Mountain Crater Lower -> DMC Hammer Grotto/Grotto",
-  ["@Death Mountain Crater Upper -> Top of Crater Grotto"] = "@Death Mountain Crater Upper -> Top of Crater Grotto/Grotto",
-  ["@Desert Colossus -> Desert Colossus Grotto"] = "@Desert Colossus -> Desert Colossus Grotto/Grotto",
-  ["@Gerudo Fortress -> Gerudo Fortress Storms Grotto"] = "@Gerudo Fortress -> Gerudo Fortress Storms Grotto/Grotto",
-  ["@Gerudo Valley -> Gerudo Valley Octorok Grotto"] = "@Gerudo Valley -> Gerudo Valley Octorok Grotto/Grotto",
-  ["@Gerudo Valley Far Side -> Gerudo Valley Storms Grotto"] = "@Gerudo Valley Far Side -> Gerudo Valley Storms Grotto/Grotto",
-  ["@Goron City -> Goron City Grotto"] = "@Goron City -> Goron City Grotto/Grotto",
-  ["@Hyrule Castle Grounds -> Castle Storms Grotto"] = "@Hyrule Castle Grounds -> Castle Storms Grotto/Grotto",
-  ["@Hyrule Field -> Field Far West Castle Town Grotto"] = "@Hyrule Field -> Field Far West Castle Town Grotto/Grotto",
-  ["@Hyrule Field -> Field Kakariko Grotto"] = "@Hyrule Field -> Field Kakariko Grotto/Grotto",
-  ["@Hyrule Field -> Field Near Lake Inside Fence Grotto"] = "@Hyrule Field -> Field Near Lake Inside Fence Grotto/Grotto",
-  ["@Hyrule Field -> Field Near Lake Outside Fence Grotto"] = "@Hyrule Field -> Field Near Lake Outside Fence Grotto/Grotto",
-  ["@Hyrule Field -> Field North Lon Lon Grotto"] = "@Hyrule Field -> Field North Lon Lon Grotto/Grotto",
-  ["@Hyrule Field -> Field Valley Grotto"] = "@Hyrule Field -> Field Valley Grotto/Grotto",
-  ["@Hyrule Field -> Field West Castle Town Grotto"] = "@Hyrule Field -> Field West Castle Town Grotto/Grotto",
-  ["@Hyrule Field -> Remote Southern Grotto"] = "@Hyrule Field -> Remote Southern Grotto/Grotto",
-  ["@Kakariko Village -> Kakariko Back Grotto"] = "@Kakariko Village -> Kakariko Back Grotto/Grotto",
-  ["@Kakariko Village -> Kakariko Bombable Grotto"] = "@Kakariko Village -> Kakariko Bombable Grotto/Grotto",
-  ["@Kokiri Forest -> Kokiri Forest Storms Grotto"] = "@Kokiri Forest -> Kokiri Forest Storms Grotto/Grotto",
-  ["@Lake Hylia -> Lake Hylia Grotto"] = "@Lake Hylia -> Lake Hylia Grotto/Grotto",
-  ["@Lon Lon Ranch -> Lon Lon Grotto"] = "@Lon Lon Ranch -> Lon Lon Grotto/Grotto",
-  ["@Lost Woods -> Lost Woods Generic Grotto"] = "@Lost Woods -> Lost Woods Generic Grotto/Grotto",
-  ["@Lost Woods Beyond Mido -> Deku Theater"] = "@Lost Woods Beyond Mido -> Deku Theater/Grotto",
-  ["@Lost Woods Beyond Mido -> Lost Woods Sales Grotto"] = "@Lost Woods Beyond Mido -> Lost Woods Sales Grotto/Grotto",
-  ["@Sacred Forest Meadow -> Meadow Fairy Grotto"] = "@Sacred Forest Meadow -> Meadow Fairy Grotto/Grotto",
-  ["@Sacred Forest Meadow -> Meadow Storms Grotto"] = "@Sacred Forest Meadow -> Meadow Storms Grotto/Grotto",
-  ["@Sacred Forest Meadow Entryway -> Front of Meadow Grotto"] = "@Sacred Forest Meadow Entryway -> Front of Meadow Grotto/Grotto",
-  ["@Zora River -> Zora River Plateau Bombable Grotto"] = "@Zora River -> Zora River Plateau Bombable Grotto/Grotto",
-  ["@Zora River -> Zora River Plateau Open Grotto"] = "@Zora River -> Zora River Plateau Open Grotto/Grotto",
-  ["@Zora River -> Zora River Storms Grotto"] = "@Zora River -> Zora River Storms Grotto/Grotto",
-  ["@Zoras Domain -> Zoras Domain Storms Grotto"] = "@Zoras Domain -> Zoras Domain Storms Grotto/Grotto",
-  ["@Castle Town -> Castle Town Bazaar"] = "@Castle Town -> Castle Town Bazaar/House",
-  ["@Castle Town -> Castle Town Bombchu Bowling"] = "@Castle Town -> Castle Town Bombchu Bowling/House",
-  ["@Castle Town -> Castle Town Bombchu Shop"] = "@Castle Town -> Castle Town Bombchu Shop/House",
-  ["@Castle Town -> Castle Town Man in Green House"] = "@Castle Town -> Castle Town Man in Green House/House",
-  ["@Castle Town -> Castle Town Mask Shop"] = "@Castle Town -> Castle Town Mask Shop/House",
-  ["@Castle Town -> Castle Town Potion Shop"] = "@Castle Town -> Castle Town Potion Shop/House",
-  ["@Castle Town -> Castle Town Shooting Gallery"] = "@Castle Town -> Castle Town Shooting Gallery/House",
-  ["@Castle Town -> Castle Town Treasure Chest Game"] = "@Castle Town -> Castle Town Treasure Chest Game/House",
-  ["@Castle Town Entrance -> Castle Town Rupee Room"] = "@Castle Town Entrance -> Castle Town Rupee Room/House",
-  ["@Death Mountain Crater Lower -> Crater Fairy"] = "@Death Mountain Crater Lower -> Crater Fairy/House",
-  ["@Death Mountain Summit -> Mountain Summit Fairy"] = "@Death Mountain Summit -> Mountain Summit Fairy/House",
-  ["@Desert Colossus -> Colossus Fairy"] = "@Desert Colossus -> Colossus Fairy/House",
-  ["@Ganons Castle Grounds -> Ganons Castle Fairy"] = "@Ganons Castle Grounds -> Ganons Castle Fairy/House",
-  ["@Gerudo Valley Far Side -> Carpenter Tent"] = "@Gerudo Valley Far Side -> Carpenter Tent/House",
-  ["@Goron City -> Goron Shop"] = "@Goron City -> Goron Shop/House",
-  ["@Graveyard -> Dampes House"] = "@Graveyard -> Dampes House/House",
-  ["@Hyrule Castle Grounds -> Hyrule Castle Fairy"] = "@Hyrule Castle Grounds -> Hyrule Castle Fairy/House",
-  ["@Kakariko Village -> Carpenter Boss House"] = "@Kakariko Village -> Carpenter Boss House/House",
-  ["@Kakariko Village -> House of Skulltula"] = "@Kakariko Village -> House of Skulltula/House",
-  ["@Kakariko Village -> Impas House"] = "@Kakariko Village -> Impas House/House",
-  ["@Kakariko Village -> Impas House Back"] = "@Kakariko Village -> Impas House Back/House",
-  ["@Kakariko Village -> Kakariko Bazaar"] = "@Kakariko Village -> Kakariko Bazaar/House",
-  ["@Kakariko Village -> Kakariko Shooting Gallery"] = "@Kakariko Village -> Kakariko Shooting Gallery/House",
-  ["@Kakariko Village -> Odd Medicine Building"] = "@Kakariko Village -> Odd Medicine Building/House",
-  ["@Kakariko Village -> Windmill"] = "@Kakariko Village -> Windmill/House",
-  ["@Kokiri Forest -> House of Twins"] = "@Kokiri Forest -> House of Twins/House",
-  ["@Kokiri Forest -> Know It All House"] = "@Kokiri Forest -> Know It All House/House",
-  ["@Kokiri Forest -> Kokiri Shop"] = "@Kokiri Forest -> Kokiri Shop/House",
-  ["@Kokiri Forest -> Links House"] = "@Kokiri Forest -> Links House/House",
-  ["@Kokiri Forest -> Mido House"] = "@Kokiri Forest -> Mido House/House",
-  ["@Kokiri Forest -> Saria House"] = "@Kokiri Forest -> Saria House/House",
-  ["@Lake Hylia -> Fishing Hole"] = "@Lake Hylia -> Fishing Hole/House",
-  ["@Lake Hylia -> Lake Hylia Lab"] = "@Lake Hylia -> Lake Hylia Lab/House",
-  ["@Lon Lon Ranch -> Ingo Barn"] = "@Lon Lon Ranch -> Ingo Barn/House",
-  ["@Lon Lon Ranch -> Lon Lon Corner Tower"] = "@Lon Lon Ranch -> Lon Lon Corner Tower/House",
-  ["@Lon Lon Ranch -> Talon House"] = "@Lon Lon Ranch -> Talon House/House",
-  ["@Zoras Domain -> Zora Shop"] = "@Zoras Domain -> Zora Shop/House",
-  ["@Zoras Fountain -> Zoras Fountain Fairy"] = "@Zoras Fountain -> Zoras Fountain Fairy/House",
-  ["@Death Mountain Crater Central -> Fire Temple Lower"] = "@Death Mountain Crater Central -> Fire Temple Lower/Dungeon",
-  ["@Desert Colossus -> Spirit Temple Lobby"] = "@Desert Colossus -> Spirit Temple Lobby/Dungeon",
-  ["@Dodongos Cavern Entryway -> Dodongos Cavern Beginning"] = "@Dodongos Cavern Entryway -> Dodongos Cavern Beginning/Dungeon",
-  ["@Gerudo Fortress -> Gerudo Training Grounds Lobby"] = "@Gerudo Fortress -> Gerudo Training Grounds Lobby/Dungeon",
-  ["@Kakariko Village -> Bottom of the Well"] = "@Kakariko Village -> Bottom of the Well/Dungeon",
-  ["@Lake Hylia -> Water Temple Lobby"] = "@Lake Hylia -> Water Temple Lobby/Dungeon",
-  ["@Outside Deku Tree -> Deku Tree Lobby"] = "@Outside Deku Tree -> Deku Tree Lobby/Dungeon",
-  ["@Sacred Forest Meadow -> Forest Temple Lobby"] = "@Sacred Forest Meadow -> Forest Temple Lobby/Dungeon",
-  ["@Shadow Temple Warp Region -> Shadow Temple Entryway"] = "@Shadow Temple Warp Region -> Shadow Temple Entryway/Dungeon",
-  ["@Zoras Fountain -> Ice Cavern Beginning"] = "@Zoras Fountain -> Ice Cavern Beginning/Dungeon",
-  ["@Zoras Fountain -> Jabu Jabus Belly Beginning"] = "@Zoras Fountain -> Jabu Jabus Belly Beginning/Dungeon",
-  ["@Castle Grounds -> Castle Town"] = "@Castle Grounds -> Castle Town/Overworld",
-  ["@Castle Town -> Castle Grounds"] = "@Castle Town -> Castle Grounds/Overworld",
-  ["@Castle Town -> Castle Town Entrance"] = "@Castle Town -> Castle Town Entrance/Overworld",
-  ["@Castle Town -> Temple of Time Exterior"] = "@Castle Town -> Temple of Time Exterior/Overworld",
-  ["@Castle Town Entrance -> Castle Town"] = "@Castle Town Entrance -> Castle Town/Overworld",
-  ["@Castle Town Entrance -> Hyrule Field"] = "@Castle Town Entrance -> Hyrule Field/Overworld",
-  ["@Darunias Chamber -> Death Mountain Crater Lower"] = "@Darunias Chamber -> Death Mountain Crater Lower/Overworld",
-  ["@Death Mountain -> Goron City"] = "@Death Mountain -> Goron City/Overworld",
-  ["@Death Mountain -> Kakariko Village Behind Gate"] = "@Death Mountain -> Kakariko Village Behind Gate/Overworld",
-  ["@Death Mountain Crater Lower -> Darunias Chamber"] = "@Death Mountain Crater Lower -> Darunias Chamber/Overworld",
-  ["@Death Mountain Crater Upper -> Death Mountain Summit"] = "@Death Mountain Crater Upper -> Death Mountain Summit/Overworld",
-  ["@Death Mountain Summit -> Death Mountain Crater Upper"] = "@Death Mountain Summit -> Death Mountain Crater Upper/Overworld",
-  ["@Desert Colossus -> Haunted Wasteland Near Colossus"] = "@Desert Colossus -> Haunted Wasteland Near Colossus/Overworld",
-  ["@Gerudo Fortress -> Gerudo Valley Far Side"] = "@Gerudo Fortress -> Gerudo Valley Far Side/Overworld",
-  ["@Gerudo Fortress Outside Gate -> Haunted Wasteland Near Fortress"] = "@Gerudo Fortress Outside Gate -> Haunted Wasteland Near Fortress/Overworld",
-  ["@Gerudo Valley -> Hyrule Field"] = "@Gerudo Valley -> Hyrule Field/Overworld",
-  ["@Gerudo Valley Far Side -> Gerudo Fortress"] = "@Gerudo Valley Far Side -> Gerudo Fortress/Overworld",
-  ["@Goron City -> Death Mountain"] = "@Goron City -> Death Mountain/Overworld",
-  ["@Goron City Woods Warp -> Lost Woods"] = "@Goron City Woods Warp -> Lost Woods/Overworld",
-  ["@Graveyard -> Kakariko Village"] = "@Graveyard -> Kakariko Village/Overworld",
-  ["@Haunted Wasteland Near Colossus -> Desert Colossus"] = "@Haunted Wasteland Near Colossus -> Desert Colossus/Overworld",
-  ["@Haunted Wasteland Near Fortress -> Gerudo Fortress Outside Gate"] = "@Haunted Wasteland Near Fortress -> Gerudo Fortress Outside Gate/Overworld",
-  ["@Hyrule Field -> Castle Town Entrance"] = "@Hyrule Field -> Castle Town Entrance/Overworld",
-  ["@Hyrule Field -> Gerudo Valley"] = "@Hyrule Field -> Gerudo Valley/Overworld",
-  ["@Hyrule Field -> Kakariko Village"] = "@Hyrule Field -> Kakariko Village/Overworld",
-  ["@Hyrule Field -> Lake Hylia"] = "@Hyrule Field -> Lake Hylia/Overworld",
-  ["@Hyrule Field -> Lon Lon Ranch"] = "@Hyrule Field -> Lon Lon Ranch/Overworld",
-  ["@Hyrule Field -> Lost Woods Bridge"] = "@Hyrule Field -> Lost Woods Bridge/Overworld",
-  ["@Hyrule Field -> Zora River Front"] = "@Hyrule Field -> Zora River Front/Overworld",
-  ["@Kakariko Village -> Graveyard"] = "@Kakariko Village -> Graveyard/Overworld",
-  ["@Kakariko Village -> Hyrule Field"] = "@Kakariko Village -> Hyrule Field/Overworld",
-  ["@Kakariko Village Behind Gate -> Death Mountain"] = "@Kakariko Village Behind Gate -> Death Mountain/Overworld",
-  ["@Kokiri Forest -> Lost Woods"] = "@Kokiri Forest -> Lost Woods/Overworld",
-  ["@Kokiri Forest -> Lost Woods Bridge From Forest"] = "@Kokiri Forest -> Lost Woods Bridge From Forest/Overworld",
-  ["@Lake Hylia -> Hyrule Field"] = "@Lake Hylia -> Hyrule Field/Overworld",
-  ["@Lake Hylia -> Zoras Domain"] = "@Lake Hylia -> Zoras Domain/Overworld",
-  ["@Lon Lon Ranch -> Hyrule Field"] = "@Lon Lon Ranch -> Hyrule Field/Overworld",
-  ["@Lost Woods -> Goron City Woods Warp"] = "@Lost Woods -> Goron City Woods Warp/Overworld",
-  ["@Lost Woods -> Zora River"] = "@Lost Woods -> Zora River/Overworld",
-  ["@Lost Woods Beyond Mido -> Sacred Forest Meadow Entryway"] = "@Lost Woods Beyond Mido -> Sacred Forest Meadow Entryway/Overworld",
-  ["@Lost Woods Bridge -> Hyrule Field"] = "@Lost Woods Bridge -> Hyrule Field/Overworld",
-  ["@Lost Woods Bridge -> Kokiri Forest"] = "@Lost Woods Bridge -> Kokiri Forest/Overworld",
-  ["@Lost Woods Forest Exit -> Kokiri Forest"] = "@Lost Woods Forest Exit -> Kokiri Forest/Overworld",
-  ["@Sacred Forest Meadow Entryway -> Lost Woods Beyond Mido"] = "@Sacred Forest Meadow Entryway -> Lost Woods Beyond Mido/Overworld",
-  ["@Zora River -> Lost Woods"] = "@Zora River -> Lost Woods/Overworld",
-  ["@Zora River Behind Waterfall -> Zoras Domain"] = "@Zora River Behind Waterfall -> Zoras Domain/Overworld",
-  ["@Zora River Front -> Hyrule Field"] = "@Zora River Front -> Hyrule Field/Overworld",
-  ["@Zoras Domain -> Lake Hylia"] = "@Zoras Domain -> Lake Hylia/Overworld",
-  ["@Zoras Domain -> Zora River Behind Waterfall"] = "@Zoras Domain -> Zora River Behind Waterfall/Overworld",
-  ["@Zoras Domain Behind King Zora -> Zoras Fountain"] = "@Zoras Domain Behind King Zora -> Zoras Fountain/Overworld",
-  ["@Zoras Fountain -> Zoras Domain Behind King Zora"] = "@Zoras Fountain -> Zoras Domain Behind King Zora/Overworld",
-  ["@Death Mountain Summit Owl Flight -> Kakariko Village"] = "@Death Mountain Summit Owl Flight -> Kakariko Village/Overworld",
-  ["@Lake Hylia Owl Flight -> Hyrule Field"] = "@Lake Hylia Owl Flight -> Hyrule Field/Overworld",
+vanilla_captures = {
+  ["setting_entrance_grottos_shuffle"] = {
+    ["@Kokiri Forest -> KF Storms Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@Lost Woods -> LW Near Shortcuts Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@LW Beyond Mido -> Deku Theater/Grotto"] = "entrance_grotto_theater",
+    ["@LW Beyond Mido -> LW Scrubs Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Sacred Forest Meadow -> SFM Fairy Grotto/Grotto"] = "entrance_grotto_fairy",
+    ["@Sacred Forest Meadow -> SFM Storms Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@SFM Entryway -> SFM Wolfos Grotto/Grotto"] = "entrance_grotto_enemy",
+    ["@Hyrule Field -> HF Fairy Grotto/Grotto"] = "entrance_grotto_fairy",
+    ["@Hyrule Field -> HF Near Kak Grotto/Grotto"] = "entrance_grotto_field_kak",
+    ["@Hyrule Field -> HF Inside Fence Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Hyrule Field -> HF Open Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@Hyrule Field -> HF Tektite Grotto/Grotto"] = "entrance_grotto_tektite",
+    ["@Hyrule Field -> HF Cow Grotto/Grotto"] = "entrance_grotto_field_valley",
+    ["@Hyrule Field -> HF Near Market Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@Hyrule Field -> HF Southeast Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@Lon Lon Ranch -> LLR Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Kakariko Village -> Kak Redead Grotto/Grotto"] = "entrance_grotto_enemy",
+    ["@Kak Backyard -> Kak Open Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@Graveyard -> Graveyard Composers Grave/Grotto"] = "entrance_grotto_comp",
+    ["@Graveyard -> Graveyard Dampes Grave/Grotto"] = "entrance_grotto_dampe",
+    ["@Graveyard -> Graveyard Heart Piece Grave/Grotto"] = "entrance_grotto_hp",
+    ["@Graveyard -> Graveyard Shield Grave/Grotto"] = "", --TODO: new captures?
+    ["@Hyrule Castle Grounds -> HC Storms Grotto/Grotto"] = "entrance_grotto_castle_storms",
+    ["@Death Mountain Summit -> DMT Cow Grotto/Grotto"] = "entrance_grotto_cow",
+    ["@Death Mountain -> DMT Storms Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@DMC Upper Nearby -> DMC Upper Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@DMC Lower Nearby -> DMC Hammer Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Goron City -> GC Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Lake Hylia -> LH Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Zora River -> ZR Fairy Grotto/Grotto"] = "entrance_grotto_fairy",
+    ["@Zora River -> ZR Open Grotto/Grotto"] = "entrance_grotto_generic",
+    ["@Zora River -> ZR Storms Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Zoras Domain -> ZD Storms Grotto/Grotto"] = "entrance_grotto_fairy",
+    ["@Gerudo Valley -> GV Octorok Grotto/Grotto"] = "", --visibility_rules to hide
+    ["@GV Fortress Side -> GV Storms Grotto/Grotto"] = "entrance_grotto_scrub",
+    ["@Gerudo Fortress -> GF Storms Grotto/Grotto"] = "entrance_grotto_fairy",
+    ["@Desert Colossus -> Colossus Grotto/Grotto"] = "entrance_grotto_scrub",
+  },
+  ["setting_entrance_interiors_simple"] = {
+    ["@Kokiri Forest -> KF House of Twins/House"] = "", --visibility_rules to hide
+    ["@Kokiri Forest -> KF Know It All House/House"] = "", --visibility_rules to hide
+    ["@Kokiri Forest -> KF Kokiri Shop/House"] = "entrance_house_shop",
+    ["@Kokiri Forest -> KF Midos House/House"] = "", --TODO: new captures?
+    ["@Kokiri Forest -> KF Sarias House/House"] = "", --visibility_rules to hide
+    ["@Lon Lon Ranch -> LLR Stables/House"] = "entrance_house_cow",
+    ["@Lon Lon Ranch -> LLR Tower/House"] = "entrance_house_cow",
+    ["@Lon Lon Ranch -> LLR Talons House/House"] = "entrance_house_talon_child",
+    ["@Kakariko Village -> Kak Carpenter Boss House/House"] = "entrance_house_talon_adult",
+    ["@Kakariko Village -> Kak House of Skulltula/House"] = "entrance_house_skull",
+    ["@Kakariko Village -> Kak Impas House/House"] = "entrance_house_cow",
+    ["@Kak Impas Ledge -> Kak Impas House Back/House"] = "entrance_house_cow",
+    ["@Kakariko Village -> Kak Bazaar/House"] = "entrance_house_shop",
+    ["@Kakariko Village -> Kak Shooting Gallery/House"] = "entrance_house_shoot_adult",
+    ["@Kak Backyard -> Kak Odd Medicine Building/House"] = "entrance_house_hag",
+    ["@Graveyard -> Graveyard Dampes House/House"] = "", --visibility_rules to hide
+    ["@Market -> Market Bazaar/House"] = "entrance_house_shop",
+    ["@Market -> Market Bombchu Bowling/House"] = "entrance_house_bowling",
+    ["@Market -> Market Bombchu Shop/House"] = "entrance_house_shop",
+    ["@Market -> Market Man in Green House/House"] = "", --visibility_rules to hide
+    ["@Market -> Market Mask Shop/House"] = "entrance_house_masks",
+    ["@Market -> Market Potion Shop/House"] = "entrance_house_shop",
+    ["@Market -> Market Shooting Gallery/House"] = "entrance_house_shoot_child",
+    ["@Market -> Market Treasure Chest Game/House"] = "entrance_house_chest",
+    ["@Market Entrance -> Market Guard House/House"] = "entrance_house_pot",
+    ["@Ganons Castle Grounds -> OGC Great Fairy Fountain/House"] = "entrance_house_fairy",
+    ["@Hyrule Castle Grounds -> HC Great Fairy Fountain/House"] = "entrance_house_fairy",
+    ["@Death Mountain Summit -> DMT Great Fairy Fountain/House"] = "entrance_house_fairy",
+    ["@DMC Lower Nearby -> DMC Great Fairy Fountain/House"] = "entrance_house_fairy",
+    ["@Goron City -> GC Shop/House"] = "entrance_house_shop",
+    ["@Lake Hylia -> LH Fishing Hole/House"] = "entrance_house_fishing",
+    ["@Lake Hylia -> LH Lab/House"] = "entrance_house_lab",
+    ["@Zoras Domain -> ZD Shop/House"] = "entrance_house_shop",
+    ["@Zoras Fountain -> ZF Great Fairy Fountain/House"] = "entrance_house_fairy",
+    ["@GV Fortress Side -> GV Carpenter Tent/House"] = "", --visibility_rules to hide
+    ["@Desert Colossus -> Colossus Great Fairy Fountain/House"] = "entrance_house_fairy",
+  },
+  ["setting_entrance_interiors_all"] = {
+    ["@Kokiri Forest -> KF Links House/House"] = "entrance_house_link",
+    ["@Kakariko Village -> Kak Potion Shop Front/House"] = "entrance_house_shop",
+    ["@Kakariko Village -> Kak Windmill/House"] = "entrance_house_windmill",
+    ["@Kak Backyard -> Kak Potion Shop Back/House"] = "entrance_house_shop",
+    ["@ToT Entrance -> Temple of Time/House"] = "entrance_house_tot",
+  },
+  ["setting_entrance_dungeons_shuffle"] = {
+    ["@KF Outside Deku Tree -> Deku Tree Lobby/Dungeon"] = "entrance_dungeon_deku",
+    ["@Sacred Forest Meadow -> Forest Temple Lobby/Dungeon"] = "entrance_dungeon_forest",
+    ["@Kakariko Village -> Bottom of the Well/Dungeon"] = "entrance_dungeon_botw",
+    ["@Graveyard Warp Pad Region -> Shadow Temple Entryway/Dungeon"] = "entrance_dungeon_shadow",
+    ["@Dodongos Cavern Entryway -> Dodongos Cavern Beginning/Dungeon"] = "entrance_dungeon_dodongo",
+    ["@Fire Temple Entrance -> Fire Temple Lower/Dungeon"] = "entrance_dungeon_fire",
+    ["@Lake Hylia -> Water Temple Lobby/Dungeon"] = "entrance_dungeon_water",
+    ["@Zoras Fountain -> Jabu Jabus Belly Beginning/Dungeon"] = "entrance_dungeon_jabu",
+    ["@Zoras Fountain -> Ice Cavern Beginning/Dungeon"] = "entrance_dungeon_ice",
+    ["@Gerudo Fortress -> Gerudo Training Grounds Lobby/Dungeon"] = "entrance_dungeon_gtg",
+    ["@Desert Colossus -> Spirit Temple Lobby/Dungeon"] = "entrance_dungeon_spirit",
+  },
+  ["Overworld"] = {
+    ["@Kokiri Forest -> Lost Woods/Overworld"] = "entrance_overworld_lw",
+    ["@Kokiri Forest -> LW Bridge From Forest/Overworld"] = "entrance_overworld_bridge",
+    ["@Lost Woods -> GC Woods Warp/Overworld"] = "entrance_overworld_gc",
+    ["@Lost Woods -> Zora River/Overworld"] = "entrance_overworld_zr",
+    ["@LW Beyond Mido -> SFM Entryway/Overworld"] = "entrance_overworld_sfm",
+    ["@LW Forest Exit -> Kokiri Forest/Overworld"] = "entrance_overworld_kf",
+    ["@LW Bridge -> Kokiri Forest/Overworld"] = "entrance_overworld_kf",
+    ["@LW Bridge -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@SFM Entryway -> LW Beyond Mido/Overworld"] = "entrance_overworld_lw",
+    ["@Hyrule Field -> Market Entrance/Overworld"] = "entrance_overworld_cte",
+    ["@Hyrule Field -> Gerudo Valley/Overworld"] = "entrance_overworld_gv",
+    ["@Hyrule Field -> Kakariko Village/Overworld"] = "entrance_overworld_kak",
+    ["@Hyrule Field -> Lake Hylia/Overworld"] = "entrance_overworld_lh",
+    ["@Hyrule Field -> Lon Lon Ranch/Overworld"] = "entrance_overworld_llr",
+    ["@Hyrule Field -> LW Bridge/Overworld"] = "entrance_overworld_bridge",
+    ["@Hyrule Field -> ZR Front/Overworld"] = "entrance_overworld_zr",
+    ["@Lon Lon Ranch -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@Kakariko Village -> Graveyard/Overworld"] = "entrance_overworld_gy",
+    ["@Kakariko Village -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@Kak Behind Gate -> Death Mountain/Overworld"] = "entrance_overworld_dmt",
+    ["@Graveyard -> Kakariko Village/Overworld"] = "entrance_overworld_kak",
+    ["@Market -> Castle Grounds/Overworld"] = "entrance_overworld_cg",
+    ["@Market -> Market Entrance/Overworld"] = "entrance_overworld_cte",
+    ["@Market -> ToT Entrance/Overworld"] = "entrance_overworld_tot",
+    ["@Market Entrance -> Market/Overworld"] = "entrance_overworld_ct",
+    ["@Market Entrance -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@ToT Entrance -> Market/Overworld"] = "entrance_overworld_ct",
+    ["@Castle Grounds -> Market/Overworld"] = "entrance_overworld_ct",
+    ["@Death Mountain -> Goron City/Overworld"] = "entrance_overworld_gc",
+    ["@Death Mountain -> Kak Behind Gate/Overworld"] = "entrance_overworld_kak",
+    ["@Death Mountain Summit -> DMC Upper Local/Overworld"] = "entrance_overworld_dmc",
+    ["@DMT Owl Flight -> Kak Impas Ledge/Overworld"] = "entrance_overworld_kak",
+    ["@DMC Lower Nearby -> GC Darunias Chamber/Overworld"] = "entrance_overworld_gc",
+    ["@DMC Upper Nearby -> Death Mountain Summit/Overworld"] = "entrance_overworld_dmt",
+    ["@GC Darunias Chamber -> DMC Lower Local/Overworld"] = "entrance_overworld_dmc",
+    ["@Goron City -> Death Mountain/Overworld"] = "entrance_overworld_dmt",
+    ["@GC Woods Warp -> Lost Woods/Overworld"] = "entrance_overworld_lw",
+    ["@Lake Hylia -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@Lake Hylia -> Zoras Domain/Overworld"] = "entrance_overworld_zd",
+    ["@LH Owl Flight -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@Zora River -> Lost Woods/Overworld"] = "entrance_overworld_lw",
+    ["@ZR Behind Waterfall -> Zoras Domain/Overworld"] = "entrance_overworld_zd",
+    ["@ZR Front -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@Zoras Domain -> Lake Hylia/Overworld"] = "entrance_overworld_lh",
+    ["@Zoras Domain -> ZR Behind Waterfall/Overworld"] = "entrance_overworld_zr",
+    ["@ZD Behind King Zora -> Zoras Fountain/Overworld"] = "entrance_overworld_zf",
+    ["@Zoras Fountain -> ZD Behind King Zora/Overworld"] = "entrance_overworld_zd",
+    ["@Gerudo Valley -> Hyrule Field/Overworld"] = "entrance_overworld_hf",
+    ["@GV Fortress Side -> Gerudo Fortress/Overworld"] = "entrance_overworld_gf",
+    ["@Gerudo Fortress -> GV Fortress Side/Overworld"] = "entrance_overworld_gv",
+    ["@GF Outside Gate -> Wasteland Near Fortress/Overworld"] = "entrance_overworld_wl",
+    ["@Wasteland Near Colossus -> Desert Colossus/Overworld"] = "entrance_overworld_col",
+    ["@Wasteland Near Fortress -> GF Outside Gate/Overworld"] = "entrance_overworld_gf",
+    ["@Desert Colossus -> Wasteland Near Colossus/Overworld"] = "entrance_overworld_wl",
+  }
 }
+function update_vanilla_captures()
+  for setting,captures in pairs(vanilla_captures) do
+    if setting ~= "Overworld" then
+      local has_setting = has(setting)
+      if not_like_cache(setting, has_setting) then
+        for location,item in pairs(captures) do
+          local location_object = get_object(location)
+          local item_object = get_object(item)
+          if location_object and item_object then
+            if has_setting then
+              location_object.CapturedItem = nil
+            else
+              location_object.CapturedItem = item_object
+            end
+          end
+        end
+      end
+    end
+  end
+end
+
+
+
+capture_badge_locations = {}
 capture_badge_cache = {}
 function badge_locations()
   for location,section in pairs(capture_badge_locations) do
-    local target = Tracker:FindObjectForCode(location)
-    local source = Tracker:FindObjectForCode(section)
+    local target = get_object(location)
+    local source = get_object(section)
     if target and source then
       -- Has the captured item changed since last update
       if source.CapturedItem ~= capture_badge_cache[source] then
@@ -215,5 +225,8 @@ end
 
 function tracker_on_accessibility_updated()
   update_smallkeys()
+  update_vanilla_captures()
   --badge_locations()
+  
+  apply_queued_changes()
 end

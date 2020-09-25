@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Shuffle Interior Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_entrance_interiors_off.png",
+        "codes": "setting_entrance_interiors,setting_entrance_interiors_off"
+      },
+      {
+        "img": "images/setting_entrance_interiors_simple.png",
+        "codes": "setting_entrance_interiors,setting_entrance_interiors_simple",
+        "inherits_codes": false
+      },
+      {
+        "img": "images/setting_entrance_interiors_all.png",
+        "codes": "setting_entrance_interiors_all"
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Grotto Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_grottos_off.png",
+        "codes": "setting_entrance_grottos,setting_entrance_grottos_off"
+      },
+      {
+        "img": "images/setting_entrance_grottos_shuffle.png",
+        "codes": "setting_entrance_grottos,setting_entrance_grottos_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_dungeons_off.png",
+        "codes": "setting_entrance_dungeons,setting_entrance_dungeons_off"
+      },
+      {
+        "img": "images/setting_entrance_dungeons_shuffle.png",
+        "codes": "setting_entrance_dungeons,setting_entrance_dungeons_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  }
+]

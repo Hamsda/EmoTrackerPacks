@@ -9,8 +9,8 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Kokiri Forest -> Kokiri Forest Storms Grotto",
-            "short_name": "Kokiri Storms Grotto",
+            "name": "Kokiri Forest -> KF Storms Grotto",
+            "short_name": "KF Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -28,11 +28,14 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> House of Twins",
-            "short_name": "House of Twins",
+            "name": "Kokiri Forest -> KF House of Twins",
+            "short_name": "KF House of Twins",
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -47,11 +50,14 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> Know It All House",
-            "short_name": "Know It All House",
+            "name": "Kokiri Forest -> KF Know It All House",
+            "short_name": "KF Know It All House",
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -66,8 +72,8 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> Kokiri Shop",
-            "short_name": "Kokiri Shop",
+            "name": "Kokiri Forest -> KF Kokiri Shop",
+            "short_name": "KF Kokiri Shop",
             "sections": [
               {
                 "name": "House",
@@ -85,8 +91,8 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> Links House",
-            "short_name": "Links House",
+            "name": "Kokiri Forest -> KF Links House",
+            "short_name": "KF Links House",
             "sections": [
               {
                 "name": "House",
@@ -104,8 +110,8 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> Mido House",
-            "short_name": "Mido House",
+            "name": "Kokiri Forest -> KF Midos House",
+            "short_name": "KF Midos House",
             "sections": [
               {
                 "name": "House",
@@ -123,11 +129,14 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> Saria House",
-            "short_name": "Saria House",
+            "name": "Kokiri Forest -> KF Sarias House",
+            "short_name": "KF Sarias House",
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -142,7 +151,7 @@
             ]
           },
           {
-            "name": "Outside Deku Tree -> Deku Tree Lobby",
+            "name": "KF Outside Deku Tree -> Deku Tree Lobby",
             "short_name": "Deku Tree",
             "sections": [
               {
@@ -155,6 +164,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2420,
                 "y": 875
               }
@@ -180,7 +190,7 @@
             ]
           },
           {
-            "name": "Kokiri Forest -> Lost Woods Bridge From Forest",
+            "name": "Kokiri Forest -> LW Bridge From Forest",
             "short_name": "KF -> Bridge",
             "sections": [
               {
@@ -205,8 +215,8 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Lost Woods -> Lost Woods Generic Grotto",
-            "short_name": "LW Generic Grotto",
+            "name": "Lost Woods -> LW Near Shortcuts Grotto",
+            "short_name": "LW Near Shortcuts Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -224,7 +234,7 @@
             ]
           },
           {
-            "name": "Lost Woods Beyond Mido -> Deku Theater",
+            "name": "LW Beyond Mido -> Deku Theater",
             "short_name": "Deku Theater",
             "sections": [
               {
@@ -243,8 +253,8 @@
             ]
           },
           {
-            "name": "Lost Woods Beyond Mido -> Lost Woods Sales Grotto",
-            "short_name": "LW Sales Grotto",
+            "name": "LW Beyond Mido -> LW Scrubs Grotto",
+            "short_name": "LW Scrubs Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -262,7 +272,7 @@
             ]
           },
           {
-            "name": "Lost Woods -> Goron City Woods Warp",
+            "name": "Lost Woods -> GC Woods Warp",
             "short_name": "LW -> GC",
             "sections": [
               {
@@ -300,7 +310,7 @@
             ]
           },
           {
-            "name": "Lost Woods Beyond Mido -> Sacred Forest Meadow Entryway",
+            "name": "LW Beyond Mido -> SFM Entryway",
             "short_name": "LW -> SFM",
             "sections": [
               {
@@ -319,7 +329,7 @@
             ]
           },
           {
-            "name": "Lost Woods Forest Exit -> Kokiri Forest",
+            "name": "LW Forest Exit -> Kokiri Forest",
             "short_name": "LW -> KF",
             "sections": [
               {
@@ -338,7 +348,7 @@
             ]
           },
           {
-            "name": "Lost Woods Bridge -> Kokiri Forest",
+            "name": "LW Bridge -> Kokiri Forest",
             "short_name": "Bridge -> KF",
             "sections": [
               {
@@ -357,7 +367,7 @@
             ]
           },
           {
-            "name": "Lost Woods Bridge -> Hyrule Field",
+            "name": "LW Bridge -> Hyrule Field",
             "short_name": "Bridge -> HF",
             "sections": [
               {
@@ -382,7 +392,7 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Sacred Forest Meadow -> Meadow Fairy Grotto",
+            "name": "Sacred Forest Meadow -> SFM Fairy Grotto",
             "short_name": "SFM Fairy Grotto",
             "sections": [
               {
@@ -401,7 +411,7 @@
             ]
           },
           {
-            "name": "Sacred Forest Meadow -> Meadow Storms Grotto",
+            "name": "Sacred Forest Meadow -> SFM Storms Grotto",
             "short_name": "SFM Storms Grotto",
             "sections": [
               {
@@ -420,8 +430,8 @@
             ]
           },
           {
-            "name": "Sacred Forest Meadow Entryway -> Front of Meadow Grotto",
-            "short_name": "Wolfos Grotto",
+            "name": "SFM Entryway -> SFM Wolfos Grotto",
+            "short_name": "SFM Wolfos Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -452,13 +462,14 @@
             "map_locations": [
               {
                 "map": "entrances",
-                "x": 2150,
+                "size": 50,
+                "x": 2140,
                 "y": 600
               }
             ]
           },
           {
-            "name": "Sacred Forest Meadow Entryway -> Lost Woods Beyond Mido",
+            "name": "SFM Entryway -> LW Beyond Mido",
             "short_name": "SFM -> LW",
             "sections": [
               {
@@ -483,7 +494,7 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Hyrule Field -> Field Far West Castle Town Grotto",
+            "name": "Hyrule Field -> HF Fairy Grotto",
             "short_name": "HF Fairy Grotto",
             "sections": [
               {
@@ -502,8 +513,8 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Field Kakariko Grotto",
-            "short_name": "HF Kakariko Grotto",
+            "name": "Hyrule Field -> HF Near Kak Grotto",
+            "short_name": "HF Near Kak Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -521,7 +532,7 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Field Near Lake Inside Fence Grotto",
+            "name": "Hyrule Field -> HF Inside Fence Grotto",
             "short_name": "HF Inside Fence Grotto",
             "sections": [
               {
@@ -540,8 +551,8 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Field Near Lake Outside Fence Grotto",
-            "short_name": "HF Outside Fence Grotto",
+            "name": "Hyrule Field -> HF Open Grotto",
+            "short_name": "HF Open Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -559,7 +570,7 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Field North Lon Lon Grotto",
+            "name": "Hyrule Field -> HF Tektite Grotto",
             "short_name": "HF Tektite Grotto",
             "sections": [
               {
@@ -578,8 +589,8 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Field Valley Grotto",
-            "short_name": "HF Valley Grotto",
+            "name": "Hyrule Field -> HF Cow Grotto",
+            "short_name": "HF Cow Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -597,8 +608,8 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Field West Castle Town Grotto",
-            "short_name": "HF Near Bridge Grotto",
+            "name": "Hyrule Field -> HF Near Market Grotto",
+            "short_name": "HF Near Market Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -616,8 +627,8 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Remote Southern Grotto",
-            "short_name": "Remote Southern Grotto",
+            "name": "Hyrule Field -> HF Southeast Grotto",
+            "short_name": "HF Southeast Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -635,7 +646,7 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Castle Town Entrance",
+            "name": "Hyrule Field -> Market Entrance",
             "short_name": "HF -> CTE",
             "sections": [
               {
@@ -730,7 +741,7 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Lost Woods Bridge",
+            "name": "Hyrule Field -> LW Bridge",
             "short_name": "HF -> Bridge",
             "sections": [
               {
@@ -749,7 +760,7 @@
             ]
           },
           {
-            "name": "Hyrule Field -> Zora River Front",
+            "name": "Hyrule Field -> ZR Front",
             "short_name": "HF -> ZR",
             "sections": [
               {
@@ -774,7 +785,7 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Lon Lon Ranch -> Lon Lon Grotto",
+            "name": "Lon Lon Ranch -> LLR Grotto",
             "short_name": "LLR Grotto",
             "sections": [
               {
@@ -793,8 +804,8 @@
             ]
           },
           {
-            "name": "Lon Lon Ranch -> Ingo Barn",
-            "short_name": "Ingo Barn",
+            "name": "Lon Lon Ranch -> LLR Stables",
+            "short_name": "LLR Stables",
             "sections": [
               {
                 "name": "House",
@@ -812,7 +823,7 @@
             ]
           },
           {
-            "name": "Lon Lon Ranch -> Lon Lon Corner Tower",
+            "name": "Lon Lon Ranch -> LLR Tower",
             "short_name": "LLR Tower",
             "sections": [
               {
@@ -831,8 +842,8 @@
             ]
           },
           {
-            "name": "Lon Lon Ranch -> Talon House",
-            "short_name": "Talon House",
+            "name": "Lon Lon Ranch -> LLR Talons House",
+            "short_name": "LLR Talons House",
             "sections": [
               {
                 "name": "House",
@@ -875,8 +886,8 @@
         "color": "#6909a0",
         "children": [
           {
-            "name": "Kakariko Village -> Kakariko Bombable Grotto",
-            "short_name": "Kakariko Bombable Grotto",
+            "name": "Kakariko Village -> Kak Redead Grotto",
+            "short_name": "Kak Redead Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -894,8 +905,8 @@
             ]
           },
           {
-            "name": "Kakariko Village Backyard -> Kakariko Back Grotto",
-            "short_name": "Kakariko Back Grotto",
+            "name": "Kak Backyard -> Kak Open Grotto",
+            "short_name": "Kak Open Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -913,8 +924,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Carpenter Boss House",
-            "short_name": "Carpenter Boss House",
+            "name": "Kakariko Village -> Kak Carpenter Boss House",
+            "short_name": "Kak Carpenter Boss House",
             "sections": [
               {
                 "name": "House",
@@ -932,8 +943,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> House of Skulltula",
-            "short_name": "House of Skulltula",
+            "name": "Kakariko Village -> Kak House of Skulltula",
+            "short_name": "Kak House of Skulltula",
             "sections": [
               {
                 "name": "House",
@@ -951,8 +962,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Impas House",
-            "short_name": "Impas House",
+            "name": "Kakariko Village -> Kak Impas House",
+            "short_name": "Kak Impas House",
             "sections": [
               {
                 "name": "House",
@@ -970,8 +981,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Impas House Back",
-            "short_name": "Impas House Back",
+            "name": "Kak Impas Ledge -> Kak Impas House Back",
+            "short_name": "Kak Impas House Back",
             "sections": [
               {
                 "name": "House",
@@ -989,8 +1000,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Kakariko Bazaar",
-            "short_name": "Kakariko Bazaar",
+            "name": "Kakariko Village -> Kak Bazaar",
+            "short_name": "Kak Bazaar",
             "sections": [
               {
                 "name": "House",
@@ -1008,8 +1019,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Kakariko Potion Shop Front",
-            "short_name": "Kakariko Potion Shop Front",
+            "name": "Kakariko Village -> Kak Potion Shop Front",
+            "short_name": "Kak Potion Shop Front",
             "sections": [
               {
                 "name": "House",
@@ -1027,8 +1038,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Kakariko Shooting Gallery",
-            "short_name": "Kakariko Shooting Gallery",
+            "name": "Kakariko Village -> Kak Shooting Gallery",
+            "short_name": "Kak Shooting Gallery",
             "sections": [
               {
                 "name": "House",
@@ -1046,8 +1057,8 @@
             ]
           },
           {
-            "name": "Kakariko Village -> Windmill",
-            "short_name": "Windmill",
+            "name": "Kakariko Village -> Kak Windmill",
+            "short_name": "Kak Windmill",
             "sections": [
               {
                 "name": "House",
@@ -1065,8 +1076,8 @@
             ]
           },
           {
-            "name": "Kakariko Village Backyard -> Kakariko Potion Shop Back",
-            "short_name": "Kakariko Potion Shop Back",
+            "name": "Kak Backyard -> Kak Potion Shop Back",
+            "short_name": "Kak Potion Shop Back",
             "sections": [
               {
                 "name": "House",
@@ -1084,8 +1095,8 @@
             ]
           },
           {
-            "name": "Kakariko Village Backyard -> Odd Medicine Building",
-            "short_name": "Odd Medicine Building",
+            "name": "Kak Backyard -> Kak Odd Medicine Building",
+            "short_name": "Kak Odd Medicine Building",
             "sections": [
               {
                 "name": "House",
@@ -1116,8 +1127,9 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1885,
-                "y": 395
+                "y": 405
               }
             ]
           },
@@ -1160,7 +1172,7 @@
             ]
           },
           {
-            "name": "Kakariko Village Behind Gate -> Death Mountain",
+            "name": "Kak Behind Gate -> Death Mountain",
             "short_name": "Kak -> DMT",
             "sections": [
               {
@@ -1185,7 +1197,7 @@
         "color": "#6909a0",
         "children": [
           {
-            "name": "Graveyard -> Composer Grave",
+            "name": "Graveyard -> Graveyard Composers Grave",
             "short_name": "Composer Grave",
             "sections": [
               {
@@ -1204,7 +1216,7 @@
             ]
           },
           {
-            "name": "Graveyard -> Dampes Grave",
+            "name": "Graveyard -> Graveyard Dampes Grave",
             "short_name": "Dampes Grave",
             "sections": [
               {
@@ -1223,7 +1235,7 @@
             ]
           },
           {
-            "name": "Graveyard -> Heart Piece Grave",
+            "name": "Graveyard -> Graveyard Heart Piece Grave",
             "short_name": "Heart Piece Grave",
             "sections": [
               {
@@ -1242,7 +1254,7 @@
             ]
           },
           {
-            "name": "Graveyard -> Shield Grave",
+            "name": "Graveyard -> Graveyard Shield Grave",
             "short_name": "Shield Grave",
             "sections": [
               {
@@ -1261,11 +1273,14 @@
             ]
           },
           {
-            "name": "Graveyard -> Dampes House",
+            "name": "Graveyard -> Graveyard Dampes House",
             "short_name": "Dampes House",
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -1280,7 +1295,7 @@
             ]
           },
           {
-            "name": "Shadow Temple Warp Region -> Shadow Temple Entryway",
+            "name": "Graveyard Warp Pad Region -> Shadow Temple Entryway",
             "short_name": "Shadow Temple",
             "sections": [
               {
@@ -1293,6 +1308,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2145,
                 "y": 325
               }
@@ -1320,12 +1336,12 @@
         ]
       },
       {
-        "name": "Castle Town",
+        "name": "Market",
         "color": "#09a09d",
         "children": [
           {
-            "name": "Castle Town -> Castle Town Bazaar",
-            "short_name": "Castle Town Bazaar",
+            "name": "Market -> Market Bazaar",
+            "short_name": "Market Bazaar",
             "sections": [
               {
                 "name": "House",
@@ -1343,8 +1359,8 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Bombchu Bowling",
-            "short_name": "Bombchu Bowling",
+            "name": "Market -> Market Bombchu Bowling",
+            "short_name": "Market Bombchu Bowling",
             "sections": [
               {
                 "name": "House",
@@ -1362,8 +1378,8 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Bombchu Shop",
-            "short_name": "Bombchu Shop",
+            "name": "Market -> Market Bombchu Shop",
+            "short_name": "Market Bombchu Shop",
             "sections": [
               {
                 "name": "House",
@@ -1381,11 +1397,14 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Man in Green House",
-            "short_name": "Man in Green House",
+            "name": "Market -> Market Man in Green House",
+            "short_name": "Market Man in Green House",
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -1400,8 +1419,8 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Mask Shop",
-            "short_name": "Mask Shop",
+            "name": "Market -> Market Mask Shop",
+            "short_name": "Market Mask Shop",
             "sections": [
               {
                 "name": "House",
@@ -1419,8 +1438,8 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Potion Shop",
-            "short_name": "Potion Shop",
+            "name": "Market -> Market Potion Shop",
+            "short_name": "Market Potion Shop",
             "sections": [
               {
                 "name": "House",
@@ -1438,8 +1457,8 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Shooting Gallery",
-            "short_name": "Castle Town Shooting Gallery",
+            "name": "Market -> Market Shooting Gallery",
+            "short_name": "Market Shooting Gallery",
             "sections": [
               {
                 "name": "House",
@@ -1457,8 +1476,8 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Treasure Chest Game",
-            "short_name": "Treasure Chest Game",
+            "name": "Market -> Market Treasure Chest Game",
+            "short_name": "Market Treasure Chest Game",
             "sections": [
               {
                 "name": "House",
@@ -1476,8 +1495,8 @@
             ]
           },
           {
-            "name": "Castle Town Entrance -> Castle Town Rupee Room",
-            "short_name": "Castle Town Rupee Room",
+            "name": "Market Entrance -> Market Guard House",
+            "short_name": "Market Guard House",
             "sections": [
               {
                 "name": "House",
@@ -1495,7 +1514,7 @@
             ]
           },
           {
-            "name": "Temple of Time Exterior -> Temple of Time",
+            "name": "ToT Entrance -> Temple of Time",
             "short_name": "Temple of Time",
             "sections": [
               {
@@ -1514,7 +1533,7 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Grounds",
+            "name": "Market -> Castle Grounds",
             "short_name": "CT -> CG",
             "sections": [
               {
@@ -1533,7 +1552,7 @@
             ]
           },
           {
-            "name": "Castle Town -> Castle Town Entrance",
+            "name": "Market -> Market Entrance",
             "short_name": "CT -> CTE",
             "sections": [
               {
@@ -1552,7 +1571,7 @@
             ]
           },
           {
-            "name": "Castle Town -> Temple of Time Exterior",
+            "name": "Market -> ToT Entrance",
             "short_name": "CT -> ToT",
             "sections": [
               {
@@ -1571,7 +1590,7 @@
             ]
           },
           {
-            "name": "Castle Town Entrance -> Castle Town",
+            "name": "Market Entrance -> Market",
             "short_name": "CTE -> CT",
             "sections": [
               {
@@ -1590,7 +1609,7 @@
             ]
           },
           {
-            "name": "Castle Town Entrance -> Hyrule Field",
+            "name": "Market Entrance -> Hyrule Field",
             "short_name": "CTE -> HF",
             "sections": [
               {
@@ -1609,7 +1628,7 @@
             ]
           },
           {
-            "name": "Temple of Time Exterior -> Castle Town",
+            "name": "ToT Entrance -> Market",
             "short_name": "ToT -> CT",
             "sections": [
               {
@@ -1634,8 +1653,8 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Hyrule Castle Grounds -> Castle Storms Grotto",
-            "short_name": "Castle Storms Grotto",
+            "name": "Hyrule Castle Grounds -> HC Storms Grotto",
+            "short_name": "HC Storms Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1653,8 +1672,8 @@
             ]
           },
           {
-            "name": "Ganons Castle Grounds -> Ganons Castle Fairy",
-            "short_name": "Ganons Castle Fairy",
+            "name": "Ganons Castle Grounds -> OGC Great Fairy Fountain",
+            "short_name": "OGC Great Fairy Fountain",
             "sections": [
               {
                 "name": "House",
@@ -1672,8 +1691,8 @@
             ]
           },
           {
-            "name": "Hyrule Castle Grounds -> Hyrule Castle Fairy",
-            "short_name": "Hyrule Castle Fairy",
+            "name": "Hyrule Castle Grounds -> HC Great Fairy Fountain",
+            "short_name": "HC Great Fairy Fountain",
             "sections": [
               {
                 "name": "House",
@@ -1691,7 +1710,7 @@
             ]
           },
           {
-            "name": "Castle Grounds -> Castle Town",
+            "name": "Castle Grounds -> Market",
             "short_name": "CG -> CT",
             "sections": [
               {
@@ -1716,8 +1735,8 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Death Mountain -> Mountain Bombable Grotto",
-            "short_name": "DMT Bombable Grotto",
+            "name": "Death Mountain Summit -> DMT Cow Grotto",
+            "short_name": "DMT Cow Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1735,7 +1754,7 @@
             ]
           },
           {
-            "name": "Death Mountain -> Mountain Storms Grotto",
+            "name": "Death Mountain -> DMT Storms Grotto",
             "short_name": "DMT Storms Grotto",
             "sections": [
               {
@@ -1754,8 +1773,8 @@
             ]
           },
           {
-            "name": "Death Mountain Summit -> Mountain Summit Fairy",
-            "short_name": "DMT Fairy",
+            "name": "Death Mountain Summit -> DMT Great Fairy Fountain",
+            "short_name": "DMT Great Fairy Fountain",
             "sections": [
               {
                 "name": "House",
@@ -1786,6 +1805,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1685,
                 "y": 220
               }
@@ -1811,7 +1831,7 @@
             ]
           },
           {
-            "name": "Death Mountain -> Kakariko Village Behind Gate",
+            "name": "Death Mountain -> Kak Behind Gate",
             "short_name": "DMT -> Kak",
             "sections": [
               {
@@ -1830,7 +1850,7 @@
             ]
           },
           {
-            "name": "Death Mountain Summit -> Death Mountain Crater Upper",
+            "name": "Death Mountain Summit -> DMC Upper Local",
             "short_name": "DMT -> DMC",
             "sections": [
               {
@@ -1849,8 +1869,8 @@
             ]
           },
           {
-            "name": "Death Mountain Summit Owl Flight -> Kakariko Village",
-            "short_name": "DMT Owl",
+            "name": "DMT Owl Flight -> Kak Impas Ledge",
+            "short_name": "DMT Owl Flight",
             "sections": [
               {
                 "name": "Overworld",
@@ -1874,8 +1894,8 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Death Mountain Crater Upper -> Top of Crater Grotto",
-            "short_name": "Top of DMC Grotto",
+            "name": "DMC Upper Nearby -> DMC Upper Grotto",
+            "short_name": "DMC Upper Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -1893,7 +1913,7 @@
             ]
           },
           {
-            "name": "Death Mountain Crater Lower -> DMC Hammer Grotto",
+            "name": "DMC Lower Nearby -> DMC Hammer Grotto",
             "short_name": "DMC Hammer Grotto",
             "sections": [
               {
@@ -1912,8 +1932,8 @@
             ]
           },
           {
-            "name": "Death Mountain Crater Lower -> Crater Fairy",
-            "short_name": "DMC Fairy",
+            "name": "DMC Lower Nearby -> DMC Great Fairy Fountain",
+            "short_name": "DMC Great Fairy Fountain",
             "sections": [
               {
                 "name": "House",
@@ -1931,7 +1951,7 @@
             ]
           },
           {
-            "name": "Death Mountain Crater Central -> Fire Temple Lower",
+            "name": "Fire Temple Entrance -> Fire Temple Lower",
             "short_name": "Fire Temple",
             "sections": [
               {
@@ -1944,13 +1964,14 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1910,
                 "y": 80
               }
             ]
           },
           {
-            "name": "Death Mountain Crater Lower -> Darunias Chamber",
+            "name": "DMC Lower Nearby -> GC Darunias Chamber",
             "short_name": "DMC -> GC",
             "sections": [
               {
@@ -1969,7 +1990,7 @@
             ]
           },
           {
-            "name": "Death Mountain Crater Upper -> Death Mountain Summit",
+            "name": "DMC Upper Nearby -> Death Mountain Summit",
             "short_name": "DMC -> DMT",
             "sections": [
               {
@@ -1994,8 +2015,8 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Goron City -> Goron City Grotto",
-            "short_name": "Goron City Grotto",
+            "name": "Goron City -> GC Grotto",
+            "short_name": "GC Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2013,8 +2034,8 @@
             ]
           },
           {
-            "name": "Goron City -> Goron Shop",
-            "short_name": "Goron Shop",
+            "name": "Goron City -> GC Shop",
+            "short_name": "GC Shop",
             "sections": [
               {
                 "name": "House",
@@ -2032,7 +2053,7 @@
             ]
           },
           {
-            "name": "Darunias Chamber -> Death Mountain Crater Lower",
+            "name": "GC Darunias Chamber -> DMC Lower Local",
             "short_name": "GC -> DMC",
             "sections": [
               {
@@ -2070,7 +2091,7 @@
             ]
           },
           {
-            "name": "Goron City Woods Warp -> Lost Woods",
+            "name": "GC Woods Warp -> Lost Woods",
             "short_name": "GC -> LW",
             "sections": [
               {
@@ -2095,8 +2116,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Lake Hylia -> Lake Hylia Grotto",
-            "short_name": "Lake Hylia Grotto",
+            "name": "Lake Hylia -> LH Grotto",
+            "short_name": "LH Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2114,8 +2135,8 @@
             ]
           },
           {
-            "name": "Lake Hylia -> Fishing Hole",
-            "short_name": "Fishing Hole",
+            "name": "Lake Hylia -> LH Fishing Hole",
+            "short_name": "LH Fishing Hole",
             "sections": [
               {
                 "name": "House",
@@ -2133,8 +2154,8 @@
             ]
           },
           {
-            "name": "Lake Hylia -> Lake Hylia Lab",
-            "short_name": "Lake Hylia Lab",
+            "name": "Lake Hylia -> LH Lab",
+            "short_name": "LH Lab",
             "sections": [
               {
                 "name": "House",
@@ -2165,6 +2186,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1015,
                 "y": 1380
               }
@@ -2209,8 +2231,8 @@
             ]
           },
           {
-            "name": "Lake Hylia Owl Flight -> Hyrule Field",
-            "short_name": "LH Owl",
+            "name": "LH Owl Flight -> Hyrule Field",
+            "short_name": "LH Owl Flight",
             "sections": [
               {
                 "name": "Overworld",
@@ -2234,8 +2256,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zora River -> Zora River Plateau Bombable Grotto",
-            "short_name": "ZR Plateau Bombable Grotto",
+            "name": "Zora River -> ZR Fairy Grotto",
+            "short_name": "ZR Fairy Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2253,8 +2275,8 @@
             ]
           },
           {
-            "name": "Zora River -> Zora River Plateau Open Grotto",
-            "short_name": "ZR Plateau Open Grotto",
+            "name": "Zora River -> ZR Open Grotto",
+            "short_name": "ZR Open Grotto",
             "sections": [
               {
                 "name": "Grotto",
@@ -2272,7 +2294,7 @@
             ]
           },
           {
-            "name": "Zora River -> Zora River Storms Grotto",
+            "name": "Zora River -> ZR Storms Grotto",
             "short_name": "ZR Storms Grotto",
             "sections": [
               {
@@ -2310,7 +2332,7 @@
             ]
           },
           {
-            "name": "Zora River Behind Waterfall -> Zoras Domain",
+            "name": "ZR Behind Waterfall -> Zoras Domain",
             "short_name": "ZR -> ZD",
             "sections": [
               {
@@ -2329,7 +2351,7 @@
             ]
           },
           {
-            "name": "Zora River Front -> Hyrule Field",
+            "name": "ZR Front -> Hyrule Field",
             "short_name": "ZR -> HF",
             "sections": [
               {
@@ -2354,7 +2376,7 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zoras Domain -> Zoras Domain Storms Grotto",
+            "name": "Zoras Domain -> ZD Storms Grotto",
             "short_name": "ZD Storms Grotto",
             "sections": [
               {
@@ -2373,8 +2395,8 @@
             ]
           },
           {
-            "name": "Zoras Domain -> Zora Shop",
-            "short_name": "Zora Shop",
+            "name": "Zoras Domain -> ZD Shop",
+            "short_name": "ZD Shop",
             "sections": [
               {
                 "name": "House",
@@ -2411,7 +2433,7 @@
             ]
           },
           {
-            "name": "Zoras Domain -> Zora River Behind Waterfall",
+            "name": "Zoras Domain -> ZR Behind Waterfall",
             "short_name": "ZD -> ZR",
             "sections": [
               {
@@ -2430,7 +2452,7 @@
             ]
           },
           {
-            "name": "Zoras Domain Behind King Zora -> Zoras Fountain",
+            "name": "ZD Behind King Zora -> Zoras Fountain",
             "short_name": "ZD -> ZF",
             "sections": [
               {
@@ -2455,8 +2477,8 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Zoras Fountain -> Zoras Fountain Fairy",
-            "short_name": "ZF Fairy",
+            "name": "Zoras Fountain -> ZF Great Fairy Fountain",
+            "short_name": "ZF Great Fairy Fountain",
             "sections": [
               {
                 "name": "House",
@@ -2487,6 +2509,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2490,
                 "y": 330
               }
@@ -2506,13 +2529,14 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2500,
                 "y": 275
               }
             ]
           },
           {
-            "name": "Zoras Fountain -> Zoras Domain Behind King Zora",
+            "name": "Zoras Fountain -> ZD Behind King Zora",
             "short_name": "ZF -> ZD",
             "sections": [
               {
@@ -2537,11 +2561,14 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Gerudo Valley -> Gerudo Valley Octorok Grotto",
-            "short_name": "Octorok Grotto",
+            "name": "Gerudo Valley -> GV Octorok Grotto",
+            "short_name": "GV Octorok Grotto",
             "sections": [
               {
                 "name": "Grotto",
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2556,7 +2583,7 @@
             ]
           },
           {
-            "name": "Gerudo Valley Far Side -> Gerudo Valley Storms Grotto",
+            "name": "GV Fortress Side -> GV Storms Grotto",
             "short_name": "GV Storms Grotto",
             "sections": [
               {
@@ -2575,11 +2602,14 @@
             ]
           },
           {
-            "name": "Gerudo Valley Far Side -> Carpenter Tent",
-            "short_name": "Carpenter Tent",
+            "name": "GV Fortress Side -> GV Carpenter Tent",
+            "short_name": "GV Carpenter Tent",
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2613,7 +2643,7 @@
             ]
           },
           {
-            "name": "Gerudo Valley Far Side -> Gerudo Fortress",
+            "name": "GV Fortress Side -> Gerudo Fortress",
             "short_name": "GV -> GF",
             "sections": [
               {
@@ -2638,7 +2668,7 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Gerudo Fortress -> Gerudo Fortress Storms Grotto",
+            "name": "Gerudo Fortress -> GF Storms Grotto",
             "short_name": "GF Storms Grotto",
             "sections": [
               {
@@ -2670,13 +2700,14 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 485,
                 "y": 435
               }
             ]
           },
           {
-            "name": "Gerudo Fortress -> Gerudo Valley Far Side",
+            "name": "Gerudo Fortress -> GV Fortress Side",
             "short_name": "GF -> GV",
             "sections": [
               {
@@ -2695,7 +2726,7 @@
             ]
           },
           {
-            "name": "Gerudo Fortress Outside Gate -> Haunted Wasteland Near Fortress",
+            "name": "GF Outside Gate -> Wasteland Near Fortress",
             "short_name": "GF -> WL",
             "sections": [
               {
@@ -2720,7 +2751,7 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Haunted Wasteland Near Colossus -> Desert Colossus",
+            "name": "Wasteland Near Colossus -> Desert Colossus",
             "short_name": "WL -> Col",
             "sections": [
               {
@@ -2739,7 +2770,7 @@
             ]
           },
           {
-            "name": "Haunted Wasteland Near Fortress -> Gerudo Fortress Outside Gate",
+            "name": "Wasteland Near Fortress -> GF Outside Gate",
             "short_name": "WL -> GF",
             "sections": [
               {
@@ -2764,7 +2795,7 @@
         "color": "#a09509",
         "children": [
           {
-            "name": "Desert Colossus -> Desert Colossus Grotto",
+            "name": "Desert Colossus -> Colossus Grotto",
             "short_name": "Colossus Grotto",
             "sections": [
               {
@@ -2783,8 +2814,8 @@
             ]
           },
           {
-            "name": "Desert Colossus -> Colossus Fairy",
-            "short_name": "Colossus Fairy",
+            "name": "Desert Colossus -> Colossus Great Fairy Fountain",
+            "short_name": "Colossus Great Fairy Fountain",
             "sections": [
               {
                 "name": "House",
@@ -2815,13 +2846,14 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 95,
                 "y": 315
               }
             ]
           },
           {
-            "name": "Desert Colossus -> Haunted Wasteland Near Colossus",
+            "name": "Desert Colossus -> Wasteland Near Colossus",
             "short_name": "Col -> WL",
             "sections": [
               {
