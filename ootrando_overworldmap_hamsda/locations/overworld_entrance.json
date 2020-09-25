@@ -33,6 +33,9 @@
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -52,6 +55,9 @@
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -128,6 +134,9 @@
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -155,6 +164,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2420,
                 "y": 875
               }
@@ -452,7 +462,8 @@
             "map_locations": [
               {
                 "map": "entrances",
-                "x": 2150,
+                "size": 50,
+                "x": 2140,
                 "y": 600
               }
             ]
@@ -1116,8 +1127,9 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1885,
-                "y": 395
+                "y": 405
               }
             ]
           },
@@ -1266,6 +1278,9 @@
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -1293,6 +1308,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2145,
                 "y": 325
               }
@@ -1386,6 +1402,9 @@
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -1786,6 +1805,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1685,
                 "y": 220
               }
@@ -1944,6 +1964,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1910,
                 "y": 80
               }
@@ -2165,6 +2186,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 1015,
                 "y": 1380
               }
@@ -2487,6 +2509,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2490,
                 "y": 330
               }
@@ -2506,6 +2529,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 2500,
                 "y": 275
               }
@@ -2542,6 +2566,9 @@
             "sections": [
               {
                 "name": "Grotto",
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_grottos",
                 "item_count": 1
@@ -2580,6 +2607,9 @@
             "sections": [
               {
                 "name": "House",
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_houses",
                 "item_count": 1
@@ -2670,6 +2700,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 485,
                 "y": 435
               }
@@ -2815,6 +2846,7 @@
             "map_locations": [
               {
                 "map": "entrances",
+                "size": 50,
                 "x": 95,
                 "y": 315
               }

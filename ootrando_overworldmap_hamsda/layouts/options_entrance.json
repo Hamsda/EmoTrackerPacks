@@ -1,35 +1,22 @@
 {
-  "options_tall": {
-    "type": "itemgrid",
-    "h_alignment": "left",
-    "item_margin": "1,2",
-    "rows": [
-      [
-        "setting_entrance",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    ]
-  },
-  "options_wide": {
-    "type": "itemgrid",
-    "h_alignment": "left",
-    "item_margin": "1,2",
-    "rows": [
-      [
-        "setting_entrance",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+  "options_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Main Rules",
+        "content": {
+          "type": "itemgrid",
+          //"h_alignment": "left",
+          "item_margin": "1,2",
+          "rows": [
+            [
+              "setting_entrance_interiors",
+              "setting_entrance_grottos",
+              "setting_entrance_dungeons"
+            ]
+          ]
+        }
+      }
     ]
   }
 }

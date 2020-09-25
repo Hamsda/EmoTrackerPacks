@@ -35,7 +35,7 @@ Some of this functionality might not be immediately obvious:
 - Right clicking ![Fairy Ocarina](images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](images/overlay_scarecrow.png "Scarecrow") indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on. The location of the scarecrow in Lake Hylia will automatically mark this when cleared first as child and then as adult.
 - ![Triforce Piece](images/triforce_piece.png "Triforce Piece") is used as a counter for Triforce pieces in the Triforce Hunt mode.
 
-## Settings (for map variants)
+## Settings (for non Entrance Randomizer variants with a map)
 
 There is a variety of toggles available to accomodate the different settings the randomizer offers. The settings are arranged to mimic the current GUI of the randomizer. The default for all of these should match the settings used for the weekly races (check out the OoTR discord for more info).
 
@@ -238,7 +238,9 @@ The entrance randomizer variants are very different from the regular map tracker
 
 All locations have a capture spot, where you can mark what is at that location. If the location is useless, just mark off the icon to clean up the map. Later you can see what led where by simply hovering over the locations.
 
-There are two variants, one for keysanity and one without, but none of the items are actually used for "logic" (to show/hide some entrances).
+The settings allow you to select which pools are actually shuffled (split based on Dev-R branch, since it is the most popular for ER). If they are not shuffled, the appropriate captures are placed at (almost) all locations and certain locations are hidden since they are useless regardless of any other settings.
+
+There are two variants, one for keysanity and one without, but none of the items are actually used for "logic" (to show/hide entrances).
 
 Additionally there are counters for the useful indoors entrances, so you can evaluate how much focus to put on exploring more entrances:
 

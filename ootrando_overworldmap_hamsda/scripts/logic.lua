@@ -736,7 +736,7 @@ function has_blue_fire()
   end
 
   for _,location in ipairs(blue_fire_locations) do
-    local location_object = Tracker:FindObjectForCode(location)
+    local location_object = get_object(location)
     if location_object 
     and location_object.AccessibilityLevel 
     and location_object.AccessibilityLevel == AccessibilityLevel.Normal 
@@ -838,7 +838,7 @@ end
 
 function trials_barrier_dispelled()
   local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
-  local setting_trials = Tracker:FindObjectForCode("setting_trials").AcquiredCount
+  local setting_trials = get_object("setting_trials") and get_object("setting_trials").AcquiredCount or 0
   
   if setting_trials == 0
   or trials_cleared >= setting_trials 

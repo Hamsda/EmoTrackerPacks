@@ -4,6 +4,9 @@
 
 - removed Gossip Stone map
 - changed names of most locations based on [this PR](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1021)
+- improved ER map:
+  - added settings back in
+  - added default captures for non shuffled locations
 
 ## 2.9.6.0
 

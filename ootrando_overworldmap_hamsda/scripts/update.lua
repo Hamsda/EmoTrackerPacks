@@ -1,58 +1,6 @@
-settings_cache = {}
-queued_changes = {}
-function not_like_cache(setting, current)
-  if settings_cache[setting] == nil or settings_cache[setting] ~= current then
-    queued_changes[setting] = current
-    return true
-  end
-  return false
-end
-function apply_queued_changes()
-  for setting,value in pairs(queued_changes) do
-    settings_cache[setting] = value
-  end
-  queued_changes = {}
-end
-
-
-has_keys = Tracker.ActiveVariantUID:find("keysanity")
-
-
-dungeons = {
-  "forest",
-  "fire",
-  "water",
-  "spirit",
-  "shadow",
-  "botw",
-  "gtg",
-  "gc"
-}
-key_counts = {
-  vanilla = {
-    forest = 5,
-    fire = 8,
-    water = 6,
-    spirit = 5,
-    shadow = 5,
-    botw = 3,
-    gtg = 9,
-    gc = 2,
-  },
-  mq = {
-    forest = 6,
-    fire = 5,
-    water = 2,
-    spirit = 7,
-    shadow = 6,
-    botw = 2,
-    gtg = 3,
-    gc = 3,
-  }
-}
 function update_smallkeys()
   for _,dungeon in ipairs(dungeons) do
-    local key_object = Tracker:FindObjectForCode(dungeon.."_small_keys")
+    local key_object = get_object(dungeon.."_small_keys")
     if key_object then
       if has(dungeon.."_reg") then
         key_object.MaxCount = key_counts["vanilla"][dungeon]
@@ -61,7 +9,7 @@ function update_smallkeys()
       end
       if not has_keys then
         key_object.AcquiredCount = key_object.MaxCount
-        local bk = Tracker:FindObjectForCode(dungeon.."_boss_key")
+        local bk = get_object(dungeon.."_boss_key")
         if bk then
           bk.Active = true
         end
@@ -78,8 +26,8 @@ function update_fortress()
   local setting_fast = has("gerudo_fortress_fast")
   local setting_open = has("gerudo_fortress_open")
   
-  local item_card = Tracker:FindObjectForCode("gerudocard")
-  local item_gf_keys = Tracker:FindObjectForCode("gf_small_keys")
+  local item_card = get_object("gerudocard")
+  local item_gf_keys = get_object("gf_small_keys")
 
   if item_gf_keys then
     if setting_open then
@@ -129,8 +77,8 @@ function update_vanilla_captures()
     local has_setting = has(setting)
     if not_like_cache(setting, has_setting) then
       for location,item in pairs(captures) do
-        local location_object = Tracker:FindObjectForCode(location)
-        local item_object = Tracker:FindObjectForCode(item)
+        local location_object = get_object(location)
+        local item_object = get_object(item)
         if location_object and item_object then
           if has_setting then
             location_object.CapturedItem = nil
@@ -149,7 +97,7 @@ end
 
 function get_first_free_bottle()
   for i=1,4 do
-    local bottle = Tracker:FindObjectForCode("bottle"..i)
+    local bottle = get_object("bottle"..i)
     if bottle and bottle.CurrentStage == 0 then
       return bottle
     end
@@ -157,14 +105,14 @@ function get_first_free_bottle()
   return nil
 end
 function get_kid_trade()
-  local trade = Tracker:FindObjectForCode("kidtrade")
+  local trade = get_object("kidtrade")
   if trade then
     return trade
   end
   return nil
 end
 function get_adult_trade()
-  local trade = Tracker:FindObjectForCode("adulttrade")
+  local trade = get_object("adulttrade")
   if trade then
     return trade
   end
@@ -276,9 +224,9 @@ capture_mappings = {
     get_adult_trade
   }
 }
-function update_capture_items()
+function update_collected_capture()
   for code,data in pairs(capture_mappings) do
-    local capture = Tracker:FindObjectForCode(code)
+    local capture = get_object(code)
     if capture and capture.Active then
       capture.Active = false
       local item = data[2]()
@@ -446,7 +394,7 @@ function count_skulltulas()
   local in_logic = 0
 
   for _, location in ipairs(skulltula_locations) do
-    local location_object = Tracker:FindObjectForCode(location)
+    local location_object = get_object(location)
     if location_object and location_object.AccessibilityLevel then
       --location_object.AvailableChestCount
       total = total + 1
@@ -460,8 +408,8 @@ function count_skulltulas()
     end
   end
 
-  local available_object = Tracker:FindObjectForCode("counter_gs_available")
-  local in_logic_object = Tracker:FindObjectForCode("counter_gs_logic")
+  local available_object = get_object("counter_gs_available")
+  local in_logic_object = get_object("counter_gs_logic")
   if available_object then
     available_object.AcquiredCount = available
   end
@@ -476,7 +424,8 @@ function tracker_on_accessibility_updated()
   update_smallkeys()
   update_fortress()
   update_vanilla_captures()
-  update_capture_items()
+  update_collected_capture()
   count_skulltulas()
+
   apply_queued_changes()
 end

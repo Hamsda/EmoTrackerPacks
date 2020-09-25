@@ -16,6 +16,12 @@
               "type": "group",
               "header": "Items",
               "dock": "top",
+              "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#FF212121",
+                "layout": "options_popup"
+              },
               "content": {
                 "type": "layout",
                 "key": "item_grid_tall"
@@ -113,6 +119,12 @@
                   "type": "group",
                   "header": "Items",
                   "dock": "top",
+                  "header_content": {
+                    "type": "button_popup",
+                    "style": "settings",
+                    "popup_background": "#FF212121",
+                    "layout": "options_popup"
+                  },
                   "content": {
                     "type": "layout",
                     "key": "item_grid_wide"
