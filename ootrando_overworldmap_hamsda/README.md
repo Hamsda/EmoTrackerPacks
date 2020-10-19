@@ -88,10 +88,16 @@ This setting determines what is needed to trigger the rainbow bridge in front of
 
 - ![Always Open](images/setting_bridge_open.png "Always Open") Nothing required, bridge is always open
 - ![Vanilla](images/setting_bridge_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
-- ![All Stones](images/setting_bridge_stones.png "All Stones") All 3 stones required
-- ![All Medallions](images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
-- ![All Dungeons](images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
-- ![100 GS tokens](images/setting_bridge_100gs.png "100 GS tokens") Gold skulltula tokens required (always assumes all 100 are required)
+- ![Stones](images/setting_bridge_stones.png "Stones") Variable amount of stones required
+- ![Medallions](images/setting_bridge_medallions.png "Medallions") Variable amount of medallions required
+- ![Dungeons](images/setting_bridge_dungeons.png "Dungeons") Variable amount of medallions and stones required
+- ![GS tokens](images/setting_bridge_gs.png "GS tokens") Variable amount of Gold Skulltula tokens required
+
+#### Rainbow Bridge Amount
+
+This setting determines how many (if any) of the items specified in `Rainbow Bridge Requirement` are needed.
+
+![Bridge Amount](images/setting_bridge_amount.png "Bridge Amount") Increment or decrement the number required.
 
 #### Number of Trials
 

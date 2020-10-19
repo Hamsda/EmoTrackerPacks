@@ -230,3 +230,36 @@ function damage_single_instance_ohko()
     return has_bottle()
   end
 end
+
+function can_spawn_rainbow_bridge()
+  local setting_bridge_amount = get_object("setting_bridge_amount") and get_object("setting_bridge_amount").AcquiredCount or 0
+  local stones = Tracker:ProviderCountForCode("stones")
+  local medallions = Tracker:ProviderCountForCode("medallions")
+  local tokens = Tracker:ProviderCountForCode("token")
+
+  if has("setting_bridge_open") then
+    return 1, AccessibilityLevel.Normal
+  elseif has("setting_bridge_vanilla") then
+    if has("lightarrow") and Tracker:ProviderCountForCode("lacs_meds") >= 2 then
+      return 1, AccessibilityLevel.Normal
+    end      
+  elseif has("setting_bridge_stones") then
+    if stones >= setting_bridge_amount then
+      return 1, AccessibilityLevel.Normal
+    end
+  elseif has("setting_bridge_medallions") then
+    if medallions >= setting_bridge_amount then
+      return 1, AccessibilityLevel.Normal
+    end
+  elseif has("setting_bridge_dungeons") then
+    if (stones + medallions) >= setting_bridge_amount then
+      return 1, AccessibilityLevel.Normal
+    end
+  elseif has("setting_bridge_gs") then
+    if tokens >= setting_bridge_amount then
+      return 1, AccessibilityLevel.Normal
+    end
+  end
+
+  return 0, AccessibilityLevel.None
+end

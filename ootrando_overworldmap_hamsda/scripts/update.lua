@@ -222,6 +222,7 @@ end
 
 function tracker_on_accessibility_updated()
   update_smallkeys()
+  update_bridge_amount_max()
   update_fortress()
   update_collected_capture()
   update_vanilla_captures()

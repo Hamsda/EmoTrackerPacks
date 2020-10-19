@@ -7,6 +7,7 @@
   - added settings for other ER options
   - changed captures to match required in-game regions
 - fixed GS reward names
+- added bridge amount setting
 
 ## 2.10.0.0
 

@@ -2458,12 +2458,7 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_mq,$has_age|adult,setting_bridge_open",
-      "gc_mq,$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
-      "gc_mq,$has_age|adult,setting_bridge_stones,stones:3",
-      "gc_mq,$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "gc_mq,$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "gc_mq,$has_age|adult,setting_bridge_100gs,token:100"
+      "gc_mq,$has_age|adult,$can_spawn_rainbow_bridge"
     ],
     "sections": [
       {

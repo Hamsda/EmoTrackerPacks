@@ -30,41 +30,6 @@ end
 
 
 
-dungeons = {
-  "forest",
-  "fire",
-  "water",
-  "spirit",
-  "shadow",
-  "botw",
-  "gtg",
-  "gc"
-}
-key_counts = {
-  vanilla = {
-    forest = 5,
-    fire = 8,
-    water = 6,
-    spirit = 5,
-    shadow = 5,
-    botw = 3,
-    gtg = 9,
-    gc = 2,
-  },
-  mq = {
-    forest = 6,
-    fire = 5,
-    water = 2,
-    spirit = 7,
-    shadow = 6,
-    botw = 2,
-    gtg = 3,
-    gc = 3,
-  }
-}
-
-
-
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 has_keys = variant:find("keysanity")

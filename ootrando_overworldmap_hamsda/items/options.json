@@ -141,11 +141,20 @@
         "inherit_codes": false
       },
       {
-        "img": "images/setting_bridge_100gs.png",
-        "codes": "setting_bridge,setting_bridge_100gs",
+        "img": "images/setting_bridge_gs.png",
+        "codes": "setting_bridge,setting_bridge_gs",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Rainbow Bridge Amount",
+    "type": "consumable",
+    "img": "images/setting_bridge_amount.png",
+    "codes": "setting_bridge_amount",
+    "disabled_img_mods": "@enabled",
+    "max_quantity": 6,
+    "initial_quantity": 6
   },
   {
     "name": "Number of Trials",

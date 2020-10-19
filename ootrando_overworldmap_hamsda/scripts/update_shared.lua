@@ -1,3 +1,35 @@
+dungeons = {
+  "forest",
+  "fire",
+  "water",
+  "spirit",
+  "shadow",
+  "botw",
+  "gtg",
+  "gc"
+}
+key_counts = {
+  vanilla = {
+    forest = 5,
+    fire = 8,
+    water = 6,
+    spirit = 5,
+    shadow = 5,
+    botw = 3,
+    gtg = 9,
+    gc = 2,
+  },
+  mq = {
+    forest = 6,
+    fire = 5,
+    water = 2,
+    spirit = 7,
+    shadow = 6,
+    botw = 2,
+    gtg = 3,
+    gc = 3,
+  }
+}
 function update_smallkeys()
   for _,dungeon in ipairs(dungeons) do
     local key_object = get_object(dungeon.."_small_keys")
@@ -15,6 +47,17 @@ function update_smallkeys()
         end
       end
     end
+  end
+end
+
+
+
+max_amount_per_bridge_stage = {0, 0, 3, 6, 9, 100}
+function update_bridge_amount_max()
+  local setting_bridge = get_object("setting_bridge")
+  local setting_bridge_amount = get_object("setting_bridge_amount")
+  if setting_bridge and setting_bridge.CurrentStage and setting_bridge_amount then
+    setting_bridge_amount.MaxCount = max_amount_per_bridge_stage[setting_bridge.CurrentStage + 1] or 0
   end
 end
 
