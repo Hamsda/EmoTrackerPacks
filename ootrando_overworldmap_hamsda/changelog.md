@@ -1,5 +1,12 @@
 # Changelog
 
+## x
+
+- reworked the Entrance Randomizer variants entirely:
+  - added logic
+  - added settings for other ER options
+  - changed captures to match required in-game regions
+
 ## 2.10.0.0
 
 - removed Gossip Stone map

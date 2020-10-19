@@ -56,5 +56,77 @@
         "inherits_codes": false
       }
     ]
+  },
+  {
+    "name": "Shuffle Overworld Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_overworld_off.png",
+        "codes": "setting_entrance_overworld,setting_entrance_overworld_off"
+      },
+      {
+        "img": "images/setting_entrance_overworld_shuffle.png",
+        "codes": "setting_entrance_overworld,setting_entrance_overworld_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomize Owl Drops",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_owl_off.png",
+        "codes": "setting_entrance_owl,setting_entrance_owl_off"
+      },
+      {
+        "img": "images/setting_entrance_owl_shuffle.png",
+        "codes": "setting_entrance_owl,setting_entrance_owl_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomize Warp Song Destinations",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_warpsong_off.png",
+        "codes": "setting_entrance_warpsong,setting_entrance_warpsong_off"
+      },
+      {
+        "img": "images/setting_entrance_warpsong_shuffle.png",
+        "codes": "setting_entrance_warpsong,setting_entrance_warpsong_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomize Overworld Spawns",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_spawn_off.png",
+        "codes": "setting_entrance_spawn,setting_entrance_spawn_off"
+      },
+      {
+        "img": "images/setting_entrance_spawn_shuffle.png",
+        "codes": "setting_entrance_spawn,setting_entrance_spawn_shuffle",
+        "inherits_codes": false
+      }
+    ]
   }
 ]

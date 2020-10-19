@@ -80,11 +80,11 @@ if has_map then
     Tracker:AddItems("items/cap_overworld.json")
     Tracker:AddItems("items/options_entrance.json")
   else
-    Tracker:AddItems("items/tricks.json")
     Tracker:AddItems("items/sequences.json")
     Tracker:AddItems("items/cap_items.json")
-    Tracker:AddItems("items/options.json")
   end
+  Tracker:AddItems("items/tricks.json")
+  Tracker:AddItems("items/options.json")
 end
 Tracker:AddItems("items/counters.json")
 Tracker:AddItems("items/quest.json")
@@ -92,7 +92,13 @@ Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 
-ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/logic_shared.lua")
+if is_er then
+  ScriptHost:LoadScript("scripts/regions.lua")
+  ScriptHost:LoadScript("scripts/logic_entrance.lua")
+else
+  ScriptHost:LoadScript("scripts/logic.lua")
+end
 
 if has_map then
   if is_er then
@@ -108,6 +114,7 @@ if has_map then
   end
 end
 
+ScriptHost:LoadScript("scripts/update_shared.lua")
 if is_er then
   ScriptHost:LoadScript("scripts/update_entrance.lua")
 else

@@ -678,5 +678,11 @@
         "codes": "ruto,rutosletter"
       }
     ]
+  },
+  {
+    "name": "Dummy",
+    "type": "toggle",
+    "img": "images/rupee.png",
+    "codes": "dummy"
   }
 ]

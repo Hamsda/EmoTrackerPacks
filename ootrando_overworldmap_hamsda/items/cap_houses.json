@@ -12,6 +12,18 @@
     "codes": "entrance_house_shop"
   },
   {
+    "name": "Kak Potion Shop Front",
+    "type": "toggle",
+    "img": "images/entrance_house_potion_front.png",
+    "codes": "entrance_house_potion_front"
+  },
+  {
+    "name": "Kak Potion Shop Back",
+    "type": "toggle",
+    "img": "images/entrance_house_potion_back.png",
+    "codes": "entrance_house_potion_back"
+  },
+  {
     "name": "Cow",
     "type": "toggle",
     "img": "images/entrance_grotto_cow.png",
@@ -48,7 +60,7 @@
     "codes": "entrance_house_tot"
   },
   {
-    "name": "Windmill",
+    "name": "Kak Windmill",
     "type": "toggle",
     "img": "images/entrance_house_windmill.png",
     "codes": "entrance_house_windmill"
