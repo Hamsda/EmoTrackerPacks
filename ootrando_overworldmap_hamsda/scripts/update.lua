@@ -226,6 +226,7 @@ function tracker_on_accessibility_updated()
   update_fortress()
   update_collected_capture()
   update_vanilla_captures()
+  update_free_zelda()
   count_skulltulas()
 
   apply_queued_changes()

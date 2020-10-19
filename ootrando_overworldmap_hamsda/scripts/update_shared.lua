@@ -238,3 +238,11 @@ function update_collected_capture()
     end
   end
 end
+
+function update_free_zelda()
+  local kid_trade = get_kid_trade()
+  local setting_zelda = has("setting_zelda_free")
+  if kid_trade and not_like_cache("setting_zelda_free", setting_zelda) and setting_zelda then
+    kid_trade.CurrentStage = 3
+  end
+end

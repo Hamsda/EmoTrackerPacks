@@ -53,6 +53,7 @@ function tracker_on_accessibility_updated()
   update_collected_capture()
   update_vanilla_captures()
   update_current_captures()
+  update_free_zelda()
   build_regions()
   
   apply_queued_changes()

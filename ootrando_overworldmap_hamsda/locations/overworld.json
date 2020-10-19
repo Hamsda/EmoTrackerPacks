@@ -3721,6 +3721,9 @@
                         "access_rules": [
                           "$has_age|child"
                         ],
+                        "visibility_rules": [
+                          "setting_zelda_off"
+                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -3742,7 +3745,7 @@
                           "$has_age|child,childegg"
                         ],
                         "visibility_rules": [
-                          "childegg"
+                          "setting_zelda_off,childegg"
                         ],
                         "hosted_item": "capture_childcucco"
                       }
@@ -3764,6 +3767,9 @@
                       {
                         "name": "Song from Impa",
                         "short_name": "Song",
+                        "visibility_rules": [
+                          "setting_zelda_off,childcucco"
+                        ],
                         "chest_unopened_img": "images/grey_note.png",
                         "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
@@ -3771,7 +3777,7 @@
                       {
                         "name": "HC Zeldas Letter",
                         "visibility_rules": [
-                          "childcucco"
+                          "setting_zelda_off,childcucco"
                         ],
                         "hosted_item": "capture_letter"
                       }

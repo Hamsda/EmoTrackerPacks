@@ -363,6 +363,23 @@
     ]
   },
   {
+    "name": "Free Zelda",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_zelda_off.png",
+        "codes": "setting_zelda,setting_zelda_off"
+      },
+      {
+        "img": "images/setting_zelda_free.png",
+        "codes": "setting_zelda,setting_zelda_free",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Complete Mask Quest",
     "type": "progressive",
     "allow_disabled": false,

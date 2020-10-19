@@ -8,6 +8,7 @@
   - changed captures to match required in-game regions
 - fixed GS reward names
 - added bridge amount setting
+- added free Zelda setting
 
 ## 2.10.0.0
 
