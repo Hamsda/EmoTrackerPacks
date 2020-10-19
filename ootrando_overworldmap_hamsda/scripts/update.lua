@@ -26,9 +26,7 @@ function update_vanilla_captures()
         if location_object and item_object then
           if has_setting then
             location_object.CapturedItem = nil
-            location_object.CaptureItem = false
           else
-            location_object.CaptureItem = true
             location_object.CapturedItem = item_object
           end
         end
