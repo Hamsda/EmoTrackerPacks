@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.0.0.0
 
 - reworked the Entrance Randomizer variants entirely:
   - added logic
