@@ -363,6 +363,23 @@
     ]
   },
   {
+    "name": "Shuffle Medigoron & Carpet Salesman",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_merchants_off.png",
+        "codes": "setting_merchants,setting_merchants_off"
+      },
+      {
+        "img": "images/setting_merchants_shuffle.png",
+        "codes": "setting_merchants,setting_merchants_shuffle",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Free Zelda",
     "type": "progressive",
     "allow_disabled": false,

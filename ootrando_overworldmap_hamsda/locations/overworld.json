@@ -2637,6 +2637,30 @@
                     ]
                   },
                   {
+                    "name": "GC Medigoron",
+                    "short_name": "Medigoron",
+                    "sections": [
+                      {
+                        "name": "Pay 200",
+                        "access_rules": [
+                          "$has_age|adult,wallet,$can_blast",
+                          "$has_age|adult,wallet,lift1"
+                        ],
+                        "visibility_rules": [
+                          "setting_merchants_shuffle"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 1646,
+                        "y": 125
+                      }
+                    ]
+                  },
+                  {
                     "name": "GC Pot",
                     "sections": [
                       {
@@ -4993,13 +5017,13 @@
               },
               {
                 "name": "Haunted Wasteland",
-                "access_rules": [
-                  "$wasteland",
-                  "{$hintable}"
-                ],
                 "children": [
                   {
                     "name": "Wasteland Structure",
+                    "access_rules": [
+                      "$wasteland",
+                      "{$hintable}"
+                    ],
                     "sections": [
                       {
                         "name": "Wasteland Chest",
@@ -5015,9 +5039,12 @@
                         "name": "Wasteland GS",
                         "short_name": "GS",
                         "access_rules": [
-                          "hookshot",
-                          "[hookshot],bombs,shield2",
-                          "[hookshot],bombs,shield3",
+                          "$has_age|adult,hookshot",
+                          "$has_age|adult,[hookshot],bombs,shield2",
+                          "$has_age|adult,[hookshot],bombs,shield3",
+                          "$has_age|child,boomerang",
+                          "{$has_age|child,sling}",
+                          "{$has_explosives}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -5031,9 +5058,47 @@
                     ],
                     "map_locations": [
                       {
+                        "map": "child",
+                        "x": 360,
+                        "y": 283
+                      },
+                      {
                         "map": "adult",
                         "x": 360,
                         "y": 283
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Wasteland Bombchu Salesman",
+                    "short_name": "Carpet Salesman",
+                    "access_rules": [
+                      "$wasteland,wallet"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Pay 200",
+                        "access_rules": [
+                          "$has_age|adult",
+                          "$has_age|child,sticks",
+                          "$has_age|child,sword1"
+                        ],
+                        "visibility_rules": [
+                          "setting_merchants_shuffle"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 380,
+                        "y": 350
+                      },
+                      {
+                        "map": "adult",
+                        "x": 380,
+                        "y": 350
                       }
                     ]
                   }

@@ -9,6 +9,7 @@
 - fixed GS reward names
 - added bridge amount setting
 - added free Zelda setting
+- added expensive merchants setting
 
 ## 2.10.0.0
 

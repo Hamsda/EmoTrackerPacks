@@ -190,6 +190,13 @@ This setting determines if Magic Beans are shuffled.
 - ![Magic Beans not shuffled](images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
 - ![Magic Beans shuffled](images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
 
+#### Shuffle Medigoron & Carpet Salesman
+
+This setting determines if Medigoron and Carpet Salesman items are shuffled.
+
+- ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
+- ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
+
 #### Complete Mask Quest
 
 This setting determines if all masks will be available once the Happy Mask Shop is open.
