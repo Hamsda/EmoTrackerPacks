@@ -10,6 +10,7 @@
 - added bridge amount setting
 - added free Zelda setting
 - added expensive merchants setting
+- removed `Move King Zora`
 
 ## 2.10.0.0
 

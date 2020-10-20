@@ -489,12 +489,6 @@ function child_fountain()
 
   local level = AccessibilityLevel.Normal
 
-  if has("king_zora_moved_yes", 0) 
-  and has("setting_fountain_open", 0) 
-  then
-    level = AccessibilityLevel.SequenceBreak
-  end
-
   if has("scale1") then
     return 1, level
   end

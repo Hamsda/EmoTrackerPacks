@@ -4296,29 +4296,6 @@
                         "y": 429
                       }
                     ]
-                  },
-                  {
-                    "name": "King Zora Moves",
-                    "sections": [
-                      {
-                        "name": "Show Letter",
-                        "access_rules": [
-                          "king_zora_moved_no,ruto"
-                        ],
-                        "visibility_rules": [
-                          "setting_fountain_closed",
-                          "setting_fountain_adult"
-                        ],
-                        "hosted_item": "king_zora_moved_yes"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 2624,
-                        "y": 367
-                      }
-                    ]
                   }
                 ]
               },
