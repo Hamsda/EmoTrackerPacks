@@ -302,6 +302,27 @@ function link_the_goron()
   return count, level
 end
 
+function goron_tunic()
+  if has("redtunic") then
+    return 1, AccessibilityLevel.Normal
+  elseif has("wallet") then
+    return link_the_goron()
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function FTR_or_goron()
+  if has("logic_fewer_tunic_requirements") then
+    return 1, AccessibilityLevel.Normal
+  else
+    local goron_count, goron_level = goron_tunic()
+    if goron_count > 0 then
+      return goron_count, goron_level
+    end
+  end
+  return 1, AccessibilityLevel.SequenceBreak
+end
+
 function dmt_climb()
   if has_age("both") > 0
   and has("beans")
@@ -511,21 +532,31 @@ function child_fountain()
   return 1, level
 end
 
+function adult_domain()
+  if has_age("adult") == 0 then
+    return 0, AccessibilityLevel.None
+  end
+
+  if has("ocarina") and has("lullaby") then
+    return 1, AccessibilityLevel.Normal
+  elseif has("hoverboots") then
+    if has("logic_zora_with_hovers") then
+      return 1, AccessibilityLevel.Normal
+    end
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+
+  return 0, AccessibilityLevel.None
+end
+
 function adult_fountain()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
 
-  local level = AccessibilityLevel.Normal
-
-  if has("ocarina", 0)
-  or has("lullaby", 0)
-  then
-    if has("hoverboots", 0) then
-      return 0, AccessibilityLevel.None
-    elseif has("logic_zora_with_hovers", 0) then
-      level = AccessibilityLevel.SequenceBreak
-    end
+  local domain, level = adult_domain()
+  if domain == 0 then
+    return 0, AccessibilityLevel.None
   end
 
   if has("setting_fountain_open") 
@@ -600,6 +631,37 @@ function has_blue_fire()
     end
   end
 
+  return 1, AccessibilityLevel.SequenceBreak
+end
+
+function zora_tunic()
+  if has("bluetunic") then
+    return 1, AccessibilityLevel.Normal
+  elseif has("wallet2") then
+    local bottle_count, bottle_level = has_bottle()
+    local domain_count, domain_level = adult_domain()
+    if bottle_count > 0 and domain_count > 0 then
+      if bottle_level == AccessibilityLevel.SequenceBreak
+      or domain_level == AccessibilityLevel.SequenceBreak
+      then
+        return 1, AccessibilityLevel.SequenceBreak
+      else
+        return 1, AccessibilityLevel.Normal
+      end
+    end
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function FTR_or_zora()
+  if has("logic_fewer_tunic_requirements") then
+    return 1, AccessibilityLevel.Normal
+  else
+    local zora_count, zora_level = zora_tunic()
+    if zora_count > 0 then
+      return zora_count, zora_level
+    end
+  end
   return 1, AccessibilityLevel.SequenceBreak
 end
 

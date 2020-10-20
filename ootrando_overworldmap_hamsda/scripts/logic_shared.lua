@@ -104,26 +104,6 @@ function can_use_lens()
   end
 end
 
-function FTR_or_goron()
-  if has("logic_fewer_tunic_requirements") 
-  or has("redtunic") 
-  then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-end
-
-function FTR_or_zora()
-  if has("logic_fewer_tunic_requirements") 
-  or has("bluetunic") 
-  then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-end
-
 function hidden_grotto()
   if has("logic_grottos_without_agony")
   or has("agony")

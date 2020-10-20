@@ -2723,10 +2723,10 @@
                         "short_name": "Deku Scrubs",
                         "access_rules": [
                           "ocarina,time,$damage_below_quadruple",
-                          "ocarina,time,redtunic",
+                          "ocarina,time,$goron_tunic",
                           "ocarina,time,longshot",
                           "ocarina,time,nayrus,magic",
-                          "hookshot,$damage_below_ohko,redtunic",
+                          "hookshot,$damage_below_ohko,$goron_tunic",
                           "hookshot,nayrus,magic"
                         ],
                         "visibility_rules": [

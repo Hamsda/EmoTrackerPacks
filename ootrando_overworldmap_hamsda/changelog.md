@@ -11,6 +11,7 @@
 - added free Zelda setting
 - added expensive merchants setting
 - removed `Move King Zora`
+- added wallets to tunic logic in non ER
 
 ## 2.10.0.0
 

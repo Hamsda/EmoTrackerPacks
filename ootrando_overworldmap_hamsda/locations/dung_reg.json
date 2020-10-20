@@ -1034,12 +1034,12 @@
       {
         "name": "Maze Lower",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[redtunic],$has_explosives",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[redtunic],$has_explosives",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[redtunic],bow",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[redtunic],bow",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[redtunic],hookshot",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[redtunic],hookshot"
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[$goron_tunic],$has_explosives",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[$goron_tunic],$has_explosives",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[$goron_tunic],bow",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[$goron_tunic],bow",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[$goron_tunic],hookshot",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[$goron_tunic],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1279,10 +1279,10 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "[redtunic],hammer,fire_boss_key,[logic_fire_boss_door_jump]",
-          "[redtunic],hammer,fire_boss_key,hoverboots",
-          "[redtunic],hammer,fire_boss_key,@Fire Temple/West Tower,ocarina,time",
-          "[redtunic],hammer,fire_boss_key,@Fire Temple/West Tower,$has_explosives"
+          "[$goron_tunic],hammer,fire_boss_key,[logic_fire_boss_door_jump]",
+          "[$goron_tunic],hammer,fire_boss_key,hoverboots",
+          "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,ocarina,time",
+          "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,$has_explosives"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -1490,9 +1490,9 @@
         "name": "Central Pillar Chest",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,bow",
-          "@Water Temple/Middle Water Level,ironboots,[bluetunic],hookshot,dinsfire,magic"
+          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,bow",
+          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,dinsfire,magic"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1

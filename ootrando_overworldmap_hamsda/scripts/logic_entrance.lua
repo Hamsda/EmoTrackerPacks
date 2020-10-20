@@ -32,6 +32,26 @@ function can_blast()
   end
 end
 
+function FTR_or_goron()
+  if has("logic_fewer_tunic_requirements") 
+  or has("redtunic") 
+  then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
+function FTR_or_zora()
+  if has("logic_fewer_tunic_requirements") 
+  or has("bluetunic") 
+  then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+end
+
 function link_the_goron()
   local access_count, access_level = access("Goron City", "adult")
   if access_count == 0 then
