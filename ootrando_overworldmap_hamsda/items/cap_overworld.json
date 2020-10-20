@@ -12,10 +12,22 @@
     "codes": "entrance_overworld_lw"
   },
   {
-    "name": "Lost Woods Bridge",
+    "name": "LW Bridge",
     "type": "toggle",
-    "img": "images/entrance_overworld_bridge.png",
-    "codes": "entrance_overworld_bridge"
+    "img": "images/entrance_overworld_lw_brg.png",
+    "codes": "entrance_overworld_lw_brg"
+  },
+  {
+    "name": "LW Bridge From Forest",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw_brg2.png",
+    "codes": "entrance_overworld_lw_brg2"
+  },
+  {
+    "name": "LW Beyond Mido",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw_mido.png",
+    "codes": "entrance_overworld_lw_mido"
   },
   {
     "name": "Sacred Forest Meadow",
@@ -24,28 +36,34 @@
     "codes": "entrance_overworld_sfm"
   },
   {
+    "name": "SFM Entryway",
+    "type": "toggle",
+    "img": "images/entrance_overworld_sfm_ent.png",
+    "codes": "entrance_overworld_sfm_ent"
+  },
+  {
     "name": "Castle Grounds",
     "type": "toggle",
     "img": "images/entrance_overworld_cg.png",
     "codes": "entrance_overworld_cg"
   },
   {
-    "name": "Castle Town",
+    "name": "Market",
     "type": "toggle",
-    "img": "images/entrance_overworld_ct.png",
-    "codes": "entrance_overworld_ct"
+    "img": "images/entrance_overworld_mkt.png",
+    "codes": "entrance_overworld_mkt"
   },
   {
-    "name": "Castle Town Entrance",
+    "name": "Market Entrance",
     "type": "toggle",
-    "img": "images/entrance_overworld_cte.png",
-    "codes": "entrance_overworld_cte"
+    "img": "images/entrance_overworld_mkt_ent.png",
+    "codes": "entrance_overworld_mkt_ent"
   },
   {
-    "name": "Temple of Time Exterior",
+    "name": "ToT Entrance",
     "type": "toggle",
-    "img": "images/entrance_house_tot.png",
-    "codes": "entrance_overworld_tot"
+    "img": "images/entrance_overworld_tot_ent.png",
+    "codes": "entrance_overworld_tot_ent"
   },
   {
     "name": "Hyrule Field",
@@ -66,10 +84,28 @@
     "codes": "entrance_overworld_kak"
   },
   {
+    "name": "Kak Impas Ledge",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kak_impa.png",
+    "codes": "entrance_overworld_kak_impa"
+  },
+  {
+    "name": "Kak Behind Gate",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kak_gate.png",
+    "codes": "entrance_overworld_kak_gate"
+  },
+  {
     "name": "Graveyard",
     "type": "toggle",
     "img": "images/entrance_overworld_gy.png",
     "codes": "entrance_overworld_gy"
+  },
+  {
+    "name": "Graveyard Warp Pad Region",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gy_pad.png",
+    "codes": "entrance_overworld_gy_pad"
   },
   {
     "name": "Lake Hylia",
@@ -84,10 +120,28 @@
     "codes": "entrance_overworld_zr"
   },
   {
+    "name": "ZR Front",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zr_frnt.png",
+    "codes": "entrance_overworld_zr_frnt"
+  },
+  {
+    "name": "ZR Behind Waterfall",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zr_fall.png",
+    "codes": "entrance_overworld_zr_fall"
+  },
+  {
     "name": "Zoras Domain",
     "type": "toggle",
     "img": "images/entrance_overworld_zd.png",
     "codes": "entrance_overworld_zd"
+  },
+  {
+    "name": "ZD Behind King Zora",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zd_kz.png",
+    "codes": "entrance_overworld_zd_kz"
   },
   {
     "name": "Zoras Fountain",
@@ -102,10 +156,16 @@
     "codes": "entrance_overworld_col"
   },
   {
-    "name": "Haunted Wasteland",
+    "name": "Wasteland Near Colossus",
     "type": "toggle",
-    "img": "images/entrance_overworld_wl.png",
-    "codes": "entrance_overworld_wl"
+    "img": "images/entrance_overworld_wl_col.png",
+    "codes": "entrance_overworld_wl_col"
+  },
+  {
+    "name": "Wasteland Near Fortress",
+    "type": "toggle",
+    "img": "images/entrance_overworld_wl_fort.png",
+    "codes": "entrance_overworld_wl_fort"
   },
   {
     "name": "Gerudo Fortress",
@@ -114,27 +174,69 @@
     "codes": "entrance_overworld_gf"
   },
   {
+    "name": "GF Outside Gate",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gf_gate.png",
+    "codes": "entrance_overworld_gf_gate"
+  },
+  {
     "name": "Gerudo Valley",
     "type": "toggle",
     "img": "images/entrance_overworld_gv.png",
     "codes": "entrance_overworld_gv"
   },
   {
-    "name": "Death Mountain Trail",
+    "name": "GV Fortress Side",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gv_fort.png",
+    "codes": "entrance_overworld_gv_fort"
+  },
+  {
+    "name": "Death Mountain",
     "type": "toggle",
     "img": "images/entrance_overworld_dmt.png",
     "codes": "entrance_overworld_dmt"
   },
   {
-    "name": "Death Mountain Crater",
+    "name": "Death Mountain Summit",
     "type": "toggle",
-    "img": "images/entrance_overworld_dmc.png",
-    "codes": "entrance_overworld_dmc"
+    "img": "images/entrance_overworld_dm_smt.png",
+    "codes": "entrance_overworld_dm_smt"
+  },
+  {
+    "name": "DMC Central Local",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc_ctr.png",
+    "codes": "entrance_overworld_dmc_ctr"
+  },
+  {
+    "name": "DMC Lower Local",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc_lwr.png",
+    "codes": "entrance_overworld_dmc_lwr"
+  },
+  {
+    "name": "DMC Upper Local",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc_upr.png",
+    "codes": "entrance_overworld_dmc_upr"
   },
   {
     "name": "Goron City",
     "type": "toggle",
     "img": "images/entrance_overworld_gc.png",
     "codes": "entrance_overworld_gc"
+  },
+  {
+    "name": "GC Darunias Chamber",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gc_drn.png",
+    "codes": "entrance_overworld_gc_drn"
+  },
+  {
+    "name": "GC Woods Warp",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gc_lw.png",
+    "codes": "entrance_overworld_gc_lw"
   }
 ]

@@ -17,22 +17,22 @@
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "free,lightmed",
+        "codes": "free,lightmed,medallions",
         "inherit_codes": false
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "free,lacs_meds",
+        "codes": "free,lacs_meds,medallions",
         "inherit_codes": false
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "free,noct_meds",
+        "codes": "free,noct_meds,medallions",
         "inherit_codes": false
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "free,forestmed",
+        "codes": "free,forestmed,medallions",
         "inherit_codes": false
       },
       {
@@ -81,22 +81,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "deku,forestmed",
+        "codes": "deku,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "deku,noct_meds",
+        "codes": "deku,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "deku,lacs_meds",
+        "codes": "deku,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "deku,lightmed",
+        "codes": "deku,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -140,22 +140,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "dodongo,dc,forestmed",
+        "codes": "dodongo,dc,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "dodongo,dc,noct_meds",
+        "codes": "dodongo,dc,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "dodongo,dc,lacs_meds",
+        "codes": "dodongo,dc,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "dodongo,dc,lightmed",
+        "codes": "dodongo,dc,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -199,22 +199,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "jabu,forestmed",
+        "codes": "jabu,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "jabu,noct_meds",
+        "codes": "jabu,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "jabu,lacs_meds",
+        "codes": "jabu,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "jabu,lightmed",
+        "codes": "jabu,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -271,22 +271,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "forest,forestmed",
+        "codes": "forest,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "forest,noct_meds",
+        "codes": "forest,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "forest,lacs_meds",
+        "codes": "forest,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "forest,lightmed",
+        "codes": "forest,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -343,22 +343,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "fire,forestmed",
+        "codes": "fire,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "fire,noct_meds",
+        "codes": "fire,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "fire,lacs_meds",
+        "codes": "fire,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "fire,lightmed",
+        "codes": "fire,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -415,22 +415,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "water,forestmed",
+        "codes": "water,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "water,noct_meds",
+        "codes": "water,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "water,lacs_meds",
+        "codes": "water,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "water,lightmed",
+        "codes": "water,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -487,22 +487,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "spirit,forestmed",
+        "codes": "spirit,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "spirit,noct_meds",
+        "codes": "spirit,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "spirit,lacs_meds",
+        "codes": "spirit,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "spirit,lightmed",
+        "codes": "spirit,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]
@@ -559,22 +559,22 @@
       },
       {
         "img": "images/forestmedallion.png",
-        "codes": "shadow,forestmed",
+        "codes": "shadow,forestmed,medallions",
         "secondary_codes": "forest,forestmed"
       },
       {
         "img": "images/nocturne_medallions.png",
-        "codes": "shadow,noct_meds",
+        "codes": "shadow,noct_meds,medallions",
         "secondary_codes": "noct_meds,nocturne"
       },
       {
         "img": "images/lacs_medallions.png",
-        "codes": "shadow,lacs_meds",
+        "codes": "shadow,lacs_meds,medallions",
         "secondary_codes": "lacs_meds,lacs,lightarrow"
       },
       {
         "img": "images/lightmedallion.png",
-        "codes": "shadow,lightmed",
+        "codes": "shadow,lightmed,medallions",
         "secondary_codes": "light,lightmed"
       }
     ]

@@ -1975,7 +1975,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Kak 10 Gold Skulltula Reward",
+                    "name": "Kak 20 Gold Skulltula Reward",
                     "short_name": "20 Tokens",
                     "access_rules": [
                       "skulltula:20",
@@ -1985,7 +1985,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Kak 10 Gold Skulltula Reward",
+                    "name": "Kak 30 Gold Skulltula Reward",
                     "short_name": "30 Tokens",
                     "access_rules": [
                       "skulltula:30",
@@ -1995,7 +1995,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Kak 10 Gold Skulltula Reward",
+                    "name": "Kak 40 Gold Skulltula Reward",
                     "short_name": "40 Tokens",
                     "access_rules": [
                       "skulltula:40",
@@ -2005,7 +2005,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Kak 10 Gold Skulltula Reward",
+                    "name": "Kak 50 Gold Skulltula Reward",
                     "short_name": "50 Tokens",
                     "access_rules": [
                       "skulltula:50",
@@ -2637,6 +2637,30 @@
                     ]
                   },
                   {
+                    "name": "GC Medigoron",
+                    "short_name": "Medigoron",
+                    "sections": [
+                      {
+                        "name": "Pay 200",
+                        "access_rules": [
+                          "$has_age|adult,wallet,$can_blast",
+                          "$has_age|adult,wallet,lift1"
+                        ],
+                        "visibility_rules": [
+                          "setting_merchants_shuffle"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 1646,
+                        "y": 125
+                      }
+                    ]
+                  },
+                  {
                     "name": "GC Pot",
                     "sections": [
                       {
@@ -2699,10 +2723,10 @@
                         "short_name": "Deku Scrubs",
                         "access_rules": [
                           "ocarina,time,$damage_below_quadruple",
-                          "ocarina,time,redtunic",
+                          "ocarina,time,$goron_tunic",
                           "ocarina,time,longshot",
                           "ocarina,time,nayrus,magic",
-                          "hookshot,$damage_below_ohko,redtunic",
+                          "hookshot,$damage_below_ohko,$goron_tunic",
                           "hookshot,nayrus,magic"
                         ],
                         "visibility_rules": [
@@ -3721,6 +3745,9 @@
                         "access_rules": [
                           "$has_age|child"
                         ],
+                        "visibility_rules": [
+                          "setting_zelda_off"
+                        ],
                         "capture_item": true,
                         "item_count": 1
                       }
@@ -3742,7 +3769,7 @@
                           "$has_age|child,childegg"
                         ],
                         "visibility_rules": [
-                          "childegg"
+                          "setting_zelda_off,childegg"
                         ],
                         "hosted_item": "capture_childcucco"
                       }
@@ -3764,6 +3791,9 @@
                       {
                         "name": "Song from Impa",
                         "short_name": "Song",
+                        "visibility_rules": [
+                          "setting_zelda_off,childcucco"
+                        ],
                         "chest_unopened_img": "images/grey_note.png",
                         "chest_opened_img": "images/grey_note_check.png",
                         "item_count": 1
@@ -3771,7 +3801,7 @@
                       {
                         "name": "HC Zeldas Letter",
                         "visibility_rules": [
-                          "childcucco"
+                          "setting_zelda_off,childcucco"
                         ],
                         "hosted_item": "capture_letter"
                       }
@@ -4264,29 +4294,6 @@
                         "map": "child",
                         "x": 2556,
                         "y": 429
-                      }
-                    ]
-                  },
-                  {
-                    "name": "King Zora Moves",
-                    "sections": [
-                      {
-                        "name": "Show Letter",
-                        "access_rules": [
-                          "king_zora_moved_no,ruto"
-                        ],
-                        "visibility_rules": [
-                          "setting_fountain_closed",
-                          "setting_fountain_adult"
-                        ],
-                        "hosted_item": "king_zora_moved_yes"
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 2624,
-                        "y": 367
                       }
                     ]
                   }
@@ -4987,13 +4994,13 @@
               },
               {
                 "name": "Haunted Wasteland",
-                "access_rules": [
-                  "$wasteland",
-                  "{$hintable}"
-                ],
                 "children": [
                   {
                     "name": "Wasteland Structure",
+                    "access_rules": [
+                      "$wasteland",
+                      "{$hintable}"
+                    ],
                     "sections": [
                       {
                         "name": "Wasteland Chest",
@@ -5009,9 +5016,12 @@
                         "name": "Wasteland GS",
                         "short_name": "GS",
                         "access_rules": [
-                          "hookshot",
-                          "[hookshot],bombs,shield2",
-                          "[hookshot],bombs,shield3",
+                          "$has_age|adult,hookshot",
+                          "$has_age|adult,[hookshot],bombs,shield2",
+                          "$has_age|adult,[hookshot],bombs,shield3",
+                          "$has_age|child,boomerang",
+                          "{$has_age|child,sling}",
+                          "{$has_explosives}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -5025,9 +5035,47 @@
                     ],
                     "map_locations": [
                       {
+                        "map": "child",
+                        "x": 360,
+                        "y": 283
+                      },
+                      {
                         "map": "adult",
                         "x": 360,
                         "y": 283
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Wasteland Bombchu Salesman",
+                    "short_name": "Carpet Salesman",
+                    "access_rules": [
+                      "$wasteland,wallet"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Pay 200",
+                        "access_rules": [
+                          "$has_age|adult",
+                          "$has_age|child,sticks",
+                          "$has_age|child,sword1"
+                        ],
+                        "visibility_rules": [
+                          "setting_merchants_shuffle"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "x": 380,
+                        "y": 350
+                      },
+                      {
+                        "map": "adult",
+                        "x": 380,
+                        "y": 350
                       }
                     ]
                   }

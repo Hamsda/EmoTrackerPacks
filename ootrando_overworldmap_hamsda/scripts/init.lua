@@ -30,41 +30,6 @@ end
 
 
 
-dungeons = {
-  "forest",
-  "fire",
-  "water",
-  "spirit",
-  "shadow",
-  "botw",
-  "gtg",
-  "gc"
-}
-key_counts = {
-  vanilla = {
-    forest = 5,
-    fire = 8,
-    water = 6,
-    spirit = 5,
-    shadow = 5,
-    botw = 3,
-    gtg = 9,
-    gc = 2,
-  },
-  mq = {
-    forest = 6,
-    fire = 5,
-    water = 2,
-    spirit = 7,
-    shadow = 6,
-    botw = 2,
-    gtg = 3,
-    gc = 3,
-  }
-}
-
-
-
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 has_keys = variant:find("keysanity")
@@ -80,11 +45,11 @@ if has_map then
     Tracker:AddItems("items/cap_overworld.json")
     Tracker:AddItems("items/options_entrance.json")
   else
-    Tracker:AddItems("items/tricks.json")
     Tracker:AddItems("items/sequences.json")
     Tracker:AddItems("items/cap_items.json")
-    Tracker:AddItems("items/options.json")
   end
+  Tracker:AddItems("items/tricks.json")
+  Tracker:AddItems("items/options.json")
 end
 Tracker:AddItems("items/counters.json")
 Tracker:AddItems("items/quest.json")
@@ -92,7 +57,13 @@ Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 
-ScriptHost:LoadScript("scripts/logic.lua")
+ScriptHost:LoadScript("scripts/logic_shared.lua")
+if is_er then
+  ScriptHost:LoadScript("scripts/regions.lua")
+  ScriptHost:LoadScript("scripts/logic_entrance.lua")
+else
+  ScriptHost:LoadScript("scripts/logic.lua")
+end
 
 if has_map then
   if is_er then
@@ -108,6 +79,7 @@ if has_map then
   end
 end
 
+ScriptHost:LoadScript("scripts/update_shared.lua")
 if is_er then
   ScriptHost:LoadScript("scripts/update_entrance.lua")
 else

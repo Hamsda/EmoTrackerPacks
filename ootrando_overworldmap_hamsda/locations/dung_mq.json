@@ -1154,8 +1154,8 @@
       {
         "name": "Lower Maze",
         "access_rules": [
-          "@Fire Temple MQ/Big Lava Room,[redtunic],fire_small_keys:1,[fire_small_keys:2],$has_fire",
-          "@Fire Temple MQ/Big Lava Room,[redtunic],fire_small_keys:1,[fire_small_keys:2],[logic_fire_mq_climb],hoverboots"
+          "@Fire Temple MQ/Big Lava Room,[$goron_tunic],fire_small_keys:1,[fire_small_keys:2],$has_fire",
+          "@Fire Temple MQ/Big Lava Room,[$goron_tunic],fire_small_keys:1,[fire_small_keys:2],[logic_fire_mq_climb],hoverboots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1186,9 +1186,9 @@
       {
         "name": "Boss Room",
         "access_rules": [
-          "$has_age|adult,[redtunic],hammer,fire_boss_key,$has_fire,[logic_fire_boss_door_jump]",
-          "$has_age|adult,[redtunic],hammer,fire_boss_key,$has_fire,hoverboots",
-          "$has_age|adult,[redtunic],hammer,fire_boss_key,@Fire Temple MQ/West Top"
+          "$has_age|adult,[$goron_tunic],hammer,fire_boss_key,$has_fire,[logic_fire_boss_door_jump]",
+          "$has_age|adult,[$goron_tunic],hammer,fire_boss_key,$has_fire,hoverboots",
+          "$has_age|adult,[$goron_tunic],hammer,fire_boss_key,@Fire Temple MQ/West Top"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1203,7 +1203,7 @@
           "$FTR_or_goron,$has_fire,[logic_fire_mq_near_boss],bow",
           "$FTR_or_goron,hookshot,bow,firearrow,magic",
           "$FTR_or_goron,hookshot,dinsfire,magic,$damage_below_quadruple",
-          "$FTR_or_goron,hookshot,dinsfire,magic,redtunic",
+          "$FTR_or_goron,hookshot,dinsfire,magic,$goron_tunic",
           "$FTR_or_goron,hookshot,dinsfire,magic,bow",
           "$FTR_or_goron,hookshot,dinsfire,magic,longshot"
         ],
@@ -1512,8 +1512,8 @@
         "name": "Central Pillar Chest",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple MQ/Dive,[bluetunic],hookshot,bow,firearrow,magic",
-          "@Water Temple MQ/Dive,[bluetunic],hookshot,dinsfire,magic,ocarina,time"
+          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,bow,firearrow,magic",
+          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,dinsfire,magic,ocarina,time"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2458,12 +2458,7 @@
     "name": "Ganons Castle MQ",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_mq,$has_age|adult,setting_bridge_open",
-      "gc_mq,$has_age|adult,setting_bridge_vanilla,lacs_meds:2,lightarrow",
-      "gc_mq,$has_age|adult,setting_bridge_stones,stones:3",
-      "gc_mq,$has_age|adult,setting_bridge_medallions,forestmed,noct_meds:2,lacs_meds:2,lightmed",
-      "gc_mq,$has_age|adult,setting_bridge_dungeons,forestmed,noct_meds:2,lacs_meds:2,lightmed,stones:3",
-      "gc_mq,$has_age|adult,setting_bridge_100gs,token:100"
+      "gc_mq,$has_age|adult,$can_spawn_rainbow_bridge"
     ],
     "sections": [
       {
@@ -2573,8 +2568,8 @@
         "name": "Fire Trial Clear",
         "short_name": "Fire Trial",
         "access_rules": [
-          "[redtunic],lift3,$can_LA,longshot",
-          "[redtunic],lift3,$can_LA,hoverboots"
+          "[$goron_tunic],lift3,$can_LA,longshot",
+          "[$goron_tunic],lift3,$can_LA,hoverboots"
         ],
         "visibility_rules": [
           "setting_trials:1"

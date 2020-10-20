@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.0.0.0
+
+- reworked the Entrance Randomizer variants entirely:
+  - added logic
+  - added settings for other ER options
+  - changed captures to match required in-game regions
+- fixed GS reward names
+- added bridge amount setting
+- added free Zelda setting
+- added expensive merchants setting
+- removed `Move King Zora`
+- added wallets to tunic logic in non ER
+
 ## 2.10.0.0
 
 - removed Gossip Stone map

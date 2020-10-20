@@ -35,7 +35,7 @@ Some of this functionality might not be immediately obvious:
 - Right clicking ![Fairy Ocarina](images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](images/overlay_scarecrow.png "Scarecrow") indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on. The location of the scarecrow in Lake Hylia will automatically mark this when cleared first as child and then as adult.
 - ![Triforce Piece](images/triforce_piece.png "Triforce Piece") is used as a counter for Triforce pieces in the Triforce Hunt mode.
 
-## Settings (for non Entrance Randomizer variants with a map)
+## Settings (for map variants)
 
 There is a variety of toggles available to accomodate the different settings the randomizer offers. The settings are arranged to mimic the current GUI of the randomizer. The default for all of these should match the settings used for the weekly races (check out the OoTR discord for more info).
 
@@ -88,10 +88,16 @@ This setting determines what is needed to trigger the rainbow bridge in front of
 
 - ![Always Open](images/setting_bridge_open.png "Always Open") Nothing required, bridge is always open
 - ![Vanilla](images/setting_bridge_vanilla.png "Vanilla") Light arrows, shadow medallion, and spirit medallion required
-- ![All Stones](images/setting_bridge_stones.png "All Stones") All 3 stones required
-- ![All Medallions](images/setting_bridge_medallions.png "All Medallions") All 6 medallions required
-- ![All Dungeons](images/setting_bridge_dungeons.png "All Dungeons") All 6 medallions and 3 stones required
-- ![100 GS tokens](images/setting_bridge_100gs.png "100 GS tokens") Gold skulltula tokens required (always assumes all 100 are required)
+- ![Stones](images/setting_bridge_stones.png "Stones") Variable amount of stones required
+- ![Medallions](images/setting_bridge_medallions.png "Medallions") Variable amount of medallions required
+- ![Dungeons](images/setting_bridge_dungeons.png "Dungeons") Variable amount of medallions and stones required
+- ![GS tokens](images/setting_bridge_gs.png "GS tokens") Variable amount of Gold Skulltula tokens required
+
+#### Rainbow Bridge Amount
+
+This setting determines how many (if any) of the items specified in `Rainbow Bridge Requirement` are needed.
+
+![Bridge Amount](images/setting_bridge_amount.png "Bridge Amount") Increment or decrement the number required.
 
 #### Number of Trials
 
@@ -184,6 +190,13 @@ This setting determines if Magic Beans are shuffled.
 - ![Magic Beans not shuffled](images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
 - ![Magic Beans shuffled](images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
 
+#### Shuffle Medigoron & Carpet Salesman
+
+This setting determines if Medigoron and Carpet Salesman items are shuffled.
+
+- ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
+- ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
+
 #### Complete Mask Quest
 
 This setting determines if all masks will be available once the Happy Mask Shop is open.
@@ -234,13 +247,55 @@ This tab also contains a list of (some of) the logic tricks that can be enabled 
 
 ## Entrance Randomizer variants
 
-The entrance randomizer variants are very different from the regular map tracker variants. The map does not include any item locations to be checked, because that would result in way too many spots on the map, but instead has locations for the randomized entrances. They are split between `Entrances` (grottos, houses, dungeons, etc) and `Connectors` (connections between different overworld areas).
+The entrance randomizer variants are very different from the regular map tracker variants. The map does not include any item locations to be checked (yet) but instead has locations for the randomized entrances. They are split between `Entrances` (grottos, houses, dungeons, etc) and `Connectors` (connections between different overworld areas).
+
+There are two variants, one for keysanity and one without, but none of the keys are actually used for logic (yet).
 
 All locations have a capture spot, where you can mark what is at that location. If the location is useless, just mark off the icon to clean up the map. Later you can see what led where by simply hovering over the locations.
 
+I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant (slightly outdated but the general principle still is the same).
+
+### Settings (Entrance Randomizer only)
+
 The settings allow you to select which pools are actually shuffled (split based on Dev-R branch, since it is the most popular for ER). If they are not shuffled, the appropriate captures are placed at (almost) all locations and certain locations are hidden since they are useless regardless of any other settings.
 
-There are two variants, one for keysanity and one without, but none of the items are actually used for "logic" (to show/hide entrances).
+#### Shuffle Interior Entrances
+
+- ![Interior Shuffle Off](images/setting_entrance_interiors_off.png "Interior Shuffle Off") No interiors are shuffled.
+- ![Simple Interiors Shuffled](images/setting_entrance_interiors_simple.png "Simple Interiors Shuffled") Interiors except Link's House, Temple of Time, Kak Potion Shop, and Windmill are shuffled.
+- ![All Interiors Shuffled](images/setting_entrance_interiors_all.png "All Interiors Shuffled") All interiors are shuffled.
+
+#### Shuffle Grotto Entrances
+
+- ![Grotto Shuffle Off](images/setting_entrance_grottos_off.png "Grotto Shuffle Off") Grottos and graves are not shuffled.
+- ![Grottos Shuffled](images/setting_entrance_grottos_shuffle.png "Grottos Shuffled") Grottos and graves are shuffled.
+
+#### Shuffle Dungeon Entrances
+
+- ![Dungeon Shuffle Off](images/setting_entrance_dungeons_off.png "Dungeon Shuffle Off") Dungeons are not shuffled.
+- ![Dungeons Shuffled](images/setting_entrance_dungeons_shuffle.png "Dungeons Shuffled") Dungeons are shuffled.
+
+#### Shuffle Overworld Entrances
+
+- ![Overworld Entrance Shuffle Off](images/setting_entrance_overworld_off.png "Overworld Entrance Shuffle Off") Overworld entrances are not shuffled.
+- ![Overworld Entrances Shuffled](images/setting_entrance_overworld_shuffle.png "Overworld Entrances Shuffled") Overworld entrances are shuffled.
+
+#### Randomize Owl Drops
+
+- ![Owl Drop Shuffle Off](images/setting_entrance_owl_off.png "Owl Drop Shuffle Off") Owl drops are not shuffled.
+- ![Owl Drops Shuffled](images/setting_entrance_owl_shuffle.png "Owl Drops Shuffled") Owl drops are shuffled.
+
+#### Randomize Warp Song Destinations
+
+- ![Warp Song Shuffle Off](images/setting_entrance_warpsong_off.png "Warp Song Shuffle Off") Warp song destinations are not shuffled.
+- ![Warp Songs Shuffled](images/setting_entrance_warpsong_shuffle.png "Warp Songs Shuffled") Warp song destinations are shuffled.
+
+#### Randomize Overworld Spawns
+
+- ![Spawn Shuffle Off](images/setting_entrance_spawn_off.png "Spawn Shuffle Off") Spawns are not shuffled.
+- ![Spawn Shuffled](images/setting_entrance_spawn_shuffle.png "Spawn Shuffled") Spawns are shuffled.
+
+### Counters
 
 Additionally there are counters for the useful indoors entrances, so you can evaluate how much focus to put on exploring more entrances:
 
@@ -248,6 +303,4 @@ Additionally there are counters for the useful indoors entrances, so you can eva
 - ![Counter: Scrubs](images/entrance_grotto_scrub.png "Counter: Scrubs") 10 grottos that contain 2 or 3 scrubs each. Only 2 of these are relevant if `Shuffle Scrubs` is off.
 - ![Counter: Cows](images/entrance_grotto_cow.png "Counter: Cows") 4 grottos/houses that only have a cow (Impas House Back, Ingo Barn, Lon Lon Corner Tower, Mountain Bombable Grotto). The other cow spots have their own markers (![Links House](images/entrance_house_link.png) and ![Field Valley Grotto](images/entrance_grotto_field_valley.png))
 - ![Counter: Great Fairies](images/entrance_house_fairy.png "Counter: Great Fairies") 6 Great Fairy Fountains.
-- ![Counter: Shops](images/entrance_house_shop.png "Counter: Shops") 8 randomized shops (Kakariko Potion Shop has 2 separate entrances, only counted once).
-
-I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant (slightly outdated but the general principle still is the same).
+- ![Counter: Shops](images/entrance_house_shop.png "Counter: Shops") 7 randomized shops (Kakariko Potion Shop has 2 separate icons for capture).
