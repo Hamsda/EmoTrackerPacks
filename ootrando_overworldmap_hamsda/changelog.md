@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.1.0
+
+- fixed missing connection between GV Stream and LH
+- changed spawns and warps to show on both ER maps
+
 ## 3.0.0.0
 
 - reworked the Entrance Randomizer variants entirely:
