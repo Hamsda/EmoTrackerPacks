@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.0.1.0
 
 - fixed missing connection between GV Stream and LH
 - changed spawns and warps to show on both ER maps
