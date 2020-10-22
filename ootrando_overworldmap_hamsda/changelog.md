@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed missing connection between GV Stream and LH
+
 ## 3.0.0.0
 
 - reworked the Entrance Randomizer variants entirely:

@@ -1097,7 +1097,16 @@ target_functions_per_regions = {
       end
     },
   },
-  ["GV Stream"] = {},
+  ["GV Stream"] = {
+    ["Lake Hylia"] = {
+      function()
+        return AccessibilityLevel.Normal
+      end,
+      function()
+        return AccessibilityLevel.Normal
+      end
+    },
+  },
   ["GV Crate Ledge"] = {},
   ["GV Fortress Side"] = {
     ["GV Stream"] = {
