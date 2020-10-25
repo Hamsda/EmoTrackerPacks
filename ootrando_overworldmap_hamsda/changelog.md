@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.1.0.0
 
 - fixed Market GS not showing on child map
 - fixed missing houses in default ER capture
