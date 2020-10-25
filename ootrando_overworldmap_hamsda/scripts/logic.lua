@@ -325,13 +325,32 @@ end
 
 function dmt_climb()
   if has_age("both") > 0
-  and has("beans")
   and has("lift1")
+  and (has("bean_trail_yes")
+  or (has("setting_plant_no") and has("beans")))  
   then
     return 1, AccessibilityLevel.Normal
-  else
-    return can_blast()
   end
+
+  local count = 0
+  local level = AccessibilityLevel.None
+
+  if has_age("adult")
+  and has("hoverboots")
+  then
+    if has("logic_dmt_climb_hovers") then
+      return 1, AccessibilityLevel.Normal
+    end
+    count = 1
+    level = AccessibilityLevel.SequenceBreak
+  end
+  
+  local blast_count, blast_level = can_blast()
+  if blast_count > 0 then
+    return blast_count, blast_level
+  end
+
+  return count, level
 end
 
 function dmc_upper_to_lower()
