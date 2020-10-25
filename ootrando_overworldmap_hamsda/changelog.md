@@ -3,6 +3,7 @@
 ## x
 
 - fixed Market GS not showing on child map
+- fixed missing houses in default ER capture
 
 ## 3.0.1.0
 
