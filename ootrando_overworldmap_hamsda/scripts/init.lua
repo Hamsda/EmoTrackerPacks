@@ -66,6 +66,7 @@ else
 end
 
 if has_map then
+  Tracker:AddLayouts("layouts/tricks.json")
   if is_er then
     Tracker:AddMaps("maps/maps_entrance.json")
     Tracker:AddLocations("locations/overworld_entrance.json")

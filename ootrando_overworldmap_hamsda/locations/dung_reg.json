@@ -146,20 +146,32 @@
         "item_count": 1
       },
       {
+        "name": "Staircase Room",
+        "access_rules": [
+          "@Dodongos Cavern/Lobby,$has_age|adult",
+          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
+          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sling",
+          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,$has_explosives",
+          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sword1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Climb",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$has_explosives,$has_age|adult",
-          "@Dodongos Cavern/Lobby,$has_explosives,$has_age|child,sticks",
-          "@Dodongos Cavern/Lobby,$has_explosives,dinsfire,magic",
-          "@Dodongos Cavern/Lobby,lift1,$has_age|adult",
-          "@Dodongos Cavern/Lobby,lift1,$has_age|child,sticks",
-          "@Dodongos Cavern/Lobby,lift1,$has_age|child,dinsfire,magic,sling",
-          "@Dodongos Cavern/Lobby,lift1,$has_age|child,dinsfire,magic,sword1",
-          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|adult",
-          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|child,sling",
-          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|child,sticks",
-          "@Dodongos Cavern/Lobby,dinsfire,magic,$has_age|child,sword1",
-          "@Dodongos Cavern/Lobby,$has_age|adult,bow,[logic_dc_staircase]"
+          "@Dodongos Cavern/Staircase Room,$has_age|adult,$has_explosives",
+          "@Dodongos Cavern/Staircase Room,$has_age|adult,lift1",
+          "@Dodongos Cavern/Staircase Room,$has_age|adult,dinsfire,magic",
+          "@Dodongos Cavern/Staircase Room,$has_age|adult,[logic_dc_staircase],bow",
+          "@Dodongos Cavern/Staircase Room,$has_age|child,sticks,$has_explosives",
+          "@Dodongos Cavern/Staircase Room,$has_age|child,sticks,lift1",
+          "@Dodongos Cavern/Staircase Room,$has_age|child,sticks,dinsfire,magic",
+          "@Dodongos Cavern/Staircase Room,$has_age|child,dinsfire,magic,sling",
+          "@Dodongos Cavern/Staircase Room,$has_age|child,dinsfire,magic,$has_explosives",
+          "@Dodongos Cavern/Staircase Room,$has_age|child,dinsfire,magic,sword1"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -272,11 +284,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$has_age|adult",
-          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
-          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sling",
-          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sword1",
-          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,$has_explosives"
+          "@Dodongos Cavern/Staircase Room"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -306,6 +314,7 @@
         "name": "GS Vines Above Stairs",
         "short_name": "Vines",
         "access_rules": [
+          "@Dodongos Cavern/Staircase Room,[logic_dc_vines_gs],longshot",
           "@Dodongos Cavern/Climb"
         ],
         "visibility_rules": [
@@ -327,7 +336,8 @@
         "name": "Deku Scrubs Near Bomb Bag",
         "short_name": "Near Bomb Bag",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$can_blast"
+          "@Dodongos Cavern/Climb,$can_blast",
+          "@Dodongos Cavern/Climb,[logic_dc_scrub_room],$has_age|adult,lift1"
         ],
         "visibility_rules": [
           "setting_scrub_shuffle_yes"
@@ -635,6 +645,7 @@
         "short_name": "Push Block",
         "access_rules": [
           "hookshot",
+          "[logic_ice_block_gs],hoverboots",
           "{bow}",
           "{$has_explosives}"
         ],
@@ -796,12 +807,6 @@
       {
         "name": "GS First Room",
         "short_name": "First Room",
-        "access_rules": [
-          "dinsfire,magic",
-          "$has_explosives",
-          "$has_age|adult,hookshot",
-          "$has_age|adult,bow"
-        ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
@@ -818,9 +823,6 @@
       {
         "name": "GS Lobby",
         "short_name": "Lobby",
-        "access_rules": [
-          "$has_age|adult,hookshot"
-        ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
@@ -831,9 +833,6 @@
       {
         "name": "First Stalfos Chest",
         "short_name": "Stalfos",
-        "access_rules": [
-          "$has_age|adult"
-        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1321,7 +1320,7 @@
       {
         "name": "Highest Water Level",
         "access_rules": [
-          "@Water Temple/Lobby,$has_age|adult"
+          "@Water Temple/Lobby,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1329,7 +1328,7 @@
         "item_count": 1
       },
       {
-        "name": "Falling Platforms",
+        "name": "Falling Platform Room",
         "access_rules": [
           "@Water Temple/Highest Water Level,water_small_keys:1,[water_small_keys:4]"
         ],
@@ -1341,7 +1340,7 @@
       {
         "name": "Dark Link Region",
         "access_rules": [
-          "@Water Temple/Falling Platforms,water_small_keys:2,[water_small_keys:5],hookshot"
+          "@Water Temple/Falling Platform Room,water_small_keys:2,[water_small_keys:5],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1351,8 +1350,8 @@
       {
         "name": "Dive",
         "access_rules": [
-          "@Water Temple/Highest Water Level,$FTR_or_zora,ironboots",
-          "@Water Temple/Highest Water Level,$FTR_or_zora,[logic_water_temple_torch_longshot],longshot"
+          "@Water Temple/Lobby,$FTR_or_zora,ironboots",
+          "@Water Temple/Lobby,$FTR_or_zora,[logic_water_temple_torch_longshot],longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1402,10 +1401,7 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Water Temple/Dive,hoverboots",
-          "@Water Temple/Dive,hookshot", //these don't really matter since you always need hook in non ER
-          "@Water Temple/Dive,bow",
-          "@Water Temple/Dive,$has_fire,$has_projectile|adult"
+          "@Water Temple/Dive,@Water Temple/Highest Water Level"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -1470,12 +1466,14 @@
         "name": "GS Central Pillar",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple/Middle Water Level,longshot,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Middle Water Level,longshot,bow",
-          "@Water Temple/Middle Water Level,longshot,dinsfire,magic",
-          "@Water Temple/Middle Water Level,hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Middle Water Level,hookshot,faroreswind,magic,bow",
-          "@Water Temple/Middle Water Level,hookshot,faroreswind,magic,dinsfire",
+          "@Water Temple/Dive,ocarina,lullaby,longshot,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Dive,ocarina,lullaby,longshot,bow",
+          "@Water Temple/Dive,ocarina,lullaby,longshot,dinsfire,magic",
+          "@Water Temple/Dive,ocarina,lullaby,hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Dive,ocarina,lullaby,hookshot,faroreswind,magic,bow",
+          "@Water Temple/Dive,ocarina,lullaby,hookshot,faroreswind,magic,dinsfire",
+          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,bow",
+          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,dinsfire,magic",
           "{@Water Temple/Middle Water Level,bow}"
         ],
         "visibility_rules": [
@@ -1501,9 +1499,9 @@
         "name": "GS Falling Platform Room",
         "short_name": "Platform Room",
         "access_rules": [
-          "@Water Temple/Falling Platforms,longshot",
-          "@Water Temple/Falling Platforms,[logic_water_falling_platform_gs],hookshot",
-          "{@Water Temple/Falling Platforms,bow}"
+          "@Water Temple/Falling Platform Room,longshot",
+          "@Water Temple/Falling Platform Room,[logic_water_falling_platform_gs_hookshot],hookshot",
+          "{@Water Temple/Falling Platform Room,bow}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1552,10 +1550,15 @@
         "short_name": "Dragon",
         "access_rules": [
           "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_bombchu],$has_bombchus,scale",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,scale",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,ironboots",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,scale",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,ironboots",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,scale",
+          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,ironboots",
           "@Water Temple/Dark Link Region,ocarina,time,bow,ironboots,$FTR_or_zora",
           "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_jump_dive]",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_bombchu],$has_bombchus,scale"
+          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_adult]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1577,7 +1580,6 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,[logic_water_bk_chest]",
           "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,[logic_water_north_basement_ledge_jump]",
           "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,$has_explosives,lift1",
           "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,hoverboots",
@@ -1744,6 +1746,7 @@
         "name": "GS Falling Spikes Room",
         "short_name": "Crusher",
         "access_rules": [
+          "@Shadow Temple/Huge Pit,[logic_shadow_umbrella_gs]",
           "@Shadow Temple/Huge Pit,hookshot",
           "@Shadow Temple/Huge Pit,[hookshot],bombs,shield2",
           "@Shadow Temple/Huge Pit,[hookshot],bombs,shield3",
@@ -2153,14 +2156,18 @@
         "access_rules": [
           "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
           "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,$has_explosives,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,[logic_spirit_lobby_jump]",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,[logic_spirit_lobby_jump]",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hookshot",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_lobby_gs],boomerang,$has_age|adult,lift2,[logic_spirit_lobby_jump]",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:5],[logic_spirit_lobby_gs],$has_explosives,$child_colossus,boomerang",
           "{@Spirit Temple/Central Chamber,$has_explosives,$child_colossus,sling}",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,hookshot",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,hoverboots",
+          "@Spirit Temple/Central Chamber,[spirit_small_keys:3],$has_age|adult,lift2,[logic_spirit_lobby_jump]",
           "{@Spirit Temple/Central Chamber,$has_age|adult,lift2,bow}"
         ],
         "capture_item": true,
@@ -2229,7 +2236,8 @@
         "short_name": "Statue Ledge",
         "access_rules": [
           "@Spirit Temple/Statue Room Hand Chest,hookshot",
-          "@Spirit Temple/Statue Room Hand Chest,hoverboots"
+          "@Spirit Temple/Statue Room Hand Chest,hoverboots",
+          "@Spirit Temple/Statue Room Hand Chest,[logic_spirit_lobby_jump]"
         ],
         "item_count": 1
       },

@@ -42,6 +42,13 @@
     "codes": "logic_dc_jump"
   },
   {
+    "name": "Dodongo's Cavern Vines GS from Below with Longshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dc_vines_gs.png",
+    "codes": "logic_dc_vines_gs"
+  },
+  {
     "name": "Gerudo Fortress \"Kitchen\" with No Additional Items",
     "type": "toggle",
     "initial_active_state": false,
@@ -147,13 +154,6 @@
     "codes": "logic_goron_city_pot_with_strength"
   },
   {
-    "name": "Water Temple Boss Key Chest with Iron Boots",
-    "type": "toggle",
-    "initial_active_state": false,
-    "img": "images/logic_water_bk_chest.png",
-    "codes": "logic_water_bk_chest"
-  },
-  {
     "name": "Adult Kokiri Forest GS with Hover Boots",
     "type": "toggle",
     "initial_active_state": false,
@@ -180,6 +180,13 @@
     "initial_active_state": false,
     "img": "images/logic_spirit_lobby_gs.png",
     "codes": "logic_spirit_lobby_gs"
+  },
+  {
+    "name": "Spirit Temple Main Room Jump from Hands to Upper Ledges",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_lobby_jump.png",
+    "codes": "logic_spirit_lobby_jump"
   },
   {
     "name": "Spirit Temple MQ Sun Block Room GS with Boomerang",
@@ -381,8 +388,8 @@
     "name": "Water Temple Falling Platform Room GS with Hookshot",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_water_falling_platform_gs.png",
-    "codes": "logic_water_falling_platform_gs"
+    "img": "images/logic_water_falling_platform_gs_hookshot.png",
+    "codes": "logic_water_falling_platform_gs_hookshot"
   },
   {
     "name": "Water Temple Serpent River GS without Iron Boots",
@@ -397,6 +404,13 @@
     "initial_active_state": false,
     "img": "images/logic_water_hookshot_entry.png",
     "codes": "logic_water_hookshot_entry"
+  },
+  {
+    "name": "Death Mountain Trail Climb with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dmt_climb_hovers.png",
+    "codes": "logic_dmt_climb_hovers"
   },
   {
     "name": "Death Mountain Trail Upper Red Rock GS without Hammer",
@@ -432,6 +446,13 @@
     "initial_active_state": false,
     "img": "images/logic_zora_with_hovers.png",
     "codes": "logic_zora_with_hovers"
+  },
+  {
+    "name": "Zora's Domain GS with No Additional Items",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_domain_gs.png",
+    "codes": "logic_domain_gs"
   },
   {
     "name": "Shadow Temple River Statue with Bombchu",
@@ -483,6 +504,13 @@
     "codes": "logic_ice_mq_scarecrow"
   },
   {
+    "name": "Ice Cavern Block Room GS with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_ice_block_gs.png",
+    "codes": "logic_ice_block_gs"
+  },
+  {
     "name": "Reverse Wasteland",
     "type": "toggle",
     "initial_active_state": false,
@@ -516,6 +544,13 @@
     "initial_active_state": false,
     "img": "images/logic_graveyard_poh.png",
     "codes": "logic_graveyard_poh"
+  },
+  {
+    "name": "Hyrule Castle Storms Grotto GS with Just Boomerang",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_castle_storms_gs.png",
+    "codes": "logic_castle_storms_gs"
   },
   {
     "name": "Death Mountain Trail Soil GS without Destroying Boulder",
@@ -567,6 +602,13 @@
     "codes": "logic_water_temple_torch_longshot"
   },
   {
+    "name": "Water Temple Central Pillar GS with Iron Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_central_gs_irons.png",
+    "codes": "logic_water_central_gs_irons"
+  },
+  {
     "name": "Water Temple Boss Key Jump Dive",
     "type": "toggle",
     "initial_active_state": false,
@@ -581,11 +623,11 @@
     "codes": "logic_water_dragon_jump_dive"
   },
   {
-    "name": "Water Temple Dragon Statue with Bombchu",
+    "name": "Water Temple Dragon Statue Switch from Above the Water as Adult",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_water_dragon_bombchu.png",
-    "codes": "logic_water_dragon_bombchu"
+    "img": "images/logic_water_dragon_adult.png",
+    "codes": "logic_water_dragon_adult"
   },
   {
     "name": "Goron City Maze Left Chest with Hover Boots",
@@ -593,6 +635,13 @@
     "initial_active_state": false,
     "img": "images/logic_goron_city_leftmost.png",
     "codes": "logic_goron_city_leftmost"
+  },
+  {
+    "name": "Goron City Grotto with Hookshot While Taking Damage",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_goron_grotto.png",
+    "codes": "logic_goron_grotto"
   },
   {
     "name": "Deku Tree Basement without Slingshot",
@@ -628,6 +677,13 @@
     "initial_active_state": false,
     "img": "images/logic_dc_mq_child_bombs.png",
     "codes": "logic_dc_mq_child_bombs"
+  },
+  {
+    "name": "Dodongo's Cavern Two Scrub Room with Strength",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dc_scrub_room.png",
+    "codes": "logic_dc_scrub_room"
   },
   {
     "name": "Dodongo's Cavern Child Slingshot Skips",
@@ -670,6 +726,13 @@
     "initial_active_state": false,
     "img": "images/logic_shadow_umbrella.png",
     "codes": "logic_shadow_umbrella"
+  },
+  {
+    "name": "Shadow Temple Falling Spikes GS with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_shadow_umbrella_gs.png",
+    "codes": "logic_shadow_umbrella_gs"
   },
   {
     "name": "Water Temple Central Bow Target without Longshot or Hover Boots",

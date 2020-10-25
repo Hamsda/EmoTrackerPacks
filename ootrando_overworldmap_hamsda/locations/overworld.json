@@ -2727,7 +2727,8 @@
                           "ocarina,time,longshot",
                           "ocarina,time,nayrus,magic",
                           "hookshot,$damage_below_ohko,$goron_tunic",
-                          "hookshot,nayrus,magic"
+                          "hookshot,nayrus,magic",
+                          "hookshot,$damage_below_quadruple,[logic_goron_grotto]"
                         ],
                         "visibility_rules": [
                           "setting_scrub_shuffle_yes"
@@ -3090,9 +3091,9 @@
                         "name": "DMT GS Bean Patch",
                         "short_name": "GS",
                         "access_rules": [
-                          "$has_age|child,$has_bottle,$has_explosives",
-                          "$child_death_mountain,$has_bottle,lift1",
-                          "$child_death_mountain,$has_bottle,[logic_dmt_soil_gs],boomerang"
+                          "$has_age|child,$has_bottle,$can_child_attack,$has_explosives",
+                          "$child_death_mountain,$has_bottle,$can_child_attack,lift1",
+                          "$child_death_mountain,$has_bottle,$can_child_attack,[logic_dmt_soil_gs],boomerang"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3877,7 +3878,8 @@
                         "name": "HC GS Storms Grotto",
                         "short_name": "GS",
                         "access_rules": [
-                          "boomerang,$has_explosives",
+                          "$has_explosives,boomerang",
+                          "[logic_castle_storms_gs],boomerang",
                           "{$has_explosives}",
                           "{$hintable}"
                         ],
@@ -4357,7 +4359,8 @@
                         "access_rules": [
                           "hookshot",
                           "bow",
-                          "magic"
+                          "magic",
+                          "[logic_domain_gs]"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"

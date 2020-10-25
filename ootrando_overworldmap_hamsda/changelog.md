@@ -4,6 +4,18 @@
 
 - fixed Market GS not showing on child map
 - fixed missing houses in default ER capture
+- changed logic based on [this PR](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1072)
+- added sequence breaks for new logic tricks:
+  - DC vines GS from below w/ long
+  - Spirit lobby jump from hands to ledges
+  - DMT climb w/ hovers
+  - ZD GS w/ nothing
+  - IC block room GS w/ hovers
+  - HC storms grotto GS w/ just rang
+  - Water central pillar GS w/ irons
+  - GC grotto w/ hook while taking damage
+  - DC two scrub room w/ str
+  - Shadow crusher GS w/ hovers
 
 ## 3.0.1.0
 

@@ -1779,6 +1779,7 @@
         "name": "GS Falling Spikes Room",
         "short_name": "Crusher",
         "access_rules": [
+          "@Shadow Temple MQ/Lower Huge Pit,[logic_shadow_umbrella_gs],hoverboots",
           "@Shadow Temple MQ/Lower Huge Pit,hookshot",
           "@Shadow Temple MQ/Lower Huge Pit,[hookshot],bombs,shield2",
           "@Shadow Temple MQ/Lower Huge Pit,[hookshot],bombs,shield3",
