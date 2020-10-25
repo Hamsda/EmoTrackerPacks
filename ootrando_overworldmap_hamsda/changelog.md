@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Market GS not showing on child map
+
 ## 3.0.1.0
 
 - fixed missing connection between GV Stream and LH
