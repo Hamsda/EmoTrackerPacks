@@ -197,6 +197,13 @@ This setting determines if Medigoron and Carpet Salesman items are shuffled.
 - ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
 - ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
 
+#### Skip Child Zelda
+
+This setting determines if visiting Zelda in the Hyrule Castle Gardens is skipped.
+
+- ![Child Zelda not skipped](images/setting_zelda_off.png "Child Zelda not skipped") Zelda has to be visited like in the vanilla game.
+- ![Child Zelda skipped](images/setting_zelda_free.png "Child Zelda skipped") Zelda already counts as visited, allowing dependent events to unfold.
+
 #### Complete Mask Quest
 
 This setting determines if all masks will be available once the Happy Mask Shop is open.
@@ -247,11 +254,22 @@ This tab also contains a list of (some of) the logic tricks that can be enabled 
 
 ## Entrance Randomizer variants
 
-The entrance randomizer variants are very different from the regular map tracker variants. The map does not include any item locations to be checked (yet) but instead has locations for the randomized entrances. They are split between `Entrances` (grottos, houses, dungeons, etc) and `Connectors` (connections between different overworld areas).
+The entrance randomizer variants are very different from the regular map tracker variants. There aren't two different maps for child and adult, but rather three maps in total:
+
+- `Overworld`: randomized checks in the overworld
+- `Entrances`: randomized or otherwise important grottos, houses, and dungeons
+- `Connectors`: connections between different overworld areas
 
 There are two variants, one for keysanity and one without, but none of the keys are actually used for logic (yet).
 
-All locations have a capture spot, where you can mark what is at that location. If the location is useless, just mark off the icon to clean up the map. Later you can see what led where by simply hovering over the locations.
+All `Entrances` and `Connectors` have a capture spot, where you can mark what is at that location. Later you can see what led where by simply hovering over the locations with your mouse. If the location is useless, just mark off the icon to clean up the map. Some important locations should not be cleared, because they might be relevant to logic as pathways:
+
+- Links House
+- Temple of Time
+- Dampes Grave
+- Windmill
+- Potion Shop Front/Back
+- Spirit Temple
 
 I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant (slightly outdated but the general principle still is the same).
 
