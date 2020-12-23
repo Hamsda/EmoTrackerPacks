@@ -219,6 +219,8 @@ end
 
 
 function tracker_on_accessibility_updated()
+  amount_cache = {}
+  
   update_smallkeys()
   update_bridge_amount_max()
   update_fortress()

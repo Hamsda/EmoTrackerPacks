@@ -48,6 +48,8 @@ function update_current_captures()
 end
 
 function tracker_on_accessibility_updated()
+  amount_cache = {}
+
   update_smallkeys()
   update_fortress()
   update_collected_capture()

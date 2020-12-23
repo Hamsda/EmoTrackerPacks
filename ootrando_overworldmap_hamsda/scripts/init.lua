@@ -10,7 +10,29 @@ function get_object(name)
   end
 end
 
-
+amount_cache = {}
+function has(item, amount)
+  if not amount_cache[item] then
+    amount_cache[item] = Tracker:ProviderCountForCode(item)
+  end
+  local count = amount_cache[item] or 0
+  amount = tonumber(amount)
+  if not amount then
+    amount = 1
+  end
+  return count >= amount
+end
+function has_exact(item, amount)
+  if not amount_cache[item] then
+    amount_cache[item] = Tracker:ProviderCountForCode(item)
+  end
+  local count = amount_cache[item] or 0
+  amount = tonumber(amount)
+  if not amount then
+    return false
+  end
+  return count == amount
+end
 
 settings_cache = {}
 queued_changes = {}
