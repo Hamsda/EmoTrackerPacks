@@ -8,6 +8,7 @@
   - fixed some logic errors
   - improved overall performance
 - updated settings defaults for season 4
+- changed GS counter to only include non shuffled GS
 
 ## 3.1.0.0
 
