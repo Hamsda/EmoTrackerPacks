@@ -10,7 +10,29 @@ function get_object(name)
   end
 end
 
-
+amount_cache = {}
+function has(item, amount)
+  if not amount_cache[item] then
+    amount_cache[item] = Tracker:ProviderCountForCode(item)
+  end
+  local count = amount_cache[item] or 0
+  amount = tonumber(amount)
+  if not amount then
+    amount = 1
+  end
+  return count >= amount
+end
+function has_exact(item, amount)
+  if not amount_cache[item] then
+    amount_cache[item] = Tracker:ProviderCountForCode(item)
+  end
+  local count = amount_cache[item] or 0
+  amount = tonumber(amount)
+  if not amount then
+    return false
+  end
+  return count == amount
+end
 
 settings_cache = {}
 queued_changes = {}
@@ -29,12 +51,10 @@ function apply_queued_changes()
 end
 
 
-
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 has_keys = variant:find("keysanity")
 is_er = variant:find("entrance")
-
 
 
 if has_map then
@@ -57,7 +77,6 @@ Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 
-ScriptHost:LoadScript("scripts/logic_shared.lua")
 if is_er then
   ScriptHost:LoadScript("scripts/regions.lua")
   ScriptHost:LoadScript("scripts/logic_entrance.lua")
