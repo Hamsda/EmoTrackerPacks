@@ -3,6 +3,10 @@
 ## x
 
 - fixed bridge condition counter in ER
+- improved ER variant:
+  - added overworld checks (dungeons coming soon (tm))
+  - fixed some logic errors
+  - improved overall performance
 
 ## 3.1.0.0
 

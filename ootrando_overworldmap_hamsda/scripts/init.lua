@@ -51,12 +51,10 @@ function apply_queued_changes()
 end
 
 
-
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 has_keys = variant:find("keysanity")
 is_er = variant:find("entrance")
-
 
 
 if has_map then
@@ -79,7 +77,6 @@ Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
 
-ScriptHost:LoadScript("scripts/logic_shared.lua")
 if is_er then
   ScriptHost:LoadScript("scripts/regions.lua")
   ScriptHost:LoadScript("scripts/logic_entrance.lua")

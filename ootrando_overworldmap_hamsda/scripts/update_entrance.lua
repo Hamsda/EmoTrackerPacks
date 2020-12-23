@@ -1,29 +1,22 @@
-for section,info in pairs(info_per_section) do
-  local section_object = get_object(section)
-  if section_object then
-    info.region = section_object.Owner.Parent.Name
-  end
-end
-
-function update_vanilla_captures()
-  for section,info in pairs(info_per_section) do
-    local has_setting = has(info.setting)
-    if not_like_cache(info.setting, has_setting) then
+for region, region_data in pairs(data_per_region) do
+  for target, target_data in pairs(region_data.exits) do
+    if
+      not region_data.interior and not region_data.special and not region_data.dungeon and not target_data.fixed and
+        not (region_data.scene and data_per_region[target] and data_per_region[target].scene and
+          region_data.scene == data_per_region[target].scene)
+     then
+      local section = string.format("@%s -> %s/Capture", region, target)
       local section_object = get_object(section)
-      local item_object = get_object(info.vanilla_capture)
-      if section_object and item_object then
-        if has_setting then
-          section_object.CapturedItem = nil
-        else
-          section_object.CapturedItem = item_object
-        end
+      if section_object then
+        target_data.section_object = section_object
+      else
+        print("missing section", section)
       end
     end
   end
 end
 
-function get_capture_per_section(section)
-  local section_object = get_object(section)
+function get_capture_per_section(section_object)
   if section_object then
     local capture = section_object.CapturedItem
     if capture and capture.Name then
@@ -32,17 +25,22 @@ function get_capture_per_section(section)
   end
   return nil
 end
-function update_current_captures()
-  for region,_ in pairs(origin_per_special_region) do
-    origin_per_special_region[region] = ""
+
+function update_region_captures()
+  for region, data in pairs(special_regions) do
+    data.origin = nil
   end
-  for section,info in pairs(info_per_section) do
-    info.capture = get_capture_per_section(section)
-    if info.region and info.region ~= "Special Regions"
-    and info.capture and origin_per_special_region[info.capture] 
-    then
-      origin_per_special_region[info.capture] = info.region or ""
-      if debugging then print("special ", info.capture, "at", info.region) end
+  for region, region_data in pairs(data_per_region) do
+    for target, target_data in pairs(region_data.exits) do
+      if target_data.section_object then
+        target_data.capture = get_capture_per_section(target_data.section_object)
+        if target_data.capture and special_regions[target_data.capture] and region_data.scene ~= "Root" then
+          special_regions[target_data.capture].origin = region
+          if er_debugging then
+            print("special:", target_data.capture, "at", region)
+          end
+        end
+      end
     end
   end
 end
@@ -54,11 +52,11 @@ function tracker_on_accessibility_updated()
   update_bridge_amount_max()
   update_fortress()
   update_collected_capture()
-  update_vanilla_captures()
-  update_current_captures()
+  update_region_captures()
   update_free_zelda()
   build_regions()
-  
+
   apply_queued_changes()
+  
   get_object("dummy").Active = not get_object("dummy").Active
 end
