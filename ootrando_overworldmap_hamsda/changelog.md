@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed bridge condition counter in ER
+
 ## 3.1.0.0
 
 - fixed Market GS not showing on child map
