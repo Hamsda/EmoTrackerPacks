@@ -473,7 +473,6 @@ function dmc_upper()
   local climb_count, climb_level = dmt_climb()
   local goron_count, goron_level = link_the_goron()
 
-<<<<<<< HEAD
   if climb_count > 0 or goron_count > 0 then
     if climb_level == AccessibilityLevel.Normal
     or goron_level == AccessibilityLevel.Normal
@@ -483,9 +482,6 @@ function dmc_upper()
     return AccessibilityLevel.SequenceBreak
   end
   return AccessibilityLevel.None
-=======
-  return or_accessibility(climb, goron) --TODO: change this one occurence or write them for 2 param logic
->>>>>>> 84d982894555080d2708dc42c9214fea135b6ff1
 end
 
 function dmc_lower()
