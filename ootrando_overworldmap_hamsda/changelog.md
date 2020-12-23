@@ -10,6 +10,7 @@
 - updated settings defaults for season 4
 - changed GS counter to only include non shuffled GS
 - changed layouts to accomodate new ER map
+- adjusted position of many locations
 
 ## 3.1.0.0
 
