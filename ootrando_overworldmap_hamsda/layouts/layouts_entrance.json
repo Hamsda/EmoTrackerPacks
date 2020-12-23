@@ -46,6 +46,15 @@
               "dock": "top",
               "tabs": [
                 {
+                  "title": "Overworld",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "overworldchecks"
+                    ]
+                  }
+                },
+                {
                   "title": "Entrances",
                   "content": {
                     "type": "map",
@@ -158,6 +167,15 @@
         {
           "type": "tabbed",
           "tabs": [
+            {
+              "title": "Overworld",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "overworldchecks"
+                ]
+              }
+            },
             {
               "title": "Entrances",
               "content": {
