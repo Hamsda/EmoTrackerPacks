@@ -4,7 +4,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 2,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_forest_closed.png",
@@ -27,7 +27,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 2,
+    "initial_stage_idx": 0,
     "stages": [
       {
         "img": "images/setting_kak_open.png",
@@ -154,7 +154,7 @@
     "codes": "setting_bridge_amount",
     "disabled_img_mods": "@enabled",
     "max_quantity": 6,
-    "initial_quantity": 6
+    "initial_quantity": 2
   },
   {
     "name": "Number of Trials",
@@ -384,6 +384,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_zelda_off.png",

@@ -7,6 +7,7 @@
   - added overworld checks (dungeons coming soon (tm))
   - fixed some logic errors
   - improved overall performance
+- updated settings defaults for season 4
 
 ## 3.1.0.0
 
