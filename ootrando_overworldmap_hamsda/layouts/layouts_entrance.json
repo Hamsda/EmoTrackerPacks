@@ -46,44 +46,110 @@
               "dock": "top",
               "tabs": [
                 {
-                  "title": "Overworld",
+                  "title": "One Map",
+                  "icon": "images/map.png",
                   "content": {
-                    "type": "map",
-                    "maps": [
-                      "overworldchecks"
+                    "type": "tabbed",
+                    "tabs": [
+                      {
+                        "title": "Overworld",
+                        "content": {
+                          "type": "map",
+                          "maps": [
+                            "overworldchecks"
+                          ]
+                        }
+                      },
+                      {
+                        "title": "Entrances",
+                        "content": {
+                          "type": "map",
+                          "maps": [
+                            "entrances"
+                          ]
+                        }
+                      },
+                      {
+                        "title": "Connectors",
+                        "content": {
+                          "type": "map",
+                          "maps": [
+                            "connectors"
+                          ]
+                        }
+                      }
                     ]
                   }
                 },
                 {
-                  "title": "Entrances",
-                  "content": {
-                    "type": "map",
-                    "maps": [
-                      "entrances"
-                    ]
-                  }
-                },
-                {
-                  "title": "Connectors",
-                  "content": {
-                    "type": "map",
-                    "maps": [
-                      "connectors"
-                    ]
-                  }
-                },
-                {
-                  "title": "Both",
+                  "title": "Two Maps",
+                  "icon": "images/map.png",
                   "content": {
                     "type": "array",
                     "orientation": "vertical",
                     "content": [
                       {
-                        "type": "map",
-                        "orientation": "vertical",
-                        "maps": [
-                          "entrances",
-                          "connectors"
+                        "type": "tabbed",
+                        "tabs": [
+                          {
+                            "title": "Overworld",
+                            "content": {
+                              "type": "map",
+                              "maps": [
+                                "overworldchecks"
+                              ]
+                            }
+                          },
+                          {
+                            "title": "Entrances",
+                            "content": {
+                              "type": "map",
+                              "maps": [
+                                "entrances"
+                              ]
+                            }
+                          },
+                          {
+                            "title": "Connectors",
+                            "content": {
+                              "type": "map",
+                              "maps": [
+                                "connectors"
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "tabbed",
+                        "tabs": [
+                          {
+                            "title": "Overworld",
+                            "content": {
+                              "type": "map",
+                              "maps": [
+                                "overworldchecks"
+                              ]
+                            }
+                          },
+                          {
+                            "title": "Entrances",
+                            "content": {
+                              "type": "map",
+                              "maps": [
+                                "entrances"
+                              ]
+                            }
+                          },
+                          {
+                            "title": "Connectors",
+                            "content": {
+                              "type": "map",
+                              "maps": [
+                                "connectors"
+                              ]
+                            }
+                          }
                         ]
                       }
                     ]
@@ -190,17 +256,6 @@
               "content": {
                 "type": "map",
                 "maps": [
-                  "connectors"
-                ]
-              }
-            },
-            {
-              "title": "Both",
-              "content": {
-                "type": "map",
-                "orientation": "horizontal",
-                "maps": [
-                  "entrances",
                   "connectors"
                 ]
               }

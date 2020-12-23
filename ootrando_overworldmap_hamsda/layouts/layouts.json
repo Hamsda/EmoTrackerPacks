@@ -46,27 +46,36 @@
               "dock": "top",
               "tabs": [
                 {
-                  "title": "Child",
-                  "icon": "images/sword1.png",
+                  "title": "One Map",
+                  "icon": "images/map.png",
                   "content": {
-                    "type": "map",
-                    "maps": [
-                      "child"
+                    "type": "tabbed",
+                    "tabs": [
+                      {
+                        "title": "Child",
+                        "icon": "images/sword1.png",
+                        "content": {
+                          "type": "map",
+                          "maps": [
+                            "child"
+                          ]
+                        }
+                      },
+                      {
+                        "title": "Adult",
+                        "icon": "images/sword2.png",
+                        "content": {
+                          "type": "map",
+                          "maps": [
+                            "adult"
+                          ]
+                        }
+                      }
                     ]
                   }
                 },
                 {
-                  "title": "Adult",
-                  "icon": "images/sword2.png",
-                  "content": {
-                    "type": "map",
-                    "maps": [
-                      "adult"
-                    ]
-                  }
-                },
-                {
-                  "title": "Both",
+                  "title": "Two Maps",
                   "icon": "images/map.png",
                   "content": {
                     "type": "array",
@@ -177,18 +186,6 @@
               "content": {
                 "type": "map",
                 "maps": [
-                  "adult"
-                ]
-              }
-            },
-            {
-              "title": "Both",
-              "icon": "images/map.png",
-              "content": {
-                "type": "map",
-                "orientation": "horizontal",
-                "maps": [
-                  "child",
                   "adult"
                 ]
               }
