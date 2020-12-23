@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.2.0.0
 
 - fixed bridge condition counter in ER
 - improved ER variant:
