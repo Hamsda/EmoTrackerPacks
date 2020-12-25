@@ -3966,23 +3966,20 @@
                 "children": [
                   {
                     "name": "ZR Frogs",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives",
-                      "$has_age|child,scale1",
-                      "{$hintable}"
-                    ],
                     "sections": [
                       {
                         "name": "ZR Frogs in the Rain",
                         "access_rules": [
-                          "$has_age|child,ocarina,storm"
+                          "$has_age|child,$has_explosives,ocarina,storm",
+                          "$has_age|child,scale1,ocarina,storm"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "ZR Frogs Ocarina Game",
                         "access_rules": [
-                          "$has_age|child,ocarina,lullaby,saria,epona,sun,time,storm",
+                          "$has_age|child,$has_explosives,ocarina,lullaby,saria,epona,sun,time,storm",
+                          "$has_age|child,scale1,ocarina,lullaby,saria,epona,sun,time,storm",
                           "{$hintable}"
                         ],
                         "capture_item": true,
