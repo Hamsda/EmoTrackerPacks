@@ -27,6 +27,35 @@ function has_age(age)
   return 0, AccessibilityLevel.None
 end
 
+function spawn_access(region, age)
+  region = region or ""
+  age = age or ""
+
+  if has_age(age) == 0 then
+    return 0, AccessibilityLevel.None
+  end
+
+  local spawn_object = nil
+
+  if age == "child" then
+    spawn_object = get_object("@Child Spawn -> KF Links House/Capture")
+  elseif age == "adult" then
+    spawn_object = get_object("@Adult Spawn -> Temple of Time/Capture")
+  else
+    print("spawn_access wrong age argument:", age)
+    return 0, AccessibilityLevel.None
+  end
+
+  if
+    spawn_object and spawn_object.CapturedItem and spawn_object.CapturedItem.Name and
+      spawn_object.CapturedItem.Name == region
+   then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  return 0, AccessibilityLevel.None
+end
+
 function night_gs()
   if has("setting_skulltulas_sun_off") or (has("ocarina") and has("sun")) then
     return 1, AccessibilityLevel.Normal
@@ -193,7 +222,10 @@ function mask_shop_open()
 end
 
 function beyond_mido()
-  if has("ocarina") and (has("saria") or has("minuet")) or has("logic_mido_backflip") then
+  if
+    (has("ocarina") and (has("saria") or has("minuet"))) or has("logic_mido_backflip") or
+      spawn_access("Sacred Forest Meadow", "adult") > 0
+   then
     return 1, AccessibilityLevel.Normal
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -212,18 +244,21 @@ function gerudo_card()
   end
 end
 
-function gerudo_bridge()
+function _gerudo_bridge()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
-  if has("longshot") or has("ocarina") and has("epona") or has("gerudo_fortress_open") then
+  if
+    has("longshot") or has("ocarina") and has("epona") or has("gerudo_fortress_open") or
+      spawn_access("Gerudo Fortress", "adult") > 0
+   then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None
   end
 end
 
-function quicksand()
+function _quicksand()
   if has("longshot") or has("hoverboots") or has("logic_wasteland_crossing") then
     return 1, AccessibilityLevel.Normal
   else
@@ -231,7 +266,7 @@ function quicksand()
   end
 end
 
-function wasteland_forward()
+function _wasteland_forward()
   if has("logic_lens_wasteland") or has("lens") and has("magic") then
     return 1, AccessibilityLevel.Normal
   else
@@ -239,7 +274,7 @@ function wasteland_forward()
   end
 end
 
-function wasteland_reverse()
+function _wasteland_reverse()
   if has("logic_reverse_wasteland") then
     return 1, AccessibilityLevel.Normal
   else
@@ -252,13 +287,13 @@ function gerudo_valley_far_side()
     return 0, AccessibilityLevel.None
   end
 
-  if gerudo_bridge() > 0 then
+  if _gerudo_bridge() > 0 then
     return 1, AccessibilityLevel.Normal
   end
 
   if has("ocarina") and has("requiem") then
-    local _, reverse_level = wasteland_reverse()
-    local _, quicksand_level = quicksand()
+    local _, reverse_level = _wasteland_reverse()
+    local _, quicksand_level = _quicksand()
 
     if reverse_level == AccessibilityLevel.SequenceBreak or quicksand_level == AccessibilityLevel.SequenceBreak then
       return 1, AccessibilityLevel.SequenceBreak
@@ -274,9 +309,9 @@ function wasteland()
   local forward_count = 0
   local forward_level = AccessibilityLevel.Normal
 
-  local bridge_count = gerudo_bridge()
+  local bridge_count = _gerudo_bridge()
   local card_count, card_level = gerudo_card()
-  local _, quicksand_level = quicksand()
+  local _, quicksand_level = _quicksand()
 
   if bridge_count > 0 and card_count > 0 then
     forward_count = 1
@@ -289,7 +324,7 @@ function wasteland()
   end
 
   if has("ocarina") and has("requiem") then
-    return wasteland_reverse()
+    return _wasteland_reverse()
   end
 
   return forward_count, forward_level
@@ -308,7 +343,7 @@ function adult_colossus()
     return 1, AccessibilityLevel.Normal
   end
 
-  local bridge_count = gerudo_bridge()
+  local bridge_count = _gerudo_bridge()
   if bridge_count == 0 then
     return 0, AccessibilityLevel.None
   end
@@ -319,8 +354,8 @@ function adult_colossus()
   end
   local level = card_level
 
-  local _, quicksand_level = quicksand()
-  local _, forward_level = wasteland_forward()
+  local _, quicksand_level = _quicksand()
+  local _, forward_level = _wasteland_forward()
   if quicksand_level == AccessibilityLevel.SequenceBreak or forward_level == AccessibilityLevel.SequenceBreak then
     level = AccessibilityLevel.SequenceBreak
   end
@@ -342,6 +377,14 @@ function child_death_mountain()
   end
 
   if has_age("adult") > 0 and (has("lift1") or has("bow") or has("hammer")) then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  if
+    spawn_access("DMC Lower", "child") > 0 or spawn_access("Death Mountain Summit", "child") > 0 or
+      spawn_access("DMC Fairy", "child") > 0 or
+      spawn_access("DMT Fairy", "child") > 0
+   then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -381,6 +424,9 @@ function goron_tunic()
   if has("redtunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet") then
+    if spawn_access("GC Shop", "adult") > 0 then
+      return 1, AccessibilityLevel.Normal
+    end
     return link_the_goron()
   end
   return 0, AccessibilityLevel.None
@@ -398,7 +444,11 @@ function FTR_or_goron()
   return 1, AccessibilityLevel.SequenceBreak
 end
 
-function dmt_climb()
+function _dmt_climb()
+  if spawn_access("Death Mountain Summit", "adult") > 0 or spawn_access("DMT Fairy", "adult") > 0 then
+    return 1, AccessibilityLevel.Normal
+  end
+
   if has_age("both") > 0 and has("lift1") and (has("bean_trail_yes") or (has("setting_plant_no") and has("beans"))) then
     return 1, AccessibilityLevel.Normal
   end
@@ -406,7 +456,7 @@ function dmt_climb()
   local count = 0
   local level = AccessibilityLevel.None
 
-  if has_age("adult") and has("hoverboots") then
+  if has_age("adult") > 0 and has("hoverboots") then
     if has("logic_dmt_climb_hovers") then
       return 1, AccessibilityLevel.Normal
     end
@@ -422,7 +472,7 @@ function dmt_climb()
   return count, level
 end
 
-function dmc_upper_to_lower()
+function _dmc_upper_to_lower()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
@@ -438,14 +488,14 @@ function dmc_upper_to_lower()
   return 0, AccessibilityLevel.None
 end
 
-function dmc_upper_to_central()
+function _dmc_upper_to_central()
   if has_age("adult") > 0 and has("redtunic") and has("longshot") and damage_single_instance_quadruple() > 0 then
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None
 end
 
-function dmc_lower_to_central()
+function _dmc_lower_to_central()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
@@ -455,7 +505,7 @@ function dmc_lower_to_central()
   return 0, AccessibilityLevel.None
 end
 
-function dmc_central_to_lower()
+function _dmc_central_to_lower()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
@@ -466,26 +516,36 @@ function dmc_central_to_lower()
 end
 
 function dmc_upper()
-  if has("ocarina") and has("bolero") and dmc_central_to_lower() > 0 then
+  if
+    spawn_access("DMC Lower", "adult") > 0 or spawn_access("Death Mountain Summit", "adult") > 0 or
+      spawn_access("DMC Fairy", "adult") > 0 or
+      spawn_access("DMT Fairy", "adult") > 0
+   then
     return 1, AccessibilityLevel.Normal
   end
 
-  local climb_count, climb_level = dmt_climb()
+  if has("ocarina") and has("bolero") and _dmc_central_to_lower() > 0 then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  local climb_count, climb_level = _dmt_climb()
   local goron_count, goron_level = link_the_goron()
 
   if climb_count > 0 or goron_count > 0 then
-    if climb_level == AccessibilityLevel.Normal
-    or goron_level == AccessibilityLevel.Normal
-    then
-      return AccessibilityLevel.Normal
+    if climb_level == AccessibilityLevel.Normal or goron_level == AccessibilityLevel.Normal then
+      return 1, AccessibilityLevel.Normal
     end
-    return AccessibilityLevel.SequenceBreak
+    return 1, AccessibilityLevel.SequenceBreak
   end
-  return AccessibilityLevel.None
+  return 0, AccessibilityLevel.None
 end
 
 function dmc_lower()
-  if has("ocarina") and has("bolero") and dmc_central_to_lower() > 0 then
+  if spawn_access("DMC Lower", "adult") > 0 or spawn_access("DMC Fairy", "adult") > 0 then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  if has("ocarina") and has("bolero") and _dmc_central_to_lower() > 0 then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -502,9 +562,9 @@ function dmc_lower()
     end
   end
 
-  local climb_count, climb_level = dmt_climb()
-  local upper_to_lower_count, upper_to_lower_level = dmc_upper_to_lower()
-  local upper_to_central_count, upper_to_central_level = dmc_upper_to_central()
+  local climb_count, climb_level = _dmt_climb()
+  local upper_to_lower_count, upper_to_lower_level = _dmc_upper_to_lower()
+  local upper_to_central_count, upper_to_central_level = _dmc_upper_to_central()
   if climb_count > 0 and (upper_to_lower_count > 0 or upper_to_central_count > 0) then
     if
       climb_level == AccessibilityLevel.Normal and
@@ -529,7 +589,10 @@ function dmc_central()
   local level = AccessibilityLevel.None
 
   local goron_count, goron_level = link_the_goron()
-  local lower_to_central_count, lower_to_central_level = dmc_lower_to_central()
+  if spawn_access("DMC Lower", "adult") > 0 or spawn_access("DMC Fairy", "adult") > 0 then
+    goron_count, goron_level = 1, AccessibilityLevel.Normal
+  end
+  local lower_to_central_count, lower_to_central_level = _dmc_lower_to_central()
   if goron_count > 0 and lower_to_central_count > 0 then
     if goron_level == AccessibilityLevel.Normal and lower_to_central_level == AccessibilityLevel.Normal then
       return 1, AccessibilityLevel.Normal
@@ -539,9 +602,9 @@ function dmc_central()
     end
   end
 
-  local climb_count, climb_level = dmt_climb()
-  local upper_to_lower_count, upper_to_lower_level = dmc_upper_to_lower()
-  local upper_to_central_count, upper_to_central_level = dmc_upper_to_central()
+  local climb_count, climb_level = _dmt_climb()
+  local upper_to_lower_count, upper_to_lower_level = _dmc_upper_to_lower()
+  local upper_to_central_count, upper_to_central_level = _dmc_upper_to_central()
   if climb_count > 0 and ((upper_to_lower_count > 0 and lower_to_central_count > 0) or upper_to_central_count > 0) then
     if
       climb_level == AccessibilityLevel.Normal and
@@ -558,6 +621,38 @@ function dmc_central()
   return count, level
 end
 
+function child_river()
+  if has_age("child") == 0 then
+    return 0, AccessibilityLevel.None
+  end
+
+  if has("scale1") or spawn_access("Zora River", "child") > 0 or spawn_access("Zoras Domain", "child") > 0 then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  return has_explosives()
+end
+
+function child_domain()
+  if has_age("child") == 0 then
+    return 0, AccessibilityLevel.None
+  end
+
+  if has("scale1") or spawn_access("Zoras Domain", "child") > 0 then
+    return 1, AccessibilityLevel.Normal
+  end
+
+  local river_count, river_level = child_river()
+  if river_count > 0 then
+    if (has("ocarina") and has("lullaby")) or has("logic_zora_with_cucco") then
+      return river_count, river_level
+    end
+    return 1, AccessibilityLevel.SequenceBreak
+  end
+
+  return 0, AccessibilityLevel.None
+end
+
 function child_fountain()
   if has_age("child") == 0 then
     return 0, AccessibilityLevel.None
@@ -567,26 +662,7 @@ function child_fountain()
     return 0, AccessibilityLevel.None
   end
 
-  local level = AccessibilityLevel.Normal
-
-  if has("scale1") then
-    return 1, level
-  end
-
-  local explo_count, explo_level = has_explosives()
-  if explo_count == 0 then
-    return 0, AccessibilityLevel.None
-  end
-
-  if explo_level == AccessibilityLevel.SequenceBreak then
-    level = AccessibilityLevel.SequenceBreak
-  end
-
-  if has_exact("logic_zora_with_cucco", 0) and (has_exact("ocarina", 0) or has_exact("lullaby", 0)) then
-    level = AccessibilityLevel.SequenceBreak
-  end
-
-  return 1, level
+  return child_domain()
 end
 
 function adult_domain()
@@ -594,7 +670,10 @@ function adult_domain()
     return 0, AccessibilityLevel.None
   end
 
-  if has("ocarina") and has("lullaby") then
+  if
+    (has("ocarina") and has("lullaby")) or spawn_access("Zoras Domain", "adult") > 0 or
+      spawn_access("ZD Shop", "adult") > 0
+   then
     return 1, AccessibilityLevel.Normal
   elseif has("hoverboots") then
     if has("logic_zora_with_hovers") then
@@ -692,6 +771,9 @@ function zora_tunic()
   if has("bluetunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet2") then
+    if spawn_access("ZD Shop", "adult") > 0 then
+      return 1, AccessibilityLevel.Normal
+    end
     local bottle_count, bottle_level = has_bottle()
     local domain_count, domain_level = adult_domain()
     if bottle_count > 0 and domain_count > 0 then

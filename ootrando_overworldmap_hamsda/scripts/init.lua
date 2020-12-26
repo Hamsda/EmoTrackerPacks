@@ -66,6 +66,7 @@ if has_map then
     Tracker:AddItems("items/options_entrance.json")
   else
     Tracker:AddItems("items/sequences.json")
+    Tracker:AddItems("items/cap_spawns.json")
     Tracker:AddItems("items/cap_items.json")
   end
   Tracker:AddItems("items/tricks.json")

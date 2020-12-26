@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added (limited) random spawns support to non ER
+
 ## 3.2.0.0
 
 - fixed bridge condition counter in ER
