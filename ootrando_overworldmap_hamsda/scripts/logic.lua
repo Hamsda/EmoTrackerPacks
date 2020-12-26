@@ -233,14 +233,13 @@ function beyond_mido()
 end
 
 function gerudo_card()
-  local card = has("card")
+  if has("card") then
+    return 1, AccessibilityLevel.Normal
+  end
   if has("setting_shuffle_card_yes") then
-    local count = card and 1 or 0
-    local level = card and AccessibilityLevel.Normal or AccessibilityLevel.None
-    return count, level
+    return 0, AccessibilityLevel.None
   else
-    local level = card and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-    return 1, level
+    return 1, AccessibilityLevel.SequenceBreak
   end
 end
 
