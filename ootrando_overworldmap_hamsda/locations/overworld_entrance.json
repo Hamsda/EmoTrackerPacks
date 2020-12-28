@@ -5,7 +5,7 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "children": [
       {
-        "name": "Child Spawn",
+        "name": "Root",
         "color": "#ffffff",
         "children": [
           {
@@ -42,13 +42,7 @@
                 "y": 1421
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Adult Spawn",
-        "color": "#ffffff",
-        "children": [
+          },
           {
             "name": "Adult Spawn -> Temple of Time",
             "short_name": "Adult Spawn",

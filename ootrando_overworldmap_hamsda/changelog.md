@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.1.0
+
+- added (limited) random spawns support to non ER
+- fixed grottos beyond Mido w/ explosives but w/o child access showing in logic
+
 ## 3.2.0.0
 
 - fixed bridge condition counter in ER

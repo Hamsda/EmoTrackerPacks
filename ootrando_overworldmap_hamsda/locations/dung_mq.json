@@ -2678,7 +2678,7 @@
     "name": "Gerudo Training Grounds MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_mq,$has_age|adult,$gerudo_card"
+      "gtg_mq,$gerudo_valley_far_side,$gerudo_card"
     ],
     "sections": [
       {

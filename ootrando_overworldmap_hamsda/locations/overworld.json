@@ -5,6 +5,68 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "children": [
       {
+        "name": "Root",
+        "color": "#ffffff",
+        "children": [
+          {
+            "name": "Child Spawn -> KF Links House",
+            "short_name": "Child Spawn",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "setting_age_child",
+                  "$can_time_travel"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_spawn_child",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "child",
+                "x": 175,
+                "y": 1421
+              },
+              {
+                "map": "adult",
+                "x": 175,
+                "y": 1421
+              }
+            ]
+          },
+          {
+            "name": "Adult Spawn -> Temple of Time",
+            "short_name": "Adult Spawn",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "setting_age_adult",
+                  "$can_time_travel"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_spawn_adult",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "child",
+                "x": 244,
+                "y": 1421
+              },
+              {
+                "map": "adult",
+                "x": 244,
+                "y": 1421
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Kokiri Forest",
         "color": "#18a50e",
         "children": [
@@ -425,8 +487,8 @@
               {
                 "name": "LW Scrubs Grotto",
                 "access_rules": [
-                  "$has_explosives",
-                  "$has_age|adult,hammer,$beyond_mido"
+                  "$has_age|child,$has_explosives",
+                  "$has_age|adult,$can_blast,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -559,8 +621,8 @@
                     "name": "LW GS Above Theater (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "setting_plant_no,beans",
-                      "bean_stage_yes",
+                      "$has_age|child,setting_plant_no,beans",
+                      "$has_age|child,bean_stage_yes",
                       "[logic_lost_woods_gs_bean],longshot",
                       "[logic_lost_woods_gs_bean],hookshot,bow",
                       "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
@@ -590,8 +652,8 @@
               {
                 "name": "SFM Wolfos Grotto",
                 "access_rules": [
-                  "$hidden_grotto,$has_explosives",
-                  "$hidden_grotto,$has_age|adult,hammer,$beyond_mido"
+                  "$hidden_grotto,$has_age|child,$has_explosives",
+                  "$hidden_grotto,$has_age|adult,$can_blast,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -1101,6 +1163,7 @@
                       {
                         "name": "Bite pls",
                         "access_rules": [
+                          "$spawn_access|LH Fishing|adult",
                           "$has_age|adult,ocarina,scarecrow,hookshot",
                           "$has_age|adult,water",
                           "$has_age|adult,setting_plant_no,beans",
@@ -2671,6 +2734,14 @@
                           "$has_age|child,ocarina,lullaby,sticks,bombchu,[bombs]",
                           "$has_age|child,ocarina,lullaby,sticks,$has_bombchus,[logic_goron_city_pot]",
                           "$child_death_mountain,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                          "$spawn_access|DMC Lower|child,sticks,bombs",
+                          "$spawn_access|DMC Lower|child,sticks,bombchu,[bombs]",
+                          "$spawn_access|DMC Lower|child,sticks,$has_bombchus,[logic_goron_city_pot]",
+                          "$spawn_access|DMC Lower|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                          "$spawn_access|DMC Fairy|child,sticks,bombs",
+                          "$spawn_access|DMC Fairy|child,sticks,bombchu,[bombs]",
+                          "$spawn_access|DMC Fairy|child,sticks,$has_bombchus,[logic_goron_city_pot]",
+                          "$spawn_access|DMC Fairy|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
                           "$has_age|child,dinsfire,magic,bombs",
                           "$has_age|child,dinsfire,magic,bombchu,[bombs]",
                           "$has_age|child,dinsfire,magic,$has_bombchus,[logic_goron_city_pot]",
@@ -2698,6 +2769,8 @@
                         "name": "Play Sarias Song",
                         "access_rules": [
                           "$child_death_mountain,ocarina,lullaby,saria",
+                          "$spawn_access|DMC Lower|child,ocarina,saria",
+                          "$spawn_access|DMC Fairy|child,ocarina,saria",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -2776,6 +2849,7 @@
                     "name": "GC Shop",
                     "access_rules": [
                       "$link_the_goron",
+                      "$spawn_access|GC Shop|adult",
                       "$has_age|child,$has_explosives",
                       "$has_age|child,dinsfire,magic",
                       "$child_death_mountain,lift1",
@@ -2917,7 +2991,9 @@
                   {
                     "name": "DMT Great Fairy Fountain",
                     "access_rules": [
-                      "$can_blast"
+                      "$can_blast",
+                      "$spawn_access|DMT Fairy|child",
+                      "$spawn_access|DMT Fairy|adult"
                     ],
                     "sections": [
                       {
@@ -2945,7 +3021,7 @@
                   {
                     "name": "DMT Biggoron",
                     "access_rules": [
-                      "$has_age|adult,$dmc_upper",
+                      "$dmc_upper",
                       "{$hintable}"
                     ],
                     "sections": [
@@ -3178,6 +3254,8 @@
                         "name": "DMC Wall Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
+                          "$spawn_access|Death Mountain Summit|child",
+                          "$spawn_access|DMT Fairy|child",
                           "$dmc_upper",
                           "{ocarina,bolero}"
                         ],
@@ -3209,9 +3287,7 @@
                         "access_rules": [
                           "$has_age|both,ocarina,bolero,setting_plant_no,beans",
                           "$has_age|both,ocarina,bolero,bean_crater_yes",
-                          "$has_age|adult,ocarina,bolero,[logic_crater_bean_poh_with_hovers],hoverboots",
-                          "$has_age|adult,hammer,[logic_crater_bean_poh_with_hovers],hoverboots",
-                          "$link_the_goron,[logic_crater_bean_poh_with_hovers],hoverboots",
+                          "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "{$hintable}",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
@@ -3234,7 +3310,9 @@
                   {
                     "name": "DMC Great Fairy Fountain",
                     "access_rules": [
-                      "$dmc_lower,$has_age|adult,hammer"
+                      "$dmc_lower,hammer",
+                      "$spawn_access|DMC Fairy|child",
+                      "$spawn_access|DMC Fairy|adult"
                     ],
                     "sections": [
                       {
@@ -3257,7 +3335,7 @@
                   {
                     "name": "DMC Hammer Grotto",
                     "access_rules": [
-                      "$dmc_lower,$has_age|adult,hammer"
+                      "$dmc_lower,hammer"
                     ],
                     "sections": [
                       {
@@ -3312,6 +3390,12 @@
                           "$can_blast,$has_age|child,$can_child_attack",
                           "$can_blast,$has_age|child,nuts",
                           "$can_blast,$has_age|child,shield1",
+                          "$spawn_access|Death Mountain Summit|child,$can_child_attack",
+                          "$spawn_access|Death Mountain Summit|child,nuts",
+                          "$spawn_access|Death Mountain Summit|child,shield1",
+                          "$spawn_access|DMT Fairy|child,$can_child_attack",
+                          "$spawn_access|DMT Fairy|child,nuts",
+                          "$spawn_access|DMT Fairy|child,shield1",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -3338,7 +3422,9 @@
                         "name": "DMC GS Crate",
                         "short_name": "GS",
                         "access_rules": [
-                          "$can_blast,$has_age|child,$can_child_attack"
+                          "$can_blast,$has_age|child,$can_child_attack",
+                          "$spawn_access|Death Mountain Summit|child,$can_child_attack",
+                          "$spawn_access|DMT Fairy|child,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3823,7 +3909,8 @@
                   {
                     "name": "HC Great Fairy Fountain",
                     "access_rules": [
-                      "$has_age|child,$has_explosives"
+                      "$has_age|child,$has_explosives",
+                      "$spawn_access|HC Fairy|child"
                     ],
                     "sections": [
                       {
@@ -3933,7 +4020,8 @@
                   {
                     "name": "OGC Great Fairy Fountain",
                     "access_rules": [
-                      "$has_age|adult,lift3"
+                      "$has_age|adult,lift3",
+                      "$spawn_access|OGC Fairy|adult"
                     ],
                     "sections": [
                       {
@@ -3966,23 +4054,18 @@
                 "children": [
                   {
                     "name": "ZR Frogs",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives",
-                      "$has_age|child,scale1",
-                      "{$hintable}"
-                    ],
                     "sections": [
                       {
                         "name": "ZR Frogs in the Rain",
                         "access_rules": [
-                          "$has_age|child,ocarina,storm"
+                          "$child_river,ocarina,storm"
                         ],
                         "item_count": 1
                       },
                       {
                         "name": "ZR Frogs Ocarina Game",
                         "access_rules": [
-                          "$has_age|child,ocarina,lullaby,saria,epona,sun,time,storm",
+                          "$child_river,ocarina,lullaby,saria,epona,sun,time,storm",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -4000,8 +4083,7 @@
                   {
                     "name": "ZR Magic Bean Salesman",
                     "access_rules": [
-                      "$has_age|child,$has_explosives",
-                      "$has_age|child,scale1"
+                      "$child_river"
                     ],
                     "sections": [
                       {
@@ -4021,8 +4103,7 @@
                   {
                     "name": "ZR Open Grotto",
                     "access_rules": [
-                      "$has_age|child,$has_explosives",
-                      "$has_age|child,scale1",
+                      "$child_river",
                       "$has_age|adult"
                     ],
                     "sections": [
@@ -4052,8 +4133,7 @@
                         "name": "ZR Near Open Grotto Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1",
+                          "$child_river",
                           "$has_age|adult,hoverboots",
                           "$has_age|adult,[logic_zora_river_lower]"
                         ],
@@ -4083,8 +4163,7 @@
                         "name": "ZR Near Domain Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|child,$has_explosives",
-                          "$has_age|child,scale1",
+                          "$child_river",
                           "$has_age|adult,hoverboots",
                           "$has_age|adult,[logic_zora_river_upper]"
                         ],
@@ -4117,8 +4196,7 @@
                         "name": "ZR Deku Scrubs Grotto",
                         "short_name": "Deku Scrubs",
                         "access_rules": [
-                          "$has_age|child,$has_explosives,$can_stun_deku",
-                          "$has_age|child,scale1,$can_stun_deku",
+                          "$child_river,$can_stun_deku",
                           "$has_age|adult,$can_stun_deku"
                         ],
                         "visibility_rules": [
@@ -4178,8 +4256,7 @@
                         "name": "ZR GS Ladder (N)",
                         "short_name": "GS",
                         "access_rules": [
-                          "$has_explosives",
-                          "scale1,$can_child_attack"
+                          "$child_river,$can_child_attack"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -4264,9 +4341,7 @@
               {
                 "name": "Zoras Domain",
                 "access_rules": [
-                  "$has_age|child,$has_explosives,ocarina,lullaby",
-                  "$has_age|child,$has_explosives,[logic_zora_with_cucco]",
-                  "$has_age|child,scale1"
+                  "$child_domain"
                 ],
                 "children": [
                   {
@@ -4309,8 +4384,7 @@
               {
                 "name": "Zoras Domain Frozen",
                 "access_rules": [
-                  "$has_age|adult,ocarina,lullaby",
-                  "$has_age|adult,hoverboots,[logic_zora_with_hovers]"
+                  "$adult_domain"
                 ],
                 "children": [
                   {
@@ -4383,11 +4457,9 @@
               {
                 "name": "ZD Shop",
                 "access_rules": [
-                  "$has_age|child,scale1",
-                  "$has_age|child,$has_explosives,ocarina,lullaby",
-                  "$has_age|child,$has_explosives,[logic_zora_with_cucco]",
-                  "$has_age|adult,$has_blue_fire,ocarina,lullaby",
-                  "$has_age|adult,$has_blue_fire,hoverboots,[logic_zora_with_hovers]"
+                  "$child_domain",
+                  "$adult_domain,$has_blue_fire",
+                  "$spawn_access|ZD Shop|adult"
                 ],
                 "sections": [
                   {
@@ -4880,121 +4952,124 @@
                         "y": 581
                       }
                     ]
+                  }
+                ]
+              },
+              {
+                "name": "Gerudo Fortress",
+                "children": [
+                  {
+                    "name": "GF Chest",
+                    "access_rules": [
+                      "$gerudo_valley_far_side"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Open it",
+                        "access_rules": [
+                          "hoverboots",
+                          "ocarina,scarecrow,hookshot",
+                          "longshot"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 544,
+                        "y": 358
+                      }
+                    ]
                   },
                   {
-                    "name": "Gerudo Fortress",
-                    "children": [
+                    "name": "GF HBA",
+                    "access_rules": [
+                      "ocarina,epona,bow,$gerudo_card,$gerudo_valley_far_side"
+                    ],
+                    "sections": [
                       {
-                        "name": "GF Chest",
-                        "sections": [
-                          {
-                            "name": "Open it",
-                            "access_rules": [
-                              "hoverboots",
-                              "ocarina,scarecrow,hookshot",
-                              "longshot"
-                            ],
-                            "item_count": 1
-                          }
-                        ],
-                        "map_locations": [
-                          {
-                            "map": "adult",
-                            "x": 544,
-                            "y": 358
-                          }
-                        ]
+                        "name": "1000 Points",
+                        "item_count": 1
                       },
                       {
-                        "name": "GF HBA",
+                        "name": "1500 Points",
                         "access_rules": [
-                          "ocarina,epona,bow,$gerudo_card"
+                          "bow",
+                          "{$hintable}"
                         ],
-                        "sections": [
-                          {
-                            "name": "1000 Points",
-                            "item_count": 1
-                          },
-                          {
-                            "name": "1500 Points",
-                            "access_rules": [
-                              "bow",
-                              "{$hintable}"
-                            ],
-                            "capture_item": true,
-                            "item_count": 1
-                          }
-                        ],
-                        "map_locations": [
-                          {
-                            "map": "adult",
-                            "x": 620,
-                            "y": 438
-                          }
-                        ]
-                      },
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
                       {
-                        "name": "GF Archery Range",
-                        "access_rules": [
-                          "$night_gs,$gerudo_card"
-                        ],
-                        "sections": [
-                          {
-                            "name": "GF GS Archery Range (N)",
-                            "short_name": "GS",
-                            "access_rules": [
-                              "hookshot",
-                              "{bow}",
-                              "{dinsfire,magic}"
-                            ],
-                            "visibility_rules": [
-                              "setting_tokens_overworld"
-                            ],
-                            "capture_item": true,
-                            "chest_unopened_img": "images/skulltula.png",
-                            "chest_opened_img": "images/skulltula_token.png",
-                            "item_count": 1
-                          }
-                        ],
-                        "map_locations": [
-                          {
-                            "map": "adult",
-                            "x": 660,
-                            "y": 306
-                          }
-                        ]
-                      },
+                        "map": "adult",
+                        "x": 620,
+                        "y": 438
+                      }
+                    ]
+                  },
+                  {
+                    "name": "GF Archery Range",
+                    "access_rules": [
+                      "$night_gs,$gerudo_card,$gerudo_valley_far_side"
+                    ],
+                    "sections": [
                       {
-                        "name": "GF Top Floor",
+                        "name": "GF GS Archery Range (N)",
+                        "short_name": "GS",
                         "access_rules": [
-                          "$night_gs"
+                          "hookshot",
+                          "{bow}",
+                          "{dinsfire,magic}"
                         ],
-                        "sections": [
-                          {
-                            "name": "GF GS Top Floor (N)",
-                            "short_name": "GS",
-                            "access_rules": [
-                              "$gerudo_card",
-                              "bow",
-                              "hookshot",
-                              "hoverboots",
-                              "[logic_gerudo_kitchen]"
-                            ],
-                            "visibility_rules": [
-                              "setting_tokens_overworld"
-                            ],
-                            "chest_unopened_img": "images/skulltula.png",
-                            "chest_opened_img": "images/skulltula_token.png",
-                            "item_count": 1
-                          }
+                        "visibility_rules": [
+                          "setting_tokens_overworld"
                         ],
-                        "map_locations": [
-                          {
-                            "map": "adult",
-                            "x": 544,
-                            "y": 390
-                          }
-                        ]
+                        "capture_item": true,
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 660,
+                        "y": 306
+                      }
+                    ]
+                  },
+                  {
+                    "name": "GF Top Floor",
+                    "access_rules": [
+                      "$night_gs,$gerudo_valley_far_side"
+                    ],
+                    "sections": [
+                      {
+                        "name": "GF GS Top Floor (N)",
+                        "short_name": "GS",
+                        "access_rules": [
+                          "$gerudo_card",
+                          "bow",
+                          "hookshot",
+                          "hoverboots",
+                          "[logic_gerudo_kitchen]"
+                        ],
+                        "visibility_rules": [
+                          "setting_tokens_overworld"
+                        ],
+                        "chest_unopened_img": "images/skulltula.png",
+                        "chest_opened_img": "images/skulltula_token.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "x": 544,
+                        "y": 390
                       }
                     ]
                   }

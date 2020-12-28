@@ -2717,7 +2717,9 @@
         "name": "North F1 Carpenter",
         "short_name": "North F1",
         "access_rules": [
-          "$has_age|adult"
+          "$gerudo_valley_far_side",
+          "$spawn_access|Gerudo Fortress|child,sword1",
+          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2726,11 +2728,13 @@
         "name": "North F2 Carpenter",
         "short_name": "North F2",
         "access_rules": [
-          "$has_age|adult,$gerudo_card",
-          "$has_age|adult,bow",
-          "$has_age|adult,hookshot",
-          "$has_age|adult,hoverboots",
-          "$has_age|adult,[logic_gerudo_kitchen]"
+          "$gerudo_valley_far_side,$gerudo_card",
+          "$gerudo_valley_far_side,bow",
+          "$gerudo_valley_far_side,hookshot",
+          "$gerudo_valley_far_side,hoverboots",
+          "$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+          "$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+          "$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]"
         ],
         "visibility_rules": [
           "gerudo_fortress_normal"
@@ -2742,7 +2746,9 @@
         "name": "South F1 Carpenter",
         "short_name": "South F1",
         "access_rules": [
-          "$has_age|adult"
+          "$gerudo_valley_far_side",
+          "$spawn_access|Gerudo Fortress|child,sword1",
+          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
         ],
         "visibility_rules": [
           "gerudo_fortress_normal"
@@ -2754,7 +2760,9 @@
         "name": "South F2 Carpenter",
         "short_name": "South F2",
         "access_rules": [
-          "$has_age|adult"
+          "$gerudo_valley_far_side",
+          "$spawn_access|Gerudo Fortress|child,sword1",
+          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
         ],
         "visibility_rules": [
           "gerudo_fortress_normal"
@@ -2765,12 +2773,16 @@
       {
         "name": "Gerudo Membership Card",
         "access_rules": [
-          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,$gerudo_card",
-          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,bow",
-          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,hookshot",
-          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,hoverboots",
-          "gerudo_fortress_normal,gf_small_keys:4,$has_age|adult,[logic_gerudo_kitchen]",
-          "gerudo_fortress_fast,gf_small_keys:1"
+          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
+          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,bow",
+          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hookshot",
+          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hoverboots",
+          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+          "gerudo_fortress_fast,gf_small_keys:1,$gerudo_valley_far_side",
+          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
+          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
+          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2791,7 +2803,7 @@
     "name": "Gerudo Training Grounds",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "gtg_reg,$has_age|adult,$gerudo_card"
+      "gtg_reg,$gerudo_valley_far_side,$gerudo_card"
     ],
     "sections": [
       {
