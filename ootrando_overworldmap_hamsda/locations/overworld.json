@@ -487,8 +487,8 @@
               {
                 "name": "LW Scrubs Grotto",
                 "access_rules": [
-                  "$has_explosives",
-                  "$has_age|adult,hammer,$beyond_mido"
+                  "$has_age|child,$has_explosives",
+                  "$has_age|adult,$can_blast,$beyond_mido"
                 ],
                 "sections": [
                   {
@@ -621,8 +621,8 @@
                     "name": "LW GS Above Theater (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "setting_plant_no,beans",
-                      "bean_stage_yes",
+                      "$has_age|child,setting_plant_no,beans",
+                      "$has_age|child,bean_stage_yes",
                       "[logic_lost_woods_gs_bean],longshot",
                       "[logic_lost_woods_gs_bean],hookshot,bow",
                       "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
@@ -652,8 +652,8 @@
               {
                 "name": "SFM Wolfos Grotto",
                 "access_rules": [
-                  "$hidden_grotto,$has_explosives",
-                  "$hidden_grotto,$has_age|adult,hammer,$beyond_mido"
+                  "$hidden_grotto,$has_age|child,$has_explosives",
+                  "$hidden_grotto,$has_age|adult,$can_blast,$beyond_mido"
                 ],
                 "sections": [
                   {

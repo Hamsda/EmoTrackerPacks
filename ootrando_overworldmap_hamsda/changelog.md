@@ -3,6 +3,7 @@
 ## x
 
 - added (limited) random spawns support to non ER
+- fixed grottos beyond Mido w/ explosives but w/o child access showing in logic
 
 ## 3.2.0.0
 
