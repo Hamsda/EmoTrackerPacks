@@ -1374,7 +1374,7 @@
         "name": "Cracked Wall",
         "access_rules": [
           "@Water Temple/Middle Water Level",
-          "@Water Temple/Dive,[@Water Temple/Middle Water Level],$has_bombchus,ironboots,hookshot", //TODO: not in logic?
+          "[@Water Temple/Middle Water Level],@Water Temple/Dive,$has_bombchus,ironboots,hookshot",
           "@Water Temple/Dive,ocarina,lullaby,hookshot,[logic_water_cracked_wall_nothing]",
           "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_nothing]",
           "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_hovers]"
