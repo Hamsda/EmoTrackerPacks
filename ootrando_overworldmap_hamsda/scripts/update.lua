@@ -17,10 +17,10 @@ vanilla_captures = {
   }
 }
 function update_vanilla_captures()
-  for setting,captures in pairs(vanilla_captures) do
+  for setting, captures in pairs(vanilla_captures) do
     local has_setting = has(setting)
     if not_like_cache(setting, has_setting) then
-      for location,item in pairs(captures) do
+      for location, item in pairs(captures) do
         local location_object = get_object(location)
         local item_object = get_object(item)
         if location_object and item_object then
@@ -34,8 +34,6 @@ function update_vanilla_captures()
     end
   end
 end
-
-
 
 skulltula_locations = {
   --overworld
@@ -95,7 +93,7 @@ skulltula_locations = {
     "@Wasteland Structure/Wasteland GS",
     "@Colossus Bean Patch/Colossus GS Bean Patch",
     "@Colossus Tree/Colossus GS Tree (N)",
-    "@Colossus Hill/Colossus GS Hill (N)",
+    "@Colossus Hill/Colossus GS Hill (N)"
   },
   ["setting_tokens_dungeons"] = {
     --regular dungeons
@@ -187,10 +185,10 @@ skulltula_locations = {
     "@Spirit Temple MQ/GS Nine Thrones Room West",
     "@Bottom of the Well MQ/GS West Inner Room",
     "@Bottom of the Well MQ/GS Basement",
-    "@Bottom of the Well MQ/GS Coffin Room",
+    "@Bottom of the Well MQ/GS Coffin Room"
   }
 }
-function count_skulltulas()
+function update_skulltula_counts()
   local total = 0
   local available = 0
   local in_logic = 0
@@ -225,18 +223,7 @@ function count_skulltulas()
   end
 end
 
-
-
-function tracker_on_accessibility_updated()
-  amount_cache = {}
-  
-  update_smallkeys()
-  update_bridge_amount_max()
-  update_fortress()
-  update_collected_capture()
+function update_version_specific()
   update_vanilla_captures()
-  update_free_zelda()
-  count_skulltulas()
-
-  apply_queued_changes()
+  update_skulltula_counts()
 end

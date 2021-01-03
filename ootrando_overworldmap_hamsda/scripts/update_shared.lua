@@ -1,4 +1,4 @@
-dungeons = {
+dungeons_with_keys = {
   "forest",
   "fire",
   "water",
@@ -17,7 +17,7 @@ key_counts = {
     shadow = 5,
     botw = 3,
     gtg = 9,
-    gc = 2,
+    gc = 2
   },
   mq = {
     forest = 6,
@@ -27,21 +27,23 @@ key_counts = {
     shadow = 6,
     botw = 2,
     gtg = 3,
-    gc = 3,
+    gc = 3
   }
 }
-function update_smallkeys()
-  for _,dungeon in ipairs(dungeons) do
-    local key_object = get_object(dungeon.."_small_keys")
+function update_keycounts()
+  for _, dungeon in ipairs(dungeons_with_keys) do
+    local key_object = get_object(dungeon .. "_small_keys")
     if key_object then
-      if has(dungeon.."_reg") then
+      if has(dungeon .. "_reg") then
         key_object.MaxCount = key_counts["vanilla"][dungeon]
-      else
+      elseif has(dungeon .. "_mq") then
         key_object.MaxCount = key_counts["mq"][dungeon]
+      else
+        key_object.MaxCount = math.max(key_counts["vanilla"][dungeon], key_counts["mq"][dungeon])
       end
       if not has_keys then
         key_object.AcquiredCount = key_object.MaxCount
-        local bk = get_object(dungeon.."_boss_key")
+        local bk = get_object(dungeon .. "_boss_key")
         if bk then
           bk.Active = true
         end
@@ -49,8 +51,6 @@ function update_smallkeys()
     end
   end
 end
-
-
 
 max_amount_per_bridge_stage = {0, 0, 3, 6, 9, 100}
 function update_bridge_amount_max()
@@ -61,14 +61,12 @@ function update_bridge_amount_max()
   end
 end
 
-
-
 function update_fortress()
   local setting_card = has("setting_shuffle_card_yes")
   local setting_normal = has("gerudo_fortress_normal")
   local setting_fast = has("gerudo_fortress_fast")
   local setting_open = has("gerudo_fortress_open")
-  
+
   local item_card = get_object("gerudocard")
   local item_gf_keys = get_object("gf_small_keys")
 
@@ -88,18 +86,17 @@ function update_fortress()
   if item_card and setting_open then
     if not setting_card then
       item_card.Active = true
-    elseif not_like_cache("gerudo_fortress_open", setting_open) 
-    or not_like_cache("setting_shuffle_card_yes", setting_card) then
+    elseif
+      not_like_cache("gerudo_fortress_open", setting_open) or not_like_cache("setting_shuffle_card_yes", setting_card)
+     then
       item_card.Active = not setting_card
     end
   end
 end
 
-
-
 function get_first_free_bottle()
-  for i=1,4 do
-    local bottle = get_object("bottle"..i)
+  for i = 1, 4 do
+    local bottle = get_object("bottle" .. i)
     if bottle and bottle.CurrentStage == 0 then
       return bottle
     end
@@ -122,7 +119,7 @@ function get_adult_trade()
 end
 capture_mappings = {
   ["capture_bottle"] = {
-    1, 
+    1,
     get_first_free_bottle
   },
   ["capture_ruto"] = {
@@ -227,7 +224,7 @@ capture_mappings = {
   }
 }
 function update_collected_capture()
-  for code,data in pairs(capture_mappings) do
+  for code, data in pairs(capture_mappings) do
     local capture = get_object(code)
     if capture and capture.Active then
       capture.Active = false
@@ -245,4 +242,20 @@ function update_free_zelda()
   if kid_trade and not_like_cache("setting_zelda_free", setting_zelda) and setting_zelda then
     kid_trade.CurrentStage = 3
   end
+end
+
+function tracker_on_accessibility_updated()
+  clear_amount_cache()
+
+  update_keycounts()
+  update_bridge_amount_max()
+  update_fortress()
+  update_collected_capture()
+  update_free_zelda()
+
+  update_version_specific()
+
+  apply_queued_changes()
+
+  get_object("dummy").Active = not get_object("dummy").Active
 end

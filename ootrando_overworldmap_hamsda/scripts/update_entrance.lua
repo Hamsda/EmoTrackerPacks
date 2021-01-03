@@ -45,18 +45,7 @@ function update_region_captures()
   end
 end
 
-function tracker_on_accessibility_updated()
-  amount_cache = {}
-
-  update_smallkeys()
-  update_bridge_amount_max()
-  update_fortress()
-  update_collected_capture()
+function update_version_specific()
   update_region_captures()
-  update_free_zelda()
   build_regions()
-
-  apply_queued_changes()
-  
-  get_object("dummy").Active = not get_object("dummy").Active
 end

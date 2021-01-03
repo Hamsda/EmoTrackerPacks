@@ -11,6 +11,9 @@ function get_object(name)
 end
 
 amount_cache = {}
+function clear_amount_cache()
+  amount_cache = {}
+end
 function has(item, amount)
   if not amount_cache[item] then
     amount_cache[item] = Tracker:ProviderCountForCode(item)
@@ -44,18 +47,16 @@ function not_like_cache(setting, current)
   return false
 end
 function apply_queued_changes()
-  for setting,value in pairs(queued_changes) do
+  for setting, value in pairs(queued_changes) do
     settings_cache[setting] = value
   end
   queued_changes = {}
 end
 
-
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 has_keys = variant:find("keysanity")
 is_er = variant:find("entrance")
-
 
 if has_map then
   if is_er then
@@ -125,7 +126,6 @@ else
 end
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
-
 
 --change GF key counter in this variant only going to 1 because of the default settings for GF
 if variant == "var_itemsonly_keysanity" then
