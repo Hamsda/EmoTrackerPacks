@@ -1976,6 +1976,14 @@ data_per_region = {
   ["Desert Colossus"] = {
     ["scene"] = "Desert Colossus",
     ["locations"] = {
+      ["Sheik at Colossus"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
       ["Colossus Freestanding PoH"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -2072,17 +2080,7 @@ data_per_region = {
   },
   ["Desert Colossus From Spirit Lobby"] = {
     ["scene"] = "Desert Colossus",
-    ["locations"] = {
-      ["Sheik at Colossus"] = {
-        --TODO: might have to move to colossus
-        ["child_access"] = function()
-          return AccessibilityLevel.Normal
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      }
-    },
+    ["locations"] = {},
     ["exits"] = {
       ["Desert Colossus"] = {
         ["child_access"] = function()

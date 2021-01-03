@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Sheik at Colossus not showing in ER
+
 ## 3.2.1.0
 
 - added (limited) random spawns support to non ER

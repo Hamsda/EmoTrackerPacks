@@ -2821,7 +2821,7 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$access_location|Desert Colossus From Spirit Lobby|Sheik at Colossus"
+                  "$access_location|Desert Colossus|Sheik at Colossus"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
