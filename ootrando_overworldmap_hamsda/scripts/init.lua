@@ -60,16 +60,13 @@ is_er = variant:find("entrance")
 
 if has_map then
   if is_er then
-    Tracker:AddItems("items/cap_grottos.json")
-    Tracker:AddItems("items/cap_houses.json")
-    Tracker:AddItems("items/cap_dungeons.json")
-    Tracker:AddItems("items/cap_overworld.json")
+    Tracker:AddItems("items/capture_entrance.json")
     Tracker:AddItems("items/options_entrance.json")
   else
     Tracker:AddItems("items/sequences.json")
-    Tracker:AddItems("items/cap_spawns.json")
-    Tracker:AddItems("items/cap_items.json")
+    Tracker:AddItems("items/capture_spawns.json")
   end
+  Tracker:AddItems("items/capture_items.json")
   Tracker:AddItems("items/tricks.json")
   Tracker:AddItems("items/options.json")
 end
@@ -122,8 +119,9 @@ if is_er then
 else
   Tracker:AddLayouts("layouts/counters.json")
   Tracker:AddLayouts("layouts/layouts.json")
-  Tracker:AddLayouts("layouts/capture.json")
+  Tracker:AddLayouts("layouts/capture_spawns.json")
 end
+Tracker:AddLayouts("layouts/capture.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 

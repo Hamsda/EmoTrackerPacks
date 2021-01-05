@@ -4,6 +4,7 @@
 
 - fixed Sheik at Colossus not showing in ER
 - adjusted position of many locations
+- added regular item captures to ER
 
 ## 3.2.1.0
 
