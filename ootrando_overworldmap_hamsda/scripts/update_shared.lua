@@ -270,11 +270,11 @@ function update_vanilla_captures()
       for location, item in pairs(captures) do
         local location_object = get_object(location)
         local item_object = get_object(item)
-        if location_object and item_object then
-          if has_setting then
-            location_object.CapturedItem = nil
-          else
+        if location_object then
+          if item_object and not has_setting then
             location_object.CapturedItem = item_object
+          else
+            location_object.CapturedItem = nil
           end
         end
       end
