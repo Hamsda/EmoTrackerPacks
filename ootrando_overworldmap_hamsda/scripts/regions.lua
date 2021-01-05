@@ -9967,7 +9967,7 @@ function access_exit(region, exit, age)
     data_per_region[region].exits and data_per_region[region].exits[exit] and
     data_per_region[region].exits[exit].adult_access()
   if not exit_child or not exit_adult then
-    print("exit not found:", region, exit, age)
+    print("error! exit not found:", region, exit, age)
     return 0, AccessibilityLevel.None
   end
 
@@ -10046,7 +10046,7 @@ function access_location(region, location, age)
     data_per_region[region].locations and data_per_region[region].locations[location] and
     data_per_region[region].locations[location].adult_access()
   if not location_child or not location_adult then
-    print("location not found:", region, location, age)
+    print("error! location not found:", region, location, age)
     return 0, AccessibilityLevel.None
   end
 

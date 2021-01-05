@@ -10,7 +10,7 @@ for region, region_data in pairs(data_per_region) do
       if section_object then
         target_data.section_object = section_object
       else
-        print("missing section", section)
+        print("error! section not found:", section)
       end
     end
   end

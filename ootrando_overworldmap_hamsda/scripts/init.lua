@@ -32,6 +32,7 @@ function has_exact(item, amount)
   local count = amount_cache[item] or 0
   amount = tonumber(amount)
   if not amount then
+    print("error! has_exact - missing amount for item:", item)
     return false
   end
   return count == amount

@@ -7,9 +7,9 @@ end
 
 function has_age(age)
   if not age then
-    print("missing argument: age")
+    print("error! has_age - missing age")
   end
-
+  
   if age == "child" then
     if has("setting_age_child") then
       return 1, AccessibilityLevel.Normal
@@ -22,6 +22,8 @@ function has_age(age)
     return can_time_travel()
   elseif age == "both" then
     return can_time_travel()
+  else
+    print("error! has_age - invalid age:", age)
   end
 
   return 0, AccessibilityLevel.None
@@ -42,7 +44,7 @@ function spawn_access(region, age)
   elseif age == "adult" then
     spawn_object = get_object("@Adult Spawn -> Temple of Time/Capture")
   else
-    print("spawn_access wrong age argument:", age)
+    print("error! spawn_access invalid age:", age)
     return 0, AccessibilityLevel.None
   end
 

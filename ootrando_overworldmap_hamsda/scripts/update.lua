@@ -170,7 +170,7 @@ function update_skulltula_counts()
             in_logic = in_logic + 1
           end
         else
-          print("missing gs location:", location)
+          print("error! gs location not found:", location)
         end
       end
     end
