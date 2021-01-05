@@ -282,19 +282,30 @@ function update_vanilla_captures()
   end
 end
 
-function tracker_on_accessibility_updated()
-  clear_amount_cache()
+loading_save_file = false
+function tracker_on_begin_loading_save_file()
+  loading_save_file = true
+end
 
-  update_keycounts()
-  update_bridge_amount_max()
-  update_fortress()
-  update_collected_capture()
-  update_free_zelda()
+function tracker_on_finish_loading_save_file()
+  loading_save_file = false
+end
+
+function tracker_on_accessibility_updated()
+  if not loading_save_file then
+    clear_amount_cache()
+
+    update_keycounts()
+    update_bridge_amount_max()
+    update_fortress()
+    update_collected_capture()
+    update_free_zelda()
     update_vanilla_captures()
 
-  update_version_specific()
+    update_version_specific()
 
-  apply_queued_changes()
+    apply_queued_changes()
 
-  get_object("dummy").Active = not get_object("dummy").Active
+    get_object("dummy").Active = not get_object("dummy").Active
+  end
 end
