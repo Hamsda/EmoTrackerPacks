@@ -244,6 +244,44 @@ function update_free_zelda()
   end
 end
 
+vanilla_captures = {
+  ["setting_shuffle_sword1_yes"] = {
+    ["@KF Kokiri Sword Chest/Dodge Boulder"] = "sword1"
+  },
+  ["setting_shuffle_ocarinas_yes"] = {
+    ["@Saria on Bridge/LW Gift from Saria"] = "ocarina", --ER
+    ["@LW Bridge/LW Gift from Saria"] = "ocarina", --non ER
+    ["@HF Ocarina of Time/HF Ocarina of Time Item"] = "ocarina"
+  },
+  ["setting_shuffle_egg_yes"] = {
+    ["@Malon at Castle/HC Malon Egg"] = "capture_childegg"
+  },
+  ["setting_shuffle_card_yes"] = {
+    ["@Carpenter Rescue/Gerudo Membership Card"] = "gerudocard"
+  },
+  ["setting_shuffle_beans_yes"] = {
+    ["@ZR Magic Bean Salesman/Buy Item"] = "beans"
+  }
+}
+function update_vanilla_captures()
+  for setting, captures in pairs(vanilla_captures) do
+    local has_setting = has(setting)
+    if not_like_cache(setting, has_setting) then
+      for location, item in pairs(captures) do
+        local location_object = get_object(location)
+        local item_object = get_object(item)
+        if location_object and item_object then
+          if has_setting then
+            location_object.CapturedItem = nil
+          else
+            location_object.CapturedItem = item_object
+          end
+        end
+      end
+    end
+  end
+end
+
 function tracker_on_accessibility_updated()
   clear_amount_cache()
 
@@ -252,6 +290,7 @@ function tracker_on_accessibility_updated()
   update_fortress()
   update_collected_capture()
   update_free_zelda()
+    update_vanilla_captures()
 
   update_version_specific()
 
