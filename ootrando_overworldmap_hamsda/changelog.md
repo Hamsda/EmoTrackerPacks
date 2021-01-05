@@ -3,6 +3,7 @@
 ## x
 
 - fixed Sheik at Colossus not showing in ER
+- adjusted position of many locations
 
 ## 3.2.1.0
 
