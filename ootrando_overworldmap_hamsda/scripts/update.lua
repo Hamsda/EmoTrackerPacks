@@ -1,42 +1,3 @@
-vanilla_captures = {
-  ["setting_shuffle_sword1_yes"] = {
-    ["@KF Kokiri Sword Chest/Dodge Boulder"] = "sword1"
-  },
-  ["setting_shuffle_ocarinas_yes"] = {
-    ["@LW Bridge/LW Gift from Saria"] = "ocarina",
-    ["@HF Ocarina of Time/HF Ocarina of Time Item"] = "ocarina"
-  },
-  ["setting_shuffle_egg_yes"] = {
-    ["@Malon at Castle/HC Malon Egg"] = "capture_childegg"
-  },
-  ["setting_shuffle_card_yes"] = {
-    ["@Carpenter Rescue/Gerudo Membership Card"] = "gerudocard"
-  },
-  ["setting_shuffle_beans_yes"] = {
-    ["@ZR Magic Bean Salesman/Buy Item"] = "beans"
-  }
-}
-function update_vanilla_captures()
-  for setting,captures in pairs(vanilla_captures) do
-    local has_setting = has(setting)
-    if not_like_cache(setting, has_setting) then
-      for location,item in pairs(captures) do
-        local location_object = get_object(location)
-        local item_object = get_object(item)
-        if location_object and item_object then
-          if has_setting then
-            location_object.CapturedItem = nil
-          else
-            location_object.CapturedItem = item_object
-          end
-        end
-      end
-    end
-  end
-end
-
-
-
 skulltula_locations = {
   --overworld
   ["setting_tokens_overworld"] = {
@@ -95,7 +56,7 @@ skulltula_locations = {
     "@Wasteland Structure/Wasteland GS",
     "@Colossus Bean Patch/Colossus GS Bean Patch",
     "@Colossus Tree/Colossus GS Tree (N)",
-    "@Colossus Hill/Colossus GS Hill (N)",
+    "@Colossus Hill/Colossus GS Hill (N)"
   },
   ["setting_tokens_dungeons"] = {
     --regular dungeons
@@ -187,10 +148,10 @@ skulltula_locations = {
     "@Spirit Temple MQ/GS Nine Thrones Room West",
     "@Bottom of the Well MQ/GS West Inner Room",
     "@Bottom of the Well MQ/GS Basement",
-    "@Bottom of the Well MQ/GS Coffin Room",
+    "@Bottom of the Well MQ/GS Coffin Room"
   }
 }
-function count_skulltulas()
+function update_skulltula_counts()
   local total = 0
   local available = 0
   local in_logic = 0
@@ -209,7 +170,7 @@ function count_skulltulas()
             in_logic = in_logic + 1
           end
         else
-          print("missing gs location:", location)
+          print("error! gs location not found:", location)
         end
       end
     end
@@ -225,18 +186,6 @@ function count_skulltulas()
   end
 end
 
-
-
-function tracker_on_accessibility_updated()
-  amount_cache = {}
-  
-  update_smallkeys()
-  update_bridge_amount_max()
-  update_fortress()
-  update_collected_capture()
-  update_vanilla_captures()
-  update_free_zelda()
-  count_skulltulas()
-
-  apply_queued_changes()
+function update_version_specific()
+  update_skulltula_counts()
 end

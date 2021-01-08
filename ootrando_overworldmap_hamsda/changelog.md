@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.2.2.0
+
+- fixed Sheik at Colossus not showing in ER
+- adjusted position of many locations
+- added regular item captures to ER
+- added default captures for non shuffled locations to ER
+
 ## 3.2.1.0
 
 - added (limited) random spawns support to non ER

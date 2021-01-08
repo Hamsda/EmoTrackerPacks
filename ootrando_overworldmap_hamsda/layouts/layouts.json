@@ -46,31 +46,22 @@
               "dock": "top",
               "tabs": [
                 {
-                  "title": "One Map",
-                  "icon": "images/map.png",
+                  "title": "Child",
+                  "icon": "images/sword1.png",
                   "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                      {
-                        "title": "Child",
-                        "icon": "images/sword1.png",
-                        "content": {
-                          "type": "map",
-                          "maps": [
-                            "child"
-                          ]
-                        }
-                      },
-                      {
-                        "title": "Adult",
-                        "icon": "images/sword2.png",
-                        "content": {
-                          "type": "map",
-                          "maps": [
-                            "adult"
-                          ]
-                        }
-                      }
+                    "type": "map",
+                    "maps": [
+                      "child"
+                    ]
+                  }
+                },
+                {
+                  "title": "Adult",
+                  "icon": "images/sword2.png",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "adult"
                     ]
                   }
                 },

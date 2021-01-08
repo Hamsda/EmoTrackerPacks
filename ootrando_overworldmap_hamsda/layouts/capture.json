@@ -96,55 +96,5 @@
         ]
       ]
     }
-  },
-  "tracker_capture_spawn_child": {
-    "type": "container",
-    "content": {
-      "type": "itemgrid",
-      "h_alignment": "center",
-      "item_margin": "1,2",
-      "rows": [
-        [
-          "entrance_overworld_dmc_lwr",
-          "entrance_overworld_dm_smt",
-          "entrance_overworld_gf",
-          "entrance_overworld_zd",
-          "entrance_overworld_zr"
-        ],
-        [
-          "entrance_spawn_dmc_ff",
-          "entrance_spawn_dmt_ff",
-          "entrance_spawn_hc_ff",
-          "",
-          ""
-        ]
-      ]
-    }
-  },
-  "tracker_capture_spawn_adult": {
-    "type": "container",
-    "content": {
-      "type": "itemgrid",
-      "h_alignment": "center",
-      "item_margin": "1,2",
-      "rows": [
-        [
-          "entrance_overworld_dmc_lwr",
-          "entrance_overworld_dm_smt",
-          "entrance_overworld_gf",
-          "entrance_overworld_zd",
-          "entrance_overworld_sfm",
-          ""
-        ],
-        [
-          "entrance_spawn_dmc_ff",
-          "entrance_spawn_dmt_ff",
-          "entrance_spawn_gc_shop",
-          "entrance_spawn_zd_shop",
-          "entrance_spawn_lh_fish",
-          "entrance_spawn_ogc_ff"
-        ]
-      ]
-    }
   }
 }

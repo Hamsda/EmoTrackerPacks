@@ -11,6 +11,9 @@ function get_object(name)
 end
 
 amount_cache = {}
+function clear_amount_cache()
+  amount_cache = {}
+end
 function has(item, amount)
   if not amount_cache[item] then
     amount_cache[item] = Tracker:ProviderCountForCode(item)
@@ -29,6 +32,7 @@ function has_exact(item, amount)
   local count = amount_cache[item] or 0
   amount = tonumber(amount)
   if not amount then
+    print("error! has_exact - missing amount for item:", item)
     return false
   end
   return count == amount
@@ -44,31 +48,26 @@ function not_like_cache(setting, current)
   return false
 end
 function apply_queued_changes()
-  for setting,value in pairs(queued_changes) do
+  for setting, value in pairs(queued_changes) do
     settings_cache[setting] = value
   end
   queued_changes = {}
 end
-
 
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
 has_keys = variant:find("keysanity")
 is_er = variant:find("entrance")
 
-
 if has_map then
   if is_er then
-    Tracker:AddItems("items/cap_grottos.json")
-    Tracker:AddItems("items/cap_houses.json")
-    Tracker:AddItems("items/cap_dungeons.json")
-    Tracker:AddItems("items/cap_overworld.json")
+    Tracker:AddItems("items/capture_entrance.json")
     Tracker:AddItems("items/options_entrance.json")
   else
     Tracker:AddItems("items/sequences.json")
-    Tracker:AddItems("items/cap_spawns.json")
-    Tracker:AddItems("items/cap_items.json")
+    Tracker:AddItems("items/capture_spawns.json")
   end
+  Tracker:AddItems("items/capture_items.json")
   Tracker:AddItems("items/tricks.json")
   Tracker:AddItems("items/options.json")
 end
@@ -121,11 +120,11 @@ if is_er then
 else
   Tracker:AddLayouts("layouts/counters.json")
   Tracker:AddLayouts("layouts/layouts.json")
-  Tracker:AddLayouts("layouts/capture.json")
+  Tracker:AddLayouts("layouts/capture_spawns.json")
 end
+Tracker:AddLayouts("layouts/capture.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
-
 
 --change GF key counter in this variant only going to 1 because of the default settings for GF
 if variant == "var_itemsonly_keysanity" then

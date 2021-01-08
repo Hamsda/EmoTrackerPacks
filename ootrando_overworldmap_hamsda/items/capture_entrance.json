@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Deku Tree Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_deku.png",
+    "codes": "entrance_dungeon_deku"
+  },
+  {
+    "name": "Dodongos Cavern Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_dodongo.png",
+    "codes": "entrance_dungeon_dodongo"
+  },
+  {
+    "name": "Jabu Jabus Belly Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_jabu.png",
+    "codes": "entrance_dungeon_jabu"
+  },
+  {
+    "name": "Forest Temple Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_forest.png",
+    "codes": "entrance_dungeon_forest"
+  },
+  {
+    "name": "Fire Temple Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_fire.png",
+    "codes": "entrance_dungeon_fire"
+  },
+  {
+    "name": "Water Temple Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_water.png",
+    "codes": "entrance_dungeon_water"
+  },
+  {
+    "name": "Spirit Temple Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_spirit.png",
+    "codes": "entrance_dungeon_spirit"
+  },
+  {
+    "name": "Shadow Temple Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_shadow.png",
+    "codes": "entrance_dungeon_shadow"
+  },
+  {
+    "name": "Bottom of the Well Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_botw.png",
+    "codes": "entrance_dungeon_botw"
+  },
+  {
+    "name": "Ice Cavern Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_ice.png",
+    "codes": "entrance_dungeon_ice"
+  },
+  {
+    "name": "Gerudo Training Grounds Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_gtg.png",
+    "codes": "entrance_dungeon_gtg"
+  },
+  {
+    "name": "Great Fairy",
+    "type": "toggle",
+    "img": "images/entrance_house_fairy.png",
+    "codes": "entrance_house_fairy"
+  },
+  {
+    "name": "Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_shop.png",
+    "codes": "entrance_house_shop"
+  },
+  {
+    "name": "Kak Potion Shop Front",
+    "type": "toggle",
+    "img": "images/entrance_house_potion_front.png",
+    "codes": "entrance_house_potion_front"
+  },
+  {
+    "name": "Kak Potion Shop Back",
+    "type": "toggle",
+    "img": "images/entrance_house_potion_back.png",
+    "codes": "entrance_house_potion_back"
+  },
+  {
+    "name": "Cow",
+    "type": "toggle",
+    "img": "images/entrance_grotto_cow.png",
+    "codes": "entrance_house_cow"
+  },
+  {
+    "name": "Fishing Hole",
+    "type": "toggle",
+    "img": "images/entrance_house_fishing.png",
+    "codes": "entrance_house_fishing"
+  },
+  {
+    "name": "House of Skulltula",
+    "type": "toggle",
+    "img": "images/entrance_house_skull.png",
+    "codes": "entrance_house_skull"
+  },
+  {
+    "name": "Castle Town Rupee Room",
+    "type": "toggle",
+    "img": "images/entrance_house_pot.png",
+    "codes": "entrance_house_pot"
+  },
+  {
+    "name": "KF Links House",
+    "type": "toggle",
+    "img": "images/entrance_house_link.png",
+    "codes": "entrance_house_link"
+  },
+  {
+    "name": "Temple of Time",
+    "type": "toggle",
+    "img": "images/entrance_house_tot.png",
+    "codes": "entrance_house_tot"
+  },
+  {
+    "name": "Kak Windmill",
+    "type": "toggle",
+    "img": "images/entrance_house_windmill.png",
+    "codes": "entrance_house_windmill"
+  },
+  {
+    "name": "Child Shooting Gallery",
+    "type": "toggle",
+    "img": "images/entrance_house_shoot_child.png",
+    "codes": "entrance_house_shoot_child"
+  },
+  {
+    "name": "Adult Shooting Gallery",
+    "type": "toggle",
+    "img": "images/entrance_house_shoot_adult.png",
+    "codes": "entrance_house_shoot_adult"
+  },
+  {
+    "name": "Treasure Chest Game",
+    "type": "toggle",
+    "img": "images/entrance_house_chest.png",
+    "codes": "entrance_house_chest"
+  },
+  {
+    "name": "Talon Cucco Game",
+    "type": "toggle",
+    "img": "images/entrance_house_talon_child.png",
+    "codes": "entrance_house_talon_child"
+  },
+  {
+    "name": "Mask Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_masks.png",
+    "codes": "entrance_house_masks"
+  },
+  {
+    "name": "Bombchu Bowling",
+    "type": "toggle",
+    "img": "images/entrance_house_bowling.png",
+    "codes": "entrance_house_bowling"
+  },
+  {
+    "name": "Sleeping Talon House",
+    "type": "toggle",
+    "img": "images/entrance_house_talon_adult.png",
+    "codes": "entrance_house_talon_adult"
+  },
+  {
+    "name": "Hag Potion Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_hag.png",
+    "codes": "entrance_house_hag"
+  },
+  {
+    "name": "Lake Hylia Lab",
+    "type": "toggle",
+    "img": "images/entrance_house_lab.png",
+    "codes": "entrance_house_lab"
+  },
+  {
+    "name": "Generic Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_generic.png",
+    "codes": "entrance_grotto_generic"
+  },
+  {
+    "name": "Scrub",
+    "type": "toggle",
+    "img": "images/entrance_grotto_scrub.png",
+    "codes": "entrance_grotto_scrub"
+  },
+  {
+    "name": "Cow",
+    "type": "toggle",
+    "img": "images/entrance_grotto_cow.png",
+    "codes": "entrance_grotto_cow"
+  },
+  {
+    "name": "Enemy Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_enemy.png",
+    "codes": "entrance_grotto_enemy"
+  },
+  {
+    "name": "Field North Lon Lon Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_tektite.png",
+    "codes": "entrance_grotto_tektite"
+  },
+  {
+    "name": "Deku Theater",
+    "type": "toggle",
+    "img": "images/entrance_grotto_theater.png",
+    "codes": "entrance_grotto_theater"
+  },
+  {
+    "name": "Castle Storms Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_castle_storms.png",
+    "codes": "entrance_grotto_castle_storms"
+  },
+  {
+    "name": "Field Kakariko Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_field_kak.png",
+    "codes": "entrance_grotto_field_kak"
+  },
+  {
+    "name": "Field Valley Grotto",
+    "type": "toggle",
+    "img": "images/entrance_grotto_field_valley.png",
+    "codes": "entrance_grotto_field_valley"
+  },
+  {
+    "name": "Composer Grave",
+    "type": "toggle",
+    "img": "images/entrance_grotto_comp.png",
+    "codes": "entrance_grotto_comp"
+  },
+  {
+    "name": "Graveyard Dampes Grave",
+    "type": "toggle",
+    "img": "images/entrance_grotto_dampe.png",
+    "codes": "entrance_grotto_dampe"
+  },
+  {
+    "name": "Heart Piece Grave",
+    "type": "toggle",
+    "img": "images/entrance_grotto_hp.png",
+    "codes": "entrance_grotto_hp"
+  },
+  {
+    "name": "Fairy Fountain",
+    "type": "toggle",
+    "img": "images/entrance_grotto_fairy.png",
+    "codes": "entrance_grotto_fairy"
+  },
+  {
+    "name": "Kokiri Forest",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kf.png",
+    "codes": "entrance_overworld_kf"
+  },
+  {
+    "name": "Lost Woods",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw.png",
+    "codes": "entrance_overworld_lw"
+  },
+  {
+    "name": "LW Bridge",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw_brg.png",
+    "codes": "entrance_overworld_lw_brg"
+  },
+  {
+    "name": "LW Bridge From Forest",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw_brg2.png",
+    "codes": "entrance_overworld_lw_brg2"
+  },
+  {
+    "name": "LW Beyond Mido",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lw_mido.png",
+    "codes": "entrance_overworld_lw_mido"
+  },
+  {
+    "name": "Sacred Forest Meadow",
+    "type": "toggle",
+    "img": "images/entrance_overworld_sfm.png",
+    "codes": "entrance_overworld_sfm"
+  },
+  {
+    "name": "SFM Entryway",
+    "type": "toggle",
+    "img": "images/entrance_overworld_sfm_ent.png",
+    "codes": "entrance_overworld_sfm_ent"
+  },
+  {
+    "name": "Castle Grounds",
+    "type": "toggle",
+    "img": "images/entrance_overworld_cg.png",
+    "codes": "entrance_overworld_cg"
+  },
+  {
+    "name": "Market",
+    "type": "toggle",
+    "img": "images/entrance_overworld_mkt.png",
+    "codes": "entrance_overworld_mkt"
+  },
+  {
+    "name": "Market Entrance",
+    "type": "toggle",
+    "img": "images/entrance_overworld_mkt_ent.png",
+    "codes": "entrance_overworld_mkt_ent"
+  },
+  {
+    "name": "ToT Entrance",
+    "type": "toggle",
+    "img": "images/entrance_overworld_tot_ent.png",
+    "codes": "entrance_overworld_tot_ent"
+  },
+  {
+    "name": "Hyrule Field",
+    "type": "toggle",
+    "img": "images/entrance_overworld_hf.png",
+    "codes": "entrance_overworld_hf"
+  },
+  {
+    "name": "Lon Lon Ranch",
+    "type": "toggle",
+    "img": "images/entrance_overworld_llr.png",
+    "codes": "entrance_overworld_llr"
+  },
+  {
+    "name": "Kakariko Village",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kak.png",
+    "codes": "entrance_overworld_kak"
+  },
+  {
+    "name": "Kak Impas Ledge",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kak_impa.png",
+    "codes": "entrance_overworld_kak_impa"
+  },
+  {
+    "name": "Kak Behind Gate",
+    "type": "toggle",
+    "img": "images/entrance_overworld_kak_gate.png",
+    "codes": "entrance_overworld_kak_gate"
+  },
+  {
+    "name": "Graveyard",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gy.png",
+    "codes": "entrance_overworld_gy"
+  },
+  {
+    "name": "Graveyard Warp Pad Region",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gy_pad.png",
+    "codes": "entrance_overworld_gy_pad"
+  },
+  {
+    "name": "Lake Hylia",
+    "type": "toggle",
+    "img": "images/entrance_overworld_lh.png",
+    "codes": "entrance_overworld_lh"
+  },
+  {
+    "name": "Zora River",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zr.png",
+    "codes": "entrance_overworld_zr"
+  },
+  {
+    "name": "ZR Front",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zr_frnt.png",
+    "codes": "entrance_overworld_zr_frnt"
+  },
+  {
+    "name": "ZR Behind Waterfall",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zr_fall.png",
+    "codes": "entrance_overworld_zr_fall"
+  },
+  {
+    "name": "Zoras Domain",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zd.png",
+    "codes": "entrance_overworld_zd"
+  },
+  {
+    "name": "ZD Behind King Zora",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zd_kz.png",
+    "codes": "entrance_overworld_zd_kz"
+  },
+  {
+    "name": "Zoras Fountain",
+    "type": "toggle",
+    "img": "images/entrance_overworld_zf.png",
+    "codes": "entrance_overworld_zf"
+  },
+  {
+    "name": "Desert Colossus",
+    "type": "toggle",
+    "img": "images/entrance_overworld_col.png",
+    "codes": "entrance_overworld_col"
+  },
+  {
+    "name": "Wasteland Near Colossus",
+    "type": "toggle",
+    "img": "images/entrance_overworld_wl_col.png",
+    "codes": "entrance_overworld_wl_col"
+  },
+  {
+    "name": "Wasteland Near Fortress",
+    "type": "toggle",
+    "img": "images/entrance_overworld_wl_fort.png",
+    "codes": "entrance_overworld_wl_fort"
+  },
+  {
+    "name": "Gerudo Fortress",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gf.png",
+    "codes": "entrance_overworld_gf"
+  },
+  {
+    "name": "GF Outside Gate",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gf_gate.png",
+    "codes": "entrance_overworld_gf_gate"
+  },
+  {
+    "name": "Gerudo Valley",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gv.png",
+    "codes": "entrance_overworld_gv"
+  },
+  {
+    "name": "GV Fortress Side",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gv_fort.png",
+    "codes": "entrance_overworld_gv_fort"
+  },
+  {
+    "name": "Death Mountain",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmt.png",
+    "codes": "entrance_overworld_dmt"
+  },
+  {
+    "name": "Death Mountain Summit",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dm_smt.png",
+    "codes": "entrance_overworld_dm_smt"
+  },
+  {
+    "name": "DMC Central Local",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc_ctr.png",
+    "codes": "entrance_overworld_dmc_ctr"
+  },
+  {
+    "name": "DMC Lower Local",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc_lwr.png",
+    "codes": "entrance_overworld_dmc_lwr"
+  },
+  {
+    "name": "DMC Upper Local",
+    "type": "toggle",
+    "img": "images/entrance_overworld_dmc_upr.png",
+    "codes": "entrance_overworld_dmc_upr"
+  },
+  {
+    "name": "Goron City",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gc.png",
+    "codes": "entrance_overworld_gc"
+  },
+  {
+    "name": "GC Darunias Chamber",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gc_drn.png",
+    "codes": "entrance_overworld_gc_drn"
+  },
+  {
+    "name": "GC Woods Warp",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gc_lw.png",
+    "codes": "entrance_overworld_gc_lw"
+  }
+]

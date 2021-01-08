@@ -10,7 +10,7 @@ for region, region_data in pairs(data_per_region) do
       if section_object then
         target_data.section_object = section_object
       else
-        print("missing section", section)
+        print("error! section not found:", section)
       end
     end
   end
@@ -45,18 +45,7 @@ function update_region_captures()
   end
 end
 
-function tracker_on_accessibility_updated()
-  amount_cache = {}
-
-  update_smallkeys()
-  update_bridge_amount_max()
-  update_fortress()
-  update_collected_capture()
+function update_version_specific()
   update_region_captures()
-  update_free_zelda()
   build_regions()
-
-  apply_queued_changes()
-  
-  get_object("dummy").Active = not get_object("dummy").Active
 end

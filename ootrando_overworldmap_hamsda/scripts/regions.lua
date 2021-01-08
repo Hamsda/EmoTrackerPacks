@@ -642,8 +642,9 @@ data_per_region = {
       ["LW Near Shortcuts Grotto"] = {
         ["setting"] = "setting_entrance_grottos_shuffle",
         ["child_access"] = function()
-          --TODO: adult opens this for kid
-          return has_explosives()
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(has_explosives(), and_accessibility(hammer, access_region("Lost Woods", "adult")))
         end,
         ["adult_access"] = function()
           return can_blast()
@@ -751,8 +752,9 @@ data_per_region = {
       ["LW Scrubs Grotto"] = {
         ["setting"] = "setting_entrance_grottos_shuffle",
         ["child_access"] = function()
-          --TODO: adult opens this for kid
-          return has_explosives()
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(has_explosives(), and_accessibility(hammer, access_region("LW Beyond Mido", "adult")))
         end,
         ["adult_access"] = function()
           return can_blast()
@@ -1413,10 +1415,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("epona")) or has("longshot") or has("gerudo_fortress_open") then --TODO: carpenter rescue
+          if (has("ocarina") and has("epona")) or has("longshot") or has("gerudo_fortress_open") then
             return AccessibilityLevel.Normal
           end
-          return AccessibilityLevel.None
+          return or_accessibility(can_finish_GerudoFortress("adult"), can_finish_GerudoFortress("child"))
         end
       }
     }
@@ -1609,10 +1611,10 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("epona")) or has("longshot") or has("gerudo_fortress_open") then --TODO: carpenter rescue
+          if (has("ocarina") and has("epona")) or has("longshot") or has("gerudo_fortress_open") then
             return AccessibilityLevel.Normal
           end
-          return AccessibilityLevel.None
+          return or_accessibility(can_finish_GerudoFortress("adult"), can_finish_GerudoFortress("child"))
         end
       },
       ["GV Carpenter Tent"] = {
@@ -1826,7 +1828,7 @@ data_per_region = {
     ["exits"] = {
       ["Gerudo Fortress"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.None --TODO: open gate as adult
+          return gf_gate_open()
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -1976,6 +1978,14 @@ data_per_region = {
   ["Desert Colossus"] = {
     ["scene"] = "Desert Colossus",
     ["locations"] = {
+      ["Sheik at Colossus"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
       ["Colossus Freestanding PoH"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -2072,17 +2082,7 @@ data_per_region = {
   },
   ["Desert Colossus From Spirit Lobby"] = {
     ["scene"] = "Desert Colossus",
-    ["locations"] = {
-      ["Sheik at Colossus"] = {
-        --TODO: might have to move to colossus
-        ["child_access"] = function()
-          return AccessibilityLevel.Normal
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      }
-    },
+    ["locations"] = {},
     ["exits"] = {
       ["Desert Colossus"] = {
         ["child_access"] = function()
@@ -4001,12 +4001,17 @@ data_per_region = {
         end
       },
       ["Goron City"] = {
-        --TODO: fuck this logic
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("nayrus") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return damage_below_quadruple()
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("redtunic") or (has("nayrus") and has("magic")) or (has("ocarina") and has("time") and has("longshot")) then
+            return AccessibilityLevel.Normal
+          end
+          return damage_below_quadruple()
         end
       }
     }
@@ -9962,7 +9967,7 @@ function access_exit(region, exit, age)
     data_per_region[region].exits and data_per_region[region].exits[exit] and
     data_per_region[region].exits[exit].adult_access()
   if not exit_child or not exit_adult then
-    print("exit not found:", region, exit, age)
+    print("error! exit not found:", region, exit, age)
     return 0, AccessibilityLevel.None
   end
 
@@ -10041,7 +10046,7 @@ function access_location(region, location, age)
     data_per_region[region].locations and data_per_region[region].locations[location] and
     data_per_region[region].locations[location].adult_access()
   if not location_child or not location_adult then
-    print("location not found:", region, location, age)
+    print("error! location not found:", region, location, age)
     return 0, AccessibilityLevel.None
   end
 
