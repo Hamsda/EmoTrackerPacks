@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.2.2.0
 
 - fixed Sheik at Colossus not showing in ER
 - adjusted position of many locations
