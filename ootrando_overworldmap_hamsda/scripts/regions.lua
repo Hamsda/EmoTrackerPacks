@@ -5584,141 +5584,257 @@ data_per_region = {
     ["scene"] = "Bottom of the Well",
     ["dungeon"] = true,
     ["locations"] = {
-      --CONTINUE with dungeon locations
       ["Bottom of the Well Front Left Fake Wall Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Front Center Bombable Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          return has_explosives()
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Right Bottom Fake Wall Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Compass Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Center Skulltula Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Back Left Bombable Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          return and_accessibility(has_explosives(), lens)
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Freestanding Key"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Lens of Truth Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("ocarina") and has("lullaby") then
+            if has("sword1") then
+              return AccessibilityLevel.Normal
+            end
+            if has("sticks") then
+              if has("logic_child_deadhand") then
+                return AccessibilityLevel.Normal
+              end
+              return AccessibilityLevel.SequenceBreak
+            end
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Invisible Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("ocarina") and has("lullaby") then
+            if has("logic_lens_botw") or (has("lens") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Underwater Front Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Underwater Left Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Map Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local lift = has("lift") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = AccessibilityLevel.None
+          if has("sticks") then
+            if has("logic_botw_basement") then
+              trick = AccessibilityLevel.Normal
+            else
+              trick = AccessibilityLevel.SequenceBreak
+            end
+          end
+
+          return or_accessibility(
+            has_explosives(),
+            and_accessibility(lift, or_accessibility(and_accessibility(keys, lens), df, trick))
+          )
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Fire Keese Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(keys, lens)
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well Like Like Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(keys, lens)
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well GS West Inner Room"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(rang, lens, keys)
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well GS East Inner Room"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(rang, lens, keys)
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       },
       ["Bottom of the Well GS Like Like Cage"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lens =
+            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(rang, lens, keys)
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return AccessibilityLevel.None
         end
       }
     },
@@ -5745,7 +5861,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Bottom of the Well MQ Main Area"] = {
+      ["Bottom of the Well MQ Perimeter"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -5755,11 +5871,135 @@ data_per_region = {
       }
     }
   },
-  ["Bottom of the Well MQ Main Area"] = {
+  ["Bottom of the Well MQ Perimeter"] = {
     ["scene"] = "Bottom of the Well",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Bottom of the Well MQ Compass Chest"] = {
+        ["child_access"] = function()
+          if has("sword1") then
+            return AccessibilityLevel.Normal
+          end
+          if has("sticks") then
+            if has("logic_child_deadhand") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Bottom of the Well MQ Dead Hand Freestanding Key"] = {
+        ["child_access"] = function()
+          local trick = AccessibilityLevel.None
+          if has("boomerang") then
+            if has("logic_botw_mq_dead_hand_key") then
+              trick = AccessibilityLevel.Normal
+            else
+              trick = AccessibilityLevel.SequenceBreak
+            end
+          end
+          return or_accessibility(has_explosives(), trick)
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Bottom of the Well MQ GS Basement"] = {
+        ["child_access"] = function()
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Bottom of the Well MQ GS Coffin Room"] = {
+        ["child_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 2) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          return and_accessibility(can_child_attack(), keys)
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Bottom of the Well MQ"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Bottom of the Well MQ Middle"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          local trick = has("logic_botw_mq_pits") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return and_accessibility(trick, has_explosives())
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
+  ["Bottom of the Well MQ Middle"] = {
+    ["scene"] = "Bottom of the Well",
+    ["dungeon"] = true,
+    ["locations"] = {
+      ["Bottom of the Well MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Bottom of the Well MQ Lens of Truth Chest"] = {
+        ["child_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("botw_small_keys", 2) then
+            keys = AccessibilityLevel.Normal
+          elseif has("botw_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          return and_accessibility(has_explosives(), keys)
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Bottom of the Well MQ East Inner Room Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Bottom of the Well MQ GS West Inner Room"] = {
+        ["child_access"] = function()
+          local trick = has("logic_botw_mq_pits") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return and_accessibility(can_child_attack(), or_accessibility(trick, has_explosives()))
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
+    ["exits"] = {
+      ["Bottom of the Well MQ Perimeter"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,

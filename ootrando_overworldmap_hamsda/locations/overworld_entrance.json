@@ -299,6 +299,287 @@
         ]
       },
       {
+        "name": "Dungeons",
+        "color": "#ffffff",
+        "children": [
+          {
+            "name": "Bottom of the Well",
+            "sections": [
+              {
+                "name": "Front Left Fake Wall Chest",
+                "short_name": "Front Hidden",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Front Left Fake Wall Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Right Bottom Fake Wall Chest",
+                "short_name": "Right Hidden",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Right Bottom Fake Wall Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Center Large",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Center Skulltula Chest",
+                "short_name": "Center Small",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Center Skulltula Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS West Inner Room",
+                "short_name": "West Inner",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well GS West Inner Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS East Inner Room",
+                "short_name": "East Inner",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well GS East Inner Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Fire Keese Chest",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Fire Keese Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Like Like Chest",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Like Like Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Like Like Cage",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well GS Like Like Cage"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding Key",
+                "short_name": "Coffin Key",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Freestanding Key"
+                ],
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Front Center Bombable Chest",
+                "short_name": "Front Bombable",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Front Center Bombable Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Back Left Bombable Chest",
+                "short_name": "Back Bombable",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Back Left Bombable Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Underwater Left Chest",
+                "short_name": "Underwater Left",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Underwater Left Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Underwater Front Chest",
+                "short_name": "Underwater Front",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Underwater Front Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Lens of Truth Chest",
+                "short_name": "Dead Hand",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Lens of Truth Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Invisible Chest",
+                "access_rules": [
+                  "$access_location|Bottom of the Well Main Area|Bottom of the Well Invisible Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "botw_mq"
+                ],
+                "x": 50,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Bottom of the Well MQ",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Middle|Bottom of the Well MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS West Inner Room",
+                "short_name": "West Inner",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Middle|Bottom of the Well MQ GS West Inner Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "East Inner Room Freestanding Key",
+                "short_name": "East Inner",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Middle|Bottom of the Well MQ East Inner Room Freestanding Key"
+                ],
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Dead Hand",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Perimeter|Bottom of the Well MQ Compass Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Dead Hand Freestanding Key",
+                "short_name": "Dead Hand Key",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Perimeter|Bottom of the Well MQ Dead Hand Freestanding Key"
+                ],
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Lens of Truth Chest",
+                "short_name": "Lens",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Middle|Bottom of the Well MQ Lens of Truth Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Perimeter|Bottom of the Well MQ GS Basement"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Coffin Room",
+                "short_name": "Coffin",
+                "access_rules": [
+                  "$access_location|Bottom of the Well MQ Perimeter|Bottom of the Well MQ GS Coffin Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "botw_reg"
+                ],
+                "x": 50,
+                "y": 100
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Kokiri Forest",
         "color": "#18a50e",
         "children": [
