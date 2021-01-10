@@ -6105,7 +6105,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-      },
+    },
     ["exits"] = {
       ["KF Outside Deku Tree"] = {
         ["child_access"] = function()
@@ -6228,7 +6228,7 @@ data_per_region = {
             local adult = access_region("Deku Tree Basement Backroom", "adult")
             local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
-            
+
             return and_accessibility(
               or_accessibility(fire, and_accessibility(adult, bow)),
               or_accessibility(has_explosives(), and_accessibility(adult, hammer))
@@ -6753,7 +6753,6 @@ data_per_region = {
       }
     }
   },
-  --CONTINUE
   ["Dodongos Cavern Beginning"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
@@ -6771,17 +6770,12 @@ data_per_region = {
           if has("lift1") then
             return AccessibilityLevel.Normal
           end
-          local adult = AccessibilityLevel.None
-          if has("hammer") then
-            adult = access_region("Dodongos Cavern Beginning", "adult")
-          end
-          local explo = has_explosives()
-          if adult == AccessibilityLevel.Normal or explo == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif adult == AccessibilityLevel.SequenceBreak or explo == AccessibilityLevel.SequenceBreak then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            has_explosives(),
+            and_accessibility(hammer, access_region("Dodongos Cavern Beginning", "adult"))
+          )
         end,
         ["adult_access"] = function()
           if has("lift1") then
@@ -6795,6 +6789,60 @@ data_per_region = {
   ["Dodongos Cavern Lobby"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern GS Side Room Near Lower Lizalfos"] = {
+        ["child_access"] = function()
+          if has("sling") or has("boomerang") or has("sticks") or has("sword1") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern GS Scarecrow"] = {
+        ["child_access"] = function()
+          local trick = has("logic_dc_scarecrow_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return and_accessibility(trick, can_child_attack())
+        end,
+        ["adult_access"] = function()
+          if
+            (has("ocarina") and has("scarecrow") and has("hookshot")) or has("longshot") or has("logic_dc_scarecrow_gs")
+           then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Dodongos Cavern Deku Scrub Side Room Near Dodongos"] = {
+        ["child_access"] = function()
+          if has("sling") or has("sticks") or has("sword1") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern Deku Scrub Lobby"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern Beginning"] = {
         ["child_access"] = function()
@@ -6815,13 +6863,7 @@ data_per_region = {
             end
             explo = has_explosives()
           end
-          local adult = access_region("Dodongos Cavern Lobby", "adult")
-          if adult == AccessibilityLevel.Normal or explo == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif adult == AccessibilityLevel.SequenceBreak or explo == AccessibilityLevel.SequenceBreak then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return or_accessibility(explo, access_region("Dodongos Cavern Lobby", "adult"))
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -6840,6 +6882,46 @@ data_per_region = {
   ["Dodongos Cavern Staircase Room"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern GS Vines Above Stairs"] = {
+        ["child_access"] = function()
+          if has("lift1") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          if has("lift1") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          local bow = AccessibilityLevel.None
+          if has("bow") then
+            if has("logic_dc_staircase") then
+              bow = AccessibilityLevel.Normal
+            else
+              bow = AccessibilityLevel.SequenceBreak
+            end
+          end
+          local longshot = AccessibilityLevel.None
+          if has("longshot") then
+            if has("logic_dc_vines_gs") then
+              longshot = AccessibilityLevel.Normal
+            else
+              longshot = AccessibilityLevel.SequenceBreak
+            end
+          end
+          return or_accessibility(bow, longshot, has_explosives())
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern Lobby"] = {
         ["child_access"] = function()
@@ -6860,16 +6942,15 @@ data_per_region = {
           if has("lift1") or (has("dinsfire") and has("magic")) then
             return AccessibilityLevel.Normal
           end
-          local explo = has_explosives()
+          local bow = AccessibilityLevel.None
           if has("bow") then
             if has("logic_dc_staircase") then
-              return AccessibilityLevel.Normal
-            end
-            if explo ~= AccessibilityLevel.Normal then
-              return AccessibilityLevel.SequenceBreak
+              bow = AccessibilityLevel.Normal
+            else
+              bow = AccessibilityLevel.SequenceBreak
             end
           end
-          return explo
+          return or_accessibility(bow, has_explosives())
         end
       }
     }
@@ -6877,6 +6958,32 @@ data_per_region = {
   ["Dodongos Cavern Climb"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern Bomb Flower Platform Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern Deku Scrubs Near Bomb Bag"] = {
+        ["child_access"] = function()
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          local trick = AccessibilityLevel.None
+          if has("lift1") then
+            if has("logic_dc_scrub_room") then
+              trick = AccessibilityLevel.Normal
+            else
+              trick = AccessibilityLevel.SequenceBreak
+            end
+          end
+          return or_accessibility(trick, can_blast())
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern Lobby"] = {
         ["child_access"] = function()
@@ -6891,15 +6998,11 @@ data_per_region = {
           if has("sling") then
             return AccessibilityLevel.Normal
           end
-          local level = has("logic_dc_slingshot_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick = has("logic_dc_slingshot_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           if has("sticks") or has("sword1") then
-            return level
+            return trick
           end
-          local explo = has_explosives()
-          if explo == AccessibilityLevel.Normal then
-            return level
-          end
-          return explo
+          return and_accessibility(trick, has_explosives())
         end,
         ["adult_access"] = function()
           if has("bow") or has("hoverboots") or has("longshot") or has("logic_dc_jump") then
@@ -6913,6 +7016,38 @@ data_per_region = {
   ["Dodongos Cavern Far Bridge"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern Bomb Bag Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern End of Bridge Chest"] = {
+        ["child_access"] = function()
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          return can_blast()
+        end
+      },
+      ["Dodongos Cavern GS Alcove Above Stairs"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern Boss Area"] = {
         ["child_access"] = function()
@@ -6935,6 +7070,40 @@ data_per_region = {
   ["Dodongos Cavern Boss Area"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern Boss Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern GS Back Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["King Dodongo"] = {
+        ["child_access"] = function()
+          if (has("bombs") or has("lift1")) and (has("sticks") or has("sword1")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bombs") or has("lift1") then
+            return AccessibilityLevel.Normal
+          elseif has("bombchu") and (has("shield2") or has("shield3")) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern Lobby"] = {
         ["child_access"] = function()
@@ -6963,17 +7132,12 @@ data_per_region = {
           if has("lift1") then
             return AccessibilityLevel.Normal
           end
-          local adult = AccessibilityLevel.None
-          if has("hammer") then
-            adult = access_region("Dodongos Cavern MQ Beginning", "adult")
-          end
-          local explo = has_explosives()
-          if adult == AccessibilityLevel.Normal or explo == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif adult == AccessibilityLevel.SequenceBreak or explo == AccessibilityLevel.SequenceBreak then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            has_explosives(),
+            and_accessibility(hammer, access_region("Dodongos Cavern MQ Beginning", "adult"))
+          )
         end,
         ["adult_access"] = function()
           if has("lift1") then
@@ -6987,6 +7151,111 @@ data_per_region = {
   ["Dodongos Cavern MQ Lobby"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern MQ Compass Chest"] = {
+        ["child_access"] = function()
+          if has("nuts") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern MQ Larvae Room Chest"] = {
+        ["child_access"] = function()
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_fire()
+        end
+      },
+      ["Dodongos Cavern MQ Torch Puzzle Room Chest"] = {
+        ["child_access"] = function()
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          if has("logic_dc_jump") or has("hoverboots") or has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          local trick = AccessibilityLevel.SequenceBreak
+          return or_accessibility(trick, can_blast())
+        end
+      },
+      ["Dodongos Cavern MQ GS Song of Time Block Room"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("time") then
+            return can_child_attack()
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Dodongos Cavern MQ GS Larvae Room"] = {
+        ["child_access"] = function()
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_fire()
+        end
+      },
+      ["Dodongos Cavern MQ GS Lizalfos Room"] = {
+        ["child_access"] = function()
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          return can_blast()
+        end
+      },
+      ["Dodongos Cavern MQ Deku Scrubs Lobby"] = {
+        ["child_access"] = function()
+          if has("nuts") or has("shield1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern MQ Deku Scrub Staircase"] = {
+        ["child_access"] = function()
+          if has("nuts") or has("shield1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern MQ Lower Right Side"] = {
         ["child_access"] = function()
@@ -7031,12 +7300,44 @@ data_per_region = {
         end
       },
       ["Dodongos Cavern MQ Boss Area"] = {
-        --TODO: logic_dc_mq_eyes
         ["child_access"] = function()
-          return has_explosives()
+          local eyes = AccessibilityLevel.None
+          if has("lift1") then
+            local trick = AccessibilityLevel.SequenceBreak
+            if has("logic_dc_mq_eyes") then
+              trick = AccessibilityLevel.Normal
+            end
+            local child_trick = AccessibilityLevel.SequenceBreak
+            if has("logic_dc_mq_child_back") then
+              child_trick = AccessibilityLevel.Normal
+            end
+            if has("sticks") or (has("dinsfire") and has("magic")) then
+              eyes = and_accessibility(trick, child_trick)
+            end
+          end
+          return or_accessibility(has_explosives(), eyes)
         end,
         ["adult_access"] = function()
-          return has_explosives()
+          local eyes = AccessibilityLevel.None
+          if has("lift1") then
+            local trick = AccessibilityLevel.SequenceBreak
+            if has("logic_dc_mq_eyes") then
+              trick = AccessibilityLevel.Normal
+            end
+            local adult = AccessibilityLevel.SequenceBreak
+            if
+              (has("dinsfire") and has("magic")) or has("logic_dc_jump") or has("hammer") or has("hoverboots") or
+                has("hookshot")
+             then
+              adult = AccessibilityLevel.Normal
+            end
+            local child = AccessibilityLevel.None
+            if has("sticks") then
+              child = access_region("Dodongos Cavern MQ Lobby", "child")
+            end
+            eyes = and_accessibility(trick, or_accessibility(adult, child))
+          end
+          return or_accessibility(has_explosives(), eyes)
         end
       }
     }
@@ -7044,6 +7345,19 @@ data_per_region = {
   ["Dodongos Cavern MQ Lower Right Side"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos"] = {
+        ["child_access"] = function()
+          if has("nuts") or has("shield1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern MQ Bomb Bag Area"] = {
         ["child_access"] = function()
@@ -7068,6 +7382,40 @@ data_per_region = {
   ["Dodongos Cavern MQ Bomb Bag Area"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern MQ Bomb Bag Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern MQ GS Scrub Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            if has("lift1") or (has("dinsfire") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+            local bow = AccessibilityLevel.None
+            if has("bow") then
+              bow = access_region("Dodongos Cavern MQ Bomb Bag Area", "adult")
+            end
+            return or_accessibility(bow, has_explosives())
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            if has("bow") or has("lift1") or (has("dinsfire") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+            return has_explosives()
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Dodongos Cavern MQ Lower Right Side"] = {
         ["child_access"] = function()
@@ -7082,6 +7430,48 @@ data_per_region = {
   ["Dodongos Cavern MQ Boss Area"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Dodongos Cavern MQ Under Grave Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern Boss Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Dodongos Cavern MQ GS Back Area"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["King Dodongo"] = {
+        ["child_access"] = function()
+          if (has("bombs") or has("lift1")) and (has("sticks") or has("sword1")) then
+            return has_explosives()
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bombs") or has("lift1") then
+            return can_blast()
+          elseif has("bombchu") and (has("shield2") or has("shield3")) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Fire Temple Split"] = {

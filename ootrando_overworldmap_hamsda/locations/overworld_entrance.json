@@ -839,6 +839,376 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Dodongos Cavern",
+            "sections": [
+              {
+                "name": "GS Side Room Near Lower Lizalfos",
+                "short_name": "East Side",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Lobby|Dodongos Cavern GS Side Room Near Lower Lizalfos"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Scarecrow",
+                "short_name": "Scarecrow",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Lobby|Dodongos Cavern GS Scarecrow"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrub Side Room Near Dodongos",
+                "short_name": "East Side",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Lobby|Dodongos Cavern Deku Scrub Side Room Near Dodongos"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Lobby|Dodongos Cavern Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrub Lobby",
+                "short_name": "Lobby",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Lobby|Dodongos Cavern Deku Scrub Lobby"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Staircase Room|Dodongos Cavern Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Alcove Above Stairs",
+                "short_name": "Above Stairs",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Far Bridge|Dodongos Cavern GS Alcove Above Stairs"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Vines Above Stairs",
+                "short_name": "Vines",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Staircase Room|Dodongos Cavern GS Vines Above Stairs"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bomb Flower Platform Chest",
+                "short_name": "Bomb Flower",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Climb|Dodongos Cavern Bomb Flower Platform Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrubs Near Bomb Bag",
+                "short_name": "Near Bomb Bag",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Climb|Dodongos Cavern Deku Scrubs Near Bomb Bag"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              },
+              {
+                "name": "Bomb Bag Chest",
+                "short_name": "Bomb Bag",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Far Bridge|Dodongos Cavern Bomb Bag Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "End of Bridge Chest",
+                "short_name": "Bridge",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Far Bridge|Dodongos Cavern End of Bridge Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Back Room",
+                "short_name": "Back Room",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Boss Area|Dodongos Cavern GS Back Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Room Chest",
+                "short_name": "Boss Room",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Boss Area|Dodongos Cavern Boss Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "King Dodongo",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern Boss Area|King Dodongo"
+                ],
+                "hosted_item": "dodongo",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "dodongo_mq"
+                ],
+                "x": 150,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Dodongos Cavern MQ",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bomb Bag Chest",
+                "short_name": "Bomb Bag",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Bomb Bag Area|Dodongos Cavern MQ Bomb Bag Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Scrub Room",
+                "short_name": "Scrub",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Bomb Bag Area|Dodongos Cavern MQ GS Scrub Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrub Side Room Near Lower Lizalfos",
+                "short_name": "East Side",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lower Right Side|Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Torch Puzzle Room Chest",
+                "short_name": "Platform",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ Torch Puzzle Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Lizalfos Room",
+                "short_name": "Lizalfos",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ GS Lizalfos Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Larvae Room Chest",
+                "short_name": "Larvae",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ Larvae Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Larvae Room",
+                "short_name": "Larvae",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ GS Larvae Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrub Staircase",
+                "short_name": "Above Stairs",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ Deku Scrub Staircase"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Song of Time Block Room",
+                "short_name": "Song of Time",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ GS Song of Time Block Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrubs Lobby",
+                "short_name": "Lobby",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Lobby|Dodongos Cavern MQ Deku Scrubs Lobby"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              },
+              {
+                "name": "GS Back Area",
+                "short_name": "Back Area",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Boss Area|Dodongos Cavern MQ GS Back Area"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Under Grave Chest",
+                "short_name": "Under Grave",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Boss Area|Dodongos Cavern MQ Under Grave Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Boss Room Chest",
+                "short_name": "Boss Room",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Boss Area|Dodongos Cavern Boss Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "King Dodongo",
+                "access_rules": [
+                  "$access_location|Dodongos Cavern MQ Boss Area|King Dodongo"
+                ],
+                "hosted_item": "dodongo",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "dodongo_reg"
+                ],
+                "x": 150,
+                "y": 100
+              }
+            ]
           }
         ]
       },
