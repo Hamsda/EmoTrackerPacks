@@ -1159,13 +1159,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("scarecrow") and has("hookshot") then
-            return AccessibilityLevel.Normal
-          elseif has("beans") then
-            return access_region("Lake Hylia", "child")
+          local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(can_use_scarecrow(), and_accessibility(beans, access_region("Lake Hylia", "child")))
           end
-          return AccessibilityLevel.None
-        end
       },
       ["LH GS Bean Patch"] = {
         ["child_access"] = function()
@@ -1255,13 +1251,14 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if has("water") or has("ocarina") and has("scarecrow") and has("hookshot") then
-            return AccessibilityLevel.Normal
-          elseif has("beans") then
-            return access_region("Lake Hylia", "child")
+          local water = has("water") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            water,
+            can_use_scarecrow(),
+            and_accessibility(beans, access_region("Lake Hylia", "child"))
+          )
           end
-          return AccessibilityLevel.None
-        end
       },
       ["Water Temple Split"] = {
         ["setting"] = "setting_entrance_dungeons_shuffle",
@@ -1659,10 +1656,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hoverboots") or (has("ocarina") and has("scarecrow") and has("hookshot")) or has("longshot") then
+          if has("hoverboots") or has("longshot") then
             return AccessibilityLevel.Normal
           end
-          return AccessibilityLevel.None
+          return can_use_scarecrow()
         end
       },
       ["GF HBA 1000 Points"] = {
@@ -6815,13 +6812,10 @@ data_per_region = {
           return and_accessibility(trick, can_child_attack())
         end,
         ["adult_access"] = function()
-          if
-            (has("ocarina") and has("scarecrow") and has("hookshot")) or has("longshot") or has("logic_dc_scarecrow_gs")
-           then
-            return AccessibilityLevel.Normal
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_dc_scarecrow_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return or_accessibility(can_use_scarecrow(), ls, trick)
           end
-          return AccessibilityLevel.SequenceBreak
-        end
       },
       ["Dodongos Cavern Deku Scrub Side Room Near Dodongos"] = {
         ["child_access"] = function()
