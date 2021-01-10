@@ -1209,6 +1209,420 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Fire Temple",
+            "sections": [
+              {
+                "name": "Near Boss Chest",
+                "short_name": "Near Boss",
+                "access_rules": [
+                  "$access_location|Fire Temple Lower|Fire Temple Near Boss Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Boss Key Loop",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Fire Temple Lower|Fire Temple GS Boss Key Loop"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Flare Dancer Chest",
+                "short_name": "Flare Dancer",
+                "access_rules": [
+                  "$access_location|Fire Temple Lower|Fire Temple Flare Dancer Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Fire Temple Lower|Fire Temple Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Song of Time Room",
+                "short_name": "Time Block",
+                "access_rules": [
+                  "$access_location|Fire Temple Big Lava Room|Fire Temple GS Song of Time Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Big Lava Room Lower Open Door Chest",
+                "short_name": "Lava Room Open",
+                "access_rules": [
+                  "$access_location|Fire Temple Big Lava Room|Fire Temple Big Lava Room Lower Open Door Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Big Lava Room Blocked Door Chest",
+                "short_name": "Lava Room Bombable",
+                "access_rules": [
+                  "$access_location|Fire Temple Big Lava Room|Fire Temple Big Lava Room Blocked Door Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boulder Maze Lower Chest",
+                "short_name": "Boulder Maze Lower",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Boulder Maze Lower Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boulder Maze Side Room Chest",
+                "short_name": "Boulder Maze Side",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Boulder Maze Side Room Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Boulder Maze",
+                "short_name": "Boulder Maze",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple GS Boulder Maze"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boulder Maze Upper Chest",
+                "short_name": "Boulder Maze Upper",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Boulder Maze Upper Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boulder Maze Shortcut Chest",
+                "short_name": "Shortcut",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Boulder Maze Shortcut Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Scarecrow Climb",
+                "short_name": "Scarecrow 1",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple GS Scarecrow Climb"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Scarecrow Top",
+                "short_name": "Scarecrow 2",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple GS Scarecrow Top"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Scarecrow Chest",
+                "short_name": "Scarecrow",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Scarecrow Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Fire Temple Middle|Fire Temple Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Highest Goron Chest",
+                "short_name": "Highest Goron",
+                "access_rules": [
+                  "$access_location|Fire Temple Upper|Fire Temple Highest Goron Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Megaton Hammer Chest",
+                "short_name": "Hammer",
+                "access_rules": [
+                  "$access_location|Fire Temple Upper|Fire Temple Megaton Hammer Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Volvagia",
+                "access_rules": [
+                  "$access_location|Fire Temple Lower|Volvagia"
+                ],
+                "hosted_item": "fire",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "fire_mq"
+                ],
+                "x": 200,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Fire Temple MQ",
+            "sections": [
+              {
+                "name": "Near Boss Chest",
+                "short_name": "Near Boss",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Lower|Fire Temple MQ Near Boss Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Room Side Chest",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Lower|Fire Temple MQ Map Room Side Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Megaton Hammer Chest",
+                "short_name": "Hammer",
+                "access_rules": [
+                  "$access_location|Fire MQ Lower Locked Door|Fire Temple MQ Megaton Hammer Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Fire MQ Lower Locked Door|Fire Temple MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Big Lava Room Blocked Door Chest",
+                "short_name": "Lava Room Bombable",
+                "access_rules": [
+                  "$access_location|Fire MQ Big Lava Room|Fire Temple MQ Big Lava Room Blocked Door Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Fire MQ Big Lava Room|Fire Temple MQ Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Big Lava Room Open Door",
+                "short_name": "Lava Room",
+                "access_rules": [
+                  "$access_location|Fire MQ Big Lava Room|Fire Temple MQ GS Big Lava Room Open Door"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Lizalfos Maze Lower Chest",
+                "short_name": "Maze Lower",
+                "access_rules": [
+                  "$access_location|Fire MQ Lower Maze|Fire Temple MQ Lizalfos Maze Lower Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Lizalfos Maze Side Room Chest",
+                "short_name": "Maze Side",
+                "access_rules": [
+                  "$access_location|Fire MQ Lower Maze|Fire Temple MQ Lizalfos Maze Side Room Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Lizalfos Maze Upper Chest",
+                "short_name": "Maze Upper",
+                "access_rules": [
+                  "$access_location|Fire MQ Upper Maze|Fire Temple MQ Lizalfos Maze Upper Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Fire MQ Upper Maze|Fire Temple MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Skull On Fire",
+                "short_name": "East Tower Top",
+                "access_rules": [
+                  "$access_location|Fire MQ Upper Maze|Fire Temple MQ GS Skull On Fire"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Fire Wall Maze Side Room",
+                "short_name": "Fire Maze Side",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Upper|Fire Temple MQ GS Fire Wall Maze Side Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Fire Wall Maze Center",
+                "short_name": "Fire Maze Center",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Upper|Fire Temple MQ GS Fire Wall Maze Center"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding Key",
+                "short_name": "Flare Dancer 2",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Upper|Fire Temple MQ Freestanding Key"
+                ],
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Chest On Fire",
+                "short_name": "West Tower Top",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Upper|Fire Temple MQ Chest On Fire"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Above Fire Wall Maze",
+                "short_name": "Above Fire Maze",
+                "access_rules": [
+                  "$access_location|Fire Temple MQ Upper|Fire Temple MQ GS Above Fire Wall Maze"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Volvagia",
+                "access_rules": [
+                  "$access_location|Fire MQ Boss Room|Volvagia"
+                ],
+                "hosted_item": "fire",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "fire_reg"
+                ],
+                "x": 200,
+                "y": 100
+              }
+            ]
           }
         ]
       },

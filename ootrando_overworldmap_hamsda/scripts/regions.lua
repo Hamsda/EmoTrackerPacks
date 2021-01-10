@@ -1161,7 +1161,7 @@ data_per_region = {
         ["adult_access"] = function()
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
           return or_accessibility(can_use_scarecrow(), and_accessibility(beans, access_region("Lake Hylia", "child")))
-          end
+        end
       },
       ["LH GS Bean Patch"] = {
         ["child_access"] = function()
@@ -1258,7 +1258,7 @@ data_per_region = {
             can_use_scarecrow(),
             and_accessibility(beans, access_region("Lake Hylia", "child"))
           )
-          end
+        end
       },
       ["Water Temple Split"] = {
         ["setting"] = "setting_entrance_dungeons_shuffle",
@@ -6815,7 +6815,7 @@ data_per_region = {
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_dc_scarecrow_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           return or_accessibility(can_use_scarecrow(), ls, trick)
-          end
+        end
       },
       ["Dodongos Cavern Deku Scrub Side Room Near Dodongos"] = {
         ["child_access"] = function()
@@ -7505,6 +7505,88 @@ data_per_region = {
   ["Fire Temple Lower"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple Near Boss Chest"] = {
+        ["child_access"] = function()
+          if has("logic_fewer_tunic_requirements") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end,
+        ["adult_access"] = function()
+          return FTR_or_goron()
+        end
+      },
+      ["Fire Temple Flare Dancer Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            if not is_keys or has("fire_small_keys", 8) then
+              return AccessibilityLevel.Normal
+            elseif has("fire_small_keys", 1) then
+              return AccessibilityLevel.SequenceBreak
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            if not is_keys or has("fire_small_keys", 8) then
+              return AccessibilityLevel.Normal
+            elseif has("fire_small_keys", 1) then
+              return AccessibilityLevel.SequenceBreak
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Volvagia"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") and has("fire_boss_key") then
+            local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local trick =
+              has("logic_fire_boss_door_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+            return and_accessibility(
+              tunic,
+              or_accessibility(
+                trick,
+                hb,
+                and_accessibility(or_accessibility(sot, has_explosives()), access_region("Fire Temple Upper", "adult"))
+              )
+            )
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple GS Boss Key Loop"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            if not is_keys or has("fire_small_keys", 8) then
+              return AccessibilityLevel.Normal
+            elseif has("fire_small_keys", 1) then
+              return AccessibilityLevel.SequenceBreak
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["DMC Fire Temple Entrance"] = {
         ["child_access"] = function()
@@ -7537,6 +7619,35 @@ data_per_region = {
   ["Fire Temple Big Lava Room"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple Big Lava Room Lower Open Door Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Fire Temple Big Lava Room Blocked Door Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      },
+      ["Fire Temple GS Song of Time Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if (has("ocarina") and has("time")) or has("logic_fire_song_of_time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      }
+    },
     ["exits"] = {
       ["Fire Temple Lower"] = {
         ["child_access"] = function()
@@ -7562,25 +7673,8 @@ data_per_region = {
           if has("lift1") or has("logic_fire_strength") then
             block = AccessibilityLevel.Normal
           end
-          local ranged = AccessibilityLevel.None
-          if has("bow") or has("hookshot") then
-            ranged = AccessibilityLevel.Normal
-          else
-            ranged = has_explosives()
-          end
 
-          if keys ~= AccessibilityLevel.None and ranged ~= AccessibilityLevel.None then
-            if
-              tunic == AccessibilityLevel.Normal and keys == AccessibilityLevel.Normal and
-                block == AccessibilityLevel.Normal and
-                ranged == AccessibilityLevel.Normal
-             then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
-          end
-
-          return AccessibilityLevel.None
+          return and_accessibility(tunic, keys, block, has_projectile("adult"))
         end
       }
     }
@@ -7588,6 +7682,157 @@ data_per_region = {
   ["Fire Temple Middle"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple Boulder Maze Lower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Fire Temple Boulder Maze Upper Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("fire_small_keys", 6) then
+            return AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 5) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple Boulder Maze Side Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Fire Temple Boulder Maze Shortcut Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 6) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 5) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          return and_accessibility(keys, has_explosives())
+        end
+      },
+      ["Fire Temple Scarecrow Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 6) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 5) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local pixelshot = AccessibilityLevel.None
+          if has("longshot") then
+            if has("logic_fire_scarecrow") then
+              pixelshot = AccessibilityLevel.Normal
+            else
+              pixelshot = AccessibilityLevel.SequenceBreak
+            end
+          end
+          return and_accessibility(keys, or_accessibility(can_use_scarecrow(), pixelshot))
+        end
+      },
+      ["Fire Temple Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("fire_small_keys", 6) or (has("fire_small_keys", 5) and has("bow")) then
+            return AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 5) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("fire_small_keys", 7) then
+            return AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 6) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple GS Boulder Maze"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 4) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 3) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          return and_accessibility(keys, has_explosives())
+        end
+      },
+      ["Fire Temple GS Scarecrow Climb"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 6) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 5) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local pixelshot = AccessibilityLevel.None
+          if has("longshot") then
+            if has("logic_fire_scarecrow") then
+              pixelshot = AccessibilityLevel.Normal
+            else
+              pixelshot = AccessibilityLevel.SequenceBreak
+            end
+          end
+          return and_accessibility(keys, or_accessibility(can_use_scarecrow(), pixelshot))
+        end
+      },
+      ["Fire Temple GS Scarecrow Top"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 6) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 5) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local pixelshot = AccessibilityLevel.None
+          if has("longshot") then
+            if has("logic_fire_scarecrow") then
+              pixelshot = AccessibilityLevel.Normal
+            else
+              pixelshot = AccessibilityLevel.SequenceBreak
+            end
+          end
+          return and_accessibility(keys, or_accessibility(can_use_scarecrow(), pixelshot))
+        end
+      }
+    },
     ["exits"] = {
       ["Fire Temple Upper"] = {
         ["child_access"] = function()
@@ -7609,11 +7854,77 @@ data_per_region = {
   ["Fire Temple Upper"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple Highest Goron Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            if has("ocarina") and has("time") then
+              return AccessibilityLevel.Normal
+            end
+            local trick = has("logic_rusted_switches") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            return and_accessibility(trick, or_accessibility(hb, has_explosives()))
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple Megaton Hammer Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Fire Temple MQ Lower"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple MQ Map Room Side Chest"] = {
+        ["child_access"] = function()
+          if has("sword1") or has("sticks") or has("sling") or has("bombs") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Fire Temple MQ Near Boss Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_fire_mq_near_boss") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local fa =
+            (has("bow") and has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            FTR_or_goron(),
+            or_accessibility(
+              and_accessibility(or_accessibility(hb, and_accessibility(trick, bow)), has_fire()),
+              and_accessibility(
+                hs,
+                or_accessibility(fa, and_accessibility(df, or_accessibility(damage_below_quadruple(), tunic, bow, ls)))
+              )
+            )
+          )
+        end
+      }
+    },
     ["exits"] = {
       ["DMC Fire Temple Entrance"] = {
         ["child_access"] = function()
@@ -7629,19 +7940,15 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("hammer") and has("fire_boss_key") then
-            local tunic = AccessibilityLevel.SequenceBreak
-            if has("redtunic") then
-              tunic = AccessibilityLevel.Normal
-            end
+            local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local jump =
+              (has("logic_fire_boss_door_jump") or has("hoverboots")) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
 
-            local jump = AccessibilityLevel.SequenceBreak
-            if has("logic_fire_boss_door_jump") or has("hoverboots") then
-              jump = AccessibilityLevel.Normal
-            end
-
-            local pillar = access_region("Fire Temple MQ Upper", "adult")
-
-            return and_accessibility(tunic, or_accessibility(and_accessibility(has_fire(), jump), pillar))
+            return and_accessibility(
+              tunic,
+              or_accessibility(and_accessibility(has_fire(), jump), access_region("Fire Temple MQ Upper", "adult"))
+            )
           end
           return AccessibilityLevel.None
         end
@@ -7682,39 +7989,93 @@ data_per_region = {
   ["Fire MQ Lower Locked Door"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple MQ Megaton Hammer Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") or has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end
+      },
+      ["Fire Temple MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Fire MQ Big Lava Room"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple MQ Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            local trick =
+              (has("bow") or has("logic_fire_mq_bk_chest")) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            return and_accessibility(has_fire(), trick)
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Fire Temple MQ Big Lava Room Blocked Door Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local trick =
+            (has("hookshot") or has("logic_fire_mq_blocked_chest")) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          return and_accessibility(has_fire(), has_explosives(), trick)
+        end
+      },
+      ["Fire Temple MQ GS Big Lava Room Open Door"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Fire MQ Lower Maze"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("fire_small_keys", 1) then
-            local keys = AccessibilityLevel.SequenceBreak
-            if has("fire_small_keys", 2) then
-              keys = AccessibilityLevel.Normal
-            end
-
-            local tunic = AccessibilityLevel.SequenceBreak
-            if has("redtunic") then
-              tunic = AccessibilityLevel.Normal
-            end
-
-            local trick = AccessibilityLevel.None
-            if has("hoverboots") then
-              trick = AccessibilityLevel.SequenceBreak
-              if has("logic_fire_mq_climb") then
-                trick = AccessibilityLevel.Normal
-              end
-            end
-
-            return and_accessibility(tunic, keys, or_accessibility(has_fire(), trick))
+          local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 2) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local trick = AccessibilityLevel.None
+          if has("hoverboots") then
+            if has("logic_fire_mq_climb") then
+              trick = AccessibilityLevel.Normal
+            else
+              trick = AccessibilityLevel.SequenceBreak
+            end
+          end
+
+          return and_accessibility(tunic, keys, or_accessibility(has_fire(), trick))
         end
       }
     }
@@ -7722,6 +8083,29 @@ data_per_region = {
   ["Fire MQ Lower Maze"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple MQ Lizalfos Maze Lower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Fire Temple MQ Lizalfos Maze Side Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local trick =
+            has("logic_fire_mq_maze_side_room") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return and_accessibility(
+            has_explosives(),
+            or_accessibility(trick, access_region("Fire MQ Upper Maze", "adult"))
+          )
+        end
+      }
+    },
     ["exits"] = {
       ["Fire MQ Upper Maze"] = {
         ["child_access"] = function()
@@ -7747,20 +8131,50 @@ data_per_region = {
   ["Fire MQ Upper Maze"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple MQ Lizalfos Maze Upper Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Fire Temple MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      },
+      ["Fire Temple MQ GS Skull On Fire"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          end
+          if has("ocarina") and has("time") and has("hookshot") then
+            local trick = has("logic_rusted_switches") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return or_accessibility(has_explosives(), trick)
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Fire Temple MQ Upper"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("fire_small_keys", 2) then
-            local level = AccessibilityLevel.SequenceBreak
+          if has("bow") and (has("hookshot") or (has("firearrow") and has("magic"))) then
             if has("fire_small_keys", 3) then
-              level = AccessibilityLevel.Normal
-            end
-
-            if has("bow") and (has("hookshot") or (has("firearrow") and has("magic"))) then
-              return level
+              return AccessibilityLevel.Normal
+            elseif has("fire_small_keys", 2) then
+              return AccessibilityLevel.SequenceBreak
             end
           end
           return AccessibilityLevel.None
@@ -7771,11 +8185,89 @@ data_per_region = {
   ["Fire Temple MQ Upper"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Temple MQ Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") or has("logic_fire_mq_flame_maze") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Fire Temple MQ Chest On Fire"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local trick =
+            (has("hookshot") or has("logic_fire_mq_flame_maze")) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 4) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 3) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          return and_accessibility(trick, keys)
+        end
+      },
+      ["Fire Temple MQ GS Fire Wall Maze Side Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if (has("ocarina") and has("time")) or has("hoverboots") or has("logic_fire_mq_flame_maze") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Fire Temple MQ GS Fire Wall Maze Center"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      },
+      ["Fire Temple MQ GS Above Fire Wall Maze"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys = AccessibilityLevel.None
+          if has("fire_small_keys", 5) then
+            keys = AccessibilityLevel.Normal
+          elseif has("fire_small_keys", 4) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local trick =
+            has("logic_fire_mq_above_maze_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(and_accessibility(hs, keys), and_accessibility(trick, ls))
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Fire MQ Boss Room"] = {
     ["scene"] = "Fire Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Volvagia"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Forest Temple Split"] = {
