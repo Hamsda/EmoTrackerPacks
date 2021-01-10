@@ -6046,6 +6046,66 @@ data_per_region = {
   ["Deku Tree Lobby"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree Compass Room Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree Basement Chest"] = {
+        ["child_access"] = function()
+          if has("nuts") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree GS Compass Room"] = {
+        ["child_access"] = function()
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree GS Basement Vines"] = {
+        ["child_access"] = function()
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_deku_basement_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local weapon = (has("sticks") or has("sword1")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(has_projectile("child"), df, and_accessibility(trick, weapon))
+        end,
+        ["adult_access"] = function()
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_deku_basement_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return or_accessibility(has_projectile("adult"), df, trick)
+        end
+      },
+      ["Deku Tree GS Basement Gate"] = {
+        ["child_access"] = function()
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+      },
     ["exits"] = {
       ["KF Outside Deku Tree"] = {
         ["child_access"] = function()
@@ -6070,6 +6130,7 @@ data_per_region = {
         end
       },
       ["Deku Tree Basement Backroom"] = {
+        --TODO: redo this bit of logic
         ["child_access"] = function()
           if
             (has("slingshot") and (has("sticks") or (has("dinsfire") and has("magic")))) or has("logic_deku_b1_skip") or
@@ -6087,6 +6148,7 @@ data_per_region = {
         end
       },
       ["Deku Tree Boss Room"] = {
+        --TODO: redo this bit of logic
         ["child_access"] = function()
           local adult = access_region("Deku Tree Lobby", "adult")
 
@@ -6132,6 +6194,16 @@ data_per_region = {
   ["Deku Tree Slingshot Room"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree Slingshot Room Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Deku Tree Lobby"] = {
         ["child_access"] = function()
@@ -6146,6 +6218,37 @@ data_per_region = {
   ["Deku Tree Basement Backroom"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree GS Basement Back Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            local fire =
+              (has("sticks") or (has("dinsfire") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.None
+            local adult = access_region("Deku Tree Basement Backroom", "adult")
+            local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            
+            return and_accessibility(
+              or_accessibility(fire, and_accessibility(adult, bow)),
+              or_accessibility(has_explosives(), and_accessibility(adult, hammer))
+            )
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sticks = has("sticks") and Normal or AccessibilityLevel.None
+            local child = access_region("Deku Tree Basement Backroom", "child")
+            local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+            return and_accessibility(or_accessibility(df, bow, and_accessibility(sticks, child)), can_blast())
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Deku Tree Lobby"] = {
         ["child_access"] = function()
@@ -6160,6 +6263,22 @@ data_per_region = {
   ["Deku Tree Boss Room"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Queen Gohma"] = {
+        ["child_access"] = function()
+          if has("shield1") and (has("sword1") or has("sticks")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shield2") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Deku Tree Lobby"] = {
         ["child_access"] = function()
@@ -6174,6 +6293,60 @@ data_per_region = {
   ["Deku Tree MQ Lobby"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree MQ Slingshot Chest"] = {
+        ["child_access"] = function()
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree MQ Slingshot Room Back Chest"] = {
+        ["child_access"] = function()
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Deku Tree MQ Basement Chest"] = {
+        ["child_access"] = function()
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Deku Tree MQ GS Lobby"] = {
+        ["child_access"] = function()
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["KF Outside Deku Tree"] = {
         ["child_access"] = function()
@@ -6201,12 +6374,7 @@ data_per_region = {
             web = adult
           end
 
-          if eye == AccessibilityLevel.Normal and web == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif eye ~= AccessibilityLevel.None and web ~= AccessibilityLevel.None then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return and_accessibility(eye, web)
         end,
         ["adult_access"] = function()
           if has("bow") then
@@ -6227,15 +6395,10 @@ data_per_region = {
             web = child
           end
 
-          if eye == AccessibilityLevel.Normal and web == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif eye ~= AccessibilityLevel.None and web ~= AccessibilityLevel.None then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return and_accessibility(eye, web)
         end
       },
-      ["Deku Tree MQ Basement Water Room"] = {
+      ["Deku Tree MQ Basement Water Room Front"] = {
         ["child_access"] = function()
           local adult = access_region("Deku Tree MQ Lobby", "adult")
 
@@ -6253,12 +6416,7 @@ data_per_region = {
             web = adult
           end
 
-          if eye == AccessibilityLevel.Normal and web == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif eye ~= AccessibilityLevel.None and web ~= AccessibilityLevel.None then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return and_accessibility(eye, web)
         end,
         ["adult_access"] = function()
           local child = access_region("Deku Tree MQ Lobby", "child")
@@ -6277,12 +6435,7 @@ data_per_region = {
             web = child
           end
 
-          if eye == AccessibilityLevel.Normal and web == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif eye ~= AccessibilityLevel.None and web ~= AccessibilityLevel.None then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return and_accessibility(eye, web)
         end
       },
       ["Deku Tree MQ Basement Ledge"] = {
@@ -6301,6 +6454,47 @@ data_per_region = {
   ["Deku Tree MQ Compass Room"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Deku Tree MQ GS Compass Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = has("time") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local adult = access_region("Deku Tree MQ Compass Room", "adult")
+            local trick =
+              has("logic_deku_mq_compass_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+            return or_accessibility(
+              has_bombchus(),
+              and_accessibility(bombs, or_accessibility(sot, adult)),
+              and_accessibility(adult, hammer, or_accessibility(sot, trick))
+            )
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = has("time") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local trick =
+              has("logic_deku_mq_compass_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+            return or_accessibility(has_bombchus(), bombs, and_accessibility(hammer, or_accessibility(sot, trick)))
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Deku Tree MQ Lobby"] = {
         ["child_access"] = function()
@@ -6312,19 +6506,90 @@ data_per_region = {
       }
     }
   },
-  ["Deku Tree MQ Basement Water Room"] = {
+  ["Deku Tree MQ Basement Water Room Front"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
-    ["exits"] = {
-      ["Deku Tree MQ Basement Back Room"] = {
+    ["locations"] = {
+      ["Deku Tree MQ Before Spinning Log Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
         end
+      }
+    },
+    ["exits"] = {
+      ["Deku Tree MQ Basement Water Room Back"] = {
+        ["child_access"] = function()
+          if has("logic_deku_mq_log") or has("shield1") or has("shield2") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end,
+        ["adult_access"] = function()
+          if has("logic_deku_mq_log") or has("longshot") or (has("hookshot") and has("ironboots")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
       },
       ["Deku Tree MQ Lobby"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
+  ["Deku Tree MQ Basement Water Room Back"] = {
+    ["scene"] = "Deku Tree",
+    ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree MQ After Spinning Log Chest"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
+    ["exits"] = {
+      ["Deku Tree MQ Basement Back Room"] = {
+        ["child_access"] = function()
+          local fire = AccessibilityLevel.None
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            fire = AccessibilityLevel.Normal
+          elseif has("bow") and has("firearrow") and has("magic") then
+            fire = access_region("Deku Tree MQ Basement Water Room Front", "adult")
+          end
+
+          if has("sword1") or (has("nuts") and has("sticks")) then
+            return fire
+          end
+
+          local adult = access_region("Deku Tree MQ Basement Water Room Back", "adult")
+          return and_accessibility(fire, or_accessibility(adult, has_projectile("child")))
+        end,
+        ["adult_access"] = function()
+          if (has("dinsfire") and has("magic")) or (has("bow") and has("firearrow") and has("magic")) then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return access_region("Deku Tree MQ Basement Water Room Back", "child")
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Deku Tree MQ Basement Water Room Front"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -6337,6 +6602,44 @@ data_per_region = {
   ["Deku Tree MQ Basement Back Room"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree MQ GS Basement Graves Room"] = {
+        ["child_access"] = function()
+          if has("time") and has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") or (has("time") and has("hookshot")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Deku Tree MQ GS Basement Back Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            if has("sticks") or (has("dinsfire") and has("magic")) then
+              return AccessibilityLevel.Normal
+            elseif has("bow") and has("firearrow") and has("magic") then
+              return access_region("Deku Tree MQ Basement Back Room", "adult")
+            end
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            if (has("dinsfire") and has("magic")) or (has("bow") and has("firearrow") and has("magic")) then
+              return AccessibilityLevel.Normal
+            elseif has("sticks") then
+              return access_region("Deku Tree MQ Basement Back Room", "child")
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Deku Tree MQ Basement Ledge"] = {
         ["child_access"] = function()
@@ -6346,18 +6649,15 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Deku Tree MQ Basement Water Room"] = {
+      ["Deku Tree MQ Basement Water Room Back"] = {
         ["child_access"] = function()
-          if has("sword1") or has("sling") or has("boomerang") or (has("nuts") and has("sticks")) then
+          if has("sword1") or (has("nuts") and has("sticks")) then
             return AccessibilityLevel.Normal
           end
-          return has_explosives()
+          return has_projectile("child")
         end,
         ["adult_access"] = function()
-          if has("bow") or has("hookshot") then
-            return AccessibilityLevel.Normal
-          end
-          return has_explosives()
+          return has_projectile("adult")
         end
       }
     }
@@ -6365,6 +6665,41 @@ data_per_region = {
   ["Deku Tree MQ Basement Ledge"] = {
     ["scene"] = "Deku Tree",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Deku Tree MQ Deku Scrub"] = {
+        ["child_access"] = function()
+          if has("nuts") or has("shield1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Queen Gohma"] = {
+        ["child_access"] = function()
+          if has("shield1") and (has("sword1") or has("sticks")) then
+            if has("sticks") or (has("dinsfire") and has("magic")) then
+              return AccessibilityLevel.Normal
+            elseif has("bow") and has("firearrow") and has("magic") then
+              return access_region("Deku Tree MQ Basement Ledge", "adult")
+            end
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shield2") then
+            if (has("dinsfire") and has("magic")) or (has("bow") and has("firearrow") and has("magic")) then
+              return AccessibilityLevel.Normal
+            elseif has("sticks") then
+              return access_region("Deku Tree MQ Basement Ledge", "child")
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Deku Tree MQ Basement Back Room"] = {
         ["child_access"] = function()
@@ -6418,6 +6753,7 @@ data_per_region = {
       }
     }
   },
+  --CONTINUE
   ["Dodongos Cavern Beginning"] = {
     ["scene"] = "Dodongos Cavern",
     ["dungeon"] = true,

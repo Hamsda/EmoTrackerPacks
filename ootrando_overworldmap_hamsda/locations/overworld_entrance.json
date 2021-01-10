@@ -576,6 +576,269 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Deku Tree",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Deku Tree Lobby|Deku Tree Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Slingshot Room Chests",
+                "short_name": "Slingshot",
+                "access_rules": [
+                  "$access_location|Deku Tree Slingshot Room|Deku Tree Slingshot Room Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Compass Room Chests",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Deku Tree Lobby|Deku Tree Compass Room Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 2
+              },
+              {
+                "name": "GS Compass Room",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Deku Tree Lobby|Deku Tree GS Compass Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Chest",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Deku Tree Lobby|Deku Tree Basement Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement Vines",
+                "short_name": "Vines",
+                "access_rules": [
+                  "$access_location|Deku Tree Lobby|Deku Tree GS Basement Vines"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement Gate",
+                "short_name": "Gate",
+                "access_rules": [
+                  "$access_location|Deku Tree Lobby|Deku Tree GS Basement Gate"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement Back Room",
+                "short_name": "Back Room",
+                "access_rules": [
+                  "$access_location|Deku Tree Basement Backroom|Deku Tree GS Basement Back Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Queen Gohma",
+                "access_rules": [
+                  "$access_location|Deku Tree Boss Room|Queen Gohma"
+                ],
+                "hosted_item": "deku",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "deku_mq"
+                ],
+                "x": 100,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Deku Tree MQ",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Lobby|Deku Tree MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Lobby",
+                "short_name": "Lobby",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Lobby|Deku Tree MQ GS Lobby"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Slingshot Chest",
+                "short_name": "Slingshot",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Lobby|Deku Tree MQ Slingshot Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Slingshot Room Back Chest",
+                "short_name": "Slingshot Back",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Lobby|Deku Tree MQ Slingshot Room Back Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Compass Room|Deku Tree MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Compass Room",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Compass Room|Deku Tree MQ GS Compass Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Chest",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Lobby|Deku Tree MQ Basement Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Before Spinning Log Chest",
+                "short_name": "Before Log",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Basement Water Room Front|Deku Tree MQ Before Spinning Log Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "After Spinning Log Chest",
+                "short_name": "After Log",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Basement Water Room Back|Deku Tree MQ After Spinning Log Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement Graves Room",
+                "short_name": "Ceiling",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Basement Back Room|Deku Tree MQ GS Basement Graves Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement Back Room",
+                "short_name": "Back Room",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Basement Back Room|Deku Tree MQ GS Basement Back Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrub",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Basement Ledge|Deku Tree MQ Deku Scrub"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Queen Gohma",
+                "access_rules": [
+                  "$access_location|Deku Tree MQ Basement Ledge|Queen Gohma"
+                ],
+                "hosted_item": "deku",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "deku_reg"
+                ],
+                "x": 100,
+                "y": 100
+              }
+            ]
           }
         ]
       },
