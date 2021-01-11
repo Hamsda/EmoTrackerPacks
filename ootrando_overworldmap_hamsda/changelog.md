@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed child scarecrow showing w/ scarecrow marked
+
 ## 3.2.2.0
 
 - fixed Sheik at Colossus not showing in ER

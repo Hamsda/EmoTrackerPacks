@@ -1283,7 +1283,7 @@
                       {
                         "name": "Play Song",
                         "access_rules": [
-                          "$has_age|child,ocarina,scarecrow_kid,$has|scarecrow|0"
+                          "$has_age|child,ocarina,scarecrow_kid"
                         ],
                         "hosted_item": "scarecrow_adult"
                       }
@@ -1291,6 +1291,9 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "force_invisibility_rules": [
+                          "scarecrow"
+                        ],
                         "x": 1150,
                         "y": 1180
                       }
@@ -1310,6 +1313,9 @@
                     "map_locations": [
                       {
                         "map": "adult",
+                        "force_invisibility_rules": [
+                          "scarecrow"
+                        ],
                         "x": 1150,
                         "y": 1180
                       }
