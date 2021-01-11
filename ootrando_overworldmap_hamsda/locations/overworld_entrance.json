@@ -1623,6 +1623,407 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Forest Temple",
+            "sections": [
+              {
+                "name": "GS First Room",
+                "short_name": "First Room",
+                "access_rules": [
+                  "$access_location|Forest Temple Lobby|Forest Temple GS First Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "First Room Chest",
+                "short_name": "Tree",
+                "access_rules": [
+                  "$access_location|Forest Temple Lobby|Forest Temple First Room Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Lobby",
+                "short_name": "Lobby",
+                "access_rules": [
+                  "$access_location|Forest Temple Lobby|Forest Temple GS Lobby"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "First Stalfos Chest",
+                "short_name": "Stalfos",
+                "access_rules": [
+                  "$access_location|Forest Temple Lobby|Forest Temple First Stalfos Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Raised Island Courtyard Chest",
+                "short_name": "Island",
+                "access_rules": [
+                  "$access_location|Forest Temple NE Outdoors|Forest Temple Raised Island Courtyard Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Raised Island Courtyard",
+                "short_name": "Island",
+                "access_rules": [
+                  "$access_location|Forest Temple NE Outdoors|Forest Temple GS Raised Island Courtyard"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Forest Temple Outdoors High Balconies|Forest Temple Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Well Chest",
+                "short_name": "Well",
+                "access_rules": [
+                  "$access_location|Forest Temple Outdoors High Balconies|Forest Temple Well Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Level Island Courtyard",
+                "short_name": "Outdoor West",
+                "access_rules": [
+                  "$access_location|Forest Temple NW Outdoors|Forest Temple GS Level Island Courtyard"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Eye Switch Chest",
+                "short_name": "Block Push",
+                "access_rules": [
+                  "$access_location|Forest Temple Block Push Room|Forest Temple Eye Switch Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Forest Temple Straightened Hall|Forest Temple Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "Floormaster Chest",
+                "short_name": "Floormaster",
+                "access_rules": [
+                  "$access_location|Forest Temple Outside Upper Ledge|Forest Temple Floormaster Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Red Poe Chest",
+                "short_name": "Red Poe",
+                "access_rules": [
+                  "$access_location|Forest Temple Bow Region|Forest Temple Red Poe Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bow Chest",
+                "short_name": "Bow",
+                "access_rules": [
+                  "$access_location|Forest Temple Bow Region|Forest Temple Bow Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Blue Poe Chest",
+                "short_name": "Blue Poe",
+                "access_rules": [
+                  "$access_location|Forest Temple Bow Region|Forest Temple Blue Poe Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Falling Ceiling Room Chest",
+                "short_name": "Checkerboard",
+                "access_rules": [
+                  "$access_location|Forest Temple Falling Room|Forest Temple Falling Ceiling Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Basement Chest",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Forest Temple Boss Region|Forest Temple Basement Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Basement",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Forest Temple Boss Region|Forest Temple GS Basement"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Phantom Ganon",
+                "access_rules": [
+                  "$access_location|Forest Temple Boss Region|Phantom Ganon"
+                ],
+                "hosted_item": "forest",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "forest_mq"
+                ],
+                "x": 250,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Forest Temple MQ",
+            "sections": [
+              {
+                "name": "First Room Chest",
+                "short_name": "Tree",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Lobby|Forest Temple MQ First Room Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS First Hallway",
+                "short_name": "First Hallway",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Lobby|Forest Temple MQ GS First Hallway"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Wolfos Chest",
+                "short_name": "Wolfos",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Central Area|Forest Temple MQ Wolfos Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Raised Island Courtyard",
+                "short_name": "Outdoor East",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ NE Outdoors|Forest Temple MQ GS Raised Island Courtyard"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Raised Island Courtyard Upper Chest",
+                "short_name": "Balcony",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Outdoors Top Ledges|Forest Temple MQ Raised Island Courtyard Upper Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Well Chest",
+                "short_name": "Well",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ NE Outdoors|Forest Temple MQ Well Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Well",
+                "short_name": "Well",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ NE Outdoors|Forest Temple MQ GS Well"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Level Island Courtyard",
+                "short_name": "Outdoor West",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ NW Outdoors|Forest Temple MQ GS Level Island Courtyard"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Block Push Room",
+                "short_name": "Block Push",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Central Area|Forest Temple MQ GS Block Push Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ After Block Puzzle|Forest Temple MQ Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "Redead Chest",
+                "short_name": "Redead",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Outdoor Ledge|Forest Temple MQ Redead Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Bow Region|Forest Temple MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bow Chest",
+                "short_name": "Bow",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Bow Region|Forest Temple MQ Bow Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Bow Region|Forest Temple MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Falling Ceiling Room Chest",
+                "short_name": "Checkerboard",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Falling Room|Forest Temple MQ Falling Ceiling Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Raised Island Courtyard Lower Chest",
+                "short_name": "Island",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ NE Outdoors Ledge|Forest Temple MQ Raised Island Courtyard Lower Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Chest",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Boss Region|Forest Temple MQ Basement Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Phantom Ganon",
+                "access_rules": [
+                  "$access_location|Forest Temple MQ Boss Region|Phantom Ganon"
+                ],
+                "hosted_item": "forest",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "forest_reg"
+                ],
+                "x": 250,
+                "y": 100
+              }
+            ]
           }
         ]
       },

@@ -8307,6 +8307,64 @@ data_per_region = {
   ["Forest Temple Lobby"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple First Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple First Stalfos Chest"] = {
+        ["child_access"] = function()
+          if has("sword1") then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple GS First Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") or has("sling") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          local trick = has("logic_forest_first_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local js = (has("sticks") or has("sword1")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            has_bombchus(),
+            and_accessibility(trick, or_accessibility(bombs, and_accessibility(js, damage_single_instance_ohko())))
+          )
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") or has("bow") or has("bombs") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          local trick = has("logic_forest_first_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return or_accessibility(has_bombchus(), and_accessibility(trick, damage_single_instance_ohko()))
+        end
+      },
+      ["Forest Temple GS Lobby"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["SFM Forest Temple Entrance Ledge"] = {
         ["child_access"] = function()
@@ -8368,6 +8426,21 @@ data_per_region = {
   ["Forest Temple NW Outdoors"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple GS Level Island Courtyard"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          elseif has("hookshot") then
+            return access_region("Forest Temple Outside Upper Ledge", "adult")
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple NE Outdoors"] = {
         ["child_access"] = function()
@@ -8388,14 +8461,7 @@ data_per_region = {
           if (has("boomerang") or has("nuts") or has("shield1")) and (has("sticks") or has("sword1") or has("sling")) then
             return AccessibilityLevel.Normal
           end
-          local adult = access_region("Forest Temple NW Outdoors", "adult")
-          local explo = has_explosives()
-          if adult == AccessibilityLevel.Normal or explo == AccessibilityLevel.Normal then
-            return AccessibilityLevel.Normal
-          elseif adult == AccessibilityLevel.SequenceBreak or explo == AccessibilityLevel.SequenceBreak then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return or_accessibility(access_region("Forest Temple NW Outdoors", "adult"), has_explosives())
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -8406,6 +8472,47 @@ data_per_region = {
   ["Forest Temple NE Outdoors"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Raised Island Courtyard Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          local trick =
+            has("logic_forest_outdoors_ledge") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            access_region("Forest Temple Falling Room", "adult"),
+            and_accessibility(trick, hb, access_region("Forest Temple Outdoors High Balconies", "adult"))
+          )
+        end
+      },
+      ["Forest Temple GS Raised Island Courtyard"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            if has("logic_forest_outdoor_east_gs") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(
+            access_region("Forest Temple Falling Room", "adult"),
+            or_accessibility(bow, df, has_explosives())
+          )
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple Outdoors High Balconies"] = {
         ["child_access"] = function()
@@ -8450,6 +8557,24 @@ data_per_region = {
   ["Forest Temple Outdoors High Balconies"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Well Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple NW Outdoors"] = {
         ["child_access"] = function()
@@ -8472,11 +8597,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hoverboots") and has("ocarina") and has("scarecrow") then
-            if has("logic_forest_scarecrow") then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
+          if has("hoverboots") then
+            local trick =
+              has("logic_forest_scarecrow") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak --TODO: renamed to logic_forest_door_frame
+            return and_accessibility(trick, can_use_scarecrow())
           end
           return AccessibilityLevel.None
         end
@@ -8486,6 +8610,16 @@ data_per_region = {
   ["Forest Temple Falling Room"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Falling Ceiling Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple NE Outdoors"] = {
         ["child_access"] = function()
@@ -8500,6 +8634,22 @@ data_per_region = {
   ["Forest Temple Block Push Room"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Eye Switch Chest"] = {
+        ["child_access"] = function()
+          if has("lift1") and has("sling") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("lift1") and has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple Outside Upper Ledge"] = {
         ["child_access"] = function()
@@ -8544,6 +8694,16 @@ data_per_region = {
   ["Forest Temple Straightened Hall"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple Outside Upper Ledge"] = {
         ["child_access"] = function()
@@ -8558,6 +8718,16 @@ data_per_region = {
   ["Forest Temple Outside Upper Ledge"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Floormaster Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple NW Outdoors"] = {
         ["child_access"] = function()
@@ -8572,6 +8742,38 @@ data_per_region = {
   ["Forest Temple Bow Region"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Bow Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple Red Poe Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Forest Temple Blue Poe Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple Falling Room"] = {
         ["child_access"] = function()
@@ -8589,11 +8791,80 @@ data_per_region = {
   ["Forest Temple Boss Region"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple Basement Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple GS Basement"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Phantom Ganon"] = {
+        ["child_access"] = function()
+          if has("forest_boss_key") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("forest_boss_key") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Forest Temple MQ Lobby"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ First Room Chest"] = {
+        ["child_access"] = function()
+          if
+            has("bombs") or has("sticks") or has("nuts") or has("boomerang") or (has("dinsfire") and has("magic")) or
+              has("sword1") or
+              has("sling")
+           then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple MQ GS First Hallway"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["SFM Forest Temple Entrance Ledge"] = {
         ["child_access"] = function()
@@ -8625,6 +8896,35 @@ data_per_region = {
   ["Forest Temple MQ Central Area"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Wolfos Chest"] = {
+        ["child_access"] = function()
+          if (has("dinsfire") and has("magic")) or has("sticks") or has("sling") or has("sword1") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Forest Temple MQ GS Block Push Room"] = {
+        ["child_access"] = function()
+          if has("sword1") then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ NW Outdoors"] = {
         ["child_access"] = function()
@@ -8663,10 +8963,8 @@ data_per_region = {
             return AccessibilityLevel.Normal
           end
           if has("hookshot") then
-            local trick = AccessibilityLevel.SequenceBreak
-            if has("logic_forest_mq_block_puzzle") then
-              trick = AccessibilityLevel.Normal
-            end
+            local trick =
+              has("logic_forest_mq_block_puzzle") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
             return and_accessibility(trick, has_bombchus())
           end
           return AccessibilityLevel.None
@@ -8677,24 +8975,21 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local hovers = AccessibilityLevel.None
+          local hb = AccessibilityLevel.None
           if has("hoverboots") then
             if has("logic_forest_mq_hallway_switch_jumpslash") then
               return AccessibilityLevel.Normal
             end
-            hovers = AccessibilityLevel.SequenceBreak
+            hb = AccessibilityLevel.SequenceBreak
           end
-          local hook = AccessibilityLevel.None
+          local hs = AccessibilityLevel.None
           if has("hookshot") then
             if has("logic_forest_mq_hallway_switch_hookshot") then
               return AccessibilityLevel.Normal
             end
-            hook = AccessibilityLevel.SequenceBreak
+            hs = AccessibilityLevel.SequenceBreak
           end
-          if hovers == AccessibilityLevel.SequenceBreak or hook == AccessibilityLevel.SequenceBreak then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return or_accessibility(hb, hs)
         end
       },
       ["Forest Temple MQ Boss Region"] = {
@@ -8710,6 +9005,19 @@ data_per_region = {
   ["Forest Temple MQ After Block Puzzle"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("forest_small_keys", 3) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ Bow Region"] = {
         ["child_access"] = function()
@@ -8733,22 +9041,13 @@ data_per_region = {
             return AccessibilityLevel.Normal
           end
 
-          local keys = AccessibilityLevel.None
-          if has("forest_small_keys", 2) then
-            keys = AccessibilityLevel.SequenceBreak
-          end
-          local trick1 = AccessibilityLevel.SequenceBreak
-          if has("logic_forest_mq_hallway_switch_jumpslash") then
-            trick1 = AccessibilityLevel.Normal
-          end
-          local hook = AccessibilityLevel.None
-          if has("hookshot") then
-            hook = AccessibilityLevel.Normal
-          end
-          local trick2 = AccessibilityLevel.SequenceBreak
-          if has("logic_forest_outside_backdoor") then
-            trick2 = AccessibilityLevel.Normal
-          end
+          local keys = has("forest_small_keys", 2) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
+          local trick1 =
+            has("logic_forest_mq_hallway_switch_jumpslash") and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hook = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick2 =
+            has("logic_forest_outside_backdoor") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           return or_accessibility(keys, and_accessibility(trick1, or_accessibility(hook, trick2)))
         end
@@ -8769,6 +9068,16 @@ data_per_region = {
   ["Forest Temple MQ Outdoor Ledge"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Redead Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ NW Outdoors"] = {
         ["child_access"] = function()
@@ -8783,6 +9092,16 @@ data_per_region = {
   ["Forest Temple MQ NW Outdoors"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ GS Level Island Courtyard"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ NE Outdoors"] = {
         ["child_access"] = function()
@@ -8820,6 +9139,56 @@ data_per_region = {
   ["Forest Temple MQ NE Outdoors"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Well Chest"] = {
+        ["child_access"] = function()
+          if has("sling") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Forest Temple MQ GS Raised Island Courtyard"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          elseif has("bow") and has("firearrow") and has("magic") then
+            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local trick =
+              has("logic_forest_door_frame") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return or_accessibility(sot, and_accessibility(hb, trick))
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Forest Temple MQ GS Well"] = {
+        ["child_access"] = function()
+          if has("sling") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if (has("ironboots") and has("hookshot")) or has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ Outdoors Top Ledges"] = {
         ["child_access"] = function()
@@ -8851,6 +9220,16 @@ data_per_region = {
   ["Forest Temple MQ Outdoors Top Ledges"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Raised Island Courtyard Upper Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ NE Outdoors"] = {
         ["child_access"] = function()
@@ -8879,6 +9258,16 @@ data_per_region = {
   ["Forest Temple MQ NE Outdoors Ledge"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Raised Island Courtyard Lower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ NE Outdoors"] = {
         ["child_access"] = function()
@@ -8907,6 +9296,38 @@ data_per_region = {
   ["Forest Temple MQ Bow Region"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Bow Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Forest Temple MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Forest Temple MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ Falling Room"] = {
         ["child_access"] = function()
@@ -8924,6 +9345,16 @@ data_per_region = {
   ["Forest Temple MQ Falling Room"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Falling Ceiling Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Forest Temple MQ NE Outdoors Ledge"] = {
         ["child_access"] = function()
@@ -8938,6 +9369,30 @@ data_per_region = {
   ["Forest Temple MQ Boss Region"] = {
     ["scene"] = "Forest Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Forest Temple MQ Basement Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Phantom Ganon"] = {
+        ["child_access"] = function()
+          if has("forest_boss_key") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("forest_boss_key") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle Split"] = {
