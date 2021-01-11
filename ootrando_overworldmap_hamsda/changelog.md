@@ -3,6 +3,7 @@
 ## x
 
 - fixed child scarecrow showing w/ scarecrow marked
+- changed non ER assumption about tunics from shops
 
 ## 3.2.2.0
 

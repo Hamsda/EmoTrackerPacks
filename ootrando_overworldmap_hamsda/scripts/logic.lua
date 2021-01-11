@@ -425,6 +425,9 @@ function goron_tunic()
   if has("redtunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet") then
+    if has("setting_shopsanity_yes") then
+      return 1, AccessibilityLevel.SequenceBreak
+    end
     if spawn_access("GC Shop", "adult") > 0 then
       return 1, AccessibilityLevel.Normal
     end
@@ -772,6 +775,9 @@ function zora_tunic()
   if has("bluetunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet2") then
+    if has("setting_shopsanity_yes") then
+      return 1, AccessibilityLevel.SequenceBreak
+    end
     if spawn_access("ZD Shop", "adult") > 0 then
       return 1, AccessibilityLevel.Normal
     end
