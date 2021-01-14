@@ -5051,11 +5051,6 @@ data_per_region = {
       }
     }
   },
-  ["Ganons Castle Tower"] = {
-    ["dungeon"] = "Ganons Castle",
-    ["interior"] = true,
-    ["exits"] = {}
-  },
   ["GF Storms Grotto"] = {
     ["scene"] = "GF Storms Grotto",
     ["interior"] = true,
@@ -9516,11 +9511,31 @@ data_per_region = {
   ["Ganons Castle Deku Scrubs"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle Deku Scrubs"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle Forest Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle Forest Trial Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle Fire Trial"] = {
@@ -9531,21 +9546,120 @@ data_per_region = {
   ["Ganons Castle Water Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle Water Trial Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle Shadow Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle Shadow Trial Front Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if
+            (has("bow") and has("firearrow") and has("magic")) or has("hookshot") or has("hoverboots") or
+              (has("ocarina") and has("time"))
+           then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ganons Castle Shadow Trial Golden Gauntlets Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if
+            (has("bow") and has("firearrow") and has("magic")) or
+              (has("longshot") and (has("hoverboots") or (has("dinsfire") and has("magic"))))
+           then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle Spirit Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle Spirit Trial Crystal Switch Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_spirit_trial_hookshot") or has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Ganons Castle Spirit Trial Invisible Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hs =
+            (has("logic_spirit_trial_hookshot") or has("hookshot")) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local lot =
+            (has("logic_lens_castle") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          return and_accessibility(hs, has_bombchus(), lot)
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle Light Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle Light Trial Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Ganons Castle Light Trial Invisible Enemies Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_lens_castle") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Ganons Castle Light Trial Lullaby Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") and has("gc_small_keys", 1) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle MQ Lobby"] = {
@@ -9611,7 +9725,8 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Ganons Castle MQ Tower"] = {
+      ["Ganons Castle Tower"] = {
+        --TODO: split off MQ?
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -9635,11 +9750,53 @@ data_per_region = {
   ["Ganons Castle MQ Deku Scrubs"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle MQ Deku Scrubs"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle MQ Forest Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle MQ Forest Trial Eye Switch Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ganons Castle MQ Forest Trial Frozen Eye Switch Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_fire()
+        end
+      },
+      ["Ganons Castle MQ Forest Trial Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle MQ Fire Trial"] = {
@@ -9650,21 +9807,143 @@ data_per_region = {
   ["Ganons Castle MQ Water Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle MQ Water Trial Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle MQ Shadow Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle MQ Shadow Trial Bomb Flower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") and (has("hookshot") and has("hoverboots")) then
+            return AccessibilityLevel.Normal
+          elseif has("hoverboots") then
+            local lot =
+              (has("logic_lens_castle_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            return and_accessibility(lot, or_accessibility(has_explosives(), lift, df))
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ganons Castle MQ Shadow Trial Eye Switch Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            local lot =
+              (has("logic_lens_castle_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local trick = has("logic_shadow_trial_mq") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return and_accessibility(
+              lot,
+              or_accessibility(hb, and_accessibility(hs, or_accessibility(has_fire(), trick)))
+            )
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle MQ Spirit Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle MQ Spirit Trial First Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            if has("bow") or has("logic_rusted_switches") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ganons Castle MQ Spirit Trial Invisible Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") then
+            local bow =
+              (has("bow") or has("logic_rusted_switches")) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            local lot =
+              (has("logic_lens_castle_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            return and_accessibility(bow, has_bombchus(), lot)
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ganons Castle MQ Spirit Trial Sun Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hammer") and (has("bow") and has("firearrow") and has("magic")) and has("shield3") then
+            return has_bombchus()
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ganons Castle MQ Light Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Castle MQ Light Trial Lullaby Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
+    ["exits"] = {}
+  },
+  ["Ganons Castle Tower"] = {
+    ["scene"] = "Ganons Castle",
+    ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Tower Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Gerudo Training Grounds Split"] = {

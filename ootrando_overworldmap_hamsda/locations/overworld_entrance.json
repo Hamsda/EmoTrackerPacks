@@ -2024,6 +2024,337 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Ganons Castle",
+            "sections": [
+              {
+                "name": "Forest Trial Chest",
+                "short_name": "Forest Trial",
+                "access_rules": [
+                  "$access_location|Ganons Castle Forest Trial|Ganons Castle Forest Trial Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Forest Trial Clear",
+                "short_name": "Forest Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_forest"
+              },
+              {
+                "name": "Water Trial Chests",
+                "short_name": "Water Trial",
+                "access_rules": [
+                  "$access_location|Ganons Castle Water Trial|Ganons Castle Water Trial Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Water Trial Clear",
+                "short_name": "Water Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_water"
+              },
+              {
+                "name": "Shadow Trial Front Chest",
+                "short_name": "Shadow Trial 1",
+                "access_rules": [
+                  "$access_location|Ganons Castle Shadow Trial|Ganons Castle Shadow Trial Front Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Shadow Trial Golden Gauntlets Chest",
+                "short_name": "Shadow Trial 2",
+                "access_rules": [
+                  "$access_location|Ganons Castle Shadow Trial|Ganons Castle Shadow Trial Golden Gauntlets Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Shadow Trial Clear",
+                "short_name": "Shadow Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_shadow"
+              },
+              {
+                "name": "Fire Trial Clear",
+                "short_name": "Fire Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_fire"
+              },
+              {
+                "name": "Light Trial Chests",
+                "short_name": "Light Trial Front",
+                "access_rules": [
+                  "$access_location|Ganons Castle Light Trial|Ganons Castle Light Trial Chests"
+                ],
+                "item_count": 6
+              },
+              {
+                "name": "Light Trial Invisible Enemies Chest",
+                "short_name": "Light Trial Enemies",
+                "access_rules": [
+                  "$access_location|Ganons Castle Light Trial|Ganons Castle Light Trial Invisible Enemies Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Light Trial Lullaby Chest",
+                "short_name": "Light Trial Lullaby",
+                "access_rules": [
+                  "$access_location|Ganons Castle Light Trial|Ganons Castle Light Trial Lullaby Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Light Trial Clear",
+                "short_name": "Light Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_light"
+              },
+              {
+                "name": "Spirit Trial Crystal Switch Chest",
+                "short_name": "Spirit Trial 1",
+                "access_rules": [
+                  "$access_location|Ganons Castle Spirit Trial|Ganons Castle Spirit Trial Crystal Switch Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Spirit Trial Invisible Chest",
+                "short_name": "Spirit Trial 2",
+                "access_rules": [
+                  "$access_location|Ganons Castle Spirit Trial|Ganons Castle Spirit Trial Invisible Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Spirit Trial Clear",
+                "short_name": "Spirit Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_spirit"
+              },
+              {
+                "name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|Ganons Castle Deku Scrubs|Ganons Castle Deku Scrubs"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 4
+              },
+              {
+                "name": "Ganons Tower Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Ganons Castle Tower|Ganons Tower Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "gc_mq"
+                ],
+                "x": 300,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Ganons Castle MQ",
+            "sections": [
+              {
+                "name": "Forest Trial Freestanding Key",
+                "short_name": "Forest Trial Key",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Forest Trial|Ganons Castle MQ Forest Trial Freestanding Key"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Forest Trial Eye Switch Chest",
+                "short_name": "Forest Trial 1",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Forest Trial|Ganons Castle MQ Forest Trial Eye Switch Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Forest Trial Frozen Eye Switch Chest",
+                "short_name": "Forest Trial 2",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Forest Trial|Ganons Castle MQ Forest Trial Frozen Eye Switch Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Forest Trial Clear",
+                "short_name": "Forest Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_forest"
+              },
+              {
+                "name": "Water Trial Chest",
+                "short_name": "Water Trial",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Water Trial|Ganons Castle MQ Water Trial Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Water Trial Clear",
+                "short_name": "Water Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_water"
+              },
+              {
+                "name": "Shadow Trial Bomb Flower Chest",
+                "short_name": "Shadow Trial 1",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Shadow Trial|Ganons Castle MQ Shadow Trial Bomb Flower Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Shadow Trial Eye Switch Chest",
+                "short_name": "Shadow Trial 2",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Shadow Trial|Ganons Castle MQ Shadow Trial Eye Switch Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Shadow Trial Clear",
+                "short_name": "Shadow Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_shadow"
+              },
+              {
+                "name": "Fire Trial Clear",
+                "short_name": "Fire Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_fire"
+              },
+              {
+                "name": "Light Trial Lullaby Chest",
+                "short_name": "Light Trial",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Light Trial|Ganons Castle MQ Light Trial Lullaby Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Light Trial Clear",
+                "short_name": "Light Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_light"
+              },
+              {
+                "name": "Spirit Trial First Chest",
+                "short_name": "Spirit Trial 1",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Spirit Trial|Ganons Castle MQ Spirit Trial First Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Spirit Trial Invisible Chest",
+                "short_name": "Spirit Trial 2",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Spirit Trial|Ganons Castle MQ Spirit Trial Invisible Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Spirit Trial Sun Chests",
+                "short_name": "Spirit Trial Sun",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Spirit Trial|Ganons Castle MQ Spirit Trial Sun Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 4
+              },
+              {
+                "name": "Spirit Trial Clear",
+                "short_name": "Spirit Trial",
+                "visibility_rules": [
+                  "setting_trials:1"
+                ],
+                "hosted_item": "trial_spirit"
+              },
+              {
+                "name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|Ganons Castle MQ Deku Scrubs|Ganons Castle MQ Deku Scrubs"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 5
+              },
+              {
+                "name": "Ganons Tower Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Ganons Castle Tower|Ganons Tower Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "gc_reg"
+                ],
+                "x": 300,
+                "y": 100
+              }
+            ]
           }
         ]
       },
