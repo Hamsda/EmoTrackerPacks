@@ -11164,16 +11164,10 @@ data_per_region = {
       },
       ["Jabu Jabus Belly Main"] = {
         ["child_access"] = function()
-          if has("sling") or has("boomerang") then
-            return AccessibilityLevel.Normal
-          end
-          return has_explosives()
+          return has_projectile("child")
         end,
         ["adult_access"] = function()
-          if has("bow") or has("hookshot") then
-            return AccessibilityLevel.Normal
-          end
-          return has_explosives()
+          return has_projectile("adult")
         end
       }
     }
@@ -11181,6 +11175,63 @@ data_per_region = {
   ["Jabu Jabus Belly Main"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Jabu Jabus Belly Boomerang Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly GS Water Switch Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly GS Lobby Basement Lower"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly GS Lobby Basement Upper"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly Deku Scrub"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          if has("scale") or has("logic_jabu_scrub_jump_dive") or has("ironboots") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+    },
     ["exits"] = {
       ["Jabu Jabus Belly Beginning"] = {
         ["child_access"] = function()
@@ -11220,6 +11271,24 @@ data_per_region = {
   ["Jabu Jabus Belly Depths"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Jabu Jabus Belly Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Jabu Jabus Belly Main"] = {
         ["child_access"] = function()
@@ -11245,6 +11314,27 @@ data_per_region = {
   ["Jabu Jabus Belly Boss Area"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Barinade"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly GS Near Boss"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Jabu Jabus Belly Main"] = {
         ["child_access"] = function()
@@ -11259,6 +11349,27 @@ data_per_region = {
   ["Jabu Jabus Belly MQ Beginning"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Jabu Jabus Belly MQ Map Chest"] = {
+        ["child_access"] = function()
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          return can_blast()
+        end
+      },
+      ["Jabu Jabus Belly MQ First Room Side Chest"] = {
+        ["child_access"] = function()
+          if has("sling") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Zoras Fountain"] = {
         ["child_access"] = function()
@@ -11287,6 +11398,70 @@ data_per_region = {
   ["Jabu Jabus Belly MQ Main"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Jabu Jabus Belly MQ Second Room Lower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ Second Room Upper Chest"] = {
+        ["child_access"] = function()
+          return access_region("Jabu Jabus Belly MQ Boss Area", "child")
+        end,
+        ["adult_access"] = function()
+          if has("hoverboots") or has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ Basement Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ Boomerang Room Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ GS Boomerang Chest Room"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          elseif has("boomerang") then
+            if has("logic_jabu_mq_sot_gs") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+    },
     ["exits"] = {
       ["Jabu Jabus Belly MQ Beginning"] = {
         ["child_access"] = function()
@@ -11312,6 +11487,37 @@ data_per_region = {
   ["Jabu Jabus Belly MQ Depths"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Jabu Jabus Belly MQ Falling Like Like Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly MQ GS Tailpasaran Room"] = {
+        ["child_access"] = function()
+          if has("sticks") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly MQ GS Invisible Enemies Room"] = {
+        ["child_access"] = function()
+          local lot = (has("logic_lens_jabu_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local adult = (has("hoverboots") or has("hookshot")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(lot, and_accessibility(access_region("Jabu Jabus Belly MQ Main", "adult"), adult))
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Jabu Jabus Belly MQ Main"] = {
         ["child_access"] = function()
@@ -11326,6 +11532,7 @@ data_per_region = {
           if has("sticks") or (has("dinsfire") and has("magic") and has("sword1")) then
             return AccessibilityLevel.Normal
           end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.None
@@ -11336,6 +11543,43 @@ data_per_region = {
   ["Jabu Jabus Belly MQ Boss Area"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Jabu Jabus Belly MQ Cow"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly MQ Near Boss Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Barinade"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly MQ GS Near Boss"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Jabu Jabus Belly MQ Main"] = {
         ["child_access"] = function()

@@ -2865,6 +2865,287 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Jabu Jabus Belly",
+            "sections": [
+              {
+                "name": "GS Water Switch Room",
+                "short_name": "Water Switch",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Main|Jabu Jabus Belly GS Water Switch Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Deku Scrub",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Main|Jabu Jabus Belly Deku Scrub"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boomerang Chest",
+                "short_name": "Boomerang",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Main|Jabu Jabus Belly Boomerang Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Depths|Jabu Jabus Belly Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Depths|Jabu Jabus Belly Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Lobby Basement Lower",
+                "short_name": "Basement 1",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Main|Jabu Jabus Belly GS Lobby Basement Lower"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Lobby Basement Upper",
+                "short_name": "Basement 2",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Main|Jabu Jabus Belly GS Lobby Basement Upper"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Near Boss",
+                "short_name": "Near Boss",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Boss Area|Jabu Jabus Belly GS Near Boss"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Barinade",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly Boss Area|Barinade"
+                ],
+                "hosted_item": "jabu",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "jabu_mq"
+                ],
+                "x": 450,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Jabu Jabus Belly MQ",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Beginning|Jabu Jabus Belly MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "First Room Side Chest",
+                "short_name": "First Room",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Beginning|Jabu Jabus Belly MQ First Room Side Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Second Room Lower Chest",
+                "short_name": "Second Room Lower",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Main|Jabu Jabus Belly MQ Second Room Lower Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Main|Jabu Jabus Belly MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Basement Chests",
+                "short_name": "Basement",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Main|Jabu Jabus Belly MQ Basement Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Boomerang Room Chests",
+                "short_name": "Boomerang",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Main|Jabu Jabus Belly MQ Boomerang Room Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "GS Boomerang Chest Room",
+                "short_name": "Boomerang",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Main|Jabu Jabus Belly MQ GS Boomerang Chest Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Falling Like Like Room Chest",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Depths|Jabu Jabus Belly MQ Falling Like Like Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Tailpasaran Room",
+                "short_name": "Tailpasaran",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Depths|Jabu Jabus Belly MQ GS Tailpasaran Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Invisible Enemies Room",
+                "short_name": "Invis Enemies",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Depths|Jabu Jabus Belly MQ GS Invisible Enemies Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Cow",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Boss Area|Jabu Jabus Belly MQ Cow"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              },
+              {
+                "name": "Second Room Upper Chest",
+                "short_name": "Second Room Upper",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Main|Jabu Jabus Belly MQ Second Room Upper Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Near Boss",
+                "short_name": "Near Boss",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Boss Area|Jabu Jabus Belly MQ GS Near Boss"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Near Boss Chest",
+                "short_name": "Near Boss",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Boss Area|Jabu Jabus Belly MQ Near Boss Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Barinade",
+                "access_rules": [
+                  "$access_location|Jabu Jabus Belly MQ Boss Area|Barinade"
+                ],
+                "hosted_item": "jabu",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "jabu_reg"
+                ],
+                "x": 450,
+                "y": 100
+              }
+            ]
           }
         ]
       },
