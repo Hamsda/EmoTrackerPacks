@@ -10883,6 +10883,99 @@ data_per_region = {
   ["Ice Cavern"] = {
     ["scene"] = "Ice Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ice Cavern Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      },
+      ["Ice Cavern Compass Chest"] = {
+        ["child_access"] = function()
+          return has_bottle() --TODO: blue fire
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      },
+      ["Ice Cavern Iron Boots Chest"] = {
+        ["child_access"] = function()
+          if has("sling") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
+            return has_bottle() --TODO: blue fire
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      },
+      ["Sheik in Ice Cavern"] = {
+        ["child_access"] = function()
+          if has("sling") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
+            return has_bottle() --TODO: blue fire
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      },
+      ["Ice Cavern Freestanding PoH"] = {
+        ["child_access"] = function()
+          return has_bottle() --TODO: blue fire
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      },
+      ["Ice Cavern GS Spinning Scythe Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ice Cavern GS Heart Piece Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return has_bottle() --TODO: blue fire
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return has_bottle()
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Ice Cavern GS Push Block Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return has_bottle() --TODO: blue fire
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return has_bottle()
+          elseif has("hoverboots") then
+            local trick = has("logic_ice_block_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return and_accessibility(has_bottle(), trick)
+          end
+          return AccessibilityLevel.None
+        end
+      },
+    },
     ["exits"] = {}
   },
   ["Ice Cavern MQ Beginning"] = {
@@ -10921,7 +11014,7 @@ data_per_region = {
       },
       ["Ice Cavern MQ Iron Boots Region"] = {
         ["child_access"] = function()
-          return has_bottle()
+          return has_bottle() --TODO: blue fire
         end,
         ["adult_access"] = function()
           return has_bottle()
@@ -10932,16 +11025,95 @@ data_per_region = {
   ["Ice Cavern MQ Map Room"] = {
     ["scene"] = "Ice Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ice Cavern MQ Map Chest"] = {
+        ["child_access"] = function()
+          if has("sticks") or has("sword1") then
+            return has_bottle()
+          end
+          return and_accessibility(has_bottle(), has_projectile("child"))
+        end,
+        ["adult_access"] = function()
+          return has_bottle()
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ice Cavern MQ Iron Boots Region"] = {
     ["scene"] = "Ice Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ice Cavern MQ Iron Boots Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Sheik in Ice Cavern"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Ice Cavern MQ GS Ice Block"] = {
+        ["child_access"] = function()
+          return can_child_attack()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Ice Cavern MQ GS Scarecrow"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if (can_use_scarecrow() == AccessibilityLevel.Normal) or (has("hoverboots") and has("longshot")) or has("logic_ice_mq_scarecrow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Ice Cavern MQ Compass Room"] = {
     ["scene"] = "Ice Cavern",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Ice Cavern MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Ice Cavern MQ Freestanding PoH"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      },
+      ["Ice Cavern MQ GS Red Ice"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if (has("ocarina") and has("time")) or has("logic_ice_mq_red_ice_gs") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Jabu Jabus Belly Split"] = {

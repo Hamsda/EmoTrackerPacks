@@ -2659,6 +2659,212 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Ice Cavern",
+            "sections": [
+              {
+                "name": "GS Spinning Scythe Room",
+                "short_name": "Spinning Scythe",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern GS Spinning Scythe Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding PoH",
+                "short_name": "Frozen HP",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern Freestanding PoH"
+                ],
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Heart Piece Room",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern GS Heart Piece Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Push Block Room",
+                "short_name": "Push Block",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern GS Push Block Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Iron Boots Chest",
+                "short_name": "Iron Boots",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Ice Cavern Iron Boots Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Sheik in Ice Cavern",
+                "short_name": "Song",
+                "access_rules": [
+                  "$access_location|Ice Cavern|Sheik in Ice Cavern"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "ice_mq"
+                ],
+                "x": 400,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Ice Cavern MQ",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Map Room|Ice Cavern MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Compass Room|Ice Cavern MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding PoH",
+                "short_name": "Frozen HP",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Compass Room|Ice Cavern MQ Freestanding PoH"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Red Ice",
+                "short_name": "Red Ice",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Compass Room|Ice Cavern MQ GS Red Ice"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Scarecrow",
+                "short_name": "Scarecrow",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Iron Boots Region|Ice Cavern MQ GS Scarecrow"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Ice Block",
+                "short_name": "Ice Block",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Iron Boots Region|Ice Cavern MQ GS Ice Block"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Iron Boots Chest",
+                "short_name": "Iron Boots",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Iron Boots Region|Ice Cavern MQ Iron Boots Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Sheik in Ice Cavern",
+                "short_name": "Song",
+                "access_rules": [
+                  "$access_location|Ice Cavern MQ Iron Boots Region|Sheik in Ice Cavern"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "ice_reg"
+                ],
+                "x": 400,
+                "y": 100
+              }
+            ]
           }
         ]
       },
