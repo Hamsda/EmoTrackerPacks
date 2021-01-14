@@ -2355,6 +2355,310 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Gerudo Training Grounds",
+            "sections": [
+              {
+                "name": "Lobby Chests",
+                "short_name": "Lobby",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Lobby|Gerudo Training Grounds Lobby Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Beamos Chest",
+                "short_name": "Beamos",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Lobby|Gerudo Training Grounds Beamos Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Stalfos Chest",
+                "short_name": "Stalfos",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Lobby|Gerudo Training Grounds Stalfos Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Before Heavy Block Chest",
+                "short_name": "Wolfos",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Heavy Block Room|Gerudo Training Grounds Before Heavy Block Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Heavy Block Chests",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Like Like Room|Gerudo Training Grounds Heavy Block Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 4
+              },
+              {
+                "name": "Eye Statue Chest",
+                "short_name": "Eye Statue",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Eye Statue Lower|Gerudo Training Grounds Eye Statue Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Near Scarecrow Chest",
+                "short_name": "Near Scarecrow",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Eye Statue Upper|Gerudo Training Grounds Near Scarecrow Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hammer Room Clear Chest",
+                "short_name": "Flaming Enemies",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Hammer Room|Gerudo Training Grounds Hammer Room Clear Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Hammer Room Switch Chest",
+                "short_name": "Hammer Switch",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Hammer Room|Gerudo Training Grounds Hammer Room Switch Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding Key",
+                "short_name": "Ledge Key",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze Right|Gerudo Training Grounds Freestanding Key"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Maze Right Chests",
+                "short_name": "Maze Right",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze Right|Gerudo Training Grounds Maze Right Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Underwater Silver Rupee Chest",
+                "short_name": "Toilet",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Lava Room|Gerudo Training Grounds Underwater Silver Rupee Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hidden Ceiling Chest",
+                "short_name": "Hidden Ceiling",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze|Gerudo Training Grounds Hidden Ceiling Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path First Chest",
+                "short_name": "Maze 1",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze|Gerudo Training Grounds Maze Path First Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path Second Chest",
+                "short_name": "Maze 2",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze|Gerudo Training Grounds Maze Path Second Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path Third Chest",
+                "short_name": "Maze 3",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze|Gerudo Training Grounds Maze Path Third Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path Final Chest",
+                "short_name": "Ice Arrows",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds Central Maze|Gerudo Training Grounds Maze Path Final Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "gtg_mq"
+                ],
+                "x": 350,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Gerudo Training Grounds MQ",
+            "sections": [
+              {
+                "name": "Lobby Chests",
+                "short_name": "Lobby",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Lobby|Gerudo Training Grounds MQ Lobby Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "First Iron Knuckle Chest",
+                "short_name": "Knuckle 1",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Left Side|Gerudo Training Grounds MQ First Iron Knuckle Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Before Heavy Block Chest",
+                "short_name": "Stalfos",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Stalfos Room|Gerudo Training Grounds MQ Before Heavy Block Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Heavy Block Chest",
+                "short_name": "Freezards",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Stalfos Room|Gerudo Training Grounds MQ Heavy Block Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Eye Statue Chest",
+                "short_name": "Eye Statue",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Back Areas|Gerudo Training Grounds MQ Eye Statue Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Second Iron Knuckle Chest",
+                "short_name": "Knuckle 2",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Back Areas|Gerudo Training Grounds MQ Second Iron Knuckle Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Flame Circle Chest",
+                "short_name": "Flame Circle",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Back Areas|Gerudo Training Grounds MQ Flame Circle Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Maze Right Chests",
+                "short_name": "Maze Right",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Central Maze Right|Gerudo Training Grounds MQ Maze Right Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Dinolfos Chest",
+                "short_name": "Dinolfos",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Right Side|Gerudo Training Grounds MQ Dinolfos Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Underwater Silver Rupee Chest",
+                "short_name": "Toilet",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Underwater|Gerudo Training Grounds MQ Underwater Silver Rupee Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hidden Ceiling Chest",
+                "short_name": "Hidden Ceiling",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Lobby|Gerudo Training Grounds MQ Hidden Ceiling Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path First Chest",
+                "short_name": "Maze 1",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Lobby|Gerudo Training Grounds MQ Maze Path First Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path Second Chest",
+                "short_name": "Maze 2",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Lobby|Gerudo Training Grounds MQ Maze Path Second Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Maze Path Third Chest",
+                "short_name": "Maze 3",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Lobby|Gerudo Training Grounds MQ Maze Path Third Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ice Arrows Chest",
+                "short_name": "Ice Arrows",
+                "access_rules": [
+                  "$access_location|Gerudo Training Grounds MQ Central Maze Right|Gerudo Training Grounds MQ Ice Arrows Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "gtg_reg"
+                ],
+                "x": 350,
+                "y": 100
+              }
+            ]
           }
         ]
       },
