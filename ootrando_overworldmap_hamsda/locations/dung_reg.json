@@ -103,9 +103,9 @@
         "name": "Queen Gohma",
         "access_rules": [
           "shield1,sticks,sling",
-          "shield1,sticks,[logic_deku_b1_skip]",
+          "shield1,sticks,nuts,[logic_deku_b1_skip]",
           "shield1,sword1,dinsfire,magic,sling",
-          "shield1,sword1,dinsfire,magic,[logic_deku_b1_skip]"
+          "shield1,sword1,dinsfire,magic,nuts,[logic_deku_b1_skip]"
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",
