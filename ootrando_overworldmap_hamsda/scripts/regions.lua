@@ -10974,8 +10974,8 @@ data_per_region = {
           end
           return AccessibilityLevel.None
         end
+      }
       },
-    },
     ["exits"] = {}
   },
   ["Ice Cavern MQ Beginning"] = {
@@ -11073,7 +11073,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (can_use_scarecrow() == AccessibilityLevel.Normal) or (has("hoverboots") and has("longshot")) or has("logic_ice_mq_scarecrow") then
+          if
+            (can_use_scarecrow() == AccessibilityLevel.Normal) or (has("hoverboots") and has("longshot")) or
+              has("logic_ice_mq_scarecrow")
+           then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -11230,8 +11233,8 @@ data_per_region = {
           end
           return AccessibilityLevel.SequenceBreak
         end
+      }
       },
-    },
     ["exits"] = {
       ["Jabu Jabus Belly Beginning"] = {
         ["child_access"] = function()
@@ -11460,8 +11463,8 @@ data_per_region = {
           end
           return AccessibilityLevel.None
         end
+      }
       },
-    },
     ["exits"] = {
       ["Jabu Jabus Belly MQ Beginning"] = {
         ["child_access"] = function()
@@ -11509,7 +11512,9 @@ data_per_region = {
       },
       ["Jabu Jabus Belly MQ GS Invisible Enemies Room"] = {
         ["child_access"] = function()
-          local lot = (has("logic_lens_jabu_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lot =
+            (has("logic_lens_jabu_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
           local adult = (has("hoverboots") or has("hookshot")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           return or_accessibility(lot, and_accessibility(access_region("Jabu Jabus Belly MQ Main", "adult"), adult))
         end,
