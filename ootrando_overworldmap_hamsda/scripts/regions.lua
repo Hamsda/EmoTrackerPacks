@@ -10975,7 +10975,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-      },
+    },
     ["exits"] = {}
   },
   ["Ice Cavern MQ Beginning"] = {
@@ -11234,7 +11234,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       }
-      },
+    },
     ["exits"] = {
       ["Jabu Jabus Belly Beginning"] = {
         ["child_access"] = function()
@@ -11464,7 +11464,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-      },
+    },
     ["exits"] = {
       ["Jabu Jabus Belly MQ Beginning"] = {
         ["child_access"] = function()
@@ -11661,6 +11661,24 @@ data_per_region = {
   ["Shadow Temple Beginning"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple Hover Boots Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple Entryway"] = {
         ["child_access"] = function()
@@ -11686,12 +11704,27 @@ data_per_region = {
   ["Shadow Temple First Beamos"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple Early Silver Rupee Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple Huge Pit"] = {
         ["child_access"] = function()
-          if has("shadow_small_keys", 1) then
-            return has_explosives()
-          end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
@@ -11706,6 +11739,101 @@ data_per_region = {
   ["Shadow Temple Huge Pit"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple Invisible Blades Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple Falling Spikes Lower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple Falling Spikes Upper Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_shadow_umbrella") or has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Shadow Temple Invisible Spikes Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 2) then
+            if has("logic_lens_shadow_back") or (has("lens") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 2) and has("hookshot") then
+            local lot =
+              (has("logic_lens_shadow_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            if has("bombs") or has("lift1") then
+              return lot
+            end
+            local trick =
+              has("logic_shadow_freestanding_key") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return and_accessibility(lot, trick, has_bombchus())
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple GS Like Like Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple GS Falling Spikes Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_shadow_umbrella_gs") or has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Shadow Temple GS Single Giant Pot"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 2) and has("hookshot") then
+            if has("logic_lens_shadow_back") or (has("lens") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple Wind Tunnel"] = {
         ["child_access"] = function()
@@ -11726,12 +11854,38 @@ data_per_region = {
   ["Shadow Temple Wind Tunnel"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple Wind Hint Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple After Wind Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple GS Near Ship"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") and has("shadow_small_keys", 4) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple Beyond Boat"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") and has("shadow_small_keys", 4) then
-            return AccessibilityLevel.Normal
-          end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
@@ -11746,6 +11900,61 @@ data_per_region = {
   ["Shadow Temple Beyond Boat"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple Spike Walls Left Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple Invisible Floormaster Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Bongo Bongo"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 5) and has("shadow_boss_key") then
+            if has("bow") or (can_use_scarecrow() and has("longshot")) then
+              return AccessibilityLevel.Normal
+            end
+            local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return and_accessibility(trick, has_bombchus())
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple GS Triple Giant Pot"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Shadow Temple MQ Entryway"] = {
@@ -11823,11 +12032,58 @@ data_per_region = {
   ["Shadow Temple MQ Dead Hand Area"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ Hover Boots Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") and has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Shadow Temple MQ First Beamos"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ Early Gibdos Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ Near Ship Invisible Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple MQ Upper Huge Pit"] = {
         ["child_access"] = function()
@@ -11848,20 +12104,30 @@ data_per_region = {
   ["Shadow Temple MQ Upper Huge Pit"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple MQ Invisible Blades Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          local trick =
+            has("logic_shadow_mq_invisible_blades") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return and_accessibility(trick, damage_below_ohko())
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple MQ Lower Huge Pit"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("logic_shadow_mq_huge_pit") then
-            return AccessibilityLevel.Normal
-          end
-          local fire = has_fire()
-          if fire ~= AccessibilityLevel.None then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.SequenceBreak
+          local trick =
+            has("logic_shadow_mq_huge_pit") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return or_accessibility(has_fire(), trick)
         end
       }
     }
@@ -11869,6 +12135,99 @@ data_per_region = {
   ["Shadow Temple MQ Lower Huge Pit"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple MQ Beamos Silver Rupees Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Falling Spikes Lower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ Falling Spikes Upper Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          elseif has("hoverboots") then
+            if has("logic_shadow_umbrella") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Invisible Spikes Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hoverboots") then
+            local keys = AccessibilityLevel.None
+            if has("shadow_small_keys", 3) then
+              keys = AccessibilityLevel.Normal
+            elseif has("shadow_small_keys", 2) then
+              keys = AccessibilityLevel.SequenceBreak
+            end
+            local lot =
+              (has("logic_lens_shadow_mq_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            return and_accessibility(keys, lot)
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Stalfos Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hoverboots") and has("hookshot") then
+            local keys = AccessibilityLevel.None
+            if has("shadow_small_keys", 3) then
+              keys = AccessibilityLevel.Normal
+            elseif has("shadow_small_keys", 2) then
+              keys = AccessibilityLevel.SequenceBreak
+            end
+            local lot =
+              (has("logic_lens_shadow_mq_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            return and_accessibility(keys, lot)
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ GS Falling Spikes Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          elseif has("hoverboots") then
+            if has("logic_shadow_umbrella_gs") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple MQ Wind Tunnel"] = {
         ["child_access"] = function()
@@ -11876,19 +12235,16 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("hoverboots") and has("hookshot") then
-            local lens = AccessibilityLevel.SequenceBreak
-            if has("logic_lens_shadow_mq") or (has("lens") and has("magic")) then
-              lens = AccessibilityLevel.Normal
-            end
-
             local keys = AccessibilityLevel.None
             if has("shadow_small_keys", 4) then
               keys = AccessibilityLevel.Normal
             elseif has("shadow_small_keys", 3) then
               keys = AccessibilityLevel.SequenceBreak
             end
-
-            return and_accessibility(lens, keys)
+            local lot =
+              (has("logic_lens_shadow_mq_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+              AccessibilityLevel.SequenceBreak
+            return and_accessibility(lot, keys)
           end
           return AccessibilityLevel.None
         end
@@ -11898,6 +12254,40 @@ data_per_region = {
   ["Shadow Temple MQ Wind Tunnel"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple MQ Wind Hint Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ After Wind Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ GS Wind Hint Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ GS After Wind"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple MQ Beyond Boat"] = {
         ["child_access"] = function()
@@ -11906,9 +12296,9 @@ data_per_region = {
         ["adult_access"] = function()
           if has("ocarina") and has("lullaby") then
             if has("shadow_small_keys", 5) then
-              keys = {1, AccessibilityLevel.Normal}
+              return AccessibilityLevel.Normal
             elseif has("shadow_small_keys", 4) then
-              keys = {1, AccessibilityLevel.SequenceBreak}
+              return AccessibilityLevel.SequenceBreak
             end
           end
           return AccessibilityLevel.None
@@ -11919,6 +12309,43 @@ data_per_region = {
   ["Shadow Temple MQ Beyond Boat"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Bongo Bongo"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_boss_key") then
+            if has("bow") then
+              return AccessibilityLevel.Normal
+            end
+            local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return and_accessibility(trick, has_bombchus())
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ GS After Ship"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ GS Near Boss"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return and_accessibility(trick, has_bombchus())
+        end
+      }
+    },
     ["exits"] = {
       ["Shadow Temple MQ Invisible Maze"] = {
         ["child_access"] = function()
@@ -11936,6 +12363,54 @@ data_per_region = {
   ["Shadow Temple MQ Invisible Maze"] = {
     ["scene"] = "Shadow Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Shadow Temple MQ Spike Walls Left Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            if has("shadow_small_keys", 6) then
+              return AccessibilityLevel.Normal
+            elseif has("shadow_small_keys", 5) then
+              return AccessibilityLevel.SequenceBreak
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            if has("shadow_small_keys", 6) then
+              return AccessibilityLevel.Normal
+            elseif has("shadow_small_keys", 5) then
+              return AccessibilityLevel.SequenceBreak
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Bomb Flower Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Spirit Temple Split"] = {

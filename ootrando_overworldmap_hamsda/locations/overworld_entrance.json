@@ -3146,6 +3146,460 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Shadow Temple",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beginning|Shadow Temple Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hover Boots Chest",
+                "short_name": "Dead Hand",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beginning|Shadow Temple Hover Boots Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Shadow Temple First Beamos|Shadow Temple Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Early Silver Rupee Chest",
+                "short_name": "Early Silver Rupee",
+                "access_rules": [
+                  "$access_location|Shadow Temple First Beamos|Shadow Temple Early Silver Rupee Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Invisible Blades Chests",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple Invisible Blades Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "GS Like Like Room",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple GS Like Like Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Falling Spikes Lower Chest",
+                "short_name": "Crusher Lower",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple Falling Spikes Lower Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Falling Spikes Room",
+                "short_name": "Crusher",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple GS Falling Spikes Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Falling Spikes Upper Chests",
+                "short_name": "Crusher Upper",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple Falling Spikes Upper Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 2
+              },
+              {
+                "name": "Invisible Spikes Chest",
+                "short_name": "Invisible Spikes",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple Invisible Spikes Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding Key",
+                "short_name": "Skull Pot",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple Freestanding Key"
+                ],
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Single Giant Pot",
+                "short_name": "Single Skull",
+                "access_rules": [
+                  "$access_location|Shadow Temple Huge Pit|Shadow Temple GS Single Giant Pot"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Wind Hint Chest",
+                "short_name": "Wind Hint",
+                "access_rules": [
+                  "$access_location|Shadow Temple Wind Tunnel|Shadow Temple Wind Hint Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "After Wind Chests",
+                "short_name": "After Wind",
+                "access_rules": [
+                  "$access_location|Shadow Temple Wind Tunnel|Shadow Temple After Wind Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 2
+              },
+              {
+                "name": "GS Near Ship",
+                "short_name": "Near Boat",
+                "access_rules": [
+                  "$access_location|Shadow Temple Wind Tunnel|Shadow Temple GS Near Ship"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beyond Boat|Shadow Temple Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "Spike Walls Left Chest",
+                "short_name": "Near Boss Key",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beyond Boat|Shadow Temple Spike Walls Left Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Triple Giant Pot",
+                "short_name": "Triple Skull",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beyond Boat|Shadow Temple GS Triple Giant Pot"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Invisible Floormaster Chest",
+                "short_name": "Floormaster",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beyond Boat|Shadow Temple Invisible Floormaster Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bongo Bongo",
+                "access_rules": [
+                  "$access_location|Shadow Temple Beyond Boat|Bongo Bongo"
+                ],
+                "hosted_item": "shadow",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "shadow_mq"
+                ],
+                "x": 500,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Shadow Temple MQ",
+            "sections": [
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Dead Hand Area|Shadow Temple MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hover Boots Chest",
+                "short_name": "Dead Hand 1",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Dead Hand Area|Shadow Temple MQ Hover Boots Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Early Gibdos Chest",
+                "short_name": "Early Gibdos",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ First Beamos|Shadow Temple MQ Early Gibdos Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ First Beamos|Shadow Temple MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Near Ship Invisible Chest",
+                "short_name": "Shortcut",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ First Beamos|Shadow Temple MQ Near Ship Invisible Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Invisible Blades Chests",
+                "short_name": "Like Like",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Upper Huge Pit|Shadow Temple MQ Invisible Blades Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 2
+              },
+              {
+                "name": "Beamos Silver Rupees Chest",
+                "short_name": "Beamos Silvers",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Lower Huge Pit|Shadow Temple MQ Beamos Silver Rupees Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Falling Spikes Lower Chest",
+                "short_name": "Crusher Lower",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Lower Huge Pit|Shadow Temple MQ Falling Spikes Lower Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS Falling Spikes Room",
+                "short_name": "Crusher",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Lower Huge Pit|Shadow Temple MQ GS Falling Spikes Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Falling Spikes Upper Chests",
+                "short_name": "Crusher Upper",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Lower Huge Pit|Shadow Temple MQ Falling Spikes Upper Chests"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 2
+              },
+              {
+                "name": "Invisible Spikes Chest",
+                "short_name": "Invisible Spikes",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Lower Huge Pit|Shadow Temple MQ Invisible Spikes Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Stalfos Room Chest",
+                "short_name": "Stalfos",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Lower Huge Pit|Shadow Temple MQ Stalfos Room Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Wind Hint Chest",
+                "short_name": "Wind Hint",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Wind Tunnel|Shadow Temple MQ Wind Hint Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Wind Hint Room",
+                "short_name": "Wind Hint",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Wind Tunnel|Shadow Temple MQ GS Wind Hint Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "After Wind Chests",
+                "short_name": "After Wind",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Wind Tunnel|Shadow Temple MQ After Wind Chests"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "GS After Wind",
+                "short_name": "After Wind",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Wind Tunnel|Shadow Temple MQ GS After Wind"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS After Ship",
+                "short_name": "After Ship",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Beyond Boat|Shadow Temple MQ GS After Ship"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Invisible Maze|Shadow Temple MQ Boss Key Chest"
+                ],
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "Spike Walls Left Chest",
+                "short_name": "Near Boss Key",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Invisible Maze|Shadow Temple MQ Spike Walls Left Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding Key",
+                "short_name": "Triple Skull",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Invisible Maze|Shadow Temple MQ Freestanding Key"
+                ],
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bomb Flower Chest",
+                "short_name": "Dead Hand 2",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Invisible Maze|Shadow Temple MQ Bomb Flower Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "GS Near Boss",
+                "short_name": "Near Boss",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Beyond Boat|Shadow Temple MQ GS Near Boss"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Bongo Bongo",
+                "access_rules": [
+                  "$access_location|Shadow Temple MQ Beyond Boat|Bongo Bongo"
+                ],
+                "hosted_item": "shadow",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "shadow_reg"
+                ],
+                "x": 500,
+                "y": 100
+              }
+            ]
           }
         ]
       },
