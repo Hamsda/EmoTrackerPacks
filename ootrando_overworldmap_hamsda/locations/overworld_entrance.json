@@ -4112,6 +4112,338 @@
                 "y": 100
               }
             ]
+          },
+          {
+            "name": "Water Temple",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Water Temple Dive|Water Temple Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Cracked Wall Chest",
+                "short_name": "Cracked Wall",
+                "access_rules": [
+                  "$access_location|Water Temple Cracked Wall|Water Temple Cracked Wall Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Torches Chest",
+                "short_name": "Torches",
+                "access_rules": [
+                  "$access_location|Water Temple Dive|Water Temple Torches Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Behind Gate",
+                "short_name": "South Basement",
+                "access_rules": [
+                  "$access_location|Water Temple Dive|Water Temple GS Behind Gate"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Water Temple Dive|Water Temple Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "Central Bow Target Chest",
+                "short_name": "Central Bow Target",
+                "access_rules": [
+                  "$access_location|Water Temple Dive|Water Temple Central Bow Target Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Central Pillar",
+                "short_name": "Central Pillar",
+                "access_rules": [
+                  "$access_location|Water Temple Dive|Water Temple GS Central Pillar"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Central Pillar Chest",
+                "short_name": "Central Pillar",
+                "access_rules": [
+                  "$access_location|Water Temple Middle Water Level|Water Temple Central Pillar Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Falling Platform Room",
+                "short_name": "Platform Room",
+                "access_rules": [
+                  "$access_location|Water Temple Falling Platform Room|Water Temple GS Falling Platform Room"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Longshot Chest",
+                "short_name": "Longshot",
+                "access_rules": [
+                  "$access_location|Water Temple Dark Link Region|Water Temple Longshot Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "GS River",
+                "short_name": "River",
+                "access_rules": [
+                  "$access_location|Water Temple Dark Link Region|Water Temple GS River"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "River Chest",
+                "short_name": "River",
+                "access_rules": [
+                  "$access_location|Water Temple Dark Link Region|Water Temple River Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Dragon Chest",
+                "short_name": "Dragon",
+                "access_rules": [
+                  "$access_location|Water Temple Dragon Statue|Water Temple Dragon Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Near Boss Key Chest",
+                "short_name": "Near Boss Key",
+                "access_rules": [
+                  "$access_location|Water Temple North Basement|Water Temple GS Near Boss Key Chest"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Water Temple North Basement|Water Temple Boss Key Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "Morpha",
+                "access_rules": [
+                  "$access_location|Water Temple Highest Water Level|Morpha"
+                ],
+                "hosted_item": "water",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "water_mq"
+                ],
+                "x": 600,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "name": "Water Temple MQ",
+            "sections": [
+              {
+                "name": "Map Chest",
+                "short_name": "Map",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Dive|Water Temple MQ Map Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_map.png",
+                "item_count": 1
+              },
+              {
+                "name": "Longshot Chest",
+                "short_name": "Longshot",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Lowered Water Levels|Water Temple MQ Longshot Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Compass Chest",
+                "short_name": "Compass",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Lowered Water Levels|Water Temple MQ Compass Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_compass.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Lizalfos Hallway",
+                "short_name": "Lizalfos",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Lowered Water Levels|Water Temple MQ GS Lizalfos Hallway"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Before Upper Water Switch",
+                "short_name": "Before Upper Water Switch",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Lowered Water Levels|Water Temple MQ GS Before Upper Water Switch"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Central Pillar Chest",
+                "short_name": "Central Pillar",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Dive|Water Temple MQ Central Pillar Chest"
+                ],
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS River",
+                "short_name": "River",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Dark Link Region|Water Temple MQ GS River"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Boss Key Chest",
+                "short_name": "Boss Key",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Dark Link Region|Water Temple MQ Boss Key Chest"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/chest_golden_closed.png",
+                "chest_opened_img": "images/chest_golden_open.png",
+                "item_count": 1
+              },
+              {
+                "name": "Freestanding Key",
+                "short_name": "Key",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Basement Gated Areas|Water Temple MQ Freestanding Key"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/small_key.png",
+                "chest_opened_img": "images/small_key_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Freestanding Key Area",
+                "short_name": "North Basement",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Basement Gated Areas|Water Temple MQ GS Freestanding Key Area"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "GS Triple Wall Torch",
+                "short_name": "South Basement",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Basement Gated Areas|Water Temple MQ GS Triple Wall Torch"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_dungeons"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "Morpha",
+                "access_rules": [
+                  "$access_location|Water Temple MQ Lobby|Morpha"
+                ],
+                "hosted_item": "water",
+                "chest_unopened_img": "images/HC.png",
+                "chest_opened_img": "images/HC_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "water_reg"
+                ],
+                "x": 600,
+                "y": 100
+              }
+            ]
           }
         ]
       },

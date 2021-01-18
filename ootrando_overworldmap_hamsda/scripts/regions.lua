@@ -13737,8 +13737,7 @@ data_per_region = {
         ["adult_access"] = function()
           if has("ironboots") then
             return FTR_or_zora()
-          end
-          if has("longshot") then
+          elseif has("longshot") then
             if has("logic_water_temple_torch_longshot") then
               return FTR_or_zora()
             end
@@ -13752,13 +13751,25 @@ data_per_region = {
   ["Water Temple Highest Water Level"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Morpha"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("water_boss_key") and has("longshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple Falling Platform Room"] = {
         ["child_access"] = function()
           if has("water_small_keys", 4) then
             return AccessibilityLevel.Normal
-          end
-          if has("water_small_keys", 1) then
+          elseif has("water_small_keys", 1) then
             return AccessibilityLevel.SequenceBreak
           end
           return AccessibilityLevel.None
@@ -13766,8 +13777,7 @@ data_per_region = {
         ["adult_access"] = function()
           if has("water_small_keys", 4) then
             return AccessibilityLevel.Normal
-          end
-          if has("water_small_keys", 1) then
+          elseif has("water_small_keys", 1) then
             return AccessibilityLevel.SequenceBreak
           end
           return AccessibilityLevel.None
@@ -13778,28 +13788,151 @@ data_per_region = {
   ["Water Temple Dive"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple Map Chest"] = {
+        ["child_access"] = function()
+          return raise_water_level()
+        end,
+        ["adult_access"] = function()
+          return raise_water_level()
+        end
+      },
+      ["Water Temple Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if ((has("ocarina") and has("lullaby")) or has("ironboots")) and has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple Torches Chest"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            if has("sticks") and has("sword1") and has("magic") then
+              return access_region("Water Temple Lobby", "child")
+            end
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            if has("bow") or (has("dinsfire") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple Central Bow Target Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("lift1") and has("ocarina") and has("lullaby") then
+            local adult = AccessibilityLevel.None
+            if has("bow") then
+              if has("logic_water_central_bow") or has("hoverboots") or has("longshot") then
+                adult = AccessibilityLevel.Normal
+              else
+                adult = AccessibilityLevel.SequenceBreak
+              end
+            end
+            local child = AccessibilityLevel.None
+            if has("sling") then
+              local trick =
+                has("logic_water_central_bow") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+              child =
+                and_accessibility(
+                trick,
+                access_region("Water Temple Lobby", "child"),
+                access_region("Water Temple Middle Water Level")
+              )
+            end
+            return or_accessibility(adult, child)
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple GS Behind Gate"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if
+            (has("hookshot") or has("hoverboots")) and has("ocarina") and has("lullaby") and
+              (has("ironboots") or has("scale"))
+           then
+            return has_explosives()
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple GS Central Pillar"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local ib = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local fw = (has("faroreswind") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local trick_fw =
+              has("logic_water_central_gs_fw") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local trick_ib =
+              has("logic_water_central_gs_irons") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local keys5 = AccessibilityLevel.None
+            if has("water_small_keys", 5) then
+              keys5 = AccessibilityLevel.Normal
+            elseif has("water_small_keys", 1) then
+              keys5 = AccessibilityLevel.SequenceBreak
+            end
+            return or_accessibility(
+              and_accessibility(
+                or_accessibility(ls, and_accessibility(trick_fw, hs, fw)),
+                or_accessibility(keys5, bow, df)
+              ),
+              and_accessibility(trick_ib, hs, ib, or_accessibility(bow, df)),
+              and_accessibility(
+                trick_fw,
+                access_region("Water Temple Lobby", "child"),
+                rang,
+                fw,
+                or_accessibility(sticks, df, and_accessibility(keys5, or_accessibility(hb, bow)))
+              )
+            )
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple Cracked Wall"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local level = AccessibilityLevel.None
           if has("ocarina") and has("lullaby") then
-            if has("hookshot") then
-              if has("logic_water_cracked_wall_nothing") then
-                return AccessibilityLevel.Normal
-              end
-              level = AccessibilityLevel.SequenceBreak
-            end
-            if has("hoverboots") then
-              if has("logic_water_cracked_wall_nothing") or has("logic_water_cracked_wall_hovers") then
-                return AccessibilityLevel.Normal
-              end
-              level = AccessibilityLevel.SequenceBreak
-            end
+            local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local trick_no =
+              has("logic_water_cracked_wall_nothing") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local trick_hb =
+              has("logic_water_cracked_wall_hovers") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return and_accessibility(
+              or_accessibility(hs, hb),
+              or_accessibility(trick_no, and_accessibility(trick_hb, hb))
+            )
           end
-          return level
+          return AccessibilityLevel.None
         end
       },
       ["Water Temple Middle Water Level"] = {
@@ -13808,25 +13941,22 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("ocarina") and has("lullaby") then
-            if has("bow") or (has("dinsfire") and has("magic")) then
-              return AccessibilityLevel.Normal
+            local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local keys5 = AccessibilityLevel.None
+            if has("water_small_keys", 5) then
+              keys5 = AccessibilityLevel.Normal
+            elseif has("water_small_keys", 1) then
+              keys5 = AccessibilityLevel.SequenceBreak
             end
-            local level = AccessibilityLevel.None
-            if has("hookshot") then
-              if has("water_small_keys", 5) then
-                return AccessibilityLevel.Normal
-              end
-              if has("water_small_keys", 1) then
-                level = AccessibilityLevel.SequenceBreak
-              end
-            end
-            if has("sticks") then
-              local child = access_region("Water Temple Lobby", "child")
-              if child ~= AccessibilityLevel.None then
-                return child
-              end
-            end
-            return level
+            return or_accessibility(
+              bow,
+              df,
+              and_accessibility(keys5, hs),
+              and_accessibility(access_region("Water Temple Lobby", "child"), sticks)
+            )
           end
           return AccessibilityLevel.None
         end
@@ -13910,21 +14040,97 @@ data_per_region = {
   ["Water Temple North Basement"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys5 = AccessibilityLevel.None
+          if has("water_small_keys", 5) then
+            keys5 = AccessibilityLevel.Normal
+          elseif has("water_small_keys", 2) then
+            keys5 = AccessibilityLevel.SequenceBreak
+          end
+          local dive = AccessibilityLevel.SequenceBreak
+          if has("logic_water_bk_jump_dive") or has("ironboots") then
+            dive = AccessibilityLevel.Normal
+          end
+          local ledge = AccessibilityLevel.SequenceBreak
+          if has("logic_water_north_basement_ledge_jump") or has("hoverboots") then
+            ledge = AccessibilityLevel.Normal
+          elseif has("lift1") then
+            ledge = has_explosives()
+          end
+          return and_accessibility(keys5, dive, ledge)
+        end
+      },
+      ["Water Temple GS Near Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Water Temple Cracked Wall"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple Cracked Wall Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Water Temple Dragon Statue"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple Dragon Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Water Temple Middle Water Level"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple Central Pillar Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ironboots") and has("hookshot") then
+            local tunic = has("bluetunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local keys5 = AccessibilityLevel.None
+            if has("water_small_keys", 5) then
+              keys5 = AccessibilityLevel.Normal
+            elseif has("water_small_keys", 1) then
+              keys5 = AccessibilityLevel.SequenceBreak
+            end
+            local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            return and_accessibility(tunic, or_accessibility(keys5, bow, df))
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple Cracked Wall"] = {
         ["child_access"] = function()
@@ -13939,6 +14145,30 @@ data_per_region = {
   ["Water Temple Falling Platform Room"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple GS Falling Platform Room"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            if has("logic_water_falling_platform_gs_boomerang") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          elseif has("hookshot") then
+            if has("logic_water_falling_platform_gs_hookshot") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple Dark Link Region"] = {
         ["child_access"] = function()
@@ -13960,6 +14190,45 @@ data_per_region = {
   ["Water Temple Dark Link Region"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple Longshot Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Water Temple River Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") and has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple GS River"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            local ib = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local trick = has("logic_water_river_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return or_accessibility(
+              and_accessibility(ib, FTR_or_zora()),
+              and_accessibility(trick, ls, or_accessibility(bow, has_bombchus()))
+            )
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple Dragon Statue"] = {
         ["child_access"] = function()
@@ -13967,10 +14236,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("ocarina") and has("time") and has("bow") then
-            if has("logic_water_dragon_jump_dive") or has("logic_water_dragon_adult") then
-              return AccessibilityLevel.Normal
-            end
-            if has("ironboots") then
+            if has("ironboots") or has("logic_water_dragon_jump_dive") or has("logic_water_dragon_adult") then
               return FTR_or_zora()
             end
             return AccessibilityLevel.SequenceBreak
@@ -13983,6 +14249,19 @@ data_per_region = {
   ["Water Temple MQ Lobby"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Morpha"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("water_boss_key") and has("longshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Lake Hylia"] = {
         ["child_access"] = function()
@@ -14019,6 +14298,38 @@ data_per_region = {
   ["Water Temple MQ Dive"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple MQ Map Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return has_fire()
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple MQ Central Pillar Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            local tunic = has("bluetunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local trick =
+              has("logic_water_mq_central_pillar") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local fa =
+              (has("bow") and has("firearrow") and has("magic")) and AccessibilityLevel.Normal or
+              AccessibilityLevel.None
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            return and_accessibility(tunic, or_accessibility(and_accessibility(trick, fa), and_accessibility(df, sot)))
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple MQ Lowered Water Levels"] = {
         ["child_access"] = function()
@@ -14036,11 +14347,83 @@ data_per_region = {
   ["Water Temple MQ Lowered Water Levels"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple MQ Compass Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return and_accessibility(access_region("Water Temple MQ Lobby", "child"), has_explosives())
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple MQ Longshot Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple MQ GS Lizalfos Hallway"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple MQ GS Before Upper Water Switch"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {}
   },
   ["Water Temple MQ Dark Link Region"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple MQ Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            if has("logic_water_dragon_jump_dive") or has("scale") or has("ironboots") then
+              return FTR_or_zora()
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple MQ GS River"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Water Temple MQ Basement Gated Areas"] = {
         ["child_access"] = function()
@@ -14058,6 +14441,54 @@ data_per_region = {
   ["Water Temple MQ Basement Gated Areas"] = {
     ["scene"] = "Water Temple",
     ["dungeon"] = true,
+    ["locations"] = {
+      ["Water Temple MQ Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if
+            has("hoverboots") or (can_use_scarecrow() == AccessibilityLevel.Normal) or
+              has("logic_water_north_basement_ledge_jump")
+           then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      },
+      ["Water Temple MQ GS Triple Wall Torch"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") and has("firearrow") and has("magic") then
+            if has("hoverboots") then
+              return AccessibilityLevel.Normal
+            end
+            return can_use_scarecrow()
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Water Temple MQ GS Freestanding Key Area"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_water_dragon_jump_dive") then
+            return AccessibilityLevel.Normal
+          elseif has("water_small_keys", 2) then
+            if
+              has("hoverboots") or (can_use_scarecrow() == AccessibilityLevel.Normal) or
+                has("logic_water_north_basement_ledge_jump")
+             then
+              return AccessibilityLevel.Normal
+            end
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      }
+    },
     ["exits"] = {}
   }
 }
