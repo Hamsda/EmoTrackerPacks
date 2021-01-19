@@ -29,18 +29,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 175,
-                "y": 1421
+                "x": 58,
+                "y": 1140
               },
               {
                 "map": "entrances",
-                "x": 175,
-                "y": 1421
+                "x": 58,
+                "y": 1140
               },
               {
                 "map": "connectors",
-                "x": 175,
-                "y": 1421
+                "x": 58,
+                "y": 1140
               }
             ]
           },
@@ -65,18 +65,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 244,
-                "y": 1421
+                "x": 158,
+                "y": 1140
               },
               {
                 "map": "entrances",
-                "x": 244,
-                "y": 1421
+                "x": 158,
+                "y": 1140
               },
               {
                 "map": "connectors",
-                "x": 244,
-                "y": 1421
+                "x": 158,
+                "y": 1140
               }
             ]
           },
@@ -101,18 +101,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 37,
-                "y": 1497
+                "x": 58,
+                "y": 1250
               },
               {
                 "map": "entrances",
-                "x": 37,
-                "y": 1497
+                "x": 58,
+                "y": 1250
               },
               {
                 "map": "connectors",
-                "x": 37,
-                "y": 1497
+                "x": 58,
+                "y": 1250
               }
             ]
           },
@@ -137,18 +137,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 106,
-                "y": 1497
+                "x": 158,
+                "y": 1250
               },
               {
                 "map": "entrances",
-                "x": 106,
-                "y": 1497
+                "x": 158,
+                "y": 1250
               },
               {
                 "map": "connectors",
-                "x": 106,
-                "y": 1497
+                "x": 158,
+                "y": 1250
               }
             ]
           },
@@ -173,18 +173,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 175,
-                "y": 1497
+                "x": 258,
+                "y": 1250
               },
               {
                 "map": "entrances",
-                "x": 175,
-                "y": 1497
+                "x": 258,
+                "y": 1250
               },
               {
                 "map": "connectors",
-                "x": 175,
-                "y": 1497
+                "x": 258,
+                "y": 1250
               }
             ]
           },
@@ -209,18 +209,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 244,
-                "y": 1497
+                "x": 358,
+                "y": 1250
               },
               {
                 "map": "entrances",
-                "x": 244,
-                "y": 1497
+                "x": 358,
+                "y": 1250
               },
               {
                 "map": "connectors",
-                "x": 244,
-                "y": 1497
+                "x": 358,
+                "y": 1250
               }
             ]
           },
@@ -245,18 +245,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 313,
-                "y": 1497
+                "x": 458,
+                "y": 1250
               },
               {
                 "map": "entrances",
-                "x": 313,
-                "y": 1497
+                "x": 458,
+                "y": 1250
               },
               {
                 "map": "connectors",
-                "x": 313,
-                "y": 1497
+                "x": 458,
+                "y": 1250
               }
             ]
           },
@@ -281,18 +281,18 @@
             "map_locations": [
               {
                 "map": "overworldchecks",
-                "x": 382,
-                "y": 1497
+                "x": 558,
+                "y": 1250
               },
               {
                 "map": "entrances",
-                "x": 382,
-                "y": 1497
+                "x": 558,
+                "y": 1250
               },
               {
                 "map": "connectors",
-                "x": 382,
-                "y": 1497
+                "x": 558,
+                "y": 1250
               }
             ]
           }
@@ -471,8 +471,27 @@
                 "force_invisibility_rules": [
                   "botw_mq"
                 ],
-                "x": 50,
-                "y": 50
+                "size": 40,
+                "x": 430,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "botw_mq"
+                ],
+                "size": 40,
+                "x": 430,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "botw_mq"
+                ],
+                "size": 40,
+                "x": 430,
+                "y": 1465
               }
             ]
           },
@@ -572,8 +591,27 @@
                 "force_invisibility_rules": [
                   "botw_reg"
                 ],
-                "x": 50,
-                "y": 100
+                "size": 40,
+                "x": 475,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "botw_reg"
+                ],
+                "size": 40,
+                "x": 475,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "botw_reg"
+                ],
+                "size": 40,
+                "x": 475,
+                "y": 1465
               }
             ]
           },
@@ -684,8 +722,27 @@
                 "force_invisibility_rules": [
                   "deku_mq"
                 ],
-                "x": 100,
-                "y": 50
+                "size": 40,
+                "x": 30,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "deku_mq"
+                ],
+                "size": 40,
+                "x": 30,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "deku_mq"
+                ],
+                "size": 40,
+                "x": 30,
+                "y": 1465
               }
             ]
           },
@@ -835,8 +892,27 @@
                 "force_invisibility_rules": [
                   "deku_reg"
                 ],
-                "x": 100,
-                "y": 100
+                "size": 40,
+                "x": 75,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "deku_reg"
+                ],
+                "size": 40,
+                "x": 75,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "deku_reg"
+                ],
+                "size": 40,
+                "x": 75,
+                "y": 1465
               }
             ]
           },
@@ -1017,8 +1093,27 @@
                 "force_invisibility_rules": [
                   "dodongo_mq"
                 ],
-                "x": 150,
-                "y": 50
+                "size": 40,
+                "x": 130,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "dodongo_mq"
+                ],
+                "size": 40,
+                "x": 130,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "dodongo_mq"
+                ],
+                "size": 40,
+                "x": 130,
+                "y": 1465
               }
             ]
           },
@@ -1205,8 +1300,27 @@
                 "force_invisibility_rules": [
                   "dodongo_reg"
                 ],
-                "x": 150,
-                "y": 100
+                "size": 40,
+                "x": 175,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "dodongo_reg"
+                ],
+                "size": 40,
+                "x": 175,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "dodongo_reg"
+                ],
+                "size": 40,
+                "x": 175,
+                "y": 1465
               }
             ]
           },
@@ -1421,8 +1535,27 @@
                 "force_invisibility_rules": [
                   "fire_mq"
                 ],
-                "x": 200,
-                "y": 50
+                "size": 40,
+                "x": 130,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "fire_mq"
+                ],
+                "size": 40,
+                "x": 130,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "fire_mq"
+                ],
+                "size": 40,
+                "x": 130,
+                "y": 1350
               }
             ]
           },
@@ -1619,8 +1752,27 @@
                 "force_invisibility_rules": [
                   "fire_reg"
                 ],
-                "x": 200,
-                "y": 100
+                "size": 40,
+                "x": 175,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "fire_reg"
+                ],
+                "size": 40,
+                "x": 175,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "fire_reg"
+                ],
+                "size": 40,
+                "x": 175,
+                "y": 1350
               }
             ]
           },
@@ -1824,8 +1976,27 @@
                 "force_invisibility_rules": [
                   "forest_mq"
                 ],
-                "x": 250,
-                "y": 50
+                "size": 40,
+                "x": 30,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "forest_mq"
+                ],
+                "size": 40,
+                "x": 30,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "forest_mq"
+                ],
+                "size": 40,
+                "x": 30,
+                "y": 1350
               }
             ]
           },
@@ -2020,8 +2191,27 @@
                 "force_invisibility_rules": [
                   "forest_reg"
                 ],
-                "x": 250,
-                "y": 100
+                "size": 40,
+                "x": 75,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "forest_reg"
+                ],
+                "size": 40,
+                "x": 75,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "forest_reg"
+                ],
+                "size": 40,
+                "x": 75,
+                "y": 1350
               }
             ]
           },
@@ -2180,8 +2370,27 @@
                 "force_invisibility_rules": [
                   "gc_mq"
                 ],
-                "x": 300,
-                "y": 50
+                "size": 40,
+                "x": 530,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "gc_mq"
+                ],
+                "size": 40,
+                "x": 530,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "gc_mq"
+                ],
+                "size": 40,
+                "x": 530,
+                "y": 1350
               }
             ]
           },
@@ -2351,8 +2560,27 @@
                 "force_invisibility_rules": [
                   "gc_reg"
                 ],
-                "x": 300,
-                "y": 100
+                "size": 40,
+                "x": 575,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "gc_reg"
+                ],
+                "size": 40,
+                "x": 575,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "gc_reg"
+                ],
+                "size": 40,
+                "x": 575,
+                "y": 1350
               }
             ]
           },
@@ -2515,8 +2743,27 @@
                 "force_invisibility_rules": [
                   "gtg_mq"
                 ],
-                "x": 350,
-                "y": 50
+                "size": 40,
+                "x": 330,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "gtg_mq"
+                ],
+                "size": 40,
+                "x": 330,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "gtg_mq"
+                ],
+                "size": 40,
+                "x": 330,
+                "y": 1465
               }
             ]
           },
@@ -2655,8 +2902,27 @@
                 "force_invisibility_rules": [
                   "gtg_reg"
                 ],
-                "x": 350,
-                "y": 100
+                "size": 40,
+                "x": 375,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "gtg_reg"
+                ],
+                "size": 40,
+                "x": 375,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "gtg_reg"
+                ],
+                "size": 40,
+                "x": 375,
+                "y": 1465
               }
             ]
           },
@@ -2759,8 +3025,27 @@
                 "force_invisibility_rules": [
                   "ice_mq"
                 ],
-                "x": 400,
-                "y": 50
+                "size": 40,
+                "x": 530,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "ice_mq"
+                ],
+                "size": 40,
+                "x": 530,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "ice_mq"
+                ],
+                "size": 40,
+                "x": 530,
+                "y": 1465
               }
             ]
           },
@@ -2861,8 +3146,27 @@
                 "force_invisibility_rules": [
                   "ice_reg"
                 ],
-                "x": 400,
-                "y": 100
+                "size": 40,
+                "x": 575,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "ice_reg"
+                ],
+                "size": 40,
+                "x": 575,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "ice_reg"
+                ],
+                "size": 40,
+                "x": 575,
+                "y": 1465
               }
             ]
           },
@@ -2978,8 +3282,27 @@
                 "force_invisibility_rules": [
                   "jabu_mq"
                 ],
-                "x": 450,
-                "y": 50
+                "size": 40,
+                "x": 230,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "jabu_mq"
+                ],
+                "size": 40,
+                "x": 230,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "jabu_mq"
+                ],
+                "size": 40,
+                "x": 230,
+                "y": 1465
               }
             ]
           },
@@ -3142,8 +3465,27 @@
                 "force_invisibility_rules": [
                   "jabu_reg"
                 ],
-                "x": 450,
-                "y": 100
+                "size": 40,
+                "x": 275,
+                "y": 1465
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "jabu_reg"
+                ],
+                "size": 40,
+                "x": 275,
+                "y": 1465
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "jabu_reg"
+                ],
+                "size": 40,
+                "x": 275,
+                "y": 1465
               }
             ]
           },
@@ -3357,8 +3699,27 @@
                 "force_invisibility_rules": [
                   "shadow_mq"
                 ],
-                "x": 500,
-                "y": 50
+                "size": 40,
+                "x": 430,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "shadow_mq"
+                ],
+                "size": 40,
+                "x": 430,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "shadow_mq"
+                ],
+                "size": 40,
+                "x": 430,
+                "y": 1350
               }
             ]
           },
@@ -3596,8 +3957,27 @@
                 "force_invisibility_rules": [
                   "shadow_reg"
                 ],
-                "x": 500,
-                "y": 100
+                "size": 40,
+                "x": 475,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "shadow_reg"
+                ],
+                "size": 40,
+                "x": 475,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "shadow_reg"
+                ],
+                "size": 40,
+                "x": 475,
+                "y": 1350
               }
             ]
           },
@@ -3828,8 +4208,27 @@
                 "force_invisibility_rules": [
                   "spirit_mq"
                 ],
-                "x": 550,
-                "y": 50
+                "size": 40,
+                "x": 330,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "spirit_mq"
+                ],
+                "size": 40,
+                "x": 330,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "spirit_mq"
+                ],
+                "size": 40,
+                "x": 330,
+                "y": 1350
               }
             ]
           },
@@ -4108,8 +4507,27 @@
                 "force_invisibility_rules": [
                   "spirit_reg"
                 ],
-                "x": 550,
-                "y": 100
+                "size": 40,
+                "x": 375,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "spirit_reg"
+                ],
+                "size": 40,
+                "x": 375,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "spirit_reg"
+                ],
+                "size": 40,
+                "x": 375,
+                "y": 1350
               }
             ]
           },
@@ -4292,8 +4710,27 @@
                 "force_invisibility_rules": [
                   "water_mq"
                 ],
-                "x": 600,
-                "y": 50
+                "size": 40,
+                "x": 230,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "water_mq"
+                ],
+                "size": 40,
+                "x": 230,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "water_mq"
+                ],
+                "size": 40,
+                "x": 230,
+                "y": 1350
               }
             ]
           },
@@ -4440,8 +4877,27 @@
                 "force_invisibility_rules": [
                   "water_reg"
                 ],
-                "x": 600,
-                "y": 100
+                "size": 40,
+                "x": 275,
+                "y": 1350
+              },
+              {
+                "map": "entrances",
+                "force_invisibility_rules": [
+                  "water_reg"
+                ],
+                "size": 40,
+                "x": 275,
+                "y": 1350
+              },
+              {
+                "map": "connectors",
+                "force_invisibility_rules": [
+                  "water_reg"
+                ],
+                "size": 40,
+                "x": 275,
+                "y": 1350
               }
             ]
           }
