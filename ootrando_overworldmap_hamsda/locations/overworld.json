@@ -2184,7 +2184,8 @@
                     "name": "Kak GS Above Impas House (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|adult,$night_gs,hookshot"
+                      "$has_age|adult,$night_gs,hookshot",
+                      "$has_age|adult,$night_gs,[logic_kakariko_rooftop_gs],hoverboots"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -3113,6 +3114,7 @@
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
+                          "$has_age|adult,$night_gs,[logic_trail_gs_lower_hovers],hoverboots",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,$has_explosives",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,lift1",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"

@@ -741,12 +741,12 @@
         "access_rules": [
           "@Forest Temple/Bow Region,forest_small_keys:5,$has_age|adult,bow",
           "@Forest Temple/Bow Region,forest_small_keys:5,dinsfire,magic",
-          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,ocarina,time,$has_age|adult",
-          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,@Forest Temple/Outside Upper Ledge,$has_age|adult",
-          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,longshot",
-          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,[logic_forest_vines],hookshot",
-          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,ironboots",
-          "[logic_forest_scarecrow],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,scale2"
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,ocarina,time,$has_age|adult",
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,@Forest Temple/Outside Upper Ledge,$has_age|adult",
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,longshot",
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,[logic_forest_vines],hookshot",
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,ironboots",
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,scale2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1469,9 +1469,9 @@
           "@Water Temple/Dive,ocarina,lullaby,longshot,water_small_keys:1,[water_small_keys:5]",
           "@Water Temple/Dive,ocarina,lullaby,longshot,bow",
           "@Water Temple/Dive,ocarina,lullaby,longshot,dinsfire,magic",
-          "@Water Temple/Dive,ocarina,lullaby,hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Dive,ocarina,lullaby,hookshot,faroreswind,magic,bow",
-          "@Water Temple/Dive,ocarina,lullaby,hookshot,faroreswind,magic,dinsfire",
+          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,bow",
+          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,dinsfire",
           "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,bow",
           "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,dinsfire,magic",
           "{@Water Temple/Middle Water Level,bow}"
@@ -1523,7 +1523,7 @@
         "name": "GS River",
         "short_name": "River",
         "access_rules": [
-          "@Water Temple/Dark Link Region,ocarina,time,ironboots",
+          "@Water Temple/Dark Link Region,ocarina,time,ironboots,$FTR_or_zora",
           "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,bow",
           "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,$has_bombchus"
         ],
@@ -1556,9 +1556,9 @@
           "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,ironboots",
           "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,scale",
           "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,ironboots",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,ironboots,$FTR_or_zora",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_jump_dive]",
-          "@Water Temple/Dark Link Region,ocarina,time,bow,[logic_water_dragon_adult]"
+          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,ironboots",
+          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,[logic_water_dragon_jump_dive]",
+          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,[logic_water_dragon_adult]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2420,8 +2420,7 @@
         "name": "GS Like Like Cage",
         "short_name": "Like Like",
         "access_rules": [
-          "@Bottom of the Well/Like Like Chest,boomerang",
-          "@Bottom of the Well/Like Like Chest,[logic_botw_cage_gs],$can_child_attack"
+          "@Bottom of the Well/Like Like Chest,boomerang"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"

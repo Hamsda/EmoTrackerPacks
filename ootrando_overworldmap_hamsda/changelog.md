@@ -6,6 +6,35 @@
 - changed non ER assumption about tunics from shops
 - fixed Gohma requires nuts w/o sling
 - added all 12 dungeons to ER
+- changed logic based on [this PR](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1128)
+- added sequence breaks for new logic tricks:
+  - BotW MQ jump over the pits
+  - DC MQ light the eyes w/ str
+  - DC MQ back areas as child w/o explo
+  - Deku basement web w/ bow
+  - Deku MQ compass GS w/ hammer
+  - Deku MQ roll under the spiked log
+  - Fire MQ GS above flame maze w/ long
+  - Fire MQ upper maze w/ hovers
+  - Fire MQ upper maze w/ nothing
+  - Fire Trial MQ w/ hook
+  - Forest first GS w/ difficult weapons
+  - Forest MQ switch w/ js
+  - Forest east GS w/ rang
+  - IC MQ red ice GS w/o SoT
+  - Jabu near boss GS as adult
+  - Jabu scrub as adult
+  - Kak rooftop GS w/ hovers
+  - LW bridge as adult w/ nothing
+  - Shadow MQ invisible blades w/o SoT
+  - Spirit MQ sun block room as child w/o SoT
+  - DMT lower GS w/ hovers
+  - visible one-way collisions
+  - Water central GS w/ FW
+  - Water dragon statue as child
+  - Water falling platform GS w/ rang
+  - Water MQ central pillar w/ FA
+  - Water MQ north basement GS w/o SK
 
 ## 3.2.2.0
 

@@ -18,7 +18,19 @@
       },
       {
         "type": "item",
+        "item": "logic_visible_collisions",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_child_deadhand",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_child_dampe_race_poh",
         "width": 200,
         "height": 16
       },
@@ -60,6 +72,18 @@
       },
       {
         "type": "item",
+        "item": "logic_deku_b1_webs_with_bow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_mq_log",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_rusted_switches",
         "width": 200,
         "height": 16
@@ -67,6 +91,12 @@
       {
         "type": "item",
         "item": "logic_botw_basement",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_botw_mq_pits",
         "width": 200,
         "height": 16
       },
@@ -102,6 +132,12 @@
       },
       {
         "type": "item",
+        "item": "logic_water_mq_central_pillar",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_gtg_mq_with_hookshot",
         "width": 200,
         "height": 16
@@ -114,13 +150,31 @@
       },
       {
         "type": "item",
+        "item": "logic_forest_outdoor_east_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_first_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_forest_well_swim",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_forest_mq_hallway_switch",
+        "item": "logic_forest_mq_hallway_switch_jumpslash",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_mq_hallway_switch_hookshot",
         "width": 200,
         "height": 16
       },
@@ -174,13 +228,13 @@
       },
       {
         "type": "item",
-        "item": "logic_jabu_mq_sot_gs",
+        "item": "logic_jabu_scrub_jump_dive",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_botw_cage_gs",
+        "item": "logic_jabu_mq_sot_gs",
         "width": 200,
         "height": 16
       },
@@ -210,6 +264,12 @@
       },
       {
         "type": "item",
+        "item": "logic_fire_mq_maze_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_fire_mq_near_boss",
         "width": 200,
         "height": 16
@@ -228,6 +288,12 @@
       },
       {
         "type": "item",
+        "item": "logic_fire_mq_above_maze_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_zora_river_lower",
         "width": 200,
         "height": 16
@@ -241,6 +307,12 @@
       {
         "type": "item",
         "item": "logic_shadow_freestanding_key",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_mq_invisible_blades",
         "width": 200,
         "height": 16
       },
@@ -270,6 +342,12 @@
       },
       {
         "type": "item",
+        "item": "logic_biggoron_bolero",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_wasteland_crossing",
         "width": 200,
         "height": 16
@@ -289,6 +367,12 @@
       {
         "type": "item",
         "item": "logic_kakariko_tower_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_mq_compass_gs",
         "width": 200,
         "height": 16
       },
@@ -318,6 +402,12 @@
       },
       {
         "type": "item",
+        "item": "logic_spirit_mq_sun_block_sot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_shadow_trial_mq",
         "width": 200,
         "height": 16
@@ -336,7 +426,19 @@
       },
       {
         "type": "item",
+        "item": "logic_water_mq_locked_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_water_falling_platform_gs_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_falling_platform_gs_boomerang",
         "width": 200,
         "height": 16
       },
@@ -367,6 +469,12 @@
       {
         "type": "item",
         "item": "logic_trail_gs_lower_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_trail_gs_lower_hovers",
         "width": 200,
         "height": 16
       },
@@ -420,7 +528,13 @@
       },
       {
         "type": "item",
-        "item": "logic_fire_mq_bombable_chest",
+        "item": "logic_fire_mq_blocked_chest",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_maze_jump",
         "width": 200,
         "height": 16
       },
@@ -433,6 +547,12 @@
       {
         "type": "item",
         "item": "logic_ice_mq_scarecrow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_ice_mq_red_ice_gs",
         "width": 200,
         "height": 16
       },
@@ -463,6 +583,18 @@
       {
         "type": "item",
         "item": "logic_lost_woods_gs_bean",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_jabu_boss_gs_adult",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_kakariko_rooftop_gs",
         "width": 200,
         "height": 16
       },
@@ -522,6 +654,12 @@
       },
       {
         "type": "item",
+        "item": "logic_water_central_gs_fw",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_water_central_gs_irons",
         "width": 200,
         "height": 16
@@ -541,6 +679,12 @@
       {
         "type": "item",
         "item": "logic_water_dragon_adult",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_dragon_child",
         "width": 200,
         "height": 16
       },
@@ -576,7 +720,7 @@
       },
       {
         "type": "item",
-        "item": "logic_forest_scarecrow",
+        "item": "logic_forest_door_frame",
         "width": 200,
         "height": 16
       },
@@ -600,6 +744,18 @@
       },
       {
         "type": "item",
+        "item": "logic_dc_mq_eyes",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_mq_child_back",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_child_rolling_with_strength",
         "width": 200,
         "height": 16
@@ -613,6 +769,12 @@
       {
         "type": "item",
         "item": "logic_valley_crate_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lost_woods_bridge",
         "width": 200,
         "height": 16
       },
@@ -643,6 +805,12 @@
       {
         "type": "item",
         "item": "logic_fire_scarecrow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_trial_mq",
         "width": 200,
         "height": 16
       },
