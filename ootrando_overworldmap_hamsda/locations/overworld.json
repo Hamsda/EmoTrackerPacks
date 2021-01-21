@@ -193,11 +193,13 @@
                     "name": "KF Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "$has_age|adult,ocarina,epona"
+                      "$has_age|adult,ocarina,epona",
+                      "{$hintable}"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
@@ -1093,11 +1095,13 @@
                     "short_name": "Cow",
                     "access_rules": [
                       "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
-                      "$has_age|adult,hammer,$has_fire,ocarina,epona"
+                      "$has_age|adult,hammer,$has_fire,ocarina,epona",
+                      "{$hintable}"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
@@ -1945,6 +1949,7 @@
                     "access_rules": [
                       "$has_age|child"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -3441,11 +3446,13 @@
                         "access_rules": [
                           "$can_blast,$has_age|child,$can_child_attack",
                           "$spawn_access|Death Mountain Summit|child,$can_child_attack",
-                          "$spawn_access|DMT Fairy|child,$can_child_attack"
+                          "$spawn_access|DMT Fairy|child,$can_child_attack",
+                          "{$hintable}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4757,11 +4764,13 @@
                       {
                         "name": "Cow",
                         "access_rules": [
-                          "$has_age|child,ocarina,epona"
+                          "$has_age|child,ocarina,epona",
+                          "{$hintable}"
                         ],
                         "visibility_rules": [
                           "setting_cowsanity_yes"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
                         "item_count": 1
@@ -4846,8 +4855,10 @@
                       {
                         "name": "Smash 'em",
                         "access_rules": [
-                          "hammer"
+                          "hammer",
+                          "{$hintable}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],

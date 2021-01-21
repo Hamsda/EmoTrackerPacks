@@ -35,6 +35,7 @@
   - Water falling platform GS w/ rang
   - Water MQ central pillar w/ FA
   - Water MQ north basement GS w/o SK
+- changed a few sometimes hinted overworld checks to have captures
 
 ## 3.2.2.0
 
