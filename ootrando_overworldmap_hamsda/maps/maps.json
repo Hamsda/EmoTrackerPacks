@@ -3,12 +3,12 @@
     "name": "child",
     "location_size": 35,
     "location_border_thickness": 5,
-    "img": "images/overworld_spawns.png"
+    "img": "images/map_spawns.png"
   },
   {
     "name": "adult",
     "location_size": 35,
     "location_border_thickness": 5,
-    "img": "images/overworld_spawns.png"
+    "img": "images/map_spawns.png"
   }
 ]

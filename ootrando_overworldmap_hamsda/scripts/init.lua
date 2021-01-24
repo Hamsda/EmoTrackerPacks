@@ -56,7 +56,7 @@ end
 
 variant = Tracker.ActiveVariantUID
 has_map = variant ~= "var_minimalist" and (not variant:find("itemsonly"))
-has_keys = variant:find("keysanity")
+is_keys = variant:find("keysanity")
 is_er = variant:find("entrance")
 
 if has_map then
@@ -107,7 +107,7 @@ else
 end
 tracker_on_accessibility_updated()
 
-if has_keys then
+if is_keys then
   Tracker:AddLayouts("layouts/dungeon_grids_keysanity.json")
 else
   Tracker:AddLayouts("layouts/dungeon_grids.json")

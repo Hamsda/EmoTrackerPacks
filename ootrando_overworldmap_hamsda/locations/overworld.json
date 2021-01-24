@@ -26,13 +26,15 @@
             "map_locations": [
               {
                 "map": "child",
-                "x": 175,
-                "y": 1421
+                "size": 40,
+                "x": 58,
+                "y": 1475
               },
               {
                 "map": "adult",
-                "x": 175,
-                "y": 1421
+                "size": 40,
+                "x": 58,
+                "y": 1475
               }
             ]
           },
@@ -54,13 +56,15 @@
             "map_locations": [
               {
                 "map": "child",
-                "x": 244,
-                "y": 1421
+                "size": 40,
+                "x": 158,
+                "y": 1475
               },
               {
                 "map": "adult",
-                "x": 244,
-                "y": 1421
+                "size": 40,
+                "x": 158,
+                "y": 1475
               }
             ]
           }
@@ -189,11 +193,13 @@
                     "name": "KF Links House Cow",
                     "short_name": "Cow",
                     "access_rules": [
-                      "$has_age|adult,ocarina,epona"
+                      "$has_age|adult,ocarina,epona",
+                      "{$hintable}"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
@@ -1089,11 +1095,13 @@
                     "short_name": "Cow",
                     "access_rules": [
                       "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
-                      "$has_age|adult,hammer,$has_fire,ocarina,epona"
+                      "$has_age|adult,hammer,$has_fire,ocarina,epona",
+                      "{$hintable}"
                     ],
                     "visibility_rules": [
                       "setting_cowsanity_yes"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/cow.png",
                     "chest_opened_img": "images/bottle_milk.png",
                     "item_count": 1
@@ -1283,7 +1291,7 @@
                       {
                         "name": "Play Song",
                         "access_rules": [
-                          "$has_age|child,ocarina,scarecrow_kid,$has|scarecrow|0"
+                          "$has_age|child,ocarina,scarecrow_kid"
                         ],
                         "hosted_item": "scarecrow_adult"
                       }
@@ -1291,6 +1299,9 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "force_invisibility_rules": [
+                          "scarecrow"
+                        ],
                         "x": 1150,
                         "y": 1180
                       }
@@ -1310,6 +1321,9 @@
                     "map_locations": [
                       {
                         "map": "adult",
+                        "force_invisibility_rules": [
+                          "scarecrow"
+                        ],
                         "x": 1150,
                         "y": 1180
                       }
@@ -1935,6 +1949,7 @@
                     "access_rules": [
                       "$has_age|child"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -2174,7 +2189,8 @@
                     "name": "Kak GS Above Impas House (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|adult,$night_gs,hookshot"
+                      "$has_age|adult,$night_gs,hookshot",
+                      "$has_age|adult,$night_gs,[logic_kakariko_rooftop_gs],hoverboots"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -3103,6 +3119,7 @@
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
+                          "$has_age|adult,$night_gs,[logic_trail_gs_lower_hovers],hoverboots",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,$has_explosives",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,lift1",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
@@ -3429,11 +3446,13 @@
                         "access_rules": [
                           "$can_blast,$has_age|child,$can_child_attack",
                           "$spawn_access|Death Mountain Summit|child,$can_child_attack",
-                          "$spawn_access|DMT Fairy|child,$can_child_attack"
+                          "$spawn_access|DMT Fairy|child,$can_child_attack",
+                          "{$hintable}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4745,11 +4764,13 @@
                       {
                         "name": "Cow",
                         "access_rules": [
-                          "$has_age|child,ocarina,epona"
+                          "$has_age|child,ocarina,epona",
+                          "{$hintable}"
                         ],
                         "visibility_rules": [
                           "setting_cowsanity_yes"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/cow.png",
                         "chest_opened_img": "images/bottle_milk.png",
                         "item_count": 1
@@ -4834,8 +4855,10 @@
                       {
                         "name": "Smash 'em",
                         "access_rules": [
-                          "hammer"
+                          "hammer",
+                          "{$hintable}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],

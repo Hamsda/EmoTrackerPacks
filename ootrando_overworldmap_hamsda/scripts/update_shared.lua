@@ -41,7 +41,7 @@ function update_keycounts()
       else
         key_object.MaxCount = math.max(key_counts["vanilla"][dungeon], key_counts["mq"][dungeon])
       end
-      if not has_keys then
+      if not is_keys then
         key_object.AcquiredCount = key_object.MaxCount
         local bk = get_object(dungeon .. "_boss_key")
         if bk then
@@ -78,7 +78,7 @@ function update_fortress()
     elseif setting_normal then
       item_gf_keys.MaxCount = 4
     end
-    if not has_keys then
+    if not is_keys then
       item_gf_keys.AcquiredCount = item_gf_keys.MaxCount
     end
   end

@@ -121,6 +121,13 @@ function has_projectile(age)
   return has_explosives()
 end
 
+function can_use_scarecrow()
+  if has("ocarina") and has("scarecrow") and has("hookshot") then
+    return AccessibilityLevel.Normal
+  end
+  return AccessibilityLevel.None
+end
+
 function has_fire()
   if has("magic") and ((has("bow") and has("firearrow")) or has("dinsfire")) then
     return AccessibilityLevel.Normal

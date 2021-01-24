@@ -19,11 +19,15 @@
         "item_count": 1
       },
       {
-        "name": "Basement Back Room",
+        "name": "Basement Water Room Front",
         "access_rules": [
           "sling,sticks",
           "sling,dinsfire,magic",
-          "[logic_deku_b1_skip]"
+          //^^^ forward ^^^
+          //vvv reverse vvv
+          "[logic_deku_b1_skip],sword1",
+          "[logic_deku_b1_skip],$has_projectile|child",
+          "[logic_deku_b1_skip],sticks,nuts"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -31,13 +35,33 @@
         "item_count": 1
       },
       {
-        "name": "Basement Water Room",
+        "name": "Basement Water Room Back",
         "access_rules": [
-          "sling,sticks",
-          "sling,dinsfire,magic",
-          "@Deku Tree MQ/Basement Back Room,sword1",
-          "@Deku Tree MQ/Basement Back Room,$has_projectile|child",
-          "@Deku Tree MQ/Basement Back Room,nuts,sticks"
+          "@Deku Tree MQ/Basement Water Room Front,[logic_deku_mq_log]",
+          "@Deku Tree MQ/Basement Water Room Front,shield1",
+          "@Deku Tree MQ/Basement Water Room Front,shield2",
+          //^^^ forward ^^^
+          //vvv reverse vvv
+          "[logic_deku_b1_skip],sword1",
+          "[logic_deku_b1_skip],$has_projectile|child",
+          "[logic_deku_b1_skip],sticks,nuts"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Back Room",
+        "access_rules": [
+          "@Deku Tree MQ/Basement Water Room Back,sticks,sword1",
+          "@Deku Tree MQ/Basement Water Room Back,sticks,$has_projectile|child",
+          "@Deku Tree MQ/Basement Water Room Back,sticks,nuts",
+          "@Deku Tree MQ/Basement Water Room Back,dinsfire,magic,sword1",
+          "@Deku Tree MQ/Basement Water Room Back,dinsfire,magic,$has_projectile|child",
+          //^^^ forward ^^^
+          //vvv reverse vvv
+          "[logic_deku_b1_skip]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -47,7 +71,10 @@
       {
         "name": "Basement Ledge",
         "access_rules": [
-          "@Deku Tree MQ/Basement Back Room"
+          "@Deku Tree MQ/Basement Back Room",
+          //^^^ forward ^^^
+          //vvv reverse vvv
+          "[logic_deku_b1_skip]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -129,7 +156,7 @@
         "name": "Before Spinning Log Chest",
         "short_name": "Before Log",
         "access_rules": [
-          "@Deku Tree MQ/Basement Water Room"
+          "@Deku Tree MQ/Basement Water Room Front"
         ],
         "item_count": 1
       },
@@ -137,7 +164,7 @@
         "name": "After Spinning Log Chest",
         "short_name": "After Log",
         "access_rules": [
-          "@Deku Tree MQ/Basement Water Room,ocarina,time",
+          "@Deku Tree MQ/Basement Water Room Back,ocarina,time",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -265,7 +292,15 @@
       {
         "name": "Boss Area",
         "access_rules": [
-          "@Dodongos Cavern MQ/Lobby,$has_explosives"
+          "@Dodongos Cavern MQ/Lobby,$has_explosives",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|both,sticks",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|child,[logic_dc_mq_child_back],sticks",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|child,[logic_dc_mq_child_back],dinsfire,magic",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|adult,dinsfire,magic",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|adult,[logic_dc_jump]",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|adult,hammer",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|adult,hoverboots",
+          "@Dodongos Cavern MQ/Lobby,[logic_dc_mq_eyes],lift1,$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -735,7 +770,8 @@
         "name": "GS Red Ice",
         "short_name": "Red Ice",
         "access_rules": [
-          "ocarina,time"
+          "ocarina,time",
+          "[logic_ice_mq_red_ice_gs]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -820,7 +856,7 @@
         "name": "After Block Puzzle",
         "access_rules": [
           "@Forest Temple MQ/Central Area,$has_age|adult,lift1",
-          "@Forest Temple MQ/Central Area,$has_age|adult,$has_bombchus,[logic_forest_mq_block_puzzle],hookshot"
+          "@Forest Temple MQ/Central Area,$has_age|adult,[logic_forest_mq_block_puzzle],$has_bombchus,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -840,11 +876,11 @@
       {
         "name": "Outdoor Ledge",
         "access_rules": [
-          "@Forest Temple MQ/Central Area,hoverboots",
-          "@Forest Temple MQ/Central Area,hookshot,lift1",
-          "@Forest Temple MQ/Central Area,hookshot,[logic_forest_mq_hallway_switch]",
-          "@Forest Temple MQ/Central Area,hookshot,$has_bombchus,[logic_forest_mq_block_puzzle]",
-          "@Forest Temple MQ/After Block Puzzle,forest_small_keys:2,[forest_small_keys:3]"
+          "@Forest Temple MQ/Central Area,[logic_forest_mq_hallway_switch_jumpslash],hoverboots",
+          "@Forest Temple MQ/Central Area,[logic_forest_mq_hallway_switch_hookshot],hookshot",
+          "@Forest Temple MQ/After Block Puzzle,forest_small_keys:2,[forest_small_keys:3]",
+          "@Forest Temple MQ/After Block Puzzle,[logic_forest_mq_hallway_switch_jumpslash],hookshot",
+          "@Forest Temple MQ/After Block Puzzle,[logic_forest_mq_hallway_switch_jumpslash],[logic_forest_outside_backdoor]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -855,6 +891,7 @@
         "name": "NW Outdoors",
         "access_rules": [
           "@Forest Temple MQ/Central Area,$has_age|adult,bow",
+          "@Forest Temple MQ/After Block Puzzle,forest_small_keys:2",
           "@Forest Temple MQ/Outdoor Ledge"
         ],
         "visibility_rules": [
@@ -962,7 +999,9 @@
         "name": "GS Raised Island Courtyard",
         "short_name": "Outdoor East",
         "access_rules": [
-          "@Forest Temple MQ/NE Outdoors,hookshot"
+          "@Forest Temple MQ/NE Outdoors,hookshot",
+          "@Forest Temple MQ/NE Outdoors,bow,firearrow,magic,ocarina,time",
+          "@Forest Temple MQ/NE Outdoors,bow,firearrow,magic,hoverboots,[logic_forest_door_frame]"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1132,9 +1171,7 @@
       {
         "name": "Lower Locked Door",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:5],$has_explosives",
-          "fire_small_keys:1,[fire_small_keys:5],$has_age|adult,hammer",
-          "fire_small_keys:1,[fire_small_keys:5],$has_age|adult,hookshot"
+          "fire_small_keys:1,[fire_small_keys:5]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1166,7 +1203,9 @@
         "name": "Upper Maze",
         "access_rules": [
           "@Fire Temple MQ/Lower Maze,$has_explosives,hookshot",
-          "@Fire Temple MQ/Lower Maze,[logic_rusted_switches],hookshot"
+          "@Fire Temple MQ/Lower Maze,[logic_rusted_switches],hookshot",
+          "@Fire Temple MQ/Lower Maze,[logic_fire_mq_maze_hovers],hoverboots",
+          "@Fire Temple MQ/Lower Maze,[logic_fire_mq_maze_jump]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1176,7 +1215,8 @@
       {
         "name": "West Top",
         "access_rules": [
-          "@Fire Temple MQ/Upper Maze,fire_small_keys:2,[fire_small_keys:3],bow"
+          "@Fire Temple MQ/Upper Maze,fire_small_keys:2,[fire_small_keys:3],bow,hookshot",
+          "@Fire Temple MQ/Upper Maze,fire_small_keys:2,[fire_small_keys:3],bow,firearrow,magic"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1222,7 +1262,9 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "@Fire Temple MQ/Lower Locked Door,$has_age|adult"
+          "@Fire Temple MQ/Lower Locked Door,$has_age|adult,$has_explosives",
+          "@Fire Temple MQ/Lower Locked Door,$has_age|adult,hammer",
+          "@Fire Temple MQ/Lower Locked Door,$has_age|adult,hookshot"
         ],
         "item_count": 1
       },
@@ -1240,8 +1282,7 @@
         "short_name": "Lava Room Bombable",
         "access_rules": [
           "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,hookshot",
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[logic_fire_mq_bombable_chest],$damage_below_ohko",
-          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[logic_fire_mq_bombable_chest],nayrus,magic"
+          "@Fire Temple MQ/Big Lava Room,$has_fire,$has_explosives,[logic_fire_mq_blocked_chest]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1283,7 +1324,7 @@
         "short_name": "Maze Side",
         "access_rules": [
           "@Fire Temple MQ/Lower Maze,$has_explosives,[logic_fire_mq_maze_side_room]",
-          "@Fire Temple MQ/Lower Maze,$has_explosives,hookshot"
+          "@Fire Temple MQ/Lower Maze,$has_explosives,@Fire Temple MQ/Upper Maze"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1309,7 +1350,8 @@
         "name": "GS Skull On Fire",
         "short_name": "East Tower Top",
         "access_rules": [
-          "@Fire Temple MQ/Upper Maze,ocarina,time",
+          "@Fire Temple MQ/Upper Maze,ocarina,time,hookshot,$has_explosives",
+          "@Fire Temple MQ/Upper Maze,ocarina,time,hookshot,[logic_rusted_switches]",
           "@Fire Temple MQ/Upper Maze,longshot"
         ],
         "visibility_rules": [
@@ -1351,7 +1393,8 @@
         "name": "Freestanding Key",
         "short_name": "Flare Dancer 2",
         "access_rules": [
-          "@Fire Temple MQ/West Top"
+          "@Fire Temple MQ/West Top,hookshot",
+          "@Fire Temple MQ/West Top,[logic_fire_mq_flame_maze]"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -1361,7 +1404,8 @@
         "name": "Chest On Fire",
         "short_name": "West Tower Top",
         "access_rules": [
-          "@Fire Temple MQ/West Top,fire_small_keys:3,[fire_small_keys:4]",
+          "@Fire Temple MQ/West Top,hookshot,fire_small_keys:3,[fire_small_keys:4]",
+          "@Fire Temple MQ/West Top,[logic_fire_mq_flame_maze],fire_small_keys:3,[fire_small_keys:4]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1372,7 +1416,8 @@
         "name": "GS Above Fire Wall Maze",
         "short_name": "Above Fire Maze",
         "access_rules": [
-          "@Fire Temple MQ/West Top,fire_small_keys:4,[fire_small_keys:5]",
+          "@Fire Temple MQ/West Top,hookshot,fire_small_keys:4,[fire_small_keys:5]",
+          "@Fire Temple MQ/West Top,[logic_fire_mq_above_maze_gs],longshot",
           "{$hintable}"
         ],
         "visibility_rules": [
@@ -1512,7 +1557,7 @@
         "name": "Central Pillar Chest",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,bow,firearrow,magic",
+          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,[logic_water_mq_central_pillar],bow,firearrow,magic",
           "@Water Temple MQ/Dive,[$zora_tunic],hookshot,dinsfire,magic,ocarina,time"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
@@ -1535,7 +1580,9 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Water Temple MQ/Dark Link Region,dinsfire,magic",
+          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,[logic_water_dragon_jump_dive]",
+          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,scale",
+          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,ironboots",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1561,6 +1608,7 @@
         "name": "GS Freestanding Key Area",
         "short_name": "North Basement",
         "access_rules": [
+          "@Water Temple MQ/Basement Gated Areas,[logic_water_mq_locked_gs]",
           "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,hoverboots",
           "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,ocarina,scarecrow",
           "@Water Temple MQ/Basement Gated Areas,water_small_keys:2,[logic_water_north_basement_ledge_jump]",
@@ -1754,7 +1802,8 @@
         "name": "Invisible Blades Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "@Shadow Temple MQ/Upper Huge Pit,ocarina,time"
+          "@Shadow Temple MQ/Upper Huge Pit,ocarina,time",
+          "@Shadow Temple MQ/Upper Huge Pit,[logic_shadow_mq_invisible_blades],$damage_below_ohko"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 2
@@ -2079,7 +2128,7 @@
         "access_rules": [
           "@Spirit Temple MQ/Child,sticks",
           "@Spirit Temple MQ/Child,sword1",
-          "@Spirit Temple MQ/Child,$has_explosives"
+          "@Spirit Temple MQ/Child,bombs"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -2122,6 +2171,7 @@
         "short_name": "Sun Block",
         "access_rules": [
           "@Spirit Temple MQ/Shared,ocarina,time",
+          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult"
         ],
         "item_count": 1
@@ -2130,7 +2180,8 @@
         "name": "GS Sun Block Room",
         "short_name": "Sun Block",
         "access_rules": [
-          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],ocarina,time,boomerang",
+          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],boomerang,ocarina,time",
+          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],boomerang,[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult"
         ],
         "visibility_rules": [
@@ -2145,6 +2196,7 @@
         "short_name": "Right Hand",
         "access_rules": [          
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
+          "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,[logic_lens_spirit_mq]",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_use_lens"
@@ -2351,11 +2403,21 @@
     ],
     "sections": [
       {
+        "name": "Middle",
+        "access_rules": [
+          "ocarina,lullaby",
+          "[logic_botw_mq_pits],$has_explosives"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "$has_explosives",
-          "ocarina,lullaby"
+          "@Bottom of the Well MQ/Middle"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -2364,8 +2426,8 @@
         "name": "GS West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
-          "$can_child_attack,ocarina,lullaby",
-          "$can_child_attack,$has_explosives"
+          "@Bottom of the Well MQ/Middle,$can_child_attack,[logic_botw_mq_pits]",
+          "@Bottom of the Well MQ/Middle,$can_child_attack,$has_explosives"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2378,8 +2440,7 @@
         "name": "East Inner Room Freestanding Key",
         "short_name": "East Inner",
         "access_rules": [
-          "$has_explosives",
-          "ocarina,lullaby"
+          "@Bottom of the Well MQ/Middle"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -2412,7 +2473,7 @@
         "name": "Lens of Truth Chest",
         "short_name": "Lens",
         "access_rules": [
-          "$has_explosives,botw_small_keys:1,[botw_small_keys:2]"
+          "@Bottom of the Well MQ/Middle,$has_explosives,botw_small_keys:1,[botw_small_keys:2]"
         ],
         "item_count": 1
       },
@@ -2570,7 +2631,8 @@
         "short_name": "Fire Trial",
         "access_rules": [
           "[$goron_tunic],lift3,$can_LA,longshot",
-          "[$goron_tunic],lift3,$can_LA,hoverboots"
+          "[$goron_tunic],lift3,$can_LA,hoverboots",
+          "[$goron_tunic],lift3,$can_LA,[logic_fire_trial_mq],hookshot"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -2590,9 +2652,9 @@
         "short_name": "Light Trial",
         "access_rules": [
           "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],[logic_lens_castle_mq],hookshot",
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],[logic_lens_castle_mq],[logic_light_trial_mq],$damage_single_instance_ohko",
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],[logic_lens_castle_mq],[logic_light_trial_mq]",
           "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_use_lens,hookshot",
-          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_use_lens,[logic_light_trial_mq],$damage_single_instance_ohko"
+          "lift3,$can_LA,gc_small_keys:2,[gc_small_keys:3],$can_use_lens,[logic_light_trial_mq]"
         ],
         "visibility_rules": [
           "setting_trials:1"

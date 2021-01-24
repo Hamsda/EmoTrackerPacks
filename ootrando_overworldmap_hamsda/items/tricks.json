@@ -14,11 +14,25 @@
     "codes": "logic_grottos_without_agony"
   },
   {
+    "name": "Pass Through Visible One-Way Collisions",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_visible_collisions.png",
+    "codes": "logic_visible_collisions"
+  },
+  {
     "name": "Child Deadhand without Kokiri Sword",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/logic_child_deadhand.png",
     "codes": "logic_child_deadhand"
+  },
+  {
+    "name": "Second Dampe Race as Child",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_child_dampe_race_poh.png",
+    "codes": "logic_child_dampe_race_poh"
   },
   {
     "name": "Man on Roof without Hookshot",
@@ -63,6 +77,20 @@
     "codes": "logic_deku_basement_gs"
   },
   {
+    "name": "Deku Tree Basement Web to Gohma with Bow",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_deku_b1_webs_with_bow.png",
+    "codes": "logic_deku_b1_webs_with_bow"
+  },
+  {
+    "name": "Deku Tree MQ Roll Under the Spiked Log",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_deku_mq_log.png",
+    "codes": "logic_deku_mq_log"
+  },
+  {
     "name": "Hammer Rusted Switches Through Walls",
     "type": "toggle",
     "initial_active_state": true,
@@ -75,6 +103,13 @@
     "initial_active_state": false,
     "img": "images/logic_botw_basement.png",
     "codes": "logic_botw_basement"
+  },
+  {
+    "name": "Bottom of the Well MQ Jump Over the Pits",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_botw_mq_pits.png",
+    "codes": "logic_botw_mq_pits"
   },
   {
     "name": "Skip Forest Temple MQ Block Puzzle with Bombchu",
@@ -112,6 +147,13 @@
     "codes": "logic_zora_with_cucco"
   },
   {
+    "name": "Water Temple MQ Central Pillar with Fire Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_mq_central_pillar.png",
+    "codes": "logic_water_mq_central_pillar"
+  },
+  {
     "name": "Gerudo Training Grounds MQ Left Side Silver Rupees with Hookshot",
     "type": "toggle",
     "initial_active_state": false,
@@ -126,18 +168,39 @@
     "codes": "logic_forest_vines"
   },
   {
+    "name": "Forest Temple East Courtyard GS with Boomerang",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_forest_outdoor_east_gs.png",
+    "codes": "logic_forest_outdoor_east_gs"
+  },
+  {
+    "name": "Forest Temple First Room GS with Difficult-to-Use Weapons",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_forest_first_gs.png",
+    "codes": "logic_forest_first_gs"
+  },
+  {
     "name": "Swim Through Forest Temple MQ Well with Hookshot",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_forest_well_swim.png",
     "codes": "logic_forest_well_swim"
   },
   {
-    "name": "Reach Forest Temple MQ Twisted Hallway Switch with Hookshot",
+    "name": "Forest Temple MQ Twisted Hallway Switch with Jump Slash",
     "type": "toggle",
-    "initial_active_state": true,
-    "img": "images/logic_forest_mq_hallway_switch.png",
-    "codes": "logic_forest_mq_hallway_switch"
+    "initial_active_state": false,
+    "img": "images/logic_forest_mq_hallway_switch_jumpslash.png",
+    "codes": "logic_forest_mq_hallway_switch_jumpslash"
+  },
+  {
+    "name": "Forest Temple MQ Twisted Hallway Switch with Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_forest_mq_hallway_switch_hookshot.png",
+    "codes": "logic_forest_mq_hallway_switch_hookshot"
   },
   {
     "name": "Death Mountain Trail Bombable Chest with Strength",
@@ -149,7 +212,7 @@
   {
     "name": "Goron City Spinning Pot PoH with Strength",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_goron_city_pot_with_strength.png",
     "codes": "logic_goron_city_pot_with_strength"
   },
@@ -196,18 +259,18 @@
     "codes": "logic_spirit_mq_sun_block_gs"
   },
   {
+    "name": "Jabu Scrub as Adult with Jump Dive",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_jabu_scrub_jump_dive.png",
+    "codes": "logic_jabu_scrub_jump_dive"
+  },
+  {
     "name": "Jabu MQ Song of Time Block GS with Boomerang",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_jabu_mq_sot_gs.png",
     "codes": "logic_jabu_mq_sot_gs"
-  },
-  {
-    "name": "Bottom of the Well Cage GS without Boomerang",
-    "type": "toggle",
-    "initial_active_state": false,
-    "img": "images/logic_botw_cage_gs.png",
-    "codes": "logic_botw_cage_gs"
   },
   {
     "name": "Bottom of the Well MQ Dead Hand Freestanding Key with Boomerang",
@@ -238,6 +301,13 @@
     "codes": "logic_fire_mq_climb"
   },
   {
+    "name": "Fire Temple MQ Lower to Upper Lizalfos Maze with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_fire_mq_maze_hovers.png",
+    "codes": "logic_fire_mq_maze_hovers"
+  },
+  {
     "name": "Fire Temple MQ Chest Near Boss without Breaking Crate",
     "type": "toggle",
     "initial_active_state": false,
@@ -259,6 +329,13 @@
     "codes": "logic_fire_mq_bk_chest"
   },
   {
+    "name": "Fire Temple MQ Above Flame Wall Maze GS from Below with Longshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_fire_mq_above_maze_gs.png",
+    "codes": "logic_fire_mq_above_maze_gs"
+  },
+  {
     "name": "Zora's River Lower Freestanding PoH as Adult with Nothing",
     "type": "toggle",
     "initial_active_state": false,
@@ -278,6 +355,13 @@
     "initial_active_state": false,
     "img": "images/logic_shadow_freestanding_key.png",
     "codes": "logic_shadow_freestanding_key"
+  },
+  {
+    "name": "Shadow Temple MQ Invisible Blades Silver Rupees without Song of Time",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_shadow_mq_invisible_blades.png",
+    "codes": "logic_shadow_mq_invisible_blades"
   },
   {
     "name": "Shadow Temple MQ Lower Huge Pit without Fire Source",
@@ -308,6 +392,13 @@
     "codes": "logic_lab_diving"
   },
   {
+    "name": "Deliver Eye Drops with Bolero of Fire",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_biggoron_bolero.png",
+    "codes": "logic_biggoron_bolero"
+  },
+  {
     "name": "Wasteland Crossing without Hover Boots or Longshot",
     "type": "toggle",
     "initial_active_state": false,
@@ -334,6 +425,13 @@
     "initial_active_state": false,
     "img": "images/logic_kakariko_tower_gs.png",
     "codes": "logic_kakariko_tower_gs"
+  },
+  {
+    "name": "Deku Tree MQ Compass Room GS Boulders with Just Hammer",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_deku_mq_compass_gs.png",
+    "codes": "logic_deku_mq_compass_gs"
   },
   {
     "name": "Lake Hylia Lab Wall GS with Jump Slash",
@@ -364,6 +462,13 @@
     "codes": "logic_spirit_sun_chest"
   },
   {
+    "name": "Spirit Temple MQ Sun Block Room as Child without Song of Time",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_spirit_mq_sun_block_sot.png",
+    "codes": "logic_spirit_mq_sun_block_sot"
+  },
+  {
     "name": "Shadow Trial MQ Torch with Bow",
     "type": "toggle",
     "initial_active_state": false,
@@ -385,11 +490,25 @@
     "codes": "logic_water_boss_key_region"
   },
   {
+    "name": "Water Temple MQ North Basement GS without Small Key",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_mq_locked_gs.png",
+    "codes": "logic_water_mq_locked_gs"
+  },
+  {
     "name": "Water Temple Falling Platform Room GS with Hookshot",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_water_falling_platform_gs_hookshot.png",
     "codes": "logic_water_falling_platform_gs_hookshot"
+  },
+  {
+    "name": "Water Temple Falling Platform Room GS with Boomerang",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_falling_platform_gs_boomerang.png",
+    "codes": "logic_water_falling_platform_gs_boomerang"
   },
   {
     "name": "Water Temple Serpent River GS without Iron Boots",
@@ -425,6 +544,13 @@
     "initial_active_state": false,
     "img": "images/logic_trail_gs_lower_hookshot.png",
     "codes": "logic_trail_gs_lower_hookshot"
+  },
+  {
+    "name": "Death Mountain Trail Lower Red Rock GS with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_trail_gs_lower_hovers.png",
+    "codes": "logic_trail_gs_lower_hovers"
   },
   {
     "name": "Death Mountain Trail Lower Red Rock GS with Magic Bean",
@@ -486,8 +612,15 @@
     "name": "Fire Temple MQ Big Lava Room Blocked Door without Hookshot",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_fire_mq_bombable_chest.png",
-    "codes": "logic_fire_mq_bombable_chest"
+    "img": "images/logic_fire_mq_blocked_chest.png",
+    "codes": "logic_fire_mq_blocked_chest"
+  },
+  {
+    "name": "Fire Temple MQ Lower to Upper Lizalfos Maze with Precise Jump",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_fire_mq_maze_jump.png",
+    "codes": "logic_fire_mq_maze_jump"
   },
   {
     "name": "Light Trial MQ without Hookshot",
@@ -502,6 +635,13 @@
     "initial_active_state": false,
     "img": "images/logic_ice_mq_scarecrow.png",
     "codes": "logic_ice_mq_scarecrow"
+  },
+  {
+    "name": "Ice Cavern MQ Red Ice GS without Song of Time",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_ice_mq_red_ice_gs.png",
+    "codes": "logic_ice_mq_red_ice_gs"
   },
   {
     "name": "Ice Cavern Block Room GS with Hover Boots",
@@ -537,6 +677,20 @@
     "initial_active_state": false,
     "img": "images/logic_lost_woods_gs_bean.png",
     "codes": "logic_lost_woods_gs_bean"
+  },
+  {
+    "name": "Jabu Near Boss GS without Boomerang as Adult",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_jabu_boss_gs_adult.png",
+    "codes": "logic_jabu_boss_gs_adult"
+  },
+  {
+    "name": "Kakariko Rooftop GS with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_kakariko_rooftop_gs.png",
+    "codes": "logic_kakariko_rooftop_gs"
   },
   {
     "name": "Graveyard Freestanding PoH with Boomerang",
@@ -602,6 +756,13 @@
     "codes": "logic_water_temple_torch_longshot"
   },
   {
+    "name": "Water Temple Central Pillar GS with Farore's Wind",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_central_gs_fw.png",
+    "codes": "logic_water_central_gs_fw"
+  },
+  {
     "name": "Water Temple Central Pillar GS with Iron Boots",
     "type": "toggle",
     "initial_active_state": false,
@@ -628,6 +789,13 @@
     "initial_active_state": false,
     "img": "images/logic_water_dragon_adult.png",
     "codes": "logic_water_dragon_adult"
+  },
+  {
+    "name": "Water Temple Dragon Statue Switch from Above the Water as Child",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_water_dragon_child.png",
+    "codes": "logic_water_dragon_child"
   },
   {
     "name": "Goron City Maze Left Chest with Hover Boots",
@@ -665,11 +833,11 @@
     "codes": "logic_forest_outside_backdoor"
   },
   {
-    "name": "Forest Temple Scarecrow Route",
+    "name": "Forest Temple East Courtyard Door Frame with Hover Boots",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_forest_scarecrow.png",
-    "codes": "logic_forest_scarecrow"
+    "img": "images/logic_forest_door_frame.png",
+    "codes": "logic_forest_door_frame"
   },
   {
     "name": "Dodongo's Cavern MQ Early Bomb Bag Area as Child",
@@ -693,6 +861,20 @@
     "codes": "logic_dc_slingshot_skip"
   },
   {
+    "name": "Dodongo's Cavern MQ Light the Eyes with Strength",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dc_mq_eyes.png",
+    "codes": "logic_dc_mq_eyes"
+  },
+  {
+    "name": "Dodongo's Cavern MQ Back Areas as Child without Explosives",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_dc_mq_child_back.png",
+    "codes": "logic_dc_mq_child_back"
+  },
+  {
     "name": "Rolling Goron (Hot Rodder Goron) as Child with Strength",
     "type": "toggle",
     "initial_active_state": false,
@@ -712,6 +894,13 @@
     "initial_active_state": false,
     "img": "images/logic_valley_crate_hovers.png",
     "codes": "logic_valley_crate_hovers"
+  },
+  {
+    "name": "Jump onto the Lost Woods Bridge as Adult with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lost_woods_bridge.png",
+    "codes": "logic_lost_woods_bridge"
   },
   {
     "name": "Spirit Trial without Hookshot",
@@ -747,6 +936,13 @@
     "initial_active_state": false,
     "img": "images/logic_fire_scarecrow.png",
     "codes": "logic_fire_scarecrow"
+  },
+  {
+    "name": "Fire Trial MQ with Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_fire_trial_mq.png",
+    "codes": "logic_fire_trial_mq"
   },
   {
     "name": "Shadow Temple Entry with Fire Arrows",
