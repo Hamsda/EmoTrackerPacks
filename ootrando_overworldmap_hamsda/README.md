@@ -260,8 +260,6 @@ The entrance randomizer variants are very different from the regular map tracker
 - `Entrances`: randomized or otherwise important grottos, houses, and dungeons
 - `Connectors`: connections between different overworld areas
 
-There are two variants, one for keysanity and one without, but none of the keys are actually used for logic (yet).
-
 All `Entrances` and `Connectors` have a capture spot, where you can mark what is at that location. Later you can see what led where by simply hovering over the locations with your mouse. If the location is useless, just mark off the icon to clean up the map. Some important locations should not be cleared, because they might be relevant to logic as pathways:
 
 - Links House
@@ -271,7 +269,9 @@ All `Entrances` and `Connectors` have a capture spot, where you can mark what is
 - Potion Shop Front/Back
 - Spirit Temple
 
-I made a [quick explanation](https://www.twitch.tv/videos/429980574) on how to use the ER variant (slightly outdated but the general principle still is the same).
+There are two variants, one for keysanity and one without. The keysanity variant uses the keys you mark for logic, while the other variant just assumes you have all keys at all times.
+
+I made a [quick explanation](https://youtu.be/4l8gDPkovAc) on how to use the ER variant. Excuse the poor sounds quality, I don't have a great microphone.
 
 ### Settings (Entrance Randomizer only)
 
