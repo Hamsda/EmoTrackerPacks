@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.3.0.0
 
 - fixed child scarecrow showing w/ scarecrow marked
 - changed non ER assumption about tunics from shops
