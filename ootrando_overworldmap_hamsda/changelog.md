@@ -3,6 +3,7 @@
 ## x
 
 - fixed Spirit fire locked chests with sticks
+- added blue fire logic to ER (buying not supported)
 
 ## 3.3.0.0
 

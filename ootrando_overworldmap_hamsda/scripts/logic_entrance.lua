@@ -246,6 +246,40 @@ function has_bottle()
   return or_accessibility(deliver, travel)
 end
 
+blue_fire_locations = {
+  ["either"] = {
+    "Ganons Castle Water Trial",
+    "Ganons Castle MQ Water Trial",
+    "Gerudo Training Grounds MQ Stalfos Room",
+    "Ice Cavern MQ Map Room"
+  },
+  ["adult"] = {
+    "Ice Cavern"
+  }
+}
+function has_blue_fire()
+  local bottle = has_bottle()
+
+  if bottle == AccessibilityLevel.None then
+    return AccessibilityLevel.None
+  end
+
+  --TODO: shopsanity
+  --if has("wallet2") then
+  --  return bottle
+  --end
+
+  for age, locations in pairs(blue_fire_locations) do
+    for _, location in ipairs(locations) do
+      if access_region(location, age) == AccessibilityLevel.Normal then
+        return bottle
+      end
+    end
+  end
+
+  return AccessibilityLevel.SequenceBreak
+end
+
 function drain_well()
   if has("ocarina") and has("storm") then
     return access_region("Kak Windmill", "child")

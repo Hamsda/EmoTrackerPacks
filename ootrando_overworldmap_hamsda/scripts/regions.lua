@@ -4712,8 +4712,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          --TODO: blue fire
-          return has_bottle()
+          return has_blue_fire()
         end
       },
       ["ZD Storms Grotto"] = {
@@ -10895,7 +10894,7 @@ data_per_region = {
       },
       ["Ice Cavern Compass Chest"] = {
         ["child_access"] = function()
-          return has_bottle() --TODO: blue fire
+          return has_blue_fire()
         end,
         ["adult_access"] = function()
           return has_bottle()
@@ -10904,7 +10903,7 @@ data_per_region = {
       ["Ice Cavern Iron Boots Chest"] = {
         ["child_access"] = function()
           if has("sling") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
-            return has_bottle() --TODO: blue fire
+            return has_blue_fire()
           end
           return AccessibilityLevel.None
         end,
@@ -10915,7 +10914,7 @@ data_per_region = {
       ["Sheik in Ice Cavern"] = {
         ["child_access"] = function()
           if has("sling") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
-            return has_bottle() --TODO: blue fire
+            return has_blue_fire()
           end
           return AccessibilityLevel.None
         end,
@@ -10925,7 +10924,7 @@ data_per_region = {
       },
       ["Ice Cavern Freestanding PoH"] = {
         ["child_access"] = function()
-          return has_bottle() --TODO: blue fire
+          return has_blue_fire()
         end,
         ["adult_access"] = function()
           return has_bottle()
@@ -10948,7 +10947,7 @@ data_per_region = {
       ["Ice Cavern GS Heart Piece Room"] = {
         ["child_access"] = function()
           if has("boomerang") then
-            return has_bottle() --TODO: blue fire
+            return has_blue_fire()
           end
           return AccessibilityLevel.None
         end,
@@ -10962,7 +10961,7 @@ data_per_region = {
       ["Ice Cavern GS Push Block Room"] = {
         ["child_access"] = function()
           if has("boomerang") then
-            return has_bottle() --TODO: blue fire
+            return has_blue_fire()
           end
           return AccessibilityLevel.None
         end,
@@ -11015,7 +11014,7 @@ data_per_region = {
       },
       ["Ice Cavern MQ Iron Boots Region"] = {
         ["child_access"] = function()
-          return has_bottle() --TODO: blue fire
+          return has_blue_fire()
         end,
         ["adult_access"] = function()
           return has_bottle()
