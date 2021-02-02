@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.3.1.0
+
+- fixed Spirit fire locked chests with sticks
+- added blue fire logic to ER (buying not supported)
+
 ## 3.3.0.0
 
 - fixed child scarecrow showing w/ scarecrow marked
