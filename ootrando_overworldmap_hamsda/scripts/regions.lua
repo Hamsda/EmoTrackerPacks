@@ -58,6 +58,23 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
+      --non starting age has guaranteed access to ToT
+      --this makes it so you don't have to SW to begin exploring
+      ["Temple of Time"] = {
+        ["fixed"] = true,
+        ["child_access"] = function()
+          if has("setting_age_adult") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("setting_age_child") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
       ["Prelude of Light Warp"] = {
         ["child_access"] = function()
           if has("ocarina") and has("prelude") then
