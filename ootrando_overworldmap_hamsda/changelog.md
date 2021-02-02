@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed Spirit fire locked chests with sticks
+
 ## 3.3.0.0
 
 - fixed child scarecrow showing w/ scarecrow marked

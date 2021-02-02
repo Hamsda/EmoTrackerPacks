@@ -1967,7 +1967,7 @@
       {
         "name": "Central Chamber",
         "access_rules": [
-          "@Spirit Temple/Child Climb,$has_explosives",
+          "@Spirit Temple/Child Entry,spirit_small_keys:1,$has_explosives",
           "@Spirit Temple/Early Adult,spirit_small_keys:1"
         ],
         "visibility_rules": [
@@ -2093,7 +2093,7 @@
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,dinsfire,magic",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,magic,firearrow,bow,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_map_chest],bow,sticks",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,sticks",
+          "@Spirit Temple/Central Chamber,$child_colossus,[spirit_small_keys:5],$has_explosives,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],magic,firearrow,bow,lift2",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_map_chest],bow,lift2"
         ],
@@ -2143,7 +2143,7 @@
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,dinsfire,magic",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,magic,firearrow,bow,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:2],setting_logic_chus_yes,[logic_spirit_sun_chest],bow,sticks",
-          "@Spirit Temple/Central Chamber,[spirit_small_keys:5],$has_explosives,sticks",
+          "@Spirit Temple/Central Chamber,$child_colossus,[spirit_small_keys:5],$has_explosives,sticks",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],magic,firearrow,bow,lift2",
           "@Spirit Temple/Central Chamber,[spirit_small_keys:3],[logic_spirit_sun_chest],bow,lift2"
         ],
