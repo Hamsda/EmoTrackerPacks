@@ -170,5 +170,63 @@
         "key": "dungeon_grid_wide"
       }
     ]
+  },
+  "item_grid_mini": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0,0,10",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "bombs",
+            "bombchu",
+            "slingshot",
+            "bow",
+            "firearrow",
+            "lightarrow"
+          ],
+          [
+            "lift1",
+            "hammer",
+            "boomerang",
+            "hookshot",
+            "dinsfire",
+            "faroreswind"
+          ],
+          [
+            "scale1",
+            "lens",
+            "sword1",
+            "shield3",
+            "boots",
+            "bottleminimal"
+          ],
+          [
+            "lullabycheck",
+            "eponacheck",
+            "sariacheck",
+            "suncheck",
+            "timecheck",
+            "stormcheck"
+          ],
+          [
+            "minuetcheck",
+            "bolerocheck",
+            "serenadecheck",
+            "requiemcheck",
+            "nocturnecheck",
+            "preludecheck"
+          ]
+        ]
+      },
+      {
+        "type": "layout",
+        "key": "dungeon_grid_tall_centered"
+      }
+    ]
   }
 }

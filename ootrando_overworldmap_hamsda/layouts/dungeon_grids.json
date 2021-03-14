@@ -493,5 +493,242 @@
         ]
       }
     ]
-  }
+  },
+  "dungeon_grid_tall_centered": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0",
+        "content": [
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "forest",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "forest_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "fire",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "fire_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "water",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "water_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "spirit",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "spirit_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "shadow",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "shadow_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "free",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "free_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "margin": "5,3,5,0",
+        "content": [
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "deku",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "deku_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "dodongo",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "dodongo_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 32,
+            "height": 46,
+            "margin": "1,2",
+            "content": [
+              {
+                "type": "item",
+                "item": "jabu",
+                "canvas_depth": 1,
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "jabu_label",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 34,
+                "width": 32,
+                "height": 12
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }  
 }

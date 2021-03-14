@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- updated minimal layout (can now use this one as broadcast layout for the regular map tracker)
+
 ## 3.3.1.0
 
 - fixed Spirit fire locked chests with sticks
