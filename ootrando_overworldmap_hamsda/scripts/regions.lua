@@ -4675,6 +4675,14 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
+      ["ZD King Zora Thawed"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_blue_fire()
+        end
+      },
       ["ZD GS Frozen Waterfall"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None

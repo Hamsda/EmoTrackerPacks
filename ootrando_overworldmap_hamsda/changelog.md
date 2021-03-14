@@ -3,6 +3,7 @@
 ## x
 
 - updated minimal layout (can now use this one as broadcast layout for the regular map tracker)
+- fixed missing `ZD King Zora Thawed` in ER
 
 ## 3.3.1.0
 
