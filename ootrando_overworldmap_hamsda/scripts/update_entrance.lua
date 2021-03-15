@@ -1,16 +1,18 @@
 for region, region_data in pairs(data_per_region) do
-  for target, target_data in pairs(region_data.exits) do
-    if
-      not region_data.interior and not region_data.special and not region_data.dungeon and not target_data.fixed and
-        not (region_data.scene and data_per_region[target] and data_per_region[target].scene and
-          region_data.scene == data_per_region[target].scene)
-     then
-      local section = string.format("@%s -> %s/Capture", region, target)
-      local section_object = get_object(section)
-      if section_object then
-        target_data.section_object = section_object
-      else
-        print("error! section not found:", section)
+  if type(region_data.exits) == "table" then
+    for target, target_data in pairs(region_data.exits) do
+      if
+        not region_data.interior and not region_data.special and not region_data.dungeon and not target_data.fixed and
+          not (region_data.scene and data_per_region[target] and data_per_region[target].scene and
+            region_data.scene == data_per_region[target].scene)
+      then
+        local section = string.format("@%s -> %s/Capture", region, target)
+        local section_object = get_object(section)
+        if section_object then
+          target_data.section_object = section_object
+        else
+          print("error! section not found:", section)
+        end
       end
     end
   end
@@ -31,13 +33,15 @@ function update_region_captures()
     data.origin = nil
   end
   for region, region_data in pairs(data_per_region) do
-    for target, target_data in pairs(region_data.exits) do
-      if target_data.section_object then
-        target_data.capture = get_capture_per_section(target_data.section_object)
-        if target_data.capture and special_regions[target_data.capture] and region_data.scene ~= "Root" then
-          special_regions[target_data.capture].origin = region
-          if er_debugging then
-            print("special:", target_data.capture, "at", region)
+    if type(region_data.exits) == "table" then
+      for target, target_data in pairs(region_data.exits) do
+        if target_data.section_object then
+          target_data.capture = get_capture_per_section(target_data.section_object)
+          if target_data.capture and special_regions[target_data.capture] and region_data.scene ~= "Root" then
+            special_regions[target_data.capture].origin = region
+            if er_debugging then
+              print("special:", target_data.capture, "at", region)
+            end
           end
         end
       end

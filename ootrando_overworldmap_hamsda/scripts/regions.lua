@@ -2096,7 +2096,6 @@ data_per_region = {
   },
   ["Desert Colossus From Spirit Lobby"] = {
     ["scene"] = "Desert Colossus",
-    ["locations"] = {},
     ["exits"] = {
       ["Desert Colossus"] = {
         ["child_access"] = function()
@@ -3144,8 +3143,7 @@ data_per_region = {
   },
   ["Kak Impas House Near Cow"] = {
     ["scene"] = "Kak Impas House",
-    ["interior"] = true,
-    ["exits"] = {}
+    ["interior"] = true
   },
   ["Kak Windmill"] = {
     ["scene"] = "Windmill and Dampes Grave",
@@ -3594,12 +3592,18 @@ data_per_region = {
 
           local bean = AccessibilityLevel.None
           if has("beans") then
-            local trick = has("logic_trail_gs_lower_bean") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local trick =
+              has("logic_trail_gs_lower_bean") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
             local lift = AccessibilityLevel.None
             if has("lift1") then
               lift = AccessibilityLevel.Normal
             end
-            bean = and_accessibility(trick, access_region("Death Mountain", "child"), or_accessibility(has_explosives(), lift))
+            bean =
+              and_accessibility(
+              trick,
+              access_region("Death Mountain", "child"),
+              or_accessibility(has_explosives(), lift)
+            )
           end
 
           return and_accessibility(night_gs(), or_accessibility(hs, hb, bean))
@@ -7485,8 +7489,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Fire Temple Split"] = {
     ["scene"] = "Fire Temple",
@@ -7899,8 +7902,7 @@ data_per_region = {
           return has_explosives()
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Fire Temple MQ Lower"] = {
     ["scene"] = "Fire Temple",
@@ -8032,8 +8034,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Fire MQ Big Lava Room"] = {
     ["scene"] = "Fire Temple",
@@ -8272,8 +8273,7 @@ data_per_region = {
           return or_accessibility(and_accessibility(hs, keys), and_accessibility(trick, ls))
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Fire MQ Boss Room"] = {
     ["scene"] = "Fire Temple",
@@ -8287,8 +8287,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Forest Temple Split"] = {
     ["scene"] = "Forest Temple",
@@ -8848,8 +8847,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Forest Temple MQ Lobby"] = {
     ["scene"] = "Forest Temple",
@@ -9412,8 +9410,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Split"] = {
     ["scene"] = "Ganons Castle",
@@ -9545,8 +9542,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Forest Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9560,13 +9556,11 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Fire Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
-    ["exits"] = {}
+    ["dungeon"] = true
   },
   ["Ganons Castle Water Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9580,8 +9574,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Shadow Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9615,8 +9608,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Spirit Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9647,8 +9639,7 @@ data_per_region = {
           return and_accessibility(hs, has_bombchus(), lot)
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Light Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9684,8 +9675,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle Tower"] = {
     ["scene"] = "Ganons Castle",
@@ -9699,8 +9689,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Lobby"] = {
     ["scene"] = "Ganons Castle",
@@ -9798,8 +9787,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Forest Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9835,13 +9823,11 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Fire Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
-    ["exits"] = {}
+    ["dungeon"] = true
   },
   ["Ganons Castle MQ Water Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9855,8 +9841,7 @@ data_per_region = {
           return has_bottle()
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Shadow Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9900,8 +9885,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Spirit Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9949,8 +9933,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Light Trial"] = {
     ["scene"] = "Ganons Castle",
@@ -9967,8 +9950,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ganons Castle MQ Tower"] = {
     ["scene"] = "Ganons Castle",
@@ -9982,8 +9964,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Gerudo Training Grounds Split"] = {
     ["scene"] = "Gerudo Training Grounds",
@@ -10504,8 +10485,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Gerudo Training Grounds MQ Lobby"] = {
     ["scene"] = "Gerudo Training Grounds",
@@ -10654,8 +10634,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Gerudo Training Grounds MQ Left Side"] = {
     ["scene"] = "Gerudo Training Grounds",
@@ -11014,8 +10993,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ice Cavern MQ Beginning"] = {
     ["scene"] = "Ice Cavern",
@@ -11076,8 +11054,7 @@ data_per_region = {
           return has_bottle()
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ice Cavern MQ Iron Boots Region"] = {
     ["scene"] = "Ice Cavern",
@@ -11121,8 +11098,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Ice Cavern MQ Compass Room"] = {
     ["scene"] = "Ice Cavern",
@@ -11155,8 +11131,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Jabu Jabus Belly Split"] = {
     ["scene"] = "Jabu Jabus Belly",
@@ -11993,8 +11968,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Shadow Temple MQ Entryway"] = {
     ["scene"] = "Shadow Temple",
@@ -12091,8 +12065,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Shadow Temple MQ First Beamos"] = {
     ["scene"] = "Shadow Temple",
@@ -12449,8 +12422,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Spirit Temple Split"] = {
     ["scene"] = "Spirit Temple",
@@ -13092,8 +13064,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Spirit Temple MQ Lobby"] = {
     ["scene"] = "Spirit Temple",
@@ -13653,8 +13624,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Spirit Temple MQ Boss Area"] = {
     ["scene"] = "Spirit Temple",
@@ -13682,8 +13652,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Mirror Shield Hand MQ"] = {
     ["scene"] = "Spirit Temple",
@@ -13697,8 +13666,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Silver Gauntlets Hand MQ"] = {
     ["scene"] = "Spirit Temple",
@@ -13712,8 +13680,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Water Temple Split"] = {
     ["scene"] = "Water Temple",
@@ -14112,8 +14079,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Water Temple Cracked Wall"] = {
     ["scene"] = "Water Temple",
@@ -14127,8 +14093,7 @@ data_per_region = {
           return has_explosives()
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Water Temple Dragon Statue"] = {
     ["scene"] = "Water Temple",
@@ -14142,8 +14107,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Water Temple Middle Water Level"] = {
     ["scene"] = "Water Temple",
@@ -14433,8 +14397,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       }
-    },
-    ["exits"] = {}
+    }
   },
   ["Water Temple MQ Dark Link Region"] = {
     ["scene"] = "Water Temple",
@@ -14527,21 +14490,27 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       }
-    },
-    ["exits"] = {}
+    }
   }
 }
 
 access_per_region_per_age = {}
-function invalidate_regions(tab)
-  tab[1] = {}
-  tab[2] = {}
+function invalidate_regions()
+  access_per_region_per_age[1] = {}
+  access_per_region_per_age[2] = {}
   for region, _ in pairs(data_per_region) do
-    tab[1][region] = AccessibilityLevel.None
-    tab[2][region] = AccessibilityLevel.None
+    access_per_region_per_age[1][region] = AccessibilityLevel.None
+    access_per_region_per_age[2][region] = AccessibilityLevel.None
   end
 end
-invalidate_regions(access_per_region_per_age)
+invalidate_regions()
+
+location_access_per_age = {}
+function invalidate_locations()
+  location_access_per_age[1] = {}
+  location_access_per_age[2] = {}
+end
+invalidate_locations()
 
 function set_region_access(age, target_region, new_access, cur_access)
   if
@@ -14565,8 +14534,31 @@ function set_region_access(age, target_region, new_access, cur_access)
   end
 end
 
+function set_location_access(age, location, new_access, cur_access)
+  if
+    (new_access == AccessibilityLevel.Normal and cur_access ~= AccessibilityLevel.Normal) or
+      (new_access == AccessibilityLevel.SequenceBreak and cur_access == AccessibilityLevel.None)
+   then
+    --limit new_access to target_region up to cur_access
+    new_access = cur_access
+  end
+  local old_access = location_access_per_age[age][location]
+  if
+    (not old_access) or (new_access == AccessibilityLevel.Normal and old_access ~= AccessibilityLevel.Normal) or
+      (new_access == AccessibilityLevel.SequenceBreak and old_access == AccessibilityLevel.None)
+   then
+    --new_access to target_region still higher than old_access
+    if er_debugging then
+      print("|  |  +--location", age, new_access, location)
+    end
+    changed_access = true
+    location_access_per_age[age][location] = new_access
+  end
+end
+
 function build_regions()
-  invalidate_regions(access_per_region_per_age)
+  invalidate_regions()
+  invalidate_locations()
 
   access_per_region_per_age[1]["Root"] = AccessibilityLevel.Normal
   access_per_region_per_age[2]["Root"] = AccessibilityLevel.Normal
@@ -14585,28 +14577,38 @@ function build_regions()
             if er_debugging then
               print("|  +--region", region)
             end
-            for exit, exit_data in pairs(region_data.exits) do
-              local age_func = (age == 1) and "child_access" or "adult_access"
-              local new_access = exit_data[age_func]()
+            if type(region_data.locations) == "table" then
+              for location, location_data in pairs(region_data.locations) do
+                local age_func = (age == 1) and "child_access" or "adult_access"
+                local new_access = location_data[age_func]()
 
-              local same_scene =
-                region_data.scene and data_per_region[exit] and data_per_region[exit].scene and
-                region_data.scene == data_per_region[exit].scene
+                set_location_access(age, location, new_access, access)
+              end
+            end
+            if type(region_data.exits) == "table" then
+              for exit, exit_data in pairs(region_data.exits) do
+                local age_func = (age == 1) and "child_access" or "adult_access"
+                local new_access = exit_data[age_func]()
 
-              if region_data.special and (not same_scene) then
-                if not has(special_regions[region].setting) then
-                  set_region_access(age, exit, new_access, access)
-                elseif special_regions[region].origin then
-                  set_region_access(age, special_regions[region].origin, access, access)
-                end
-              else
-                if exit_data.fixed or same_scene then
-                  set_region_access(age, exit, new_access, access)
-                elseif not same_scene and not region_data.dungeon then
-                  if exit_data.setting and not has(exit_data.setting) then
+                local same_scene =
+                  region_data.scene and data_per_region[exit] and data_per_region[exit].scene and
+                  region_data.scene == data_per_region[exit].scene
+
+                if region_data.special and (not same_scene) then
+                  if not has(special_regions[region].setting) then
                     set_region_access(age, exit, new_access, access)
-                  elseif exit_data.capture and data_per_region[exit_data.capture] then
-                    set_region_access(age, exit_data.capture, new_access, access)
+                  elseif special_regions[region].origin then
+                    set_region_access(age, special_regions[region].origin, access, access)
+                  end
+                else
+                  if exit_data.fixed or same_scene then
+                    set_region_access(age, exit, new_access, access)
+                  elseif not same_scene and not region_data.dungeon then
+                    if exit_data.setting and not has(exit_data.setting) then
+                      set_region_access(age, exit, new_access, access)
+                    elseif exit_data.capture and data_per_region[exit_data.capture] then
+                      set_region_access(age, exit_data.capture, new_access, access)
+                    end
                   end
                 end
               end
@@ -14741,79 +14743,53 @@ function access_exit(region, exit, age)
   return 0, AccessibilityLevel.None
 end
 
-function access_location(region, location, age)
-  if not region or not location then
+function access_location(location, age)
+  if not location then
     return 0, AccessibilityLevel.None
   end
   age = age or ""
 
-  local region_child = access_per_region_per_age[1][region]
-  local region_adult = access_per_region_per_age[2][region]
-  local location_child =
-    data_per_region[region].locations and data_per_region[region].locations[location] and
-    data_per_region[region].locations[location].child_access()
-  local location_adult =
-    data_per_region[region].locations and data_per_region[region].locations[location] and
-    data_per_region[region].locations[location].adult_access()
-  if not location_child or not location_adult then
-    print("error! location not found:", region, location, age)
-    return 0, AccessibilityLevel.None
-  end
+  local location_child = location_access_per_age[1][location]
+  local location_adult = location_access_per_age[2][location]
 
   if age == "both" then
-    if
-      region_child == AccessibilityLevel.None or region_adult == AccessibilityLevel.None or
-        location_child == AccessibilityLevel.None or
-        location_adult == AccessibilityLevel.None
-     then
+    if not location_child or not location_adult then
       return 0, AccessibilityLevel.None
     end
-    if region_child == AccessibilityLevel.SequenceBreak or region_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
+    if location_child == AccessibilityLevel.None or location_adult == AccessibilityLevel.None then
+      return 0, AccessibilityLevel.None
     end
     if location_child == AccessibilityLevel.SequenceBreak or location_adult == AccessibilityLevel.SequenceBreak then
       return 1, AccessibilityLevel.SequenceBreak
     end
     return 1, AccessibilityLevel.Normal
   elseif age == "child" then
-    if region_child == AccessibilityLevel.None or location_child == AccessibilityLevel.None then
+    if not location_child then
       return 0, AccessibilityLevel.None
     end
-    if region_child == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
+    if location_child == AccessibilityLevel.None then
+      return 0, AccessibilityLevel.None
     end
     if location_child == AccessibilityLevel.SequenceBreak then
       return 1, AccessibilityLevel.SequenceBreak
     end
     return 1, AccessibilityLevel.Normal
   elseif age == "adult" then
-    if region_adult == AccessibilityLevel.None or location_adult == AccessibilityLevel.None then
+    if not location_adult then
       return 0, AccessibilityLevel.None
     end
-    if region_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
+    if location_adult == AccessibilityLevel.None then
+      return 0, AccessibilityLevel.None
     end
     if location_adult == AccessibilityLevel.SequenceBreak then
       return 1, AccessibilityLevel.SequenceBreak
     end
     return 1, AccessibilityLevel.Normal
   else --either
-    if
-      (region_child == AccessibilityLevel.Normal and location_child == AccessibilityLevel.Normal) or
-        (region_adult == AccessibilityLevel.Normal and location_adult == AccessibilityLevel.Normal)
-     then
+    if location_child == AccessibilityLevel.Normal or location_adult == AccessibilityLevel.Normal then
       return 1, AccessibilityLevel.Normal
     end
-    if
-      (region_child == AccessibilityLevel.Normal and location_child == AccessibilityLevel.SequenceBreak) or
-        (region_adult == AccessibilityLevel.Normal and location_adult == AccessibilityLevel.SequenceBreak)
-     then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    if
-      (region_child == AccessibilityLevel.SequenceBreak and location_child ~= AccessibilityLevel.None) or
-        (region_adult == AccessibilityLevel.SequenceBreak and location_adult ~= AccessibilityLevel.None)
-     then
+    if location_child == AccessibilityLevel.SequenceBreak or location_adult == AccessibilityLevel.SequenceBreak then
       return 1, AccessibilityLevel.SequenceBreak
     end
   end
