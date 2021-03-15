@@ -7453,7 +7453,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Dodongos Cavern Boss Room Chest"] = {
+      ["Dodongos Cavern MQ Boss Room Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -9687,6 +9687,21 @@ data_per_region = {
     },
     ["exits"] = {}
   },
+  ["Ganons Castle Tower"] = {
+    ["scene"] = "Ganons Castle",
+    ["dungeon"] = true,
+    ["locations"] = {
+      ["Ganons Tower Boss Key Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
+    ["exits"] = {}
+  },
   ["Ganons Castle MQ Lobby"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
@@ -9750,8 +9765,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Ganons Castle Tower"] = {
-        --TODO: split off MQ?
+      ["Ganons Castle MQ Tower"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -9956,7 +9970,7 @@ data_per_region = {
     },
     ["exits"] = {}
   },
-  ["Ganons Castle Tower"] = {
+  ["Ganons Castle MQ Tower"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
