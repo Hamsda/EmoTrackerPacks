@@ -89,6 +89,8 @@ if has_map then
   if is_er then
     Tracker:AddMaps("maps/maps_entrance.json")
     Tracker:AddLocations("locations/overworld_entrance.json")
+    Tracker:AddLocations("locations/exits_entrance.json")
+    Tracker:AddLocations("locations/dung_entrance.json")
     Tracker:AddLayouts("layouts/options_entrance.json")
   else
     Tracker:AddMaps("maps/maps.json")
