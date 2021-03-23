@@ -4,6 +4,7 @@
 
 - updated minimal layout (can now use this one as broadcast layout for the regular map tracker)
 - fixed missing `ZD King Zora Thawed` in ER
+- changed non shuffled ER locations will now be displayed on the non ER map
 
 ## 3.3.1.0
 

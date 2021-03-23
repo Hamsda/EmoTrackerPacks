@@ -311,6 +311,9 @@
                 "access_rules": [
                   "$access_exit|Kokiri Forest|KF Links House"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -333,6 +336,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Kokiri Forest|KF Midos House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -436,8 +442,7 @@
                   "$access_exit|Kokiri Forest|KF Kokiri Shop"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -513,6 +518,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Kokiri Forest|KF Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -648,6 +656,9 @@
                 "access_rules": [
                   "$access_exit|Lost Woods|LW Near Shortcuts Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -697,6 +708,9 @@
                 "access_rules": [
                   "$access_exit|LW Beyond Mido|Deku Theater"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -719,6 +733,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|LW Beyond Mido|LW Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -827,6 +844,9 @@
                 "access_rules": [
                   "$access_exit|SFM Entryway|SFM Wolfos Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -877,8 +897,7 @@
                   "$access_exit|Sacred Forest Meadow|SFM Storms Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1118,6 +1137,9 @@
                 "access_rules": [
                   "$access_exit|Hyrule Field|HF Southeast Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -1141,6 +1163,9 @@
                 "access_rules": [
                   "$access_exit|Hyrule Field|HF Open Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -1163,6 +1188,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Hyrule Field|HF Inside Fence Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1188,9 +1216,7 @@
                   "$access_exit|Hyrule Field|HF Cow Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_cowsanity_yes",
-                  "setting_tokens_overworld"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1214,6 +1240,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Hyrule Field|HF Near Market Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1265,8 +1294,7 @@
                   "$access_exit|Hyrule Field|HF Near Kak Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_tokens_overworld"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1290,6 +1318,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Hyrule Field|HF Tektite Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1398,6 +1429,9 @@
                 "access_rules": [
                   "$access_exit|Lake Hylia|LH Lab"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -1420,6 +1454,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|LH Fishing Island|LH Fishing Hole"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -1472,8 +1509,7 @@
                   "$access_exit|Lake Hylia|LH Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1609,8 +1645,7 @@
                   "$access_exit|GV Fortress Side|GV Storms Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1810,6 +1845,9 @@
                 "access_rules": [
                   "$access_exit|Desert Colossus|Colossus Great Fairy Fountain"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -1887,8 +1925,7 @@
                   "$access_exit|Desert Colossus|Colossus Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -1970,6 +2007,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Market Entrance|Market Guard House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2073,8 +2113,7 @@
                   "$access_exit|Market|Market Bazaar"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2099,6 +2138,9 @@
                 "access_rules": [
                   "$access_exit|Market|Market Mask Shop"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -2122,6 +2164,9 @@
                 "access_rules": [
                   "$access_exit|Market|Market Shooting Gallery"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -2144,6 +2189,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Market|Market Bombchu Bowling"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2169,8 +2217,7 @@
                   "$access_exit|Market|Market Potion Shop"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2194,6 +2241,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Market|Market Treasure Chest Game"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2219,8 +2269,7 @@
                   "$access_exit|Market Back Alley|Market Bombchu Shop"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2297,6 +2346,9 @@
                 "access_rules": [
                   "$access_exit|ToT Entrance|Temple of Time"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -2352,6 +2404,9 @@
                 "access_rules": [
                   "$access_exit|Hyrule Castle Grounds|HC Great Fairy Fountain"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -2376,8 +2431,7 @@
                   "$access_exit|Hyrule Castle Grounds|HC Storms Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_tokens_overworld"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -2407,6 +2461,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Ganons Castle Grounds|OGC Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2489,6 +2546,9 @@
                 "access_rules": [
                   "$access_exit|Kakariko Village|Kak House of Skulltula"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -2530,6 +2590,32 @@
             ]
           },
           {
+            "name": "Kak Impas Ledge -> Kak Impas House Back",
+            "short_name": "Kak Impas House Back",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kak Impas Ledge|Kak Impas House Back"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 1830,
+                "y": 430
+              }
+            ]
+          },
+          {
             "name": "Kakariko Village -> Kak Windmill",
             "short_name": "Kak Windmill",
             "sections": [
@@ -2537,6 +2623,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Kakariko Village|Kak Windmill"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2562,8 +2651,7 @@
                   "$access_exit|Kakariko Village|Kak Bazaar"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2587,6 +2675,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Kakariko Village|Kak Shooting Gallery"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2639,8 +2730,7 @@
                   "$access_exit|Kakariko Village|Kak Potion Shop Front"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_all",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -2664,6 +2754,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Kakariko Village|Kak Redead Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -2706,29 +2799,6 @@
             ]
           },
           {
-            "name": "Kak Impas Ledge -> Kak Impas House Back",
-            "short_name": "Kak Impas House Back",
-            "sections": [
-              {
-                "name": "Capture",
-                "access_rules": [
-                  "$access_exit|Kak Impas Ledge|Kak Impas House Back"
-                ],
-                "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "entrances",
-                "x": 1830,
-                "y": 430
-              }
-            ]
-          },
-          {
             "name": "Kak Backyard -> Kak Open Grotto",
             "short_name": "Kak Open Grotto",
             "sections": [
@@ -2736,6 +2806,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Kak Backyard|Kak Open Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -2844,6 +2917,9 @@
                 "access_rules": [
                   "$access_exit|Graveyard|Graveyard Shield Grave"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -2859,6 +2935,33 @@
             ]
           },
           {
+            "name": "Graveyard -> Graveyard Heart Piece Grave",
+            "short_name": "Heart Piece Grave",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Graveyard Heart Piece Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "entrances",
+                "x": 2065,
+                //TODO: position mismatch
+                "y": 360
+              }
+            ]
+          },
+          {
             "name": "Graveyard -> Graveyard Composers Grave",
             "short_name": "Composer Grave",
             "sections": [
@@ -2866,6 +2969,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Graveyard|Graveyard Composers Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -2882,29 +2988,6 @@
             ]
           },
           {
-            "name": "Graveyard -> Graveyard Heart Piece Grave",
-            "short_name": "Heart Piece Grave",
-            "sections": [
-              {
-                "name": "Capture",
-                "access_rules": [
-                  "$access_exit|Graveyard|Graveyard Heart Piece Grave"
-                ],
-                "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "entrances",
-                "x": 2065,
-                "y": 360
-              }
-            ]
-          },
-          {
             "name": "Graveyard -> Graveyard Dampes Grave",
             "short_name": "Dampes Grave",
             "sections": [
@@ -2912,6 +2995,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Graveyard|Graveyard Dampes Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -3100,6 +3186,9 @@
                 "access_rules": [
                   "$access_exit|Death Mountain|DMT Storms Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -3176,8 +3265,7 @@
                   "$access_exit|Death Mountain Summit|DMT Cow Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_cowsanity_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -3201,6 +3289,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Death Mountain Summit|DMT Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -3258,8 +3349,7 @@
                   "$access_exit|Goron City|GC Shop"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -3285,8 +3375,7 @@
                   "$access_exit|GC Grotto Platform|GC Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -3395,6 +3484,9 @@
                 "access_rules": [
                   "$access_exit|DMC Upper Nearby|DMC Upper Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -3444,6 +3536,9 @@
                 "access_rules": [
                   "$access_exit|DMC Lower Nearby|DMC Great Fairy Fountain"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -3468,8 +3563,7 @@
                   "$access_exit|DMC Lower Nearby|DMC Hammer Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -3553,6 +3647,9 @@
                 "access_rules": [
                   "$access_exit|Zora River|ZR Open Grotto"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -3629,8 +3726,7 @@
                   "$access_exit|Zora River|ZR Storms Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",
@@ -3740,8 +3836,7 @@
                   "$access_exit|Zoras Domain|ZD Shop"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_shopsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -3877,6 +3972,9 @@
                 "access_rules": [
                   "$access_exit|Zoras Fountain|ZF Great Fairy Fountain"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
                 "capture_item_layout": "tracker_capture_mixed_er",
@@ -3960,8 +4058,7 @@
                   "$access_exit|Lon Lon Ranch|LLR Talons House"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "postzelda"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -3987,8 +4084,7 @@
                   "$access_exit|Lon Lon Ranch|LLR Stables"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_interiors_simple",
-                  "setting_cowsanity_yes"
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -4012,6 +4108,9 @@
                 "name": "Capture",
                 "access_rules": [
                   "$access_exit|Lon Lon Ranch|LLR Tower"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_houses",
@@ -4037,8 +4136,7 @@
                   "$access_exit|Lon Lon Ranch|LLR Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_grottos_shuffle",
-                  "setting_scrub_shuffle_yes"
+                  "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
                 //"capture_item_layout": "tracker_capture_grottos",

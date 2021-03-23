@@ -103,6 +103,118 @@
                 "y": 980
               }
             ]
+          },
+          {
+            "name": "KF Links House",
+            "sections": [
+              {
+                "name": "KF Links House Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$access_location|KF Links House Cow"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2175,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "KF Midos House",
+            "sections": [
+              {
+                "name": "KF Midos Chests",
+                "access_rules": [
+                  "$access_location|KF Midos Chests"
+                ],
+                "item_count": 4
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2135,
+                "y": 900
+              }
+            ]
+          },
+          {
+            "name": "KF Kokiri Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|KF Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|KF Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|KF Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|KF Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 2220,
+                "y": 915
+              }
+            ]
+          },
+          {
+            "name": "KF Storms Grotto",
+            "sections": [
+              {
+                "name": "KF Storms Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|KF Storms Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2120,
+                "y": 845
+              }
+            ]
           }
         ]
       },
@@ -321,6 +433,91 @@
                 "y": 880
               }
             ]
+          },
+          {
+            "name": "LW Near Shortcuts Grotto",
+            "sections": [
+              {
+                "name": "LW Near Shortcuts Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|LW Near Shortcuts Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2150,
+                "y": 775
+              }
+            ]
+          },
+          {
+            "name": "Deku Theater",
+            "sections": [
+              {
+                "name": "Deku Theater Skull Mask",
+                "short_name": "Skull Mask",
+                "access_rules": [
+                  "$access_location|Deku Theater Skull Mask"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Deku Theater Mask of Truth",
+                "short_name": "Mask of Truth",
+                "access_rules": [
+                  "$access_location|Deku Theater Mask of Truth"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2080,
+                "y": 740
+              }
+            ]
+          },
+          {
+            "name": "LW Scrubs Grotto",
+            "sections": [
+              {
+                "name": "LW Deku Scrub Grotto Front",
+                "short_name": "Front",
+                "access_rules": [
+                  "$access_location|LW Deku Scrubs Grotto"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "LW Deku Scrub Grotto Rear",
+                "short_name": "Rear",
+                "access_rules": [
+                  "$access_location|LW Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2190,
+                "y": 725
+              }
+            ]
           }
         ]
       },
@@ -384,6 +581,53 @@
                 "y": 665
               }
             ]
+          },
+          {
+            "name": "SFM Storms Grotto",
+            "sections": [
+              {
+                "name": "SFM Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|SFM Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2190,
+                //TODO: position mismatch
+                "y": 635
+              }
+            ]
+          },
+          {
+            "name": "SFM Wolfos Grotto",
+            "sections": [
+              {
+                "name": "SFM Wolfos Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|SFM Wolfos Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2185,
+                "y": 685
+              }
+            ]
           }
         ]
       },
@@ -420,6 +664,178 @@
                 "map": "overworldchecks",
                 "x": 1440,
                 "y": 465
+              }
+            ]
+          },
+          {
+            "name": "HF Southeast Grotto",
+            "sections": [
+              {
+                "name": "HF Southeast Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|HF Southeast Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1430,
+                "y": 925
+              }
+            ]
+          },
+          {
+            "name": "HF Open Grotto",
+            "sections": [
+              {
+                "name": "HF Open Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|HF Open Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1205,
+                "y": 995
+              }
+            ]
+          },
+          {
+            "name": "HF Inside Fence Grotto",
+            "sections": [
+              {
+                "name": "HF Deku Scrub Grotto",
+                "short_name": "Deku Scrub",
+                "access_rules": [
+                  "$access_location|HF Deku Scrub Grotto"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1140,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "HF Cow Grotto",
+            "sections": [
+              {
+                "name": "HF GS Cow Grotto",
+                "short_name": "GS",
+                "access_rules": [
+                  "$access_location|HF GS Cow Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "HF Cow Grotto Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$access_location|HF Cow Grotto Cow"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 970,
+                "y": 660
+              }
+            ]
+          },
+          {
+            "name": "HF Near Market Grotto",
+            "short_name": "Boulda",
+            "sections": [
+              {
+                "name": "HF Near Market Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|HF Near Market Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1370,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "name": "HF Near Kak Grotto",
+            "sections": [
+              {
+                "name": "HF GS Near Kak Grotto",
+                "short_name": "GS",
+                "access_rules": [
+                  "$access_location|HF GS Near Kak Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1550,
+                "y": 405
+              }
+            ]
+          },
+          {
+            "name": "HF Tektite Grotto",
+            "sections": [
+              {
+                "name": "HF Tektite Grotto Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$access_location|HF Tektite Grotto Freestanding PoH"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1150,
+                "y": 480
               }
             ]
           }
@@ -589,6 +1005,90 @@
                 "map": "overworldchecks",
                 "x": 1010,
                 "y": 1415
+              }
+            ]
+          },
+          {
+            "name": "LH Lab",
+            "sections": [
+              {
+                "name": "LH Lab Dive",
+                "access_rules": [
+                  "$access_location|LH Lab Dive"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "LH GS Lab Crate",
+                "short_name": "GS",
+                "access_rules": [
+                  "$access_location|LH GS Lab Crate"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 960,
+                "y": 1200
+              }
+            ]
+          },
+          {
+            "name": "LH Fishing Hole",
+            "sections": [
+              {
+                "name": "LH Child Fishing",
+                "access_rules": [
+                  "$access_location|LH Child Fishing"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "LH Adult Fishing",
+                "access_rules": [
+                  "$access_location|LH Adult Fishing"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1270,
+                "y": 1215
+              }
+            ]
+          },
+          {
+            "name": "LH Grotto",
+            "sections": [
+              {
+                "name": "LH Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|LH Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 870,
+                "y": 1310
               }
             ]
           }
@@ -785,6 +1285,32 @@
                 "map": "overworldchecks",
                 "x": 570,
                 "y": 580
+              }
+            ]
+          },
+          {
+            "name": "GV Storms Grotto",
+            "sections": [
+              {
+                "name": "GV Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|GV Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 605,
+                "y": 530
               }
             ]
           }
@@ -1150,6 +1676,53 @@
                 "y": 320
               }
             ]
+          },
+          {
+            "name": "Colossus Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Colossus Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|Colossus Great Fairy Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 275,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Colossus Grotto",
+            "sections": [
+              {
+                "name": "Colossus Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|Colossus Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 195,
+                //TODO: position mismatch
+                "y": 305
+              }
+            ]
           }
         ]
       },
@@ -1157,6 +1730,252 @@
         "name": "Market",
         "color": "#09a09d",
         "children": [
+          {
+            "name": "Market Guard House",
+            "sections": [
+              {
+                "name": "Market 10 Big Poes",
+                "short_name": "Big Poes",
+                "access_rules": [
+                  "$access_location|Market 10 Big Poes"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Market GS Guard House",
+                "short_name": "GS",
+                "access_rules": [
+                  "$access_location|Market GS Guard House"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1465,
+                "y": 405
+              }
+            ]
+          },
+          {
+            "name": "Market Bazaar",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|Market Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|Market Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|Market Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|Market Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 1475,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "Market Shooting Gallery",
+            "sections": [
+              {
+                "name": "Market Shooting Gallery Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|Market Shooting Gallery Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1425,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "name": "Market Bombchu Bowling",
+            "sections": [
+              {
+                "name": "Market Bombchu Bowling First Prize",
+                "short_name": "1st prize",
+                "access_rules": [
+                  "$access_location|Market Bombchu Bowling First Prize"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Market Bombchu Bowling Second Prize",
+                "short_name": "2nd prize",
+                "access_rules": [
+                  "$access_location|Market Bombchu Bowling Second Prize"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1415,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Market Potion Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|Market Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|Market Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|Market Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|Market Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 1475,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Market Treasure Chest Game",
+            "sections": [
+              {
+                "name": "Market Treasure Chest Game Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|Market Treasure Chest Game Reward"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1425,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "Market Bombchu Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|Market Bombchu Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|Market Bombchu Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|Market Bombchu Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|Market Bombchu Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 1390,
+                "y": 365
+              }
+            ]
+          },
           {
             "name": "Market Dog Lady House",
             "sections": [
@@ -1175,6 +1994,37 @@
                 "y": 355
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Temple of Time",
+        "color": "#09a09d",
+        "sections": [
+          {
+            "name": "Sheik at Temple",
+            "access_rules": [
+              "$access_location|Sheik at Temple"
+            ],
+            "capture_item": true,
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          },
+          {
+            "name": "ToT Light Arrows Cutscene",
+            "short_name": "LACS",
+            "access_rules": [
+              "$access_location|ToT Light Arrows Cutscene"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworldchecks",
+            "x": 1535,
+            "y": 295
           }
         ]
       },
@@ -1254,6 +2104,52 @@
                 "y": 175
               }
             ]
+          },
+          {
+            "name": "HC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "HC Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|HC Great Fairy Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1490,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "name": "HC Storms Grotto",
+            "sections": [
+              {
+                "name": "HC GS Storms Grotto",
+                "short_name": "GS",
+                "access_rules": [
+                  "$access_location|HC GS Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1480,
+                "y": 205
+              }
+            ]
           }
         ]
       },
@@ -1282,6 +2178,26 @@
               {
                 "map": "overworldchecks",
                 "x": 1480,
+                "y": 205
+              }
+            ]
+          },
+          {
+            "name": "OGC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "OGC Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|OGC Great Fairy Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1530,
                 "y": 205
               }
             ]
@@ -1520,6 +2436,287 @@
                 "y": 360
               }
             ]
+          },
+          {
+            "name": "Kak House of Skulltula",
+            "sections": [
+              {
+                "name": "Kak 10 Gold Skulltula Reward",
+                "short_name": "10 Tokens",
+                "access_rules": [
+                  "$access_location|Kak 10 Gold Skulltula Reward"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Kak 20 Gold Skulltula Reward",
+                "short_name": "20 Tokens",
+                "access_rules": [
+                  "$access_location|Kak 20 Gold Skulltula Reward"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Kak 30 Gold Skulltula Reward",
+                "short_name": "30 Tokens",
+                "access_rules": [
+                  "$access_location|Kak 30 Gold Skulltula Reward"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Kak 40 Gold Skulltula Reward",
+                "short_name": "40 Tokens",
+                "access_rules": [
+                  "$access_location|Kak 40 Gold Skulltula Reward"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Kak 50 Gold Skulltula Reward",
+                "short_name": "50 Tokens",
+                "access_rules": [
+                  "$access_location|Kak 50 Gold Skulltula Reward"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1760,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "name": "Kak Impas House Back",
+            "sections": [
+              {
+                "name": "Kak Impas House Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$access_location|Kak Impas House Freestanding PoH"
+                ],
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Kak Impas House Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$access_location|Kak Impas House Cow"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1830,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "name": "Kak Windmill",
+            "sections": [
+              {
+                "name": "Kak Windmill Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$access_location|Kak Windmill Freestanding PoH"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "Song from Windmill",
+                "short_name": "Guru-Guru",
+                "access_rules": [
+                  "$access_location|Song from Windmill"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1920,
+                "y": 345
+              }
+            ]
+          },
+          {
+            "name": "Kak Bazaar",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|Kak Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|Kak Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|Kak Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|Kak Bazaar Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 1760,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "name": "Kak Shooting Gallery",
+            "sections": [
+              {
+                "name": "Kak Shooting Gallery Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|Kak Shooting Gallery Reward"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1830,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "Kak Potion Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|Kak Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|Kak Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|Kak Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|Kak Potion Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 1795,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "name": "Kak Redead Grotto",
+            "sections": [
+              {
+                "name": "Kak Redead Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|Kak Redead Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1780,
+                //TODO: position mismatch
+                "y": 380
+              }
+            ]
+          },
+          {
+            "name": "Kak Open Grotto",
+            "sections": [
+              {
+                "name": "Kak Open Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|Kak Open Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1870,
+                "y": 325
+              }
+            ]
           }
         ]
       },
@@ -1620,6 +2817,114 @@
                 "map": "overworldchecks",
                 "x": 2000,
                 "y": 335
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Shield Grave",
+            "short_name": "Shield Grave",
+            "sections": [
+              {
+                "name": "Graveyard Shield Grave Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|Graveyard Shield Grave Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2030,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Heart Piece Grave",
+            "short_name": "HP Grave",
+            "sections": [
+              {
+                "name": "Graveyard Heart Piece Grave Chest",
+                "short_name": "Play Suns Song",
+                "access_rules": [
+                  "$access_location|Graveyard Heart Piece Grave Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2065,
+                //TODO: position mismatch
+                "y": 350
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Composers Grave",
+            "short_name": "Royal Tomb",
+            "sections": [
+              {
+                "name": "Song from Composers Grave",
+                "short_name": "Song",
+                "access_rules": [
+                  "$access_location|Song from Composers Grave"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Graveyard Composers Grave Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|Graveyard Composers Grave Chest"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2100,
+                "y": 355
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Dampes Grave",
+            "short_name": "Dampes Grave",
+            "sections": [
+              {
+                "name": "Graveyard Hookshot Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|Graveyard Hookshot Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Graveyard Dampe Race Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$access_location|Graveyard Dampe Race Freestanding PoH"
+                ],
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2030,
+                "y": 340
               }
             ]
           }
@@ -1788,6 +3093,71 @@
                 "map": "overworldchecks",
                 "x": 1805,
                 "y": 150
+              }
+            ]
+          },
+          {
+            "name": "DMT Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "DMT Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|DMT Great Fairy Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1785,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "DMT Cow Grotto",
+            "sections": [
+              {
+                "name": "DMT Cow Grotto Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$access_location|DMT Cow Grotto Cow"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1765,
+                "y": 175
+              }
+            ]
+          },
+          {
+            "name": "DMT Storms Grotto",
+            "sections": [
+              {
+                "name": "DMT Storms Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|DMT Storms Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1705,
+                "y": 160
               }
             ]
           }
@@ -1974,6 +3344,81 @@
                 "y": 80
               }
             ]
+          },
+          {
+            "name": "GC Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|GC Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|GC Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|GC Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|GC Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                //TODO: position overlaps
+                "x": 1645,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "name": "GC Grotto",
+            "sections": [
+              {
+                "name": "GC Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|GC Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1725,
+                //TODO: position mismatch
+                "y": 100
+              }
+            ]
           }
         ]
       },
@@ -2120,6 +3565,72 @@
               {
                 "map": "overworldchecks",
                 "x": 1870,
+                "y": 30
+              }
+            ]
+          },
+          {
+            "name": "DMC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "DMC Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|DMC Great Fairy Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1785,
+                "y": 30
+              }
+            ]
+          },
+          {
+            "name": "DMC Upper Grotto",
+            "sections": [
+              {
+                "name": "DMC Upper Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|DMC Upper Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1785,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Hammer Grotto",
+            "sections": [
+              {
+                "name": "DMC Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|DMC Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1825,
                 "y": 30
               }
             ]
@@ -2324,6 +3835,53 @@
                 "y": 465
               }
             ]
+          },
+          {
+            "name": "ZR Open Grotto",
+            "sections": [
+              {
+                "name": "ZR Open Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$access_location|ZR Open Grotto Chest"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2090,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "name": "ZR Storms Grotto",
+            "sections": [
+              {
+                "name": "ZR Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|ZR Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1940,
+                //TODO: position mismatch
+                "y": 505
+              }
+            ]
           }
         ]
       },
@@ -2410,6 +3968,53 @@
                 "map": "overworldchecks",
                 "x": 2590,
                 "y": 410
+              }
+            ]
+          },
+          {
+            "name": "ZD Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "access_rules": [
+                  "$access_location|ZD Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "access_rules": [
+                  "$access_location|ZD Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "access_rules": [
+                  "$access_location|ZD Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "access_rules": [
+                  "$access_location|ZD Shop Items"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 2625,
+                "y": 500
               }
             ]
           }
@@ -2540,6 +4145,26 @@
                 "y": 290
               }
             ]
+          },
+          {
+            "name": "ZF Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "ZF Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$access_location|ZF Great Fairy Reward"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 2585,
+                "y": 325
+              }
+            ]
           }
         ]
       },
@@ -2668,6 +4293,112 @@
                 "map": "overworldchecks",
                 "x": 1195,
                 "y": 665
+              }
+            ]
+          },
+          {
+            "name": "LLR Talons House",
+            "sections": [
+              {
+                "name": "LLR Talons Chickens",
+                "access_rules": [
+                  "$access_location|LLR Talons Chickens"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1345,
+                "y": 580
+              }
+            ]
+          },
+          {
+            "name": "LLR Stables",
+            "sections": [
+              {
+                "name": "LLR Stables Cows",
+                "short_name": "Cows",
+                "access_rules": [
+                  "$access_location|LLR Stables Cows"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1300,
+                //TODO: position mismatch
+                "y": 595
+              }
+            ]
+          },
+          {
+            "name": "LLR Tower",
+            "sections": [
+              {
+                "name": "LLR Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$access_location|LLR Freestanding PoH"
+                ],
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "LLR Tower Cows",
+                "short_name": "Cows",
+                "access_rules": [
+                  "$access_location|LLR Tower Cows"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1225,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "LLR Grotto",
+            "sections": [
+              {
+                "name": "LLR Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$access_location|LLR Deku Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworldchecks",
+                "x": 1375,
+                "y": 690
               }
             ]
           }

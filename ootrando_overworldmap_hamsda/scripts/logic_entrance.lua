@@ -142,6 +142,13 @@ function can_child_attack()
   return has_explosives()
 end
 
+function can_stun_deku()
+  if has("nuts") or has("shield1") then
+    return AccessibilityLevel.Normal
+  end
+  return can_child_attack()
+end
+
 function FTR_or_goron()
   if has("logic_fewer_tunic_requirements") or has("redtunic") then
     return AccessibilityLevel.Normal

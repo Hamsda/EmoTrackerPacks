@@ -447,6 +447,19 @@ data_per_region = {
   ["KF Links House"] = {
     ["scene"] = "KF Links House",
     ["special"] = true,
+    ["locations"] = {
+      ["KF Links House Cow"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return access_region("Lon Lon Ranch", "adult")
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -461,6 +474,16 @@ data_per_region = {
   ["KF Midos House"] = {
     ["scene"] = "KF Midos House",
     ["interior"] = true,
+    ["locations"] = {
+      ["KF Midos Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -517,6 +540,16 @@ data_per_region = {
   ["KF Kokiri Shop"] = {
     ["scene"] = "KF Kokiri Shop",
     ["interior"] = true,
+    ["locations"] = {
+      ["KF Shop Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -1347,6 +1380,38 @@ data_per_region = {
   ["LH Lab"] = {
     ["scene"] = "LH Lab",
     ["interior"] = true,
+    ["locations"] = {
+      ["LH Lab Dive"] = {
+        ["child_access"] = function()
+          if has("scale2") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("scale2") then
+            return AccessibilityLevel.Normal
+          elseif has("ironboots") and has("hookshot") then
+            if has("logic_lab_diving") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["LH GS Lab Crate"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ironboots") and has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Lake Hylia"] = {
         ["child_access"] = function()
@@ -1361,6 +1426,24 @@ data_per_region = {
   ["LH Fishing Hole"] = {
     ["scene"] = "LH Fishing Hole",
     ["interior"] = true,
+    ["locations"] = {
+      ["LH Child Fishing"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["LH Adult Fishing"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["LH Fishing Island"] = {
         ["child_access"] = function()
@@ -2110,6 +2193,22 @@ data_per_region = {
   ["Colossus Great Fairy Fountain"] = {
     ["scene"] = "Colossus Great Fairy Fountain",
     ["interior"] = true,
+    ["locations"] = {
+      ["Colossus Great Fairy Reward"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Desert Colossus"] = {
         ["child_access"] = function()
@@ -2313,6 +2412,19 @@ data_per_region = {
   ["Temple of Time"] = {
     ["scene"] = "Temple of Time",
     ["special"] = true,
+    ["locations"] = {
+      ["ToT Light Arrows Cutscene"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("lacs_meds", 2) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["ToT Entrance"] = {
         ["child_access"] = function()
@@ -2341,6 +2453,19 @@ data_per_region = {
   ["Beyond Door of Time"] = {
     ["scene"] = "Temple of Time",
     ["interior"] = true,
+    ["locations"] = {
+      ["Sheik at Temple"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("forestmed") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Temple of Time"] = {
         ["child_access"] = function()
@@ -2477,6 +2602,22 @@ data_per_region = {
   ["HC Great Fairy Fountain"] = {
     ["scene"] = "HC Great Fairy Fountain",
     ["interior"] = true,
+    ["locations"] = {
+      ["HC Great Fairy Reward"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Castle Grounds"] = {
         ["child_access"] = function()
@@ -2535,6 +2676,22 @@ data_per_region = {
   ["OGC Great Fairy Fountain"] = {
     ["scene"] = "OGC Great Fairy Fountain",
     ["interior"] = true,
+    ["locations"] = {
+      ["OGC Great Fairy Reward"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Castle Grounds"] = {
         ["child_access"] = function()
@@ -2549,6 +2706,30 @@ data_per_region = {
   ["Market Guard House"] = {
     ["scene"] = "Market Guard House",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market 10 Big Poes"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has_bottle() then
+            if has("bow") and has("ocarina") and has("epona") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Market GS Guard House"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Market Entrance"] = {
         ["child_access"] = function()
@@ -2563,6 +2744,16 @@ data_per_region = {
   ["Market Bazaar"] = {
     ["scene"] = "Market Bazaar",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market Bazaar Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2591,6 +2782,16 @@ data_per_region = {
   ["Market Shooting Gallery"] = {
     ["scene"] = "Market Shooting Gallery",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market Shooting Gallery Reward"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2605,6 +2806,24 @@ data_per_region = {
   ["Market Bombchu Bowling"] = {
     ["scene"] = "Market Bombchu Bowling",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market Bombchu Bowling First Prize"] = {
+        ["child_access"] = function()
+          return has_bombchus()
+        end,
+        ["adult_access"] = function()
+          return has_bombchus()
+        end
+      },
+      ["Market Bombchu Bowling Second Prize"] = {
+        ["child_access"] = function()
+          return has_bombchus()
+        end,
+        ["adult_access"] = function()
+          return has_bombchus()
+        end
+      }
+    },
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2619,6 +2838,16 @@ data_per_region = {
   ["Market Potion Shop"] = {
     ["scene"] = "Market Potion Shop",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market Potion Shop Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2633,6 +2862,22 @@ data_per_region = {
   ["Market Treasure Chest Game"] = {
     ["scene"] = "Market Treasure Chest Game",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market Treasure Chest Game Reward"] = {
+        ["child_access"] = function()
+          if has("lens") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end,
+        ["adult_access"] = function()
+          if has("lens") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end
+      }
+    },
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2647,6 +2892,16 @@ data_per_region = {
   ["Market Bombchu Shop"] = {
     ["scene"] = "Market Bombchu Shop",
     ["interior"] = true,
+    ["locations"] = {
+      ["Market Bombchu Shop Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Market Back Alley"] = {
         ["child_access"] = function()
@@ -3086,6 +3341,78 @@ data_per_region = {
   ["Kak House of Skulltula"] = {
     ["scene"] = "Kak House of Skulltula",
     ["interior"] = true,
+    ["locations"] = {
+      ["Kak 10 Gold Skulltula Reward"] = {
+        ["child_access"] = function()
+          if has("skulltula", 10) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("skulltula", 10) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Kak 20 Gold Skulltula Reward"] = {
+        ["child_access"] = function()
+          if has("skulltula", 20) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("skulltula", 20) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Kak 30 Gold Skulltula Reward"] = {
+        ["child_access"] = function()
+          if has("skulltula", 30) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("skulltula", 30) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Kak 40 Gold Skulltula Reward"] = {
+        ["child_access"] = function()
+          if has("skulltula", 40) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("skulltula", 40) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Kak 50 Gold Skulltula Reward"] = {
+        ["child_access"] = function()
+          if has("skulltula", 50) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("skulltula", 50) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3122,6 +3449,16 @@ data_per_region = {
   ["Kak Impas House Back"] = {
     ["scene"] = "Kak Impas House",
     ["interior"] = true,
+    ["locations"] = {
+      ["Kak Impas House Freestanding PoH"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kak Impas Ledge"] = {
         ["child_access"] = function()
@@ -3143,11 +3480,53 @@ data_per_region = {
   },
   ["Kak Impas House Near Cow"] = {
     ["scene"] = "Kak Impas House",
-    ["interior"] = true
+    ["interior"] = true,
+    ["locations"] = {
+      ["Kak Impas House Cow"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
   },
   ["Kak Windmill"] = {
     ["scene"] = "Windmill and Dampes Grave",
     ["special"] = true,
+    ["locations"] = {
+      ["Kak Windmill Freestanding PoH"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local trick = has("logic_windmill_poh") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(trick, and_accessibility(sot, access_region("Graveyard Dampes Grave", "adult")))
+        end
+      },
+      ["Song from Windmill"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3162,6 +3541,16 @@ data_per_region = {
   ["Kak Bazaar"] = {
     ["scene"] = "Kak Bazaar",
     ["interior"] = true,
+    ["locations"] = {
+      ["Kak Bazaar Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3176,6 +3565,19 @@ data_per_region = {
   ["Kak Shooting Gallery"] = {
     ["scene"] = "Kak Shooting Gallery",
     ["interior"] = true,
+    ["locations"] = {
+      ["Kak Shooting Gallery Reward"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("bow") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3190,6 +3592,16 @@ data_per_region = {
   ["Kak Potion Shop Front"] = {
     ["scene"] = "Kak Potion Shop",
     ["special"] = true,
+    ["locations"] = {
+      ["Kak Potion Shop Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3361,6 +3773,16 @@ data_per_region = {
   ["Graveyard Shield Grave"] = {
     ["scene"] = "Graveyard Shield Grave",
     ["interior"] = true,
+    ["locations"] = {
+      ["Graveyard Shield Grave Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Graveyard"] = {
         ["child_access"] = function()
@@ -3375,6 +3797,22 @@ data_per_region = {
   ["Graveyard Heart Piece Grave"] = {
     ["scene"] = "Graveyard Heart Piece Grave",
     ["interior"] = true,
+    ["locations"] = {
+      ["Graveyard Heart Piece Grave Chest"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("sun") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("sun") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Graveyard"] = {
         ["child_access"] = function()
@@ -3389,6 +3827,32 @@ data_per_region = {
   ["Graveyard Composers Grave"] = {
     ["scene"] = "Graveyard Composers Grave",
     ["interior"] = true,
+    ["locations"] = {
+      ["Graveyard Composers Grave Chest"] = {
+        ["child_access"] = function()
+          if has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_fire()
+        end
+      },
+      ["Song from Composers Grave"] = {
+        ["child_access"] = function()
+          if has("sling") or has("boomerang") or has("sticks") or has("sword1") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Graveyard"] = {
         ["child_access"] = function()
@@ -3403,6 +3867,27 @@ data_per_region = {
   ["Graveyard Dampes Grave"] = {
     ["scene"] = "Windmill and Dampes Grave",
     ["special"] = true,
+    ["locations"] = {
+      ["Graveyard Hookshot Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Graveyard Dampe Race Freestanding PoH"] = {
+        ["child_access"] = function()
+          if has("logic_child_dampe_race_poh") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Graveyard"] = {
         ["child_access"] = function()
@@ -3681,7 +4166,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("claimcheck") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       },
       ["DMT GS Falling Rocks Path"] = {
@@ -4038,6 +4526,16 @@ data_per_region = {
   ["GC Shop"] = {
     ["scene"] = "GC Shop",
     ["interior"] = true,
+    ["locations"] = {
+      ["GC Shop Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Goron City"] = {
         ["child_access"] = function()
@@ -4403,6 +4901,22 @@ data_per_region = {
   ["DMC Great Fairy Fountain"] = {
     ["scene"] = "DMC Great Fairy Fountain",
     ["interior"] = true,
+    ["locations"] = {
+      ["DMC Great Fairy Reward"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["DMC Lower Local"] = {
         ["child_access"] = function()
@@ -4417,6 +4931,22 @@ data_per_region = {
   ["DMT Great Fairy Fountain"] = {
     ["scene"] = "DMT Great Fairy Fountain",
     ["interior"] = true,
+    ["locations"] = {
+      ["DMT Great Fairy Reward"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Death Mountain Summit"] = {
         ["child_access"] = function()
@@ -4912,6 +5442,16 @@ data_per_region = {
   ["ZD Shop"] = {
     ["scene"] = "ZD Shop",
     ["interior"] = true,
+    ["locations"] = {
+      ["ZD Shop Items"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Zoras Domain"] = {
         ["child_access"] = function()
@@ -4926,6 +5466,22 @@ data_per_region = {
   ["ZF Great Fairy Fountain"] = {
     ["scene"] = "ZF Great Fairy Fountain",
     ["interior"] = true,
+    ["locations"] = {
+      ["ZF Great Fairy Reward"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Zoras Fountain"] = {
         ["child_access"] = function()
@@ -5041,6 +5597,19 @@ data_per_region = {
   ["LLR Talons House"] = {
     ["scene"] = "LLR Talons House",
     ["interior"] = true,
+    ["locations"] = {
+      ["LLR Talons Chickens"] = {
+        ["child_access"] = function()
+          if has("postzelda") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Lon Lon Ranch"] = {
         ["child_access"] = function()
@@ -5055,6 +5624,22 @@ data_per_region = {
   ["LLR Stables"] = {
     ["scene"] = "LLR Stables",
     ["interior"] = true,
+    ["locations"] = {
+      ["LLR Stables Cows"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Lon Lon Ranch"] = {
         ["child_access"] = function()
@@ -5069,6 +5654,30 @@ data_per_region = {
   ["LLR Tower"] = {
     ["scene"] = "LLR Tower",
     ["interior"] = true,
+    ["locations"] = {
+      ["LLR Freestanding PoH"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["LLR Tower Cows"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Lon Lon Ranch"] = {
         ["child_access"] = function()
@@ -5111,6 +5720,16 @@ data_per_region = {
   ["KF Storms Grotto"] = {
     ["scene"] = "KF Storms Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["KF Storms Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -5125,6 +5744,16 @@ data_per_region = {
   ["LW Near Shortcuts Grotto"] = {
     ["scene"] = "LW Near Shortcuts Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["LW Near Shortcuts Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Lost Woods"] = {
         ["child_access"] = function()
@@ -5139,6 +5768,30 @@ data_per_region = {
   ["Deku Theater"] = {
     ["scene"] = "Deku Theater",
     ["interior"] = true,
+    ["locations"] = {
+      ["Deku Theater Skull Mask"] = {
+        ["child_access"] = function()
+          if has("skullmask") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Deku Theater Mask of Truth"] = {
+        ["child_access"] = function()
+          if has("maskoftruth") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["LW Beyond Mido"] = {
         ["child_access"] = function()
@@ -5153,6 +5806,16 @@ data_per_region = {
   ["LW Scrubs Grotto"] = {
     ["scene"] = "LW Scrubs Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["LW Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["LW Beyond Mido"] = {
         ["child_access"] = function()
@@ -5181,6 +5844,16 @@ data_per_region = {
   ["SFM Storms Grotto"] = {
     ["scene"] = "SFM Storms Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["SFM Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Sacred Forest Meadow"] = {
         ["child_access"] = function()
@@ -5195,6 +5868,19 @@ data_per_region = {
   ["SFM Wolfos Grotto"] = {
     ["scene"] = "SFM Wolfos Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["SFM Wolfos Grotto Chest"] = {
+        ["child_access"] = function()
+          if has("sling") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["SFM Entryway"] = {
         ["child_access"] = function()
@@ -5209,6 +5895,16 @@ data_per_region = {
   ["LLR Grotto"] = {
     ["scene"] = "LLR Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["LLR Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Lon Lon Ranch"] = {
         ["child_access"] = function()
@@ -5223,6 +5919,16 @@ data_per_region = {
   ["HF Southeast Grotto"] = {
     ["scene"] = "HF Southeast Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF Southeast Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5237,6 +5943,16 @@ data_per_region = {
   ["HF Open Grotto"] = {
     ["scene"] = "HF Open Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF Open Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5251,6 +5967,16 @@ data_per_region = {
   ["HF Inside Fence Grotto"] = {
     ["scene"] = "HF Inside Fence Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF Deku Scrub Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5265,6 +5991,36 @@ data_per_region = {
   ["HF Cow Grotto"] = {
     ["scene"] = "HF Cow Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF GS Cow Grotto"] = {
+        ["child_access"] = function()
+          if has("boomerang") and has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return has_fire()
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["HF Cow Grotto Cow"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") and has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return has_fire()
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5279,6 +6035,16 @@ data_per_region = {
   ["HF Near Market Grotto"] = {
     ["scene"] = "HF Near Market Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF Near Market Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5307,6 +6073,22 @@ data_per_region = {
   ["HF Near Kak Grotto"] = {
     ["scene"] = "HF Near Kak Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF GS Near Kak Grotto"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5321,6 +6103,22 @@ data_per_region = {
   ["HF Tektite Grotto"] = {
     ["scene"] = "HF Tektite Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HF Tektite Grotto Freestanding PoH"] = {
+        ["child_access"] = function()
+          if has("scale2") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("scale2") or has("ironboots") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -5335,6 +6133,24 @@ data_per_region = {
   ["HC Storms Grotto"] = {
     ["scene"] = "HC Storms Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["HC GS Storms Grotto"] = {
+        ["child_access"] = function()
+          if has("boomerang") then
+            local trick =
+              has("logic_castle_storms_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            return or_accessibility(trick, has_explosives())
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return can_blast()
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Castle Grounds"] = {
         ["child_access"] = function()
@@ -5349,6 +6165,19 @@ data_per_region = {
   ["Kak Redead Grotto"] = {
     ["scene"] = "Kak Redead Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["Kak Redead Grotto Chest"] = {
+        ["child_access"] = function()
+          if has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -5363,6 +6192,16 @@ data_per_region = {
   ["Kak Open Grotto"] = {
     ["scene"] = "Kak Open Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["Kak Open Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Kak Backyard"] = {
         ["child_access"] = function()
@@ -5377,6 +6216,22 @@ data_per_region = {
   ["DMT Cow Grotto"] = {
     ["scene"] = "DMT Cow Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["DMT Cow Grotto Cow"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
     ["exits"] = {
       ["Death Mountain Summit"] = {
         ["child_access"] = function()
@@ -5391,6 +6246,16 @@ data_per_region = {
   ["DMT Storms Grotto"] = {
     ["scene"] = "DMT Storms Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["DMT Storms Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Death Mountain"] = {
         ["child_access"] = function()
@@ -5405,6 +6270,16 @@ data_per_region = {
   ["GC Grotto"] = {
     ["scene"] = "GC Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["GC Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["GC Grotto Platform"] = {
         ["child_access"] = function()
@@ -5419,6 +6294,16 @@ data_per_region = {
   ["DMC Upper Grotto"] = {
     ["scene"] = "DMC Upper Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["DMC Upper Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["DMC Upper Local"] = {
         ["child_access"] = function()
@@ -5433,6 +6318,16 @@ data_per_region = {
   ["DMC Hammer Grotto"] = {
     ["scene"] = "DMC Hammer Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["DMC Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["DMC Lower Local"] = {
         ["child_access"] = function()
@@ -5447,6 +6342,16 @@ data_per_region = {
   ["ZR Open Grotto"] = {
     ["scene"] = "ZR Open Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["ZR Open Grotto Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Zora River"] = {
         ["child_access"] = function()
@@ -5475,6 +6380,16 @@ data_per_region = {
   ["ZR Storms Grotto"] = {
     ["scene"] = "ZR Storms Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["ZR Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Zora River"] = {
         ["child_access"] = function()
@@ -5489,6 +6404,16 @@ data_per_region = {
   ["LH Grotto"] = {
     ["scene"] = "LH Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["LH Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Lake Hylia"] = {
         ["child_access"] = function()
@@ -5503,6 +6428,16 @@ data_per_region = {
   ["Colossus Grotto"] = {
     ["scene"] = "Colossus Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["Colossus Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["Desert Colossus"] = {
         ["child_access"] = function()
@@ -5531,6 +6466,16 @@ data_per_region = {
   ["GV Storms Grotto"] = {
     ["scene"] = "GV Storms Grotto",
     ["interior"] = true,
+    ["locations"] = {
+      ["GV Deku Scrubs Grotto"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    },
     ["exits"] = {
       ["GV Fortress Side"] = {
         ["child_access"] = function()
@@ -14573,18 +15518,18 @@ function build_regions()
       for region, access in pairs(access_per_region_per_age[age]) do
         if access ~= AccessibilityLevel.None then
           local region_data = data_per_region[region]
-          if not region_data.interior then
-            if er_debugging then
-              print("|  +--region", region)
-            end
-            if type(region_data.locations) == "table" then
-              for location, location_data in pairs(region_data.locations) do
-                local age_func = (age == 1) and "child_access" or "adult_access"
-                local new_access = location_data[age_func]()
+          if er_debugging then
+            print("|  +--region", region)
+          end
+          if type(region_data.locations) == "table" then
+            for location, location_data in pairs(region_data.locations) do
+              local age_func = (age == 1) and "child_access" or "adult_access"
+              local new_access = location_data[age_func]()
 
-                set_location_access(age, location, new_access, access)
-              end
+              set_location_access(age, location, new_access, access)
             end
+          end
+          if not region_data.interior then
             if type(region_data.exits) == "table" then
               for exit, exit_data in pairs(region_data.exits) do
                 local age_func = (age == 1) and "child_access" or "adult_access"
@@ -14619,6 +15564,14 @@ function build_regions()
     end
   end
   if er_debugging then
+    for age = 1, 2 do
+      print(age)
+      for location, access in pairs(location_access_per_age[age]) do
+        if access ~= AccessibilityLevel.None then
+          print(location, access)
+        end
+      end
+    end
     print("---------------")
   end
 end

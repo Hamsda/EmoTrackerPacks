@@ -397,7 +397,8 @@
                 "name": "Deku Theater",
                 "sections": [
                   {
-                    "name": "Skull Mask",
+                    "name": "Deku Theater Skull Mask",
+                    "short_name": "Skull Mask",
                     "access_rules": [
                       "$has_age|child,skullmask",
                       "{$hintable}"
@@ -406,7 +407,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Mask of Truth",
+                    "name": "Deku Theater Mask of Truth",
+                    "short_name": "Mask of Truth",
                     "access_rules": [
                       "$has_age|child,maskoftruth",
                       "{$hintable}"
