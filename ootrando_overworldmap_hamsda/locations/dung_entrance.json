@@ -170,7 +170,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "botw_mq"
             ],
@@ -179,16 +179,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "botw_mq"
-            ],
-            "size": 40,
-            "x": 430,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "botw_mq"
             ],
@@ -291,7 +282,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "botw_reg"
             ],
@@ -300,16 +291,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "botw_reg"
-            ],
-            "size": 40,
-            "x": 475,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "botw_reg"
             ],
@@ -423,7 +405,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "deku_mq"
             ],
@@ -432,16 +414,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "deku_mq"
-            ],
-            "size": 40,
-            "x": 30,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "deku_mq"
             ],
@@ -594,7 +567,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "deku_reg"
             ],
@@ -603,16 +576,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "deku_reg"
-            ],
-            "size": 40,
-            "x": 75,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "deku_reg"
             ],
@@ -796,7 +760,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "dodongo_mq"
             ],
@@ -805,16 +769,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "dodongo_mq"
-            ],
-            "size": 40,
-            "x": 130,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "dodongo_mq"
             ],
@@ -1004,7 +959,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "dodongo_reg"
             ],
@@ -1013,16 +968,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "dodongo_reg"
-            ],
-            "size": 40,
-            "x": 175,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "dodongo_reg"
             ],
@@ -1240,7 +1186,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "fire_mq"
             ],
@@ -1249,16 +1195,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "fire_mq"
-            ],
-            "size": 40,
-            "x": 130,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "fire_mq"
             ],
@@ -1458,7 +1395,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "fire_reg"
             ],
@@ -1467,16 +1404,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "fire_reg"
-            ],
-            "size": 40,
-            "x": 175,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "fire_reg"
             ],
@@ -1683,7 +1611,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "forest_mq"
             ],
@@ -1692,16 +1620,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "forest_mq"
-            ],
-            "size": 40,
-            "x": 30,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "forest_mq"
             ],
@@ -1899,7 +1818,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "forest_reg"
             ],
@@ -1908,16 +1827,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "forest_reg"
-            ],
-            "size": 40,
-            "x": 75,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "forest_reg"
             ],
@@ -2079,7 +1989,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "gc_mq"
             ],
@@ -2088,16 +1998,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "gc_mq"
-            ],
-            "size": 40,
-            "x": 530,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "gc_mq"
             ],
@@ -2270,7 +2171,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "gc_reg"
             ],
@@ -2279,16 +2180,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "gc_reg"
-            ],
-            "size": 40,
-            "x": 575,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "gc_reg"
             ],
@@ -2454,7 +2346,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "gtg_mq"
             ],
@@ -2463,16 +2355,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "gtg_mq"
-            ],
-            "size": 40,
-            "x": 330,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "gtg_mq"
             ],
@@ -2614,7 +2497,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "gtg_reg"
             ],
@@ -2623,16 +2506,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "gtg_reg"
-            ],
-            "size": 40,
-            "x": 375,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "gtg_reg"
             ],
@@ -2738,7 +2612,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "ice_mq"
             ],
@@ -2747,16 +2621,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "ice_mq"
-            ],
-            "size": 40,
-            "x": 530,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "ice_mq"
             ],
@@ -2860,7 +2725,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "ice_reg"
             ],
@@ -2869,16 +2734,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "ice_reg"
-            ],
-            "size": 40,
-            "x": 575,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "ice_reg"
             ],
@@ -2997,7 +2853,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "jabu_mq"
             ],
@@ -3006,16 +2862,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "jabu_mq"
-            ],
-            "size": 40,
-            "x": 230,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "jabu_mq"
             ],
@@ -3181,7 +3028,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "jabu_reg"
             ],
@@ -3190,16 +3037,7 @@
             "y": 1465
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "jabu_reg"
-            ],
-            "size": 40,
-            "x": 275,
-            "y": 1465
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "jabu_reg"
             ],
@@ -3416,7 +3254,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "shadow_mq"
             ],
@@ -3425,16 +3263,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "shadow_mq"
-            ],
-            "size": 40,
-            "x": 430,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "shadow_mq"
             ],
@@ -3675,7 +3504,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "shadow_reg"
             ],
@@ -3684,16 +3513,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "shadow_reg"
-            ],
-            "size": 40,
-            "x": 475,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "shadow_reg"
             ],
@@ -3927,7 +3747,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "spirit_mq"
             ],
@@ -3936,16 +3756,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "spirit_mq"
-            ],
-            "size": 40,
-            "x": 330,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "spirit_mq"
             ],
@@ -4227,7 +4038,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "spirit_reg"
             ],
@@ -4236,16 +4047,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "spirit_reg"
-            ],
-            "size": 40,
-            "x": 375,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "spirit_reg"
             ],
@@ -4431,7 +4233,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "water_mq"
             ],
@@ -4440,16 +4242,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "water_mq"
-            ],
-            "size": 40,
-            "x": 230,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "water_mq"
             ],
@@ -4599,7 +4392,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "force_invisibility_rules": [
               "water_reg"
             ],
@@ -4608,16 +4401,7 @@
             "y": 1350
           },
           {
-            "map": "entrances",
-            "force_invisibility_rules": [
-              "water_reg"
-            ],
-            "size": 40,
-            "x": 275,
-            "y": 1350
-          },
-          {
-            "map": "connectors",
+            "map": "exits",
             "force_invisibility_rules": [
               "water_reg"
             ],

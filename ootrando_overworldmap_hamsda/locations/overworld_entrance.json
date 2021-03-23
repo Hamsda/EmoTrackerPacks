@@ -22,7 +22,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2090,
                 "y": 990
               }
@@ -47,7 +47,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2055,
                 "y": 960
               }
@@ -72,7 +72,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2255,
                 "y": 915
               }
@@ -98,7 +98,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2260,
                 "y": 980
               }
@@ -124,7 +124,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2175,
                 "y": 1000
               }
@@ -143,7 +143,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2135,
                 "y": 900
               }
@@ -187,7 +187,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -210,7 +210,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2120,
                 "y": 845
               }
@@ -236,7 +236,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2085,
                 "y": 785
               }
@@ -256,7 +256,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2190,
                 "y": 810
               }
@@ -275,7 +275,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2190,
                 "y": 775
               }
@@ -296,7 +296,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2015,
                 "y": 925
               }
@@ -321,7 +321,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2060,
                 "y": 825
               }
@@ -358,7 +358,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2110,
                 "y": 740
               }
@@ -383,7 +383,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2140,
                 "y": 710
               }
@@ -408,7 +408,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2140,
                 "y": 740
               }
@@ -428,7 +428,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2030,
                 "y": 880
               }
@@ -448,7 +448,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2150,
                 "y": 775
               }
@@ -478,7 +478,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2080,
                 "y": 740
               }
@@ -513,7 +513,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2190,
                 "y": 725
               }
@@ -550,7 +550,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2155,
                 "y": 635
               }
@@ -576,7 +576,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2230,
                 "y": 665
               }
@@ -602,7 +602,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2190,
                 //TODO: position mismatch
                 "y": 635
@@ -623,7 +623,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2185,
                 "y": 685
               }
@@ -661,7 +661,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1440,
                 "y": 465
               }
@@ -681,7 +681,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1430,
                 "y": 925
               }
@@ -701,7 +701,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1205,
                 "y": 995
               }
@@ -723,7 +723,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1140,
                 "y": 1000
               }
@@ -763,7 +763,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 970,
                 "y": 660
               }
@@ -784,7 +784,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1370,
                 "y": 440
               }
@@ -810,7 +810,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1550,
                 "y": 405
               }
@@ -833,7 +833,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1150,
                 "y": 480
               }
@@ -859,7 +859,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1050,
                 "y": 1265
               }
@@ -879,7 +879,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1120,
                 "y": 1405
               }
@@ -901,7 +901,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 960,
                 "y": 1160
               }
@@ -926,7 +926,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1000,
                 "y": 1180
               }
@@ -952,7 +952,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 930,
                 "y": 1200
               }
@@ -977,7 +977,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1150,
                 "y": 1405
               }
@@ -1002,7 +1002,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1010,
                 "y": 1415
               }
@@ -1034,7 +1034,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 960,
                 "y": 1200
               }
@@ -1060,7 +1060,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1270,
                 "y": 1215
               }
@@ -1086,7 +1086,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 870,
                 "y": 1310
               }
@@ -1118,7 +1118,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 805,
                 "y": 560
               }
@@ -1140,7 +1140,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 700,
                 "y": 520
               }
@@ -1165,7 +1165,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 640,
                 "y": 600
               }
@@ -1189,7 +1189,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 670,
                 "y": 600
               }
@@ -1211,7 +1211,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 655,
                 "y": 635
               }
@@ -1230,7 +1230,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 600,
                 "y": 580
               }
@@ -1256,7 +1256,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 635,
                 "y": 515
               }
@@ -1282,7 +1282,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 570,
                 "y": 580
               }
@@ -1308,7 +1308,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 605,
                 "y": 530
               }
@@ -1333,7 +1333,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 545,
                 "y": 360
               }
@@ -1360,7 +1360,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 620,
                 "y": 440
               }
@@ -1425,7 +1425,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "gerudo_fortress_open"
                 ],
@@ -1454,7 +1454,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 660,
                 "y": 305
               }
@@ -1479,7 +1479,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 545,
                 "y": 390
               }
@@ -1520,7 +1520,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 360,
                 "y": 285
               }
@@ -1543,7 +1543,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 380,
                 "y": 350
               }
@@ -1572,7 +1572,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 160,
                 "y": 305
               }
@@ -1594,7 +1594,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 130,
                 "y": 345
               }
@@ -1619,7 +1619,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 90,
                 "y": 345
               }
@@ -1645,7 +1645,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 155,
                 "y": 435
               }
@@ -1671,7 +1671,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 235,
                 "y": 320
               }
@@ -1691,7 +1691,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 275,
                 "y": 300
               }
@@ -1717,7 +1717,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 195,
                 //TODO: position mismatch
                 "y": 305
@@ -1758,7 +1758,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1465,
                 "y": 405
               }
@@ -1802,7 +1802,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -1825,7 +1825,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1425,
                 "y": 290
               }
@@ -1855,7 +1855,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1415,
                 "y": 325
               }
@@ -1899,7 +1899,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -1923,7 +1923,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1425,
                 "y": 365
               }
@@ -1967,7 +1967,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -1989,7 +1989,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1355,
                 "y": 355
               }
@@ -2022,7 +2022,7 @@
         ],
         "map_locations": [
           {
-            "map": "overworldchecks",
+            "map": "locations",
             "x": 1535,
             "y": 295
           }
@@ -2049,7 +2049,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1440,
                 "y": 245
               }
@@ -2074,7 +2074,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1410,
                 "y": 245
               }
@@ -2099,7 +2099,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1420,
                 "y": 175
               }
@@ -2119,7 +2119,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1490,
                 "y": 240
               }
@@ -2145,7 +2145,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1480,
                 "y": 205
               }
@@ -2176,7 +2176,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1480,
                 "y": 205
               }
@@ -2196,7 +2196,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1530,
                 "y": 205
               }
@@ -2224,7 +2224,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1780,
                 "y": 380
               }
@@ -2243,7 +2243,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1865,
                 "y": 430
               }
@@ -2262,7 +2262,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1895,
                 "y": 430
               }
@@ -2287,7 +2287,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1790,
                 "y": 450
               }
@@ -2312,7 +2312,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1735,
                 "y": 385
               }
@@ -2337,7 +2337,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1760,
                 "y": 450
               }
@@ -2362,7 +2362,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1830,
                 "y": 395
               }
@@ -2387,7 +2387,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1760,
                 "y": 340
               }
@@ -2412,7 +2412,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1795,
                 "y": 340
               }
@@ -2431,7 +2431,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1830,
                 "y": 360
               }
@@ -2487,7 +2487,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1760,
                 "y": 420
               }
@@ -2522,7 +2522,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1830,
                 "y": 430
               }
@@ -2556,7 +2556,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1920,
                 "y": 345
               }
@@ -2600,7 +2600,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -2624,7 +2624,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1830,
                 "y": 395
               }
@@ -2668,7 +2668,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -2691,7 +2691,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1780,
                 //TODO: position mismatch
                 "y": 380
@@ -2712,7 +2712,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1870,
                 "y": 325
               }
@@ -2741,7 +2741,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1970,
                 "y": 335
               }
@@ -2763,7 +2763,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2030,
                 "y": 340
               }
@@ -2789,7 +2789,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2065,
                 "y": 380
               }
@@ -2814,7 +2814,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2000,
                 "y": 335
               }
@@ -2835,7 +2835,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2030,
                 "y": 370
               }
@@ -2857,7 +2857,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2065,
                 //TODO: position mismatch
                 "y": 350
@@ -2891,7 +2891,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2100,
                 "y": 355
               }
@@ -2922,7 +2922,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2030,
                 "y": 340
               }
@@ -2947,7 +2947,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1725,
                 "y": 195
               }
@@ -2969,7 +2969,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1655,
                 "y": 195
               }
@@ -2994,7 +2994,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1715,
                 "y": 250
               }
@@ -3019,7 +3019,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1730,
                 "y": 285
               }
@@ -3045,7 +3045,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1690,
                 "y": 195
               }
@@ -3065,7 +3065,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1825,
                 "y": 110
               }
@@ -3090,7 +3090,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1805,
                 "y": 150
               }
@@ -3110,7 +3110,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1785,
                 "y": 110
               }
@@ -3135,7 +3135,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1765,
                 "y": 175
               }
@@ -3155,7 +3155,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1705,
                 "y": 160
               }
@@ -3208,7 +3208,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1605,
                 "y": 80
               }
@@ -3228,7 +3228,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1645,
                 "y": 120
               }
@@ -3248,7 +3248,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1645,
                 "y": 80
               }
@@ -3271,7 +3271,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1605,
                 "y": 120
               }
@@ -3294,7 +3294,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1685,
                 "y": 120
               }
@@ -3319,7 +3319,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1725,
                 "y": 120
               }
@@ -3339,7 +3339,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1685,
                 "y": 80
               }
@@ -3383,7 +3383,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -3413,7 +3413,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1725,
                 //TODO: position mismatch
                 "y": 100
@@ -3443,7 +3443,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1825,
                 "y": 70
               }
@@ -3468,7 +3468,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1745,
                 "y": 70
               }
@@ -3493,7 +3493,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1825,
                 "y": 30
               }
@@ -3516,7 +3516,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1745,
                 "y": 15
               }
@@ -3538,7 +3538,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1870,
                 "y": 70
               }
@@ -3563,7 +3563,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1870,
                 "y": 30
               }
@@ -3583,7 +3583,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1785,
                 "y": 30
               }
@@ -3603,7 +3603,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1785,
                 "y": 70
               }
@@ -3629,7 +3629,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1825,
                 "y": 30
               }
@@ -3660,7 +3660,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1935,
                 "y": 545
               }
@@ -3680,7 +3680,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2000,
                 "y": 505
               }
@@ -3707,7 +3707,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2095,
                 "y": 480
               }
@@ -3730,7 +3730,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2035,
                 "y": 475
               }
@@ -3753,7 +3753,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2345,
                 "y": 425
               }
@@ -3778,7 +3778,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2360,
                 "y": 460
               }
@@ -3804,7 +3804,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2060,
                 "y": 540
               }
@@ -3830,7 +3830,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2280,
                 "y": 465
               }
@@ -3850,7 +3850,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2090,
                 "y": 540
               }
@@ -3876,7 +3876,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1940,
                 //TODO: position mismatch
                 "y": 505
@@ -3902,7 +3902,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2550,
                 "y": 410
               }
@@ -3921,7 +3921,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2550,
                 "y": 450
               }
@@ -3940,7 +3940,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2625,
                 "y": 365
               }
@@ -3965,7 +3965,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2590,
                 "y": 410
               }
@@ -4009,7 +4009,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "force_invisibility_rules": [
                   "setting_shopsanity_no"
                 ],
@@ -4040,7 +4040,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2550,
                 "y": 290
               }
@@ -4063,7 +4063,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2520,
                 "y": 320
               }
@@ -4088,7 +4088,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2550,
                 "y": 325
               }
@@ -4114,7 +4114,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2520,
                 "y": 350
               }
@@ -4140,7 +4140,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2585,
                 "y": 290
               }
@@ -4160,7 +4160,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 2585,
                 "y": 325
               }
@@ -4188,7 +4188,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1295,
                 "y": 645
               }
@@ -4213,7 +4213,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1365,
                 "y": 615
               }
@@ -4238,7 +4238,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1325,
                 "y": 675
               }
@@ -4264,7 +4264,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1330,
                 "y": 610
               }
@@ -4290,7 +4290,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1195,
                 "y": 665
               }
@@ -4309,7 +4309,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1345,
                 "y": 580
               }
@@ -4334,7 +4334,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1300,
                 //TODO: position mismatch
                 "y": 595
@@ -4370,7 +4370,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1225,
                 "y": 690
               }
@@ -4396,7 +4396,7 @@
             ],
             "map_locations": [
               {
-                "map": "overworldchecks",
+                "map": "locations",
                 "x": 1375,
                 "y": 690
               }

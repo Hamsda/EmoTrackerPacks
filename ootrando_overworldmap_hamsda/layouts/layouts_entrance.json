@@ -52,29 +52,20 @@
                     "type": "tabbed",
                     "tabs": [
                       {
-                        "title": "Overworld",
+                        "title": "Locations",
                         "content": {
                           "type": "map",
                           "maps": [
-                            "overworldchecks"
+                            "locations"
                           ]
                         }
                       },
                       {
-                        "title": "Entrances",
+                        "title": "Exits",
                         "content": {
                           "type": "map",
                           "maps": [
-                            "entrances"
-                          ]
-                        }
-                      },
-                      {
-                        "title": "Connectors",
-                        "content": {
-                          "type": "map",
-                          "maps": [
-                            "connectors"
+                            "exits"
                           ]
                         }
                       }
@@ -92,29 +83,20 @@
                         "type": "tabbed",
                         "tabs": [
                           {
-                            "title": "Overworld",
+                            "title": "Locations",
                             "content": {
                               "type": "map",
                               "maps": [
-                                "overworldchecks"
+                                "locations"
                               ]
                             }
                           },
                           {
-                            "title": "Entrances",
+                            "title": "Exits",
                             "content": {
                               "type": "map",
                               "maps": [
-                                "entrances"
-                              ]
-                            }
-                          },
-                          {
-                            "title": "Connectors",
-                            "content": {
-                              "type": "map",
-                              "maps": [
-                                "connectors"
+                                "exits"
                               ]
                             }
                           }
@@ -124,29 +106,20 @@
                         "type": "tabbed",
                         "tabs": [
                           {
-                            "title": "Overworld",
+                            "title": "Locations",
                             "content": {
                               "type": "map",
                               "maps": [
-                                "overworldchecks"
+                                "locations"
                               ]
                             }
                           },
                           {
-                            "title": "Entrances",
+                            "title": "Exits",
                             "content": {
                               "type": "map",
                               "maps": [
-                                "entrances"
-                              ]
-                            }
-                          },
-                          {
-                            "title": "Connectors",
-                            "content": {
-                              "type": "map",
-                              "maps": [
-                                "connectors"
+                                "exits"
                               ]
                             }
                           }
@@ -234,29 +207,20 @@
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Overworld",
+              "title": "Locations",
               "content": {
                 "type": "map",
                 "maps": [
-                  "overworldchecks"
+                  "locations"
                 ]
               }
             },
             {
-              "title": "Entrances",
+              "title": "Exits",
               "content": {
                 "type": "map",
                 "maps": [
-                  "entrances"
-                ]
-              }
-            },
-            {
-              "title": "Connectors",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "connectors"
+                  "exits"
                 ]
               }
             }
