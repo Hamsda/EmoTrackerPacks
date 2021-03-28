@@ -1621,7 +1621,9 @@
     "parent": "Graveyard",
     "access_rules": [
       "shadow_reg,ocarina,nocturne,dinsfire,magic",
-      "shadow_reg,ocarina,nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic"
+      "shadow_reg,ocarina,nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic",
+      "shadow_reg,$spawn_access|Graveyard Warp Pad Region|adult,dinsfire,magic",
+      "shadow_reg,$spawn_access|Graveyard Warp Pad Region|adult,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic"
     ],
     "sections": [
       {
