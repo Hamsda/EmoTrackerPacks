@@ -46,29 +46,22 @@
               "dock": "top",
               "tabs": [
                 {
-                  "title": "One Map",
-                  "icon": "images/map.png",
+                  "title": "Locations",
+                  "icon": "images/chest_brown_closed.png",
                   "content": {
-                    "type": "tabbed",
-                    "tabs": [
-                      {
-                        "title": "Locations",
-                        "content": {
-                          "type": "map",
-                          "maps": [
-                            "locations"
-                          ]
-                        }
-                      },
-                      {
-                        "title": "Exits",
-                        "content": {
-                          "type": "map",
-                          "maps": [
-                            "exits"
-                          ]
-                        }
-                      }
+                    "type": "map",
+                    "maps": [
+                      "locations"
+                    ]
+                  }
+                },
+                {
+                  "title": "Exits",
+                  "icon": "images/door.png",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "exits"
                     ]
                   }
                 },
@@ -80,49 +73,11 @@
                     "orientation": "vertical",
                     "content": [
                       {
-                        "type": "tabbed",
-                        "tabs": [
-                          {
-                            "title": "Locations",
-                            "content": {
-                              "type": "map",
-                              "maps": [
-                                "locations"
-                              ]
-                            }
-                          },
-                          {
-                            "title": "Exits",
-                            "content": {
-                              "type": "map",
-                              "maps": [
-                                "exits"
-                              ]
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "type": "tabbed",
-                        "tabs": [
-                          {
-                            "title": "Locations",
-                            "content": {
-                              "type": "map",
-                              "maps": [
-                                "locations"
-                              ]
-                            }
-                          },
-                          {
-                            "title": "Exits",
-                            "content": {
-                              "type": "map",
-                              "maps": [
-                                "exits"
-                              ]
-                            }
-                          }
+                        "type": "map",
+                        "orientation": "vertical",
+                        "maps": [
+                          "locations",
+                          "exits"
                         ]
                       }
                     ]
@@ -208,6 +163,7 @@
           "tabs": [
             {
               "title": "Locations",
+              "icon": "images/chest_brown_closed.png",
               "content": {
                 "type": "map",
                 "maps": [
@@ -217,6 +173,7 @@
             },
             {
               "title": "Exits",
+              "icon": "images/door.png",
               "content": {
                 "type": "map",
                 "maps": [

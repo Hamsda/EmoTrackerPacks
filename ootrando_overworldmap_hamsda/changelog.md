@@ -8,6 +8,7 @@
 - changed ER to two maps only, `Locations` and `Exits`
 - added graveyard pad as adult spawn
 - added LACS condition setting
+- changed ER layout tabs
 
 ## 3.3.1.0
 
