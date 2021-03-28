@@ -4954,6 +4954,95 @@
                     ]
                   },
                   {
+                    "name": "Carpenter Rescue",
+                    "sections": [
+                      {
+                        "name": "North F1 Carpenter",
+                        "short_name": "North F1",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "North F2 Carpenter",
+                        "short_name": "North F2",
+                        "access_rules": [
+                          "$gerudo_valley_far_side,$gerudo_card",
+                          "$gerudo_valley_far_side,bow",
+                          "$gerudo_valley_far_side,hookshot",
+                          "$gerudo_valley_far_side,hoverboots",
+                          "$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+                          "$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "South F1 Carpenter",
+                        "short_name": "South F1",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "South F2 Carpenter",
+                        "short_name": "South F2",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Gerudo Membership Card",
+                        "access_rules": [
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,bow",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hookshot",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hoverboots",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,gf_small_keys:1,$gerudo_valley_far_side",
+                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
+                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "force_invisibility_rules": [
+                          "gerudo_fortress_open"
+                        ],
+                        "x": 505,
+                        "y": 390
+                      }
+                    ]
+                  },
+                  {
                     "name": "GF Archery Range",
                     "access_rules": [
                       "$night_gs,$gerudo_card,$gerudo_valley_far_side"
