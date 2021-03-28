@@ -125,6 +125,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
                 "x": 2175,
                 "y": 1000
               }
@@ -144,6 +147,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 2135,
                 "y": 900
               }
@@ -189,7 +195,8 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
                 "x": 2220,
                 "y": 915
@@ -211,6 +218,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2120,
                 "y": 845
               }
@@ -449,6 +459,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2150,
                 "y": 775
               }
@@ -479,6 +492,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2080,
                 "y": 740
               }
@@ -514,6 +530,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2190,
                 "y": 725
               }
@@ -603,6 +622,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2190,
                 //TODO: position mismatch
                 "y": 635
@@ -624,6 +646,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2185,
                 "y": 685
               }
@@ -682,6 +707,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1430,
                 "y": 925
               }
@@ -702,6 +730,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1205,
                 "y": 995
               }
@@ -724,6 +755,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1140,
                 "y": 1000
               }
@@ -764,6 +798,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 970,
                 "y": 660
               }
@@ -785,6 +822,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1370,
                 "y": 440
               }
@@ -811,6 +851,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1550,
                 "y": 405
               }
@@ -834,6 +877,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1150,
                 "y": 480
               }
@@ -1035,6 +1081,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 960,
                 "y": 1200
               }
@@ -1061,6 +1110,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1270,
                 "y": 1215
               }
@@ -1087,6 +1139,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 870,
                 "y": 1310
               }
@@ -1309,6 +1364,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 605,
                 "y": 530
               }
@@ -1692,6 +1750,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 275,
                 "y": 300
               }
@@ -1718,8 +1779,10 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 195,
-                //TODO: position mismatch
                 "y": 305
               }
             ]
@@ -1759,6 +1822,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1465,
                 "y": 405
               }
@@ -1804,13 +1870,15 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
                 "x": 1475,
                 "y": 365
               }
             ]
           },
+          //TODO: add mask shop
           {
             "name": "Market Shooting Gallery",
             "sections": [
@@ -1826,6 +1894,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1425,
                 "y": 290
               }
@@ -1856,6 +1927,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1415,
                 "y": 325
               }
@@ -1901,7 +1975,8 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
                 "x": 1475,
                 "y": 325
@@ -1924,6 +1999,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1425,
                 "y": 365
               }
@@ -1969,7 +2047,8 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
                 "x": 1390,
                 "y": 365
@@ -2023,6 +2102,9 @@
         "map_locations": [
           {
             "map": "locations",
+            "force_invisibility_rules": [
+              "setting_entrance_interiors_all"
+            ],
             "x": 1535,
             "y": 295
           }
@@ -2120,6 +2202,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1490,
                 "y": 240
               }
@@ -2146,7 +2231,10 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1480,
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 1465,
                 "y": 205
               }
             ]
@@ -2177,7 +2265,7 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1480,
+                "x": 1500,
                 "y": 205
               }
             ]
@@ -2197,6 +2285,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1530,
                 "y": 205
               }
@@ -2225,35 +2316,25 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1780,
+                "x": 1795,
                 "y": 380
               }
             ]
           },
           {
-            "name": "Kak Anju as Adult",
+            "name": "Kak Anju",
             "sections": [
               {
-                "name": "Talk to her",
+                "name": "Kak Anju as Adult",
+                "short_name": "Adult",
                 "access_rules": [
                   "$access_location|Kak Anju as Adult"
                 ],
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
+              },
               {
-                "map": "locations",
-                "x": 1865,
-                "y": 430
-              }
-            ]
-          },
-          {
-            "name": "Kak Anju as Child",
-            "sections": [
-              {
-                "name": "Chickens",
+                "name": "Kak Anju as Child",
+                "short_name": "Chickens",
                 "access_rules": [
                   "$access_location|Kak Anju as Child"
                 ],
@@ -2263,7 +2344,7 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1895,
+                "x": 1865,
                 "y": 430
               }
             ]
@@ -2288,13 +2369,13 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1790,
-                "y": 450
+                "x": 1795,
+                "y": 455
               }
             ]
           },
           {
-            "name": "Kak Tree",
+            "name": "Kak Child GS",
             "sections": [
               {
                 "name": "Kak GS Tree (N)",
@@ -2308,19 +2389,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1735,
-                "y": 385
-              }
-            ]
-          },
-          {
-            "name": "Kak Skulltula House",
-            "sections": [
+              },
               {
                 "name": "Kak GS Skulltula House (N)",
                 "short_name": "GS",
@@ -2333,19 +2402,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1760,
-                "y": 450
-              }
-            ]
-          },
-          {
-            "name": "Kak House Under Construction",
-            "sections": [
+              },
               {
                 "name": "Kak GS House Under Construction (N)",
                 "short_name": "GS",
@@ -2358,19 +2415,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1830,
-                "y": 395
-              }
-            ]
-          },
-          {
-            "name": "Kak Guards House",
-            "sections": [
+              },
               {
                 "name": "Kak GS Guards House (N)",
                 "short_name": "GS",
@@ -2383,19 +2428,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1760,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "name": "Kak Watchtower",
-            "sections": [
+              },
               {
                 "name": "Kak GS Watchtower (N)",
                 "short_name": "GS",
@@ -2413,8 +2446,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1795,
-                "y": 340
+                "x": 1725,
+                "y": 380
               }
             ]
           },
@@ -2488,6 +2521,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1760,
                 "y": 420
               }
@@ -2523,6 +2559,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1830,
                 "y": 430
               }
@@ -2557,6 +2596,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
                 "x": 1920,
                 "y": 345
               }
@@ -2602,7 +2644,8 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
                 "x": 1760,
                 "y": 340
@@ -2625,6 +2668,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1830,
                 "y": 395
               }
@@ -2670,7 +2716,8 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_all"
                 ],
                 "x": 1795,
                 "y": 340
@@ -2692,8 +2739,10 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1780,
-                //TODO: position mismatch
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 1760,
                 "y": 380
               }
             ]
@@ -2713,6 +2762,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1870,
                 "y": 325
               }
@@ -2742,8 +2794,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1970,
-                "y": 335
+                "x": 1965,
+                "y": 325
               }
             ]
           },
@@ -2764,8 +2816,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 2030,
-                "y": 340
+                "x": 2035,
+                "y": 395
               }
             ]
           },
@@ -2790,8 +2842,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 2065,
-                "y": 380
+                "x": 2070,
+                "y": 395
               }
             ]
           },
@@ -2816,7 +2868,7 @@
               {
                 "map": "locations",
                 "x": 2000,
-                "y": 335
+                "y": 325
               }
             ]
           },
@@ -2836,8 +2888,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 2030,
-                "y": 370
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 2035,
+                "y": 360
               }
             ]
           },
@@ -2858,9 +2913,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 2065,
-                //TODO: position mismatch
-                "y": 350
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 2070,
+                "y": 360
               }
             ]
           },
@@ -2892,8 +2949,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 2100,
-                "y": 355
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 2105,
+                "y": 360
               }
             ]
           },
@@ -2923,8 +2983,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 2030,
-                "y": 340
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 2035,
+                "y": 325
               }
             ]
           }
@@ -3111,6 +3174,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1785,
                 "y": 110
               }
@@ -3136,6 +3202,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1765,
                 "y": 175
               }
@@ -3156,6 +3225,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1705,
                 "y": 160
               }
@@ -3209,8 +3281,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1605,
-                "y": 80
+                "x": 1600,
+                "y": 75
               }
             ]
           },
@@ -3229,8 +3301,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1645,
-                "y": 120
+                "x": 1635,
+                "y": 110
               }
             ]
           },
@@ -3249,8 +3321,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1645,
-                "y": 80
+                "x": 1635,
+                "y": 75
               }
             ]
           },
@@ -3272,8 +3344,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1605,
-                "y": 120
+                "x": 1600,
+                "y": 145
               }
             ]
           },
@@ -3295,8 +3367,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1685,
-                "y": 120
+                "x": 1670,
+                "y": 110
               }
             ]
           },
@@ -3320,8 +3392,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1725,
-                "y": 120
+                "x": 1635,
+                "y": 145
               }
             ]
           },
@@ -3340,8 +3412,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1685,
-                "y": 80
+                "x": 1670,
+                "y": 75
               }
             ]
           },
@@ -3385,11 +3457,11 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
-                //TODO: position overlaps
-                "x": 1645,
-                "y": 120
+                "x": 1600,
+                "y": 110
               }
             ]
           },
@@ -3414,9 +3486,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1725,
-                //TODO: position mismatch
-                "y": 100
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 1705,
+                "y": 75
               }
             ]
           }
@@ -3444,7 +3518,7 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1825,
+                "x": 1850,
                 "y": 70
               }
             ]
@@ -3469,8 +3543,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1745,
-                "y": 70
+                "x": 1850,
+                "y": 35
               }
             ]
           },
@@ -3494,8 +3568,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1825,
-                "y": 30
+                "x": 1815,
+                "y": 35
               }
             ]
           },
@@ -3539,7 +3613,7 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1870,
+                "x": 1885,
                 "y": 70
               }
             ]
@@ -3564,8 +3638,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1870,
-                "y": 30
+                "x": 1885,
+                "y": 35
               }
             ]
           },
@@ -3584,8 +3658,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1785,
-                "y": 30
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "x": 1780,
+                "y": 70
               }
             ]
           },
@@ -3604,7 +3681,10 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1785,
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 1815,
                 "y": 70
               }
             ]
@@ -3630,8 +3710,11 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1825,
-                "y": 30
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "x": 1780,
+                "y": 35
               }
             ]
           }
@@ -3851,6 +3934,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 2090,
                 "y": 540
               }
@@ -3877,6 +3963,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1940,
                 //TODO: position mismatch
                 "y": 505
@@ -4011,7 +4100,8 @@
               {
                 "map": "locations",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_shopsanity_no",
+                  "setting_entrance_interiors_simple"
                 ],
                 "x": 2625,
                 "y": 500
@@ -4161,6 +4251,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 2585,
                 "y": 325
               }
@@ -4195,7 +4288,7 @@
             ]
           },
           {
-            "name": "LLR Tree",
+            "name": "LLR GS",
             "sections": [
               {
                 "name": "LLR GS Tree",
@@ -4209,19 +4302,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1365,
-                "y": 615
-              }
-            ]
-          },
-          {
-            "name": "LLR Rain Shed",
-            "sections": [
+              },
               {
                 "name": "LLR GS Rain Shed (N)",
                 "short_name": "GS",
@@ -4234,19 +4315,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1325,
-                "y": 675
-              }
-            ]
-          },
-          {
-            "name": "LLR House Window",
-            "sections": [
+              },
               {
                 "name": "LLR GS House Window (N)",
                 "short_name": "GS",
@@ -4260,19 +4329,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "locations",
-                "x": 1330,
-                "y": 610
-              }
-            ]
-          },
-          {
-            "name": "LLR Back Wall",
-            "sections": [
+              },
               {
                 "name": "LLR GS Back Wall (N)",
                 "short_name": "GS",
@@ -4291,8 +4348,8 @@
             "map_locations": [
               {
                 "map": "locations",
-                "x": 1195,
-                "y": 665
+                "x": 1325,
+                "y": 675
               }
             ]
           },
@@ -4310,8 +4367,11 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1345,
-                "y": 580
+                "y": 590
               }
             ]
           },
@@ -4335,9 +4395,11 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1300,
-                //TODO: position mismatch
-                "y": 595
+                "y": 590
               }
             ]
           },
@@ -4371,6 +4433,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
                 "x": 1225,
                 "y": 690
               }
@@ -4397,6 +4462,9 @@
             "map_locations": [
               {
                 "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
                 "x": 1375,
                 "y": 690
               }

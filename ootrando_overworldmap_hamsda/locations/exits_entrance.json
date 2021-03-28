@@ -1,8 +1,8 @@
 [
   {
     "name": "Exits",
-    "chest_unopened_img": "images/chest_brown_closed.png", //TODO: new image for entrances, maybe a door?
-    "chest_opened_img": "images/chest_brown_open.png",
+    "chest_unopened_img": "images/door.png",
+    "chest_opened_img": "images/door_grey.png",
     "children": [
       {
         "name": "Root",
@@ -439,7 +439,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2140,
+                "x": 2155,
                 "y": 845
               }
             ]
@@ -550,7 +550,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2140,
+                "x": 2155,
                 "y": 810
               }
             ]
@@ -577,7 +577,7 @@
               {
                 "map": "exits",
                 "x": 2150,
-                "y": 775
+                "y": 745
               }
             ]
           },
@@ -654,7 +654,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2190,
+                "x": 2225,
                 "y": 725
               }
             ]
@@ -790,7 +790,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2190,
+                "x": 2225,
                 "y": 690
               }
             ]
@@ -1006,7 +1006,7 @@
               {
                 "map": "exits",
                 "x": 1430,
-                "y": 460
+                "y": 490
               }
             ]
           },
@@ -1083,8 +1083,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1335,
-                "y": 545
+                "x": 1360,
+                "y": 555
               }
             ]
           },
@@ -1897,7 +1897,7 @@
               {
                 "map": "exits",
                 "x": 195,
-                "y": 300
+                "y": 305
               }
             ]
           }
@@ -1929,7 +1929,7 @@
               {
                 "map": "exits",
                 "x": 1435,
-                "y": 425
+                "y": 460
               }
             ]
           },
@@ -1955,7 +1955,7 @@
               {
                 "map": "exits",
                 "x": 1435,
-                "y": 390
+                "y": 430
               }
             ]
           },
@@ -2006,8 +2006,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1440,
-                "y": 355
+                "x": 1435,
+                "y": 400
               }
             ]
           },
@@ -2032,8 +2032,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1490,
-                "y": 310
+                "x": 1515,
+                "y": 325
               }
             ]
           },
@@ -2059,7 +2059,7 @@
               {
                 "map": "exits",
                 "x": 1440,
-                "y": 295
+                "y": 255
               }
             ]
           },
@@ -2292,8 +2292,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1525,
-                "y": 310
+                "x": 1545,
+                "y": 325
               }
             ]
           },
@@ -2351,7 +2351,7 @@
               {
                 "map": "exits",
                 "x": 1440,
-                "y": 260
+                "y": 225
               }
             ]
           },
@@ -2889,8 +2889,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2030,
-                "y": 370
+                "x": 2035,
+                "y": 360
               }
             ]
           },
@@ -2915,8 +2915,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2065,
-                //TODO: position mismatch
+                "x": 2070,
                 "y": 360
               }
             ]
@@ -2942,8 +2941,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2100,
-                "y": 355
+                "x": 2105,
+                "y": 360
               }
             ]
           },
@@ -2968,8 +2967,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2030,
-                "y": 340
+                "x": 2035,
+                "y": 325
               }
             ]
           },
@@ -2994,8 +2993,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 2020,
-                "y": 400
+                "x": 2035,
+                "y": 395
               }
             ]
           },
@@ -3184,7 +3183,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1815,
+                "x": 1850,
                 "y": 90
               }
             ]
@@ -3210,8 +3209,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1780,
-                "y": 100
+                "x": 1815,
+                "y": 110
               }
             ]
           },
@@ -3295,7 +3294,7 @@
               {
                 "map": "exits",
                 "x": 1675,
-                "y": 130
+                "y": 135
               }
             ]
           },
@@ -3320,8 +3319,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1645,
-                "y": 120
+                "x": 1600,
+                "y": 110
               }
             ]
           },
@@ -3347,7 +3346,7 @@
               {
                 "map": "exits",
                 "x": 1705,
-                "y": 90
+                "y": 75
               }
             ]
           },
@@ -3372,7 +3371,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1710,
+                "x": 1705,
                 "y": 115
               }
             ]
@@ -3430,8 +3429,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1815,
-                "y": 55
+                "x": 1850,
+                "y": 60
               }
             ]
           },
@@ -3456,7 +3455,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1785,
+                "x": 1815,
                 "y": 70
               }
             ]
@@ -3482,7 +3481,7 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1765,
+                "x": 1745,
                 "y": 45
               }
             ]
@@ -3508,8 +3507,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1785,
-                "y": 30
+                "x": 1780,
+                "y": 70
               }
             ]
           },
@@ -3534,8 +3533,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1825,
-                "y": 30
+                "x": 1780,
+                "y": 35
               }
             ]
           },
@@ -3561,7 +3560,7 @@
               {
                 "map": "exits",
                 "size": 50,
-                "x": 1910,
+                "x": 1930,
                 "y": 80
               }
             ]
@@ -4003,8 +4002,8 @@
             "map_locations": [
               {
                 "map": "exits",
-                "x": 1335,
-                "y": 585
+                "x": 1330,
+                "y": 555
               }
             ]
           },
@@ -4030,7 +4029,7 @@
               {
                 "map": "exits",
                 "x": 1345,
-                "y": 580
+                "y": 590
               }
             ]
           },

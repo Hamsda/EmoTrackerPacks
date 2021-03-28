@@ -1523,7 +1523,7 @@
                       {
                         "map": "child",
                         "x": 1345,
-                        "y": 580
+                        "y": 590
                       }
                     ]
                   },
@@ -1588,12 +1588,12 @@
                       {
                         "map": "child",
                         "x": 1300,
-                        "y": 595
+                        "y": 590
                       },
                       {
                         "map": "adult",
                         "x": 1300,
-                        "y": 595
+                        "y": 590
                       }
                     ]
                   },
@@ -1626,7 +1626,7 @@
                     ]
                   },
                   {
-                    "name": "LLR Tree",
+                    "name": "LLR GS",
                     "sections": [
                       {
                         "name": "LLR GS Tree",
@@ -1640,19 +1640,7 @@
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1365,
-                        "y": 615
-                      }
-                    ]
-                  },
-                  {
-                    "name": "LLR Rain Shed",
-                    "sections": [
+                      },
                       {
                         "name": "LLR GS Rain Shed (N)",
                         "short_name": "GS",
@@ -1665,19 +1653,7 @@
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1325,
-                        "y": 675
-                      }
-                    ]
-                  },
-                  {
-                    "name": "LLR House Window",
-                    "sections": [
+                      },
                       {
                         "name": "LLR GS House Window (N)",
                         "short_name": "GS",
@@ -1693,19 +1669,7 @@
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1330,
-                        "y": 610
-                      }
-                    ]
-                  },
-                  {
-                    "name": "LLR Back Wall",
-                    "sections": [
+                      },
                       {
                         "name": "LLR GS Back Wall (N)",
                         "short_name": "GS",
@@ -1727,8 +1691,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1195,
-                        "y": 665
+                        "x": 1325,
+                        "y": 675
                       }
                     ]
                   }
@@ -1761,12 +1725,12 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1780,
+                    "x": 1760,
                     "y": 380
                   },
                   {
                     "map": "adult",
-                    "x": 1780,
+                    "x": 1760,
                     "y": 380
                   }
                 ]
@@ -1794,7 +1758,7 @@
                 ]
               },
               {
-                "name": "Kak Impas House",
+                "name": "Kak Impas House Back",
                 "sections": [
                   {
                     "name": "Kak Impas House Freestanding PoH",
@@ -1938,8 +1902,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1735,
-                    "y": 385
+                    "x": 1795,
+                    "y": 380
                   }
                 ]
               },
@@ -2038,7 +2002,7 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1865,
+                    "x": 1860,
                     "y": 360
                   }
                 ]
@@ -2098,12 +2062,12 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1790,
+                    "x": 1760,
                     "y": 420
                   },
                   {
                     "map": "adult",
-                    "x": 1790,
+                    "x": 1760,
                     "y": 420
                   }
                 ]
@@ -2205,13 +2169,13 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1790,
-                    "y": 450
+                    "x": 1795,
+                    "y": 455
                   }
                 ]
               },
               {
-                "name": "Kak Tree",
+                "name": "Kak Child GS",
                 "sections": [
                   {
                     "name": "Kak GS Tree (N)",
@@ -2225,19 +2189,7 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1735,
-                    "y": 385
-                  }
-                ]
-              },
-              {
-                "name": "Kak Skulltula House",
-                "sections": [
+                  },
                   {
                     "name": "Kak GS Skulltula House (N)",
                     "short_name": "GS",
@@ -2250,19 +2202,7 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1790,
-                    "y": 450
-                  }
-                ]
-              },
-              {
-                "name": "Kak House Under Construction",
-                "sections": [
+                  },
                   {
                     "name": "Kak GS House Under Construction (N)",
                     "short_name": "GS",
@@ -2275,19 +2215,7 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1830,
-                    "y": 395
-                  }
-                ]
-              },
-              {
-                "name": "Kak Guards House",
-                "sections": [
+                  },
                   {
                     "name": "Kak GS Guards House (N)",
                     "short_name": "GS",
@@ -2300,30 +2228,15 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1760,
-                    "y": 340
-                  }
-                ]
-              },
-              {
-                "name": "Kak Watchtower",
-                "access_rules": [
-                  "$has_age|child,$night_gs"
-                ],
-                "sections": [
+                  },
                   {
                     "name": "Kak GS Watchtower (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "sling",
-                      "$has_bombchus",
-                      "[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
-                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko"
+                      "$has_age|child,$night_gs,sling",
+                      "$has_age|child,$night_gs,$has_bombchus",
+                      "$has_age|child,$night_gs,[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
+                      "$has_age|child,$night_gs,[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2336,8 +2249,8 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1795,
-                    "y": 340
+                    "x": 1725,
+                    "y": 380
                   }
                 ]
               },
@@ -2361,8 +2274,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2030,
-                        "y": 340
+                        "x": 2035,
+                        "y": 395
                       }
                     ]
                   },
@@ -2389,8 +2302,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 2030,
-                        "y": 340
+                        "x": 2035,
+                        "y": 325
                       }
                     ]
                   },
@@ -2407,13 +2320,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2030,
-                        "y": 370
+                        "x": 2035,
+                        "y": 360
                       },
                       {
                         "map": "adult",
-                        "x": 2030,
-                        "y": 370
+                        "x": 2035,
+                        "y": 360
                       }
                     ]
                   },
@@ -2435,13 +2348,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2065,
-                        "y": 350
+                        "x": 2070,
+                        "y": 360
                       },
                       {
                         "map": "adult",
-                        "x": 2065,
-                        "y": 350
+                        "x": 2070,
+                        "y": 360
                       }
                     ]
                   },
@@ -2467,13 +2380,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1970,
-                        "y": 335
+                        "x": 1965,
+                        "y": 325
                       },
                       {
                         "map": "adult",
-                        "x": 1970,
-                        "y": 335
+                        "x": 1965,
+                        "y": 325
                       }
                     ]
                   },
@@ -2517,13 +2430,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2100,
-                        "y": 355
+                        "x": 2105,
+                        "y": 360
                       },
                       {
                         "map": "adult",
-                        "x": 2100,
-                        "y": 355
+                        "x": 2105,
+                        "y": 360
                       }
                     ]
                   },
@@ -2576,8 +2489,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2065,
-                        "y": 380
+                        "x": 2070,
+                        "y": 395
                       }
                     ]
                   },
@@ -2612,7 +2525,7 @@
                       {
                         "map": "child",
                         "x": 2000,
-                        "y": 335
+                        "y": 325
                       }
                     ]
                   }
@@ -2666,13 +2579,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1605,
-                        "y": 100
+                        "x": 1600,
+                        "y": 75
                       },
                       {
                         "map": "adult",
-                        "x": 1605,
-                        "y": 100
+                        "x": 1600,
+                        "y": 75
                       }
                     ]
                   },
@@ -2691,8 +2604,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1645,
-                        "y": 80
+                        "x": 1635,
+                        "y": 110
                       }
                     ]
                   },
@@ -2712,8 +2625,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1645,
-                        "y": 80
+                        "x": 1635,
+                        "y": 75
                       }
                     ]
                   },
@@ -2736,8 +2649,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1685,
-                        "y": 120
+                        "x": 1600,
+                        "y": 145
                       }
                     ]
                   },
@@ -2775,8 +2688,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1685,
-                        "y": 120
+                        "x": 1670,
+                        "y": 110
                       }
                     ]
                   },
@@ -2798,8 +2711,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1685,
-                        "y": 80
+                        "x": 1670,
+                        "y": 75
                       }
                     ]
                   },
@@ -2833,8 +2746,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1725,
-                        "y": 100
+                        "x": 1705,
+                        "y": 75
                       }
                     ]
                   },
@@ -2858,8 +2771,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1685,
-                        "y": 80
+                        "x": 1635,
+                        "y": 145
                       }
                     ]
                   },
@@ -2901,16 +2814,16 @@
                         "force_invisibility_rules": [
                           "setting_shopsanity_no"
                         ],
-                        "x": 1645,
-                        "y": 120
+                        "x": 1600,
+                        "y": 110
                       },
                       {
                         "map": "adult",
                         "force_invisibility_rules": [
                           "setting_shopsanity_no"
                         ],
-                        "x": 1645,
-                        "y": 120
+                        "x": 1600,
+                        "y": 110
                       }
                     ]
                   }
@@ -3256,12 +3169,12 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1785,
+                        "x": 1815,
                         "y": 70
                       },
                       {
                         "map": "adult",
-                        "x": 1785,
+                        "x": 1815,
                         "y": 70
                       }
                     ]
@@ -3287,12 +3200,12 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1825,
+                        "x": 1850,
                         "y": 70
                       },
                       {
                         "map": "adult",
-                        "x": 1825,
+                        "x": 1850,
                         "y": 70
                       }
                     ]
@@ -3346,13 +3259,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1785,
-                        "y": 30
+                        "x": 1780,
+                        "y": 70
                       },
                       {
                         "map": "adult",
-                        "x": 1785,
-                        "y": 30
+                        "x": 1780,
+                        "y": 70
                       }
                     ]
                   },
@@ -3377,8 +3290,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1825,
-                        "y": 30
+                        "x": 1780,
+                        "y": 35
                       }
                     ]
                   },
@@ -3400,7 +3313,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1870,
+                        "x": 1885,
                         "y": 70
                       }
                     ]
@@ -3434,8 +3347,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1825,
-                        "y": 30
+                        "x": 1815,
+                        "y": 35
                       }
                     ]
                   },
@@ -3463,8 +3376,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1745,
-                        "y": 70
+                        "x": 1850,
+                        "y": 35
                       }
                     ]
                   },
@@ -3501,8 +3414,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1870,
-                        "y": 30
+                        "x": 1885,
+                        "y": 35
                       }
                     ]
                   }
@@ -4008,7 +3921,7 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1480,
+                        "x": 1465,
                         "y": 205
                       }
                     ]
@@ -4038,7 +3951,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1480,
+                        "x": 1500,
                         "y": 205
                       }
                     ]

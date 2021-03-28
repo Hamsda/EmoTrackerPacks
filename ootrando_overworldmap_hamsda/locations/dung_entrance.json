@@ -1,7 +1,7 @@
 [
   {
     "name": "Dungeons",
-    "chest_unopened_img": "images/chest_brown_closed.png", //TODO: new image
+    "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "children": [
       {
