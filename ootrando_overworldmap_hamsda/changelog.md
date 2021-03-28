@@ -7,6 +7,7 @@
 - changed non shuffled ER locations will now be displayed on the non ER map
 - changed ER to two maps only, `Locations` and `Exits`
 - added graveyard pad as adult spawn
+- added LACS condition setting
 
 ## 3.3.1.0
 

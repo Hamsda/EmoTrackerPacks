@@ -380,6 +380,49 @@
     ]
   },
   {
+    "name": "LACS Condition",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_lacs_vanilla.png",
+        "codes": "setting_lacs,setting_lacs_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_lacs_stones.png",
+        "codes": "setting_lacs,setting_lacs_stones",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_lacs_medallions.png",
+        "codes": "setting_lacs,setting_lacs_medallions",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_lacs_dungeons.png",
+        "codes": "setting_lacs,setting_lacs_dungeons",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_lacs_gs.png",
+        "codes": "setting_lacs,setting_lacs_gs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "LACS Amount",
+    "type": "consumable",
+    "img": "images/setting_lacs_amount.png",
+    "codes": "setting_lacs_amount",
+    "disabled_img_mods": "@enabled",
+    "max_quantity": 6,
+    "initial_quantity": 6
+  },
+  {
     "name": "Skip Child Zelda",
     "type": "progressive",
     "allow_disabled": false,

@@ -3709,7 +3709,7 @@
                         "name": "ToT Light Arrows Cutscene",
                         "short_name": "LACS",
                         "access_rules": [
-                          "$has_age|adult,lacs_meds:2"
+                          "$has_age|adult,$can_trigger_lacs"
                         ],
                         "item_count": 1
                       }

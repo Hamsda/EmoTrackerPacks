@@ -2418,10 +2418,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lacs_meds", 2) then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.None
+          return can_trigger_lacs()
         end
       }
     },
