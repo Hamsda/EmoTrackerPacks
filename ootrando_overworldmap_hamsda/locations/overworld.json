@@ -397,7 +397,8 @@
                 "name": "Deku Theater",
                 "sections": [
                   {
-                    "name": "Skull Mask",
+                    "name": "Deku Theater Skull Mask",
+                    "short_name": "Skull Mask",
                     "access_rules": [
                       "$has_age|child,skullmask",
                       "{$hintable}"
@@ -406,7 +407,8 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Mask of Truth",
+                    "name": "Deku Theater Mask of Truth",
+                    "short_name": "Mask of Truth",
                     "access_rules": [
                       "$has_age|child,maskoftruth",
                       "{$hintable}"
@@ -1521,7 +1523,7 @@
                       {
                         "map": "child",
                         "x": 1345,
-                        "y": 580
+                        "y": 590
                       }
                     ]
                   },
@@ -1586,12 +1588,12 @@
                       {
                         "map": "child",
                         "x": 1300,
-                        "y": 595
+                        "y": 590
                       },
                       {
                         "map": "adult",
                         "x": 1300,
-                        "y": 595
+                        "y": 590
                       }
                     ]
                   },
@@ -1624,7 +1626,7 @@
                     ]
                   },
                   {
-                    "name": "LLR Tree",
+                    "name": "LLR GS",
                     "sections": [
                       {
                         "name": "LLR GS Tree",
@@ -1638,19 +1640,7 @@
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1365,
-                        "y": 615
-                      }
-                    ]
-                  },
-                  {
-                    "name": "LLR Rain Shed",
-                    "sections": [
+                      },
                       {
                         "name": "LLR GS Rain Shed (N)",
                         "short_name": "GS",
@@ -1663,19 +1653,7 @@
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1325,
-                        "y": 675
-                      }
-                    ]
-                  },
-                  {
-                    "name": "LLR House Window",
-                    "sections": [
+                      },
                       {
                         "name": "LLR GS House Window (N)",
                         "short_name": "GS",
@@ -1691,19 +1669,7 @@
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "child",
-                        "x": 1330,
-                        "y": 610
-                      }
-                    ]
-                  },
-                  {
-                    "name": "LLR Back Wall",
-                    "sections": [
+                      },
                       {
                         "name": "LLR GS Back Wall (N)",
                         "short_name": "GS",
@@ -1725,8 +1691,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1195,
-                        "y": 665
+                        "x": 1325,
+                        "y": 675
                       }
                     ]
                   }
@@ -1759,12 +1725,12 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1780,
+                    "x": 1760,
                     "y": 380
                   },
                   {
                     "map": "adult",
-                    "x": 1780,
+                    "x": 1760,
                     "y": 380
                   }
                 ]
@@ -1792,7 +1758,7 @@
                 ]
               },
               {
-                "name": "Kak Impas House",
+                "name": "Kak Impas House Back",
                 "sections": [
                   {
                     "name": "Kak Impas House Freestanding PoH",
@@ -1936,8 +1902,8 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1735,
-                    "y": 385
+                    "x": 1795,
+                    "y": 380
                   }
                 ]
               },
@@ -2036,7 +2002,7 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1865,
+                    "x": 1860,
                     "y": 360
                   }
                 ]
@@ -2096,12 +2062,12 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1790,
+                    "x": 1760,
                     "y": 420
                   },
                   {
                     "map": "adult",
-                    "x": 1790,
+                    "x": 1760,
                     "y": 420
                   }
                 ]
@@ -2203,13 +2169,13 @@
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1790,
-                    "y": 450
+                    "x": 1795,
+                    "y": 455
                   }
                 ]
               },
               {
-                "name": "Kak Tree",
+                "name": "Kak Child GS",
                 "sections": [
                   {
                     "name": "Kak GS Tree (N)",
@@ -2223,19 +2189,7 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1735,
-                    "y": 385
-                  }
-                ]
-              },
-              {
-                "name": "Kak Skulltula House",
-                "sections": [
+                  },
                   {
                     "name": "Kak GS Skulltula House (N)",
                     "short_name": "GS",
@@ -2248,19 +2202,7 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1790,
-                    "y": 450
-                  }
-                ]
-              },
-              {
-                "name": "Kak House Under Construction",
-                "sections": [
+                  },
                   {
                     "name": "Kak GS House Under Construction (N)",
                     "short_name": "GS",
@@ -2273,19 +2215,7 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1830,
-                    "y": 395
-                  }
-                ]
-              },
-              {
-                "name": "Kak Guards House",
-                "sections": [
+                  },
                   {
                     "name": "Kak GS Guards House (N)",
                     "short_name": "GS",
@@ -2298,30 +2228,15 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "child",
-                    "x": 1760,
-                    "y": 340
-                  }
-                ]
-              },
-              {
-                "name": "Kak Watchtower",
-                "access_rules": [
-                  "$has_age|child,$night_gs"
-                ],
-                "sections": [
+                  },
                   {
                     "name": "Kak GS Watchtower (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "sling",
-                      "$has_bombchus",
-                      "[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
-                      "[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko"
+                      "$has_age|child,$night_gs,sling",
+                      "$has_age|child,$night_gs,$has_bombchus",
+                      "$has_age|child,$night_gs,[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
+                      "$has_age|child,$night_gs,[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2334,8 +2249,8 @@
                 "map_locations": [
                   {
                     "map": "child",
-                    "x": 1795,
-                    "y": 340
+                    "x": 1725,
+                    "y": 380
                   }
                 ]
               },
@@ -2359,8 +2274,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2030,
-                        "y": 340
+                        "x": 2035,
+                        "y": 395
                       }
                     ]
                   },
@@ -2387,8 +2302,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 2030,
-                        "y": 340
+                        "x": 2035,
+                        "y": 325
                       }
                     ]
                   },
@@ -2405,13 +2320,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2030,
-                        "y": 370
+                        "x": 2035,
+                        "y": 360
                       },
                       {
                         "map": "adult",
-                        "x": 2030,
-                        "y": 370
+                        "x": 2035,
+                        "y": 360
                       }
                     ]
                   },
@@ -2433,13 +2348,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2065,
-                        "y": 350
+                        "x": 2070,
+                        "y": 360
                       },
                       {
                         "map": "adult",
-                        "x": 2065,
-                        "y": 350
+                        "x": 2070,
+                        "y": 360
                       }
                     ]
                   },
@@ -2465,13 +2380,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1970,
-                        "y": 335
+                        "x": 1965,
+                        "y": 325
                       },
                       {
                         "map": "adult",
-                        "x": 1970,
-                        "y": 335
+                        "x": 1965,
+                        "y": 325
                       }
                     ]
                   },
@@ -2515,13 +2430,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2100,
-                        "y": 355
+                        "x": 2105,
+                        "y": 360
                       },
                       {
                         "map": "adult",
-                        "x": 2100,
-                        "y": 355
+                        "x": 2105,
+                        "y": 360
                       }
                     ]
                   },
@@ -2574,8 +2489,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 2065,
-                        "y": 380
+                        "x": 2070,
+                        "y": 395
                       }
                     ]
                   },
@@ -2610,7 +2525,7 @@
                       {
                         "map": "child",
                         "x": 2000,
-                        "y": 335
+                        "y": 325
                       }
                     ]
                   }
@@ -2664,13 +2579,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1605,
-                        "y": 100
+                        "x": 1600,
+                        "y": 75
                       },
                       {
                         "map": "adult",
-                        "x": 1605,
-                        "y": 100
+                        "x": 1600,
+                        "y": 75
                       }
                     ]
                   },
@@ -2689,8 +2604,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1645,
-                        "y": 80
+                        "x": 1635,
+                        "y": 110
                       }
                     ]
                   },
@@ -2710,8 +2625,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1645,
-                        "y": 80
+                        "x": 1635,
+                        "y": 75
                       }
                     ]
                   },
@@ -2734,8 +2649,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1685,
-                        "y": 120
+                        "x": 1600,
+                        "y": 145
                       }
                     ]
                   },
@@ -2773,8 +2688,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1685,
-                        "y": 120
+                        "x": 1670,
+                        "y": 110
                       }
                     ]
                   },
@@ -2796,8 +2711,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1685,
-                        "y": 80
+                        "x": 1670,
+                        "y": 75
                       }
                     ]
                   },
@@ -2831,8 +2746,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1725,
-                        "y": 100
+                        "x": 1705,
+                        "y": 75
                       }
                     ]
                   },
@@ -2856,8 +2771,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1685,
-                        "y": 80
+                        "x": 1635,
+                        "y": 145
                       }
                     ]
                   },
@@ -2899,16 +2814,16 @@
                         "force_invisibility_rules": [
                           "setting_shopsanity_no"
                         ],
-                        "x": 1645,
-                        "y": 120
+                        "x": 1600,
+                        "y": 110
                       },
                       {
                         "map": "adult",
                         "force_invisibility_rules": [
                           "setting_shopsanity_no"
                         ],
-                        "x": 1645,
-                        "y": 120
+                        "x": 1600,
+                        "y": 110
                       }
                     ]
                   }
@@ -3254,12 +3169,12 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1785,
+                        "x": 1815,
                         "y": 70
                       },
                       {
                         "map": "adult",
-                        "x": 1785,
+                        "x": 1815,
                         "y": 70
                       }
                     ]
@@ -3285,12 +3200,12 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1825,
+                        "x": 1850,
                         "y": 70
                       },
                       {
                         "map": "adult",
-                        "x": 1825,
+                        "x": 1850,
                         "y": 70
                       }
                     ]
@@ -3344,13 +3259,13 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1785,
-                        "y": 30
+                        "x": 1780,
+                        "y": 70
                       },
                       {
                         "map": "adult",
-                        "x": 1785,
-                        "y": 30
+                        "x": 1780,
+                        "y": 70
                       }
                     ]
                   },
@@ -3375,8 +3290,8 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1825,
-                        "y": 30
+                        "x": 1780,
+                        "y": 35
                       }
                     ]
                   },
@@ -3398,7 +3313,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1870,
+                        "x": 1885,
                         "y": 70
                       }
                     ]
@@ -3432,8 +3347,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1825,
-                        "y": 30
+                        "x": 1815,
+                        "y": 35
                       }
                     ]
                   },
@@ -3461,8 +3376,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1745,
-                        "y": 70
+                        "x": 1850,
+                        "y": 35
                       }
                     ]
                   },
@@ -3499,8 +3414,8 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1870,
-                        "y": 30
+                        "x": 1885,
+                        "y": 35
                       }
                     ]
                   }
@@ -3794,7 +3709,7 @@
                         "name": "ToT Light Arrows Cutscene",
                         "short_name": "LACS",
                         "access_rules": [
-                          "$has_age|adult,lacs_meds:2"
+                          "$has_age|adult,$can_trigger_lacs"
                         ],
                         "item_count": 1
                       }
@@ -4006,7 +3921,7 @@
                     "map_locations": [
                       {
                         "map": "child",
-                        "x": 1480,
+                        "x": 1465,
                         "y": 205
                       }
                     ]
@@ -4036,7 +3951,7 @@
                     "map_locations": [
                       {
                         "map": "adult",
-                        "x": 1480,
+                        "x": 1500,
                         "y": 205
                       }
                     ]
@@ -5035,6 +4950,95 @@
                         "map": "adult",
                         "x": 620,
                         "y": 440
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Carpenter Rescue",
+                    "sections": [
+                      {
+                        "name": "North F1 Carpenter",
+                        "short_name": "North F1",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "North F2 Carpenter",
+                        "short_name": "North F2",
+                        "access_rules": [
+                          "$gerudo_valley_far_side,$gerudo_card",
+                          "$gerudo_valley_far_side,bow",
+                          "$gerudo_valley_far_side,hookshot",
+                          "$gerudo_valley_far_side,hoverboots",
+                          "$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+                          "$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "South F1 Carpenter",
+                        "short_name": "South F1",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "South F2 Carpenter",
+                        "short_name": "South F2",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Gerudo Membership Card",
+                        "access_rules": [
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,bow",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hookshot",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hoverboots",
+                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,gf_small_keys:1,$gerudo_valley_far_side",
+                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
+                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "adult",
+                        "force_invisibility_rules": [
+                          "gerudo_fortress_open"
+                        ],
+                        "x": 505,
+                        "y": 390
                       }
                     ]
                   },

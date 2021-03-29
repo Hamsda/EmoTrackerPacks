@@ -1,18 +1,12 @@
 ﻿[
   {
-    "name": "overworldchecks",
+    "name": "locations",
     "location_size": 35,
     "location_border_thickness": 5,
     "img": "images/map_entrance.png"
   },
   {
-    "name": "entrances",
-    "location_size": 35,
-    "location_border_thickness": 5,
-    "img": "images/map_entrance.png"
-  },
-  {
-    "name": "connectors",
+    "name": "exits",
     "location_size": 35,
     "location_border_thickness": 5,
     "img": "images/map_entrance.png"

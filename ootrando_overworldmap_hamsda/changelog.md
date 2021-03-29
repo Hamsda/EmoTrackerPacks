@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.4.0.0
+
+- updated minimal layout (can now use this one as broadcast layout for the regular map tracker)
+- fixed missing `ZD King Zora Thawed` in ER
+- changed non shuffled ER locations will now be displayed on the non ER map
+- changed ER to two maps only, `Locations` and `Exits`
+- added graveyard pad as adult spawn
+- added LACS condition setting
+- changed ER layout tabs
+
 ## 3.3.1.0
 
 - fixed Spirit fire locked chests with sticks

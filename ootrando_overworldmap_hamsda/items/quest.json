@@ -525,5 +525,113 @@
         "img": "images/label_shadow.png"
       }
     ]
+  },
+  {
+    "name": "Kokiri's Emerald Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "emeraldlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Goron's Ruby Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "rubylabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Zora's Sapphire Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "sapphirelabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
   }
 ]

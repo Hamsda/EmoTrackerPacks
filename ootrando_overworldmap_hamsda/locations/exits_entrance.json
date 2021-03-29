@@ -1,0 +1,4118 @@
+[
+  {
+    "name": "Exits",
+    "chest_unopened_img": "images/door.png",
+    "chest_opened_img": "images/door_grey.png",
+    "children": [
+      {
+        "name": "Root",
+        "color": "#ffffff",
+        "children": [
+          {
+            "name": "Child Spawn -> KF Links House",
+            "short_name": "Child Spawn",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Child Spawn|KF Links House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_spawn_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 58,
+                "y": 1140
+              },
+              {
+                "map": "exits",
+                "x": 58,
+                "y": 1140
+              }
+            ]
+          },
+          {
+            "name": "Adult Spawn -> Temple of Time",
+            "short_name": "Adult Spawn",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Adult Spawn|Temple of Time"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_spawn_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 158,
+                "y": 1140
+              },
+              {
+                "map": "exits",
+                "x": 158,
+                "y": 1140
+              }
+            ]
+          },
+          {
+            "name": "Minuet of Forest Warp -> Sacred Forest Meadow",
+            "short_name": "Minuet",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Minuet of Forest Warp|Sacred Forest Meadow"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_warpsong_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 58,
+                "y": 1250
+              },
+              {
+                "map": "exits",
+                "x": 58,
+                "y": 1250
+              }
+            ]
+          },
+          {
+            "name": "Bolero of Fire Warp -> DMC Central Local",
+            "short_name": "Bolero",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Bolero of Fire Warp|DMC Central Local"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_warpsong_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 158,
+                "y": 1250
+              },
+              {
+                "map": "exits",
+                "x": 158,
+                "y": 1250
+              }
+            ]
+          },
+          {
+            "name": "Serenade of Water Warp -> Lake Hylia",
+            "short_name": "Serenade",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Serenade of Water Warp|Lake Hylia"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_warpsong_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 258,
+                "y": 1250
+              },
+              {
+                "map": "exits",
+                "x": 258,
+                "y": 1250
+              }
+            ]
+          },
+          {
+            "name": "Requiem of Spirit Warp -> Desert Colossus",
+            "short_name": "Requiem",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Requiem of Spirit Warp|Desert Colossus"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_warpsong_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 358,
+                "y": 1250
+              },
+              {
+                "map": "exits",
+                "x": 358,
+                "y": 1250
+              }
+            ]
+          },
+          {
+            "name": "Nocturne of Shadow Warp -> Graveyard Warp Pad Region",
+            "short_name": "Nocturne",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Nocturne of Shadow Warp|Graveyard Warp Pad Region"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_warpsong_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 458,
+                "y": 1250
+              },
+              {
+                "map": "exits",
+                "x": 458,
+                "y": 1250
+              }
+            ]
+          },
+          {
+            "name": "Prelude of Light Warp -> Temple of Time",
+            "short_name": "Prelude",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Prelude of Light Warp|Temple of Time"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_warpsong_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "x": 558,
+                "y": 1250
+              },
+              {
+                "map": "exits",
+                "x": 558,
+                "y": 1250
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kokiri Forest",
+        "color": "#18a50e",
+        "children": [
+          {
+            "name": "Kokiri Forest -> KF Links House",
+            "short_name": "KF Links House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF Links House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2170,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> KF Midos House",
+            "short_name": "KF Midos House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF Midos House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2135,
+                "y": 900
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> KF Sarias House",
+            "short_name": "KF Sarias House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF Sarias House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2220,
+                "y": 990
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> KF House of Twins",
+            "short_name": "KF House of Twins",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF House of Twins"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2265,
+                "y": 975
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> KF Know It All House",
+            "short_name": "KF Know It All House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF Know It All House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2070,
+                "y": 960
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> KF Kokiri Shop",
+            "short_name": "KF Kokiri Shop",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF Kokiri Shop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2220,
+                "y": 915
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> Lost Woods",
+            "short_name": "KF -> LW",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|Lost Woods"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2155,
+                "y": 845
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> LW Bridge From Forest",
+            "short_name": "KF -> Bridge",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|LW Bridge From Forest"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2050,
+                "y": 900
+              }
+            ]
+          },
+          {
+            "name": "Kokiri Forest -> KF Storms Grotto",
+            "short_name": "KF Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kokiri Forest|KF Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2120,
+                "y": 845
+              }
+            ]
+          },
+          {
+            "name": "KF Outside Deku Tree -> Deku Tree Split",
+            "short_name": "Deku Tree",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|KF Outside Deku Tree|Deku Tree Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 2420,
+                "y": 880
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lost Woods",
+        "color": "#18a50e",
+        "children": [
+          {
+            "name": "LW Forest Exit -> Kokiri Forest",
+            "short_name": "LW -> KF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LW Forest Exit|Kokiri Forest"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2155,
+                "y": 810
+              }
+            ]
+          },
+          {
+            "name": "Lost Woods -> GC Woods Warp",
+            "short_name": "LW -> GC",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lost Woods|GC Woods Warp"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2150,
+                "y": 745
+              }
+            ]
+          },
+          {
+            "name": "Lost Woods -> Zora River",
+            "short_name": "LW -> ZR",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lost Woods|Zora River"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2185,
+                "y": 775
+              }
+            ]
+          },
+          {
+            "name": "Lost Woods -> LW Near Shortcuts Grotto",
+            "short_name": "LW Near Shortcuts Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lost Woods|LW Near Shortcuts Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2150,
+                "y": 775
+              }
+            ]
+          },
+          {
+            "name": "LW Beyond Mido -> SFM Entryway",
+            "short_name": "LW -> SFM",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LW Beyond Mido|SFM Entryway"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2225,
+                "y": 725
+              }
+            ]
+          },
+          {
+            "name": "LW Beyond Mido -> Deku Theater",
+            "short_name": "Deku Theater",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LW Beyond Mido|Deku Theater"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2080,
+                "y": 740
+              }
+            ]
+          },
+          {
+            "name": "LW Beyond Mido -> LW Scrubs Grotto",
+            "short_name": "LW Scrubs Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LW Beyond Mido|LW Scrubs Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2190,
+                "y": 725
+              }
+            ]
+          },
+          {
+            "name": "LW Bridge -> Kokiri Forest",
+            "short_name": "Bridge -> KF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LW Bridge|Kokiri Forest"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2000,
+                "y": 885
+              }
+            ]
+          },
+          {
+            "name": "LW Bridge -> Hyrule Field",
+            "short_name": "Bridge -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LW Bridge|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1950,
+                "y": 885
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sacred Forest Meadow",
+        "color": "#18a50e",
+        "children": [
+          {
+            "name": "SFM Entryway -> LW Beyond Mido",
+            "short_name": "SFM -> LW",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|SFM Entryway|LW Beyond Mido"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2225,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "SFM Entryway -> SFM Wolfos Grotto",
+            "short_name": "SFM Wolfos Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|SFM Entryway|SFM Wolfos Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2185,
+                "y": 685
+              }
+            ]
+          },
+          {
+            "name": "Sacred Forest Meadow -> SFM Fairy Grotto",
+            "short_name": "SFM Fairy Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Sacred Forest Meadow|SFM Fairy Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2165,
+                "y": 650
+              }
+            ]
+          },
+          {
+            "name": "Sacred Forest Meadow -> SFM Storms Grotto",
+            "short_name": "SFM Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Sacred Forest Meadow|SFM Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2185,
+                "y": 615
+              }
+            ]
+          },
+          {
+            "name": "SFM Forest Temple Entrance Ledge -> Forest Temple Split",
+            "short_name": "Forest Temple",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|SFM Forest Temple Entrance Ledge|Forest Temple Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 2145,
+                "y": 595
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Field",
+        "color": "#09a09d",
+        "children": [
+          {
+            "name": "Hyrule Field -> LW Bridge",
+            "short_name": "HF -> Bridge",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|LW Bridge"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1860,
+                "y": 725
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> Lake Hylia",
+            "short_name": "HF -> LH",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|Lake Hylia"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1090,
+                "y": 1045
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> Gerudo Valley",
+            "short_name": "HF -> GV",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|Gerudo Valley"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 895,
+                "y": 670
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> Market Entrance",
+            "short_name": "HF -> Mkt",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|Market Entrance"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1430,
+                "y": 490
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> Kakariko Village",
+            "short_name": "HF -> Kak",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|Kakariko Village"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1645,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> ZR Front",
+            "short_name": "HF -> ZR",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|ZR Front"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1840,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> Lon Lon Ranch",
+            "short_name": "HF -> LLR",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|Lon Lon Ranch"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1360,
+                "y": 555
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Southeast Grotto",
+            "short_name": "HF Southeast Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Southeast Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1430,
+                "y": 925
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Open Grotto",
+            "short_name": "HF Open Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Open Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1205,
+                "y": 995
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Inside Fence Grotto",
+            "short_name": "HF Inside Fence Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Inside Fence Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1140,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Cow Grotto",
+            "short_name": "HF Cow Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Cow Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 970,
+                "y": 660
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Near Market Grotto",
+            "short_name": "HF Near Market Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Near Market Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1370,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Fairy Grotto",
+            "short_name": "HF Fairy Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Fairy Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1200,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Near Kak Grotto",
+            "short_name": "HF Near Kak Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Near Kak Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1550,
+                "y": 405
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Field -> HF Tektite Grotto",
+            "short_name": "HF Tektite Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Field|HF Tektite Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1150,
+                "y": 480
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lake Hylia",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Lake Hylia -> Hyrule Field",
+            "short_name": "LH -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lake Hylia|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1045,
+                "y": 1110
+              }
+            ]
+          },
+          {
+            "name": "Lake Hylia -> Zoras Domain",
+            "short_name": "LH -> ZD",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lake Hylia|Zoras Domain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1070,
+                "y": 1205
+              }
+            ]
+          },
+          {
+            "name": "LH Owl Flight -> Hyrule Field",
+            "short_name": "LH Owl Flight",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LH Owl Flight|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_owl_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 870,
+                "y": 1310
+              }
+            ]
+          },
+          {
+            "name": "Lake Hylia -> LH Lab",
+            "short_name": "LH Lab",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lake Hylia|LH Lab"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 960,
+                "y": 1200
+              }
+            ]
+          },
+          {
+            "name": "LH Fishing Island -> LH Fishing Hole",
+            "short_name": "LH Fishing Hole",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|LH Fishing Island|LH Fishing Hole"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1270,
+                "y": 1215
+              }
+            ]
+          },
+          {
+            "name": "Lake Hylia -> Water Temple Split",
+            "short_name": "Water Temple",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lake Hylia|Water Temple Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 1020,
+                "y": 1370
+              }
+            ]
+          },
+          {
+            "name": "Lake Hylia -> LH Grotto",
+            "short_name": "LH Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lake Hylia|LH Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 870,
+                "y": 1310
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gerudo Valley",
+        "color": "#a09509",
+        "children": [
+          {
+            "name": "Gerudo Valley -> Hyrule Field",
+            "short_name": "GV -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Gerudo Valley|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 800,
+                "y": 565
+              }
+            ]
+          },
+          {
+            "name": "GV Grotto Ledge -> GV Octorok Grotto",
+            "short_name": "GV Octorok Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GV Grotto Ledge|GV Octorok Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 680,
+                "y": 610
+              }
+            ]
+          },
+          {
+            "name": "GV Fortress Side -> Gerudo Fortress",
+            "short_name": "GV -> GF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GV Fortress Side|Gerudo Fortress"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 555,
+                "y": 565
+              }
+            ]
+          },
+          {
+            "name": "GV Fortress Side -> GV Carpenter Tent",
+            "short_name": "GV Carpenter Tent",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GV Fortress Side|GV Carpenter Tent"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 640,
+                "y": 545
+              }
+            ]
+          },
+          {
+            "name": "GV Fortress Side -> GV Storms Grotto",
+            "short_name": "GV Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GV Fortress Side|GV Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 605,
+                "y": 530
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gerudo's Fortress",
+        "color": "#a09509",
+        "children": [
+          {
+            "name": "Gerudo Fortress -> GV Fortress Side",
+            "short_name": "GF -> GV",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Gerudo Fortress|GV Fortress Side"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 490,
+                "y": 490
+              }
+            ]
+          },
+          {
+            "name": "Gerudo Fortress -> Gerudo Training Grounds Split",
+            "short_name": "Gerudo Training Grounds",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Gerudo Fortress|Gerudo Training Grounds Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 470,
+                "y": 445
+              }
+            ]
+          },
+          {
+            "name": "Gerudo Fortress -> GF Storms Grotto",
+            "short_name": "GF Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Gerudo Fortress|GF Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 500,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "name": "GF Outside Gate -> Wasteland Near Fortress",
+            "short_name": "GF -> WL",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GF Outside Gate|Wasteland Near Fortress"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 460,
+                "y": 320
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haunted Wasteland",
+        "color": "#a09509",
+        "children": [
+          {
+            "name": "Wasteland Near Fortress -> GF Outside Gate",
+            "short_name": "WL -> GF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Wasteland Near Fortress|GF Outside Gate"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 425,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "name": "Wasteland Near Colossus -> Desert Colossus",
+            "short_name": "WL -> Col",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Wasteland Near Colossus|Desert Colossus"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 335,
+                "y": 350
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Colossus",
+        "color": "#a09509",
+        "children": [
+          {
+            "name": "Desert Colossus -> Colossus Great Fairy Fountain",
+            "short_name": "Colossus Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Desert Colossus|Colossus Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 275,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Desert Colossus -> Spirit Temple Split",
+            "short_name": "Spirit Temple",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Desert Colossus|Spirit Temple Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 115,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Desert Colossus -> Wasteland Near Colossus",
+            "short_name": "Col -> WL",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Desert Colossus|Wasteland Near Colossus"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 300,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "name": "Desert Colossus -> Colossus Grotto",
+            "short_name": "Colossus Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Desert Colossus|Colossus Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 195,
+                "y": 305
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Market",
+        "color": "#09a09d",
+        "children": [
+          {
+            "name": "Market Entrance -> Hyrule Field",
+            "short_name": "CTE -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market Entrance|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1435,
+                "y": 460
+              }
+            ]
+          },
+          {
+            "name": "Market Entrance -> Market",
+            "short_name": "CTE -> CT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market Entrance|Market"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1435,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "name": "Market Entrance -> Market Guard House",
+            "short_name": "Market Guard House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market Entrance|Market Guard House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1465,
+                "y": 405
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Entrance",
+            "short_name": "CT -> CTE",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Entrance"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1435,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "name": "Market -> ToT Entrance",
+            "short_name": "CT -> ToT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|ToT Entrance"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1515,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Market -> Castle Grounds",
+            "short_name": "CT -> CG",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Castle Grounds"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1440,
+                "y": 255
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Bazaar",
+            "short_name": "Market Bazaar",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Bazaar"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1475,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Mask Shop",
+            "short_name": "Market Mask Shop",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Mask Shop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1465,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Shooting Gallery",
+            "short_name": "Market Shooting Gallery",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Shooting Gallery"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1425,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Bombchu Bowling",
+            "short_name": "Market Bombchu Bowling",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Bombchu Bowling"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1415,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Potion Shop",
+            "short_name": "Market Potion Shop",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Potion Shop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1475,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Market -> Market Treasure Chest Game",
+            "short_name": "Market Treasure Chest Game",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market|Market Treasure Chest Game"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1425,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "Market Back Alley -> Market Bombchu Shop",
+            "short_name": "Market Bombchu Shop",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market Back Alley|Market Bombchu Shop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1390,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "Market Back Alley -> Market Man in Green House",
+            "short_name": "Market Man in Green House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Market Back Alley|Market Man in Green House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1380,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "name": "ToT Entrance -> Market",
+            "short_name": "ToT -> CT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|ToT Entrance|Market"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1545,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "ToT Entrance -> Temple of Time",
+            "short_name": "Temple of Time",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|ToT Entrance|Temple of Time"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1535,
+                "y": 295
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle",
+        "color": "#09a09d",
+        "children": [
+          {
+            "name": "Castle Grounds -> Market",
+            "short_name": "CG -> CT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Castle Grounds|Market"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1440,
+                "y": 225
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Castle Grounds -> HC Great Fairy Fountain",
+            "short_name": "HC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Castle Grounds|HC Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1490,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Castle Grounds -> HC Storms Grotto",
+            "short_name": "HC Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Hyrule Castle Grounds|HC Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1480,
+                "y": 205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "outside Ganon's Castle",
+        "color": "#09a09d",
+        "children": [
+          {
+            "name": "Ganons Castle Grounds -> OGC Great Fairy Fountain",
+            "short_name": "OGC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Ganons Castle Grounds|OGC Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1530,
+                "y": 205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kakariko Village",
+        "color": "#6909a0",
+        "children": [
+          {
+            "name": "Kakariko Village -> Hyrule Field",
+            "short_name": "Kak -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1695,
+                "y": 385
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Carpenter Boss House",
+            "short_name": "Kak Carpenter Boss House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Carpenter Boss House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1795,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak House of Skulltula",
+            "short_name": "Kak House of Skulltula",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak House of Skulltula"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1760,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Impas House",
+            "short_name": "Kak Impas House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Impas House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1800,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "name": "Kak Impas Ledge -> Kak Impas House Back",
+            "short_name": "Kak Impas House Back",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kak Impas Ledge|Kak Impas House Back"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1830,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Windmill",
+            "short_name": "Kak Windmill",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Windmill"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1920,
+                "y": 345
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Bazaar",
+            "short_name": "Kak Bazaar",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Bazaar"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1760,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Shooting Gallery",
+            "short_name": "Kak Shooting Gallery",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Shooting Gallery"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1830,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Bottom of the Well Split",
+            "short_name": "Bottom of the Well",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Bottom of the Well Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 1885,
+                "y": 405
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Potion Shop Front",
+            "short_name": "Kak Potion Shop Front",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Potion Shop Front"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1795,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Kak Redead Grotto",
+            "short_name": "Kak Redead Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Kak Redead Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1760,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village -> Graveyard",
+            "short_name": "Kak -> GY",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kakariko Village|Graveyard"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1930,
+                "y": 415
+              }
+            ]
+          },
+          {
+            "name": "Kak Backyard -> Kak Open Grotto",
+            "short_name": "Kak Open Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kak Backyard|Kak Open Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1870,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Kak Backyard -> Kak Odd Medicine Building",
+            "short_name": "Kak Odd Medicine Building",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kak Backyard|Kak Odd Medicine Building"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1860,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Kak Backyard -> Kak Potion Shop Back",
+            "short_name": "Kak Potion Shop Back",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kak Backyard|Kak Potion Shop Back"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_all"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1825,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "name": "Kak Behind Gate -> Death Mountain",
+            "short_name": "Kak -> DMT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Kak Behind Gate|Death Mountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1770,
+                "y": 300
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Graveyard",
+        "color": "#6909a0",
+        "children": [
+          {
+            "name": "Graveyard -> Graveyard Shield Grave",
+            "short_name": "Shield Grave",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Graveyard Shield Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2035,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Graveyard -> Graveyard Heart Piece Grave",
+            "short_name": "Heart Piece Grave",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Graveyard Heart Piece Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2070,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Graveyard -> Graveyard Composers Grave",
+            "short_name": "Composer Grave",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Graveyard Composers Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2105,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Graveyard -> Graveyard Dampes Grave",
+            "short_name": "Dampes Grave",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Graveyard Dampes Grave"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2035,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Graveyard -> Graveyard Dampes House",
+            "short_name": "Dampes House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Graveyard Dampes House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2035,
+                "y": 395
+              }
+            ]
+          },
+          {
+            "name": "Graveyard -> Kakariko Village",
+            "short_name": "GY -> Kak",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard|Kakariko Village"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1980,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Warp Pad Region -> Shadow Temple Split",
+            "short_name": "Shadow Temple",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Graveyard Warp Pad Region|Shadow Temple Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 2145,
+                "y": 325
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain Trail",
+        "color": "#a01009",
+        "children": [
+          {
+            "name": "Death Mountain -> Kak Behind Gate",
+            "short_name": "DMT -> Kak",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain|Kak Behind Gate"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1720,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain -> Goron City",
+            "short_name": "DMT -> GC",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain|Goron City"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1675,
+                "y": 165
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain -> Dodongos Cavern Split",
+            "short_name": "Dodongos Cavern",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain|Dodongos Cavern Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 1685,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain -> DMT Storms Grotto",
+            "short_name": "DMT Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain|DMT Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1705,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain Summit -> DMC Upper Local",
+            "short_name": "DMT -> DMC",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain Summit|DMC Upper Local"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1850,
+                "y": 90
+              }
+            ]
+          },
+          {
+            "name": "DMT Owl Flight -> Kak Impas Rooftop",
+            "short_name": "DMT Owl Flight",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMT Owl Flight|Kak Impas Rooftop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_owl_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1815,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain Summit -> DMT Cow Grotto",
+            "short_name": "DMT Cow Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain Summit|DMT Cow Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1765,
+                "y": 175
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain Summit -> DMT Great Fairy Fountain",
+            "short_name": "DMT Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Death Mountain Summit|DMT Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1785,
+                "y": 110
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goron City",
+        "color": "#a01009",
+        "children": [
+          {
+            "name": "Goron City -> Death Mountain",
+            "short_name": "GC -> DMT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Goron City|Death Mountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1675,
+                "y": 135
+              }
+            ]
+          },
+          {
+            "name": "Goron City -> GC Shop",
+            "short_name": "GC Shop",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Goron City|GC Shop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1600,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "GC Grotto Platform -> GC Grotto",
+            "short_name": "GC Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GC Grotto Platform|GC Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1705,
+                "y": 75
+              }
+            ]
+          },
+          {
+            "name": "GC Woods Warp -> Lost Woods",
+            "short_name": "GC -> LW",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GC Woods Warp|Lost Woods"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1705,
+                "y": 115
+              }
+            ]
+          },
+          {
+            "name": "GC Darunias Chamber -> DMC Lower Local",
+            "short_name": "GC -> DMC",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GC Darunias Chamber|DMC Lower Local"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1640,
+                "y": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain Crater",
+        "color": "#a01009",
+        "children": [
+          {
+            "name": "DMC Upper Nearby -> Death Mountain Summit",
+            "short_name": "DMC -> DMT",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMC Upper Nearby|Death Mountain Summit"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1850,
+                "y": 60
+              }
+            ]
+          },
+          {
+            "name": "DMC Upper Nearby -> DMC Upper Grotto",
+            "short_name": "DMC Upper Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMC Upper Nearby|DMC Upper Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1815,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Lower Nearby -> GC Darunias Chamber",
+            "short_name": "DMC -> GC",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMC Lower Nearby|GC Darunias Chamber"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1745,
+                "y": 45
+              }
+            ]
+          },
+          {
+            "name": "DMC Lower Nearby -> DMC Great Fairy Fountain",
+            "short_name": "DMC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMC Lower Nearby|DMC Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1780,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Lower Nearby -> DMC Hammer Grotto",
+            "short_name": "DMC Hammer Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMC Lower Nearby|DMC Hammer Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1780,
+                "y": 35
+              }
+            ]
+          },
+          {
+            "name": "DMC Fire Temple Entrance -> Fire Temple Split",
+            "short_name": "Fire Temple",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|DMC Fire Temple Entrance|Fire Temple Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 1930,
+                "y": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora's River",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "ZR Front -> Hyrule Field",
+            "short_name": "ZR -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|ZR Front|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1925,
+                "y": 560
+              }
+            ]
+          },
+          {
+            "name": "Zora River -> ZR Open Grotto",
+            "short_name": "ZR Open Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zora River|ZR Open Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2090,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "name": "Zora River -> ZR Fairy Grotto",
+            "short_name": "ZR Fairy Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zora River|ZR Fairy Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2105,
+                "y": 505
+              }
+            ]
+          },
+          {
+            "name": "Zora River -> Lost Woods",
+            "short_name": "ZR -> LW",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zora River|Lost Woods"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2395,
+                "y": 475
+              }
+            ]
+          },
+          {
+            "name": "Zora River -> ZR Storms Grotto",
+            "short_name": "ZR Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zora River|ZR Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1940,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "name": "ZR Behind Waterfall -> Zoras Domain",
+            "short_name": "ZR -> ZD",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|ZR Behind Waterfall|Zoras Domain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2405,
+                "y": 430
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora's Domain",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Zoras Domain -> ZR Behind Waterfall",
+            "short_name": "ZD -> ZR",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Domain|ZR Behind Waterfall"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2485,
+                "y": 450
+              }
+            ]
+          },
+          {
+            "name": "Zoras Domain -> Lake Hylia",
+            "short_name": "ZD -> LH",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Domain|Lake Hylia"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2570,
+                "y": 490
+              }
+            ]
+          },
+          {
+            "name": "Zoras Domain -> ZD Shop",
+            "short_name": "ZD Shop",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Domain|ZD Shop"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2625,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "name": "Zoras Domain -> ZD Storms Grotto",
+            "short_name": "ZD Storms Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Domain|ZD Storms Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2535,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "name": "ZD Behind King Zora -> Zoras Fountain",
+            "short_name": "ZD -> ZF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|ZD Behind King Zora|Zoras Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2600,
+                "y": 355
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zora's Fountain",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Zoras Fountain -> ZD Behind King Zora",
+            "short_name": "ZF -> ZD",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Fountain|ZD Behind King Zora"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2535,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "name": "Zoras Fountain -> Jabu Jabus Belly Split",
+            "short_name": "Jabu Jabu",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Fountain|Jabu Jabus Belly Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 2490,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "name": "Zoras Fountain -> ZF Great Fairy Fountain",
+            "short_name": "ZF Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Zoras Fountain|ZF Great Fairy Fountain"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 2585,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "ZF Ice Ledge -> Ice Cavern Split",
+            "short_name": "Ice Cavern",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|ZF Ice Ledge|Ice Cavern Split"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_dungeons_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_dungeons",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "size": 50,
+                "x": 2500,
+                "y": 275
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lon Lon Ranch",
+        "color": "#09a09d",
+        "children": [
+          {
+            "name": "Lon Lon Ranch -> Hyrule Field",
+            "short_name": "LLR -> HF",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lon Lon Ranch|Hyrule Field"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_overworld_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_overworld",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1330,
+                "y": 555
+              }
+            ]
+          },
+          {
+            "name": "Lon Lon Ranch -> LLR Talons House",
+            "short_name": "LLR Talons House",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lon Lon Ranch|LLR Talons House"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1345,
+                "y": 590
+              }
+            ]
+          },
+          {
+            "name": "Lon Lon Ranch -> LLR Stables",
+            "short_name": "LLR Stables",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lon Lon Ranch|LLR Stables"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1305,
+                "y": 590
+              }
+            ]
+          },
+          {
+            "name": "Lon Lon Ranch -> LLR Tower",
+            "short_name": "LLR Tower",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lon Lon Ranch|LLR Tower"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_interiors_simple"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_houses",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1225,
+                "y": 690
+              }
+            ]
+          },
+          {
+            "name": "Lon Lon Ranch -> LLR Grotto",
+            "short_name": "LLR Grotto",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Lon Lon Ranch|LLR Grotto"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_grottos_shuffle"
+                ],
+                "capture_item": true,
+                //"capture_item_layout": "tracker_capture_grottos",
+                "capture_item_layout": "tracker_capture_mixed_er",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "x": 1375,
+                "y": 690
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

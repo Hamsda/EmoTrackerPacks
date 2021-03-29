@@ -36,6 +36,12 @@
     "codes": "entrance_overworld_sfm"
   },
   {
+    "name": "Graveyard Warp Pad Region",
+    "type": "toggle",
+    "img": "images/entrance_overworld_gy_pad.png",
+    "codes": "entrance_overworld_gy_pad"
+  },
+  {
     "name": "DMC Fairy",
     "type": "toggle",
     "img": "images/entrance_spawn_dmc_ff.png",
