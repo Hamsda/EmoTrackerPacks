@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed missing LACS condition setting in ER
+
 ## 3.4.0.0
 
 - updated minimal layout (can now use this one as broadcast layout for the regular map tracker)
