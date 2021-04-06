@@ -15454,47 +15454,31 @@ function invalidate_locations()
 end
 invalidate_locations()
 
-function set_region_access(age, target_region, new_access, cur_access)
-  if
-    (new_access == AccessibilityLevel.Normal and cur_access ~= AccessibilityLevel.Normal) or
-      (new_access == AccessibilityLevel.SequenceBreak and cur_access == AccessibilityLevel.None)
-   then
-    --limit new_access to target_region up to cur_access
-    new_access = cur_access
+function set_region_access(age, target_region, target_new_access, origin_access)
+  if access_level[origin_access] < access_level[target_new_access] then
+    target_new_access = origin_access
   end
-  local old_access = access_per_region_per_age[age][target_region]
-  if
-    (new_access == AccessibilityLevel.Normal and old_access ~= AccessibilityLevel.Normal) or
-      (new_access == AccessibilityLevel.SequenceBreak and old_access == AccessibilityLevel.None)
-   then
-    --new_access to target_region still higher than old_access
+  local target_old_access = access_per_region_per_age[age][target_region]
+  if access_level[target_old_access] < access_level[target_new_access] then
     if er_debugging then
-      print("|  |  +--set access", age, new_access, target_region)
+      print("|  |  +--set access", age, target_new_access, target_region)
     end
     changed_access = true
-    access_per_region_per_age[age][target_region] = new_access
+    access_per_region_per_age[age][target_region] = target_new_access
   end
 end
 
-function set_location_access(age, location, new_access, cur_access)
-  if
-    (new_access == AccessibilityLevel.Normal and cur_access ~= AccessibilityLevel.Normal) or
-      (new_access == AccessibilityLevel.SequenceBreak and cur_access == AccessibilityLevel.None)
-   then
-    --limit new_access to target_region up to cur_access
-    new_access = cur_access
+function set_location_access(age, location, target_new_access, origin_access)
+  if access_level[origin_access] < access_level[target_new_access] then
+    target_new_access = origin_access
   end
-  local old_access = location_access_per_age[age][location]
-  if
-    (not old_access) or (new_access == AccessibilityLevel.Normal and old_access ~= AccessibilityLevel.Normal) or
-      (new_access == AccessibilityLevel.SequenceBreak and old_access == AccessibilityLevel.None)
-   then
-    --new_access to target_region still higher than old_access
+  local target_old_access = location_access_per_age[age][location] or AccessibilityLevel.None
+  if access_level[target_old_access] < access_level[target_new_access] then
     if er_debugging then
-      print("|  |  +--location", age, new_access, location)
+      print("|  |  +--location", age, target_new_access, location)
     end
     changed_access = true
-    location_access_per_age[age][location] = new_access
+    location_access_per_age[age][location] = target_new_access
   end
 end
 
@@ -15576,40 +15560,18 @@ end
 function access_region(region, age)
   age = age or ""
   region = region or ""
+  
+  local region_child = access_per_region_per_age[1][region]
+  local region_adult = access_per_region_per_age[2][region]
+
   if age == "both" then
-    if
-      access_per_region_per_age[1][region] == AccessibilityLevel.Normal and
-        access_per_region_per_age[2][region] == AccessibilityLevel.Normal
-     then
-      return AccessibilityLevel.Normal
-    elseif
-      (access_per_region_per_age[1][region] == AccessibilityLevel.Normal or
-        access_per_region_per_age[1][region] == AccessibilityLevel.SequenceBreak) and
-        (access_per_region_per_age[2][region] == AccessibilityLevel.Normal or
-          access_per_region_per_age[2][region] == AccessibilityLevel.SequenceBreak)
-     then
-      return AccessibilityLevel.SequenceBreak
-    end
+    return and_accessibility(region_child, region_adult)
   elseif age == "child" then
-    if access_per_region_per_age[1][region] ~= AccessibilityLevel.None then
-      return access_per_region_per_age[1][region]
-    end
+    return region_child
   elseif age == "adult" then
-    if access_per_region_per_age[2][region] ~= AccessibilityLevel.None then
-      return access_per_region_per_age[2][region]
-    end
+    return region_adult
   else --either
-    if
-      access_per_region_per_age[1][region] == AccessibilityLevel.Normal or
-        access_per_region_per_age[2][region] == AccessibilityLevel.Normal
-     then
-      return AccessibilityLevel.Normal
-    elseif
-      access_per_region_per_age[1][region] == AccessibilityLevel.SequenceBreak or
-        access_per_region_per_age[2][region] == AccessibilityLevel.SequenceBreak
-     then
-      return AccessibilityLevel.SequenceBreak
-    end
+    return or_accessibility(region_child, region_adult)
   end
   return AccessibilityLevel.None
 end
@@ -15633,62 +15595,21 @@ function access_exit(region, exit, age)
     return 0, AccessibilityLevel.None
   end
 
+  local access = AccessibilityLevel.None
+
   if age == "both" then
-    if
-      region_child == AccessibilityLevel.None or region_adult == AccessibilityLevel.None or
-        exit_child == AccessibilityLevel.None or
-        exit_adult == AccessibilityLevel.None
-     then
-      return 0, AccessibilityLevel.None
-    end
-    if region_child == AccessibilityLevel.SequenceBreak or region_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    if exit_child == AccessibilityLevel.SequenceBreak or exit_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    return 1, AccessibilityLevel.Normal
+    access = and_accessibility(region_child, exit_child, region_adult, exit_adult)
   elseif age == "child" then
-    if region_child == AccessibilityLevel.None or exit_child == AccessibilityLevel.None then
-      return 0, AccessibilityLevel.None
-    end
-    if region_child == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    if exit_child == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    return 1, AccessibilityLevel.Normal
+    access = and_accessibility(region_child, exit_child)
   elseif age == "adult" then
-    if region_adult == AccessibilityLevel.None or exit_adult == AccessibilityLevel.None then
-      return 0, AccessibilityLevel.None
-    end
-    if region_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    if exit_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    return 1, AccessibilityLevel.Normal
+    access = and_accessibility(region_adult, exit_adult)
   else --either
-    if
-      (region_child == AccessibilityLevel.Normal and exit_child == AccessibilityLevel.Normal) or
-        (region_adult == AccessibilityLevel.Normal and exit_adult == AccessibilityLevel.Normal)
-     then
-      return 1, AccessibilityLevel.Normal
+    access = or_accessibility(and_accessibility(region_child, exit_child), and_accessibility(region_adult, exit_adult))
     end
-    if
-      (region_child == AccessibilityLevel.Normal and exit_child == AccessibilityLevel.SequenceBreak) or
-        (region_adult == AccessibilityLevel.Normal and exit_adult == AccessibilityLevel.SequenceBreak)
-     then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    if
-      (region_child == AccessibilityLevel.SequenceBreak and exit_child ~= AccessibilityLevel.None) or
-        (region_adult == AccessibilityLevel.SequenceBreak and exit_adult ~= AccessibilityLevel.None)
-     then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
+
+  local level = access_level[access]
+  if level > 0 then
+    return 1, access
   end
   return 0, AccessibilityLevel.None
 end
@@ -15699,49 +15620,24 @@ function access_location(location, age)
   end
   age = age or ""
 
-  local location_child = location_access_per_age[1][location]
-  local location_adult = location_access_per_age[2][location]
+  local location_child = location_access_per_age[1][location] or AccessibilityLevel.None
+  local location_adult = location_access_per_age[2][location] or AccessibilityLevel.None
+
+  local access = AccessibilityLevel.None
 
   if age == "both" then
-    if not location_child or not location_adult then
-      return 0, AccessibilityLevel.None
-    end
-    if location_child == AccessibilityLevel.None or location_adult == AccessibilityLevel.None then
-      return 0, AccessibilityLevel.None
-    end
-    if location_child == AccessibilityLevel.SequenceBreak or location_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    return 1, AccessibilityLevel.Normal
+    access = and_accessibility(location_child, location_adult)
   elseif age == "child" then
-    if not location_child then
-      return 0, AccessibilityLevel.None
-    end
-    if location_child == AccessibilityLevel.None then
-      return 0, AccessibilityLevel.None
-    end
-    if location_child == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    return 1, AccessibilityLevel.Normal
+    access = location_child
   elseif age == "adult" then
-    if not location_adult then
-      return 0, AccessibilityLevel.None
-    end
-    if location_adult == AccessibilityLevel.None then
-      return 0, AccessibilityLevel.None
-    end
-    if location_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
-    return 1, AccessibilityLevel.Normal
+    access = location_adult
   else --either
-    if location_child == AccessibilityLevel.Normal or location_adult == AccessibilityLevel.Normal then
-      return 1, AccessibilityLevel.Normal
+    access = or_accessibility(location_child, location_adult)
     end
-    if location_child == AccessibilityLevel.SequenceBreak or location_adult == AccessibilityLevel.SequenceBreak then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
+
+  local level = access_level[access]
+  if level > 0 then
+    return 1, access
   end
   return 0, AccessibilityLevel.None
 end
