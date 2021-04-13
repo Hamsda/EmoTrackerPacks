@@ -6,6 +6,7 @@
 - fixed GS counter after moving some GS around
 - fixed short names for LLR GS and Kak Child GS
 - added KZ skip as sequence break
+- fixed bottles when using minimal for broadcast
 
 ## 3.4.0.0
 

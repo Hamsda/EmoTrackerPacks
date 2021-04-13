@@ -671,11 +671,11 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottleminimal,bottle"
+        "codes": "bottleminimal"
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "ruto,rutosletter"
+        "codes": "rutominimal"
       }
     ]
   },
