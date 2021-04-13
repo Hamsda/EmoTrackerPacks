@@ -251,6 +251,7 @@ function _gerudo_bridge()
   end
   if
     has("longshot") or has("ocarina") and has("epona") or has("gerudo_fortress_open") or
+      (has("setting_shuffle_card_no") and has("card")) or
       spawn_access("Gerudo Fortress", "adult") > 0
    then
     return 1, AccessibilityLevel.Normal
@@ -703,14 +704,14 @@ function adult_fountain()
     return 1, level
   end
 
+  --handing in letter
   local child_count, child_level = child_fountain()
-  if child_count == 0 then
-    return 0, AccessibilityLevel.None
+  if child_count > 0 and child_level == AccessibilityLevel.Normal then
+    return 1, level
   end
-  if child_level == AccessibilityLevel.SequenceBreak then
-    level = AccessibilityLevel.SequenceBreak
-  end
-  return 1, level
+
+  --KZ skip
+  return 1, AccessibilityLevel.SequenceBreak
 end
 
 function has_bottle()
