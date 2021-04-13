@@ -4,6 +4,7 @@
 
 - fixed missing LACS condition setting in ER
 - fixed GS counter after moving some GS around
+- fixed short names for LLR GS and Kak Child GS
 - added KZ skip as sequence break
 
 ## 3.4.0.0
