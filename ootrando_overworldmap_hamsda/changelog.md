@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.4.1.0
 
 - fixed missing LACS condition setting in ER
 - fixed GS counter after moving some GS around
