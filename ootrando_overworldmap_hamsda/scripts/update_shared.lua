@@ -245,6 +245,21 @@ function update_collected_capture()
   end
 end
 
+function update_minimal_bottle()
+  if has_map then
+    local minimal_bottle = get_object("bottleminimal")
+    if minimal_bottle then
+      if has("ruto") then
+        minimal_bottle.CurrentStage = 2
+      elseif has("bottle") then
+        minimal_bottle.CurrentStage = 1
+      else
+        minimal_bottle.CurrentStage = 0
+      end
+    end
+  end
+end
+
 function update_free_zelda()
   local kid_trade = get_kid_trade()
   local setting_zelda = has("setting_zelda_free")
@@ -309,6 +324,7 @@ function tracker_on_accessibility_updated()
     update_lacs_amount_max()
     update_fortress()
     update_collected_capture()
+    update_minimal_bottle()
     update_free_zelda()
     update_vanilla_captures()
 

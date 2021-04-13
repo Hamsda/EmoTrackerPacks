@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.4.1.0
+
+- fixed missing LACS condition setting in ER
+- fixed GS counter after moving some GS around
+- fixed short names for LLR GS and Kak Child GS
+- added KZ skip as sequence break
+- fixed bottles when using minimal for broadcast
+
 ## 3.4.0.0
 
 - updated minimal layout (can now use this one as broadcast layout for the regular map tracker)

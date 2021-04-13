@@ -1630,7 +1630,7 @@
                     "sections": [
                       {
                         "name": "LLR GS Tree",
-                        "short_name": "GS",
+                        "short_name": "Tree",
                         "access_rules": [
                           "$has_age|child"
                         ],
@@ -1643,7 +1643,7 @@
                       },
                       {
                         "name": "LLR GS Rain Shed (N)",
-                        "short_name": "GS",
+                        "short_name": "Rain Shed",
                         "access_rules": [
                           "$has_age|child,$night_gs"
                         ],
@@ -1656,7 +1656,7 @@
                       },
                       {
                         "name": "LLR GS House Window (N)",
-                        "short_name": "GS",
+                        "short_name": "House Window",
                         "access_rules": [
                           "$has_age|child,$night_gs,boomerang",
                           "{$has_age|child,sling}",
@@ -1672,7 +1672,7 @@
                       },
                       {
                         "name": "LLR GS Back Wall (N)",
-                        "short_name": "GS",
+                        "short_name": "Back Wall",
                         "access_rules": [
                           "$has_age|child,$night_gs,boomerang",
                           "{$has_age|child,sling}",
@@ -2179,7 +2179,7 @@
                 "sections": [
                   {
                     "name": "Kak GS Tree (N)",
-                    "short_name": "GS",
+                    "short_name": "Tree",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2192,7 +2192,7 @@
                   },
                   {
                     "name": "Kak GS Skulltula House (N)",
-                    "short_name": "GS",
+                    "short_name": "Skulltula House",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2205,7 +2205,7 @@
                   },
                   {
                     "name": "Kak GS House Under Construction (N)",
-                    "short_name": "GS",
+                    "short_name": "Construction",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2218,7 +2218,7 @@
                   },
                   {
                     "name": "Kak GS Guards House (N)",
-                    "short_name": "GS",
+                    "short_name": "Guards House",
                     "access_rules": [
                       "$has_age|child,$night_gs"
                     ],
@@ -2231,7 +2231,7 @@
                   },
                   {
                     "name": "Kak GS Watchtower (N)",
-                    "short_name": "GS",
+                    "short_name": "Watchtower",
                     "access_rules": [
                       "$has_age|child,$night_gs,sling",
                       "$has_age|child,$night_gs,$has_bombchus",
