@@ -3,6 +3,7 @@
 ## x
 
 - fixed big poes in ER
+- improved reg Deku basement logic in ER
 
 ## 3.4.1.0
 

@@ -7090,63 +7090,69 @@ data_per_region = {
         end
       },
       ["Deku Tree Basement Backroom"] = {
-        --TODO: redo this bit of logic
         ["child_access"] = function()
-          if
-            (has("slingshot") and (has("sticks") or (has("dinsfire") and has("magic")))) or has("logic_deku_b1_skip") or
-              (access_region("Deku Tree Lobby", "adult") == AccessibilityLevel.Normal)
-           then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.SequenceBreak
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("slingshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_deku_b1_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local adult = access_region("Deku Tree Lobby", "adult")
+
+          return or_accessibility(
+            and_accessibility(
+              or_accessibility(sticks, df, and_accessibility(adult, bow)),
+              or_accessibility(sling, and_accessibility(adult, bow))
+            ),
+            or_accessibility(trick, adult)
+          )
         end,
         ["adult_access"] = function()
-          if has("bow") then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("slingshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local child = access_region("Deku Tree Lobby", "child")
+
+          return and_accessibility(
+            or_accessibility(and_accessibility(child, sticks), df, bow),
+            or_accessibility(and_accessibility(child, sling), bow)
+          )
         end
       },
       ["Deku Tree Boss Room"] = {
-        --TODO: redo this bit of logic
         ["child_access"] = function()
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local fa =
+            (has("magic") and has("bow") and has("firearrow")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("slingshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick_web =
+            has("logic_deku_b1_webs_with_bow") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_ledge =
+            has("logic_deku_b1_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local adult = access_region("Deku Tree Lobby", "adult")
 
-          local ledge = AccessibilityLevel.SequenceBreak
-          if has("logic_deku_b1_skip") or has("sling") or adult == AccessibilityLevel.Normal then
-            ledge = AccessibilityLevel.Normal
-          end
-
-          local web = AccessibilityLevel.None
-          if has("sticks") or (has("dinsfire") and has("magic")) then
-            web = AccessibilityLevel.Normal
-          elseif has("bow") and adult ~= AccessibilityLevel.None then
-            if has("logic_deku_b1_webs_with_bow") or (has("firearrow") and has("magic")) then
-              web = adult
-            else
-              web = AccessibilityLevel.SequenceBreak
-            end
-          end
-
-          if web ~= AccessibilityLevel.None then
-            if web == AccessibilityLevel.Normal and ledge == AccessibilityLevel.Normal then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          return and_accessibility(
+            or_accessibility(
+              sticks,
+              df,
+              and_accessibility(adult, or_accessibility(fa, and_accessibility(trick_web, bow)))
+            ),
+            or_accessibility(trick_ledge, adult, sling)
+          )
         end,
         ["adult_access"] = function()
-          if has("dinsfire") and has("magic") then
-            return AccessibilityLevel.Normal
-          end
-          if has("bow") then
-            if has("logic_deku_b1_webs_with_bow") or (has("firearrow") and has("magic")) then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local fa =
+            (has("magic") and has("bow") and has("firearrow")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick_web =
+            has("logic_deku_b1_webs_with_bow") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local child = access_region("Deku Tree Lobby", "child")
+
+          return or_accessibility(and_accessibility(child, sticks), df, fa, and_accessibility(trick_web, bow))
         end
       }
     }
