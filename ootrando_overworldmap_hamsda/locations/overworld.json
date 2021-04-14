@@ -5127,9 +5127,9 @@
                           "$has_age|adult,hookshot",
                           "$has_age|adult,[hookshot],bombs,shield2",
                           "$has_age|adult,[hookshot],bombs,shield3",
-                          "$has_age|child,boomerang",
-                          "{$has_age|child,sling}",
-                          "{$has_explosives}",
+                          "$has_age|child,ocarina,requiem,[logic_reverse_wasteland],boomerang",
+                          "{$has_age|adult}",
+                          "{$can_child_attack,ocarina,requiem}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
