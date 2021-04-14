@@ -2709,11 +2709,8 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has_bottle() then
             if has("bow") and has("ocarina") and has("epona") then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
+            return has_bottle()
           end
           return AccessibilityLevel.None
         end
