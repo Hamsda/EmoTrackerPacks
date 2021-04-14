@@ -5,6 +5,7 @@
 - fixed big poes in ER
 - improved reg Deku basement logic in ER
 - added hintable overworld and dungeon locations in ER
+- improved hintable overworld and dungeon locations in non ER
 
 ## 3.4.1.0
 

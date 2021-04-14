@@ -864,11 +864,13 @@
         "short_name": "Song of Time",
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,ocarina,time,$can_child_attack",
-          "@Dodongos Cavern MQ/Lobby,ocarina,time,$has_age|adult"
+          "@Dodongos Cavern MQ/Lobby,ocarina,time,$has_age|adult",
+          "{$hintable}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1024,8 +1026,10 @@
         "name": "Boomerang Chest",
         "short_name": "Boomerang",
         "access_rules": [
-          "@Jabu Jabus Belly/Main"
+          "@Jabu Jabus Belly/Main",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1257,11 +1261,13 @@
       {
         "name": "Cow",
         "access_rules": [
-          "@Jabu Jabus Belly MQ/Boss Area,ocarina,epona"
+          "@Jabu Jabus Belly MQ/Boss Area,ocarina,epona",
+          "{$hintable}"
         ],
         "visibility_rules": [
           "setting_cowsanity_yes"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/cow.png",
         "chest_opened_img": "images/bottle_milk.png",
         "item_count": 1
@@ -1754,10 +1760,8 @@
         "name": "Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
-          "@Forest Temple/Outside Upper Ledge",
-          "{$hintable}"
+          "@Forest Temple/Outside Upper Ledge"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -2654,11 +2658,13 @@
         "access_rules": [
           "@Fire Temple MQ/Upper Maze,ocarina,time,hookshot,$has_explosives",
           "@Fire Temple MQ/Upper Maze,ocarina,time,hookshot,[logic_rusted_switches]",
-          "@Fire Temple MQ/Upper Maze,longshot"
+          "@Fire Temple MQ/Upper Maze,longshot",
+          "{$hintable}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2719,13 +2725,11 @@
         "short_name": "Above Fire Maze",
         "access_rules": [
           "@Fire Temple MQ/West Top,hookshot,fire_small_keys:4,[fire_small_keys:5]",
-          "@Fire Temple MQ/West Top,[logic_fire_mq_above_maze_gs],longshot",
-          "{$hintable}"
+          "@Fire Temple MQ/West Top,[logic_fire_mq_above_maze_gs],longshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2884,11 +2888,13 @@
           "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,ironboots",
           "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,scale",
           "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,ironboots",
-          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,scale"
+          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,scale",
+          "{$hintable}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -3199,10 +3205,8 @@
         "access_rules": [
           "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,[logic_water_dragon_jump_dive]",
           "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,scale",
-          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,ironboots",
-          "{$hintable}"
+          "@Water Temple MQ/Dark Link Region,$FTR_or_zora,dinsfire,magic,ironboots"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
@@ -3244,11 +3248,13 @@
         "short_name": "South Basement",
         "access_rules": [
           "@Water Temple MQ/Basement Gated Areas,bow,firearrow,magic,hoverboots",
-          "@Water Temple MQ/Basement Gated Areas,bow,firearrow,magic,ocarina,scarecrow"
+          "@Water Temple MQ/Basement Gated Areas,bow,firearrow,magic,ocarina,scarecrow",
+          "{$hintable}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -4888,7 +4894,8 @@
         "short_name": "Dead Hand",
         "access_rules": [
           "ocarina,lullaby,sword1",
-          "ocarina,lullaby,sticks,[logic_child_deadhand]"
+          "ocarina,lullaby,sticks,[logic_child_deadhand]",
+          "{$hintable}"
         ],
         "capture_item": true,
         "item_count": 1
