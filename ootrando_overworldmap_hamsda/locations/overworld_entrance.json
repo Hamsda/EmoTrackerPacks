@@ -111,7 +111,8 @@
                 "name": "KF Links House Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$access_location|KF Links House Cow"
+                  "$access_location|KF Links House Cow",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_cowsanity_yes"
@@ -238,7 +239,8 @@
               {
                 "name": "Play Sarias Song",
                 "access_rules": [
-                  "$access_location|LW Skull Kid"
+                  "$access_location|LW Skull Kid",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -474,7 +476,8 @@
                 "name": "Deku Theater Skull Mask",
                 "short_name": "Skull Mask",
                 "access_rules": [
-                  "$access_location|Deku Theater Skull Mask"
+                  "$access_location|Deku Theater Skull Mask",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -483,7 +486,8 @@
                 "name": "Deku Theater Mask of Truth",
                 "short_name": "Mask of Truth",
                 "access_rules": [
-                  "$access_location|Deku Theater Mask of Truth"
+                  "$access_location|Deku Theater Mask of Truth",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -559,7 +563,8 @@
               {
                 "name": "Sheik in Forest",
                 "access_rules": [
-                  "$access_location|Sheik in Forest"
+                  "$access_location|Sheik in Forest",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -626,7 +631,6 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "x": 2190,
-                //TODO: position mismatch
                 "y": 635
               }
             ]
@@ -667,7 +671,8 @@
                 "name": "HF Ocarina of Time Item",
                 "short_name": "Item",
                 "access_rules": [
-                  "$access_location|HF Ocarina of Time Item"
+                  "$access_location|HF Ocarina of Time Item",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -676,7 +681,8 @@
                 "name": "Song from Ocarina of Time",
                 "short_name": "Song",
                 "access_rules": [
-                  "$access_location|Song from Ocarina of Time"
+                  "$access_location|Song from Ocarina of Time",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -770,7 +776,8 @@
                 "name": "HF GS Cow Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$access_location|HF GS Cow Grotto"
+                  "$access_location|HF GS Cow Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -784,7 +791,8 @@
                 "name": "HF Cow Grotto Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$access_location|HF Cow Grotto Cow"
+                  "$access_location|HF Cow Grotto Cow",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_cowsanity_yes"
@@ -917,7 +925,8 @@
               {
                 "name": "Shoot it",
                 "access_rules": [
-                  "$access_location|LH Sun"
+                  "$access_location|LH Sun",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1232,11 +1241,13 @@
               {
                 "name": "Cow",
                 "access_rules": [
-                  "$access_location|GV Cow"
+                  "$access_location|GV Cow",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_cowsanity_yes"
                 ],
+                "capture_item": true,
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
@@ -1278,8 +1289,10 @@
               {
                 "name": "Smash 'em",
                 "access_rules": [
-                  "$access_location|GV Chest"
+                  "$access_location|GV Chest",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -1410,7 +1423,8 @@
               {
                 "name": "1500 Points",
                 "access_rules": [
-                  "$access_location|GF HBA 1500 Points"
+                  "$access_location|GF HBA 1500 Points",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1556,7 +1570,8 @@
                 "name": "Wasteland Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "$access_location|Wasteland Chest"
+                  "$access_location|Wasteland Chest",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1565,7 +1580,8 @@
                 "name": "Wasteland GS",
                 "short_name": "GS",
                 "access_rules": [
-                  "$access_location|Wasteland GS"
+                  "$access_location|Wasteland GS",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1642,7 +1658,8 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$access_location|Sheik at Colossus"
+                  "$access_location|Sheik at Colossus",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -1800,7 +1817,8 @@
                 "name": "Market 10 Big Poes",
                 "short_name": "Big Poes",
                 "access_rules": [
-                  "$access_location|Market 10 Big Poes"
+                  "$access_location|Market 10 Big Poes",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1990,7 +2008,8 @@
                 "name": "Market Treasure Chest Game Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$access_location|Market Treasure Chest Game Reward"
+                  "$access_location|Market Treasure Chest Game Reward",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2083,7 +2102,8 @@
           {
             "name": "Sheik at Temple",
             "access_rules": [
-              "$access_location|Sheik at Temple"
+              "$access_location|Sheik at Temple",
+              "{$hintable}"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/grey_note.png",
@@ -2217,7 +2237,8 @@
                 "name": "HC GS Storms Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$access_location|HC GS Storms Grotto"
+                  "$access_location|HC GS Storms Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2305,7 +2326,8 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$access_location|Sheik in Kakariko"
+                  "$access_location|Sheik in Kakariko",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -2336,8 +2358,10 @@
                 "name": "Kak Anju as Child",
                 "short_name": "Chickens",
                 "access_rules": [
-                  "$access_location|Kak Anju as Child"
+                  "$access_location|Kak Anju as Child",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -2485,7 +2509,8 @@
                 "name": "Kak 20 Gold Skulltula Reward",
                 "short_name": "20 Tokens",
                 "access_rules": [
-                  "$access_location|Kak 20 Gold Skulltula Reward"
+                  "$access_location|Kak 20 Gold Skulltula Reward",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2494,7 +2519,8 @@
                 "name": "Kak 30 Gold Skulltula Reward",
                 "short_name": "30 Tokens",
                 "access_rules": [
-                  "$access_location|Kak 30 Gold Skulltula Reward"
+                  "$access_location|Kak 30 Gold Skulltula Reward",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2503,7 +2529,8 @@
                 "name": "Kak 40 Gold Skulltula Reward",
                 "short_name": "40 Tokens",
                 "access_rules": [
-                  "$access_location|Kak 40 Gold Skulltula Reward"
+                  "$access_location|Kak 40 Gold Skulltula Reward",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2512,7 +2539,8 @@
                 "name": "Kak 50 Gold Skulltula Reward",
                 "short_name": "50 Tokens",
                 "access_rules": [
-                  "$access_location|Kak 50 Gold Skulltula Reward"
+                  "$access_location|Kak 50 Gold Skulltula Reward",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2587,7 +2615,6 @@
                 "access_rules": [
                   "$access_location|Song from Windmill"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
                 "item_count": 1
@@ -2661,7 +2688,6 @@
                 "access_rules": [
                   "$access_location|Kak Shooting Gallery Reward"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -2904,7 +2930,8 @@
                 "name": "Graveyard Heart Piece Grave Chest",
                 "short_name": "Play Suns Song",
                 "access_rules": [
-                  "$access_location|Graveyard Heart Piece Grave Chest"
+                  "$access_location|Graveyard Heart Piece Grave Chest",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2929,7 +2956,8 @@
                 "name": "Song from Composers Grave",
                 "short_name": "Song",
                 "access_rules": [
-                  "$access_location|Song from Composers Grave"
+                  "$access_location|Song from Composers Grave",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -2940,7 +2968,8 @@
                 "name": "Graveyard Composers Grave Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "$access_location|Graveyard Composers Grave Chest"
+                  "$access_location|Graveyard Composers Grave Chest",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -3120,7 +3149,8 @@
               {
                 "name": "Help him",
                 "access_rules": [
-                  "$access_location|DMT Biggoron"
+                  "$access_location|DMT Biggoron",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -3259,7 +3289,8 @@
               {
                 "name": "Left Chest",
                 "access_rules": [
-                  "$access_location|GC Maze Left Chest"
+                  "$access_location|GC Maze Left Chest",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -3356,7 +3387,8 @@
                 "name": "Freestanding PoH",
                 "short_name": "HP :)",
                 "access_rules": [
-                  "$access_location|GC Pot Freestanding PoH"
+                  "$access_location|GC Pot Freestanding PoH",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
@@ -3403,7 +3435,8 @@
               {
                 "name": "Play Sarias Song",
                 "access_rules": [
-                  "$access_location|GC Darunias Joy"
+                  "$access_location|GC Darunias Joy",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -3530,11 +3563,13 @@
                 "name": "DMC GS Crate",
                 "short_name": "GS",
                 "access_rules": [
-                  "$access_location|DMC GS Crate"
+                  "$access_location|DMC GS Crate",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
+                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -3554,7 +3589,8 @@
               {
                 "name": "Bombs",
                 "access_rules": [
-                  "$access_location|DMC Deku Scrub"
+                  "$access_location|DMC Deku Scrub",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_scrub_shuffle_yes"
@@ -3602,7 +3638,8 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$access_location|Sheik in Crater"
+                  "$access_location|Sheik in Crater",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -3782,7 +3819,8 @@
               {
                 "name": "ZR Frogs Ocarina Game",
                 "access_rules": [
-                  "$access_location|ZR Frogs Ocarina Game"
+                  "$access_location|ZR Frogs Ocarina Game",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -3967,7 +4005,6 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "x": 1940,
-                //TODO: position mismatch
                 "y": 505
               }
             ]
@@ -4022,8 +4059,10 @@
               {
                 "name": "monkaFrozen",
                 "access_rules": [
-                  "$access_location|ZD King Zora Thawed"
+                  "$access_location|ZD King Zora Thawed",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -4143,7 +4182,8 @@
                 "name": "ZF Bottom Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$access_location|ZF Bottom Freestanding PoH"
+                  "$access_location|ZF Bottom Freestanding PoH",
+                  "{$hintable}"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
@@ -4217,7 +4257,8 @@
                 "name": "ZF GS Hidden Cave (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$access_location|ZF GS Hidden Cave"
+                  "$access_location|ZF GS Hidden Cave",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
