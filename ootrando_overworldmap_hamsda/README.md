@@ -197,6 +197,22 @@ This setting determines if Medigoron and Carpet Salesman items are shuffled.
 - ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
 - ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
 
+#### LACS Condition
+
+This setting determines what is needed to trigger the Light Arrow cutscene in the Temple of Time.
+
+- ![Vanilla](images/setting_lacs_vanilla.png "Vanilla") Shadow medallion and spirit medallion required
+- ![Stones](images/setting_lacs_stones.png "Stones") Variable amount of stones required
+- ![Medallions](images/setting_lacs_medallions.png "Medallions") Variable amount of medallions required
+- ![Dungeons](images/setting_lacs_dungeons.png "Dungeons") Variable amount of medallions and stones required
+- ![GS tokens](images/setting_lacs_gs.png "GS tokens") Variable amount of Gold Skulltula tokens required
+
+#### LACS Amount
+
+This setting determines how many (if any) of the items specified in `LACS Condition` are needed.
+
+![LACS Condition](images/setting_lacs_amount.png "LACS Condition") Increment or decrement the number required.
+
 #### Skip Child Zelda
 
 This setting determines if visiting Zelda in the Hyrule Castle Gardens is skipped.
@@ -254,13 +270,12 @@ This tab also contains a list of (some of) the logic tricks that can be enabled 
 
 ## Entrance Randomizer variants
 
-The entrance randomizer variants are very different from the regular map tracker variants. There aren't two different maps for child and adult, but rather three maps in total:
+The entrance randomizer variants are very different from the regular map tracker variants:
 
-- `Overworld`: randomized checks in the overworld
-- `Entrances`: randomized or otherwise important grottos, houses, and dungeons
-- `Connectors`: connections between different overworld areas
+- `Locations`: checks in the overworld and checks from non randomized `Exits`
+- `Exits`: randomized grottos, houses, dungeons, and overworld connections
 
-All `Entrances` and `Connectors` have a capture spot, where you can mark what is at that location. Later you can see what led where by simply hovering over the locations with your mouse. If the location is useless, just mark off the icon to clean up the map. Some important locations should not be cleared, because they might be relevant to logic as pathways:
+All locations on the `Exits` map have a capture spot, where you can mark what is at that location. Later you can see what led where by simply hovering over the locations with your mouse. If the location is useless, just mark off the icon to clean up the map. Some important locations should not be cleared, because they might be relevant to logic as pathways:
 
 - Links House
 - Temple of Time
@@ -271,11 +286,11 @@ All `Entrances` and `Connectors` have a capture spot, where you can mark what is
 
 There are two variants, one for keysanity and one without. The keysanity variant uses the keys you mark for logic, while the other variant just assumes you have all keys at all times.
 
-I made a [quick explanation](https://youtu.be/4l8gDPkovAc) on how to use the ER variant. Excuse the poor sounds quality, I don't have a great microphone.
+I made a [quick explanation](https://youtu.be/4l8gDPkovAc) on how to use the ER variant, based on the previous split, but it still works basically the same. Excuse the poor sound quality, I don't have a great microphone.
 
 ### Settings (Entrance Randomizer only)
 
-The settings allow you to select which pools are actually shuffled (split based on Dev-R branch, since it is the most popular for ER). If they are not shuffled, the appropriate captures are placed at (almost) all locations and certain locations are hidden since they are useless regardless of any other settings.
+The settings allow you to select which pools are actually shuffled (split based on Dev-R branch, since it is the most popular for ER). If they are not shuffled, the locations that still remain useful will appear on the `Locations` map instead, just like they would for the regular map tracker.
 
 #### Shuffle Interior Entrances
 
