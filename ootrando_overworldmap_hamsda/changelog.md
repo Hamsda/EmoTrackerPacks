@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.4.2.0
+
+- fixed big poes in ER
+- improved reg Deku basement logic in ER
+- added hintable overworld and dungeon locations in ER
+- improved hintable overworld and dungeon locations in non ER
+- fixed Wasteland GS showing in logic incorrectly
+
 ## 3.4.1.0
 
 - fixed missing LACS condition setting in ER

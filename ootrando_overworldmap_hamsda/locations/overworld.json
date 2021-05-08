@@ -1177,10 +1177,8 @@
                           "$has_age|adult,ocarina,scarecrow,hookshot",
                           "$has_age|adult,water",
                           "$has_age|adult,setting_plant_no,beans",
-                          "$has_age|adult,bean_lake_yes",
-                          "{$hintable}"
+                          "$has_age|adult,bean_lake_yes"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -1826,10 +1824,8 @@
                     "name": "Kak Shooting Gallery Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "$has_age|adult,bow",
-                      "{$hintable}"
+                      "$has_age|adult,bow"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -1862,10 +1858,8 @@
                     "name": "Song from Windmill",
                     "short_name": "Guru-Guru",
                     "access_rules": [
-                      "$has_age|adult,ocarina",
-                      "{$hintable}"
+                      "$has_age|adult,ocarina"
                     ],
-                    "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
@@ -1913,7 +1907,8 @@
                   {
                     "name": "Chickens",
                     "access_rules": [
-                      "$has_age|child"
+                      "$has_age|child",
+                      "{$hintable}"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -3220,7 +3215,6 @@
                           "$has_age|both,ocarina,bolero,setting_plant_no,beans",
                           "$has_age|both,ocarina,bolero,bean_crater_yes",
                           "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
-                          "{$hintable}",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
                           "{$has_age|adult,hammer}"
@@ -3530,8 +3524,7 @@
                     "name": "Market Bombchu Bowling",
                     "access_rules": [
                       "$has_age|child,setting_logic_chus_yes,bombchu",
-                      "$has_age|child,setting_logic_chus_no,bombs",
-                      "{$hintable}"
+                      "$has_age|child,setting_logic_chus_no,bombs"
                     ],
                     "sections": [
                       {
@@ -5134,9 +5127,9 @@
                           "$has_age|adult,hookshot",
                           "$has_age|adult,[hookshot],bombs,shield2",
                           "$has_age|adult,[hookshot],bombs,shield3",
-                          "$has_age|child,boomerang",
-                          "{$has_age|child,sling}",
-                          "{$has_explosives}",
+                          "$has_age|child,ocarina,requiem,[logic_reverse_wasteland],boomerang",
+                          "{$has_age|adult}",
+                          "{$can_child_attack,ocarina,requiem}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -5236,8 +5229,7 @@
                         "access_rules": [
                           "$child_colossus,setting_plant_no,beans,$has_age|adult",
                           "$child_colossus,bean_colossus_yes,$has_age|adult",
-                          "{$adult_colossus}",
-                          "{$hintable}"
+                          "{$adult_colossus}"
                         ],
                         "capture_item": true,
                         "chest_unopened_img": "images/HP.png",

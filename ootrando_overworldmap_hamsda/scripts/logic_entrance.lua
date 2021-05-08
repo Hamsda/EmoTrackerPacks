@@ -20,7 +20,7 @@ function or_accessibility(...)
     end
     if access_level[data] > max_level then
       max_level = access_level[data]
-  end
+    end
   end
   return access_level[max_level]
 end
@@ -64,9 +64,18 @@ end
 function hidden_grotto()
   if has("logic_grottos_without_agony") or has("agony") then
     return AccessibilityLevel.Normal
-  else
-    return AccessibilityLevel.SequenceBreak
   end
+  return AccessibilityLevel.SequenceBreak
+end
+
+function hintable()
+  if
+    has("setting_hints_on") or (has("setting_hints_truth") and has("maskoftruth")) or
+      (has("setting_hints_agony") and has("agony"))
+   then
+    return AccessibilityLevel.Normal
+  end
+  return AccessibilityLevel.None
 end
 
 function can_open_storm_grotto()
@@ -168,40 +177,27 @@ end
 function FTR_or_goron()
   if has("logic_fewer_tunic_requirements") or has("redtunic") then
     return AccessibilityLevel.Normal
-  else
-    return AccessibilityLevel.SequenceBreak
   end
+  return AccessibilityLevel.SequenceBreak
 end
 
 function FTR_or_zora()
   if has("logic_fewer_tunic_requirements") or has("bluetunic") then
     return AccessibilityLevel.Normal
-  else
-    return AccessibilityLevel.SequenceBreak
   end
+  return AccessibilityLevel.SequenceBreak
 end
 
 function link_the_goron()
-  local lift = AccessibilityLevel.None
-  if has("lift1") then
-    lift = AccessibilityLevel.Normal
-  end
+  local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+  local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+  local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+  local trick = has("logic_link_goron_dins") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
-  local bow = AccessibilityLevel.None
-  if has("bow") then
-    bow = AccessibilityLevel.Normal
-  end
-
-  local df = AccessibilityLevel.None
-  if has("dinsfire") and has("magic") then
-    if has("logic_link_goron_dins") then
-      df = AccessibilityLevel.Normal
-    else
-      df = AccessibilityLevel.SequenceBreak
-    end
-  end
-
-  return and_accessibility(access_region("Goron City", "adult"), or_accessibility(lift, has_explosives(), bow, df))
+  return and_accessibility(
+    access_region("Goron City", "adult"),
+    or_accessibility(lift, has_explosives(), bow, and_accessibility(trick, df))
+  )
 end
 
 function gc_child_fire()
@@ -219,8 +215,6 @@ function woods_warp_open()
   local adult_gc = access_region("Goron City", "adult")
   local child_warp = access_region("GC Woods Warp", "child")
   local adult_warp = access_region("GC Woods Warp", "adult")
-  local child_fire = gc_child_fire()
-  local explo = has_explosives()
   local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
   local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
   local lift = has("lift") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -228,10 +222,13 @@ function woods_warp_open()
 
   return or_accessibility(
     and_accessibility(hammer, or_accessibility(adult_gc, adult_warp)),
-    and_accessibility(or_accessibility(explo, df), or_accessibility(child_gc, adult_gc, child_warp, adult_warp)),
+    and_accessibility(
+      or_accessibility(has_explosives(), df),
+      or_accessibility(child_gc, adult_gc, child_warp, adult_warp)
+    ),
     and_accessibility(bow, adult_gc),
     and_accessibility(lift, or_accessibility(child_gc, adult_gc)),
-    child_fire
+    gc_child_fire()
   )
 end
 
@@ -408,33 +405,29 @@ end
 function damage_below_quadruple()
   if has_exact("setting_damage_ohko", 0) and has_exact("setting_damage_quadruple", 0) then
     return AccessibilityLevel.Normal
-  else
-    return AccessibilityLevel.None
   end
+  return AccessibilityLevel.None
 end
 
 function damage_below_ohko()
   if has_exact("setting_damage_ohko", 0) then
     return AccessibilityLevel.Normal
-  else
-    return AccessibilityLevel.None
   end
+  return AccessibilityLevel.None
 end
 
 function damage_single_instance_quadruple()
   if damage_below_quadruple() == AccessibilityLevel.Normal or (has("nayrus") and has("magic")) then
     return AccessibilityLevel.Normal
-  else
-    return has_bottle()
   end
+  return has_bottle()
 end
 
 function damage_single_instance_ohko()
   if damage_below_ohko() == AccessibilityLevel.Normal or (has("nayrus") and has("magic")) then
     return AccessibilityLevel.Normal
-  else
-    return has_bottle()
   end
+  return has_bottle()
 end
 
 function can_spawn_rainbow_bridge()
