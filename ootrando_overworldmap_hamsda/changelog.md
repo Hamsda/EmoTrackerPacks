@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.4.2.0
 
 - fixed big poes in ER
 - improved reg Deku basement logic in ER
