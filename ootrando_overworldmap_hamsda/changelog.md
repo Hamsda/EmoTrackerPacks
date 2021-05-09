@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- improved same-scene interior connections
+
 ## 3.4.2.0
 
 - fixed big poes in ER
