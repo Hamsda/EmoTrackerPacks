@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.4.3.0
 
 - improved same-scene interior connections
 - fixed DMT falling rocks GS sequence break
