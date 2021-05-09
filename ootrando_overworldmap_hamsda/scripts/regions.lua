@@ -2803,18 +2803,30 @@ data_per_region = {
     ["locations"] = {
       ["Market Bombchu Bowling First Prize"] = {
         ["child_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       },
       ["Market Bombchu Bowling Second Prize"] = {
         ["child_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       }
     },
@@ -15513,31 +15525,29 @@ function build_regions()
               set_location_access(age, location, new_access, access)
             end
           end
-          if not region_data.interior then
-            if type(region_data.exits) == "table" then
-              for exit, exit_data in pairs(region_data.exits) do
-                local age_func = (age == 1) and "child_access" or "adult_access"
-                local new_access = exit_data[age_func]()
+          if type(region_data.exits) == "table" then
+            for exit, exit_data in pairs(region_data.exits) do
+              local age_func = (age == 1) and "child_access" or "adult_access"
+              local new_access = exit_data[age_func]()
 
-                local same_scene =
-                  region_data.scene and data_per_region[exit] and data_per_region[exit].scene and
-                  region_data.scene == data_per_region[exit].scene
+              local same_scene =
+                region_data.scene and data_per_region[exit] and data_per_region[exit].scene and
+                region_data.scene == data_per_region[exit].scene
 
-                if region_data.special and (not same_scene) then
-                  if not has(special_regions[region].setting) then
+              if region_data.special and (not same_scene) then
+                if not has(special_regions[region].setting) then
+                  set_region_access(age, exit, new_access, access)
+                elseif special_regions[region].origin then
+                  set_region_access(age, special_regions[region].origin, access, access)
+                end
+              else
+                if exit_data.fixed or same_scene then
+                  set_region_access(age, exit, new_access, access)
+                elseif not same_scene and not region_data.dungeon and not region_data.interior then
+                  if exit_data.setting and not has(exit_data.setting) then
                     set_region_access(age, exit, new_access, access)
-                  elseif special_regions[region].origin then
-                    set_region_access(age, special_regions[region].origin, access, access)
-                  end
-                else
-                  if exit_data.fixed or same_scene then
-                    set_region_access(age, exit, new_access, access)
-                  elseif not same_scene and not region_data.dungeon then
-                    if exit_data.setting and not has(exit_data.setting) then
-                      set_region_access(age, exit, new_access, access)
-                    elseif exit_data.capture and data_per_region[exit_data.capture] then
-                      set_region_access(age, exit_data.capture, new_access, access)
-                    end
+                  elseif exit_data.capture and data_per_region[exit_data.capture] then
+                    set_region_access(age, exit_data.capture, new_access, access)
                   end
                 end
               end
