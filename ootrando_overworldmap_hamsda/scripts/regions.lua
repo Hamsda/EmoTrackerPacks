@@ -2803,18 +2803,30 @@ data_per_region = {
     ["locations"] = {
       ["Market Bombchu Bowling First Prize"] = {
         ["child_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       },
       ["Market Bombchu Bowling Second Prize"] = {
         ["child_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bombchus()
+          if has_bombchus() == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       }
     },

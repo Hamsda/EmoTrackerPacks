@@ -4,6 +4,7 @@
 
 - improved same-scene interior connections
 - fixed DMT falling rocks GS sequence break
+- fixed chu bowling showing sequence breakable in ER
 
 ## 3.4.2.0
 
