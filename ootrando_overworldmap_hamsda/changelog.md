@@ -3,6 +3,7 @@
 ## x
 
 - improved same-scene interior connections
+- fixed DMT falling rocks GS sequence break
 
 ## 3.4.2.0
 

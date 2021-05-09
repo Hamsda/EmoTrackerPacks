@@ -3058,7 +3058,7 @@
                         "short_name": "GS",
                         "access_rules": [
                           "$has_age|adult,$night_gs,hammer",
-                          "$has_age|adult,$night_gs,[logic_trail_gs_upper]"
+                          "$has_age|adult,$night_gs,$dmc_upper,[logic_trail_gs_upper]"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
