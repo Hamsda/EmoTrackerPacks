@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added KZ skip to ER
+
 ## 3.4.3.0
 
 - improved same-scene interior connections

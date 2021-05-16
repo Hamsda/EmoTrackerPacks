@@ -5268,7 +5268,7 @@ data_per_region = {
           if has("setting_fountain_open") or has("setting_fountain_adult") then
             return AccessibilityLevel.Normal
           end
-          return deliver_letter()
+          return or_accessibility(deliver_letter(), AccessibilityLevel.SequenceBreak)
         end
       },
       ["ZD Shop"] = {
