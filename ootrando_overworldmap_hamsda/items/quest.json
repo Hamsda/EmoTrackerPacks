@@ -92,7 +92,7 @@
     "name": "Zelda's Lullaby",
     "type": "toggle",
     "loop": true,
-    "img": "images/zelda_colored.png",
+    "img": "images/song_zelda.png",
     "codes": "lullaby,zl"
   },
   {
@@ -106,7 +106,7 @@
     "name": "Saria's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/saria_colored.png",
+    "img": "images/song_saria.png",
     "codes": "saria"
   },
   {
@@ -120,7 +120,7 @@
     "name": "Epona's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/epona_colored.png",
+    "img": "images/song_epona.png",
     "codes": "epona"
   },
   {
@@ -134,7 +134,7 @@
     "name": "Sun's Song",
     "type": "toggle",
     "loop": true,
-    "img": "images/sun_colored.png",
+    "img": "images/song_sun.png",
     "codes": "sun"
   },
   {
@@ -148,7 +148,7 @@
     "name": "Song of Time",
     "type": "toggle",
     "loop": true,
-    "img": "images/time_colored.png",
+    "img": "images/song_time.png",
     "codes": "time,sot"
   },
   {
@@ -162,7 +162,7 @@
     "name": "Song of Storms",
     "type": "toggle",
     "loop": true,
-    "img": "images/storms_colored.png",
+    "img": "images/song_storms.png",
     "codes": "storm,sos"
   },
   {
@@ -176,7 +176,7 @@
     "name": "Minuet of Forest",
     "type": "toggle",
     "loop": true,
-    "img": "images/minuet.png",
+    "img": "images/song_minuet.png",
     "codes": "minuet,mof"
   },
   {
@@ -190,7 +190,7 @@
     "name": "Bolero of Fire",
     "type": "toggle",
     "loop": true,
-    "img": "images/bolero.png",
+    "img": "images/song_bolero.png",
     "codes": "bolero,bof"
   },
   {
@@ -204,7 +204,7 @@
     "name": "Serenade of Water",
     "type": "toggle",
     "loop": true,
-    "img": "images/serenade.png",
+    "img": "images/song_serenade.png",
     "codes": "serenade,sow"
   },
   {
@@ -218,7 +218,7 @@
     "name": "Requiem of Spirit",
     "type": "toggle",
     "loop": true,
-    "img": "images/requiem.png",
+    "img": "images/song_requiem.png",
     "codes": "requiem,ros"
   },
   {
@@ -232,7 +232,7 @@
     "name": "Nocturne of Shadow",
     "type": "toggle",
     "loop": true,
-    "img": "images/nocturne.png",
+    "img": "images/song_nocturne.png",
     "codes": "nocturne,nos"
   },
   {
@@ -246,7 +246,7 @@
     "name": "Prelude of Light",
     "type": "toggle",
     "loop": true,
-    "img": "images/prelude.png",
+    "img": "images/song_prelude.png",
     "codes": "prelude,pol"
   },
   {
