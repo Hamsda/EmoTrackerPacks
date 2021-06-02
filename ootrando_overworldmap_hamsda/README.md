@@ -33,6 +33,7 @@ If you have a dungeon marked as unknown in non-keysanity, some of the checks in 
 Some of this functionality might not be immediately obvious:
 
 - Right clicking ![Fairy Ocarina](images/fairyocarina.png "Fairy Ocarina")/![Ocarina of Time](images/ocarina.png "Ocarina of Time") will overlay it with ![Scarecrow](images/overlay_scarecrow.png "Scarecrow") indicating that you have confirmed the scarecrow song or started with free scarecrow. Locations that make use of the scarecrow will not show up unless this is turned on. The location of the scarecrow in Lake Hylia will automatically mark this when cleared first as child and then as adult.
+- Right clicking any of the song icons, e.g. ![Zelda's Lullaby](images/song_zelda.png "Zelda's Lullaby"), will overlay them with a smaller version, e.g. ![Song of Time overlay](images/overlay_song_time.png "Song of Time overlay"), that can be cycled through. This overlay has no logical bearing, but can be used to indicate which song has been found where in non songsanity.
 - ![Triforce Piece](images/triforce_piece.png "Triforce Piece") is used as a counter for Triforce pieces in the Triforce Hunt mode.
 
 ## Settings (for map variants)

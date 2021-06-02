@@ -3,6 +3,7 @@
 ## x
 
 - added KZ skip to ER
+- improved song icon right click functionality
 
 ## 3.4.3.0
 
