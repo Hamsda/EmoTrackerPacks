@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.4.4.0
 
 - added KZ skip to ER
 - improved song icon right click functionality
