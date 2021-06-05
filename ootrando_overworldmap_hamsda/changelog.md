@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.4.4.0
+
+- added KZ skip to ER
+- improved song icon right click functionality
+
 ## 3.4.3.0
 
 - improved same-scene interior connections
