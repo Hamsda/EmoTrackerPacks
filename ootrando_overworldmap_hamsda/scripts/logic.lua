@@ -910,7 +910,6 @@ function trials_barrier_dispelled()
 
   if setting_trials == 0 or trials_cleared >= setting_trials then
     return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
   end
+  return 0, AccessibilityLevel.None
 end

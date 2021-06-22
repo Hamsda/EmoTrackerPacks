@@ -10585,7 +10585,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal --TODO: trials logic
+          return trials_barrier_dispelled()
         end
       },
       ["Ganons Castle Deku Scrubs"] = {
@@ -10619,6 +10619,17 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["Forest Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local fa = has("firearrow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = has("dinsfire") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(can_LA(), or_accessibility(fa, df))
+        end
+      },
       ["Ganons Castle Forest Trial Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
@@ -10631,12 +10642,36 @@ data_per_region = {
   },
   ["Ganons Castle Fire Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true
+    ["dungeon"] = true,
+    ["locations"] = {
+      ["Fire Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lift3 = has("lift3") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(tunic, lift3, can_LA(), ls)
+        end
+      }
+    }
   },
   ["Ganons Castle Water Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["Water Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(has_blue_fire(), hammer, can_LA())
+        end
+      },
       ["Ganons Castle Water Trial Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
@@ -10651,6 +10686,30 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["Shadow Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local fa = has("firearrow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lot =
+            (has("logic_lens_castle") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = has("dinsfire") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            can_LA(),
+            hammer,
+            or_accessibility(
+              and_accessibility(fa, lot),
+              and_accessibility(ls, or_accessibility(hb, and_accessibility(df, lot)))
+            )
+          )
+        end
+      },
       ["Ganons Castle Shadow Trial Front Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -10685,6 +10744,19 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["Spirit Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local shield3 = has("shield3") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_spirit_trial_hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(can_LA(), shield3, has_bombchus(), or_accessibility(trick, hs))
+        end
+      },
       ["Ganons Castle Spirit Trial Crystal Switch Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -10716,6 +10788,20 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["Light Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys = has("gc_small_keys", 2) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lot =
+            (has("logic_lens_castle") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(can_LA(), hs, keys, lot)
+        end
+      },
       ["Ganons Castle Light Trial Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -10830,7 +10916,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal --TODO: trials logic
+          return trials_barrier_dispelled()
         end
       },
       ["Ganons Castle MQ Deku Scrubs"] = {
@@ -10864,6 +10950,16 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["MQ Forest Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(can_LA(), sot)
+        end
+      },
       ["Ganons Castle MQ Forest Trial Eye Switch Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -10898,12 +10994,44 @@ data_per_region = {
   },
   ["Ganons Castle MQ Fire Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true
+    ["dungeon"] = true,
+    ["locations"] = {
+      ["MQ Fire Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lift3 = has("lift3") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_fire_trial_mq") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(tunic, lift3, can_LA(), or_accessibility(ls, hb, and_accessibility(trick, hs)))
+        end
+      }
+    }
   },
   ["Ganons Castle MQ Water Trial"] = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["MQ Water Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("gc_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("gc_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+
+          return and_accessibility(has_blue_fire(), can_LA(), keys)
+        end
+      },
       ["Ganons Castle MQ Water Trial Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -10918,6 +11046,25 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["MQ Shadow Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local lot =
+            (has("logic_lens_castle_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_shadow_trial_mq") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(
+            can_LA(),
+            lot,
+            or_accessibility(hb, and_accessibility(hs, or_accessibility(has_fire(), trick)))
+          )
+        end
+      },
       ["Ganons Castle MQ Shadow Trial Bomb Flower Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -10962,6 +11109,18 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["MQ Spirit Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local fa = has("firearrow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shield3 = has("shield3") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(can_LA(), hammer, has_bombchus(), fa, shield3)
+        end
+      },
       ["Ganons Castle MQ Spirit Trial First Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -11010,6 +11169,26 @@ data_per_region = {
     ["scene"] = "Ganons Castle",
     ["dungeon"] = true,
     ["locations"] = {
+      ["MQ Light Trial Clear"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("gc_small_keys", 3) then
+            keys = AccessibilityLevel.Normal
+          elseif has("gc_small_keys", 2) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local lot =
+            (has("logic_lens_castle_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_light_trial_mq") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(can_LA(), keys, lot, or_accessibility(hs, trick))
+        end
+      },
       ["Ganons Castle MQ Light Trial Lullaby Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -14006,7 +14185,13 @@ data_per_region = {
               rang,
               or_accessibility(hs, hb, trick_jump)
             ),
-            and_accessibility(trick_gs, keys5, has_explosives(), or_accessibility(rang, AccessibilityLevel.Inspect), kill)
+            and_accessibility(
+              trick_gs,
+              keys5,
+              has_explosives(),
+              or_accessibility(rang, AccessibilityLevel.Inspect),
+              kill
+            )
           )
         end,
         ["adult_access"] = function()

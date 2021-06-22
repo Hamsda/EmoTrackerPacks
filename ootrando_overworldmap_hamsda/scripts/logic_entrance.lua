@@ -160,6 +160,13 @@ function has_fire()
   return AccessibilityLevel.None
 end
 
+function can_LA()
+  if has("bow") and has("magic") and has("lightarrow") then
+    return AccessibilityLevel.Normal
+  end
+  return AccessibilityLevel.None
+end
+
 function can_child_attack()
   if has("sling") or has("boomerang") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
     return AccessibilityLevel.Normal
@@ -492,5 +499,15 @@ function can_trigger_lacs()
     end
   end
 
+  return AccessibilityLevel.None
+end
+
+function trials_barrier_dispelled()
+  local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
+  local setting_trials = get_object("setting_trials") and get_object("setting_trials").AcquiredCount or 0
+
+  if setting_trials == 0 or trials_cleared >= setting_trials then
+    return AccessibilityLevel.Normal
+  end
   return AccessibilityLevel.None
 end

@@ -3,6 +3,7 @@
 ## x
 
 - added peeks to ER
+- added trials clear logic to ER
 
 ## 3.4.4.0
 
