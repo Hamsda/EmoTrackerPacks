@@ -764,11 +764,19 @@
           "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,bow",
           "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,lift1",
           "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,dinsfire,magic",
-          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,$has_explosives"
+          "@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,hookshot,$has_explosives",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sling,lift1}",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sling,dinsfire,magic}",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sling,$has_bombchus}",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sticks,$has_bombchus}",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|child,sword1,$has_bombchus}",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,bow}",
+          "{@Dodongos Cavern MQ/Bomb Bag Area,$has_age|adult,$has_bombchus}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1056,7 +1064,7 @@
         "access_rules": [
           "@Jabu Jabus Belly/Main,boomerang",
           "{@Jabu Jabus Belly/Main,sling}",
-          "{@Jabu Jabus Belly/Main,$has_explosives}"
+          "{@Jabu Jabus Belly/Main,$has_bombchus}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1072,7 +1080,7 @@
         "access_rules": [
           "@Jabu Jabus Belly/Main,boomerang",
           "{@Jabu Jabus Belly/Main,sling}",
-          "{@Jabu Jabus Belly/Main,$has_explosives}"
+          "{@Jabu Jabus Belly/Main,$has_bombchus}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1337,6 +1345,7 @@
         "access_rules": [
           "hookshot",
           "{bow}",
+          "{dinsfire,magic}",
           "{$has_explosives}"
         ],
         "visibility_rules": [
@@ -1372,6 +1381,7 @@
         "access_rules": [
           "hookshot",
           "{bow}",
+          "{dinsfire,magic}",
           "{$has_explosives}"
         ],
         "visibility_rules": [
@@ -1389,6 +1399,7 @@
           "hookshot",
           "[logic_ice_block_gs],hoverboots",
           "{bow}",
+          "{dinsfire,magic}",
           "{$has_explosives}"
         ],
         "visibility_rules": [
@@ -1728,6 +1739,7 @@
         "access_rules": [
           "@Forest Temple/NW Outdoors,longshot",
           "{@Forest Temple/NW Outdoors,bow}",
+          "{@Forest Temple/NW Outdoors,$has_bombchus}",
           "@Forest Temple/Outside Upper Ledge,hookshot"
         ],
         "visibility_rules": [
@@ -2983,11 +2995,14 @@
         "access_rules": [
           "@Water Temple/Dark Link Region,ocarina,time,ironboots,$FTR_or_zora",
           "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,bow",
-          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,$has_bombchus"
+          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,$has_bombchus",
+          "{@Water Temple/Dark Link Region,ocarina,time,bow}",
+          "{@Water Temple/Dark Link Region,ocarina,time,$has_bombchus}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -4124,10 +4139,10 @@
           "{@Spirit Temple/Central Chamber,$child_colossus,sling,$has_explosives}",
           "{@Spirit Temple/Central Chamber,bow,$has_age|adult,lift2}"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1

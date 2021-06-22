@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added peeks to ER
+
 ## 3.4.4.0
 
 - added KZ skip to ER

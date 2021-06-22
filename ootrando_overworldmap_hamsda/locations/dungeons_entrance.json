@@ -813,6 +813,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1460,6 +1461,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1490,6 +1492,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1605,6 +1608,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1663,6 +1667,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1685,6 +1690,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -2702,6 +2708,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -2954,6 +2961,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -3577,6 +3585,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -3617,10 +3626,10 @@
             "access_rules": [
               "$access_location|Spirit Temple GS Hall After Sun Block Room"
             ],
-            "capture_item": true,
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -3885,6 +3894,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -4204,6 +4214,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
