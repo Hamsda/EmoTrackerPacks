@@ -1,4 +1,4 @@
-skulltula_locations = {
+local skulltula_locations = {
   --overworld
   ["setting_tokens_overworld"] = {
     "@KF Know It All House/KF GS Know It All House (N)",

@@ -1,58 +1,4 @@
-dungeons_with_keys = {
-  "forest",
-  "fire",
-  "water",
-  "spirit",
-  "shadow",
-  "botw",
-  "gtg",
-  "gc"
-}
-key_counts = {
-  vanilla = {
-    forest = 5,
-    fire = 8,
-    water = 6,
-    spirit = 5,
-    shadow = 5,
-    botw = 3,
-    gtg = 9,
-    gc = 2
-  },
-  mq = {
-    forest = 6,
-    fire = 5,
-    water = 2,
-    spirit = 7,
-    shadow = 6,
-    botw = 2,
-    gtg = 3,
-    gc = 3
-  }
-}
-function update_keycounts()
-  for _, dungeon in ipairs(dungeons_with_keys) do
-    local key_object = get_object(dungeon .. "_small_keys")
-    if key_object then
-      if has(dungeon .. "_reg") then
-        key_object.MaxCount = key_counts["vanilla"][dungeon]
-      elseif has(dungeon .. "_mq") then
-        key_object.MaxCount = key_counts["mq"][dungeon]
-      else
-        key_object.MaxCount = math.max(key_counts["vanilla"][dungeon], key_counts["mq"][dungeon])
-      end
-      if not is_keys then
-        key_object.AcquiredCount = key_object.MaxCount
-        local bk = get_object(dungeon .. "_boss_key")
-        if bk then
-          bk.Active = true
-        end
-      end
-    end
-  end
-end
-
-max_amount_per_bridge_stage = {0, 0, 3, 6, 9, 100}
+local max_amount_per_bridge_stage = {0, 0, 3, 6, 9, 100}
 function update_bridge_amount_max()
   local setting_bridge = get_object("setting_bridge")
   local setting_bridge_amount = get_object("setting_bridge_amount")
@@ -61,7 +7,7 @@ function update_bridge_amount_max()
   end
 end
 
-max_amount_per_lacs_stage = {0, 3, 6, 9, 100}
+local max_amount_per_lacs_stage = {0, 3, 6, 9, 100}
 function update_lacs_amount_max()
   local setting_lacs = get_object("setting_lacs")
   local setting_lacs_amount = get_object("setting_lacs_amount")
@@ -87,7 +33,7 @@ function update_fortress()
     elseif setting_normal then
       item_gf_keys.MaxCount = 4
     end
-    if not is_keys then
+    if not HAS_KEYS then
       item_gf_keys.AcquiredCount = item_gf_keys.MaxCount
     end
   end
@@ -126,7 +72,7 @@ function get_adult_trade()
   end
   return nil
 end
-capture_mappings = {
+local capture_mappings = {
   ["capture_bottle"] = {
     1,
     get_first_free_bottle
@@ -246,16 +192,14 @@ function update_collected_capture()
 end
 
 function update_minimal_bottle()
-  if has_map then
-    local minimal_bottle = get_object("bottleminimal")
-    if minimal_bottle then
-      if has("ruto") then
-        minimal_bottle.CurrentStage = 2
-      elseif has("bottle") then
-        minimal_bottle.CurrentStage = 1
-      else
-        minimal_bottle.CurrentStage = 0
-      end
+  local minimal_bottle = get_object("bottleminimal")
+  if minimal_bottle then
+    if has("ruto") then
+      minimal_bottle.CurrentStage = 2
+    elseif has("bottle") then
+      minimal_bottle.CurrentStage = 1
+    else
+      minimal_bottle.CurrentStage = 0
     end
   end
 end
@@ -268,7 +212,7 @@ function update_free_zelda()
   end
 end
 
-vanilla_captures = {
+local vanilla_captures = {
   ["setting_shuffle_sword1_yes"] = {
     ["@KF Kokiri Sword Chest/Dodge Boulder"] = "sword1"
   },
@@ -306,32 +250,12 @@ function update_vanilla_captures()
   end
 end
 
-loading_save_file = false
-function tracker_on_begin_loading_save_file()
-  loading_save_file = true
-end
-
-function tracker_on_finish_loading_save_file()
-  loading_save_file = false
-end
-
-function tracker_on_accessibility_updated()
-  if not loading_save_file then
-    clear_amount_cache()
-
-    update_keycounts()
-    update_bridge_amount_max()
-    update_lacs_amount_max()
-    update_fortress()
-    update_collected_capture()
-    update_minimal_bottle()
-    update_free_zelda()
-    update_vanilla_captures()
-
-    update_version_specific()
-
-    apply_queued_changes()
-
-    get_object("dummy").Active = not get_object("dummy").Active
-  end
+function update_maps()
+  update_bridge_amount_max()
+  update_lacs_amount_max()
+  update_fortress()
+  update_collected_capture()
+  update_minimal_bottle()
+  update_free_zelda()
+  update_vanilla_captures()
 end
