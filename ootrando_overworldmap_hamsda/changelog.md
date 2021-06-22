@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.5.0.0
 
 - added peeks to ER
 - added trials clear logic to ER
