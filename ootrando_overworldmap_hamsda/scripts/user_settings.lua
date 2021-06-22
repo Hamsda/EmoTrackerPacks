@@ -1,0 +1,2 @@
+USE_SONG_CHECKMARK_ONLY = false
+ER_DEBUGGING = false

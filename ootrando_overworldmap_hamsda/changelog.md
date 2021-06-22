@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.5.0.0
+
+- added peeks to ER
+- added trials clear logic to ER
+
 ## 3.4.4.0
 
 - added KZ skip to ER

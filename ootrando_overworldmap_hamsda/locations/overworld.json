@@ -272,7 +272,7 @@
                     "short_name": "GS",
                     "access_rules": [
                       "$has_age|adult,$night_gs,hookshot",
-                      "$has_age|adult,$night_gs,hoverboots,[logic_adult_kokiri_gs]", //TODO: can be done itemless, no trick yet
+                      "$has_age|adult,$night_gs,hoverboots,[logic_adult_kokiri_gs]",
                       "{$has_age|adult,$night_gs,bow}",
                       "{$has_age|adult,$night_gs,dinsfire,magic}"
                     ],
@@ -634,11 +634,15 @@
                       "[logic_lost_woods_gs_bean],longshot",
                       "[logic_lost_woods_gs_bean],hookshot,bow",
                       "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
-                      "[logic_lost_woods_gs_bean],hookshot,dinsfire,magic"
+                      "[logic_lost_woods_gs_bean],hookshot,dinsfire,magic",
+                      "{bow}",
+                      "{$has_bombchus}",
+                      "{dinsfire,magic}"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
                     ],
+                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -1041,9 +1045,10 @@
                     "short_name": "GS",
                     "access_rules": [
                       "$has_age|child,$has_explosives,boomerang",
-                      "{$has_age|child,$has_explosives,sling}",
                       "$has_age|adult,hookshot",
+                      "{$has_age|child,$has_explosives}",
                       "{$has_age|adult,bow}",
+                      "{$has_age|adult,$has_explosives}",
                       "{dinsfire,magic}"
                     ],
                     "visibility_rules": [
@@ -1460,11 +1465,13 @@
                         "name": "LH GS Tree (N)",
                         "short_name": "GS",
                         "access_rules": [
-                          "$has_age|adult,$night_gs,longshot"
+                          "$has_age|adult,$night_gs,longshot",
+                          "{$has_age|adult,bow}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
                         ],
+                        "capture_item": true,
                         "chest_unopened_img": "images/skulltula.png",
                         "chest_opened_img": "images/skulltula_token.png",
                         "item_count": 1
@@ -4249,7 +4256,8 @@
                         "short_name": "GS",
                         "access_rules": [
                           "hookshot",
-                          "{bow}"
+                          "{bow}",
+                          "{$has_bombchus}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -5047,6 +5055,7 @@
                         "access_rules": [
                           "hookshot",
                           "{bow}",
+                          "{$has_explosives}",
                           "{dinsfire,magic}"
                         ],
                         "visibility_rules": [
@@ -5129,7 +5138,7 @@
                           "$has_age|adult,[hookshot],bombs,shield3",
                           "$has_age|child,ocarina,requiem,[logic_reverse_wasteland],boomerang",
                           "{$has_age|adult}",
-                          "{$can_child_attack,ocarina,requiem}",
+                          "{$has_age|child,ocarina,requiem}",
                           "{$hintable}"
                         ],
                         "visibility_rules": [
@@ -5388,7 +5397,8 @@
                           "$child_colossus,bean_colossus_yes",
                           "$adult_colossus,longshot",
                           "$adult_colossus,hookshot,[logic_colossus_gs]",
-                          "{$adult_colossus,bow}"
+                          "{$adult_colossus,bow}",
+                          "{$adult_colossus,$has_bombchus}"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"

@@ -388,6 +388,7 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
+                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -1050,6 +1051,7 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
+                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -4453,6 +4455,7 @@
                 "access_rules": [
                   "$access_location|LLR Freestanding PoH"
                 ],
+                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1

@@ -14,10 +14,10 @@ end
 function ProgBadgeItem:updateIcon()
   local img_mod = ""
   if self:getProperty("badgeNum") and self:getProperty("badgeNum") > 0 then
-    img_mod = "overlay|"..self.badges[self:getProperty("badgeNum")]
+    img_mod = "overlay|" .. self.badges[self:getProperty("badgeNum")]
   end
   if not self:getProperty("active") then
-    img_mod = img_mod..",@disabled"
+    img_mod = img_mod .. ",@disabled"
   end
   self.ItemInstance.Icon = ImageReference:FromImageReference(self.imageBase, img_mod)
 end
@@ -28,7 +28,7 @@ end
 
 function ProgBadgeItem:onRightClick()
   if self:getProperty("badgeNum") then
-    if self:getProperty("badgeNum") == #self.badges then
+    if self:getProperty("badgeNum") >= #self.badges then
       self:setProperty("badgeNum", 0)
     else
       self:setProperty("badgeNum", self:getProperty("badgeNum") + 1)

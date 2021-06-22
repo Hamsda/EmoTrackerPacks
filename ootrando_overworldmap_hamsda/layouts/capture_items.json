@@ -1,0 +1,100 @@
+{
+  "tracker_capture_item": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "sticks",
+          "nuts",
+          "bombs",
+          "bow",
+          "firearrow",
+          "dinsfire",
+          "sword1",
+          "",
+          "sword3"
+        ],
+        [
+          "slingshot",
+          "ocarina",
+          "bombchu",
+          "hookshot",
+          "icearrow",
+          "faroreswind",
+          "shield1",
+          "shield2",
+          "shield3"
+        ],
+        [
+          "boomerang",
+          "lens",
+          "beans",
+          "hammer",
+          "lightarrow",
+          "nayruslove",
+          "lift1",
+          "redtunic",
+          "bluetunic"
+        ],
+        [
+          "capture_bottle",
+          "capture_ruto",
+          "generic_map",
+          "generic_compass",
+          "generic_small_key",
+          "generic_boss_key",
+          "scale1",
+          "ironboots",
+          "hoverboots"
+        ],
+        [
+          "lullaby",
+          "epona",
+          "saria",
+          "sun",
+          "time",
+          "storm",
+          "wallet1",
+          "magic",
+          "token"
+        ],
+        [
+          "minuet",
+          "bolero",
+          "serenade",
+          "requiem",
+          "nocturne",
+          "prelude",
+          "card",
+          "agony",
+          "triforce"
+        ],
+        [
+          "capture_adultegg",
+          "capture_adultcucco",
+          "capture_cojiro",
+          "capture_mushroom",
+          "capture_oddpotion",
+          "capture_saw",
+          "rupee",
+          "HP",
+          "HC"
+        ],
+        [
+          "capture_brokensword",
+          "capture_prescription",
+          "capture_frog",
+          "capture_eyedrops",
+          "capture_claim",
+          "capture_childegg",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  }
+}

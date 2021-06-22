@@ -813,6 +813,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1460,6 +1461,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1490,6 +1492,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1605,6 +1608,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1663,6 +1667,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1685,6 +1690,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -1863,6 +1869,9 @@
           {
             "name": "Forest Trial Clear",
             "short_name": "Forest Trial",
+            "access_rules": [
+              "$access_location|Forest Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -1879,6 +1888,9 @@
           {
             "name": "Water Trial Clear",
             "short_name": "Water Trial",
+            "access_rules": [
+              "$access_location|Water Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -1903,6 +1915,9 @@
           {
             "name": "Shadow Trial Clear",
             "short_name": "Shadow Trial",
+            "access_rules": [
+              "$access_location|Shadow Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -1911,6 +1926,9 @@
           {
             "name": "Fire Trial Clear",
             "short_name": "Fire Trial",
+            "access_rules": [
+              "$access_location|Fire Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -1945,6 +1963,9 @@
           {
             "name": "Light Trial Clear",
             "short_name": "Light Trial",
+            "access_rules": [
+              "$access_location|Light Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -1969,6 +1990,9 @@
           {
             "name": "Spirit Trial Clear",
             "short_name": "Spirit Trial",
+            "access_rules": [
+              "$access_location|Spirit Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2053,6 +2077,9 @@
           {
             "name": "Forest Trial Clear",
             "short_name": "Forest Trial",
+            "access_rules": [
+              "$access_location|MQ Forest Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2069,6 +2096,9 @@
           {
             "name": "Water Trial Clear",
             "short_name": "Water Trial",
+            "access_rules": [
+              "$access_location|MQ Water Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2094,6 +2124,9 @@
           {
             "name": "Shadow Trial Clear",
             "short_name": "Shadow Trial",
+            "access_rules": [
+              "$access_location|MQ Shadow Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2102,6 +2135,9 @@
           {
             "name": "Fire Trial Clear",
             "short_name": "Fire Trial",
+            "access_rules": [
+              "$access_location|MQ Fire Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2118,6 +2154,9 @@
           {
             "name": "Light Trial Clear",
             "short_name": "Light Trial",
+            "access_rules": [
+              "$access_location|MQ Light Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2151,6 +2190,9 @@
           {
             "name": "Spirit Trial Clear",
             "short_name": "Spirit Trial",
+            "access_rules": [
+              "$access_location|MQ Spirit Trial Clear"
+            ],
             "visibility_rules": [
               "setting_trials:1"
             ],
@@ -2702,6 +2744,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -2954,6 +2997,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -3577,6 +3621,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -3617,10 +3662,10 @@
             "access_rules": [
               "$access_location|Spirit Temple GS Hall After Sun Block Room"
             ],
-            "capture_item": true,
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -3885,6 +3930,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
@@ -4204,6 +4250,7 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
