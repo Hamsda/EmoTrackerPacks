@@ -4,6 +4,7 @@
 
 - added option to show badges on exits for ER
 - added option to turn visited exits red for ER
+- fixed overlap between LH owl and grotto in ER
 
 ## 3.5.0.0
 
