@@ -1,2 +1,3 @@
 USE_SONG_CHECKMARK_ONLY = false
+ER_BADGE_EXITS = false
 ER_DEBUGGING = false

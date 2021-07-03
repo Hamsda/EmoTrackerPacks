@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added option to show badges on exits for ER
+
 ## 3.5.0.0
 
 - added peeks to ER

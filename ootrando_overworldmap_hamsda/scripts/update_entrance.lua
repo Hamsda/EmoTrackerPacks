@@ -1,11 +1,25 @@
 function get_capture_per_section(section_object)
-  if section_object then
-    local capture = section_object.CapturedItem
-    if capture and capture.Name then
-      return capture.Name
-    end
+  local capture = section_object.CapturedItem
+  if capture and capture.Name then
+    return capture.Name
   end
   return nil
+end
+
+badge_cache = {}
+function badge_location(location_object, section_object)
+  local capture = section_object.CapturedItem
+  if capture ~= badge_cache[section_object] then
+    if badge_cache[location_object] then
+      location_object:RemoveBadge(badge_cache[location_object])
+      badge_cache[location_object] = nil
+      badge_cache[section_object] = nil
+    end
+    if capture then
+      badge_cache[location_object] = location_object:AddBadge(capture.PotentialIcon)
+      badge_cache[section_object] = capture
+    end
+  end
 end
 
 function update_region_captures()
@@ -17,6 +31,9 @@ function update_region_captures()
       for target, target_data in pairs(region_data.exits) do
         if target_data.section_object then
           target_data.capture = get_capture_per_section(target_data.section_object)
+          if ER_BADGE_EXITS then
+            badge_location(target_data.location_object, target_data.section_object)
+          end
           if target_data.capture and special_regions[target_data.capture] and region_data.scene ~= "Root" then
             special_regions[target_data.capture].origin = region
             if ER_DEBUGGING then
