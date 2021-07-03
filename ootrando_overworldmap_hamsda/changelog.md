@@ -3,6 +3,7 @@
 ## x
 
 - added option to show badges on exits for ER
+- added option to turn visited exits red for ER
 
 ## 3.5.0.0
 
