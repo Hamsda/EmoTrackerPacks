@@ -2,9 +2,13 @@
 
 ## x
 
-- added option to show badges on exits for ER
-- added option to turn visited exits red for ER
 - fixed overlap between LH owl and grotto in ER
+- changed `user_settings.lua`
+  - added some short explanation for each option
+  - renamed `USE_SONG_CHECKMARK_ONLY` to `SONG_BADGE_CHECK_ONLY`
+  - added `SONG_BADGE_LAST_ACTIVATED`
+  - added `ER_BADGE_EXITS`
+  - added `ER_TURN_VISITED_EXIT_RED`
 
 ## 3.5.0.0
 
