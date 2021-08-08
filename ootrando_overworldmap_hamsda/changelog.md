@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.6.0.0
 
 - fixed overlap between LH owl and grotto in ER
 - changed `user_settings.lua`
