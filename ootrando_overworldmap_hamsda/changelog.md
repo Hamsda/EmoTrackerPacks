@@ -9,6 +9,7 @@
   - added `SONG_BADGE_LAST_ACTIVATED`
   - added `ER_BADGE_EXITS`
   - added `ER_TURN_VISITED_EXIT_RED`
+- updated rando settings to match new weeklies
 
 ## 3.5.0.0
 
