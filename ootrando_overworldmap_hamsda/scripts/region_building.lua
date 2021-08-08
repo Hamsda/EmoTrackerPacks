@@ -190,6 +190,11 @@ function access_exit(region, exit, age)
 
   local level = access_level[access]
   if level > 0 then
+    if ER_TURN_VISITED_EXIT_RED and data_per_region[region].exits[exit].capture then
+      --having a capture + inspect level = turn icon red
+      --so you can't see the entrance capture anymore, unless F11/badged
+      return 1, AccessibilityLevel.Inspect
+    end
     return 1, access
   end
   return 0, AccessibilityLevel.None

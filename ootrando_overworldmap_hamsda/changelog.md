@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.6.0.0
+
+- fixed overlap between LH owl and grotto in ER
+- changed `user_settings.lua`
+  - added some short explanation for each option
+  - renamed `USE_SONG_CHECKMARK_ONLY` to `SONG_BADGE_CHECK_ONLY`
+  - added `SONG_BADGE_LAST_ACTIVATED`
+  - added `ER_BADGE_EXITS`
+  - added `ER_TURN_VISITED_EXIT_RED`
+- updated rando settings to match new weeklies
+
 ## 3.5.0.0
 
 - added peeks to ER

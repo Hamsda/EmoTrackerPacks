@@ -8,6 +8,7 @@ function get_object(name)
     object_cache[name] = object
     return object
   end
+  return nil
 end
 
 amount_cache = {}
