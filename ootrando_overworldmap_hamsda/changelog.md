@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- changed startup to fix incorrect save loading
+
 ## 3.6.0.0
 
 - fixed overlap between LH owl and grotto in ER
