@@ -8,6 +8,7 @@ function get_object(name)
     object_cache[name] = object
     return object
   end
+  print("error! get_object - not found:", name)
   return nil
 end
 
