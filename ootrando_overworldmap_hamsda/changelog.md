@@ -3,6 +3,7 @@
 ## x
 
 - changed startup to fix incorrect save loading
+- added missing `Market Back Alley` capture in ER
 
 ## 3.6.0.0
 

@@ -318,6 +318,12 @@
     "codes": "entrance_overworld_mkt"
   },
   {
+    "name": "Market Back Alley",
+    "type": "toggle",
+    "img": "images/entrance_overworld_mkt_aly.png",
+    "codes": "entrance_overworld_mkt_aly"
+  },
+  {
     "name": "Market Entrance",
     "type": "toggle",
     "img": "images/entrance_overworld_mkt_ent.png",
