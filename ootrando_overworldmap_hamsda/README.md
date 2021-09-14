@@ -117,7 +117,7 @@ This setting determines which age you started as.
 - ![Child Start](images/setting_age_child.png "Child Start") Link started as child.
 - ![Adult Start](images/setting_age_adult.png "Adult Start") Link started as adult.
 
-If you have selected ![Open Door](images/setting_door_open.png "Open Door") or collected an ![Ocarina](images/fairyocarina.png "Ocarina") and ![Song of Time](images/time_colored.png "Song of Time") the checks for the other age will unlock.
+If you have selected ![Open Door](images/setting_door_open.png "Open Door") or collected an ![Ocarina](images/fairyocarina.png "Ocarina") and ![Song of Time](images/song_time.png "Song of Time") the checks for the other age will unlock.
 
 #### Bombchus Are Considered in Logic
 
