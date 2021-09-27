@@ -4,6 +4,7 @@
 
 - changed startup to fix incorrect save loading
 - added missing `Market Back Alley` capture in ER
+- added customizable setting preset loader
 
 ## 3.6.0.0
 

@@ -19,9 +19,13 @@ Tracker:AddItems("items/dungeons.json")
 --CUSTOM ITEMS
 ScriptHost:LoadScript("scripts/sdk/class.lua")
 ScriptHost:LoadScript("scripts/sdk/custom_item.lua")
+
 ScriptHost:LoadScript("scripts/custom_prog_badge.lua")
 ScriptHost:LoadScript("scripts/custom_song_item.lua")
-
 for i = 1, 12 do
   SongItem(i)
 end
+
+ScriptHost:LoadScript("scripts/user_presets.lua")
+ScriptHost:LoadScript("scripts/custom_presets.lua")
+PresetLoader()

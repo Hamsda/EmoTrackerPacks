@@ -40,6 +40,9 @@ Some of this functionality might not be immediately obvious:
 
 There is a variety of toggles available to accomodate the different settings the randomizer offers. The settings are arranged to mimic the current GUI of the randomizer. The default for all of these should match the settings used for the weekly races (check out the OoTR discord for more info).
 
+The bottom right icon is a customizable preset loader. Cycle through the presets with left click and load with right click (some settings might require an extra right click since they depend on other settings).
+To customize the presets, please override `scripts/user_presets.lua` and edit to your liking. I hope the structure is fairly straightforward. Which setting number corresponds to which setting can be found in `items/options.json` and `items/options_entrance.json` (0 based indexing).
+
 ### Main Rules
 
 This tab contains most of the important settings that can have a major impact on the logic of a randomizer seed ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
