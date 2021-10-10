@@ -1,8 +1,9 @@
 ﻿{
-  "name": "OoT Randomizer - Map and Item Tracker",
+  "name": "OoT Randomizer - Map and Item Tracker (Autotracker)",
   "game_name": "Ocarina of Time Randomizer",
   "package_version": "3.6.0.0",
   "package_uid": "ootrando_overworldmap_hamsda",
+  "platform": "snes",
   "author": "Hamsda",
   "variants": {
     "standard": {

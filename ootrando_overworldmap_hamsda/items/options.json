@@ -157,6 +157,16 @@
     "initial_quantity": 6
   },
   {
+    "name": "Big Poes Required",
+    "type": "consumable",
+    "img": "images/bottle_bigpoe.png",
+    "codes": "setting_poes_amount",
+    "disabled_img_mods": "@enabled",
+    "max_quantity": 10,
+    "min_quantity": 1,
+    "initial_quantity": 10
+  },
+  {
     "name": "Number of Trials",
     "type": "consumable",
     "img": "images/setting_trials.png",
@@ -531,6 +541,23 @@
       {
         "img": "images/setting_plant_yes.png",
         "codes": "setting_plant,setting_plant_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Race Mode",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_racemode_on.png",
+        "codes": "setting_racemode,setting_racemode_on"
+      },
+      {
+        "img": "images/setting_racemode_off.png",
+        "codes": "setting_racemode,setting_racemode_off",
         "inherit_codes": false
       }
     ]

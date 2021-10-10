@@ -535,7 +535,7 @@
                 "short_name": "LW Deku Scrubs",
                 "sections": [
                   {
-                    "name": "Deku Nuts / Deku Sticks",
+                    "name": "Deku Nuts and Deku Sticks",
                     "access_rules": [
                       "$has_age|child,$can_child_attack",
                       "$has_age|child,nuts",
@@ -3777,7 +3777,8 @@
                           "$has_age|child"
                         ],
                         "visibility_rules": [
-                          "setting_zelda_off"
+                          "setting_zelda_off,nokidtrade",
+                          "setting_zelda_off,setting_shuffle_egg_yes"
                         ],
                         "capture_item": true,
                         "item_count": 1

@@ -15,3 +15,6 @@ ER_TURN_VISITED_EXIT_RED = false
 
 -- adds debug prints in the developer console
 ER_DEBUGGING = false
+
+AUTOTRACKER_ENABLE_ITEM_TRACKING = true
+AUTOTRACKER_ENABLE_LOCATION_TRACKING = true
