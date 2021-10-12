@@ -39,7 +39,6 @@ function PresetLoader:onRightClick()
       type(setting_presets[num]["settings"]) == "table"
    then
     for setting, value in pairs(setting_presets[num]["settings"]) do
-      print(setting, value)
       local setting_object = get_object(setting)
       if setting_object then
         if type(setting_object.CurrentStage) == "number" then
