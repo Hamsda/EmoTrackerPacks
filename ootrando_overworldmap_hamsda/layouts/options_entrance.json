@@ -13,62 +13,69 @@
               "setting_forest",
               "setting_age",
               "setting_shopsanity",
-              "setting_shuffle_sword1",
+              "setting_shuffle_smallkeys",
               "setting_zelda"
             ],
             [
               "setting_kak",
               "setting_entrance_interiors",
               "setting_tokens_off",
-              "setting_shuffle_ocarinas",
+              "setting_shuffle_hideoutkeys",
               "setting_masks"
             ],
             [
               "setting_door",
               "setting_entrance_grottos",
               "setting_scrub_shuffle",
-              "setting_shuffle_egg",
+              "setting_shuffle_bosskeys",
               "setting_hints"
             ],
             [
               "setting_fountain",
               "setting_entrance_dungeons",
               "setting_cowsanity",
-              "setting_shuffle_card",
+              "setting_shuffle_ganon_bosskey",
               "setting_damage"
             ],
             [
               "setting_gerudo",
               "setting_entrance_overworld",
+              "setting_shuffle_sword1",
               "",
-              "setting_shuffle_beans",
               "setting_plant"
             ],
             [
               "setting_bridge",
               "setting_entrance_owl",
+              "setting_shuffle_ocarinas",
               "",
-              "setting_merchants",
               ""
             ],
             [
               "setting_bridge_amount",
               "setting_entrance_warpsong",
+              "setting_shuffle_egg",
               "",
-              "setting_lacs",
               ""
             ],
             [
               "setting_trials",
               "setting_entrance_spawn",
+              "setting_shuffle_card",
               "",
-              "setting_lacs_amount",
               ""
             ],
             [
               "",
               "setting_logic_chus",
+              "setting_shuffle_beans",
               "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "setting_merchants",
               "",
               "presets"
             ]

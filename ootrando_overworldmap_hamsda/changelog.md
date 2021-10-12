@@ -5,6 +5,7 @@
 - changed startup to fix incorrect save loading
 - added missing `Market Back Alley` capture in ER
 - added customizable setting preset loader
+- added settings for shuffled keys
 
 ## 3.6.0.0
 

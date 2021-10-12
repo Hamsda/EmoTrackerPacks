@@ -471,37 +471,6 @@ function can_spawn_rainbow_bridge()
   return AccessibilityLevel.None
 end
 
-function can_trigger_lacs()
-  local setting_lacs_amount = get_object("setting_lacs_amount") and get_object("setting_lacs_amount").AcquiredCount or 0
-  local stones = Tracker:ProviderCountForCode("stones")
-  local medallions = Tracker:ProviderCountForCode("medallions")
-  local tokens = Tracker:ProviderCountForCode("token")
-
-  if has("setting_lacs_vanilla") then
-    if has("lacs_meds", 2) then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_stones") then
-    if stones >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_medallions") then
-    if medallions >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_dungeons") then
-    if (stones + medallions) >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_gs") then
-    if tokens >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  end
-
-  return AccessibilityLevel.None
-end
-
 function trials_barrier_dispelled()
   local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
   local setting_trials = get_object("setting_trials") and get_object("setting_trials").AcquiredCount or 0

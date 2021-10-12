@@ -201,21 +201,33 @@ This setting determines if Medigoron and Carpet Salesman items are shuffled.
 - ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
 - ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
 
-#### LACS Condition
+#### Shuffle Small Keys
 
-This setting determines what is needed to trigger the Light Arrow cutscene in the Temple of Time.
+This setting determines if Small Keys are shuffled (non keys variants will force this off).
 
-- ![Vanilla](images/setting_lacs_vanilla.png "Vanilla") Shadow medallion and spirit medallion required
-- ![Stones](images/setting_lacs_stones.png "Stones") Variable amount of stones required
-- ![Medallions](images/setting_lacs_medallions.png "Medallions") Variable amount of medallions required
-- ![Dungeons](images/setting_lacs_dungeons.png "Dungeons") Variable amount of medallions and stones required
-- ![GS tokens](images/setting_lacs_gs.png "GS tokens") Variable amount of Gold Skulltula tokens required
+- ![Small Keys not shuffled](images/setting_shuffle_smallkeys_no.png "Small Keys not shuffled") Small Keys are not shuffled and will always be considered at their maximum.
+- ![Small Keys shuffled](images/setting_shuffle_smallkeys_yes.png "Small Keys shuffled") Small Keys are shuffled and need to be tracked by the user.
 
-#### LACS Amount
+#### Shuffle Thieves' Hideout Keys
 
-This setting determines how many (if any) of the items specified in `LACS Condition` are needed.
+This setting determines if Thieves' Hideout Keys are shuffled (non keys variants will force this off).
 
-![LACS Condition](images/setting_lacs_amount.png "LACS Condition") Increment or decrement the number required.
+- ![Thieves' Hideout Keys not shuffled](images/setting_shuffle_hideoutkeys_no.png "Thieves' Hideout Keys not shuffled") Thieves' Hideout Keys are not shuffled and will always be considered at their maximum.
+- ![Thieves' Hideout Keys shuffled](images/setting_shuffle_hideoutkeys_yes.png "Thieves' Hideout Keys shuffled") Thieves' Hideout Keys are shuffled and need to be tracked by the user.
+
+#### Shuffle Boss Keys
+
+This setting determines if Boss Keys are shuffled (non keys variants will force this off).
+
+- ![Boss Keys not shuffled](images/setting_shuffle_bosskeys_no.png "Boss Keys not shuffled") Boss Keys are not shuffled and will always be considered active.
+- ![Boss Keys shuffled](images/setting_shuffle_bosskeys_yes.png "Boss Keys shuffled") Boss Keys are shuffled and need to be tracked by the user.
+
+#### Shuffle Ganon's Boss Key
+
+This setting determines if Ganon's Boss Key is shuffled (non keys variants will force this off).
+
+- ![Ganon's Boss Key not shuffled](images/setting_shuffle_ganon_bosskey_no.png "Ganon's Boss Key not shuffled") Ganon's Boss Key is not shuffled and will always be considered active.
+- ![Ganon's Boss Key shuffled](images/setting_shuffle_ganon_bosskey_yes.png "Ganon's Boss Key shuffled") Ganon's Boss Key is shuffled and needs to be tracked by the user.
 
 #### Skip Child Zelda
 

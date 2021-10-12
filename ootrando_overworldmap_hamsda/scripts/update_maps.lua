@@ -7,37 +7,11 @@ function update_bridge_amount_max()
   end
 end
 
-local max_amount_per_lacs_stage = {0, 3, 6, 9, 100}
-function update_lacs_amount_max()
-  local setting_lacs = get_object("setting_lacs")
-  local setting_lacs_amount = get_object("setting_lacs_amount")
-  if setting_lacs and setting_lacs.CurrentStage and setting_lacs_amount then
-    setting_lacs_amount.MaxCount = max_amount_per_lacs_stage[setting_lacs.CurrentStage + 1] or 0
-  end
-end
-
-function update_fortress()
+function update_gerudo_card()
   local setting_card = has("setting_shuffle_card_yes")
-  local setting_normal = has("gerudo_fortress_normal")
-  local setting_fast = has("gerudo_fortress_fast")
   local setting_open = has("gerudo_fortress_open")
 
   local item_card = get_object("gerudocard")
-  local item_gf_keys = get_object("gf_small_keys")
-
-  if item_gf_keys then
-    if setting_open then
-      item_gf_keys.MaxCount = 0
-    elseif setting_fast then
-      item_gf_keys.MaxCount = 1
-    elseif setting_normal then
-      item_gf_keys.MaxCount = 4
-    end
-    if not HAS_KEYS then
-      item_gf_keys.AcquiredCount = item_gf_keys.MaxCount
-    end
-  end
-
   if item_card and setting_open then
     if not setting_card then
       item_card.Active = true
@@ -252,8 +226,7 @@ end
 
 function update_maps()
   update_bridge_amount_max()
-  update_lacs_amount_max()
-  update_fortress()
+  update_gerudo_card()
   update_collected_capture()
   update_minimal_bottle()
   update_free_zelda()
