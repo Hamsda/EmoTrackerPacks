@@ -191,8 +191,7 @@ local vanilla_captures = {
     ["@KF Kokiri Sword Chest/Dodge Boulder"] = "sword1"
   },
   ["setting_shuffle_ocarinas_yes"] = {
-    ["@Saria on Bridge/LW Gift from Saria"] = "ocarina", --ER
-    ["@LW Bridge/LW Gift from Saria"] = "ocarina", --non ER
+    ["@LW Bridge From Forest/LW Gift from Saria"] = "ocarina",
     ["@HF Ocarina of Time/HF Ocarina of Time Item"] = "ocarina"
   },
   ["setting_shuffle_egg_yes"] = {
