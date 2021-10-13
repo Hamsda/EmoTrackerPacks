@@ -6,6 +6,7 @@
 - added missing `Market Back Alley` capture in ER
 - added customizable setting preset loader
 - added settings for shuffled keys
+- changed hintable locations based on [PR #1381](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1381)
 
 ## 3.6.0.0
 

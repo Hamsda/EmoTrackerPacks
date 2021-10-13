@@ -1413,6 +1413,11 @@
       {
         "name": "Iron Boots Chest",
         "short_name": "Iron Boots",
+        "access_rules": [
+          "$has_bottle",
+          "{$hintable}"
+        ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1513,6 +1518,11 @@
       {
         "name": "Iron Boots Chest",
         "short_name": "Iron Boots",
+        "access_rules": [
+          "$has_bottle",
+          "{$hintable}"
+        ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2960,8 +2970,10 @@
         "access_rules": [
           "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,water_small_keys:1,[water_small_keys:5]",
           "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,bow",
-          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,dinsfire,magic"
+          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,dinsfire,magic",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -3196,8 +3208,10 @@
         "short_name": "Central Pillar",
         "access_rules": [
           "@Water Temple MQ/Dive,[$zora_tunic],hookshot,[logic_water_mq_central_pillar],bow,firearrow,magic",
-          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,dinsfire,magic,ocarina,time"
+          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,dinsfire,magic,ocarina,time",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -3471,8 +3485,10 @@
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],[logic_shadow_freestanding_key],$has_bombchus",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,bombs",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,lift1",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,[logic_shadow_freestanding_key],$has_bombchus"
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,[logic_shadow_freestanding_key],$has_bombchus",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
@@ -3558,10 +3574,8 @@
         "name": "Invisible Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
-          "@Shadow Temple/Beyond Boat",
-          "{$hintable}"
+          "@Shadow Temple/Beyond Boat"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -3799,8 +3813,10 @@
         "short_name": "Stalfos",
         "access_rules": [
           "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],hookshot,[logic_lens_shadow_mq_back]",
-          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],hookshot,$can_use_lens"
+          "@Shadow Temple MQ/Lower Huge Pit,hoverboots,shadow_small_keys:2,[shadow_small_keys:3],hookshot,$can_use_lens",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4539,7 +4555,7 @@
       {
         "name": "Silver Gauntlets Chest",
         "short_name": "Right Hand",
-        "access_rules": [          
+        "access_rules": [
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
@@ -4909,10 +4925,8 @@
         "short_name": "Dead Hand",
         "access_rules": [
           "ocarina,lullaby,sword1",
-          "ocarina,lullaby,sticks,[logic_child_deadhand]",
-          "{$hintable}"
+          "ocarina,lullaby,sticks,[logic_child_deadhand]"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4992,10 +5006,8 @@
         "short_name": "Dead Hand",
         "access_rules": [
           "sword1",
-          "sticks,[logic_child_deadhand]",
-          "{$hintable}"
+          "sticks,[logic_child_deadhand]"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
@@ -5113,8 +5125,10 @@
         "access_rules": [
           "longshot,hoverboots",
           "longshot,magic,dinsfire",
-          "magic,bow,firearrow"
+          "magic,bow,firearrow",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5340,8 +5354,10 @@
           "bow,[logic_lens_castle_mq],hookshot,[logic_shadow_trial_mq]",
           "bow,$can_use_lens,hoverboots",
           "bow,$can_use_lens,hookshot,$has_fire",
-          "bow,$can_use_lens,hookshot,[logic_shadow_trial_mq]"
+          "bow,$can_use_lens,hookshot,[logic_shadow_trial_mq]",
+          "{$hintable}"
         ],
+        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },

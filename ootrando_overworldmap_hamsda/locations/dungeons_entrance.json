@@ -155,10 +155,8 @@
             "name": "Lens of Truth Chest",
             "short_name": "Dead Hand",
             "access_rules": [
-              "$access_location|Bottom of the Well Lens of Truth Chest",
-              "{$hintable}"
+              "$access_location|Bottom of the Well Lens of Truth Chest"
             ],
-            "capture_item": true,
             "item_count": 1
           },
           {
@@ -230,10 +228,8 @@
             "name": "Compass Chest",
             "short_name": "Dead Hand",
             "access_rules": [
-              "$access_location|Bottom of the Well MQ Compass Chest",
-              "{$hintable}"
+              "$access_location|Bottom of the Well MQ Compass Chest"
             ],
-            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_compass.png",
             "item_count": 1
           },
@@ -1908,8 +1904,10 @@
             "name": "Shadow Trial Golden Gauntlets Chest",
             "short_name": "Shadow Trial 2",
             "access_rules": [
-              "$access_location|Ganons Castle Shadow Trial Golden Gauntlets Chest"
+              "$access_location|Ganons Castle Shadow Trial Golden Gauntlets Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -2116,8 +2114,10 @@
             "name": "Shadow Trial Eye Switch Chest",
             "short_name": "Shadow Trial 2",
             "access_rules": [
-              "$access_location|Ganons Castle MQ Shadow Trial Eye Switch Chest"
+              "$access_location|Ganons Castle MQ Shadow Trial Eye Switch Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },
@@ -2651,8 +2651,10 @@
             "name": "Iron Boots Chest",
             "short_name": "Iron Boots",
             "access_rules": [
-              "$access_location|Ice Cavern Iron Boots Chest"
+              "$access_location|Ice Cavern Iron Boots Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -2766,8 +2768,10 @@
             "name": "Iron Boots Chest",
             "short_name": "Iron Boots",
             "access_rules": [
-              "$access_location|Ice Cavern MQ Iron Boots Chest"
+              "$access_location|Ice Cavern MQ Iron Boots Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -3216,8 +3220,10 @@
             "name": "Freestanding Key",
             "short_name": "Skull Pot",
             "access_rules": [
-              "$access_location|Shadow Temple Freestanding Key"
+              "$access_location|Shadow Temple Freestanding Key",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/small_key.png",
             "chest_opened_img": "images/small_key_check.png",
             "item_count": 1
@@ -3301,10 +3307,8 @@
             "name": "Invisible Floormaster Chest",
             "short_name": "Floormaster",
             "access_rules": [
-              "$access_location|Shadow Temple Invisible Floormaster Chest",
-              "{$hintable}"
+              "$access_location|Shadow Temple Invisible Floormaster Chest"
             ],
-            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },
@@ -3448,8 +3452,10 @@
             "name": "Stalfos Room Chest",
             "short_name": "Stalfos",
             "access_rules": [
-              "$access_location|Shadow Temple MQ Stalfos Room Chest"
+              "$access_location|Shadow Temple MQ Stalfos Room Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -4214,8 +4220,10 @@
             "name": "Central Pillar Chest",
             "short_name": "Central Pillar",
             "access_rules": [
-              "$access_location|Water Temple Central Pillar Chest"
+              "$access_location|Water Temple Central Pillar Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },
@@ -4392,8 +4400,10 @@
             "name": "Central Pillar Chest",
             "short_name": "Central Pillar",
             "access_rules": [
-              "$access_location|Water Temple MQ Central Pillar Chest"
+              "$access_location|Water Temple MQ Central Pillar Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },

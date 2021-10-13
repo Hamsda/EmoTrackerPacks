@@ -280,8 +280,10 @@
               {
                 "name": "Shoot it",
                 "access_rules": [
-                  "$access_location|LW Target in Woods"
+                  "$access_location|LW Target in Woods",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -1071,8 +1073,10 @@
               {
                 "name": "LH Lab Dive",
                 "access_rules": [
-                  "$access_location|LH Lab Dive"
+                  "$access_location|LH Lab Dive",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -2216,8 +2220,10 @@
                 "name": "HC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$access_location|HC Great Fairy Reward"
+                  "$access_location|HC Great Fairy Reward",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -2300,8 +2306,10 @@
                 "name": "OGC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$access_location|OGC Great Fairy Reward"
+                  "$access_location|OGC Great Fairy Reward",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -3814,8 +3822,10 @@
               {
                 "name": "ZR Frogs in the Rain",
                 "access_rules": [
-                  "$access_location|ZR Frogs in the Rain"
+                  "$access_location|ZR Frogs in the Rain",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               },
               {
