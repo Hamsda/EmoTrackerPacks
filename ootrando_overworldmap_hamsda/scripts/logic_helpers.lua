@@ -711,6 +711,9 @@ function adult_fountain()
   end
 
   --KZ skip
+  if has("logic_king_zora_skip") then
+    return 1, level
+  end
   return 1, AccessibilityLevel.SequenceBreak
 end
 

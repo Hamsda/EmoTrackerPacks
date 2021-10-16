@@ -574,6 +574,13 @@
     "codes": "logic_domain_gs"
   },
   {
+    "name": "Skip King Zora as Adult with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_king_zora_skip.png",
+    "codes": "logic_king_zora_skip"
+  },
+  {
     "name": "Shadow Temple River Statue with Bombchu",
     "type": "toggle",
     "initial_active_state": false,

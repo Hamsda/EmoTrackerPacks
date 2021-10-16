@@ -5274,7 +5274,8 @@ data_per_region = {
           if has("setting_fountain_open") or has("setting_fountain_adult") then
             return AccessibilityLevel.Normal
           end
-          return or_accessibility(deliver_letter(), AccessibilityLevel.SequenceBreak)
+          local trick = has("logic_king_zora_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return or_accessibility(deliver_letter(), trick)
         end
       },
       ["ZD Shop"] = {
