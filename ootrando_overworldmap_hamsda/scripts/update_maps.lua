@@ -198,7 +198,7 @@ local vanilla_captures = {
     ["@Malon at Castle/HC Malon Egg"] = "capture_childegg"
   },
   ["setting_shuffle_card_yes"] = {
-    ["@Carpenter Rescue/Gerudo Membership Card"] = "gerudocard"
+    ["@Carpenter Rescue/Hideout Gerudo Membership Card"] = "gerudocard"
   },
   ["setting_shuffle_beans_yes"] = {
     ["@ZR Magic Bean Salesman/Buy Item"] = "beans"
