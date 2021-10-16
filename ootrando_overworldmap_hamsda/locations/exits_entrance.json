@@ -1722,13 +1722,13 @@
             ]
           },
           {
-            "name": "Gerudo Fortress -> Gerudo Training Grounds Split",
-            "short_name": "Gerudo Training Grounds",
+            "name": "Gerudo Fortress -> Gerudo Training Ground Split",
+            "short_name": "Gerudo Training Ground",
             "sections": [
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Gerudo Fortress|Gerudo Training Grounds Split"
+                  "$access_exit|Gerudo Fortress|Gerudo Training Ground Split"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
@@ -3036,13 +3036,13 @@
             ]
           },
           {
-            "name": "Graveyard -> Graveyard Composers Grave",
-            "short_name": "Composer Grave",
+            "name": "Graveyard -> Royal Familys Tomb",
+            "short_name": "Royal Tomb",
             "sections": [
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Graveyard|Graveyard Composers Grave"
+                  "$access_exit|Graveyard|Royal Familys Tomb"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"

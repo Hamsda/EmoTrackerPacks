@@ -60,7 +60,7 @@
     "codes": "entrance_dungeon_ice"
   },
   {
-    "name": "Gerudo Training Grounds Split",
+    "name": "Gerudo Training Ground Split",
     "type": "toggle",
     "img": "images/entrance_dungeon_gtg.png",
     "codes": "entrance_dungeon_gtg"
@@ -240,10 +240,10 @@
     "codes": "entrance_grotto_field_valley"
   },
   {
-    "name": "Composer Grave",
+    "name": "Royal Familys Tomb",
     "type": "toggle",
-    "img": "images/entrance_grotto_comp.png",
-    "codes": "entrance_grotto_comp"
+    "img": "images/entrance_grotto_royal_tomb.png",
+    "codes": "entrance_grotto_royal_tomb"
   },
   {
     "name": "Graveyard Dampes Grave",

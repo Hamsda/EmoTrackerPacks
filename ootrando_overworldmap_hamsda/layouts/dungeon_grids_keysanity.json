@@ -322,14 +322,14 @@
             "content": [
               {
                 "type": "item",
-                "item": "gf_label",
+                "item": "th_label",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
               },
               {
                 "type": "item",
-                "item": "gf_small_keys",
+                "item": "th_small_keys",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
@@ -794,14 +794,14 @@
             "content": [
               {
                 "type": "item",
-                "item": "gf_label",
+                "item": "th_label",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
               },
               {
                 "type": "item",
-                "item": "gf_small_keys",
+                "item": "th_small_keys",
                 "canvas_depth": 1,
                 "canvas_left": 34,
                 "canvas_top": 0,

@@ -631,20 +631,20 @@
     ]
   },
   {
-    "name": "Gerudo Fortress Label",
+    "name": "Thieves Hideout Label",
     "type": "static",
-    "img": "images/label_gf.png",
-    "codes": "gf_label"
+    "img": "images/label_th.png",
+    "codes": "th_label"
   },
   {
-    "name": "Gerudo Fortress Small Keys",
+    "name": "Thieves Hideout Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
-    "codes": "gf_small_keys,gfsmall,gfsk",
+    "codes": "th_small_keys,thsmall,thsk",
     "max_quantity": 99
   },
   {
-    "name": "Gerudo Training Grounds Label",
+    "name": "Gerudo Training Ground Label",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -666,7 +666,7 @@
     ]
   },
   {
-    "name": "Gerudo Training Grounds Small Keys",
+    "name": "Gerudo Training Ground Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "gtg_small_keys,gtgsmall,gtgsk",

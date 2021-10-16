@@ -60,7 +60,7 @@ function update_max_small_keys()
     end
   end
 
-  local key_object = get_object("gf_small_keys")
+  local key_object = get_object("th_small_keys")
   if key_object then
     if not HAS_MAP then
       if fix_non_map_hideout then
@@ -103,7 +103,7 @@ function update_shuffled_keys()
   end
 
   if has("setting_shuffle_hideoutkeys_no") then
-    local key_object = get_object("gf_small_keys")
+    local key_object = get_object("th_small_keys")
     if key_object then
       if stored_hideout == nil then
         stored_hideout = key_object.AcquiredCount
@@ -112,7 +112,7 @@ function update_shuffled_keys()
     end
   elseif has("setting_shuffle_hideoutkeys_yes") then
     if stored_hideout ~= nil then
-      local key_object = get_object("gf_small_keys")
+      local key_object = get_object("th_small_keys")
       if key_object then
         key_object.AcquiredCount = stored_hideout
       end

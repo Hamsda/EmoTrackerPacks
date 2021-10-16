@@ -2397,7 +2397,7 @@
                     ]
                   },
                   {
-                    "name": "Graveyard Composers Grave",
+                    "name": "Royal Familys Tomb",
                     "short_name": "Royal Tomb",
                     "access_rules": [
                       "ocarina,lullaby",
@@ -2405,7 +2405,7 @@
                     ],
                     "sections": [
                       {
-                        "name": "Song from Composers Grave",
+                        "name": "Song from Royal Familys Tomb",
                         "short_name": "Song",
                         "access_rules": [
                           "$has_age|adult",
@@ -2422,7 +2422,7 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Graveyard Composers Grave Chest",
+                        "name": "Royal Familys Tomb Chest",
                         "short_name": "Chest",
                         "access_rules": [
                           "$has_fire",
@@ -4962,8 +4962,8 @@
                     "name": "Carpenter Rescue",
                     "sections": [
                       {
-                        "name": "North F1 Carpenter",
-                        "short_name": "North F1",
+                        "name": "Hideout Jail Guard (1 Torch)",
+                        "short_name": "1 Torch",
                         "access_rules": [
                           "$gerudo_valley_far_side",
                           "$spawn_access|Gerudo Fortress|child,sword1",
@@ -4973,8 +4973,22 @@
                         "item_count": 1
                       },
                       {
-                        "name": "North F2 Carpenter",
-                        "short_name": "North F2",
+                        "name": "Hideout Jail Guard (2 Torches)",
+                        "short_name": "2 Torches",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Hideout Jail Guard (3 Torches)",
+                        "short_name": "3 Torches",
                         "access_rules": [
                           "$gerudo_valley_far_side,$gerudo_card",
                           "$gerudo_valley_far_side,bow",
@@ -4991,8 +5005,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "South F1 Carpenter",
-                        "short_name": "South F1",
+                        "name": "Hideout Jail Guard (4 Torches)",
+                        "short_name": "4 Torches",
                         "access_rules": [
                           "$gerudo_valley_far_side",
                           "$spawn_access|Gerudo Fortress|child,sword1",
@@ -5005,32 +5019,19 @@
                         "item_count": 1
                       },
                       {
-                        "name": "South F2 Carpenter",
-                        "short_name": "South F2",
+                        "name": "Hideout Gerudo Membership Card",
+                        "short_name": "Gerudo Card",
                         "access_rules": [
-                          "$gerudo_valley_far_side",
-                          "$spawn_access|Gerudo Fortress|child,sword1",
-                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
-                        ],
-                        "visibility_rules": [
-                          "gerudo_fortress_normal"
-                        ],
-                        "chest_unopened_img": "images/chest_brown_small_key.png",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Gerudo Membership Card",
-                        "access_rules": [
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,bow",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hookshot",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hoverboots",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
-                          "gerudo_fortress_fast,gf_small_keys:1,$gerudo_valley_far_side",
-                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
-                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
-                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
-                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,bow",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,hookshot",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,hoverboots",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,th_small_keys:1,$gerudo_valley_far_side",
+                          "gerudo_fortress_normal,th_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_normal,th_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,th_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
+                          "gerudo_fortress_fast,th_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
                         ],
                         "capture_item": true,
                         "item_count": 1

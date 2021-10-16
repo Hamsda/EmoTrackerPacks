@@ -5488,7 +5488,7 @@
     ]
   },
   {
-    "name": "Gerudo Training Grounds",
+    "name": "Gerudo Training Ground",
     "parent": "Gerudo Fortress",
     "access_rules": [
       "gtg_reg,$gerudo_valley_far_side,$gerudo_card"
@@ -5504,7 +5504,7 @@
       {
         "name": "Central Maze",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby"
+          "@Gerudo Training Ground/Lobby"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5514,8 +5514,8 @@
       {
         "name": "Heavy Block Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,$has_age|adult,hookshot",
-          "@Gerudo Training Grounds/Lobby,$has_age|adult,[logic_gtg_without_hookshot]"
+          "@Gerudo Training Ground/Lobby,$has_age|adult,hookshot",
+          "@Gerudo Training Ground/Lobby,$has_age|adult,[logic_gtg_without_hookshot]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5525,14 +5525,14 @@
       {
         "name": "Eye Statue Upper",
         "access_rules": [
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],hookshot",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield2",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield3",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,hookshot",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield2",
-          "@Gerudo Training Grounds/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield3"
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],hookshot",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield2",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield3",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,hookshot",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield2",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield3"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5542,7 +5542,7 @@
       {
         "name": "Like Like Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Eye Statue Upper,lift2"
+          "@Gerudo Training Ground/Eye Statue Upper,lift2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5552,9 +5552,9 @@
       {
         "name": "Lava Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,$has_age|adult,$has_explosives",
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
-          "@Gerudo Training Grounds/Eye Statue Upper"
+          "@Gerudo Training Ground/Lobby,$has_age|adult,$has_explosives",
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
+          "@Gerudo Training Ground/Eye Statue Upper"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5564,8 +5564,8 @@
       {
         "name": "Central Maze Right",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
-          "@Gerudo Training Grounds/Lava Room,ocarina,time"
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
+          "@Gerudo Training Ground/Lava Room,ocarina,time"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5575,10 +5575,10 @@
       {
         "name": "Hammer Room",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze Right,$has_age|adult,hookshot",
-          "@Gerudo Training Grounds/Lava Room,$has_age|adult,longshot",
-          "@Gerudo Training Grounds/Lava Room,$has_age|adult,hookshot,hoverboots",
-          "@Gerudo Training Grounds/Eye Statue Upper"
+          "@Gerudo Training Ground/Central Maze Right,$has_age|adult,hookshot",
+          "@Gerudo Training Ground/Lava Room,$has_age|adult,longshot",
+          "@Gerudo Training Ground/Lava Room,$has_age|adult,hookshot,hoverboots",
+          "@Gerudo Training Ground/Eye Statue Upper"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5588,8 +5588,8 @@
       {
         "name": "Eye Statue Lower",
         "access_rules": [
-          "@Gerudo Training Grounds/Hammer Room,$has_age|adult,hammer,bow",
-          "@Gerudo Training Grounds/Eye Statue Upper"
+          "@Gerudo Training Ground/Hammer Room,$has_age|adult,hammer,bow",
+          "@Gerudo Training Ground/Eye Statue Upper"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5600,7 +5600,7 @@
         "name": "Lobby Chests",
         "short_name": "Lobby",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,$has_age|adult,bow"
+          "@Gerudo Training Ground/Lobby,$has_age|adult,bow"
         ],
         "item_count": 2
       },
@@ -5608,7 +5608,7 @@
         "name": "Beamos Chest",
         "short_name": "Beamos",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,$has_age|adult,$has_explosives"
+          "@Gerudo Training Ground/Lobby,$has_age|adult,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5617,7 +5617,7 @@
         "name": "Stalfos Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Gerudo Training Grounds/Lobby,$has_age|adult"
+          "@Gerudo Training Ground/Lobby,$has_age|adult"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5626,7 +5626,7 @@
         "name": "Before Heavy Block Chest",
         "short_name": "Wolfos",
         "access_rules": [
-          "@Gerudo Training Grounds/Heavy Block Room"
+          "@Gerudo Training Ground/Heavy Block Room"
         ],
         "item_count": 1
       },
@@ -5634,7 +5634,7 @@
         "name": "Heavy Block Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "@Gerudo Training Grounds/Like Like Room"
+          "@Gerudo Training Ground/Like Like Room"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 4
@@ -5643,7 +5643,7 @@
         "name": "Eye Statue Chest",
         "short_name": "Eye Statue",
         "access_rules": [
-          "@Gerudo Training Grounds/Eye Statue Lower,$has_age|adult,bow"
+          "@Gerudo Training Ground/Eye Statue Lower,$has_age|adult,bow"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5652,7 +5652,7 @@
         "name": "Near Scarecrow Chest",
         "short_name": "Near Scarecrow",
         "access_rules": [
-          "@Gerudo Training Grounds/Eye Statue Upper,$has_age|adult,bow"
+          "@Gerudo Training Ground/Eye Statue Upper,$has_age|adult,bow"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5661,7 +5661,7 @@
         "name": "Hammer Room Clear Chest",
         "short_name": "Flaming Enemies",
         "access_rules": [
-          "@Gerudo Training Grounds/Hammer Room"
+          "@Gerudo Training Ground/Hammer Room"
         ],
         "item_count": 1
       },
@@ -5669,7 +5669,7 @@
         "name": "Hammer Room Switch Chest",
         "short_name": "Hammer Switch",
         "access_rules": [
-          "@Gerudo Training Grounds/Hammer Room,$has_age|adult,[hammer]"
+          "@Gerudo Training Ground/Hammer Room,$has_age|adult,[hammer]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5678,7 +5678,7 @@
         "name": "Freestanding Key",
         "short_name": "Ledge Key",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze Right"
+          "@Gerudo Training Ground/Central Maze Right"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
@@ -5689,7 +5689,7 @@
         "name": "Maze Right Chests",
         "short_name": "Maze Right",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze Right"
+          "@Gerudo Training Ground/Central Maze Right"
         ],
         "item_count": 2
       },
@@ -5697,7 +5697,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds/Lava Room,$has_age|adult,hookshot,ocarina,time,ironboots,$FTR_or_zora",
+          "@Gerudo Training Ground/Lava Room,$has_age|adult,hookshot,ocarina,time,ironboots,$FTR_or_zora",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -5708,8 +5708,8 @@
         "name": "Hidden Ceiling Chest",
         "short_name": "Hidden Ceiling",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],[logic_lens_gtg]",
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_use_lens"
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],[logic_lens_gtg]",
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5718,7 +5718,7 @@
         "name": "Maze Path First Chest",
         "short_name": "Maze 1",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:2,[gtg_small_keys:4]"
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:2,[gtg_small_keys:4]"
         ],
         "item_count": 1
       },
@@ -5726,7 +5726,7 @@
         "name": "Maze Path Second Chest",
         "short_name": "Maze 2",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:4,[gtg_small_keys:6]"
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:4,[gtg_small_keys:6]"
         ],
         "item_count": 1
       },
@@ -5734,7 +5734,7 @@
         "name": "Maze Path Third Chest",
         "short_name": "Maze 3",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:5,[gtg_small_keys:7]"
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:5,[gtg_small_keys:7]"
         ],
         "item_count": 1
       },
@@ -5742,7 +5742,7 @@
         "name": "Maze Path Final Chest",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "@Gerudo Training Grounds/Central Maze,gtg_small_keys:7,[gtg_small_keys:9]",
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:7,[gtg_small_keys:9]",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -5762,7 +5762,7 @@
     ]
   },
   {
-    "name": "Gerudo Training Grounds MQ",
+    "name": "Gerudo Training Ground MQ",
     "parent": "Gerudo Fortress",
     "access_rules": [
       "gtg_mq,$gerudo_valley_far_side,$gerudo_card"
@@ -5781,9 +5781,9 @@
       {
         "name": "Stalfos Room",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Left Side,longshot",
-          "@Gerudo Training Grounds MQ/Left Side,[logic_gtg_mq_without_hookshot]",
-          "@Gerudo Training Grounds MQ/Left Side,[logic_gtg_mq_with_hookshot],hookshot"
+          "@Gerudo Training Ground MQ/Left Side,longshot",
+          "@Gerudo Training Ground MQ/Left Side,[logic_gtg_mq_without_hookshot]",
+          "@Gerudo Training Ground MQ/Left Side,[logic_gtg_mq_with_hookshot],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5793,14 +5793,14 @@
       {
         "name": "Back Areas",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,ocarina,time",
-          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield2",
-          "@Gerudo Training Grounds MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield3",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,ocarina,time",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield2",
-          "@Gerudo Training Grounds MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield3"
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield2",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield3",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield2",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield3"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5810,7 +5810,7 @@
       {
         "name": "Central Maze Right",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Back Areas,hammer"
+          "@Gerudo Training Ground MQ/Back Areas,hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5821,8 +5821,8 @@
         "name": "Right Side",
         "access_rules": [
           "$has_age|adult,bow",
-          "@Gerudo Training Grounds MQ/Back Areas,longshot",
-          "@Gerudo Training Grounds MQ/Central Maze Right,hookshot"
+          "@Gerudo Training Ground MQ/Back Areas,longshot",
+          "@Gerudo Training Ground MQ/Central Maze Right,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5832,10 +5832,10 @@
       {
         "name": "Underwater",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Right Side,bow,hoverboots",
-          "@Gerudo Training Grounds MQ/Right Side,longshot,hoverboots",
-          "@Gerudo Training Grounds MQ/Central Maze Right,longshot",
-          "@Gerudo Training Grounds MQ/Central Maze Right,hookshot,bow"
+          "@Gerudo Training Ground MQ/Right Side,bow,hoverboots",
+          "@Gerudo Training Ground MQ/Right Side,longshot,hoverboots",
+          "@Gerudo Training Ground MQ/Central Maze Right,longshot",
+          "@Gerudo Training Ground MQ/Central Maze Right,hookshot,bow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5851,8 +5851,8 @@
         "name": "First Iron Knuckle Chest",
         "short_name": "Knuckle 1",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Left Side,$has_age|adult",
-          "@Gerudo Training Grounds MQ/Left Side,$has_explosives"
+          "@Gerudo Training Ground MQ/Left Side,$has_age|adult",
+          "@Gerudo Training Ground MQ/Left Side,$has_explosives"
         ],
         "item_count": 1
       },
@@ -5860,7 +5860,7 @@
         "name": "Before Heavy Block Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Stalfos Room,$has_age|adult"
+          "@Gerudo Training Ground MQ/Stalfos Room,$has_age|adult"
         ],
         "item_count": 1
       },
@@ -5868,7 +5868,7 @@
         "name": "Heavy Block Chest",
         "short_name": "Freezards",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Stalfos Room,$has_age|adult,lift2"
+          "@Gerudo Training Ground MQ/Stalfos Room,$has_age|adult,lift2"
         ],
         "item_count": 1
       },
@@ -5876,7 +5876,7 @@
         "name": "Eye Statue Chest",
         "short_name": "Eye Statue",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Back Areas,bow"
+          "@Gerudo Training Ground MQ/Back Areas,bow"
         ],
         "item_count": 1
       },
@@ -5884,7 +5884,7 @@
         "name": "Second Iron Knuckle Chest",
         "short_name": "Knuckle 2",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Back Areas"
+          "@Gerudo Training Ground MQ/Back Areas"
         ],
         "item_count": 1
       },
@@ -5892,9 +5892,9 @@
         "name": "Flame Circle Chest",
         "short_name": "Flame Circle",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Back Areas,hookshot",
-          "@Gerudo Training Grounds MQ/Back Areas,bow",
-          "@Gerudo Training Grounds MQ/Back Areas,$has_explosives"
+          "@Gerudo Training Ground MQ/Back Areas,hookshot",
+          "@Gerudo Training Ground MQ/Back Areas,bow",
+          "@Gerudo Training Ground MQ/Back Areas,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5903,7 +5903,7 @@
         "name": "Maze Right Chests",
         "short_name": "Maze Right",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Central Maze Right"
+          "@Gerudo Training Ground MQ/Central Maze Right"
         ],
         "item_count": 2
       },
@@ -5911,7 +5911,7 @@
         "name": "Dinolfos Chest",
         "short_name": "Dinolfos",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Right Side,$has_age|adult"
+          "@Gerudo Training Ground MQ/Right Side,$has_age|adult"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5920,7 +5920,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Underwater,$has_fire,ironboots,$FTR_or_zora,$damage_single_instance_ohko",
+          "@Gerudo Training Ground MQ/Underwater,$has_fire,ironboots,$FTR_or_zora,$damage_single_instance_ohko",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -5958,7 +5958,7 @@
         "name": "Ice Arrows Chest",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "@Gerudo Training Grounds MQ/Central Maze Right,gtg_small_keys:3",
+          "@Gerudo Training Ground MQ/Central Maze Right,gtg_small_keys:3",
           "{$hintable}"
         ],
         "capture_item": true,

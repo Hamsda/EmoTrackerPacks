@@ -740,7 +740,7 @@ end
 blue_fire_locations = {
   "@Ganons Castle/Water Trial Chests",
   "@Ganons Castle MQ/Water Trial Chest",
-  "@Gerudo Training Grounds MQ/Before Heavy Block Chest"
+  "@Gerudo Training Ground MQ/Before Heavy Block Chest"
 }
 function has_blue_fire()
   local bottle_count, bottle_level = has_bottle()
