@@ -8,6 +8,7 @@
 - added settings for shuffled keys
 - changed hintable locations based on [PR #1381](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1381)
 - renamed locations based on [PR #1280](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1280) and [PR #1282](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1282)
+- removed logic trick based on [PR #1359](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1359)
 
 ## 3.6.0.0
 

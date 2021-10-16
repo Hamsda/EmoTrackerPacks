@@ -10035,21 +10035,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local hb = AccessibilityLevel.None
           if has("hoverboots") then
             if has("logic_forest_mq_hallway_switch_jumpslash") then
               return AccessibilityLevel.Normal
             end
-            hb = AccessibilityLevel.SequenceBreak
+            return AccessibilityLevel.SequenceBreak
           end
-          local hs = AccessibilityLevel.None
-          if has("hookshot") then
-            if has("logic_forest_mq_hallway_switch_hookshot") then
-              return AccessibilityLevel.Normal
-            end
-            hs = AccessibilityLevel.SequenceBreak
-          end
-          return or_accessibility(hb, hs)
+          return AccessibilityLevel.None
         end
       },
       ["Forest Temple MQ Boss Region"] = {

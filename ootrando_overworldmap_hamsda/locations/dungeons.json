@@ -1907,7 +1907,6 @@
         "name": "Outdoor Ledge",
         "access_rules": [
           "@Forest Temple MQ/Central Area,[logic_forest_mq_hallway_switch_jumpslash],hoverboots",
-          "@Forest Temple MQ/Central Area,[logic_forest_mq_hallway_switch_hookshot],hookshot",
           "@Forest Temple MQ/After Block Puzzle,forest_small_keys:2,[forest_small_keys:3]",
           "@Forest Temple MQ/After Block Puzzle,[logic_forest_mq_hallway_switch_jumpslash],hookshot",
           "@Forest Temple MQ/After Block Puzzle,[logic_forest_mq_hallway_switch_jumpslash],[logic_forest_outside_backdoor]"
