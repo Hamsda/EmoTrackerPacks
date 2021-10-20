@@ -156,7 +156,7 @@ function resetGlobalVariables()
   KEY_CACHE['spiritsmall'] = {held=0, used=0}
   KEY_CACHE['gcsmall']     = {held=0, used=0}
   KEY_CACHE['gtgsmall']    = {held=0, used=0}
-  KEY_CACHE['gfsmall']     = {held=0, used=0}
+  KEY_CACHE['thsmall']     = {held=0, used=0}
   KEY_CACHE['botwsmall']   = {held=0, used=0}
 
   -- array of beans that were planted, used to ensure accurate bean count in inventory

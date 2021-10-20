@@ -668,7 +668,7 @@ function updateKeysFromMemorySegment(segment)
     updateSmallKeysFromByte(segment, "shadowsmall"       , 0x8011A693)
     updateSmallKeysFromByte(segment, "botwsmall"         , 0x8011A694)
     updateSmallKeysFromByte(segment, "gtgsmall"          , 0x8011A697)
-    updateSmallKeysFromByte(segment, "gfsmall"           , 0x8011A698)
+    updateSmallKeysFromByte(segment, "thsmall"           , 0x8011A698)
     updateSmallKeysFromByte(segment, "gcsmall"           , 0x8011A699)
   end
 

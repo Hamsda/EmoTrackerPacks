@@ -162,35 +162,35 @@ scenes[0x0A] = {
 }
 
 scenes[0x0B] = {
-  {type = 'chest', code = '@Gerudo Training Grounds/Stalfos Chest'                , flags = {0x00}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Beamos Chest'                 , flags = {0x01}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Heavy Block Chests'           , flags = {0x02, 0x0F, 0x0E, 0x14}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Eye Statue Chest'             , flags = {0x03}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Near Scarecrow Chest'         , flags = {0x04}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Maze Right Chests'            , flags = {0x05, 0x08}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Maze Path First Chest'        , flags = {0x06}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Lobby Chests'                 , flags = {0x07, 0x13}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Maze Path Third Chest'        , flags = {0x09}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Hammer Room Switch Chest'     , flags = {0x10}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Before Heavy Block Chest'     , flags = {0x11}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Hammer Room Clear Chest'      , flags = {0x12}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Maze Path Second Chest'       , flags = {0x0A}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Hidden Ceiling Chest'         , flags = {0x0B}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Maze Path Final Chest'        , flags = {0x0C}}
- ,{type = 'chest', code = '@Gerudo Training Grounds/Underwater Silver Rupee Chest', flags = {0x0D}}
+  {type = 'chest', code = '@Gerudo Training Ground/Stalfos Chest'                , flags = {0x00}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Beamos Chest'                 , flags = {0x01}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Heavy Block Chests'           , flags = {0x02, 0x0F, 0x0E, 0x14}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Eye Statue Chest'             , flags = {0x03}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Near Scarecrow Chest'         , flags = {0x04}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Maze Right Chests'            , flags = {0x05, 0x08}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Maze Path First Chest'        , flags = {0x06}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Lobby Chests'                 , flags = {0x07, 0x13}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Maze Path Third Chest'        , flags = {0x09}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Hammer Room Switch Chest'     , flags = {0x10}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Before Heavy Block Chest'     , flags = {0x11}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Hammer Room Clear Chest'      , flags = {0x12}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Maze Path Second Chest'       , flags = {0x0A}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Hidden Ceiling Chest'         , flags = {0x0B}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Maze Path Final Chest'        , flags = {0x0C}}
+ ,{type = 'chest', code = '@Gerudo Training Ground/Underwater Silver Rupee Chest', flags = {0x0D}}
 
- ,{type = 'ground', code = '@Gerudo Training Grounds/Freestanding Key', flags = {0x1}}
+ ,{type = 'ground', code = '@Gerudo Training Ground/Freestanding Key', flags = {0x1}}
 
  ,{type = 'keys', code = 'gtgsmall', flags = {0x01, 0x03, 0x04, 0x05, 0x06, 0x07, 0x09, 0x0A, 0x17}}
 }
 
 scenes[0x0C] = {
-  {type = 'ground', code = '@Carpenter Rescue/North F1 Carpenter', flags = {0xC}}
- ,{type = 'ground', code = '@Carpenter Rescue/North F2 Carpenter', flags = {0xA}}
- ,{type = 'ground', code = '@Carpenter Rescue/South F1 Carpenter', flags = {0xE}}
- ,{type = 'ground', code = '@Carpenter Rescue/South F2 Carpenter', flags = {0xF}}
+  {type = 'ground', code = '@Carpenter Rescue/Hideout Jail Guard (1 Torch)'  , flags = {0xC}}
+ ,{type = 'ground', code = '@Carpenter Rescue/Hideout Jail Guard (2 Torches)', flags = {0xF}}
+ ,{type = 'ground', code = '@Carpenter Rescue/Hideout Jail Guard (3 Torches)', flags = {0xA}}
+ ,{type = 'ground', code = '@Carpenter Rescue/Hideout Jail Guard (4 Torches)', flags = {0xE}}
 
- ,{type = 'keys', code = 'gfsmall', flags = {0x01, 0x02, 0x03, 0x04}}
+ ,{type = 'keys', code = 'thsmall', flags = {0x01, 0x02, 0x03, 0x04}}
 }
 
 scenes[0x0D] = {
@@ -333,7 +333,7 @@ scenes[0x40] = {
 }
 
 scenes[0x41] = {
-  {type = 'chest', code = '@Graveyard Composers Grave/Graveyard Composers Grave Chest', flags = {0x00}}
+  {type = 'chest', code = '@Royal Familys Tomb/Royal Familys Tomb Chest', flags = {0x00}}
 }
 
 scenes[0x48] = {

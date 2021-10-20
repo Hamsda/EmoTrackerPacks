@@ -188,9 +188,9 @@ function updateEventsFromMemorySegment(segment)
   updateEventCheck(segment, '@Saria/Song from Saria'                              , 0x5, 0x7)
   updateEventCheck(segment, '@Malon at Ranch/Song from Malon'                     , 0x5, 0x8)
   updateEventCheck(segment, '@HC Garden/Song from Impa'                           , 0x5, 0x9)
-  updateEventCheck(segment, '@Graveyard Composers Grave/Song from Composers Grave', 0x5, 0xA)
+  updateEventCheck(segment, '@Royal Familys Tomb/Song from Royal Familys Tomb'    , 0x5, 0xA)
   updateEventCheck(segment, '@Kak Windmill/Song from Windmill'                    , 0x5, 0xB)
-  updateHideoutCardCheck(segment, '@Carpenter Rescue/Gerudo Membership Card') -- 0x9, 0x0 thru 0x3
+  updateHideoutCardCheck(segment, '@Carpenter Rescue/Hideout Gerudo Membership Card') -- 0x9, 0x0 thru 0x3
   updateEventCheck(segment, '@HF Ocarina of Time/Song from Ocarina of Time'       , 0xA, 0x9)
   updateEventCheck(segment, '@Sheik at Colossus/Song'                             , 0xA, 0xC)
   updateEventCheck(segment, '@LW Bridge From Forest/LW Gift from Saria'           , 0xC, 0x1)
