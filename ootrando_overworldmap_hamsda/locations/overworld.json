@@ -401,6 +401,7 @@
                     "short_name": "Skull Mask",
                     "access_rules": [
                       "$has_age|child,skullmask",
+                      "$has_age|child,postskull",
                       "{$hintable}"
                     ],
                     "capture_item": true,

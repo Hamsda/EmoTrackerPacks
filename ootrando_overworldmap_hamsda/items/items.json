@@ -249,32 +249,32 @@
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,skullsold,postguard,postzelda",
+        "codes": "kidtrade,skullsold,postskull,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/spooky.png",
-        "codes": "kidtrade,spooky,spookymask,postguard,postzelda",
+        "codes": "kidtrade,spooky,spookymask,postskull,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,spookysold,postguard,postzelda",
+        "codes": "kidtrade,spookysold,postskull,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/bunny.png",
-        "codes": "kidtrade,bunny,bunnyhood,postguard,postzelda",
+        "codes": "kidtrade,bunny,bunnyhood,postskull,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/sold_out.png",
-        "codes": "kidtrade,bunnysold,postguard,postzelda",
+        "codes": "kidtrade,bunnysold,postskull,postguard,postzelda",
         "inherit_codes": false
       },
       {
         "img": "images/truth.png",
-        "codes": "kidtrade,truth,maskoftruth,mot,postguard,postzelda",
+        "codes": "kidtrade,truth,maskoftruth,mot,postskull,postguard,postzelda",
         "inherit_codes": false
       }
     ]
