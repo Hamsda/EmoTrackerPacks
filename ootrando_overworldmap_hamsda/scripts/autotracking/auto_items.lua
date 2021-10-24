@@ -192,6 +192,7 @@ local function updateChildTradeSequence(segment)
     if item then
         local value = ReadU8(segment, 0x8011A65B)
 
+        local VAL_NOTHING = 0xFF
         local VAL_EGG     = 0x21
         local VAL_CHICKEN = 0x22
         local VAL_LETTER  = 0x23
@@ -227,22 +228,26 @@ local function updateChildTradeSequence(segment)
 
         local newStage = 0
 
-        -- first, show egg or chicken if we haven't met zelda yet
+        -- first, show pre-mask shop states
 
+        -- always show nothing if we have it
+        if     value == VAL_NOTHING then newStage = 0 -- nothing
         -- always show egg if we have it
-        if     value == VAL_EGG then newStage = 1 -- egg
-        -- if we have chicken, show egg instead if talon hasn't woken yet
+        elseif value == VAL_EGG     then newStage = 1 -- egg
+        -- handle chicken cases
         elseif value == VAL_CHICKEN then
+            -- only show chicken if we already woke up talon
             if CHICKEN_SHOWN_TO_TALON then
                 autotracker_debug('showing chicken because talon isn\'t at the castle', DBG_DETAIL)
                 newStage = 2 -- chicken
+            -- show egg instead so that talon's check appears on the tracker
             else
                 autotracker_debug('showing egg instead of chicken because talon is at the castle', DBG_DETAIL)
                 newStage = 1 -- show egg so tracker shows talon's check
             end
 
-        -- now, override the actual held item with the one that represents your furthest progress
-        -- in the trade sequence
+        -- now that the mask shop is open, override the actual held item with the one that
+        -- represents your furthest progress in the trade sequence
 
         -- always show truth no matter what you're holding, relevant checks should appear accessible
         elseif EARNED_MASK_OF_TRUTH then newStage = 13
