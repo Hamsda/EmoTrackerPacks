@@ -669,3 +669,8 @@ function updateKeysFromMemorySegment(segment)
 
     updateConsumableItemFromByte(segment, "skulltula"    , 0x8011A6A1)
 end
+
+-- export locals for testing
+if _G._TEST then
+    _G._updateChildTradeSequence = updateChildTradeSequence
+end
