@@ -39,7 +39,7 @@ local function setChildItem(segment, byte)
   segment:SetData(address, byte, UINT_8)
 
   -- set up mock item
-  mockitem = {}
+  local mockitem = {}
   mockitem.CurrentStage = 200
   Tracker:AddObjectForCode(mockitem, 'kidtrade')
 end

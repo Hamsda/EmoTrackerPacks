@@ -1,3 +1,7 @@
+UINT_8  = 1
+UINT_16 = 2
+UINT_32 = 4
+
 function autotracker_debug(str, level)
   -- do nothing
 end
@@ -71,10 +75,6 @@ end
 ---------------
 -- MockSegment
 ---------------
-UINT_8  = 1
-UINT_16 = 2
-UINT_32 = 4
-
 MockSegment = {}
 MockSegment.__index = MockSegment
 

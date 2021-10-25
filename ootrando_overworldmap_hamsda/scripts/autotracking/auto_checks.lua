@@ -498,3 +498,8 @@ function updateSwitchesFromGlobalContext(segment)
     updateSceneTypeFromGlobalContext(scene_data, checks, 'plant')
   end
 end
+
+-- export locals for testing
+if _G._TEST then
+  _G._updatePlantedBeanFromDataAndFlags = updatePlantedBeanFromDataAndFlags
+end
