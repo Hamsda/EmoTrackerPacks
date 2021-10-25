@@ -13,10 +13,10 @@ AUTOTRACKER_DEBUG_LEVEL = DBG_NORMAL
 -------------------------------------------------------
 
 function autotracker_debug(str, level)
-	if level == nil then level = DBG_NORMAL end
-	if AUTOTRACKER_DEBUG_LEVEL >= level then
-			print(str)
-	end
+  if level == nil then level = DBG_NORMAL end
+  if AUTOTRACKER_DEBUG_LEVEL >= level then
+    print(str)
+  end
 end
 
 print("")
@@ -48,7 +48,7 @@ ScriptHost:AddMemoryWatch("OOT Save Context Overworld 1", 0x8011AC54, 0x2BC, upd
 ScriptHost:AddMemoryWatch("OOT Save Context Overworld 2", 0x8011AF10, 0x2A0, updateFromSaveContextOverworld2) -- 0x4D thru 0x64
 
 ScriptHost:AddMemoryWatch("OOT Skulltula Data", 0x8011B46C, 0x18, updateSkulltulasFromMemorySegment)
-ScriptHost:AddMemoryWatch("OOT INF Tables", 0x8011B48C, 0x78, updateEventsFromMemorySegment)
+ScriptHost:AddMemoryWatch("OOT INF Tables"    , 0x8011B48C, 0x78, updateEventsFromMemorySegment)
 
 ScriptHost:AddMemoryWatch("OOT Global Context Switch Data"     , ADDR_CURRENT_SWITCH_FLAGS    , 0x4, updateSwitchesFromGlobalContext)
 ScriptHost:AddMemoryWatch("OOT Global Context Chest Data"      , ADDR_CURRENT_CHEST_FLAGS     , 0x4, updateChestsFromGlobalContext)
