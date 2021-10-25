@@ -40,6 +40,9 @@ Some of this functionality might not be immediately obvious:
 
 There is a variety of toggles available to accomodate the different settings the randomizer offers. The settings are arranged to mimic the current GUI of the randomizer. The default for all of these should match the settings used for the weekly races (check out the OoTR discord for more info).
 
+The bottom right icon is a customizable preset loader. Cycle through the presets with left click and load with right click (some settings might require an extra right click since they depend on other settings).
+To customize the presets, please override `scripts/user_presets.lua` and edit to your liking. I hope the structure is fairly straightforward. Which setting number corresponds to which setting can be found in `items/options.json` and `items/options_entrance.json` (0 based indexing).
+
 ### Main Rules
 
 This tab contains most of the important settings that can have a major impact on the logic of a randomizer seed ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
@@ -117,7 +120,7 @@ This setting determines which age you started as.
 - ![Child Start](images/setting_age_child.png "Child Start") Link started as child.
 - ![Adult Start](images/setting_age_adult.png "Adult Start") Link started as adult.
 
-If you have selected ![Open Door](images/setting_door_open.png "Open Door") or collected an ![Ocarina](images/fairyocarina.png "Ocarina") and ![Song of Time](images/time_colored.png "Song of Time") the checks for the other age will unlock.
+If you have selected ![Open Door](images/setting_door_open.png "Open Door") or collected an ![Ocarina](images/fairyocarina.png "Ocarina") and ![Song of Time](images/song_time.png "Song of Time") the checks for the other age will unlock.
 
 #### Bombchus Are Considered in Logic
 
@@ -198,21 +201,33 @@ This setting determines if Medigoron and Carpet Salesman items are shuffled.
 - ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
 - ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
 
-#### LACS Condition
+#### Shuffle Small Keys
 
-This setting determines what is needed to trigger the Light Arrow cutscene in the Temple of Time.
+This setting determines if Small Keys are shuffled (non keys variants will force this off).
 
-- ![Vanilla](images/setting_lacs_vanilla.png "Vanilla") Shadow medallion and spirit medallion required
-- ![Stones](images/setting_lacs_stones.png "Stones") Variable amount of stones required
-- ![Medallions](images/setting_lacs_medallions.png "Medallions") Variable amount of medallions required
-- ![Dungeons](images/setting_lacs_dungeons.png "Dungeons") Variable amount of medallions and stones required
-- ![GS tokens](images/setting_lacs_gs.png "GS tokens") Variable amount of Gold Skulltula tokens required
+- ![Small Keys not shuffled](images/setting_shuffle_smallkeys_no.png "Small Keys not shuffled") Small Keys are not shuffled and will always be considered at their maximum.
+- ![Small Keys shuffled](images/setting_shuffle_smallkeys_yes.png "Small Keys shuffled") Small Keys are shuffled and need to be tracked by the user.
 
-#### LACS Amount
+#### Shuffle Thieves' Hideout Keys
 
-This setting determines how many (if any) of the items specified in `LACS Condition` are needed.
+This setting determines if Thieves' Hideout Keys are shuffled (non keys variants will force this off).
 
-![LACS Condition](images/setting_lacs_amount.png "LACS Condition") Increment or decrement the number required.
+- ![Thieves' Hideout Keys not shuffled](images/setting_shuffle_hideoutkeys_no.png "Thieves' Hideout Keys not shuffled") Thieves' Hideout Keys are not shuffled and will always be considered at their maximum.
+- ![Thieves' Hideout Keys shuffled](images/setting_shuffle_hideoutkeys_yes.png "Thieves' Hideout Keys shuffled") Thieves' Hideout Keys are shuffled and need to be tracked by the user.
+
+#### Shuffle Boss Keys
+
+This setting determines if Boss Keys are shuffled (non keys variants will force this off).
+
+- ![Boss Keys not shuffled](images/setting_shuffle_bosskeys_no.png "Boss Keys not shuffled") Boss Keys are not shuffled and will always be considered active.
+- ![Boss Keys shuffled](images/setting_shuffle_bosskeys_yes.png "Boss Keys shuffled") Boss Keys are shuffled and need to be tracked by the user.
+
+#### Shuffle Ganon's Boss Key
+
+This setting determines if Ganon's Boss Key is shuffled (non keys variants will force this off).
+
+- ![Ganon's Boss Key not shuffled](images/setting_shuffle_ganon_bosskey_no.png "Ganon's Boss Key not shuffled") Ganon's Boss Key is not shuffled and will always be considered active.
+- ![Ganon's Boss Key shuffled](images/setting_shuffle_ganon_bosskey_yes.png "Ganon's Boss Key shuffled") Ganon's Boss Key is shuffled and needs to be tracked by the user.
 
 #### Skip Child Zelda
 

@@ -1776,7 +1776,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["GF North F1 Carpenter"] = {
+      ["Hideout Jail Guard (1 Torch)"] = {
         ["child_access"] = function()
           if has("sword1") then
             return AccessibilityLevel.Normal
@@ -1789,7 +1789,20 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["GF North F2 Carpenter"] = {
+      ["Hideout Jail Guard (2 Torches)"] = {
+        ["child_access"] = function()
+          if has("sword1") then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Hideout Jail Guard (3 Torches)"] = {
         ["child_access"] = function()
           local weapon = AccessibilityLevel.None
           if has("sword1") then
@@ -1810,7 +1823,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["GF South F1 Carpenter"] = {
+      ["Hideout Jail Guard (4 Torches)"] = {
         ["child_access"] = function()
           if has("sword1") then
             return AccessibilityLevel.Normal
@@ -1823,20 +1836,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["GF South F2 Carpenter"] = {
-        ["child_access"] = function()
-          if has("sword1") then
-            return AccessibilityLevel.Normal
-          elseif has("sticks") then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
-      ["GF Gerudo Membership Card"] = {
+      ["Hideout Gerudo Membership Card"] = {
         ["child_access"] = function()
           return can_finish_GerudoFortress("child")
         end,
@@ -1893,7 +1893,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Split"] = {
+      ["Gerudo Training Ground Split"] = {
         ["setting"] = "setting_entrance_dungeons_shuffle",
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -2423,7 +2423,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return can_trigger_lacs()
+          if has("lacs_meds", 2) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       }
     },
@@ -3725,7 +3728,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Graveyard Composers Grave"] = {
+      ["Royal Familys Tomb"] = {
         ["setting"] = "setting_entrance_grottos_shuffle",
         ["child_access"] = function()
           if has("ocarina") and has("lullaby") then
@@ -3832,11 +3835,11 @@ data_per_region = {
       }
     }
   },
-  ["Graveyard Composers Grave"] = {
-    ["scene"] = "Graveyard Composers Grave",
+  ["Royal Familys Tomb"] = {
+    ["scene"] = "Royal Familys Tomb",
     ["interior"] = true,
     ["locations"] = {
-      ["Graveyard Composers Grave Chest"] = {
+      ["Royal Familys Tomb Chest"] = {
         ["child_access"] = function()
           if has("dinsfire") and has("magic") then
             return AccessibilityLevel.Normal
@@ -3849,7 +3852,7 @@ data_per_region = {
           return has_fire()
         end
       },
-      ["Song from Composers Grave"] = {
+      ["Song from Royal Familys Tomb"] = {
         ["child_access"] = function()
           if has("sling") or has("boomerang") or has("sticks") or has("sword1") then
             return AccessibilityLevel.Normal
@@ -5271,7 +5274,8 @@ data_per_region = {
           if has("setting_fountain_open") or has("setting_fountain_adult") then
             return AccessibilityLevel.Normal
           end
-          return or_accessibility(deliver_letter(), AccessibilityLevel.SequenceBreak)
+          local trick = has("logic_king_zora_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return or_accessibility(deliver_letter(), trick)
         end
       },
       ["ZD Shop"] = {
@@ -10032,21 +10036,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local hb = AccessibilityLevel.None
           if has("hoverboots") then
             if has("logic_forest_mq_hallway_switch_jumpslash") then
               return AccessibilityLevel.Normal
             end
-            hb = AccessibilityLevel.SequenceBreak
+            return AccessibilityLevel.SequenceBreak
           end
-          local hs = AccessibilityLevel.None
-          if has("hookshot") then
-            if has("logic_forest_mq_hallway_switch_hookshot") then
-              return AccessibilityLevel.Normal
-            end
-            hs = AccessibilityLevel.SequenceBreak
-          end
-          return or_accessibility(hb, hs)
+          return AccessibilityLevel.None
         end
       },
       ["Forest Temple MQ Boss Region"] = {
@@ -11195,11 +11191,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Split"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Split"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["exits"] = {
-      ["Gerudo Training Grounds Lobby"] = {
+      ["Gerudo Training Ground Lobby"] = {
         ["child_access"] = function()
           if has("gtg_reg") then
             return AccessibilityLevel.Normal
@@ -11213,7 +11209,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Lobby"] = {
+      ["Gerudo Training Ground MQ Lobby"] = {
         ["child_access"] = function()
           if has("gtg_mq") then
             return AccessibilityLevel.Normal
@@ -11229,11 +11225,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Lobby"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Lobby"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Lobby Chests"] = {
+      ["Gerudo Training Ground Lobby Chests"] = {
         ["child_access"] = function()
           if has("sling") then
             return AccessibilityLevel.Normal
@@ -11247,7 +11243,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Stalfos Chest"] = {
+      ["Gerudo Training Ground Stalfos Chest"] = {
         ["child_access"] = function()
           if has("sword1") then
             return AccessibilityLevel.Normal
@@ -11260,7 +11256,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Beamos Chest"] = {
+      ["Gerudo Training Ground Beamos Chest"] = {
         ["child_access"] = function()
           local weapon = AccessibilityLevel.None
           if has("sword1") then
@@ -11284,7 +11280,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Heavy Block Room"] = {
+      ["Gerudo Training Ground Heavy Block Room"] = {
         ["child_access"] = function()
           if has("sword1") and has("logic_gtg_without_hookshot") then
             return AccessibilityLevel.Normal
@@ -11300,10 +11296,10 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["Gerudo Training Grounds Lava Room"] = {
+      ["Gerudo Training Ground Lava Room"] = {
         ["child_access"] = function()
           local explo = has_explosives()
-          if has("sword1") or (access_region("Gerudo Training Grounds Lobby", "adult") == AccessibilityLevel.Normal) then
+          if has("sword1") or (access_region("Gerudo Training Ground Lobby", "adult") == AccessibilityLevel.Normal) then
             return explo
           end
           if has("sticks") and explo ~= AccessibilityLevel.None then
@@ -11315,7 +11311,7 @@ data_per_region = {
           return has_explosives()
         end
       },
-      ["Gerudo Training Grounds Central Maze"] = {
+      ["Gerudo Training Ground Central Maze"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11325,11 +11321,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Central Maze"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Central Maze"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Hidden Ceiling Chest"] = {
+      ["Gerudo Training Ground Hidden Ceiling Chest"] = {
         ["child_access"] = function()
           local lot =
             (has("logic_lens_gtg") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
@@ -11355,7 +11351,7 @@ data_per_region = {
           return and_accessibility(keys, lot)
         end
       },
-      ["Gerudo Training Grounds Maze Path First Chest"] = {
+      ["Gerudo Training Ground Maze Path First Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 4) then
             return AccessibilityLevel.Normal
@@ -11373,7 +11369,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Maze Path Second Chest"] = {
+      ["Gerudo Training Ground Maze Path Second Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 6) then
             return AccessibilityLevel.Normal
@@ -11391,7 +11387,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Maze Path Third Chest"] = {
+      ["Gerudo Training Ground Maze Path Third Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 7) then
             return AccessibilityLevel.Normal
@@ -11409,7 +11405,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Maze Path Final Chest"] = {
+      ["Gerudo Training Ground Maze Path Final Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 9) then
             return AccessibilityLevel.Normal
@@ -11429,7 +11425,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Central Maze Right"] = {
+      ["Gerudo Training Ground Central Maze Right"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 9) then
             return AccessibilityLevel.Normal
@@ -11449,11 +11445,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Central Maze Right"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Central Maze Right"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Maze Right Chests"] = {
+      ["Gerudo Training Ground Maze Right Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11461,7 +11457,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Freestanding Key"] = {
+      ["Gerudo Training Ground Freestanding Key"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11471,7 +11467,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Hammer Room"] = {
+      ["Gerudo Training Ground Hammer Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11482,7 +11478,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Lava Room"] = {
+      ["Gerudo Training Ground Lava Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11492,11 +11488,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Lava Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Lava Room"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Underwater Silver Rupee Chest"] = {
+      ["Gerudo Training Ground Underwater Silver Rupee Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11509,7 +11505,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Central Maze Right"] = {
+      ["Gerudo Training Ground Central Maze Right"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11520,7 +11516,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Hammer Room"] = {
+      ["Gerudo Training Ground Hammer Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11533,11 +11529,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Hammer Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Hammer Room"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Hammer Room Clear Chest"] = {
+      ["Gerudo Training Ground Hammer Room Clear Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11545,7 +11541,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Hammer Room Switch Chest"] = {
+      ["Gerudo Training Ground Hammer Room Switch Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11558,7 +11554,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Eye Statue Lower"] = {
+      ["Gerudo Training Ground Eye Statue Lower"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11569,7 +11565,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Lava Room"] = {
+      ["Gerudo Training Ground Lava Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11579,11 +11575,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Eye Statue Lower"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Eye Statue Lower"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Eye Statue Chest"] = {
+      ["Gerudo Training Ground Eye Statue Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11596,7 +11592,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Hammer Room"] = {
+      ["Gerudo Training Ground Hammer Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11606,11 +11602,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Eye Statue Upper"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Eye Statue Upper"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Near Scarecrow Chest"] = {
+      ["Gerudo Training Ground Near Scarecrow Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11623,7 +11619,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Eye Statue Lower"] = {
+      ["Gerudo Training Ground Eye Statue Lower"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11633,11 +11629,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Heavy Block Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Heavy Block Room"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Before Heavy Block Chest"] = {
+      ["Gerudo Training Ground Before Heavy Block Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11647,7 +11643,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Eye Statue Upper"] = {
+      ["Gerudo Training Ground Eye Statue Upper"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11672,7 +11668,7 @@ data_per_region = {
           return and_accessibility(wall, climb)
         end
       },
-      ["Gerudo Training Grounds Like Like Room"] = {
+      ["Gerudo Training Ground Like Like Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11702,11 +11698,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Like Like Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground Like Like Room"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds Heavy Block Chests"] = {
+      ["Gerudo Training Ground Heavy Block Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11716,11 +11712,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Lobby"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Lobby"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Lobby Chests"] = {
+      ["Gerudo Training Ground MQ Lobby Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11728,7 +11724,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Hidden Ceiling Chest"] = {
+      ["Gerudo Training Ground MQ Hidden Ceiling Chest"] = {
         ["child_access"] = function()
           if has("logic_lens_gtg_mq") or (has("lens") and has("magic")) then
             return AccessibilityLevel.Normal
@@ -11742,7 +11738,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["Gerudo Training Grounds MQ Maze Path First Chest"] = {
+      ["Gerudo Training Ground MQ Maze Path First Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11750,7 +11746,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Maze Path Second Chest"] = {
+      ["Gerudo Training Ground MQ Maze Path Second Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11758,7 +11754,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Maze Path Third Chest"] = {
+      ["Gerudo Training Ground MQ Maze Path Third Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 1) then
             return AccessibilityLevel.Normal
@@ -11782,13 +11778,13 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Left Side"] = {
+      ["Gerudo Training Ground MQ Left Side"] = {
         ["child_access"] = function()
           if has("dinsfire") and has("magic") then
             return AccessibilityLevel.Normal
           end
           if has("bow") and has("firearrow") and has("magic") then
-            return access_region("Gerudo Training Grounds MQ Lobby", "adult")
+            return access_region("Gerudo Training Ground MQ Lobby", "adult")
           end
           return AccessibilityLevel.None
         end,
@@ -11796,13 +11792,13 @@ data_per_region = {
           return has_fire()
         end
       },
-      ["Gerudo Training Grounds MQ Right Side"] = {
+      ["Gerudo Training Ground MQ Right Side"] = {
         ["child_access"] = function()
           if has("sling") then
             return AccessibilityLevel.Normal
           end
           if has("bow") then
-            return access_region("Gerudo Training Grounds MQ Lobby", "adult")
+            return access_region("Gerudo Training Ground MQ Lobby", "adult")
           end
           return AccessibilityLevel.None
         end,
@@ -11811,18 +11807,18 @@ data_per_region = {
             return AccessibilityLevel.Normal
           end
           if has("sling") then
-            return access_region("Gerudo Training Grounds MQ Lobby", "child")
+            return access_region("Gerudo Training Ground MQ Lobby", "child")
           end
           return AccessibilityLevel.None
         end
       }
     }
   },
-  ["Gerudo Training Grounds MQ Right Side"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Right Side"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Dinolfos Chest"] = {
+      ["Gerudo Training Ground MQ Dinolfos Chest"] = {
         ["child_access"] = function()
           if has("sticks") then
             return AccessibilityLevel.SequenceBreak
@@ -11835,7 +11831,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Underwater"] = {
+      ["Gerudo Training Ground MQ Underwater"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11848,11 +11844,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Underwater"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Underwater"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Underwater Silver Rupee Chest"] = {
+      ["Gerudo Training Ground MQ Underwater Silver Rupee Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11865,11 +11861,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Left Side"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Left Side"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ First Iron Knuckle Chest"] = {
+      ["Gerudo Training Ground MQ First Iron Knuckle Chest"] = {
         ["child_access"] = function()
           local weapon = AccessibilityLevel.None
           if has("sword1") then
@@ -11885,7 +11881,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Stalfos Room"] = {
+      ["Gerudo Training Ground MQ Stalfos Room"] = {
         ["child_access"] = function()
           if has("logic_gtg_mq_without_hookshot") then
             return AccessibilityLevel.Normal
@@ -11904,11 +11900,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Stalfos Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Stalfos Room"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Before Heavy Block Chest"] = {
+      ["Gerudo Training Ground MQ Before Heavy Block Chest"] = {
         ["child_access"] = function()
           if has("sticks") then
             return AccessibilityLevel.SequenceBreak
@@ -11919,7 +11915,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Heavy Block Chest"] = {
+      ["Gerudo Training Ground MQ Heavy Block Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11932,7 +11928,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Back Areas"] = {
+      ["Gerudo Training Ground MQ Back Areas"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11956,11 +11952,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Back Areas"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Back Areas"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Eye Statue Chest"] = {
+      ["Gerudo Training Ground MQ Eye Statue Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11971,7 +11967,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Second Iron Knuckle Chest"] = {
+      ["Gerudo Training Ground MQ Second Iron Knuckle Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11979,7 +11975,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Flame Circle Chest"] = {
+      ["Gerudo Training Ground MQ Flame Circle Chest"] = {
         ["child_access"] = function()
           return has_explosives()
         end,
@@ -11992,7 +11988,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Central Maze Right"] = {
+      ["Gerudo Training Ground MQ Central Maze Right"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12003,7 +11999,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Right Side"] = {
+      ["Gerudo Training Ground MQ Right Side"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12016,11 +12012,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Central Maze Right"] = {
-    ["scene"] = "Gerudo Training Grounds",
+  ["Gerudo Training Ground MQ Central Maze Right"] = {
+    ["scene"] = "Gerudo Training Ground",
     ["dungeon"] = true,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Maze Right Chests"] = {
+      ["Gerudo Training Ground MQ Maze Right Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -12028,7 +12024,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Ice Arrows Chest"] = {
+      ["Gerudo Training Ground MQ Ice Arrows Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 3) then
             return AccessibilityLevel.Normal
@@ -12044,7 +12040,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Underwater"] = {
+      ["Gerudo Training Ground MQ Underwater"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12055,7 +12051,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Right Side"] = {
+      ["Gerudo Training Ground MQ Right Side"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,

@@ -1,5 +1,16 @@
 # Changelog
 
+## x
+
+- changed startup to fix incorrect save loading
+- added missing `Market Back Alley` capture in ER
+- added customizable setting preset loader
+- added settings for shuffled keys
+- changed hintable locations based on [PR #1381](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1381)
+- renamed locations based on [PR #1280](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1280) and [PR #1282](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1282)
+- removed logic trick in MQ Forest based on [PR #1359](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1359)
+- added logic trick for KZ skip based on [PR #1317](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1317)
+
 ## 3.6.0.0
 
 - fixed overlap between LH owl and grotto in ER
@@ -877,7 +888,7 @@
   - tried to model the reqs
   - marked lens as optional (pretty easy to do the entire dungeon without)
   - added option to reach Bongo Bongo with longshot (there is a scarecrow you can reach)
-- improved Gerudo Training Grounds:
+- improved Gerudo Training Ground:
   - split up the items
   - added reqs to each of the outer chests
   - marked hammer as optional for the pillar room (can be easily skipped with a damage boost)

@@ -174,12 +174,6 @@
       },
       {
         "type": "item",
-        "item": "logic_forest_mq_hallway_switch_hookshot",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "logic_dmt_bombable",
         "width": 200,
         "height": 16
@@ -499,6 +493,12 @@
       {
         "type": "item",
         "item": "logic_domain_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_king_zora_skip",
         "width": 200,
         "height": 16
       },

@@ -277,7 +277,7 @@ blue_fire_locations = {
   ["either"] = {
     "Ganons Castle Water Trial",
     "Ganons Castle MQ Water Trial",
-    "Gerudo Training Grounds MQ Stalfos Room",
+    "Gerudo Training Ground MQ Stalfos Room",
     "Ice Cavern MQ Map Room"
   },
   ["adult"] = {
@@ -361,7 +361,7 @@ end
 function can_finish_GerudoFortress(age)
   local acc = access_region("Gerudo Fortress", age)
   if has("gerudo_fortress_normal") then
-    if has("gf_small_keys", 4) then
+    if has("th_small_keys", 4) then
       if age == "adult" then
         local kitchen = AccessibilityLevel.SequenceBreak
         if has("bow") or has("hookshot") or has("hoverboots") or has("card") or has("logic_gerudo_kitchen") then
@@ -383,7 +383,7 @@ function can_finish_GerudoFortress(age)
       end
     end
   elseif has("gerudo_fortress_fast") then
-    if has("gf_small_keys", 1) then
+    if has("th_small_keys", 1) then
       if age == "adult" then
         return acc
       elseif age == "child" then
@@ -464,37 +464,6 @@ function can_spawn_rainbow_bridge()
     end
   elseif has("setting_bridge_gs") then
     if tokens >= setting_bridge_amount then
-      return AccessibilityLevel.Normal
-    end
-  end
-
-  return AccessibilityLevel.None
-end
-
-function can_trigger_lacs()
-  local setting_lacs_amount = get_object("setting_lacs_amount") and get_object("setting_lacs_amount").AcquiredCount or 0
-  local stones = Tracker:ProviderCountForCode("stones")
-  local medallions = Tracker:ProviderCountForCode("medallions")
-  local tokens = Tracker:ProviderCountForCode("token")
-
-  if has("setting_lacs_vanilla") then
-    if has("lacs_meds", 2) then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_stones") then
-    if stones >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_medallions") then
-    if medallions >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_dungeons") then
-    if (stones + medallions) >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_gs") then
-    if tokens >= setting_lacs_amount then
       return AccessibilityLevel.Normal
     end
   end

@@ -711,6 +711,9 @@ function adult_fountain()
   end
 
   --KZ skip
+  if has("logic_king_zora_skip") then
+    return 1, level
+  end
   return 1, AccessibilityLevel.SequenceBreak
 end
 
@@ -740,7 +743,7 @@ end
 blue_fire_locations = {
   "@Ganons Castle/Water Trial Chests",
   "@Ganons Castle MQ/Water Trial Chest",
-  "@Gerudo Training Grounds MQ/Before Heavy Block Chest"
+  "@Gerudo Training Ground MQ/Before Heavy Block Chest"
 }
 function has_blue_fire()
   local bottle_count, bottle_level = has_bottle()
@@ -866,37 +869,6 @@ function can_spawn_rainbow_bridge()
     end
   elseif has("setting_bridge_gs") then
     if tokens >= setting_bridge_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  end
-
-  return 0, AccessibilityLevel.None
-end
-
-function can_trigger_lacs()
-  local setting_lacs_amount = get_object("setting_lacs_amount") and get_object("setting_lacs_amount").AcquiredCount or 0
-  local stones = Tracker:ProviderCountForCode("stones")
-  local medallions = Tracker:ProviderCountForCode("medallions")
-  local tokens = Tracker:ProviderCountForCode("token")
-
-  if has("setting_lacs_vanilla") then
-    if Tracker:ProviderCountForCode("lacs_meds") >= 2 then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_stones") then
-    if stones >= setting_lacs_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_medallions") then
-    if medallions >= setting_lacs_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_dungeons") then
-    if (stones + medallions) >= setting_lacs_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_gs") then
-    if tokens >= setting_lacs_amount then
       return 1, AccessibilityLevel.Normal
     end
   end
