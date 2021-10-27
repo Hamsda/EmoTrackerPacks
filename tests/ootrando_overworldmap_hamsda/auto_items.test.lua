@@ -65,8 +65,13 @@ local function setMaskFlags(flags)
   AutoTracker:SetData(mask_offset, flags, UINT_8)
 end
 
-local function assert_childItemStage(stage)
-  assert.are.equal(stage, Tracker:FindObjectForCode('kidtrade').CurrentStage)
+local function getChildItemStage()
+  local o = Tracker:FindObjectForCode('kidtrade')
+  if o then
+    return o.CurrentStage
+  else
+    error('kidtrade object not defined')
+  end
 end
 
 describe("auto_items.lua", function()
@@ -89,7 +94,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
       
-      assert_childItemStage(STAGE_EGG)
+      assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
   
     it('shows egg if we have chicken and talon is asleep', function()
@@ -97,7 +102,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_EGG)
+      assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
   
     it('shows chicken if we have chicken and talon ran away', function()
@@ -106,7 +111,7 @@ describe("auto_items.lua", function()
   
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_CHICKEN)
+      assert.are.equal(STAGE_CHICKEN, getChildItemStage())
       assert.is_true(_G.CHICKEN_SHOWN_TO_TALON)
     end)
 
@@ -115,7 +120,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_LETTER)
+      assert.are.equal(STAGE_LETTER, getChildItemStage())
     end)
 
     it('shows letter if kak is closed but haven\'t spoken to guard', function()
@@ -124,7 +129,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_LETTER)
+      assert.are.equal(STAGE_LETTER, getChildItemStage())
     end)
 
     it('shows sold out if we spoke to guard with kak closed', function()
@@ -134,7 +139,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_LETTER_SOLD)
+      assert.are.equal(STAGE_LETTER_SOLD, getChildItemStage())
       assert.is_true(_G.LETTER_SHOWN_TO_GUARD)
     end)
 
@@ -144,7 +149,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_LETTER)
+      assert.are.equal(STAGE_LETTER, getChildItemStage())
       assert.is_true(_G.LETTER_SHOWN_TO_GUARD)
     end)
 
@@ -153,7 +158,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_KEATON)
+      assert.are.equal(STAGE_KEATON, getChildItemStage())
     end)
 
     it('shows sold out if we sold keaton', function()
@@ -162,7 +167,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_KEATON_SOLD)
+      assert.are.equal(STAGE_KEATON_SOLD, getChildItemStage())
     end)
 
     it('updates cache if we sold keaton', function()
@@ -183,7 +188,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_SKULL)
+      assert.are.equal(STAGE_SKULL, getChildItemStage())
     end)
 
     it('shows sold out if we sold skull', function()
@@ -192,7 +197,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_SKULL_SOLD)
+      assert.are.equal(STAGE_SKULL_SOLD, getChildItemStage())
     end)
 
     it('updates cache if we sold skull', function()
@@ -213,7 +218,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_SPOOKY)
+      assert.are.equal(STAGE_SPOOKY, getChildItemStage())
     end)
 
     it('shows sold out if we sold spooky', function()
@@ -222,7 +227,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_SPOOKY_SOLD)
+      assert.are.equal(STAGE_SPOOKY_SOLD, getChildItemStage())
     end)
 
     it('updates cache if we sold spooky', function()
@@ -243,7 +248,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_BUNNY)
+      assert.are.equal(STAGE_BUNNY, getChildItemStage())
     end)
 
     it('shows sold out if we sold bunny', function()
@@ -252,7 +257,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_BUNNY_SOLD)
+      assert.are.equal(STAGE_BUNNY_SOLD, getChildItemStage())
     end)
 
     it('updates cache if we sold bunny', function()
@@ -274,7 +279,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_TRUTH)
+      assert.are.equal(STAGE_TRUTH, getChildItemStage())
     end)
 
     it('doesn\'t perform unnecessary live reads', function()
@@ -305,7 +310,7 @@ describe("auto_items.lua", function()
 
       _updateChildTradeSequence(segment)
 
-      assert_childItemStage(STAGE_NONE)
+      assert.are.equal(STAGE_NONE, getChildItemStage())
     end)
 
     -- show the egg and chicken stages even if the mask trading sequence starts as completed
@@ -321,7 +326,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert.are.equal(STAGE_EGG, Tracker:FindObjectForCode('kidtrade').CurrentStage)
+      assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
 
     it('shows egg if we have chicken and talon is asleep, even with mask sequence completed', function()
@@ -336,7 +341,7 @@ describe("auto_items.lua", function()
       
       _updateChildTradeSequence(segment)
 
-      assert.are.equal(STAGE_EGG, Tracker:FindObjectForCode('kidtrade').CurrentStage)
+      assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
 
     it('shows chicken if we have chicken and talon ran away, even with mask sequence completed', function()
@@ -352,7 +357,7 @@ describe("auto_items.lua", function()
   
       _updateChildTradeSequence(segment)
 
-      assert.are.equal(STAGE_CHICKEN, Tracker:FindObjectForCode('kidtrade').CurrentStage)
+      assert.are.equal(STAGE_CHICKEN, getChildItemStage())
     end)
 
     -- the stage should jump straight from chicken to mask of truth when letter is acquired
@@ -369,7 +374,7 @@ describe("auto_items.lua", function()
       _G.SOLD_MASK_KEATON = true
       
       _updateChildTradeSequence(segment)
-      assert.are.equal(STAGE_TRUTH, Tracker:FindObjectForCode('kidtrade').CurrentStage)
+      assert.are.equal(STAGE_TRUTH, getChildItemStage())
     end)
 
     -- test the test framework itself
