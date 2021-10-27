@@ -7,6 +7,7 @@ require './tests/ootrando_overworldmap_hamsda/Mock'
 
 local ADDR_CHILDTRADESLOT = 0x8011A65B
 
+local VAL_NONE     =0xFF
 local VAL_EGG     = 0x21
 local VAL_CHICKEN = 0x22
 local VAL_LETTER  = 0x23
@@ -299,7 +300,7 @@ describe("auto_items.lua", function()
     --  now test some special cases
 
     it('shows nothing if we have it, even with mask sequence completed', function()
-      setChildItem(segment, 0xFF)
+      setChildItem(segment, VAL_NONE)
       setKakGuardShownLetter()
       setMaskFlags(0x8F)
       _G.EARNED_MASK_OF_TRUTH = true
