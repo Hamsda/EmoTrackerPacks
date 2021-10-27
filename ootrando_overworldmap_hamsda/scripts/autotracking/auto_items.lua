@@ -15,7 +15,7 @@ local function testFlag(segment, address, flag)
     return true
   else
     return false
-  end    
+  end
 end
 
 local function updateItemStageIfChanged(item, target)
@@ -187,22 +187,78 @@ local function updateAdultTradeSequence(segment)
   end
 end
 
-local function updateChildTradeSequence(segment)
+local VAL_NOTHING = 0xFF
+local VAL_EGG     = 0x21
+local VAL_CHICKEN = 0x22
+local VAL_LETTER  = 0x23
+local VAL_SOLDOUT = 0x2C
+local VAL_KEATON  = 0x24
+local VAL_SKULL   = 0x25
+local VAL_SPOOKY  = 0x26
+local VAL_BUNNY   = 0x27
+local VAL_TRUTH   = 0x2B
+
+function updateChildTradeSequence(item, heldItemValue)
+  -- determine which stage to use
+  local newStage = 0
+
+  -- first, show pre-mask shop states
+
+  -- always show nothing if we have it
+  if     heldItemValue == VAL_NOTHING then newStage = 0 -- nothing
+  -- always show egg if we have it
+  elseif heldItemValue == VAL_EGG     then newStage = 1 -- egg
+  -- handle chicken cases
+  elseif heldItemValue == VAL_CHICKEN then
+    -- only show chicken if we already woke up talon
+    if CHICKEN_SHOWN_TO_TALON then
+      autotracker_debug('showing chicken because talon isn\'t at the castle', DBG_DETAIL)
+      newStage = 2 -- chicken
+    -- show egg instead so that talon's check appears on the tracker
+    else
+      autotracker_debug('showing egg instead of chicken because talon is at the castle', DBG_DETAIL)
+      newStage = 1 -- show egg so tracker shows talon's check
+    end
+
+  -- now that the mask shop is open, override the actual held item with the one that
+  -- represents your furthest progress in the trade sequence
+
+  -- always show truth no matter what you're holding, relevant checks should appear accessible
+  elseif EARNED_MASK_OF_TRUTH then newStage = 13
+    -- if we have letter, show sold out if kak is closed and guard asked about the shop
+  elseif heldItemValue == VAL_LETTER then
+    if has('setting_kak_closed') and LETTER_SHOWN_TO_GUARD then
+      newStage = 4 -- sold out
+    else
+      newStage = 3 -- letter
+    end
+  -- if we have soldout, show the corresponding stage
+  elseif heldItemValue == VAL_SOLDOUT and SOLD_MASK_BUNNY  then newStage = 12 -- sold out (after bunny)
+  elseif heldItemValue == VAL_SOLDOUT and SOLD_MASK_SPOOKY then newStage = 10 -- sold out (after spooky)
+  elseif heldItemValue == VAL_SOLDOUT and SOLD_MASK_SKULL  then newStage =  8 -- sold out (after skull)
+  elseif heldItemValue == VAL_SOLDOUT and SOLD_MASK_KEATON then newStage =  6 -- sold out (after keaton)
+  -- it's finally safe to just show what we're holding
+  elseif heldItemValue == VAL_KEATON then newStage =  5 -- keaton
+  elseif heldItemValue == VAL_SKULL  then newStage =  7 -- skull
+  elseif heldItemValue == VAL_SPOOKY then newStage =  9 -- spooky
+  elseif heldItemValue == VAL_BUNNY  then newStage = 11 -- bunny
+  elseif heldItemValue == VAL_TRUTH  then newStage = 13 -- truth
+  end
+
+  if item.CurrentStage ~= newStage then
+    autotracker_debug(string.format("%s on stage %d", 'kidtrade', newStage))
+    item.CurrentStage = newStage
+  else
+    autotracker_debug(string.format("wanted to set %s to stage %d, but it was already there", 'kidtrade', newStage), DBG_DETAIL)
+  end
+end
+
+local function updateChildTradeSequenceFromSegment(segment)
   local item = Tracker:FindObjectForCode("kidtrade")
   if item then
+    -- get held item value from segment
     local value = ReadU8(segment, 0x8011A65B)
 
-    local VAL_NOTHING = 0xFF
-    local VAL_EGG     = 0x21
-    local VAL_CHICKEN = 0x22
-    local VAL_LETTER  = 0x23
-    local VAL_SOLDOUT = 0x2C
-    local VAL_KEATON  = 0x24
-    local VAL_SKULL   = 0x25
-    local VAL_SPOOKY  = 0x26
-    local VAL_BUNNY   = 0x27
-    local VAL_TRUTH   = 0x2B
-    
     -- do a preliminary live read if necessary
 
     -- we have chicken, check whether we showed it to talon yet
@@ -224,59 +280,8 @@ local function updateChildTradeSequence(segment)
       updateChildTradeCacheFromByte(mask_byte)
     end
 
-    -- now determine which stage to use
-
-    local newStage = 0
-
-    -- first, show pre-mask shop states
-
-    -- always show nothing if we have it
-    if     value == VAL_NOTHING then newStage = 0 -- nothing
-    -- always show egg if we have it
-    elseif value == VAL_EGG     then newStage = 1 -- egg
-    -- handle chicken cases
-    elseif value == VAL_CHICKEN then
-      -- only show chicken if we already woke up talon
-      if CHICKEN_SHOWN_TO_TALON then
-        autotracker_debug('showing chicken because talon isn\'t at the castle', DBG_DETAIL)
-        newStage = 2 -- chicken
-      -- show egg instead so that talon's check appears on the tracker
-      else
-        autotracker_debug('showing egg instead of chicken because talon is at the castle', DBG_DETAIL)
-        newStage = 1 -- show egg so tracker shows talon's check
-      end
-
-    -- now that the mask shop is open, override the actual held item with the one that
-    -- represents your furthest progress in the trade sequence
-
-    -- always show truth no matter what you're holding, relevant checks should appear accessible
-    elseif EARNED_MASK_OF_TRUTH then newStage = 13
-      -- if we have letter, show sold out if kak is closed and guard asked about the shop
-    elseif value == VAL_LETTER then
-      if has('setting_kak_closed') and LETTER_SHOWN_TO_GUARD then
-        newStage = 4 -- sold out
-      else 
-        newStage = 3 -- letter
-      end
-    -- if we have soldout, show the corresponding stage
-    elseif value == VAL_SOLDOUT and SOLD_MASK_BUNNY  then newStage = 12 -- sold out (after bunny)
-    elseif value == VAL_SOLDOUT and SOLD_MASK_SPOOKY then newStage = 10 -- sold out (after spooky)
-    elseif value == VAL_SOLDOUT and SOLD_MASK_SKULL  then newStage =  8 -- sold out (after skull)
-    elseif value == VAL_SOLDOUT and SOLD_MASK_KEATON then newStage =  6 -- sold out (after keaton)
-    -- it's finally safe to just show what we're holding
-    elseif value == VAL_KEATON then newStage =  5 -- keaton
-    elseif value == VAL_SKULL  then newStage =  7 -- skull
-    elseif value == VAL_SPOOKY then newStage =  9 -- spooky
-    elseif value == VAL_BUNNY  then newStage = 11 -- bunny
-    elseif value == VAL_TRUTH  then newStage = 13 -- truth
-    end
-
-    if item.CurrentStage ~= newStage then
-      autotracker_debug(string.format("%s on stage %d", 'kidtrade', newStage))
-      item.CurrentStage = newStage
-    else
-      autotracker_debug(string.format("wanted to set %s to stage %d, but it was already there", 'kidtrade', newStage), DBG_DETAIL)
-    end
+    -- calculate item stage
+    updateChildTradeSequence(item, value)
   else
     autotracker_debug(string.format('Unable to find item by code: %s', 'kidtrade'), DBG_ERROR)
   end
@@ -558,7 +563,7 @@ function updateItems1FromMemorySegment(segment)
     updateBottleFromByte(segment, "bottle4", 0x8011A659)
 
     updateAdultTradeSequence(segment) -- 0x8011A65A
-    updateChildTradeSequence(segment) -- 0x8011A65B
+    updateChildTradeSequenceFromSegment(segment) -- 0x8011A65B
   end
 end
 
@@ -677,5 +682,5 @@ end
 
 -- export locals for testing
 if _G._TEST then
-  _G._updateChildTradeSequence = updateChildTradeSequence
+  _G._updateChildTradeSequenceFromSegment = updateChildTradeSequenceFromSegment
 end
