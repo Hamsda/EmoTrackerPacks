@@ -128,7 +128,31 @@ local function updateTalonFromEventData(segment, code, major_offset, flag)
       -- if this update should advance kidtrade item
       if CHICKEN_SHOWN_TO_TALON and item.CurrentStage < 2 then
         autotracker_debug('Talon just left the castle', DBG_DETAIL)
-        item.CurrentStage = 2 -- chicken
+        -- get held item value
+        local value = LiveReadU8(0x8011A65B)
+        -- calculate item stage
+        updateChildTradeSequence(item, value)
+      end
+    end
+  else
+    autotracker_debug(string.format('Unable to find item by code: %s', code), DBG_ERROR)
+  end
+end
+
+local function updateKakGuardFromEventData(segment, code, check_offset, flag)
+  local item = Tracker:FindObjectForCode(code)
+  if item then
+    if not LETTER_SHOWN_TO_GUARD then
+      local guard_offset = ADDR_INF_TABLE + check_offset;
+      local data = ReadU8(segment, guard_offset)
+      LETTER_SHOWN_TO_GUARD = (data & (0x1 << flag)) ~= 0
+
+      if LETTER_SHOWN_TO_GUARD and item.CurrentStage < 4 then
+        autotracker_debug('Kak guard was shown the letter', DBG_DETAIL)
+        -- get held item value
+        local value = LiveReadU8(0x8011A65B)
+        -- calculate item stage
+        updateChildTradeSequence(item, value)
       end
     end
   else
@@ -231,6 +255,10 @@ function updateEventsFromMemorySegment(segment)
 
   local mask_byte = ReadU8(segment, ADDR_ITEM_GET_INF + 0x6)
   updateChildTradeCacheFromByte(mask_byte)
+
+  if has('setting_kak_closed') then
+    updateKakGuardFromEventData(segment, 'kidtrade'                     , 0x0F, 0x6)
+  end
 
   updateInfoTableCheck(segment, '@GC Rolling Goron as Adult/Stop him'   , 0x20, 0x1)
   updateInfoTableCheck(segment, '@GC Rolling Goron as Child/Blow him up', 0x22, 0x6)

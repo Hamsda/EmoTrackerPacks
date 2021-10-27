@@ -3,6 +3,8 @@ _G._TEST = true
 require './ootrando_overworldmap_hamsda/scripts/autotracking/auto_globals'
 require './ootrando_overworldmap_hamsda/scripts/autotracking/auto_items'
 require './ootrando_overworldmap_hamsda/scripts/autotracking/auto_events'
+require './ootrando_overworldmap_hamsda/scripts/autotracking/auto_checks'
+require './ootrando_overworldmap_hamsda/scripts/user_settings'
 require './tests/ootrando_overworldmap_hamsda/Mock'
 
 local ADDR_CHILDTRADESLOT = 0x8011A65B
@@ -37,7 +39,11 @@ local STAGE_NONE        =  0
 local function setChildItem(segment, byte)
   -- set byte for child trade slot
   local address = ADDR_CHILDTRADESLOT -- item held in the child trade slot
-  segment:SetData(address, byte, UINT_8)
+  if segment then
+    segment:SetData(address, byte, UINT_8)
+  else
+    AutoTracker:SetData(address, byte, UINT_8)
+  end
 
   -- set up mock item
   local mockitem = {}
@@ -45,20 +51,33 @@ local function setChildItem(segment, byte)
   Tracker:AddObjectForCode(mockitem, 'kidtrade')
 end
 
+local function setInGame()
+  AutoTracker:SetData(0x8011B92F, 0, UINT_8)
+  AutoTracker:SetData(0x8011A5EC, 0x5A, UINT_8)
+end
+
 local function setKakClosed()
   _G.hasCodes['setting_kak_closed'] = true
 end
 
-local function setTalonRanAway()
+local function setTalonRanAway(segment)
   local talon_offset = ADDR_EVENT_CONTEXT + 0x2 * 0x1;
   local data = 0x0010
-  AutoTracker:SetData(talon_offset, data, UINT_16)
+  if segment then
+    segment:SetData(talon_offset, data, UINT_16)
+  else
+    AutoTracker:SetData(talon_offset, data, UINT_16)
+  end
 end
 
-local function setKakGuardShownLetter()
+local function setKakGuardShownLetter(segment)
   local guard_offset = ADDR_INF_TABLE + 0xF;
   local data = 0x40
-  AutoTracker:SetData(guard_offset, data, UINT_8)
+  if segment then
+    segment:SetData(guard_offset, data, UINT_8)
+  else
+    AutoTracker:SetData(guard_offset, data, UINT_8)
+  end
 end
 
 local function setMaskFlags(flags)
@@ -78,7 +97,7 @@ end
 describe("auto_items.lua", function()
 
   describe("child trade", function()
-  
+
     before_each(function()
       _G.Tracker     = MockTracker:create()
       _G.AutoTracker = MockAutoTracker:create()
@@ -86,31 +105,32 @@ describe("auto_items.lua", function()
 
       resetGlobalVariables()
       _G.hasCodes = {}
+      setInGame()
     end)
-  
+
     -- first, some basic tests. show what we have
 
     it('shows egg if we have it', function()
       setChildItem(segment, VAL_EGG)
-      
-      _updateChildTradeSequence(segment)
-      
-      assert.are.equal(STAGE_EGG, getChildItemStage())
-    end)
-  
-    it('shows egg if we have chicken and talon is asleep', function()
-      setChildItem(segment, VAL_CHICKEN)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
-  
+
+    it('shows egg if we have chicken and talon is asleep', function()
+      setChildItem(segment, VAL_CHICKEN)
+
+      _updateChildTradeSequenceFromSegment(segment)
+
+      assert.are.equal(STAGE_EGG, getChildItemStage())
+    end)
+
     it('shows chicken if we have chicken and talon ran away', function()
       setChildItem(segment, VAL_CHICKEN)
       setTalonRanAway()
-  
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_CHICKEN, getChildItemStage())
       assert.is_true(_G.CHICKEN_SHOWN_TO_TALON)
@@ -118,8 +138,8 @@ describe("auto_items.lua", function()
 
     it('shows letter if we have it', function()
       setChildItem(segment, VAL_LETTER)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_LETTER, getChildItemStage())
     end)
@@ -127,8 +147,8 @@ describe("auto_items.lua", function()
     it('shows letter if kak is closed but haven\'t spoken to guard', function()
       setChildItem(segment, VAL_LETTER)
       setKakClosed()
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_LETTER, getChildItemStage())
     end)
@@ -137,8 +157,8 @@ describe("auto_items.lua", function()
       setChildItem(segment, VAL_LETTER)
       setKakClosed()
       setKakGuardShownLetter()
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_LETTER_SOLD, getChildItemStage())
       assert.is_true(_G.LETTER_SHOWN_TO_GUARD)
@@ -148,7 +168,7 @@ describe("auto_items.lua", function()
       setChildItem(segment, VAL_LETTER)
       setKakGuardShownLetter()
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_LETTER, getChildItemStage())
       assert.is_true(_G.LETTER_SHOWN_TO_GUARD)
@@ -157,7 +177,7 @@ describe("auto_items.lua", function()
     it('shows keaton mask if we have it', function()
       setChildItem(segment, VAL_KEATON)
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_KEATON, getChildItemStage())
     end)
@@ -165,8 +185,8 @@ describe("auto_items.lua", function()
     it('shows sold out if we sold keaton', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x01)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_KEATON_SOLD, getChildItemStage())
     end)
@@ -174,8 +194,8 @@ describe("auto_items.lua", function()
     it('updates cache if we sold keaton', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x01)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.is_true(_G.SOLD_MASK_KEATON)
       assert.is_false(_G.SOLD_MASK_SKULL)
@@ -187,7 +207,7 @@ describe("auto_items.lua", function()
     it('shows skull mask if we have it', function()
       setChildItem(segment, VAL_SKULL)
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_SKULL, getChildItemStage())
     end)
@@ -195,8 +215,8 @@ describe("auto_items.lua", function()
     it('shows sold out if we sold skull', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x03)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_SKULL_SOLD, getChildItemStage())
     end)
@@ -204,8 +224,8 @@ describe("auto_items.lua", function()
     it('updates cache if we sold skull', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x03)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.is_true(_G.SOLD_MASK_KEATON)
       assert.is_true(_G.SOLD_MASK_SKULL)
@@ -217,7 +237,7 @@ describe("auto_items.lua", function()
     it('shows spooky mask if we have it', function()
       setChildItem(segment, VAL_SPOOKY)
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_SPOOKY, getChildItemStage())
     end)
@@ -225,8 +245,8 @@ describe("auto_items.lua", function()
     it('shows sold out if we sold spooky', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x07)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_SPOOKY_SOLD, getChildItemStage())
     end)
@@ -234,8 +254,8 @@ describe("auto_items.lua", function()
     it('updates cache if we sold spooky', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x07)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.is_true(_G.SOLD_MASK_KEATON)
       assert.is_true(_G.SOLD_MASK_SKULL)
@@ -247,7 +267,7 @@ describe("auto_items.lua", function()
     it('shows bunny mask if we have it', function()
       setChildItem(segment, VAL_BUNNY)
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_BUNNY, getChildItemStage())
     end)
@@ -255,8 +275,8 @@ describe("auto_items.lua", function()
     it('shows sold out if we sold bunny', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x0F)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_BUNNY_SOLD, getChildItemStage())
     end)
@@ -264,8 +284,8 @@ describe("auto_items.lua", function()
     it('updates cache if we sold bunny', function()
       setChildItem(segment, VAL_SOLDOUT)
       setMaskFlags(0x0F)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.is_true(_G.SOLD_MASK_KEATON)
       assert.is_true(_G.SOLD_MASK_SKULL)
@@ -278,7 +298,7 @@ describe("auto_items.lua", function()
       setChildItem(segment, VAL_TRUTH)
       setMaskFlags(0x8F)
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_TRUTH, getChildItemStage())
     end)
@@ -286,8 +306,8 @@ describe("auto_items.lua", function()
     it('doesn\'t perform unnecessary live reads', function()
       setChildItem(segment, VAL_KEATON)
       setMaskFlags(0x8F)
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       -- these flags shouldn't be updated
       assert.is_false(_G.EARNED_MASK_OF_TRUTH)
@@ -295,6 +315,48 @@ describe("auto_items.lua", function()
       assert.is_false(_G.SOLD_MASK_SPOOKY)
       assert.is_false(_G.SOLD_MASK_SKULL)
       assert.is_false(_G.SOLD_MASK_KEATON)
+    end)
+
+    -- test stage advancement
+
+    it('advances stage when we show the chicken to talon', function()
+      -- we have the chicken, talon is asleep
+      setChildItem(nil    , VAL_CHICKEN) -- sets it for live read
+      setChildItem(segment, VAL_CHICKEN) -- sets it for segment read
+
+      updateItems1FromMemorySegment(segment)
+
+      assert.is_false(_G.CHICKEN_SHOWN_TO_TALON)
+      assert.are.equal(STAGE_EGG, getChildItemStage())
+
+      -- we have now woken talon
+      setTalonRanAway(segment)
+
+      updateEventsFromMemorySegment(segment)
+
+      assert.is_true(_G.CHICKEN_SHOWN_TO_TALON)
+      assert.are.equal(STAGE_CHICKEN, getChildItemStage())
+    end)
+
+    it('advances stage when we show the letter to the guard', function()
+      -- we have the letter, kak is closed, guard has not been spoken to
+      setChildItem(nil    , VAL_LETTER) -- sets it for live read
+      setChildItem(segment, VAL_LETTER) -- sets it for segment read
+      setKakClosed()
+
+      updateItems1FromMemorySegment(segment)
+
+      assert.is_false(_G.LETTER_SHOWN_TO_GUARD)
+      assert.are.equal(STAGE_LETTER, getChildItemStage())
+
+      -- we have now spoken to the guard
+      setKakGuardShownLetter(segment)
+
+      -- we update from event data because the held item didn't change here and dirty the memory watch
+      updateEventsFromMemorySegment(segment)
+
+      assert.is_true(_G.LETTER_SHOWN_TO_GUARD)
+      assert.are.equal(STAGE_LETTER_SOLD, getChildItemStage())
     end)
 
     --  now test some special cases
@@ -309,7 +371,7 @@ describe("auto_items.lua", function()
       _G.SOLD_MASK_SKULL  = true
       _G.SOLD_MASK_KEATON = true
 
-      _updateChildTradeSequence(segment)
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_NONE, getChildItemStage())
     end)
@@ -324,8 +386,8 @@ describe("auto_items.lua", function()
       _G.SOLD_MASK_SPOOKY = true
       _G.SOLD_MASK_SKULL  = true
       _G.SOLD_MASK_KEATON = true
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
@@ -339,8 +401,8 @@ describe("auto_items.lua", function()
       _G.SOLD_MASK_SPOOKY = true
       _G.SOLD_MASK_SKULL  = true
       _G.SOLD_MASK_KEATON = true
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_EGG, getChildItemStage())
     end)
@@ -355,8 +417,8 @@ describe("auto_items.lua", function()
       _G.SOLD_MASK_SPOOKY = true
       _G.SOLD_MASK_SKULL  = true
       _G.SOLD_MASK_KEATON = true
-  
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
 
       assert.are.equal(STAGE_CHICKEN, getChildItemStage())
     end)
@@ -373,8 +435,8 @@ describe("auto_items.lua", function()
       _G.SOLD_MASK_SPOOKY = true
       _G.SOLD_MASK_SKULL = true
       _G.SOLD_MASK_KEATON = true
-      
-      _updateChildTradeSequence(segment)
+
+      _updateChildTradeSequenceFromSegment(segment)
       assert.are.equal(STAGE_TRUTH, getChildItemStage())
     end)
 
