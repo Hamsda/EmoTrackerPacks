@@ -10,6 +10,7 @@
 - renamed locations based on [PR #1280](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1280) and [PR #1282](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1282)
 - removed logic trick in MQ Forest based on [PR #1359](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1359)
 - added logic trick for KZ skip based on [PR #1317](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1317)
+- added setting for mixed pools in ER
 
 ## 3.6.0.0
 
