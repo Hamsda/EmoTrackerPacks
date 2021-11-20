@@ -1,28 +1,14 @@
-access_level = {
-  [0] = AccessibilityLevel.None,
-  [1] = AccessibilityLevel.Partial,
-  [3] = AccessibilityLevel.Inspect,
-  [5] = AccessibilityLevel.SequenceBreak,
-  [6] = AccessibilityLevel.Normal,
-  [7] = AccessibilityLevel.Cleared,
-  [AccessibilityLevel.None] = 0,
-  [AccessibilityLevel.Partial] = 1,
-  [AccessibilityLevel.Inspect] = 3,
-  [AccessibilityLevel.SequenceBreak] = 5,
-  [AccessibilityLevel.Normal] = 6,
-  [AccessibilityLevel.Cleared] = 7
-}
 function or_accessibility(...)
   local max_level = 0
   for _, data in ipairs({...}) do
     if data == AccessibilityLevel.Normal then
       return AccessibilityLevel.Normal
     end
-    if access_level[data] > max_level then
-      max_level = access_level[data]
+    if ACCESS_LEVEL[data] > max_level then
+      max_level = ACCESS_LEVEL[data]
     end
   end
-  return access_level[max_level]
+  return ACCESS_LEVEL[max_level]
 end
 
 function and_accessibility(...)
@@ -31,11 +17,11 @@ function and_accessibility(...)
     if data == AccessibilityLevel.None then
       return AccessibilityLevel.None
     end
-    if access_level[data] < min_level then
-      min_level = access_level[data]
+    if ACCESS_LEVEL[data] < min_level then
+      min_level = ACCESS_LEVEL[data]
     end
   end
-  return access_level[min_level]
+  return ACCESS_LEVEL[min_level]
 end
 
 function can_leave_forest()

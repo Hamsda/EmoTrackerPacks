@@ -76,6 +76,28 @@
     ]
   },
   {
+    "name": "Mix Entrance Pools",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_entrance_mixed_off.png",
+        "codes": "setting_entrance_mixed,setting_entrance_mixed_off"
+      },
+      {
+        "img": "images/setting_entrance_mixed_indoor.png",
+        "codes": "setting_entrance_mixed,setting_entrance_mixed_indoor",
+        "inherits_codes": false
+      },
+      {
+        "img": "images/setting_entrance_mixed_all.png",
+        "codes": "setting_entrance_mixed_all"
+      }
+    ]
+  },
+  {
     "name": "Randomize Owl Drops",
     "type": "progressive",
     "allow_disabled": false,
