@@ -11,6 +11,7 @@ if HAS_MAP then
   Tracker:AddItems("items/options.json")
   Tracker:AddItems("items/counters.json")
 end
+Tracker:AddItems("items/options_common.json")
 Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
