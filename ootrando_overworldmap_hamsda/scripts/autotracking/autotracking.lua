@@ -53,4 +53,3 @@ ScriptHost:AddMemoryWatch("OOT INF Tables"    , 0x8011B48C, 0x78, updateEventsFr
 ScriptHost:AddMemoryWatch("OOT Global Context Switch Data"     , ADDR_CURRENT_SWITCH_FLAGS    , 0x4, updateSwitchesFromGlobalContext)
 ScriptHost:AddMemoryWatch("OOT Global Context Chest Data"      , ADDR_CURRENT_CHEST_FLAGS     , 0x4, updateChestsFromGlobalContext)
 ScriptHost:AddMemoryWatch("OOT Global Context Collectible Data", ADDR_CURRENT_COLLECTION_FLAGS, 0x4, updateCollectionsFromGlobalContext)
-
