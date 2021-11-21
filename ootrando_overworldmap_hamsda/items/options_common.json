@@ -6,10 +6,6 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_racemode_on.png",
-        "codes": "setting_racemode,setting_racemode_on"
-      },
-      {
         "img": "images/setting_racemode_off.png",
         "codes": "setting_racemode,setting_racemode_off",
         "inherit_codes": false
