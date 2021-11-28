@@ -155,10 +155,8 @@
             "name": "Lens of Truth Chest",
             "short_name": "Dead Hand",
             "access_rules": [
-              "$access_location|Bottom of the Well Lens of Truth Chest",
-              "{$hintable}"
+              "$access_location|Bottom of the Well Lens of Truth Chest"
             ],
-            "capture_item": true,
             "item_count": 1
           },
           {
@@ -230,10 +228,8 @@
             "name": "Compass Chest",
             "short_name": "Dead Hand",
             "access_rules": [
-              "$access_location|Bottom of the Well MQ Compass Chest",
-              "{$hintable}"
+              "$access_location|Bottom of the Well MQ Compass Chest"
             ],
-            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_compass.png",
             "item_count": 1
           },
@@ -1908,8 +1904,10 @@
             "name": "Shadow Trial Golden Gauntlets Chest",
             "short_name": "Shadow Trial 2",
             "access_rules": [
-              "$access_location|Ganons Castle Shadow Trial Golden Gauntlets Chest"
+              "$access_location|Ganons Castle Shadow Trial Golden Gauntlets Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -2116,8 +2114,10 @@
             "name": "Shadow Trial Eye Switch Chest",
             "short_name": "Shadow Trial 2",
             "access_rules": [
-              "$access_location|Ganons Castle MQ Shadow Trial Eye Switch Chest"
+              "$access_location|Ganons Castle MQ Shadow Trial Eye Switch Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },
@@ -2244,14 +2244,14 @@
         ]
       },
       {
-        "name": "Gerudo Training Grounds",
+        "name": "Gerudo Training Ground",
         "color": "#a09509",
         "sections": [
           {
             "name": "Lobby Chests",
             "short_name": "Lobby",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Lobby Chests"
+              "$access_location|Gerudo Training Ground Lobby Chests"
             ],
             "item_count": 2
           },
@@ -2259,7 +2259,7 @@
             "name": "Beamos Chest",
             "short_name": "Beamos",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Beamos Chest"
+              "$access_location|Gerudo Training Ground Beamos Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2268,7 +2268,7 @@
             "name": "Stalfos Chest",
             "short_name": "Stalfos",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Stalfos Chest"
+              "$access_location|Gerudo Training Ground Stalfos Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2277,7 +2277,7 @@
             "name": "Before Heavy Block Chest",
             "short_name": "Wolfos",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Before Heavy Block Chest"
+              "$access_location|Gerudo Training Ground Before Heavy Block Chest"
             ],
             "item_count": 1
           },
@@ -2285,7 +2285,7 @@
             "name": "Heavy Block Chests",
             "short_name": "Like Like",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Heavy Block Chests"
+              "$access_location|Gerudo Training Ground Heavy Block Chests"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 4
@@ -2294,7 +2294,7 @@
             "name": "Eye Statue Chest",
             "short_name": "Eye Statue",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Eye Statue Chest"
+              "$access_location|Gerudo Training Ground Eye Statue Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2303,7 +2303,7 @@
             "name": "Near Scarecrow Chest",
             "short_name": "Near Scarecrow",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Near Scarecrow Chest"
+              "$access_location|Gerudo Training Ground Near Scarecrow Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2312,7 +2312,7 @@
             "name": "Hammer Room Clear Chest",
             "short_name": "Flaming Enemies",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Hammer Room Clear Chest"
+              "$access_location|Gerudo Training Ground Hammer Room Clear Chest"
             ],
             "item_count": 1
           },
@@ -2320,7 +2320,7 @@
             "name": "Hammer Room Switch Chest",
             "short_name": "Hammer Switch",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Hammer Room Switch Chest"
+              "$access_location|Gerudo Training Ground Hammer Room Switch Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2329,7 +2329,7 @@
             "name": "Freestanding Key",
             "short_name": "Ledge Key",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Freestanding Key"
+              "$access_location|Gerudo Training Ground Freestanding Key"
             ],
             "capture_item": true,
             "chest_unopened_img": "images/small_key.png",
@@ -2340,7 +2340,7 @@
             "name": "Maze Right Chests",
             "short_name": "Maze Right",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Maze Right Chests"
+              "$access_location|Gerudo Training Ground Maze Right Chests"
             ],
             "item_count": 2
           },
@@ -2348,7 +2348,7 @@
             "name": "Underwater Silver Rupee Chest",
             "short_name": "Toilet",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Underwater Silver Rupee Chest",
+              "$access_location|Gerudo Training Ground Underwater Silver Rupee Chest",
               "{$hintable}"
             ],
             "capture_item": true,
@@ -2359,7 +2359,7 @@
             "name": "Hidden Ceiling Chest",
             "short_name": "Hidden Ceiling",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Hidden Ceiling Chest"
+              "$access_location|Gerudo Training Ground Hidden Ceiling Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2368,7 +2368,7 @@
             "name": "Maze Path First Chest",
             "short_name": "Maze 1",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Maze Path First Chest"
+              "$access_location|Gerudo Training Ground Maze Path First Chest"
             ],
             "item_count": 1
           },
@@ -2376,7 +2376,7 @@
             "name": "Maze Path Second Chest",
             "short_name": "Maze 2",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Maze Path Second Chest"
+              "$access_location|Gerudo Training Ground Maze Path Second Chest"
             ],
             "item_count": 1
           },
@@ -2384,7 +2384,7 @@
             "name": "Maze Path Third Chest",
             "short_name": "Maze 3",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Maze Path Third Chest"
+              "$access_location|Gerudo Training Ground Maze Path Third Chest"
             ],
             "item_count": 1
           },
@@ -2392,7 +2392,7 @@
             "name": "Maze Path Final Chest",
             "short_name": "Ice Arrows",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds Maze Path Final Chest",
+              "$access_location|Gerudo Training Ground Maze Path Final Chest",
               "{$hintable}"
             ],
             "capture_item": true,
@@ -2421,14 +2421,14 @@
         ]
       },
       {
-        "name": "Gerudo Training Grounds MQ",
+        "name": "Gerudo Training Ground MQ",
         "color": "#a09509",
         "sections": [
           {
             "name": "Lobby Chests",
             "short_name": "Lobby",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Lobby Chests"
+              "$access_location|Gerudo Training Ground MQ Lobby Chests"
             ],
             "item_count": 2
           },
@@ -2436,7 +2436,7 @@
             "name": "First Iron Knuckle Chest",
             "short_name": "Knuckle 1",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ First Iron Knuckle Chest"
+              "$access_location|Gerudo Training Ground MQ First Iron Knuckle Chest"
             ],
             "item_count": 1
           },
@@ -2444,7 +2444,7 @@
             "name": "Before Heavy Block Chest",
             "short_name": "Stalfos",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Before Heavy Block Chest"
+              "$access_location|Gerudo Training Ground MQ Before Heavy Block Chest"
             ],
             "item_count": 1
           },
@@ -2452,7 +2452,7 @@
             "name": "Heavy Block Chest",
             "short_name": "Freezards",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Heavy Block Chest"
+              "$access_location|Gerudo Training Ground MQ Heavy Block Chest"
             ],
             "item_count": 1
           },
@@ -2460,7 +2460,7 @@
             "name": "Eye Statue Chest",
             "short_name": "Eye Statue",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Eye Statue Chest"
+              "$access_location|Gerudo Training Ground MQ Eye Statue Chest"
             ],
             "item_count": 1
           },
@@ -2468,7 +2468,7 @@
             "name": "Second Iron Knuckle Chest",
             "short_name": "Knuckle 2",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Second Iron Knuckle Chest"
+              "$access_location|Gerudo Training Ground MQ Second Iron Knuckle Chest"
             ],
             "item_count": 1
           },
@@ -2476,7 +2476,7 @@
             "name": "Flame Circle Chest",
             "short_name": "Flame Circle",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Flame Circle Chest"
+              "$access_location|Gerudo Training Ground MQ Flame Circle Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2485,7 +2485,7 @@
             "name": "Maze Right Chests",
             "short_name": "Maze Right",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Maze Right Chests"
+              "$access_location|Gerudo Training Ground MQ Maze Right Chests"
             ],
             "item_count": 2
           },
@@ -2493,7 +2493,7 @@
             "name": "Dinolfos Chest",
             "short_name": "Dinolfos",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Dinolfos Chest"
+              "$access_location|Gerudo Training Ground MQ Dinolfos Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
@@ -2502,7 +2502,7 @@
             "name": "Underwater Silver Rupee Chest",
             "short_name": "Toilet",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Underwater Silver Rupee Chest",
+              "$access_location|Gerudo Training Ground MQ Underwater Silver Rupee Chest",
               "{$hintable}"
             ],
             "capture_item": true,
@@ -2513,7 +2513,7 @@
             "name": "Hidden Ceiling Chest",
             "short_name": "Hidden Ceiling",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Hidden Ceiling Chest"
+              "$access_location|Gerudo Training Ground MQ Hidden Ceiling Chest"
             ],
             "item_count": 1
           },
@@ -2521,7 +2521,7 @@
             "name": "Maze Path First Chest",
             "short_name": "Maze 1",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Maze Path First Chest"
+              "$access_location|Gerudo Training Ground MQ Maze Path First Chest"
             ],
             "item_count": 1
           },
@@ -2529,7 +2529,7 @@
             "name": "Maze Path Second Chest",
             "short_name": "Maze 2",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Maze Path Second Chest"
+              "$access_location|Gerudo Training Ground MQ Maze Path Second Chest"
             ],
             "item_count": 1
           },
@@ -2537,7 +2537,7 @@
             "name": "Maze Path Third Chest",
             "short_name": "Maze 3",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Maze Path Third Chest"
+              "$access_location|Gerudo Training Ground MQ Maze Path Third Chest"
             ],
             "item_count": 1
           },
@@ -2545,7 +2545,7 @@
             "name": "Ice Arrows Chest",
             "short_name": "Ice Arrows",
             "access_rules": [
-              "$access_location|Gerudo Training Grounds MQ Ice Arrows Chest",
+              "$access_location|Gerudo Training Ground MQ Ice Arrows Chest",
               "{$hintable}"
             ],
             "capture_item": true,
@@ -2651,8 +2651,10 @@
             "name": "Iron Boots Chest",
             "short_name": "Iron Boots",
             "access_rules": [
-              "$access_location|Ice Cavern Iron Boots Chest"
+              "$access_location|Ice Cavern Iron Boots Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -2766,8 +2768,10 @@
             "name": "Iron Boots Chest",
             "short_name": "Iron Boots",
             "access_rules": [
-              "$access_location|Ice Cavern MQ Iron Boots Chest"
+              "$access_location|Ice Cavern MQ Iron Boots Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -3216,8 +3220,10 @@
             "name": "Freestanding Key",
             "short_name": "Skull Pot",
             "access_rules": [
-              "$access_location|Shadow Temple Freestanding Key"
+              "$access_location|Shadow Temple Freestanding Key",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/small_key.png",
             "chest_opened_img": "images/small_key_check.png",
             "item_count": 1
@@ -3301,10 +3307,8 @@
             "name": "Invisible Floormaster Chest",
             "short_name": "Floormaster",
             "access_rules": [
-              "$access_location|Shadow Temple Invisible Floormaster Chest",
-              "{$hintable}"
+              "$access_location|Shadow Temple Invisible Floormaster Chest"
             ],
-            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },
@@ -3448,8 +3452,10 @@
             "name": "Stalfos Room Chest",
             "short_name": "Stalfos",
             "access_rules": [
-              "$access_location|Shadow Temple MQ Stalfos Room Chest"
+              "$access_location|Shadow Temple MQ Stalfos Room Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "item_count": 1
           },
           {
@@ -4214,8 +4220,10 @@
             "name": "Central Pillar Chest",
             "short_name": "Central Pillar",
             "access_rules": [
-              "$access_location|Water Temple Central Pillar Chest"
+              "$access_location|Water Temple Central Pillar Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },
@@ -4392,8 +4400,10 @@
             "name": "Central Pillar Chest",
             "short_name": "Central Pillar",
             "access_rules": [
-              "$access_location|Water Temple MQ Central Pillar Chest"
+              "$access_location|Water Temple MQ Central Pillar Chest",
+              "{$hintable}"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/chest_brown_small_key.png",
             "item_count": 1
           },

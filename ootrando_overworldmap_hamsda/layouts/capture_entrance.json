@@ -1,5 +1,5 @@
 {
-  "tracker_capture_mixed_er": {
+  "tracker_capture_ow": {
     "type": "container",
     "content": {
       "type": "itemgrid",
@@ -16,21 +16,21 @@
           "entrance_overworld_sfm"
         ],
         [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr"
+        ],
+        [
           "entrance_overworld_kak",
           "entrance_overworld_kak_impa",
           "entrance_overworld_kak_gate",
           "entrance_overworld_gy",
           "entrance_overworld_gy_pad",
           "",
-          ""
-        ],
-        [
-          "entrance_overworld_cg",
-          "entrance_overworld_tot_ent",
-          "entrance_overworld_mkt",
-          "entrance_overworld_mkt_ent",
-          "entrance_overworld_hf",
-          "entrance_overworld_llr",
           "entrance_overworld_dm_smt"
         ],
         [
@@ -59,83 +59,11 @@
           "entrance_overworld_gf",
           "entrance_overworld_gv_fort",
           "entrance_overworld_gv"
-        ],
-        [
-          "entrance_dungeon_deku",
-          "entrance_dungeon_dodongo",
-          "entrance_dungeon_jabu",
-          "",
-          "entrance_house_fairy",
-          "entrance_house_cow",
-          ""
-        ],
-        [
-          "entrance_dungeon_forest",
-          "entrance_dungeon_fire",
-          "entrance_dungeon_water",
-          "",
-          "entrance_house_shop",
-          "entrance_house_potion_front",
-          "entrance_house_potion_back" 
-        ],
-        [
-          "entrance_dungeon_spirit",
-          "entrance_dungeon_shadow",
-          "",
-          "",
-          "entrance_house_fishing",
-          "entrance_house_skull",
-          "entrance_house_pot"
-        ],
-        [
-          "entrance_dungeon_botw",
-          "entrance_dungeon_ice",
-          "entrance_dungeon_gtg",
-          "",
-          "entrance_house_link",
-          "entrance_house_tot",
-          "entrance_house_windmill"
-        ],
-        [
-          "entrance_grotto_generic",
-          "entrance_grotto_scrub",
-          "entrance_grotto_cow",
-          "",
-          "entrance_house_shoot_child",
-          "entrance_house_shoot_adult",
-          "entrance_house_chest"
-        ],
-        [
-          "entrance_grotto_enemy",
-          "entrance_grotto_tektite",
-          "entrance_grotto_theater",
-          "",
-          "entrance_house_talon_child",
-          "entrance_house_masks",
-          "entrance_house_bowling"
-        ],
-        [
-          "entrance_grotto_castle_storms",
-          "entrance_grotto_field_kak",
-          "entrance_grotto_field_valley",
-          "",
-          "entrance_house_talon_adult",
-          "entrance_house_hag",
-          "entrance_house_lab"
-        ],
-        [
-          "entrance_grotto_comp",
-          "entrance_grotto_dampe",
-          "entrance_grotto_hp",
-          "",
-          "",
-          "",
-          ""
         ]
       ]
     }
   },
-  "tracker_capture_grottos": {
+  "tracker_capture_grotto": {
     "type": "container",
     "content": {
       "type": "itemgrid",
@@ -158,14 +86,14 @@
           "entrance_grotto_field_valley"
         ],
         [
-          "entrance_grotto_comp",
+          "entrance_grotto_royal_tomb",
           "entrance_grotto_dampe",
           "entrance_grotto_hp"
         ]
       ]
     }
   },
-  "tracker_capture_houses": {
+  "tracker_capture_interior": {
     "type": "container",
     "content": {
       "type": "itemgrid",
@@ -185,7 +113,7 @@
         [
           "entrance_house_fishing",
           "entrance_house_skull",
-          "entrance_house_pot" 
+          "entrance_house_pot"
         ],
         [
           "entrance_house_link",
@@ -210,7 +138,7 @@
       ]
     }
   },
-  "tracker_capture_dungeons": {
+  "tracker_capture_dungeon": {
     "type": "container",
     "content": {
       "type": "itemgrid",
@@ -240,7 +168,7 @@
       ]
     }
   },
-  "tracker_capture_overworld": {
+  "tracker_capture_ow_grotto": {
     "type": "container",
     "content": {
       "type": "itemgrid",
@@ -254,7 +182,22 @@
           "entrance_overworld_lw",
           "entrance_overworld_lw_mido",
           "entrance_overworld_sfm_ent",
-          "entrance_overworld_sfm"
+          "entrance_overworld_sfm",
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater"
         ],
         [
           "entrance_overworld_kak",
@@ -263,16 +206,10 @@
           "entrance_overworld_gy",
           "entrance_overworld_gy_pad",
           "",
-          ""
-        ],
-        [
-          "entrance_overworld_cg",
-          "entrance_overworld_tot_ent",
-          "entrance_overworld_mkt",
-          "entrance_overworld_mkt_ent",
-          "entrance_overworld_hf",
-          "entrance_overworld_llr",
-          "entrance_overworld_dm_smt"
+          "entrance_overworld_dm_smt",
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley"
         ],
         [
           "entrance_overworld_dmc_upr",
@@ -281,7 +218,10 @@
           "entrance_overworld_gc_drn",
           "entrance_overworld_gc_lw",
           "entrance_overworld_gc",
-          "entrance_overworld_dmt"
+          "entrance_overworld_dmt",
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp"
         ],
         [
           "entrance_overworld_lh",
@@ -290,7 +230,10 @@
           "entrance_overworld_zr_fall",
           "entrance_overworld_zd",
           "entrance_overworld_zd_kz",
-          "entrance_overworld_zf"
+          "entrance_overworld_zf",
+          "",
+          "",
+          ""
         ],
         [
           "entrance_overworld_col",
@@ -299,7 +242,860 @@
           "entrance_overworld_gf_gate",
           "entrance_overworld_gf",
           "entrance_overworld_gv_fort",
-          "entrance_overworld_gv"
+          "entrance_overworld_gv",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_ow_interior": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_overworld_kf",
+          "entrance_overworld_lw_brg2",
+          "entrance_overworld_lw_brg",
+          "entrance_overworld_lw",
+          "entrance_overworld_lw_mido",
+          "entrance_overworld_sfm_ent",
+          "entrance_overworld_sfm",
+          "",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "",
+          "",
+          "",
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot"
+        ],
+        [
+          "entrance_overworld_kak",
+          "entrance_overworld_kak_impa",
+          "entrance_overworld_kak_gate",
+          "entrance_overworld_gy",
+          "entrance_overworld_gy_pad",
+          "",
+          "entrance_overworld_dm_smt",
+          "",
+          "",
+          "",
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill"
+        ],
+        [
+          "entrance_overworld_dmc_upr",
+          "entrance_overworld_dmc_ctr",
+          "entrance_overworld_dmc_lwr",
+          "entrance_overworld_gc_drn",
+          "entrance_overworld_gc_lw",
+          "entrance_overworld_gc",
+          "entrance_overworld_dmt",
+          "",
+          "",
+          "",
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest"
+        ],
+        [
+          "entrance_overworld_lh",
+          "entrance_overworld_zr_frnt",
+          "entrance_overworld_zr",
+          "entrance_overworld_zr_fall",
+          "entrance_overworld_zd",
+          "entrance_overworld_zd_kz",
+          "entrance_overworld_zf",
+          "",
+          "",
+          "",
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling"
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl_col",
+          "entrance_overworld_wl_fort",
+          "entrance_overworld_gf_gate",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv_fort",
+          "entrance_overworld_gv",
+          "",
+          "",
+          "",
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab"
+        ]
+      ]
+    }
+  },
+  "tracker_capture_ow_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_overworld_kf",
+          "entrance_overworld_lw_brg2",
+          "entrance_overworld_lw_brg",
+          "entrance_overworld_lw",
+          "entrance_overworld_lw_mido",
+          "entrance_overworld_sfm_ent",
+          "entrance_overworld_sfm",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_overworld_kak",
+          "entrance_overworld_kak_impa",
+          "entrance_overworld_kak_gate",
+          "entrance_overworld_gy",
+          "entrance_overworld_gy_pad",
+          "",
+          "entrance_overworld_dm_smt",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_overworld_dmc_upr",
+          "entrance_overworld_dmc_ctr",
+          "entrance_overworld_dmc_lwr",
+          "entrance_overworld_gc_drn",
+          "entrance_overworld_gc_lw",
+          "entrance_overworld_gc",
+          "entrance_overworld_dmt",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "entrance_overworld_lh",
+          "entrance_overworld_zr_frnt",
+          "entrance_overworld_zr",
+          "entrance_overworld_zr_fall",
+          "entrance_overworld_zd",
+          "entrance_overworld_zd_kz",
+          "entrance_overworld_zf",
+          "",
+          "",
+          ""
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl_col",
+          "entrance_overworld_wl_fort",
+          "entrance_overworld_gf_gate",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv_fort",
+          "entrance_overworld_gv",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_grotto_interior": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back"
+        ],
+        [
+          "",
+          "",
+          "",
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot"
+        ],
+        [
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow",
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill"
+        ],
+        [
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater",
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest"
+        ],
+        [
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley",
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling"
+        ],
+        [
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp",
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab"
+        ]
+      ]
+    }
+  },
+  "tracker_capture_grotto_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_interior_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling",
+          "",
+          "",
+          ""
+        ],
+        [
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_ow_grotto_interior": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_overworld_kf",
+          "entrance_overworld_lw_brg2",
+          "entrance_overworld_lw_brg",
+          "entrance_overworld_lw",
+          "entrance_overworld_lw_mido",
+          "entrance_overworld_sfm_ent",
+          "entrance_overworld_sfm",
+          "",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "",
+          "",
+          "",
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot"
+        ],
+        [
+          "entrance_overworld_kak",
+          "entrance_overworld_kak_impa",
+          "entrance_overworld_kak_gate",
+          "entrance_overworld_gy",
+          "entrance_overworld_gy_pad",
+          "",
+          "entrance_overworld_dm_smt",
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow",
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill"
+        ],
+        [
+          "entrance_overworld_dmc_upr",
+          "entrance_overworld_dmc_ctr",
+          "entrance_overworld_dmc_lwr",
+          "entrance_overworld_gc_drn",
+          "entrance_overworld_gc_lw",
+          "entrance_overworld_gc",
+          "entrance_overworld_dmt",
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater",
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest"
+        ],
+        [
+          "entrance_overworld_lh",
+          "entrance_overworld_zr_frnt",
+          "entrance_overworld_zr",
+          "entrance_overworld_zr_fall",
+          "entrance_overworld_zd",
+          "entrance_overworld_zd_kz",
+          "entrance_overworld_zf",
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley",
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling"
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl_col",
+          "entrance_overworld_wl_fort",
+          "entrance_overworld_gf_gate",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv_fort",
+          "entrance_overworld_gv",
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp",
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab"
+        ]
+      ]
+    }
+  },
+  "tracker_capture_ow_grotto_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_overworld_kf",
+          "entrance_overworld_lw_brg2",
+          "entrance_overworld_lw_brg",
+          "entrance_overworld_lw",
+          "entrance_overworld_lw_mido",
+          "entrance_overworld_sfm_ent",
+          "entrance_overworld_sfm",
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_overworld_kak",
+          "entrance_overworld_kak_impa",
+          "entrance_overworld_kak_gate",
+          "entrance_overworld_gy",
+          "entrance_overworld_gy_pad",
+          "",
+          "entrance_overworld_dm_smt",
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_overworld_dmc_upr",
+          "entrance_overworld_dmc_ctr",
+          "entrance_overworld_dmc_lwr",
+          "entrance_overworld_gc_drn",
+          "entrance_overworld_gc_lw",
+          "entrance_overworld_gc",
+          "entrance_overworld_dmt",
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "entrance_overworld_lh",
+          "entrance_overworld_zr_frnt",
+          "entrance_overworld_zr",
+          "entrance_overworld_zr_fall",
+          "entrance_overworld_zd",
+          "entrance_overworld_zd_kz",
+          "entrance_overworld_zf",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl_col",
+          "entrance_overworld_wl_fort",
+          "entrance_overworld_gf_gate",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv_fort",
+          "entrance_overworld_gv",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_ow_interior_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_overworld_kf",
+          "entrance_overworld_lw_brg2",
+          "entrance_overworld_lw_brg",
+          "entrance_overworld_lw",
+          "entrance_overworld_lw_mido",
+          "entrance_overworld_sfm_ent",
+          "entrance_overworld_sfm",
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_overworld_kak",
+          "entrance_overworld_kak_impa",
+          "entrance_overworld_kak_gate",
+          "entrance_overworld_gy",
+          "entrance_overworld_gy_pad",
+          "",
+          "entrance_overworld_dm_smt",
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_overworld_dmc_upr",
+          "entrance_overworld_dmc_ctr",
+          "entrance_overworld_dmc_lwr",
+          "entrance_overworld_gc_drn",
+          "entrance_overworld_gc_lw",
+          "entrance_overworld_gc",
+          "entrance_overworld_dmt",
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "entrance_overworld_lh",
+          "entrance_overworld_zr_frnt",
+          "entrance_overworld_zr",
+          "entrance_overworld_zr_fall",
+          "entrance_overworld_zd",
+          "entrance_overworld_zd_kz",
+          "entrance_overworld_zf",
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling",
+          "",
+          "",
+          ""
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl_col",
+          "entrance_overworld_wl_fort",
+          "entrance_overworld_gf_gate",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv_fort",
+          "entrance_overworld_gv",
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_grotto_interior_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "",
+          "",
+          "",
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow",
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater",
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley",
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling",
+          "",
+          "",
+          ""
+        ],
+        [
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp",
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "tracker_capture_ow_grotto_interior_dungeon": {
+    "type": "container",
+    "content": {
+      "type": "itemgrid",
+      "h_alignment": "center",
+      "item_margin": "1,2",
+      "rows": [
+        [
+          "entrance_overworld_kf",
+          "entrance_overworld_lw_brg2",
+          "entrance_overworld_lw_brg",
+          "entrance_overworld_lw",
+          "entrance_overworld_lw_mido",
+          "entrance_overworld_sfm_ent",
+          "entrance_overworld_sfm",
+          "",
+          "entrance_house_fairy",
+          "entrance_house_cow",
+          "entrance_house_shop",
+          "entrance_house_potion_front",
+          "entrance_house_potion_back",
+          "entrance_dungeon_deku",
+          "entrance_dungeon_dodongo",
+          "entrance_dungeon_jabu"
+        ],
+        [
+          "entrance_overworld_cg",
+          "entrance_overworld_tot_ent",
+          "entrance_overworld_mkt",
+          "entrance_overworld_mkt_aly",
+          "entrance_overworld_mkt_ent",
+          "entrance_overworld_hf",
+          "entrance_overworld_llr",
+          "",
+          "",
+          "",
+          "entrance_house_fishing",
+          "entrance_house_skull",
+          "entrance_house_pot",
+          "entrance_dungeon_forest",
+          "entrance_dungeon_fire",
+          "entrance_dungeon_water"
+        ],
+        [
+          "entrance_overworld_kak",
+          "entrance_overworld_kak_impa",
+          "entrance_overworld_kak_gate",
+          "entrance_overworld_gy",
+          "entrance_overworld_gy_pad",
+          "",
+          "entrance_overworld_dm_smt",
+          "entrance_grotto_generic",
+          "entrance_grotto_scrub",
+          "entrance_grotto_cow",
+          "entrance_house_link",
+          "entrance_house_tot",
+          "entrance_house_windmill",
+          "entrance_dungeon_spirit",
+          "entrance_dungeon_shadow",
+          ""
+        ],
+        [
+          "entrance_overworld_dmc_upr",
+          "entrance_overworld_dmc_ctr",
+          "entrance_overworld_dmc_lwr",
+          "entrance_overworld_gc_drn",
+          "entrance_overworld_gc_lw",
+          "entrance_overworld_gc",
+          "entrance_overworld_dmt",
+          "entrance_grotto_enemy",
+          "entrance_grotto_tektite",
+          "entrance_grotto_theater",
+          "entrance_house_shoot_child",
+          "entrance_house_shoot_adult",
+          "entrance_house_chest",
+          "entrance_dungeon_botw",
+          "entrance_dungeon_ice",
+          "entrance_dungeon_gtg"
+        ],
+        [
+          "entrance_overworld_lh",
+          "entrance_overworld_zr_frnt",
+          "entrance_overworld_zr",
+          "entrance_overworld_zr_fall",
+          "entrance_overworld_zd",
+          "entrance_overworld_zd_kz",
+          "entrance_overworld_zf",
+          "entrance_grotto_castle_storms",
+          "entrance_grotto_field_kak",
+          "entrance_grotto_field_valley",
+          "entrance_house_talon_child",
+          "entrance_house_masks",
+          "entrance_house_bowling",
+          "",
+          "",
+          ""
+        ],
+        [
+          "entrance_overworld_col",
+          "entrance_overworld_wl_col",
+          "entrance_overworld_wl_fort",
+          "entrance_overworld_gf_gate",
+          "entrance_overworld_gf",
+          "entrance_overworld_gv_fort",
+          "entrance_overworld_gv",
+          "entrance_grotto_royal_tomb",
+          "entrance_grotto_dampe",
+          "entrance_grotto_hp",
+          "entrance_house_talon_adult",
+          "entrance_house_hag",
+          "entrance_house_lab",
+          "",
+          "",
+          ""
         ]
       ]
     }

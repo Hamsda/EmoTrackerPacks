@@ -37,4 +37,4 @@ function tracker_on_accessibility_updated()
   end
 end
 
-tracker_on_accessibility_updated()
+--tracker_on_accessibility_updated()

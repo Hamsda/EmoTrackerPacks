@@ -154,7 +154,7 @@
     "codes": "logic_water_mq_central_pillar"
   },
   {
-    "name": "Gerudo Training Grounds MQ Left Side Silver Rupees with Hookshot",
+    "name": "Gerudo Training Ground MQ Left Side Silver Rupees with Hookshot",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_gtg_mq_with_hookshot.png",
@@ -194,13 +194,6 @@
     "initial_active_state": false,
     "img": "images/logic_forest_mq_hallway_switch_jumpslash.png",
     "codes": "logic_forest_mq_hallway_switch_jumpslash"
-  },
-  {
-    "name": "Forest Temple MQ Twisted Hallway Switch with Hookshot",
-    "type": "toggle",
-    "initial_active_state": false,
-    "img": "images/logic_forest_mq_hallway_switch_hookshot.png",
-    "codes": "logic_forest_mq_hallway_switch_hookshot"
   },
   {
     "name": "Death Mountain Trail Bombable Chest with Strength",
@@ -581,6 +574,13 @@
     "codes": "logic_domain_gs"
   },
   {
+    "name": "Skip King Zora as Adult with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_king_zora_skip.png",
+    "codes": "logic_king_zora_skip"
+  },
+  {
     "name": "Shadow Temple River Statue with Bombchu",
     "type": "toggle",
     "initial_active_state": false,
@@ -714,21 +714,21 @@
     "codes": "logic_dmt_soil_gs"
   },
   {
-    "name": "Gerudo Training Grounds Left Side Silver Rupees without Hookshot",
+    "name": "Gerudo Training Ground Left Side Silver Rupees without Hookshot",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_gtg_without_hookshot.png",
     "codes": "logic_gtg_without_hookshot"
   },
   {
-    "name": "Gerudo Training Grounds MQ Left Side Silver Rupees without Hookshot",
+    "name": "Gerudo Training Ground MQ Left Side Silver Rupees without Hookshot",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_gtg_mq_without_hookshot.png",
     "codes": "logic_gtg_mq_without_hookshot"
   },
   {
-    "name": "Reach Gerudo Training Grounds Fake Wall Ledge with Hover Boots",
+    "name": "Reach Gerudo Training Ground Fake Wall Ledge with Hover Boots",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_gtg_fake_wall.png",
@@ -980,14 +980,14 @@
     "codes": "logic_lens_castle"
   },
   {
-    "name": "Gerudo Training Grounds MQ without Lens of Truth",
+    "name": "Gerudo Training Ground MQ without Lens of Truth",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/logic_lens_gtg_mq.png",
     "codes": "logic_lens_gtg_mq"
   },
   {
-    "name": "Gerudo Training Grounds without Lens of Truth",
+    "name": "Gerudo Training Ground without Lens of Truth",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/logic_lens_gtg.png",

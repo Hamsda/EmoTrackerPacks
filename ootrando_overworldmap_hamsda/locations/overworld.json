@@ -18,6 +18,9 @@
                   "setting_age_child",
                   "$can_time_travel"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_spawn_shuffle"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_spawn_child",
                 "item_count": 1
@@ -47,6 +50,9 @@
                 "access_rules": [
                   "setting_age_adult",
                   "$can_time_travel"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_spawn_shuffle"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_spawn_adult",
@@ -380,8 +386,10 @@
                   {
                     "name": "Shoot it",
                     "access_rules": [
-                      "$has_age|child,sling"
+                      "$has_age|child,sling",
+                      "{$hintable}"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -592,7 +600,7 @@
                       "$has_age|child,beans,bean_stage_no"
                     ],
                     "visibility_rules": [
-                      "setting_plant_yes"
+                      "$bean_planting|yes"
                     ],
                     "hosted_item": "bean_stage_yes"
                   },
@@ -629,7 +637,7 @@
                     "name": "LW GS Above Theater (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|child,setting_plant_no,beans",
+                      "$has_age|child,$bean_planting|no,beans",
                       "$has_age|child,bean_stage_yes",
                       "[logic_lost_woods_gs_bean],longshot",
                       "[logic_lost_woods_gs_bean],hookshot,bow",
@@ -824,7 +832,7 @@
             "color": "#09a09d",
             "children": [
               {
-                "name": "LW Bridge",
+                "name": "LW Bridge From Forest",
                 "color": "#18a50e",
                 "sections": [
                   {
@@ -1181,7 +1189,7 @@
                           "$spawn_access|LH Fishing|adult",
                           "$has_age|adult,ocarina,scarecrow,hookshot",
                           "$has_age|adult,water",
-                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,$bean_planting|no,beans",
                           "$has_age|adult,bean_lake_yes"
                         ],
                         "item_count": 1
@@ -1225,7 +1233,7 @@
                         "name": "LH Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,$bean_planting|no,beans",
                           "$has_age|adult,bean_lake_yes",
                           "$has_age|adult,ocarina,scarecrow,hookshot"
                         ],
@@ -1249,8 +1257,10 @@
                         "name": "LH Lab Dive",
                         "access_rules": [
                           "scale2",
-                          "$has_age|adult,[logic_lab_diving],ironboots,hookshot"
+                          "$has_age|adult,[logic_lab_diving],ironboots,hookshot",
+                          "{$hintable}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -1374,7 +1384,7 @@
                           "$has_age|child,beans,bean_lake_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
@@ -2367,7 +2377,7 @@
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
                         "access_rules": [
-                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,$bean_planting|no,beans",
                           "$has_age|adult,bean_graveyard_yes",
                           "$has_age|adult,longshot",
                           "$has_age|child,boomerang,[logic_graveyard_poh]",
@@ -2393,7 +2403,7 @@
                     ]
                   },
                   {
-                    "name": "Graveyard Composers Grave",
+                    "name": "Royal Familys Tomb",
                     "short_name": "Royal Tomb",
                     "access_rules": [
                       "ocarina,lullaby",
@@ -2401,7 +2411,7 @@
                     ],
                     "sections": [
                       {
-                        "name": "Song from Composers Grave",
+                        "name": "Song from Royal Familys Tomb",
                         "short_name": "Song",
                         "access_rules": [
                           "$has_age|adult",
@@ -2418,7 +2428,7 @@
                         "item_count": 1
                       },
                       {
-                        "name": "Graveyard Composers Grave Chest",
+                        "name": "Royal Familys Tomb Chest",
                         "short_name": "Chest",
                         "access_rules": [
                           "$has_fire",
@@ -2505,7 +2515,7 @@
                           "$has_age|child,beans,bean_graveyard_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_graveyard_yes"
                       },
@@ -2643,7 +2653,7 @@
                           "$has_age|adult,wallet,lift1"
                         ],
                         "visibility_rules": [
-                          "setting_merchants_shuffle"
+                          "setting_shuffle_merchants_yes"
                         ],
                         "item_count": 1
                       }
@@ -2845,8 +2855,8 @@
                           "nayrus,magic",
                           "$has_bottle",
                           "$has_age|adult,hoverboots",
-                          "$has_age|both,setting_plant_no,beans,$has_explosives",
-                          "$has_age|both,setting_plant_no,beans,lift1,$child_death_mountain",
+                          "$has_age|both,$bean_planting|no,beans,$has_explosives",
+                          "$has_age|both,$bean_planting|no,beans,lift1,$child_death_mountain",
                           "$has_age|both,bean_trail_yes"
                         ],
                         "chest_unopened_img": "images/HP.png",
@@ -3037,8 +3047,8 @@
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hovers],hoverboots",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,$has_explosives",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,lift1",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,$has_explosives",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,lift1",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
                         ],
                         "visibility_rules": [
@@ -3093,7 +3103,7 @@
                           "$child_death_mountain,beans,bean_trail_no,lift1"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
@@ -3219,7 +3229,7 @@
                         "name": "DMC Volcano Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|both,ocarina,bolero,setting_plant_no,beans",
+                          "$has_age|both,ocarina,bolero,$bean_planting|no,beans",
                           "$has_age|both,ocarina,bolero,bean_crater_yes",
                           "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "{ocarina,bolero}",
@@ -3394,7 +3404,7 @@
                           "beans,bean_crater_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
@@ -3709,7 +3719,7 @@
                         "name": "ToT Light Arrows Cutscene",
                         "short_name": "LACS",
                         "access_rules": [
-                          "$has_age|adult,$can_trigger_lacs"
+                          "$has_age|adult,lacs_meds:2"
                         ],
                         "item_count": 1
                       }
@@ -3847,17 +3857,16 @@
                   },
                   {
                     "name": "HC Great Fairy Fountain",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives",
-                      "$spawn_access|HC Fairy|child"
-                    ],
                     "sections": [
                       {
                         "name": "HC Great Fairy Reward",
                         "short_name": "Reward",
                         "access_rules": [
-                          "ocarina,lullaby"
+                          "$has_age|child,$has_explosives,ocarina,lullaby",
+                          "$spawn_access|HC Fairy|child,ocarina,lullaby",
+                          "{$hintable}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -3958,17 +3967,16 @@
                   },
                   {
                     "name": "OGC Great Fairy Fountain",
-                    "access_rules": [
-                      "$has_age|adult,lift3",
-                      "$spawn_access|OGC Fairy|adult"
-                    ],
                     "sections": [
                       {
                         "name": "OGC Great Fairy Reward",
                         "short_name": "Reward",
                         "access_rules": [
-                          "ocarina,lullaby"
+                          "$has_age|adult,lift3,ocarina,lullaby",
+                          "$spawn_access|OGC Fairy|adult,ocarina,lullaby",
+                          "{$hintable}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -3997,8 +4005,10 @@
                       {
                         "name": "ZR Frogs in the Rain",
                         "access_rules": [
-                          "$child_river,ocarina,storm"
+                          "$child_river,ocarina,storm",
+                          "{$hintable}"
                         ],
+                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -4958,8 +4968,8 @@
                     "name": "Carpenter Rescue",
                     "sections": [
                       {
-                        "name": "North F1 Carpenter",
-                        "short_name": "North F1",
+                        "name": "Hideout Jail Guard (1 Torch)",
+                        "short_name": "1 Torch",
                         "access_rules": [
                           "$gerudo_valley_far_side",
                           "$spawn_access|Gerudo Fortress|child,sword1",
@@ -4969,8 +4979,22 @@
                         "item_count": 1
                       },
                       {
-                        "name": "North F2 Carpenter",
-                        "short_name": "North F2",
+                        "name": "Hideout Jail Guard (2 Torches)",
+                        "short_name": "2 Torches",
+                        "access_rules": [
+                          "$gerudo_valley_far_side",
+                          "$spawn_access|Gerudo Fortress|child,sword1",
+                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                        ],
+                        "visibility_rules": [
+                          "gerudo_fortress_normal"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_small_key.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Hideout Jail Guard (3 Torches)",
+                        "short_name": "3 Torches",
                         "access_rules": [
                           "$gerudo_valley_far_side,$gerudo_card",
                           "$gerudo_valley_far_side,bow",
@@ -4987,8 +5011,8 @@
                         "item_count": 1
                       },
                       {
-                        "name": "South F1 Carpenter",
-                        "short_name": "South F1",
+                        "name": "Hideout Jail Guard (4 Torches)",
+                        "short_name": "4 Torches",
                         "access_rules": [
                           "$gerudo_valley_far_side",
                           "$spawn_access|Gerudo Fortress|child,sword1",
@@ -5001,32 +5025,19 @@
                         "item_count": 1
                       },
                       {
-                        "name": "South F2 Carpenter",
-                        "short_name": "South F2",
+                        "name": "Hideout Gerudo Membership Card",
+                        "short_name": "Gerudo Card",
                         "access_rules": [
-                          "$gerudo_valley_far_side",
-                          "$spawn_access|Gerudo Fortress|child,sword1",
-                          "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
-                        ],
-                        "visibility_rules": [
-                          "gerudo_fortress_normal"
-                        ],
-                        "chest_unopened_img": "images/chest_brown_small_key.png",
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Gerudo Membership Card",
-                        "access_rules": [
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,bow",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hookshot",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,hoverboots",
-                          "gerudo_fortress_normal,gf_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
-                          "gerudo_fortress_fast,gf_small_keys:1,$gerudo_valley_far_side",
-                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
-                          "gerudo_fortress_normal,gf_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
-                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
-                          "gerudo_fortress_fast,gf_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,bow",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,hookshot",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,hoverboots",
+                          "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,th_small_keys:1,$gerudo_valley_far_side",
+                          "gerudo_fortress_normal,th_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_normal,th_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
+                          "gerudo_fortress_fast,th_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
+                          "gerudo_fortress_fast,th_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -5178,7 +5189,7 @@
                           "$has_age|child,sword1"
                         ],
                         "visibility_rules": [
-                          "setting_merchants_shuffle"
+                          "setting_shuffle_merchants_yes"
                         ],
                         "item_count": 1
                       }
@@ -5236,7 +5247,7 @@
                         "name": "Colossus Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$child_colossus,setting_plant_no,beans,$has_age|adult",
+                          "$child_colossus,$bean_planting|no,beans,$has_age|adult",
                           "$child_colossus,bean_colossus_yes,$has_age|adult",
                           "{$adult_colossus}"
                         ],
@@ -5325,7 +5336,7 @@
                           "beans,bean_colossus_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
@@ -5393,7 +5404,7 @@
                         "name": "Colossus GS Hill (N)",
                         "short_name": "GS",
                         "access_rules": [
-                          "$child_colossus,setting_plant_no,beans",
+                          "$child_colossus,$bean_planting|no,beans",
                           "$child_colossus,bean_colossus_yes",
                           "$adult_colossus,longshot",
                           "$adult_colossus,hookshot,[logic_colossus_gs]",

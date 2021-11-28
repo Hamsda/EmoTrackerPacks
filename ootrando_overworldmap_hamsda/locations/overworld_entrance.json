@@ -280,8 +280,10 @@
               {
                 "name": "Shoot it",
                 "access_rules": [
-                  "$access_location|LW Target in Woods"
+                  "$access_location|LW Target in Woods",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -428,7 +430,7 @@
             ]
           },
           {
-            "name": "Saria on Bridge",
+            "name": "LW Bridge From Forest",
             "sections": [
               {
                 "name": "LW Gift from Saria",
@@ -1071,8 +1073,10 @@
               {
                 "name": "LH Lab Dive",
                 "access_rules": [
-                  "$access_location|LH Lab Dive"
+                  "$access_location|LH Lab Dive",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -1444,19 +1448,19 @@
             "name": "Carpenter Rescue",
             "sections": [
               {
-                "name": "North F1 Carpenter",
-                "short_name": "North F1",
+                "name": "Hideout Jail Guard (1 Torch)",
+                "short_name": "1 Torch",
                 "access_rules": [
-                  "$access_location|GF North F1 Carpenter"
+                  "$access_location|Hideout Jail Guard (1 Torch)"
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
               },
               {
-                "name": "North F2 Carpenter",
-                "short_name": "North F2",
+                "name": "Hideout Jail Guard (2 Torches)",
+                "short_name": "2 Torches",
                 "access_rules": [
-                  "$access_location|GF North F2 Carpenter"
+                  "$access_location|Hideout Jail Guard (2 Torches)"
                 ],
                 "visibility_rules": [
                   "gerudo_fortress_normal"
@@ -1465,10 +1469,10 @@
                 "item_count": 1
               },
               {
-                "name": "South F1 Carpenter",
-                "short_name": "South F1",
+                "name": "Hideout Jail Guard (3 Torches)",
+                "short_name": "3 Torches",
                 "access_rules": [
-                  "$access_location|GF South F1 Carpenter"
+                  "$access_location|Hideout Jail Guard (3 Torches)"
                 ],
                 "visibility_rules": [
                   "gerudo_fortress_normal"
@@ -1477,10 +1481,10 @@
                 "item_count": 1
               },
               {
-                "name": "South F2 Carpenter",
-                "short_name": "South F2",
+                "name": "Hideout Jail Guard (4 Torches)",
+                "short_name": "4 Torches",
                 "access_rules": [
-                  "$access_location|GF South F2 Carpenter"
+                  "$access_location|Hideout Jail Guard (4 Torches)"
                 ],
                 "visibility_rules": [
                   "gerudo_fortress_normal"
@@ -1489,9 +1493,10 @@
                 "item_count": 1
               },
               {
-                "name": "Gerudo Membership Card",
+                "name": "Hideout Gerudo Membership Card",
+                "short_name": "Gerudo Card",
                 "access_rules": [
-                  "$access_location|GF Gerudo Membership Card"
+                  "$access_location|Hideout Gerudo Membership Card"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1612,7 +1617,7 @@
                   "$access_location|Wasteland Bombchu Salesman"
                 ],
                 "visibility_rules": [
-                  "setting_merchants_shuffle"
+                  "setting_shuffle_merchants_yes"
                 ],
                 "item_count": 1
               }
@@ -2216,8 +2221,10 @@
                 "name": "HC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$access_location|HC Great Fairy Reward"
+                  "$access_location|HC Great Fairy Reward",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -2300,8 +2307,10 @@
                 "name": "OGC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$access_location|OGC Great Fairy Reward"
+                  "$access_location|OGC Great Fairy Reward",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -2951,14 +2960,14 @@
             ]
           },
           {
-            "name": "Graveyard Composers Grave",
+            "name": "Royal Familys Tomb",
             "short_name": "Royal Tomb",
             "sections": [
               {
-                "name": "Song from Composers Grave",
+                "name": "Song from Royal Familys Tomb",
                 "short_name": "Song",
                 "access_rules": [
-                  "$access_location|Song from Composers Grave",
+                  "$access_location|Song from Royal Familys Tomb",
                   "{$hintable}"
                 ],
                 "capture_item": true,
@@ -2967,10 +2976,10 @@
                 "item_count": 1
               },
               {
-                "name": "Graveyard Composers Grave Chest",
+                "name": "Royal Familys Tomb Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "$access_location|Graveyard Composers Grave Chest",
+                  "$access_location|Royal Familys Tomb Chest",
                   "{$hintable}"
                 ],
                 "capture_item": true,
@@ -3369,7 +3378,7 @@
                   "$access_location|GC Medigoron"
                 ],
                 "visibility_rules": [
-                  "setting_merchants_shuffle"
+                  "setting_shuffle_merchants_yes"
                 ],
                 "item_count": 1
               }
@@ -3814,8 +3823,10 @@
               {
                 "name": "ZR Frogs in the Rain",
                 "access_rules": [
-                  "$access_location|ZR Frogs in the Rain"
+                  "$access_location|ZR Frogs in the Rain",
+                  "{$hintable}"
                 ],
+                "capture_item": true,
                 "item_count": 1
               },
               {

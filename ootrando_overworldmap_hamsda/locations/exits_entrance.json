@@ -21,8 +21,7 @@
                   "setting_entrance_spawn_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -54,8 +53,7 @@
                   "setting_entrance_spawn_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -87,8 +85,7 @@
                   "setting_entrance_warpsong_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -120,8 +117,7 @@
                   "setting_entrance_warpsong_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -153,8 +149,7 @@
                   "setting_entrance_warpsong_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -186,8 +181,7 @@
                   "setting_entrance_warpsong_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -219,8 +213,7 @@
                   "setting_entrance_warpsong_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -252,8 +245,7 @@
                   "setting_entrance_warpsong_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -291,8 +283,7 @@
                   "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -318,8 +309,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -345,8 +335,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -372,8 +361,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -399,8 +387,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -426,8 +413,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -453,8 +439,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -480,8 +465,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -507,8 +491,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -534,8 +517,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -568,8 +550,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -595,8 +576,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -622,8 +602,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -649,8 +628,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -676,8 +654,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -703,8 +680,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -730,8 +706,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -757,8 +732,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -784,8 +758,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -817,8 +790,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -844,8 +816,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -871,8 +842,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -898,8 +868,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -925,8 +894,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -959,8 +927,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -986,8 +953,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1013,8 +979,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1040,8 +1005,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1067,8 +1031,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1094,8 +1057,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1121,8 +1083,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1148,8 +1109,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1175,8 +1135,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1202,8 +1161,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1229,8 +1187,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1256,8 +1213,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1283,8 +1239,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1310,8 +1265,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1337,8 +1291,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1370,8 +1323,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1397,8 +1349,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1424,8 +1375,7 @@
                   "setting_entrance_owl_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1451,8 +1401,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1478,8 +1427,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1505,8 +1453,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1533,8 +1480,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1566,8 +1512,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1593,8 +1538,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1620,8 +1564,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1647,8 +1590,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1674,8 +1616,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1707,8 +1648,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1722,20 +1662,19 @@
             ]
           },
           {
-            "name": "Gerudo Fortress -> Gerudo Training Grounds Split",
-            "short_name": "Gerudo Training Grounds",
+            "name": "Gerudo Fortress -> Gerudo Training Ground Split",
+            "short_name": "Gerudo Training Ground",
             "sections": [
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Gerudo Fortress|Gerudo Training Grounds Split"
+                  "$access_exit|Gerudo Fortress|Gerudo Training Ground Split"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1762,8 +1701,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1789,8 +1727,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1822,8 +1759,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1849,8 +1785,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1882,8 +1817,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1909,8 +1843,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1937,8 +1870,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1964,8 +1896,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -1997,8 +1928,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2024,8 +1954,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2051,8 +1980,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2078,8 +2006,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2105,8 +2032,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2132,8 +2058,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2159,8 +2084,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2186,8 +2110,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2213,8 +2136,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2240,8 +2162,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2267,8 +2188,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2294,8 +2214,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2321,8 +2240,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2348,8 +2266,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2375,8 +2292,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2402,8 +2318,7 @@
                   "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2435,8 +2350,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2462,8 +2376,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2489,8 +2402,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2522,8 +2434,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2555,8 +2466,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2582,8 +2492,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2609,8 +2518,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2636,8 +2544,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2663,8 +2570,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2690,8 +2596,7 @@
                   "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2717,8 +2622,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2744,8 +2648,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2771,8 +2674,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2799,8 +2701,7 @@
                   "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2826,8 +2727,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2853,8 +2753,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2880,8 +2779,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2907,8 +2805,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2934,8 +2831,7 @@
                   "setting_entrance_interiors_all"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2961,8 +2857,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -2994,8 +2889,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3021,8 +2915,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3036,20 +2929,19 @@
             ]
           },
           {
-            "name": "Graveyard -> Graveyard Composers Grave",
-            "short_name": "Composer Grave",
+            "name": "Graveyard -> Royal Familys Tomb",
+            "short_name": "Royal Tomb",
             "sections": [
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Graveyard|Graveyard Composers Grave"
+                  "$access_exit|Graveyard|Royal Familys Tomb"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3075,8 +2967,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3102,8 +2993,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3129,8 +3019,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3156,8 +3045,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3190,8 +3078,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3217,8 +3104,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3244,8 +3130,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3272,8 +3157,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3299,8 +3183,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3326,8 +3209,7 @@
                   "setting_entrance_owl_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3353,8 +3235,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3380,8 +3261,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3413,8 +3293,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3440,8 +3319,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3467,8 +3345,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3494,8 +3371,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3521,8 +3397,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3554,8 +3429,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3581,8 +3455,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3608,8 +3481,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3635,8 +3507,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3662,8 +3533,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3689,8 +3559,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3723,8 +3592,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3750,8 +3618,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3777,8 +3644,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3804,8 +3670,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3831,8 +3696,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3858,8 +3722,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3891,8 +3754,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3918,8 +3780,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3945,8 +3806,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3972,8 +3832,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -3999,8 +3858,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4032,8 +3890,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4059,8 +3916,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4087,8 +3943,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4114,8 +3969,7 @@
                   "setting_entrance_dungeons_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_dungeons",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4148,8 +4002,7 @@
                   "setting_entrance_overworld_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_overworld",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4175,8 +4028,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4202,8 +4054,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4229,8 +4080,7 @@
                   "setting_entrance_interiors_simple"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_houses",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],
@@ -4256,8 +4106,7 @@
                   "setting_entrance_grottos_shuffle"
                 ],
                 "capture_item": true,
-                //"capture_item_layout": "tracker_capture_grottos",
-                "capture_item_layout": "tracker_capture_mixed_er",
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
                 "item_count": 1
               }
             ],

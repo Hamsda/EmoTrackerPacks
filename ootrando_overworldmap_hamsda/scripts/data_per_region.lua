@@ -1,6 +1,7 @@
 data_per_region = {
   ["Root"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Root Exits"] = {
         ["child_access"] = function()
@@ -20,6 +21,7 @@ data_per_region = {
   },
   ["Root Exits"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Child Spawn"] = {
         ["child_access"] = function()
@@ -142,6 +144,7 @@ data_per_region = {
   },
   ["Child Spawn"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["KF Links House"] = {
         ["setting"] = "setting_entrance_spawn_shuffle",
@@ -156,6 +159,7 @@ data_per_region = {
   },
   ["Adult Spawn"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Temple of Time"] = {
         ["setting"] = "setting_entrance_spawn_shuffle",
@@ -170,6 +174,7 @@ data_per_region = {
   },
   ["Prelude of Light Warp"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Temple of Time"] = {
         ["setting"] = "setting_entrance_warpsong_shuffle",
@@ -184,6 +189,7 @@ data_per_region = {
   },
   ["Minuet of Forest Warp"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Sacred Forest Meadow"] = {
         ["setting"] = "setting_entrance_warpsong_shuffle",
@@ -198,6 +204,7 @@ data_per_region = {
   },
   ["Bolero of Fire Warp"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["DMC Central Local"] = {
         ["setting"] = "setting_entrance_warpsong_shuffle",
@@ -212,6 +219,7 @@ data_per_region = {
   },
   ["Serenade of Water Warp"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Lake Hylia"] = {
         ["setting"] = "setting_entrance_warpsong_shuffle",
@@ -226,6 +234,7 @@ data_per_region = {
   },
   ["Nocturne of Shadow Warp"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Graveyard Warp Pad Region"] = {
         ["setting"] = "setting_entrance_warpsong_shuffle",
@@ -240,6 +249,7 @@ data_per_region = {
   },
   ["Requiem of Spirit Warp"] = {
     ["scene"] = "Root",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Desert Colossus"] = {
         ["setting"] = "setting_entrance_warpsong_shuffle",
@@ -254,6 +264,7 @@ data_per_region = {
   },
   ["Kokiri Forest"] = {
     ["scene"] = "Kokiri Forest",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["KF Kokiri Sword Chest"] = {
         ["child_access"] = function()
@@ -391,6 +402,7 @@ data_per_region = {
   },
   ["KF Outside Deku Tree"] = {
     ["scene"] = "Kokiri Forest",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Deku Tree Split"] = {
         ["setting"] = "setting_entrance_dungeons_shuffle",
@@ -423,7 +435,7 @@ data_per_region = {
   },
   ["KF Links House"] = {
     ["scene"] = "KF Links House",
-    ["special"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["KF Links House Cow"] = {
         ["child_access"] = function()
@@ -450,7 +462,7 @@ data_per_region = {
   },
   ["KF Midos House"] = {
     ["scene"] = "KF Midos House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["KF Midos Chests"] = {
         ["child_access"] = function()
@@ -474,7 +486,7 @@ data_per_region = {
   },
   ["KF Sarias House"] = {
     ["scene"] = "KF Sarias House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -488,7 +500,7 @@ data_per_region = {
   },
   ["KF House of Twins"] = {
     ["scene"] = "KF House of Twins",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -502,7 +514,7 @@ data_per_region = {
   },
   ["KF Know It All House"] = {
     ["scene"] = "KF Know it All House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["child_access"] = function()
@@ -516,7 +528,7 @@ data_per_region = {
   },
   ["KF Kokiri Shop"] = {
     ["scene"] = "KF Kokiri Shop",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["KF Shop Items"] = {
         ["child_access"] = function()
@@ -540,6 +552,7 @@ data_per_region = {
   },
   ["LW Forest Exit"] = {
     ["scene"] = "Lost Woods",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -554,6 +567,7 @@ data_per_region = {
   },
   ["Lost Woods"] = {
     ["scene"] = "Lost Woods",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["LW Skull Kid"] = {
         ["child_access"] = function()
@@ -681,6 +695,7 @@ data_per_region = {
   },
   ["LW Beyond Mido"] = {
     ["scene"] = "Lost Woods",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["LW Deku Scrub Near Deku Theater Right"] = {
         ["child_access"] = function()
@@ -790,6 +805,7 @@ data_per_region = {
   },
   ["Lost Woods Mushroom Timeout"] = {
     ["scene"] = "Lost Woods",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Lost Woods"] = {
         ["child_access"] = function()
@@ -803,6 +819,7 @@ data_per_region = {
   },
   ["SFM Entryway"] = {
     ["scene"] = "Sacred Forest Meadow",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["LW Beyond Mido"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -837,6 +854,7 @@ data_per_region = {
   },
   ["Sacred Forest Meadow"] = {
     ["scene"] = "Sacred Forest Meadow",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Song from Saria"] = {
         ["child_access"] = function()
@@ -914,6 +932,7 @@ data_per_region = {
   },
   ["SFM Forest Temple Entrance Ledge"] = {
     ["scene"] = "Sacred Forest Meadow",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Sacred Forest Meadow"] = {
         ["child_access"] = function()
@@ -936,6 +955,7 @@ data_per_region = {
   },
   ["LW Bridge From Forest"] = {
     ["scene"] = "Lost Woods",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["LW Gift from Saria"] = {
         ["child_access"] = function()
@@ -959,6 +979,7 @@ data_per_region = {
   },
   ["LW Bridge"] = {
     ["scene"] = "Lost Woods",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Kokiri Forest"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -993,6 +1014,7 @@ data_per_region = {
   },
   ["Hyrule Field"] = {
     ["scene"] = "Hyrule Field",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["HF Ocarina of Time Item"] = {
         ["child_access"] = function()
@@ -1160,6 +1182,7 @@ data_per_region = {
   },
   ["Lake Hylia"] = {
     ["scene"] = "Lake Hylia",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["LH Underwater Item"] = {
         ["child_access"] = function()
@@ -1326,6 +1349,7 @@ data_per_region = {
   },
   ["LH Fishing Island"] = {
     ["scene"] = "Lake Hylia",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Lake Hylia"] = {
         ["child_access"] = function()
@@ -1348,6 +1372,7 @@ data_per_region = {
   },
   ["LH Owl Flight"] = {
     ["scene"] = "Lake Hylia",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Hyrule Field"] = {
         ["setting"] = "setting_entrance_owl_shuffle",
@@ -1362,7 +1387,7 @@ data_per_region = {
   },
   ["LH Lab"] = {
     ["scene"] = "LH Lab",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["LH Lab Dive"] = {
         ["child_access"] = function()
@@ -1408,7 +1433,7 @@ data_per_region = {
   },
   ["LH Fishing Hole"] = {
     ["scene"] = "LH Fishing Hole",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["LH Child Fishing"] = {
         ["child_access"] = function()
@@ -1440,6 +1465,7 @@ data_per_region = {
   },
   ["Gerudo Valley"] = {
     ["scene"] = "Gerudo Valley",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GV GS Small Bridge"] = {
         ["child_access"] = function()
@@ -1508,6 +1534,7 @@ data_per_region = {
   },
   ["GV Upper Stream"] = {
     ["scene"] = "Gerudo Valley",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GV Waterfall Freestanding PoH"] = {
         ["child_access"] = function()
@@ -1550,6 +1577,7 @@ data_per_region = {
   },
   ["GV Lower Stream"] = {
     ["scene"] = "Gerudo Valley",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Lake Hylia"] = {
         ["fixed"] = true,
@@ -1564,6 +1592,7 @@ data_per_region = {
   },
   ["GV Grotto Ledge"] = {
     ["scene"] = "Gerudo Valley",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["GV Lower Stream"] = {
         ["child_access"] = function()
@@ -1600,6 +1629,7 @@ data_per_region = {
   },
   ["GV Crate Ledge"] = {
     ["scene"] = "Gerudo Valley",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GV Crate Freestanding PoH"] = {
         ["child_access"] = function()
@@ -1623,6 +1653,7 @@ data_per_region = {
   },
   ["GV Fortress Side"] = {
     ["scene"] = "Gerudo Valley",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GV Chest"] = {
         ["child_access"] = function()
@@ -1728,7 +1759,7 @@ data_per_region = {
   },
   ["GV Carpenter Tent"] = {
     ["scene"] = "GV Carpenter Tent",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["GV Fortress Side"] = {
         ["child_access"] = function()
@@ -1742,6 +1773,7 @@ data_per_region = {
   },
   ["Gerudo Fortress"] = {
     ["scene"] = "Gerudo Fortress",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GF Chest"] = {
         ["child_access"] = function()
@@ -1776,7 +1808,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["GF North F1 Carpenter"] = {
+      ["Hideout Jail Guard (1 Torch)"] = {
         ["child_access"] = function()
           if has("sword1") then
             return AccessibilityLevel.Normal
@@ -1789,7 +1821,20 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["GF North F2 Carpenter"] = {
+      ["Hideout Jail Guard (2 Torches)"] = {
+        ["child_access"] = function()
+          if has("sword1") then
+            return AccessibilityLevel.Normal
+          elseif has("sticks") then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Hideout Jail Guard (3 Torches)"] = {
         ["child_access"] = function()
           local weapon = AccessibilityLevel.None
           if has("sword1") then
@@ -1810,7 +1855,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["GF South F1 Carpenter"] = {
+      ["Hideout Jail Guard (4 Torches)"] = {
         ["child_access"] = function()
           if has("sword1") then
             return AccessibilityLevel.Normal
@@ -1823,20 +1868,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["GF South F2 Carpenter"] = {
-        ["child_access"] = function()
-          if has("sword1") then
-            return AccessibilityLevel.Normal
-          elseif has("sticks") then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
-      ["GF Gerudo Membership Card"] = {
+      ["Hideout Gerudo Membership Card"] = {
         ["child_access"] = function()
           return can_finish_GerudoFortress("child")
         end,
@@ -1893,7 +1925,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Split"] = {
+      ["Gerudo Training Ground Split"] = {
         ["setting"] = "setting_entrance_dungeons_shuffle",
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -1918,6 +1950,7 @@ data_per_region = {
   },
   ["GF Outside Gate"] = {
     ["scene"] = "Gerudo Fortress",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Gerudo Fortress"] = {
         ["child_access"] = function()
@@ -1940,6 +1973,7 @@ data_per_region = {
   },
   ["Wasteland Near Fortress"] = {
     ["scene"] = "Haunted Wasteland",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["GF Outside Gate"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -1968,6 +2002,7 @@ data_per_region = {
   },
   ["Haunted Wasteland"] = {
     ["scene"] = "Haunted Wasteland",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Wasteland Chest"] = {
         ["child_access"] = function()
@@ -2042,6 +2077,7 @@ data_per_region = {
   },
   ["Wasteland Near Colossus"] = {
     ["scene"] = "Haunted Wasteland",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Desert Colossus"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -2070,6 +2106,7 @@ data_per_region = {
   },
   ["Desert Colossus"] = {
     ["scene"] = "Desert Colossus",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Sheik at Colossus"] = {
         ["child_access"] = function()
@@ -2184,6 +2221,7 @@ data_per_region = {
   },
   ["Desert Colossus From Spirit Lobby"] = {
     ["scene"] = "Desert Colossus",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Desert Colossus"] = {
         ["child_access"] = function()
@@ -2197,7 +2235,7 @@ data_per_region = {
   },
   ["Colossus Great Fairy Fountain"] = {
     ["scene"] = "Colossus Great Fairy Fountain",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Colossus Great Fairy Reward"] = {
         ["child_access"] = function()
@@ -2227,6 +2265,7 @@ data_per_region = {
   },
   ["Market Entrance"] = {
     ["scene"] = "Market Entrance",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Hyrule Field"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -2259,6 +2298,7 @@ data_per_region = {
   },
   ["Market"] = {
     ["scene"] = "Market",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Market Entrance"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -2353,6 +2393,7 @@ data_per_region = {
   },
   ["Market Back Alley"] = {
     ["scene"] = "Market",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2393,6 +2434,7 @@ data_per_region = {
   },
   ["ToT Entrance"] = {
     ["scene"] = "ToT Entrance",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Market"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -2416,14 +2458,17 @@ data_per_region = {
   },
   ["Temple of Time"] = {
     ["scene"] = "Temple of Time",
-    ["special"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["ToT Light Arrows Cutscene"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return can_trigger_lacs()
+          if has("lacs_meds", 2) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       }
     },
@@ -2454,7 +2499,7 @@ data_per_region = {
   },
   ["Beyond Door of Time"] = {
     ["scene"] = "Temple of Time",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Sheik at Temple"] = {
         ["child_access"] = function()
@@ -2481,6 +2526,7 @@ data_per_region = {
   },
   ["Castle Grounds"] = {
     ["scene"] = "Castle Grounds",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Market"] = {
         ["setting"] = "setting_entrance_overworld_shuffle",
@@ -2511,6 +2557,7 @@ data_per_region = {
   },
   ["Hyrule Castle Grounds"] = {
     ["scene"] = "Castle Grounds",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["HC Malon Egg"] = {
         ["child_access"] = function()
@@ -2571,7 +2618,7 @@ data_per_region = {
   },
   ["HC Garden"] = {
     ["scene"] = "Castle Grounds",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["HC Zeldas Letter"] = {
         ["child_access"] = function()
@@ -2603,7 +2650,7 @@ data_per_region = {
   },
   ["HC Great Fairy Fountain"] = {
     ["scene"] = "HC Great Fairy Fountain",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["HC Great Fairy Reward"] = {
         ["child_access"] = function()
@@ -2633,6 +2680,7 @@ data_per_region = {
   },
   ["Ganons Castle Grounds"] = {
     ["scene"] = "Castle Grounds",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["OGC GS"] = {
         ["child_access"] = function()
@@ -2677,7 +2725,7 @@ data_per_region = {
   },
   ["OGC Great Fairy Fountain"] = {
     ["scene"] = "OGC Great Fairy Fountain",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["OGC Great Fairy Reward"] = {
         ["child_access"] = function()
@@ -2707,7 +2755,7 @@ data_per_region = {
   },
   ["Market Guard House"] = {
     ["scene"] = "Market Guard House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market 10 Big Poes"] = {
         ["child_access"] = function()
@@ -2742,7 +2790,7 @@ data_per_region = {
   },
   ["Market Bazaar"] = {
     ["scene"] = "Market Bazaar",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Bazaar Items"] = {
         ["child_access"] = function()
@@ -2766,7 +2814,7 @@ data_per_region = {
   },
   ["Market Mask Shop"] = {
     ["scene"] = "Market Mask Shop",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Market"] = {
         ["child_access"] = function()
@@ -2780,7 +2828,7 @@ data_per_region = {
   },
   ["Market Shooting Gallery"] = {
     ["scene"] = "Market Shooting Gallery",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Shooting Gallery Reward"] = {
         ["child_access"] = function()
@@ -2804,7 +2852,7 @@ data_per_region = {
   },
   ["Market Bombchu Bowling"] = {
     ["scene"] = "Market Bombchu Bowling",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Bombchu Bowling First Prize"] = {
         ["child_access"] = function()
@@ -2848,7 +2896,7 @@ data_per_region = {
   },
   ["Market Potion Shop"] = {
     ["scene"] = "Market Potion Shop",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Potion Shop Items"] = {
         ["child_access"] = function()
@@ -2872,7 +2920,7 @@ data_per_region = {
   },
   ["Market Treasure Chest Game"] = {
     ["scene"] = "Market Treasure Chest Game",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Treasure Chest Game Reward"] = {
         ["child_access"] = function()
@@ -2902,7 +2950,7 @@ data_per_region = {
   },
   ["Market Bombchu Shop"] = {
     ["scene"] = "Market Bombchu Shop",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Bombchu Shop Items"] = {
         ["child_access"] = function()
@@ -2926,7 +2974,7 @@ data_per_region = {
   },
   ["Market Dog Lady House"] = {
     ["scene"] = "Market Dog Lady House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Market Lost Dog"] = {
         ["child_access"] = function()
@@ -2950,7 +2998,7 @@ data_per_region = {
   },
   ["Market Man in Green House"] = {
     ["scene"] = "Market Man in Green House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Market Back Alley"] = {
         ["child_access"] = function()
@@ -2964,6 +3012,7 @@ data_per_region = {
   },
   ["Kakariko Village"] = {
     ["scene"] = "Kakariko Village",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Sheik in Kakariko"] = {
         ["child_access"] = function()
@@ -3207,6 +3256,7 @@ data_per_region = {
   },
   ["Kak Impas Ledge"] = {
     ["scene"] = "Kakariko Village",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Kak Impas House Back"] = {
         ["setting"] = "setting_entrance_interiors_simple",
@@ -3229,6 +3279,7 @@ data_per_region = {
   },
   ["Kak Impas Rooftop"] = {
     ["scene"] = "Kakariko Village",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Kak GS Above Impas House"] = {
         ["child_access"] = function()
@@ -3260,6 +3311,7 @@ data_per_region = {
   },
   ["Kak Odd Medicine Rooftop"] = {
     ["scene"] = "Kakariko Village",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Kak Man on Roof"] = {
         ["child_access"] = function()
@@ -3291,6 +3343,7 @@ data_per_region = {
   },
   ["Kak Backyard"] = {
     ["scene"] = "Kakariko Village",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3331,7 +3384,7 @@ data_per_region = {
   },
   ["Kak Carpenter Boss House"] = {
     ["scene"] = "Kak Carpenter Boss House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3345,7 +3398,7 @@ data_per_region = {
   },
   ["Kak House of Skulltula"] = {
     ["scene"] = "Kak House of Skulltula",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak 10 Gold Skulltula Reward"] = {
         ["child_access"] = function()
@@ -3431,7 +3484,7 @@ data_per_region = {
   },
   ["Kak Impas House"] = {
     ["scene"] = "Kak Impas House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3453,7 +3506,7 @@ data_per_region = {
   },
   ["Kak Impas House Back"] = {
     ["scene"] = "Kak Impas House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak Impas House Freestanding PoH"] = {
         ["child_access"] = function()
@@ -3485,7 +3538,7 @@ data_per_region = {
   },
   ["Kak Impas House Near Cow"] = {
     ["scene"] = "Kak Impas House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak Impas House Cow"] = {
         ["child_access"] = function()
@@ -3505,7 +3558,7 @@ data_per_region = {
   },
   ["Kak Windmill"] = {
     ["scene"] = "Windmill and Dampes Grave",
-    ["special"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak Windmill Freestanding PoH"] = {
         ["child_access"] = function()
@@ -3545,7 +3598,7 @@ data_per_region = {
   },
   ["Kak Bazaar"] = {
     ["scene"] = "Kak Bazaar",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak Bazaar Items"] = {
         ["child_access"] = function()
@@ -3569,7 +3622,7 @@ data_per_region = {
   },
   ["Kak Shooting Gallery"] = {
     ["scene"] = "Kak Shooting Gallery",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak Shooting Gallery Reward"] = {
         ["child_access"] = function()
@@ -3596,7 +3649,7 @@ data_per_region = {
   },
   ["Kak Potion Shop Front"] = {
     ["scene"] = "Kak Potion Shop",
-    ["special"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["Kak Potion Shop Items"] = {
         ["child_access"] = function()
@@ -3628,7 +3681,7 @@ data_per_region = {
   },
   ["Kak Potion Shop Back"] = {
     ["scene"] = "Kak Potion Shop",
-    ["special"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kak Backyard"] = {
         ["child_access"] = function()
@@ -3650,7 +3703,7 @@ data_per_region = {
   },
   ["Kak Odd Medicine Building"] = {
     ["scene"] = "Kak Odd Medicine Building",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Kak Backyard"] = {
         ["child_access"] = function()
@@ -3664,6 +3717,7 @@ data_per_region = {
   },
   ["Graveyard"] = {
     ["scene"] = "Graveyard",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Graveyard Freestanding PoH"] = {
         ["child_access"] = function()
@@ -3725,7 +3779,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Graveyard Composers Grave"] = {
+      ["Royal Familys Tomb"] = {
         ["setting"] = "setting_entrance_grottos_shuffle",
         ["child_access"] = function()
           if has("ocarina") and has("lullaby") then
@@ -3780,7 +3834,7 @@ data_per_region = {
   },
   ["Graveyard Shield Grave"] = {
     ["scene"] = "Graveyard Shield Grave",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Graveyard Shield Grave Chest"] = {
         ["child_access"] = function()
@@ -3804,7 +3858,7 @@ data_per_region = {
   },
   ["Graveyard Heart Piece Grave"] = {
     ["scene"] = "Graveyard Heart Piece Grave",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Graveyard Heart Piece Grave Chest"] = {
         ["child_access"] = function()
@@ -3832,11 +3886,11 @@ data_per_region = {
       }
     }
   },
-  ["Graveyard Composers Grave"] = {
-    ["scene"] = "Graveyard Composers Grave",
-    ["interior"] = true,
+  ["Royal Familys Tomb"] = {
+    ["scene"] = "Royal Familys Tomb",
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
-      ["Graveyard Composers Grave Chest"] = {
+      ["Royal Familys Tomb Chest"] = {
         ["child_access"] = function()
           if has("dinsfire") and has("magic") then
             return AccessibilityLevel.Normal
@@ -3849,7 +3903,7 @@ data_per_region = {
           return has_fire()
         end
       },
-      ["Song from Composers Grave"] = {
+      ["Song from Royal Familys Tomb"] = {
         ["child_access"] = function()
           if has("sling") or has("boomerang") or has("sticks") or has("sword1") then
             return AccessibilityLevel.Normal
@@ -3874,7 +3928,7 @@ data_per_region = {
   },
   ["Graveyard Dampes Grave"] = {
     ["scene"] = "Windmill and Dampes Grave",
-    ["special"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Graveyard Hookshot Chest"] = {
         ["child_access"] = function()
@@ -3920,7 +3974,7 @@ data_per_region = {
   },
   ["Graveyard Dampes House"] = {
     ["scene"] = "Graveyard Dampes House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["exits"] = {
       ["Graveyard"] = {
         ["child_access"] = function()
@@ -3934,6 +3988,7 @@ data_per_region = {
   },
   ["Graveyard Warp Pad Region"] = {
     ["scene"] = "Graveyard",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Graveyard"] = {
         ["child_access"] = function()
@@ -3962,6 +4017,7 @@ data_per_region = {
   },
   ["Kak Behind Gate"] = {
     ["scene"] = "Kakariko Village",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -3990,6 +4046,7 @@ data_per_region = {
   },
   ["Death Mountain"] = {
     ["scene"] = "Death Mountain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["DMT Chest"] = {
         ["child_access"] = function()
@@ -4168,6 +4225,7 @@ data_per_region = {
   },
   ["Death Mountain Summit"] = {
     ["scene"] = "Death Mountain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["DMT Biggoron"] = {
         ["child_access"] = function()
@@ -4241,6 +4299,7 @@ data_per_region = {
   },
   ["DMT Owl Flight"] = {
     ["scene"] = "Death Mountain",
+    ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Kak Impas Rooftop"] = {
         ["setting"] = "setting_entrance_owl_shuffle",
@@ -4255,6 +4314,7 @@ data_per_region = {
   },
   ["Goron City"] = {
     ["scene"] = "Goron City",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GC Maze Left Chest"] = {
         ["child_access"] = function()
@@ -4448,6 +4508,7 @@ data_per_region = {
   },
   ["GC Woods Warp"] = {
     ["scene"] = "Goron City",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Goron City"] = {
         ["child_access"] = function()
@@ -4470,6 +4531,7 @@ data_per_region = {
   },
   ["GC Darunias Chamber"] = {
     ["scene"] = "Goron City",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["GC Darunias Joy"] = {
         ["child_access"] = function()
@@ -4505,6 +4567,7 @@ data_per_region = {
   },
   ["GC Grotto Platform"] = {
     ["scene"] = "Goron City",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["GC Grotto"] = {
         ["setting"] = "setting_entrance_grottos_shuffle",
@@ -4533,7 +4596,7 @@ data_per_region = {
   },
   ["GC Shop"] = {
     ["scene"] = "GC Shop",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["GC Shop Items"] = {
         ["child_access"] = function()
@@ -4557,6 +4620,7 @@ data_per_region = {
   },
   ["DMC Upper Nearby"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["DMC Upper Local"] = {
         ["child_access"] = function()
@@ -4591,6 +4655,7 @@ data_per_region = {
   },
   ["DMC Upper Local"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["DMC Wall Freestanding PoH"] = {
         ["child_access"] = function()
@@ -4642,6 +4707,7 @@ data_per_region = {
   },
   ["DMC Ladder Area Nearby"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["DMC Deku Scrub"] = {
         ["child_access"] = function()
@@ -4684,6 +4750,7 @@ data_per_region = {
   },
   ["DMC Lower Nearby"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["DMC Lower Local"] = {
         ["child_access"] = function()
@@ -4733,6 +4800,7 @@ data_per_region = {
   },
   ["DMC Lower Local"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["DMC Lower Nearby"] = {
         ["child_access"] = function()
@@ -4776,6 +4844,7 @@ data_per_region = {
   },
   ["DMC Central Nearby"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["DMC Volcano Freestanding PoH"] = {
         ["child_access"] = function()
@@ -4819,6 +4888,7 @@ data_per_region = {
   },
   ["DMC Central Local"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["DMC GS Bean Patch"] = {
         ["child_access"] = function()
@@ -4878,6 +4948,7 @@ data_per_region = {
   },
   ["DMC Fire Temple Entrance"] = {
     ["scene"] = "Death Mountain Crater",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Fire Temple Split"] = {
         ["setting"] = "setting_entrance_dungeons_shuffle",
@@ -4903,7 +4974,7 @@ data_per_region = {
   },
   ["DMC Great Fairy Fountain"] = {
     ["scene"] = "DMC Great Fairy Fountain",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["DMC Great Fairy Reward"] = {
         ["child_access"] = function()
@@ -4933,7 +5004,7 @@ data_per_region = {
   },
   ["DMT Great Fairy Fountain"] = {
     ["scene"] = "DMT Great Fairy Fountain",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["DMT Great Fairy Reward"] = {
         ["child_access"] = function()
@@ -4963,6 +5034,7 @@ data_per_region = {
   },
   ["ZR Front"] = {
     ["scene"] = "Zora River",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["ZR GS Tree"] = {
         ["child_access"] = function()
@@ -4995,6 +5067,7 @@ data_per_region = {
   },
   ["Zora River"] = {
     ["scene"] = "Zora River",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["ZR Magic Bean Salesman"] = {
         ["child_access"] = function()
@@ -5163,6 +5236,7 @@ data_per_region = {
   },
   ["ZR Behind Waterfall"] = {
     ["scene"] = "Zora River",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Zora River"] = {
         ["child_access"] = function()
@@ -5185,6 +5259,7 @@ data_per_region = {
   },
   ["ZR Top of Waterfall"] = {
     ["scene"] = "Zora River",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Zora River"] = {
         ["child_access"] = function()
@@ -5198,6 +5273,7 @@ data_per_region = {
   },
   ["Zoras Domain"] = {
     ["scene"] = "Zoras Domain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["ZD Diving Minigame"] = {
         ["child_access"] = function()
@@ -5271,7 +5347,8 @@ data_per_region = {
           if has("setting_fountain_open") or has("setting_fountain_adult") then
             return AccessibilityLevel.Normal
           end
-          return or_accessibility(deliver_letter(), AccessibilityLevel.SequenceBreak)
+          local trick = has("logic_king_zora_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          return or_accessibility(deliver_letter(), trick)
         end
       },
       ["ZD Shop"] = {
@@ -5296,6 +5373,7 @@ data_per_region = {
   },
   ["ZD Behind King Zora"] = {
     ["scene"] = "Zoras Domain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Zoras Domain"] = {
         ["child_access"] = function()
@@ -5324,6 +5402,7 @@ data_per_region = {
   },
   ["ZD Eyeball Frog Timeout"] = {
     ["scene"] = "Zoras Domain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Zoras Domain"] = {
         ["child_access"] = function()
@@ -5337,6 +5416,7 @@ data_per_region = {
   },
   ["Zoras Fountain"] = {
     ["scene"] = "Zoras Fountain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["ZF Iceberg Freestanding PoH"] = {
         ["child_access"] = function()
@@ -5435,6 +5515,7 @@ data_per_region = {
   },
   ["ZF Ice Ledge"] = {
     ["scene"] = "Zoras Fountain",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Zoras Fountain"] = {
         ["child_access"] = function()
@@ -5457,7 +5538,7 @@ data_per_region = {
   },
   ["ZD Shop"] = {
     ["scene"] = "ZD Shop",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["ZD Shop Items"] = {
         ["child_access"] = function()
@@ -5481,7 +5562,7 @@ data_per_region = {
   },
   ["ZF Great Fairy Fountain"] = {
     ["scene"] = "ZF Great Fairy Fountain",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["ZF Great Fairy Reward"] = {
         ["child_access"] = function()
@@ -5511,6 +5592,7 @@ data_per_region = {
   },
   ["Lon Lon Ranch"] = {
     ["scene"] = "Lon Lon Ranch",
+    ["pool"] = ER_POOL_TYPES.OW,
     ["locations"] = {
       ["Song from Malon"] = {
         ["child_access"] = function()
@@ -5618,7 +5700,7 @@ data_per_region = {
   },
   ["LLR Talons House"] = {
     ["scene"] = "LLR Talons House",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["LLR Talons Chickens"] = {
         ["child_access"] = function()
@@ -5645,7 +5727,7 @@ data_per_region = {
   },
   ["LLR Stables"] = {
     ["scene"] = "LLR Stables",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["LLR Stables Cows"] = {
         ["child_access"] = function()
@@ -5675,7 +5757,7 @@ data_per_region = {
   },
   ["LLR Tower"] = {
     ["scene"] = "LLR Tower",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.INTERIOR,
     ["locations"] = {
       ["LLR Freestanding PoH"] = {
         ["child_access"] = function()
@@ -5713,7 +5795,7 @@ data_per_region = {
   },
   ["GF Storms Grotto"] = {
     ["scene"] = "GF Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["exits"] = {
       ["Gerudo Fortress"] = {
         ["child_access"] = function()
@@ -5727,7 +5809,7 @@ data_per_region = {
   },
   ["ZD Storms Grotto"] = {
     ["scene"] = "ZD Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["exits"] = {
       ["Zoras Domain"] = {
         ["child_access"] = function()
@@ -5741,7 +5823,7 @@ data_per_region = {
   },
   ["KF Storms Grotto"] = {
     ["scene"] = "KF Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["KF Storms Grotto Chest"] = {
         ["child_access"] = function()
@@ -5765,7 +5847,7 @@ data_per_region = {
   },
   ["LW Near Shortcuts Grotto"] = {
     ["scene"] = "LW Near Shortcuts Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["LW Near Shortcuts Grotto Chest"] = {
         ["child_access"] = function()
@@ -5789,7 +5871,7 @@ data_per_region = {
   },
   ["Deku Theater"] = {
     ["scene"] = "Deku Theater",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Deku Theater Skull Mask"] = {
         ["child_access"] = function()
@@ -5827,7 +5909,7 @@ data_per_region = {
   },
   ["LW Scrubs Grotto"] = {
     ["scene"] = "LW Scrubs Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["LW Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -5851,7 +5933,7 @@ data_per_region = {
   },
   ["SFM Fairy Grotto"] = {
     ["scene"] = "SFM Fairy Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["exits"] = {
       ["Sacred Forest Meadow"] = {
         ["child_access"] = function()
@@ -5865,7 +5947,7 @@ data_per_region = {
   },
   ["SFM Storms Grotto"] = {
     ["scene"] = "SFM Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["SFM Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -5889,7 +5971,7 @@ data_per_region = {
   },
   ["SFM Wolfos Grotto"] = {
     ["scene"] = "SFM Wolfos Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["SFM Wolfos Grotto Chest"] = {
         ["child_access"] = function()
@@ -5916,7 +5998,7 @@ data_per_region = {
   },
   ["LLR Grotto"] = {
     ["scene"] = "LLR Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["LLR Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -5940,7 +6022,7 @@ data_per_region = {
   },
   ["HF Southeast Grotto"] = {
     ["scene"] = "HF Southeast Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF Southeast Grotto Chest"] = {
         ["child_access"] = function()
@@ -5964,7 +6046,7 @@ data_per_region = {
   },
   ["HF Open Grotto"] = {
     ["scene"] = "HF Open Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF Open Grotto Chest"] = {
         ["child_access"] = function()
@@ -5988,7 +6070,7 @@ data_per_region = {
   },
   ["HF Inside Fence Grotto"] = {
     ["scene"] = "HF Inside Fence Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF Deku Scrub Grotto"] = {
         ["child_access"] = function()
@@ -6012,7 +6094,7 @@ data_per_region = {
   },
   ["HF Cow Grotto"] = {
     ["scene"] = "HF Cow Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF GS Cow Grotto"] = {
         ["child_access"] = function()
@@ -6057,7 +6139,7 @@ data_per_region = {
   },
   ["HF Near Market Grotto"] = {
     ["scene"] = "HF Near Market Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF Near Market Grotto Chest"] = {
         ["child_access"] = function()
@@ -6081,7 +6163,7 @@ data_per_region = {
   },
   ["HF Fairy Grotto"] = {
     ["scene"] = "HF Fairy Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["exits"] = {
       ["Hyrule Field"] = {
         ["child_access"] = function()
@@ -6095,7 +6177,7 @@ data_per_region = {
   },
   ["HF Near Kak Grotto"] = {
     ["scene"] = "HF Near Kak Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF GS Near Kak Grotto"] = {
         ["child_access"] = function()
@@ -6131,7 +6213,7 @@ data_per_region = {
   },
   ["HF Tektite Grotto"] = {
     ["scene"] = "HF Tektite Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HF Tektite Grotto Freestanding PoH"] = {
         ["child_access"] = function()
@@ -6161,7 +6243,7 @@ data_per_region = {
   },
   ["HC Storms Grotto"] = {
     ["scene"] = "HC Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["HC GS Storms Grotto"] = {
         ["child_access"] = function()
@@ -6199,7 +6281,7 @@ data_per_region = {
   },
   ["Kak Redead Grotto"] = {
     ["scene"] = "Kak Redead Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Kak Redead Grotto Chest"] = {
         ["child_access"] = function()
@@ -6226,7 +6308,7 @@ data_per_region = {
   },
   ["Kak Open Grotto"] = {
     ["scene"] = "Kak Open Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Kak Open Grotto Chest"] = {
         ["child_access"] = function()
@@ -6250,7 +6332,7 @@ data_per_region = {
   },
   ["DMT Cow Grotto"] = {
     ["scene"] = "DMT Cow Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["DMT Cow Grotto Cow"] = {
         ["child_access"] = function()
@@ -6280,7 +6362,7 @@ data_per_region = {
   },
   ["DMT Storms Grotto"] = {
     ["scene"] = "DMT Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["DMT Storms Grotto Chest"] = {
         ["child_access"] = function()
@@ -6304,7 +6386,7 @@ data_per_region = {
   },
   ["GC Grotto"] = {
     ["scene"] = "GC Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["GC Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -6328,7 +6410,7 @@ data_per_region = {
   },
   ["DMC Upper Grotto"] = {
     ["scene"] = "DMC Upper Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["DMC Upper Grotto Chest"] = {
         ["child_access"] = function()
@@ -6352,7 +6434,7 @@ data_per_region = {
   },
   ["DMC Hammer Grotto"] = {
     ["scene"] = "DMC Hammer Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["DMC Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -6376,7 +6458,7 @@ data_per_region = {
   },
   ["ZR Open Grotto"] = {
     ["scene"] = "ZR Open Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["ZR Open Grotto Chest"] = {
         ["child_access"] = function()
@@ -6400,7 +6482,7 @@ data_per_region = {
   },
   ["ZR Fairy Grotto"] = {
     ["scene"] = "ZR Fairy Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["exits"] = {
       ["Zora River"] = {
         ["child_access"] = function()
@@ -6414,7 +6496,7 @@ data_per_region = {
   },
   ["ZR Storms Grotto"] = {
     ["scene"] = "ZR Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["ZR Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -6438,7 +6520,7 @@ data_per_region = {
   },
   ["LH Grotto"] = {
     ["scene"] = "LH Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["LH Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -6462,7 +6544,7 @@ data_per_region = {
   },
   ["Colossus Grotto"] = {
     ["scene"] = "Colossus Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["Colossus Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -6486,7 +6568,7 @@ data_per_region = {
   },
   ["GV Octorok Grotto"] = {
     ["scene"] = "GV Octorok Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["exits"] = {
       ["GV Grotto Ledge"] = {
         ["child_access"] = function()
@@ -6500,7 +6582,7 @@ data_per_region = {
   },
   ["GV Storms Grotto"] = {
     ["scene"] = "GV Storms Grotto",
-    ["interior"] = true,
+    ["pool"] = ER_POOL_TYPES.GROTTO,
     ["locations"] = {
       ["GV Deku Scrubs Grotto"] = {
         ["child_access"] = function()
@@ -6524,7 +6606,7 @@ data_per_region = {
   },
   ["Bottom of the Well Split"] = {
     ["scene"] = "Bottom of the Well",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Bottom of the Well"] = {
         ["child_access"] = function()
@@ -6558,7 +6640,7 @@ data_per_region = {
   },
   ["Bottom of the Well"] = {
     ["scene"] = "Bottom of the Well",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -6583,7 +6665,7 @@ data_per_region = {
   },
   ["Bottom of the Well Main Area"] = {
     ["scene"] = "Bottom of the Well",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Bottom of the Well Front Left Fake Wall Chest"] = {
         ["child_access"] = function()
@@ -6852,7 +6934,7 @@ data_per_region = {
   },
   ["Bottom of the Well MQ"] = {
     ["scene"] = "Bottom of the Well",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Kakariko Village"] = {
         ["child_access"] = function()
@@ -6874,7 +6956,7 @@ data_per_region = {
   },
   ["Bottom of the Well MQ Perimeter"] = {
     ["scene"] = "Bottom of the Well",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Bottom of the Well MQ Compass Chest"] = {
         ["child_access"] = function()
@@ -6957,7 +7039,7 @@ data_per_region = {
   },
   ["Bottom of the Well MQ Middle"] = {
     ["scene"] = "Bottom of the Well",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Bottom of the Well MQ Map Chest"] = {
         ["child_access"] = function()
@@ -7012,7 +7094,7 @@ data_per_region = {
   },
   ["Deku Tree Split"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Deku Tree Lobby"] = {
         ["child_access"] = function()
@@ -7046,7 +7128,7 @@ data_per_region = {
   },
   ["Deku Tree Lobby"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree Map Chest"] = {
         ["child_access"] = function()
@@ -7200,7 +7282,7 @@ data_per_region = {
   },
   ["Deku Tree Slingshot Room"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree Slingshot Room Chests"] = {
         ["child_access"] = function()
@@ -7224,7 +7306,7 @@ data_per_region = {
   },
   ["Deku Tree Basement Backroom"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree GS Basement Back Room"] = {
         ["child_access"] = function()
@@ -7266,7 +7348,7 @@ data_per_region = {
   },
   ["Deku Tree Boss Room"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Queen Gohma"] = {
         ["child_access"] = function()
@@ -7296,7 +7378,7 @@ data_per_region = {
   },
   ["Deku Tree MQ Lobby"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree MQ Map Chest"] = {
         ["child_access"] = function()
@@ -7457,7 +7539,7 @@ data_per_region = {
   },
   ["Deku Tree MQ Compass Room"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree MQ Compass Chest"] = {
         ["child_access"] = function()
@@ -7512,7 +7594,7 @@ data_per_region = {
   },
   ["Deku Tree MQ Basement Water Room Front"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree MQ Before Spinning Log Chest"] = {
         ["child_access"] = function()
@@ -7550,7 +7632,7 @@ data_per_region = {
   },
   ["Deku Tree MQ Basement Water Room Back"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree MQ After Spinning Log Chest"] = {
         ["child_access"] = function()
@@ -7605,7 +7687,7 @@ data_per_region = {
   },
   ["Deku Tree MQ Basement Back Room"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree MQ GS Basement Graves Room"] = {
         ["child_access"] = function()
@@ -7680,7 +7762,7 @@ data_per_region = {
   },
   ["Deku Tree MQ Basement Ledge"] = {
     ["scene"] = "Deku Tree",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Deku Tree MQ Deku Scrub"] = {
         ["child_access"] = function()
@@ -7737,7 +7819,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Split"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Dodongos Cavern Beginning"] = {
         ["child_access"] = function()
@@ -7771,7 +7853,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Beginning"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Death Mountain"] = {
         ["child_access"] = function()
@@ -7804,7 +7886,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Lobby"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern Map Chest"] = {
         ["child_access"] = function()
@@ -7894,7 +7976,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Staircase Room"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern Compass Chest"] = {
         ["child_access"] = function()
@@ -7970,7 +8052,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Climb"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern Bomb Flower Platform Chest"] = {
         ["child_access"] = function()
@@ -8028,7 +8110,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Far Bridge"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern Bomb Bag Chest"] = {
         ["child_access"] = function()
@@ -8088,7 +8170,7 @@ data_per_region = {
   },
   ["Dodongos Cavern Boss Area"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern Boss Room Chest"] = {
         ["child_access"] = function()
@@ -8136,7 +8218,7 @@ data_per_region = {
   },
   ["Dodongos Cavern MQ Beginning"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Death Mountain"] = {
         ["child_access"] = function()
@@ -8169,7 +8251,7 @@ data_per_region = {
   },
   ["Dodongos Cavern MQ Lobby"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern MQ Map Chest"] = {
         ["child_access"] = function()
@@ -8363,7 +8445,7 @@ data_per_region = {
   },
   ["Dodongos Cavern MQ Lower Right Side"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos"] = {
         ["child_access"] = function()
@@ -8400,7 +8482,7 @@ data_per_region = {
   },
   ["Dodongos Cavern MQ Bomb Bag Area"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern MQ Bomb Bag Chest"] = {
         ["child_access"] = function()
@@ -8457,7 +8539,7 @@ data_per_region = {
   },
   ["Dodongos Cavern MQ Boss Area"] = {
     ["scene"] = "Dodongos Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Dodongos Cavern MQ Under Grave Chest"] = {
         ["child_access"] = function()
@@ -8503,7 +8585,7 @@ data_per_region = {
   },
   ["Fire Temple Split"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Fire Temple Lower"] = {
         ["child_access"] = function()
@@ -8537,7 +8619,7 @@ data_per_region = {
   },
   ["Fire Temple Lower"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple Near Boss Chest"] = {
         ["child_access"] = function()
@@ -8651,7 +8733,7 @@ data_per_region = {
   },
   ["Fire Temple Big Lava Room"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple Big Lava Room Lower Open Door Chest"] = {
         ["child_access"] = function()
@@ -8714,7 +8796,7 @@ data_per_region = {
   },
   ["Fire Temple Middle"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple Boulder Maze Lower Chest"] = {
         ["child_access"] = function()
@@ -8886,7 +8968,7 @@ data_per_region = {
   },
   ["Fire Temple Upper"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple Highest Goron Chest"] = {
         ["child_access"] = function()
@@ -8916,7 +8998,7 @@ data_per_region = {
   },
   ["Fire Temple MQ Lower"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple MQ Map Room Side Chest"] = {
         ["child_access"] = function()
@@ -9020,7 +9102,7 @@ data_per_region = {
   },
   ["Fire MQ Lower Locked Door"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple MQ Megaton Hammer Chest"] = {
         ["child_access"] = function()
@@ -9048,7 +9130,7 @@ data_per_region = {
   },
   ["Fire MQ Big Lava Room"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple MQ Boss Key Chest"] = {
         ["child_access"] = function()
@@ -9113,7 +9195,7 @@ data_per_region = {
   },
   ["Fire MQ Lower Maze"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple MQ Lizalfos Maze Lower Chest"] = {
         ["child_access"] = function()
@@ -9161,7 +9243,7 @@ data_per_region = {
   },
   ["Fire MQ Upper Maze"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple MQ Lizalfos Maze Upper Chest"] = {
         ["child_access"] = function()
@@ -9215,7 +9297,7 @@ data_per_region = {
   },
   ["Fire Temple MQ Upper"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Temple MQ Freestanding Key"] = {
         ["child_access"] = function()
@@ -9287,7 +9369,7 @@ data_per_region = {
   },
   ["Fire MQ Boss Room"] = {
     ["scene"] = "Fire Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Volvagia"] = {
         ["child_access"] = function()
@@ -9301,7 +9383,7 @@ data_per_region = {
   },
   ["Forest Temple Split"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Forest Temple Lobby"] = {
         ["child_access"] = function()
@@ -9335,7 +9417,7 @@ data_per_region = {
   },
   ["Forest Temple Lobby"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple First Room Chest"] = {
         ["child_access"] = function()
@@ -9460,7 +9542,7 @@ data_per_region = {
   },
   ["Forest Temple NW Outdoors"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple GS Level Island Courtyard"] = {
         ["child_access"] = function()
@@ -9512,7 +9594,7 @@ data_per_region = {
   },
   ["Forest Temple NE Outdoors"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Raised Island Courtyard Chest"] = {
         ["child_access"] = function()
@@ -9602,7 +9684,7 @@ data_per_region = {
   },
   ["Forest Temple Outdoors High Balconies"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Well Chest"] = {
         ["child_access"] = function()
@@ -9655,7 +9737,7 @@ data_per_region = {
   },
   ["Forest Temple Falling Room"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Falling Ceiling Room Chest"] = {
         ["child_access"] = function()
@@ -9679,7 +9761,7 @@ data_per_region = {
   },
   ["Forest Temple Block Push Room"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Eye Switch Chest"] = {
         ["child_access"] = function()
@@ -9739,7 +9821,7 @@ data_per_region = {
   },
   ["Forest Temple Straightened Hall"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Boss Key Chest"] = {
         ["child_access"] = function()
@@ -9763,7 +9845,7 @@ data_per_region = {
   },
   ["Forest Temple Outside Upper Ledge"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Floormaster Chest"] = {
         ["child_access"] = function()
@@ -9787,7 +9869,7 @@ data_per_region = {
   },
   ["Forest Temple Bow Region"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Bow Chest"] = {
         ["child_access"] = function()
@@ -9836,7 +9918,7 @@ data_per_region = {
   },
   ["Forest Temple Boss Region"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple Basement Chest"] = {
         ["child_access"] = function()
@@ -9884,7 +9966,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Lobby"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ First Room Chest"] = {
         ["child_access"] = function()
@@ -9952,7 +10034,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Central Area"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Wolfos Chest"] = {
         ["child_access"] = function()
@@ -10032,21 +10114,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local hb = AccessibilityLevel.None
           if has("hoverboots") then
             if has("logic_forest_mq_hallway_switch_jumpslash") then
               return AccessibilityLevel.Normal
             end
-            hb = AccessibilityLevel.SequenceBreak
+            return AccessibilityLevel.SequenceBreak
           end
-          local hs = AccessibilityLevel.None
-          if has("hookshot") then
-            if has("logic_forest_mq_hallway_switch_hookshot") then
-              return AccessibilityLevel.Normal
-            end
-            hs = AccessibilityLevel.SequenceBreak
-          end
-          return or_accessibility(hb, hs)
+          return AccessibilityLevel.None
         end
       },
       ["Forest Temple MQ Boss Region"] = {
@@ -10061,7 +10135,7 @@ data_per_region = {
   },
   ["Forest Temple MQ After Block Puzzle"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Boss Key Chest"] = {
         ["child_access"] = function()
@@ -10124,7 +10198,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Outdoor Ledge"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Redead Chest"] = {
         ["child_access"] = function()
@@ -10148,7 +10222,7 @@ data_per_region = {
   },
   ["Forest Temple MQ NW Outdoors"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ GS Level Island Courtyard"] = {
         ["child_access"] = function()
@@ -10195,7 +10269,7 @@ data_per_region = {
   },
   ["Forest Temple MQ NE Outdoors"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Well Chest"] = {
         ["child_access"] = function()
@@ -10287,7 +10361,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Outdoors Top Ledges"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Raised Island Courtyard Upper Chest"] = {
         ["child_access"] = function()
@@ -10325,7 +10399,7 @@ data_per_region = {
   },
   ["Forest Temple MQ NE Outdoors Ledge"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Raised Island Courtyard Lower Chest"] = {
         ["child_access"] = function()
@@ -10363,7 +10437,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Bow Region"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Bow Chest"] = {
         ["child_access"] = function()
@@ -10412,7 +10486,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Falling Room"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Falling Ceiling Room Chest"] = {
         ["child_access"] = function()
@@ -10436,7 +10510,7 @@ data_per_region = {
   },
   ["Forest Temple MQ Boss Region"] = {
     ["scene"] = "Forest Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Temple MQ Basement Chest"] = {
         ["child_access"] = function()
@@ -10464,7 +10538,7 @@ data_per_region = {
   },
   ["Ganons Castle Split"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Ganons Castle Lobby"] = {
         ["child_access"] = function()
@@ -10498,7 +10572,7 @@ data_per_region = {
   },
   ["Ganons Castle Lobby"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Castle Grounds"] = {
         ["child_access"] = function()
@@ -10582,7 +10656,7 @@ data_per_region = {
   },
   ["Ganons Castle Deku Scrubs"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ganons Castle Deku Scrubs"] = {
         ["child_access"] = function()
@@ -10596,7 +10670,7 @@ data_per_region = {
   },
   ["Ganons Castle Forest Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Forest Trial Clear"] = {
         ["child_access"] = function()
@@ -10621,7 +10695,7 @@ data_per_region = {
   },
   ["Ganons Castle Fire Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Fire Trial Clear"] = {
         ["child_access"] = function()
@@ -10639,7 +10713,7 @@ data_per_region = {
   },
   ["Ganons Castle Water Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Trial Clear"] = {
         ["child_access"] = function()
@@ -10663,7 +10737,7 @@ data_per_region = {
   },
   ["Ganons Castle Shadow Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Trial Clear"] = {
         ["child_access"] = function()
@@ -10721,7 +10795,7 @@ data_per_region = {
   },
   ["Ganons Castle Spirit Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Trial Clear"] = {
         ["child_access"] = function()
@@ -10765,7 +10839,7 @@ data_per_region = {
   },
   ["Ganons Castle Light Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Light Trial Clear"] = {
         ["child_access"] = function()
@@ -10815,7 +10889,7 @@ data_per_region = {
   },
   ["Ganons Castle Tower"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ganons Tower Boss Key Chest"] = {
         ["child_access"] = function()
@@ -10829,7 +10903,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Lobby"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Castle Grounds"] = {
         ["child_access"] = function()
@@ -10913,7 +10987,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Deku Scrubs"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ganons Castle MQ Deku Scrubs"] = {
         ["child_access"] = function()
@@ -10927,7 +11001,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Forest Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["MQ Forest Trial Clear"] = {
         ["child_access"] = function()
@@ -10973,7 +11047,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Fire Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["MQ Fire Trial Clear"] = {
         ["child_access"] = function()
@@ -10994,7 +11068,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Water Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["MQ Water Trial Clear"] = {
         ["child_access"] = function()
@@ -11023,7 +11097,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Shadow Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["MQ Shadow Trial Clear"] = {
         ["child_access"] = function()
@@ -11086,7 +11160,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Spirit Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["MQ Spirit Trial Clear"] = {
         ["child_access"] = function()
@@ -11146,7 +11220,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Light Trial"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["MQ Light Trial Clear"] = {
         ["child_access"] = function()
@@ -11183,7 +11257,7 @@ data_per_region = {
   },
   ["Ganons Castle MQ Tower"] = {
     ["scene"] = "Ganons Castle",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ganons Tower Boss Key Chest"] = {
         ["child_access"] = function()
@@ -11195,11 +11269,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Split"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Split"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
-      ["Gerudo Training Grounds Lobby"] = {
+      ["Gerudo Training Ground Lobby"] = {
         ["child_access"] = function()
           if has("gtg_reg") then
             return AccessibilityLevel.Normal
@@ -11213,7 +11287,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Lobby"] = {
+      ["Gerudo Training Ground MQ Lobby"] = {
         ["child_access"] = function()
           if has("gtg_mq") then
             return AccessibilityLevel.Normal
@@ -11229,11 +11303,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Lobby"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Lobby"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Lobby Chests"] = {
+      ["Gerudo Training Ground Lobby Chests"] = {
         ["child_access"] = function()
           if has("sling") then
             return AccessibilityLevel.Normal
@@ -11247,7 +11321,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Stalfos Chest"] = {
+      ["Gerudo Training Ground Stalfos Chest"] = {
         ["child_access"] = function()
           if has("sword1") then
             return AccessibilityLevel.Normal
@@ -11260,7 +11334,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Beamos Chest"] = {
+      ["Gerudo Training Ground Beamos Chest"] = {
         ["child_access"] = function()
           local weapon = AccessibilityLevel.None
           if has("sword1") then
@@ -11284,7 +11358,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Heavy Block Room"] = {
+      ["Gerudo Training Ground Heavy Block Room"] = {
         ["child_access"] = function()
           if has("sword1") and has("logic_gtg_without_hookshot") then
             return AccessibilityLevel.Normal
@@ -11300,10 +11374,10 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["Gerudo Training Grounds Lava Room"] = {
+      ["Gerudo Training Ground Lava Room"] = {
         ["child_access"] = function()
           local explo = has_explosives()
-          if has("sword1") or (access_region("Gerudo Training Grounds Lobby", "adult") == AccessibilityLevel.Normal) then
+          if has("sword1") or (access_region("Gerudo Training Ground Lobby", "adult") == AccessibilityLevel.Normal) then
             return explo
           end
           if has("sticks") and explo ~= AccessibilityLevel.None then
@@ -11315,7 +11389,7 @@ data_per_region = {
           return has_explosives()
         end
       },
-      ["Gerudo Training Grounds Central Maze"] = {
+      ["Gerudo Training Ground Central Maze"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11325,11 +11399,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Central Maze"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Central Maze"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Hidden Ceiling Chest"] = {
+      ["Gerudo Training Ground Hidden Ceiling Chest"] = {
         ["child_access"] = function()
           local lot =
             (has("logic_lens_gtg") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
@@ -11355,7 +11429,7 @@ data_per_region = {
           return and_accessibility(keys, lot)
         end
       },
-      ["Gerudo Training Grounds Maze Path First Chest"] = {
+      ["Gerudo Training Ground Maze Path First Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 4) then
             return AccessibilityLevel.Normal
@@ -11373,7 +11447,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Maze Path Second Chest"] = {
+      ["Gerudo Training Ground Maze Path Second Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 6) then
             return AccessibilityLevel.Normal
@@ -11391,7 +11465,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Maze Path Third Chest"] = {
+      ["Gerudo Training Ground Maze Path Third Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 7) then
             return AccessibilityLevel.Normal
@@ -11409,7 +11483,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Maze Path Final Chest"] = {
+      ["Gerudo Training Ground Maze Path Final Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 9) then
             return AccessibilityLevel.Normal
@@ -11429,7 +11503,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Central Maze Right"] = {
+      ["Gerudo Training Ground Central Maze Right"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 9) then
             return AccessibilityLevel.Normal
@@ -11449,11 +11523,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Central Maze Right"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Central Maze Right"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Maze Right Chests"] = {
+      ["Gerudo Training Ground Maze Right Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11461,7 +11535,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Freestanding Key"] = {
+      ["Gerudo Training Ground Freestanding Key"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11471,7 +11545,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Hammer Room"] = {
+      ["Gerudo Training Ground Hammer Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11482,7 +11556,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Lava Room"] = {
+      ["Gerudo Training Ground Lava Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11492,11 +11566,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Lava Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Lava Room"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Underwater Silver Rupee Chest"] = {
+      ["Gerudo Training Ground Underwater Silver Rupee Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11509,7 +11583,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Central Maze Right"] = {
+      ["Gerudo Training Ground Central Maze Right"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11520,7 +11594,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Hammer Room"] = {
+      ["Gerudo Training Ground Hammer Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11533,11 +11607,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Hammer Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Hammer Room"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Hammer Room Clear Chest"] = {
+      ["Gerudo Training Ground Hammer Room Clear Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11545,7 +11619,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds Hammer Room Switch Chest"] = {
+      ["Gerudo Training Ground Hammer Room Switch Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11558,7 +11632,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Eye Statue Lower"] = {
+      ["Gerudo Training Ground Eye Statue Lower"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11569,7 +11643,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds Lava Room"] = {
+      ["Gerudo Training Ground Lava Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11579,11 +11653,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Eye Statue Lower"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Eye Statue Lower"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Eye Statue Chest"] = {
+      ["Gerudo Training Ground Eye Statue Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11596,7 +11670,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Hammer Room"] = {
+      ["Gerudo Training Ground Hammer Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11606,11 +11680,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Eye Statue Upper"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Eye Statue Upper"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Near Scarecrow Chest"] = {
+      ["Gerudo Training Ground Near Scarecrow Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11623,7 +11697,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Eye Statue Lower"] = {
+      ["Gerudo Training Ground Eye Statue Lower"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11633,11 +11707,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Heavy Block Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Heavy Block Room"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Before Heavy Block Chest"] = {
+      ["Gerudo Training Ground Before Heavy Block Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11647,7 +11721,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds Eye Statue Upper"] = {
+      ["Gerudo Training Ground Eye Statue Upper"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11672,7 +11746,7 @@ data_per_region = {
           return and_accessibility(wall, climb)
         end
       },
-      ["Gerudo Training Grounds Like Like Room"] = {
+      ["Gerudo Training Ground Like Like Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11702,11 +11776,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds Like Like Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground Like Like Room"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds Heavy Block Chests"] = {
+      ["Gerudo Training Ground Heavy Block Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11716,11 +11790,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Lobby"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Lobby"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Lobby Chests"] = {
+      ["Gerudo Training Ground MQ Lobby Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11728,7 +11802,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Hidden Ceiling Chest"] = {
+      ["Gerudo Training Ground MQ Hidden Ceiling Chest"] = {
         ["child_access"] = function()
           if has("logic_lens_gtg_mq") or (has("lens") and has("magic")) then
             return AccessibilityLevel.Normal
@@ -11742,7 +11816,7 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["Gerudo Training Grounds MQ Maze Path First Chest"] = {
+      ["Gerudo Training Ground MQ Maze Path First Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11750,7 +11824,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Maze Path Second Chest"] = {
+      ["Gerudo Training Ground MQ Maze Path Second Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11758,7 +11832,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Maze Path Third Chest"] = {
+      ["Gerudo Training Ground MQ Maze Path Third Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 1) then
             return AccessibilityLevel.Normal
@@ -11782,13 +11856,13 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Left Side"] = {
+      ["Gerudo Training Ground MQ Left Side"] = {
         ["child_access"] = function()
           if has("dinsfire") and has("magic") then
             return AccessibilityLevel.Normal
           end
           if has("bow") and has("firearrow") and has("magic") then
-            return access_region("Gerudo Training Grounds MQ Lobby", "adult")
+            return access_region("Gerudo Training Ground MQ Lobby", "adult")
           end
           return AccessibilityLevel.None
         end,
@@ -11796,13 +11870,13 @@ data_per_region = {
           return has_fire()
         end
       },
-      ["Gerudo Training Grounds MQ Right Side"] = {
+      ["Gerudo Training Ground MQ Right Side"] = {
         ["child_access"] = function()
           if has("sling") then
             return AccessibilityLevel.Normal
           end
           if has("bow") then
-            return access_region("Gerudo Training Grounds MQ Lobby", "adult")
+            return access_region("Gerudo Training Ground MQ Lobby", "adult")
           end
           return AccessibilityLevel.None
         end,
@@ -11811,18 +11885,18 @@ data_per_region = {
             return AccessibilityLevel.Normal
           end
           if has("sling") then
-            return access_region("Gerudo Training Grounds MQ Lobby", "child")
+            return access_region("Gerudo Training Ground MQ Lobby", "child")
           end
           return AccessibilityLevel.None
         end
       }
     }
   },
-  ["Gerudo Training Grounds MQ Right Side"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Right Side"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Dinolfos Chest"] = {
+      ["Gerudo Training Ground MQ Dinolfos Chest"] = {
         ["child_access"] = function()
           if has("sticks") then
             return AccessibilityLevel.SequenceBreak
@@ -11835,7 +11909,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Underwater"] = {
+      ["Gerudo Training Ground MQ Underwater"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11848,11 +11922,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Underwater"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Underwater"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Underwater Silver Rupee Chest"] = {
+      ["Gerudo Training Ground MQ Underwater Silver Rupee Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11865,11 +11939,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Left Side"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Left Side"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ First Iron Knuckle Chest"] = {
+      ["Gerudo Training Ground MQ First Iron Knuckle Chest"] = {
         ["child_access"] = function()
           local weapon = AccessibilityLevel.None
           if has("sword1") then
@@ -11885,7 +11959,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Stalfos Room"] = {
+      ["Gerudo Training Ground MQ Stalfos Room"] = {
         ["child_access"] = function()
           if has("logic_gtg_mq_without_hookshot") then
             return AccessibilityLevel.Normal
@@ -11904,11 +11978,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Stalfos Room"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Stalfos Room"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Before Heavy Block Chest"] = {
+      ["Gerudo Training Ground MQ Before Heavy Block Chest"] = {
         ["child_access"] = function()
           if has("sticks") then
             return AccessibilityLevel.SequenceBreak
@@ -11919,7 +11993,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Heavy Block Chest"] = {
+      ["Gerudo Training Ground MQ Heavy Block Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11932,7 +12006,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Back Areas"] = {
+      ["Gerudo Training Ground MQ Back Areas"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11956,11 +12030,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Back Areas"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Back Areas"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Eye Statue Chest"] = {
+      ["Gerudo Training Ground MQ Eye Statue Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -11971,7 +12045,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Second Iron Knuckle Chest"] = {
+      ["Gerudo Training Ground MQ Second Iron Knuckle Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -11979,7 +12053,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Flame Circle Chest"] = {
+      ["Gerudo Training Ground MQ Flame Circle Chest"] = {
         ["child_access"] = function()
           return has_explosives()
         end,
@@ -11992,7 +12066,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Central Maze Right"] = {
+      ["Gerudo Training Ground MQ Central Maze Right"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12003,7 +12077,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Right Side"] = {
+      ["Gerudo Training Ground MQ Right Side"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12016,11 +12090,11 @@ data_per_region = {
       }
     }
   },
-  ["Gerudo Training Grounds MQ Central Maze Right"] = {
-    ["scene"] = "Gerudo Training Grounds",
-    ["dungeon"] = true,
+  ["Gerudo Training Ground MQ Central Maze Right"] = {
+    ["scene"] = "Gerudo Training Ground",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Gerudo Training Grounds MQ Maze Right Chests"] = {
+      ["Gerudo Training Ground MQ Maze Right Chests"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -12028,7 +12102,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Gerudo Training Grounds MQ Ice Arrows Chest"] = {
+      ["Gerudo Training Ground MQ Ice Arrows Chest"] = {
         ["child_access"] = function()
           if has("gtg_small_keys", 3) then
             return AccessibilityLevel.Normal
@@ -12044,7 +12118,7 @@ data_per_region = {
       }
     },
     ["exits"] = {
-      ["Gerudo Training Grounds MQ Underwater"] = {
+      ["Gerudo Training Ground MQ Underwater"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12055,7 +12129,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
-      ["Gerudo Training Grounds MQ Right Side"] = {
+      ["Gerudo Training Ground MQ Right Side"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -12070,7 +12144,7 @@ data_per_region = {
   },
   ["Ice Cavern Split"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Ice Cavern Beginning"] = {
         ["child_access"] = function()
@@ -12104,7 +12178,7 @@ data_per_region = {
   },
   ["Ice Cavern Beginning"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["ZF Ice Ledge"] = {
         ["child_access"] = function()
@@ -12129,7 +12203,7 @@ data_per_region = {
   },
   ["Ice Cavern"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ice Cavern Map Chest"] = {
         ["child_access"] = function()
@@ -12249,7 +12323,7 @@ data_per_region = {
   },
   ["Ice Cavern MQ Beginning"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["ZF Ice Ledge"] = {
         ["child_access"] = function()
@@ -12293,7 +12367,7 @@ data_per_region = {
   },
   ["Ice Cavern MQ Map Room"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ice Cavern MQ Map Chest"] = {
         ["child_access"] = function()
@@ -12310,7 +12384,7 @@ data_per_region = {
   },
   ["Ice Cavern MQ Iron Boots Region"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ice Cavern MQ Iron Boots Chest"] = {
         ["child_access"] = function()
@@ -12355,7 +12429,7 @@ data_per_region = {
   },
   ["Ice Cavern MQ Compass Room"] = {
     ["scene"] = "Ice Cavern",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Ice Cavern MQ Compass Chest"] = {
         ["child_access"] = function()
@@ -12388,7 +12462,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly Split"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Jabu Jabus Belly Beginning"] = {
         ["child_access"] = function()
@@ -12422,7 +12496,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly Beginning"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Zoras Fountain"] = {
         ["child_access"] = function()
@@ -12444,7 +12518,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly Main"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Jabu Jabus Belly Boomerang Chest"] = {
         ["child_access"] = function()
@@ -12552,7 +12626,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly Depths"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Jabu Jabus Belly Map Chest"] = {
         ["child_access"] = function()
@@ -12595,7 +12669,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly Boss Area"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Barinade"] = {
         ["child_access"] = function()
@@ -12630,7 +12704,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly MQ Beginning"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Jabu Jabus Belly MQ Map Chest"] = {
         ["child_access"] = function()
@@ -12679,7 +12753,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly MQ Main"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Jabu Jabus Belly MQ Second Room Lower Chest"] = {
         ["child_access"] = function()
@@ -12768,7 +12842,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly MQ Depths"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Jabu Jabus Belly MQ Falling Like Like Room Chest"] = {
         ["child_access"] = function()
@@ -12826,7 +12900,7 @@ data_per_region = {
   },
   ["Jabu Jabus Belly MQ Boss Area"] = {
     ["scene"] = "Jabu Jabus Belly",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Jabu Jabus Belly MQ Cow"] = {
         ["child_access"] = function()
@@ -12877,7 +12951,7 @@ data_per_region = {
   },
   ["Shadow Temple Split"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Shadow Temple Entryway"] = {
         ["child_access"] = function()
@@ -12911,7 +12985,7 @@ data_per_region = {
   },
   ["Shadow Temple Entryway"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Graveyard Warp Pad Region"] = {
         ["child_access"] = function()
@@ -12939,7 +13013,7 @@ data_per_region = {
   },
   ["Shadow Temple Beginning"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple Map Chest"] = {
         ["child_access"] = function()
@@ -12982,7 +13056,7 @@ data_per_region = {
   },
   ["Shadow Temple First Beamos"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple Compass Chest"] = {
         ["child_access"] = function()
@@ -13017,7 +13091,7 @@ data_per_region = {
   },
   ["Shadow Temple Huge Pit"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple Invisible Blades Chests"] = {
         ["child_access"] = function()
@@ -13136,7 +13210,7 @@ data_per_region = {
   },
   ["Shadow Temple Wind Tunnel"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple Wind Hint Chest"] = {
         ["child_access"] = function()
@@ -13186,7 +13260,7 @@ data_per_region = {
   },
   ["Shadow Temple Beyond Boat"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple Spike Walls Left Chest"] = {
         ["child_access"] = function()
@@ -13245,7 +13319,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Entryway"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Graveyard Warp Pad Region"] = {
         ["child_access"] = function()
@@ -13273,7 +13347,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Beginning"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Shadow Temple MQ Entryway"] = {
         ["child_access"] = function()
@@ -13317,7 +13391,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Dead Hand Area"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple MQ Compass Chest"] = {
         ["child_access"] = function()
@@ -13342,7 +13416,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ First Beamos"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple MQ Map Chest"] = {
         ["child_access"] = function()
@@ -13388,7 +13462,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Upper Huge Pit"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple MQ Invisible Blades Chests"] = {
         ["child_access"] = function()
@@ -13419,7 +13493,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Lower Huge Pit"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple MQ Beamos Silver Rupees Chest"] = {
         ["child_access"] = function()
@@ -13538,7 +13612,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Wind Tunnel"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple MQ Wind Hint Chest"] = {
         ["child_access"] = function()
@@ -13593,7 +13667,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Beyond Boat"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Bongo Bongo"] = {
         ["child_access"] = function()
@@ -13647,7 +13721,7 @@ data_per_region = {
   },
   ["Shadow Temple MQ Invisible Maze"] = {
     ["scene"] = "Shadow Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Shadow Temple MQ Spike Walls Left Chest"] = {
         ["child_access"] = function()
@@ -13699,7 +13773,7 @@ data_per_region = {
   },
   ["Spirit Temple Split"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Spirit Temple Lobby"] = {
         ["child_access"] = function()
@@ -13733,7 +13807,7 @@ data_per_region = {
   },
   ["Spirit Temple Lobby"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Desert Colossus From Spirit Lobby"] = {
         ["child_access"] = function()
@@ -13766,7 +13840,7 @@ data_per_region = {
   },
   ["Child Spirit Temple"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Child Bridge Chest"] = {
         ["child_access"] = function()
@@ -13836,7 +13910,7 @@ data_per_region = {
   },
   ["Child Spirit Before Locked Door"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Child Spirit Temple Climb"] = {
         ["child_access"] = function()
@@ -13856,7 +13930,7 @@ data_per_region = {
   },
   ["Child Spirit Temple Climb"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Child Climb Chests"] = {
         ["child_access"] = function()
@@ -13922,7 +13996,7 @@ data_per_region = {
   },
   ["Early Adult Spirit Temple"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Compass Chest"] = {
         ["child_access"] = function()
@@ -13993,7 +14067,7 @@ data_per_region = {
   },
   ["Spirit Temple Central Chamber"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Map Chest"] = {
         ["child_access"] = function()
@@ -14237,7 +14311,7 @@ data_per_region = {
   },
   ["Spirit Temple Outdoor Hands"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Silver Gauntlets Chest"] = {
         ["child_access"] = function()
@@ -14310,7 +14384,7 @@ data_per_region = {
   },
   ["Spirit Temple Beyond Central Locked Door"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Near Four Armos Chest"] = {
         ["child_access"] = function()
@@ -14359,7 +14433,7 @@ data_per_region = {
   },
   ["Spirit Temple Beyond Final Locked Door"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple Boss Key Chest"] = {
         ["child_access"] = function()
@@ -14401,7 +14475,7 @@ data_per_region = {
   },
   ["Spirit Temple MQ Lobby"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Entrance Front Left Chest"] = {
         ["child_access"] = function()
@@ -14476,7 +14550,7 @@ data_per_region = {
   },
   ["Child Spirit Temple MQ"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Child Hammer Switch Chest"] = {
         ["child_access"] = function()
@@ -14568,7 +14642,7 @@ data_per_region = {
   },
   ["Adult Spirit Temple MQ"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Child Climb South Chest"] = {
         ["child_access"] = function()
@@ -14741,7 +14815,7 @@ data_per_region = {
   },
   ["Spirit Temple MQ Shared"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Child Climb North Chest"] = {
         ["child_access"] = function()
@@ -14891,7 +14965,7 @@ data_per_region = {
   },
   ["Lower Adult Spirit Temple MQ"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Leever Room Chest"] = {
         ["child_access"] = function()
@@ -14960,7 +15034,7 @@ data_per_region = {
   },
   ["Spirit Temple MQ Boss Area"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Mirror Puzzle Invisible Chest"] = {
         ["child_access"] = function()
@@ -14988,7 +15062,7 @@ data_per_region = {
   },
   ["Mirror Shield Hand MQ"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Mirror Shield Chest"] = {
         ["child_access"] = function()
@@ -15002,7 +15076,7 @@ data_per_region = {
   },
   ["Silver Gauntlets Hand MQ"] = {
     ["scene"] = "Spirit Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Spirit Temple MQ Silver Gauntlets Chest"] = {
         ["child_access"] = function()
@@ -15016,7 +15090,7 @@ data_per_region = {
   },
   ["Water Temple Split"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Water Temple Lobby"] = {
         ["child_access"] = function()
@@ -15050,7 +15124,7 @@ data_per_region = {
   },
   ["Water Temple Lobby"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
       ["Lake Hylia"] = {
         ["child_access"] = function()
@@ -15088,7 +15162,7 @@ data_per_region = {
   },
   ["Water Temple Highest Water Level"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Morpha"] = {
         ["child_access"] = function()
@@ -15125,7 +15199,7 @@ data_per_region = {
   },
   ["Water Temple Dive"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple Map Chest"] = {
         ["child_access"] = function()
@@ -15363,7 +15437,7 @@ data_per_region = {
   },
   ["Water Temple North Basement"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple Boss Key Chest"] = {
         ["child_access"] = function()
@@ -15401,7 +15475,7 @@ data_per_region = {
   },
   ["Water Temple Cracked Wall"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple Cracked Wall Chest"] = {
         ["child_access"] = function()
@@ -15415,7 +15489,7 @@ data_per_region = {
   },
   ["Water Temple Dragon Statue"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple Dragon Chest"] = {
         ["child_access"] = function()
@@ -15429,7 +15503,7 @@ data_per_region = {
   },
   ["Water Temple Middle Water Level"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple Central Pillar Chest"] = {
         ["child_access"] = function()
@@ -15465,7 +15539,7 @@ data_per_region = {
   },
   ["Water Temple Falling Platform Room"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple GS Falling Platform Room"] = {
         ["child_access"] = function()
@@ -15514,7 +15588,7 @@ data_per_region = {
   },
   ["Water Temple Dark Link Region"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple Longshot Chest"] = {
         ["child_access"] = function()
@@ -15575,7 +15649,7 @@ data_per_region = {
   },
   ["Water Temple MQ Lobby"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Morpha"] = {
         ["child_access"] = function()
@@ -15624,7 +15698,7 @@ data_per_region = {
   },
   ["Water Temple MQ Dive"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple MQ Map Chest"] = {
         ["child_access"] = function()
@@ -15673,7 +15747,7 @@ data_per_region = {
   },
   ["Water Temple MQ Lowered Water Levels"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple MQ Compass Chest"] = {
         ["child_access"] = function()
@@ -15725,7 +15799,7 @@ data_per_region = {
   },
   ["Water Temple MQ Dark Link Region"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple MQ Boss Key Chest"] = {
         ["child_access"] = function()
@@ -15766,7 +15840,7 @@ data_per_region = {
   },
   ["Water Temple MQ Basement Gated Areas"] = {
     ["scene"] = "Water Temple",
-    ["dungeon"] = true,
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
       ["Water Temple MQ Freestanding Key"] = {
         ["child_access"] = function()

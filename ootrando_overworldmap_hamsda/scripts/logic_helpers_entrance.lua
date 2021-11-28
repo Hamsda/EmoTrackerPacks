@@ -1,28 +1,14 @@
-access_level = {
-  [0] = AccessibilityLevel.None,
-  [1] = AccessibilityLevel.Partial,
-  [3] = AccessibilityLevel.Inspect,
-  [5] = AccessibilityLevel.SequenceBreak,
-  [6] = AccessibilityLevel.Normal,
-  [7] = AccessibilityLevel.Cleared,
-  [AccessibilityLevel.None] = 0,
-  [AccessibilityLevel.Partial] = 1,
-  [AccessibilityLevel.Inspect] = 3,
-  [AccessibilityLevel.SequenceBreak] = 5,
-  [AccessibilityLevel.Normal] = 6,
-  [AccessibilityLevel.Cleared] = 7
-}
 function or_accessibility(...)
   local max_level = 0
   for _, data in ipairs({...}) do
     if data == AccessibilityLevel.Normal then
       return AccessibilityLevel.Normal
     end
-    if access_level[data] > max_level then
-      max_level = access_level[data]
+    if ACCESS_LEVEL[data] > max_level then
+      max_level = ACCESS_LEVEL[data]
     end
   end
-  return access_level[max_level]
+  return ACCESS_LEVEL[max_level]
 end
 
 function and_accessibility(...)
@@ -31,11 +17,11 @@ function and_accessibility(...)
     if data == AccessibilityLevel.None then
       return AccessibilityLevel.None
     end
-    if access_level[data] < min_level then
-      min_level = access_level[data]
+    if ACCESS_LEVEL[data] < min_level then
+      min_level = ACCESS_LEVEL[data]
     end
   end
-  return access_level[min_level]
+  return ACCESS_LEVEL[min_level]
 end
 
 function can_leave_forest()
@@ -277,7 +263,7 @@ blue_fire_locations = {
   ["either"] = {
     "Ganons Castle Water Trial",
     "Ganons Castle MQ Water Trial",
-    "Gerudo Training Grounds MQ Stalfos Room",
+    "Gerudo Training Ground MQ Stalfos Room",
     "Ice Cavern MQ Map Room"
   },
   ["adult"] = {
@@ -361,7 +347,7 @@ end
 function can_finish_GerudoFortress(age)
   local acc = access_region("Gerudo Fortress", age)
   if has("gerudo_fortress_normal") then
-    if has("gf_small_keys", 4) then
+    if has("th_small_keys", 4) then
       if age == "adult" then
         local kitchen = AccessibilityLevel.SequenceBreak
         if has("bow") or has("hookshot") or has("hoverboots") or has("card") or has("logic_gerudo_kitchen") then
@@ -383,7 +369,7 @@ function can_finish_GerudoFortress(age)
       end
     end
   elseif has("gerudo_fortress_fast") then
-    if has("gf_small_keys", 1) then
+    if has("th_small_keys", 1) then
       if age == "adult" then
         return acc
       elseif age == "child" then
@@ -464,37 +450,6 @@ function can_spawn_rainbow_bridge()
     end
   elseif has("setting_bridge_gs") then
     if tokens >= setting_bridge_amount then
-      return AccessibilityLevel.Normal
-    end
-  end
-
-  return AccessibilityLevel.None
-end
-
-function can_trigger_lacs()
-  local setting_lacs_amount = get_object("setting_lacs_amount") and get_object("setting_lacs_amount").AcquiredCount or 0
-  local stones = Tracker:ProviderCountForCode("stones")
-  local medallions = Tracker:ProviderCountForCode("medallions")
-  local tokens = Tracker:ProviderCountForCode("token")
-
-  if has("setting_lacs_vanilla") then
-    if has("lacs_meds", 2) then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_stones") then
-    if stones >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_medallions") then
-    if medallions >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_dungeons") then
-    if (stones + medallions) >= setting_lacs_amount then
-      return AccessibilityLevel.Normal
-    end
-  elseif has("setting_lacs_gs") then
-    if tokens >= setting_lacs_amount then
       return AccessibilityLevel.Normal
     end
   end
