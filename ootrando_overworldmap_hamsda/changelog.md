@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.7.0.0
 
 - changed startup to fix incorrect save loading
 - added missing `Market Back Alley` capture in ER
