@@ -725,24 +725,6 @@
     ]
   },
   {
-    "name": "Bean Planting",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/setting_plant_no.png",
-        "img_mods": "@disabled",
-        "codes": "setting_plant,setting_plant_no"
-      },
-      {
-        "img": "images/setting_plant_yes.png",
-        "codes": "setting_plant,setting_plant_yes",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Nighttime Skulltulas Expect Sun's Song",
     "type": "progressive",
     "allow_disabled": false,

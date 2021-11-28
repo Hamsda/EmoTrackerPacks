@@ -600,7 +600,7 @@
                       "$has_age|child,beans,bean_stage_no"
                     ],
                     "visibility_rules": [
-                      "setting_plant_yes"
+                      "$bean_planting|yes"
                     ],
                     "hosted_item": "bean_stage_yes"
                   },
@@ -637,7 +637,7 @@
                     "name": "LW GS Above Theater (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|child,setting_plant_no,beans",
+                      "$has_age|child,$bean_planting|no,beans",
                       "$has_age|child,bean_stage_yes",
                       "[logic_lost_woods_gs_bean],longshot",
                       "[logic_lost_woods_gs_bean],hookshot,bow",
@@ -1189,7 +1189,7 @@
                           "$spawn_access|LH Fishing|adult",
                           "$has_age|adult,ocarina,scarecrow,hookshot",
                           "$has_age|adult,water",
-                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,$bean_planting|no,beans",
                           "$has_age|adult,bean_lake_yes"
                         ],
                         "item_count": 1
@@ -1233,7 +1233,7 @@
                         "name": "LH Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,$bean_planting|no,beans",
                           "$has_age|adult,bean_lake_yes",
                           "$has_age|adult,ocarina,scarecrow,hookshot"
                         ],
@@ -1384,7 +1384,7 @@
                           "$has_age|child,beans,bean_lake_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_lake_yes"
                       },
@@ -2377,7 +2377,7 @@
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
                         "access_rules": [
-                          "$has_age|adult,setting_plant_no,beans",
+                          "$has_age|adult,$bean_planting|no,beans",
                           "$has_age|adult,bean_graveyard_yes",
                           "$has_age|adult,longshot",
                           "$has_age|child,boomerang,[logic_graveyard_poh]",
@@ -2515,7 +2515,7 @@
                           "$has_age|child,beans,bean_graveyard_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_graveyard_yes"
                       },
@@ -2855,8 +2855,8 @@
                           "nayrus,magic",
                           "$has_bottle",
                           "$has_age|adult,hoverboots",
-                          "$has_age|both,setting_plant_no,beans,$has_explosives",
-                          "$has_age|both,setting_plant_no,beans,lift1,$child_death_mountain",
+                          "$has_age|both,$bean_planting|no,beans,$has_explosives",
+                          "$has_age|both,$bean_planting|no,beans,lift1,$child_death_mountain",
                           "$has_age|both,bean_trail_yes"
                         ],
                         "chest_unopened_img": "images/HP.png",
@@ -3047,8 +3047,8 @@
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hovers],hoverboots",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,$has_explosives",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],setting_plant_no,beans,lift1",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,$has_explosives",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,lift1",
                           "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
                         ],
                         "visibility_rules": [
@@ -3103,7 +3103,7 @@
                           "$child_death_mountain,beans,bean_trail_no,lift1"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_trail_yes"
                       },
@@ -3229,7 +3229,7 @@
                         "name": "DMC Volcano Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|both,ocarina,bolero,setting_plant_no,beans",
+                          "$has_age|both,ocarina,bolero,$bean_planting|no,beans",
                           "$has_age|both,ocarina,bolero,bean_crater_yes",
                           "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "{ocarina,bolero}",
@@ -3404,7 +3404,7 @@
                           "beans,bean_crater_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_crater_yes"
                       },
@@ -5247,7 +5247,7 @@
                         "name": "Colossus Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$child_colossus,setting_plant_no,beans,$has_age|adult",
+                          "$child_colossus,$bean_planting|no,beans,$has_age|adult",
                           "$child_colossus,bean_colossus_yes,$has_age|adult",
                           "{$adult_colossus}"
                         ],
@@ -5336,7 +5336,7 @@
                           "beans,bean_colossus_no"
                         ],
                         "visibility_rules": [
-                          "setting_plant_yes"
+                          "$bean_planting|yes"
                         ],
                         "hosted_item": "bean_colossus_yes"
                       },
@@ -5404,7 +5404,7 @@
                         "name": "Colossus GS Hill (N)",
                         "short_name": "GS",
                         "access_rules": [
-                          "$child_colossus,setting_plant_no,beans",
+                          "$child_colossus,$bean_planting|no,beans",
                           "$child_colossus,bean_colossus_yes",
                           "$adult_colossus,longshot",
                           "$adult_colossus,hookshot,[logic_colossus_gs]",

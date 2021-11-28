@@ -12,6 +12,7 @@
 - added logic trick for KZ skip based on [PR #1317](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1317)
 - added setting for mixed pools in ER
 - changed style of settings to text instead of icons
+- changed bean planting from setting to `user_setting`
 
 ## 3.6.0.0
 

@@ -40,7 +40,6 @@ setting_presets = {
       ["setting_masks"] = 0,
       ["setting_hints"] = 3,
       ["setting_damage"] = 1,
-      ["setting_plant"] = 0,
       ["setting_skulltulas_sun"] = 0
     }
   },
@@ -85,7 +84,6 @@ setting_presets = {
       ["setting_masks"] = 0,
       ["setting_hints"] = 3,
       ["setting_damage"] = 1,
-      ["setting_plant"] = 0,
       ["setting_skulltulas_sun"] = 0
     }
   },
@@ -130,7 +128,6 @@ setting_presets = {
       ["setting_masks"] = 0,
       ["setting_hints"] = 3,
       ["setting_damage"] = 1,
-      ["setting_plant"] = 0,
       ["setting_skulltulas_sun"] = 0
     }
   }
