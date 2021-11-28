@@ -238,6 +238,12 @@
       },
       {
         "type": "item",
+        "item": "setting_poes_amount",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_hints",
         "width": 200,
         "height": 16

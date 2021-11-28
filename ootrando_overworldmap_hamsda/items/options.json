@@ -159,7 +159,7 @@
   {
     "name": "Big Poes Required",
     "type": "consumable",
-    "img": "images/bottle_bigpoe.png",
+    "img": "images/setting_poes_amount.png",
     "codes": "setting_poes_amount",
     "disabled_img_mods": "@enabled",
     "max_quantity": 10,
