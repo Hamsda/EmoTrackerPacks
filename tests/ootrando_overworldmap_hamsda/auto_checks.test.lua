@@ -8,8 +8,8 @@ local ADDR_HELD_BEANS = 0x8011A66A
 
 -- helper functions
 
-local function setPlantNo()
-  _G.hasCodes['setting_plant_no'] = true
+local function setBeanPlanting(setting)
+  _G.BEAN_PLANTING = setting
 end
 
 -- tests
@@ -27,8 +27,10 @@ describe("auto_checks.lua", function()
       _G.hasCodes = {}
     end)
 
-    it('adds held and planted beans together when setting_plant_no is used', function()
-      setPlantNo()
+    it('adds held and planted beans together when BEAN_PLANTING is not used', function()
+      -- user setting
+      setBeanPlanting(false)
+
       -- counter currently shows 2
       local mockitem = {}
       mockitem.AcquiredCount = 2
@@ -43,7 +45,10 @@ describe("auto_checks.lua", function()
 
     end)
 
-    it('doesn\'t add held and planted beans together when setting_plant_no is not used', function()
+    it('doesn\'t add held and planted beans together when BEAN_PLANTING is used', function()
+      -- user setting
+      setBeanPlanting(true)
+
       -- counter currently shows 2
       local mockitem = {}
       mockitem.AcquiredCount = 2

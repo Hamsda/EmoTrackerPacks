@@ -430,7 +430,7 @@ local function updateBeanCountFromByte(segment, code, address)
   if item then
     local value = ReadU8(segment, address)
 
-    if has('setting_plant_no') then
+    if not BEAN_PLANTING then
       -- only update if it increased - see plant check for the accurate count
       if item.AcquiredCount < value then
         autotracker_debug(string.format("%d %s", value, item.Name))

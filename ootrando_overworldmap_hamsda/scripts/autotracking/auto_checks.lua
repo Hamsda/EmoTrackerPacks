@@ -34,7 +34,7 @@ local function updatePlantedBeanFromDataAndFlags(data, code, flags)
     table.insert(BEANS_USED, code)
 
     -- if bean plant is set to NOT
-    if has("setting_plant_no") then
+    if not BEAN_PLANTING then
       autotracker_debug('bean planting set to NOT', DBG_DETAIL)
       -- live read held beans
       local held = LiveReadU8(0x8011A66A)
