@@ -1,13 +1,13 @@
 # Settings (for map variants)
 
-There is a variety of toggles available to accomodate the different settings the randomizer offers. The settings are arranged to mimic the current GUI of the randomizer. The default for all of these should match the settings used for the weekly races (check out the OoTR discord for more info).
+There is a variety of toggles available to accomodate the different settings the randomizer offers. The settings are arranged to mimic the current GUI of the randomizer.
 
-The bottom right icon is a customizable preset loader. Cycle through the presets with left click and load with right click (some settings might require an extra right click since they depend on other settings).
-To customize the presets, please override `scripts/user_presets.lua` and edit to your liking. I hope the structure is fairly straightforward. Which setting number corresponds to which setting can be found in `items/options.json` and `items/options_entrance.json` (0 based indexing).
+The presets icon is a customizable preset loader. Cycle through the presets with left click and load with right click (some settings might require an extra right click since they depend on other settings).
+To customize the presets, please override `scripts/user_presets.lua` and edit to your liking. I hope the structure is fairly straightforward. Which setting number corresponds to which setting can be found in `items/options.json` (0 based indexing).
 
-## Main Rules
+## Main Rules: Open
 
-This tab contains most of the important settings that can have a major impact on the logic of a randomizer seed ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Main_Rules)).
+This tab contains most of the important settings that determine how "open" a randomizer seed is ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Open)).
 
 ### Forest
 
@@ -46,7 +46,7 @@ This setting determines the state of the.
 
 - ![Normal Gerudo Fortress](images/setting_gerudo_fortress_normal.png "Normal Gerudo Fortress") You will have to rescue all 4 carpenters.
 - ![Fast Gerudo Fortress](images/setting_gerudo_fortress_fast.png "Fast Gerudo Fortress") You only need to free one carpenter (F1 North).
-- ![Open Gerudo Fortress](images/setting_gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible (if `Shuffle Gerudo Card` is turned off, mark your ![Gerudo Card](images/gerudocard.png "Gerudo Card") as well).
+- ![Open Gerudo Fortress](images/setting_gerudo_fortress_open.png "Open Gerudo Fortress") The carpenters start free and the Fortress is immediately accessible.
 
 ### Rainbow Bridge Requirement
 
@@ -75,6 +75,12 @@ If trials are set to at least 1, Ganons castle will show locations for the trial
 
 I have not found a good way to represent that a trial started as dispelled.
 
+## Main Rules: World
+
+This tab contains more settings about the world structure of a randomizer seed ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#World)).
+
+A lot of these settings will not have any influence on the standard variant. To get the full benefits, you will need to use the entrance randomizer variant.
+
 ### Starting Age
 
 This setting determines which age you started as.
@@ -84,12 +90,59 @@ This setting determines which age you started as.
 
 If you have selected ![Open Door](images/setting_door_open.png "Open Door") or collected an ![Ocarina](images/fairyocarina.png "Ocarina") and ![Song of Time](images/song_time.png "Song of Time") the checks for the other age will unlock.
 
+### Shuffle Interior Entrances
+
+- ![Interior Shuffle Off](images/setting_entrance_interiors_off.png "Interior Shuffle Off") No interiors are shuffled.
+- ![Simple Interiors Shuffled](images/setting_entrance_interiors_simple.png "Simple Interiors Shuffled") Interiors except Link's House, Temple of Time, Kak Potion Shop, and Windmill are shuffled.
+- ![All Interiors Shuffled](images/setting_entrance_interiors_all.png "All Interiors Shuffled") All interiors are shuffled.
+
+### Shuffle Grotto Entrances
+
+- ![Grotto Shuffle Off](images/setting_entrance_grottos_off.png "Grotto Shuffle Off") Grottos and graves are not shuffled.
+- ![Grottos Shuffled](images/setting_entrance_grottos_shuffle.png "Grottos Shuffled") Grottos and graves are shuffled.
+
+### Shuffle Dungeon Entrances
+
+- ![Dungeon Shuffle Off](images/setting_entrance_dungeons_off.png "Dungeon Shuffle Off") Dungeons are not shuffled.
+- ![Dungeons Shuffled](images/setting_entrance_dungeons_shuffle.png "Dungeons Shuffled") Dungeons are shuffled.
+
+### Shuffle Overworld Entrances
+
+- ![Overworld Entrance Shuffle Off](images/setting_entrance_overworld_off.png "Overworld Entrance Shuffle Off") Overworld entrances are not shuffled.
+- ![Overworld Entrances Shuffled](images/setting_entrance_overworld_shuffle.png "Overworld Entrances Shuffled") Overworld entrances are shuffled.
+
+### Mix Entrance Pools
+
+- ![Mix Entrance Pools Off](images/setting_entrance_mixed_off.png "Mix Entrance Pools Off") Entrance pools are not mixed.
+- ![Mix Indoor Entrances](images/setting_entrance_mixed_indoor.png "Mix Indoor Entrances") Shuffled entrances that are not `Overworld` are mixed.
+- ![Mix All Entrances](images/setting_entrance_mixed_all.png "Mix All Entrances") All shuffled entrances are mixed.
+
+### Randomize Owl Drops
+
+- ![Owl Drop Shuffle Off](images/setting_entrance_owl_off.png "Owl Drop Shuffle Off") Owl drops are not shuffled.
+- ![Owl Drops Shuffled](images/setting_entrance_owl_shuffle.png "Owl Drops Shuffled") Owl drops are shuffled.
+
+### Randomize Warp Song Destinations
+
+- ![Warp Song Shuffle Off](images/setting_entrance_warpsong_off.png "Warp Song Shuffle Off") Warp song destinations are not shuffled.
+- ![Warp Songs Shuffled](images/setting_entrance_warpsong_shuffle.png "Warp Songs Shuffled") Warp song destinations are shuffled.
+
+### Randomize Overworld Spawns
+
+- ![Spawn Shuffle Off](images/setting_entrance_spawn_off.png "Spawn Shuffle Off") Spawns are not shuffled.
+- ![Spawn Shuffled](images/setting_entrance_spawn_shuffle.png "Spawn Shuffled") Spawns are shuffled.
+
+
 ### Bombchus Are Considered in Logic
 
 This setting determines if Bombchus are considered by the logic.
 
 - ![Bombchus not in logic](images/setting_logic_chus_no.png "Bombchus not in logic") Bombchus will never be considered by the logic and can be used to sequence break bomb locations.
 - ![Bombchus in logic](images/setting_logic_chus_yes.png "Bombchus in logic") Bombchus can be used as regular explosives like bombs in logic.
+
+## Main Rules: Shuffle
+
+This tab contains settings about additional items being shuffled ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Shuffle)).
 
 ### Shopsanity
 
@@ -160,8 +213,16 @@ This setting determines if Magic Beans are shuffled.
 
 This setting determines if Medigoron and Carpet Salesman items are shuffled.
 
-- ![Medigoron and Carpet Salesman not shuffled](images/setting_merchants_off.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
-- ![Medigoron and Carpet Salesman shuffled](images/setting_merchants_shuffle.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
+- ![Medigoron and Carpet Salesman not shuffled](images/setting_shuffle_merchants_no.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
+- ![Medigoron and Carpet Salesman shuffled](images/setting_shuffle_merchants_yes.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
+
+## Main Rules: Shuffle Dungeon Items
+
+This tab contains settings about dungeon items being shuffled ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Shuffle_Dungeon_Items)).
+
+In non keysanity variants, all of these settings will be forced to `Off`, effectively giving you every key. Can be used with the keysanity variants in mystery settings, so you don't have to mark all keys manually.
+
+The individual keycounts will be remembered, should you turn this on by accident. Just turn it off again to restore your previous keycounts.
 
 ### Shuffle Small Keys
 
@@ -190,6 +251,10 @@ This setting determines if Ganon's Boss Key is shuffled (non keys variants will 
 
 - ![Ganon's Boss Key not shuffled](images/setting_shuffle_ganon_bosskey_no.png "Ganon's Boss Key not shuffled") Ganon's Boss Key is not shuffled and will always be considered active.
 - ![Ganon's Boss Key shuffled](images/setting_shuffle_ganon_bosskey_yes.png "Ganon's Boss Key shuffled") Ganon's Boss Key is shuffled and needs to be tracked by the user.
+
+## Other
+
+This tab contains some additional settings mostly for convenience ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other_2)).
 
 ### Skip Child Zelda
 
@@ -224,17 +289,6 @@ This setting determines how much damage you take ([see wiki](https://wiki.ootran
 - ![Damage x4](images/setting_damage_quadruple.png "Damage x4") Damage is quadrupled.
 - ![OHKO](images/setting_damage_ohko.png "OHKO") Damage kills you in one hit.
 
-### Bean Planting
-
-This setting determines how the Magic Beans will be handled on the map.
-
-- ![Plant off](images/setting_plant_no.png "Plant off") The bean patches won't show up on the child map and adult locations will just show up once you have the bean item.
-- ![Plant on](images/setting_plant_yes.png "Plant on") The bean patches will show up on the child map and adult locations require those to be checked off (meaning the bean has actually been planted there).
-
-## Detailed Logic
-
-This tab includes some options for more granular logic changes ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
-
 ### Nighttime Skulltulas Expect Sun's Song
 
 This setting determines if logic expects the player to have an ocarina and the Sun’s Song to get Gold Skulltula locations that are only found at nighttime.
@@ -242,52 +296,8 @@ This setting determines if logic expects the player to have an ocarina and the S
 - ![Sun's Song Not Expected](images/setting_skulltulas_sun_off.png "Sun's Song Not Expected") Sun's Song is not expected by logic.
 - ![Sun's Song Expected](images/setting_skulltulas_sun_on.png "Sun's Song Expected") Sun's Song is expected, but locations will show as sequence breaks.
 
-### Logic Tricks
+## Logic Tricks
 
-This tab also contains a list of (some of) the logic tricks that can be enabled in the randomizer.
+This tab contains a list of the logic tricks that can be enabled in the randomizer ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Detailed_Logic)).
 
-## Entrance Randomizer only
-
-There are several settings that only show on the entrance randomizer variant. These settings allow you to select which pools are actually shuffled (split based on Dev-R branch, since it is the most popular for ER). If they are not shuffled, the locations that still remain useful will appear on the `Locations` map instead, just like they would for the regular map tracker.
-
-### Shuffle Interior Entrances
-
-- ![Interior Shuffle Off](images/setting_entrance_interiors_off.png "Interior Shuffle Off") No interiors are shuffled.
-- ![Simple Interiors Shuffled](images/setting_entrance_interiors_simple.png "Simple Interiors Shuffled") Interiors except Link's House, Temple of Time, Kak Potion Shop, and Windmill are shuffled.
-- ![All Interiors Shuffled](images/setting_entrance_interiors_all.png "All Interiors Shuffled") All interiors are shuffled.
-
-### Shuffle Grotto Entrances
-
-- ![Grotto Shuffle Off](images/setting_entrance_grottos_off.png "Grotto Shuffle Off") Grottos and graves are not shuffled.
-- ![Grottos Shuffled](images/setting_entrance_grottos_shuffle.png "Grottos Shuffled") Grottos and graves are shuffled.
-
-### Shuffle Dungeon Entrances
-
-- ![Dungeon Shuffle Off](images/setting_entrance_dungeons_off.png "Dungeon Shuffle Off") Dungeons are not shuffled.
-- ![Dungeons Shuffled](images/setting_entrance_dungeons_shuffle.png "Dungeons Shuffled") Dungeons are shuffled.
-
-### Shuffle Overworld Entrances
-
-- ![Overworld Entrance Shuffle Off](images/setting_entrance_overworld_off.png "Overworld Entrance Shuffle Off") Overworld entrances are not shuffled.
-- ![Overworld Entrances Shuffled](images/setting_entrance_overworld_shuffle.png "Overworld Entrances Shuffled") Overworld entrances are shuffled.
-
-### Mix Entrance Pools
-
-- ![Mix Entrance Pools Off](images/setting_entrance_mixed_off.png "Mix Entrance Pools Off") Entrance pools are not mixed.
-- ![Mix Indoor Entrances](images/setting_entrance_mixed_indoor.png "Mix Indoor Entrances") Shuffled entrances that are not `Overworld` are mixed.
-- ![Mix All Entrances](images/setting_entrance_mixed_all.png "Mix All Entrances") All shuffled entrances are mixed.
-
-### Randomize Owl Drops
-
-- ![Owl Drop Shuffle Off](images/setting_entrance_owl_off.png "Owl Drop Shuffle Off") Owl drops are not shuffled.
-- ![Owl Drops Shuffled](images/setting_entrance_owl_shuffle.png "Owl Drops Shuffled") Owl drops are shuffled.
-
-### Randomize Warp Song Destinations
-
-- ![Warp Song Shuffle Off](images/setting_entrance_warpsong_off.png "Warp Song Shuffle Off") Warp song destinations are not shuffled.
-- ![Warp Songs Shuffled](images/setting_entrance_warpsong_shuffle.png "Warp Songs Shuffled") Warp song destinations are shuffled.
-
-### Randomize Overworld Spawns
-
-- ![Spawn Shuffle Off](images/setting_entrance_spawn_off.png "Spawn Shuffle Off") Spawns are not shuffled.
-- ![Spawn Shuffled](images/setting_entrance_spawn_shuffle.png "Spawn Shuffled") Spawns are shuffled.
+The tracker will show the tricks from this list as sequence breaks, even if they are turned off. Enabling them will show them as in logic instead, reflecting your chosen logic as closely as possible.

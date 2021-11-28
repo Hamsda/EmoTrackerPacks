@@ -1,7 +1,6 @@
 if HAS_MAP then
   if HAS_ER then
     Tracker:AddItems("items/capture_entrance.json")
-    Tracker:AddItems("items/options_entrance.json")
   else
     Tracker:AddItems("items/capture_spawns.json")
   end

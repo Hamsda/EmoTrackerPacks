@@ -18,6 +18,9 @@
                   "setting_age_child",
                   "$can_time_travel"
                 ],
+                "visibility_rules": [
+                  "setting_entrance_spawn_shuffle"
+                ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_spawn_child",
                 "item_count": 1
@@ -47,6 +50,9 @@
                 "access_rules": [
                   "setting_age_adult",
                   "$can_time_travel"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_spawn_shuffle"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_spawn_adult",
@@ -2647,7 +2653,7 @@
                           "$has_age|adult,wallet,lift1"
                         ],
                         "visibility_rules": [
-                          "setting_merchants_shuffle"
+                          "setting_shuffle_merchants_yes"
                         ],
                         "item_count": 1
                       }
@@ -5183,7 +5189,7 @@
                           "$has_age|child,sword1"
                         ],
                         "visibility_rules": [
-                          "setting_merchants_shuffle"
+                          "setting_shuffle_merchants_yes"
                         ],
                         "item_count": 1
                       }

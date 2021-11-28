@@ -1617,7 +1617,7 @@
                   "$access_location|Wasteland Bombchu Salesman"
                 ],
                 "visibility_rules": [
-                  "setting_merchants_shuffle"
+                  "setting_shuffle_merchants_yes"
                 ],
                 "item_count": 1
               }
@@ -3378,7 +3378,7 @@
                   "$access_location|GC Medigoron"
                 ],
                 "visibility_rules": [
-                  "setting_merchants_shuffle"
+                  "setting_shuffle_merchants_yes"
                 ],
                 "item_count": 1
               }

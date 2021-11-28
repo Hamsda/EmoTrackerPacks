@@ -5,14 +5,12 @@ else
 end
 Tracker:AddLayouts("layouts/item_grids.json")
 if HAS_MAP then
-  Tracker:AddLayouts("layouts/tricks.json")
+  Tracker:AddLayouts("layouts/options.json")
   if HAS_ER then
-    Tracker:AddLayouts("layouts/options_entrance.json")
     Tracker:AddLayouts("layouts/counters_entrance.json")
     Tracker:AddLayouts("layouts/layouts_entrance.json")
     Tracker:AddLayouts("layouts/capture_entrance.json")
   else
-    Tracker:AddLayouts("layouts/options.json")
     Tracker:AddLayouts("layouts/counters.json")
     Tracker:AddLayouts("layouts/layouts.json")
     Tracker:AddLayouts("layouts/capture_spawns.json")

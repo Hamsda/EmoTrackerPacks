@@ -1,114 +1,1217 @@
 {
+  "layout_main_open": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_forest",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_kak",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_door",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fountain",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_gerudo",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bridge",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bridge_amount",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_trials",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
+  "layout_main_world": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_age",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_interiors",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_grottos",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_dungeons",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_overworld",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_mixed",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_owl",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_warpsong",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_entrance_spawn",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_logic_chus",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
+  "layout_main_shuffle": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_shopsanity",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_tokens_off",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrub_shuffle",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_cowsanity",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_sword1",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_ocarinas",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_egg",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_card",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_beans",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_merchants",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
+  "layout_main_dungeon": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_shuffle_smallkeys",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_hideoutkeys",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_bosskeys",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_ganon_bosskey",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
+  "layout_other_misc": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_zelda",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_masks",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_hints",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_damage",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_skulltulas_sun",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
+  "layout_logic_tricks": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "logic_fewer_tunic_requirements",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_grottos_without_agony",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_visible_collisions",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_child_deadhand",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_child_dampe_race_poh",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_man_on_roof",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_staircase",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_jump",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_vines_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_gerudo_kitchen",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_basement_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_b1_webs_with_bow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_mq_log",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_rusted_switches",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_botw_basement",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_botw_mq_pits",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_mq_block_puzzle",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_child_bombchu",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_windmill_poh",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_crater_bean_poh_with_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_zora_with_cucco",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_mq_central_pillar",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_gtg_mq_with_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_vines",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_outdoor_east_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_first_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_well_swim",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_mq_hallway_switch_jumpslash",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dmt_bombable",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_goron_city_pot_with_strength",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_adult_kokiri_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_mq_frozen_eye",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_wall",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_lobby_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_lobby_jump",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_mq_sun_block_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_jabu_scrub_jump_dive",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_jabu_mq_sot_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_botw_mq_dead_hand_key",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_flame_maze",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_flame_maze",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_climb",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_maze_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_near_boss",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_maze_side_room",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_bk_chest",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_above_maze_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_zora_river_lower",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_cracked_wall_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_freestanding_key",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_mq_invisible_blades",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_mq_huge_pit",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_mido_backflip",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_boss_door_jump",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lab_diving",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_biggoron_bolero",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_wasteland_crossing",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_colossus_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_scarecrow_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_kakariko_tower_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_mq_compass_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lab_wall_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_mq_lower_adult",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_map_chest",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_sun_chest",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_mq_sun_block_sot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_trial_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_outdoors_ledge",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_boss_key_region",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_mq_locked_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_falling_platform_gs_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_falling_platform_gs_boomerang",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_river_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_hookshot_entry",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dmt_climb_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_trail_gs_upper",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_trail_gs_lower_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_trail_gs_lower_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_trail_gs_lower_bean",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_crater_upper_to_lower",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_zora_with_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_domain_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_king_zora_skip",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_statue",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_link_goron_dins",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_song_of_time",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_strength",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_blocked_chest",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_mq_maze_jump",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_light_trial_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_ice_mq_scarecrow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_ice_mq_red_ice_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_ice_block_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_reverse_wasteland",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_zora_river_upper",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_mq_gap",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lost_woods_gs_bean",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_jabu_boss_gs_adult",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_kakariko_rooftop_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_graveyard_poh",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_castle_storms_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dmt_soil_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_gtg_without_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_gtg_mq_without_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_gtg_fake_wall",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_cracked_wall_nothing",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_north_basement_ledge_jump",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_temple_torch_longshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_central_gs_fw",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_central_gs_irons",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_bk_jump_dive",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_dragon_jump_dive",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_dragon_adult",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_dragon_child",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_goron_city_leftmost",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_goron_grotto",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_deku_b1_skip",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_lower_adult_switch",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_outside_backdoor",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_forest_door_frame",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_mq_child_bombs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_scrub_room",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_slingshot_skip",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_mq_eyes",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_mq_child_back",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_child_rolling_with_strength",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_goron_city_pot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_valley_crate_hovers",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lost_woods_bridge",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_spirit_trial_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_umbrella",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_umbrella_gs",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_water_central_bow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_scarecrow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_fire_trial_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_fire_arrow_entry",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_wasteland",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_botw",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_castle_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_castle",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_gtg_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_gtg",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_jabu_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_shadow_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_shadow_mq_back",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_shadow",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_shadow_back",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_spirit_mq",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_spirit",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
   "options_popup": {
     "type": "tabbed",
     "tabs": [
       {
-        "title": "Main Rules",
+        "title": "Open",
         "content": {
-          "type": "itemgrid",
-          "item_margin": "1,2",
-          "badge_font_size": 10,
-          "rows": [
-            [
-              "setting_forest",
-              "setting_age",
-              "setting_shopsanity",
-              "setting_shuffle_smallkeys",
-              "setting_zelda"
-            ],
-            [
-              "setting_kak",
-              "setting_logic_chus",
-              "setting_tokens_off",
-              "setting_shuffle_hideoutkeys",
-              "setting_masks"
-            ],
-            [
-              "setting_door",
-              "",
-              "setting_scrub_shuffle",
-              "setting_shuffle_bosskeys",
-              "setting_hints"
-            ],
-            [
-              "setting_fountain",
-              "",
-              "setting_cowsanity",
-              "setting_shuffle_ganon_bosskey",
-              "setting_damage"
-            ],
-            [
-              "setting_gerudo",
-              "",
-              "setting_shuffle_sword1",
-              "",
-              "setting_plant"
-            ],
-            [
-              "setting_bridge",
-              "",
-              "setting_shuffle_ocarinas",
-              "",
-              ""
-            ],
-            [
-              "setting_bridge_amount",
-              "",
-              "setting_shuffle_egg",
-              "",
-              ""
-            ],
-            [
-              "setting_trials",
-              "",
-              "setting_shuffle_card",
-              "",
-              ""
-            ],
-            [
-              "",
-              "",
-              "setting_shuffle_beans",
-              "",
-              ""
-            ],
-            [
-              "",
-              "",
-              "setting_merchants",
-              "",
-              "presets"
-            ]
-          ]
+          "type": "layout",
+          "key": "layout_main_open",
+          "h_alignment": "left"
         }
       },
       {
-        "title": "Detailed Logic",
+        "title": "World",
         "content": {
-          "type": "array",
-          "orientation": "vertical",
+          "type": "layout",
+          "key": "layout_main_world",
+          "h_alignment": "left"
+        }
+      },
+      {
+        "title": "Shuffle",
+        "content": {
+          "type": "layout",
+          "key": "layout_main_shuffle",
+          "h_alignment": "left"
+        }
+      },
+      {
+        "title": "Dungeon Items",
+        "content": {
+          "type": "layout",
+          "key": "layout_main_dungeon",
+          "h_alignment": "left"
+        }
+      },
+      {
+        "title": "Other",
+        "content": {
+          "type": "layout",
+          "key": "layout_other_misc",
+          "h_alignment": "left"
+        }
+      },
+      {
+        "title": "Logic Tricks",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
           "content": [
             {
-              "type": "itemgrid",
-              "h_alignment": "left",
-              "item_margin": "1,2",
-              "rows": [
-                [
-                  "setting_skulltulas_sun"
-                ]
-              ]
-            },
-            {
-              "type": "scroll",
-              "horizontal_scrollbar_visibility": "auto",
-              "vertical_scrollbar_visibility": "auto",
-              "max_height": 500,
-              "content": [
-                {
-                  "type": "layout",
-                  "key": "tricks_list"
-                }
-              ]
+              "type": "layout",
+              "key": "layout_logic_tricks",
+              "h_alignment": "left"
             }
           ]
         }
