@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.7.0.0
 
 - changed startup to fix incorrect save loading
 - added missing `Market Back Alley` capture in ER
@@ -11,6 +11,8 @@
 - removed logic trick in MQ Forest based on [PR #1359](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1359)
 - added logic trick for KZ skip based on [PR #1317](https://github.com/TestRunnerSRL/OoT-Randomizer/pull/1317)
 - added setting for mixed pools in ER
+- changed style of settings to text instead of icons
+- changed bean planting from setting to `user_setting`
 
 ## 3.6.0.0
 

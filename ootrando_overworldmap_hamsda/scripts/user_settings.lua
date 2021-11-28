@@ -5,6 +5,9 @@ SONG_BADGE_CHECK_ONLY = false
 -- SONG_BADGE_CHECK_ONLY overrides this behavior
 SONG_BADGE_LAST_ACTIVATED = false
 
+-- beans will need to be planted before their corresponding checks become available
+BEAN_PLANTING = false
+
 -- puts badges of captured icons on the map locations
 -- visibility is not the greatest, but can help at a glance
 ER_BADGE_EXITS = false

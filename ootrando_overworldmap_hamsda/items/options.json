@@ -191,6 +191,166 @@
       }	
     ]	
   },
+  {
+    "name": "Shuffle Interior Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_entrance_interiors_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_interiors,setting_entrance_interiors_off"
+      },
+      {
+        "img": "images/setting_entrance_interiors_simple.png",
+        "codes": "setting_entrance_interiors,setting_entrance_interiors_simple",
+        "inherits_codes": false
+      },
+      {
+        "img": "images/setting_entrance_interiors_all.png",
+        "codes": "setting_entrance_interiors_all"
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Grotto Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_grottos_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_grottos,setting_entrance_grottos_off"
+      },
+      {
+        "img": "images/setting_entrance_grottos_shuffle.png",
+        "codes": "setting_entrance_grottos,setting_entrance_grottos_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_dungeons_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_dungeons,setting_entrance_dungeons_off"
+      },
+      {
+        "img": "images/setting_entrance_dungeons_shuffle.png",
+        "codes": "setting_entrance_dungeons,setting_entrance_dungeons_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Overworld Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_overworld_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_overworld,setting_entrance_overworld_off"
+      },
+      {
+        "img": "images/setting_entrance_overworld_shuffle.png",
+        "codes": "setting_entrance_overworld,setting_entrance_overworld_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Mix Entrance Pools",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_entrance_mixed_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_mixed,setting_entrance_mixed_off"
+      },
+      {
+        "img": "images/setting_entrance_mixed_indoor.png",
+        "codes": "setting_entrance_mixed,setting_entrance_mixed_indoor",
+        "inherits_codes": false
+      },
+      {
+        "img": "images/setting_entrance_mixed_all.png",
+        "codes": "setting_entrance_mixed_all"
+      }
+    ]
+  },
+  {
+    "name": "Randomize Owl Drops",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_owl_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_owl,setting_entrance_owl_off"
+      },
+      {
+        "img": "images/setting_entrance_owl_shuffle.png",
+        "codes": "setting_entrance_owl,setting_entrance_owl_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomize Warp Song Destinations",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_warpsong_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_warpsong,setting_entrance_warpsong_off"
+      },
+      {
+        "img": "images/setting_entrance_warpsong_shuffle.png",
+        "codes": "setting_entrance_warpsong,setting_entrance_warpsong_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Randomize Overworld Spawns",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_spawn_off.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_spawn,setting_entrance_spawn_off"
+      },
+      {
+        "img": "images/setting_entrance_spawn_shuffle.png",
+        "codes": "setting_entrance_spawn,setting_entrance_spawn_shuffle",
+        "inherits_codes": false
+      }
+    ]
+  },
   {	
     "name": "Bombchus Are Considered in Logic",	
     "type": "progressive",	
@@ -199,6 +359,7 @@
     "stages": [	
       {	
         "img": "images/setting_logic_chus_no.png",	
+        "img_mods": "@disabled",
         "codes": "setting_logic_chus,setting_logic_chus_no"	
       },	
       {	
@@ -216,6 +377,7 @@
     "stages": [
       {
         "img": "images/setting_shopsanity_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shopsanity,setting_shopsanity_no"
       },
       {
@@ -233,6 +395,7 @@
     "stages": [
       {
         "img": "images/setting_tokens_off.png",
+        "img_mods": "@disabled",
         "codes": "setting_tokens_off"
       },
       {
@@ -260,6 +423,7 @@
     "stages": [
       {
         "img": "images/setting_scrub_shuffle_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_scrub_shuffle,setting_scrub_shuffle_no"
       },
       {
@@ -277,6 +441,7 @@
     "stages": [
       {
         "img": "images/setting_cowsanity_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_cowsanity,setting_cowsanity_no"
       },
       {
@@ -295,6 +460,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_sword1_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_sword1,setting_shuffle_sword1_no"
       },
       {
@@ -312,6 +478,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_ocarinas_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_ocarinas,setting_shuffle_ocarinas_no"
       },
       {
@@ -329,6 +496,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_egg_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_egg,setting_shuffle_egg_no"
       },
       {
@@ -346,6 +514,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_card_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_card,setting_shuffle_card_no"
       },
       {
@@ -363,6 +532,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_beans_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_beans,setting_shuffle_beans_no"
       },
       {
@@ -379,12 +549,13 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/setting_merchants_off.png",
-        "codes": "setting_merchants,setting_merchants_off"
+        "img": "images/setting_shuffle_merchants_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffle_merchants,setting_shuffle_merchants_no"
       },
       {
-        "img": "images/setting_merchants_shuffle.png",
-        "codes": "setting_merchants,setting_merchants_shuffle",
+        "img": "images/setting_shuffle_merchants_yes.png",
+        "codes": "setting_shuffle_merchants,setting_shuffle_merchants_yes",
         "inherit_codes": false
       }
     ]
@@ -398,6 +569,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_smallkeys_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_smallkeys,setting_shuffle_smallkeys_no"
       },
       {
@@ -416,6 +588,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_hideoutkeys_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_hideoutkeys,setting_shuffle_hideoutkeys_no"
       },
       {
@@ -434,6 +607,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_bosskeys_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_bosskeys,setting_shuffle_bosskeys_no"
       },
       {
@@ -452,6 +626,7 @@
     "stages": [
       {
         "img": "images/setting_shuffle_ganon_bosskey_no.png",
+        "img_mods": "@disabled",
         "codes": "setting_shuffle_ganon_bosskey,setting_shuffle_ganon_bosskey_no"
       },
       {
@@ -469,6 +644,7 @@
     "stages": [
       {
         "img": "images/setting_zelda_off.png",
+        "img_mods": "@disabled",
         "codes": "setting_zelda,setting_zelda_off"
       },
       {
@@ -486,6 +662,7 @@
     "stages": [
       {
         "img": "images/setting_masks_off.png",
+        "img_mods": "@disabled",
         "codes": "setting_masks,setting_masks_off"
       },
       {
@@ -504,6 +681,7 @@
     "stages": [
       {
         "img": "images/setting_hints_off.png",
+        "img_mods": "@disabled",
         "codes": "setting_hints,setting_hints_off"
       },
       {
@@ -557,23 +735,6 @@
     ]
   },
   {
-    "name": "Bean Planting",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/setting_plant_no.png",
-        "codes": "setting_plant,setting_plant_no"
-      },
-      {
-        "img": "images/setting_plant_yes.png",
-        "codes": "setting_plant,setting_plant_yes",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Nighttime Skulltulas Expect Sun's Song",
     "type": "progressive",
     "allow_disabled": false,
@@ -581,6 +742,7 @@
     "stages": [
       {
         "img": "images/setting_skulltulas_sun_off.png",
+        "img_mods": "@disabled",
         "codes": "setting_skulltulas_sun,setting_skulltulas_sun_off"
       },
       {

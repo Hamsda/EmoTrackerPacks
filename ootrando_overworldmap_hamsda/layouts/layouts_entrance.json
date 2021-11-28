@@ -35,6 +35,20 @@
                 "type": "layout",
                 "key": "counters_tall"
               }
+            },
+            {
+              "type": "group",
+              "header": "Presets",
+              "dock": "top",
+              "content": {
+                "type": "item",
+                "item": "presets",
+                "h_alignment": "left",
+                "v_alignment": "top",
+                "margin": "5",
+                "width": 32,
+                "height": 32
+              }
             }
           ]
         },
@@ -140,6 +154,20 @@
                   "content": {
                     "type": "layout",
                     "key": "counters_wide"
+                  }
+                },
+                {
+                  "type": "group",
+                  "header": "Presets",
+                  "dock": "top",
+                  "content": {
+                    "type": "item",
+                    "item": "presets",
+                    "h_alignment": "left",
+                    "v_alignment": "top",
+                    "margin": "5",
+                    "width": 32,
+                    "height": 32
                   }
                 }
               ]
