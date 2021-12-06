@@ -5,6 +5,9 @@ SONG_BADGE_CHECK_ONLY = false
 -- SONG_BADGE_CHECK_ONLY overrides this behavior
 SONG_BADGE_LAST_ACTIVATED = false
 
+-- left clicking the free reward will turn on a quick mark mode for the adult altar
+ALTAR_QUICK_MARK = false
+
 -- beans will need to be planted before their corresponding checks become available
 BEAN_PLANTING = false
 

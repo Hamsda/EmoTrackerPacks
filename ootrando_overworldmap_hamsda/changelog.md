@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added `ALTAR_QUICK_MARK` user setting
+
 ## 3.7.0.0
 
 - changed startup to fix incorrect save loading
