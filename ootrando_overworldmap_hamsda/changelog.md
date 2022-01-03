@@ -3,6 +3,7 @@
 ## x
 
 - added `ALTAR_QUICK_MARK` user setting
+- added hintable exits to ER
 
 ## 3.7.0.0
 
