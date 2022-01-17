@@ -1447,7 +1447,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Lake Hylia|Water Temple Split"
+                  "$access_exit|Lake Hylia|Water Temple Split",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
@@ -1532,7 +1533,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|GV Grotto Ledge|GV Octorok Grotto"
+                  "$access_exit|GV Grotto Ledge|GV Octorok Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -1584,7 +1586,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|GV Fortress Side|GV Carpenter Tent"
+                  "$access_exit|GV Fortress Side|GV Carpenter Tent",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_interiors_simple"
@@ -1610,7 +1613,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|GV Fortress Side|GV Storms Grotto"
+                  "$access_exit|GV Fortress Side|GV Storms Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -1668,7 +1672,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Gerudo Fortress|Gerudo Training Ground Split"
+                  "$access_exit|Gerudo Fortress|Gerudo Training Ground Split",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
@@ -1695,7 +1700,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Gerudo Fortress|GF Storms Grotto"
+                  "$access_exit|Gerudo Fortress|GF Storms Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -1811,7 +1817,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Desert Colossus|Colossus Great Fairy Fountain"
+                  "$access_exit|Desert Colossus|Colossus Great Fairy Fountain",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_interiors_simple"
@@ -1890,7 +1897,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Desert Colossus|Colossus Grotto"
+                  "$access_exit|Desert Colossus|Colossus Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -2396,7 +2404,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Hyrule Castle Grounds|HC Storms Grotto"
+                  "$access_exit|Hyrule Castle Grounds|HC Storms Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -2428,7 +2437,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Ganons Castle Grounds|OGC Great Fairy Fountain"
+                  "$access_exit|Ganons Castle Grounds|OGC Great Fairy Fountain",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_interiors_simple"
@@ -2668,7 +2678,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Kakariko Village|Bottom of the Well Split"
+                  "$access_exit|Kakariko Village|Bottom of the Well Split",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
@@ -3039,7 +3050,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Graveyard Warp Pad Region|Shadow Temple Split"
+                  "$access_exit|Graveyard Warp Pad Region|Shadow Temple Split",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
@@ -3339,7 +3351,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|GC Grotto Platform|GC Grotto"
+                  "$access_exit|GC Grotto Platform|GC Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -3826,7 +3839,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Zoras Domain|ZD Storms Grotto"
+                  "$access_exit|Zoras Domain|ZD Storms Grotto",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_grottos_shuffle"
@@ -3910,7 +3924,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Zoras Fountain|Jabu Jabus Belly Split"
+                  "$access_exit|Zoras Fountain|Jabu Jabus Belly Split",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_dungeons_shuffle"
@@ -3937,7 +3952,8 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Zoras Fountain|ZF Great Fairy Fountain"
+                  "$access_exit|Zoras Fountain|ZF Great Fairy Fountain",
+                  "{$hintable}"
                 ],
                 "visibility_rules": [
                   "setting_entrance_interiors_simple"

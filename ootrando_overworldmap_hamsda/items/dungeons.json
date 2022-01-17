@@ -6,43 +6,6 @@
     "codes": "free_label"
   },
   {
-    "name": "Free Prize",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "free"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "free,lightmed,medallions",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "free,lacs_meds,medallions",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "free,noct_meds,medallions",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "free,forestmed,medallions",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "free,stones",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Deku Tree Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -61,43 +24,6 @@
         "img": "images/label_deku_red.png",
         "codes": "deku_label",
         "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Deku Tree Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "deku",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "deku,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "deku,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "deku,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "deku,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "deku,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -124,43 +50,6 @@
     ]
   },
   {
-    "name": "Dodongos Cavern Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "dodongo,dc",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "dodongo,dc,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "dodongo,dc,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "dodongo,dc,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "dodongo,dc,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "dodongo,dc,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
-      }
-    ]
-  },
-  {
     "name": "Jabu Jabu Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -179,43 +68,6 @@
         "img": "images/label_jabu_red.png",
         "codes": "jabu_label",
         "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Jabu Jabu Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "jabu",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "jabu,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "jabu,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "jabu,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "jabu,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "jabu,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
       }
     ]
   },
@@ -255,43 +107,6 @@
     "codes": "forest_boss_key,forestboss,forestbk"
   },
   {
-    "name": "Forest Temple Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "forest",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "forest,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "forest,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "forest,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "forest,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "forest,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
-      }
-    ]
-  },
-  {
     "name": "Fire Temple Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -325,43 +140,6 @@
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "fire_boss_key,fireboss,firebk"
-  },
-  {
-    "name": "Fire Temple Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "fire",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "fire,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "fire,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "fire,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "fire,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "fire,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
-      }
-    ]
   },
   {
     "name": "Water Temple Label",
@@ -399,43 +177,6 @@
     "codes": "water_boss_key,waterboss,waterbk"
   },
   {
-    "name": "Water Temple Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "water",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "water,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "water,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "water,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "water,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "water,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
-      }
-    ]
-  },
-  {
     "name": "Spirit Temple Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -471,43 +212,6 @@
     "codes": "spirit_boss_key,spiritboss,spiritbk"
   },
   {
-    "name": "Spirit Temple Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "spirit",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "spirit,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "spirit,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "spirit,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "spirit,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "spirit,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
-      }
-    ]
-  },
-  {
     "name": "Shadow Temple Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -541,43 +245,6 @@
     "type": "toggle",
     "img": "images/boss_key.png",
     "codes": "shadow_boss_key,shadowboss,shadowbk"
-  },
-  {
-    "name": "Shadow Temple Prize",
-    "type": "progressive_toggle",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/unknown.png",
-        "codes": "shadow",
-        "secondary_codes": "unknown"
-      },
-      {
-        "img": "images/stones.png",
-        "codes": "shadow,stones",
-        "secondary_codes": "stones,stone"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "shadow,forestmed,medallions",
-        "secondary_codes": "forest,forestmed"
-      },
-      {
-        "img": "images/nocturne_medallions.png",
-        "codes": "shadow,noct_meds,medallions",
-        "secondary_codes": "noct_meds,nocturne"
-      },
-      {
-        "img": "images/lacs_medallions.png",
-        "codes": "shadow,lacs_meds,medallions",
-        "secondary_codes": "lacs_meds,lacs,lightarrow"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "shadow,lightmed,medallions",
-        "secondary_codes": "light,lightmed"
-      }
-    ]
   },
   {
     "name": "Bottom of the Well Label",

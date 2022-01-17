@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.7.1.0
+
+- added `ALTAR_QUICK_MARK` user setting
+- added hintable exits to ER
+
 ## 3.7.0.0
 
 - changed startup to fix incorrect save loading
