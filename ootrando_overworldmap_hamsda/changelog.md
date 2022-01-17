@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.7.1.0
 
 - added `ALTAR_QUICK_MARK` user setting
 - added hintable exits to ER
