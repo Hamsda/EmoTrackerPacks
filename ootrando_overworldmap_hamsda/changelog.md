@@ -3,6 +3,7 @@
 ## x
 
 - added ability to load boolean settings for `user_presets`
+- updated `user_presets`
 
 ## 3.7.1.0
 
