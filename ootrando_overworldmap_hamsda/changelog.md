@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added ability to load boolean settings for `user_presets`
+
 ## 3.7.1.0
 
 - added `ALTAR_QUICK_MARK` user setting
