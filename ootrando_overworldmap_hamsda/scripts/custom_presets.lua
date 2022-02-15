@@ -45,6 +45,8 @@ function PresetLoader:onRightClick()
           setting_object.CurrentStage = value
         elseif type(setting_object.AcquiredCount) == "number" then
           setting_object.AcquiredCount = value
+        elseif type(setting_object.Active) == "boolean" then
+          setting_object.Active = value
         end
       end
     end

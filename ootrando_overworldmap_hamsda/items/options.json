@@ -153,8 +153,8 @@
     "img": "images/setting_bridge_amount.png",
     "codes": "setting_bridge_amount",
     "disabled_img_mods": "@enabled",
-    "max_quantity": 6,
-    "initial_quantity": 6
+    "max_quantity": 100,
+    "initial_quantity": 0
   },
   {
     "name": "Number of Trials",
