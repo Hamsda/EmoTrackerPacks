@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.7.2.0
 
 - added ability to load boolean settings for `user_presets`
 - updated `user_presets`
