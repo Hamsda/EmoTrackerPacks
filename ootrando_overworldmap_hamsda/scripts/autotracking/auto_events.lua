@@ -20,7 +20,7 @@ end
 local function updateItemGetInfoCheck(segment, code, check_offset, flag)
   local local_offset = ADDR_ITEM_GET_INF + check_offset;
   local data = ReadU8(segment, local_offset)
-  
+
   updateCheckFromDataAndFlags(data, code, {flag}, false)
 end
 
@@ -48,7 +48,7 @@ local function updateBigPoeBottleCheck(segment, code)
   get_object("setting_poes_amount") and get_object("setting_poes_amount").AcquiredCount or 10
 
     local pointsRequired = 100 * setting_poes_amount
-    
+
     local pointsEarned = ReadU32(segment, ADDR_BIGPOE_POINTS)
 
     if pointsEarned >= pointsRequired then
@@ -104,12 +104,14 @@ local function updateDungeonPrizeFromEventData(segment, code, major_offset, flag
 
     local won = (data & bitmask ~= 0)
 
-    if item.Active ~= won then
+    local isActive = item:Get("active")
+
+    if isActive ~= won then
       if won then autotracker_debug(string.format('Y %s', item.Name))
       else        autotracker_debug(string.format('N %s', item.Name))
       end
 
-      item.Active = won
+      item:Set("active", won)
     end
   else
     autotracker_debug(string.format('Unable to find item by code: %s', code), DBG_ERROR)
@@ -186,7 +188,7 @@ function updateEventsFromMemorySegment(segment)
   updateFishingCheck(segment, '@LH Child Fishing/Bite pls', 0xA)
   updateFishingCheck(segment, '@LH Adult Fishing/Bite pls', 0xB)
 
-  
+
   updateDungeonPrizeFromEventData(segment, 'deku'                                 , 0x0, 0x7)
   -- only mark her off if egg is shuffled
   if has('setting_shuffle_egg_yes') then

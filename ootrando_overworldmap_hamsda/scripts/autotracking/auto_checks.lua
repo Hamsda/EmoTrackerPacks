@@ -80,12 +80,14 @@ local function updateDungeonPrizeFromDataAndFlags(data, code, flags)
       end
     end
 
-    if item.Active ~= won then
+    local isActive = item:Get("active")
+
+    if isActive ~= won then
       if won then autotracker_debug(string.format('Y %s', item.Name))
       else        autotracker_debug(string.format('N %s', item.Name))
       end
 
-      item.Active = won
+      item:Set("active", won)
     end
   else
     autotracker_debug(string.format('Unable to find item by code: %s', code), DBG_ERROR)
