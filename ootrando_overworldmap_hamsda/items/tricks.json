@@ -2,14 +2,14 @@
   {
     "name": "Fewer Tunic Requirements",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_fewer_tunic_requirements.png",
     "codes": "logic_fewer_tunic_requirements"
   },
   {
     "name": "Hidden Grottos without Stone of Agony",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_grottos_without_agony.png",
     "codes": "logic_grottos_without_agony"
   },
@@ -23,7 +23,7 @@
   {
     "name": "Child Deadhand without Kokiri Sword",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_child_deadhand.png",
     "codes": "logic_child_deadhand"
   },
@@ -37,7 +37,7 @@
   {
     "name": "Man on Roof without Hookshot",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_man_on_roof.png",
     "codes": "logic_man_on_roof"
   },
@@ -51,7 +51,7 @@
   {
     "name": "Dodongo's Cavern Spike Trap Room Jump without Hover Boots",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_dc_jump.png",
     "codes": "logic_dc_jump"
   },
@@ -93,7 +93,7 @@
   {
     "name": "Hammer Rusted Switches Through Walls",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_rusted_switches.png",
     "codes": "logic_rusted_switches"
   },
@@ -128,14 +128,14 @@
   {
     "name": "Windmill PoH as Adult with Nothing",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_windmill_poh.png",
     "codes": "logic_windmill_poh"
   },
   {
     "name": "Crater's Bean PoH with Hover Boots",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_crater_bean_poh_with_hovers.png",
     "codes": "logic_crater_bean_poh_with_hovers"
   },
@@ -163,7 +163,7 @@
   {
     "name": "Forest Temple East Courtyard Vines with Hookshot",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_forest_vines.png",
     "codes": "logic_forest_vines"
   },
@@ -961,7 +961,7 @@
   {
     "name": "Bottom of the Well without Lens of Truth",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_lens_botw.png",
     "codes": "logic_lens_botw"
   },
@@ -975,7 +975,7 @@
   {
     "name": "Ganon's Castle without Lens of Truth",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_lens_castle.png",
     "codes": "logic_lens_castle"
   },
@@ -989,7 +989,7 @@
   {
     "name": "Gerudo Training Ground without Lens of Truth",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_lens_gtg.png",
     "codes": "logic_lens_gtg"
   },
@@ -1017,14 +1017,14 @@
   {
     "name": "Shadow Temple before Invisible Moving Platform without Lens of Truth",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_lens_shadow.png",
     "codes": "logic_lens_shadow"
   },
   {
     "name": "Shadow Temple beyond Invisible Moving Platform without Lens of Truth",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_lens_shadow_back.png",
     "codes": "logic_lens_shadow_back"
   },
@@ -1038,7 +1038,7 @@
   {
     "name": "Spirit Temple without Lens of Truth",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/logic_lens_spirit.png",
     "codes": "logic_lens_spirit"
   }

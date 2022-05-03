@@ -26,6 +26,11 @@ for i = 1, 12 do
   SongItem(i)
 end
 
+ScriptHost:LoadScript("scripts/custom_dungeon_reward.lua")
+for i = 1, 9 do
+  DungeonReward(i)
+end
+
 ScriptHost:LoadScript("scripts/user_presets.lua")
 ScriptHost:LoadScript("scripts/custom_presets.lua")
 PresetLoader()
