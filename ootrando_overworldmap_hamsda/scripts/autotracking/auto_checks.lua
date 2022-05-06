@@ -94,6 +94,32 @@ local function updateDungeonPrizeFromDataAndFlags(data, code, flags)
   end
 end
 
+function updateScarecrow(segment)
+  if has('setting_racemode_on') or not AUTOTRACKER_ENABLE_ITEM_TRACKING then
+    return true
+  end
+
+  if not isInGame() then
+    return false
+  end
+
+  autotracker_debug("read scarecrow data", DBG_DETAIL)
+
+  local item = Tracker:FindObjectForCode("scarecrow")
+  if item then
+    local value = ReadU8(segment, 0x80400CBC)
+    local newSetting = (value ~= 0)
+    if item.Active ~= newSetting then
+      if newSetting then autotracker_debug(string.format("Y %s", item.Name))
+      else               autotracker_debug(string.format("N %s", item.Name))
+      end
+      item.Active = newSetting
+    end
+  else
+    autotracker_debug(string.format('Unable to find item by code: %s', 'scarecrow'), DBG_ERROR)
+  end
+end
+
 local function updateUsedKeysFromDataAndFlags(data, code, flags)
   local item = Tracker:FindObjectForCode(code)
   if item then

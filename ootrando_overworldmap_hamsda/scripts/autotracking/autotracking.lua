@@ -29,12 +29,13 @@ print("---------------------------------------------------------------------")
 print("")
 
 -- Memory watches
-ScriptHost:AddMemoryWatch("OOT Magic Meter Data", 0x8011A602, 0x01, updateMagicMeterFromMemorySegment)
-ScriptHost:AddMemoryWatch("OOT Biggoron Data"   , 0x8011A60E, 0x01, updateBiggoronFromMemorySegment)
-ScriptHost:AddMemoryWatch("OOT Item Data 1"     , 0x8011A642, 0x1A, updateItems1FromMemorySegment)
-ScriptHost:AddMemoryWatch("OOT Item Data 2"     , 0x8011A66A, 0x4 , updateItems2FromMemorySegment)
-ScriptHost:AddMemoryWatch("OOT Quest Data"      , 0x8011A671, 0x12 , updateQuestFromMemorySegment)
-ScriptHost:AddMemoryWatch("OOT Key Data"        , 0x8011A68F, 0x13, updateKeysFromMemorySegment)
+ScriptHost:AddMemoryWatch("Rando FREE_SCARECROW_ENABLED"  , 0x80400CBC, 0x01, updateScarecrow)
+ScriptHost:AddMemoryWatch("OOT Magic Meter Data"          , 0x8011A602, 0x01, updateMagicMeterFromMemorySegment)
+ScriptHost:AddMemoryWatch("OOT Biggoron Data"             , 0x8011A60E, 0x01, updateBiggoronFromMemorySegment)
+ScriptHost:AddMemoryWatch("OOT Item Data 1"               , 0x8011A642, 0x1A, updateItems1FromMemorySegment)
+ScriptHost:AddMemoryWatch("OOT Item Data 2"               , 0x8011A66A, 0x4 , updateItems2FromMemorySegment)
+ScriptHost:AddMemoryWatch("OOT Quest Data"                , 0x8011A671, 0x12, updateQuestFromMemorySegment)
+ScriptHost:AddMemoryWatch("OOT Key Data"                  , 0x8011A68F, 0x13, updateKeysFromMemorySegment)
 
 ScriptHost:AddMemoryWatch("OOT Save Context Dungeons 1", 0x8011A6A4, 0x054, updateFromSaveContextDungeon1) -- 0x00, 0x01, 0x02
 ScriptHost:AddMemoryWatch("OOT Save Context Dungeons 2", 0x8011A6F8, 0x054, updateFromSaveContextDungeon2) -- 0x03, 0x04, 0x05
