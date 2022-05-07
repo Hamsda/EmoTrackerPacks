@@ -416,6 +416,10 @@ function updateShopsFromSaveContext(segment)
   
   InvalidateReadCaches()
 
+  updateShopCheck(segment, '@Market Potion Shop/Item 1' , 0x0, 0x0)
+  updateShopCheck(segment, '@Market Potion Shop/Item 2' , 0x0, 0x1)
+  updateShopCheck(segment, '@Market Potion Shop/Item 3' , 0x0, 0x2)
+  updateShopCheck(segment, '@Market Potion Shop/Item 4' , 0x0, 0x3)
   updateShopCheck(segment, '@Market Bombchu Shop/Item 1', 0x1, 0x0)
   updateShopCheck(segment, '@Market Bombchu Shop/Item 2', 0x1, 0x1)
   updateShopCheck(segment, '@Market Bombchu Shop/Item 3', 0x1, 0x2)
@@ -444,10 +448,6 @@ function updateShopsFromSaveContext(segment)
   updateShopCheck(segment, '@Kak Bazaar/Item 2'         , 0x7, 0x1)
   updateShopCheck(segment, '@Kak Bazaar/Item 3'         , 0x7, 0x2)
   updateShopCheck(segment, '@Kak Bazaar/Item 4'         , 0x7, 0x3)
-  updateShopCheck(segment, '@Market Potion Shop/Item 1' , 0x8, 0x0)
-  updateShopCheck(segment, '@Market Potion Shop/Item 2' , 0x8, 0x1)
-  updateShopCheck(segment, '@Market Potion Shop/Item 3' , 0x8, 0x2)
-  updateShopCheck(segment, '@Market Potion Shop/Item 4' , 0x8, 0x3)
 end
 
 function updateChestsFromGlobalContext(segment)
