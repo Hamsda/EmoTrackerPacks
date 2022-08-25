@@ -8,17 +8,18 @@ if HAS_MAP then
   end
 end
 
-loading_save_file = false
 function tracker_on_begin_loading_save_file()
-  loading_save_file = true
+  PACK_READY = false
 end
 
 function tracker_on_finish_loading_save_file()
-  loading_save_file = false
+end
+
+function tracker_on_accessibility_updating()
 end
 
 function tracker_on_accessibility_updated()
-  if not loading_save_file then
+  if PACK_READY then
     clear_amount_cache()
 
     if update_items then
@@ -37,4 +38,6 @@ function tracker_on_accessibility_updated()
   end
 end
 
---tracker_on_accessibility_updated()
+function tracker_on_pack_ready()
+  PACK_READY = true
+end
