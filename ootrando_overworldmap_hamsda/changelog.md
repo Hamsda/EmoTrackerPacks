@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- updated `user_presets` (League, Scrubs Tourney, MW Tourney)
+
 ## 3.7.2.0
 
 - added ability to load boolean settings for `user_presets`
