@@ -47,6 +47,8 @@ function PresetLoader:onRightClick()
           setting_object.AcquiredCount = value
         elseif type(setting_object.Active) == "boolean" then
           setting_object.Active = value
+        elseif type(setting_object.ItemState) == "table" then
+          setting_object.ItemState:setProperty("active", value)
         end
       end
     end
