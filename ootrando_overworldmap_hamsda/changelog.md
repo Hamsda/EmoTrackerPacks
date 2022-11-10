@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.7.3.0
 
 - updated `user_presets`
 - added back left click behavior to free reward when `ALTAR_QUICK_MARK` user setting is off
