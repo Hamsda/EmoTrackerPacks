@@ -2,7 +2,7 @@
 
 ## x
 
-- updated `user_presets` (League, Scrubs Tourney, MW Tourney)
+- updated `user_presets`
 - added back left click behavior to free reward when `ALTAR_QUICK_MARK` user setting is off
 
 ## 3.7.2.0
