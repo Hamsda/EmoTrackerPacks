@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Race Mode",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_racemode_off.png",
+        "codes": "setting_racemode,setting_racemode_off",
+        "inherit_codes": false
+      }
+    ]
+  }
+]
+
