@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- fixed closed DoT logic for `DMT Freestanding PoH`
+
 ## 3.7.3.0
 
 - updated `user_presets`
