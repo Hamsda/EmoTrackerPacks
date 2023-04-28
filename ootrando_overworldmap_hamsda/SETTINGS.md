@@ -129,9 +129,10 @@ If you have selected ![Open Door](images/setting_door_open.png "Open Door") or c
 
 ### Randomize Overworld Spawns
 
-- ![Spawn Shuffle Off](images/setting_entrance_spawn_off.png "Spawn Shuffle Off") Spawns are not shuffled.
-- ![Spawn Shuffled](images/setting_entrance_spawn_shuffle.png "Spawn Shuffled") Spawns are shuffled.
-
+- ![Randomize Spawns: Off](images/setting_entrance_spawn_off.png "Randomize Spawns: Off") Spawns are not shuffled.
+- ![Randomize Spawns: Child](images/setting_entrance_spawn_child.png "Randomize Spawns: Child") Child spawn is shuffled.
+- ![Randomize Spawns: Adult](images/setting_entrance_spawn_adult.png "Randomize Spawns: Adult") Adult spawn is shuffled.
+- ![Randomize Spawns: Both](images/setting_entrance_spawn_both.png "Randomize Spawns: Both") Both spawns are shuffled.
 
 ### Bombchus Are Considered in Logic
 

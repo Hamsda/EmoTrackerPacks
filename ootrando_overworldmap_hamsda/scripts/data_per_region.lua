@@ -147,7 +147,7 @@ data_per_region = {
     ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["KF Links House"] = {
-        ["setting"] = "setting_entrance_spawn_shuffle",
+        ["setting"] = "setting_entrance_spawn_child",
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -162,7 +162,7 @@ data_per_region = {
     ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Temple of Time"] = {
-        ["setting"] = "setting_entrance_spawn_shuffle",
+        ["setting"] = "setting_entrance_spawn_adult",
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,

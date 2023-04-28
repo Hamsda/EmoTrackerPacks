@@ -327,17 +327,26 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_entrance_spawn_off.png",
         "img_mods": "@disabled",
-        "codes": "setting_entrance_spawn,setting_entrance_spawn_off"
+        "codes": "setting_entrance_spawn_off"
       },
       {
-        "img": "images/setting_entrance_spawn_shuffle.png",
-        "codes": "setting_entrance_spawn,setting_entrance_spawn_shuffle",
-        "inherits_codes": false
+        "img": "images/setting_entrance_spawn_child.png",
+        "codes": "setting_entrance_spawn_child",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_spawn_adult.png",
+        "codes": "setting_entrance_spawn_adult",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_entrance_spawn_both.png",
+        "codes": "setting_entrance_spawn_child,setting_entrance_spawn_adult",
+        "inherit_codes": false
       }
     ]
   },

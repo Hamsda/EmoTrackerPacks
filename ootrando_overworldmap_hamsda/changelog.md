@@ -3,6 +3,7 @@
 ## x
 
 - fixed closed DoT logic for `DMT Freestanding PoH`
+- changed `Randomize Spawns` setting to have separate options for child/adult/both
 
 ## 3.7.3.0
 
