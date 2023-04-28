@@ -5102,6 +5102,61 @@ data_per_region = {
           return AccessibilityLevel.None
         end
       },
+      ["ZR Frogs Zeldas Lullaby"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Eponas Song"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Sarias Song"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("saria") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Suns Song"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("sun") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Song of Time"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
       ["ZR Near Open Grotto Freestanding PoH"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal

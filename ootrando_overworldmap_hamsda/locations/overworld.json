@@ -4006,6 +4006,56 @@
                     "name": "ZR Frogs",
                     "sections": [
                       {
+                        "name": "ZR Frogs Zeldas Lullaby",
+                        "access_rules": [
+                          "$child_river,ocarina,lullaby"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Eponas Song",
+                        "access_rules": [
+                          "$child_river,ocarina,epona"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Sarias Song",
+                        "access_rules": [
+                          "$child_river,ocarina,saria"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Suns Song",
+                        "access_rules": [
+                          "$child_river,ocarina,sun"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Song of Time",
+                        "access_rules": [
+                          "$child_river,ocarina,time"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
                         "name": "ZR Frogs in the Rain",
                         "access_rules": [
                           "$child_river,ocarina,storm",

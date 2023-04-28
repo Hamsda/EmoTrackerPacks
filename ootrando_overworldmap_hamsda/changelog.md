@@ -4,6 +4,7 @@
 
 - fixed closed DoT logic for `DMT Freestanding PoH`
 - changed `Randomize Spawns` setting to have separate options for child/adult/both
+- added `Shuffle Frog Song Rupees` setting
 
 ## 3.7.3.0
 

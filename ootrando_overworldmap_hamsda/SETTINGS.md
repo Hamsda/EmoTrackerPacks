@@ -210,12 +210,19 @@ This setting determines if Magic Beans are shuffled.
 - ![Magic Beans not shuffled](images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
 - ![Magic Beans shuffled](images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
 
-### Shuffle Medigoron & Carpet Salesman
+### Shuffle Expensive Merchants
 
-This setting determines if Medigoron and Carpet Salesman items are shuffled.
+This setting determines if Medigoron, Granny's Potion Shop, and Carpet Salesman items are shuffled.
 
-- ![Medigoron and Carpet Salesman not shuffled](images/setting_shuffle_merchants_no.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
-- ![Medigoron and Carpet Salesman shuffled](images/setting_shuffle_merchants_yes.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
+- ![Expensive Merchants not shuffled](images/setting_shuffle_merchants_no.png "Expensive Merchants not shuffled") Expensive Merchants are not shuffled.
+- ![Expensive Merchants shuffled](images/setting_shuffle_merchants_yes.png "Expensive Merchants shuffled") Expensive Merchants are shuffled and the merchants sell one randomized item each.
+
+### Shuffle Frog Song Rupees
+
+This setting determines if the rewards for the five grey note songs (besides Song of Storms) are shuffled.
+
+- ![Frog Song Rupees not shuffled](images/setting_shuffle_frogs_no.png "Frog Song Rupees not shuffled") Frog Song Rupees are not shuffled.
+- ![Frog Song Rupees shuffled](images/setting_shuffle_frogs_yes.png "Frog Song Rupees shuffled") Frog Song Rupees are shuffled and playing the songs rewards one randomized item each.
 
 ## Main Rules: Shuffle Dungeon Items
 
