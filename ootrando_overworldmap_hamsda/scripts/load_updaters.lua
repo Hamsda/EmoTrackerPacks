@@ -16,9 +16,6 @@ function tracker_on_finish_loading_save_file()
 end
 
 function tracker_on_accessibility_updating()
-end
-
-function tracker_on_accessibility_updated()
   if PACK_READY then
     clear_amount_cache()
 
@@ -33,9 +30,10 @@ function tracker_on_accessibility_updated()
     end
 
     apply_queued_changes()
-
-    get_object("dummy").Active = not get_object("dummy").Active
   end
+end
+
+function tracker_on_accessibility_updated()
 end
 
 function tracker_on_pack_ready()

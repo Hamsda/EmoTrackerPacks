@@ -782,7 +782,6 @@ function has_blue_fire()
       location_object and location_object.AccessibilityLevel and
         location_object.AccessibilityLevel == AccessibilityLevel.Normal
      then
-      --TODO: trigger dummy update
       return 1, bottle_level
     end
   end
