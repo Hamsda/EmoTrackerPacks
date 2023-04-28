@@ -4393,7 +4393,8 @@
                   {
                     "name": "King Zora",
                     "access_rules": [
-                      "$has_blue_fire"
+                      "$has_blue_fire",
+                      "$can_BFA"
                     ],
                     "sections": [
                       {
@@ -4462,6 +4463,7 @@
                 "access_rules": [
                   "$child_domain",
                   "$adult_domain,$has_blue_fire",
+                  "$adult_domain,$can_BFA",
                   "$spawn_access|ZD Shop|adult"
                 ],
                 "sections": [

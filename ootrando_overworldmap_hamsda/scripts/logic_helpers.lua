@@ -201,6 +201,14 @@ function can_LA()
   end
 end
 
+function can_BFA()
+  if has("setting_blue_fire_arrows_on") and has_age("adult") == 1 and has("magic") and has("bow") and has("icearrow") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
 function has_fire()
   if has_age("adult") == 1 and has("magic") and has("bow") and has("firearrow") or has("dinsfire") and has("magic") then
     return 1, AccessibilityLevel.Normal
@@ -799,13 +807,19 @@ function zora_tunic()
     if spawn_access("ZD Shop", "adult") > 0 then
       return 1, AccessibilityLevel.Normal
     end
+    local bfa_count, bfa_level = can_BFA()
     local bottle_count, bottle_level = has_bottle()
     local domain_count, domain_level = adult_domain()
-    if bottle_count > 0 and domain_count > 0 then
-      if bottle_level == AccessibilityLevel.SequenceBreak or domain_level == AccessibilityLevel.SequenceBreak then
-        return 1, AccessibilityLevel.SequenceBreak
-      else
-        return 1, AccessibilityLevel.Normal
+    if domain_count > 0 then
+      if bfa_count > 0 then
+        return 1, domain_level
+      end
+      if bottle_count > 0 then
+        if bottle_level == AccessibilityLevel.SequenceBreak or domain_level == AccessibilityLevel.SequenceBreak then
+          return 1, AccessibilityLevel.SequenceBreak
+        else
+          return 1, AccessibilityLevel.Normal
+        end
       end
     end
   end

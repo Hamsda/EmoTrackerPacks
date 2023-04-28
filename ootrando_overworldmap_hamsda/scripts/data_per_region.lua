@@ -5354,7 +5354,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_blue_fire()
+          return or_accessibility(can_BFA(), has_blue_fire())
         end
       },
       ["ZD GS Frozen Waterfall"] = {
@@ -10777,7 +10777,7 @@ data_per_region = {
         ["adult_access"] = function()
           local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
-          return and_accessibility(has_blue_fire(), hammer, can_LA())
+          return and_accessibility(or_accessibility(can_BFA(), has_blue_fire()), hammer, can_LA())
         end
       },
       ["Ganons Castle Water Trial Chests"] = {
@@ -11137,7 +11137,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
 
-          return and_accessibility(has_blue_fire(), can_LA(), keys)
+          return and_accessibility(or_accessibility(can_BFA(), has_blue_fire()), can_LA(), keys)
         end
       },
       ["Ganons Castle MQ Water Trial Chest"] = {
@@ -11145,7 +11145,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle(), AccessibilityLevel.SequenceBreak)
         end
       }
     }
@@ -12080,7 +12080,7 @@ data_per_region = {
             end
           end
 
-          return and_accessibility(lot, has_bottle(), or_accessibility(sot, wall))
+          return and_accessibility(lot, or_accessibility(can_BFA(), has_bottle()), or_accessibility(sot, wall))
         end
       }
     }
@@ -12265,7 +12265,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern Compass Chest"] = {
@@ -12273,7 +12273,7 @@ data_per_region = {
           return has_blue_fire()
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern Iron Boots Chest"] = {
@@ -12284,7 +12284,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Sheik in Ice Cavern"] = {
@@ -12295,7 +12295,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern Freestanding PoH"] = {
@@ -12303,7 +12303,7 @@ data_per_region = {
           return has_blue_fire()
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern GS Spinning Scythe Room"] = {
@@ -12343,7 +12343,7 @@ data_per_region = {
           end
           local collect = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.Inspect
 
-          return and_accessibility(has_bottle(), kill, collect)
+          return and_accessibility(or_accessibility(can_BFA(), has_bottle()), kill, collect)
         end
       },
       ["Ice Cavern GS Push Block Room"] = {
@@ -12358,7 +12358,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("hookshot") then
-            return has_bottle()
+            return or_accessibility(can_BFA(), has_bottle())
           end
 
           local kill = has_explosives()
@@ -12369,7 +12369,7 @@ data_per_region = {
           local trick = has("logic_ice_block_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           return and_accessibility(
-            has_bottle(),
+            or_accessibility(can_BFA(), has_bottle()),
             or_accessibility(and_accessibility(hb, trick), and_accessibility(kill, AccessibilityLevel.Inspect))
           )
         end
@@ -12407,7 +12407,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern MQ Iron Boots Region"] = {
@@ -12415,7 +12415,7 @@ data_per_region = {
           return has_blue_fire()
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       }
     }
@@ -12432,7 +12432,7 @@ data_per_region = {
           return and_accessibility(has_bottle(), has_projectile("child"))
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       }
     }

@@ -153,6 +153,13 @@ function can_LA()
   return AccessibilityLevel.None
 end
 
+function can_BFA()
+  if has("setting_blue_fire_arrows_on") and has("bow") and has("magic") and has("icearrow") then
+    return AccessibilityLevel.Normal
+  end
+  return AccessibilityLevel.None
+end
+
 function can_child_attack()
   if has("sling") or has("boomerang") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
     return AccessibilityLevel.Normal

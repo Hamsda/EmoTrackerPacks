@@ -752,6 +752,24 @@
     ]
   },
   {
+    "name": "Blue Fire Arrows",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_blue_fire_arrows.png",
+        "img_mods": "@disabled",
+        "codes": "setting_blue_fire_arrows,setting_blue_fire_arrows_off"
+      },
+      {
+        "img": "images/setting_blue_fire_arrows.png",
+        "codes": "setting_blue_fire_arrows,setting_blue_fire_arrows_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Nighttime Skulltulas Expect Sun's Song",
     "type": "progressive",
     "allow_disabled": false,

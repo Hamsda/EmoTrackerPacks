@@ -297,6 +297,10 @@ This setting determines how much damage you take ([see wiki](https://wiki.ootran
 - ![Damage x4](images/setting_damage_quadruple.png "Damage x4") Damage is quadrupled.
 - ![OHKO](images/setting_damage_ohko.png "OHKO") Damage kills you in one hit.
 
+### Blue Fire Arrows
+
+- ![Blue Fire Arrows](images/setting_blue_fire_arrows.png "Blue Fire Arrows") Changes Ice Arrows to Blue Fire Arrows and allows them to melt red ice (and mud walls out of logic).
+
 ### Nighttime Skulltulas Expect Sun's Song
 
 This setting determines if logic expects the player to have an ocarina and the Sun’s Song to get Gold Skulltula locations that are only found at nighttime.

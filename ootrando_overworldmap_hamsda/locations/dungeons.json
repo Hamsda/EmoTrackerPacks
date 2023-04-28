@@ -1336,7 +1336,8 @@
     "name": "Ice Cavern",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "ice_reg,$adult_fountain,$has_bottle"
+      "ice_reg,$adult_fountain,$has_bottle",
+      "ice_reg,$adult_fountain,$can_BFA"
     ],
     "sections": [
       {
@@ -1415,6 +1416,7 @@
         "short_name": "Iron Boots",
         "access_rules": [
           "$has_bottle",
+          "$can_BFA",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1425,6 +1427,7 @@
         "short_name": "Song",
         "access_rules": [
           "$has_bottle",
+          "$can_BFA",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1449,7 +1452,8 @@
     "name": "Ice Cavern MQ",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "ice_mq,$adult_fountain,$has_bottle"
+      "ice_mq,$adult_fountain,$has_bottle",
+      "ice_mq,$adult_fountain,$can_BFA"
     ],
     "sections": [
       {
@@ -1520,6 +1524,7 @@
         "short_name": "Iron Boots",
         "access_rules": [
           "$has_bottle",
+          "$can_BFA",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1530,6 +1535,7 @@
         "short_name": "Song",
         "access_rules": [
           "$has_bottle",
+          "$can_BFA",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -5100,7 +5106,8 @@
         "name": "Water Trial Clear",
         "short_name": "Water Trial",
         "access_rules": [
-          "$has_bottle,hammer,$can_LA"
+          "$has_bottle,hammer,$can_LA",
+          "$can_BFA,hammer,$can_LA"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -5314,7 +5321,8 @@
         "name": "Water Trial Chest",
         "short_name": "Water Trial",
         "access_rules": [
-          "$has_bottle"
+          "$has_bottle",
+          "$can_BFA"
         ],
         "item_count": 1
       },
@@ -5322,7 +5330,8 @@
         "name": "Water Trial Clear",
         "short_name": "Water Trial",
         "access_rules": [
-          "$has_bottle,$can_LA,gc_small_keys:1,[gc_small_keys:3]"
+          "$has_bottle,$can_LA,gc_small_keys:1,[gc_small_keys:3]",
+          "$can_BFA,$can_LA,gc_small_keys:1,[gc_small_keys:3]"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -5794,12 +5803,12 @@
         "access_rules": [
           "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,ocarina,time",
           "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield2",
-          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[ocarina],[time],bombs,shield3",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$can_BFA,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$can_BFA,[logic_gtg_fake_wall],hoverboots",
           "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,ocarina,time",
           "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield2",
-          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[ocarina],[time],bombs,shield3"
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$can_BFA,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$can_BFA,[logic_gtg_fake_wall],hoverboots"
         ],
         "visibility_rules": [
           "hidden_region"
