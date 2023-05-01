@@ -2009,12 +2009,28 @@
                       "mushroom"
                     ],
                     "hosted_item": "capture_oddpotion"
+                  },
+                  {
+                    "name": "Buy Potion",
+                    "access_rules": [
+                      "$has_age|adult,wallet,oddpotion",
+                      "$has_age|adult,wallet,poachersaw",
+                      "$has_age|adult,wallet,brokensword",
+                      "$has_age|adult,wallet,prescription",
+                      "$has_age|adult,wallet,speedfrog",
+                      "$has_age|adult,wallet,eyedrops",
+                      "$has_age|adult,wallet,claimcheck"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffle_merchants_yes"
+                    ],
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1860,
+                    "x": 1865,
                     "y": 360
                   }
                 ]

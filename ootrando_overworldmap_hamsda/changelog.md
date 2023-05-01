@@ -6,6 +6,7 @@
 - changed `Randomize Spawns` setting to have separate options for child/adult/both
 - added `Shuffle Frog Song Rupees` setting
 - added `Blue Fire Arrows` setting
+- added granny's blue potion to `Shuffle Expensive Merchants` setting
 
 ## 3.7.3.0
 

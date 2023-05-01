@@ -3704,6 +3704,20 @@ data_per_region = {
   ["Kak Odd Medicine Building"] = {
     ["scene"] = "Kak Odd Medicine Building",
     ["pool"] = ER_POOL_TYPES.INTERIOR,
+    ["locations"] = {
+      ["Kak Granny Buy Blue Potion"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local wallet = has("wallet") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trade =
+            (has("oddpotion") or has("poachersaw") or has("brokensword") or has("prescription") or has("speedfrog") or has("eyedrops") or has("claimcheck")) and
+            AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(wallet, trade)
+        end
+      }
+    },
     ["exits"] = {
       ["Kak Backyard"] = {
         ["child_access"] = function()

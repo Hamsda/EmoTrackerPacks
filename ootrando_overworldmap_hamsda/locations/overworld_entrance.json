@@ -2643,6 +2643,30 @@
             ]
           },
           {
+            "name": "Kak Odd Medicine Building",
+            "sections": [
+              {
+                "name": "Kak Granny Buy Blue Potion",
+                "short_name": "Buy Potion",
+                "access_rules": [
+                  "$access_location|Kak Granny Buy Blue Potion"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_shuffle_merchants_no",
+                  "setting_entrance_interiors_simple"
+                ],
+                "x": 1865,
+                "y": 360
+              }
+            ]
+          },
+          {
             "name": "Kak Bazaar",
             "sections": [
               {
