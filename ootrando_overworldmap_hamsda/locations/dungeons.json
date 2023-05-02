@@ -793,13 +793,18 @@
         "access_rules": [
           "@Dodongos Cavern MQ/Lobby,dodongos_cavern_shortcuts",
           "@Dodongos Cavern MQ/Elevator,$has_explosives",
-          //TODO: eye tricks rename/new?
-          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes],$has_age|child,sticks",
-          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes],dinsfire,magic",
-          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes],$has_age|adult,[logic_dc_jump]",
-          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes],$has_age|adult,hammer",
-          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes],$has_age|adult,hoverboots",
-          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes],$has_age|adult,hookshot"
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_child],$has_age|child,sticks",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_child],dinsfire,magic",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_child],$has_age|adult,[logic_dc_jump]",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_child],$has_age|adult,hammer",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_child],$has_age|adult,hoverboots",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_child],$has_age|adult,hookshot",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_adult],$has_age|child,sticks",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_adult],dinsfire,magic",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_adult],$has_age|adult,[logic_dc_jump]",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_adult],$has_age|adult,hammer",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_adult],$has_age|adult,hoverboots",
+          "@Dodongos Cavern MQ/Elevator,lift1,[logic_dc_mq_eyes_adult],$has_age|adult,hookshot"
         ],
         "visibility_rules": [
           "hidden_region"

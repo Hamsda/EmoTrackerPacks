@@ -6332,7 +6332,6 @@ data_per_region = {
           )
         end,
         ["adult_access"] = function()
-          --TODO: irrelevant inspect logic
           if has("hookshot") then
             return can_blast()
           end
@@ -8617,20 +8616,17 @@ data_per_region = {
           local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local trick_eyes = has("logic_dc_mq_eyes") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_adult =
+            has("logic_dc_mq_eyes_adult") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local trick_child =
-            has("logic_dc_mq_child_back") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            has("logic_dc_mq_eyes_child") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local trick_jump = has("logic_dc_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           return or_accessibility(
             has_explosives(),
             and_accessibility(
               lift,
-              or_accessibility(
-                --TODO: new trick names
-                and_accessibility(trick_eyes, adult),
-                trick_child
-              ),
+              or_accessibility(and_accessibility(trick_adult, adult), trick_child),
               or_accessibility(sticks, df, and_accessibility(adult, or_accessibility(trick_jump, hammer, hb, hs)))
             )
           )
@@ -8643,18 +8639,17 @@ data_per_region = {
           local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local trick_eyes = has("logic_dc_mq_eyes") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_adult =
+            has("logic_dc_mq_eyes_adult") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_child =
+            has("logic_dc_mq_eyes_child") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local trick_jump = has("logic_dc_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           return or_accessibility(
             has_explosives(),
             and_accessibility(
               lift,
-              or_accessibility(
-                --TODO: new trick names
-                trick_eyes,
-                and_accessibility(trick_eyes, child)
-              ),
+              or_accessibility(trick_adult, and_accessibility(trick_child, child)),
               or_accessibility(and_accessibility(sticks, child), df, trick_jump, hammer, hb, hs)
             )
           )
@@ -8785,11 +8780,7 @@ data_per_region = {
             rang,
             df,
             and_accessibility(shortcut, or_accessibility(can_child_attack(), lift1)),
-            or_accessibility(
-              --TODO: why this one?
-              sticks,
-              and_accessibility(or_accessibility(nuts, rang), or_accessibility(sword1, sling))
-            )
+            or_accessibility(sticks, and_accessibility(or_accessibility(nuts, rang), or_accessibility(sword1, sling)))
           )
         end,
         ["adult_access"] = function()
@@ -8812,11 +8803,7 @@ data_per_region = {
             has_explosives(),
             df,
             shortcut,
-            or_accessibility(
-              --TODO: why this one?
-              sticks,
-              and_accessibility(or_accessibility(nuts, rang), or_accessibility(sword1, sling))
-            )
+            or_accessibility(sticks, and_accessibility(or_accessibility(nuts, rang), or_accessibility(sword1, sling)))
           )
         end,
         ["adult_access"] = function()
@@ -8853,7 +8840,6 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          --TODO: new trick?
           local trick =
             has("logic_dc_mq_hammer_floor") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local shortcut = has("dodongos_cavern_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -12891,8 +12877,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          --TODO: rename trick
-          if has("scale") or has("logic_jabu_scrub_jump_dive") or has("ironboots") then
+          if has("scale") or has("logic_jabu_alcove_jump_dive") or has("ironboots") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -13113,7 +13098,7 @@ data_per_region = {
       ["Jabu Jabus Belly MQ Compass Chest"] = {
         ["child_access"] = function()
           local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local trick = has("logic_jabu_mq_rang_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak --TODO: new trick?
+          local trick = has("logic_jabu_mq_rang_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local boomerang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           return or_accessibility(sling, has_bombchus(), and_accessibility(trick, boomerang))
@@ -13121,7 +13106,7 @@ data_per_region = {
         ["adult_access"] = function()
           local scale = has("scale") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick =
-            has("logic_jabu_alcove_jump_dive") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak --TODO: new trick?
+            has("logic_jabu_alcove_jump_dive") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local ironboots = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hookshot = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -13149,7 +13134,7 @@ data_per_region = {
         ["adult_access"] = function()
           local scale = has("scale") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick =
-            has("logic_jabu_alcove_jump_dive") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak --TODO: new trick?
+            has("logic_jabu_alcove_jump_dive") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local ironboots = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           return or_accessibility(scale, access_region("Jabu Jabus Belly MQ Elevator Room", "child"), trick, ironboots)
@@ -16277,7 +16262,6 @@ data_per_region = {
         end
       },
       ["Water Temple GS Central Pillar"] = {
-        --TODO: peek this gs
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,

@@ -485,13 +485,25 @@
       },
       {
         "type": "item",
+        "item": "logic_spirit_platform_hookshot",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "logic_spirit_mq_sun_block_gs",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_jabu_scrub_jump_dive",
+        "item": "logic_jabu_alcove_jump_dive",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_jabu_mq_rang_jump",
         "width": 200,
         "height": 16
       },
@@ -582,6 +594,18 @@
       {
         "type": "item",
         "item": "logic_shadow_mq_huge_pit",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_mq_windy_walkway",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_mq_after_wind_gs",
         "width": 200,
         "height": 16
       },
@@ -774,6 +798,12 @@
       {
         "type": "item",
         "item": "logic_shadow_statue",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_shadow_bongo",
         "width": 200,
         "height": 16
       },
@@ -1013,13 +1043,19 @@
       },
       {
         "type": "item",
-        "item": "logic_dc_mq_eyes",
+        "item": "logic_dc_mq_eyes_adult",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_dc_mq_child_back",
+        "item": "logic_dc_mq_hammer_floor",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_dc_mq_eyes_child",
         "width": 200,
         "height": 16
       },
@@ -1139,7 +1175,19 @@
       },
       {
         "type": "item",
-        "item": "logic_lens_shadow_mq_back",
+        "item": "logic_lens_shadow_mq_platform",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_shadow_mq_invisible_blades",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "logic_lens_shadow_mq_dead_hand",
         "width": 200,
         "height": 16
       },
@@ -1151,7 +1199,7 @@
       },
       {
         "type": "item",
-        "item": "logic_lens_shadow_back",
+        "item": "logic_lens_shadow_platform",
         "width": 200,
         "height": 16
       },
