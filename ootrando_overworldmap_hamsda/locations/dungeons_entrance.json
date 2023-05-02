@@ -2985,12 +2985,20 @@
             "item_count": 2
           },
           {
-            "name": "Boomerang Room Chests",
+            "name": "Boomerang Room Small Chest",
+            "short_name": "Boomerang Small",
+            "access_rules": [
+              "$access_location|Jabu Jabus Belly MQ Boomerang Room Small Chest"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Boomerang Chest",
             "short_name": "Boomerang",
             "access_rules": [
-              "$access_location|Jabu Jabus Belly MQ Boomerang Room Chests"
+              "$access_location|Jabu Jabus Belly MQ Boomerang Chest"
             ],
-            "item_count": 2
+            "item_count": 1
           },
           {
             "name": "GS Boomerang Chest Room",
@@ -3250,13 +3258,21 @@
             "item_count": 1
           },
           {
-            "name": "After Wind Chests",
-            "short_name": "After Wind",
+            "name": "After Wind Enemy Chest",
+            "short_name": "After Wind Enemy",
             "access_rules": [
-              "$access_location|Shadow Temple After Wind Chests"
+              "$access_location|Shadow Temple After Wind Enemy Chest"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "After Wind Hidden Chest",
+            "short_name": "After Wind Hidden",
+            "access_rules": [
+              "$access_location|Shadow Temple After Wind Hidden Chest"
             ],
             "chest_unopened_img": "images/chest_brown_small_key.png",
-            "item_count": 2
+            "item_count": 1
           },
           {
             "name": "GS Near Ship",
@@ -3476,17 +3492,26 @@
             "visibility_rules": [
               "setting_tokens_dungeons"
             ],
+            "capture_item": true,
             "chest_unopened_img": "images/skulltula.png",
             "chest_opened_img": "images/skulltula_token.png",
             "item_count": 1
           },
           {
-            "name": "After Wind Chests",
-            "short_name": "After Wind",
+            "name": "After Wind Enemy Chest",
+            "short_name": "After Wind Enemy",
             "access_rules": [
-              "$access_location|Shadow Temple MQ After Wind Chests"
+              "$access_location|Shadow Temple MQ After Wind Enemy Chest"
             ],
-            "item_count": 2
+            "item_count": 1
+          },
+          {
+            "name": "After Wind Hidden Chest",
+            "short_name": "After Wind Hidden",
+            "access_rules": [
+              "$access_location|Shadow Temple MQ After Wind Hidden Chest"
+            ],
+            "item_count": 1
           },
           {
             "name": "GS After Wind",
