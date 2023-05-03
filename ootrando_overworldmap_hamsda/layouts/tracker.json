@@ -1,10 +1,10 @@
 {
   "tracker_default": {
     "type": "layout",
-    "key": "tracker_right_map"
+    "key": "tracker_very_tall"
   },
   "tracker_horizontal": {
     "type": "layout",
-    "key": "tracker_right_map"
+    "key": "tracker_wide_with_scrollable_pins"
   }
 }

@@ -8,6 +8,9 @@
 - added `Blue Fire Arrows` setting
 - added granny's blue potion to `Shuffle Expensive Merchants` setting
 - added `Dungeon Boss Shortcuts` setting
+- changed layouts to accomodate smaller resolutions better
+  - moved pinned locations between items and map in horizontal layout
+  - added scrollbar to pinned locations in horizontal layout
 
 ## 3.7.3.0
 
