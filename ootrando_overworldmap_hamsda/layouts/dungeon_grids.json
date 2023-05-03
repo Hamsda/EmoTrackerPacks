@@ -65,14 +65,14 @@
             "content": [
               {
                 "type": "item",
-                "item": "forest_label",
+                "item": "forest_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
               },
               {
                 "type": "item",
-                "item": "deku_label",
+                "item": "deku_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 20,
@@ -89,14 +89,14 @@
             "content": [
               {
                 "type": "item",
-                "item": "fire_label",
+                "item": "fire_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
               },
               {
                 "type": "item",
-                "item": "dodongo_label",
+                "item": "dodongo_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 20,
@@ -120,7 +120,7 @@
               },
               {
                 "type": "item",
-                "item": "jabu_label",
+                "item": "jabu_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 20,
@@ -137,7 +137,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "spirit_label",
+                "item": "spirit_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -161,7 +161,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "shadow_label",
+                "item": "shadow_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -327,7 +327,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "forest_label",
+                "item": "forest_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -342,7 +342,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "fire_label",
+                "item": "fire_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -381,7 +381,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "spirit_label",
+                "item": "spirit_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -405,7 +405,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "shadow_label",
+                "item": "shadow_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -453,7 +453,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "deku_label",
+                "item": "deku_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -468,7 +468,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "dodongo_label",
+                "item": "dodongo_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -483,7 +483,7 @@
             "content": [
               {
                 "type": "item",
-                "item": "jabu_label",
+                "item": "jabu_shortcuts",
                 "canvas_depth": 1,
                 "width": 32,
                 "height": 12
@@ -518,7 +518,7 @@
               },
               {
                 "type": "item",
-                "item": "forest_label",
+                "item": "forest_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,
@@ -542,7 +542,7 @@
               },
               {
                 "type": "item",
-                "item": "fire_label",
+                "item": "fire_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,
@@ -590,7 +590,7 @@
               },
               {
                 "type": "item",
-                "item": "spirit_label",
+                "item": "spirit_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,
@@ -614,7 +614,7 @@
               },
               {
                 "type": "item",
-                "item": "shadow_label",
+                "item": "shadow_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,
@@ -670,7 +670,7 @@
               },
               {
                 "type": "item",
-                "item": "deku_label",
+                "item": "deku_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,
@@ -694,7 +694,7 @@
               },
               {
                 "type": "item",
-                "item": "dodongo_label",
+                "item": "dodongo_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,
@@ -718,7 +718,7 @@
               },
               {
                 "type": "item",
-                "item": "jabu_label",
+                "item": "jabu_shortcuts",
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 34,

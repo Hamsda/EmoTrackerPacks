@@ -7,6 +7,7 @@
 - added `Shuffle Frog Song Rupees` setting
 - added `Blue Fire Arrows` setting
 - added granny's blue potion to `Shuffle Expensive Merchants` setting
+- added `Dungeon Boss Shortcuts` setting
 
 ## 3.7.3.0
 
