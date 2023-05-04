@@ -646,7 +646,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            has("hoverboots") or has("longshot") or has("logic_lost_woods_bridge") or
+            has("hoverboots") or has("longshot") or has("logic_lost_woods_bridge") or has("setting_plant_beans_on") or
               (has("beans") and access_region("Lost Woods", "child") == AccessibilityLevel.Normal)
            then
             return AccessibilityLevel.Normal
@@ -724,6 +724,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local bean = AccessibilityLevel.None
           if has("beans") then
             bean = access_region("LW Beyond Mido", "child")
@@ -1213,8 +1216,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          local plant = has("setting_plant_beans_on") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          return or_accessibility(can_use_scarecrow(), and_accessibility(beans, access_region("Lake Hylia", "child")))
+          return or_accessibility(
+            can_use_scarecrow(),
+            plant,
+            and_accessibility(beans, access_region("Lake Hylia", "child"))
+          )
         end
       },
       ["LH GS Bean Patch"] = {
@@ -1308,10 +1316,12 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           local water = has("water") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local plant = has("setting_plant_beans_on") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
           return or_accessibility(
             water,
             can_use_scarecrow(),
+            plant,
             and_accessibility(beans, access_region("Lake Hylia", "child"))
           )
         end
@@ -2121,6 +2131,9 @@ data_per_region = {
           return AccessibilityLevel.Inspect
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           if has("beans") then
             return access_region("Desert Colossus", "child")
           end
@@ -2154,6 +2167,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local bean = AccessibilityLevel.None
           if has("beans") then
             bean = access_region("Desert Colossus", "child")
@@ -3747,6 +3763,9 @@ data_per_region = {
           return AccessibilityLevel.Inspect
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local bean = AccessibilityLevel.None
           if has("beans") then
@@ -4089,6 +4108,9 @@ data_per_region = {
           if has("hoverboots") then
             return AccessibilityLevel.Normal
           end
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local bean = AccessibilityLevel.None
           if has("beans") then
             local lift = AccessibilityLevel.None
@@ -4158,13 +4180,12 @@ data_per_region = {
           end
 
           local bean = AccessibilityLevel.None
-          if has("beans") then
-            local trick =
-              has("logic_trail_gs_lower_bean") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-            local lift = AccessibilityLevel.None
-            if has("lift1") then
-              lift = AccessibilityLevel.Normal
-            end
+          local trick =
+            has("logic_trail_gs_lower_bean") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          if has("setting_plant_beans_on") then
+            bean = trick
+          elseif has("beans") then
+            local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
             bean =
               and_accessibility(
               trick,
@@ -4203,6 +4224,7 @@ data_per_region = {
           return or_accessibility(has_explosives(), and_accessibility(hammer, access_region("Death Mountain", "adult")))
         end,
         ["adult_access"] = function()
+          local plant = has("setting_plant_beans_on") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lift = has("lift") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_dmt_climb_hovers") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
@@ -4211,6 +4233,7 @@ data_per_region = {
           return or_accessibility(
             can_blast(),
             or_accessibility(
+              plant,
               and_accessibility(beans, lift, access_region("Death Mountain", "child")),
               and_accessibility(trick, hovers)
             )
@@ -4873,7 +4896,9 @@ data_per_region = {
             has("logic_crater_bean_poh_with_hovers") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           local bean = AccessibilityLevel.None
-          if has("beans") then
+          if has("setting_plant_beans_on") then
+            bean = AccessibilityLevel.Normal
+          elseif has("beans") then
             bean = access_region("DMC Central Nearby", "child")
           end
 
@@ -4930,7 +4955,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hoverboots") or has("hookshot") then
+          if has("hoverboots") or has("hookshot") or has("setting_plant_beans_on") then
             return AccessibilityLevel.Normal
           end
           if has("beans") then
@@ -4944,6 +4969,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           if has("beans") then
             return access_region("DMC Central Local", "child")
           end

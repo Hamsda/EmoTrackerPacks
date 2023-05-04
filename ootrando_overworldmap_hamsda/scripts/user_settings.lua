@@ -8,9 +8,6 @@ SONG_BADGE_LAST_ACTIVATED = false
 -- left clicking the free reward will turn on a quick mark mode for the adult altar
 ALTAR_QUICK_MARK = false
 
--- beans will need to be planted before their corresponding checks become available
-BEAN_PLANTING = false
-
 -- puts badges of captured icons on the map locations
 -- visibility is not the greatest, but can help at a glance
 ER_BADGE_EXITS = false

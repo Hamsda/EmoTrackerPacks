@@ -690,6 +690,24 @@
     ]
   },
   {
+    "name": "Plant Magic Beans",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_plant_beans.png",
+        "img_mods": "@disabled",
+        "codes": "setting_plant_beans,setting_plant_beans_off"
+      },
+      {
+        "img": "images/setting_plant_beans.png",
+        "codes": "setting_plant_beans,setting_plant_beans_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Hints",
     "type": "progressive",
     "allow_disabled": false,

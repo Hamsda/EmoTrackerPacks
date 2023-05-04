@@ -84,21 +84,6 @@ function hintable()
   end
 end
 
-function bean_planting(state)
-  if state == "yes" then
-    if BEAN_PLANTING then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif state == "no" then
-    if not BEAN_PLANTING then
-      return 1, AccessibilityLevel.Normal
-    end
-  else
-    print("error! bean_planting - invalid state")
-  end
-  return 0, AccessibilityLevel.None
-end
-
 function has_bombchus()
   local bombs = Tracker:ProviderCountForCode("bombs")
   local chus = Tracker:ProviderCountForCode("bombchu")
@@ -477,7 +462,7 @@ function _dmt_climb()
     return 1, AccessibilityLevel.Normal
   end
 
-  if has_age("both") > 0 and has("lift1") and (has("bean_trail_yes") or (has("beans") and not BEAN_PLANTING)) then
+  if has_age("both") > 0 and has("lift1") and (has("setting_plant_beans_on") or has("beans")) then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -537,7 +522,7 @@ function _dmc_central_to_lower()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
-  if has("hoverboots") or has("hookshot") or (has_age("both") > 0 and has("ocarina") and has("bolero") and has("beans")) then
+  if has("hoverboots") or has("hookshot") or has("setting_plant_beans_on") or (has_age("both") > 0 and has("ocarina") and has("bolero") and has("beans")) then
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None

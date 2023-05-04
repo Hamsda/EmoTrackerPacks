@@ -278,6 +278,10 @@ This setting determines if all masks will be available once the Happy Mask Shop 
 - ![Mask Quest not complete](images/setting_masks_off.png "Mask Quest not complete") The mask quest has to be completed step by step like in the vanilla game.
 - ![Mask Quest complete](images/setting_masks_complete.png "Mask Quest complete") All the masks will be available once the Happy Mask Shop is open.
 
+### Plant Magic Beans
+
+- ![Plant Magic Beans](images/setting_plant_beans.png "Plant Magic Beans") Plants all 10 magic beans in their soft soil spots and allows adult to ride them.
+
 ### Hints
 
 This setting determines when hintable locations will show up on the map ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other)).
