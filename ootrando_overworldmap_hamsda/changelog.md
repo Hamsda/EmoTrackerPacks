@@ -12,6 +12,7 @@
   - moved pinned locations between items and map in horizontal layout
   - added scrollbar to pinned locations in horizontal layout
 - added `Plant Magic Beans` setting and removed bean planting `user_setting`
+- updated `user_presets`
 
 ## 3.7.3.0
 
