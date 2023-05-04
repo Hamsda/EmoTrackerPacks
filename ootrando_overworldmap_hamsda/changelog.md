@@ -1,6 +1,6 @@
 # Changelog
 
-## x
+## 3.8.0.0
 
 - fixed closed DoT logic for `DMT Freestanding PoH`
 - changed `Randomize Spawns` setting to have separate options for child/adult/both
