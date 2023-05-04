@@ -14,19 +14,25 @@ The pack offers 7 different variants:
 6. Entrance Randomizer
 7. Entrance Randomizer (Keysanity)
 
-## Vanilla vs Master Quest Dungeons
+## Dungeon Labels
+
+The small labels with the dungeon names serve two purposes in regards to logic.
+
+### Vanilla vs Master Quest Dungeons
 
 The randomizer has the option to switch some or all dungeons to their Master Quest equivalents.
-To accomodate for this, you can click on the dungeon labels to change their current status:
+To accomodate for this, you can left click on the dungeon labels to change their current status:
 
 - ![Vanilla](images/label_deku.png "Vanilla") The dungeons vanilla checks will be shown.
 - ![Master Quest](images/label_deku_mq.png "Master Quest") The dungeons MQ checks will be shown.
 - ![Unknown](images/label_deku_red.png "Unknown") Both versions of the dungeon will be shown.
 
-You can use this in the non map variants as a reminder.
-
 The small key maximum amounts in the keysanity variants will dynamically update according to what you selected for the corresponding dungeon.
 If you have a dungeon marked as unknown in non-keysanity, some of the checks in the dungeon might not show up correctly until you pick either vanilla or MQ.
+
+### Dungeon Boss Shortcuts
+
+The randomizer also has the option to activate certain shortcuts to reach the boss faster in dungeons with blue warps. To mark that one of these is active, right clicking e.g. ![Label](images/label_deku.png "Label") will overlay it with ![Boss Shortcut](images/overlay_boss_icon.png "Boss Shortcut").
 
 ## Special items
 

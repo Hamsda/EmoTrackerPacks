@@ -147,7 +147,7 @@ data_per_region = {
     ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["KF Links House"] = {
-        ["setting"] = "setting_entrance_spawn_shuffle",
+        ["setting"] = "setting_entrance_spawn_child",
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -162,7 +162,7 @@ data_per_region = {
     ["pool"] = ER_POOL_TYPES.ROOT,
     ["exits"] = {
       ["Temple of Time"] = {
-        ["setting"] = "setting_entrance_spawn_shuffle",
+        ["setting"] = "setting_entrance_spawn_adult",
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -646,7 +646,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            has("hoverboots") or has("longshot") or has("logic_lost_woods_bridge") or
+            has("hoverboots") or has("longshot") or has("logic_lost_woods_bridge") or has("setting_plant_beans_on") or
               (has("beans") and access_region("Lost Woods", "child") == AccessibilityLevel.Normal)
            then
             return AccessibilityLevel.Normal
@@ -724,6 +724,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local bean = AccessibilityLevel.None
           if has("beans") then
             bean = access_region("LW Beyond Mido", "child")
@@ -1213,8 +1216,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          local plant = has("setting_plant_beans_on") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          return or_accessibility(can_use_scarecrow(), and_accessibility(beans, access_region("Lake Hylia", "child")))
+          return or_accessibility(
+            can_use_scarecrow(),
+            plant,
+            and_accessibility(beans, access_region("Lake Hylia", "child"))
+          )
         end
       },
       ["LH GS Bean Patch"] = {
@@ -1308,10 +1316,12 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           local water = has("water") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local plant = has("setting_plant_beans_on") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
           return or_accessibility(
             water,
             can_use_scarecrow(),
+            plant,
             and_accessibility(beans, access_region("Lake Hylia", "child"))
           )
         end
@@ -2121,6 +2131,9 @@ data_per_region = {
           return AccessibilityLevel.Inspect
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           if has("beans") then
             return access_region("Desert Colossus", "child")
           end
@@ -2154,6 +2167,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local bean = AccessibilityLevel.None
           if has("beans") then
             bean = access_region("Desert Colossus", "child")
@@ -3704,6 +3720,23 @@ data_per_region = {
   ["Kak Odd Medicine Building"] = {
     ["scene"] = "Kak Odd Medicine Building",
     ["pool"] = ER_POOL_TYPES.INTERIOR,
+    ["locations"] = {
+      ["Kak Granny Buy Blue Potion"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local wallet = has("wallet") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trade =
+            (has("oddpotion") or has("poachersaw") or has("brokensword") or has("prescription") or has("speedfrog") or
+            has("eyedrops") or
+            has("claimcheck")) and
+            AccessibilityLevel.Normal or
+            AccessibilityLevel.None
+          return and_accessibility(wallet, trade)
+        end
+      }
+    },
     ["exits"] = {
       ["Kak Backyard"] = {
         ["child_access"] = function()
@@ -3730,6 +3763,9 @@ data_per_region = {
           return AccessibilityLevel.Inspect
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local bean = AccessibilityLevel.None
           if has("beans") then
@@ -4072,6 +4108,9 @@ data_per_region = {
           if has("hoverboots") then
             return AccessibilityLevel.Normal
           end
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           local bean = AccessibilityLevel.None
           if has("beans") then
             local lift = AccessibilityLevel.None
@@ -4141,13 +4180,12 @@ data_per_region = {
           end
 
           local bean = AccessibilityLevel.None
-          if has("beans") then
-            local trick =
-              has("logic_trail_gs_lower_bean") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-            local lift = AccessibilityLevel.None
-            if has("lift1") then
-              lift = AccessibilityLevel.Normal
-            end
+          local trick =
+            has("logic_trail_gs_lower_bean") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          if has("setting_plant_beans_on") then
+            bean = trick
+          elseif has("beans") then
+            local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
             bean =
               and_accessibility(
               trick,
@@ -4186,6 +4224,7 @@ data_per_region = {
           return or_accessibility(has_explosives(), and_accessibility(hammer, access_region("Death Mountain", "adult")))
         end,
         ["adult_access"] = function()
+          local plant = has("setting_plant_beans_on") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local beans = has("beans") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lift = has("lift") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_dmt_climb_hovers") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
@@ -4194,6 +4233,7 @@ data_per_region = {
           return or_accessibility(
             can_blast(),
             or_accessibility(
+              plant,
               and_accessibility(beans, lift, access_region("Death Mountain", "child")),
               and_accessibility(trick, hovers)
             )
@@ -4856,7 +4896,9 @@ data_per_region = {
             has("logic_crater_bean_poh_with_hovers") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           local bean = AccessibilityLevel.None
-          if has("beans") then
+          if has("setting_plant_beans_on") then
+            bean = AccessibilityLevel.Normal
+          elseif has("beans") then
             bean = access_region("DMC Central Nearby", "child")
           end
 
@@ -4913,7 +4955,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hoverboots") or has("hookshot") then
+          if has("hoverboots") or has("hookshot") or has("setting_plant_beans_on") then
             return AccessibilityLevel.Normal
           end
           if has("beans") then
@@ -4927,6 +4969,9 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("setting_plant_beans_on") then
+            return AccessibilityLevel.Normal
+          end
           if has("beans") then
             return access_region("DMC Central Local", "child")
           end
@@ -5094,6 +5139,61 @@ data_per_region = {
       ["ZR Frogs in the Rain"] = {
         ["child_access"] = function()
           if has("ocarina") and has("storm") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Zeldas Lullaby"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("lullaby") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Eponas Song"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Sarias Song"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("saria") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Suns Song"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("sun") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["ZR Frogs Song of Time"] = {
+        ["child_access"] = function()
+          if has("ocarina") and has("time") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5299,7 +5399,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_blue_fire()
+          return or_accessibility(can_BFA(), has_blue_fire())
         end
       },
       ["ZD GS Frozen Waterfall"] = {
@@ -6260,7 +6360,6 @@ data_per_region = {
           )
         end,
         ["adult_access"] = function()
-          --TODO: irrelevant inspect logic
           if has("hookshot") then
             return can_blast()
           end
@@ -7148,7 +7247,7 @@ data_per_region = {
       },
       ["Deku Tree Basement Chest"] = {
         ["child_access"] = function()
-          if has("nuts") then
+          if has("nuts") or has("deku_tree_shortcuts") then
             return AccessibilityLevel.Normal
           end
           return can_child_attack()
@@ -7219,6 +7318,7 @@ data_per_region = {
           local sling = has("slingshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_deku_b1_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local shortcut = has("deku_tree_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local adult = access_region("Deku Tree Lobby", "adult")
 
           return or_accessibility(
@@ -7226,7 +7326,7 @@ data_per_region = {
               or_accessibility(sticks, df, and_accessibility(adult, bow)),
               or_accessibility(sling, and_accessibility(adult, bow))
             ),
-            or_accessibility(trick, adult)
+            or_accessibility(trick, adult, shortcut)
           )
         end,
         ["adult_access"] = function()
@@ -7244,6 +7344,10 @@ data_per_region = {
       },
       ["Deku Tree Boss Room"] = {
         ["child_access"] = function()
+          if has("deku_tree_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local fa =
@@ -7266,6 +7370,10 @@ data_per_region = {
           )
         end,
         ["adult_access"] = function()
+          if has("deku_tree_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local fa =
@@ -7352,13 +7460,13 @@ data_per_region = {
     ["locations"] = {
       ["Queen Gohma"] = {
         ["child_access"] = function()
-          if has("shield1") and (has("sword1") or has("sticks")) then
+          if (has("shield1") or has("deku_tree_shortcuts")) and (has("sword1") or has("sticks")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("shield2") then
+          if has("shield2") or has("deku_tree_shortcuts") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -7526,7 +7634,10 @@ data_per_region = {
       },
       ["Deku Tree MQ Basement Ledge"] = {
         ["child_access"] = function()
-          if has("logic_deku_b1_skip") or (access_region("Deku Tree MQ Lobby", "adult") == AccessibilityLevel.Normal) then
+          if
+            has("logic_deku_b1_skip") or (access_region("Deku Tree MQ Lobby", "adult") == AccessibilityLevel.Normal) or
+              has("deku_tree_shortcuts")
+           then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -7777,24 +7888,44 @@ data_per_region = {
       },
       ["Queen Gohma"] = {
         ["child_access"] = function()
-          if has("shield1") and (has("sword1") or has("sticks")) then
-            if has("sticks") or (has("dinsfire") and has("magic")) then
+          if has("sword1") or has("sticks") then
+            if has("deku_tree_shortcuts") then
               return AccessibilityLevel.Normal
-            elseif has("bow") and has("firearrow") and has("magic") then
-              return access_region("Deku Tree MQ Basement Ledge", "adult")
             end
+
+            local adult = access_region("Deku Tree MQ Basement Ledge", "adult")
+            local shield1 = has("shield1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local shield2 = has("shield2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local fa =
+              (has("bow") and has("firearrow") and has("magic")) and AccessibilityLevel.Normal or
+              AccessibilityLevel.None
+
+            return and_accessibility(
+              or_accessibility(sticks, df, and_accessibility(fa, adult)),
+              or_accessibility(shield1, and_accessibility(shield2, adult))
+            )
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("shield2") then
-            if (has("dinsfire") and has("magic")) or (has("bow") and has("firearrow") and has("magic")) then
-              return AccessibilityLevel.Normal
-            elseif has("sticks") then
-              return access_region("Deku Tree MQ Basement Ledge", "child")
-            end
+          if has("deku_tree_shortcuts") then
+            return AccessibilityLevel.Normal
           end
-          return AccessibilityLevel.None
+
+          local child = access_region("Deku Tree MQ Basement Ledge", "child")
+          local shield1 = has("shield1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shield2 = has("shield2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local fa =
+            (has("bow") and has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(fa, df, and_accessibility(sticks, child)),
+            or_accessibility(shield2, and_accessibility(shield1, child))
+          )
         end
       }
     },
@@ -7865,7 +7996,7 @@ data_per_region = {
       },
       ["Dodongos Cavern Lobby"] = {
         ["child_access"] = function()
-          if has("lift1") then
+          if has("lift1") or has("dodongos_cavern_shortcuts") then
             return AccessibilityLevel.Normal
           end
 
@@ -7876,7 +8007,7 @@ data_per_region = {
           )
         end,
         ["adult_access"] = function()
-          if has("lift1") then
+          if has("lift1") or has("dodongos_cavern_shortcuts") then
             return AccessibilityLevel.Normal
           end
           return can_blast()
@@ -7890,15 +8021,21 @@ data_per_region = {
     ["locations"] = {
       ["Dodongos Cavern Map Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_blast()
         end
       },
       ["Dodongos Cavern GS Side Room Near Lower Lizalfos"] = {
         ["child_access"] = function()
-          if has("sling") or has("boomerang") or has("sticks") or has("sword1") then
+          if has("lift1") and (has("sling") or has("boomerang") or has("sticks") or has("sword1")) then
             return AccessibilityLevel.Normal
           end
           return has_explosives()
@@ -7910,7 +8047,8 @@ data_per_region = {
       ["Dodongos Cavern GS Scarecrow"] = {
         ["child_access"] = function()
           local trick = has("logic_dc_scarecrow_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-          return and_accessibility(trick, can_child_attack())
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(trick, can_child_attack(), or_accessibility(has_explosives(), lift1))
         end,
         ["adult_access"] = function()
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -7920,18 +8058,24 @@ data_per_region = {
       },
       ["Dodongos Cavern Deku Scrub Side Room Near Dodongos"] = {
         ["child_access"] = function()
-          if has("sling") or has("sticks") or has("sword1") then
-            return AccessibilityLevel.Normal
+          if has("sling") or has("sticks") or has("bombs") or has("sword1") then
+            if has("lift1") then
+              return AccessibilityLevel.Normal
+            end
+            return has_explosives()
           end
-          return has_explosives()
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_blast()
         end
       },
       ["Dodongos Cavern Deku Scrub Lobby"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          return can_stun_deku()
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -7949,16 +8093,21 @@ data_per_region = {
       },
       ["Dodongos Cavern Staircase Room"] = {
         ["child_access"] = function()
-          local explo = AccessibilityLevel.None
-          if has("sticks") then
-            return AccessibilityLevel.Normal
-          elseif has("dinsfire") and has("magic") then
-            if has("sling") or has("sword1") then
-              return AccessibilityLevel.Normal
-            end
-            explo = has_explosives()
-          end
-          return or_accessibility(explo, access_region("Dodongos Cavern Lobby", "adult"))
+          local adult = access_region("Dodongos Cavern Lobby", "adult")
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sword1 = has("sword1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(
+            adult,
+            and_accessibility(
+              or_accessibility(has_explosives(), lift1),
+              or_accessibility(sticks, and_accessibility(df, or_accessibility(sling, bombs, sword1)))
+            )
+          )
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -7971,6 +8120,20 @@ data_per_region = {
         ["adult_access"] = function()
           return access_region("Dodongos Cavern Far Bridge", "child")
         end
+      },
+      ["Dodongos Cavern Boss Area"] = {
+        ["child_access"] = function()
+          if has("dodongos_cavern_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dodongos_cavern_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
       }
     }
   },
@@ -7980,10 +8143,16 @@ data_per_region = {
     ["locations"] = {
       ["Dodongos Cavern Compass Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_blast()
         end
       },
       ["Dodongos Cavern GS Vines Above Stairs"] = {
@@ -8090,20 +8259,32 @@ data_per_region = {
       },
       ["Dodongos Cavern Far Bridge"] = {
         ["child_access"] = function()
-          if has("sling") then
-            return AccessibilityLevel.Normal
-          end
-          local trick = has("logic_dc_slingshot_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-          if has("sticks") or has("sword1") then
-            return trick
-          end
-          return and_accessibility(trick, has_explosives())
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("slingshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick_sling =
+            has("logic_dc_slingshot_skip") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sword1 = has("sword1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(has_explosives(), lift1),
+            or_accessibility(sling, and_accessibility(trick_sling, or_accessibility(sticks, bombs, sword1)))
+          )
         end,
         ["adult_access"] = function()
-          if has("bow") or has("hoverboots") or has("longshot") or has("logic_dc_jump") then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.SequenceBreak
+          local hovers = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local longshot = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick_jump = has("logic_dc_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(
+            hovers,
+            longshot,
+            trick_jump,
+            and_accessibility(or_accessibility(can_blast(), lift1), bow)
+          )
         end
       }
     }
@@ -8182,10 +8363,10 @@ data_per_region = {
       },
       ["Dodongos Cavern GS Back Room"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          return has_explosives()
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          return can_blast()
         end
       },
       ["King Dodongo"] = {
@@ -8230,7 +8411,7 @@ data_per_region = {
       },
       ["Dodongos Cavern MQ Lobby"] = {
         ["child_access"] = function()
-          if has("lift1") then
+          if has("lift1") or has("dodongos_cavern_shortcuts") then
             return AccessibilityLevel.Normal
           end
 
@@ -8241,7 +8422,7 @@ data_per_region = {
           )
         end,
         ["adult_access"] = function()
-          if has("lift1") then
+          if has("lift1") or has("dodongos_cavern_shortcuts") then
             return AccessibilityLevel.Normal
           end
           return can_blast()
@@ -8255,12 +8436,87 @@ data_per_region = {
     ["locations"] = {
       ["Dodongos Cavern MQ Map Chest"] = {
         ["child_access"] = function()
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return has_explosives()
+        end,
+        ["adult_access"] = function()
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_blast()
+        end
+      },
+      ["Dodongos Cavern MQ Deku Scrubs Lobby"] = {
+        ["child_access"] = function()
+          return can_stun_deku()
+        end,
+        ["adult_access"] = function()
           return AccessibilityLevel.Normal
+        end
+      }
+    },
+    ["exits"] = {
+      ["Dodongos Cavern MQ Elevator"] = {
+        ["child_access"] = function()
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            has_explosives(),
+            and_accessibility(hammer, access_region("Dodongos Cavern MQ Lobby", "adult"))
+          )
+        end,
+        ["adult_access"] = function()
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_blast()
+        end
+      },
+      ["Dodongos Cavern MQ Lower Right Side"] = {
+        ["child_access"] = function()
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            has_explosives(),
+            and_accessibility(hammer, access_region("Dodongos Cavern MQ Lobby", "adult"))
+          )
+        end,
+        ["adult_access"] = function()
+          return can_blast()
+        end
+      },
+      ["Dodongos Cavern MQ Bomb Bag Area"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
         end
       },
+      ["Dodongos Cavern MQ Boss Area"] = {
+        ["child_access"] = function()
+          if has("dodongos_cavern_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dodongos_cavern_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Dodongos Cavern MQ Elevator"] = {
+    ["scene"] = "Dodongos Cavern",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
       ["Dodongos Cavern MQ Compass Chest"] = {
         ["child_access"] = function()
           if has("nuts") then
@@ -8334,23 +8590,9 @@ data_per_region = {
           return can_blast()
         end
       },
-      ["Dodongos Cavern MQ Deku Scrubs Lobby"] = {
-        ["child_access"] = function()
-          if has("nuts") or has("shield1") then
-            return AccessibilityLevel.Normal
-          end
-          return can_child_attack()
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
       ["Dodongos Cavern MQ Deku Scrub Staircase"] = {
         ["child_access"] = function()
-          if has("nuts") or has("shield1") then
-            return AccessibilityLevel.Normal
-          end
-          return can_child_attack()
+          return can_stun_deku()
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -8360,41 +8602,34 @@ data_per_region = {
     ["exits"] = {
       ["Dodongos Cavern MQ Lower Right Side"] = {
         ["child_access"] = function()
-          local smash = AccessibilityLevel.None
-          if has("hammer") then
-            smash = access_region("Dodongos Cavern MQ Lobby", "adult")
-          end
-          local flower = AccessibilityLevel.None
-          if has("sticks") or (has("dinsfire") and has("magic")) then
-            flower = AccessibilityLevel.Normal
-          end
-          return or_accessibility(
-            or_accessibility(has_explosives(), smash),
-            and_accessibility(flower, damage_single_instance_ohko())
-          )
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(or_accessibility(sticks, df), lift1, damage_single_instance_ohko())
         end,
         ["adult_access"] = function()
-          local flower = AccessibilityLevel.None
-          if has("dinsfire") and has("magic") then
-            flower = AccessibilityLevel.Normal
-          elseif has("sticks") then
-            flower = access_region("Dodongos Cavern MQ Lobby", "child")
-          end
-          return or_accessibility(can_blast(), and_accessibility(flower, damage_single_instance_ohko()))
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(and_accessibility(sticks, access_region("Dodongos Cavern MQ Elevator", "child")), df),
+            lift1,
+            damage_single_instance_ohko()
+          )
         end
       },
       ["Dodongos Cavern MQ Bomb Bag Area"] = {
         ["child_access"] = function()
-          local adult = access_region("Dodongos Cavern MQ Lobby", "adult")
-          local recoil = AccessibilityLevel.None
-          if has("sword1") or has("sticks") then
-            local trick = AccessibilityLevel.SequenceBreak
-            if has("logic_dc_mq_child_bombs") then
-              trick = AccessibilityLevel.Normal
-            end
-            recoil = and_accessibility(trick, damage_single_instance_ohko())
-          end
-          return or_accessibility(and_accessibility(adult, has_explosives()), recoil)
+          local sword1 = has("sword1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_dc_mq_child_bombs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return or_accessibility(
+            and_accessibility(access_region("Dodongos Cavern MQ Bomb Bag Area", "adult"), has_explosives()),
+            and_accessibility(trick, or_accessibility(sword1, sticks), damage_single_instance_ohko())
+          )
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -8402,41 +8637,48 @@ data_per_region = {
       },
       ["Dodongos Cavern MQ Boss Area"] = {
         ["child_access"] = function()
-          local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local trick_eyes = has("logic_dc_mq_eyes") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-          local trick_child =
-            has("logic_dc_mq_child_back") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-
-          return or_accessibility(
-            has_explosives(),
-            and_accessibility(trick_eyes, lift, trick_child, or_accessibility(sticks, df))
-          )
-        end,
-        ["adult_access"] = function()
+          local adult = access_region("Dodongos Cavern MQ Elevator", "adult")
           local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local trick_eyes = has("logic_dc_mq_eyes") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_adult =
+            has("logic_dc_mq_eyes_adult") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_child =
+            has("logic_dc_mq_eyes_child") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local trick_jump = has("logic_dc_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           return or_accessibility(
             has_explosives(),
             and_accessibility(
-              trick_eyes,
               lift,
-              or_accessibility(
-                and_accessibility(sticks, access_region("Dodongos Cavern MQ Lobby", "child")),
-                df,
-                trick_jump,
-                hammer,
-                hb,
-                hs
-              )
+              or_accessibility(and_accessibility(trick_adult, adult), trick_child),
+              or_accessibility(sticks, df, and_accessibility(adult, or_accessibility(trick_jump, hammer, hb, hs)))
+            )
+          )
+        end,
+        ["adult_access"] = function()
+          local child = access_region("Dodongos Cavern MQ Elevator", "child")
+          local lift = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick_adult =
+            has("logic_dc_mq_eyes_adult") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_child =
+            has("logic_dc_mq_eyes_child") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local trick_jump = has("logic_dc_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return or_accessibility(
+            has_explosives(),
+            and_accessibility(
+              lift,
+              or_accessibility(trick_adult, and_accessibility(trick_child, child)),
+              or_accessibility(and_accessibility(sticks, child), df, trick_jump, hammer, hb, hs)
             )
           )
         end
@@ -8449,13 +8691,14 @@ data_per_region = {
     ["locations"] = {
       ["Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos"] = {
         ["child_access"] = function()
-          if has("nuts") or has("shield1") then
-            return AccessibilityLevel.Normal
-          end
-          return can_child_attack()
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(or_accessibility(has_explosives(), lift1), can_stun_deku())
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("lift1") then
+            return AccessibilityLevel.Normal
+          end
+          return can_blast()
         end
       }
     },
@@ -8549,15 +8792,59 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Dodongos Cavern MQ Boss Room Chest"] = {
+      ["Dodongos Cavern MQ GS Back Area"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("dodongos_cavern_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sword1 = has("sword1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(
+            has_explosives(),
+            rang,
+            df,
+            and_accessibility(shortcut, or_accessibility(can_child_attack(), lift1)),
+            or_accessibility(sticks, and_accessibility(or_accessibility(nuts, rang), or_accessibility(sword1, sling)))
+          )
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
         end
-      },
-      ["Dodongos Cavern MQ GS Back Area"] = {
+      }
+    },
+    ["exits"] = {
+      ["Dodongos Cavern MQ Boss Room"] = {
+        ["child_access"] = function()
+          local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("dodongos_cavern_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sword1 = has("sword1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(
+            has_explosives(),
+            df,
+            shortcut,
+            or_accessibility(sticks, and_accessibility(or_accessibility(nuts, rang), or_accessibility(sword1, sling)))
+          )
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
+  ["Dodongos Cavern MQ Boss Room"] = {
+    ["scene"] = "Dodongos Cavern",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Dodongos Cavern MQ Boss Room Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,
@@ -8567,18 +8854,34 @@ data_per_region = {
       },
       ["King Dodongo"] = {
         ["child_access"] = function()
-          if (has("bombs") or has("lift1")) and (has("sticks") or has("sword1")) then
-            return has_explosives()
-          end
-          return AccessibilityLevel.None
+          local shortcut = has("dodongos_cavern_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sword1 = has("sword1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          local floor = or_accessibility(has_explosives(), shortcut)
+          local stun = or_accessibility(bombs, lift1)
+          local damage = or_accessibility(sticks, sword1)
+
+          return and_accessibility(floor, stun, damage)
         end,
         ["adult_access"] = function()
-          if has("bombs") or has("lift1") then
-            return can_blast()
-          elseif has("bombchu") and (has("shield2") or has("shield3")) then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
+          local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_dc_mq_hammer_floor") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local shortcut = has("dodongos_cavern_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bombchu = has("bombchu") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shield = (has("shield2") or has("shield3")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          local floor = or_accessibility(and_accessibility(hammer, trick), has_explosives(), shortcut)
+          local stun =
+            or_accessibility(bombs, lift1, and_accessibility(AccessibilityLevel.SequenceBreak, bombchu, shield))
+          local damage = AccessibilityLevel.Normal
+
+          return and_accessibility(floor, stun, damage)
         end
       }
     }
@@ -8672,6 +8975,7 @@ data_per_region = {
             local trick =
               has("logic_fire_boss_door_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
             local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local shortcut = has("fire_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
 
             return and_accessibility(
@@ -8679,6 +8983,7 @@ data_per_region = {
               or_accessibility(
                 trick,
                 hb,
+                shortcut,
                 and_accessibility(or_accessibility(sot, has_explosives()), access_region("Fire Temple Upper", "adult"))
               )
             )
@@ -9055,13 +9360,17 @@ data_per_region = {
         ["adult_access"] = function()
           if has("hammer") and has("fire_boss_key") then
             local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-            local jump =
-              (has("logic_fire_boss_door_jump") or has("hoverboots")) and AccessibilityLevel.Normal or
-              AccessibilityLevel.SequenceBreak
+            local trick =
+              has("logic_fire_boss_door_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+            local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local shortcut = has("fire_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
             return and_accessibility(
               tunic,
-              or_accessibility(and_accessibility(has_fire(), jump), access_region("Fire Temple MQ Upper", "adult"))
+              or_accessibility(
+                and_accessibility(has_fire(), or_accessibility(trick, hoverboots, shortcut)),
+                access_region("Fire Temple MQ Upper", "adult")
+              )
             )
           end
           return AccessibilityLevel.None
@@ -9532,9 +9841,15 @@ data_per_region = {
       },
       ["Forest Temple Boss Region"] = {
         ["child_access"] = function()
+          if has("forest_temple_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           return poes_killed()
         end,
         ["adult_access"] = function()
+          if has("forest_temple_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           return poes_killed()
         end
       }
@@ -9922,7 +10237,10 @@ data_per_region = {
     ["locations"] = {
       ["Forest Temple Basement Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("nuts") then
+            return AccessibilityLevel.Normal
+          end
+          return can_child_attack()
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
@@ -9950,13 +10268,13 @@ data_per_region = {
       },
       ["Phantom Ganon"] = {
         ["child_access"] = function()
-          if has("forest_boss_key") then
+          if has("forest_boss_key") and has("slingshot") and has("sword1") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("forest_boss_key") then
+          if has("forest_boss_key") and (has("bow") or has("hookshot")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -10125,9 +10443,15 @@ data_per_region = {
       },
       ["Forest Temple MQ Boss Region"] = {
         ["child_access"] = function()
+          if has("forest_temple_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           return poes_killed_mq()
         end,
         ["adult_access"] = function()
+          if has("forest_temple_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           return poes_killed_mq()
         end
       }
@@ -10522,13 +10846,13 @@ data_per_region = {
       },
       ["Phantom Ganon"] = {
         ["child_access"] = function()
-          if has("forest_boss_key") then
+          if has("forest_boss_key") and has("slingshot") and has("sword1") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("forest_boss_key") then
+          if has("forest_boss_key") and (has("bow") or has("hookshot")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -10722,7 +11046,7 @@ data_per_region = {
         ["adult_access"] = function()
           local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
-          return and_accessibility(has_blue_fire(), hammer, can_LA())
+          return and_accessibility(or_accessibility(can_BFA(), has_blue_fire()), hammer, can_LA())
         end
       },
       ["Ganons Castle Water Trial Chests"] = {
@@ -11082,7 +11406,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
 
-          return and_accessibility(has_blue_fire(), can_LA(), keys)
+          return and_accessibility(or_accessibility(can_BFA(), has_blue_fire()), can_LA(), keys)
         end
       },
       ["Ganons Castle MQ Water Trial Chest"] = {
@@ -11090,7 +11414,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle(), AccessibilityLevel.SequenceBreak)
         end
       }
     }
@@ -12025,7 +12349,7 @@ data_per_region = {
             end
           end
 
-          return and_accessibility(lot, has_bottle(), or_accessibility(sot, wall))
+          return and_accessibility(lot, or_accessibility(can_BFA(), has_bottle()), or_accessibility(sot, wall))
         end
       }
     }
@@ -12210,7 +12534,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern Compass Chest"] = {
@@ -12218,7 +12542,7 @@ data_per_region = {
           return has_blue_fire()
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern Iron Boots Chest"] = {
@@ -12229,7 +12553,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Sheik in Ice Cavern"] = {
@@ -12240,7 +12564,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern Freestanding PoH"] = {
@@ -12248,7 +12572,7 @@ data_per_region = {
           return has_blue_fire()
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern GS Spinning Scythe Room"] = {
@@ -12288,7 +12612,7 @@ data_per_region = {
           end
           local collect = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.Inspect
 
-          return and_accessibility(has_bottle(), kill, collect)
+          return and_accessibility(or_accessibility(can_BFA(), has_bottle()), kill, collect)
         end
       },
       ["Ice Cavern GS Push Block Room"] = {
@@ -12303,7 +12627,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("hookshot") then
-            return has_bottle()
+            return or_accessibility(can_BFA(), has_bottle())
           end
 
           local kill = has_explosives()
@@ -12314,7 +12638,7 @@ data_per_region = {
           local trick = has("logic_ice_block_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
           return and_accessibility(
-            has_bottle(),
+            or_accessibility(can_BFA(), has_bottle()),
             or_accessibility(and_accessibility(hb, trick), and_accessibility(kill, AccessibilityLevel.Inspect))
           )
         end
@@ -12352,7 +12676,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       },
       ["Ice Cavern MQ Iron Boots Region"] = {
@@ -12360,7 +12684,7 @@ data_per_region = {
           return has_blue_fire()
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       }
     }
@@ -12377,7 +12701,7 @@ data_per_region = {
           return and_accessibility(has_bottle(), has_projectile("child"))
         end,
         ["adult_access"] = function()
-          return has_bottle()
+          return or_accessibility(can_BFA(), has_bottle())
         end
       }
     }
@@ -12581,7 +12905,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if has("scale") or has("logic_jabu_scrub_jump_dive") or has("ironboots") then
+          if has("scale") or has("logic_jabu_alcove_jump_dive") or has("ironboots") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -12610,9 +12934,15 @@ data_per_region = {
       },
       ["Jabu Jabus Belly Boss Area"] = {
         ["child_access"] = function()
+          if has("jabu_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("jabu_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           if has("hoverboots") then
             if has("logic_jabu_boss_gs_adult") then
               return AccessibilityLevel.Normal
@@ -12673,7 +13003,7 @@ data_per_region = {
     ["locations"] = {
       ["Barinade"] = {
         ["child_access"] = function()
-          if has("boomerang") then
+          if has("boomerang") and (has("sticks") or has("sword1")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -12737,12 +13067,18 @@ data_per_region = {
       },
       ["Jabu Jabus Belly MQ Main"] = {
         ["child_access"] = function()
+          if has("jabu_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           if has("sling") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("jabu_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
           if has("sling") then
             return access_region("Jabu Jabus Belly MQ Beginning", "child")
           end
@@ -12751,7 +13087,7 @@ data_per_region = {
       }
     }
   },
-  ["Jabu Jabus Belly MQ Main"] = {
+  ["Jabu Jabus Belly MQ Elevator Room"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
@@ -12765,56 +13101,48 @@ data_per_region = {
       },
       ["Jabu Jabus Belly MQ Second Room Upper Chest"] = {
         ["child_access"] = function()
-          return access_region("Jabu Jabus Belly MQ Boss Area", "child")
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("jabu_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            access_region("Jabu Jabus Belly MQ Elevator Room", "child"),
+            sling,
+            or_accessibility(access_region("Jabu Jabus Belly MQ Boss Area", "child"), shortcut)
+          )
         end,
         ["adult_access"] = function()
-          if has("hoverboots") or has("hookshot") then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.None
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hookshot = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("jabu_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            access_region("Jabu Jabus Belly MQ Elevator Room", "child"),
+            sling,
+            or_accessibility(hoverboots, hookshot, access_region("Jabu Jabus Belly MQ Boss Area", "child"), shortcut)
+          )
         end
       },
       ["Jabu Jabus Belly MQ Compass Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_jabu_mq_rang_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local boomerang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(sling, has_bombchus(), and_accessibility(trick, boomerang))
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
-      ["Jabu Jabus Belly MQ Basement Chests"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.Normal
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
-      ["Jabu Jabus Belly MQ Boomerang Room Chests"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.Normal
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
-      ["Jabu Jabus Belly MQ GS Boomerang Chest Room"] = {
-        ["child_access"] = function()
-          if has("ocarina") and has("time") then
-            return AccessibilityLevel.Normal
-          elseif has("boomerang") then
-            if has("logic_jabu_mq_sot_gs") then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.Inspect
-        end,
-        ["adult_access"] = function()
-          if has("ocarina") and has("time") then
-            return AccessibilityLevel.Normal
-          end
-          return AccessibilityLevel.Inspect
+          local scale = has("scale") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_jabu_alcove_jump_dive") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local ironboots = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hookshot = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(scale, trick, ironboots),
+            or_accessibility(bow, hookshot, has_bombchus())
+          )
         end
       }
     },
@@ -12827,9 +13155,162 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
+      ["Jabu Jabus Belly MQ Main"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          local scale = has("scale") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_jabu_alcove_jump_dive") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local ironboots = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(scale, access_region("Jabu Jabus Belly MQ Elevator Room", "child"), trick, ironboots)
+        end
+      },
+      ["Jabu Jabus Belly MQ Boss Area"] = {
+        ["child_access"] = function()
+          if has("jabu_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("jabu_shortcuts") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Jabu Jabus Belly MQ Main"] = {
+    ["scene"] = "Jabu Jabus Belly",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Jabu Jabus Belly MQ Basement Chests"] = {
+        ["child_access"] = function()
+          if has("sling") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.None
+        end
+      },
+      ["Jabu Jabus Belly MQ Boomerang Room Small Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ Boomerang Chest"] = {
+        ["child_access"] = function()
+          if has("sword1") or has("sling") or has("bombs") or has("sticks") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ GS Boomerang Chest Room"] = {
+        ["child_access"] = function()
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_jabu_mq_sot_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local boomerang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(and_accessibility(sot, can_child_attack()), and_accessibility(trick, boomerang))
+        end,
+        ["adult_access"] = function()
+          if has("ocarina") and has("time") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.Inspect
+        end
+      },
+      ["Jabu Jabus Belly MQ GS Invisible Enemies Room"] = {
+        ["child_access"] = function()
+          local shortcut = has("jabu_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hookshot = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_lens_jabu_mq") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lens = (has("lens") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local longshot = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local ironboots = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local boomerang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(access_region("Jabu Jabus Belly MQ Depths"), shortcut),
+            or_accessibility(
+              and_accessibility(hookshot, hoverboots),
+              and_accessibility(
+                or_accessibility(
+                  and_accessibility(or_accessibility(trick, lens), sling),
+                  and_accessibility(
+                    access_region("Jabu Jabus Belly MQ Main", "adult"),
+                    or_accessibility(trick, lens),
+                    or_accessibility(bow, longshot, and_accessibility(hookshot, ironboots, trick))
+                  )
+                ),
+                or_accessibility(boomerang, and_accessibility(hookshot, ironboots))
+              )
+            )
+          )
+        end,
+        ["adult_access"] = function()
+          local shortcut = has("jabu_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hookshot = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_lens_jabu_mq") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lens = (has("lens") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sling = has("sling") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local longshot = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local ironboots = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local boomerang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(access_region("Jabu Jabus Belly MQ Depths"), shortcut),
+            or_accessibility(
+              and_accessibility(hookshot, hoverboots),
+              and_accessibility(
+                or_accessibility(
+                  and_accessibility(
+                    access_region("Jabu Jabus Belly MQ Main", "child"),
+                    or_accessibility(trick, lens),
+                    sling
+                  ),
+                  and_accessibility(
+                    or_accessibility(trick, lens),
+                    or_accessibility(bow, longshot, and_accessibility(hookshot, ironboots, trick))
+                  )
+                ),
+                or_accessibility(boomerang, and_accessibility(hookshot, ironboots))
+              )
+            )
+          )
+        end
+      }
+    },
+    ["exits"] = {
+      ["Jabu Jabus Belly MQ Elevator Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
       ["Jabu Jabus Belly MQ Depths"] = {
         ["child_access"] = function()
-          if has("boomerang") then
+          if has("boomerang") and has("sling") then
             return has_explosives()
           end
           return AccessibilityLevel.None
@@ -12849,7 +13330,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.None
+          return AccessibilityLevel.Normal
         end
       },
       ["Jabu Jabus Belly MQ GS Tailpasaran Room"] = {
@@ -12858,18 +13339,6 @@ data_per_region = {
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.None
-        end
-      },
-      ["Jabu Jabus Belly MQ GS Invisible Enemies Room"] = {
-        ["child_access"] = function()
-          local lot =
-            (has("logic_lens_jabu_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-            AccessibilityLevel.SequenceBreak
-          local adult = (has("hoverboots") or has("hookshot")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          return or_accessibility(lot, and_accessibility(access_region("Jabu Jabus Belly MQ Main", "adult"), adult))
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.None
@@ -12885,7 +13354,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Jabu Jabus Belly MQ Boss Area"] = {
+      ["Jabu Jabus Belly MQ Past Big Octo"] = {
         ["child_access"] = function()
           if has("sticks") or (has("dinsfire") and has("magic") and has("sword1")) then
             return AccessibilityLevel.Normal
@@ -12898,7 +13367,7 @@ data_per_region = {
       }
     }
   },
-  ["Jabu Jabus Belly MQ Boss Area"] = {
+  ["Jabu Jabus Belly MQ Past Big Octo"] = {
     ["scene"] = "Jabu Jabus Belly",
     ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
@@ -12910,12 +13379,42 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("ocarina") and has("epona") then
+            return AccessibilityLevel.Normal
+          end
           return AccessibilityLevel.None
         end
-      },
-      ["Jabu Jabus Belly MQ Near Boss Chest"] = {
+      }
+    },
+    ["exits"] = {
+      ["Jabu Jabus Belly MQ Main"] = {
         ["child_access"] = function()
           return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Jabu Jabus Belly MQ Boss Area"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.Normal
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
+  ["Jabu Jabus Belly MQ Boss Area"] = {
+    ["scene"] = "Jabu Jabus Belly",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Jabu Jabus Belly MQ Near Boss Chest"] = {
+        ["child_access"] = function()
+          if has("sling") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.None
@@ -12923,7 +13422,10 @@ data_per_region = {
       },
       ["Barinade"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("boomerang") and (has("sticks") or has("sword1")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.None
@@ -12931,9 +13433,15 @@ data_per_region = {
       },
       ["Jabu Jabus Belly MQ GS Near Boss"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("boomerang") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          end
           return AccessibilityLevel.None
         end
       }
@@ -13081,8 +13589,31 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("shadow_small_keys", 1) then
-            return has_explosives()
+          local keys1 = has("shadow_small_keys", 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys4 = has("shadow_small_keys", 4) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys5 = has("shadow_small_keys", 5) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local no_shortcut = has("shadow_temple_shortcuts") and AccessibilityLevel.None or AccessibilityLevel.Normal
+          local trick =
+            has("logic_lens_shadow_platform") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local lens = (has("lens") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            has_explosives(),
+            or_accessibility(
+              and_accessibility(keys1, no_shortcut),
+              keys5,
+              and_accessibility(keys4, or_accessibility(trick, lens))
+            )
+          )
+        end
+      },
+      ["Shadow Temple Boat"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_temple_shortcuts") then
+            return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end
@@ -13120,43 +13651,6 @@ data_per_region = {
           return AccessibilityLevel.SequenceBreak
         end
       },
-      ["Shadow Temple Invisible Spikes Chest"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("shadow_small_keys", 2) then
-            if has("logic_lens_shadow_back") or (has("lens") and has("magic")) then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
-        end
-      },
-      ["Shadow Temple Freestanding Key"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          local keys = has("shadow_small_keys", 2) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lot =
-            (has("logic_lens_shadow_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-            AccessibilityLevel.SequenceBreak
-          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local trick =
-            has("logic_shadow_freestanding_key") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-
-          return and_accessibility(
-            keys,
-            lot,
-            hs,
-            or_accessibility(bombs, lift1, and_accessibility(trick, has_bombchus()))
-          )
-        end
-      },
       ["Shadow Temple GS Like Like Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -13175,19 +13669,60 @@ data_per_region = {
           end
           return AccessibilityLevel.SequenceBreak
         end
+      }
+    },
+    ["exits"] = {
+      ["Shadow Temple Invisible Spikes"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 2) then
+            if has("logic_lens_shadow_platform") or (has("lens") and has("magic")) then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Shadow Temple Invisible Spikes"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Shadow Temple Invisible Spikes Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple Freestanding Key"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_shadow_freestanding_key") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(hs, or_accessibility(bombs, lift1, and_accessibility(trick, has_bombchus())))
+        end
       },
       ["Shadow Temple GS Single Giant Pot"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local keys = has("shadow_small_keys", 2) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lot =
-            (has("logic_lens_shadow_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-            AccessibilityLevel.SequenceBreak
-          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
-
-          return and_accessibility(keys, lot, hs)
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
         end
       }
     },
@@ -13197,13 +13732,21 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("shadow_small_keys", 3) and has("hookshot") then
-            if has("logic_lens_shadow_back") or (has("lens") and has("magic")) then
-              return AccessibilityLevel.Normal
-            end
-            return AccessibilityLevel.SequenceBreak
+          if has("hookshot") and has("shadow_small_keys", 3) then
+            return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple Huge Pit"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_lens_shadow_platform") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end
       }
     }
@@ -13219,8 +13762,10 @@ data_per_region = {
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
         end
-      },
-      ["Shadow Temple After Wind Chests"] = {
+      }
+    },
+    ["exits"] = {
+      ["Shadow Temple After Wind"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -13228,29 +13773,96 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
+      ["Shadow Temple Invisible Spikes"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Shadow Temple After Wind"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Shadow Temple After Wind Enemy Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple After Wind Hidden Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
+        end
+      }
+    },
+    ["exits"] = {
+      ["Shadow Temple Boat"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 4) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple Wind Tunnel"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
+  ["Shadow Temple Boat"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
       ["Shadow Temple GS Near Ship"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local keys = has("shadow_small_keys", 4) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local bow = has("bow") and AccessibilityLevel.Inspect or AccessibilityLevel.None
 
-          return and_accessibility(
-            keys,
-            or_accessibility(ls, bow, and_accessibility(can_use_scarecrow(), AccessibilityLevel.SequenceBreak))
-          )
+          return or_accessibility(ls, bow, and_accessibility(can_use_scarecrow(), AccessibilityLevel.SequenceBreak))
         end
       }
     },
     ["exits"] = {
+      ["Shadow Temple After Wind"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 4) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
       ["Shadow Temple Beyond Boat"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") and has("shadow_small_keys", 4) then
+          if has("ocarina") and has("lullaby") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -13292,27 +13904,51 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Bongo Bongo"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("shadow_small_keys", 5) and has("shadow_boss_key") then
-            if has("bow") or (can_use_scarecrow() and has("longshot")) then
-              return AccessibilityLevel.Normal
-            end
-            local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-            return and_accessibility(trick, has_bombchus())
-          end
-          return AccessibilityLevel.None
-        end
-      },
       ["Shadow Temple GS Triple Giant Pot"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
+        end
+      }
+    },
+    ["exits"] = {
+      ["Shadow Temple Boss Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = has("shadow_small_keys", 5) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bk = has("shadow_boss_key") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local scarecrow =
+            (can_use_scarecrow() and has("longshot")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local shortcut = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            keys,
+            bk,
+            or_accessibility(bow, scarecrow, and_accessibility(trick, has_bombchus()), shortcut)
+          )
+        end
+      }
+    }
+  },
+  ["Shadow Temple Boss Room"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Bongo Bongo"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("logic_shadow_bongo") or has("bow") or has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end
       }
     }
@@ -13349,20 +13985,12 @@ data_per_region = {
     ["scene"] = "Shadow Temple",
     ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["exits"] = {
-      ["Shadow Temple MQ Entryway"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.Normal
-        end,
-        ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
       ["Shadow Temple MQ First Beamos"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (has("bow") and has("firearrow") and has("magic")) or has("hoverboots") then
+          if has("shadow_temple_shortcuts") or (has("bow") and has("firearrow") and has("magic")) or has("hoverboots") then
             return AccessibilityLevel.Normal
           elseif has("longshot") then
             if has("logic_shadow_mq_gap") then
@@ -13449,13 +14077,26 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local keys = AccessibilityLevel.None
-          if has("shadow_small_keys", 2) then
-            keys = AccessibilityLevel.Normal
-          elseif has("shadow_small_keys", 1) then
-            keys = AccessibilityLevel.SequenceBreak
+          local keys1 = has("shadow_small_keys", 1) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
+          local keys2 = has("shadow_small_keys", 2) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys5 = has("shadow_small_keys", 5) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local no_shortcut = has("shadow_temple_shortcuts") and AccessibilityLevel.None or AccessibilityLevel.Normal
+
+          return and_accessibility(
+            has_explosives(),
+            or_accessibility(keys1, and_accessibility(keys2, no_shortcut), keys5)
+          )
+        end
+      },
+      ["Shadow Temple MQ Boat"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_temple_shortcuts") then
+            return AccessibilityLevel.Normal
           end
-          return and_accessibility(has_explosives(), keys)
+          return AccessibilityLevel.None
         end
       }
     }
@@ -13463,22 +14104,35 @@ data_per_region = {
   ["Shadow Temple MQ Upper Huge Pit"] = {
     ["scene"] = "Shadow Temple",
     ["pool"] = ER_POOL_TYPES.DUNGEON,
-    ["locations"] = {
-      ["Shadow Temple MQ Invisible Blades Chests"] = {
+    ["exits"] = {
+      ["Shadow Temple MQ Invisible Blades"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
-            return AccessibilityLevel.Normal
-          end
-          local trick =
+          local no_shortcut = has("shadow_temple_shortcuts") and AccessibilityLevel.None or AccessibilityLevel.Normal
+          local keys1 = has("shadow_small_keys", 1) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
+          local keys6 = has("shadow_small_keys", 6) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lens_platform =
+            (has("logic_lens_shadow_mq_platform") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick_damage =
             has("logic_shadow_mq_invisible_blades") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-          return and_accessibility(trick, damage_below_ohko())
+          local lens_blades =
+            (has("logic_lens_shadow_mq_invisible_blades") or (has("lens") and has("magic"))) and
+            AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local nl = (has("nayrus") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(no_shortcut, keys1, keys6, and_accessibility(lens_platform, hoverboots)),
+            or_accessibility(sot, and_accessibility(trick_damage, damage_below_ohko())),
+            or_accessibility(lens_blades, nl)
+          )
         end
-      }
-    },
-    ["exits"] = {
+      },
       ["Shadow Temple MQ Lower Huge Pit"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -13491,7 +14145,76 @@ data_per_region = {
       }
     }
   },
+  ["Shadow Temple MQ Invisible Blades"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Shadow Temple MQ Invisible Blades Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
   ["Shadow Temple MQ Lower Huge Pit"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["exits"] = {
+      ["Shadow Temple MQ Falling Spikes"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local no_shortcut = has("shadow_temple_shortcuts") and AccessibilityLevel.None or AccessibilityLevel.Normal
+          local keys1 = has("shadow_small_keys", 1) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
+          local keys6 = has("shadow_small_keys", 6) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lens_platform =
+            (has("logic_lens_shadow_mq_platform") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_shadow_mq_huge_pit") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return or_accessibility(
+            no_shortcut,
+            keys1,
+            keys6,
+            and_accessibility(lens_platform, hoverboots, or_accessibility(has_fire(), trick))
+          )
+        end
+      },
+      ["Shadow Temple MQ Invisible Spikes"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys2 = has("shadow_small_keys", 2) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
+          local keys3 = has("shadow_small_keys", 3) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lens_platform =
+            (has("logic_lens_shadow_mq_platform") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(lens_platform, hoverboots, or_accessibility(keys2, keys3))
+        end
+      },
+      ["Shadow Temple MQ Upper Huge Pit"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("longshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Shadow Temple MQ Falling Spikes"] = {
     ["scene"] = "Shadow Temple",
     ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
@@ -13525,49 +14248,8 @@ data_per_region = {
             if has("logic_shadow_umbrella") then
               return AccessibilityLevel.Normal
             end
-            return AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
-        end
-      },
-      ["Shadow Temple MQ Invisible Spikes Chest"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("hoverboots") then
-            local keys = AccessibilityLevel.None
-            if has("shadow_small_keys", 3) then
-              keys = AccessibilityLevel.Normal
-            elseif has("shadow_small_keys", 2) then
-              keys = AccessibilityLevel.SequenceBreak
-            end
-            local lot =
-              (has("logic_lens_shadow_mq_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-              AccessibilityLevel.SequenceBreak
-            return and_accessibility(keys, lot)
-          end
-          return AccessibilityLevel.None
-        end
-      },
-      ["Shadow Temple MQ Stalfos Room Chest"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("hoverboots") and has("hookshot") then
-            local keys = AccessibilityLevel.None
-            if has("shadow_small_keys", 3) then
-              keys = AccessibilityLevel.Normal
-            elseif has("shadow_small_keys", 2) then
-              keys = AccessibilityLevel.SequenceBreak
-            end
-            local lot =
-              (has("logic_lens_shadow_mq_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-              AccessibilityLevel.SequenceBreak
-            return and_accessibility(keys, lot)
-          end
-          return AccessibilityLevel.None
+          return AccessibilityLevel.SequenceBreak
         end
       },
       ["Shadow Temple MQ GS Falling Spikes Room"] = {
@@ -13586,6 +14268,31 @@ data_per_region = {
           return AccessibilityLevel.Inspect
         end
       }
+    }
+  },
+  ["Shadow Temple MQ Invisible Spikes"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Shadow Temple MQ Invisible Spikes Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ Stalfos Room Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
     },
     ["exits"] = {
       ["Shadow Temple MQ Wind Tunnel"] = {
@@ -13593,19 +14300,27 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hoverboots") and has("hookshot") then
-            local keys = AccessibilityLevel.None
+          if has("hookshot") then
             if has("shadow_small_keys", 4) then
-              keys = AccessibilityLevel.Normal
+              return AccessibilityLevel.Normal
             elseif has("shadow_small_keys", 3) then
-              keys = AccessibilityLevel.SequenceBreak
+              return AccessibilityLevel.SequenceBreak
             end
-            local lot =
-              (has("logic_lens_shadow_mq_back") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-              AccessibilityLevel.SequenceBreak
-            return and_accessibility(lot, keys)
           end
           return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Lower Huge Pit"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local lens_platform =
+            (has("logic_lens_shadow_mq_platform") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(lens_platform, hoverboots)
         end
       }
     }
@@ -13622,7 +14337,20 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Shadow Temple MQ After Wind Chests"] = {
+      ["Shadow Temple MQ GS Wind Hint Room"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    },
+    ["exits"] = {
+      ["Shadow Temple MQ After Wind"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
@@ -13630,12 +14358,37 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end
       },
-      ["Shadow Temple MQ GS Wind Hint Room"] = {
+      ["Shadow Temple MQ Invisible Spikes"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("hookshot") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Shadow Temple MQ After Wind"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Shadow Temple MQ After Wind Enemy Chest"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
+        end
+      },
+      ["Shadow Temple MQ After Wind Hidden Chest"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          return has_explosives()
         end
       },
       ["Shadow Temple MQ GS After Wind"] = {
@@ -13643,22 +14396,65 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          local trick =
+            has("logic_shadow_mq_after_wind_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return or_accessibility(has_explosives(), trick)
         end
       }
     },
     ["exits"] = {
+      ["Shadow Temple MQ Boat"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 5) then
+            return AccessibilityLevel.Normal
+          elseif has("shadow_small_keys", 4) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Wind Tunnel"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_shadow_mq_windy_walkway") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+
+          return or_accessibility(hoverboots, trick)
+        end
+      }
+    }
+  },
+  ["Shadow Temple MQ Boat"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["exits"] = {
+      ["Shadow Temple MQ After Wind"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_small_keys", 5) then
+            return AccessibilityLevel.Normal
+          elseif has("shadow_small_keys", 1) then
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
       ["Shadow Temple MQ Beyond Boat"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           if has("ocarina") and has("lullaby") then
-            if has("shadow_small_keys", 5) then
-              return AccessibilityLevel.Normal
-            elseif has("shadow_small_keys", 4) then
-              return AccessibilityLevel.SequenceBreak
-            end
+            return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end
@@ -13669,39 +14465,15 @@ data_per_region = {
     ["scene"] = "Shadow Temple",
     ["pool"] = ER_POOL_TYPES.DUNGEON,
     ["locations"] = {
-      ["Bongo Bongo"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("shadow_boss_key") then
-            if has("bow") then
-              return AccessibilityLevel.Normal
-            end
-            local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-            return and_accessibility(trick, has_bombchus())
-          end
-          return AccessibilityLevel.None
-        end
-      },
       ["Shadow Temple MQ GS After Ship"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
-        end
-      },
-      ["Shadow Temple MQ GS Near Boss"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("bow") then
+          if has("hookshot") then
             return AccessibilityLevel.Normal
           end
-          local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-          return and_accessibility(trick, has_bombchus())
+          return AccessibilityLevel.None
         end
       }
     },
@@ -13715,6 +14487,22 @@ data_per_region = {
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ Near Boss"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick = has("logic_shadow_statue") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local shortcut = has("shadow_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(bow, and_accessibility(trick, has_bombchus()), shortcut),
+            hoverboots
+          )
         end
       }
     }
@@ -13733,6 +14521,8 @@ data_per_region = {
               return AccessibilityLevel.Normal
             elseif has("shadow_small_keys", 5) then
               return AccessibilityLevel.SequenceBreak
+            elseif has("shadow_small_keys", 1) and has("shadow_temple_shortcuts") then
+              return AccessibilityLevel.SequenceBreak
             end
           end
           return AccessibilityLevel.None
@@ -13748,6 +14538,8 @@ data_per_region = {
               return AccessibilityLevel.Normal
             elseif has("shadow_small_keys", 5) then
               return AccessibilityLevel.SequenceBreak
+            elseif has("shadow_small_keys", 1) and has("shadow_temple_shortcuts") then
+              return AccessibilityLevel.SequenceBreak
             end
           end
           return AccessibilityLevel.None
@@ -13758,7 +14550,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          return AccessibilityLevel.Normal
+          if has("logic_lens_shadow_mq_dead_hand") or (has("lens") and has("magic")) then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.SequenceBreak
         end
       },
       ["Shadow Temple MQ Freestanding Key"] = {
@@ -13767,6 +14562,37 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
+        end
+      }
+    }
+  },
+  ["Shadow Temple MQ Near Boss"] = {
+    ["scene"] = "Shadow Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
+      ["Bongo Bongo"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shadow_boss_key") then
+            if has("logic_shadow_bongo") or has("bow") or has("hookshot") then
+              return AccessibilityLevel.Normal
+            end
+            return AccessibilityLevel.SequenceBreak
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Shadow Temple MQ GS Near Boss"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("dinsfire") and has("magic") then
+            return AccessibilityLevel.Normal
+          end
+          return has_projectile("adult")
         end
       }
     }
@@ -13831,6 +14657,17 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("lift2") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      },
+      ["Spirit Temple Central Chamber"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("spirit_temple_shortcuts") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -13939,8 +14776,11 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           local keys = has("spirit_small_keys", 3) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          return or_accessibility(has_projectile("both"), and_accessibility(keys, lift2, has_projectile("adult")))
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return or_accessibility(
+            has_projectile("both"),
+            and_accessibility(or_accessibility(shortcut, keys), has_projectile("adult"))
+          )
         end
       },
       ["Spirit Temple GS Sun on Floor Room"] = {
@@ -13959,12 +14799,15 @@ data_per_region = {
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local weapon = (has("sticks") or has("sword1")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local keys = has("spirit_small_keys", 3) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           return or_accessibility(
             has_projectile("both"),
             df,
             and_accessibility(damage_single_instance_ohko(), or_accessibility(weapon, has_projectile("child"))),
-            and_accessibility(keys, lift2, or_accessibility(has_projectile("adult"), damage_single_instance_ohko()))
+            and_accessibility(
+              or_accessibility(shortcut, keys),
+              or_accessibility(has_projectile("adult"), damage_single_instance_ohko())
+            )
           )
         end
       }
@@ -14023,19 +14866,6 @@ data_per_region = {
           return or_accessibility(has_bombchus(), and_accessibility(bombs, trick))
         end
       },
-      ["Spirit Temple First Mirror Chests"] = {
-        ["child_access"] = function()
-          return AccessibilityLevel.None
-        end,
-        ["adult_access"] = function()
-          if has("spirit_small_keys", 3) then
-            return AccessibilityLevel.Normal
-          elseif has("spirit_small_keys", 1) then
-            return AccessibilityLevel.SequenceBreak
-          end
-          return AccessibilityLevel.None
-        end
-      },
       ["Spirit Temple GS Boulder Room"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -14077,7 +14907,13 @@ data_per_region = {
           local fa = (has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_spirit_map_chest") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local keys5 = has("spirit_small_keys", 5) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys5 = AccessibilityLevel.None
+          if has("spirit_small_keys", 5) then
+            keys5 = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys5 = AccessibilityLevel.SequenceBreak
+          end
+
           return or_accessibility(
             and_accessibility(
               or_accessibility(has_explosives(), keys3),
@@ -14093,13 +14929,17 @@ data_per_region = {
           local fa = (has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_spirit_map_chest") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
           return or_accessibility(
             and_accessibility(
               or_accessibility(has_explosives(), keys3),
               or_accessibility(df, and_accessibility(or_accessibility(fa, trick), bow, sticks))
             ),
-            and_accessibility(keys3, bow, or_accessibility(fa, trick), lift2)
+            and_accessibility(
+              or_accessibility(keys3, shortcut),
+              or_accessibility(df, and_accessibility(bow, or_accessibility(fa, trick)))
+            )
           )
         end
       },
@@ -14111,7 +14951,13 @@ data_per_region = {
           local fa = (has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_spirit_sun_chest") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local keys5 = has("spirit_small_keys", 5) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local keys5 = AccessibilityLevel.None
+          if has("spirit_small_keys", 5) then
+            keys5 = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys5 = AccessibilityLevel.SequenceBreak
+          end
+
           return or_accessibility(
             and_accessibility(
               or_accessibility(has_explosives(), keys3),
@@ -14127,13 +14973,17 @@ data_per_region = {
           local fa = (has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_spirit_sun_chest") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
           return or_accessibility(
             and_accessibility(
               or_accessibility(has_explosives(), keys3),
               or_accessibility(df, and_accessibility(or_accessibility(fa, trick), bow, sticks))
             ),
-            and_accessibility(keys3, bow, or_accessibility(fa, trick), lift2)
+            and_accessibility(
+              or_accessibility(keys3, shortcut),
+              or_accessibility(df, and_accessibility(bow, or_accessibility(fa, trick)))
+            )
           )
         end
       },
@@ -14142,14 +14992,21 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lift2") and has("ocarina") and has("lullaby") then
-            if has("spirit_small_keys", 3) then
-              return AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 1) then
-              return AccessibilityLevel.SequenceBreak
-            end
+          local keys3 = AccessibilityLevel.None
+          if has("spirit_small_keys", 3) then
+            keys3 = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys3 = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local zl = (has("ocarina") and has("lullaby")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(and_accessibility(keys3, lift2), and_accessibility(hs, shortcut)),
+            zl
+          )
         end
       },
       ["Spirit Temple Statue Room Northeast Chest"] = {
@@ -14157,19 +15014,25 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lift2") and has("ocarina") and has("lullaby") then
-            local keys = AccessibilityLevel.None
-            if has("spirit_small_keys", 3) then
-              keys = AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 1) then
-              keys = AccessibilityLevel.SequenceBreak
-            end
-            local jump =
-              (has("hookshot") or has("hoverboots") or has("logic_spirit_lobby_jump")) and AccessibilityLevel.Normal or
-              AccessibilityLevel.SequenceBreak
-            return and_accessibility(keys, jump)
+          local keys3 = AccessibilityLevel.None
+          if has("spirit_small_keys", 3) then
+            keys3 = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys3 = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local zl = (has("ocarina") and has("lullaby")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local gap =
+            (has("hookshot") or has("hoverboots") or has("logic_spirit_lobby_jump")) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+
+          return and_accessibility(
+            or_accessibility(and_accessibility(keys3, lift2), and_accessibility(hs, shortcut)),
+            zl,
+            gap
+          )
         end
       },
       ["Spirit Temple GS Hall After Sun Block Room"] = {
@@ -14191,7 +15054,7 @@ data_per_region = {
         ["adult_access"] = function()
           local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local keys = AccessibilityLevel.None
           if has("spirit_small_keys", 3) then
             keys = AccessibilityLevel.Normal
@@ -14201,7 +15064,7 @@ data_per_region = {
 
           return or_accessibility(
             and_accessibility(has_explosives(), rang, hs),
-            and_accessibility(or_accessibility(hs, AccessibilityLevel.Inspect), lift2, keys)
+            and_accessibility(or_accessibility(hs, AccessibilityLevel.Inspect), or_accessibility(shortcut, keys))
           )
         end
       },
@@ -14261,7 +15124,7 @@ data_per_region = {
           local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           return or_accessibility(
             and_accessibility(
@@ -14270,8 +15133,26 @@ data_per_region = {
               rang,
               or_accessibility(hs, hb, trick_jump)
             ),
-            and_accessibility(keys3, lift2, or_accessibility(hs, hb, trick_jump))
+            and_accessibility(or_accessibility(keys3, shortcut), or_accessibility(hs, hb, trick_jump))
           )
+        end
+      },
+      ["Spirit Temple First Mirror Chests"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys3 = AccessibilityLevel.None
+          if has("spirit_small_keys", 3) then
+            keys3 = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys3 = AccessibilityLevel.SequenceBreak
+          end
+          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(and_accessibility(keys3, lift2), and_accessibility(hs, shortcut))
         end
       }
     },
@@ -14289,14 +15170,23 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lift2") then
-            if has("spirit_small_keys", 4) then
-              return AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 2) then
-              return AccessibilityLevel.SequenceBreak
-            end
+          local keys_shortcut = AccessibilityLevel.None
+          if has("spirit_small_keys", 4) then
+            keys_shortcut = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys_shortcut = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local keys_normal = AccessibilityLevel.None
+          if has("spirit_small_keys", 4) then
+            keys_normal = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 2) then
+            keys_normal = AccessibilityLevel.SequenceBreak
+          end
+          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return or_accessibility(and_accessibility(keys_normal, lift2), and_accessibility(keys_shortcut, hs, shortcut))
         end
       },
       ["Child Spirit Temple Climb"] = {
@@ -14305,6 +15195,37 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           return AccessibilityLevel.Normal
+        end
+      },
+      ["Spirit Temple Boss Platform"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local trick =
+            has("logic_spirit_platform_hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(or_accessibility(ls, and_accessibility(trick, hs)), shortcut)
+        end
+      },
+      ["Early Adult Spirit Temple"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
+          if has("spirit_small_keys", 5) then
+            keys = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 2) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(keys, hs, shortcut)
         end
       }
     }
@@ -14330,7 +15251,7 @@ data_per_region = {
           local keys3 = has("spirit_small_keys", 3) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local keys5 = has("spirit_small_keys", 5) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local keys2 = has("spirit_small_keys", 2) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
+          local keys2 = has("spirit_small_keys", 1) and AccessibilityLevel.SequenceBreak or AccessibilityLevel.None
 
           return or_accessibility(and_accessibility(keys3, ls, has_explosives()), keys5, keys2)
         end
@@ -14340,16 +15261,26 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lift2") then
-            local keys = AccessibilityLevel.None
-            if has("spirit_small_keys", 4) then
-              keys = AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 2) then
-              keys = AccessibilityLevel.SequenceBreak
-            end
-            return and_accessibility(keys, has_explosives())
+          local keys_shortcut = AccessibilityLevel.None
+          if has("spirit_small_keys", 4) then
+            keys_shortcut = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys_shortcut = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local keys_normal = AccessibilityLevel.None
+          if has("spirit_small_keys", 4) then
+            keys_normal = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 2) then
+            keys_normal = AccessibilityLevel.SequenceBreak
+          end
+          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+
+          return and_accessibility(
+            or_accessibility(and_accessibility(keys_normal, lift2), and_accessibility(keys_shortcut, hs, shortcut)),
+            has_explosives()
+          )
         end
       }
     },
@@ -14365,14 +15296,14 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lift2") then
+          if has("lift2") or has("spirit_temple_shortcuts") then
             if has("spirit_small_keys", 5) then
               return AccessibilityLevel.Normal
             end
             local keys = AccessibilityLevel.None
             if has("spirit_small_keys", 3) then
               keys = AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 2) then
+            elseif has("spirit_small_keys", 1) then
               keys = AccessibilityLevel.SequenceBreak
             end
             return and_accessibility(keys, has_explosives())
@@ -14459,14 +15390,33 @@ data_per_region = {
           end
           return AccessibilityLevel.None
         end
-      },
+      }
+    },
+    ["exits"] = {
+      ["Spirit Temple Boss Platform"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shield3") then
+            return has_explosives()
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Spirit Temple Boss Platform"] = {
+    ["scene"] = "Spirit Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
       ["Twinrova"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
           if has("shield3") and has("hookshot") and has("spirit_boss_key") then
-            return has_explosives()
+            return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end
@@ -14540,10 +15490,10 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("longshot") and has("lift2") then
-            return has_bombchus()
-          end
-          return AccessibilityLevel.None
+          local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(ls, or_accessibility(and_accessibility(lift2, has_bombchus()), shortcut))
         end
       }
     }
@@ -14649,12 +15599,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
           if has("spirit_small_keys", 7) then
-            return AccessibilityLevel.Normal
+            keys = AccessibilityLevel.Normal
           elseif has("spirit_small_keys", 1) then
-            return AccessibilityLevel.SequenceBreak
+            keys = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          return and_accessibility(keys, has_explosives())
         end
       },
       ["Spirit Temple MQ Statue Room Lullaby Chest"] = {
@@ -14684,12 +15635,13 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
           if has("spirit_small_keys", 5) then
-            return AccessibilityLevel.Normal
+            keys = AccessibilityLevel.Normal
           elseif has("spirit_small_keys", 1) then
-            return AccessibilityLevel.SequenceBreak
+            keys = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          return and_accessibility(keys, has_explosives())
         end
       },
       ["Spirit Temple MQ Chest Switch Chest"] = {
@@ -14697,14 +15649,15 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
-            if has("spirit_small_keys", 5) then
-              return AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 1) then
-              return AccessibilityLevel.SequenceBreak
-            end
+          local keys = AccessibilityLevel.None
+          if has("spirit_small_keys", 5) then
+            keys = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(keys, time, or_accessibility(has_explosives(), nuts))
         end
       },
       ["Spirit Temple MQ Boss Key Chest"] = {
@@ -14712,14 +15665,16 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") and has("shield3") then
-            if has("spirit_small_keys", 5) then
-              return AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 1) then
-              return AccessibilityLevel.SequenceBreak
-            end
+          local keys = AccessibilityLevel.None
+          if has("spirit_small_keys", 5) then
+            keys = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local shield3 = has("shield3") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(keys, time, shield3, or_accessibility(has_explosives(), nuts))
         end
       },
       ["Spirit Temple MQ GS Nine Thrones Room West"] = {
@@ -14796,17 +15751,27 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
-            local keys = AccessibilityLevel.None
-            if has("spirit_small_keys", 5) then
-              keys = AccessibilityLevel.Normal
-            elseif has("spirit_small_keys", 1) then
-              keys = AccessibilityLevel.SequenceBreak
-            end
-            local lot =
-              (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
-              AccessibilityLevel.SequenceBreak
-            return and_accessibility(keys, lot)
+          local keys = AccessibilityLevel.None
+          if has("spirit_small_keys", 5) then
+            keys = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lot =
+            (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          return and_accessibility(keys, time, lot, or_accessibility(has_explosives(), nuts))
+        end
+      },
+      ["Spirit Temple MQ Boss Platform"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("spirit_temple_shortcuts") then
+            return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end
@@ -14819,15 +15784,22 @@ data_per_region = {
     ["locations"] = {
       ["Spirit Temple MQ Child Climb North Chest"] = {
         ["child_access"] = function()
-          return AccessibilityLevel.None
+          local keys = AccessibilityLevel.None
+          if has("spirit_small_keys", 6) then
+            keys = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys = AccessibilityLevel.SequenceBreak
+          end
+          return and_accessibility(keys, has_explosives())
         end,
         ["adult_access"] = function()
+          local keys = AccessibilityLevel.None
           if has("spirit_small_keys", 6) then
-            return AccessibilityLevel.Normal
+            keys = AccessibilityLevel.Normal
           elseif has("spirit_small_keys", 1) then
-            return AccessibilityLevel.SequenceBreak
+            keys = AccessibilityLevel.SequenceBreak
           end
-          return AccessibilityLevel.None
+          return and_accessibility(keys, has_explosives())
         end
       },
       ["Spirit Temple MQ Compass Chest"] = {
@@ -14895,13 +15867,14 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys4 = AccessibilityLevel.SequenceBreak
           end
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lot =
             (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
           return or_accessibility(
             and_accessibility(keys7, or_accessibility(sot, trick)),
-            and_accessibility(keys4, sot, lot)
+            and_accessibility(keys4, sot, or_accessibility(has_explosives(), nuts), lot)
           )
         end,
         ["adult_access"] = function()
@@ -14918,11 +15891,12 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys4 = AccessibilityLevel.SequenceBreak
           end
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lot =
             (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
-          return or_accessibility(keys7, and_accessibility(keys4, sot, lot))
+          return or_accessibility(keys7, and_accessibility(keys4, sot, or_accessibility(has_explosives(), nuts), lot))
         end
       },
       ["Desert Colossus"] = {
@@ -14937,8 +15911,21 @@ data_per_region = {
           local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick =
             has("logic_spirit_mq_sun_block_sot") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
+          local keys4 = AccessibilityLevel.None
+          if has("spirit_small_keys", 4) then
+            keys4 = AccessibilityLevel.Normal
+          elseif has("spirit_small_keys", 1) then
+            keys4 = AccessibilityLevel.SequenceBreak
+          end
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local lot =
+            (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            AccessibilityLevel.SequenceBreak
 
-          return and_accessibility(keys7, or_accessibility(sot, trick))
+          return or_accessibility(
+            and_accessibility(keys7, or_accessibility(sot, trick)),
+            and_accessibility(keys4, sot, or_accessibility(has_explosives(), nuts), lot)
+          )
         end,
         ["adult_access"] = function()
           local keys7 = AccessibilityLevel.None
@@ -14954,11 +15941,12 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys4 = AccessibilityLevel.SequenceBreak
           end
+          local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lot =
             (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
-          return or_accessibility(keys7, and_accessibility(keys4, sot, lot))
+          return or_accessibility(keys7, and_accessibility(keys4, sot, or_accessibility(has_explosives(), nuts), lot))
         end
       }
     }
@@ -15046,7 +16034,26 @@ data_per_region = {
           end
           return AccessibilityLevel.SequenceBreak
         end
-      },
+      }
+    },
+    ["exits"] = {
+      ["Spirit Temple MQ Boss Platform"] = {
+        ["child_access"] = function()
+          return AccessibilityLevel.None
+        end,
+        ["adult_access"] = function()
+          if has("shield3") then
+            return AccessibilityLevel.Normal
+          end
+          return AccessibilityLevel.None
+        end
+      }
+    }
+  },
+  ["Spirit Temple MQ Boss Platform"] = {
+    ["scene"] = "Spirit Temple",
+    ["pool"] = ER_POOL_TYPES.DUNGEON,
+    ["locations"] = {
       ["Twinrova"] = {
         ["child_access"] = function()
           return AccessibilityLevel.None
@@ -15283,7 +16290,6 @@ data_per_region = {
         end
       },
       ["Water Temple GS Central Pillar"] = {
-        --TODO: peek this gs
         ["child_access"] = function()
           return AccessibilityLevel.None
         end,

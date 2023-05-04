@@ -28,6 +28,13 @@
     ]
   },
   {
+    "name": "Deku Tree Shortcut",
+    "type": "toggle_badged",
+    "base_item": "deku_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "deku_shortcuts,deku_tree_shortcuts"
+  },
+  {
     "name": "Dodongos Cavern Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -48,6 +55,13 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Dodongos Cavern Shortcut",
+    "type": "toggle_badged",
+    "base_item": "dodongo_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "dodongo_shortcuts,dodongos_cavern_shortcuts"
   },
   {
     "name": "Jabu Jabu Label",
@@ -72,6 +86,13 @@
     ]
   },
   {
+    "name": "Jabu Jabu Shortcut",
+    "type": "toggle_badged",
+    "base_item": "jabu_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "jabu_shortcuts"
+  },
+  {
     "name": "Forest Temple Label",
     "type": "progressive",
     "allow_disabled": false,
@@ -92,6 +113,13 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Forest Temple Shortcut",
+    "type": "toggle_badged",
+    "base_item": "forest_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "forest_shortcuts,forest_temple_shortcuts"
   },
   {
     "name": "Forest Temple Small Keys",
@@ -127,6 +155,13 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Fire Temple Shortcut",
+    "type": "toggle_badged",
+    "base_item": "fire_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "fire_shortcuts,fire_temple_shortcuts"
   },
   {
     "name": "Fire Temple Small Keys",
@@ -199,6 +234,13 @@
     ]
   },
   {
+    "name": "Spirit Temple Shortcut",
+    "type": "toggle_badged",
+    "base_item": "spirit_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "spirit_shortcuts,spirit_temple_shortcuts"
+  },
+  {
     "name": "Spirit Temple Small Keys",
     "type": "consumable",
     "img": "images/small_key.png",
@@ -232,6 +274,13 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Shadow Temple Shortcut",
+    "type": "toggle_badged",
+    "base_item": "shadow_label",
+    "img": "images/overlay_boss_icon.png",
+    "codes": "shadow_shortcuts,shadow_temple_shortcuts"
   },
   {
     "name": "Shadow Temple Small Keys",

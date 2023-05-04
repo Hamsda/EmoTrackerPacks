@@ -19,7 +19,7 @@
                   "$can_time_travel"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_spawn_shuffle"
+                  "setting_entrance_spawn_child"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_spawn_child",
@@ -52,7 +52,7 @@
                   "$can_time_travel"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_spawn_shuffle"
+                  "setting_entrance_spawn_adult"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_spawn_adult",
@@ -595,16 +595,6 @@
                 "name": "LW Bean Patch Near Theater",
                 "sections": [
                   {
-                    "name": "Plant Bean",
-                    "access_rules": [
-                      "$has_age|child,beans,bean_stage_no"
-                    ],
-                    "visibility_rules": [
-                      "$bean_planting|yes"
-                    ],
-                    "hosted_item": "bean_stage_yes"
-                  },
-                  {
                     "name": "LW GS Bean Patch Near Theater",
                     "short_name": "GS",
                     "access_rules": [
@@ -637,8 +627,8 @@
                     "name": "LW GS Above Theater (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|child,$bean_planting|no,beans",
-                      "$has_age|child,bean_stage_yes",
+                      "setting_plant_beans_on",
+                      "$has_age|child,beans",
                       "[logic_lost_woods_gs_bean],longshot",
                       "[logic_lost_woods_gs_bean],hookshot,bow",
                       "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
@@ -1189,8 +1179,8 @@
                           "$spawn_access|LH Fishing|adult",
                           "$has_age|adult,ocarina,scarecrow,hookshot",
                           "$has_age|adult,water",
-                          "$has_age|adult,$bean_planting|no,beans",
-                          "$has_age|adult,bean_lake_yes"
+                          "$has_age|adult,setting_plant_beans_on",
+                          "$has_age|both,beans"
                         ],
                         "item_count": 1
                       }
@@ -1233,8 +1223,8 @@
                         "name": "LH Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|adult,$bean_planting|no,beans",
-                          "$has_age|adult,bean_lake_yes",
+                          "$has_age|adult,setting_plant_beans_on",
+                          "$has_age|both,beans",
                           "$has_age|adult,ocarina,scarecrow,hookshot"
                         ],
                         "chest_unopened_img": "images/HP.png",
@@ -1378,16 +1368,6 @@
                   {
                     "name": "LH Bean Patch",
                     "sections": [
-                      {
-                        "name": "Plant Bean",
-                        "access_rules": [
-                          "$has_age|child,beans,bean_lake_no"
-                        ],
-                        "visibility_rules": [
-                          "$bean_planting|yes"
-                        ],
-                        "hosted_item": "bean_lake_yes"
-                      },
                       {
                         "name": "LH GS Bean Patch",
                         "short_name": "GS",
@@ -2009,12 +1989,28 @@
                       "mushroom"
                     ],
                     "hosted_item": "capture_oddpotion"
+                  },
+                  {
+                    "name": "Buy Potion",
+                    "access_rules": [
+                      "$has_age|adult,wallet,oddpotion",
+                      "$has_age|adult,wallet,poachersaw",
+                      "$has_age|adult,wallet,brokensword",
+                      "$has_age|adult,wallet,prescription",
+                      "$has_age|adult,wallet,speedfrog",
+                      "$has_age|adult,wallet,eyedrops",
+                      "$has_age|adult,wallet,claimcheck"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffle_merchants_yes"
+                    ],
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "adult",
-                    "x": 1860,
+                    "x": 1865,
                     "y": 360
                   }
                 ]
@@ -2377,8 +2373,8 @@
                         "name": "Graveyard Freestanding PoH",
                         "short_name": "Box HP",
                         "access_rules": [
-                          "$has_age|adult,$bean_planting|no,beans",
-                          "$has_age|adult,bean_graveyard_yes",
+                          "$has_age|adult,setting_plant_beans_on",
+                          "$has_age|both,beans",
                           "$has_age|adult,longshot",
                           "$has_age|child,boomerang,[logic_graveyard_poh]",
                           "{}"
@@ -2509,16 +2505,6 @@
                   {
                     "name": "Graveyard Bean Patch",
                     "sections": [
-                      {
-                        "name": "Plant Bean",
-                        "access_rules": [
-                          "$has_age|child,beans,bean_graveyard_no"
-                        ],
-                        "visibility_rules": [
-                          "$bean_planting|yes"
-                        ],
-                        "hosted_item": "bean_graveyard_yes"
-                      },
                       {
                         "name": "Graveyard GS Bean Patch",
                         "short_name": "GS",
@@ -2851,13 +2837,16 @@
                         "name": "DMT Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$damage_below_ohko",
-                          "nayrus,magic",
-                          "$has_bottle",
+                          "$child_death_mountain,$damage_below_ohko",
+                          "$child_death_mountain,nayrus,magic",
+                          "$child_death_mountain,$has_bottle",
+                          "$has_age|adult,$damage_below_ohko",
+                          "$has_age|adult,nayrus,magic",
+                          "$has_age|adult,$has_bottle",
                           "$has_age|adult,hoverboots",
-                          "$has_age|both,$bean_planting|no,beans,$has_explosives",
-                          "$has_age|both,$bean_planting|no,beans,lift1,$child_death_mountain",
-                          "$has_age|both,bean_trail_yes"
+                          "$has_age|adult,setting_plant_beans_on",
+                          "$has_age|both,beans,$has_explosives",
+                          "$has_age|both,beans,lift1"
                         ],
                         "chest_unopened_img": "images/HP.png",
                         "chest_opened_img": "images/HP_grey.png",
@@ -3047,9 +3036,9 @@
                           "$has_age|adult,$night_gs,hammer",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
                           "$has_age|adult,$night_gs,[logic_trail_gs_lower_hovers],hoverboots",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,$has_explosives",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,lift1",
-                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
+                          "$has_age|adult,$night_gs,[logic_trail_gs_lower_bean],setting_plant_beans_on",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],beans,$has_explosives",
+                          "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],beans,lift1"
                         ],
                         "visibility_rules": [
                           "setting_tokens_overworld"
@@ -3096,17 +3085,6 @@
                   {
                     "name": "DMT Bean Patch",
                     "sections": [
-                      {
-                        "name": "Plant Bean",
-                        "access_rules": [
-                          "$has_age|child,beans,bean_trail_no,$has_explosives",
-                          "$child_death_mountain,beans,bean_trail_no,lift1"
-                        ],
-                        "visibility_rules": [
-                          "$bean_planting|yes"
-                        ],
-                        "hosted_item": "bean_trail_yes"
-                      },
                       {
                         "name": "DMT GS Bean Patch",
                         "short_name": "GS",
@@ -3229,8 +3207,8 @@
                         "name": "DMC Volcano Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$has_age|both,ocarina,bolero,$bean_planting|no,beans",
-                          "$has_age|both,ocarina,bolero,bean_crater_yes",
+                          "$has_age|adult,$dmc_central,setting_plant_beans_on",
+                          "$has_age|both,ocarina,bolero,beans",
                           "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
                           "{ocarina,bolero}",
                           "{$link_the_goron}",
@@ -3398,16 +3376,6 @@
                       "$has_age|child,ocarina,bolero"
                     ],
                     "sections": [
-                      {
-                        "name": "Plant Bean",
-                        "access_rules": [
-                          "beans,bean_crater_no"
-                        ],
-                        "visibility_rules": [
-                          "$bean_planting|yes"
-                        ],
-                        "hosted_item": "bean_crater_yes"
-                      },
                       {
                         "name": "DMC GS Bean Patch",
                         "short_name": "GS",
@@ -4003,6 +3971,56 @@
                     "name": "ZR Frogs",
                     "sections": [
                       {
+                        "name": "ZR Frogs Zeldas Lullaby",
+                        "access_rules": [
+                          "$child_river,ocarina,lullaby"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Eponas Song",
+                        "access_rules": [
+                          "$child_river,ocarina,epona"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Sarias Song",
+                        "access_rules": [
+                          "$child_river,ocarina,saria"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Suns Song",
+                        "access_rules": [
+                          "$child_river,ocarina,sun"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
+                        "name": "ZR Frogs Song of Time",
+                        "access_rules": [
+                          "$child_river,ocarina,time"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffle_frogs_yes"
+                        ],
+                        "item_count": 1
+                      },
+                      {
                         "name": "ZR Frogs in the Rain",
                         "access_rules": [
                           "$child_river,ocarina,storm",
@@ -4340,7 +4358,8 @@
                   {
                     "name": "King Zora",
                     "access_rules": [
-                      "$has_blue_fire"
+                      "$has_blue_fire",
+                      "$can_BFA"
                     ],
                     "sections": [
                       {
@@ -4409,6 +4428,7 @@
                 "access_rules": [
                   "$child_domain",
                   "$adult_domain,$has_blue_fire",
+                  "$adult_domain,$can_BFA",
                   "$spawn_access|ZD Shop|adult"
                 ],
                 "sections": [
@@ -5247,8 +5267,8 @@
                         "name": "Colossus Freestanding PoH",
                         "short_name": "HP",
                         "access_rules": [
-                          "$child_colossus,$bean_planting|no,beans,$has_age|adult",
-                          "$child_colossus,bean_colossus_yes,$has_age|adult",
+                          "$has_age|adult,$adult_colossus,setting_plant_beans_on",
+                          "$has_age|adult,$child_colossus,beans",
                           "{$adult_colossus}"
                         ],
                         "capture_item": true,
@@ -5331,16 +5351,6 @@
                     ],
                     "sections": [
                       {
-                        "name": "Plant Bean",
-                        "access_rules": [
-                          "beans,bean_colossus_no"
-                        ],
-                        "visibility_rules": [
-                          "$bean_planting|yes"
-                        ],
-                        "hosted_item": "bean_colossus_yes"
-                      },
-                      {
                         "name": "Colossus GS Bean Patch",
                         "short_name": "GS",
                         "access_rules": [
@@ -5404,8 +5414,8 @@
                         "name": "Colossus GS Hill (N)",
                         "short_name": "GS",
                         "access_rules": [
-                          "$child_colossus,$bean_planting|no,beans",
-                          "$child_colossus,bean_colossus_yes",
+                          "$adult_colossus,setting_plant_beans_on",
+                          "$child_colossus,beans",
                           "$adult_colossus,longshot",
                           "$adult_colossus,hookshot,[logic_colossus_gs]",
                           "{$adult_colossus,bow}",

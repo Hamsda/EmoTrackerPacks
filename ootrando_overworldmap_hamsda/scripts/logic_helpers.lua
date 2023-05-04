@@ -84,21 +84,6 @@ function hintable()
   end
 end
 
-function bean_planting(state)
-  if state == "yes" then
-    if BEAN_PLANTING then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif state == "no" then
-    if not BEAN_PLANTING then
-      return 1, AccessibilityLevel.Normal
-    end
-  else
-    print("error! bean_planting - invalid state")
-  end
-  return 0, AccessibilityLevel.None
-end
-
 function has_bombchus()
   local bombs = Tracker:ProviderCountForCode("bombs")
   local chus = Tracker:ProviderCountForCode("bombchu")
@@ -195,6 +180,14 @@ end
 
 function can_LA()
   if has_age("adult") == 1 and has("magic") and has("bow") and has("lightarrow") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function can_BFA()
+  if has("setting_blue_fire_arrows_on") and has_age("adult") == 1 and has("magic") and has("bow") and has("icearrow") then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None
@@ -469,7 +462,7 @@ function _dmt_climb()
     return 1, AccessibilityLevel.Normal
   end
 
-  if has_age("both") > 0 and has("lift1") and (has("bean_trail_yes") or (has("beans") and not BEAN_PLANTING)) then
+  if has_age("both") > 0 and has("lift1") and (has("setting_plant_beans_on") or has("beans")) then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -529,7 +522,7 @@ function _dmc_central_to_lower()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
-  if has("hoverboots") or has("hookshot") or (has_age("both") > 0 and has("ocarina") and has("bolero") and has("beans")) then
+  if has("hoverboots") or has("hookshot") or has("setting_plant_beans_on") or (has_age("both") > 0 and has("ocarina") and has("bolero") and has("beans")) then
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None
@@ -782,7 +775,6 @@ function has_blue_fire()
       location_object and location_object.AccessibilityLevel and
         location_object.AccessibilityLevel == AccessibilityLevel.Normal
      then
-      --TODO: trigger dummy update
       return 1, bottle_level
     end
   end
@@ -800,13 +792,19 @@ function zora_tunic()
     if spawn_access("ZD Shop", "adult") > 0 then
       return 1, AccessibilityLevel.Normal
     end
+    local bfa_count, bfa_level = can_BFA()
     local bottle_count, bottle_level = has_bottle()
     local domain_count, domain_level = adult_domain()
-    if bottle_count > 0 and domain_count > 0 then
-      if bottle_level == AccessibilityLevel.SequenceBreak or domain_level == AccessibilityLevel.SequenceBreak then
-        return 1, AccessibilityLevel.SequenceBreak
-      else
-        return 1, AccessibilityLevel.Normal
+    if domain_count > 0 then
+      if bfa_count > 0 then
+        return 1, domain_level
+      end
+      if bottle_count > 0 then
+        if bottle_level == AccessibilityLevel.SequenceBreak or domain_level == AccessibilityLevel.SequenceBreak then
+          return 1, AccessibilityLevel.SequenceBreak
+        else
+          return 1, AccessibilityLevel.Normal
+        end
       end
     end
   end

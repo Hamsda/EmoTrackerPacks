@@ -129,9 +129,10 @@ If you have selected ![Open Door](images/setting_door_open.png "Open Door") or c
 
 ### Randomize Overworld Spawns
 
-- ![Spawn Shuffle Off](images/setting_entrance_spawn_off.png "Spawn Shuffle Off") Spawns are not shuffled.
-- ![Spawn Shuffled](images/setting_entrance_spawn_shuffle.png "Spawn Shuffled") Spawns are shuffled.
-
+- ![Randomize Spawns: Off](images/setting_entrance_spawn_off.png "Randomize Spawns: Off") Spawns are not shuffled.
+- ![Randomize Spawns: Child](images/setting_entrance_spawn_child.png "Randomize Spawns: Child") Child spawn is shuffled.
+- ![Randomize Spawns: Adult](images/setting_entrance_spawn_adult.png "Randomize Spawns: Adult") Adult spawn is shuffled.
+- ![Randomize Spawns: Both](images/setting_entrance_spawn_both.png "Randomize Spawns: Both") Both spawns are shuffled.
 
 ### Bombchus Are Considered in Logic
 
@@ -209,12 +210,19 @@ This setting determines if Magic Beans are shuffled.
 - ![Magic Beans not shuffled](images/setting_shuffle_beans_no.png "Magic Beans not shuffled") Magic Beans are not shuffled and will be captured in the corresponding chest by default.
 - ![Magic Beans shuffled](images/setting_shuffle_beans_yes.png "Magic Beans shuffled") The Magic Beans are shuffled into the item pool and will not be captured.
 
-### Shuffle Medigoron & Carpet Salesman
+### Shuffle Expensive Merchants
 
-This setting determines if Medigoron and Carpet Salesman items are shuffled.
+This setting determines if Medigoron, Granny's Potion Shop, and Carpet Salesman items are shuffled.
 
-- ![Medigoron and Carpet Salesman not shuffled](images/setting_shuffle_merchants_no.png "Medigoron and Carpet Salesman not shuffled") Medigoron and Carpet Salesman items are not shuffled.
-- ![Medigoron and Carpet Salesman shuffled](images/setting_shuffle_merchants_yes.png "Medigoron and Carpet Salesman shuffled") Medigoron and Carpet Salesman items are shuffled and the merchants sell one randomized item for 200 rupees each.
+- ![Expensive Merchants not shuffled](images/setting_shuffle_merchants_no.png "Expensive Merchants not shuffled") Expensive Merchants are not shuffled.
+- ![Expensive Merchants shuffled](images/setting_shuffle_merchants_yes.png "Expensive Merchants shuffled") Expensive Merchants are shuffled and the merchants sell one randomized item each.
+
+### Shuffle Frog Song Rupees
+
+This setting determines if the rewards for the five grey note songs (besides Song of Storms) are shuffled.
+
+- ![Frog Song Rupees not shuffled](images/setting_shuffle_frogs_no.png "Frog Song Rupees not shuffled") Frog Song Rupees are not shuffled.
+- ![Frog Song Rupees shuffled](images/setting_shuffle_frogs_yes.png "Frog Song Rupees shuffled") Frog Song Rupees are shuffled and playing the songs rewards one randomized item each.
 
 ## Main Rules: Shuffle Dungeon Items
 
@@ -270,6 +278,10 @@ This setting determines if all masks will be available once the Happy Mask Shop 
 - ![Mask Quest not complete](images/setting_masks_off.png "Mask Quest not complete") The mask quest has to be completed step by step like in the vanilla game.
 - ![Mask Quest complete](images/setting_masks_complete.png "Mask Quest complete") All the masks will be available once the Happy Mask Shop is open.
 
+### Plant Magic Beans
+
+- ![Plant Magic Beans](images/setting_plant_beans.png "Plant Magic Beans") Plants all 10 magic beans in their soft soil spots and allows adult to ride them.
+
 ### Hints
 
 This setting determines when hintable locations will show up on the map ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Other)).
@@ -288,6 +300,10 @@ This setting determines how much damage you take ([see wiki](https://wiki.ootran
 - ![Damage x2](images/setting_damage_double.png "Damage x2") Damage is doubled.
 - ![Damage x4](images/setting_damage_quadruple.png "Damage x4") Damage is quadrupled.
 - ![OHKO](images/setting_damage_ohko.png "OHKO") Damage kills you in one hit.
+
+### Blue Fire Arrows
+
+- ![Blue Fire Arrows](images/setting_blue_fire_arrows.png "Blue Fire Arrows") Changes Ice Arrows to Blue Fire Arrows and allows them to melt red ice (and mud walls out of logic).
 
 ### Nighttime Skulltulas Expect Sun's Song
 

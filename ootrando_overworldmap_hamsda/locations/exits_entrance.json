@@ -18,7 +18,7 @@
                   "$access_exit|Child Spawn|KF Links House"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_spawn_shuffle"
+                  "setting_entrance_spawn_child"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
@@ -50,7 +50,7 @@
                   "$access_exit|Adult Spawn|Temple of Time"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_spawn_shuffle"
+                  "setting_entrance_spawn_adult"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
@@ -2824,7 +2824,7 @@
               {
                 "map": "exits",
                 "badge_size": 50,
-                "x": 1860,
+                "x": 1865,
                 "y": 360
               }
             ]

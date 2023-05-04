@@ -2643,6 +2643,30 @@
             ]
           },
           {
+            "name": "Kak Odd Medicine Building",
+            "sections": [
+              {
+                "name": "Kak Granny Buy Blue Potion",
+                "short_name": "Buy Potion",
+                "access_rules": [
+                  "$access_location|Kak Granny Buy Blue Potion"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "locations",
+                "force_invisibility_rules": [
+                  "setting_shuffle_merchants_no",
+                  "setting_entrance_interiors_simple"
+                ],
+                "x": 1865,
+                "y": 360
+              }
+            ]
+          },
+          {
             "name": "Kak Bazaar",
             "sections": [
               {
@@ -3820,6 +3844,56 @@
           {
             "name": "ZR Frogs",
             "sections": [
+              {
+                "name": "ZR Frogs Zeldas Lullaby",
+                "access_rules": [
+                  "$access_location|ZR Frogs Zeldas Lullaby"
+                ],
+                "visibility_rules": [
+                  "setting_shuffle_frogs_yes"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "ZR Frogs Eponas Song",
+                "access_rules": [
+                  "$access_location|ZR Frogs Eponas Song"
+                ],
+                "visibility_rules": [
+                  "setting_shuffle_frogs_yes"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "ZR Frogs Sarias Song",
+                "access_rules": [
+                  "$access_location|ZR Frogs Sarias Song"
+                ],
+                "visibility_rules": [
+                  "setting_shuffle_frogs_yes"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "ZR Frogs Suns Song",
+                "access_rules": [
+                  "$access_location|ZR Frogs Suns Song"
+                ],
+                "visibility_rules": [
+                  "setting_shuffle_frogs_yes"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "ZR Frogs Song of Time",
+                "access_rules": [
+                  "$access_location|ZR Frogs Song of Time"
+                ],
+                "visibility_rules": [
+                  "setting_shuffle_frogs_yes"
+                ],
+                "item_count": 1
+              },
               {
                 "name": "ZR Frogs in the Rain",
                 "access_rules": [

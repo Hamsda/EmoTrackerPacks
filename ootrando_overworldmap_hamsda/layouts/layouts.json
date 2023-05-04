@@ -1,5 +1,5 @@
 {
-  "tracker_right_map": {
+  "tracker_very_tall": {
     "type": "container",
     "background": "#212121",
     "content": {
@@ -116,7 +116,7 @@
       ]
     }
   },
-  "tracker_top_map": {
+  "tracker_wide_with_scrollable_pins": {
     "type": "container",
     "background": "#212121",
     "content": {
@@ -125,89 +125,96 @@
       "content": [
         {
           "type": "dock",
-          "dock": "bottom",
+          "dock": "left",
+          "margin": "0,0,3,0",
           "content": [
             {
-              "type": "dock",
-              "dock": "left",
-              "margin": "0,0,3,0",
-              "content": [
-                {
-                  "type": "group",
-                  "header": "Items",
-                  "dock": "top",
-                  "header_content": {
-                    "type": "button_popup",
-                    "style": "settings",
-                    "popup_background": "#FF212121",
-                    "layout": "options_popup"
-                  },
-                  "content": {
-                    "type": "layout",
-                    "key": "item_grid_wide"
-                  }
-                },
-                {
-                  "type": "group",
-                  "header": "Counters",
-                  "dock": "top",
-                  "content": {
-                    "type": "layout",
-                    "key": "counters_wide"
-                  }
-                },
-                {
-                  "type": "group",
-                  "header": "Presets",
-                  "dock": "top",
-                  "content": {
-                    "type": "item",
-                    "item": "presets",
-                    "h_alignment": "left",
-                    "v_alignment": "top",
-                    "margin": "5",
-                    "width": 32,
-                    "height": 32
-                  }
-                }
-              ]
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#FF212121",
+                "layout": "options_popup"
+              },
+              "content": {
+                "type": "layout",
+                "key": "item_grid_wide"
+              }
             },
             {
               "type": "group",
-              "header": "Pinned Locations",
+              "header": "Counters",
+              "dock": "top",
               "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "horizontal",
-                "compact": true
+                "type": "layout",
+                "key": "counters_wide"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Presets",
+              "dock": "top",
+              "content": {
+                "type": "item",
+                "item": "presets",
+                "h_alignment": "left",
+                "v_alignment": "top",
+                "margin": "5",
+                "width": 32,
+                "height": 32
               }
             }
           ]
         },
         {
-          "type": "tabbed",
-          "tabs": [
+          "type": "dock",
+          "content": [
             {
-              "title": "Child",
-              "icon": "images/sword1.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "child"
-                ]
-              }
+              "type": "group",
+              "header": "Pinned Locations",
+              "dock": "left",
+              "width": 200,
+              "content": [
+                {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": {
+                    "type": "recentpins",
+                    "style": "wrap",
+                    "h_alignment": "stretch",
+                    "v_alignment": "stretch",
+                    "orientation": "vertical",
+                    "compact": true
+                  }
+                }
+              ]
             },
             {
-              "title": "Adult",
-              "icon": "images/sword2.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "adult"
-                ]
-              }
+              "type": "tabbed",
+              "tabs": [
+                {
+                  "title": "Child",
+                  "icon": "images/sword1.png",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "child"
+                    ]
+                  }
+                },
+                {
+                  "title": "Adult",
+                  "icon": "images/sword2.png",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "adult"
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }
