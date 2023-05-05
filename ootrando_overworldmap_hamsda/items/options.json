@@ -262,6 +262,25 @@
     ]
   },
   {
+    "name": "Shuffle Gerudo Valley River Exit",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_entrance_gv_river.png",
+        "img_mods": "@disabled",
+        "codes": "setting_entrance_gv_river,setting_entrance_gv_river_off"
+      },
+      {
+        "img": "images/setting_entrance_gv_river.png",
+        "codes": "setting_entrance_gv_river,setting_entrance_gv_river_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Mix Entrance Pools",
     "type": "progressive",
     "allow_disabled": false,

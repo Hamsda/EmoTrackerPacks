@@ -1590,7 +1590,7 @@ data_per_region = {
     ["pool"] = ER_POOL_TYPES.OW,
     ["exits"] = {
       ["Lake Hylia"] = {
-        ["fixed"] = true,
+        ["setting"] = "setting_entrance_gv_river_on",
         ["child_access"] = function()
           return AccessibilityLevel.Normal
         end,

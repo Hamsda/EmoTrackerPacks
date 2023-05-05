@@ -1,5 +1,9 @@
 # Changelog
 
+## x
+
+- added `Shuffle Gerudo Valley River Exit` setting
+
 ## 3.8.0.0
 
 - fixed closed DoT logic for `DMT Freestanding PoH`
