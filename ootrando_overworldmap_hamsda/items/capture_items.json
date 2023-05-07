@@ -1,5 +1,110 @@
 [
   {
+    "name": "Forest Temple Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_forest.png",
+    "codes": "capture_forest_small_keys"
+  },
+  {
+    "name": "Forest Temple Boss Key",
+    "type": "toggle",
+    "img": "images/boss_key.png",
+    "img_mods": "overlay|images/overlay_keys_forest.png",
+    "codes": "capture_forest_boss_key"
+  },
+  {
+    "name": "Fire Temple Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_fire.png",
+    "codes": "capture_fire_small_keys"
+  },
+  {
+    "name": "Fire Temple Boss Key",
+    "type": "toggle",
+    "img": "images/boss_key.png",
+    "img_mods": "overlay|images/overlay_keys_fire.png",
+    "codes": "capture_fire_boss_key"
+  },
+  {
+    "name": "Water Temple Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_water.png",
+    "codes": "capture_water_small_keys"
+  },
+  {
+    "name": "Water Temple Boss Key",
+    "type": "toggle",
+    "img": "images/boss_key.png",
+    "img_mods": "overlay|images/overlay_keys_water.png",
+    "codes": "capture_water_boss_key"
+  },
+  {
+    "name": "Spirit Temple Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_spirit.png",
+    "codes": "capture_spirit_small_keys"
+  },
+  {
+    "name": "Spirit Temple Boss Key",
+    "type": "toggle",
+    "img": "images/boss_key.png",
+    "img_mods": "overlay|images/overlay_keys_spirit.png",
+    "codes": "capture_spirit_boss_key"
+  },
+  {
+    "name": "Shadow Temple Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_shadow.png",
+    "codes": "capture_shadow_small_keys"
+  },
+  {
+    "name": "Shadow Temple Boss Key",
+    "type": "toggle",
+    "img": "images/boss_key.png",
+    "img_mods": "overlay|images/overlay_keys_shadow.png",
+    "codes": "capture_shadow_boss_key"
+  },
+  {
+    "name": "Bottom of the Well Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_botw.png",
+    "codes": "capture_botw_small_keys"
+  },
+  {
+    "name": "Thieves Hideout Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_th.png",
+    "codes": "capture_th_small_keys"
+  },
+  {
+    "name": "Gerudo Training Ground Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_gtg.png",
+    "codes": "capture_gtg_small_keys"
+  },
+  {
+    "name": "Ganons Castle Small Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_gc.png",
+    "codes": "capture_gc_small_keys"
+  },
+  {
+    "name": "Ganons Castle Boss Key",
+    "type": "toggle",
+    "img": "images/boss_key.png",
+    "img_mods": "overlay|images/overlay_keys_gc.png",
+    "codes": "capture_gc_boss_key"
+  },
+  {
     "name": "Bottle",
     "type": "toggle",
     "img": "images/bottle.png",

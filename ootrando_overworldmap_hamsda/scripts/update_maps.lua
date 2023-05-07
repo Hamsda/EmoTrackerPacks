@@ -23,133 +23,201 @@ function update_gerudo_card()
   end
 end
 
-function get_first_free_bottle()
+function collect_key(code)
+  local key_object = get_object(code)
+  if key_object then
+    if string.find(code, "boss") then
+      key_object.Active = true
+    elseif string.find(code, "small") then
+      key_object.AcquiredCount = key_object.AcquiredCount + 1
+    end
+  end
+end
+function set_first_free_bottle(newStage)
   for i = 1, 4 do
     local bottle = get_object("bottle" .. i)
     if bottle and bottle.CurrentStage == 0 then
-      return bottle
+      bottle.CurrentStage = newStage
+      break
     end
   end
-  return nil
 end
-function get_kid_trade()
+function set_kid_trade(newStage)
   local trade = get_object("kidtrade")
   if trade then
-    return trade
+    trade.CurrentStage = newStage
   end
-  return nil
 end
-function get_adult_trade()
+function set_adult_trade(newStage)
   local trade = get_object("adulttrade")
   if trade then
-    return trade
+    trade.CurrentStage = newStage
   end
-  return nil
 end
 local capture_mappings = {
+  ["capture_forest_small_keys"] = {
+    collect_key,
+    "forest_small_keys"
+  },
+  ["capture_forest_boss_key"] = {
+    collect_key,
+    "forest_boss_key"
+  },
+  ["capture_fire_small_keys"] = {
+    collect_key,
+    "fire_small_keys"
+  },
+  ["capture_fire_boss_key"] = {
+    collect_key,
+    "fire_boss_key"
+  },
+  ["capture_water_small_keys"] = {
+    collect_key,
+    "water_small_keys"
+  },
+  ["capture_water_boss_key"] = {
+    collect_key,
+    "water_boss_key"
+  },
+  ["capture_spirit_small_keys"] = {
+    collect_key,
+    "spirit_small_keys"
+  },
+  ["capture_spirit_boss_key"] = {
+    collect_key,
+    "spirit_boss_key"
+  },
+  ["capture_shadow_small_keys"] = {
+    collect_key,
+    "shadow_small_keys"
+  },
+  ["capture_shadow_boss_key"] = {
+    collect_key,
+    "shadow_boss_key"
+  },
+  ["capture_botw_small_keys"] = {
+    collect_key,
+    "botw_small_keys"
+  },
+  ["capture_th_small_keys"] = {
+    collect_key,
+    "th_small_keys"
+  },
+  ["capture_gtg_small_keys"] = {
+    collect_key,
+    "gtg_small_keys"
+  },
+  ["capture_gc_small_keys"] = {
+    collect_key,
+    "gc_small_keys"
+  },
+  ["capture_gc_boss_key"] = {
+    collect_key,
+    "gc_boss_key"
+  },
   ["capture_bottle"] = {
-    1,
-    get_first_free_bottle
+    set_first_free_bottle,
+    1
   },
   ["capture_ruto"] = {
-    2,
-    get_first_free_bottle
+    set_first_free_bottle,
+    2
   },
   ["capture_childegg"] = {
-    1,
-    get_kid_trade
+    set_kid_trade,
+    1
   },
   ["capture_childcucco"] = {
-    2,
-    get_kid_trade
+    set_kid_trade,
+    2
   },
   ["capture_letter"] = {
-    3,
-    get_kid_trade
+    set_kid_trade,
+    3
   },
   ["capture_lettershown"] = {
-    4,
-    get_kid_trade
+    set_kid_trade,
+    4
   },
   ["capture_keaton"] = {
-    5,
-    get_kid_trade
+    set_kid_trade,
+    5
   },
   ["capture_keatonsold"] = {
-    6,
-    get_kid_trade
+    set_kid_trade,
+    6
   },
   ["capture_skullmask"] = {
-    7,
-    get_kid_trade
+    set_kid_trade,
+    7
   },
   ["capture_skullsold"] = {
-    8,
-    get_kid_trade
+    set_kid_trade,
+    8
   },
   ["capture_spooky"] = {
-    9,
-    get_kid_trade
+    set_kid_trade,
+    9
   },
   ["capture_spookysold"] = {
-    10,
-    get_kid_trade
+    set_kid_trade,
+    10
   },
   ["capture_bunny"] = {
-    11,
-    get_kid_trade
+    set_kid_trade,
+    11
   },
   ["capture_bunnysold"] = {
-    12,
-    get_kid_trade
+    set_kid_trade,
+    12
   },
   ["capture_truth"] = {
-    13,
-    get_kid_trade
+    set_kid_trade,
+    13
   },
   ["capture_adultegg"] = {
-    1,
-    get_adult_trade
+    set_adult_trade,
+    1
   },
   ["capture_adultcucco"] = {
-    2,
-    get_adult_trade
+    set_adult_trade,
+    2
   },
   ["capture_cojiro"] = {
-    3,
-    get_adult_trade
+    set_adult_trade,
+    3
   },
   ["capture_mushroom"] = {
-    4,
-    get_adult_trade
+    set_adult_trade,
+    4
   },
   ["capture_oddpotion"] = {
-    5,
-    get_adult_trade
+    set_adult_trade,
+    5
   },
   ["capture_saw"] = {
-    6,
-    get_adult_trade
+    set_adult_trade,
+    6
   },
   ["capture_brokensword"] = {
-    7,
-    get_adult_trade
+    set_adult_trade,
+    7
   },
   ["capture_prescription"] = {
-    8,
-    get_adult_trade
+    set_adult_trade,
+    8
   },
   ["capture_frog"] = {
-    9,
-    get_adult_trade
+    set_adult_trade,
+    9
   },
   ["capture_eyedrops"] = {
-    10,
-    get_adult_trade
+    set_adult_trade,
+    10
   },
   ["capture_claim"] = {
-    11,
-    get_adult_trade
+    set_adult_trade,
+    11
   }
 }
 function update_collected_capture()
@@ -157,10 +225,7 @@ function update_collected_capture()
     local capture = get_object(code)
     if capture and capture.Active then
       capture.Active = false
-      local item = data[2]()
-      if item then
-        item.CurrentStage = data[1]
-      end
+      data[1](data[2])
     end
   end
 end
@@ -179,7 +244,7 @@ function update_minimal_bottle()
 end
 
 function update_free_zelda()
-  local kid_trade = get_kid_trade()
+  local kid_trade = get_object("kidtrade")
   local setting_zelda = has("setting_zelda_free")
   if kid_trade and not_like_cache("setting_zelda_free", setting_zelda) and setting_zelda then
     kid_trade.CurrentStage = 3

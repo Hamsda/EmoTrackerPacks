@@ -3,6 +3,7 @@
 ## x
 
 - added `Shuffle Gerudo Valley River Exit` setting
+- added separate captures for each small and boss key
 
 ## 3.8.0.0
 

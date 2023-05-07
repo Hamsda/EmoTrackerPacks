@@ -42,10 +42,10 @@
         [
           "capture_bottle",
           "capture_ruto",
-          "generic_map",
-          "generic_compass",
-          "generic_small_key",
-          "generic_boss_key",
+          "",
+          "HP",
+          "HC",
+          "",
           "scale1",
           "ironboots",
           "hoverboots"
@@ -73,15 +73,37 @@
           "triforce"
         ],
         [
+          "capture_forest_small_keys",
+          "capture_fire_small_keys",
+          "capture_water_small_keys",
+          "capture_spirit_small_keys",
+          "capture_shadow_small_keys",
+          "capture_gc_small_keys",
+          "capture_botw_small_keys",
+          "capture_th_small_keys",
+          "capture_gtg_small_keys"
+        ],
+        [
+          "capture_forest_boss_key",
+          "capture_fire_boss_key",
+          "capture_water_boss_key",
+          "capture_spirit_boss_key",
+          "capture_shadow_boss_key",
+          "capture_gc_boss_key",
+          "",
+          "",
+          ""
+        ],
+        [
           "capture_adultegg",
           "capture_adultcucco",
           "capture_cojiro",
           "capture_mushroom",
           "capture_oddpotion",
           "capture_saw",
-          "rupee",
-          "HP",
-          "HC"
+          "",
+          "",
+          ""
         ],
         [
           "capture_brokensword",
