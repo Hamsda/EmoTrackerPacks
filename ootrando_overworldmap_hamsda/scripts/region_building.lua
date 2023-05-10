@@ -174,13 +174,13 @@ function access_region(region, age)
   local region_adult = access_per_region_per_age[2][region]
 
   if age == "both" then
-    return and_accessibility(region_child, region_adult)
+    return and_AL(region_child, region_adult)
   elseif age == "child" then
     return region_child
   elseif age == "adult" then
     return region_adult
   else --either
-    return or_accessibility(region_child, region_adult)
+    return or_AL(region_child, region_adult)
   end
   return AccessibilityLevel.None
 end
@@ -207,13 +207,13 @@ function access_exit(region, exit, age)
   local access = AccessibilityLevel.None
 
   if age == "both" then
-    access = and_accessibility(region_child, exit_child, region_adult, exit_adult)
+    access = and_AL(region_child, exit_child, region_adult, exit_adult)
   elseif age == "child" then
-    access = and_accessibility(region_child, exit_child)
+    access = and_AL(region_child, exit_child)
   elseif age == "adult" then
-    access = and_accessibility(region_adult, exit_adult)
+    access = and_AL(region_adult, exit_adult)
   else --either
-    access = or_accessibility(and_accessibility(region_child, exit_child), and_accessibility(region_adult, exit_adult))
+    access = or_AL(and_AL(region_child, exit_child), and_AL(region_adult, exit_adult))
   end
 
   local level = ACCESS_LEVEL[access]
@@ -240,13 +240,13 @@ function access_location(location, age)
   local access = AccessibilityLevel.None
 
   if age == "both" then
-    access = and_accessibility(location_child, location_adult)
+    access = and_AL(location_child, location_adult)
   elseif age == "child" then
     access = location_child
   elseif age == "adult" then
     access = location_adult
   else --either
-    access = or_accessibility(location_child, location_adult)
+    access = or_AL(location_child, location_adult)
   end
 
   local level = ACCESS_LEVEL[access]
