@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.9.0.0
+
+- added `Shuffle Gerudo Valley River Exit` setting
+- added separate captures for each small and boss key
+- updated `user_presets`
+
 ## 3.8.0.0
 
 - fixed closed DoT logic for `DMT Freestanding PoH`

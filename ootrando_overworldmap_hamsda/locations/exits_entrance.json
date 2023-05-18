@@ -1527,6 +1527,32 @@
             ]
           },
           {
+            "name": "GV Lower Stream -> Lake Hylia",
+            "short_name": "GV -> LH",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|GV Lower Stream|Lake Hylia"
+                ],
+                "visibility_rules": [
+                  "setting_entrance_gv_river_on"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "exits",
+                "badge_size": 50,
+                "x": 700,
+                "y": 670
+              }
+            ]
+          },
+          {
             "name": "GV Grotto Ledge -> GV Octorok Grotto",
             "short_name": "GV Octorok Grotto",
             "sections": [

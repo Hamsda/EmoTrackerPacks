@@ -1,4 +1,4 @@
-function or_accessibility(...)
+function or_AL(...)
   local max_level = 0
   for _, data in ipairs({...}) do
     if data == AccessibilityLevel.Normal then
@@ -11,7 +11,7 @@ function or_accessibility(...)
   return ACCESS_LEVEL[max_level]
 end
 
-function and_accessibility(...)
+function and_AL(...)
   local min_level = 6
   for _, data in ipairs({...}) do
     if data == AccessibilityLevel.None then
@@ -194,9 +194,9 @@ function link_the_goron()
   local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
   local trick = has("logic_link_goron_dins") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
-  return and_accessibility(
+  return and_AL(
     access_region("Goron City", "adult"),
-    or_accessibility(lift, has_explosives(), bow, and_accessibility(trick, df))
+    or_AL(lift, has_explosives(), bow, and_AL(trick, df))
   )
 end
 
@@ -204,9 +204,9 @@ function gc_child_fire()
   local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
   local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
-  return or_accessibility(
-    and_accessibility(access_region("Goron City", "child"), df),
-    and_accessibility(access_region("GC Darunias Chamber", "child"), sticks)
+  return or_AL(
+    and_AL(access_region("Goron City", "child"), df),
+    and_AL(access_region("GC Darunias Chamber", "child"), sticks)
   )
 end
 
@@ -220,14 +220,14 @@ function woods_warp_open()
   local lift = has("lift") and AccessibilityLevel.Normal or AccessibilityLevel.None
   local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
 
-  return or_accessibility(
-    and_accessibility(hammer, or_accessibility(adult_gc, adult_warp)),
-    and_accessibility(
-      or_accessibility(has_explosives(), df),
-      or_accessibility(child_gc, adult_gc, child_warp, adult_warp)
+  return or_AL(
+    and_AL(hammer, or_AL(adult_gc, adult_warp)),
+    and_AL(
+      or_AL(has_explosives(), df),
+      or_AL(child_gc, adult_gc, child_warp, adult_warp)
     ),
-    and_accessibility(bow, adult_gc),
-    and_accessibility(lift, or_accessibility(child_gc, adult_gc)),
+    and_AL(bow, adult_gc),
+    and_AL(lift, or_AL(child_gc, adult_gc)),
     gc_child_fire()
   )
 end
@@ -263,7 +263,7 @@ function has_bottle()
     travel = can_time_travel()
   end
 
-  return or_accessibility(deliver, travel)
+  return or_AL(deliver, travel)
 end
 
 blue_fire_locations = {
@@ -318,22 +318,22 @@ function raise_water_level()
 
   local child = AccessibilityLevel.None
   if has("sticks") then
-    child = and_accessibility(child_level, has_projectile("child"))
+    child = and_AL(child_level, has_projectile("child"))
   end
 
   local adult_df = AccessibilityLevel.None
   local child_df = AccessibilityLevel.None
   if has("dinsfire") and has("magic") then
-    adult_df = and_accessibility(adult_level, has_explosives())
-    child_df = and_accessibility(child_level, has_projectile("child"))
+    adult_df = and_AL(adult_level, has_explosives())
+    child_df = and_AL(child_level, has_projectile("child"))
   end
 
-  return or_accessibility(adult, child, adult_df, child_df)
+  return or_AL(adult, child, adult_df, child_df)
 end
 
 function poes_killed()
   if has("bow") then
-    return and_accessibility(
+    return and_AL(
       access_region("Forest Temple Bow Region", "adult"),
       access_region("Forest Temple Falling Room", "adult")
     )
@@ -343,7 +343,7 @@ end
 
 function poes_killed_mq()
   if has("bow") then
-    return and_accessibility(
+    return and_AL(
       access_region("Forest Temple MQ Bow Region", "adult"),
       access_region("Forest Temple MQ Falling Room", "adult")
     )
@@ -360,7 +360,7 @@ function can_finish_GerudoFortress(age)
         if has("bow") or has("hookshot") or has("hoverboots") or has("card") or has("logic_gerudo_kitchen") then
           kitchen = AccessibilityLevel.Normal
         end
-        return and_accessibility(acc, kitchen)
+        return and_AL(acc, kitchen)
       elseif age == "child" then
         local weapon = AccessibilityLevel.None
         if has("sword1") then
@@ -372,7 +372,7 @@ function can_finish_GerudoFortress(age)
         if has("card") or has("logic_gerudo_kitchen") then
           kitchen = AccessibilityLevel.Normal
         end
-        return and_accessibility(acc, weapon, kitchen)
+        return and_AL(acc, weapon, kitchen)
       end
     end
   elseif has("gerudo_fortress_fast") then
@@ -386,7 +386,7 @@ function can_finish_GerudoFortress(age)
         elseif has("sticks") then
           weapon = AccessibilityLevel.SequenceBreak
         end
-        return and_accessibility(acc, weapon)
+        return and_AL(acc, weapon)
       end
     end
   elseif has("gerudo_fortress_open") then
