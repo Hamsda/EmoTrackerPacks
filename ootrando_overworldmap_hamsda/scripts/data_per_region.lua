@@ -7754,7 +7754,7 @@ data_per_region = {
     ["locations"] = {
       ["Deku Tree MQ GS Basement Graves Room"] = {
         ["child_access"] = function()
-          if has("time") and has("boomerang") then
+          if has_song("time") == 1 and has("boomerang") then
             return AccessibilityLevel.Normal
           end
           if has("sling") then
@@ -7763,7 +7763,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("longshot") or (has("time") and has("hookshot")) then
+          if has("longshot") or (has_song("time") == 1 and has("hookshot")) then
             return AccessibilityLevel.Normal
           end
           if has("bow") then
@@ -15747,8 +15747,8 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            has("hammer") and has_song("time") == 1 and has("epona") and has("sun") and has("storm") and
-              has("lullaby")
+            has("hammer") and has_song("time") == 1 and has_song("epona") == 1 and has_song("sun") == 1 and
+            has_song("storm") == 1 and has_song("lullaby") == 1
            then
             if has("spirit_small_keys", 7) then
               return AccessibilityLevel.Normal
@@ -15784,8 +15784,8 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            has("hammer") and has_song("time") == 1 and has("epona") and has("sun") and has("storm") and
-              has("lullaby")
+            has("hammer") and has_song("time") == 1 and has_song("epona") == 1 and has_song("sun") == 1 and
+            has_song("storm") == 1 and has_song("lullaby") == 1
            then
             if has("spirit_small_keys", 7) then
               return AccessibilityLevel.Normal

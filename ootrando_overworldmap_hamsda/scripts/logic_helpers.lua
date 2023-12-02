@@ -233,7 +233,7 @@ end
 
 function beyond_mido()
   if
-    (has("ocarina") and (has("saria") or has("minuet"))) or has("logic_mido_backflip") or
+    has_song("saria") == 1 or has_song("minuet") == 1 or has("logic_mido_backflip") or
       spawn_access("Sacred Forest Meadow", "adult") > 0
    then
     return 1, AccessibilityLevel.Normal
