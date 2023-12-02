@@ -3540,7 +3540,7 @@
                         "name": "Market Treasure Chest Game Reward",
                         "short_name": "Reward",
                         "access_rules": [
-                          "$has_age|child,[$can_use_lens]",
+                          "$has_age|child,tcg_small_keys:5,[$can_use_lens]",
                           "{$hintable}"
                         ],
                         "capture_item": true,
@@ -3550,6 +3550,72 @@
                     "map_locations": [
                       {
                         "map": "child",
+                        "force_invisibility_rules": [
+                          "setting_shuffle_tcgkeys_yes"
+                        ],
+                        "x": 1425,
+                        "y": 365
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Market Treasure Chest Game",
+                    "sections": [
+                      {
+                        "name": "Market Treasure Chest Room 1",
+                        "short_name": "Room 1",
+                        "access_rules": [
+                          "$has_age|child,tcg_small_keys:1"
+                        ],
+                        "item_count": 2
+                      },
+                      {
+                        "name": "Market Treasure Chest Room 2",
+                        "short_name": "Room 2",
+                        "access_rules": [
+                          "$has_age|child,tcg_small_keys:2"
+                        ],
+                        "item_count": 2
+                      },
+                      {
+                        "name": "Market Treasure Chest Room 3",
+                        "short_name": "Room 3",
+                        "access_rules": [
+                          "$has_age|child,tcg_small_keys:3"
+                        ],
+                        "item_count": 2
+                      },
+                      {
+                        "name": "Market Treasure Chest Room 4",
+                        "short_name": "Room 4",
+                        "access_rules": [
+                          "$has_age|child,tcg_small_keys:4"
+                        ],
+                        "item_count": 2
+                      },
+                      {
+                        "name": "Market Treasure Chest Room 5",
+                        "short_name": "Room 5",
+                        "access_rules": [
+                          "$has_age|child,tcg_small_keys:5"
+                        ],
+                        "item_count": 2
+                      },
+                      {
+                        "name": "Market Treasure Chest Room 6",
+                        "short_name": "Room 6",
+                        "access_rules": [
+                          "$has_age|child,tcg_small_keys:6"
+                        ],
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "child",
+                        "force_invisibility_rules": [
+                          "setting_shuffle_tcgkeys_no"
+                        ],
                         "x": 1425,
                         "y": 365
                       }

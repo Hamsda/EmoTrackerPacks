@@ -24,6 +24,7 @@ local fix_non_map_hideout = true
 local keys_settings = {
   ["setting_shuffle_smallkeys"] = 0,
   ["setting_shuffle_hideoutkeys"] = 0,
+  ["setting_shuffle_tcgkeys"] = 0,
   ["setting_shuffle_bosskeys"] = 0,
   ["setting_shuffle_ganon_bosskey"] = 0
 }
@@ -79,6 +80,7 @@ end
 
 local stored_keycounts = {}
 local stored_hideout = nil
+local stored_tcg = nil
 local stored_bks = {}
 local stored_ganon = nil
 function update_shuffled_keys()
@@ -117,6 +119,26 @@ function update_shuffled_keys()
         key_object.AcquiredCount = stored_hideout
       end
       stored_hideout = nil
+    end
+  end
+
+  if has("setting_shuffle_tcgkeys_no") then
+    local key_object = get_object("tcg_small_keys")
+    if key_object then
+      if stored_tcg == nil then
+        -- Save key count in cache
+        stored_tcg = key_object.AcquiredCount
+      end
+      key_object.AcquiredCount = key_object.MaxCount
+    end
+  elseif has("setting_shuffle_tcgkeys_yes") then
+    if stored_tcg ~= nil then
+      -- Restore key count from cache
+      local key_object = get_object("tcg_small_keys")
+      if key_object then
+        key_object.AcquiredCount = stored_tcg
+      end
+      stored_tcg = nil
     end
   end
 

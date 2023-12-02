@@ -360,6 +360,19 @@
     "max_quantity": 99
   },
   {
+    "name": "Treasure Chest Game Label",
+    "type": "static",
+    "img": "images/label_tcg.png",
+    "codes": "tcg_label"
+  },
+  {
+    "name": "Treasure Chest Game Keys",
+    "type": "consumable",
+    "img": "images/small_key.png",
+    "codes": "tcg_small_keys,tcgsmall,tcgsk",
+    "max_quantity": 6
+  },
+  {
     "name": "Gerudo Training Ground Label",
     "type": "progressive",
     "allow_disabled": false,
