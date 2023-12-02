@@ -1,5 +1,5 @@
 function can_time_travel()
-  if has("setting_door_open") or (has_song("time")) then
+  if has("setting_door_open") or (has_song("time") == 1) then
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None
@@ -59,7 +59,7 @@ function spawn_access(region, age)
 end
 
 function night_gs()
-  if has("setting_skulltulas_sun_off") or (has_song("sun")) then
+  if has("setting_skulltulas_sun_off") or (has_song("sun") == 1) then
     return 1, AccessibilityLevel.Normal
   end
   return 1, AccessibilityLevel.SequenceBreak
@@ -258,7 +258,7 @@ function _gerudo_bridge()
     return 0, AccessibilityLevel.None
   end
   if
-    has("longshot") or has_song("epona") or has("gerudo_fortress_open") or
+    has("longshot") or has_song("epona") == 1 or has("gerudo_fortress_open") or
       (has("setting_shuffle_card_no") and has("card")) or
       spawn_access("Gerudo Fortress", "adult") > 0
    then
@@ -301,7 +301,7 @@ function gerudo_valley_far_side()
     return 1, AccessibilityLevel.Normal
   end
 
-  if has_song("requiem") then
+  if has_song("requiem") == 1 then
     local _, reverse_level = _wasteland_reverse()
     local _, quicksand_level = _quicksand()
 
@@ -333,7 +333,7 @@ function wasteland()
     end
   end
 
-  if has_song("requiem") then
+  if has_song("requiem") == 1 then
     return _wasteland_reverse()
   end
 
@@ -341,7 +341,7 @@ function wasteland()
 end
 
 function child_colossus()
-  if has_song("requiem") and has_age("child") == 1 then
+  if has_song("requiem") == 1 and has_age("child") == 1 then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None
@@ -349,7 +349,7 @@ function child_colossus()
 end
 
 function adult_colossus()
-  if has_song("requiem") then
+  if has_song("requiem") == 1 then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -522,7 +522,7 @@ function _dmc_central_to_lower()
   if has_age("adult") == 0 then
     return 0, AccessibilityLevel.None
   end
-  if has("hoverboots") or has("hookshot") or has("setting_plant_beans_on") or (has_age("both") > 0 and has_song("bolero") and has("beans")) then
+  if has("hoverboots") or has("hookshot") or has("setting_plant_beans_on") or (has_age("both") > 0 and has_song("bolero") == 1 and has("beans")) then
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None
@@ -537,7 +537,7 @@ function dmc_upper()
     return 1, AccessibilityLevel.Normal
   end
 
-  if has_song("bolero") and _dmc_central_to_lower() > 0 then
+  if has_song("bolero") == 1 and _dmc_central_to_lower() > 0 then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -558,7 +558,7 @@ function dmc_lower()
     return 1, AccessibilityLevel.Normal
   end
 
-  if has_song("bolero") and _dmc_central_to_lower() > 0 then
+  if has_song("bolero") == 1 and _dmc_central_to_lower() > 0 then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -594,7 +594,7 @@ function dmc_lower()
 end
 
 function dmc_central()
-  if has_song("bolero") then
+  if has_song("bolero") == 1 then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -657,7 +657,7 @@ function child_domain()
 
   local river_count, river_level = child_river()
   if river_count > 0 then
-    if (has_song("lullaby")) or has("logic_zora_with_cucco") then
+    if (has_song("lullaby") == 1) or has("logic_zora_with_cucco") then
       return river_count, river_level
     end
     return 1, AccessibilityLevel.SequenceBreak
@@ -684,7 +684,7 @@ function adult_domain()
   end
 
   if
-    (has_song("lullaby")) or spawn_access("Zoras Domain", "adult") > 0 or
+    (has_song("lullaby") == 1) or spawn_access("Zoras Domain", "adult") > 0 or
       spawn_access("ZD Shop", "adult") > 0
    then
     return 1, AccessibilityLevel.Normal

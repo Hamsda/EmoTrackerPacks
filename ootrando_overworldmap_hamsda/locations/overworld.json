@@ -4032,7 +4032,7 @@
                       {
                         "name": "ZR Frogs Ocarina Game",
                         "access_rules": [
-                          "$child_river,$has_song|lullaby,saria,epona,sun,time,storm",
+                          "$child_river,$has_song|lullaby,$has_song|saria,$has_song|epona,$has_song|sun,$has_song|time,$has_song|storm",
                           "{$hintable}"
                         ],
                         "capture_item": true,

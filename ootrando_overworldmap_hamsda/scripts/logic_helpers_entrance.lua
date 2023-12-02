@@ -41,7 +41,7 @@ function can_time_travel()
 end
 
 function night_gs()
-  if has("setting_skulltulas_sun_off") or (has_song("sun")) then
+  if has("setting_skulltulas_sun_off") or (has_song("sun") == 1) then
     return AccessibilityLevel.Normal
   end
   return AccessibilityLevel.SequenceBreak
@@ -65,7 +65,7 @@ function hintable()
 end
 
 function can_open_storm_grotto()
-  if has_song("storm") then
+  if has_song("storm") == 1 then
     return hidden_grotto()
   end
   return AccessibilityLevel.None
@@ -301,7 +301,7 @@ function has_blue_fire()
 end
 
 function drain_well()
-  if has_song("storm") then
+  if has_song("storm") == 1 then
     return access_region("Kak Windmill", "child")
   end
   return AccessibilityLevel.None
