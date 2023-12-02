@@ -224,6 +224,13 @@ This setting determines if the rewards for the five grey note songs (besides Son
 - ![Frog Song Rupees not shuffled](images/setting_shuffle_frogs_no.png "Frog Song Rupees not shuffled") Frog Song Rupees are not shuffled.
 - ![Frog Song Rupees shuffled](images/setting_shuffle_frogs_yes.png "Frog Song Rupees shuffled") Frog Song Rupees are shuffled and playing the songs rewards one randomized item each.
 
+### Shuffle Individual Ocarina Notes
+
+This setting determines if the five ocarina notes are shuffled.
+
+- ![Ocarina Notes not shuffled](images/setting_shuffle_notes_no.png "Ocarina Notes not shuffled") Ocarina Notes are not shuffled.
+- ![Ocarina Notes shuffled](images/setting_shuffle_notes_yes.png "Ocarina Notes shuffled") Ocarina Notes are shuffled and songs cannot be played until notes are found.
+
 ## Main Rules: Shuffle Dungeon Items
 
 This tab contains settings about dungeon items being shuffled ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Shuffle_Dungeon_Items)).

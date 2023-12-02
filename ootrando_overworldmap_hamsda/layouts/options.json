@@ -197,6 +197,12 @@
         "item": "setting_shuffle_frogs",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_notes",
+        "width": 200,
+        "height": 16
       }
     ]
   },

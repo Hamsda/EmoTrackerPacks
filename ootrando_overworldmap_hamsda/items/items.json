@@ -378,6 +378,36 @@
     "codes": "ocarinacrow,scarecrow,pierre"
   },
   {
+    "name": "Note A",
+    "type": "toggle",
+    "img": "images/note_a.png",
+    "codes": "note_a"
+  },
+  {
+    "name": "Note C-Up",
+    "type": "toggle",
+    "img": "images/note_up.png",
+    "codes": "note_up"
+  },
+  {
+    "name": "Note C-Left",
+    "type": "toggle",
+    "img": "images/note_left.png",
+    "codes": "note_left"
+  },
+  {
+    "name": "Note C-Right",
+    "type": "toggle",
+    "img": "images/note_right.png",
+    "codes": "note_right"
+  },
+  {
+    "name": "Note C-Down",
+    "type": "toggle",
+    "img": "images/note_down.png",
+    "codes": "note_down"
+  },
+  {
     "name": "Bottle 1",
     "type": "progressive",
     "loop": true,
