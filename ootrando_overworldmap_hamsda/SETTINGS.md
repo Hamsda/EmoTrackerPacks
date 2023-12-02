@@ -224,13 +224,6 @@ This setting determines if the rewards for the five grey note songs (besides Son
 - ![Frog Song Rupees not shuffled](images/setting_shuffle_frogs_no.png "Frog Song Rupees not shuffled") Frog Song Rupees are not shuffled.
 - ![Frog Song Rupees shuffled](images/setting_shuffle_frogs_yes.png "Frog Song Rupees shuffled") Frog Song Rupees are shuffled and playing the songs rewards one randomized item each.
 
-### Shuffle Treasure Chest Game Keys
-
-This setting determines if the keys for the treasure chest game in the market are shuffled (non keys variants will force this off).
-
-* ![Treasure Chest Game Keys not shuffled](images/setting_shuffle_tcgkeys_no.png "Treasure Chest Game Keys not shuffled") Treasure Chest Game Keys are not shuffled and will always be available.
-* ![Treasure Chest Game Keys shuffled](images/setting_shuffle_tcgkeys_yes.png "Treasure Chest Game Keys shuffled") Treasure Chest Game Keys are shuffled and need to be tracked by the user.
-
 ## Main Rules: Shuffle Dungeon Items
 
 This tab contains settings about dungeon items being shuffled ([see wiki](https://wiki.ootrandomizer.com/index.php?title=Readme#Shuffle_Dungeon_Items)).
@@ -252,6 +245,13 @@ This setting determines if Thieves' Hideout Keys are shuffled (non keys variants
 
 - ![Thieves' Hideout Keys not shuffled](images/setting_shuffle_hideoutkeys_no.png "Thieves' Hideout Keys not shuffled") Thieves' Hideout Keys are not shuffled and will always be considered at their maximum.
 - ![Thieves' Hideout Keys shuffled](images/setting_shuffle_hideoutkeys_yes.png "Thieves' Hideout Keys shuffled") Thieves' Hideout Keys are shuffled and need to be tracked by the user.
+
+### Shuffle Treasure Chest Game Keys
+
+This setting determines if the keys for the treasure chest game in the market are shuffled (non keys variants will force this off).
+
+* ![Treasure Chest Game Keys not shuffled](images/setting_shuffle_tcgkeys_no.png "Treasure Chest Game Keys not shuffled") Treasure Chest Game Keys are not shuffled and will always be available.
+* ![Treasure Chest Game Keys shuffled](images/setting_shuffle_tcgkeys_yes.png "Treasure Chest Game Keys shuffled") Treasure Chest Game Keys are shuffled and need to be tracked by the user.
 
 ### Shuffle Boss Keys
 
