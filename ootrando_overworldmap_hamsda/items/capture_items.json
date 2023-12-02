@@ -91,6 +91,13 @@
     "codes": "capture_gtg_small_keys"
   },
   {
+    "name": "Treasure Chest Game Keys",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "img_mods": "overlay|images/overlay_keys_tcg.png",
+    "codes": "capture_tcg_small_keys"
+  },
+  {
     "name": "Ganons Castle Small Keys",
     "type": "toggle",
     "img": "images/small_key.png",

@@ -103,6 +103,10 @@ local capture_mappings = {
     collect_key,
     "th_small_keys"
   },
+  ["capture_tcg_small_keys"] = {
+    collect_key,
+    "tcg_small_keys"
+  },
   ["capture_gtg_small_keys"] = {
     collect_key,
     "gtg_small_keys"
