@@ -913,6 +913,7 @@ function _has_song_notes(song)
   song_notes["nocturne"] = { "left", "right", "a", "down" }
   song_notes["requiem"]  = { "a", "down", "right" }
   song_notes["prelude"]  = { "up", "right", "left" }
+  song_notes["all"]      = { "a", "down", "right", "left", "up" }
 
   for _,direction in ipairs(song_notes[song]) do
     if not has("note_" .. direction) then
@@ -931,6 +932,16 @@ function has_song(song)
   if has("setting_shuffle_notes_no") and has("ocarina") and has(song) then
     return 1, AccessibilityLevel.Normal
   elseif has("setting_shuffle_notes_yes") and has("ocarina") and has(song) and _has_song_notes(song) then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function has_all_notes()
+  if has("setting_shuffle_notes_no") and has("ocarina") then
+    return 1, AccessibilityLevel.Normal
+  elseif has("setting_shuffle_notes_yes") and has("ocarina") and _has_song_notes("all") then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None

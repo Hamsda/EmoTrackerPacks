@@ -582,7 +582,7 @@ data_per_region = {
       },
       ["LW Ocarina Memory Game"] = {
         ["child_access"] = function()
-          if has("ocarina") then
+          if has_all_notes() == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None

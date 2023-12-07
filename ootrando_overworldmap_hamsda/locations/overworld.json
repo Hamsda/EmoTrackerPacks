@@ -367,7 +367,7 @@
                   {
                     "name": "ResidentSleeper",
                     "access_rules": [
-                      "$has_age|child,ocarina"
+                      "$has_age|child,$has_all_notes"
                     ],
                     "item_count": 1
                   }
