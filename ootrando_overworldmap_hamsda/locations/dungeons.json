@@ -300,9 +300,9 @@
         "name": "GS Compass Room",
         "short_name": "Compass",
         "access_rules": [
-          "@Deku Tree MQ/Compass Room,boomerang,bombs,ocarina,time",
+          "@Deku Tree MQ/Compass Room,boomerang,bombs,$has_song|time",
           "@Deku Tree MQ/Compass Room,boomerang,$has_bombchus",
-          "{@Deku Tree MQ/Compass Room,bombs,ocarina,time}",
+          "{@Deku Tree MQ/Compass Room,bombs,$has_song|time}",
           "{@Deku Tree MQ/Compass Room,$has_bombchus}"
         ],
         "visibility_rules": [
@@ -334,7 +334,7 @@
         "name": "After Spinning Log Chest",
         "short_name": "After Log",
         "access_rules": [
-          "@Deku Tree MQ/Basement Water Room Back,ocarina,time",
+          "@Deku Tree MQ/Basement Water Room Back,$has_song|time",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -344,7 +344,7 @@
         "name": "GS Basement Graves Room",
         "short_name": "Ceiling",
         "access_rules": [
-          "@Deku Tree MQ/Basement Back Room,boomerang,ocarina,time",
+          "@Deku Tree MQ/Basement Back Room,boomerang,$has_song|time",
           "{@Deku Tree MQ/Basement Back Room,sling}",
           "{$hintable}"
         ],
@@ -964,8 +964,8 @@
         "name": "GS Song of Time Block Room",
         "short_name": "Song of Time",
         "access_rules": [
-          "@Dodongos Cavern MQ/Elevator,ocarina,time,$can_child_attack",
-          "@Dodongos Cavern MQ/Elevator,ocarina,time,$has_age|adult",
+          "@Dodongos Cavern MQ/Elevator,$has_song|time,$can_child_attack",
+          "@Dodongos Cavern MQ/Elevator,$has_song|time,$has_age|adult",
           "{$hintable}"
         ],
         "visibility_rules": [
@@ -1366,7 +1366,7 @@
         "name": "GS Boomerang Chest Room",
         "short_name": "Boomerang",
         "access_rules": [
-          "@Jabu Jabus Belly MQ/Main,ocarina,time,$can_child_attack",
+          "@Jabu Jabus Belly MQ/Main,$has_song|time,$can_child_attack",
           "@Jabu Jabus Belly MQ/Main,[logic_jabu_mq_sot_gs],boomerang"
         ],
         "visibility_rules": [
@@ -1417,7 +1417,7 @@
       {
         "name": "Cow",
         "access_rules": [
-          "@Jabu Jabus Belly MQ/Past Big Octo,ocarina,epona",
+          "@Jabu Jabus Belly MQ/Past Big Octo,$has_song|epona",
           "{$hintable}"
         ],
         "visibility_rules": [
@@ -1634,7 +1634,7 @@
         "name": "GS Red Ice",
         "short_name": "Red Ice",
         "access_rules": [
-          "ocarina,time",
+          "$has_song|time",
           "[logic_ice_mq_red_ice_gs]"
         ],
         "visibility_rules": [
@@ -1760,7 +1760,7 @@
         "access_rules": [
           "@Forest Temple/Bow Region,forest_small_keys:5,$has_age|adult,bow",
           "@Forest Temple/Bow Region,forest_small_keys:5,dinsfire,magic",
-          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,ocarina,time,$has_age|adult",
+          "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_song|time,$has_age|adult",
           "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,@Forest Temple/Outside Upper Ledge,$has_age|adult",
           "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,longshot",
           "[logic_forest_door_frame],hoverboots,ocarina,scarecrow,hookshot,$has_age|adult,bow,[logic_forest_vines],hookshot",
@@ -1786,7 +1786,7 @@
       {
         "name": "Outdoors High Balconies",
         "access_rules": [
-          "ocarina,time,$has_age|adult",
+          "$has_song|time,$has_age|adult",
           "@Forest Temple/Outside Upper Ledge,$has_age|adult",
           "$has_age|adult,bow,longshot",
           "$has_age|adult,bow,[logic_forest_vines],hookshot",
@@ -2107,7 +2107,7 @@
           "@Forest Temple MQ/NW Outdoors,bow,firearrow,magic",
           "@Forest Temple MQ/NE Outdoors,longshot",
           "@Forest Temple MQ/NE Outdoors,hookshot,hoverboots",
-          "@Forest Temple MQ/NE Outdoors,hookshot,ocarina,time",
+          "@Forest Temple MQ/NE Outdoors,hookshot,$has_song|time",
           "@Forest Temple MQ/NE Outdoors,hookshot,[logic_forest_vines]"
         ],
         "visibility_rules": [
@@ -2131,7 +2131,7 @@
       {
         "name": "Falling Room",
         "access_rules": [
-          "@Forest Temple MQ/NE Outdoors Ledge,ocarina,time",
+          "@Forest Temple MQ/NE Outdoors Ledge,$has_song|time",
           "@Forest Temple MQ/Bow Region,forest_small_keys:5,bow",
           "@Forest Temple MQ/Bow Region,forest_small_keys:5,dinsfire,magic"
         ],
@@ -2177,8 +2177,8 @@
         "name": "Wolfos Chest",
         "short_name": "Wolfos",
         "access_rules": [
-          "@Forest Temple MQ/Central Area,ocarina,time",
-          "@Forest Temple MQ/Bow Region,[ocarina],[time]"
+          "@Forest Temple MQ/Central Area,$has_song|time",
+          "@Forest Temple MQ/Bow Region,[$has_song|time]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2188,7 +2188,7 @@
         "short_name": "Outdoor East",
         "access_rules": [
           "@Forest Temple MQ/NE Outdoors,hookshot",
-          "@Forest Temple MQ/NE Outdoors,bow,firearrow,magic,ocarina,time",
+          "@Forest Temple MQ/NE Outdoors,bow,firearrow,magic,$has_song|time",
           "@Forest Temple MQ/NE Outdoors,bow,firearrow,magic,hoverboots,[logic_forest_door_frame]"
         ],
         "visibility_rules": [
@@ -2469,7 +2469,7 @@
         "name": "GS Song of Time Room",
         "short_name": "Time Block",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,$has_age|adult,ocarina,time",
+          "@Fire Temple/Big Lava Room,$has_age|adult,$has_song|time",
           "@Fire Temple/Big Lava Room,$has_age|adult,[logic_fire_song_of_time]"
         ],
         "visibility_rules": [
@@ -2605,7 +2605,7 @@
         "name": "Highest Goron Chest",
         "short_name": "Highest Goron",
         "access_rules": [
-          "@Fire Temple/West Tower,hammer,ocarina,time",
+          "@Fire Temple/West Tower,hammer,$has_song|time",
           "@Fire Temple/West Tower,hammer,[logic_rusted_switches],hoverboots",
           "@Fire Temple/West Tower,hammer,[logic_rusted_switches],$has_explosives"
         ],
@@ -2628,7 +2628,7 @@
           "[$goron_tunic],hammer,fire_boss_key,[logic_fire_boss_door_jump]",
           "[$goron_tunic],hammer,fire_boss_key,hoverboots",
           "[$goron_tunic],hammer,fire_boss_key,fire_temple_shortcuts",
-          "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,ocarina,time",
+          "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,$has_song|time",
           "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,$has_explosives"
         ],
         "hosted_item": "fire",
@@ -2839,8 +2839,8 @@
         "name": "GS Skull On Fire",
         "short_name": "East Tower Top",
         "access_rules": [
-          "@Fire Temple MQ/Upper Maze,ocarina,time,hookshot,$has_explosives",
-          "@Fire Temple MQ/Upper Maze,ocarina,time,hookshot,[logic_rusted_switches]",
+          "@Fire Temple MQ/Upper Maze,$has_song|time,hookshot,$has_explosives",
+          "@Fire Temple MQ/Upper Maze,$has_song|time,hookshot,[logic_rusted_switches]",
           "@Fire Temple MQ/Upper Maze,longshot",
           "{$hintable}"
         ],
@@ -2856,7 +2856,7 @@
         "name": "GS Fire Wall Maze Side Room",
         "short_name": "Fire Maze Side",
         "access_rules": [
-          "@Fire Temple MQ/West Top,ocarina,time",
+          "@Fire Temple MQ/West Top,$has_song|time",
           "@Fire Temple MQ/West Top,hoverboots",
           "@Fire Temple MQ/West Top,[logic_fire_mq_flame_maze]"
         ],
@@ -3000,9 +3000,9 @@
       {
         "name": "Middle Water Level",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,bow",
-          "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic",
-          "@Water Temple/Dive,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],hookshot"
+          "@Water Temple/Dive,$has_song|lullaby,bow",
+          "@Water Temple/Dive,$has_song|lullaby,dinsfire,magic",
+          "@Water Temple/Dive,$has_song|lullaby,water_small_keys:1,[water_small_keys:5],hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -3014,9 +3014,9 @@
         "access_rules": [
           "@Water Temple/Middle Water Level",
           "[@Water Temple/Middle Water Level],@Water Temple/Dive,$has_bombchus,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,hookshot,[logic_water_cracked_wall_nothing]",
-          "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_nothing]",
-          "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_hovers]"
+          "@Water Temple/Dive,$has_song|lullaby,hookshot,[logic_water_cracked_wall_nothing]",
+          "@Water Temple/Dive,$has_song|lullaby,hoverboots,[logic_water_cracked_wall_nothing]",
+          "@Water Temple/Dive,$has_song|lullaby,hoverboots,[logic_water_cracked_wall_hovers]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -3027,9 +3027,9 @@
         "name": "North Basement",
         "access_rules": [
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ironboots",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ocarina,lullaby",
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,$has_song|lullaby",
           "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,ironboots",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,ocarina,lullaby"
+          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,$has_song|lullaby"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -3058,8 +3058,8 @@
         "name": "Torches Chest",
         "short_name": "Torches",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,bow",
-          "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic"
+          "@Water Temple/Dive,$has_song|lullaby,bow",
+          "@Water Temple/Dive,$has_song|lullaby,dinsfire,magic"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -3068,10 +3068,10 @@
         "name": "GS Behind Gate",
         "short_name": "South Basement",
         "access_rules": [
-          "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,ironboots",
-          "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,scale",
-          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,ironboots",
-          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,scale",
+          "@Water Temple/Dive,hookshot,$has_explosives,$has_song|lullaby,ironboots",
+          "@Water Temple/Dive,hookshot,$has_explosives,$has_song|lullaby,scale",
+          "@Water Temple/Dive,hoverboots,$has_explosives,$has_song|lullaby,ironboots",
+          "@Water Temple/Dive,hoverboots,$has_explosives,$has_song|lullaby,scale",
           "{$hintable}"
         ],
         "visibility_rules": [
@@ -3087,7 +3087,7 @@
         "short_name": "Compass",
         "access_rules": [
           "@Water Temple/Dive,hookshot,ironboots",
-          "@Water Temple/Dive,hookshot,ocarina,lullaby"
+          "@Water Temple/Dive,hookshot,$has_song|lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -3096,9 +3096,9 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[logic_water_central_bow]",
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,hoverboots",
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,longshot"
+          "@Water Temple/Dive,lift1,$has_song|lullaby,bow,[logic_water_central_bow]",
+          "@Water Temple/Dive,lift1,$has_song|lullaby,bow,hoverboots",
+          "@Water Temple/Dive,lift1,$has_song|lullaby,bow,longshot"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -3107,14 +3107,14 @@
         "name": "GS Central Pillar",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,longshot,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Dive,ocarina,lullaby,longshot,bow",
-          "@Water Temple/Dive,ocarina,lullaby,longshot,dinsfire,magic",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,bow",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,dinsfire",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,bow",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,dinsfire,magic",
+          "@Water Temple/Dive,$has_song|lullaby,longshot,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Dive,$has_song|lullaby,longshot,bow",
+          "@Water Temple/Dive,$has_song|lullaby,longshot,dinsfire,magic",
+          "@Water Temple/Dive,$has_song|lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
+          "@Water Temple/Dive,$has_song|lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,bow",
+          "@Water Temple/Dive,$has_song|lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,dinsfire",
+          "@Water Temple/Dive,$has_song|lullaby,[logic_water_central_gs_irons],hookshot,ironboots,bow",
+          "@Water Temple/Dive,$has_song|lullaby,[logic_water_central_gs_irons],hookshot,ironboots,dinsfire,magic",
           "{@Water Temple/Middle Water Level,bow}"
         ],
         "visibility_rules": [
@@ -3166,11 +3166,11 @@
         "name": "GS River",
         "short_name": "River",
         "access_rules": [
-          "@Water Temple/Dark Link Region,ocarina,time,ironboots,$FTR_or_zora",
-          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,bow",
-          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,$has_bombchus",
-          "{@Water Temple/Dark Link Region,ocarina,time,bow}",
-          "{@Water Temple/Dark Link Region,ocarina,time,$has_bombchus}"
+          "@Water Temple/Dark Link Region,$has_song|time,ironboots,$FTR_or_zora",
+          "@Water Temple/Dark Link Region,$has_song|time,[logic_water_river_gs],longshot,bow",
+          "@Water Temple/Dark Link Region,$has_song|time,[logic_water_river_gs],longshot,$has_bombchus",
+          "{@Water Temple/Dark Link Region,$has_song|time,bow}",
+          "{@Water Temple/Dark Link Region,$has_song|time,$has_bombchus}"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -3184,7 +3184,7 @@
         "name": "River Chest",
         "short_name": "River",
         "access_rules": [
-          "@Water Temple/Dark Link Region,ocarina,time,bow",
+          "@Water Temple/Dark Link Region,$has_song|time,bow",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -3195,16 +3195,16 @@
         "name": "Dragon Chest",
         "short_name": "Dragon",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,scale",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,ironboots",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,scale",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,ironboots",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,scale",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,ironboots",
-          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,ironboots",
-          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,[logic_water_dragon_jump_dive]",
-          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,[logic_water_dragon_adult]"
+          "@Water Temple/Dive,$has_song|lullaby,lift1,ironboots,hookshot",
+          "@Water Temple/Dive,$has_song|lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,scale",
+          "@Water Temple/Dive,$has_song|lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,ironboots",
+          "@Water Temple/Dive,$has_song|lullaby,lift1,[logic_water_dragon_adult],bow,scale",
+          "@Water Temple/Dive,$has_song|lullaby,lift1,[logic_water_dragon_adult],bow,ironboots",
+          "@Water Temple/Dive,$has_song|lullaby,lift1,[logic_water_dragon_adult],hookshot,scale",
+          "@Water Temple/Dive,$has_song|lullaby,lift1,[logic_water_dragon_adult],hookshot,ironboots",
+          "@Water Temple/Dark Link Region,$FTR_or_zora,$has_song|time,bow,ironboots",
+          "@Water Temple/Dark Link Region,$FTR_or_zora,$has_song|time,bow,[logic_water_dragon_jump_dive]",
+          "@Water Temple/Dark Link Region,$FTR_or_zora,$has_song|time,bow,[logic_water_dragon_adult]"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -3294,7 +3294,7 @@
       {
         "name": "Lowered Water Levels",
         "access_rules": [
-          "@Water Temple MQ/Dive,ocarina,lullaby"
+          "@Water Temple MQ/Dive,$has_song|lullaby"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -3369,7 +3369,7 @@
         "short_name": "Central Pillar",
         "access_rules": [
           "@Water Temple MQ/Dive,[$zora_tunic],hookshot,[logic_water_mq_central_pillar],bow,firearrow,magic",
-          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,dinsfire,magic,ocarina,time",
+          "@Water Temple MQ/Dive,[$zora_tunic],hookshot,dinsfire,magic,$has_song|time",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -3476,8 +3476,8 @@
     "name": "Shadow Temple",
     "parent": "Graveyard",
     "access_rules": [
-      "shadow_reg,ocarina,nocturne,dinsfire,magic",
-      "shadow_reg,ocarina,nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic",
+      "shadow_reg,$has_song|nocturne,dinsfire,magic",
+      "shadow_reg,$has_song|nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic",
       "shadow_reg,$spawn_access|Graveyard Warp Pad Region|adult,dinsfire,magic",
       "shadow_reg,$spawn_access|Graveyard Warp Pad Region|adult,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic"
     ],
@@ -3573,7 +3573,7 @@
       {
         "name": "Beyond Boat",
         "access_rules": [
-          "@Shadow Temple/Boat,ocarina,lullaby"
+          "@Shadow Temple/Boat,$has_song|lullaby"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -3829,8 +3829,8 @@
     "name": "Shadow Temple MQ",
     "parent": "Graveyard",
     "access_rules": [
-      "shadow_mq,ocarina,nocturne,dinsfire,magic",
-      "shadow_mq,ocarina,nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic",
+      "shadow_mq,$has_song|nocturne,dinsfire,magic",
+      "shadow_mq,$has_song|nocturne,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic",
       "shadow_mq,$spawn_access|Graveyard Warp Pad Region|adult,dinsfire,magic",
       "shadow_mq,$spawn_access|Graveyard Warp Pad Region|adult,logic_shadow_fire_arrow_entry,$has_age|adult,bow,firearrow,magic"
     ],
@@ -3888,23 +3888,23 @@
       {
         "name": "Invisible Blades",
         "access_rules": [
-          "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,ocarina,time,[logic_lens_shadow_mq_invisible_blades]",
-          "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,ocarina,time,$can_use_lens",
-          "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,ocarina,time,nayruslove,magic",
+          "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,$has_song|time,[logic_lens_shadow_mq_invisible_blades]",
+          "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,$has_song|time,$can_use_lens",
+          "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,$has_song|time,nayruslove,magic",
           "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,[logic_shadow_mq_invisible_blades],$damage_below_ohko,[logic_lens_shadow_mq_invisible_blades]",
           "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,[logic_shadow_mq_invisible_blades],$damage_below_ohko,$can_use_lens",
           "@Shadow Temple MQ/Upper Huge Pit,$has_exact|shadow_temple_shortcuts|0,[logic_shadow_mq_invisible_blades],$damage_below_ohko,nayruslove,magic",
-          "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],ocarina,time,[logic_lens_shadow_mq_invisible_blades]",
-          "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],ocarina,time,$can_use_lens",
-          "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],ocarina,time,nayruslove,magic",
+          "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],$has_song|time,[logic_lens_shadow_mq_invisible_blades]",
+          "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],$has_song|time,$can_use_lens",
+          "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],$has_song|time,nayruslove,magic",
           "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],[logic_shadow_mq_invisible_blades],$damage_below_ohko,[logic_lens_shadow_mq_invisible_blades]",
           "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],[logic_shadow_mq_invisible_blades],$damage_below_ohko,$can_use_lens",
           "@Shadow Temple MQ/Upper Huge Pit,[shadow_small_keys:6],[logic_shadow_mq_invisible_blades],$damage_below_ohko,nayruslove,magic",
-          "@Shadow Temple MQ/Upper Huge Pit,[logic_lens_shadow_mq_platform],hoverboots,ocarina,time,[logic_lens_shadow_mq_invisible_blades]",
-          "@Shadow Temple MQ/Upper Huge Pit,[logic_lens_shadow_mq_platform],hoverboots,ocarina,time,nayruslove,magic",
+          "@Shadow Temple MQ/Upper Huge Pit,[logic_lens_shadow_mq_platform],hoverboots,$has_song|time,[logic_lens_shadow_mq_invisible_blades]",
+          "@Shadow Temple MQ/Upper Huge Pit,[logic_lens_shadow_mq_platform],hoverboots,$has_song|time,nayruslove,magic",
           "@Shadow Temple MQ/Upper Huge Pit,[logic_lens_shadow_mq_platform],hoverboots,[logic_shadow_mq_invisible_blades],$damage_below_ohko,[logic_lens_shadow_mq_invisible_blades]",
           "@Shadow Temple MQ/Upper Huge Pit,[logic_lens_shadow_mq_platform],hoverboots,[logic_shadow_mq_invisible_blades],$damage_below_ohko,nayruslove,magic",
-          "@Shadow Temple MQ/Upper Huge Pit,$can_use_lens,hoverboots,ocarina,time",
+          "@Shadow Temple MQ/Upper Huge Pit,$can_use_lens,hoverboots,$has_song|time",
           "@Shadow Temple MQ/Upper Huge Pit,$can_use_lens,hoverboots,[logic_shadow_mq_invisible_blades],$damage_below_ohko"
         ],
         "visibility_rules": [
@@ -3995,7 +3995,7 @@
       {
         "name": "Beyond Boat",
         "access_rules": [
-          "@Shadow Temple MQ/Boat,ocarina,lullaby"
+          "@Shadow Temple MQ/Boat,$has_song|lullaby"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4005,7 +4005,7 @@
       {
         "name": "Invisible Maze",
         "access_rules": [
-          "@Shadow Temple MQ/Beyond Boat,bow,ocarina,time,longshot"
+          "@Shadow Temple MQ/Beyond Boat,bow,$has_song|time,longshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4037,7 +4037,7 @@
         "name": "Hover Boots Chest",
         "short_name": "Dead Hand 1",
         "access_rules": [
-          "@Shadow Temple MQ/Dead Hand Area,ocarina,time,bow"
+          "@Shadow Temple MQ/Dead Hand Area,$has_song|time,bow"
         ],
         "item_count": 1
       },
@@ -4589,7 +4589,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Spirit Temple/Early Adult,hookshot,ocarina,lullaby"
+          "@Spirit Temple/Early Adult,hookshot,$has_song|lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -4610,7 +4610,7 @@
         "name": "GS Boulder Room",
         "short_name": "Boulders",
         "access_rules": [
-          "@Spirit Temple/Early Adult Right Chest,ocarina,time",
+          "@Spirit Temple/Early Adult Right Chest,$has_song|time",
           "{@Spirit Temple/Early Adult Right Chest}"
         ],
         "visibility_rules": [
@@ -4634,8 +4634,8 @@
         "name": "Statue Room Hand Chest",
         "short_name": "Statue Hand",
         "access_rules": [
-          "@Spirit Temple/Central Chamber,$has_age|adult,lift2,spirit_small_keys:1,[spirit_small_keys:3],ocarina,lullaby",
-          "@Spirit Temple/Central Chamber,$has_age|adult,hookshot,spirit_temple_shortcuts,ocarina,lullaby"
+          "@Spirit Temple/Central Chamber,$has_age|adult,lift2,spirit_small_keys:1,[spirit_small_keys:3],$has_song|lullaby",
+          "@Spirit Temple/Central Chamber,$has_age|adult,hookshot,spirit_temple_shortcuts,$has_song|lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -4683,7 +4683,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Spirit Temple/Beyond Final Locked Door,ocarina,lullaby,[bow],[hookshot]"
+          "@Spirit Temple/Beyond Final Locked Door,$has_song|lullaby,[bow],[hookshot]"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -4782,7 +4782,7 @@
       {
         "name": "Boss Area",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:2,[spirit_small_keys:6],ocarina,lullaby,hammer"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:2,[spirit_small_keys:6],$has_song|lullaby,hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4803,8 +4803,8 @@
       {
         "name": "Mirror Shield Hand",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,[logic_lens_spirit_mq]",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_use_lens"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,$can_use_lens"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4814,10 +4814,10 @@
       {
         "name": "Silver Gauntlets Hand",
         "access_rules": [
-          "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
+          "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],$has_song|time",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
-          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,[logic_lens_spirit_mq]",
-          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$can_use_lens"
+          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],$has_song|time,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Shared,spirit_small_keys:1,[spirit_small_keys:4],$has_song|time,$can_use_lens"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4889,7 +4889,7 @@
         "access_rules": [
           "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,dinsfire,magic",
           "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,@Spirit Temple MQ/Adult,bow,firearrow,magic",
-          "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,@Spirit Temple MQ/Adult,[logic_spirit_mq_frozen_eye],bow,ocarina,time"
+          "@Spirit Temple MQ/Child,$has_bombchus,spirit_small_keys:2,[spirit_small_keys:7],sling,@Spirit Temple MQ/Adult,[logic_spirit_mq_frozen_eye],bow,$has_song|time"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -4909,7 +4909,7 @@
         "name": "Sun Block Room Chest",
         "short_name": "Sun Block",
         "access_rules": [
-          "@Spirit Temple MQ/Shared,ocarina,time",
+          "@Spirit Temple MQ/Shared,$has_song|time",
           "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult"
         ],
@@ -4919,7 +4919,7 @@
         "name": "GS Sun Block Room",
         "short_name": "Sun Block",
         "access_rules": [
-          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],boomerang,ocarina,time",
+          "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],boomerang,$has_song|time",
           "@Spirit Temple MQ/Shared,[logic_spirit_mq_sun_block_gs],boomerang,[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult"
         ],
@@ -4934,13 +4934,13 @@
         "name": "Silver Gauntlets Chest",
         "short_name": "Right Hand",
         "access_rules": [
-          "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],ocarina,time",
+          "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],$has_song|time",
           "@Spirit Temple MQ/Shared,spirit_small_keys:3,[spirit_small_keys:7],[logic_spirit_mq_sun_block_sot]",
           "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:7],$has_age|adult",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$has_explosives,[logic_lens_spirit_mq]",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,$has_explosives,$can_use_lens",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,nuts,[logic_lens_spirit_mq]",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],ocarina,time,nuts,$can_use_lens"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],$has_song|time,$has_explosives,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],$has_song|time,$has_explosives,$can_use_lens",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],$has_song|time,nuts,[logic_lens_spirit_mq]",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:4],$has_song|time,nuts,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -4965,7 +4965,7 @@
         "name": "Statue Room Lullaby Chest",
         "short_name": "Statue Boxes",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,ocarina,lullaby"
+          "@Spirit Temple MQ/Adult,$has_song|lullaby"
         ],
         "item_count": 1
       },
@@ -5003,7 +5003,7 @@
         "name": "Symphony Room Chest",
         "short_name": "Symphony",
         "access_rules": [
-          "@Spirit Temple MQ/Lower Adult,spirit_small_keys:1,[spirit_small_keys:7],hammer,ocarina,time,epona,sun,storm,lullaby",
+          "@Spirit Temple MQ/Lower Adult,spirit_small_keys:1,[spirit_small_keys:7],hammer,$has_song|time,epona,sun,storm,lullaby",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -5013,7 +5013,7 @@
         "name": "GS Symphony Room",
         "short_name": "Symphony",
         "access_rules": [
-          "@Spirit Temple MQ/Lower Adult,spirit_small_keys:1,[spirit_small_keys:7],hammer,ocarina,time,epona,sun,storm,lullaby",
+          "@Spirit Temple MQ/Lower Adult,spirit_small_keys:1,[spirit_small_keys:7],hammer,$has_song|time,epona,sun,storm,lullaby",
           "{$hintable}"
         ],
         "visibility_rules": [
@@ -5045,8 +5045,8 @@
         "name": "Chest Switch Chest",
         "short_name": "Chest Switch",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$has_explosives",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,nuts"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,$has_explosives",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,nuts"
         ],
         "item_count": 1
       },
@@ -5054,8 +5054,8 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,shield3,$has_explosives",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,shield3,nuts"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,shield3,$has_explosives",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,shield3,nuts"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -5065,10 +5065,10 @@
         "name": "Mirror Shield Chest",
         "short_name": "Left Hand",
         "access_rules": [
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,[logic_lens_spirit_mq],$has_explosives",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,[logic_lens_spirit_mq],nuts",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_use_lens,$has_explosives",
-          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],ocarina,time,$can_use_lens,nuts"
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,[logic_lens_spirit_mq],$has_explosives",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,[logic_lens_spirit_mq],nuts",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,$can_use_lens,$has_explosives",
+          "@Spirit Temple MQ/Adult,spirit_small_keys:1,[spirit_small_keys:5],$has_song|time,$can_use_lens,nuts"
         ],
         "item_count": 1
       },
@@ -5144,8 +5144,8 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "botw_reg,$has_age|child,ocarina,storm,$can_child_attack",
-      "botw_reg,$has_age|child,ocarina,storm,nuts"
+      "botw_reg,$has_age|child,$has_song|storm,$can_child_attack",
+      "botw_reg,$has_age|child,$has_song|storm,nuts"
     ],
     "sections": [
       {
@@ -5292,7 +5292,7 @@
         "name": "Underwater Left Chest",
         "short_name": "Underwater Left",
         "access_rules": [
-          "ocarina,lullaby"
+          "$has_song|lullaby"
         ],
         "item_count": 1
       },
@@ -5300,7 +5300,7 @@
         "name": "Underwater Front Chest",
         "short_name": "Underwater Front",
         "access_rules": [
-          "ocarina,lullaby"
+          "$has_song|lullaby"
         ],
         "item_count": 1
       },
@@ -5308,16 +5308,16 @@
         "name": "Lens of Truth Chest",
         "short_name": "Dead Hand",
         "access_rules": [
-          "ocarina,lullaby,sword1",
-          "ocarina,lullaby,sticks,[logic_child_deadhand]"
+          "$has_song|lullaby,sword1",
+          "$has_song|lullaby,sticks,[logic_child_deadhand]"
         ],
         "item_count": 1
       },
       {
         "name": "Invisible Chest",
         "access_rules": [
-          "ocarina,lullaby,[logic_lens_botw]",
-          "ocarina,lullaby,$can_use_lens"
+          "$has_song|lullaby,[logic_lens_botw]",
+          "$has_song|lullaby,$can_use_lens"
         ],
         "item_count": 1
       }
@@ -5338,13 +5338,13 @@
     "name": "Bottom of the Well MQ",
     "parent": "Kakariko Village",
     "access_rules": [
-      "botw_mq,$has_age|child,ocarina,storm"
+      "botw_mq,$has_age|child,$has_song|storm"
     ],
     "sections": [
       {
         "name": "Middle",
         "access_rules": [
-          "ocarina,lullaby",
+          "$has_song|lullaby",
           "[logic_botw_mq_pits],$has_explosives"
         ],
         "visibility_rules": [
@@ -5499,7 +5499,7 @@
         "access_rules": [
           "hookshot",
           "hoverboots",
-          "ocarina,time",
+          "$has_song|time",
           "magic,bow,firearrow"
         ],
         "item_count": 1
@@ -5564,7 +5564,7 @@
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial Lullaby",
         "access_rules": [
-          "lift3,gc_small_keys:1,ocarina,lullaby"
+          "lift3,gc_small_keys:1,$has_song|lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -5689,7 +5689,7 @@
         "name": "Forest Trial Clear",
         "short_name": "Forest Trial",
         "access_rules": [
-          "$can_LA,ocarina,time"
+          "$can_LA,$has_song|time"
         ],
         "visibility_rules": [
           "setting_trials:1"
@@ -5781,7 +5781,7 @@
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial",
         "access_rules": [
-          "lift3,ocarina,lullaby"
+          "lift3,$has_song|lullaby"
         ],
         "item_count": 1
       },
@@ -5952,7 +5952,7 @@
         "name": "Central Maze Right",
         "access_rules": [
           "@Gerudo Training Ground/Central Maze,gtg_small_keys:2,[gtg_small_keys:9]",
-          "@Gerudo Training Ground/Lava Room,ocarina,time"
+          "@Gerudo Training Ground/Lava Room,$has_song|time"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6084,7 +6084,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Ground/Lava Room,$has_age|adult,hookshot,ocarina,time,ironboots,$FTR_or_zora",
+          "@Gerudo Training Ground/Lava Room,$has_age|adult,hookshot,$has_song|time,ironboots,$FTR_or_zora",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -6180,13 +6180,13 @@
       {
         "name": "Back Areas",
         "access_rules": [
-          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,$has_song|time",
           "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$can_BFA,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$can_BFA,$has_song|time",
           "@Gerudo Training Ground MQ/Stalfos Room,[logic_lens_gtg_mq],$can_BFA,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,$has_song|time",
           "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$has_bottle,[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$can_BFA,ocarina,time",
+          "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$can_BFA,$has_song|time",
           "@Gerudo Training Ground MQ/Stalfos Room,$can_use_lens,$can_BFA,[logic_gtg_fake_wall],hoverboots"
         ],
         "visibility_rules": [

@@ -597,6 +597,24 @@
     ]
   },
   {
+    "name": "Shuffle Individual Ocarina Notes",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_notes_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffle_notes,setting_shuffle_notes_no"
+      },
+      {
+        "img": "images/setting_shuffle_notes_yes.png",
+        "codes": "setting_shuffle_notes,setting_shuffle_notes_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shuffle Small Keys",
     "type": "progressive",
     "allow_disabled": false,

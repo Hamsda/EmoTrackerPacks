@@ -58,13 +58,13 @@ data_per_region = {
       },
       ["Prelude of Light Warp"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("prelude") then
+          if has_song("prelude") == 1 then
             return can_leave_forest()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("prelude") then
+          if has_song("prelude") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -72,13 +72,13 @@ data_per_region = {
       },
       ["Minuet of Forest Warp"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("minuet") then
+          if has_song("minuet") == 1 then
             return can_leave_forest()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("minuet") then
+          if has_song("minuet") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -86,13 +86,13 @@ data_per_region = {
       },
       ["Bolero of Fire Warp"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("bolero") then
+          if has_song("bolero") == 1 then
             return can_leave_forest()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("bolero") then
+          if has_song("bolero") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -100,13 +100,13 @@ data_per_region = {
       },
       ["Serenade of Water Warp"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("serenade") then
+          if has_song("serenade") == 1 then
             return can_leave_forest()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("serenade") then
+          if has_song("serenade") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -114,13 +114,13 @@ data_per_region = {
       },
       ["Nocturne of Shadow Warp"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("nocturne") then
+          if has_song("nocturne") == 1 then
             return can_leave_forest()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("nocturne") then
+          if has_song("nocturne") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -128,13 +128,13 @@ data_per_region = {
       },
       ["Requiem of Spirit Warp"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("requiem") then
+          if has_song("requiem") == 1 then
             return can_leave_forest()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("requiem") then
+          if has_song("requiem") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -442,7 +442,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return access_region("Lon Lon Ranch", "adult")
           end
           return AccessibilityLevel.None
@@ -571,7 +571,7 @@ data_per_region = {
     ["locations"] = {
       ["LW Skull Kid"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("saria") then
+          if has_song("saria") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -582,7 +582,7 @@ data_per_region = {
       },
       ["LW Ocarina Memory Game"] = {
         ["child_access"] = function()
-          if has("ocarina") then
+          if has_all_notes() == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -674,7 +674,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if has("logic_mido_backflip") or (has("ocarina") and has("saria")) then
+          if has("logic_mido_backflip") or (has_song("saria") == 1) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -769,7 +769,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("saria") then
+          if has_song("saria") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -1525,7 +1525,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("epona")) or has("longshot") or has("gerudo_fortress_open") then
+          if (has_song("epona") == 1) or has("longshot") or has("gerudo_fortress_open") then
             return AccessibilityLevel.Normal
           end
           return or_AL(can_finish_GerudoFortress("adult"), can_finish_GerudoFortress("child"))
@@ -1555,7 +1555,7 @@ data_per_region = {
       },
       ["GV Cow"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -1732,7 +1732,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("epona")) or has("longshot") or has("gerudo_fortress_open") then
+          if (has_song("epona") == 1) or has("longshot") or has("gerudo_fortress_open") then
             return AccessibilityLevel.Normal
           end
           return or_AL(can_finish_GerudoFortress("adult"), can_finish_GerudoFortress("child"))
@@ -1792,7 +1792,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("card") and has("ocarina") and has("epona") and has("bow") then
+          if has("card") and has_song("epona") == 1 and has("bow") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -1803,7 +1803,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("card") and has("ocarina") and has("epona") and has("bow") then
+          if has("card") and has_song("epona") == 1 and has("bow") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -2246,13 +2246,13 @@ data_per_region = {
     ["locations"] = {
       ["Colossus Great Fairy Reward"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -2490,13 +2490,13 @@ data_per_region = {
       },
       ["Beyond Door of Time"] = {
         ["child_access"] = function()
-          if has("setting_door_open") or (has("ocarina") and has("time")) then
+          if has("setting_door_open") or (has_song("time") == 1) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("setting_door_open") or (has("ocarina") and has("time")) then
+          if has("setting_door_open") or (has_song("time") == 1) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -2661,13 +2661,13 @@ data_per_region = {
     ["locations"] = {
       ["HC Great Fairy Reward"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -2736,13 +2736,13 @@ data_per_region = {
     ["locations"] = {
       ["OGC Great Fairy Reward"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -2769,7 +2769,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("bow") and has("ocarina") and has("epona") then
+          if has("bow") and has_song("epona") == 1 then
             return has_bottle()
           end
           return AccessibilityLevel.None
@@ -3546,13 +3546,13 @@ data_per_region = {
     ["locations"] = {
       ["Kak Impas House Cow"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -3573,7 +3573,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           local trick = has("logic_windmill_poh") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           return or_AL(trick, and_AL(sot, access_region("Graveyard Dampes Grave", "adult")))
         end
       },
@@ -3806,13 +3806,13 @@ data_per_region = {
       ["Royal Familys Tomb"] = {
         ["setting"] = "setting_entrance_grottos_shuffle",
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -3886,13 +3886,13 @@ data_per_region = {
     ["locations"] = {
       ["Graveyard Heart Piece Grave Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("sun") then
+          if has_song("sun") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("sun") then
+          if has_song("sun") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -3988,7 +3988,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -4491,7 +4491,7 @@ data_per_region = {
       },
       ["GC Darunias Chamber"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -4507,7 +4507,7 @@ data_per_region = {
         ["adult_access"] = function()
           local below_quad = damage_below_quadruple()
           local below_ohko = damage_below_ohko()
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local tunic = has("redtunic") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local nl = (has("nayrus") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -4551,7 +4551,7 @@ data_per_region = {
     ["locations"] = {
       ["GC Darunias Joy"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("saria") then
+          if has_song("saria") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -4602,7 +4602,7 @@ data_per_region = {
           return damage_below_quadruple()
         end,
         ["adult_access"] = function()
-          if has("redtunic") or (has("nayrus") and has("magic")) or (has("ocarina") and has("time") and has("longshot")) then
+          if has("redtunic") or (has("nayrus") and has("magic")) or (has_song("time") == 1 and has("longshot")) then
             return AccessibilityLevel.Normal
           end
           return damage_below_quadruple()
@@ -4999,13 +4999,13 @@ data_per_region = {
     ["locations"] = {
       ["DMC Great Fairy Reward"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5029,13 +5029,13 @@ data_per_region = {
     ["locations"] = {
       ["DMT Great Fairy Reward"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5101,8 +5101,8 @@ data_per_region = {
       ["ZR Frogs Ocarina Game"] = {
         ["child_access"] = function()
           if
-            has("ocarina") and has("lullaby") and has("saria") and has("epona") and has("sun") and has("time") and
-              has("storm")
+            has_song("lullaby") == 1 and has_song("saria") == 1 and has_song("epona") == 1 and
+            has_song("sun") == 1 and has_song("time") == 1 and has_song("storm") == 1
            then
             return AccessibilityLevel.Normal
           end
@@ -5114,7 +5114,7 @@ data_per_region = {
       },
       ["ZR Frogs in the Rain"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("storm") then
+          if has_song("storm") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5125,7 +5125,7 @@ data_per_region = {
       },
       ["ZR Frogs Zeldas Lullaby"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5136,7 +5136,7 @@ data_per_region = {
       },
       ["ZR Frogs Eponas Song"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5147,7 +5147,7 @@ data_per_region = {
       },
       ["ZR Frogs Sarias Song"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("saria") then
+          if has_song("saria") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5158,7 +5158,7 @@ data_per_region = {
       },
       ["ZR Frogs Suns Song"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("sun") then
+          if has_song("sun") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5169,7 +5169,7 @@ data_per_region = {
       },
       ["ZR Frogs Song of Time"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5290,13 +5290,13 @@ data_per_region = {
       },
       ["ZR Behind Waterfall"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") or has("logic_zora_with_cucco") then
+          if has_song("lullaby") == 1 or has("logic_zora_with_cucco") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           if has("hoverboots") then
@@ -5642,13 +5642,13 @@ data_per_region = {
     ["locations"] = {
       ["ZF Great Fairy Reward"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5807,13 +5807,13 @@ data_per_region = {
     ["locations"] = {
       ["LLR Stables Cows"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -5845,13 +5845,13 @@ data_per_region = {
       },
       ["LLR Tower Cows"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -6189,13 +6189,13 @@ data_per_region = {
       },
       ["HF Cow Grotto Cow"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") and has("dinsfire") and has("magic") then
+          if has_song("epona") == 1 and has("dinsfire") and has("magic") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return has_fire()
           end
           return AccessibilityLevel.None
@@ -6408,13 +6408,13 @@ data_per_region = {
     ["locations"] = {
       ["DMT Cow Grotto Cow"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -6815,7 +6815,7 @@ data_per_region = {
       },
       ["Bottom of the Well Lens of Truth Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             if has("sword1") then
               return AccessibilityLevel.Normal
             end
@@ -6834,7 +6834,7 @@ data_per_region = {
       },
       ["Bottom of the Well Invisible Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             if has("logic_lens_botw") or (has("lens") and has("magic")) then
               return AccessibilityLevel.Normal
             end
@@ -6848,7 +6848,7 @@ data_per_region = {
       },
       ["Bottom of the Well Underwater Front Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -6859,7 +6859,7 @@ data_per_region = {
       },
       ["Bottom of the Well Underwater Left Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -7094,7 +7094,7 @@ data_per_region = {
       },
       ["Bottom of the Well MQ Middle"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           local trick = has("logic_botw_mq_pits") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
@@ -7620,7 +7620,7 @@ data_per_region = {
         ["child_access"] = function()
           if has("boomerang") then
             local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
-            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
             local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local adult = access_region("Deku Tree MQ Compass Room", "adult")
             local trick =
@@ -7633,7 +7633,7 @@ data_per_region = {
         ["adult_access"] = function()
           if has("hookshot") then
             local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
-            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
             local hammer = has("hammer") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local trick =
               has("logic_deku_mq_compass_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
@@ -7699,13 +7699,13 @@ data_per_region = {
     ["locations"] = {
       ["Deku Tree MQ After Spinning Log Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -7754,7 +7754,7 @@ data_per_region = {
     ["locations"] = {
       ["Deku Tree MQ GS Basement Graves Room"] = {
         ["child_access"] = function()
-          if has("time") and has("boomerang") then
+          if has_song("time") == 1 and has("boomerang") then
             return AccessibilityLevel.Normal
           end
           if has("sling") then
@@ -7763,7 +7763,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("longshot") or (has("time") and has("hookshot")) then
+          if has("longshot") or (has_song("time") == 1 and has("hookshot")) then
             return AccessibilityLevel.Normal
           end
           if has("bow") then
@@ -8476,13 +8476,13 @@ data_per_region = {
       },
       ["Dodongos Cavern MQ GS Song of Time Block Room"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return can_child_attack()
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -8882,7 +8882,7 @@ data_per_region = {
               has("logic_fire_boss_door_jump") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
             local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local shortcut = has("fire_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
-            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
 
             return and_AL(
               tunic,
@@ -8967,7 +8967,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("time")) or has("logic_fire_song_of_time") then
+          if (has_song("time") == 1) or has("logic_fire_song_of_time") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -9187,7 +9187,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("hammer") then
-            if has("ocarina") and has("time") then
+            if has_song("time") == 1 then
               return AccessibilityLevel.Normal
             end
             local trick = has("logic_rusted_switches") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
@@ -9478,7 +9478,7 @@ data_per_region = {
           if has("longshot") then
             return AccessibilityLevel.Normal
           end
-          if has("ocarina") and has("time") and has("hookshot") then
+          if has_song("time") == 1 and has("hookshot") then
             local trick = has("logic_rusted_switches") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
             return or_AL(has_explosives(), trick)
           end
@@ -9541,7 +9541,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("time")) or has("hoverboots") or has("logic_fire_mq_flame_maze") then
+          if (has_song("time") == 1) or has("hoverboots") or has("logic_fire_mq_flame_maze") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -9702,7 +9702,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -10259,7 +10259,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -10527,7 +10527,7 @@ data_per_region = {
           end
           local balcony =
             (has("bow") and has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_forest_door_frame") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
@@ -10556,7 +10556,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if has("hookshot") then
-            if has("longshot") or has("hoverboots") or (has("ocarina") and has("time")) or has("logic_forest_vines") then
+            if has("longshot") or has("hoverboots") or (has_song("time") == 1) or has("logic_forest_vines") then
               return AccessibilityLevel.Normal
             end
             return AccessibilityLevel.SequenceBreak
@@ -10639,13 +10639,13 @@ data_per_region = {
       },
       ["Forest Temple MQ Falling Room"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -10981,7 +10981,7 @@ data_per_region = {
         ["adult_access"] = function()
           if
             (has("bow") and has("firearrow") and has("magic")) or has("hookshot") or has("hoverboots") or
-              (has("ocarina") and has("time"))
+              (has_song("time") == 1)
            then
             return AccessibilityLevel.Normal
           end
@@ -11090,7 +11090,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") and has("gc_small_keys", 1) then
+          if has_song("lullaby") == 1 and has("gc_small_keys", 1) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -11219,7 +11219,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           return and_AL(can_LA(), sot)
         end
@@ -11451,7 +11451,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -11779,7 +11779,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hookshot") and has("ocarina") and has("time") and has("ironboots") then
+          if has("hookshot") and has_song("time") == 1 and has("ironboots") then
             return FTR_or_zora()
           end
           return AccessibilityLevel.None
@@ -11792,7 +11792,7 @@ data_per_region = {
           return AccessibilityLevel.Normal
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -12218,7 +12218,7 @@ data_per_region = {
           local lot =
             (has("logic_lens_gtg_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           local wall = AccessibilityLevel.None
           if has("hoverboots") then
@@ -12656,7 +12656,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if (has("ocarina") and has("time")) or has("logic_ice_mq_red_ice_gs") then
+          if (has_song("time") == 1) or has("logic_ice_mq_red_ice_gs") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -13097,14 +13097,14 @@ data_per_region = {
       },
       ["Jabu Jabus Belly MQ GS Boomerang Chest Room"] = {
         ["child_access"] = function()
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = has("logic_jabu_mq_sot_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local boomerang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           return or_AL(and_AL(sot, can_child_attack()), and_AL(trick, boomerang))
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") then
+          if has_song("time") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.Inspect
@@ -13243,13 +13243,13 @@ data_per_region = {
     ["locations"] = {
       ["Jabu Jabus Belly MQ Cow"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("epona") then
+          if has_song("epona") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -13725,7 +13725,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -13893,7 +13893,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") and has("bow") then
+          if has_song("time") == 1 and has("bow") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -13973,7 +13973,7 @@ data_per_region = {
             (has("logic_lens_shadow_mq_platform") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
           local hoverboots = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick_damage =
             has("logic_shadow_mq_invisible_blades") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local lens_blades =
@@ -14304,7 +14304,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -14334,7 +14334,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("bow") and has("ocarina") and has("time") and has("longshot") then
+          if has("bow") and has_song("time") == 1 and has("longshot") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -14688,7 +14688,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("hookshot") and has("ocarina") and has("lullaby") then
+          if has("hookshot") and has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -14713,7 +14713,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.Inspect
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.Inspect
           local ranged = (has("bow") or has("hookshot")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local bombs = has("bombs") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick =
@@ -14825,7 +14825,7 @@ data_per_region = {
           local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local zl = (has("ocarina") and has("lullaby")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local zl = (has_song("lullaby") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
 
           return and_AL(or_AL(and_AL(keys3, lift2), and_AL(hs, shortcut)), zl)
         end
@@ -14844,7 +14844,7 @@ data_per_region = {
           local lift2 = has("lift2") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local shortcut = has("spirit_temple_shortcuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
-          local zl = (has("ocarina") and has("lullaby")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local zl = (has_song("lullaby") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local gap =
             (has("hookshot") or has("hoverboots") or has("logic_spirit_lobby_jump")) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
@@ -15165,7 +15165,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             if has("bow") and has("hookshot") then
               return AccessibilityLevel.Normal
             end
@@ -15346,7 +15346,7 @@ data_per_region = {
             local fa = (has("firearrow") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
             local trick =
               has("logic_spirit_sun_chest") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
-            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
             return and_AL(
               keys,
               has_bombchus(),
@@ -15397,7 +15397,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -15439,7 +15439,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           return and_AL(keys, time, or_AL(has_explosives(), nuts))
         end
@@ -15455,7 +15455,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local shield3 = has("shield3") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local nuts = has("nuts") and AccessibilityLevel.Normal or AccessibilityLevel.None
           return and_AL(keys, time, shield3, or_AL(has_explosives(), nuts))
@@ -15520,7 +15520,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") and has("hammer") then
+          if has_song("lullaby") == 1 and has("hammer") then
             if has("spirit_small_keys", 6) then
               return AccessibilityLevel.Normal
             elseif has("spirit_small_keys", 2) then
@@ -15541,7 +15541,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lot =
             (has("logic_lens_spirit_mq") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
@@ -15608,7 +15608,7 @@ data_per_region = {
       },
       ["Spirit Temple MQ Sun Block Room Chest"] = {
         ["child_access"] = function()
-          if (has("ocarina") and has("time")) or has("logic_spirit_mq_sun_block_sot") then
+          if (has_song("time") == 1) or has("logic_spirit_mq_sun_block_sot") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -15622,7 +15622,7 @@ data_per_region = {
           local trick1 =
             has("logic_spirit_mq_sun_block_gs") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local rang = has("boomerang") and AccessibilityLevel.Normal or AccessibilityLevel.Inspect
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick2 =
             has("logic_spirit_mq_sun_block_sot") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
 
@@ -15642,7 +15642,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 3) then
             keys7 = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick =
             has("logic_spirit_mq_sun_block_sot") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local keys4 = AccessibilityLevel.None
@@ -15665,7 +15665,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 1) then
             keys7 = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local keys4 = AccessibilityLevel.None
           if has("spirit_small_keys", 4) then
             keys4 = AccessibilityLevel.Normal
@@ -15689,7 +15689,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 3) then
             keys7 = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick =
             has("logic_spirit_mq_sun_block_sot") and AccessibilityLevel.Normal or AccessibilityLevel.SequenceBreak
           local keys4 = AccessibilityLevel.None
@@ -15712,7 +15712,7 @@ data_per_region = {
           elseif has("spirit_small_keys", 3) then
             keys7 = AccessibilityLevel.SequenceBreak
           end
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local keys4 = AccessibilityLevel.None
           if has("spirit_small_keys", 4) then
             keys4 = AccessibilityLevel.Normal
@@ -15747,8 +15747,8 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            has("hammer") and has("ocarina") and has("time") and has("epona") and has("sun") and has("storm") and
-              has("lullaby")
+            has("hammer") and has_song("time") == 1 and has_song("epona") == 1 and has_song("sun") == 1 and
+            has_song("storm") == 1 and has_song("lullaby") == 1
            then
             if has("spirit_small_keys", 7) then
               return AccessibilityLevel.Normal
@@ -15784,8 +15784,8 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            has("hammer") and has("ocarina") and has("time") and has("epona") and has("sun") and has("storm") and
-              has("lullaby")
+            has("hammer") and has_song("time") == 1 and has_song("epona") == 1 and has_song("sun") == 1 and
+            has_song("storm") == 1 and has_song("lullaby") == 1
            then
             if has("spirit_small_keys", 7) then
               return AccessibilityLevel.Normal
@@ -15999,7 +15999,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if ((has("ocarina") and has("lullaby")) or has("ironboots")) and has("hookshot") then
+          if ((has_song("lullaby") == 1) or has("ironboots")) and has("hookshot") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -16007,7 +16007,7 @@ data_per_region = {
       },
       ["Water Temple Torches Chest"] = {
         ["child_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             if has("sticks") and has("sword1") and has("magic") then
               return access_region("Water Temple Lobby", "child")
             end
@@ -16015,7 +16015,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             if has("bow") or (has("dinsfire") and has("magic")) then
               return AccessibilityLevel.Normal
             end
@@ -16028,7 +16028,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("lift1") and has("ocarina") and has("lullaby") then
+          if has("lift1") and has_song("lullaby") == 1 then
             local adult = AccessibilityLevel.None
             if has("bow") then
               if has("logic_water_central_bow") or has("hoverboots") or has("longshot") then
@@ -16059,7 +16059,7 @@ data_per_region = {
         end,
         ["adult_access"] = function()
           if
-            (has("hookshot") or has("hoverboots")) and has("ocarina") and has("lullaby") and
+            (has("hookshot") or has("hoverboots")) and has_song("lullaby") == 1 and
               (has("ironboots") or has("scale"))
            then
             return has_explosives()
@@ -16072,7 +16072,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local ib = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -16114,7 +16114,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local hb = has("hoverboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local trick_no =
@@ -16131,7 +16131,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
             local sticks = has("sticks") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -16152,7 +16152,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ironboots") or (has("ocarina") and has("lullaby")) then
+          if has("ironboots") or (has_song("lullaby") == 1) then
             if has("water_small_keys", 1) then
               local level = AccessibilityLevel.SequenceBreak
               if has("water_small_keys", 4) then
@@ -16177,7 +16177,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local zl = (has("ocarina") and has("lullaby")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local zl = (has_song("lullaby") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local lift1 = has("lift1") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local ib = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local hs = has("hookshot") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -16376,7 +16376,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") and has("bow") then
+          if has_song("time") == 1 and has("bow") then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
@@ -16387,7 +16387,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+          local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local ib = has("ironboots") and AccessibilityLevel.Normal or AccessibilityLevel.None
           local ls = has("longshot") and AccessibilityLevel.Normal or AccessibilityLevel.Inspect
           local bow = has("bow") and AccessibilityLevel.Normal or AccessibilityLevel.None
@@ -16403,7 +16403,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("time") and has("bow") then
+          if has_song("time") == 1 and has("bow") then
             if has("ironboots") or has("logic_water_dragon_jump_dive") or has("logic_water_dragon_adult") then
               return FTR_or_zora()
             end
@@ -16491,7 +16491,7 @@ data_per_region = {
               (has("bow") and has("firearrow") and has("magic")) and AccessibilityLevel.Normal or
               AccessibilityLevel.None
             local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
-            local sot = (has("ocarina") and has("time")) and AccessibilityLevel.Normal or AccessibilityLevel.None
+            local sot = (has_song("time") == 1) and AccessibilityLevel.Normal or AccessibilityLevel.None
             return and_AL(tunic, or_AL(and_AL(trick, fa), and_AL(df, sot)))
           end
           return AccessibilityLevel.None
@@ -16504,7 +16504,7 @@ data_per_region = {
           return AccessibilityLevel.None
         end,
         ["adult_access"] = function()
-          if has("ocarina") and has("lullaby") then
+          if has_song("lullaby") == 1 then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.None
